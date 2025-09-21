@@ -1,0 +1,25 @@
+# Environment
+python-dotenv
+
+# Data handling
+pandas
+numpy
+
+# Embeddings & semantic search
+faiss-cpu           # or faiss-gpu if you have GPU support
+sentence-transformers
+tqdm
+
+# Azure AI
+azure-ai-inference
+azure-core
+
+# FastAPI API
+fastapi
+pydantic
+starlette
+uvicorn[standard]
+
+# Google Generative AI
+google-genai
+httpx
