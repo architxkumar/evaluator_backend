@@ -1,0 +1,26 @@
+ding on the KL-ONE system (Schmolze and
+Lipkis, 1983), several researchers developed systems that incorporate theoretical complex-
+ity analysis, most notably KRYPTON (Brachman et al., 1983) and Classic (Borgida et al.,
+1989). The result has been a marked increase in the speed of inference and a much better
+understanding of the interaction between complexity and expressiveness in reasoning sys-
+tems. Calvaneseetal.(1999)summarizethestateoftheart,and Baader etal.(2007)present
+a comprehensive handbook of description logic. Against this trend, Doyle and Patil (1991)
+have argued that restricting the expressiveness of a language either makes it impossible to
+solvecertainproblemsorencouragestheusertocircumvent thelanguagerestrictionsthrough
+nonlogical means.
+Thethreemainformalismsfordealingwithnonmonotonic inference circumscription
+(Mc Carthy, 1980), default logic (Reiter, 1980), and modal nonmonotonic logic (Mc Dermott
+and Doyle,1980) wereallintroduced inonespecialissueofthe AI Journal. Delgrandeand
+Schaub (2003) discuss the merits of the variants, given 25 years of hindsight. Answer set
+programmingcanbeseenasanextensionofnegationasfailureorasarefinementofcircum-
+472 Chapter 12. Knowledge Representation
+scription; the underlying theory of stable model semantics was introduced by Gelfond and
+Lifschitz(1988),andtheleadinganswersetprogrammingsystemsare DLV(Eiteretal.,1998)
+and SMODELS(Niemela etal.,2000). Thediskdriveexamplecomesfromthe SMODEL Suser
+manual (Syrja nen, 2000). Lifschitz (2001) discusses the use of answer set programming for
+planning. Brewkaetal.(1997)giveagoodoverviewofthevariousapproaches tononmono-
+tonic logic. Clark (1978) covers the negation-as-failure approach to logic programming and
+Clarkcompletion. Van Emdenand Kowalski(1976)showthatevery Prologprogramwithout
+negation has a unique minimal model. Recent years have seen renewed interest in applica-
+tionsofnonmonotonic logicstolarge-scale knowledgerepresentation systems. The BENINQ
+systemsforhandling insu

@@ -1,0 +1,39 @@
+s to go first to Vaslui a step that is actually farther from the goal according to
+the heuristic and then to continue to Urziceni, Bucharest, and Fagaras. The algorithm will
+never find this solution, however, because expanding Neamt puts Iasi back into the frontier,
+Iasiiscloserto Fagarasthan Vasluiis,andso Iasiwillbeexpanded again, leading toaninfi-
+niteloop. (Thegraphsearchversion iscompleteinfinitespaces,butnotininfiniteones.) The
+worst-casetimeandspacecomplexityforthetreeversionis O(bm),wheremisthemaximum
+depth of the search space. With a good heuristic function, however, the complexity can be
+reducedsubstantially. Theamountofthereductiondepends ontheparticularproblemandon
+thequalityoftheheuristic.
+3.5.2 A search: Minimizing the totalestimated solutioncost The most widely known form of best-first search is called A search (pronounced A-star
+A SEARCH
+search ). Itevaluatesnodesbycombiningg(n),thecosttoreachthenode,andh(n),thecost
+togetfromthenodetothegoal:
+f(n) g(n) h(n).
+Since g(n) gives the path cost from the start node to node n, and h(n) is the estimated cost
+ofthecheapest pathfrom ntothegoal,wehave
+f(n) estimatedcostofthecheapest solution through n.
+Thus, if we are trying to find the cheapest solution, a reasonable thing to try first is the
+node with the lowest value of g(n) h(n). It turns out that this strategy is more than just reasonable: providedthattheheuristicfunction h(n)satisfiescertainconditions, A searchis
+both complete and optimal. The algorithm is identical to UNIFORM-COST-SEARCH except that A usesg hinsteadofg.
+94 Chapter 3. Solving Problemsby Searching
+(a) The initial state Arad
+366
+(b) After expanding Arad Arad
+Sibiu Timisoara Zerind
+253 329 374
+(c) After expanding Sibiu Arad
+Sibiu Timisoara Zerind
+329 374
+Arad Fagaras Oradea Rimnicu Vilcea
+366 176 380 193
+(d) After expanding Fagaras Arad
+Sibiu Timisoara Zerind
+329 374
+Arad Fagaras Oradea Rimnicu Vilcea
+366 380 193
+Sibiu Bucharest
+253 0
+Figure3.23 Stages in a greedybest-first tree search for Bu

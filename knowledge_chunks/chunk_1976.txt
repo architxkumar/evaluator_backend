@@ -1,0 +1,27 @@
+now that planning is PSPACE-complete and that constructing the planning graph
+takespolynomialtime,soitmustbethecasethatsolutionextractionisintractableintheworst
+case. Therefore,wewillneedsomeheuristicguidanceforchoosingamongactionsduringthe
+backward search. One approach that works well in practice is a greedy algorithm based on
+thelevelcostoftheliterals. Foranysetofgoals,weproceedinthefollowingorder:
+1. Pickfirsttheliteralwiththehighestlevelcost.
+2. Toachievethatliteral,preferactionswitheasierpreconditions. Thatis,chooseanaction
+suchthatthesum(ormaximum)ofthelevelcostsofitspreconditions issmallest.
+10.3.3 Terminationof GRAPHPLAN
+Sofar,wehaveskatedoverthequestionoftermination. Hereweshowthat GRAPHPLA Nwill
+infactterminateandreturnfailure whenthereisnosolution.
+Thefirstthingtounderstand iswhywecan tstopexpanding thegraphassoonasithas
+leveled off. Consider an air cargo domain with one plane and n pieces of cargo at airport
+A, all of which have airport B as their destination. In this version of the problem, only one
+piece of cargo can fitinthe plane at atime. Thegraph willlevel offatlevel 4, reflecting the
+factthatforanysinglepieceofcargo, wecanloadit,flyit,andunloaditatthedestination in
+threesteps. Butthatdoesnotmeanthatasolution canbeextractedfromthegraphatlevel4;
+infact asolution willrequire 4n 1steps: foreachpiece ofcargo weload, fly,and unload,
+andforallbutthelastpieceweneedtoflybacktoairport Atogetthenextpiece.
+Howlongdowehavetokeepexpandingafterthegraphhasleveledoff? Ifthefunction
+EXTRACT-SOLUTION fails to find a solution, then there must have been at least one set of
+goals that were not achievable and were marked as a no-good. So if it is possible that there
+might be fewer no-goods in the next level, then we should continue. As soon as the graph
+itself and the no-goods have both leveled off, withnosolution found, wecan terminate with
+failurebecause thereisnopossibility ofasubsequent changethatcouldaddasolution.
+386 Chapter 10. Classical Planning
+Nowallwehavetodo

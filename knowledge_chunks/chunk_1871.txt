@@ -1,0 +1,31 @@
+uts are knownat X forthe input cases 10 and01. Then, welook
+1
+attheaxiomfor XO Rgates,asappliedto X :
+1
+Signal(Out(1,X )) 1 Signal(In(1,X )) (cid:7) Signal(In(2,X )).
+1 1 1
+Iftheinputsareknowntobe,say,1and0,thenthisreducesto
+Signal(Out(1,X )) 1 1 (cid:7) 0.
+1
+Nowthe problem is apparent: the system isunable to infer that Signal(Out(1,X )) 1, so
+1
+weneedtotellitthat1 (cid:7) 0.
+Section8.5. Summary 313
+8.5 SUMMARY
+Thischapterhasintroduced first-orderlogic,arepresentationlanguagethatisfarmorepow-
+erfulthanpropositional logic. Theimportantpointsareas follows: Knowledge representation languages should be declarative, compositional, expressive,
+contextindependent, andunambiguous. Logics differ in their ontological commitments and epistemological commitments.
+Whilepropositional logiccommitsonlytotheexistence offacts, first-orderlogiccom-
+mitstotheexistence ofobjects andrelationsandthereby gainsexpressivepower. The syntax of first-order logic builds on that of propositional logic. It adds terms to
+represent objects, and has universal and existential quantifiers to construct assertions
+aboutallorsomeofthepossible valuesofthequantifiedvariables. Apossibleworld,ormodel,forfirst-orderlogicincludes asetofobjectsandan inter-
+pretationthatmapsconstantsymbolstoobjects, predicate symbolstorelationsamong
+objects, andfunctionsymbolstofunctions onobjects. Anatomicsentenceistruejustwhentherelationnamedbythepredicateholdsbetween
+theobjectsnamedbytheterms. Extendedinterpretations, whichmapquantifiervari-
+ablestoobjectsinthemodel,definethetruthofquantified sentences. Developingaknowledgebaseinfirst-orderlogicrequiresacarefulprocessofanalyzing
+the domain, choosing a vocabulary, and encoding the axioms required to support the
+desiredinferences.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Although Aristotle s logic deals with generalizations over objects, it fell far short of the ex-
+pressivepoweroffirst-orderlogic. Amajorbarriertoitsfurtherdevelopmentwasitsconcen-
+trationonone-place predicates tothe

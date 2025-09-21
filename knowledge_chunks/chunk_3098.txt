@@ -1,0 +1,25 @@
+Math- Elsevier North-Holland.
+Wiley. ematicsand Other Logical Essays.Harcourt Brace Reynolds,C.W.(1987).Flocks,herds,andschools:
+Puterman,M.L.and Shin,M.C.(1978).Modified Jovanovich. Adistributedbehavioralmodel. Computer Graph-
+policyiteration algorithms for discounted Markov Ranzato,M.,Poultney,C.,Chopra,S.,and Le Cun, ics,21,25 34. SIGGRAPH 87Conference Pro-
+decisionproblems. Management Science, 24(11), Y.(2007). Efficientlearningofsparserepresenta- ceedings.
+1127 1137. tionswithanenergy-basedmodel. In NIPS19,pp. Riazanov,A.and Voronkov,A.(2002). Thedesign
+Putnam,H.(1960).Mindsandmachines.In Hook, 1137 1144. andimplementationof VAMPIRE. AI Communica-
+S.(Ed.),Dimensionsof Mind,pp.138 164.Macmil- Raphson,J.(1690). Analysisaequationumuniver- tions,15(2 3),91 110.
+lan. salis.Apud Abelem Swalle,London. Rich,E.and Knight,K.(1991). Artificial Intelli-
+Putnam,H.(1963). Degreeofconfirmation and gence(secondedition).Mc Graw-Hill.
+Rashevsky, N.(1936). Physico-mathematicalas-
+inductivelogic.In Schilpp,P.A.(Ed.),The Philoso-
+pectsofexcitationandconductioninnerves.In Cold Richards,M.and Amir,E.(2007). Opponentmod-
+phyof Rudolf Carnap,pp.270 292.Open Court.
+Springs Harbor Symposiaon Quantitative Biology. elingin Scrabble.In IJCAI-07.
+Putnam, H.(1967). Thenatureofmentalstates. IV:Excitation Phenomena,pp.90 97.
+Richardson,M.,Bilmes,J.,and Diorio,C.(2000).
+In Capitan, W.H.and Merrill, D.D. (Eds.), Art,
+Mind,and Religion,pp.37 48.Universityof Pitts- Rashevsky,N.(1938). Mathematical Biophysics: Hidden-articulator Markov models: Performance
+burgh Press. Physico-Mathematical Foundationsof Biology.Uni- improvementsandrobustnesstonoise. In ICASSP-
+versityof Chicago Press. 00.
+Putnam,H.(1975).Themeaningof meaning .In
+Gunderson,K.(Ed.),Language,Mindand Knowl- Rasmussen, C. E. and Williams, C. K. I. Richter,S.and Westphal,M.(2008). The LAMA
+edge: Minnesota Studiesinthe Philosophyof Sci- (2006). Gaussian Processesfor Machine Learning. planner. In Proc.International Planning Competi-
+ence.Uni

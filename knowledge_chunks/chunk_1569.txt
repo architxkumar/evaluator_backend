@@ -1,0 +1,22 @@
+ tobepositivebecausemisplacedtilesandincorrectadjacentpairs
+1 2
+make the problem harder to solve. Notice that this heuristic does satisfy the condition that
+h(n) 0forgoalstates,butitisnotnecessarily admissibleorconsistent.
+108 Chapter 3. Solving Problemsby Searching
+3.7 SUMMARY
+This chapter has introduced methods that an agent can use to select actions in environments
+thataredeterministic, observable, static,andcompletelyknown. Insuchcases,theagentcan
+construct sequences ofactionsthatachieveitsgoals;thisprocess iscalled search. Before anagent can start searching forsolutions, a goal must beidentified and awell-
+definedproblemmustbeformulated. Aproblem consists of fiveparts: the initial state, aset ofactions, atransition model
+describing the results of those actions, a goal test function, and a path cost function.
+The environment of the problem is represented by a state space. A path through the
+statespacefromtheinitialstatetoagoalstateisasolution. Search algorithms treat states and actions as atomic: theydo not consider anyinternal
+structuretheymightpossess. A general TREE-SEARCH algorithm considers all possible paths to find a solution,
+whereasa GRAPH-SEARCH algorithm avoids consideration ofredundant paths. Searchalgorithmsarejudgedonthebasisofcompleteness,optimality,timecomplex-
+ity, and space complexity. Complexity depends onb, the branching factor inthe state
+space,andd,thedepthoftheshallowestsolution. Uninformed search methods have access only to the problem definition. The basic
+algorithmsareasfollows: Breadth-first search expands the shallowest nodes first; it is complete, optimal
+forunitstepcosts, buthasexponential spacecomplexity. Uniform-costsearchexpandsthenodewithlowestpathcost,g(n),andisoptimal
+forgeneralstepcosts. Depth-firstsearch expands the deepest unexpanded node first. It is neither com-
+plete nor optimal, but has linear space complexity. Depth-limited search adds a
+depthbound. Iterative deepening search calls depth-first search with increasing de

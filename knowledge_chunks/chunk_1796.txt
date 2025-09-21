@@ -1,0 +1,27 @@
+titdoesreducethevariance onthetimetosolution.
+5. Clever indexing (as seen in many algorithms): The speedup methods used in DPLL
+itself, aswell asthe tricks used in modern solvers, require fast indexing ofsuch things
+as the set of clauses in which variable X appears as a positive literal. This task is
+i
+complicated by the fact that the algorithms are interested only in the clauses that have
+not yet been satisfied by previous assignments to variables, so the indexing structures
+mustbeupdateddynamically asthecomputation proceeds.
+Withtheseenhancements, modernsolverscanhandleproblemswithtensofmillionsofvari-
+ables. They have revolutionized areas such as hardware verification and security protocol
+verification, whichpreviously required laborious, hand-guided proofs.
+7.6.2 Local search algorithms
+Wehaveseenseverallocalsearchalgorithmssofarinthisbook,including HILL-CLIMBING
+(page 122) and SIMULATED-ANNEALING (page 126). These algorithms can be applied di-
+rectly to satisfiability problems, provided that we choose the right evaluation function. Be-
+cause thegoalistofindanassignment that satisfieseveryclause, anevaluation function that
+counts the number of unsatisfied clauses will do the job. In fact, this is exactly the measure
+usedbythe MIN-CONFLICTS algorithmfor CS Ps(page221). Allthesealgorithmstakesteps
+in the space of complete assignments, flipping the truth value of one symbol at a time. The
+space usually contains many local minima, to escape from which various forms of random-
+ness are required. In recent years, there has been a great deal of experimentation to find a
+goodbalancebetweengreediness andrandomness.
+Oneofthesimplestandmosteffectivealgorithmstoemergefromallthisworkiscalled
+WALKSAT (Figure 7.18). On every iteration, the algorithm picks an unsatisfied clause and
+picks a symbol in the clause to flip. It chooses randomly between two ways to pick which
+symboltoflip: (1)a min-conflicts stepthatminimizesthenumberofunsatisfied clausesin
+thenewstateand(2)a random w

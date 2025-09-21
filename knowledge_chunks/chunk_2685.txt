@@ -1,0 +1,24 @@
+adaptive control
+theory(Widrowand Hoff,1960),buildingonworkby Hebb(1949),weretrainingsimplenet-
+worksusingthedeltarule. (Thisearlyconnectionbetweenneuralnetworksandreinforcement
+learning may have led to the persistent misperception that the latter is a subfield of the for-
+mer.) Thecart poleworkof Michieand Chambers(1968)canalsobeseenasareinforcement
+learningmethodwithafunctionapproximator. Thepsychologicalliteratureonreinforcement
+learningismucholder;Hilgardand Bower(1975)provideagoodsurvey. Directevidencefor
+the operation of reinforcement learning in animals has been provided by investigations into
+theforagingbehaviorofbees;thereisaclearneuralcorrelateoftherewardsignalintheform
+ofalarge neuron mapping from thenectar intake sensors directly tothe motorcortex (Mon-
+tague et al., 1995). Research using single-cell recording suggests that the dopamine system
+in primate brains implements something resembling value function learning (Schultz et al.,
+1997). The neuroscience text by Dayan and Abbott (2001) describes possible neural imple-
+mentations of temporal-difference learning, while Dayan and Niv (2008) survey the latest
+evidence fromneuroscientific andbehavioral experiments.
+The connection between reinforcement learning and Markov decision processes was
+first made by Werbos (1977), but the development of reinforcement learning in AI stems
+from work at the University of Massachusetts in the early 1980s (Barto et al., 1981). The
+paper by Sutton (1988) provides a good historical overview. Equation (21.3) in this chapter
+is a special case for 0 of Sutton s general TD( ) algorithm. TD( ) updates the utility
+valuesofallstatesinasequence leading uptoeachtransition byanamountthatdropsoffas t for states t steps in the past. TD(1) is identical to the Widrow Hoff ordelta rule. Boyan
+(2002), building on work by Bradtke and Barto (1996), argues that TD( ) and related algo-
+rithmsmake inefficient useofexperiences; essentially, theyareonline regression algorithms
+that converge much

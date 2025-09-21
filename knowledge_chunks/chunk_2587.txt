@@ -1,0 +1,28 @@
+
+anattribute-based representation?
+Someofthesequestions areaddressed inthenextsection.
+788 Chapter 19. Knowledgein Learning
+19.5 INDUCTIVE LOGIC PROGRAMMING
+Inductivelogicprogramming(ILP)combinesinductivemethodswiththepoweroffirst-order
+representations, concentrating in particular on the representation of hypotheses as logic pro-
+grams.3 It has gained popularity for three reasons. First, ILP offers a rigorous approach to
+the general knowledge-based inductive learning problem. Second, it offers complete algo-
+rithms for inducing general, first-order theories from examples, which can therefore learn
+successfully in domains where attribute-based algorithms are hard to apply. An example is
+in learning how protein structures fold (Figure 19.10). The three-dimensional configuration
+of a protein molecule cannot be represented reasonably by a set of attributes, because the
+configuration inherently refers to relationships between objects, not to attributes of a single
+object. First-order logic is an appropriate language for describing the relationships. Third,
+inductive logic programming produces hypotheses that are (relatively) easy for humans to
+read. For example, the English translation in Figure 19.10 can be scrutinized and criticized
+byworkingbiologists. Thismeansthatinductive logicprogrammingsystemscanparticipate
+inthescientificcycleofexperimentation, hypothesisgeneration,debate,andrefutation. Such
+participation wouldnotbepossible forsystemsthatgenerate black-box classifiers, suchas
+neuralnetworks.
+19.5.1 Anexample
+Recallfrom Equation(19.5)thatthegeneralknowledge-basedinductionproblemisto solve theentailmentconstraint
+Background Hypothesis Descriptions Classifications
+fortheunknown Hypothesis, given the Background knowledge and examples described by
+Descriptions and Classifications. To illustrate this, we will use the problem of learning
+family relationships from examples. The descriptions will consist of an extended family
+tree, described in terms of Mother, Father, a

@@ -1,0 +1,25 @@
+inatedbyprecision, notrecall justaswithquestionansweringonthe Web(Sec-
+tion 22.3.6). Third, the results can be statistical aggregates gathered from multiple sources,
+ratherthanbeingextractedfromonespecifictext.
+For example, Hearst (1992) looked at the problem of learning an ontology of concept
+categories and subcategories from a large corpus. (In 1992, a large corpus was a 1000-page
+encyclopedia; todayitwouldbea100-million-page Webcorpus.) Theworkconcentrated on
+templates that are very general (not tied to a specific domain) and have high precision (are
+880 Chapter 22. Natural Language Processing
+almostalwayscorrectwhentheymatch)butlowrecall(donot alwaysmatch). Hereisoneof
+themostproductive templates:
+NP suchas NP (,NP) (,)? ((and or)NP)? .
+Here the bold words and commas must appear literally in the text, but the parentheses are
+for grouping, the asterisk means repetition of zero or more, and the question mark means
+optional. NP is avariable standing fora noun phrase; Chapter 23 describes how to identify
+nounphrases;fornowjustassumethatweknowsomewordsarenounsandotherwords(such
+as verbs) that we can reliably assume are not part of a simple noun phrase. This template
+matches the texts diseases such asrabies affect your dog and supports network protocols
+such as DNS, concluding that rabies is a disease and DNS is a network protocol. Similar
+templatescanbeconstructed withthekeywords including, especially, and orother. Of
+course these templates will fail to match many relevant passages, like Rabies is a disease. Thatisintentional. The NP isa NP templatedoesindeedsometimesdenoteasubcategory
+relation, but it often means something else, as in There is a God or She is a little tired. Withalargecorpuswecanaffordtobepicky;touseonlythehigh-precision templates. We ll
+miss many statements of a subcategory relationship, but most likely we ll find a paraphrase
+ofthestatementsomewhereelseinthecorpusinaformwecanuse.
+22.4.5 Automated templateconstruction
+Thesubcategory relationissofun

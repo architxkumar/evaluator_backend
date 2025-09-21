@@ -1,0 +1,25 @@
+sbeenusedwidelyformodeling discrete choicephenomena
+andcanbeextended tohandlemorethantwochoices(Daganzo,1979). Thelogitmodelwas
+introduced by Berkson (1944); initially much derided, it eventually became more popular
+thantheprobitmodel. Bishop(1995)givesasimplejustification foritsuse.
+Cooper(1990)showedthatthegeneralproblemofinferenceinunconstrained Bayesian
+networks is NP-hard, and Paul Dagum and Mike Luby (1993) showed the corresponding
+approximation problem to be NP-hard. Space complexity is also a serious problem in both
+clustering andvariableelimination methods. Themethodofcutsetconditioning,whichwas
+developed for CS Psin Chapter 6, avoids the construction of exponentially large tables. In a
+Bayesian network, a cutset is a set of nodes that, when instantiated, reduces the remaining
+nodes to a polytree that can be solved in linear time and space. The query is answered by
+summingoveralltheinstantiations ofthecutset, sotheoverallspace requirement isstilllin-
+ear(Pearl, 1988). Darwiche (2001) describes a recursive conditioning algorithm that allows
+acompleterangeofspace time tradeoffs.
+The development of fast approximation algorithms for Bayesian network inference is
+a very active area, with contributions from statistics, computer science, and physics. The
+rejection sampling method is a general technique that is long known to statisticians; it was
+first applied to Bayesian networks by Max Henrion (1988), who called it logic sampling.
+Likelihood weighting, which was developed by Fung and Chang (1989) and Shachter and
+Peot (1989), is an example of the well-known statistical method of importance sampling.
+Cheng and Druzdzel (2000) describe an adaptive version oflikelihood weighting that works
+wellevenwhentheevidence hasverylowpriorlikelihood.
+Markovchain Monte Carlo(MCMC)algorithms began withthe Metropolis algorithm,
+due to Metropolis et al. (1953), which was also the source of the simulated annealing algo-
+rithm described in Chapter4. The Gibbssamplerwasdevised by Gem

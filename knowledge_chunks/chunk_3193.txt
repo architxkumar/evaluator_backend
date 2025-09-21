@@ -1,0 +1,47 @@
+1,968,1090 preservinginference,242
+1025
+toothache,481 table,245,276
+existence,541
+topologicalsort,223 truthmaintenancesystem(TMS),229,
+identity,541,876
+torquesensor,975 461,460 462,472,1041
+relational,543
+Torralba,A.,741,1090 assumption-based,462
+rule-basedapproachto,547
+Torrance,M.C.,231,1073 justification-based,461
+summarizing,482
+Torras,C.,156,433,1077 truthvalue,245
+andtime,566 570
+totalcost,80,102 Tsang,E.,229,1076
+unconditionalprobability,see
+Toth,P.,395,1068 Tsitsiklis,J.N.,506,685,686,847,855,
+probability,prior
+touringproblem,74 857,1059,1066,1081,1084,
+undecidability,8
+toyproblem,69 1090
+undergeneration,892
+TPTP,360 TSP,74,110,112,119 unicorn,280
+trace,904 TT-CHECK-ALL,248 unification,326,326 327,329,357
+tractabilityofinference,8,457 TT-ENTAILS?,248 andequality,353
+trading,477 Tumer,K.,688,1090 equational,355
+tragedyofthecommons,683 Tung,F.,604,1086 unifier,326
+trail,340 tuple,291 mostgeneral(MGU),327,329,353,
+training turbodecoding,555 361
+curve,724 Turcotte,M.,797,1090 UNIFORM-COST-SEARCH,84
+set,695 Turing,A.,2,8,14,16,17,19,30,31, uniform-costsearch,83,83 85,108
+replicated,749 54,192,325,358,552,761,854, uniformconvergencetheory,759
+weighted,749 1021,1022,1024,1026,1030, uniformprior,805
+transfermodel(in MT),908 1043,1052,1090 uniformprobabilitydistribution,487
+transhumanism,1038 Turingaward,1059 uniformresourcelocator(URL),463
+transientfailure,592 Turingmachine,8,759 UNIFY,328
+transientfailuremodel,593 Turing Test,2,2 4,30,31,860,1021 UNIFY-VAR,328
+transitionmatrix,564 total,3 Unimate,1011
+transitionmodel,67,108,134,162,266, Turk,190 uninformedsearch,64,81,81 91,108,
+566,597,603,646,684,832, Tversky,A.,2,517,620,638,1072, 110
+979 1077,1090 uniqueactionaxioms,389
+transitionprobability,536 TWEAK,394 uniquenamesassumption,299,540
+1130 Index
+unit(inaneuralnetwork),728 validation variationalparameter,554
+unitclause,253,260,355 cross,737,759,767 Varzi,A.,470,1068
+United States,13,629,640,753,755, validation,cross,708 Vaucanson,J.,1011
+922,1034,1036 validation

@@ -1,0 +1,26 @@
+singabbreviations W and C):
+P(W sunny C true) P(W sunny C true)P(C true)
+P(W rain C true) P(W rain C true)P(C true)
+P(W cloudy C true) P(W cloudy C true)P(C true)
+P(W snow C true) P(W snow C true)P(C true)
+P(W sunny C false) P(W sunny C false)P(C false)
+P(W rain C false) P(W rain C false)P(C false)
+P(W cloudy C false) P(W cloudy C false)P(C false)
+P(W snow C false) P(W snow C false)P(C false).
+As a degenerate case, P(sunny,cavity) has no variables and thus is a one-element vec-
+tor that is the probability of a sunny day with a cavity, which could also be written as
+P(sunny,cavity)or P(sunny cavity). Wewillsometimesuse Pnotationtoderiveresults
+aboutindividual P values,andwhenwesay P(sunny) 0.6 itisreallyanabbreviationfor P(sunny)istheone-element vector(cid:16)0.6(cid:17),whichmeansthat P(sunny) 0.6. Nowwehave defined asyntax forpropositions andprobability assertions andwehave
+givenpartofthesemantics: Equation(13.2)definestheprobabilityofapropositionasthesum
+of the probabilities of worlds in which it holds. To complete the semantics, we need to say
+whattheworldsareandhowtodeterminewhetherapropositionholdsinaworld. Weborrow
+this part directly from the semantics of propositional logic, as follows. A possible world is
+definedtobeanassignmentofvaluestoalloftherandomvariablesunderconsideration. Itis
+easytoseethatthisdefinitionsatisfiesthebasicrequirementthatpossibleworldsbemutually
+exclusive and exhaustive (Exercise 13.5). For example, if the random variables are Cavity,
+Toothache, and Weather, then there are 2 2 4 16 possible worlds. Furthermore, the
+truth of any given proposition, no matter how complex, can be determined easily in such
+worldsusingthesamerecursive definitionoftruthasforformulasinpropositional logic.
+Fromthepreceding definition ofpossible worlds, itfollows that aprobability modelis
+completelydeterminedbythejointdistributionforalloftherandomvariables theso-called
+FULLJOINT full joint probability distribution. For example, if the variables are Cavity, Tootha

@@ -1,0 +1,41 @@
+(s). Thisoptimismunderuncertaintyencourages
+UNCERTAINTY
+theagenttoexplorenew,possiblypromising paths. An LRTA agentisguaranteedtofindagoalinanyfinite,safelyexplorableenvironment. Unlike A,however,itisnotcompleteforinfinitestatespaces therearecaseswhereitcanbe
+ledinfinitelyastray. Itcanexploreanenvironmentofnstatesin O(n2)stepsintheworstcase,
+14 Randomwalksarecompleteoninfiniteone-dimensionalandtwo-dimensionalgrids. Onathree-dimensional
+grid,theprobabilitythatthewalkeverreturnstothestartingpointisonlyabout0.3405(Hughes,1995).
+152 Chapter 4. Beyond Classical Search
+1 1 1 1 1 1 1
+(a) 8 9 2 2 4 3
+1 1 1 1 1 1 1
+(b) 8 9 3 2 4 3
+1 1 1 1 1 1 1
+(c) 8 9 3 4 4 3
+1 1 1 1 1 1 1
+(d) 8 9 5 4 4 3
+1 1 1 1 1 1 1
+(e) 8 9 5 5 4 3
+Figure 4.23 Five iterations of LRTA on a one-dimensional state space. Each state is
+labeledwith H(s),thecurrentcostestimatetoreachagoal,andeachlinkislabeledwithits
+stepcost. Theshadedstatemarksthelocationoftheagent,andtheupdatedcostestimatesat
+eachiterationarecircled.
+function LRTA -AGENT(s(cid:5))returnsanaction
+inputs:s(cid:5),aperceptthatidentifiesthecurrentstate
+persistent: result,atable,indexedbystateandaction,initiallyempty
+H,atableofcostestimatesindexedbystate,initiallyempty
+s,a,thepreviousstateandaction,initiallynull
+if GOAL-TEST(s(cid:5))thenreturnstop
+ifs(cid:5)isanewstate(notin H)then H s(cid:5) h(s(cid:5))
+ifs isnotnull
+result s,a s(cid:5)
+H s min LRTA -COST(s,b,result s,b ,H)
+b ACTIONS(s)
+a anactionb in ACTIONS(s(cid:5))thatminimizes LRTA -COST(s(cid:5),b,result s(cid:5),b ,H)
+s s(cid:5)
+returna
+function LRTA -COST(s,a,s(cid:5),H)returnsacostestimate
+ifs(cid:5)isundefinedthenreturnh(s)
+elsereturnc(s,a,s(cid:5)) H s(cid:5) Figure 4.24 LRTA -AGENT selects an action according to the values of neighboring
+states,whichareupdatedastheagentmovesaboutthestatespace.
+Section4.6. Summary 153 butoftendoesmuchbetter. The LRTA agentisjustoneofalargefamilyofonlineagentsthat
+one can define by specifying the action selection rule and the update rule in different w

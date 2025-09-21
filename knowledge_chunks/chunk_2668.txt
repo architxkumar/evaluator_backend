@@ -1,0 +1,44 @@
+s probability, as we would hope. Once
+again,itcanbeshownthatthe TDalgorithm willconverge tothesamevaluesas AD Pasthe
+numberoftrainingsequences tendstoinfinity.
+There is an alternative TD method, called Q-learning, which learns an action-utility
+representation instead of learning utilities. We will use the notation Q(s,a) to denote the
+valueofdoingactionainstates. Q-valuesaredirectlyrelated toutilityvaluesasfollows:
+U(s) max Q(s,a). (21.6)
+a
+Q-functions may seem like just another way of storing utility information, but they have a
+very important property: a TD agent that learns a Q-function does not need a model of the
+form P(s
+(cid:2) s,a),
+either for learning or for action selection. For this reason, Q-learning is
+called a model-free method. As with utilities, we can write a constraint equation that must
+holdatequilibrium whenthe Q-valuesarecorrect:
+MODEL-FREE
+(cid:12)
+Q(s,a) R(s) P(s
+(cid:2) s,a)max Q(s (cid:2)
+,a
+(cid:2)
+). (21.7)
+a(cid:3)
+s(cid:3)
+As in the ADP learning agent, we can use this equation directly as an update equation for
+an iteration process that calculates exact Q-values, given an estimated model. This does,
+however, require that a model also be learned, because the equation uses P(s
+(cid:2) s,a).
+The
+temporal-difference approach, on the other hand, requires no model of state transitions all
+844 Chapter 21. Reinforcement Learning
+function Q-LEARNING-AGENT(percept)returnsanaction
+inputs:percept,aperceptindicatingthecurrentstates(cid:5)andrewardsignalr(cid:5)
+persistent: Q,atableofactionvaluesindexedbystateandaction,initiallyzero
+Nsa,atableoffrequenciesforstate actionpairs,initiallyzero
+s,a,r,thepreviousstate,action,andreward,initiallynull
+if TERMINAL?(s)then Q s,None r(cid:5)
+ifs isnotnullthen
+increment Nsa s,a Q s,a Q s,a (Nsa s,a )(r maxa(cid:3) Q s(cid:5),a(cid:5) Q s,a )
+s,a,r s(cid:5),argmax
+a(cid:3)
+f(Q s(cid:5),a(cid:5) ,Nsa s(cid:5),a(cid:5) ),r(cid:5)
+returna
+Figure21.8 Anexploratory Q-learningagent. Itisanactivelearnerthatlearnsthevalue

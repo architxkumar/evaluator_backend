@@ -1,0 +1,42 @@
+his gives us a turn-
+taking game to which we can apply the standard minimax algorithm from Chapter 5.
+Let s suppose this gives an outcome U . Clearly, this game favors O, so the true
+E,O
+utility U of the original game (from E s point of view) is at least U . Forexample,
+E,O
+if we just look at pure strategies, the minimax game tree has a root value of 3 (see
+Figure17.12(a)), soweknowthat U 3. Nowsuppose wechangetherulestoforce O torevealhisstrategyfirst,followedby E.
+Thentheminimaxvalueofthisgameis U ,andbecausethisgamefavors Eweknow
+O,E
+that U is at most U . With pure strategies, the value is 2(see Figure 17.12(b)), so
+O,E
+weknow U 2.
+Combining these twoarguments, wesee that thetrue utility U ofthesolution totheoriginal
+gamemustsatisfy
+U U U orinthiscase, 3 U 2.
+E,O O,E
+Topinpointthevalueof U,weneedtoturnouranalysistomixedstrategies. First,observethe
+following: once the first player has revealed his or her strategy, the second player might as
+wellchooseapurestrategy. Thereasonissimple: ifthesecondplayerplaysamixedstrategy, p:one;(1 p):two ,itsexpectedutilityisalinearcombination (p u (1 p) u )of
+one two
+6 oraconstant seepage162.
+Section17.5. Decisionswith Multiple Agents: Game Theory 671
+(a) E -3 (b) O 2
+one two one two
+O -3 -3 E 2 4
+one two one two one two one two
+2 -3 -3 4 2 -3 -3 4
+(c) E (d) O p: one; (1 p): two q: one; (1 q): two O E
+one two one two
+2p 3(1 p) 3p 4(1 p) 2q 3(1 q) 3q 4(1 q)
+(e) U (f) U 4 4 3 3
+two two 2 2
+one one 1 1
+0 p 0 q
+1 1 1 1 2 2 3 3
+Figure 17.12 (a) and (b): Minimax game trees for two-finger Morra if the players take
+turns playing pure strategies. (c) and (d): Parameterized game trees where the first player
+plays a mixed strategy. The payoffs depend on the probability parameter (p or q) in the
+mixedstrategy. (e)and(f): Foranyparticularvalueoftheprobabilityparameter,thesecond
+player will choose the better of the two actions, so the value of the first player s mixed
+strategyisgivenbytheheavylines. Thefirstplayerwillchoosetheprobabilityparamet

@@ -1,0 +1,36 @@
+.
+Therearethreekindsofliteralsthatcanbeadded:
+1. Literalsusingpredicates: theliteralcanbenegatedorunnegated,anyexistingpredicate
+(includingthegoalpredicate)canbeused,andtheargumentsmustallbevariables. Any
+variablecanbeusedforanyargumentofthepredicate,withonerestriction: eachliteral
+mustincludeatleastonevariablefromanearlierliteralorfromtheheadoftheclause.
+Literals such as Mother(z,u), Married(z,z), Male(y), and Grandfather(v,x) are
+allowed, whereas Married(u,v) is not. Notice that the use of the predicate from the
+headoftheclauseallows FOIL tolearnrecursive definitions.
+2. Equality and inequality literals: these relate variables already appearing in the clause.
+Forexample, we might add z (cid:7) x. These literals can also include user-specified con-
+stants. Forlearning arithmetic wemightuse0and1,andforlearning listfunctions we
+mightusetheemptylist .
+3. Arithmetic comparisons: when dealing with functions of continuous variables, literals
+such as x y and y z can be added. As in decision-tree learning, a constant
+threshold valuecanbechosen tomaximizethediscriminatory powerofthetest.
+Theresultingbranchingfactorinthissearchspaceisverylarge(see Exercise19.6),but FOIL
+can also use type information to reduce it. Forexample, if the domain included numbers as
+Section19.5. Inductive Logic Programming 793
+function FOIL(examples,target)returnsasetof Hornclauses
+inputs:examples,setofexamples
+target,aliteralforthegoalpredicate
+localvariables: clauses,setofclauses,initiallyempty
+whileexamples containspositiveexamplesdo
+clause NEW-CLAUSE(examples,target)
+removepositiveexamplescoveredbyclause fromexamples
+addclause toclauses
+returnclauses
+function NEW-CLAUSE(examples,target)returnsa Hornclause
+localvariables: clause,aclausewithtarget asheadandanemptybody
+l,aliteraltobeaddedtotheclause
+extended examples,asetofexampleswithvaluesfornewvariables
+extended examples examples
+whileextended examples containsnegativeexamplesdo
+l CHOOSE-LITERAL(NEW-LITERALS(clause),extended examples)
+appendl to

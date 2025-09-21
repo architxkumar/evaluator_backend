@@ -1,0 +1,26 @@
+e
+UE(one,two) UE(two,one) 3.Thisalsoexplainswhytheoptimalstrategyisthesameforbothplayers.
+Section17.5. Decisionswith Multiple Agents: Game Theory 673
+highest (or lowest) intersection point of the remaining hyperplanes. Finding this choice is
+anexampleofalinearprogrammingproblem: maximizinganobjective function subjectto
+linear constraints. Such problems can be solved by standard techniques in time polynomial
+inthenumberofactions(andinthenumberofbitsusedtospecifytherewardfunction,ifyou
+wanttogettechnical).
+Thequestionremains,whatshouldarationalagentactually doinplayingasinglegame
+of Morra? The rational agent will have derived the fact that 7 12:one;5 12:two is the
+maximin equilibrium strategy, and willassume that thisismutual knowledge witharational
+opponent. Theagentcouldusea12-sideddieorarandomnumbergeneratortopickrandomly
+accordingtothismixedstrategy, inwhichcasetheexpected payoffwouldbe-1 12for E. Or
+the agent could just decide to play one, or two. In either case, the expected payoff remains
+-1 12for E. Curiously,unilaterallychoosingaparticularactiondoesnotharmone sexpected
+payoff,butallowingtheotheragenttoknowthatonehasmadesuchaunilateraldecisiondoes
+affecttheexpected payoff,because thentheopponent canadjusthisstrategy accordingly.
+Findingequilibria innon-zero-sum gamesissomewhatmorecomplicated. Thegeneral
+approach hastwosteps: (1)Enumerateallpossible subsets ofactions thatmightformmixed
+strategies. Forexample, first try all strategy profiles where each player uses a single action,
+then those where each player uses either one or two actions, and so on. This is exponential
+inthenumberofactions, andsoonlyappliestorelatively smallgames. (2)Foreachstrategy
+profileenumeratedin(1),checktoseeifitisanequilibrium. Thisisdonebysolvingasetof
+equationsandinequalitiesthataresimilartotheonesusedinthezero-sumcase. Fortwoplay-
+ers these equations are linear and can be solved with basic linear programming techniques,
+butforthreeormoreplayers theyarenonlinearandmaybeverydifficultt

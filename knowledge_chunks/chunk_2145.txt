@@ -1,0 +1,30 @@
+ity, givenatoothache:
+P( cavity toothache)
+P( cavity toothache) P(toothache)
+0.016 0.064 0.4.
+0.108 0.012 0.016 0.064
+The two values sum to 1.0, as they should. Notice that in these two calculations the term
+1 P(toothache) remains constant, no matter which value of Cavity we calculate. In fact,
+it can be viewed as a normalization constant for the distribution P(Cavity toothache),
+NORMALIZATION
+ensuring that it adds up to 1. Throughout the chapters dealing with probability, we use to
+denotesuchconstants. Withthisnotation, wecanwritethetwopreceding equations inone:
+P(Cavity toothache) P(Cavity,toothache) P(Cavity,toothache,catch) P(Cavity,toothache, catch) (cid:16)0.108,0.016(cid:17) (cid:16)0.012,0.064(cid:17) (cid:16)0.12,0.08(cid:17) (cid:16)0.6,0.4(cid:17).
+In other words, we can calculate P(Cavity toothache) even if we don t know the value of
+P(toothache)! Wetemporarilyforgetaboutthefactor1 P(toothache)andaddupthevalues
+forcavity and cavity,getting0.12and0.08. Thosearethecorrect relativeproportions, but
+they don t sum to 1, so we normalize them by dividing each one by 0.12 0.08, getting
+thetrue probabilities of0.6and 0.4. Normalization turns outtobeauseful shortcut inmany
+probabilitycalculations,bothtomakethecomputationeasierandtoallowustoproceedwhen
+someprobability assessment (suchas P(toothache))isnotavailable.
+From the example, we can extract a general inference procedure. We begin with the
+case in whichthe query involves asingle variable, X (Cavity in theexample). Let Ebe the
+listofevidencevariables(just Toothache intheexample),letebethelistofobservedvalues
+forthem, and let Ybe theremaining unobserved variables (just Catch intheexample). The
+queryis P(X e)andcanbeevaluatedas
+(cid:12)
+P(X e) P(X,e) P(X,e,y), (13.9)
+y
+where the summation is over all possible ys (i.e., all possible combinations of values of the
+unobserved variables Y). Notice that together the variables X, E, and Yconstitute the com-
+pletesetofvariablesforthedomain,so P(X,e,y)issimplyasubsetofpr

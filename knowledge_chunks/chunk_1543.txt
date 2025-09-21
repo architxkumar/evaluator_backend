@@ -1,0 +1,28 @@
+ 10 100 1,000 10,000 100,000 111,110.
+If you are really concerned about repeating the repetition, you can use a hybrid approach
+that runs breadth-first search until almost all the available memory is consumed, and then
+runs iterative deepening from all the nodes in the frontier. In general, iterative deepening is
+the preferred uninformed search method when thesearch space islarge and thedepth ofthe
+solution isnotknown.
+Iterativedeepeningsearchisanalogous tobreadth-first searchinthatitexploresacom-
+plete layer of new nodes at each iteration before going on to the next layer. It would seem
+worthwhile to develop an iterative analog to uniform-cost search, inheriting the latter algo-
+rithm s optimality guarantees while avoiding its memory requirements. The idea is to use
+increasing path-cost limitsinstead ofincreasing depth limits. Theresulting algorithm, called
+ITERATIVE
+iterative lengthening search, is explored in Exercise 3.17. It turns out, unfortunately, that
+LENGTHENING
+SEARCH
+iterativelengthening incurssubstantial overheadcomparedtouniform-cost search.
+3.4.6 Bidirectional search
+Theideabehindbidirectional searchistoruntwosimultaneous searches one forwardfrom
+the initial state andthe otherbackward from thegoal hoping that thetwosearches meetin
+the middle (Figure 3.20). The motivation is that bd 2 bd 2 is much less than bd, or in the
+figure, the areaofthe twosmall circles isless thanthe areaofone bigcircle centered onthe
+startandreaching tothegoal.
+Bidirectional search is implemented by replacing the goal test with a check to see
+whether the frontiers of the two searches intersect; if they do, a solution has been found.
+(It is important to realize that the first such solution found may not be optimal, even if the
+two searches are both breadth-first; some additional search is required to make sure there
+isn t another short-cut across the gap.) The check can be done when each node is generated
+or selected for expansion and, with a hash table, will take constant time.

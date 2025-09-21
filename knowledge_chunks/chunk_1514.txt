@@ -1,0 +1,23 @@
+he window, the proximity of law enforcement
+officers, the distance to the next rest stop, the condition of the road, the weather, and so on.
+Alltheseconsiderations areleftoutofourstatedescriptionsbecausetheyareirrelevanttothe
+problemoffindingarouteto Bucharest. Theprocessofremovingdetailfromarepresentation
+iscalledabstraction.
+ABSTRACTION
+Inadditiontoabstractingthestatedescription, wemustabstracttheactionsthemselves.
+A driving action has many effects. Besides changing the location of the vehicle and its oc-
+cupants, ittakes uptime, consumes fuel, generates pollution, andchanges the agent (as they
+say, travel is broadening). Our formulation takes into account only the change in location.
+Also, there are many actions that we omit altogether: turning on the radio, looking out of
+thewindow,slowing downforlawenforcement officers, andso on. Andofcourse, wedon t
+specifyactions atthelevelof turnsteeringwheeltotheleftbyonedegree. Canwebemorepreciseaboutdefiningtheappropriatelevelofabstraction? Thinkofthe
+abstract states and actions we have chosen as corresponding to large sets of detailed world
+states and detailed action sequences. Now consider a solution to the abstract problem: for
+example,thepathfrom Aradto Sibiuto Rimnicu Vilceato Pitestito Bucharest. Thisabstract
+solution corresponds to alarge numberofmore detailed paths. Forexample, wecould drive
+with the radio on between Sibiu and Rimnicu Vilcea, and then switch it off for the rest of
+thetrip. Theabstraction is valid ifwecanexpand anyabstract solution intoasolution inthe
+more detailed world; a sufficient condition is that for every detailed state that is in Arad, there is a detailed path to some state that is in Sibiu, and so on.5 The abstraction is useful
+if carrying out each of the actions in the solution is easier than the original problem; in this
+case they are easy enough that they can be carried out without further search orplanning by
+an average driving agent. The choice of a good abstraction thus involves remo

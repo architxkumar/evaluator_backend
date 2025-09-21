@@ -1,0 +1,27 @@
+all,becauseplan2istheonlyjointplanthatbeginswith
+A s heading forthe net. This approach to coordination, sometimes called planrecognition,
+PLANRECOGNITION
+workswhenasingleaction(orshortsequence ofactions)isenoughtodetermineajointplan
+unambiguously. Note that communication can workas wellwith competitive agents aswith
+cooperative ones.
+Conventions can also arise through evolutionary processes. For example, seed-eating
+harvester ants are social creatures that evolved from the less social wasps. Colonies of ants
+execute very elaborate joint plans without any centralized control the queen s job is to re-
+produce, not to do centralized planning and with very limited computation, communica-
+tion,andmemorycapabilities ineachant(Gordon, 2000,2007). Thecolonyhasmanyroles,
+including interior workers, patrollers, and foragers. Each ant chooses to perform a role ac-
+cording tothe local conditions it observes. Forexample, foragers travel awayfrom the nest,
+searchforaseed,andwhentheyfindone, bringitbackimmediately. Thus,therateatwhich
+foragers return to the nest is an approximation of the availability of food today. When the
+rateishigh, otherantsabandon theircurrent roleandtakeontheroleofscavenger. Theants
+appeartohaveaconventionontheimportanceofroles foragingisthemostimportant and
+antswilleasilyswitchintothemoreimportantroles, butnotintothelessimportant. Thereis
+somelearningmechanism: acolonylearnstomakemoresuccessfulandprudentactionsover
+thecourseofitsdecades-long life,eventhoughindividual antsliveonlyaboutayear.
+Onefinalexampleofcooperative multiagent behavior appears intheflocking behavior
+of birds. We can obtain a reasonable simulation of a flock if each bird agent (sometimes
+BOID called a boid) observes the positions of its nearest neighbors and then chooses the heading
+andacceleration thatmaximizestheweightedsumofthesethreecomponents:
+430 Chapter 11. Planningand Actinginthe Real World
+(a) (b) (c)
+Figure11.11 (a)Asimulatedflockofbirds,using Reynold sboidsmodel.Imagecourtesy

@@ -1,0 +1,29 @@
+ments of a subcategory relationship, but most likely we ll find a paraphrase
+ofthestatementsomewhereelseinthecorpusinaformwecanuse.
+22.4.5 Automated templateconstruction
+Thesubcategory relationissofundamentalthatisworthwhiletohandcraftafewtemplatesto
+helpidentify instances ofitoccurring innaturallanguage text. Butwhataboutthethousands
+of other relations in the world? There aren t enough AI grad students in the world to create
+anddebug templates forallofthem. Fortunately, itispossible tolearntemplates fromafew
+examples,thenusethetemplatestolearnmoreexamples,fromwhichmoretemplatescanbe
+learned,andsoon. Inoneofthefirstexperimentsofthiskind,Brin(1999)startedwithadata
+setofjustfiveexamples:
+( Isaac Asimov , The Robotsof Dawn )
+( David Brin , Startide Rising )
+( James Gleick , Chaos Makinga New Science )
+( Charles Dickens , Great Expectations )
+( William Shakespeare , The Comedyof Errors )
+Clearlytheseareexamplesoftheauthor title relation,butthelearningsystemhadnoknowl-
+edge of authors or titles. The words in these examples were used in a search over a Web
+corpus, resulting in199matches. Eachmatchisdefinedasatupleofsevenstrings,
+(Author, Title,Order,Prefix,Middle,Postfix,URL),
+where Order is true if the author came first and false if the title came first, Middle is the
+characters between theauthorandtitle, Prefixisthe 10characters before the match, Suffix is
+the10characters afterthematch,and UR Listhe Webaddresswherethematchwasmade.
+Given a set of matches, a simple template-generation scheme can find templates to
+explainthematches. Thelanguage oftemplateswasdesigned tohaveaclosemappingtothe
+matches themselves, tobeamenable toautomated learning, andtoemphasize high precision
+Section22.4. Information Extraction 881
+(possibly at the risk of lower recall). Each template has the same seven components as a
+match. The Author and Title are regexes consisting of any characters (but beginning and
+ending in letters) and constrained to have a length from half the minimum length of th

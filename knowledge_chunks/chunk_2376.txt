@@ -1,0 +1,25 @@
+ate s. If the agent
+has acomplete policy, then no matterwhat theoutcome of anyaction, theagent willalways
+knowwhattodonext.
+Eachtimeagivenpolicyisexecutedstartingfromtheinitialstate,thestochastic nature
+of the environment may lead to a different environment history. The quality of a policy is
+therefore measured by the expected utility of the possible environment histories generated
+by that policy. An optimal policy is a policy that yields the highest expected utility. We
+OPTIMALPOLICY use to denote an optimal policy. Given , the agent decides what to do by consulting its current percept, which tells it the current state s, and then executing the action (s). A
+policyrepresentstheagentfunctionexplicitlyandisthereforeadescriptionofasimplereflex
+agent,computed fromtheinformation usedforautility-based agent.
+An optimal policy for the world of Figure 17.1 is shown in Figure 17.2(a). Notice
+that, because the cost of taking a step is fairly small compared with the penalty for ending
+up in (4,2) by accident, the optimal policy for the state (3,1) is conservative. The policy
+recommends taking the long way round, rather than taking the shortcut and thereby risking
+entering (4,2).
+Thebalanceofriskandrewardchanges depending onthevalue of R(s)forthenonter-
+minal states. Figure 17.2(b) shows optimal policies forfourdifferent ranges of R(s). When
+R(s) 1.6284, life is so painful that the agent heads straight for the nearest exit, even if
+the exit is worth 1. When 0.4278 R(s) 0.0850, life is quite unpleasant; the agent
+takes the shortest route to the 1 state and is willing to risk falling into the 1 state by acci-
+dent. In particular, the agent takes the shortcut from (3,1). When life is only slightly dreary
+( 0.0221 R(s) 0), theoptimal policy takes norisks atall. In(4,1)and(3,2), theagent
+heads directly away from the 1 state so that it cannot fall in by accident, even though this
+means banging its head against the wall quite a few times. Finally, if R(s) 0, then life is
+positively e

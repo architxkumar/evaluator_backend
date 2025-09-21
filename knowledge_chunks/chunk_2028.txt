@@ -1,0 +1,28 @@
+ page 141.) In general, conditional effects can induce arbitrary dependencies among the
+fluentsinabeliefstate, leadingtobeliefstatesofexponential sizeintheworstcase.
+It is important to understand the difference between preconditions and conditional ef-
+fects. Allconditionaleffectswhoseconditionsaresatisfiedhavetheireffectsappliedtogener-
+atetheresultingstate;ifnonearesatisfied,thentheresultingstateisunchanged. Ontheother
+hand, if a precondition is unsatisfied, then the action is inapplicable and the resulting state
+is undefined. From the point of view of sensorless planning, it is better to have conditional
+effects than an inapplicable action. Forexample, we could split Suck into two actions with
+unconditional effectsasfollows:
+Action(Suck L,
+PRECOND:At L; EFFECT:Clean L)
+Action(Suck R,
+PRECOND:At R; EFFECT:Clean R).
+Nowwehaveonly unconditional schemas, sothebelief states allremainin1-CNF;unfortu-
+nately, wecannot determinetheapplicability of Suck Land Suck R intheinitialbeliefstate.
+Itseemsinevitable, then,thatnontrivial problemswillinvolve wigglybeliefstates, just
+like those encountered when we considered the problem of state estimation for the wumpus
+world(see Figure7.21onpage271). Thesolution suggested thenwastouseaconservative
+approximation to the exact belief state; for example, the belief state can remain in 1-CNF
+if it contains all literals whose truth values can be determined and treats all other literals as
+unknown. While this approach is sound, in that it never generates an incorrect plan, it is
+incomplete because it may be unable to find solutions to problems that necessarily involve
+interactions among literals. To give a trivial example, if the goal is for the robot to be on
+420 Chapter 11. Planningand Actinginthe Real World
+a clean square, then Suck is a solution but a sensorless agent that insists on 1-CNF belief
+stateswillnotfindit.
+Perhaps a better solution is to look for action sequences that keep the belief state
+as simple as possible. For example

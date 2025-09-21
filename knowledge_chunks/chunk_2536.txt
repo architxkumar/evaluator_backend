@@ -1,0 +1,27 @@
+n n arrays, where n is smaller
+thanthepreviouslayersothatthenetworkisdown-samplingtheinput,andwheretheweights
+ofeveryunitinaplaneareconstrained tobeidentical, sothattheplaneisacting asafeature
+detector: itcanpickoutafeaturesuchasalongverticallineorashortsemi-circulararc. The
+output layerhad10units. Manyversions ofthisarchitecture weretried; arepresentative one
+had hidden layers with768, 192, and 30units, respectively. Thetraining setwasaugmented
+byapplyingaffinetransformations totheactualinputs: shifting,slightlyrotating,andscaling
+theimages. (Ofcourse, thetransformations havetobesmall, orelse a6willbetransformed
+intoa9!) Thebesterrorrateachievedby Le Netwas0.9 .
+A boosted neural network combined three copies of the Le Net architecture, with the
+second one trained on a mix of patterns that the first one got 50 wrong, and the third one
+trainedonpatternsforwhichthefirsttwodisagreed. During testing,thethreenetsvotedwith
+themajorityruling. Thetesterrorratewas0.7 .
+Asupportvectormachine(see Section18.9)with25,000supportvectorsachievedan
+error rate of 1.1 . This is remarkable because the SVM technique, like the simple nearest-
+neighbor approach, required almostnothought oriterated experimentation onthepartofthe
+developer, yetitstillcameclosetotheperformance of Le Net,whichhadhadyearsofdevel-
+opment. Indeed, the support vector machine makes no use of the structure of the problem,
+andwouldperform justaswellifthepixelswerepresented in apermutedorder.
+Section18.11. Practical Machine Learning 755
+VIRTUALSUPPORT A virtual support vector machine starts with a regular SVM and then improves it
+VECTORMACHINE
+withatechniquethatisdesignedtotakeadvantageofthestructureoftheproblem. Insteadof
+allowingproducts ofallpixelpairs,thisapproach concentrates onkernels formedfrompairs
+ofnearby pixels. Italsoaugments thetraining setwithtransformations ofthe examples, just
+as Le Netdid. Avirtual SV Machievedthebesterrorraterecorded todate,0.56 .
+Shapematchingisatechniquefromcomputervisionusedtoali

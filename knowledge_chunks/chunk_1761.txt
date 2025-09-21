@@ -1,0 +1,30 @@
+eaction Grabcan be
+used to pick up the gold if it is in the same square as the agent. The action Shoot can
+beusedtofireanarrowinastraight lineinthedirection theagentisfacing. Thearrow
+continues untiliteitherhits(andhence kills) thewumpusorhits awall. Theagent has
+only one arrow, so only the first Shoot action has any effect. Finally, the action Climb
+canbeusedtoclimboutofthecave,butonlyfromsquare 1,1 . Sensors: Theagenthasfivesensors, eachofwhichgivesasinglebitofinformation: Inthe square containing the wumpusand in thedirectly (not diagonally) adjacent
+squares, theagentwillperceivea Stench. Inthesquares directlyadjacent toapit,theagentwillperceivea Breeze. Inthesquarewherethegoldis,theagentwillperceivea Glitter. Whenanagentwalksintoawall,itwillperceivea Bump. When the wumpus is killed, it emits a woeful Scream that can be perceived any-
+whereinthecave.
+The percepts will be given to the agent program in the form of a list of five symbols;
+forexample, ifthereisastenchandabreeze, butnoglitter, bump,orscream,theagent
+programwillget Stench,Breeze,None,None,None .
+We can characterize the wumpus environment along the various dimensions given in Chap-
+ter2. Clearly,itisdiscrete,static,andsingle-agent. (Thewumpusdoesn tmove,fortunately.)
+It is sequential, because rewards may come only after many actions are taken. It is partially
+observable, because some aspects of the state are not directly perceivable: the agent s lo-
+cation, the wumpus s state of health, and the availability of an arrow. As for the locations
+of the pits and the wumpus: we could treat them as unobserved parts of the state that hap-
+pentobeimmutable in whichcase, thetransition modelfortheenvironment iscompletely
+238 Chapter 7. Logical Agents
+4 Stench Breeze PIT
+Breeze
+3 Stench PIT Breeze
+Gold
+2 Stench Breeze
+1 Breeze PIT Breeze
+START
+1 2 3 4
+Figure7.2 Atypicalwumpusworld.Theagentisinthebottomleftcorner,facingright.
+known;orwecouldsaythatthetransitionmodelitselfisunknownbecausetheagentdoesn t
+know which Forw

@@ -1,0 +1,34 @@
+potentially
+Section14.2. The Semanticsof Bayesian Networks 513
+infinite set of circumstances in which the alarm might fail to go off (high humidity, power
+failure, dead battery, cut wires, a dead mouse stuck inside the bell, etc.) or John or Mary
+mightfailtocallandreportit(outtolunch,onvacation,temporarilydeaf,passinghelicopter,
+etc.). Inthisway,asmallagentcancopewithaverylargeworld,atleastapproximately. The
+degreeofapproximation canbeimprovedifweintroduce additional relevantinformation.
+14.2 THE SEMANTICS OF BAYESIAN NETWORKS
+The previous section described what a network is, but not what it means. There are two
+ways in which one can understand the semantics of Bayesian networks. The first is to see
+the network as a representation of the joint probability distribution. The second is to view
+itas an encoding ofacollection ofconditional independence statements. Thetwoviews are
+equivalent, but the first turns out to be helpful in understanding how to construct networks,
+whereasthesecond ishelpfulindesigning inference procedures.
+14.2.1 Representing the full jointdistribution
+Viewed as a piece of syntax, a Bayesian network is a directed acyclic graph with some
+numeric parameters attached to each node. One way to define what the network means its
+semantics istodefinethewayinwhichitrepresentsaspecificjointdistribution overallthe
+variables. Todothis, wefirstneedtoretract (temporarily) whatwesaidearlieraboutthepa-
+rametersassociated witheachnode. Wesaidthatthoseparameterscorrespond toconditional
+probabilities P(X Parents(X )); this is atrue statement, but until weassign semantics to
+i i
+thenetworkasawhole,weshould thinkofthemjustasnumbers (X Parents(X )).
+i i
+Ageneric entry inthejointdistribution istheprobability ofaconjunction ofparticular
+assignments to each variable, such as P(X x ... X x ). We use the notation
+1 1 n n
+P(x ,...,x )asanabbreviation forthis. Thevalueofthisentryisgivenbytheformula
+1 n
+(cid:25)n
+P(x ,...,x ) (x parents(X )), (14.1)
+1 n i i
+i 1
+where parents(

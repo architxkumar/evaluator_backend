@@ -1,0 +1,32 @@
+o the airport on time. The agent forms a plan, A , that involves leaving home 90
+90
+minutes before the flight departs and driving at a reasonable speed. Even though the airport
+is only about 5 miles away, a logical taxi agent will not be able to conclude with certainty
+that Plan A will get us to the airport in time. Instead, it reaches the weaker conclusion
+90 Plan A willget usto theairport in time, aslong asthe cardoesn t break down orrun out
+90
+ofgas,and Idon tgetintoanaccident,andtherearenoaccidentsonthebridge,andtheplane
+doesn t leave early, and nometeorite hits the car, and .... None ofthese conditions can be
+480
+Section13.1. Actingunder Uncertainty 481
+deducedforsure,sotheplan ssuccesscannotbeinferred. Thisisthequalificationproblem
+(page268),forwhichwesofarhaveseennorealsolution.
+Nonetheless, in some sense A is in fact the right thing to do. What do we mean by
+90
+this? Aswediscussed in Chapter2,wemeanthatoutofalltheplansthatcouldbeexecuted,
+A isexpected tomaximize theagent s performance measure (wheretheexpectation isrel-
+90
+ative to the agent s knowledge about the environment). The performance measure includes
+getting to the airport in time for the flight, avoiding a long, unproductive wait at the airport,
+andavoidingspeedingticketsalongtheway. Theagent sknowledgecannotguaranteeanyof
+these outcomes for A , but it can provide some degree of belief that they will be achieved.
+90
+Other plans, such as A , might increase the agent s belief that it will get to the airport on
+180
+time, but also increase the likelihood of a long wait. The right thing to do the rational
+decision therefore depends on both the relative importance of various goals and the likeli-
+hood that, and degree to which, they will be achieved. The remainder of this section hones
+theseideas,inpreparation forthedevelopmentofthegeneraltheories ofuncertainreasoning
+andrationaldecisions thatwepresent inthisandsubsequent chapters.
+13.1.1 Summarizing uncertainty
+Let s consider an example of uncertain rea

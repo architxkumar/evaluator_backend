@@ -1,0 +1,26 @@
+odifications can include reversing, adding, or deleting links. We must not in-
+troduce cycles in the process, so many algorithms assume that an ordering is given for the
+variables, and that a node can have parents only among those nodes that come earlier in the
+ordering (just asintheconstruction process in Chapter14). Forfullgenerality, wealsoneed
+tosearchoverpossible orderings.
+There are two alternative methods fordeciding when a good structure has been found.
+Thefirstistotestwhethertheconditionalindependenceassertionsimplicitinthestructureare
+actually satisfied inthe data. Forexample, the useof anaive Bayesmodel fortherestaurant
+problem assumesthat
+P(Fri Sat,Bar Will Wait) P(Fri Sat Will Wait)P(Bar Will Wait)
+814 Chapter 20. Learning Probabilistic Models
+andwecancheckinthedatathatthesameequation holdsbetweenthecorresponding condi-
+tional frequencies. But even if the structure describes the true causal nature of the domain,
+statistical fluctuations in the data set mean that the equation will never be satisfied exactly,
+so we need to perform a suitable statistical test to see if there is sufficient evidence that the
+independence hypothesis is violated. The complexity of the resulting network will depend
+on the threshold used forthis test the stricter the independence test, the more links will be
+addedandthegreaterthedangerofoverfitting.
+An approach more consistent with the ideas in this chapter is to assess the degree to
+which the proposed model explains the data (in a probabilistic sense). We must be careful
+how we measure this, however. If we just try to find the maximum-likelihood hypothesis,
+wewill end up with afully connected network, because adding more parents to anode can-
+not decrease the likelihood (Exercise 20.8). We are forced to penalize model complexity in
+some way. The MAP (or MDL) approach simply subtracts a penalty from the likelihood of
+each structure (after parameter tuning) before comparing different structures. The Bayesian
+approach places ajoin

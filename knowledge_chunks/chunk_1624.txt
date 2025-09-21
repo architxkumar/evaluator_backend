@@ -1,0 +1,27 @@
+nlinesearch13agentinterleavescomputationandaction: firstittakesanaction,
+ONLINESEARCH
+then itobserves theenvironment and computes the nextaction. Online search isagoodidea
+in dynamic or semidynamic domains domains where there is a penalty for sitting around
+and computing too long. Online search is also helpful in nondeterministic domains because
+it allows the agent to focus its computational efforts on the contingencies that actually arise
+rather than those that might happen but probably won t. Of course, there is a tradeoff: the
+moreanagentplansahead, thelessoftenitwillfinditselfupthecreekwithoutapaddle.
+Onlinesearchisanecessary ideaforunknownenvironments, wheretheagentdoesnot
+know what states exist or what its actions do. In this state of ignorance, the agent faces an
+EXPLORATION exploration problem and must use its actions as experiments in order to learn enough to
+PROBLEM
+makedeliberation worthwhile.
+Thecanonical example of online search is a robot that is placed in anew building and
+mustexplore ittobuild amapthatitcanuse forgetting from Ato B. Methods forescaping
+fromlabyrinths required knowledge foraspiring heroesof antiquity are alsoexamplesof
+online search algorithms. Spatial exploration is not the only form of exploration, however.
+Consider a newborn baby: it has many possible actions but knows the outcomes of none of
+them, and it has experienced only a few of the possible states that it can reach. The baby s
+gradualdiscovery ofhowtheworldworksis,inpart,anonlinesearchprocess.
+4.5.1 Onlinesearchproblems
+Anonline search problem mustbesolved byan agent executing actions, rather than bypure
+computation. We assume a deterministic and fully observable environment (Chapter 17 re-
+laxestheseassumptions), butwestipulate thattheagentknowsonlythefollowing: ACTIONS(s),whichreturnsalistofactions allowedinstate s; The step-cost function c(s,a,s (cid:2) ) note that this cannot be used until the agent knows
+(cid:2)
+thats istheoutcome; and GOAL-TEST(s).
+Note in particular t

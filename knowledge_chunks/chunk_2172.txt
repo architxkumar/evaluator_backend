@@ -1,0 +1,39 @@
+ity. These relationships are represented by the Bayesian network structure shown
+in Figure 14.1. Formally, the conditional independence of Toothache and Catch, given
+Cavity,isindicated bytheabsence ofalinkbetween Toothache and Catch. Intuitively, the
+network represents the fact that Cavity is a direct cause of Toothache and Catch, whereas
+nodirectcausalrelationship existsbetween Toothache and Catch.
+Now consider the following example, which is just a little more complex. You have
+a new burglar alarm installed at home. It is fairly reliable at detecting a burglary, but also
+responds on occasion to minor earthquakes. (This example is due to Judea Pearl, a resident
+of Los Angeles hencetheacuteinterestinearthquakes.) Youalsohavetwoneighbors,John
+and Mary, who have promised to call you at work when they hear the alarm. John nearly
+always calls when he hears the alarm, but sometimes confuses the telephone ringing with
+Cavity
+Weather
+Toothache Catch
+Figure 14.1 A simple Bayesian network in which Weather is independentof the other
+threevariablesand Toothache and Catch areconditionallyindependent,given Cavity.
+512 Chapter 14. Probabilistic Reasoning
+P(B) P(E)
+Burglary Earthquake
+.001 .002
+B E P(A)
+t t .95
+Alarm
+t f .94
+f t .29
+f f .001
+A P(J) A P(M)
+John Calls Mary Calls
+t .90 t .70
+f .05 f .01
+Figure14.2 Atypical Bayesiannetwork,showingboththetopologyandtheconditional
+probabilitytables(CP Ts). Inthe CP Ts, theletters B, E, A, J, and M standfor Burglary,
+Earthquake,Alarm,John Calls,and Mary Calls,respectively.
+the alarm and calls then, too. Mary, on the other hand, likes rather loud music and often
+misses thealarm altogether. Giventhe evidence ofwhohasor hasnot called, wewouldlike
+toestimatetheprobability ofaburglary.
+A Bayesian network for this domain appears in Figure 14.2. The network structure
+shows that burglary and earthquakes directly affect the probability of the alarm s going off,
+but whether John and Mary call depends only on the alarm. The network thus represents

@@ -1,0 +1,30 @@
+e the straight-line distance for the heuristic
+function.
+d. Applyoneormoreofthealgorithms inthischaptertosolvea rangeofproblemsinthe
+domain,andcommentontheirperformance.
+3.8 Onpage 68, wesaid that wewould not consider problems withnegative path costs. In
+thisexercise, weexplorethisdecision inmoredepth.
+a. Suppose that actions can have arbitrarily large negative costs; explain why this possi-
+bilitywouldforceanyoptimalalgorithm toexploretheentirestatespace.
+Exercises 115
+b. Does it help if we insist that step costs must be greater than or equal to some negative
+constantc? Considerbothtreesandgraphs.
+c. Supposethatasetofactionsformsaloopinthestatespacesuchthatexecutingthesetin
+someorderresultsinnonetchangetothestate. Ifalloftheseactionshavenegativecost,
+whatdoesthisimplyabouttheoptimalbehaviorforanagentinsuchanenvironment?
+d. Onecan easily imagine actions withhigh negative cost, even indomains such asroute
+finding. For example, some stretches of road might have such beautiful scenery as to
+far outweigh the normal costs in terms of time and fuel. Explain, in precise terms,
+withinthecontext ofstate-space search, whyhumans donotdrivearound scenic loops
+indefinitely, and explain how to define the state space and actions for route finding so
+thatartificialagentscanalsoavoid looping.
+e. Canyouthinkofarealdomaininwhichstepcostsaresuchastocauselooping?
+3.9 Themissionaries and cannibals problem is usually stated as follows. Three mission-
+aries and three cannibals are on one side of a river, along with a boat that can hold one or
+twopeople. Findawaytogeteveryonetotheothersidewithouteverleavingagroupofmis-
+sionariesinoneplaceoutnumbered bythecannibals inthatplace. Thisproblemisfamousin
+AIbecauseitwasthesubjectofthefirstpaperthatapproached problemformulation froman
+analytical viewpoint(Amarel,1968).
+a. Formulate the problem precisely, making only those distinctions necessary to ensure a
+validsolution. Drawadiagram ofthecompletestatespace.
+b. Implementandsolvetheproblemoptimallyu

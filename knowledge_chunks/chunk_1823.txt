@@ -1,0 +1,26 @@
+be traced to
+Wittgenstein (1922).
+Logical state estimation, of course, requires a logical representation of the effects of
+actions a key problem in AI since the late 1950s. The dominant proposal has been the sit-
+uation calculusformalism (Mc Carthy, 1963), whichiscouched within first-order logic. We
+discusssituationcalculus,andvariousextensionsandalternatives,in Chapters10and12. The
+approach taken in this chapter using temporal indices on propositional variables is more
+restrictivebuthasthebenefitofsimplicity. Thegeneralapproachembodiedinthe SATPLAN
+algorithm wasproposed by Kautzand Selman (1992). Latergenerations of SATPLAN were
+able to take advantage of the advances in SAT solvers, described earlier, and remain among
+themosteffectivewaysofsolving difficultproblems(Kautz,2006).
+The frame problem was first recognized by Mc Carthy and Hayes (1969). Many re-
+searchers considered the problem unsolvable within first-order logic, and it spurred a great
+deal of research into nonmonotonic logics. Philosophers from Dreyfus (1972) to Crockett
+(1994) have cited the frame problem as one symptom of the inevitable failure of the entire
+AI enterprise. The solution of the frame problem with successor-state axioms is due to Ray
+Reiter (1991). Thielscher (1999) identifies the inferential frame problem as a separate idea
+and provides a solution. In retrospect, one can see that Rosenschein s (1985) agents were
+using circuits that implemented successor-state axioms, but Rosenschein did not notice that
+the frame problem was thereby largely solved. Foo (2001) explains why the discrete-event
+control theory models typically used by engineers do not have to explicitly deal with the
+frame problem: because they are dealing with prediction and control, not with explanation
+andreasoning aboutcounterfactual situations.
+Modernpropositionalsolvershavewideapplicabilityinindustrialapplications. Theap-
+plication ofpropositional inference inthe synthesis ofcomputer hardware isnow astandard
+technique h

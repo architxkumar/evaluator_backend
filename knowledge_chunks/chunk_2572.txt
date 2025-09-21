@@ -1,0 +1,25 @@
+tal, development. Presumably, the agent
+could start out with nothing, performing inductions in vacuo like a good little pure induc-
+tion program. But once it has eaten from the Tree of Knowledge, it can no longer pursue
+such naive speculations and should use its background knowledge to learn more and more
+effectively. Thequestion isthenhowtoactuallydothis.
+778 Chapter 19. Knowledgein Learning
+19.2.1 Somesimpleexamples
+Letusconsidersomecommonsenseexamplesoflearningwithbackgroundknowledge. Many
+apparently rational cases of inferential behavior in the face of observations clearly do not
+followthesimpleprinciples ofpureinduction. Sometimes one leaps to general conclusions after only one observation. Gary Larson
+once drew a cartoon in which a bespectacled caveman, Zog, is roasting his lizard on
+the end of a pointed stick. He is watched by an amazed crowd of his less intellectual
+contemporaries,whohavebeenusingtheirbarehandstoholdtheirvictualsoverthefire.
+Thisenlightening experience isenough toconvince thewatchers ofageneral principle
+ofpainless cooking. Orconsiderthecaseofthetravelerto Brazilmeetingherfirst Brazilian. Onhearinghim
+speak Portuguese, she immediately concludes that Brazilians speak Portuguese, yeton
+discovering that his name is Fernando, she does not conclude that all Brazilians are
+called Fernando. Similar examples appear in science. For example, when a freshman
+physics student measures the density and conductance of a sample of copper at a par-
+ticular temperature, she is quite confident in generalizing those values to all pieces of
+copper. Yetwhenshemeasuresitsmass,shedoesnotevenconsiderthehypothesisthat
+allpieces ofcopperhave that mass. Ontheotherhand, itwouldbequite reasonable to
+makesuchageneralization overallpennies. Finally, consider the case of a pharmacologically ignorant but diagnostically sophisti-
+cated medical student observing a consulting session between a patient and an expert
+internist. After a series of questions and answers, the expert t

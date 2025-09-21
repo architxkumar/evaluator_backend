@@ -1,0 +1,42 @@
+ful?
+7.9 Usingamethodofyourchoice,verifyeachoftheequivalencesin Figure7.11(page249).
+7.10 Decidewhethereachofthefollowingsentencesisvalid,unsatisfiable, orneither. Ver-
+ifyyourdecisions usingtruthtablesortheequivalence rulesof Figure7.11(page249).
+a. Smoke Smoke
+b. Smoke Fire
+c. (Smoke Fire) ( Smoke Fire)
+d. Smoke Fire Fire
+e. ((Smoke Heat) Fire) ((Smoke Fire) (Heat Fire))
+f. (Smoke Fire) ((Smoke Heat) Fire)
+g. Big Dumb (Big Dumb)
+7.11 Anypropositional logicsentenceislogically equivalent totheassertion thateachpos-
+sible world in which it would be false is not the case. From this observation, prove that any
+sentence canbewrittenin CNF.
+7.12 Useresolutiontoprovethesentence A Bfromtheclausesin Exercise7.20.
+7.13 Thisexerciselooksintotherelationship betweenclausesandimplication sentences.
+282 Chapter 7. Logical Agents
+a. Showthattheclause ( P P Q)islogically equivalent totheimplication
+1 m
+sentence(P P ) Q.
+1 m
+b. Show that every clause (regardless of the number of positive literals) can bewritten in
+the form (P P ) (Q Q ), where the Ps and Qs are proposition
+1 m 1 n
+symbols. A knowledge base consisting of such sentences is in implicative normal
+IMPLICATIVE formor Kowalskiform(Kowalski,1979).
+NORMALFORM
+c. Writedownthefullresolution ruleforsentences inimplicativenormalform.
+7.14 According to some political pundits, a person who is radical (R) is electable (E) if
+he sheisconservative (C),butotherwiseisnotelectable.
+a. Whichofthefollowingarecorrectrepresentations ofthis assertion?
+(i) (R E) C
+(ii) R (E C)
+(iii) R ((C E) E)
+b. Whichofthesentences in(a)canbeexpressedin Hornform?
+7.15 Thisquestion considers representing satisfiability (SAT)problemsas CS Ps.
+a. Drawtheconstraint graphcorresponding tothe SA Tproblem
+( X 1 X 2 ) ( X 2 X 3 ) ... ( X n 1 X n )
+fortheparticularcase n 5.
+b. Howmanysolutions arethereforthisgeneral SA Tproblem as afunction ofn?
+c. Supposeweapply BACKTRACKING-SEARCH (page215)tofindallsolutions toa SAT
+CSP of the type given in (a). (To find all soluti

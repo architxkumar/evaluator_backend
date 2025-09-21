@@ -1,0 +1,36 @@
+here have been several attempts to devise uncertain reasoning schemes that retain these
+advantages. The idea is to attach degrees of belief to propositions and rules and to devise
+purely local schemes for combining and propagating those degrees of belief. The schemes
+548 Chapter 14. Probabilistic Reasoning
+arealsotruth-functional; forexample,thedegreeofbeliefin A B isafunctionofthebelief
+in Aandthebeliefin B.
+Thebadnewsforrule-based systems isthattheproperties of locality, detachment, and
+truth-functionality are simply not appropriate for uncertain reasoning. Let us look at truth-
+functionality first. Let H betheeventthatafaircoinflipcomesupheads,let T betheevent
+1 1
+that the coin comes up tails on that same flip, and let H be the event that the coin comes
+2
+up heads on a second flip. Clearly, all three events have the same probability, 0.5, and so a
+truth-functional system must assign the same belief to the disjunction of any two of them.
+But we can see that the probability of the disjunction depends on the events themselves and
+notjustontheirprobabilities:
+P(A) P(B) P(A B)
+P(H ) 0.5 P(H H ) 0.50
+1 1 1
+P(H ) 0.5 P(T ) 0.5 P(H T ) 1.00
+1 1 1 1
+P(H ) 0.5 P(H H ) 0.75
+2 1 2
+It gets worse when we chain evidence together. Truth-functional systems have rules of the
+form A B that allow us to compute the belief in B as a function of the belief in the rule
+andthebeliefin A. Bothforward-andbackward-chaining systemscanbedevised. Thebelief
+intheruleisassumedtobeconstantandisusuallyspecifiedbytheknowledgeengineer for
+example,as A B.
+0.9
+Consider the wet-grass situation from Figure 14.12(a) (page 529). If we wanted to be
+abletodobothcausalanddiagnostic reasoning, wewouldneedthetworules
+Rain Wet Grass and Wet Grass Rain .
+Thesetworulesform afeedback loop: evidence for Rain increases thebelief in Wet Grass,
+which in turn increases the belief in Rain even more. Clearly, uncertain reasoning systems
+needtokeeptrackofthepathsalongwhichevidence ispropagated.
+Intercausal reasoning (orex

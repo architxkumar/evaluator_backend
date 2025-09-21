@@ -1,0 +1,39 @@
+ not the Go del number of a proof of the sentence whose Go del
+numberisj,wheretheproofusesonlypremisesin A.
+Thenlet bethesentence ( ,A),thatis,asentencethatstatesitsownunprov-
+abilityfrom A. (Thatthissentence alwaysexistsistruebutnotentirely obvious.)
+Now we make the following ingenious argument: Suppose that is provable
+from A; then is false (because says it cannot be proved). But then we have a
+falsesentencethatisprovablefrom A,so Acannotconsistofonlytruesentences aviolationofourpremise. Therefore, isnotprovablefrom A. Butthisisexactly
+what itselfclaims;hence isatruesentence.
+So, we have shown (barring 291 pages) that for any set of true sentences of
+2
+number theory, and in particular any set of basic axioms, there are other true sen-
+tences that cannot be proved from those axioms. This establishes, among other
+things, that we can never prove all the theorems of mathematics within any given
+system of axioms. Clearly, this was an important discovery for mathematics. Its
+significancefor AIhasbeenwidelydebated,beginningwithspeculationsby Go del
+himself. Wetakeupthedebatein Chapter26.
+Section9.5. Resolution 353
+proof using the clauses of S itself, which are not necessarily ground clauses. We start by
+considering asingleapplication oftheresolution rule. Robinsonstatedthislemma:
+(cid:2) (cid:2)
+Let C and C be two clauses with no shared variables, and let C and C be
+1 2 1 2
+(cid:2) (cid:2) (cid:2)
+groundinstancesof C and C . If C isaresolventof C and C ,thenthereexists
+1 2 1 2
+(cid:2)
+a clause C such that (1) C is a resolvent of C and C and (2) C is a ground
+1 2
+instanceof C.
+Thisiscalledaliftinglemma,becauseitliftsaproofstepfromgroundclausesuptogeneral
+LIFTINGLEMMA
+first-order clauses. In order to prove his basic lifting lemma, Robinson had to invent unifi-
+cation and derive all of the properties of most general unifiers. Rather than repeat the proof
+here,wesimplyillustrate thelemma:
+C P(x,F(x,A)) Q(x,A) R(x,B)
+1
+C N(G(y),z) P(H(y),z)
+2
+C (cid:2) P(H(B),F(H(B),A)) Q(H(B

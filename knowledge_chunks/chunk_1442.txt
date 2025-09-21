@@ -1,0 +1,36 @@
+pectrumwouldbeobservedforeach,comparingthis
+with the actual spectrum. As one might expect, this is intractable for even moderate-sized
+molecules. The DENDRAL researchers consulted analytical chemists and found that they
+workedbylookingforwell-knownpatternsofpeaksinthespectrumthatsuggested common
+substructures inthe molecule. Forexample, the following rule isused torecognize aketone
+(C O)subgroup (whichweighs28):
+iftherearetwopeaksatx andx suchthat
+1 2
+(a)x x M 28(M isthemassofthewholemolecule);
+1 2
+Section1.3. The Historyof Artificial Intelligence 23
+(b)x 28isahighpeak;
+1
+(c)x 28isahighpeak;
+2
+(d)Atleastoneofx andx ishigh.
+1 2
+thenthereisaketonesubgroup
+Recognizing thatthe molecule contains aparticular substructure reduces thenumberofpos-
+siblecandidates enormously. DENDRAL waspowerfulbecause
+Alltherelevanttheoreticalknowledgetosolvetheseproblemshasbeenmappedoverfrom
+its general form in the spectrum prediction component ( first principles ) to efficient
+specialforms( cookbookrecipes ). (Feigenbaumetal.,1971)
+The significance of DENDRAL was that it was the first successful knowledge-intensive sys-
+tem: its expertise derived from large numbers of special-purpose rules. Later systems also
+incorporated themainthemeof Mc Carthy s Advice Takerapproach the cleanseparation of
+theknowledge(intheformofrules)fromthereasoning component.
+With this lesson in mind, Feigenbaum and others at Stanford began the Heuristic Pro-
+gramming Project (HPP) to investigate the extent to which the new methodology of expert
+systems could be applied to other areas of human expertise. The next major effort was in
+EXPERTSYSTEMS
+theareaofmedical diagnosis. Feigenbaum, Buchanan, and Dr.Edward Shortliffe developed
+MYCIN to diagnose blood infections. With about 450 rules, MYCIN was able to perform
+as well as some experts, and considerably better than junior doctors. It also contained two
+major differences from DENDRAL. First, unlike the DENDRAL rules, no general theoretical
+modelexistedfromwhichthe MYC

@@ -1,0 +1,47 @@
+ of A specifies the row and the second the column. In programming lan-
+i,j
+guages, A isoftenwritten A i,j or A i j .
+i,j
+Thesumoftwomatricesisdefinedbyaddingtheircorrespondingelements;forexample
+(A B) A B . (Thesumisundefinedif Aand Bhavedifferentsizes.) Wecanalso
+i,j i,j i,j
+define the multiplication of a matrix by a scalar: (c A) c A . Matrix multiplication (the
+i,j i,j
+productoftwomatrices)ismorecomplicated. Theproduct ABisdefinedonlyif Aisofsize
+a band Bisofsizeb c(i.e., thesecond matrix hasthe samenumberofrowsasthefirst
+hascolumns);theresultisamatrixofsize a c. Ifthematricesareofappropriate size,then
+theresultis
+(cid:12)
+(AB) A B .
+i,k i,j j,k
+j
+Matrix multiplication is not commutative, even for square matrices: AB (cid:7) BA in general.
+It is, however, associative: (AB)C A(BC). Notethat the dot product can be expressed in
+termsofatranspose andamatrixmultiplication:x y x (cid:12) y.
+Theidentitymatrix Ihaselements I equalto1wheni j andequalto0otherwise.
+IDENTITYMATRIX i,j
+(cid:12)
+It has the property that AI A for all A. The transpose of A, written A is formed by
+TRANSPOSE
+(cid:12)
+turningrowsintocolumnsandviceversa,or,moreformally, by A A . Theinverseof
+INVERSE i,j j,i
+asquare matrix A is another square matrix A 1
+such that A 1A I.
+Fora singular matrix,
+SINGULAR
+theinversedoesnotexist. Foranonsingular matrix,itcanbecomputedin O(n3)time.
+Matricesareusedtosolvesystemsoflinearequations in O(n3)time;thetimeisdomi-
+natedbyinvertingamatrixofcoefficients. Considerthefollowingsetofequations,forwhich
+wewantasolution inx,y,andz: 2x y z 8 3x y 2z 11 2x y 2z 3.
+Section A.3. Probability Distributions 1057
+Wecanrepresentthissystemasthematrixequation Ax b,where 2 1 1 x 8
+A 3 1 2 , x y , b 11 . 2 1 2 z 3
+Tosolve Ax bwemultiplybothsidesby A 1,
+yielding A 1Ax A 1b,whichsimplifies
+tox A 1b.
+Afterinverting Aandmultiplying byb,wegettheanswer x 2 x y 3 .
+z 1
+A.3 PROBABILITY DISTRIBUTIONS
+Aprobability isameasureoverasetofeventsthatsatisfiesthreeaxioms:
+1. The measure of each event is

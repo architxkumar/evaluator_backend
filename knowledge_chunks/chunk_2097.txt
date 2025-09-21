@@ -1,0 +1,22 @@
+product offers on the Internet. The shopping agent is
+given a product description by the buyer and has the task of producing a list of Web pages
+that offer such a product for sale, and ranking which offers are best. In some cases the
+buyer s product description will be precise, as in Canon Rebel XTi digital camera, and the
+taskisthentofindthestore(s) withthebestoffer. Inothercases thedescription willbeonly
+partially specified, as in digital camera for under 300, and the agent will have to compare
+differentproducts.
+Theshoppingagent senvironmentistheentire World Wide Webinitsfullcomplexity not atoy simulated environment. Theagent s percepts are Webpages, but whereas ahuman
+Section12.7. The Internet Shopping World 463
+Example Online Store
+Selectfromourfinelineofproducts: Computers Cameras Books Videos Music h1 Example Online Store h1 i Select i from our fine line of products: ul li a href "http: example.com compu" Computers a li a href "http: example.com camer" Cameras a li a href "http: example.com books" Books a li a href "http: example.com video" Videos a li a href "http: example.com music" Music a ul Figure12.8 AWebpagefromagenericonlinestoreintheformperceivedby thehuman
+userofabrowser(top),andthecorresponding HTM Lstringas perceivedbythebrowseror
+theshoppingagent(bottom). In HTML,charactersbetween and aremarkupdirectives
+that specify how the page is displayed. For example, the string i Select i means
+toswitch to italic font, displaytheword Select, andthenendtheuse ofitalic font. A page
+identifiersuchashttp: example.com booksiscalledauniformresourcelocator
+(URL).Themarkup a href "url" Books a meanstocreateahypertextlinkto url
+withtheanchortext Books.
+Web user would see pages displayed as an array of pixels on a screen, the shopping agent
+willperceive apage asacharacter string consisting ofordinary words interspersed withfor-
+matting commands in the HTML markup language. Figure 12.8 shows a Web page and a
+corresponding HTML character string. The perception problem 

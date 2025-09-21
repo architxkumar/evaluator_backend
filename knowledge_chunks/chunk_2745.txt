@@ -1,0 +1,33 @@
+ls
+Figure23.3 Parsetreeforthesentence Everywumpussmells accordingtothegrammar
+E . Eachinteriornodeofthetreeislabeledwithitsprobability. Theprobabilityofthetree
+0
+asawholeis0.9 0.25 0.05 0.15 0.40 0.10 0.0000675. Sincethistreeistheonly
+parseofthesentence,thatnumberisalsotheprobabilityof thesentence. Thetreecanalso
+bewritteninlinearformas S NP Article every Noun wumpus VP Verb smells .
+givesaconstructive proofthatthestring ofwordsisindeed asentence according totherules
+of E . The E grammargenerates awiderangeof Englishsentences suchasthefollowing:
+0 0
+Johnisinthepit
+Thewumpusthatstinksisin22
+Maryisin Bostonandthewumpusisnear32
+Unfortunately, thegrammar overgenerates: thatis,itgenerates sentences that arenotgram-
+OVERGENERATION
+matical, such as Me go Boston and I smell pits wumpus John. It also undergenerates:
+UNDERGENERATION
+there are many sentences of English that it rejects, such as I think the wumpus is smelly. Wewillseehow to learn abetter grammarlater; fornow weconcentrate onwhat wecan do
+withthegrammarwehave.
+23.2 SYNTACTIC ANALYSIS (PARSING)
+Parsingistheprocessofanalyzingastringofwordstouncoveritsphrasestructure,according
+PARSING
+totherulesofagrammar. Figure23.4showsthatwecanstartwiththe S symbol andsearch
+topdownforatreethathasthewordsasitsleaves,orwecanstartwiththewordsandsearch
+bottom up for a tree that culminates in an S. Both top-down and bottom-up parsing can be
+inefficient,however,becausetheycanenduprepeatingeffortinareasofthesearchspacethat
+leadtodeadends. Considerthefollowingtwosentences:
+Havethestudentsinsection2of Computer Science101taketheexam.
+Havethestudentsinsection2of Computer Science101takentheexam?
+Eventhoughtheysharethefirst10words,thesesentenceshaveverydifferentparses,because
+the first is a command and the second is a question. A left-to-right parsing algorithm would
+have toguess whetherthe firstwordispart of acommand oraquestion andwillnot beable
+to tell if the guess is correct until at least the eleventh word, take or taken. If the algorit

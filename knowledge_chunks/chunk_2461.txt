@@ -1,0 +1,40 @@
+hes, and output values on the leaf nodes. Thedetails of the IMPORTANCE function
+are given in Section 18.3.4. The output of the learning algorithm on our sample training
+set is shown in Figure 18.6. The tree is clearly different from the original tree shown in
+Figure 18.2. One might conclude that the learning algorithm is not doing a very good job
+oflearning the correct function. Thiswould bethewrong conclusion todraw, however. The
+learningalgorithmlooksattheexamples,notatthecorrectfunction,andinfact,itshypothesis
+(see Figure 18.6) not only is consistent with all the examples, but is considerably simpler
+thantheoriginal tree! Thelearning algorithm hasnoreason toinclude testsfor Raining and
+Reservation, because it can classify all the examples without them. It has also detected an
+interesting and previously unsuspected pattern: the first author will wait for Thai food on
+weekends. It is also bound tomake some mistakes forcases where ithas seen no examples.
+Forexample,ithasneverseenacasewherethewaitis0 10minutesbuttherestaurantisfull.
+702 Chapter 18. Learningfrom Examples
+function DECISION-TREE-LEARNING(examples,attributes,parent examples) returns
+atree
+ifexamples isemptythenreturn PLURALITY-VALUE(parent examples)
+elseifallexamples havethesameclassificationthenreturntheclassification
+elseifattributes isemptythenreturn PLURALITY-VALUE(examples)
+else
+A argmax
+a attributes
+IMPORTANCE(a,examples)
+tree anewdecisiontreewithroottest A
+foreachvaluevk of Ado
+exs e : e examples and e.A vk subtree DECISION-TREE-LEARNING(exs,attributes A,examples)
+addabranchtotree withlabel(A vk)andsubtreesubtree
+returntree
+Figure 18.5 The decision-tree learning algorithm. The function IMPORTANCE is de-
+scribedin Section18.3.4.Thefunction PLURALITY-VALU Eselectsthemostcommonoutput
+valueamongasetofexamples,breakingtiesrandomly.
+Patrons?
+None Some Full
+No Yes Hungry?
+No Yes
+No Type?
+French Italian Thai Burger
+Yes No Fri Sat? Yes
+No Yes
+No Yes
+Figure18.6 Thedecisiontreeinducedfromthe12-exampletrainin

@@ -1,0 +1,34 @@
+ions,
+anover-proportionalfeedbackisrequiredtodrivetheerrorclosertozero. Thesolutiontothis
+problemliesinaddingathirdtermtothecontrollaw,basedontheintegratederrorovertime:
+(cid:26) (y(t) x )
+a K (y(t) x ) K (y(t) x )dt K t . (25.3)
+t P t I t D t Here K isyetanothergainparameter. Theterm (y(t) x )dtcalculatestheintegralofthe
+I t
+error over time. The effect of this term is that long-lasting deviations between the reference
+signal and the actual state are corrected. If, for example, x is smaller than y(t) for a long
+t
+periodoftime,thisintegralwillgrowuntiltheresulting control a forcesthiserrortoshrink.
+t
+Integral terms, then, ensure thatacontroller doesnotexhibitsystematic error, attheexpense
+ofincreased danger ofoscillatory behavior. Acontroller withallthree terms iscalled a PID
+controller (forproportional integral derivative). PI Dcontrollers arewidelyused inindustry,
+PIDCONTROLLER
+foravarietyofcontrolproblems.
+25.6.2 Potential-fieldcontrol
+We introduced potential fields as an additional cost function in robot motion planning, but
+theycanalsobeusedforgenerating robotmotiondirectly, dispensing withthepathplanning
+phase altogether. To achieve this, we have to define an attractive force that pulls the robot
+towardsitsgoalconfiguration andarepellent potential fieldthat pushes therobot awayfrom
+obstacles. Such a potential field is shown in Figure 25.23. Its single global minimum is
+1000 Chapter 25. Robotics
+goal start goal
+start
+(a) (b)
+Figure 25.23 Potential field control. The robot ascends a potential field composed of
+repelling forces asserted from the obstacles and an attracting force that correspondsto the
+goalconfiguration.(a)Successfulpath. (b)Localoptimum.
+the goal configuration, and the value is the sum of the distance to this goal configuration
+and the proximity to obstacles. No planning was involved in generating the potential field
+shown in the figure. Because of this, potential fields are well suited to real-time control.
+Figure 25.23(a) shows a trajectory of a

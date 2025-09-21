@@ -1,0 +1,25 @@
+whousedbothlinearandnonlinearevaluationfunctionsandalsousedfeature-selectionmeth-
+odstoreduce thefeature space. Latermethods include the CMAC(Cerebellar Model Artic-
+CMAC
+ulation Controller) (Albus, 1975), which is essentially a sum of overlapping local kernel
+functions, and the associative neural networks of Barto et al. (1983). Neural networks are
+currently the most popular form of function approximator. The best-known application is
+TD-Gammon (Tesauro, 1992, 1995), which was discussed in the chapter. One significant
+problem exhibitedbyneural-network-based TDlearners isthattheytendtoforgetearlierex-
+periences, especially those in parts of the state space that are avoided once competence is
+achieved. Thiscanresultincatastrophic failureifsuchcircumstances reappear. Functionap-
+proximation based on instance-based learning can avoid this problem (Ormoneit and Sen,
+2002;Forbes,2002).
+Theconvergence ofreinforcement learningalgorithmsusingfunction approximation is
+an extremely technical subject. Results for TD learning have been progressively strength-
+enedforthecaseoflinearfunctionapproximators (Sutton, 1988;Dayan,1992;Tsitsiklisand
+Van Roy, 1997), but several examples ofdivergence have been presented fornonlinear func-
+tions (see Tsitsiklis and Van Roy, 1997, for a discussion). Papavassiliou and Russell (1999)
+describe a new type of reinforcement learning that converges with any form of function ap-
+proximator, providedthatabest-fitapproximation canbefoundfortheobserveddata.
+Policysearchmethodswerebroughttotheforeby Williams(1992),whodevelopedthe
+REINFORCE familyofalgorithms. Laterworkby Marbachand Tsitsiklis(1998),Suttonetal.
+(2000), and Baxterand Bartlett(2000) strengthened and generalized theconvergence results
+forpolicysearch. Themethodofcorrelated sampling forcomparing different configurations
+of a system was described formally by Kahn and Marshall (1953), but seems to have been
+known long before that. Its use in reinforcement learning is due to Van Roy (1998) and

@@ -1,0 +1,28 @@
+atsurface whichisalsotheminimumoff iff isquadratic.
+Section4.3. Searchingwith Nondeterministic Actions 133
+to be inside Romania and on dry land (rather than in the middle of lakes). The difficulty of
+constrained optimization problemsdepends onthenatureof theconstraints andtheobjective
+LINEAR function. Thebest-known category isthat of linear programming problems, in which con-
+PROGRAMMING
+straints must be linear inequalities forming a convex set 8 and the objective function is also
+CONVEXSET
+linear. Thetimecomplexityoflinearprogrammingispolynomialinthenumberofvariables.
+Linear programming is probably the most widely studied and broadly useful class of
+optimization problems. It is a special case of the more general problem of convex opti-
+CONVEX mization, which allows the constraint region to be any convex region and the objective to
+OPTIMIZATION
+beanyfunction thatisconvexwithintheconstraint region. Undercertainconditions, convex
+optimization problems are also polynomially solvable and may be feasible in practice with
+thousands of variables. Several important problems in machine learning and control theory
+canbeformulated asconvexoptimization problems(see Chapter20).
+4.3 SEARCHING WITH NONDETERMINISTIC ACTIONS
+In Chapter3,weassumedthattheenvironment isfullyobservable anddeterministic andthat
+theagentknowswhattheeffectsofeachactionare. Therefore,theagentcancalculateexactly
+which state results from any sequence of actions and always knows which state it is in. Its
+percepts provide nonewinformation aftereachaction, although ofcourse theytelltheagent
+theinitialstate.
+Whentheenvironment iseitherpartially observable ornondeterministic (orboth), per-
+ceptsbecomeuseful. Inapartiallyobservableenvironment, everypercepthelpsnarrowdown
+thesetofpossible states theagent mightbein, thus makingiteasierfortheagent toachieve
+itsgoals. Whentheenvironmentisnondeterministic, perceptstelltheagentwhichofthepos-
+sible outcomes ofits actions hasactually occurred. In both cases, the future per

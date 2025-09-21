@@ -1,0 +1,20 @@
+roblems:Asurvey.AI Mag,13(1),32 44. Lakoff,G.and Johnson,M.(1999). Philosophyin
+Kumar, V. and Kanal, L. N. (1983). A general the Flesh:The Embodied Mindand Its Challengeto
+Korf, R.E.and Schultze, P.(2005). Large-scale branchandboundformulationforunderstandingand Western Thought.Basic Books.
+p 13 ar 8 a 5 ll . elbreadth-firstsearch. In AAAI-05,pp.1380 s 1 y 7 n 9 t h 1 e 9 s 8 iz . ingand ortreesearchprocedures. AIJ,21, L su a a m ls , e J r . v a o n in d g G f r o e r e a n c s c p u a r n a , te M s . h ( o 2 o 0 t 0 in 8 g ). in Ey p e o - o in l - r h o a b n o d tic v s i- .
+Kotok,A.(1962). Achessplayingprogramforthe Kumar,V.and Kanal,L.N.(1988). The CDP:A In5th Canadian Conferenceon Computerand Robot
+IBM7090. AIprojectmemo41,MIT Computation unifyingformulationforheuristicsearch,dynamic Vision.
+Center. programming, and branch-and-bound. In Kanal, Lamarck, J. B. (1809). Philosophie zoologique.
+Koutsoupias,E.and Papadimitriou, C.H.(1992). L.N.and Kumar,V.(Eds.),Searchin Artificial In- Chez Dentuet L Auteur,Paris.
+Onthegreedyalgorithmforsatisfiability. Informa- telligence,chap.1,pp.1 27.Springer-Verlag.
+tion Processing Letters,43(1),53 55. Landhuis, E. (2004). Lifelong debunker takes
+Kumar,V.,Nau,D.S.,and Kanal,L.N.(1988). A on arbiter of neutral choices: Magician-turned-
+Kowalski,R.(1974). Predicatelogicasaprogram- generalbranch-and-boundformulationfor AND OR mathematicianuncoversbiasinaflipofacoin.Stan-
+minglanguage. In Proc.IFIP Congress,pp.569 graphandgametreesearch. In Kanal,L.N.and ford Report.
+574. Kumar,V.(Eds.),Searchin Artificial Intelligence,
+chap.3,pp.91 130.Springer-Verlag. Langdon,W.and Poli,R.(2002). Foundationsof
+Kowalski,R.(1979). Logicfor Problem Solving. Genetic Programming.Springer.
+Elsevier North-Holland. Kurien, J., Nayak, P., and Smith, D. E. (2002).
+Fragment-basedconformantplanning.In AIPS-02. Langley, P., Simon, H.A., Bradshaw, G.L.,and
+Kowalski,R.(1988). Theearlyyearsoflogicpro- Zytkow,J.M.(1987). Scientific Discovery: Com-
+gramming.CACM,

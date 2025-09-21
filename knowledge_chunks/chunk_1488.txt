@@ -1,0 +1,28 @@
+the taxi could be in exactly
+thesameplaceatthesametime,butintending toreachadifferent destination.
+2.4.4 Goal-basedagents
+Knowingsomethingaboutthecurrentstateoftheenvironmentisnotalwaysenoughtodecide
+what to do. For example, at a road junction, the taxi can turn left, turn right, or go straight
+on. Thecorrectdecisiondependsonwherethetaxiistryingtogetto. Inotherwords,aswell
+as a current state description, the agent needs some sort of goal information that describes
+GOAL
+situations that are desirable for example, being at the passenger s destination. The agent
+program can combine this with the model (the same information as was used in the model-
+basedreflexagent)tochooseactionsthatachievethegoal. Figure2.13showsthegoal-based
+agent sstructure.
+Sometimesgoal-basedactionselectionisstraightforward forexample,whengoalsat-
+isfaction results immediately from a single action. Sometimes it will be more tricky for
+example,whentheagenthastoconsiderlongsequences oftwistsandturnsinordertofinda
+waytoachievethegoal. Search(Chapters3to5)andplanning(Chapters10and11)arethe
+subfieldsof AIdevoted tofindingactionsequences thatachievetheagent sgoals.
+Noticethatdecisionmakingofthiskindisfundamentally differentfromthecondition actionrulesdescribed earlier,inthatitinvolvesconsideration ofthefuture both Whatwill
+happen if Idosuch-and-such? and Willthatmakemehappy? Inthereflexagentdesigns,
+this information is not explicitly represented, because the built-in rules map directly from
+Section2.4. The Structureof Agents 53
+percepts toactions. Thereflexagentbrakeswhenitseesbrakelights. Agoal-based agent, in
+principle, couldreasonthatifthecarinfronthasitsbrake lightson,itwillslowdown. Given
+the way the world usually evolves, the only action that will achieve the goal of not hitting
+othercarsistobrake.
+Although the goal-based agent appears less efficient, it is more flexible because the
+knowledgethatsupportsitsdecisionsisrepresentedexplicitlyandcanbemodified. Ifitstarts
+torain,theagentcanupdateitsknow

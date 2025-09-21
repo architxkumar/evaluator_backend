@@ -1,0 +1,34 @@
+re is
+uncertainty astowhattheactual valueof X is. Different bidders havedifferent information,
+andhencedifferentestimatesoftheitem struevalue. Ineithercase,biddersendupwiththeir
+own v . Given v , each bidder gets a chance, at the appropriate time ortimes in the auction,
+i i
+to make a bid b . The highest bid, b wins the item, but the price paid need not be b ;
+i max max
+that spartofthemechanism design.
+The best-known auction mechanism is the ascending-bid,8 or English auction, in
+ASCENDING-BID
+which the center starts by asking for a minimum (or reserve) bid b . If some bidder is
+ENGLISHAUCTION min
+8 Theword auction comesfromthe Latinaugere,toincrease.
+680 Chapter 17. Making Complex Decisions
+willing to pay that amount, the center then asks for b d, for some increment d, and
+min
+continues up from there. The auction ends when nobody is willing to bid anymore; then the
+lastbidderwinstheitem,paying thepricehebid.
+How do we know if this is a good mechanism? One goal is to maximize expected
+revenue for the seller. Another goal is to maximize a notion of global utility. These goals
+overlap tosome extent, because one aspect ofmaximizing global utility isto ensure that the
+winner of the auction is the agent who values the item the most (and thus is willing to pay
+themost). Wesayanauction isefficientifthe goods gototheagent whovalues them most.
+EFFICIENT
+Theascending-bidauctionisusuallybothefficientandrevenuemaximizing,butifthereserve
+price is set too high, the bidder who values it most may not bid, and if the reserve is set too
+low,thesellerlosesnetrevenue.
+Probably the most important things that an auction mechanism can do is encourage a
+sufficient numberofbidders toenterthe gameand discourage them from engaging in collu-
+sion. Collusionisanunfairorillegalagreementbytwoormorebidderstomanipulateprices.
+COLLUSION
+Itcanhappeninsecretbackroom dealsortacitly, withinthe rulesofthemechanism.
+For example, in 1999, Germany auctioned ten blocks of cell-phone spectrum with a
+simultaneo

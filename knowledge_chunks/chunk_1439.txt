@@ -1,0 +1,24 @@
+ succeeded by means of simple syntactic manipulations. A typical story
+occurred inearlymachinetranslation efforts, whichweregenerously fundedbythe U.S.Na-
+tional Research Councilinanattempttospeedupthetranslation of Russianscientificpapers
+inthewakeofthe Sputniklaunchin1957. Itwasthoughtinitiallythatsimplesyntactictrans-
+formations based on the grammars of Russian and English, and word replacement from an
+electronic dictionary, would suffice to preserve the exact meanings of sentences. The fact is
+that accurate translation requires background knowledge in order to resolve ambiguity and
+establish the content of the sentence. The famous retranslation of the spirit is willing but
+the fleshisweak as the vodka isgood but themeat isrotten illustrates the difficulties en-
+countered. In1966,areportbyanadvisorycommitteefoundthat therehasbeennomachine
+translationofgeneralscientifictext,andnoneisinimmediateprospect. All U.S.government
+fundingforacademictranslation projectswascanceled. Today,machinetranslation isanim-
+perfectbutwidelyusedtoolfortechnical, commercial, government, and Internetdocuments.
+Thesecondkindofdifficultywastheintractabilityofmanyoftheproblemsthat AIwas
+attempting to solve. Most of the early AI programs solved problems by trying out different
+combinations of steps until the solution was found. This strategy worked initially because
+microworlds contained very few objects and hence very few possible actions and very short
+solution sequences. Before the theory of computational complexity was developed, it was
+widely thought that scaling up to larger problems was simply a matter of faster hardware
+andlargermemories. Theoptimismthataccompaniedthedevelopmentofresolutiontheorem
+proving,forexample,wassoondampenedwhenresearchers failedtoprovetheoremsinvolv-
+ingmorethanafewdozenfacts. Thefactthataprogramcanfindasolutioninprincipledoes
+notmeanthattheprogramcontains anyofthemechanismsneededtofinditinpractice.
+The illusion of unlimited computational power was not confi

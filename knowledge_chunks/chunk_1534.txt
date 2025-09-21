@@ -1,0 +1,30 @@
+stsearch.Thenumbersshown
+assumebranchingfactorb 10;1millionnodes second;1000bytes node.
+Two lessons can be learned from Figure 3.13. First, the memory requirements are a
+bigger problem for breadth-first search than is the execution time. One might wait 13 days
+forthesolution toanimportant problem withsearch depth 12,butnopersonal computerhas
+thepetabyte ofmemoryitwouldtake. Fortunately, otherstrategies requirelessmemory.
+The second lesson is that time is still a major factor. If your problem has a solution at
+depth16,then(givenourassumptions)itwilltakeabout350yearsforbreadth-firstsearch(or
+indeedanyuninformedsearch)tofindit. Ingeneral, exponential-complexity searchproblems
+cannotbesolvedbyuninformed methodsforanybutthesmallestinstances.
+3.4.2 Uniform-costsearch
+When all step costs are equal, breadth-first search is optimal because it always expands the
+shallowestunexpandednode. Byasimpleextension,wecanfindanalgorithmthatisoptimal
+UNIFORM-COST withanystep-cost function. Instead ofexpanding theshallowest node, uniform-costsearch
+SEARCH
+expands the node n with the lowest path cost g(n). This is done by storing the frontier as a
+priorityqueueordered by g. Thealgorithm isshownin Figure3.14.
+In addition to the ordering of the queue by path cost, there are two other significant
+differences from breadth-first search. Thefirstisthat thegoal test isapplied toanode when
+it is selected for expansion (as in the generic graph-search algorithm shown in Figure 3.7)
+rather than when it is first generated. The reason is that the first goal node that is generated
+84 Chapter 3. Solving Problemsby Searching
+function UNIFORM-COST-SEARCH(problem)returnsasolution,orfailure
+node anodewith STATE problem.INITIAL-STATE,PATH-COST 0
+frontier apriorityqueueorderedby PATH-COST,withnode astheonlyelement
+explored anemptyset
+loopdo
+if EMPTY?(frontier)thenreturnfailure
+node POP(frontier) choosesthelowest-costnodeinfrontier ifproblem.GOAL-TEST(node.STATE)thenreturn SOLUTION(node)
+addnode.STAT Etoexplor

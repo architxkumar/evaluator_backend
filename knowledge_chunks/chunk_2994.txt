@@ -1,0 +1,28 @@
+Programs with persistent variables can be
+implemented as objects in object-oriented languages such as C , Java, Python, and
+Smalltalk. In functional languages, they can be implemented by functional closures
+overanenvironment containing therequiredvariables. Functionsas values: Functions and procedures have capitalized names, and variables
+have lowercase italic names. So most of the time, a function call looks like FN(x).
+However,weallowthevalueofavariabletobeafunction; for example, ifthevalueof
+thevariable f isthesquarerootfunction, then f(9)returns 3. for each: The notation for each x in c do means that the loop is executed with the
+variable xboundtosuccessive elementsofthecollection c. Indentation is significant: Indentation is used to mark the scope of a loop or condi-
+tional,asinthelanguage Python,andunlike Javaand C (whichusebraces)or Pascal
+and Visual Basic(whichuseend). Destructuringassignment: Thenotation x,y pair meansthattheright-handside
+must evaluate to a two-element tuple, and the first element is assigned to x and the
+second to y. The same idea is used in for each x,y in pairs do and can be used to
+swaptwovariables: x,y y,x Generators and yield: the notation generator G(x) yields numbers defines G as a
+generatorfunction. Thisisbestunderstoodbyanexample. Thecodefragmentshownin
+1062 Appendix B. Noteson Languages and Algorithms
+generator POWERS-OF-2()yieldsints
+i 1
+whiletrue do
+yieldi
+i 2 i
+forp in POWERS-OF-2()do
+PRINT(p)
+Figure B.1 Exampleofageneratorfunctionanditsinvocationwithinaloop.
+Figure B.1prints the numbers 1, 2, 4, ...,and neverstops. Thecallto POWERS-OF-2
+returnsagenerator, whichinturnyieldsonevalueeachtime theloopcodeasksforthe
+next element of the collection. Even though the collection is infinite, it is enumerated
+oneelementatatime. Lists: x,y,z denotes a list of three elements. first rest denotes a list formed by
+addingfirst tothelistrest. In Lisp,thisistheconsfunction. Sets: x,y,z denotesasetofthreeelements. x : p(x) denotesthesetofallelem

@@ -1,0 +1,23 @@
+e possi-
+ble the derivation of effective heuristics and the development of powerful and flexible
+algorithmsforsolvingproblems. PDDL,the Planning Domain Definition Language, describes theinitialandgoalstates
+asconjunctions ofliterals, andactionsintermsoftheirpreconditions andeffects. State-space search can operate inthe forward direction (progression) orthe backward
+direction (regression). Effective heuristics can be derived by subgoal independence
+assumptions andbyvarious relaxations oftheplanning problem. Aplanninggraphcanbeconstructedincrementally,startingfromtheinitialstate. Each
+layer contains a superset of all the literals or actions that could occur at that time step
+andencodesmutualexclusion(mutex)relationsamongliteralsoractionsthatcannotco-
+occur. Planninggraphsyieldusefulheuristicsforstate-spaceandpartial-orderplanners
+andcanbeuseddirectly inthe GRAPHPLAN algorithm. Otherapproachesincludefirst-orderdeductionoversituationcalculusaxioms;encoding
+a planning problem as a Boolean satisfiability problem or as a constraint satisfaction
+problem;andexplicitlysearching through thespaceofpartially orderedplans. Eachofthemajorapproaches toplanning hasits adherents, and there isasyetnocon-
+sensusonwhichisbest. Competitionandcross-fertilization amongtheapproacheshave
+resultedinsignificantgainsinefficiencyforplanning systems.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+AI planning arose from investigations into state-space search, theorem proving, and control
+theoryandfromthepracticalneedsofrobotics,scheduling,andotherdomains. STRIPS(Fikes
+and Nilsson, 1971), the first majorplanning system, illustrates the interaction of these influ-
+ences. STRIPS wasdesignedastheplanning componentofthesoftwareforthe Shakeyrobot
+projectat SRI.Itsoverallcontrolstructurewasmodeledonthatof GPS,the General Problem
+Solver (Newell and Simon, 1961), a state-space search system that used means ends anal-
+ysis. Bylander (1992) shows simple STRIPS planning to be PSPACE-complete. Fikes and
+Nilsson (1993) g

@@ -1,0 +1,27 @@
+context-free grammars (also known as phrase structure grammars)
+are areinvention of atechnique firstused byancient Indian grammarians (especially Panini,
+ca. 350 B.C.) studying Shastric Sanskrit (Ingerman, 1967). They were reinvented by Noam
+Chomsky (1956) for the analysis of English syntax and independently by John Backus for
+the analysis of Algol-58 syntax. Peter Naurextended Backus s notation and is now credited
+(Backus, 1996) with the N in BNF, which originally stood for Backus Normal Form. ATTRIBUTE Knuth (1968) defined a kind of augmented grammar called attribute grammar that is use-
+GRAMMAR
+ful for programming languages. Definite clause grammars were introduced by Colmer-
+auer(1975)anddeveloped andpopularized by Pereiraand Shieber(1987).
+Probabilistic context-free grammars were investigated by Booth (1969) and Salo-
+maa(1969). Otheralgorithms for PCF Gsare presented in theexcellent short monograph by
+920 Chapter 23. Natural Languagefor Communication
+Charniak(1993)andtheexcellentlongtextbooksby Manningand Schu tze(1999)and Juraf-
+sky and Martin (2008). Baker (1979) introduces the inside outside algorithm for learning a
+PCFG,and Lariand Young(1990)describeitsusesandlimitations. Stolckeand Omohundro
+(1994) showhowtolearngrammarruleswith Bayesianmodelmerging; Haghighiand Klein
+(2006)describe alearningsystem basedonprototypes.
+Lexicalized PCF Gs(Charniak, 1997; Hwa,1998) combine thebest aspects of PCF Gs
+and n-gram models. Collins (1999) describes PCFG parsing that is lexicalized with head
+features. Petrovand Klein(2007a) show howtogetthe advantages oflexicalization without
+actuallexicalaugmentationsbylearningspecificsyntacticcategoriesfromatreebankthathas
+generalcategories;forexample,thetreebankhasthecategory NP,fromwhichmorespecific
+categories suchas NP and NP canbelearned.
+O S
+There have been many attempts to write formal grammars of natural languages, both
+in pure linguistics and in computational linguistics. There are several comprehensive but
+informalgrammar

@@ -1,0 +1,37 @@
+ consistent. For any
+particularvalue xof X,theestimatedposteriorprobability canbecalculated asfollows:
+(cid:12)
+P (x e) N
+WS
+(x,y,e)w(x,y,e) from LIKELIHOOD-WEIGHTING
+y
+(cid:12) (cid:2) S (x,y,e)w(x,y,e) forlarge N
+WS
+y
+(cid:12)
+(cid:2) P(x,y,e) by Equation(14.9)
+y (cid:2) P(x,e) P(x e).
+Hence,likelihood weighting returnsconsistent estimates.
+Because likelihood weighting uses all the samples generated, it can be much more ef-
+ficient than rejection sampling. It will, however, suffer a degradation in performance as the
+number of evidence variables increases. This is because most samples will have very low
+weights and hence the weighted estimate will be dominated by the tiny fraction of samples
+thataccordmorethananinfinitesimallikelihoodtotheevidence. Theproblemisexacerbated
+if the evidence variables occur late in the variable ordering, because then the nonevidence
+variableswillhavenoevidenceintheirparentsandancestorstoguidethegeneration ofsam-
+ples. This means the samples will be simulations that bear little resemblance to the reality
+suggested bytheevidence.
+14.5.2 Inference by Markovchain simulation
+MARKOVCHAIN Markovchain Monte Carlo(MCMC)algorithmsworkquitedifferentlyfromrejectionsam-
+MONTECARLO
+pling and likelihood weighting. Instead of generating each sample from scratch, MCM Cal-
+gorithms generate each sample by making a random change to the preceding sample. It is
+thereforehelpfultothinkofan MCM Calgorithm asbeinginaparticular currentstatespeci-
+fyingavalueforeveryvariableandgeneratinga nextstatebymakingrandomchangestothe
+536 Chapter 14. Probabilistic Reasoning
+currentstate. (Ifthisremindsyouofsimulatedannealingfrom Chapter4or WALKSAT from
+Chapter7, thatisbecause both aremembersofthe MCM Cfamily.) Herewedescribe apar-
+ticularform of MCM Ccalled Gibbssampling, whichisespecially wellsuited for Bayesian
+GIBBSSAMPLING
+networks. (Otherforms,someofthemsignificantlymorepowerful,arediscussedinthenotes
+attheendofthechapter.) Wewillfirstdescribewhatthealgorithmdoes,the

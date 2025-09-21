@@ -1,0 +1,27 @@
+waspossible
+toorientapartonatablefromanarbitraryinitialposition byawell-designedsequenceoftilt-
+ingactions. Morepracticalmethods,basedonaseriesofpreciselyorienteddiagonalbarriers
+acrossaconveyorbelt,usethesamealgorithmic insights(Wiegleyetal.,1996).
+The belief-state approach was reinvented in the context of sensorless and partially ob-
+servable searchproblems by Genesereth and Nourbakhsh (1993). Additional workwasdone
+onsensorless problems inthe logic-based planning community (Goldman and Boddy, 1996;
+Smithand Weld, 1998). Thiswork has emphasized concise representations forbelief states,
+asexplainedin Chapter11. Bonetand Geffner(2000)introduced thefirsteffectiveheuristics
+Exercises 157
+for belief-state search; these were refined by Bryce et al. (2006). The incremental approach
+to belief-state search, in which solutions are constructed incrementally for subsets of states
+withineachbeliefstate,wasstudiedintheplanningliteratureby Kurienetal.(2002);several
+newincrementalalgorithms wereintroduced fornondeterministic, partiallyobservable prob-
+lemsby Russelland Wolfe(2005). Additional references for planning instochastic, partially
+observable environments appearin Chapter17.
+Algorithmsforexploringunknownstatespaceshavebeenofinterestformanycenturies.
+Depth-firstsearchinamazecanbeimplementedbykeepingone slefthandonthewall;loops
+can be avoided by marking each junction. Depth-first search fails with irreversible actions;
+themoregeneralproblemofexploring Euleriangraphs(i.e.,graphsinwhicheachnodehas
+EULERIANGRAPH
+equalnumbersofincomingandoutgoingedges)wassolvedbyanalgorithmdueto Hierholzer
+(1873). Thefirst thorough algorithmic study of the exploration problem forarbitrary graphs
+was carried out by Deng and Papadimitriou (1990), who developed a completely general
+algorithm but showed that no bounded competitive ratio is possible for exploring a general
+graph. Papadimitriouand Yannakakis(1991)examinedthequestionoffindingpathstoagoal
+ingeometricpath-planningenvironments(whereallac

@@ -1,0 +1,32 @@
+ Learning 775
+1. Everyconsistenthypothesis(otherthanthoseintheboundarysets)ismorespecificthan
+somememberofthe G-set,andmoregeneral thansomememberof the S-set. (Thatis,
+there are no stragglers left outside.) This follows directly from the definitions of S
+and G. If there were a straggler h, then it would have to be no more specific than any
+member of G, in which case it belongs in G; or no more general than any member of
+S,inwhichcaseitbelongsin S.
+2. Everyhypothesis morespecific than somememberofthe G-setand moregeneral than
+somememberofthe S-setisaconsistent hypothesis. (Thatis, there areno holes be-
+tween the boundaries.) Any h between S and G must reject all the negative examples
+rejectedbyeachmemberof G(becauseitismorespecific),andmustacceptallthepos-
+itiveexamplesacceptedbyanymemberof S (becauseitismoregeneral). Thus,hmust
+agree with all the examples, and therefore cannot be inconsistent. Figure 19.5 shows
+the situation: there are no known examples outside S but inside G, so any hypothesis
+inthegapmustbeconsistent.
+We have therefore shown that if S and G are maintained according to their definitions, then
+they provide a satisfactory representation ofthe version space. Theonly remaining problem
+is how to update S and G for a new example (the job of the VERSION-SPACE-UPDATE
+function). This may appear rather complicated at first, but from the definitions and with the
+helpof Figure19.4,itisnottoohardtoreconstruct thealgorithm. G 1 S G 2 1 Figure 19.5 The extensions of the members of G and S. No known examples lie in
+betweenthetwosetsofboundaries.
+Weneedtoworryaboutthemembers S and G ofthe S-and G-sets. Foreachone,the
+i i
+newexamplemaybeafalsepositiveorafalsenegative.
+1. Falsepositive for S : Thismeans S istoo general, but there are no consistent special-
+i i
+izationsof S (bydefinition), sowethrowitoutofthe S-set.
+i
+2. Falsenegativefor S : Thismeans S istoospecific,sowereplaceitbyallitsimmediate
+i i
+generalizations, provided theyaremorespecificthansomememberof G.
+3.

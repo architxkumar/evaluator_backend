@@ -1,0 +1,25 @@
+starting with an empty state; for the 8-queens problem, this means that each
+COMPLETE-STATE action adds a queen to the state. A complete-state formulation starts with all 8 queens on
+FORMULATION
+theboard andmovesthemaround. Ineithercase,thepathcost isofnointerest because only
+thefinalstatecounts. Thefirstincremental formulation one mighttryisthefollowing: States: Anyarrangement of0to8queensontheboardisastate. Initialstate: Noqueensontheboard. Actions: Addaqueentoanyemptysquare. Transitionmodel: Returnstheboardwithaqueenaddedtothespecifiedsquare. Goaltest: 8queensareontheboard, noneattacked.
+Inthisformulation, wehave64 63 57 1.8 1014 possible sequences toinvestigate. A
+betterformulation wouldprohibitplacing aqueeninanysquarethatisalready attacked: States: All possible arrangements of n queens (0 n 8), one per column in the
+leftmostncolumns,withnoqueenattacking another. Actions: Add a queen to any square in the leftmost empty column such that it is not
+attackedbyanyotherqueen.
+Thisformulationreducesthe8-queensstatespacefrom1.8 1014tojust2,057,andsolutions
+areeasytofind. Ontheotherhand,for100queensthereductionisfromroughly 10400 states
+toabout1052 states(Exercise3.5) abigimprovement,butnotenoughtomaketheproblem
+tractable. Section4.1describes thecomplete-state formulation, and Chapter6givesasimple
+algorithm thatsolveseventhemillion-queens problemwith ease.
+Section3.2. Example Problems 73
+Ourfinaltoyproblem wasdevisedby Donald Knuth(1964)andillustrates howinfinite
+statespacescanarise. Knuthconjectured that,starting withthenumber4,asequence offac-
+torial, square root, andflooroperations willreach anydesired positive integer. Forexample,
+wecanreach5from4asfollows:
+(cid:4)
+(cid:5)(cid:7)
+(cid:8)
+(cid:3) (cid:5) (cid:6) (cid:9) (cid:10) (cid:11)
+(4!)! 5.
+Theproblem definitionisverysimple: States: Positivenumbers. Initialstate: 4. Actions: Applyfactorial, squareroot,orflooroperation (factorial forintegersonly). Transitionmodel: Asgivenbythemathematicaldefinitions oftheoperati

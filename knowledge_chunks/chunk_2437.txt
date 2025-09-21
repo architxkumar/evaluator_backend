@@ -1,0 +1,27 @@
+) contained many
+similar ideas, but was not taken up to the same extent.) The connection between MD Psand
+AIplanning problemswasmadefirstby Sven Koenig(1991), whoshowedhowprobabilistic
+STRIPS operators provide acompactrepresentation fortransition models(seealso Wellman,
+686 Chapter 17. Making Complex Decisions
+1990b). Work by Dean et al. (1993) and Tash and Russell (1994) attempted to overcome
+the combinatorics oflarge state spaces by using alimited search horizon and abstract states.
+Heuristics based on the value of information can be used to select areas of the state space
+wherealocalexpansionofthehorizonwillyieldasignificantimprovementindecisionqual-
+ity. Agents using this approach can tailor their effort to handle time pressure and generate
+someinteresting behaviors suchasusingfamiliar beatenpaths tofindtheirwayaroundthe
+statespacequicklywithouthavingtorecomputeoptimaldecisions ateachpoint.
+As one might expect, AI researchers have pushed MD Ps in the direction of more ex-
+pressive representations that can accommodate much larger problems than the traditional
+atomicrepresentations basedontransition matrices. Theuseofadynamic Bayesiannetwork
+to represent transition models was an obvious idea, but work on factored MD Ps (Boutilier
+FACTOREDMDP
+et al., 2000; Koller and Parr, 2000; Guestrin et al., 2003b) extends the idea to structured
+representations ofthevaluefunction withprovable improvements incomplexity. Relational
+MD Ps (Boutilier et al., 2001; Guestrin et al., 2003a) go one step further, using structured
+RELATIONALMDP
+representations tohandledomainswithmanyrelatedobjects.
+Theobservationthatapartiallyobservable MD Pcanbetransformedintoaregular MDP
+overbelief states isdueto Astrom (1965) and Aoki(1965). Thefirstcomplete algorithm for
+the exact solution of POMD Ps essentially the value iteration algorithm presented in this
+chapter was proposed by Edward Sondik (1971) in his Ph.D.thesis. (Alater journal paper
+by Smallwood and Sondik (1973) contains some errors, but

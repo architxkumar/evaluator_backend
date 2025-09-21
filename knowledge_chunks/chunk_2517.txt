@@ -1,0 +1,34 @@
+serthanthisdistance.
+Because ofthisproblem, k-dtreesareappropriate onlywhen therearemanymoreexamples
+than dimensions, preferably at least 2n examples. Thus, k-d trees work well with up to 10
+dimensionswiththousandsofexamplesorupto20dimensionswithmillionsofexamples. If
+wedon thaveenoughexamples, lookupisnofasterthanalinearscanoftheentiredataset.
+18.8.3 Locality-sensitivehashing
+Hash tables have the potential to provide even faster lookup than binary trees. But how can
+wefindnearestneighbors usingahashtable, whenhashcodesrelyonanexactmatch? Hash
+codes randomly distribute values among the bins, but we want to have near points grouped
+LOCALITY-SENSITIVE togetherinthesamebin;wewantalocality-sensitive hash(LSH).
+HASH
+Section18.8. Nonparametric Models 741
+We can t use hashes to solve NN(k,x ) exactly, but with a clever use of randomized
+q
+algorithms, we can find an approximate solution. First we define the approximate near-
+APPROXIMATE neighborsproblem: given adata setofexample points and aquery point x ,find, withhigh
+NEAR-NEIGHBORS q
+probability, an example point (orpoints) that isnear x . Tobe moreprecise, werequire that
+q
+if there is a point x that is within a radius r of x , then with high probability the algorithm
+j q
+willfindapointx j(cid:3) thatiswithindistancecrofq. Ifthereisnopointwithinradiusrthenthe
+algorithm isallowed toreport failure. Thevalues of cand high probability areparameters
+ofthealgorithm.
+To solve approximate near neighbors, we will need a hash function g(x) that has the
+propertythat,foranytwopoints x
+j
+andx j(cid:3),theprobabilitythattheyhavethesamehashcode
+is small if their distance is more than cr, and is high if their distance is less than r. For
+simplicity we will treat each point as a bit string. (Any features that are not Boolean can be
+encoded intoasetof Booleanfeatures.)
+The intuition we rely on is that if two points are close together in an n-dimensional
+space,thentheywillnecessarilybeclosewhenprojecteddownontoaone-dimensionalspace
+(aline)

@@ -1,0 +1,39 @@
+ types of stars
+revealed by the spectra, and, if so, how many types and what are their characteristics? We
+are all familiar with terms such as red giant and white dwarf, but the stars do not carry
+these labels on their hats astronomers had to perform unsupervised clustering to identify
+these categories. Other examples include the identification of species, genera, orders, and
+so on in the Linn an taxonomy and the creation of natural kinds for ordinary objects (see
+Chapter12).
+Unsupervised clustering beginswithdata. Figure20.11(b) shows500datapoints,each
+ofwhichspecifies thevalues oftwocontinuous attributes. Thedatapoints mightcorrespond
+to stars, and the attributes might correspond to spectral intensities at two particular frequen-
+cies. Next,weneedtounderstandwhatkindofprobability distribution mighthavegenerated
+MIXTURE the data. Clustering presumes that the data are generated from a mixture distribution, P.
+DISTRIBUTION
+Such a distribution has k components, each of which is a distribution in its own right. A
+COMPONENT
+datapointisgeneratedbyfirstchoosingacomponentandthengenerating asamplefromthat
+component. Lettherandom variable C denotethecomponent, withvalues1,...,k;thenthe
+mixturedistribution isgivenby
+(cid:12)k
+P(x) P(C i) P(x C i),
+i 1
+where x refers to the values of the attributes for a data point. Forcontinuous data, a natural
+choiceforthecomponentdistributionsisthemultivariate Gaussian,whichgivestheso-called
+MIXTUREOF mixtureof Gaussiansfamilyofdistributions. Theparameters ofamixtureof Gaussians are
+GAUSSIANS
+818 Chapter 20. Learning Probabilistic Models
+1 1 1
+0.8 0.8 0.8
+0.6 0.6 0.6
+0.4 0.4 0.4
+0.2 0.2 0.2
+0 0 0
+0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1
+(a) (b) (c)
+Figure20.11 (a)AGaussianmixturemodelwiththreecomponents;theweights(left-to-
+right)are0.2,0.3,and0.5.(b)500datapointssampledfromthemodelin(a).(c)Themodel
+reconstructedby EMfromthedatain(b).
+w P(C i) (the weight of each component), (the mean of each component), and i i i
+(the cov

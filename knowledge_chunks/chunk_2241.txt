@@ -1,0 +1,24 @@
+s for example, various citations of this book might name its first author Stuart
+Russell or S. J. Russell oreven Stewart Russle, and other authors may use the some of
+the same names. Literally hundreds of companies exist solely to solve record linkage prob-
+lems in financial, medical, census, and other data. Probabilistic analysis goes back to work
+by Dunn (1946); the Fellegi Sunter model (1969), which is essentially naive Bayes applied
+to matching, still dominates current practice. The second origin for work on identity uncer-
+tainty is multitarget tracking (Sittler, 1964), which we cover in Chapter 15. For most of its
+history, work in symbolic AI assumed erroneously that sensors could supply sentences with
+uniqueidentifiersforobjects. Theissuewasstudiedinthecontextoflanguageunderstanding
+by Charniak and Goldman (1992) and in the context of surveillance by (Huang and Russell,
+1998) and Pasula et al. (1999). Pasula et al. (2003) developed a complex generative model
+for authors, papers, and citation strings, involving both relational and identity uncertainty,
+and demonstrated high accuracy for citation information extraction. The first formally de-
+fined language for open-universe probability models was BLOG (Milch et al., 2005), which
+camewith acomplete (albeit slow) MCM Cinference algorithm forallwell-defined mdoels.
+(The program code faintly visible on the front cover of this book is part of a BLOG model
+fordetecting nuclear explosions from seismic signals aspart ofthe UN Comprehensive Test
+Ban Treaty verification regime.) Laskey (2008) describes another open-universe modeling
+language calledmulti-entity Bayesiannetworks.
+Bibliographical and Historical Notes 557
+As explained in Chapter 13, early probabilistic systems fell out of favor in the early
+1970s, leaving a partial vacuum to be filled by alternative methods. Certainty factors were
+invented foruseinthemedicalexpertsystem MYCIN (Shortliffe, 1976),whichwasintended
+both as an engineering solution and as a model

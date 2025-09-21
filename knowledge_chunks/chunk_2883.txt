@@ -1,0 +1,30 @@
+n be solved by introducing a potential field. A potential field is a
+POTENTIALFIELD
+functiondefinedoverstatespace,whosevaluegrowswiththedistancetotheclosestobstacle.
+Figure25.17(a)showssuchapotential field thedarkeraconfiguration state,thecloseritis
+toanobstacle.
+Thepotentialfieldcanbeusedasanadditionalcosttermintheshortest-pathcalculation.
+Thisinducesaninterestingtradeoff. Ontheonehand,therobotseekstominimizepathlength
+tothegoal. Ontheotherhand,ittriestostayawayfromobstaclesbyvirtueofminimizingthe
+potentialfunction. Withtheappropriateweightbalancing thetwoobjectives, aresultingpath
+maylook liketheone shownin Figure 25.17(b). Thisfigurealsodisplays thevalue function
+derived from the combined cost function, again calculated by value iteration. Clearly, the
+resulting pathislonger, butitisalsosafer.
+There exist many other ways to modify the cost function. For example, it may be
+desirable to smooth the control parameters over time. For example, when driving a car, a
+smooth pathisbetterthan ajerky one. Ingeneral, suchhigher-order constraints arenoteasy
+toaccommodate intheplanning process, unless wemakethemostrecent steering command
+apartofthestate. However,itisofteneasytosmooththeresulting trajectory afterplanning,
+using conjugate gradient methods. Such post-planning smoothing is essential in many real-
+worldapplications.
+25.4.4 Skeletonization methods
+Thesecondmajorfamilyofpath-planningalgorithmsisbasedontheideaofskeletonization.
+SKELETONIZATION
+Thesealgorithmsreducetherobot sfreespacetoaone-dimensionalrepresentation, forwhich
+theplanning problemiseasier. Thislower-dimensional representation iscalledaskeletonof
+theconfiguration space.
+Figure 25.18 shows an example skeletonization: it is a Voronoi graph of the free
+VORONOIGRAPH
+space the set of all points that are equidistant to two or more obstacles. To do path plan-
+ning with a Voronoi graph, the robot first changes its present configuration to a point on the
+Voronoi graph. It is easy to show that this can always be ac

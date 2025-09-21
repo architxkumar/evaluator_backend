@@ -1,0 +1,58 @@
+b)x orx (c)x xorx
+1 2 1 2 1 2
+Figure18.21 Linearseparabilityinthresholdperceptrons. Blackdotsindicateapointin
+theinputspacewherethevalueofthefunctionis1,andwhitedotsindicateapointwherethe
+valueis0. Theperceptronreturns1ontheregiononthenon-shadedsideoftheline. In(c),
+nosuchlineexiststhatcorrectlyclassifiestheinputs.
+Section18.7. Artificial Neural Networks 731
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 10 20 30 40 50 60 70 80 90 100
+tes
+tset
+no
+tcerroc
+noitropor P
+1
+0.9
+0.8
+0.7
+Perceptron 0.6
+Decision tree
+0.5
+0.4
+0 10 20 30 40 50 60 70 80 90 100
+Training set size
+tes
+tset
+no
+tcerroc
+noitropor P
+Perceptron
+Decision tree
+Training set size
+(a) (b)
+Figure18.22 Comparingtheperformanceofperceptronsanddecisiontrees. (a)Percep-
+tronsarebetteratlearningthemajorityfunctionof11inputs. (b)Decisiontreesarebetterat
+learningthe Will Wait predicateintherestaurantexample.
+community in the 1960s. Perceptrons are far from useless, however. Section 18.6.4 noted
+that logistic regression (i.e., training asigmoid perceptron) is eventoday a very popular and
+effective tool. Moreover, a perceptron can represent some quite complex Boolean func-
+tions very compactly. For example, the majority function, which outputs a 1 only if more
+than half ofitsninputs are 1, canberepresented byaperceptron witheach w 1andwith
+i
+w n 2. Adecisiontreewouldneedexponentiallymanynodestorepresentthisfunction.
+0
+Figure 18.22 shows the learning curve fora perceptron on two different problems. On
+the left, we show the curve for learning the majority function with 11 Boolean inputs (i.e.,
+thefunctionoutputsa1if6ormoreinputsare1). Aswewouldexpect,theperceptronlearns
+the function quite quickly, because the majority function is linearly separable. On the other
+hand,thedecision-tree learnermakesnoprogress, because themajorityfunctionisveryhard
+(althoughnotimpossible) torepresentasadecisiontree. Ontheright,wehavetherestaurant
+example. The solution problem is easily represented as a decision tree, but is not linearly
+separable. Thebestplan

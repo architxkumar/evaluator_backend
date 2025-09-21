@@ -1,0 +1,30 @@
+t to two or more obstacles. To do path plan-
+ning with a Voronoi graph, the robot first changes its present configuration to a point on the
+Voronoi graph. It is easy to show that this can always be achieved by a straight-line motion
+inconfiguration space. Second,therobotfollowsthe Voronoigraphuntilitreachesthepoint
+nearest to the target configuration. Finally, the robot leaves the Voronoi graph and moves to
+thetarget. Again,thisfinalstepinvolves straight-line motioninconfiguration space.
+992 Chapter 25. Robotics
+start goal
+(a) (b)
+Figure 25.17 (a) A repelling potential field pushes the robot away from obstacles. (b)
+Pathfoundbysimultaneouslyminimizingpathlengthandthepotential.
+(a) (b)
+Figure25.18 (a)The Voronoigraphisthesetofpointsequidistanttotwoormoreobsta-
+clesinconfigurationspace. (b)Aprobabilisticroadmap,composedof400randomlychosen
+pointsinfreespace.
+In this way, the original path-planning problem is reduced to finding a path on the
+Voronoi graph, which is generally one-dimensional (except in certain nongeneric cases) and
+hasfinitelymanypointswherethreeormoreone-dimensional curvesintersect. Thus,finding
+Section25.5. Planning Uncertain Movements 993
+the shortest path along the Voronoi graph is a discrete graph-search problem of the kind
+discussed in Chapters 3 and 4. Following the Voronoi graph may not give us the shortest
+path, but the resulting paths tend to maximize clearance. Disadvantages of Voronoi graph
+techniquesarethattheyaredifficulttoapplytohigher-dimensional configurationspaces,and
+that they tend to induce unnecessarily large detours when the configuration space is wide
+open. Furthermore,computingthe Voronoigraphcanbedifficult,especially inconfiguration
+space,wheretheshapesofobstacles canbecomplex.
+PROBABILISTIC An alternative to the Voronoi graphs is the probabilistic roadmap, a skeletonization
+ROADMAP
+approach that offers morepossible routes, andthus deals betterwithwide-open spaces. Fig-
+ure25.18(b)showsanexampleofaprobabilisticroadmap. Thegraphis

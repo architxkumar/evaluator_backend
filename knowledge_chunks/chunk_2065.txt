@@ -1,0 +1,33 @@
+ope, and this chapter is part of this book. We use the general
+Part Of relationtosaythatonethingispartofanother. Objectscan begroupedinto Part Of
+hierarchies, reminiscent ofthe Subset hierarchy:
+Part Of(Bucharest,Romania)
+Part Of(Romania,Eastern Europe)
+Part Of(Eastern Europe,Europe)
+Part Of(Europe,Earth).
+442 Chapter 12. Knowledge Representation
+The Part Of relation istransitive andreflexive;thatis,
+Part Of(x,y) Part Of(y,z) Part Of(x,z).
+Part Of(x,x).
+Therefore, wecanconclude Part Of(Bucharest,Earth).
+Categories of composite objects are often characterized by structural relations among
+COMPOSITEOBJECT
+parts. Forexample,abipedhastwolegsattached toabody:
+Biped(a) l ,l ,b Leg(l ) Leg(l ) Body(b) 1 2 1 2
+Part Of(l ,a) Part Of(l ,a) Part Of(b,a) 1 2
+Attached(l ,b) Attached(l ,b) 1 2
+l (cid:7) l l Leg(l ) Part Of(l ,a) (l l l l ) .
+1 2 3 3 3 3 1 3 2
+The notation for exactly two is a little awkward; we are forced to say that there are two
+legs, that they are not the same, and that if anyone proposes a third leg, it must be the same
+as one of the other two. In Section 12.5.2, we describe a formalism called description logic
+makesiteasiertorepresentconstraints like exactly two. We can define a Part Partition relation analogous to the Partition relation for cate-
+gories. (See Exercise12.8.) Anobjectiscomposedofthepartsinits Part Partition andcan
+beviewedasderiving someproperties fromthoseparts. Forexample,themassofacompos-
+iteobjectisthesumofthemassesoftheparts. Noticethatthisisnotthecasewithcategories,
+whichhavenomass,eventhoughtheirelementsmight.
+It is also useful to define composite objects with definite parts but no particular struc-
+ture. For example, we might want to say The apples in this bag weigh two pounds. The
+temptation would be to ascribe this weight to the set of apples in the bag, but this would be
+amistake because thesetisan abstract mathematical concept thathas elements but does not
+have weight. Instead, we need a new concept, which we will call a bunch. Fo

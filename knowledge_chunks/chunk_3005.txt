@@ -1,0 +1,35 @@
+.(1763). Anessaytowardssolvingaprob-
+Mining Answersfrom Textsand Knowledge Bases, leminthedoctrineofchances.Philosophical Trans- Berliner,H.J.(1980b). Computerbackgammon.
+pp.7 9.
+actionsofthe Royal Societyof London,53,370 418.
+Scientific American,249(6),64 72.
+Banko,M.,Cafarella,M.J.,Soderland,S.,Broad- Bernardo, J. M. and Smith, A. F. M. (1994).
+Beal, D.F.(1980). Ananalysisofminimax. In
+head,M.,and Etzioni,O.(2007).Openinformation Bayesian Theory.Wiley.
+Clarke, M. R. B. (Ed.), Advances in Computer
+extractionfromtheweb.In IJCAI-07.
+Chess2,pp.103 109.Edinburgh University Press. Berners-Lee,T.,Hendler,J.,and Lassila,O.(2001).
+Banko, M.and Etzioni,O.(2008). Thetradeoffs Thesemanticweb.Scientific American,284(5),34 Beal,J.and Winston,P.H.(2009).Thenewfrontier
+betweenopenandtraditionalrelationextraction. In 43.
+ofhuman-levelartificialintelligence. IEEE Intelli-
+ACL-08,pp.28 36.
+gent Systems,24(4),21 23. Bernoulli, D. (1738). Specimen theoriae novae
+Bar-Hillel,Y.(1954). Indexicalexpressions.Mind, de mensura sortis. Proc. St. Petersburg Imperial
+Beckert,B.and Posegga,J.(1995).Leantap:Lean,
+63,359 379. Academyof Sciences,5,175 192.
+tableau-baseddeduction.JAR,15(3),339 358.
+Bar-Hillel,Y.(1960). Thepresentstatusofauto- Bernstein,A.and Roberts,M.(1958). Computer
+Beeri, C., Fagin, R., Maier, D., and Yannakakis,
+matictranslationoflanguages. In Alt,F.L.(Ed.), vs.chessplayer. Scientific American,198(6),96 M.(1983). Onthedesirabilityofacyclicdatabase
+Advancesin Computers,Vol.1,pp.91 163.Aca- 105.
+schemes.JACM,30(3),479 513.
+demic Press.
+Bernstein,P.L.(1996). Againstthe Odds:The Re-
+Bekey,G.(2008). Robotics:State Of The Art And
+Bar-Shalom, Y. (Ed.). (1992). Multitarget- markable Storyof Risk.Wiley.
+Future Challenges.Imperial College Press.
+multisensor tracking: Advanced applications.
+Berrou, C., Glavieux, A., and Thitimajshima, P.
+Artech House. Bell,C.and Tate,A.(1985). Usingtemporalcon-
+(1993).Near Shannonlimiterrorcontrol-correcting
+straintstorestrictsearchinaplanner.In Proc.Third

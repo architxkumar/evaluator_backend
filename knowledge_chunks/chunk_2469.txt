@@ -1,0 +1,26 @@
+for an attribute, leaving the remaining
+valuestopossibly betestedlaterinthetree. Continuous and integer-valued input attributes: Continuous or integer-valued at-
+tributessuchas Height and Weight,haveaninfinitesetofpossiblevalues. Ratherthan
+generate infinitely many branches, decision-tree learning algorithms typically find the
+split point that gives the highest information gain. For example, at a given node in
+SPLITPOINT
+the tree, it might be the case that testing on Weight 160 gives the most informa-
+tion. Efficient methods exist for finding good split points: start by sorting the values
+of the attribute, and then consider only split points that are between two examples in
+sortedorderthathavedifferentclassifications, whilekeepingtrackoftherunningtotals
+of positive and negative examples on each side of the split point. Splitting is the most
+expensivepartofreal-world decision treelearningapplications. Continuous-valued output attributes: If we are trying to predict a numerical output
+value, such as the price of an apartment, then we need a regression tree rather than a
+REGRESSIONTREE
+classification tree. A regression tree has at each leaf a linear function of some subset
+of numerical attributes, rather than a single value. For example, the branch for two-
+bedroom apartments might end with a linear function of square footage, number of
+bathrooms, and average income for the neighborhood. The learning algorithm must
+decide when to stop splitting and begin applying linear regression (see Section 18.6)
+overtheattributes.
+A decision-tree learning system for real-world applications must be able to handle all of
+these problems. Handling continuous-valued variables isespecially important, because both
+physical and financial processes provide numerical data. Several commercial packages have
+been built that meet these criteria, and they have been used to develop thousands of fielded
+systems. Inmanyareasofindustryandcommerce,decisiontreesareusuallythefirstmethod
+triedwhenaclassi

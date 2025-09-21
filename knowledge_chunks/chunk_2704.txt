@@ -1,0 +1,28 @@
+e value
+pairs and apply a classification algorithm h to the feature vector X. We can make the
+language-modeling andmachine-learning approachescompatiblebythinkingofthen-grams
+as features. This is easiest to see with a unigram model. The features are the words in the
+vocabulary: a, aardvark, ..., and the values are the number of times each word appears
+inthemessage. Thatmakesthefeaturevectorlargeandsparse. Ifthereare100,000wordsin
+thelanguagemodel,thenthefeaturevectorhaslength100,000,butforashortemailmessage
+almostallthefeatures willhavecount zero. Thisunigram representation hasbeen called the
+bagofwordsmodel. Youcanthink ofthemodelasputting thewordsofthetraining corpus
+BAGOFWORDS
+in a bag and then selecting words one at a time. The notion of order of the words is lost; a
+unigrammodelgivesthesameprobability toanypermutation ofatext. Higher-order n-gram
+modelsmaintainsomelocalnotionofwordorder.
+Withbigramsandtrigramsthenumberoffeatures issquared orcubed, andwecanadd
+in other, non-n-gram features: the time the message was sent, whether a URL or an image
+is part of the message, an ID number for the sender of the message, the sender s number of
+previousspamandhammessages,andsoon. Thechoiceoffeaturesisthemostimportantpart
+ofcreatingagoodspamdetector moreimportantthanthechoiceofalgorithmforprocessing
+the features. In part this is because there is a lot of training data, so if we can propose a
+feature, the data can accurately determine if it is good or not. It is necessary to constantly
+update features, because spam detection is an adversarial task; the spammers modify their
+spaminresponse tothespamdetector s changes.
+Itcan be expensive to run algorithms on a very large feature vector, so often aprocess
+offeatureselectionisusedtokeeponlythefeaturesthatbestdiscriminatebetweenspamand
+FEATURESELECTION
+ham. Forexample,thebigram ofthe isfrequentin English, andmaybeequallyfrequentin
+spam and ham, sothere isno sense incounting it. Often the top hundred orsofeatures do a
+goodjobofd

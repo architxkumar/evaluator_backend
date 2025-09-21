@@ -1,0 +1,29 @@
+isodes.
+c. Modify the environment so that 30 of the time the agent ends up at an unintended
+destination(chosenrandomlyfromtheothervisibleverticesifany;otherwise,nomove
+at all). This is a crude model of the motion errors of a real robot. Modify the agent
+so that when such an error is detected, it finds out where it is and then constructs a
+plan to get back to where it was and resume the old plan. Remember that sometimes
+gettingbacktowhereitwasmightalsofail! Showanexampleoftheagentsuccessfully
+overcomingtwosuccessive motionerrorsandstillreaching thegoal.
+160 Chapter 4. Beyond Classical Search
+d. Nowtrytwodifferentrecoveryschemesafteranerror: (1)headfortheclosestvertexon
+theoriginalroute;and(2)replanaroutetothegoalfromthe newlocation. Comparethe
+performance ofthe three recovery schemes. Would theinclusion ofsearch costs affect
+thecomparison?
+e. Now suppose that there are locations from which the view is identical. (For example,
+supposetheworldisagridwithsquareobstacles.) Whatkindofproblemdoestheagent
+nowface? Whatdosolutions looklike?
+4.12 Suppose that an agent is in a 3 3 maze environment like the one shown in Fig-
+ure4.19. Theagentknowsthatitsinitiallocationis(1,1),thatthegoalisat(3,3),andthatthe
+actions Up, Down, Left,Right have theirusual effects unless blocked byawall. Theagent
+does notknow wheretheinternal wallsare. Inanygiven state, theagent perceives thesetof
+legalactions;itcanalsotellwhetherthestateisoneithasvisitedbefore.
+a. Explainhowthisonlinesearchproblemcanbeviewedasanofflinesearchinbelief-state
+space, where the initial belief state includes all possible environment configurations.
+Howlargeistheinitialbeliefstate? Howlargeisthespaceofbeliefstates?
+b. Howmanydistinct perceptsarepossible intheinitialstate?
+c. Describe the first few branches of a contingency plan for this problem. How large
+(roughly) isthecompleteplan?
+Noticethatthiscontingencyplanisasolutionforeverypossibleenvironmentfittingthegiven
+description. Therefore, interleaving of search and executi

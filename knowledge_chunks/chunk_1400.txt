@@ -1,0 +1,29 @@
+ . . . . 628
+16.7 Decision-Theoretic Expert Systems . . . . . . . . . . . . . . . . . . . . . 633
+16.8 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 636
+17 Making Complex Decisions 645
+17.1 Sequential Decision Problems . . . . . . . . . . . . . . . . . . . . . . . . 645
+17.2 Value Iteration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 652
+17.3 Policy Iteration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 656
+17.4 Partially Observable MD Ps . . . . . . . . . . . . . . . . . . . . . . . . . 658
+17.5 Decisionswith Multiple Agents: Game Theory . . . . . . . . . . . . . . . 666
+17.6 Mechanism Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 679
+17.7 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 684
+V Learning
+18 Learningfrom Examples 693
+18.1 Formsof Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 693
+18.2 Supervised Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 695
+18.3 Learning Decision Trees . . . . . . . . . . . . . . . . . . . . . . . . . . . 697
+18.4 Evaluatingand Choosing the Best Hypothesis . . . . . . . . . . . . . . . 708
+18.5 The Theoryof Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . 713
+18.6 Regressionand Classification with Linear Models . . . . . . . . . . . . . 717
+18.7 Artificial Neural Networks . . . . . . . . . . . . . . . . . . . . . . . . . 727
+18.8 Nonparametric Models . . . . . . . . . . . . . . . . . . . . . . . . . . . 737
+18.9 Support Vector Machines . . . . . . . . . . . . . . . . . . . . . . . . . . 744
+18.10 Ensemble Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 748
+18.11 Practical Machine Learning . . . . . . . . . . . . . . . . . . . . . . . . . 753
+18.12 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 757
+19 Knowledgein Learning 768
+19.1 ALogical Formulationof Learning . . . . . . . . . . . . . . . . . . . . . 768
+Contents xvii
+19.

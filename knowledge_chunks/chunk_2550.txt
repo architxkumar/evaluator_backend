@@ -1,0 +1,28 @@
+urdiscussion ofregularization.
+The most popular kind of neural network that we did not cover is the radial basis
+RADIALBASIS function,or RBF,network. Aradialbasisfunctioncombinesaweightedcollectionofkernels
+FUNCTION
+(usually Gaussians,ofcourse)todofunctionapproximation. RB Fnetworkscanbetrainedin
+two phases: first, an unsupervised clustering approach is used to train the parameters of the
+Gaussians the meansandvariances are trained, asin Section20.3.1. Inthesecondphase,
+the relative weights of the Gaussians are determined. This is a system of linear equations,
+whichweknowhowtosolvedirectly. Thus,bothphasesof RB Ftraininghaveanicebenefit:
+thefirstphaseisunsupervised, andthusdoesnotrequirelabeledtrainingdata,andthesecond
+phase,although supervised, isefficient. See Bishop(1995) formoredetails.
+Recurrentnetworks,inwhichunitsarelinked incycles, werementioned inthechap-
+HOPFIELDNETWORK ter but not explored in depth. Hopfield networks (Hopfield, 1982) are probably the best-
+understood class of recurrent networks. They use bidirectional connections with symmetric
+weights (i.e., w w ), all of the units are both input and output units, the activation
+i,j j,i
+function g isthesignfunction, andtheactivation levelscanonlybe 1. AHopfieldnetwork
+ASSOCIATIVE functions as an associative memory: after the network trains on a set of examples, a new
+MEMORY
+stimulus will cause it to settle into an activation pattern corresponding to the example in the
+trainingsetthatmostcloselyresemblesthenewstimulus. Forexample,ifthetrainingsetcon-
+sistsofasetofphotographs, andthenewstimulusisasmallpieceofoneofthephotographs,
+then the network activation levels will reproduce the photograph from which the piece was
+taken. Notice that the original photographs are not stored separately in the network; each
+17 Thisapproximatelyconfirmed Uncle Bernie srule. Therulewasnamedafter Bernie Widrow,whorecom-
+mendedusingroughlytentimesasmanyexamplesasweights.
+Exercises 763
+weight is a partial encoding of all the pho

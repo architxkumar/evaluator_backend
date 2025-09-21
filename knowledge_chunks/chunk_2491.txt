@@ -1,0 +1,35 @@
+ntendstoproduceasparsemodel. (a)With L regu-
+1 1
+larization(box),the minimalachievableloss(concentriccontours)oftenoccurson anaxis,
+meaninga weightof zero. (b)With L regularization(circle), the minimalloss islikely to
+2
+occuranywhereonthecircle,givingnopreferencetozeroweights.
+Figure18.14givesanintuitiveexplanationofwhy L regularizationleadstoweightsof
+1
+zero, while L regularization does not. Note that minimizing Loss(w) Complexity(w)
+2
+is equivalent to minimizing Loss(w) subject to the constraint that Complexity(w) c, for
+someconstant cthatisrelated to . Now,in Figure 18.14(a) thediamond-shaped box repre-
+sents theset of points win two-dimensional weight space that have L complexity less than
+1
+c; our solution will have to be somewhere inside this box. The concentric ovals represent
+contours ofthelossfunction, withtheminimumlossatthecenter. Wewanttofindthepoint
+intheboxthatisclosest totheminimum;youcanseefromthediagram that,foranarbitrary
+positionoftheminimumanditscontours, itwillbecommonforthecorneroftheboxtofind
+itswayclosesttotheminimum,justbecausethecornersarepointy. Andofcoursethecorners
+are the points that have a value of zero in some dimension. In Figure 18.14(b), we ve done
+the same for the L complexity measure, which represents a circle rather than a diamond.
+2
+Here you can see that, in general, there is no reason for the intersection to appear on one of
+theaxes; thus L regularization does nottend toproduce zeroweights. Theresult isthat the
+2
+numberofexamplesrequiredtofindagoodhislinearinthenumberofirrelevantfeaturesfor
+L regularization, but only logarithmic with L regularization. Empirical evidence onmany
+2 1
+problemssupports thisanalysis.
+Anotherwaytolookatitisthat L regularization takesthedimensionalaxesseriously,
+1
+while L treats them as arbitrary. The L function is spherical, which makes it rotationally
+2 2
+invariant: Imagine a set of points in a plane, measured by their x and y coordinates. Now
+imagine rotating the axes by 45o. You d get a different 

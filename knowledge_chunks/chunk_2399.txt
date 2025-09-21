@@ -1,0 +1,34 @@
+erated. Given A actions and E possibleobservations, it
+iseasytoshowthatthereare A O( E d 1)distinctdepth-dplans.
+Evenforthelowlytwo-state
+world with d 8, the exact number is 2255. The elimination of dominated plans is essential
+forreducing thisdoubly exponential growth: thenumberofundominated planswithd 8is
+just144. Theutilityfunction forthese144plansisshownin Figure17.8(d).
+Notice that even though state 0 has lower utility than state 1, the intermediate belief
+states have even lower utility because the agent lacks the information needed to choose a
+good action. This is why information has value in the sense defined in Section 16.6 and
+optimalpoliciesin POMD Psofteninclude information-gathering actions.
+Givensuchautilityfunction,anexecutablepolicycanbeextractedbylookingatwhich
+hyperplane is optimal at any given belief state b and executing the first action of the corre-
+sponding plan. In Figure 17.8(d), the corresponding optimal policy is still the same as for
+depth-1plans: Staywhenb(1) 0.5and Gootherwise.
+In practice, the value iteration algorithm in Figure 17.9 is hopelessly inefficient for
+larger problems even the 4 3 POMD Pis too hard. The main reason is that, given ncon-
+ditional plans at level d, the algorithm constructs A n E conditional plans at level d 1
+beforeeliminatingthedominatedones. Sincethe1970s,whenthisalgorithmwasdeveloped,
+therehavebeenseveraladvancesincludingmoreefficientformsofvalueiterationandvarious
+kindsofpolicyiterationalgorithms. Someofthesearediscussedinthenotesattheendofthe
+chapter. Forgeneral POMD Ps,however, finding optimal policies isvery difficult (PSPACE-
+hard, in fact i.e., very hard indeed). Problems witha few dozen states are often infeasible.
+Thenext section describes adifferent, approximate method forsolving POMD Ps,onebased
+onlook-ahead search.
+664 Chapter 17. Making Complex Decisions
+A A A A A
+t 2 t 1 t t 1 t 2
+X X X X X U
+t 1 t t 1 t 2 t 3 t 3
+R R R R
+t 1 t t 1 t 2
+E E E E E
+t 1 t t 1 t 2 t 3
+Figure17.10 Thegenericstructureof

@@ -1,0 +1,29 @@
+reaccurately reflectthestate
+oftheworld.
+But de Finetti proved something much stronger: If Agent 1 expresses a set of degrees
+of belief that violate the axioms of probability theory then there is a combination of bets by
+Agent 2that guarantees that Agent 1 will lose money every time. Forexample, suppose that
+Agent1hasthesetofdegreesofbelieffrom Equation(13.5). Figure13.2showsthatif Agent
+2 Thedifficultiesincludethe Vitaliset,awell-definedsubsetoftheinterval 0,1 withnowell-definedsize.
+3 Onemightarguethattheagent spreferencesfordifferentbankbalancesaresuchthatthepossibilityoflosing 1isnotcounterbalancedbyanequalpossibilityofwinning 1.Onepossibleresponseistomakethebetamounts
+smallenoughtoavoidthisproblem.Savage sanalysis(1954)circumventstheissuealtogether.
+490 Chapter 13. Quantifying Uncertainty
+2 chooses to bet 4 on a, 3 on b, and 2 on (a b), then Agent 1 always loses money,
+regardless of the outcomes for a and b. De Finetti s theorem implies that no rational agent
+canhavebeliefsthatviolatetheaxiomsofprobability.
+Agent1 Agent2 Outcomesandpayoffs to Agent1
+Proposition Belief Bet Stakes a,b a, b a,b a, b
+a 0.4 a 4to6 6 6 4 4
+b 0.3 b 3to7 7 3 7 3
+a b 0.8 (a b) 2to8 2 2 2 8 11 1 1 1
+Figure13.2 Because Agent1 hasinconsistentbeliefs, Agent2is able to devisea set of
+betsthatguaranteesalossfor Agent1,nomatterwhattheoutcomeofaandb.
+One common objection to de Finetti s theorem is that this betting game is rather con-
+trived. Forexample, what ifone refuses to bet? Does that end the argument? Theansweris
+that the betting game is an abstract model for the decision-making situation in which every
+agent is unavoidably involved at every moment. Every action (including inaction) is a kind
+ofbet, andeveryoutcome canbeseenasapayoff ofthebet. Refusing tobetislikerefusing
+toallowtimetopass.
+Otherstrongphilosophicalargumentshavebeenputforwardfortheuseofprobabilities,
+mostnotably those of Cox(1946), Carnap (1950), and Jaynes (2003). Theyeach construct a
+set of axioms for reasoning with deg

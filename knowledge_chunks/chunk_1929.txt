@@ -1,0 +1,39 @@
+itclausesinwhichanequalityliteralappears: Paramodulation: Foranyterms x,y,andz,wherez appearssomewhereinliteral m ,
+PARAMODULATION i
+andwhere UNIFY(x,z) ,
+(cid:3) (cid:3) x y, m m
+1 k 1 n
+.
+SUB(SUBST( ,x),SUBST( ,y),SUBST( ,(cid:3)
+1 (cid:3)
+k m
+1 m
+n
+)
+Forexample,from
+P(F(x,B),x) Q(x) and F(A,y) y R(y)
+Section9.5. Resolution 355
+we have UNIFY(F(A,y),F(x,B)) x A,y B , and we can conclude by paramodu-
+lationthesentence
+P(B,A) Q(A) R(B).
+Paramodulation yieldsacompleteinference procedure forfirst-orderlogicwithequality.
+A third approach handles equality reasoning entirely within an extended unification
+algorithm. That is, terms are unifiable if they are provably equal under some substitution,
+where provably allows for equality reasoning. For example, the terms 1 2 and 2 1
+normally are not unifiable, but a unification algorithm that knows that x y y x could
+EQUATIONAL unifythemwiththeemptysubstitution. Equationalunificationofthiskindcanbedonewith
+UNIFICATION
+efficientalgorithmsdesignedfortheparticularaxiomsused(commutativity,associativity,and
+so on) rather than through explicit inference with those axioms. Theorem provers using this
+technique arecloselyrelatedtothe CL Psystemsdescribed in Section9.4.
+9.5.6 Resolutionstrategies
+We know that repeated applications of the resolution inference rule will eventually find a
+proofifoneexists. Inthissubsection, weexaminestrategies thathelpfindproofs efficiently.
+Unitpreference: Thisstrategypreferstodoresolutionswhereoneofthesentencesisasingle
+UNITPREFERENCE
+literal (also known as a unit clause). The idea behind the strategy is that we are trying to
+produce anemptyclause, soitmightbeagoodideatopreferinferences thatproduceshorter
+clauses. Resolvingaunitsentence(suchas P)withanyothersentence(suchas P Q R)
+always yields a clause (in this case, Q R) that is shorter than the other clause. When
+the unit preference strategy was first tried for propositional inference in 1964, it led to a
+dramaticspeedup,makingitfeasibletoprovetheoremstha

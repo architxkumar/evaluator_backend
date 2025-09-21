@@ -1,0 +1,37 @@
+of S could make the agent less able to decide. The paradox is resolved by noting
+1
+thatintheabsenceofexactcostinformation, thedecisioniseasiertomakebutismorelikely
+tobewrong.)
+Theexactrelationship betweentheattributedistributions neededtoestablishstochastic
+dominanceisbestseenbyexaminingthecumulativedistributions,shownin Figure16.5(b).
+(Seealso Appendix A.) Thecumulative distribution measures theprobability thatthecostis
+less than or equal to any given amount that is, it integrates the original distribution. If the
+cumulative distribution for S is always to the right of the cumulative distribution for S ,
+1 2
+624 Chapter 16. Making Simple Decisions
+then,stochastically speaking, S ischeaperthan S . Formally,iftwoactions A and A lead
+1 2 1 2
+toprobability distributions p (x)andp (x)onattribute X,then A stochastically dominates
+1 2 1
+A on X if
+2
+(cid:26)x (cid:26)x x p (x (cid:2) ) dx (cid:2) p (x (cid:2) )dx (cid:2) .
+1 2 Therelevanceofthisdefinitiontotheselectionofoptimaldecisionscomesfromthefollowing
+property: if A stochasticallydominates A ,thenforanymonotonicallynondecreasingutility
+1 2
+function U(x), the expected utility of A is at least as high as the expected utility of A .
+1 2
+Hence,ifanactionisstochastically dominated byanotheraction onallattributes, thenitcan
+bediscarded.
+The stochastic dominance condition might seem rather technical and perhaps not so
+easy to evaluate without extensive probability calculations. In fact, it can be decided very
+easilyinmanycases. Suppose,forexample,thattheconstructiontransportation costdepends
+on the distance to the supplier. The cost itself is uncertain, but the greater the distance, the
+greater the cost. If S is closer than S , then S will dominate S on cost. Although we
+1 2 1 2
+will not present them here, there exist algorithms for propagating this kind of qualitative
+QUALITATIVE
+information among uncertain variables in qualitative probabilistic networks, enabling a
+PROBABILISTIC
+NETWORKS
+systemtomakerationaldecisionsbased

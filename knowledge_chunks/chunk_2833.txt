@@ -1,0 +1,26 @@
+his, we need to identify the groundplane, which is done using shape-from-texture
+methods.Fromthisinformation,andfromsomelikelypedestrians,wecanrecoverahorizon
+asshowninthecenterimage.Ontheright,acceptablepedestrianboxesgiventhisgeometric
+context. Noticethatpedestrianswhoarehigherinthescenemustbesmaller. Iftheyarenot,
+thentheyarefalsepositives.Imagesfrom Hoiemetal.(2008)(cid:2)c IEEE.
+feet are, and pedestrians whose feet are closer to the horizon in the image are farther away
+fromthecamera(Figure24.22). Pedestrianswhoarefarther awayfromthecameramustalso
+besmallerintheimage. Thismeanswecanruleoutsomedetectorresponses ifadetector
+finds a pedestrian who is large in the image and whose feet are close to the horizon, it has
+found an enormous pedestrian; these don t exist, so the detector is wrong. In fact, many or
+mostimagewindowsarenotacceptable pedestrian windows,andneednotevenbepresented
+tothedetector.
+There are several strategies for finding the horizon, including searching for a roughly
+horizontal line with a lot of blue above it, and using surface orientation estimates obtained
+from texture deformation. A more elegant strategy exploits the reverse of our geometric
+constraints. Areasonablyreliablepedestriandetectoris capableofproducingestimatesofthe
+horizon, if there are several pedestrians in the scene at different distances from the camera.
+Thisisbecause therelativescaling ofthepedestrians isacuetowherethehorizon is. Sowe
+canextractahorizonestimatefromthedetector,thenusethisestimatetoprunethepedestrian
+detector s mistakes.
+956 Chapter 24. Perception
+Iftheobjectisfamiliar,wecanestimatemorethanjustthedistancetoit,becausewhatit
+lookslikeintheimagedependsverystronglyonitspose,i.e.,itspositionandorientationwith
+respecttotheviewer. Thishasmanyapplications. Forinstance,inanindustrialmanipulation
+task, the robot arm cannot pick up an object until the pose is known. In the case of rigid
+objects, whether three-dimensional ortwo-dimensional, this problem hasasimple and well-

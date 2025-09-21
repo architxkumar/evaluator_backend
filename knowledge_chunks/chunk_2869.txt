@@ -1,0 +1,44 @@
+X ,v , )andcovariance . (See Appendix Aforamathematicaldefinition.)
+t t t x
+P(X X ,v , ) N(X , ).
+t 1 t t t t 1 x
+Thisprobability distribution istherobot s motionmodel. Itmodels theeffects ofthemotion
+a onthelocation oftherobot.
+t
+Next, we need a sensor model. We will consider two kinds of sensor model. The
+first assumes that the sensors detect stable, recognizable features of the environment called
+landmarks. Foreachlandmark,therangeandbearingarereported. Supposetherobot sstate
+LANDMARK
+(cid:12) (cid:12)
+isx (x ,y , ) anditsensesalandmarkwhoselocationisknowntobe(x ,y ) . Without
+t t t t i i
+noise,therangeandbearingcanbecalculatedbysimplegeometry. (See Figure25.8(a).) The
+exactprediction oftheobservedrangeandbearingwouldbe
+(cid:13) (cid:10) (cid:14)
+(x x )2 (y y )2 z t h(x t ) a t rctan i yi yt t i .
+xi xt t
+Section25.3. Robotic Perception 981
+Again, noise distorts ourmeasurements. Tokeep things simple, onemight assume Gaussian
+noisewithcovariance ,givingusthesensormodel
+z
+P(z x ) N( z , ).
+t t t z
+A somewhat different sensor model is used for an array of range sensors, each of which
+has a fixed bearing relative to the robot. Such sensors produce a vector of range values
+(cid:12)
+z (z ,...,z ) . Given apose x , let z be the exact range along the jth beam direction
+t 1 M t j
+fromx tothenearestobstacle. Asbefore,thiswillbecorruptedby Gaussiannoise. Typically,
+t
+we assume that the errors for the different beam directions are independent and identically
+distributed, sowehave
+(cid:25)M
+P(z x ) e (zj z j) 2 2 .
+t t
+j 1
+Figure 25.8(b) shows an example of a four-beam range scan and two possible robot poses,
+oneofwhichisreasonablylikelytohaveproducedtheobservedscanandoneofwhichisnot.
+Comparing the range-scan model to the landmark model, we see that the range-scan model
+has the advantage that there is no need to identify a landmark before the range scan can be
+interpreted; indeed, in Figure 25.8(b), the robot faces a featureless wall. On the other hand,
+ifthere arevisible, id

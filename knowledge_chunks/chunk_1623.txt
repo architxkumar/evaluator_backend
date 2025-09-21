@@ -1,0 +1,43 @@
+fectofsmallchildrenontheenvironment.
+146 Chapter 4. Beyond Classical Search
+(a)Possiblelocations ofrobotafter E NSW
+1
+(b)Possiblelocations ofrobot After E NSW,E NS
+1 2
+Figure4.18 Possiblepositionsoftherobot,(cid:13),(a)afteroneobservation E NSW and
+1
+(b)afterasecondobservation E NS.Whensensorsarenoiselessandthetransitionmodel
+2
+isaccurate,therearenootherpossiblelocationsfortherobotconsistentwiththissequence
+oftwoobservations.
+NSW,meaningthereareobstaclestothenorth,west,andsouth,anddoesanupdateusingthe
+equation b
+o UPDATE(b),yielding the4locations shownin Figure4.18(a). Youcaninspect
+themazetoseethatthosearetheonlyfourlocations thatyieldthepercept NWS.
+Nexttherobot executes a Move action, buttheresultisnondeterministic. Thenewbe-
+liefstate,b
+a PREDICT(b
+o
+,Move),containsallthelocationsthatareonestepawayfromthe
+locations in b
+o
+. When the second percept, NS, arrives, the robot does UPDATE(b
+a
+,NS) and
+finds that the belief state has collapsed down to the single location shown in Figure 4.18(b).
+That stheonlylocation thatcouldbetheresultof
+UPDATE(PREDICT(UPDATE(b,NSW),Move),NS).
+With nondetermnistic actions the PREDICT step grows the belief state, but the UPDATE step
+shrinks it back down as long as the percepts provide some useful identifying information.
+Sometimes the percepts don t help much for localization: If there were one or more long
+east-west corridors, then a robot could receive a long sequence of NS percepts, but never
+knowwhereinthecorridor(s) itwas.
+Section4.5. Online Search Agentsand Unknown Environments 147
+4.5 ONLINE SEARCH AGENTS AND UNKNOWN ENVIRONMENTS
+So far we have concentrated on agents that use offline search algorithms. They compute
+OFFLINESEARCH
+a complete solution before setting foot in the real world and then execute the solution. In
+contrast,anonlinesearch13agentinterleavescomputationandaction: firstittakesanaction,
+ONLINESEARCH
+then itobserves theenvironment and computes the nextaction. Online search isagoodidea
+in dynamic or semidynamic do

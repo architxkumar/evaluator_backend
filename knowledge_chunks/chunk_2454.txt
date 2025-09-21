@@ -1,0 +1,29 @@
+res a degree-6 polynomial for an exact fit. There are just 7 data
+points, so a polynomial with 7 parameters does not seem to be finding any pattern in the
+data and we do not expect it to generalize well. A straight line that is not consistent with
+any ofthe data points, but mightgeneralize fairly wellforunseen values of x, isalso shown
+in (c). In general, there is a tradeoff between complex hypotheses that fit the training data
+well and simpler hypotheses that may generalize better. In Figure 18.1(d) we expand the
+Section18.3. Learning Decision Trees 697
+hypothesis space H to allow polynomials over both x and sin(x), and find that the data in
+(c) can be fitted exactly by asimple function of the form ax b csin(x). This shows the
+importanceofthechoiceofhypothesisspace. Wesaythatalearningproblemisrealizableif
+REALIZABLE
+thehypothesisspacecontainsthetruefunction. Unfortunately, wecannotalwaystellwhether
+agivenlearning problem isrealizable, becausethetruefunction isnotknown.
+In some cases, an analyst looking at a problem is willing to make more fine-grained
+distinctions about thehypothesis space, tosay even beforeseeing anydata not justthat a
+hypothesis is possible or impossible, but rather how probable it is. Supervised learning can bedonebychoosing thehypothesis h thatismostprobable giventhedata:
+h argmax P(h data).
+h H
+By Bayes rulethisisequivalentto
+h argmax P(data h)P(h).
+h H
+Then we can say that the prior probability P(h) is high for a degree-1 or -2 polynomial,
+lower for a degree-7 polynomial, and especially low for degree-7 polynomials with large,
+sharpspikes asin Figure18.1(b). Weallowunusual-looking functions whenthedatasaywe
+reallyneedthem,butwediscourage thembygivingthemalowpriorprobability.
+Why not let H be the class of all Java programs, or Turing machines? Afterall, every
+computable function can be represented by some Turing machine, and that is the best we
+can do. One problem with this idea is that it does not take into account the computational
+complexit

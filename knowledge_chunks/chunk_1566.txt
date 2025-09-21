@@ -1,0 +1,28 @@
+issible, hisadmissible;itisalsoeasytoprovethat
+hisconsistent. Furthermore, hdominatesallofitscomponent heuristics.
+3.6.3 Generating admissibleheuristics from subproblems: Patterndatabases
+Admissible heuristics canalsobederived fromthesolution costofasubproblemofagiven
+SUBPROBLEM
+problem. For example, Figure 3.30 shows a subproblem of the 8-puzzle instance in Fig-
+ure3.28. Thesubproblem involves gettingtiles1,2,3,4intotheircorrectpositions. Clearly,
+the cost of the optimal solution of this subproblem is a lower bound on the cost of the com-
+pleteproblem. Itturnsouttobemoreaccuratethan Manhattan distance insomecases.
+Theideabehind patterndatabases istostore theseexactsolution costs foreverypos-
+PATTERNDATABASE
+sible subproblem instance in our example, every possible configuration of the four tiles
+and the blank. (The locations of the other four tiles are irrelevant for the purposes of solv-
+ing the subproblem, but moves of those tiles do count toward the cost.) Then we compute
+an admissible heuristic h for each complete state encountered during a search simply by
+DB
+lookingupthecorrespondingsubproblemconfigurationinthedatabase. Thedatabaseitselfis
+constructed bysearchingback13 fromthegoalandrecordingthecostofeachnewpatternen-
+countered; theexpenseofthissearchisamortized overmany subsequent problem instances.
+Thechoiceof1-2-3-4 isfairlyarbitrary; wecouldalsoconstruct databases for5-6-7-8,
+for2-4-6-8, andsoon. Eachdatabaseyieldsanadmissibleheuristic, andtheseheuristics can
+be combined, as explained earlier, by taking the maximum value. A combined heuristic of
+thiskindismuchmoreaccuratethanthe Manhattandistance; thenumberofnodesgenerated
+whensolvingrandom 15-puzzles canbereducedbyafactorof1000.
+One might wonder whether the heuristics obtained from the 1-2-3-4 database and the
+5-6-7-8couldbeadded,sincethetwosubproblems seemnottooverlap. Wouldthisstillgive
+an admissible heuristic? The answer is no, because the solutions of the 1-2-3-4 subproblem
+and the 5-6-7-8 subproblem 

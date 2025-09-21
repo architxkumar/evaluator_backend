@@ -1,0 +1,37 @@
+ces is unsatisfiable
+Ground resolution
+theorem
+Resolution can find a contradiction in S'
+Lifting lemma
+There is a resolution proof for the contradiction in S'
+Figure9.13 Structureofacompletenessproofforresolution.
+Tocarryoutthefirststep,weneedthreenewconcepts:
+HERBRAND Herbrand universe: If S is a set of clauses, then H , the Herbrand universe of S, is
+UNIVERSE S
+thesetofallgroundtermsconstructable fromthefollowing:
+a. Thefunction symbolsin S,ifany.
+b. Theconstant symbolsin S,ifany;ifnone,thentheconstant symbol A.
+Forexample,if S containsjusttheclause P(x,F(x,A)) Q(x,A) R(x,B),then
+H isthefollowinginfinitesetofground terms:
+S A,B,F(A,A),F(A,B),F(B,A),F(B,B),F(A,F(A,A)),... . Saturation: If S is a set of clauses and P is a set of ground terms, then P(S), the
+SATURATION
+saturation of S with respect to P, isthe set of allground clauses obtained by applying
+allpossible consistent substitutions ofgroundtermsin P withvariablesin S. Herbrand base: The saturation of a set S of clauses with respect to its Herbrand uni-
+HERBRANDBASE
+verse is called the Herbrand base of S, written as H (S). For example, if S contains
+S
+solelytheclausejustgiven,then H (S)istheinfinitesetofclauses
+S P(A,F(A,A)) Q(A,A) R(A,B), P(B,F(B,A)) Q(B,A) R(B,B), P(F(A,A),F(F(A,A),A)) Q(F(A,A),A) R(F(A,A),B), P(F(A,B),F(F(A,B),A)) Q(F(A,B),A) R(F(A,B),B),... HERBRAND S Thesedefinitionsallowustostateaformof Herbrand stheorem(Herbrand, 1930):
+THEOREM
+Ifaset S ofclausesisunsatisfiable, thenthereexistsafinitesubsetof H (S)that
+S
+isalsounsatisfiable.
+(cid:2)
+Let S bethisfinitesubsetofgroundsentences. Now,wecanappealtothegroundresolution
+(cid:2)
+theorem (page 255) to show that the resolution closure RC(S ) contains the empty clause.
+(cid:2)
+Thatis,running propositional resolution tocompletion on S willderiveacontradiction.
+Now that we have established that there is always a resolution proof involving some
+finite subset of the Herbrand base of S, the next step is to show that there is a resolution
+352 Chapter 9. 

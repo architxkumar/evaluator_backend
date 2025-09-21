@@ -1,0 +1,24 @@
+m beforeapracticalmethodemerges.
+Recall that likelihood weighting works by sampling the nonevidence nodes of the net-
+workintopologicalorder,weightingeachsamplebythelikelihooditaccordstotheobserved
+evidence variables. As with the exact algorithms, we could apply likelihood weighting di-
+rectly to an unrolled DBN,but this would suffer from the same problems of increasing time
+Section15.5. Dynamic Bayesian Networks 597
+and space requirements per update as the observation sequence grows. The problem is that
+the standard algorithm runs each sample in turn, all the way through the network. Instead,
+we can simply run all N samples together through the DBN, one slice at a time. The mod-
+ified algorithm fits the general pattern of filtering algorithms, with the set of N samples as
+the forward message. The first key innovation, then, is to use the samples themselves as an
+approximaterepresentation ofthecurrentstatedistribution. Thismeetstherequirementofa constant timeperupdate,althoughtheconstantdependsonthenumberofsamplesrequired
+tomaintainanaccurateapproximation. Thereisalsononeed tounrollthe DBN,because we
+needtohaveinmemoryonlythecurrent sliceandthenextslice.
+In our discussion of likelihood weighting in Chapter 14, we pointed out that the al-
+gorithm s accuracy suffers if the evidence variables are downstream from the variables
+being sampled, because in that case the samples are generated without any influence from
+the evidence. Looking at the typical structure of a DBN say, the umbrella DBN in Fig-
+ure15.16 weseethatindeedtheearlystatevariableswillbesampledwithoutthebenefitof
+thelaterevidence. Infact, looking morecarefully, weseethatnoneofthestatevariables has
+anyevidence variables amongitsancestors! Hence, although theweightofeachsamplewill
+depend on the evidence, the actual set of samples generated will be completely independent
+of the evidence. For example, even if the boss brings in the umbrella every day, the sam-
+pling process could stillhallucinate endless days o

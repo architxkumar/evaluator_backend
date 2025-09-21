@@ -1,0 +1,36 @@
+line,1005 Atanasoff,J.,14
+1086 reflective,1048 Atkeson,C.G.,854,1083
+Amit,D.,761,1064 rule-based,336 Atkin,L.R.,110,1089
+analogicalreasoning,799 three-layer,1004 atom,295
+ANALOGY,19,31 arcreversal,559 atomicrepresentation,57,64
+analysisofalgorithms,1053 Arentoft,M.M.,432,1064 atomicsentence,244,295,294 295,
+Analytical Engine,14 argmax,1059 299
+analyticalgeneralization,799 argmax,166 attribute,58
+Anantharaman,T.S.,192,1076 argument attribute-basedextraction,874
+Anbulagan,277,1080 fromdisability,1021 1022 auction,679
+anchoringeffect,621 frominformality,1024 1025 ascending-bid,679
+anchortext,463 Ariely,D.,619,638,1064 Dutch,692
+AND ORgraph,257 Aristotle,4 7,10,59,60,275,313,468, English,679
+And-Elimination,250 469,471,758,966,1041 first-price,681
+AND-OR-GRAPH-SEARCH,136 arity,292,332 sealed-bid,681
+AND ORtree,135 Arkin,R.,1013,1064 second-price,681
+Index 1097
+truth-revealing,680 backgammon,177 178,186,194,846, Basye,K.,1012,1070
+Vickrey,681 850 Bates,E.,921,1071
+Audi,R.,1042,1064 backgroundknowledge,235,349,777, Bates,M.A.,14,192,1090
+Auer,S.,439,469,1066 1024,1025 Batman,435
+augmentation,919 backgroundsubtraction,961 bats,435
+augmentedfinitestatemachine backingup(inasearchtree),99,165 Baum,E.,128,191,761,762,1065
+(AFSM),1003 backjumping,219,229 Baum,L.E.,604,826,1065
+augmentedgrammar,897 backmarking,229 Baumert,L.,228,1074
+AURA,356,360 backoffmodel,863 Baxter,J.,855,1065
+Austin,G.A.,798,1067 BACKTRACK,215 Bayardo,R.J.,229,230,277,1065
+Australia,203,204,216 backtracking Bayer,K.M.,228,1086
+authority,872 chronological,218 Bayerl,S.,359,1080
+AUTOCLASS,826 dependency-directed,229 Bayes rule,9,495,495 497,503,508
+automata,1035,1041 dynamic,229 Bayes,T.,495,504,1065
+automateddebugging,800 intelligent,218 220,262 Bayes Nashequilibrium,678
+automatedtaxi,40,56,236,480,694, BACKTRACKING-SEARCH,215 Bayesian,491
+695,1047 backtrackingsearch,87,215,218 220, Bayesianclassifier,499
+automobileinsurance,621 222,227 Bayesianlearning,752,803,803 804,
+Auton,L.D.,277,1069 Backus,J.W.,919,1

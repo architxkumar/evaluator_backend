@@ -1,0 +1,30 @@
+osition asfollows:
+P(Toothache,Catch,Cavity) P(Toothache,Catch Cavity)P(Cavity) (productrule) P(Toothache Cavity)P(Catch Cavity)P(Cavity) (using13.19).
+(Thereadercaneasilycheck thatthisequation doesinfacthold in Figure13.3.) Inthisway,
+theoriginal large table isdecomposed intothree smallertables. Theoriginal table has seven
+5 Weassumethatthepatientanddentistaredistinctindividuals.
+Section13.6. The Wumpus World Revisited 499
+independent numbers (23 8 entries in the table, but they must sum to 1, so 7 are indepen-
+dent). The smaller tables contain five independent numbers (for a conditional probability
+distributions such as P(T C there are tworowsof twonumbers, and each row sums to1, so
+that stwoindependent numbers; forapriordistribution like P(C)thereisonlyoneindepen-
+dent number). Going from seven to five might not seem like a major triumph, but the point
+is that, for n symptoms that are all conditionally independent given Cavity, the size of the
+representation grows as O(n) instead of O(2n). That means that conditional independence
+assertions can allow probabilistic systems to scale up; moreover, they are much more com-
+monly available than absolute independence assertions. Conceptually, Cavity separates
+SEPARATION
+Toothache and Catch because it is a direct cause of both of them. The decomposition of
+largeprobabilistic domainsintoweaklyconnectedsubsets throughconditional independence
+isoneofthemostimportantdevelopments intherecenthistoryof AI.
+Thedentistryexampleillustratesacommonlyoccurringpatterninwhichasinglecause
+directly influences anumberofeffects, allofwhichareconditionally independent, giventhe
+cause. Thefulljointdistribution canbewrittenas
+(cid:25)
+P(Cause,Effect ,...,Effect ) P(Cause) P(Effect Cause).
+1 n i
+i
+Such a probability distribution is called a naive Bayes model naive because it is often
+NAIVEBAYES
+used (as a simplifying assumption) in cases where the effect variables are not actually
+conditionally independent given the cause variable. (The naive 

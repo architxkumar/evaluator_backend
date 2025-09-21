@@ -1,0 +1,22 @@
+chinetranslationoflan-
+objectdetection.ICCV. guages:fourteenessays,pp.15 23.Wiley.
+Van Emden,M.H.and Kowalski,R.(1976). The
+semanticsofpredicatelogicasaprogramminglan- Visser,U.and Burkhard,H.-D.(2007). Robo Cup Webber, B.L.and Nilsson, N.J.(Eds.).(1981).
+guage.JACM,23(4),733 742. 2006:achievementsandgoalsforthefuture.AI Mag, Readingsin Artificial Intelligence. Morgan Kauf-
+28(2),115 130. mann.
+van Harmelen, F. and Bundy, A. (1988).
+Explanation-based generalisation partial evalu- Visser,U.,Ribeiro,F.,Ohashi,T.,and Dellaert,F. Weibull,J.(1995).Evolutionary Game Theory.MIT
+ation.AIJ,36(3),401 412. (Eds.).(2008).Robo Cup2007:Robot Soccer World Press.
+Cup XI.Springer.
+van Harmelen, F., Lifschitz, V., and Porter, B. Weidenbach,C.(2001).SPASS:Combiningsuper-
+(2007). The Handbookof Knowledge Representa- Viterbi,A.J.(1967).Errorboundsforconvolutional position,sortsandsplitting. In Robinson,A.and
+tion.Elsevier. codesandanasymptoticallyoptimumdecodingal- Voronkov,A.(Eds.),Handbookof Automated Rea-
+gorithm.IEEE Transactionson Information Theory, soning.MIT Press.
+v to an Go H d e e i l j : en A oo S r o t u , rc J e . B (E o d o . k ). in (1 M 96 a 7 t ) h . ema F ti r c o a m l L F o r g e i g c e , 13(2),260 269. Weiss,G.(2000a).Multiagentsystems.MIT Press.
+1879 1931.Harvard University Press. Vlassis,N.(2008).AConcise Introductionto Multi- Weiss,Y.(2000b). Correctnessoflocalprobability
+agent Systemsand Distributed Artificial Intelligence. propagationingraphicalmodelswithloops.Neural
+Van Hentenryck,P.,Saraswat,V.,and Deville,Y. Morganand Claypool. Computation,12(1),1 41.
+(1998). Design,implementation,andevaluationof
+theconstraintlanguagecc(FD). J.Logic Program- von Mises,R.(1928). Wahrscheinlichkeit,Statistik Weiss, Y. and Freeman, W. (2001). Correctness
+ming,37(1 3),139 164. und Wahrheit.J.Springer. ofbeliefpropagationin Gaussiangraphicalmodels
+van Hoeve,W.-J.(2001).Thealldifferentconstraint: von Neumann, J. (1928). Zur Theorie der ofarbitrarytopology. Neural Computation,13(

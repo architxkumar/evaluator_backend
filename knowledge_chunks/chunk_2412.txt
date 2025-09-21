@@ -1,0 +1,29 @@
+eprobabilityparameter,thesecond
+player will choose the better of the two actions, so the value of the first player s mixed
+strategyisgivenbytheheavylines. Thefirstplayerwillchoosetheprobabilityparameterfor
+themixedstrategyattheintersectionpoint.
+theutilitiesofthepurestrategies, u andu . Thislinearcombination canneverbebetter
+one two
+thanthebetterofu andu ,sothesecondplayercanjustchoosethebetterone.
+one two
+Withthisobservation inmind,theminimaxtreescanbethought ofashaving infinitely
+many branches at the root, corresponding to the infinitely many mixed strategies the first
+672 Chapter 17. Making Complex Decisions
+player can choose. Each of these leads to a node with two branches corresponding to the
+purestrategiesforthesecondplayer. Wecandepicttheseinfinitetreesfinitelybyhavingone parameterized choiceattheroot: If E chooses first, the situation isas shown in Figure 17.12(c). E chooses the strategy p:one;(1 p):two attheroot,andthen Ochoosesapurestrategy(andhenceamove)
+giventhevalueofp. If Ochoosesone,theexpectedpayoff(to E)is2p 3(1 p) 5p 3; if O chooses two, the expected payoff is 3p 4(1 p) 4 7p. We can draw
+thesetwopayoffsasstraightlinesonagraph,where prangesfrom0to1onthex-axis,
+asshownin Figure17.12(e). O,theminimizer,willalwayschoosethelowerofthetwo
+lines,asshownbytheheavylinesinthefigure. Therefore,thebestthat E candoatthe
+rootistochoose ptobeattheintersection point, whichiswhere
+5p 3 4 7p p 7 12.
+Theutilityfor E atthispointis U 1 12.
+E,O If O moves first, the situation is as shown in Figure 17.12(d). O chooses the strategy q:one;(1 q):two attheroot, andthen E chooses amovegiventhevalueofq. The
+payoffsare2q 3(1 q) 5q 3and 3q 4(1 q) 4 7q.7 Again,Figure17.12(f)
+showsthatthebest O candoattherootistochoosetheintersection point:
+5q 3 4 7q q 7 12.
+Theutilityfor E atthispointis U 1 12.
+O,E
+Nowweknow that thetrue utility ofthe original gameliesbetween 1 12 and 1 12, that
+is, it is exactly 1 12! (The moral is that it is better to be O than E if you are playing this
+game.) F

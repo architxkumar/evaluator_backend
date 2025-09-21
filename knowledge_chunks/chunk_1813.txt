@@ -1,0 +1,24 @@
+ions that really do interfere with each other, we
+canallowforplansthatincludemultiplesimultaneousactions andbecause SATPLA Nfinds
+theshortestlegalplan,wecanbesurethatitwilltakeadvantage ofthiscapability.
+To summarize, SATPLAN finds models for a sentence containing the initial state, the
+goal, the successor-state axioms, the precondition axioms, and the action exclusion axioms.
+It can be shown that this collection of axioms is sufficient, in the sense that there are no
+longer any spurious solutions. Any model satisfying the propositional sentence will be a
+valid plan for the original problem. Modern SAT-solving technology makes the approach
+quite practical. Forexample, a DPLL-stylesolverhasno difficulty in generating the11-step
+solution forthewumpusworldinstance shownin Figure7.2.
+Thissectionhasdescribedadeclarativeapproachtoagentconstruction: theagentworks
+byacombination ofasserting sentences intheknowledge baseandperforming logical infer-
+ence. This approach has some weaknesses hidden in phrases such as for each time t and
+13 Noticethattheadditionofpreconditionaxiomsmeansthatweneednotincludepreconditionsforactionsin
+thesuccessor-stateaxioms.
+274 Chapter 7. Logical Agents for each square x,y . For any practical agent, these phrases have to be implemented by
+codethatgenerates instances ofthegeneral sentence schemaautomatically forinsertion into
+theknowledge base. Forawumpusworldofreasonable size one comparable toasmallish
+computer game we might need a 100 100 board and 1000 time steps, leading to knowl-
+edge bases withtens orhundreds ofmillions ofsentences. Notonly does thisbecome rather
+impractical, but it also illustrates a deeper problem: we know something about the wum-
+pus world namely, that the physics works the same way across all squares and all time
+steps that we cannot express directly in the language of propositional logic. To solve this
+problem, we need a more expressive language, one in which phrases like for each time t and for each square x,y can be wr

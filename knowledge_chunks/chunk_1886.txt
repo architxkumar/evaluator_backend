@@ -1,0 +1,29 @@
+ its ground terms, we can find the subset by first
+generatingalltheinstantiations withconstantsymbols(Richard and John),thenalltermsof
+depth1(Father(Richard)and Father(John)),thenalltermsofdepth2,andsoon,untilwe
+areabletoconstruct apropositional proofoftheentailedsentence.
+We have sketched an approach to first-order inference via propositionalization that is
+complete that is, any entailed sentence can be proved. This is a major achievement, given
+that the space of possible models is infinite. On the other hand, we do not know until the
+proof isdone that thesentence isentailed! Whathappens whenthesentence isnot entailed?
+Canwetell? Well, forfirst-order logic, itturns outthat wecannot. Ourproof procedure can
+goonandon, generating moreandmoredeeply nested terms, butwewillnotknowwhether
+itisstuckinahopeless looporwhethertheproofisjustabout topopout. Thisisverymuch
+Section9.2. Unificationand Lifting 325
+likethehaltingproblemfor Turingmachines. Alan Turing(1936)and Alonzo Church(1936)
+bothproved, inratherdifferent ways, theinevitability of thisstateofaffairs. Thequestion of
+entailmentforfirst-orderlogicissemidecidable thatis,algorithmsexistthatsayyestoevery
+entailed sentence, butnoalgorithm existsthatalsosaysnotoeverynonentailed sentence.
+9.2 UNIFICATION AND LIFTING
+The preceding section described the understanding of first-order inference that existed up
+to the early 1960s. The sharp-eyed reader (and certainly the computational logicians of the
+early1960s)willhavenoticedthatthepropositionalization approachisratherinefficient. For
+example, given the query Evil(x) and the knowledge base in Equation (9.1), it seems per-
+versetogenerate sentences suchas King(Richard) Greedy(Richard) Evil(Richard).
+Indeed, theinference of Evil(John)fromthesentences x King(x) Greedy(x) Evil(x)
+King(John)
+Greedy(John)
+seems completely obvious to a human being. We now show how to make it completely
+obvioustoacomputer.
+9.2.1 A first-order inference rule
+Theinferencethat Johnisevil thatis,that x J

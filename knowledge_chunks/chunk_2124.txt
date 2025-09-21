@@ -1,0 +1,29 @@
+e 500. Implementashopping agentthatacceptsdescriptions inthislanguage.
+12.25 Ourdescriptionof Internetshoppingomittedtheall-importantstepofactuallybuying
+the product. Provide a formal logical description of buying, using event calculus. That is,
+define the sequence of events that occurs when a buyer submits a credit-card purchase and
+theneventually getsbilledandreceivestheproduct.
+13
+QUANTIFYING
+UNCERTAINTY
+Inwhichweseehowanagentcantameuncertainty withdegrees ofbelief.
+13.1 ACTING UNDER UNCERTAINTY
+Agents may need to handle uncertainty, whether due to partial observability, nondetermin-
+UNCERTAINTY
+ism, ora combination of the two. An agent may never know for certain what state it s in or
+whereitwillendupafterasequence ofactions.
+Wehaveseenproblem-solvingagents(Chapter4)andlogicalagents(Chapters7and11)
+designed tohandleuncertainty bykeeping trackofabeliefstate arepresentation oftheset
+of all possible world states that it might be in and generating a contingency plan that han-
+dleseverypossibleeventualitythatitssensorsmayreport duringexecution. Despiteitsmany
+virtues, however,thisapproach hassignificantdrawbacks whentakenliterally asarecipefor
+creating agentprograms: When interpreting partial sensor information, a logical agent must consider every log-
+ically possible explanation for the observations, no matter how unlikely. This leads to
+impossiblelargeandcomplexbelief-state representations. Acorrect contingent plan that handles every eventuality can grow arbitrarily large and
+mustconsiderarbitrarily unlikely contingencies. Sometimes there is no plan that is guaranteed to achieve the goal yet the agent must
+act. Itmusthavesomewaytocomparethemeritsofplansthatarenotguaranteed.
+Suppose, for example, that an automated taxi!automated has the goal of delivering a pas-
+senger to the airport on time. The agent forms a plan, A , that involves leaving home 90
+90
+minutes before the flight departs and driving at a reasonable speed. Even though the airport
+is only about 5 miles a

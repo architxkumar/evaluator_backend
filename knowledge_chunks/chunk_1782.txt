@@ -1,0 +1,56 @@
+ isalreadyknowntobepitless):
+R : P .
+13 2,2
+R : P .
+14 1,3
+We can also apply biconditional elimination to R , followed by Modus Ponens with R , to
+3 5
+obtainthefactthatthereisapitin 1,1 , 2,2 ,or 3,1 :
+R : P P P .
+15 1,1 2,2 3,1
+Now comes the firstapplication of the resolution rule: the literal P in R resolves with
+2,2 13
+theliteral P in R togivetheresolvent
+RESOLVENT 2,2 15
+R : P P .
+16 1,1 3,1
+In English;ifthere sapitinoneof 1,1 , 2,2 ,and 3,1 andit snotin 2,2 ,thenit sin 1,1 or 3,1 . Similarly,theliteral P in R resolveswiththeliteral P in R togive
+1,1 1 1,1 16
+R : P .
+17 3,1
+In English: if there s a pit in 1,1 or 3,1 and it s not in 1,1 , then it s in 3,1 . These last
+twoinference stepsareexamplesoftheunitresolution inference rule,
+UNITRESOLUTION
+(cid:3) (cid:3) , m
+1 k
+,
+(cid:3) 1 (cid:3) i 1 (cid:3) i 1 (cid:3) k
+COMPLEMENTARY where each (cid:3) is a literal and (cid:3) and m are complementary literals (i.e., one is the negation
+LITERALS i
+Section7.5. Propositional Theorem Proving 253
+of the other). Thus, the unit resolution rule takes a clause a disjunction of literals and a
+CLAUSE
+literalandproduces anewclause. Notethatasingleliteral canbeviewedasadisjunction of
+oneliteral, alsoknownasaunitclause.
+UNITCLAUSE
+Theunitresolution rulecanbegeneralized tothefull resolution rule,
+RESOLUTION
+(cid:3) (cid:3) , m m
+1 k 1 n
+,
+(cid:3) 1 (cid:3) i 1 (cid:3) i 1 (cid:3) k m 1 m j 1 m j 1 m n
+where (cid:3) and m are complementary literals. Thissays that resolution takes twoclauses and
+i j
+produces a new clause containing all the literals of the two original clauses except the two
+complementary literals. Forexample,wehave
+P P , P P
+1,1 3,1 1,1 2,2
+.
+P P
+3,1 2,2
+Thereisonemoretechnical aspectoftheresolution rule: theresulting clauseshould contain
+onlyonecopyofeachliteral.9 Theremovalofmultiplecopies ofliterals iscalled factoring.
+FACTORING
+Forexample,ifweresolve (A B)with(A B),weobtain(A A),whichisreducedto
+just A.
+Thesoundnessoftheresolutionrulecanbeseeneasilybyconsidering t

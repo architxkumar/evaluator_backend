@@ -1,0 +1,28 @@
+ometimes a conformant problem. At first, one might think the sensorless
+SENSORLESS
+agent has no hope ofsolving aproblem if ithas no idea whatstate it s in; in fact, sensorless
+CONFORMANT
+problems are quite often solvable. Moreover, sensorless agents can be surprisingly useful,
+primarily because they don t rely on sensors working properly. In manufacturing systems,
+forexample,manyingeniousmethodshavebeendevelopedfororientingpartscorrectlyfrom
+an unknown initial position by using a sequence of actions with no sensing at all. The high
+cost of sensing is another reason to avoid it: for example, doctors often prescribe a broad-
+spectrum antibiotic rather than using the contingent plan of doing an expensive blood test,
+thenwaitingfortheresults tocomeback, andthenprescribing amorespecificantibiotic and
+perhapshospitalization becausetheinfection hasprogressed toofar.
+Wecan make a sensorless version of the vacuum world. Assume that the agent knows
+the geography of its world, but doesn t know its location or the distribution of dirt. In that
+case,itsinitialstatecouldbeanyelementoftheset 1,2,3,4,5,6,7,8 . Now,considerwhat
+happensifittriestheaction Right. Thiswillcauseittobeinoneofthestates 2,4,6,8 the
+agentnowhasmoreinformation! Furthermore, theactionsequence Right,Suck willalways
+endup inone ofthestates 4,8 . Finally, thesequence Right,Suck,Left,Suck isguaranteed
+to reach the goal state 7 no matter what the start state. We say that the agent can coerce the
+COERCION
+worldintostate7.
+Tosolvesensorlessproblems,wesearchinthespaceofbeliefstatesratherthanphysical
+states.10 Notice that in belief-state space, the problem is fully observable because the agent
+10 Inafullyobservableenvironment,eachbeliefstatecontainsonephysicalstate. Thus,wecanviewthealgo-
+rithmsin Chapter3assearchinginabelief-statespaceofsingletonbeliefstates.
+Section4.4. Searchingwith Partial Observations 139
+alwaysknowsitsownbeliefstate. Furthermore, thesolution (ifany)isalwaysasequence of
+actions. Thisisbecause,asin

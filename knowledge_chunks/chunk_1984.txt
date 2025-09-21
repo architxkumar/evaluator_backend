@@ -1,0 +1,38 @@
+asthey
+arebothcompleted beforethe Put On(Spare,Axle)action.
+Partially ordered plans are created by a search through the space of plans rather than
+through the state space. We start with the empty plan consisting of just the initial state and
+thegoal,withnoactionsinbetween,asinthetopof Figure10.13. Thesearchprocedurethen
+looks for a flaw in the plan, and makes an addition to the plan to correct the flaw (or if no
+FLAW
+correction can be made, the search backtracks and tries something else). A flaw is anything
+that keeps thepartial plan from being asolution. Forexample, oneflawintheemptyplan is
+thatnoactionachieves At(Spare,Axle). Onewaytocorrecttheflawistoinsertintotheplan
+Section10.4. Other Classical Planning Approaches 391
+At(Spare,Trunk)
+Start At(Spare,Axle) Finish
+At(Flat,Axle)
+(a)
+At(Spare,Trunk) Remove(Spare,Trunk)
+At(Spare,Trunk) At(Spare,Ground)
+Start Put On(Spare,Axle) At(Spare,Axle) Finish
+At(Flat,Axle) At(Flat,Axle)
+(b)
+At(Spare,Trunk) Remove(Spare,Trunk)
+At(Spare,Trunk) At(Spare,Ground)
+Start Put On(Spare,Axle) At(Spare,Axle) Finish
+At(Flat,Axle) At(Flat,Axle)
+At(Flat,Axle) Remove(Flat,Axle)
+(c)
+Figure10.13 (a)thetireproblemexpressedasanemptyplan. (b)anincompletepartially
+orderedplanforthetireproblem.Boxesrepresentactionsandarrowsindicatethatoneaction
+mustoccurbeforeanother.(c)acompletepartially-orderedsolution.
+theaction Put On(Spare,Axle). Ofcoursethatintroducessomenewflaws: thepreconditions
+of the new action are not achieved. The search keeps adding to the plan (backtracking if
+necessary) until all flaws are resolved, as in the bottom of Figure 10.13. At every step, we
+make the least commitment possible to fix the flaw. For example, in adding the action
+LEASTCOMMITMENT
+Remove(Spare,Trunk)weneedtocommittohaving itoccurbefore Put On(Spare,Axle),
+butwemakenoothercommitmentthatplacesitbeforeorafter otheractions. Iftherewerea
+variableintheactionschemathatcouldbeleftunbound, wewoulddoso.
+In the 1980s and 90s, partial-order planning was seen as the best way to

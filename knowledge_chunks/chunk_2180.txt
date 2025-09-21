@@ -1,0 +1,27 @@
+non is
+quite general and is related to the distinction between causal and diagnostic models intro-
+duced in Section 13.5.1 (see also Exercise 8.13). If we try to build a diagnostic model with
+links from symptoms to causes (as from Mary Calls to Alarm or Alarm to Burglary), we
+enduphavingtospecifyadditionaldependenciesbetweenotherwiseindependentcauses(and
+oftenbetweenseparately occurring symptomsaswell). Ifwesticktoacausalmodel,weend
+uphavingtospecifyfewernumbers,andthenumberswilloftenbeeasiertocomeupwith. In
+the domain of medicine, for example, it has been shown by Tversky and Kahneman (1982)
+that expert physicians prefer to give probability judgments for causal rules rather than for
+diagnostic ones.
+Figure14.3(b) shows averybad node ordering: Mary Calls, John Calls, Earthquake,
+Burglary,Alarm. Thisnetworkrequires31distinctprobabilitiestobespecified exactlythe
+samenumberasthefull joint distribution. Itisimportant torealize, however, that anyofthe
+threenetworkscanrepresent exactlythesamejointdistribution. Thelasttwoversionssimply
+failtorepresentalltheconditionalindependence relationships andhenceendupspecifying a
+lotofunnecessary numbersinstead.
+14.2.2 Conditionalindependence relationsin Bayesiannetworks
+We have provided a numerical semantics for Bayesian networks in terms of the represen-
+tation of the full joint distribution, as in Equation (14.2). Using this semantics to derive a
+method for constructing Bayesian networks, we were led to the consequence that a node is
+conditionally independent of its other predecessors, given its parents. It turns out that we
+canalso gointheotherdirection. Wecanstart from a topological semantics that specifies
+theconditional independence relationships encoded bythe graphstructure, andfromthiswe
+can derive the numerical semantics. The topological semantics2 specifies that each vari-
+able is conditionally independent of its non-descendants, given its parents. Forexample, in
+DESCENDANT
+Figure14.2, John Calls isindependent of Burglary,

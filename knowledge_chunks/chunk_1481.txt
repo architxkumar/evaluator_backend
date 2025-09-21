@@ -1,0 +1,26 @@
+
+possible perceptsequence.
+It is instructive to consider why the table-driven approach to agent construction is
+doomed to failure. Let P be the set of possible percepts and let T be the lifet(cid:2)ime of the
+agent(thetotalnumberofperceptsitwillreceive). Thelookuptablewillcontain T P t
+t 1
+entries. Consider the automated taxi: the visual input from a single camera comes in at the
+rate of roughly 27 megabytes per second (30 frames per second, 640 480 pixels with 24
+bitsofcolorinformation). Thisgivesalookup table withover10250,000,000,000 entries foran
+hour s driving. Even the lookup table for chess a tiny, well-behaved fragment of the real
+world would have at least 10150 entries. The daunting size of these tables (the number of
+atoms in the observable universe is less than 1080) means that (a) no physical agent in this
+universe willhavethespacetostorethetable, (b)thedesignerwouldnothavetimetocreate
+the table, (c)no agent could everlearn allthe right table entries from itsexperience, and (d)
+even if the environment is simple enough to yield a feasible table size, the designer still has
+noguidance abouthowtofillinthetableentries.
+Despite all this, TABLE-DRIVEN-AGENT does do what we want: it implements the
+desired agent function. The key challenge for AI is to find out how to write programs that,
+to the extent possible, produce rational behavior from a smallish program rather than from
+a vast table. We have many examples showing that this can be done successfully in other
+areas: forexample,thehugetablesofsquarerootsusedbyengineersandschoolchildrenprior
+to the 1970s have now been replaced by a five-line program for Newton s method running
+on electronic calculators. The question is, can AI do for general intelligent behavior what
+Newtondidforsquareroots? Webelievetheanswerisyes.
+In the remainder of this section, we outline four basic kinds of agent programs that
+embodytheprinciples underlying almostallintelligent systems: Simplereflexagents; Model-based reflexagents; Goal

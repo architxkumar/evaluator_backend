@@ -1,0 +1,35 @@
+ 5 airports. Now there are only 510 55 10 1017 states. A solution in this
+abstract state space will be shorter than a solution in the original space (and thus will be an
+admissible heuristic), and the abstract solution is easy to extend to a solution to the original
+problem (byaddingadditional Load and Unload actions).
+3 Manyproblemsarewrittenwiththisconvention. Forproblemsthataren t,replaceeverynegativeliteral P
+inagoalorpreconditionwithanewpositiveliteral,P(cid:3).
+378 Chapter 10. Classical Planning
+Figure10.6 Twostatespacesfromplanningproblemswiththeignore-delete-listsheuris-
+tic. Theheightabovethebottomplaneistheheuristicscoreofastate;statesonthebottom
+planearegoals. Therearenolocalminima,sosearchforthegoalisstraightforward. From
+Hoffmann(2005).
+Akeyideaindefiningheuristicsisdecomposition: dividingaproblemintoparts,solv-
+DECOMPOSITION
+SUBGOAL ing each part independently, and then combining the parts. The subgoal independence as-
+INDEPENDENCE
+sumption is that the cost of solving a conjunction of subgoals is approximated by the sum
+of the costs of solving each subgoal independently. The subgoal independence assumption
+canbeoptimisticorpessimistic. Itisoptimisticwhentherearenegativeinteractions between
+the subplans for each subgoal for example, when an action in one subplan deletes a goal
+achieved by another subplan. It is pessimistic, and therefore inadmissible, when subplans
+containredundantactions forinstance,twoactionsthatcouldbereplacedbyasingleaction
+inthemergedplan.
+Supposethegoalisasetoffluents G,whichwedivideintodisjointsubsets G ,...,G .
+1 n
+Wethen findplans P ,...,P that solve therespective subgoals. Whatisanestimate ofthe
+1 n
+costoftheplanforachievingallof G? Wecanthinkofeach Cost(P )asaheuristicestimate,
+i
+andweknowthatifwecombineestimatesbytakingtheirmaximumvalue,wealwaysgetan
+admissible heuristic. So max
+i
+COST(P
+i
+) is admissible, and sometimes it is exactly correct:
+it could be that P serendipitously achieves all the G . But in most cases, in pract

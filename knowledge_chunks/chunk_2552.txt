@@ -1,0 +1,44 @@
+ machine learning is published in the annual proceedings
+ofthe International Conference on Machine Learning (ICML)and theconference on Neural
+Information Processing Systems (NIPS), in Machine Learning and the Journal of Machine
+Learning Research,andinmainstream AIjournals.
+EXERCISES
+18.1 Considertheproblem facedbyaninfantlearningtospeakand understand alanguage.
+Explain how this process fits into the general learning model. Describe the percepts and
+actions oftheinfant, andthetypes oflearning the infant mustdo. Describe thesubfunctions
+theinfantistryingtolearnintermsofinputsandoutputs, andavailable exampledata.
+18.2 Repeat Exercise 18.1 forthe case oflearning to play tennis (orsome other sport with
+whichyouarefamiliar). Isthissupervised learningorreinforcement learning?
+18.3 Suppose we generate a training set from a decision tree and then apply decision-tree
+learning to that training set. Is it the case that the learning algorithm will eventually return
+thecorrecttreeasthetraining-set sizegoestoinfinity? Whyorwhynot?
+18.4 In the recursive construction of decision trees, it sometimes happens that a mixed set
+of positive and negative examples remains at a leaf node, even after all the attributes have
+beenused. Supposethatwehaveppositiveexamplesandnnegativeexamples.
+764 Chapter 18. Learningfrom Examples
+a. Showthatthesolutionusedby DECISION-TREE-LEARNING,whichpicksthemajority
+classification, minimizestheabsolute erroroverthesetof examplesattheleaf.
+b. Showthattheclassprobabilityp (p n)minimizesthesumofsquared errors.
+CLASSPROBABILITY
+18.5 Suppose that an attribute splits the set of examples E into subsets E and that each
+k
+subsethasp positiveexamplesandn negativeexamples. Showthattheattributehasstrictly
+k k
+positiveinformation gainunlesstheratio p (p n )isthesameforallk.
+k k k
+18.6 Considerthefollowingdatasetcomprisedofthreebinaryinputattributes(A ,A ,and
+1 2
+A )andonebinaryoutput:
+3
+Example A A A Outputy
+1 2 3
+x 1 0 0 0
+1
+x 1 0 1 0
+2
+x 0 1 0 0
+3
+x 1 1 1 1
+4
+x 1 1 0 1
+5

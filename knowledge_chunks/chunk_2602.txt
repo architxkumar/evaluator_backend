@@ -1,0 +1,24 @@
+xamples of some universally quantified proposition
+andthenadoptingitasahypothesis. Consider, forexample, thehypothesis Allemeraldsare
+grue, where grue means green if observed before time t, but blue if observed thereafter. At any time up to t, we might have observed millions of instances confirming the rule that
+emeraldsaregrue,andnodisconfirminginstances,andyetweareunwillingtoadopttherule.
+Thiscanbeexplained onlybyappealtotheroleofrelevantpriorknowledgeintheinduction
+process. Goodmanproposesavarietyofdifferentkindsofpriorknowledgethatmightbeuse-
+ful,includingaversionofdeterminationscalledoverhypotheses. Unfortunately, Goodman s
+ideaswereneverpursuedinmachinelearning.
+Thecurrent-best-hypothesisapproachisanoldideainphilosophy(Mill,1843). Early
+work in cognitive psychology also suggested that it is a natural form of concept learning in
+humans (Bruner et al., 1957). In AI, the approach is most closely associated with the work
+of Patrick Winston, whose Ph.D. thesis (Winston, 1970) addressed the problem of learning
+descriptions of complex objects. The version space method (Mitchell, 1977, 1982) takes
+a different approach, maintaining the set of all consistent hypotheses and eliminating those
+found tobeinconsistent withnewexamples. Theapproach wasused inthe Meta-DENDRAL
+Bibliographical and Historical Notes 799
+expert system for chemistry (Buchanan and Mitchell, 1978), and later in Mitchell s (1983)
+LEX system, which learns to solve calculus problems. Athird influential thread wasformed
+by the work of Michalski and colleagues on the AQseries of algorithms, which learned sets
+oflogical rules(Michalski, 1969;Michalski etal.,1986).
+EBL had its roots in the techniques used by the STRIPS planner (Fikes et al., 1972).
+When a plan was constructed, a generalized version of it was saved in a plan library and
+used in later planning as a macro-operator. Similar ideas appeared in Anderson s ACT architecture, under the heading of knowledge compilation (Anderson, 1983), and in the
+SOAR 

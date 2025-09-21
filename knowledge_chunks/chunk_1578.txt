@@ -1,0 +1,27 @@
+needtodo. Reformulatetheproblemusing
+theseactions. Doweneedtokeeptrackoftherobot sorientation now?
+d. In our initial description of the problem we already abstracted from the real world,
+restricting actionsandremovingdetails. Listthreesuchsimplifications wemade.
+3.3 Suppose twofriends livein different cities ona map, such as the Romania map shown
+in Figure 3.2. Onevery turn, wecan simultaneously move each friend to a neighboring city
+onthemap. Theamountoftimeneededtomovefromcityitoneighborj isequaltotheroad
+distanced(i,j)betweenthecities,butoneachturnthefriendthatarrivesfirstmustwaituntil
+theotheronearrives(andcallsthefirstonhis hercellphone) before thenextturncanbegin.
+Wewantthetwofriendstomeetasquicklyaspossible.
+a. Writeadetailed formulation forthissearch problem. (You willfindithelpful todefine
+someformalnotation here.)
+b. Let D(i,j) bethestraight-line distance between cities iandj. Whichofthefollowing
+heuristicfunctions areadmissible? (i)D(i,j);(ii)2 D(i,j);(iii)D(i,j) 2.
+c. Aretherecompletely connected mapsforwhichnosolution exists?
+d. Aretheremapsinwhichallsolutions requireonefriendtovisitthesamecitytwice?
+3.4 Show that the 8-puzzle states are divided into two disjoint sets, such that any state is
+reachable from any other state in the same set, while no state is reachable from any state in
+theotherset. (Hint: See Berlekamp etal. (1982).) Deviseaprocedure todecide whichset a
+givenstateisin,andexplainwhythisisusefulforgenerating random states.
+3.5 Consider the n-queens problem using the effi cient incremental formulation given on
+page 72. Explain why the state space has at least 3 n! states and estimate the largest n for
+whichexhaustiveexplorationisfeasible. (Hint: Derivealowerboundonthebranchingfactor
+byconsideringthemaximumnumberofsquaresthataqueencanattackinanycolumn.)
+3.6 Givea complete problem formulation foreach of the following. Choose aformulation
+thatisprecise enoughtobeimplemented.
+a. Using only four colors, you have to color a planar map in such a wa

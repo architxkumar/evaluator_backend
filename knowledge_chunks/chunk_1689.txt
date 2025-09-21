@@ -1,0 +1,23 @@
+ minimax algorithm can
+selectoptimalmovesbyadepth-firstenumeration ofthegametree. The alpha beta search algorithm computes the same optimal move as minimax, but
+achievesmuchgreaterefficiencybyeliminating subtreesthatareprovablyirrelevant. Usually,itisnotfeasibletoconsiderthewholegametree(evenwithalpha beta),sowe
+190 Chapter 5. Adversarial Search
+need tocutthe search offatsomepoint andapply aheuristic evaluation function that
+estimatestheutilityofastate. Manygameprogramsprecompute tablesofbestmovesintheopening andendgameso
+thattheycanlookupamoveratherthansearch. Games of chance can be handled by an extension to the minimax algorithm that eval-
+uates a chance node by taking the average utility of all its children, weighted by the
+probability ofeachchild. Optimal play in games of imperfect information, such as Kriegspiel and bridge, re-
+quires reasoning about the current and future belief states of each player. A simple
+approximation can be obtained by averaging the value of an action over each possible
+configuration ofmissinginformation. Programshavebestedevenchampionhumanplayers atgamessuchaschess,checkers,
+and Othello. Humans retain the edge in several games of imperfect information, such
+as poker, bridge, and Kriegspiel, and in games with very large branching factors and
+littlegoodheuristicknowledge, suchas Go.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+The early history of mechanical game playing was marred by numerous frauds. The most
+notoriousofthesewas Baron Wolfgangvon Kempelen s(1734 1804) The Turk, asupposed
+chess-playing automaton that defeated Napoleon before being exposed as amagician s trick
+cabinet housing a human chess expert (see Levitt, 2000). It played from 1769 to 1854. In
+1846, Charles Babbage (who had been fascinated by the Turk) appears to have contributed
+the first serious discussion of the feasibility of computer chess and checkers (Morrison and
+Morrison,1961). Hedidnotunderstandtheexponentialcomplexityofsearchtrees,claiming the combinations involve

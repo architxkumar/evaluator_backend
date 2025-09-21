@@ -1,0 +1,23 @@
+niversity Press. Makinguseofcausaldependenciesintheprob-
+Hauk, T. (2004). Search in Trees with Chance lemrepresentation. In Proc.International Planning
+Hansson,O.and Mayer,A.(1989).Heuristicsearch Nodes.Ph.D.thesis,Univ.of Alberta. Competitionat ICAPS,pp.41 43.
+asevidentialreasoning.In UAI5.
+Haussler,D.(1989).Learningconjunctiveconcepts Helmert,M.and Ro ger,G.(2008). Howgoodis
+Hansson,O.,Mayer,A.,and Yung,M.(1992).Crit- instructuraldomains. Machine Learning,4(1),7 almostperfect?In AAAI-08.
+icizingsolutionstorelaxedmodelsyieldspowerful 40.
+admissibleheuristics. Information Sciences,63(3), Hendler, J., Carbonell, J. G., Lenat, D. B., Mi-
+207 227. Havelund, K., Lowry, M., Park, S., Pecheur, C., zoguchi,R.,and Rosenbloom,P.S.(1995). VERY
+Penix,J.,Visser,W.,and White,J.L.(2000).Formal largeknowledgebases Architecturevsengineer-
+Haralick,R.M.and Elliot,G.L.(1980). Increas- analysisoftheremoteagentbeforeandafterflight. ing.In IJCAI-95,pp.2033 2036.
+ingtreesearchefficiencyforconstraintsatisfaction In Proc.5th NASA Langley Formal Methods Work-
+problems.AIJ,14(3),263 313. shop. Henrion,M.(1988). Propagationofuncertaintyin
+Bayesiannetworksbyprobabilisticlogicsampling.
+Hardin,G.(1968). Thetragedyofthecommons. Havenstein,H.(2005). Springcomesto AIwinter. In Lemmer,J.F.and Kanal,L.N.(Eds.),UAI2,pp.
+Science,162,1243 1248. Computer World. 149 163.Elsevier North-Holland.
+Hardy,G.H.(1940). AMathematician s Apology. Hawkins,J.and Blakeslee,S.(2004). On Intelli- Henzinger,T.A.and Sastry,S.(Eds.).(1998). Hy-
+Cambridge University Press. gence.Henry Holtand Co. bridsystems: Computationandcontrol. Springer-
+Harman,G.H.(1983).Changein View:Principles Hayes,P.J.(1978).Thenaivephysicsmanifesto.In Verlag.
+of Reasoning.MIT Press. Michie,D.(Ed.),Expert Systemsinthe Microelec- Herbrand,J.(1930). Recherchessurla The oriede
+tronic Age.Edinburgh University Press. la De monstration.Ph.D.thesis,Universityof Paris.
+Harris,Z.(1954). Distributionalstructure. Word,
+10(2 3). Hayes,P.J.(1979).Thelogicoffram

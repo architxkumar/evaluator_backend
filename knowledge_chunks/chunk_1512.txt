@@ -1,0 +1,54 @@
+ction RESULT(s,a) that returns the state that results from
+doingactionainstates. Wealsousethetermsuccessortorefertoanystatereachable
+SUCCESSOR
+fromagivenstatebyasingleaction.2 Forexample,wehave
+RESULT(In(Arad),Go(Zerind)) In(Zerind).
+Together,theinitialstate,actions,andtransitionmodelimplicitlydefinethestatespace
+STATESPACE
+of the problem the set of all states reachable from the initial state by any sequence
+of actions. The state space forms a directed network or graph in which the nodes
+GRAPH
+are states and the links between nodes are actions. (The map of Romania shown in
+Figure 3.2 can be interpreted as a state-space graph if we view each road as standing
+fortwodriving actions, one ineach direction.) A pathin the state space is asequence
+PATH
+ofstatesconnected byasequence ofactions. Thegoal test, whichdetermines whetheragiven stateisagoal state. Sometimesthere
+GOALTEST
+is an explicit set of possible goal states, and the test simply checks whether the given
+stateisoneofthem. Theagent sgoalin Romaniaisthesingletonset In(Bucharest) .
+2 Manytreatmentsofproblemsolving,includingpreviouseditionsofthisbook,useasuccessorfunction,which
+returnsthe set of allsuccessors, instead of separate ACTION Sand RESUL Tfunctions. The successor function
+makesitdifficulttodescribeanagentthatknowswhatactionsitcantrybutnotwhattheyachieve. Also,note
+someauthoruse RESULT(a,s)insteadof RESULT(s,a),andsomeuse DOinsteadof RESULT.
+68 Chapter 3. Solving Problemsby Searching
+Oradea
+71
+Neamt
+Zerind 87
+151
+75
+Iasi
+Arad
+140
+92
+Sibiu Fagaras
+99
+118
+Vaslui
+80
+Rimnicu Vilcea
+Timisoara
+142
+111 Lugoj 97 Pitesti 211
+70 98
+Hirsova
+Mehadia 146 101 85 Urziceni
+86
+75 138
+Bucharest
+Drobeta 120
+90
+Craiova Giurgiu Eforie
+Figure3.2 Asimplifiedroadmapofpartof Romania.
+Sometimesthegoalisspecifiedbyanabstractpropertyratherthananexplicitlyenumer-
+atedsetofstates. Forexample,inchess,thegoalistoreach astatecalled checkmate, wheretheopponent s kingisunderattackandcan tescape. A path cost function that assigns a numeric co

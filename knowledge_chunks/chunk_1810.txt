@@ -1,0 +1,39 @@
+tions to complicated sets as a
+recurring themeinmanyareasof AI.
+7.7.4 Making plans by propositional inference
+Theagentin Figure7.20useslogicalinference todetermine whichsquaresaresafe,butuses A search to make plans. In this section, we show how to make plans by logical inference.
+Thebasicideaisverysimple:
+1. Constructasentence thatincludes
+(a) Init0,acollection ofassertions abouttheinitialstate;
+(b) Transition1,...,Transitiont, the successor-state axioms for all possible actions
+ateachtimeuptosomemaximumtimet;
+(c) theassertion thatthegoalisachieved attimet: Have Goldt Climbed Outt.
+272 Chapter 7. Logical Agents
+2. Presentthewholesentence toa SA Tsolver. Ifthesolverfindsasatisfying model, then
+the goal is achievable; if the sentence is unsatisfiable, then the planning problem is
+impossible.
+3. Assuming a model is found, extract from the model those variables that represent ac-
+tionsandareassigned true. Togethertheyrepresent aplantoachievethegoals.
+A propositional planning procedure, SATPLAN, is shown in Figure 7.22. It implements the
+basic idea just given, with one twist. Because the agent does not know how many steps it
+will take to reach the goal, the algorithm tries each possible number of steps t, up to some
+maximumconceivableplanlength T . Inthisway,itisguaranteedtofindtheshortestplan
+max
+if one exists. Because of the way SATPLAN searches for a solution, this approach cannot
+be used in a partially observable environment; SATPLAN would just set the unobservable
+variables tothevaluesitneedstocreateasolution.
+function SATPLAN(init, transition, goal,T
+max
+)returnssolutionorfailure
+inputs:init, transition, goal,constituteadescriptionoftheproblem
+T ,anupperlimitforplanlength
+max
+fort 0to T do
+max
+cnf TRANSLATE-TO-SAT(init, transition, goal,t)
+model SAT-SOLVER(cnf)
+ifmodel isnotnullthen
+return EXTRACT-SOLUTION(model)
+returnfailure
+Figure 7.22 The SATPLAN algorithm. The planning problem is translated into a CNF
+sentenceinwhichthegoalisassertedtoholdatafixedtimesteptanda

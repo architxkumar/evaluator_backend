@@ -1,0 +1,27 @@
+ot so
+easy. Forexample,wemightproposeautilityfunctiondesignedtominimizehumansuffering,
+expressed as anadditive reward function overtimeasin Chapter17. Giventhewayhumans
+are, however, we ll always find a way to suffer even in paradise; so the optimal decision for
+the AI system is toterminate thehuman race as soon as possible no humans, no suffering.
+With AI systems, then, we need to be very careful what we ask for, whereas humans would
+have no trouble realizing that the proposed utility function cannot be taken literally. On the
+otherhand,computersneednotbetaintedbytheirrationalbehaviorsdescribedin Chapter16.
+Humans sometimes use their intelligence in aggressive ways because humans have some
+innately aggressive tendencies, due tonatural selection. Themachines webuild need not be
+innately aggressive, unless we decide to build them that way (or unless they emerge as the
+end product ofamechanism design that encourages aggressive behavior). Fortunately, there
+aretechniques, suchasap example. One can hope that a robot that is smart enough to figure out how to terminate the
+humanraceisalsosmartenoughtofigureoutthatthatwasnottheintended utilityfunction.
+Third, the AI system s learning function may cause it to evolve into a system with
+unintended behavior. This scenario is the most serious, and is unique to AI systems, so we
+willcoveritinmoredepth. I.J.Goodwrote(1965),
+ULTRAINTELLIGENT Let an ultraintelligent machine be defined as a machine that can far surpass all the
+MACHINE
+intellectualactivitiesofanymanhoweverclever. Sincethedesignofmachinesisoneof
+theseintellectualactivities,anultraintelligentmachinecoulddesignevenbettermachines;
+there would then unquestionablybe an intelligence explosion, and the intelligence of
+manwouldbeleftfarbehind. Thusthefirstultraintelligentmachineisthelastinvention
+that man need evermake, providedthat the machine is docile enoughto tell us how to
+keepitundercontrol.
+5 Asayoungman,Charles Babbagewasinfluencedbyreading Frankenstein.
+1038 Chapter 

@@ -1,0 +1,33 @@
+variables have the do-
+i
+main 0,1,2,3 , then to make the variable X consistent with the constraint X Y Z,
+wewould have to eliminate 2 and 3from the domain of X because the constraint cannot be
+satisfiedwhen X is2or3.
+6.2.3 Pathconsistency
+Arc consistency can go a long way toward reducing the domains of variables, sometimes
+finding a solution (by reducing every domain to size 1) and sometimes finding that the CSP
+cannotbesolved(byreducingsomedomaintosize0). Butforothernetworks,arcconsistency
+fails to make enough inferences. Consider the map-coloring problem on Australia, but with
+onlytwocolorsallowed,redandblue. Arcconsistencycandonothingbecauseeveryvariable
+isalreadyarcconsistent: eachcanberedwithblueattheotherendofthearc(orviceversa).
+Butclearlythereisnosolutiontotheproblem: because Western Australia,Northern Territory
+and South Australiaalltoucheachother,weneedatleastthreecolorsforthemalone.
+Arc consistency tightens down the domains (unary constraints) using the arcs (binary
+constraints). Tomakeprogress onproblems like mapcoloring, weneed astronger notion of
+consistency. Path consistency tightens the binary constraints by using implicit constraints
+PATHCONSISTENCY
+thatareinferredbylookingattriplesofvariables.
+A two-variable set X ,X is path-consistent with respect to a third variable X if,
+i j m
+foreveryassignment X a,X b consistent withtheconstraints on X ,X ,thereis
+i j i j
+anassignmentto X thatsatisfiestheconstraintson X ,X and X ,X . Thisiscalled
+m i m m j
+path consistency because one can think of it aslooking at apath from X to X with X in
+i j m
+themiddle.
+Let sseehowpathconsistency faresincoloring the Australiamapwithtwocolors. We
+willmaketheset WA,SA pathconsistentwithrespectto NT. Westartbyenumeratingthe
+consistent assignments totheset. Inthis case, there areonly two: WA red,SA blue and WA blue,SA red . We can see that with both of these assignments NT can be
+neither red nor blue (because it would conflict with either WA or SA). Because there is no
+validch

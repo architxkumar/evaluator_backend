@@ -1,0 +1,35 @@
+ii) c In(c,South America) d In(d,Europe) Borders(c,d).
+(iv) c In(c,South America) d In(d,Europe) Borders(c,d).
+e. Notwoadjacentcountries havethesamemapcolor.
+(i) x,y Country(x) Country(y) Borders(x,y) (Map Color(x) Map Color(y)).
+(ii) x,y (Country(x) Country(y) Borders(x,y) (x y)) (Map Color(x) Map Color(y)).
+(iii) x,y Country(x) Country(y) Borders(x,y) (Map Color(x) Map Color(y)).
+(iv) x,y (Country(x) Country(y) Borders(x,y)) Map Color(x(cid:7) y).
+Exercises 317
+8.10 Consideravocabulary withthefollowingsymbols:
+Occupation(p,o): Predicate. Person phasoccupation o.
+Customer(p1,p2): Predicate. Personp1isacustomerofperson p2.
+Boss(p1,p2): Predicate. Personp1isabossofperson p2.
+Doctor,Surgeon,Lawyer,Actor: Constants denoting occupations.
+Emily,Joe: Constantsdenoting people.
+Usethesesymbolstowritethefollowingassertions infirst-orderlogic:
+a. Emilyiseitherasurgeon oralawyer.
+b. Joeisanactor, buthealsoholdsanotherjob.
+c. Allsurgeons aredoctors.
+d. Joedoesnothavealawyer(i.e.,isnotacustomerofanylawyer).
+e. Emilyhasabosswhoisalawyer.
+f. Thereexistsalawyerallofwhosecustomersaredoctors.
+g. Everysurgeon hasalawyer.
+8.11 Completethefollowingexercisesaboutlogicalsenntences:
+a. Translateinto good,natural English(noxsorys!): x,y,l Speaks Language(x,l) Speaks Language(y,l) Understands(x,y) Understands(y,x).
+b. Explainwhythissentence isentailed bythesentence x,y,l Speaks Language(x,l) Speaks Language(y,l) Understands(x,y).
+c. Translateintofirst-orderlogicthefollowingsentences:
+(i) Understanding leadstofriendship.
+(ii) Friendship istransitive.
+Remembertodefineallpredicates, functions, andconstants youuse.
+8.12 Rewrite the first two Peano axioms in Section 8.3.3 as a single axiom that defines
+Nat Num(x)soastoexcludethepossibilityofnaturalnumbersexceptforthosegeneratedby
+thesuccessorfunction.
+8.13 Equation(8.4)onpage306definestheconditionsunderwhichasquareisbreezy. Here
+weconsidertwootherwaystodescribe thisaspectofthewumpusworld.
+a. Wecanwritediagnosticrulesleadingfromobservedeffectstohi

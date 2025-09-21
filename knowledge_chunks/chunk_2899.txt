@@ -1,0 +1,25 @@
+ri-
+cally, however, the term has been reserved for control techniques that do not utilize explicit
+environmental models. Emergentbehaviorisalsocharacteristic ofbiological organisms.
+25.6.4 Reinforcement learning control
+Oneparticularlyexcitingformofcontrolisbasedonthepolicysearchformofreinforcement
+learning (see Section 21.5). This work has been enormously influential in recent years, at
+is has solved challenging robotics problems for which previously no solution existed. An
+example is acrobatic autonomous helicopter flight. Figure 25.25 shows an autonomous flip
+of a small RC (radio-controlled) helicopter. This maneuver is challenging due to the highly
+nonlinear nature of the aerodynamics involved. Only the most experienced of human pilots
+areable toperform it. Yetapolicy search method(asdescribed in Chapter21), using only a
+fewminutesofcomputation, learnedapolicythatcansafely executeaflipeverytime.
+Policy search needs an accurate model of the domain before it can find a policy. The
+input to this model is the state of the helicopter at time t, the controls at time t, and the
+resultingstateattimet t. Thestateofahelicoptercanbedescribedbythe3Dcoordinates
+of the vehicle, its yaw, pitch, and roll angles, and the rate of change of these six variables.
+The controls are the manual controls of of the helicopter: throttle, pitch, elevator, aileron,
+and rudder. Allthat remains is the resulting state how are wegoing to define a model that
+accurately says how the helicopter responds to each control? The answer is simple: Let an
+expert human pilot fly the helicopter, and record the controls that the expert transmits over
+the radio and the state variables of the helicopter. About four minutes of human-controlled
+flightsufficestobuildapredictive modelthatissufficiently accuratetosimulatethevehicle.
+Section25.7. Robotic Software Architectures 1003
+What is remarkable about this example is the ease with which this learning approach
+solvesachallengingroboticsproblem. Thisisoneoftheman

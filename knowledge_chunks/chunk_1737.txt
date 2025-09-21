@@ -1,0 +1,33 @@
+yor by a greedy assignmentprocess that choosesa minimal-
+conflict value for each variable in turn. The CONFLICTS function counts the number of
+constraintsviolatedbyaparticularvalue,giventherestofthecurrentassignment.
+2 3
+2 3
+1
+2 2
+3 3
+1 2
+2 3
+0
+Figure 6.9 A two-step solution using min-conflicts for an 8-queens problem. At each
+stage, a queen is chosen for reassignment in its column. The number of conflicts (in this
+case, the number of attacking queens) is shown in each square. The algorithm moves the
+queentothemin-conflictssquare,breakingtiesrandomly.
+heuristic. Thealgorithm isshownin Figure6.8anditsapplication toan8-queens problem is
+diagrammedin Figure6.9.
+Min-conflicts is surprisingly effective for many CS Ps. Amazingly, on the n-queens
+problem, if you don t count the initial placement of queens, the run time of min-conflicts is
+roughly independent of problem size. It solves even the million-queens problem in an aver-
+age of 50 steps (after the initial assignment). This remarkable observation was the stimulus
+leading to a great deal of research in the 1990s on local search and the distinction between
+easy and hard problems, which we take up in Chapter 7. Roughly speaking, n-queens is
+easy for local search because solutions are densely distributed throughout the state space.
+Min-conflicts also works well for hard problems. Forexample, it has been used to schedule
+observations forthe Hubble Space Telescope, reducing the timetaken toschedule aweekof
+observations fromthreeweeks(!) toaround10minutes.
+222 Chapter 6. Constraint Satisfaction Problems
+Allthelocalsearchtechniquesfrom Section4.1arecandidatesforapplicationto CS Ps,
+and some of those have proved especially effective. The landscape of a CS Punder the min-
+conflicts heuristic usually has a series of plateaux. There may be millions of variable as-
+signments that are only one conflict away from a solution. Plateau search allowing side-
+waysmovestoanother state withthesamescore can helplocal search finditswayoffth

@@ -1,0 +1,30 @@
+esign minimizes the physical danger to people who might stumble
+intosucharobot. Thisisakeyconsideration indeploying robotsindomesticenvironments.
+Legs, unlike wheels, can handle rough terrain. However, legs are notoriously slow on
+flatsurfaces, andtheyaremechanically difficulttobuild. Roboticsresearchers havetriedde-
+signsrangingfromoneleguptodozensoflegs. Leggedrobots havebeenmadetowalk,run,
+andevenhop asweseewiththeleggedrobotin Figure25.5(b). Thisrobotisdynamically
+DYNAMICALLY stable, meaning that it can remain upright while hopping around. A robot that can remain
+STABLE
+upright without moving its legs is called statically stable. A robot is statically stable if its
+STATICALLYSTABLE
+centerofgravityisabovethepolygonspannedbyitslegs. Thequadruped(four-legged)robot
+shown in Figure 25.6(a) may appear statically stable. However, it walks by lifting multiple
+legs atthesame time, which renders itdynamically stable. Therobot can walkon snow and
+ice, and it will not fall over even if you kick it (as demonstrated in videos available online).
+Two-leggedrobotssuchasthosein Figure25.6(b)aredynamically stable.
+Other methods of movement are possible: air vehicles use propellers or turbines; un-
+derwater vehicles use propellers or thrusters, similar to those used on submarines. Robotic
+blimpsrelyonthermaleffectstokeepthemselvesaloft.
+Sensorsandeffectorsalonedonotmakearobot. Acomplete robotalsoneedsasource
+of power to drive its effectors. The electric motor is the most popular mechanism for both
+ELECTRICMOTOR
+PNEUMATIC manipulator actuation and locomotion, but pneumatic actuation using compressed gas and
+ACTUATION
+HYDRAULIC hydraulicactuation usingpressurized fluidsalsohavetheirapplication niches.
+ACTUATION
+978 Chapter 25. Robotics
+(a) (b)
+Figure25.6 (a)Four-leggeddynamically-stablerobot Big Dog. Imagecourtesy Boston
+Dynamics,(cid:2)c 2009.(b)2009Robo Cup Standard Platform Leaguecompetition,showingthe
+winningteam,B-Human,fromthe DFK Icenteratthe Universityof Bremen.Throughoutthe

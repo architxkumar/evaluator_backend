@@ -1,0 +1,28 @@
+ition within
+LOGICIST
+artificialintelligence hopestobuildonsuchprogramstocreateintelligent systems.
+There are two main obstacles to this approach. First, it is not easy to take informal
+knowledge and state it in the formal terms required by logical notation, particularly when
+the knowledge is less than 100 certain. Second, there is a big difference between solving
+a problem in principle and solving it in practice. Even problems with just a few hundred
+facts can exhaust the computational resources of any computer unless it has some guidance
+astowhichreasoningstepstotryfirst. Althoughbothoftheseobstaclesapplytoanyattempt
+tobuildcomputational reasoning systems, theyappearedfirstinthelogicisttradition.
+1.1.4 Acting rationally: The rational agentapproach
+An agent is just something that acts (agent comes from the Latin agere, to do). Of course,
+AGENT
+all computer programs do something, but computer agents are expected to do more: operate
+autonomously, perceive their environment, persist over a prolonged time period, adapt to
+change, and create and pursue goals. A rational agent is one that acts so as to achieve the
+RATIONALAGENT
+bestoutcomeor,whenthereisuncertainty, thebestexpectedoutcome.
+Inthe lawsofthought approach to AI,theemphasiswasoncorrectinferences. Mak-
+ing correct inferences is sometimes part of being a rational agent, because one way to act
+rationally istoreason logically totheconclusion thatagivenaction willachieve one s goals
+and then to act on that conclusion. On the other hand, correct inference is not all of ration-
+ality; insomesituations, thereisnoprovably correct thingtodo, butsomething muststillbe
+done. There are also ways of acting rationally that cannot be said to involve inference. For
+example, recoiling from a hot stove is a reflex action that is usually more successful than a
+sloweractiontakenaftercarefuldeliberation.
+Alltheskillsneededforthe Turing Testalsoallowanagenttoactrationally. Knowledge
+representation and reasoning enable agents to reach

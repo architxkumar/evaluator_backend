@@ -1,0 +1,53 @@
+t not as well as decision-tree learning; this is
+presumably because the true hypothesis which is a decision tree is not representable ex-
+actly using anaive Bayesmodel. Naive Bayeslearning turnsout todosurprisingly wellina
+wide range of applications; the boosted version (Exercise 20.4) is one of the most effective
+Section20.2. Learningwith Complete Data 809
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20 40 60 80 100
+tes
+tset
+no
+tcerroc
+noitropor P
+Decision tree
+Naive Bayes
+Training set size
+Figure20.3 Thelearningcurvefornaive Bayeslearningappliedtotherestaurantproblem
+from Chapter18;thelearningcurvefordecision-treelearningisshownforcomparison.
+general-purpose learning algorithms. Naive Bayes learning scales well to very large prob-
+lems: withn Boolean attributes, there are just 2n 1parameters, and nosearch is required
+tofindh ,the maximum-likelihood naive Bayeshypothesis. Finally, naive Bayeslearning
+ML
+systems have no difficulty with noisy or missing data and can give probabilistic predictions
+whenappropriate.
+20.2.3 Maximum-likelihoodparameter learning: Continuous models
+Continuous probability models such as the linear Gaussian model were introduced in Sec-
+tion14.3. Becausecontinuousvariablesareubiquitousinreal-worldapplications, itisimpor-
+tanttoknowhowtolearntheparametersofcontinuous models fromdata. Theprinciples for
+maximum-likelihood learningareidentical inthecontinuous anddiscretecases.
+Let us begin with a very simple case: learning the parameters of a Gaussian density
+function onasinglevariable. Thatis,thedataaregenerated asfollows:
+P(x) 1
+e (x
+2 2
+)2
+.
+2 The parameters of this model are the mean and the standard deviation . (Notice that the
+normalizing constant depends on , so we cannot ignore it.) Let the observed values be
+x ,...,x . Thentheloglikelihood is
+1 N
+L (cid:12)N log 1 e (xj 2 2 )2 N( log 2 log ) (cid:12)N (x j )2 .
+2 2 2
+j 1 j 1
+Settingthederivatives tozeroasusual,weobtain
+(cid:2) P L 1 N (x ) 0 j xj 2 j 1
+(cid:2)
+j (cid:9)NP
+(20.4) L N 1 N (x )2 0 j (xj )2 

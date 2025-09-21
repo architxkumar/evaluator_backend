@@ -1,0 +1,25 @@
+at the 1994 world championship
+ended prematurely when Tinsley had to withdraw forhealth reasons. CHINOOK became the
+official world champion. Schaeffer kept on building on his database of endgames, and in
+2007 solved checkers(Schaeffer etal.,2007;Schaeffer,2008). Thishadbeenpredictedby
+Richard Bellman (1965). In the paper that introduced the dynamic programming approach
+to retrograde analysis, he wrote, In checkers, the number of possible moves in any given
+situation is so small that we can confidently expect a complete digital computer solution to
+the problem of optimal play in this game. Bellman did not, however, fully appreciate the
+size of the checkers game tree. There are about 500 quadrillion positions. After 18 years
+of computation on a cluster of 50 or more machines, Jonathan Schaeffer s team completed
+an endgame table forall checkers positions with 10 orfewerpieces: over39 trillion entries.
+From there, they were able to do forward alpha beta search to derive a policy that proves
+that checkers is in fact a draw with best play by both sides. Note that this is an application
+of bidirectional search (Section 3.4.6). Building an endgame table forall ofcheckers would
+be impractical: it would require a billion gigabytes of storage. Searching without any table
+wouldalsobeimpractical: thesearch treehasabout 847 positions, andwouldtakethousands
+of years to search with today s technology. Only a combination of clever search, endgame
+data,andadropinthepriceofprocessors andmemorycouldsolvecheckers. Thus,checkers
+joins Qubic (Patashnik, 1980), Connect Four(Allis, 1988), and Nine-Men s Morris (Gasser,
+1998)asgamesthathavebeensolvedbycomputeranalysis.
+Backgammon,agameofchance,wasanalyzed mathematically by Gerolamo Cardano
+(1663), but only taken up for computer play in the late 1970s, first with the BKG pro-
+gram (Berliner, 1980b); it used a complex, manually constructed evaluation function and
+searchedonlytodepth1. Itwasthefirstprogramtodefeatahumanworldchampionatama-
+jorcl

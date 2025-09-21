@@ -1,0 +1,22 @@
+hasthe CY Kalgorithm,whichrequiresgrammarrulestobein Chomsky Normal
+Form. Atreebankcanbeusedtolearnagrammar. Itisalsopossibletolearnagrammarfrom
+anunparsed corpusofsentences, butthisislesssuccessful. Alexicalized PCF Gallows ustorepresent thatsome relationships between words are
+morecommonthanothers. Itisconvenient toaugmentagrammartohandlesuchproblemsassubject verb agree-
+mentandpronouncase. Definiteclausegrammar(DCG)isaformalismthatallowsfor
+augmentations. With DCG, parsing and semantic interpretation (and even generation)
+canbedoneusinglogicalinference. Semanticinterpretation canalsobehandled byanaugmentedgrammar. Ambiguity is a very important problem in natural language understanding; most sen-
+tences have manypossible interpretations, but usually only one is appropriate. Disam-
+biguation relies on knowledge about the world, about the current situation, and about
+languageuse. Machine translation systems have been implemented using a range of techniques,
+from full syntactic and semantic analysis to statistical techniques based on phrase fre-
+quencies. Currentlythestatistical modelsaremostpopularandmostsuccessful. Speech recognition systems are also primarily based on statistical principles. Speech
+systemsarepopularanduseful, albeitimperfect. Together, machine translation and speech recognition are two of the big successes of
+natural language technology. One reason that the models perform well is that large
+corpora areavailable both translation and speech aretasks that areperformed inthe
+wild by people every day. In contrast, tasks like parsing sentences have been less
+successful, in part because no large corpora of parsed sentences are available in the
+wild andinpartbecauseparsing isnotusefulinandofitself.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Like semantic networks, context-free grammars (also known as phrase structure grammars)
+are areinvention of atechnique firstused byancient Indian grammarians (especially Panini,
+ca. 350 B.C.) studying Shastric Sanskrit (Inge

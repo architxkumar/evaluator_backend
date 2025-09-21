@@ -1,0 +1,29 @@
+strategy is foreach player to refuse unless the other player has ever played
+PERPETUAL testify. This strategy could be called perpetual punishment. Suppose both players have
+PUNISHMENT
+adoptedthisstrategy,andthisismutualknowledge. Thenaslongasneitherplayerhasplayed
+testify,thenatanypointintimetheexpected futuretotalpayoffforeachplayeris
+(cid:12) 0.99t ( 1) 100.
+t 0
+Aplayerwhodeviatesfromthestrategyandchooses testify willgainascoreof0ratherthan 1 on the very next move, but from then on both players will play testify and the player s
+totalexpected futurepayoffbecomes
+(cid:12) 0 0.99t ( 5) 495.
+t 1
+Therefore, at every step, there is no incentive to deviate from (refuse,refuse). Perpetual
+punishment is the mutually assured destruction strategy of the prisoner s dilemma: once
+either player decides to testify, it ensures that both players suffer a great deal. But it works
+asadeterrentonlyiftheotherplayerbelievesyouhaveadoptedthisstrategy oratleastthat
+youmighthaveadopted it.
+Otherstrategies aremoreforgiving. Themostfamous, calledtit-for-tat, callsforstart-
+TIT-FOR-TAT
+ingwithrefuse andthenechoing theotherplayer s previous moveonallsubsequent moves.
+So Alicewouldrefuse aslong as Bobrefuses andwouldtestify themoveafter Bobtestified,
+but would go back to refusing if Bob did. Although very simple, this strategy has proven to
+behighlyrobustandeffectiveagainstawidevarietyofstrategies.
+We can also get different solutions by changing the agents, rather than changing the
+rules of engagement. Suppose the agents are finite-state machines with n states and they
+are playing a game with m n total steps. The agents are thus incapable of representing
+the number of remaining steps, and must treat it as an unknown. Therefore, they cannot do
+the induction, and are free to arrive at the more favorable (refuse, refuse) equilibrium. In
+thiscase,ignorance isbliss orrather, havingyouropponent believethatyouareignorantis
+bliss. Yoursuccess in these repeated games depends onthe other player s perc

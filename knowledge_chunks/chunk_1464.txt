@@ -1,0 +1,24 @@
+ntshouldbehave.
+Evenwhentheobviouspitfallsareavoided,thereremainsomeknottyissuestountangle.
+For example, the notion of clean floor in the preceding paragraph is based on average
+cleanliness over time. Yet the same average cleanliness can be achieved by two different
+agents,oneofwhichdoesamediocrejoballthetimewhiletheothercleansenergetically but
+takeslongbreaks. Whichispreferablemightseemtobeafinepointofjanitorialscience, but
+in fact it is a deep philosophical question with far-reaching implications. Which is better a reckless life of highs and lows, or a safe but humdrum existence? Which is better an
+economy where everyone lives in moderate poverty, or one in which some live in plenty
+whileothersareverypoor? Weleavethesequestions asanexerciseforthediligentreader.
+2.2.1 Rationality
+Whatisrationalatanygiventimedepends onfourthings: Theperformance measurethatdefinesthecriterionofsuccess. Theagent spriorknowledge oftheenvironment. Theactionsthattheagentcanperform. Theagent sperceptsequence todate.
+DEFINITIONOFA Thisleadstoadefinitionofarationalagent:
+RATIONALAGENT
+Foreachpossible perceptsequence, a rationalagentshouldselect anaction thatis ex-
+pectedtomaximizeitsperformancemeasure,giventheevidenceprovidedbythepercept
+sequenceandwhateverbuilt-inknowledgetheagenthas.
+38 Chapter 2. Intelligent Agents
+Considerthesimplevacuum-cleaner agent thatcleans asquare ifitisdirty andmovestothe
+othersquare ifnot; thisistheagentfunction tabulated in Figure2.3. Isthisarational agent?
+That depends! First, we need to say what the performance measure is, what is known about
+theenvironment, andwhatsensorsandactuators theagenthas. Letusassumethefollowing: The performance measure awards one point for each clean square at each time step,
+overa lifetime of1000timesteps. The geography of the environment is known a priori (Figure 2.2) but the dirt distri-
+butionandtheinitiallocationoftheagentarenot. Cleansquaresstaycleanandsucking
+cleans the current square. The Left and Right actions move the agen

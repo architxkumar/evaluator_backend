@@ -1,0 +1,27 @@
+) in terms of which the others are ultimately defined. This is a natural
+way in which to build up the representation of a domain, and it is analogous to the way in
+whichsoftwarepackages arebuiltupbysuccessive definitions ofsubroutines fromprimitive
+library functions. Notice that there is not necessarily a unique set of primitive predicates;
+wecould equally wellhave used Parent,Spouse,and Male. Insomedomains, asweshow,
+thereisnoclearly identifiablebasicset.
+Notalllogicalsentencesaboutadomainareaxioms. Somearetheorems thatis,they
+THEOREM
+areentailedbytheaxioms. Forexample,considertheassertionthatsiblinghoodissymmetric: x,y Sibling(x,y) Sibling(y,x).
+Is this an axiom ora theorem? In fact, it is a theorem that follows logically from the axiom
+thatdefinessiblinghood. Ifwe ASK theknowledge basethissentence, itshouldreturn true.
+From a purely logical point of view, a knowledge base need contain only axioms and
+no theorems, because the theorems do not increase the set of conclusions that follow from
+the knowledge base. From a practical point of view, theorems are essential to reduce the
+computational costofderiving newsentences. Without them,areasoning system hastostart
+fromfirstprincipleseverytime,ratherlikeaphysicisthavingtorederivetherulesofcalculus
+foreverynewproblem.
+Section8.3. Using First-Order Logic 303
+Not all axioms are definitions. Some provide more general information about certain
+predicates without constituting a definition. Indeed, some predicates have no complete defi-
+nition because we do not know enough to characterize them fully. For example, there is no
+obviousdefinitivewaytocompletethesentence x Person(x) ...
+Fortunately, first-order logic allows us to make use of the Person predicate without com-
+pletelydefiningit. Instead, wecanwritepartialspecifications ofproperties thateveryperson
+hasandproperties thatmakesomething aperson: x Person(x) ... x ... Person(x).
+Axioms can also be just plain facts, such as Male(Jim) and Spouse(Jim,Laura).
+Such facts form 

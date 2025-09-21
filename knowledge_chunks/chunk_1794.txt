@@ -1,0 +1,34 @@
+ Oneimportant consequence ofthe heuristic is that
+Section7.6. Effective Propositional Model Checking 261
+function DPLL-SATISFIABLE?(s)returnstrue orfalse
+inputs:s,asentenceinpropositionallogic
+clauses thesetofclausesinthe CN Frepresentationofs
+symbols alistofthepropositionsymbolsins
+return DPLL(clauses,symbols, )
+function DPLL(clauses,symbols,model)returnstrue orfalse
+ifeveryclauseinclauses istrueinmodel thenreturntrue
+ifsomeclauseinclauses isfalseinmodel thenreturnfalse
+P,value FIND-PURE-SYMBOL(symbols,clauses,model)
+if P isnon-nullthenreturn DPLL(clauses,symbols P,model P value )
+P,value FIND-UNIT-CLAUSE(clauses,model)
+if P isnon-nullthenreturn DPLL(clauses,symbols P,model P value )
+P FIRST(symbols);rest REST(symbols)
+return DPLL(clauses,rest,model P true )or
+DPLL(clauses,rest,model P false ))
+Figure7.17 The DPL Lalgorithmforcheckingsatisfiabilityofasentenceinpropositional
+logic. The ideas behind FIND-PURE-SYMBOL and FIND-UNIT-CLAUSE are described in
+the text; each returnsa symbol(or null) and the truth value to assign to that symbol. Like
+TT-ENTAILS?,DPL Loperatesoverpartialmodels.
+any attempt toprove (by refutation) a literal that is already in the knowledge base will
+succeed immediately (Exercise 7.23). Notice also that assigning one unit clause can
+create another unit clause for example, when C is set to false, (C A) becomes a
+unit clause, causing true to be assigned to A. This cascade of forced assignments
+is called unitpropagation. It resembles the process of forward chaining with definite
+UNITPROPAGATION
+clauses, and indeed, if the CNF expression contains only definite clauses then DPLL
+essentially replicates forwardchaining. (See Exercise7.24.)
+The DPLL algorithm is shown in Figure 7.17, which gives the the essential skeleton of the
+searchprocess.
+What Figure 7.17 does not show are the tricks that enable SAT solvers to scale up to
+large problems. It is interesting that most of these tricks are in fact rather general, and we
+haveseenthembeforeinotherguises:

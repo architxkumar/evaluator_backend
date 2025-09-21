@@ -1,0 +1,40 @@
+ircumscription anddefaultlogic.
+8 Recallthatmonotonicityrequiresallentailedsentencestoremainentailedafternewsentencesareaddedtothe
+KB.Thatis,if KB then KB .
+Section12.6. Reasoning with Default Information 459
+Circumscription can be seen as a more powerful and precise version of the closed-
+CIRCUMSCRIPTION
+worldassumption. Theideaistospecifyparticularpredicatesthatareassumedtobe asfalse
+aspossible that is,falseforeveryobjectexceptthoseforwhichtheyareknowntobetrue.
+Forexample, suppose wewanttoassert thedefault rule thatbirds fly. Wewouldintroduce a
+predicate, say Abnormal (x),andwrite
+1
+Bird(x) Abnormal (x) Flies(x).
+1
+If we say that Abnormal is to be circumscribed, a circumscriptive reasoner is entitled to
+1
+assume Abnormal (x) unless Abnormal (x) is known to be true. This allows the con-
+1 1
+clusion Flies(Tweety) to be drawn from the premise Bird(Tweety), but the conclusion no
+longerholdsif Abnormal (Tweety)isasserted.
+1
+MODEL Circumscription can be viewed as an example of a model preference logic. In such
+PREFERENCE
+logics,asentenceisentailed(withdefaultstatus)ifitistrueinallpreferredmodelsofthe KB,
+as opposed to the requirement of truth in all models in classical logic. For circumscription,
+one modelispreferred toanother ifithas fewerabnormal objects.9 Letusseehow thisidea
+worksinthecontextofmultipleinheritance insemanticnetworks. Thestandardexamplefor
+which multiple inheritance is problematic is called the Nixon diamond. It arises from the
+observation that Richard Nixon was both a Quaker (and hence by default a pacifist) and a
+Republican (andhencebydefault notapacifist). Wecanwritethisasfollows:
+Republican(Nixon) Quaker(Nixon).
+Republican(x) Abnormal (x) Pacifist(x).
+2
+Quaker(x) Abnormal (x) Pacifist(x).
+3
+If we circumscribe Abnormal and Abnormal , there are two preferred models: one in
+2 3
+which Abnormal (Nixon)and Pacifist(Nixon)holdandoneinwhich Abnormal (Nixon)
+2 3
+and Pacifist(Nixon)hold. Thus,thecircumscriptivereasonerremainsproperly agnosticas
+to whether N

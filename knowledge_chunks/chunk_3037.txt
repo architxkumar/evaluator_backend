@@ -1,0 +1,20 @@
+hine:
+Felner,A.,Korf,R.E.,and Hanan,S.(2004).Addi- Ford,K.M.and Hayes,P.J.(1995). Turing Test Part I. IBM Journalof Researchand Development,
+tivepatterndatabaseheuristics.JAIR,22,279 318. consideredharmful.In IJCAI-95,pp.972 977. 2,2 13.
+Felner,A.,Korf,R.E.,Meshulam,R.,and Holte, Forestier,J.-P.and Varaiya,P.(1978). Multilayer Friedberg, R. M., Dunham, B., and North, T.
+R.(2007).Compressedpatterndatabases.JAIR,30, controloflarge Markovchains. IEEE Transactions (1959).Alearningmachine:Part II.IBM Journalof
+213 247. on Automatic Control,23(2),298 304. Researchand Development,3(3),282 287.
+Bibliography 1073
+Friedgut,E.(1999). Necessaryandsufficientcon- Gaschnig,J.(1979).Performancemeasurementand Gentner,D.(1983). Structuremapping:Atheoret-
+ditionsforsharpthresholdsofgraphproperties,and analysisofcertainsearchalgorithms. Technicalre- icalframeworkforanalogy. Cognitive Science,7,
+thek-SA Tproblem. J.American Mathematical So- port CMU-CS-79-124, Computer Science Depart- 155 170.
+ciety,12,1017 1054. ment,Carnegie-Mellon University.
+Gentner,D.and Goldin-Meadow,S.(Eds.).(2003).
+Friedman,G.J.(1959). Digitalsimulationofan Gasser,R.(1995). Efficientlyharnessingcomputa- Languageinmind: Advancesinthestudyoflan-
+evolutionaryprocess.General Systems Yearbook,4, tionalresourcesforexhaustivesearch.Ph.D.thesis, guageandthough.MIT Press.
+171 184. ETH Zu rich. Gerevini,A.and Long,D.(2005). Planconstraints
+Friedman,J.,Hastie,T.,and Tibshirani,R.(2000). Gasser,R.(1998). Solvingninemen smorris. In andpreferencesin PDDL3.Tech.rep.,Dept.of Elec-
+Additive logistic regression: A statisticalview of Nowakowski,R.(Ed.),Gamesof No Chance.Cam- tronicsfor Automation,Universityof Brescia,Italy.
+boosting.Annalsof Statistics,28(2),337 374. bridge University Press. Gerevini,A.and Serina,I.(2002). LPG:Aplan-
+Friedman,N.(1998). The Bayesianstructural EM Gat,E.(1998). Three-layeredarchitectures.In Ko- nerbasedonplanninggraphswithactioncosts. In
+algorithm.In UAI-98. rtenkamp,D.,Bonasso,R.P.,and Murphy,R.(Eds

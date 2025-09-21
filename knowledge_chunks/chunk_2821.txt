@@ -1,0 +1,27 @@
+is
+rotated. In this case, because the body and handle belong to the same mug, we have self-
+occlusion.Finally,onthebottomright,someobjectscandeformdramatically.
+withrespect toone another, but ifmostofthe pattern elements arepresent inabout theright
+place,thentheobjectispresent. Anobjectrecognizeristhenacollectionoffeaturesthatcan
+tellwhetherthepatternelementsarepresent, andwhethertheyareinabouttherightplace.
+The most obvious approach is to represent the image window with a histogram of the
+pattern elements that appear there. This approach does not work particularly well, because
+too many patterns get confused with one another. For example, if the pattern elements are
+color pixels, the French, UK, and Netherlands flags will get confused because they have
+approximately the same color histograms, though the colors are arranged in very different
+ways. Quite simple modifications of histograms yield very useful features. The trick is to
+preserve some spatial detail in the representation; for example, headlights tend to be at the
+front of a car and wheels tend to be at the bottom. Histogram-based features have been
+successful inawidevarietyofrecognition applications; wewillsurveypedestrian detection.
+24.3.2 Pedestriandetection with HO Gfeatures
+The World Bankestimatesthateachyearcaraccidentskillabout1.2millionpeople,ofwhom
+abouttwothirdsarepedestrians. Thismeansthatdetecting pedestrians isanimportantappli-
+cation problem, because cars that can automatically detect and avoid pedestrians might save
+many lives. Pedestrians wear many different kinds of clothing and appear in many different
+configurations, but, at relatively low resolution, pedestrians can have a fairly characteristic
+appearance. The most usual cases are lateral or frontal views of a walk. In these cases,
+946 Chapter 24. Perception
+Image Orientation Positive Negative
+histograms components components
+Figure 24.14 Local orientation histograms are a powerful feature for recognizing even
+quitecomplexobjects. Onthel

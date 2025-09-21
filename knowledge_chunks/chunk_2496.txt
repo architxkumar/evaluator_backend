@@ -1,0 +1,46 @@
+hefixed- case.
+18.6.4 Linearclassificationwithlogisticregression
+We have seen that passing the output of a linear function through the threshold function
+creates a linear classifier; yet the hard nature of the threshold causes some problems: the
+hypothesis h (x)isnotdifferentiable andisinfactadiscontinuous function ofitsinputsand
+w
+itsweights;thismakeslearningwiththeperceptronruleaveryunpredictable adventure. Fur-
+thermore, the linear classifier always announces acompletely confident prediction of 1or0,
+even for examples that are very close to the boundary; in many situations, we really need
+moregradatedpredictions.
+Alloftheseissuescanberesolvedtoalargeextentbysofteningthethresholdfunction approximating the hard threshold with a continuous, differentiable function. In Chapter 14
+(page 522), we saw two functions that look like soft thresholds: the integral of the standard
+normal distribution (used for the probit model) and the logistic function (used for the logit
+model). Although thetwofunctions areverysimilarinshape, thelogistic function
+1
+Logistic(z) 1 e z
+P P
+7 Technically, we require that (t) and 2(t) . The decay (t) O(1 t) satisfies
+t 1 t 1
+theseconditions.
+726 Chapter 18. Learningfrom Examples
+1 1
+1
+0.8
+0.6
+0.5 0.5 0.4
+0.2 -4
+-2
+0 -2 0 x 2 4 6 10 8 6 4 2 0 x 2
+1
+0 0
+-8 -6 -4 -2 0 2 4 6 8 -6 -4 -2 0 2 4 6
+(a) (b) (c)
+Figure 18.17 (a) The hard threshold function Threshold(z) with 0 1 output. Note
+that the function is nondifferentiable at z 0. (b) The logistic function, Logistic(z) 1 , also known as the sigmoid function. (c) Plot of a logistic regression hypothesis
+1 e z
+h
+w
+(x) Logistic(w x)forthedatashownin Figure18.15(b).
+has more convenient mathematical properties. The function is shown in Figure 18.17(b).
+Withthelogisticfunction replacing thethreshold function, wenowhave
+1
+h (x) Logistic(w x) .
+w 1 e w x
+Anexampleofsuchahypothesisforthetwo-inputearthquake explosion problemisshownin
+Figure 18.17(c). Notice that the output, being anumberbetween 0and 1, can bei

@@ -1,0 +1,27 @@
+roughly
+constant time no matter how many states are stored. One must take care to implement the
+hash table with the right notion of equality between states. For example, in the traveling
+salesperson problem (page 74), the hash table needs to know that the set of visited cities Bucharest,Urziceni,Vaslui isthesameas Urziceni,Vaslui,Bucharest . Sometimesthiscan
+be achieved most easily by insisting that the data structures for states be in some canonical
+form; that is, logically equivalent states should map to the same data structure. In the case
+CANONICALFORM
+of states described by sets, for example, a bit-vector representation or a sorted list without
+repetition wouldbecanonical, whereasanunsorted listwouldnot.
+3.3.2 Measuring problem-solving performance
+Before we get into the design of specific search algorithms, we need to consider the criteria
+that might be used to choose among them. We can evaluate an algorithm s performance in
+fourways: Completeness: Isthealgorithm guaranteed tofindasolution whenthereisone?
+COMPLETENESS Optimality: Doesthestrategyfindtheoptimalsolution, asdefinedonpage68?
+OPTIMALITY Timecomplexity: Howlongdoesittaketofindasolution?
+TIMECOMPLEXITY Spacecomplexity: Howmuchmemoryisneededtoperformthesearch?
+SPACECOMPLEXITY
+Timeandspacecomplexityarealwaysconsidered withrespecttosomemeasureoftheprob-
+lem difficulty. In theoretical computer science, the typical measure is the size of the state
+space graph, V E , where V is the set of vertices (nodes) of the graph and E is the set
+ofedges (links). Thisisappropriate whenthe graph isan explicit data structure that isinput
+tothesearchprogram. (Themapof Romaniaisanexampleofthis.) In AI,thegraphisoften
+represented implicitly bytheinitialstate, actions, andtransition modelandisfrequently infi-
+nite. Forthesereasons,complexityisexpressedintermsofthreequantities: b,thebranching
+factor or maximum number of successors of any node; d, the depth of the shallowest goal
+BRANCHINGFACTOR
+node(i.e.,thenumberofstepsalong 

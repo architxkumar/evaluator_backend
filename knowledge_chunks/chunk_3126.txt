@@ -1,0 +1,21 @@
+ins, A.M.(Eds.), Representationand Under-
+232 246. standing: Studiesin Cognitive Science,pp.35 82. Yob,G.(1975). Huntthewumpus! Creative Com-
+Academic Press. puting,Sep Oct.
+Williams,B.,Ingham,M.,Chung,S.,and Elliott,
+P.(2003). Model-basedprogrammingofintelligent Wooldridge,M.(2002).An Introductionto Multi A- Yoshikawa, T.(1990). Foundations of Robotics:
+embeddedsystemsandroboticspaceexplorers. In gent Systems.Wiley. Analysisand Control.MIT Press.
+Proc.IEEE:Special Issueon Modelingand Design Wooldridge,M.and Rao,A.(Eds.).(1999). Foun- Young,H.P.(2004).Strategic Learningand Its Lim-
+of Embedded Software,pp.212 237. dationsofrationalagency.Kluwer. its.Oxford University Press.
+Williams,R.J.(1992). Simplestatisticalgradient- Wos,L.,Carson,D.,and Robinson,G.(1964). The Younger,D.H.(1967). Recognitionandparsingof
+following algorithms for connectionist reinforce- unitpreferencestrategyintheoremproving.In Proc. context-freelanguagesintimen3.Informationand
+mentlearning.Machine Learning,8,229 256. Fall Joint Computer Conference,pp.615 621. Control,10(2),189 208.
+Bibliography 1093
+Yudkowsky, E. (2008). Artificial intelligence as Zettlemoyer,L.S.and Collins,M.(2005).Learning Zhou, R. and Hansen, E. (2006). Breadth-first
+a positive and negative factor in global risk. In tomapsentencestologicalform:Structuredclassi- heuristicsearch.AIJ,170(4 5),385 408.
+Bostrom,N.and Cirkovic,M.(Eds.),Global Catas- ficationwithprobabilisticcategorialgrammars. In
+trophic Risk.Oxford University Press. UAI-05. Zhu,D.J.and Latombe,J.-C.(1991). Newheuris-
+tic algorithms for efficient hierarchical path plan-
+Zadeh,L.A.(1965). Fuzzysets. Informationand Zhang,H.and Stickel,M.E.(1996). Anefficient ning. IEEE Transactionson Roboticsand Automa-
+Control,8,338 353. algorithmforunit-propagation. In Proc.Fourth In- tion,7(1),9 20.
+Zadeh,L.A.(1978).Fuzzysetsasabasisforathe- ternational Symposiumon Artificial Intelligenceand
+oryofpossibility.Fuzzy Setsand Systems,1,3 28. Mathematics. Zimmermann,H.-J.(Ed.).(1999).

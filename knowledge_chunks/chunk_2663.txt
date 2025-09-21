@@ -1,0 +1,45 @@
+nt Learning
+2
+1.5
+1
+0.5
+0
+0 50 100 150 200 250 300 350 400 450 500
+ssol
+ycilop
+,rorre
+SMR
+3 1
+RMS error
+Policy loss
+2 1
+1
+1 2 3 4
+Number of trials
+(a) (b)
+Figure21.6 Performanceofa greedy ADP agentthatexecutesthe actionrecommended
+bytheoptimalpolicyforthelearnedmodel. (a)RM Serrorintheutilityestimatesaveraged
+over the nine nonterminal squares. (b) The suboptimal policy to which the greedy agent
+convergesinthisparticularsequenceoftrials.
+mizeitslong-term well-being. Pureexploitation risksgettingstuckinarut. Pureexploration
+toimproveone sknowledgeisofnouseifoneneverputsthatknowledgeintopractice. Inthe
+real world, one constantly has to decide between continuing in a comfortable existence and
+striking outintotheunknown inthehopes ofdiscovering anewandbetterlife. With greater
+understanding, lessexploration isnecessary.
+Canwebe alittle more precise than this? Isthere an optimal exploration policy? This
+questionhasbeenstudiedindepthinthesubfieldofstatisticaldecisiontheorythatdealswith
+so-called banditproblems. (Seesidebar.)
+BANDITPROBLEM
+Although bandit problems are extremely difficult to solve exactly to obtain an optimal
+exploration method, it is nonetheless possible to come up with a reasonable scheme that
+will eventually lead to optimal behavior by the agent. Technically, any such scheme needs
+to be greedy in the limit of infinite exploration, or GLIE. A GLIE scheme must try each
+GLIE
+action in each state an unbounded number of times to avoid having a finite probability that
+an optimal action ismissed because of an unusually bad series of outcomes. An AD Pagent
+usingsuchaschemewilleventuallylearnthetrueenvironment model. AGLI Eschememust
+alsoeventuallybecomegreedy,sothattheagent sactionsbecomeoptimalwithrespecttothe
+learned(andhencethetrue)model.
+Thereareseveral GLI Eschemes;oneofthesimplest istohave theagentchoose aran-
+dom action a fraction 1 t of the time and to follow the greedy policy otherwise. While this
+does eventually converge to an optimal policy, it can be e

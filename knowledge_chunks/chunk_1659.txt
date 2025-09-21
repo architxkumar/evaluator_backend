@@ -1,0 +1,34 @@
+theexplored
+TABLE
+Section5.4. Imperfect Real-Time Decisions 171
+listin GRAPH-SEARCH (Section3.3). Usingatransposition tablecanhaveadramaticeffect,
+sometimesasmuchasdoublingthereachablesearchdepthinchess. Ontheotherhand,ifwe
+areevaluatingamillionnodespersecond,atsomepointitisnotpracticaltokeepallofthem
+in the transposition table. Various strategies have been used to choose which nodes to keep
+andwhichtodiscard.
+5.4 IMPERFECT REAL-TIME DECISIONS
+Theminimaxalgorithmgeneratestheentiregamesearchspace,whereasthealpha betaalgo-
+rithm allowsustoprune large partsofit. However, alpha beta stillhastosearch alltheway
+toterminalstatesforatleastaportionofthesearchspace. Thisdepthisusuallynotpractical,
+because moves must be made in a reasonable amount of time typically a few minutes at
+most. Claude Shannon spaper Programminga Computerfor Playing Chess(1950)proposed
+insteadthatprogramsshouldcutoffthesearchearlierandapplyaheuristic evaluationfunc-
+EVALUATION tion to states in the search, effectively turning nonterminal nodes into terminal leaves. In
+FUNCTION
+otherwords,thesuggestion istoalterminimaxoralpha beta intwoways: replacetheutility
+function by a heuristic evaluation function EVAL, which estimates the position s utility, and
+CUTOFFTEST
+replace theterminaltestbya cutofftestthatdecides whentoapply EVAL. Thatgivesusthe
+followingforheuristic minimaxforstate sandmaximumdepthd:
+H-MINIMAX(s,d) EVAL(s) if CUTOFF-TEST(s,d) max
+a Actions(s)
+H-MINIMAX(RESULT(s,a),d 1) if PLAYER(s) MAX
+min
+a Actions(s)
+H-MINIMAX(RESULT(s,a),d 1) if PLAYER(s) MIN.
+5.4.1 Evaluationfunctions
+An evaluation function returns an estimate of the expected utility of the game from a given
+position, just as the heuristic functions of Chapter 3 return an estimate of the distance to
+the goal. The idea of an estimator was not new when Shannon proposed it. For centuries,
+chess players (and aficionados of othergames) have developed ways ofjudging the value of
+a position because humans are even more limited in the amount

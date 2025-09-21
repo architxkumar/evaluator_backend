@@ -1,0 +1,29 @@
+elderly and handicapped people,
+suchasintelligentroboticwalkersandintelligenttoysthatprovidereminderstotakemedica-
+tion andprovide comfort. Researchers arealso working onrobotic devices forrehabilitation
+thataidpeopleinperforming certainexercises.
+Hazardous environments. Robots have assisted people in cleaning up nuclear waste,
+most notably in Chernobyl and Three Mile Island. Robots were present after the collapse
+of the World Trade Center, where they entered structures deemed too dangerous for human
+searchandrescuecrews.
+Somecountries haveused robots totransport ammunition and todefuse bombs a no-
+toriously dangerous task. A number of research projects are presently developing prototype
+robots for clearing minefields, on land and at sea. Most existing robots for these tasks are
+teleoperated a human operates them by remote control. Providing such robots with auton-
+omyisanimportant nextstep.
+Exploration. Robots have gone where no one has gone before, including the surface
+of Mars (see Figure 25.2(b) and the cover). Robotic arms assist astronauts in deploying
+and retrieving satellites and in building the International Space Station. Robots also help
+exploreunderthesea. Theyareroutinelyusedtoacquiremapsofsunkenships. Figure25.29
+showsarobotmappinganabandonedcoalmine,alongwitha3Dmodelofthemineacquired
+Section25.8. Application Domains 1009
+(a) (b)
+Figure25.30 (a)Roomba,theworld sbest-sellingmobilerobot,vacuumsfloors. Image
+courtesyofi Robot,(cid:2)c 2009. (b)Robotichandmodeledafterhumanhand. Imagecourtesy
+of Universityof Washingtonand Carnegie Mellon University.
+using range sensors. In 1996, a team of researches released a legged robot into the crater
+of an active volcano to acquire data for climate research. Unmanned air vehicles known as
+dronesareusedinmilitaryoperations. Robotsarebecomingveryeffectivetoolsforgathering
+DRONE
+information indomainsthataredifficult(ordangerous) for peopletoaccess.
+Personal Services. Service is an up-and-coming application domain of robot

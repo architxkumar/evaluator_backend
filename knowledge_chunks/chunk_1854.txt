@@ -1,0 +1,36 @@
+enextsectioncontainsamoresubstantialexample(electroniccircuits)
+and Chapter12coverseverything intheuniverse.
+8.3.1 Assertions andqueries infirst-order logic
+Sentencesareaddedtoaknowledgebaseusing TELL,exactlyasinpropositional logic. Such
+sentences are called assertions. Forexample, wecan assert that John is aking, Richard is a
+ASSERTION
+person, andallkingsarepersons:
+TELL(KB, King(John)).
+TELL(KB, Person(Richard)).
+TELL(KB, x King(x) Person(x)).
+Wecanaskquestions oftheknowledgebaseusing ASK. Forexample,
+ASK(KB, King(John))
+QUERY
+returnstrue. Questionsaskedwith AS Karecalledqueriesorgoals. Generallyspeaking,any
+query thatislogically entailed bytheknowledge baseshould beanswered affirmatively. For
+GOAL
+example,giventhetwopreceding assertions, thequery
+ASK(KB, Person(John))
+shouldalsoreturn true. Wecanaskquantifiedqueries, suchas
+ASK(KB, x Person(x)).
+The answer is true, but this is perhaps not as helpful as we would like. It is rather like
+answering Can you tell me the time? with Yes. If we want to know what value of x
+makesthesentence true,wewillneedadifferentfunction, ASKVARS,whichwecallwith
+ASKVARS(KB,Person(x))
+andwhichyieldsastream ofanswers. Inthiscasetherewillbetwoanswers: x John and
+SUBSTITUTION x Richard . Suchanansweriscalledasubstitutionorbindinglist. ASKVARS isusually
+reserved forknowledge bases consisting solely of Horn clauses, because in such knowledge
+BINDINGLIST
+bases every way of making the query true will bind the variables to specific values. That is
+notthecasewithfirst-orderlogic; if KB hasbeentold King(John) King(Richard),then
+thereisnobinding toxforthequery x King(x),eventhoughthequeryistrue.
+8.3.2 The kinshipdomain
+Thefirstexampleweconsideristhedomainoffamilyrelationships, orkinship. Thisdomain
+includes facts such as Elizabeth is the mother of Charles and Charles is the father of
+William andrulessuchas One sgrandmotheristhemotherofone sparent. Clearly,theobjectsinourdomainarepeople. Wehavetwounarypredicates, Male and
+Female. Kinship relations p

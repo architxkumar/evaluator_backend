@@ -1,0 +1,14 @@
+emethodforevaluatingge- 79 90.
+Recognition.MIT Press. neticalgorithms.In Touretzky,D.S.,Mozer,M.C., Karmarkar,N.(1984).Anewpolynomial-timeal-
+Jelinek,F.and Mercer,R.L.(1980). Interpolated and Hasselmo, M. E. (Eds.), NIPS 8, pp. 430 6. gorithmforlinearprogramming. Combinatorica,4,
+estimationof Markovsourceparametersfromsparse MIT Press. 373 395.
+d P a r t a a c . ti I c n e, P p r p o . c 3 . 8 W 1 o 3 rk 9 s 7 h . opon Pattern Recognitionin Junker,U.(2003).Thelogicofilog(j)configurator: Karp,R.M.(1972). Reducibilityamongcombina-
+Combiningconstraintprogrammingwithadescrip- torialproblems.In Miller,R.E.and Thatcher,J.W.
+Jennings,H.S.(1906). Behaviorofthe Lower Or- tionlogic. In Proc.IJCAI-03Configuration Work- (Eds.),Complexityof Computer Computations,pp.
+ganisms.Columbia University Press. shop,pp.13 20. 85 103.Plenum.
+Jenniskens,P.,Betlem,H.,Betlem,J.,and Barifaijo, Jurafsky, D. and Martin, J. H. (2000). Speech Kartam, N. A. and Levitt, R. E. (1990). A
+E.(1994).The Mbalemeteoriteshower.Meteoritics, and Language Processing:An Introductionto Nat- constraint-basedapproachtoconstructionplanning
+29(2),246 254. ural Language Processing,Computational Linguis- ofmulti-storybuildings. In Expert Planning Sys-
+Jensen,F.V.(2001). Bayesian Networksand Deci- tics,and Speech Recognition. sion Graphs.Springer-Verlag. Jurafsky, D. and Martin, J. H. (2008). Speech Kasami,T.(1965).Anefficientrecognitionandsyn-
+J si e o n n se G n r , a F p . h V s. . S (2 p 0 r 0 in 7 g ) e . r B -V a e y r e la si g a . n Networksand Deci- a u ti r n c a d s l , L a L n a a d n n g g S u u p a a e g g e e c e h P P R r r o e o c c c e o e s g s s s n i i n i n t g i g o : , n C A ( o n 2 m n I d n p t u e r d t o a i d t t i u i o o c n n ti ) a o . l n P L r t i e o n n g N ti u c a i e s t - - - t T R a e e x c s h e a . a n r a r c e l h y p s L . is a A b a F o l C r g a o R to r L i r t y - h 6 . m 5-7 fo 5 r 8, co A n i t r ex F t o -f r r c e e e C la a n m g b u r a i g d e g s e .
+Jevons, W.S

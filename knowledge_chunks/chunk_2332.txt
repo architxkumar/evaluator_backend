@@ -1,0 +1,40 @@
+hen estimating the utility of
+successor states of the root node in backgammon). In that case, we are really working with
+estimates E ! U(a e) of the true expected utility. We will assume, kindly perhaps, that the
+estimates are unbiased,thatis,theexpected valueoftheerror, E(E ! U(a e) EU(a e))),is
+UNBIASED
+zero. In that case, it still seems reasonable to choose the action with the highest estimated
+utilityandtoexpecttoreceivethatutility, onaverage, whentheactionisexecuted.
+Unfortunately, the real outcome will usually be significantly worse than we estimated,
+even though the estimate was unbiased! To see why, consider a decision problem in which
+there are k choices, each of which has true estimated utility of 0. Suppose that the error in
+each utility estimate has zero mean and standard deviation of 1, shown as the bold curve in
+Figure 16.3. Now, as we actually start to generate the estimates, some of the errors will be
+negative (pessimistic) and some will be positive (optimistic). Because we select the action
+with the highest utility estimate, we are obviously favoring the overly optimistic estimates,
+and that is the source of the bias. It is a straightforward matter to calculate the distribution
+of the maximum of the k estimates (see Exercise 16.11) and hence quantify the extent of
+our disappointment. The curve in Figure 16.3 for k 3 has a mean around 0.85, so the
+average disappointment will be about 85 of the standard deviation in the utility estimates.
+Section16.3. Utility Functions 619
+0.9
+k 30
+0.8
+0.7
+k 10
+0.6
+k 3
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+-5 -4 -3 -2 -1 0 1 2 3 4 5
+Error in utility estimate
+Figure16.3 Plot of the errorin each of k utility estimates andof the distributionof the
+maximumofkestimatesfork 3,10,and30.
+With more choices, extremely optimistic estimates are more likely to arise: for k 30, the
+disappointment willbearoundtwicethestandarddeviation intheestimates.
+This tendency for the estimated expected utility of the best choice to be too high is
+called the op

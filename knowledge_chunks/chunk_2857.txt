@@ -1,0 +1,33 @@
+lerometers tomeasuretherobot sownmotion.
+Mostoftoday srobotsfallintooneofthreeprimarycategories. Manipulators,orrobot
+MANIPULATOR
+arms (Figure 25.1(a)), are physically anchored to their workplace, for example in a factory
+assembly line or on the International Space Station. Manipulator motion usually involves
+a chain of controllable joints, enabling such robots to place their effectors in any position
+within the workplace. Manipulators are by far the most common type of industrial robots,
+with approximately one million units installed worldwide. Some mobile manipulators are
+used in hospitals to assist surgeons. Few car manufacturers could survive without robotic
+manipulators, andsomemanipulators haveevenbeenusedtogenerate original artwork.
+Thesecondcategoryisthemobilerobot. Mobilerobotsmoveabouttheirenvironment
+MOBILEROBOT
+using wheels, legs, or similar mechanisms. They have been put to use delivering food in
+hospitals, moving containers at loading docks, and similar tasks. Unmanned ground vehi-
+cles,or UG Vs,driveautonomously onstreets, highways, andoff-road. Theplanetaryrover
+UGV
+shownin Figure25.2(b)explored Marsforaperiodof3months in1997. Subsequent NASA
+PLANETARYROVER
+robots include thetwin Mars Exploration Rovers(oneisdepicted onthecoverofthisbook),
+which landed in 2003 and were still operating six years later. Other types of mobile robots
+includeunmannedairvehicles(UA Vs),commonlyusedforsurveillance,crop-spraying, and
+UAV
+1 In Chapter2wetalkedaboutactuators,noteffectors. Herewedistinguishtheeffector(thephysicaldevice)
+fromtheactuator(thecontrollinethatcommunicatesacommandtotheeffector).
+971
+972 Chapter 25. Robotics
+(a) (b)
+Figure 25.1 (a) An industrial robotic manipulator for stacking bags on a pallet. Image
+courtesyof Nachi Robotic Systems. (b)Honda s P3and Asimohumanoidrobots.
+(a) (b)
+Figure 25.2 (a) Predator, an unmanned aerial vehicle (UAV) used by the U.S. Military.
+Imagecourtesyof General Atomics Aeronautical Systems. (b)NASA s Sojourner,amobile
+robotth

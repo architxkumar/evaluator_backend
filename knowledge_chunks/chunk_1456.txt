@@ -1,0 +1,25 @@
+BLIOGRAPHICAL AND HISTORICAL NOTES
+Themethodologicalstatusofartificialintelligenceisinvestigatedin The Sciencesofthe Artifi-
+cial,by Herb Simon(1981),whichdiscussesresearchareasconcernedwithcomplexartifacts.
+It explains how AI can be viewed as both science and mathematics. Cohen (1995) gives an
+overviewofexperimental methodology within AI.
+The Turing Test(Turing, 1950) isdiscussed by Shieber(1994), whoseverely criticizes
+the usefulness of its instantiation in the Loebner Prize competition, and by Ford and Hayes
+(1995), whoarguethatthetestitselfisnothelpfulfor AI.Bringsjord (2008) givesadvicefor
+a Turing Test judge. Shieber (2004) and Epstein et al. (2008) collect a number of essays on
+the Turing Test. Artificial Intelligence: The Very Idea, by John Haugeland (1985), gives a
+Exercises 31
+readable account of the philosophical and practical problems of AI. Significant early papers
+in AIareanthologizedinthecollectionsby Webberand Nilsson(1981)andby Luger(1995).
+The Encyclopedia of AI (Shapiro, 1992) contains survey articles on almost every topic in
+AI, as does Wikipedia. These articles usually provide a good entry point into the research
+literature on each topic. An insightful and comprehensive history of AI is given by Nils
+Nillson(2009), oneoftheearlypioneers ofthefield.
+The most recent work appears in the proceedings of the major AI conferences: the bi-
+ennial International Joint Conference on AI(IJCAI),theannual European Conference on AI
+(ECAI),andthe National Conferenceon AI,moreoftenknownas AAAI,afteritssponsoring
+organization. The major journals for general AI are Artificial Intelligence, Computational
+Intelligence, the IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE In-
+telligent Systems,andtheelectronic Journalof Artificial Intelligence Research. Therearealso
+many conferences and journals devoted to specific areas, which we cover in the appropriate
+chapters. The main professional societies for AI are the American Association for Artificial

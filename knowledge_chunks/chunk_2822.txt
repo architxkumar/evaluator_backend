@@ -1,0 +1,27 @@
+er 24. Perception
+Image Orientation Positive Negative
+histograms components components
+Figure 24.14 Local orientation histograms are a powerful feature for recognizing even
+quitecomplexobjects. Ontheleft,animageofapedestrian. Onthecenterleft,localorien-
+tation histogramsforpatches. We then applya classifier such as a supportvectormachine
+tofindtheweightsforeachhistogramthatbestseparatethepositiveexamplesofpedestrians
+fromnon-pedestrians. Weseethatthepositivelyweightedcomponentslookliketheoutline
+ofa person. Thenegativecomponentsarelessclear;theyrepresentallthepatternsthatare
+notpedestrians.Figurefrom Dalaland Triggs(2005)(cid:2)c IEEE.
+we see either a lollipop shape the torso is wider than the legs, which are together in
+the stance phase of the walk or a scissor shape where the legs are swinging in the
+walk. Weexpect to see someevidence ofarms and legs, and the curve around theshoulders
+and head also tends to visible and quite distinctive. This means that, with a careful feature
+construction, wecanbuildausefulmoving-window pedestrian detector.
+There isn t always a strong contrast between the pedestrian and the background, so it
+isbettertouseorientations thanedgestorepresent theimagewindow. Pedestrians canmove
+their arms and legs around, so we should use a histogram to suppress some spatial detail in
+thefeature. Webreakupthewindowintocells,whichcouldoverlap,andbuildanorientation
+histogram in each cell. Doing so will produce a feature that can tell whether the head-and-
+shoulders curve is at the top of the window orat the bottom, but will not change if the head
+movesslightly.
+One further trick is required to make a good feature. Because orientation features are
+not affected by illumination brightness, we cannot treat high-contrast edges specially. This
+meansthatthedistinctive curvesontheboundary ofapedestrian aretreatedinthesameway
+as fine texture detail in clothing or in the background, and so the signal may be submerged
+innoise. Wecanrecovercontrastinformationbycoun

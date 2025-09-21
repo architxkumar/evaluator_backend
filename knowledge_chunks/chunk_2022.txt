@@ -1,0 +1,35 @@
+ initial state wehave two cans of paint, but the colors of the paint and
+thefurniture areunknown. Onlythetableisinitiallyinthe agent s fieldofview:
+Init(Object(Table) Object(Chair) Can(C ) Can(C ) In View(Table))
+1 2
+Goal(Color(Chair,c) Color(Table,c))
+There are two actions: removing the lid from a paint can and painting an object using the
+paintfromanopencan. Theactionschemasarestraightforward, withoneexception: wenow
+allow preconditions and effects to contain variables that are not part of the action s variable
+416 Chapter 11. Planningand Actinginthe Real World
+list. That is, Paint(x,can) does not mention the variable c, representing the color of the
+paint in the can. In the fully observable case, this is not allowed we would have to name
+the action Paint(x,can,c). But in the partially observable case, we might or might not
+knowwhatcolorisinthecan. (Thevariable cisuniversally quantified, justlikealltheother
+variables inanactionschema.)
+Action(Remove Lid(can),
+PRECOND:Can(can)
+EFFECT:Open(can))
+Action(Paint(x,can),
+PRECOND:Object(x) Can(can) Color(can,c) Open(can)
+EFFECT:Color(x,c))
+Tosolveapartiallyobservableproblem,theagentwillhavetoreasonabouttheperceptsitwill
+obtainwhenitisexecutingtheplan. Theperceptwillbesuppliedbytheagent ssensorswhen
+itisactually acting, butwhenitisplanning itwillneed amodel ofitssensors. In Chapter4,
+this model was given by a function, PERCEPT(s). For planning, we augment PDDL with a
+newtypeofschema,theperceptschema:
+PERCEPTSCHEMA
+Percept(Color(x,c),
+PRECOND:Object(x) In View(x)
+Percept(Color(can,c),
+PRECOND:Can(can) In View(can) Open(can)
+The first schema says that whenever an object is in view, the agent will perceive the color
+of the object (that is, for the object x, the agent will learn the truth value of Color(x,c) for
+all c). The second schema says that if an open can is in view, then the agent perceives the
+color of the paint in the can. Because there are no exogenous events in this world, the color
+of an object will remain the sam

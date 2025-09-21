@@ -1,0 +1,38 @@
+pter 19. Knowledgein Learning
+Wehave defined generalization and specialization as operations that change the exten-
+sion of a hypothesis. Now we need to determine exactly how they can be implemented as
+syntactic operations that change the candidate definition associated with the hypothesis, so
+thataprogramcancarrythemout. Thisisdonebyfirstnotingthatgeneralizationandspecial-
+ization are also logical relationships between hypotheses. If hypothesis h , with definition
+1
+C ,isageneralization ofhypothesis h withdefinition C ,thenwemusthave
+1 2 2 x C (x) C (x).
+2 1
+Therefore in order to construct a generalization of h , we simply need to find a defini-
+2
+tion C that is logically implied by C . This is easily done. For example, if C (x) is
+1 2 2
+Alternate(x) Patrons(x,Some), then one possible generalization is given by C (x) 1
+DROPPING Patrons(x,Some). This is called dropping conditions. Intuitively, it generates a weaker
+CONDITIONS
+definitionandthereforeallowsalargersetofpositiveexamples. Thereareanumberofother
+generalization operations, depending on the language being operated on. Similarly, we can
+specialize ahypothesis byadding extra conditions toitscandidate definition orbyremoving
+disjuncts from adisjunctive definition. Letusseehowthis worksontherestaurant example,
+usingthedatain Figure18.3. Thefirstexample, X ,ispositive. Theattribute Alternate(X )istrue,solettheinitial
+1 1
+hypothesis be
+h : x Will Wait(x) Alternate(x).
+1 Thesecondexample,X ,isnegative. h predictsittobepositive,soitisafalsepositive.
+2 1
+Therefore,weneedtospecialize h . Thiscanbedonebyaddinganextraconditionthat
+1
+willruleout X ,whilecontinuing toclassify X aspositive. Onepossibility is
+2 1
+h : x Will Wait(x) Alternate(x) Patrons(x,Some).
+2 Thethirdexample,X ,ispositive. h predictsittobenegative,soitisafalsenegative.
+3 2
+Therefore,weneedtogeneralize h . Wedropthe Alternate condition, yielding
+2
+h : x Will Wait(x) Patrons(x,Some).
+3 Thefourthexample,X ,ispositive. h predictsittobenegative,soitisafalsen

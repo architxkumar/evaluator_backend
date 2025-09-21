@@ -1,0 +1,33 @@
+tended examples,asetofexampleswithvaluesfornewvariables
+extended examples examples
+whileextended examples containsnegativeexamplesdo
+l CHOOSE-LITERAL(NEW-LITERALS(clause),extended examples)
+appendl tothebodyofclause
+extended examples setofexamplescreatedbyapplying EXTEND-EXAMPLE
+toeachexampleinextended examples
+returnclause
+function EXTEND-EXAMPLE(example,literal)returnsasetofexamples
+ifexample satisfiesliteral
+thenreturnthesetofexamplescreatedbyextendingexample with
+eachpossibleconstantvalueforeachnewvariableinliteral
+elsereturntheemptyset
+Figure 19.12 Sketch of the FOIL algorithm forlearning sets of first-order Horn clauses
+fromexamples. NEW-LITERAL Sand CHOOSE-LITERA Lareexplainedinthetext.
+wellaspeople,typerestrictionswouldprevent NEW-LITERALS fromgeneratingliteralssuch
+as Parent(x,n),wherexisapersonandnisanumber.
+CHOOSE-LITERA Lusesaheuristicsomewhatsimilartoinformationgain(seepage704)
+to decide which literal to add. The exact details are not important here, and a number of
+different variations have been tried. One interesting additional feature of FOIL is the use of
+Ockham srazortoeliminatesomehypotheses. Ifaclausebecomeslonger(accordingtosome
+metric) than the total length of the positive examples that the clause explains, that clause is
+notconsideredasapotentialhypothesis. Thistechniqueprovidesawaytoavoidovercomplex
+clausesthatfitnoiseinthedata.
+FOIL andits relatives havebeen used tolearn awidevariety ofdefinitions. Oneofthe
+mostimpressivedemonstrations (Quinlanand Cameron-Jones,1993)involvedsolvingalong
+sequence of exercises on list-processing functions from Bratko s (1986) Prolog textbook. In
+794 Chapter 19. Knowledgein Learning
+each case, the program wasable tolearn acorrect definition ofthefunction from asmallset
+ofexamples, usingthepreviously learnedfunctions asbackground knowledge.
+19.5.3 Inductive learningwithinverse deduction
+The second major approach to ILP involves inverting the normal deductive proof process.
+INVERSE Inverse resolution is based on 

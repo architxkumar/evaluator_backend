@@ -1,0 +1,26 @@
+velopresolution (Robinson, 1965).
+In AI, resolution was adopted for question-answering systems by Cordell Green and
+Bertram Raphael(1968). Early AIimplementations putagood dealofeffortinto datastruc-
+tures that would allow efficient retrieval of facts; this work is covered in AI programming
+texts (Charniak etal., 1987; Norvig, 1992; Forbus and de Kleer, 1993). By the early 1970s,
+forward chaining was well established in AI as an easily understandable alternative to res-
+olution. AI applications typically involved large numbers of rules, so it was important to
+develop efficient rule-matching technology, particularly for incremental updates. The tech-
+nology forproductionsystems wasdeveloped tosupport suchapplications. Theproduction
+system language OPS-5 (Forgy, 1981; Brownston et al., 1985), incorporating the efficient
+retematchprocess(Forgy,1982),wasusedforapplicationssuch asthe R1expertsystemfor
+RETE
+minicomputerconfiguration (Mc Dermott,1982).
+The SOA Rcognitivearchitecture (Laird etal.,1987;Laird,2008)wasdesignedtohan-
+dle very large rule sets up to a million rules (Doorenbos, 1994). Example applications of
+SOAR include controlling simulated fighter aircraft (Jones et al., 1998), airspace manage-
+ment (Taylor etal., 2007), AI characters forcomputer games(Wintermute etal., 2007), and
+training toolsforsoldiers(Wrayand Jones, 2005).
+The field of deductive databases began with a workshop in Toulouse in 1977 that
+brought together experts in logical inference and database systems (Gallaire and Minker,
+1978). Influential workby Chandraand Harel(1980) and Ullman(1985) ledtotheadoption
+of Datalogasastandardlanguagefordeductivedatabases. Thedevelopmentofthemagicsets
+technique for rule rewriting by Bancilhon et al. (1986) allowed forward chaining to borrow
+the advantage of goal-directedness from backward chaining. Current work includes theidea
+ofintegrating multipledatabases intoaconsistent dataspace (Halevy,2007).
+Backward chaining for logical inference appeared first in H

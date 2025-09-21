@@ -1,0 +1,25 @@
+nstructing
+large commonsense knowledge bases by hand, an approach that has not fared well to date.
+There is great promise in using the Web as a source of natural language text, images, and
+videos to serve as a comprehensive knowledge base, but so far machine learning algorithms
+arelimitedintheamountoforganized knowledge theycanextractfromthesesources.
+27.2 AGENT ARCHITECTURES
+It is natural to ask, Which of the agent architectures in Chapter 2 should an agent use? The answer is, All of them! We have seen that reflex responses are needed for situations
+in which time is of the essence, whereas knowledge-based deliberation allows the agent to
+HYBRID plan ahead. A complete agent must be able to do both, using a hybrid architecture. One
+ARCHITECTURE
+important property of hybrid architectures is that the boundaries between different decision
+components are not fixed. For example, compilation continually converts declarative in-
+formationatthedeliberativelevelintomoreefficientrepresentations, eventuallyreachingthe
+reflexlevel see Figure27.2. (Thisisthepurposeofexplanation-basedlearning,asdiscussed
+in Chapter 19.) Agent architectures such as SOAR (Laird et al., 1987) and THEO (Mitchell,
+1990) have exactly this structure. Every time they solve a problem by explicit deliberation,
+they save away a generalized version of the solution for use by the reflex component. A
+less studied problem is the reversal of this process: when the environment changes, learned
+reflexes may no longer be appropriate and the agent must return to the deliberative level to
+produce newbehaviors.
+Agents also need ways to control their own deliberations. They must be able to cease
+deliberating when action is demanded, and they must be able to use the time available for
+deliberation to execute the most profitable computations. For example, a taxi-driving agent
+that sees an accident ahead must decide in a split second either to brake or to take evasive
+action. It should also spend that split second thinking

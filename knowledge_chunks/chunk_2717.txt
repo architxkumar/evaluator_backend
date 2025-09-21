@@ -1,0 +1,28 @@
+bjects. A
+typical task is to extract instances of addresses from Web pages, with database fields for
+street, city, state, and zip code; or instances of storms from weather reports, with fields for
+temperature, wind speed, and precipitation. In a limited domain, this can be done with high
+accuracy. Asthedomaingetsmoregeneral, morecomplexlinguistic modelsandmorecom-
+plex learning techniques are necessary. We will see in Chapter 23 how to define complex
+language models of the phrase structure (noun phrases and verb phrases) of English. But so
+far there are no complete models of this kind, so for the limited needs of information ex-
+traction, we define limited models that approximate the full English model, and concentrate
+on just the parts that are needed for the task at hand. The models we describe in this sec-
+874 Chapter 22. Natural Language Processing
+tionareapproximations inthesamewaythatthesimple1-CN Flogical modelin Figure7.21
+(page271)isanapproximations ofthefull,wiggly,logical model.
+In this section we describe six different approaches to information extraction, in order
+ofincreasing complexity onseveraldimensions: deterministic tostochastic, domain-specific
+togeneral, hand-crafted tolearned, andsmall-scale tolarge-scale.
+22.4.1 Finite-stateautomata forinformationextraction
+ATTRIBUTE-BASED Thesimplesttypeofinformation extraction system isan attribute-based extraction system
+EXTRACTION
+thatassumesthattheentiretextreferstoasingleobjectandthetaskistoextractattributes of
+that object. For example, we mentioned in Section 12.7 the problem of extracting from the
+text IBM Think Book 970. Our price: 399.00 the set of attributes Manufacturer IBM,
+Model Think Book970, Price 399.00 . We can address this problem by defining a tem-
+plate (also known as a pattern) for each attribute we would like to extract. The template is
+TEMPLATE
+REGULAR definedbyafinitestateautomaton,thesimplestexampleofwhichistheregularexpression,
+EXPRESSION
+or regex. Regular expressions are used in Uni

@@ -1,0 +1,41 @@
+ectednetworks,suchasthatof Figure14.12(a),variableelimination
+CONNECTED
+can have exponential time and space complexity in the worst case, even when the number
+of parents per node is bounded. This is not surprising when one considers that because it
+Section14.4. Exact Inference in Bayesian Networks 529
+P(C) .5
+Cloudy
+P(C) .5
+C P(S) C P(R)
+t .10 Sprinkler Rain t .80 Cloudy
+f .50 f .20 P(S R x)
+C t t t f f t f f
+Wet
+Grass Spr Rain t .08 .02.72 .18
+f .10 .40.10 .40
+S R P(W) S R P(W)
+t t .99 t t .99 Wet
+t f .90 t f .90 Grass
+f t .90 f t .90
+f f .00 f f .00
+(a) (b)
+Figure14.12 (a)Amultiplyconnectednetworkwithconditionalprobabilitytables. (b)A
+clusteredequivalentofthemultiplyconnectednetwork.
+includes inferenceinpropositional logicasaspecialcase,inference in Bayesiannetworksis
+NP-hard. Infact,itcanbeshown(Exercise14.16)thattheproblemisashardasthatofcom-
+puting the number of satisfying assignments for a propositional logic formula. This means
+thatitis P-hard( number-P hard ) that is,strictlyharderthan NP-completeproblems.
+Thereisacloseconnection betweenthecomplexityof Bayesiannetworkinferenceand
+the complexity of constraint satisfaction problems (CS Ps). As we discussed in Chapter 6,
+the difficulty of solving a discrete CSP is related to how treelike its constraint graph is.
+Measures such as tree width, which bound the complexity of solving a CSP, can also be
+applied directly to Bayesian networks. Moreover, the variable elimination algorithm can be
+generalized tosolve CS Psaswellas Bayesiannetworks.
+14.4.4 Clustering algorithms
+Thevariableeliminationalgorithmissimpleandefficientforansweringindividualqueries. If
+wewanttocompute posterior probabilities forallthevariables inanetwork, however, itcan
+be less efficient. Forexample, in a polytree network, one would need to issue O(n) queries
+costing O(n) each, for a total of O(n2) time. Using clustering algorithms (also known as
+CLUSTERING
+jointreealgorithms), thetimecanbereduced to O(n). Forthisreason, thesealgorithms are
+JOINTRE

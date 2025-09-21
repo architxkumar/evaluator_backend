@@ -1,0 +1,30 @@
+ssignment,csp)
+ifresult (cid:7) failure then
+returnresult
+remove var value andinferences fromassignment
+returnfailure
+Figure6.5 Asimplebacktrackingalgorithmforconstraintsatisfactionproblems. Theal-
+gorithmismodeledontherecursivedepth-firstsearchof Chapter3.Byvaryingthefunctions
+SELECT-UNASSIGNED-VARIABLE and ORDER-DOMAIN-VALUES, we can implementthe
+general-purposeheuristicsdiscussedinthetext. Thefunction INFERENC Ecanoptionallybe
+used to impose arc-, path-, or k-consistency, as desired. If a value choice leads to failure
+(noticedeitherby INFERENC Eorby BACKTRACK),thenvalueassignments(includingthose
+madeby INFERENCE)areremovedfromthecurrentassignmentandanewvalueistried.
+BACKTRACKING The term backtracking search is used for a depth-first search that chooses values for
+SEARCH
+one variable atatime and backtracks when avariable has nolegal values left to assign. The
+algorithmisshownin Figure6.5. Itrepeatedlychoosesanunassigned variable,andthentries
+allvaluesinthedomainofthatvariableinturn,tryingtofindasolution. Ifaninconsistencyis
+detected,then BACKTRAC Kreturnsfailure,causingthepreviouscalltotryanothervalue. Part
+of the search tree forthe Australia problem is shown in Figure 6.6, where wehave assigned
+variables in the order WA,NT,Q,.... Because the representation of CS Ps is standardized,
+there is no need to supply BACKTRACKING-SEARCH with a domain-specific initial state,
+actionfunction, transition model,orgoaltest.
+Noticethat BACKTRACKING-SEARCH keepsonlyasinglerepresentation ofastateand
+altersthatrepresentation ratherthancreating newones,asdescribed onpage87.
+In Chapter 3 we improved the poor performance of uninformed search algorithms by
+supplying them with domain-specific heuristic functions derived from ourknowledge of the
+problem. Itturnsoutthatwecansolve CS Psefficientlywithoutsuchdomain-specific knowl-
+edge. Instead, we can add some sophistication to the unspecified functions in Figure 6.5,
+usingthemtoaddressthefollowingquestions:
+1. Which variable should be ass

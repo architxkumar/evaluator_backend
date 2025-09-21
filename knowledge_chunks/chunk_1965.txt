@@ -1,0 +1,38 @@
+mumvalue,wealwaysgetan
+admissible heuristic. So max
+i
+COST(P
+i
+) is admissible, and sometimes it is exactly correct:
+it could be that P serendipitously achieves all the G . But in most cases, in practice the
+1 i
+estimateistoolow. Couldwesumthecostsinstead? Formanyproblemsthatisareasonable
+estimate,butitisnotadmissible. Thebestcaseiswhenwecandeterminethat G and G are
+i j
+independent. Iftheeffectsof P leaveallthepreconditions andgoalsof P unchanged, then
+i j
+theestimate COST(P
+i
+) COST(P
+j
+)isadmissible, andmoreaccuratethanthemaxestimate.
+Weshowin Section10.3.1thatplanning graphscanhelpprovidebetterheuristic estimates.
+Itisclearthat thereisgreat potential forcutting downthe search space byforming ab-
+stractions. The trick is choosing the right abstractions and using them in a way that makes
+thetotalcost defininganabstraction, doinganabstractsearch,andmappingtheabstraction
+back to the original problem less than the cost of solving the original problem. The tech-
+Section10.3. Planning Graphs 379
+niques of pattern databases from Section 3.6.3 can be useful, because the cost of creating
+thepatterndatabase canbeamortizedovermultipleproblem instances.
+Anexampleofasystemthatmakesuseofeffectiveheuristicsis FF,or FASTFORWARD
+(Hoffmann, 2005), a forward state-space searcher that uses the ignore-delete-lists heuristic,
+estimating the heuristic with the help of a planning graph (see Section 10.3). FF then uses
+hill-climbing search (modifiedtokeeptrack oftheplan)withtheheuristic tofindasolution.
+Whenithitsaplateauorlocalmaximum whennoactionleadstoastatewithbetterheuristic
+score then FF uses iterative deepening search until it finds a state that is better, or it gives
+upandrestartshill-climbing.
+10.3 PLANNING GRAPHS
+All of the heuristics we have suggested can suffer from inaccuracies. This section shows
+how a special data structure called a planning graph can be used to give better heuristic
+PLANNINGGRAPH
+estimates. These heuristics can be applied to any of the search techniques we

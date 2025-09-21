@@ -1,0 +1,30 @@
+ Probabilis-
+Keeney,R.L.and Raiffa,H.(1976).Decisionswith Klein,D.and Manning,C.(2001).Parsingwithtree- tic Graphical Models: Principlesand Techniques.
+Multiple Objectives: Preferencesand Value Trade- bankgrammars:Empiricalbounds,theoreticalmod- MIT Press.
+offs.Wiley. els,andthestructureofthe Penntreebank. In ACL-
+Koller,D.and Milch,B.(2003). Multi-agentinflu-
+01.
+Kemp,M.(Ed.).(1989).Leonardoon Painting:An encediagramsforrepresentingandsolvinggames.
+Anthologyof Writings.Yale University Press. Klein,D.and Manning,C.(2003).A parsing:Fast Gamesand Economic Behavior,45,181 221.
+exact Viterbiparseselection.In HLT-NAACL-03,pp.
+Kephart,J.O.and Chess,D.M.(2003).Thevision Koller,D.and Parr,R.(2000). Policyiterationfor
+119 126.
+ofautonomiccomputing. IEEE Computer,36(1), factored MD Ps.In UAI-00,pp.326 334.
+41 50. Klein,D.,Smarr,J.,Nguyen,H.,and Manning,C.
+Koller,D.and Sahami,M.(1997). Hierarchically
+(2003). Namedentityrecognitionwithcharacter-
+Kersting,K.,Raedt,L.D.,and Kramer,S.(2000). classifying documents using very few words. In
+levelmodels. In Conferenceon Natural Language
+Interpretingbayesianlogicprograms.In Proc.AAAI- ICML-97,pp.170 178.
+Learning(Co NLL).
+2000Workshopon Learning Statistical Modelsfrom
+Relational Data. Kleinberg,J.M.(1999). Authoritativesourcesina Kolmogorov,A.N.(1941). Interpolationundex-
+hyperlinkedenvironment.JACM,46(5),604 632. trapolationvonstationarenzufalligenfolgen. Bul-
+Kessler,B.,Nunberg,G.,and Schu tze,H.(1997). letinofthe Academyof Sciencesofthe USSR,Ser.
+Automatic detection of text genre. Co RR, cmp- Klemperer,P.(2002). Whatreallymattersinauc- Math.5,3 14.
+lg 9707002. tiondesign.J.Economic Perspectives,16(1).
+Kolmogorov,A.N.(1950).Foundationsofthe The-
+Keynes,J.M.(1921). ATreatiseon Probability. Kneser,R.and Ney,H.(1995). Improvedbacking- oryof Probability.Chelsea.
+Macmillan. offfor M-gramlanguagemodeling. In ICASSP-95,
+pp.181 184. Kolmogorov,A.N.(1963). Ontablesofrandom
+Khare,R.(2006). Microformats:Thenext(small) numbers. Sankhya,the India

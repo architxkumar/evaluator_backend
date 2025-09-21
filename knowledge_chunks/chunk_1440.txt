@@ -1,0 +1,27 @@
+afewdozenfacts. Thefactthataprogramcanfindasolutioninprincipledoes
+notmeanthattheprogramcontains anyofthemechanismsneededtofinditinpractice.
+The illusion of unlimited computational power was not confined to problem-solving
+programs. Earlyexperiments in machineevolution(nowcalledgeneticalgorithms)(Fried-
+MACHINEEVOLUTION
+GENETIC berg, 1958; Friedberg et al., 1959) were based on the undoubtedly correct belief that by
+ALGORITHM
+making an appropriate series of small mutations to a machine-code program, one can gen-
+erate a program with good performance for any particular task. The idea, then, was to try
+random mutations with a selection process to preserve mutations that seemed useful. De-
+spitethousandsofhoursof CP Utime,almostnoprogresswasdemonstrated. Moderngenetic
+algorithms usebetterrepresentations andhaveshownmoresuccess.
+22 Chapter 1. Introduction
+Failure to come to grips with the combinatorial explosion was one of the main criti-
+cismsof AIcontainedinthe Lighthillreport(Lighthill,1973),whichformedthebasisforthe
+decision bythe Britishgovernment toendsupport for AIresearch inallbuttwouniversities.
+(Oraltraditionpaintsasomewhatdifferentandmorecolorfulpicture,withpoliticalambitions
+andpersonal animosities whosedescription isbesidethepoint.)
+Athirddifficultyarosebecauseofsomefundamentallimitationsonthebasicstructures
+being used togenerate intelligent behavior. Forexample, Minsky and Papert s book Percep-
+trons (1969) proved that, although perceptrons (a simple form of neural network) could be
+showntolearnanythingtheywerecapableofrepresenting, theycouldrepresentverylittle. In
+particular,atwo-inputperceptron(restrictedtobesimplerthantheform Rosenblattoriginally
+studied) couldnotbetrained torecognize whenitstwoinputs weredifferent. Althoughtheir
+results did not apply to more complex, multilayer networks, research funding for neural-net
+research soon dwindled to almost nothing. Ironically, the newback-propagation learning al-
+gorithms for multilayer networks that were to

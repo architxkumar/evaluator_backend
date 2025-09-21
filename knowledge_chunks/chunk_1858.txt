@@ -1,0 +1,29 @@
+s that adding 0 to any natural number m gives m itself. Notice
+theuseofthebinaryfunctionsymbol intheterm (m,0);inordinary mathematics, the
+termwouldbewritten m 0usinginfixnotation. (Thenotationwehaveusedforfirst-order
+INFIX
+9 The Peano axiomsalso include theprinciple of induction, whichisa sentence of second-order logic rather
+thanoffirst-orderlogic.Theimportanceofthisdistinctionisexplainedin Chapter9.
+304 Chapter 8. First-Order Logic
+logiciscalledprefix.) Tomakeoursentencesaboutnumberseasiertoread,weallowtheuse
+PREFIX
+ofinfixnotation. Wecanalsowrite S(n)asn 1,sothesecond axiombecomes m,n Nat Num(m) Nat Num(n) (m 1) n (m n) 1.
+Thisaxiomreduces additiontorepeated application ofthesuccessorfunction.
+The use of infix notation is an example of syntactic sugar, that is, an extension to or
+SYNTACTICSUGAR
+abbreviation of the standard syntax that does not change the semantics. Any sentence that
+usessugarcanbe desugared toproduceanequivalentsentenceinordinaryfirst-orderlogic.
+Once we have addition, it is straightforward to define multiplication as repeated addi-
+tion, exponentiation asrepeated multiplication, integer division and remainders, primenum-
+bers, and so on. Thus, the whole of numbertheory (including cryptography) can be built up
+fromoneconstant, onefunction, onepredicate andfouraxioms.
+The domain of sets is also fundamental to mathematics as well as to commonsense
+SET
+reasoning. (Infact, itispossible todefinenumbertheory in termsofsettheory.) Wewantto
+beable torepresent individual sets, including the empty set. Weneed awaytobuild up sets
+by adding an element to a set or taking the union or intersection of two sets. We will want
+to know whether an element is a member of a set and we will want to distinguish sets from
+objectsthatarenotsets.
+Wewilluse the normal vocabulary of set theory as syntactic sugar. The empty set is a
+constant written as . There is one unary predicate, Set, which is true of sets. The binary
+predicates are x s (x is a memberof set s)and s s (se

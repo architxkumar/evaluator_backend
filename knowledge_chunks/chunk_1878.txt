@@ -1,0 +1,33 @@
+.
+8.13 Equation(8.4)onpage306definestheconditionsunderwhichasquareisbreezy. Here
+weconsidertwootherwaystodescribe thisaspectofthewumpusworld.
+a. Wecanwritediagnosticrulesleadingfromobservedeffectstohiddencauses. Forfind-
+DIAGNOSTICRULE
+ingpits,theobviousdiagnosticrulessaythatifasquareisbreezy,someadjacentsquare
+mustcontain apit; andifasquareisnotbreezy, then noadjacent square contains apit.
+Write these two rules in first-order logic and show that their conjunction is logically
+equivalentto Equation(8.4).
+b. Wecanwritecausalrulesleadingfromcausetoeffect. Oneobviouscausalruleisthat
+CAUSALRULE
+apitcausesalladjacentsquarestobebreezy. Writethisruleinfirst-orderlogic,explain
+whyitisincomplete comparedto Equation(8.4),andsupplythemissingaxiom.
+318 Chapter 8. First-Order Logic
+George Mum
+Spencer Kydd Elizabeth Philip Margaret
+Diana Charles Anne Mark Andrew Sarah Edward Sophie
+William Harry Peter Zara Beatrice Eugenie Louise James
+Figure8.7 Atypicalfamilytree. Thesymbol (cid:10)(cid:11) connectsspousesandarrowspointto
+children.
+8.14 Write axioms describing the predicates Grandchild, Greatgrandparent, Ancestor,
+Brother, Sister, Daughter, Son, First Cousin, Brother In Law, Sister In Law, Aunt, and
+Uncle. Find out the proper definition of mth cousin n times removed, and write the def-
+inition in first-order logic. Now write down the basic facts depicted in the family tree in
+Figure 8.7. Using a suitable logical reasoning system, TELL it all the sentences you have
+writtendown,and ASK itwhoare Elizabeth s grandchildren, Diana sbrothers-in-law, Zara s
+great-grandparents, and Eugenie sancestors.
+8.15 Explain what is wrong with the following proposed definition of the set membership
+predicate : x,s x x s x,s x s y x y s .
+8.16 Using the set axioms as examples, write axioms for the list domain, including all the
+constants, functions, andpredicates mentionedinthechapter.
+8.17 Explain what is wrong with the following proposed definition of adjacent squares in
+thewumpusworld: x,y Adjace

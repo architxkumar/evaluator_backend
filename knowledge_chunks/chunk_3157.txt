@@ -1,0 +1,47 @@
+cktracking,218 220,262
+consistent,696 marginal,494 intentionality,1026,1042
+null,705
+independentsubproblems,222 intentionalstate,1028
+prior,803,810
+index,869 intercausalreasoning,548
+hypothesisprior,803,810
+indexical,904 interior-pointmethod,155
+hypothesisspace,696,769
+indexing,328,327 329 interleaving,147
+Hyun,S.,1012,1070
+India,16,227,468 interleaving(actions),394
+indicatorvariable,819 interleaving(searchandaction),136
+I
+indifference,principleof,491,504 interlingua,908
+individual(ingeneticalgorithms),127 internalstate,50
+i.i.d.(independentandidentically
+individuation,445 Internetsearch,464
+distributed),708,803
+inducedwidth,229 Internetshopping,462 467
+Iagnemma,K.,1014,1067
+induction,6 interpolationsmoothing,883
+IBAL,556
+constructive,791 interpretation,292,313
+IBM,18,19,29,185,193,922
+mathematical,8 extended,313
+IBM704computer,193
+icecream,483
+inductivelearning,694,695 697 intended,292
+ID3,800 inductivelogicprogramming(ILP), pragmatic,904
+IDA search,99,111 779,800 interreflections,934,953
+identificationinthelimit,759 Indyk,P.,760,1064,1073 interval,448
+identitymatrix(I),1056 inference,208,235 Intille,S.,604,1077
+identityuncertainty,541,876 probabilistic,490,490 494,510 intractability,21
+idiot Bayes,499 inferenceprocedure,308 intrinsicproperty,445
+IEEE,469 inferencerule,250,275 introspection,3,12
+ignorance,547,549 inferentialequivalence,323 intuitionpump,1032
+practical,481 inferentialframeproblem,267,279 inverse(ofamatrix),1056
+theoretical,481 infinitehorizonproblems,685 inverseentailment,795
+ignoredeletelists,377 influencediagram,552,610,626 inversegametheory,679
+ignorepreconditionsheuristic,376 INFORMATION-GATHERING-AGENT, inversekinematics,987
+Iida,H.,192,1087 632 inversereinforcementlearning,857
+IJCAI(International Joint Conference informationextraction,873,873 876, inverseresolution,794,794 797,800
+on AI),31 883 invertedpendulum,851
+ILOG,359 informationgain,704,705 invertedspectrum,1033
+ILP,779,800 informationgathering,39,994 Inza,I.,158,1080
+image,929 informat

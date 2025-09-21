@@ -1,0 +1,37 @@
+(si,problem,path)
+ifplan failure thenreturnfailure
+i
+return ifs
+1
+thenplan
+1
+elseifs
+2
+thenplan
+2
+else ...ifsn 1 thenplan
+n 1
+elseplan
+n Figure 4.11 An algorithmforsearching AND OR graphsgeneratedby nondeterministic
+environments.Itreturnsaconditionalplanthatreachesagoalstateinallcircumstances.(The
+notation x l referstothelistformedbyaddingobjectxtothefrontoflistl.)
+construct.) Modifying the basic problem-solving agent shown in Figure 3.1 to execute con-
+tingentsolutionsofthiskindisstraightforward. Onemayalsoconsiderasomewhatdifferent
+agentdesign, inwhichtheagentcanactbeforeithasfoundaguaranteed plananddealswith
+some contingencies only as they arise during execution. Thistype of interleaving of search
+INTERLEAVING
+andexecution isalsousefulforexploration problems (see Section4.5)andforgameplaying
+(see Chapter5).
+Figure 4.11 gives a recursive, depth-first algorithm for AND OR graph search. One
+key aspect of the algorithm is the way in which it deals with cycles, which often arise in
+nondeterministic problems (e.g., if an action sometimes has no effect or if an unintended
+effect can be corrected). If the current state is identical to a state on the path from the root,
+thenitreturnswithfailure. Thisdoesn tmeanthatthereis nosolutionfromthecurrentstate;
+it simply means that if there is a noncyclic solution, it must be reachable from the earlier
+incarnation ofthecurrentstate,sothenewincarnation can bediscarded. Withthischeck,we
+ensurethatthealgorithmterminatesineveryfinitestatespace,becauseeverypathmustreach
+agoal, adead end, orarepeated state. Notice that the algorithm does notcheck whetherthe
+currentstateisarepetitionofastateonsomeotherpathfromtheroot,whichisimportantfor
+efficiency. Exercise4.5investigates thisissue.
+AND ORgraphscanalsobeexploredbybreadth-firstorbest-firstmethods. Theconcept
+of a heuristic function must be modified to estimate the cost of a contingent solution rather than asequence, but the notion of admissibility carries over and there is an analog of th

@@ -1,0 +1,30 @@
+ringsrepresenting8-queensstates.
+The initial population in (a) is ranked by the fitness function in (b), resulting in pairs for
+matingin(c). Theyproduceoffspringin(d),whicharesubjecttomutationin(e). Figure4.7 The8-queensstatescorrespondingtothefirsttwoparentsin Figure4.6(c)and
+thefirstoffspringin Figure4.6(d).Theshadedcolumnsarelostinthecrossoverstepandthe
+unshadedcolumnsareretained.
+Like beam searches, GAs begin with a set of k randomly generated states, called the
+population. Eachstate,orindividual,isrepresented asastringoverafinitealphabet most
+POPULATION
+commonly,astringof0sand1s. Forexample,an8-queensstatemustspecifythepositionsof
+INDIVIDUAL
+8queens, each inacolumn of 8squares, and so requires 8 log 8 24 bits. Alternatively,
+2
+thestatecouldberepresentedas8digits,eachintherangefrom1to8. (Wedemonstratelater
+that the two encodings behave differently.) Figure 4.6(a) shows a population of four 8-digit
+stringsrepresenting 8-queens states.
+The production of the next generation of states is shown in Figure 4.6(b) (e). In (b),
+each state is rated by the objective function, or(in GAterminology) the fitnessfunction. A
+FITNESSFUNCTION
+fitness function should return higher values for better states, so, for the 8-queens problem
+we use the number of nonattacking pairs of queens, which has a value of 28 for a solution.
+The values of the four states are 24, 23, 20, and 11. In this particular variant of the genetic
+algorithm, the probability of being chosen for reproducing is directly proportional to the
+fitnessscore,andthepercentages areshownnexttotherawscores.
+In (c), two pairs are selected at random for reproduction, in accordance with the prob-
+128 Chapter 4. Beyond Classical Search
+abilities in (b). Notice that one individual is selected twice and one not at all.4 For each
+pair to be mated, a crossover point is chosen randomly from the positions in the string. In
+CROSSOVER
+Figure4.6,thecrossoverpointsareafterthethirddigitin thefirstpairandafterthefifthdigit
+inthesecondpair.

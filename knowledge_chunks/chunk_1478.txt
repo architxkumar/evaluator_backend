@@ -1,0 +1,28 @@
+onetheless interesting toconsider
+howanagentmightlearntoplaythesegameswithoutsuchknowledge.
+Severaloftheanswersinthetabledepend onhowthetaskenvironment isdefined. We
+havelistedthemedical-diagnosis taskassingle-agentbecausethediseaseprocessinapatient
+is not profitably modeled as an agent; but a medical-diagnosis system might also have to
+dealwithrecalcitrantpatientsandskepticalstaff,sotheenvironmentcouldhaveamultiagent
+aspect. Furthermore, medicaldiagnosis isepisodic ifoneconceives ofthetaskasselecting a
+diagnosisgivenalistofsymptoms;theproblemissequentialifthetaskcanincludeproposing
+a series of tests, evaluating progress over the course of treatment, and so on. Also, many
+environments are episodic at higher levels than the agent s individual actions. For example,
+a chess tournament consists of a sequence of games; each game is an episode because (by
+and large) the contribution of the moves in one game to the agent s overall performance is
+notaffected bythemovesinitsprevious game. Ontheotherhand, decision makingwithina
+singlegameiscertainly sequential.
+The code repository associated with this book (aima.cs.berkeley.edu) includes imple-
+mentationsofanumberofenvironments, togetherwithageneral-purpose environmentsimu-
+latorthatplacesoneormoreagentsinasimulatedenvironment, observestheirbehaviorover
+time, and evaluates them according to a given performance measure. Such experiments are
+oftencarried outnotforasingle environment butformanyenvironments drawnfroman en-
+ENVIRONMENT vironmentclass. Forexample,toevaluateataxidriverinsimulatedtraffic, wewouldwantto
+CLASS
+runmanysimulations withdifferent traffic, lighting, and weatherconditions. Ifwedesigned
+the agent for a single scenario, we might be able to take advantage of specific properties
+of the particular case but might not identify a good design for driving in general. For this
+46 Chapter 2. Intelligent Agents
+ENVIRONMENT reason, the code repository also includes an environment generator for each environment
+GENERATOR
+c

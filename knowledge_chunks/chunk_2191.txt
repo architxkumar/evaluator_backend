@@ -1,0 +1,51 @@
+able aredoneonlyforthoseportions oftheexpression thatdependonthevariable.
+Letusillustrate thisprocessfortheburglary network. Weevaluatetheexpression
+(cid:12) (cid:12)
+P(B j,m) P(B) P(e) P(a B,e)P(j a)P(m a) .
+(cid:27)(cid:28)(cid:29)(cid:30) (cid:27)(cid:28)(cid:29)(cid:30) (cid:27) (cid:28)(cid:29) (cid:30)(cid:27) (cid:28)(cid:29) (cid:30)(cid:27) (cid:28)(cid:29) (cid:30)
+e a
+f1(B) f2(E) f3(A,B,E) f4(A) f5(A)
+Noticethatwehaveannotatedeachpartoftheexpressionwiththenameofthecorresponding
+factor; each factorisamatrixindexed bythevalues ofitsargument variables. Forexample,
+FACTOR
+thefactorsf (A)andf (A)corresponding to P(j a)and P(m a)dependjuston Abecause
+4 5
+J and M arefixedbythequery. Theyaretherefore two-elementvectors:
+(cid:13) (cid:14) (cid:13) (cid:14) (cid:13) (cid:14) (cid:13) (cid:14)
+P(j a) 0.90 P(m a) 0.70
+f (A) f (A) .
+4 P(j a) 0.05 5 P(m a) 0.01
+f (A,B,E)willbea2 2 2matrix,whichishardtoshowontheprintedpage. (The first 3
+element isgiven by P(a b,e) 0.95 andthe last by P( a b, e) 0.999.) Intermsof
+factors, thequeryexpression iswrittenas
+(cid:12) (cid:12)
+P(B j,m) f (B) f (E) f (A,B,E) f (A) f (A)
+1 2 3 4 5
+e a
+Section14.4. Exact Inference in Bayesian Networks 525
+P(b)
+.001
+P(e) P( e)
+.002 .998
+P(a b,e) P( a b,e) P(a b, e) P( a b, e)
+.95 .05 .94 .06
+P(j a) P( j a) P( j a) P( j a)
+.90 .05 .90 .05
+P(m a) P(m a) P(m a) P(m a)
+.70 .01 .70 .01
+Figure 14.8 The structure of the expression shown in Equation (14.4). The evaluation
+proceedstopdown,multiplyingvaluesalongeachpathandsummingatthe nodes.Notice
+therepetitionofthepathsforjandm.
+function ENUMERATION-ASK(X,e,bn)returnsadistributionover X
+inputs:X, thequeryvariable
+e,observedvaluesforvariables E
+bn,a Bayesnetwithvariables X E Y Y hiddenvariables Q(X) adistributionover X,initiallyempty
+foreachvaluexi of X do
+Q(xi) ENUMERATE-ALL(bn.VARS,exi )
+whereexi iseextendedwith X xi
+return NORMALIZE(Q(X))
+function ENUMERATE-ALL(vars,e)returnsarealnumber
+if EMPTY?(vars)thenreturn1.0
+Y FIRST(vars)
+if Y hasvaluey ine
+thenret

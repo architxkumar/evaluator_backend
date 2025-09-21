@@ -1,0 +1,27 @@
+achines, including virtually all of those that have been raised in the half-century
+sincehispaperappeared. Wewilllookatsomeofthem.
+26.1.1 The argument from disability
+The argument from disability makesthe claim that amachine can neverdo X. Asexam-
+plesof X,Turingliststhefollowing:
+Bekind,resourceful,beautiful,friendly,haveinitiative,haveasenseofhumor,tellright
+from wrong, make mistakes, fall in love, enjoy strawberries and cream, make someone
+fallin lovewith it, learnfromexperience,use wordsproperly,bethe subjectofitsown
+thought,haveasmuchdiversityofbehaviorasman,dosomethingreallynew.
+1022 Chapter 26. Philosophical Foundations
+In retrospect, some of these are rather easy we re all familiar with computers that make
+mistakes. We are also familiar with a century-old technology that has had a proven ability
+to make someone fall in love with it the teddy bear. Computer chess expert David Levy
+predicts that by 2050 people will routinely fall in love with humanoid robots (Levy, 2007).
+Asforarobotfallinginlove,thatisacommonthemeinfiction,1 buttherehasbeenonlylim-
+itedspeculation aboutwhetheritisinfactlikely(Kimetal.,2007). Programsdoplaychess,
+checkers and other games; inspect parts on assembly lines, steer cars and helicopters; diag-
+nose diseases; and do hundreds of other tasks as well as or better than humans. Computers
+have made small but significant discoveries in astronomy, mathematics, chemistry, mineral-
+ogy, biology, computer science, and other fields. Each of these required performance at the
+levelofahumanexpert.
+Given what we now know about computers, it is not surprising that they do well at
+combinatorial problems such as playing chess. Butalgorithms also perform athuman levels
+on tasks that seemingly involve human judgment, oras Turing put it, learning from experi-
+ence and the ability to tell right from wrong. As far back as 1955, Paul Meehl (see also
+Groveand Meehl, 1996) studied the decision-making processes of trained experts atsubjec-
+tive tasks such as pr

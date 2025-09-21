@@ -1,0 +1,32 @@
+s. For example, any string of
+digitsmightbereplaced with NUM ,oranyemailaddress with EMAIL .
+To get a feeling for what word models can do, we built unigram, bigram, and trigram
+modelsoverthewordsinthisbookandthenrandomlysampledsequences ofwordsfromthe
+models. Theresultsare
+Unigram: logical areasareconfusion amayrighttriesagentgoalthewas...
+Bigram: systemsareverysimilarcomputational approach wouldberepresented ...
+Trigram: planning andscheduling areintegrated thesuccess ofnaive bayesmodelis...
+Evenwiththissmallsample,itshouldbeclearthattheunigrammodelisapoorapproximation
+ofeither Englishorthecontentofan AItextbook,andthatthebigramandtrigrammodelsare
+1 Withthepossibleexceptionofthegroundbreakingworkof T.Geisel(1955).
+Section22.2. Text Classification 865
+muchbetter. Themodelsagreewiththisassessment: theperplexity was891fortheunigram
+model,142forthebigram modeland91forthetrigrammodel.
+With the basics of n-gram models both character- and word-based established, we
+canturnnowtosomelanguage tasks.
+22.2 TEXT CLASSIFICATION
+TEXT Wenowconsiderindepththetaskoftextclassification,alsoknownascategorization: given
+CLASSIFICATION
+atextofsomekind,decidewhichofapredefinedsetofclassesitbelongsto. Languageiden-
+tification and genre classification areexamples oftextclassification, asissentiment analysis
+(classifying amovieorproductreviewaspositiveornegative)andspamdetection(classify-
+SPAMDETECTION
+inganemailmessageasspamornot-spam). Since not-spam isawkward,researchers have
+coined the term ham fornot-spam. We can treat spam detection as a problem in supervised
+learning. A training set is readily available: the positive (spam) examples are in my spam
+folder, thenegative(ham)examplesareinmyinbox. Hereisanexcerpt:
+Spam:Wholesale Fashion Watches-57 today.Designerwatchesforcheap...
+Spam:Youcanbuy Viagra Fr 1.85All Medicationsatunbeatableprices! ...
+Spam:WECANTREATANYTHINGYOUSUFFERFROMJUSTTRUSTUS...
+Spam:Sta.rtearn ingthesalaryyo,ud-eservebyo btainingtheprope,rcrede ntials!
+Ham:Thepracticalsi

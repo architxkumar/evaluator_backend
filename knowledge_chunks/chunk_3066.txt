@@ -1,0 +1,22 @@
+ast-
+AIJ,62(1),41 78. theassignmentproblem. Naval Research Logistics squarespolicyiteration.JMLR,4,1107 1149.
+Quarterly,2,83 97.
+Korf, R. E. (1995). Space-efficient search algo- Laird,J.,Newell,A.,and Rosenbloom,P.S.(1987).
+rithms.ACM Computing Surveys,27(3),337 339. Kuipers,B.J.(1985).Qualitativesimulation.In Bo- SOAR:Anarchitectureforgeneralintelligence.AIJ,
+brow,D.(Ed.),Qualitative Reasoning About Physi- 33(1),1 64.
+Korf,R.E.and Chickering,D.M.(1996).Best-first cal Systems,pp.169 203.MIT Press.
+minimaxsearch.AIJ,84(1 2),299 337. Laird,J.,Rosenbloom,P.S.,and Newell,A.(1986).
+Kuipers,B.J.and Levitt,T.S.(1988). Navigation Chunkingin Soar:Theanatomyofagenerallearn-
+Korf,R.E.and Felner,A.(2002). Disjointpattern andmappinginlarge-scalespace.AI Mag,9(2),25 ingmechanism.Machine Learning,1,11 46.
+databaseheuristics.AIJ,134(1 2),9 22. 43.
+Laird,J.(2008). Extendingthe Soarcognitivear-
+Korf, R.E., Reid, M., and Edelkamp, S.(2001). Kuipers,B.J.(2001). Qualitativesimulation. In chitecture.In Artificial General Intelligence Confer-
+Time complexity of iterative-deepening-A . AIJ, Meyers,R.A.(Ed.),Encyclopeidaof Physical Sci- ence.
+129,199 218. enceand Technology.Academic Press.
+Lakoff, G.(1987). Women, Fire, and Dangerous
+Korf, R. E. and Zhang, W.(2000). Divide-and- Kumar,P.R.and Varaiya,P.(1986).Stochastic Sys- Things: What Categories Reveal Aboutthe Mind.
+conquerfrontiersearchappliedtooptimalsequence tems:Estimation,Identification,and Adaptive Con- Universityof Chicago Press.
+t a e l l i l g i n g m en e c n e t , . p In p. A 9 m 10 er i 9 c 1 a 6 n . Associationfor Artificial In- trol. Kumar,V.(1992). Algorithmsforconstraintsatis- Live By.Universityof Chicago Press.
+K gr o ap rf h , s R e . a E rc . h ( . 2 J 0 A 0 C 8) M . , L 5 in 5 e (6 a ) r . -timedisk-basedimplicit factionproblems:Asurvey.AI Mag,13(1),32 44. Lakoff,G.and Johnson,M.(1999). Philosophyin
+Kumar, V. and Kanal, L. N. (1983). A general the Flesh:The Embodied Mindand Its Challengeto
+Korf, R.E.and Schultze, P.(2

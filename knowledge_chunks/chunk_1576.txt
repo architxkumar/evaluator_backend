@@ -1,0 +1,21 @@
+first
+112 Chapter 3. Solving Problemsby Searching
+order even with an inadmissible heuristic. The idea of keeping track of the best alternative pathappearedearlierin Bratko s(1986)elegant Prologimplementationof A andinthe DTA
+algorithm (Russell and Wefald, 1991). Thelatter work also discusses metalevel state spaces
+andmetalevellearning. The MA algorithm appeared in Chakrabarti et al. (1989). SMA, or Simplified MA, emergedfromanattempttoimplement MA asacomparisonalgorithmfor IE(Russell,1992). Kaindland Khorsand (1994) have applied SMA toproduce abidirectional search algorithm
+thatissubstantiallyfasterthanpreviousalgorithms. Korfand Zhang(2000)describeadivide- and-conquer approach, and Zhou and Hansen (2002) introduce memory-bounded A graph
+search and a strategy for switching to breadth-first search to increase memory-efficiency
+(Zhouand Hansen,2006). Korf(1995)surveysmemory-bounded searchtechniques.
+Theideathatadmissibleheuristics canbederivedbyproblem relaxation appearsinthe
+seminal paper by Held and Karp (1970), who used the minimum-spanning-tree heuristic to
+solvethe TSP.(See Exercise3.30.)
+The automation of the relaxation process was implemented successfully by Priedi-
+tis (1993), building on earlier work with Mostow (Mostow and Prieditis, 1989). Holte and
+Hernadvolgyi (2001) describe morerecent steps towardsautomating theprocess. Theuseof
+pattern databases to derive admissible heuristics is due to Gasser (1995) and Culberson and
+Schaeffer (1996, 1998); disjoint pattern databases are described by Korf and Felner (2002);
+a similar method using symbolic patterns is due to Edelkamp (2009). Felner et al. (2007)
+show how to compress pattern databases to save space. The probabilistic interpretation of
+heuristics wasinvestigated indepthby Pearl(1984)and Hanssonand Mayer(1989).
+By far the most comprehensive source on heuristics and heuristic search algorithms
+is Pearl s (1984) Heuristics text. This book provides especially good coverage of the wide varietyofoffshootsandva

@@ -1,0 +1,46 @@
+rallel tooneanother. Theprojection
+0 0 0
+ofapoint P fromthislineontotheimageplaneisgivenby
+(cid:13) (cid:14)
+X U Y V
+0 0
+f ,f .
+Z W Z W
+0 0
+As or , this becomes p (f U W,f V W) if W (cid:7) 0. This means that
+two parallel lines leaving different points in space will converge in the image for large ,
+theimagepointsarenearlythesame,whateverthevalueof(X ,Y ,Z )(again,thinkrailway
+0 0 0
+VANISHINGPOINT
+tracks, Figure 24.1). We call p the vanishing point associated with the family of straight
+lineswithdirection(U,V,W). Lineswiththesamedirectionsharethesamevanishingpoint.
+24.1.2 Lens systems
+The drawback of the pinhole camera is that we need a small pinhole to keep the image in
+focus. Butthesmallerthepinhole,thefewerphotonsgetthrough,meaningtheimagewillbe
+dark. Wecan gather more photons by keeping the pinhole open longer, but then wewill get
+motion blur objects inthe scene thatmovewillappearblurred because theysend photons
+MOTIONBLUR
+to multiple locations on the image plane. If we can t keep the pinhole open longer, we can
+trytomakeitbigger. Morelightwillenter,butlightfromasmallpatchofobjectinthescene
+willnowbespreadoverapatchontheimageplane, causingablurred image.
+932 Chapter 24. Perception
+Image plane
+Light Source
+Iris
+Cornea Fovea
+Visual Axis
+Optic Nerve
+Lens
+Optical Axis
+Lens
+System Retina
+Figure24.3 Lensescollectthelightleavingascenepointinarangeofdirections,andsteer
+italltoarriveatasinglepointontheimageplane. Focusingworksforpointslyingcloseto
+a focal plane in space; other points will not be focused properly. In cameras, elements of
+thelenssystemmovetochangethefocalplane,whereasintheeye,theshapeofthelensis
+changedbyspecializedmuscles.
+Vertebrate eyes and modern cameras use a lens system to gather sufficient light while
+LENS
+keeping the image in focus. A large opening is covered with a lens that focuses light from
+nearby object locations downtonearby locations intheimageplane. However, lenssystems
+have a limited depth of field: they can focus light only from points th

@@ -1,0 +1,21 @@
+e cannot express directly in the language of propositional logic. To solve this
+problem, we need a more expressive language, one in which phrases like for each time t and for each square x,y can be written in a natural way. First-order logic, described in
+Chapter 8, is such a language; in first-order logic a wumpus world of any size and duration
+canbedescribed inabouttensentences ratherthantenmillionortentrillion.
+7.8 SUMMARY
+We have introduced knowledge-based agents and have shown how to define a logic with
+whichsuchagentscanreasonabouttheworld. Themainpoints areasfollows: Intelligent agentsneedknowledge abouttheworldinordertoreachgooddecisions. Knowledge is contained in agents in the form of sentences in a knowledge represen-
+tationlanguagethatarestoredinaknowledgebase. A knowledge-based agent is composed of a knowledge base and an inference mecha-
+nism. Itoperates bystoring sentences abouttheworldinits knowledge base, using the
+inference mechanism toinfernew sentences, and using these sentences todecide what
+actiontotake. A representation language is defined by its syntax, which specifies the structure of
+sentences,anditssemantics,whichdefinesthetruthofeachsentenceineachpossible
+worldormodel. The relationship of entailment between sentences is crucial to our understanding of
+reasoning. A sentence entails another sentence if is true in all worlds where is true. Equivalent definitions include the validity of the sentence and the
+unsatisfiabilityofthesentence . Inferenceistheprocessofderivingnewsentencesfromoldones. Soundinferencealgo-
+rithmsderiveonlysentencesthatareentailed; completealgorithmsderiveallsentences
+thatareentailed. Propositionallogicisasimplelanguageconsistingofpropositionsymbolsandlogical
+connectives. Itcanhandlepropositionsthatareknowntrue,knownfalse,orcompletely
+unknown. The set of possible models, given a fixed propositional vocabulary, is finite, so en-
+tailment can be checked by enumerating models. Efficient model-checking inference
+algorithms f

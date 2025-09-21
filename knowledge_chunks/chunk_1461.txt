@@ -1,0 +1,26 @@
+re is to say about the agent. Mathematically speaking, we say that an agent s behavior is
+described bytheagentfunctionthatmapsanygivenperceptsequence toanaction.
+AGENTFUNCTION
+Wecan imagine tabulating the agent function that describes any given agent; formost
+agents, this would be a very large table infinite, in fact, unless we place a bound on the
+lengthofperceptsequenceswewanttoconsider. Givenanagenttoexperimentwith,wecan,
+in principle, construct this table by trying out all possible percept sequences and recording
+whichactionstheagentdoesinresponse.1 Thetableis,ofcourse,anexternalcharacterization
+of the agent. Internally, the agent function for an artificial agent will be implemented by an
+agent program. It is important to keep these two ideas distinct. The agent function is an
+AGENTPROGRAM
+abstract mathematical description; the agent program is a concrete implementation, running
+withinsomephysicalsystem.
+To illustrate these ideas, we use a very simple example the vacuum-cleaner world
+shown in Figure 2.2. This world is so simple that we can describe everything that happens;
+it salsoamade-upworld,sowecaninventmanyvariations. Thisparticularworldhasjusttwo
+locations: squares A and B. The vacuum agent perceives which square it is in and whether
+there is dirt in the square. It can choose to move left, move right, suck up the dirt, or do
+nothing. One very simple agent function is the following: if the current square is dirty, then
+suck;otherwise,movetotheothersquare. Apartialtabulationofthisagentfunctionisshown
+in Figure2.3andanagentprogram thatimplementsitappears in Figure2.8onpage48.
+Lookingat Figure2.3,weseethatvarious vacuum-world agentscanbedefinedsimply
+byfillingintheright-handcolumninvariousways. Theobviousquestion,then,isthis: What
+is the right way to fill out the table? In other words, what makes an agent good or bad,
+intelligent orstupid? Weanswerthesequestions inthenextsection.
+1 Iftheagentusessomerandomizationtochoose itsactions, thenwewouldhavetotryeachseq

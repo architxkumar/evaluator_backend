@@ -1,0 +1,36 @@
+Theanswer,asusual, iscross-validation.
+LOCALLYWEIGHTED Locallyweightedregression(Figure18.28(d))givesustheadvantagesofnearestneigh-
+REGRESSION
+bors,withoutthediscontinuities. Toavoiddiscontinuities inh(x),weneedtoavoiddisconti-
+Section18.8. Nonparametric Models 743
+1
+0.5
+0
+-10 -5 0 5 10
+Figure 18.29 A quadratic kernel, K(d) max(0,1 (2 x k)2), with kernel width
+k 10,centeredonthequerypointx 0.
+nuitiesinthesetofexamplesweusetoestimateh(x). Theideaoflocallyweightedregression
+isthatateachquerypoint x ,theexamplesthatareclosetox areweightedheavily, andthe
+q q
+examplesthatarefartherawayareweightedlessheavilyornotatall. Thedecreaseinweight
+overdistanceisalwaysgradual, notsudden.
+We decide how much to weight each example with a function known as a kernel. A
+KERNEL
+kernelfunctionlookslikeabump;in Figure18.29weseethespecifickernelusedtogenerate
+Figure 18.28(d). We can see that the weight provided by this kernel is highest in the center
+andreacheszeroatadistanceof 5. Canwechoosejustanyfunctionforakernel? No. First,
+notethatweinvokeakernelfunction Kwith K(Distance(x ,x )),wherex isaquerypoint
+j q q
+that is a given distance from x , and we want to know how much to weight that distance.
+j
+So K should be symmetric around 0 and have a maximum at 0. The area under the kernel
+mustremainbounded aswegoto . Othershapes, suchas Gaussians, havebeenusedfor
+kernels, but the latest research suggests that the choice of shape doesn t matter much. We
+do have to be careful about the width of the kernel. Again, this is a parameter of the model
+thatisbestchosen bycross-validation. Justasinchoosing thek fornearest neighbors, ifthe
+kernels aretoowidewe llgetunderfitting andiftheyaretoo narrow we llgetoverfitting. In
+Figure18.29(d), thevalueofk 10givesasmoothcurvethatlooksaboutright but maybe
+it does not pay enough attention to the outlier at x 6; a narrower kernel width would be
+moreresponsivetoindividual points.
+Doing locally weighted regression with kernels is now straightforward. For a given
+quer

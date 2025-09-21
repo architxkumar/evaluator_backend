@@ -1,0 +1,36 @@
+ instantiating these de-
+pendencies for all known constants, giving a Bayesian network (as in Figure 14.17(b)) that
+definesajointdistribution overthe RPM srandomvariables.8
+CONTEXT-SPECIFIC Wecanrefinethemodelbyintroducing a context-specific independencetoreflectthe
+INDEPENDENCE
+factthatdishonestcustomersignorequalitywhengivingarecommendation; moreover,kind-
+nessplaysnoroleintheirdecisions. Acontext-specific independence allowsavariable tobe
+independentofsomeofitsparentsgivencertainvaluesofothers;thus,Recommendation(c,b)
+isindependent of Kindness(c)and Quality(b)when Honest(c) false:
+Recommendation(c,b) if Honest(c) then
+Honest Rec CPT(Kindness(c),Quality(b))
+else(cid:16)0.4,0.1,0.0,0.1,0.4(cid:17) .
+8 Sometechnicalconditions mustbeobserved toguaranteethatthe RP Mdefinesaproperdistribution. First,
+thedependenciesmustbeacyclic,otherwisetheresulting Bayesiannetworkwillhavecyclesandwillnotdefine
+aproperdistribution. Second,thedependenciesmustbe well-founded,thatis,therecanbenoinfiniteancestor
+chains,suchasmightarisefromrecursivedependencies. Undersomecircumstances(see Exercise14.6),afixed-
+pointcalculationyieldsawell-definedprobabilitymodelforarecursive RPM.
+Section14.6. Relational and First-Order Probability Models 543
+Fan(C , A ) Fan(C , A ) Author(B )
+1 1 1 2 2
+Quality(B ) Honesty(C ) Kindness(C ) Quality(B )
+1 1 1 2
+Recommendation(C , B ) Recommendation(C , B )
+1 1 2 1
+Figure14.19 Fragmentoftheequivalent Bayesnetwhen Author(B )isunknown.
+2
+Thiskindofdependencymaylooklikeanordinaryif then elsestatementonaprogramming
+language, but there is a key difference: the inference engine doesn t necessarily know the
+valueoftheconditional test!
+We can elaborate this model in endless ways to make it more realistic. For example,
+suppose that an honest customer who is a fan of a book s author always gives the book a 5,
+regardlessofquality:
+Recommendation(c,b) if Honest(c)then
+if Fan(c,Author(b))then Exactly(5)
+else Honest Rec CPT(Kindness(c),Quality(b))
+else(cid:16)0.4,0.1,0.0,0.1

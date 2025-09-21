@@ -1,0 +1,30 @@
+) noted that the output of the logistic function could be in-
+terpreted asa probability passigned bythemodeltotheproposition that f(x) 1;theprob-
+ability that f(x) 0 is therefore 1 p. Write down the probability p as a function of x
+and calculate the derivative of logp with respect to each weight w . Repeat the process for
+i
+log(1 p). Thesecalculationsgivealearningruleforminimizingthenegative-log-likelihood
+Exercises 767
+loss function for a probabilistic hypothesis. Comment on any resemblance to other learning
+rulesinthechapter.
+18.22 Suppose youhad aneural network withlinearactivation functions. Thatis, foreach
+unittheoutputissomeconstant ctimestheweightedsumoftheinputs.
+a. Assume that the network has one hidden layer. For a given assignment to the weights
+w, write down equations for the value of the units in the output layer as a function of
+wandtheinput layer x,without anyexplicit mention oftheoutput ofthehidden layer.
+Showthatthereisanetworkwithnohiddenunitsthatcomputesthesamefunction.
+b. Repeat the calculation inpart (a), but this timedo itfora network with any numberof
+hiddenlayers.
+c. Suppose a network with one hidden layer and linear activation functions has n input
+and output nodes and h hidden nodes. What effect does the transformation in part (a)
+to a network with no hidden layers have on the total number of weights? Discuss in
+particularthecase h n.
+18.23 Suppose that a training set contains only a single example, repeated 100 times. In
+80 of the 100 cases, the single output value is 1; in the other 20, it is 0. What will a back-
+propagation network predict for this example, assuming that it has been trained and reaches
+aglobaloptimum? (Hint: tofindtheglobaloptimum, differentiate theerrorfunction andset
+ittozero.)
+18.24 Theneuralnetworkwhoselearningperformanceismeasuredin Figure18.25hasfour
+hidden nodes. Thisnumberwaschosen somewhatarbitrarily. Useacross-validation method
+tofindthebestnumberofhiddennodes.
+18.25 Considertheproblemofseparating N datapointsi

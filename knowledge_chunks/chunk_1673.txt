@@ -1,0 +1,27 @@
+cealment
+and bluff to confuse the enemy. Partially observable games share these characteristics and
+arethusqualitatively differentfromthegamesdescribed inthepreceding sections.
+5.6.1 Kriegspiel: Partiallyobservablechess
+Indeterministicpartiallyobservablegames,uncertaintyaboutthestateoftheboardarisesen-
+tirelyfromlackofaccesstothechoicesmadebytheopponent. Thisclassincludeschildren s
+gamessuchas Battleships(whereeachplayer sshipsareplacedinlocationshiddenfromthe
+opponentbutdonotmove)and Stratego(wherepiecelocationsareknownbutpiecetypesare
+hidden). Wewill examine the game of Kriegspiel, apartially observable variant of chess in
+KRIEGSPIEL
+whichpiecescanmovebutarecompletelyinvisible totheopponent.
+The rules of Kriegspiel are as follows: White and Black each see a board containing
+onlytheirownpieces. Areferee,whocanseeallthepieces,adjudicatesthegameandperiod-
+ically makes announcements that are heard by both players. On his turn, White proposes to
+thereferee anymovethatwouldbelegalifthere werenoblack pieces. Ifthemoveisinfact
+not legal (because of the black pieces), the referee announces illegal. In this case, White
+maykeepproposing movesuntilalegaloneisfound and learnsmoreaboutthelocation of
+Black s pieces in the process. Once a legal move is proposed, the referee announces one or
+Section5.6. Partially Observable Games 181
+more of the following: Capture on square X if there is a capture, and Check by D if the
+black king is in check, where D is the direction of the check, and can be one of Knight, Rank, File, Long diagonal, or Short diagonal. (In case of discovered check, the ref-
+eree may make two Check announcements.) If Black is checkmated or stalemated, the
+refereesaysso;otherwise, itis Black sturntomove.
+Kriegspielmayseemterrifyinglyimpossible,buthumansmanageitquitewellandcom-
+puter programs are beginning to catch up. It helps to recall the notion of a belief state as
+defined in Section 4.4 and illustrated in Figure 4.14 the set of all logically possible board
+state

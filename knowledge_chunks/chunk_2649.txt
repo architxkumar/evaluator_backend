@@ -1,0 +1,29 @@
+asnegative
+rewards and pleasure andfood intake aspositive rewards. Reinforcement has been carefully
+studiedbyanimalpsychologists forover60years.
+Rewards were introduced in Chapter 17, where they served to define optimal policies
+in Markov decision processes (MD Ps). An optimal policy is a policy that maximizes the
+expectedtotalreward. Thetaskofreinforcementlearningistouseobservedrewardstolearn
+an optimal (ornearly optimal) policy for the environment. Whereas in Chapter 17 the agent
+hasacompletemodeloftheenvironment andknowstherewardfunction,hereweassumeno
+830
+Section21.1. Introduction 831
+priorknowledge ofeither. Imagineplaying anew gamewhoserules youdon t know; aftera
+hundred orso moves, your opponent announces, You lose. This is reinforcement learning
+inanutshell.
+In many complex domains, reinforcement learning is the only feasible way to train a
+program toperform athighlevels. Forexample,ingameplaying, itisveryhardforahuman
+toprovideaccurateandconsistentevaluationsoflargenumbersofpositions, whichwouldbe
+needed to train an evaluation function directly from examples. Instead, the program can be
+told when it has won or lost, and it can use this information to learn an evaluation function
+thatgivesreasonablyaccurateestimatesoftheprobabilityofwinningfromanygivenposition.
+Similarly,itisextremelydifficulttoprogramanagenttoflyahelicopter;yetgivenappropriate
+negativerewardsforcrashing, wobbling,ordeviatingfrom asetcourse,anagentcanlearnto
+flybyitself.
+Reinforcementlearningmightbeconsidered toencompassallof AI:anagentisplaced
+in an environment and must learn to behave successfully therein. To keep the chapter man-
+ageable, wewillconcentrate onsimpleenvironments andsimpleagentdesigns. Forthemost
+part, we will assume a fully observable environment, so that the current state is supplied by
+each percept. On the other hand, we will assume that the agent does not know how the en-
+vironment worksorwhatitsactions do,andwewillallow forprobabilistic action outcomes.
+Thus, the agent 

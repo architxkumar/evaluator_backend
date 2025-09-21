@@ -1,0 +1,30 @@
+1) is 0.4. , , j 0 1
+and arealldecreased by 0.4 ,whichreduces theerrorfor(1,1). Noticethat changing the
+2
+parameters inresponsetoanobservedtransitionbetweentwostatesalsochangesthevalues
+of U for every other state! This is what we mean by saying that function approximation allowsareinforcement learnertogeneralize fromitsexperiences.
+We expect that the agent will learn faster if it uses a function approximator, provided
+that the hypothesis space is not too large, but includes some functions that are a reasonably
+good fit to the true utility function. Exercise 21.5 asks you to evaluate the performance of
+directutilityestimation, bothwithandwithoutfunction approximation. Theimprovementin
+the4 3worldisnoticeablebutnotdramatic,becausethisisaverysmallstatespacetobegin
+with. Theimprovementismuchgreaterina 10 10worldwitha 1rewardat(10,10). This
+world is well suited for a linear utility function because the true utility function is smooth
+and nearly linear. (See Exercise 21.8.) If we put the 1 reward at (5,5), the true utility is
+more like a pyramid and the function approximator in Equation (21.10) will fail miserably.
+All is not lost, however! Remember that what matters for linear function approximation
+is that the function be linear in the parameters the features themselves can be arbitrary
+no(cid:10)nlinearfunctionsofthestatevariables. Hence,wecanincludeatermsuchas 3
+f
+3
+(x,y) (x x )2 (y y )2 thatmeasuresthedistancetothegoal.
+3 g g
+Wecanapplytheseideasequallywelltotemporal-differencelearners. Allweneeddois
+adjusttheparameters totrytoreduce thetemporaldifference betweensuccessive states. The
+new versions of the TD and Q-learning equations (21.3 on page 836 and 21.8 on page 844)
+aregivenby U (s) R(s) U (s (cid:2) ) U (s) (21.12)
+i i i
+forutilitiesand Q (s,a) R(s) max Q (s (cid:2) ,a (cid:2) ) Q (s,a) (21.13)
+i i a(cid:3) i
+for Q-values. Forpassive TDlearning,theupdaterulecanbeshowntoconvergetotheclosest
+possible4 approximation tothetruefunction whenthefunction approximator i

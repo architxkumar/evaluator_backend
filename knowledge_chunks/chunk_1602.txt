@@ -1,0 +1,29 @@
+e,thereby in-
+creasingtheirownchancesofreplication. Mostimportantisthefactthatthegenes
+themselves encode the mechanisms whereby the genome is reproduced and trans-
+lated into an organism. In genetic algorithms, those mechanisms are a separate
+programthatisnotrepresented withinthestrings beingmanipulated.
+Darwinian evolution may appear inefficient, having generated blindly some
+1045 or so organisms without improving its search heuristics one iota. Fifty
+yearsbefore Darwin,however,theotherwisegreat Frenchnaturalist Jean Lamarck
+(1809) proposed a theory of evolution whereby traits acquired by adaptation dur-
+ing an organism s lifetime would be passed on to its offspring. Such a process
+would be effective but does not seem to occur in nature. Much later, James Bald-
+win(1896)proposedasuperficiallysimilartheory: thatbehaviorlearnedduringan
+organism slifetimecouldacceleratetherateofevolution. Unlike Lamarck s,Bald-
+win stheoryisentirelyconsistentwith Darwinianevolutionbecauseitreliesonse-
+lection pressures operating onindividuals that have found local optimaamong the
+set of possible behaviors allowed by their genetic makeup. Computer simulations
+confirm that the Baldwin effect is real, once ordinary evolution has created
+organismswhoseinternal performance measurecorrelates withactualfitness.
+Section4.2. Local Searchin Continuous Spaces 131
+originatedinthe17thcentury,afterthedevelopmentofcalculusby Newtonand Leibniz.6 We
+findusesforthesetechniquesatseveralplacesinthebook,includingthechaptersonlearning,
+vision, androbotics.
+We begin with an example. Suppose we want to place three new airports anywhere
+in Romania, such that the sum of squared distances from each city on the map (Figure 3.2)
+to its nearest airport is minimized. The state space is then defined by the coordinates of
+the airports: (x ,y ), (x ,y ), and (x ,y ). This is a six-dimensional space; we also say
+1 1 2 2 3 3
+that states are defined by six variables. (In general, states are defined by an n-dimensional
+VA

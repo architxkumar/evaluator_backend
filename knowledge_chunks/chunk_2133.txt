@@ -1,0 +1,36 @@
+. Similarly, if I am going to the dentist for a regular checkup,
+the probability P(cavity) 0.2might beofinterest; but if Igo tothe dentist because Ihave
+atoothache, it s P(cavity toothache) 0.6thatmatters. Notethattheprecedence of is
+suchthatanyexpression oftheform P(... ...)alwaysmeans P((...) (...)).
+It is important to understand that P(cavity) 0.2 is still valid after toothache is ob-
+served; it just isn t especially useful. When making decisions, an agent needs to condition
+on all the evidence it has observed. It is also important to understand the difference be-
+tween conditioning and logical implication. The assertion that P(cavity toothache) 0.6
+does not mean Whenever toothache is true, conclude that cavity is true with probabil-
+ity 0.6 rather it means Whenever toothache is true and we have no further information,
+conclude that cavity is true with probability 0.6. The extra condition is important; for ex-
+ample, if we had the further information that the dentist found no cavities, we definitely
+would not want to conclude that cavity is true with probability 0.6; instead we need to use
+P(cavity toothache cavity) 0.
+Mathematically speaking, conditional probabilities are defined in terms of uncondi-
+tionalprobabilities asfollows: foranypropositions aandb,wehave
+P(a b)
+P(a b) , (13.3)
+P(b)
+whichholdswhenever P(b) 0. Forexample,
+P(doubles Die 5)
+P(doubles Die 5) 1 .
+1
+P(Die 5)
+1
+The definition makes sense if you remember that observing b rules out all those possible
+worldswhere bisfalse,leaving asetwhosetotalprobability isjust P(b). Withinthatset,the
+a-worldssatisfy a bandconstitute afraction P(a b) P(b).
+486 Chapter 13. Quantifying Uncertainty
+Thedefinition of conditional probability, Equation (13.3), can be written in a different
+formcalledtheproductrule:
+PRODUCTRULE
+P(a b) P(a b)P(b),
+Theproduct ruleisperhaps easiertoremember: itcomesfrom thefactthat,foraandbtobe
+true,weneedbtobetrue,andwealsoneed atobetruegivenb.
+13.2.2 The languageofpropositions inprobabilit

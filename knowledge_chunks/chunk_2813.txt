@@ -1,0 +1,29 @@
+sonabuilding,stitchesonasweater,
+spots on a leopard, blades of grass on a lawn, pebbles on a beach, and people in a stadium.
+Sometimes the arrangement is quite periodic, as in the stitches on a sweater; in other cases,
+suchaspebblesonabeach,theregularity isonlystatistical.
+Whereasbrightnessisapropertyofindividualpixels,theconceptoftexturemakessense
+only for a multipixel patch. Given such a patch, we could compute the orientation at each
+pixel,andthencharacterize thepatchbyahistogram oforientations. Thetextureofbricksin
+awallwould havetwopeaks inthe histogram (one vertical and onehorizontal), whereas the
+textureofspotsonaleopard s skinwouldhaveamoreuniform distribution oforientations.
+Figure24.9showsthatorientationsarelargelyinvarianttochangesinillumination. This
+makes texture an important clue for object recognition, because other clues, such as edges,
+canyielddifferent resultsindifferent lighting conditions.
+Inimagesoftexturedobjects,edgedetectiondoesnotworkaswellasitdoesforsmooth
+objects. This is because the most important edges can be lost among the texture elements.
+Quiteliterally,wemaymissthetigerforthestripes. Thesolutionistolookfordifferencesin
+texture properties, just thewaywelook fordifferences in brightness. Apatch on atigerand
+apatchonthegrassybackgroundwillhaveverydifferentorientationhistograms,allowingus
+tofindtheboundary curvebetweenthem.
+24.2.3 Opticalflow
+Next, let us consider what happens when we have a video sequence, instead of just a single
+static image. When an object in the video is moving, orwhen the camera is moving relative
+to an object, the resulting apparent motion in the image is called optical flow. Optical flow
+OPTICALFLOW
+describes the direction and speed of motion of features in the image the optical flow of a
+940 Chapter 24. Perception
+(a) (b)
+Figure24.9 Twoimagesofthesametextureofcrumpledricepaper,withdifferentillumi-
+nationlevels. Thegradientvectorfield(ateveryeighthpixel)isplottedontopofeachone.
+Noticethat, asthe lightgetsdarker,a

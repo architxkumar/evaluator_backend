@@ -1,0 +1,30 @@
+thical forthetwo teamsto enterinto apact where they
+agreethat theywillskate toatieinregulation time,and thenboth tryinearnest towin
+in overtime. Under what conditions, in terms of p and q, would it be rational for both
+teamstoagreetothispact?
+d. Longleyand Sankaran(2005)reportthatsincetherulechange,thepercentageofgames
+with a winner in overtime went up 18.2 , as desired, but the percentage of overtime
+games also went up 3.6 . What does that suggest about possible collusion or conser-
+vativeplayaftertherulechange?
+18
+LEARNING FROM
+EXAMPLES
+In which we describe agents that can improve their behavior through diligent
+studyoftheirownexperiences.
+Anagentislearningifitimprovesitsperformanceonfuturetasksaftermakingobservations
+LEARNING
+about the world. Learning can range from the trivial, as exhibited by jotting down a phone
+number, to the profound, as exhibited by Albert Einstein, who inferred a new theory of the
+universe. Inthis chapter wewillconcentrate on one class of learning problem, which seems
+restricted but actually has vast applicability: from a collection of input output pairs, learn a
+function thatpredictstheoutputfornewinputs.
+Why would we want an agent to learn? If the design of the agent can be improved,
+whywouldn tthedesigners justprogram inthatimprovement tobeginwith? Therearethree
+main reasons. First, the designers cannot anticipate all possible situations that the agent
+might find itself in. For example, a robot designed to navigate mazes must learn the layout
+of each new maze it encounters. Second, the designers cannot anticipate all changes over
+time;aprogramdesignedtopredicttomorrow sstockmarket pricesmustlearntoadaptwhen
+conditions change from boom to bust. Third, sometimes human programmers have no idea
+howtoprogramasolutionthemselves. Forexample,mostpeoplearegoodatrecognizingthe
+faces of family members, but even the best programmers are unable to program a computer
+to accomplish that task, except by using learning algorithms. This chapter first giv

@@ -1,0 +1,27 @@
+rate
+acyclicplanifnoacyclicplanexists. Youwillneedtodealwiththreeissues: labelingtheplan
+stepssothatacyclicplancanpointbacktoanearlierpartoftheplan,modifying OR-SEARCH
+so that it continues to look for acyclic plans after finding a cyclic plan, and augmenting the
+plan representation toindicate whether aplan iscyclic. Showhow your algorithm works on
+(a)theslipperyvacuumworld,and(b)theslippery,erratic vacuumworld. Youmightwishto
+useacomputerimplementation tocheckyourresults.
+4.7 In Section 4.4.1 we introduced belief states to solve sensorless search problems. A
+sequence of actions solves a sensorless problem if it maps every physical state in the initial beliefstatebtoagoalstate. Supposetheagentknowsh (s),thetrueoptimalcostofsolving
+thephysicalstatesinthefullyobservable problem,foreverystate sinb. Findanadmissible
+heuristic h(b) for the sensorless problem in terms of these costs, and prove its admissibilty.
+Commentontheaccuracyofthisheuristiconthesensorless vacuumproblemof Figure4.14. Howwelldoes A perform?
+4.8 This exercise explores subset superset relations between belief states in sensorless or
+partially observable environments.
+a. Provethatifanactionsequence isasolution forabeliefstateb,itisalsoasolution for
+anysubsetofb. Cananythingbesaidaboutsupersets ofb?
+Exercises 159
+b. Explainindetailhowtomodifygraphsearchforsensorless problemstotakeadvantage
+ofyouranswersin(a).
+c. Explain in detail how to modify AND OR search for partially observable problems,
+beyondthemodifications youdescribe in(b).
+4.9 On page 139 it was assumed that a given action would have the same cost when ex-
+ecuted in any physical state within a given belief state. (This leads to a belief-state search
+problem with well-defined step costs.) Now consider what happens when the assumption
+doesnothold. Doesthenotionofoptimalitystillmakesenseinthiscontext,ordoesitrequire
+modification? Consideralso various possible definitions of the cost ofexecuting anaction
+in a belief state; for example, we could use t

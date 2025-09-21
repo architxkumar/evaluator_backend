@@ -1,0 +1,26 @@
+leteobservation. Thus,theparameters canbeupdated directly after
+each MCM Ctransition. Otherformsofapproximate inference, suchasvariational andloopy
+methods, havealsoprovedeffectiveforlearning verylarge networks.
+824 Chapter 20. Learning Probabilistic Models
+20.3.5 Learning Bayes net structures withhidden variables
+In Section 20.2.5, we discussed the problem of learning Bayes net structures with complete
+data. When unobserved variables may be influencing the data that are observed, things get
+moredifficult. Inthesimplestcase,ahumanexpertmighttellthelearningalgorithmthatcer-
+tainhidden variables exist, leaving ittothealgorithm tofindaplacefortheminthenetwork
+structure. Forexample,analgorithmmighttrytolearnthestructureshownin Figure20.10(a)
+onpage817,giventheinformationthat Heart Disease (athree-valuedvariable)shouldbein-
+cludedinthemodel. Asinthecomplete-datacase,theoverallalgorithmhasanouterloopthat
+searchesoverstructuresandaninnerloopthatfitsthenetworkparametersgiventhestructure.
+If the learning algorithm is not told which hidden variables exist, then there are two
+choices: either pretend that the data is really complete which may force the algorithm to
+learn aparameter-intensive model such astheonein Figure 20.10(b) or invent newhidden
+variablesinordertosimplifythemodel. Thelatterapproachcanbeimplementedbyincluding
+newmodificationchoicesinthestructuresearch: inadditiontomodifyinglinks,thealgorithm
+canaddordeleteahiddenvariableorchangeitsarity. Ofcourse,thealgorithmwillnotknow
+that the new variable it has invented is called Heart Disease; nor will it have meaningful
+namesforthevalues. Fortunately, newlyinventedhiddenvariableswillusuallybeconnected
+topreexistingvariables,soahumanexpertcanofteninspectthelocalconditionaldistributions
+involving thenewvariableandascertain itsmeaning.
+Asinthecomplete-datacase,puremaximum-likelihoodstructurelearningwillresultin
+acompletely connected network (moreover, one withno hidden variables), so some form of
+complexity penaltyisrequir

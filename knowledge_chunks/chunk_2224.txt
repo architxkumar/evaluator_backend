@@ -1,0 +1,29 @@
+s fair, then
+a probability of 0.5 for heads is reasonable. If we know that the coin is biased, but
+we do not know which way, then 0.5 for heads is again reasonable. Obviously, the
+twocasesaredifferent, yettheoutcomeprobability seemsnottodistinguish them. The
+Dempster Shafertheoryusesinterval-valueddegreesofbelieftorepresentanagent s
+knowledgeoftheprobability ofaproposition. Probabilitymakesthesameontologicalcommitmentaslogic: thatpropositions aretrue
+orfalseintheworld, eveniftheagentisuncertain astowhichisthecase. Researchers
+infuzzylogichaveproposedanontologythatallowsvagueness: thataproposition can
+be sortof true. Vaguenessanduncertainty areinfactorthogonal issues.
+Thenextthreesubsectionstreatsomeoftheseapproachesinslightlymoredepth. Wewillnot
+providedetailed technical material,butwecitereferences forfurtherstudy.
+14.7.1 Rule-based methods foruncertain reasoning
+Rule-based systems emerged from early work on practical and intuitive systems for logical
+inference. Logicalsystemsingeneral,andlogicalrule-basedsystemsinparticular,havethree
+desirable properties: Locality: In logical systems, whenever we have a rule of the form A B, we can
+LOCALITY
+conclude B,givenevidence A,withoutworryingaboutanyotherrules. Inprobabilistic
+systems,weneedtoconsider alltheevidence. Detachment: Oncealogicalproofisfoundforaproposition B,theproposition canbe
+DETACHMENT
+usedregardlessofhowitwasderived. Thatis,itcanbe detachedfromitsjustification.
+Indealing with probabilities, on the other hand, the source of the evidence fora belief
+isimportantforsubsequent reasoning.
+TRUTH- Truth-functionality: In logic, the truth of complex sentences can be computed from
+FUNCTIONALITY
+the truth of the components. Probability combination does not work this way, except
+understrongglobalindependence assumptions.
+There have been several attempts to devise uncertain reasoning schemes that retain these
+advantages. The idea is to attach degrees of belief to propositions and rules and to devise
+purely local schemes

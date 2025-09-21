@@ -1,0 +1,27 @@
+ewon thaveagoodmodeloftheverystrongdependencies
+thatexistbetweenthevaluesofsiblingnodes
+Next,weconsiderthesearchalgorithmthatgeneratesthetree. Theaimofanalgorithm
+designeristospecifyacomputationthatrunsquicklyandyieldsagoodmove. Thealpha beta
+algorithmisdesignednotjusttoselectagoodmovebutalsotocalculateboundsonthevalues
+of all the legal moves. Tosee whythis extra information is unnecessary, consider aposition
+in which there is only one legal move. Alpha beta search still will generate and evaluate a
+large search tree, telling usthatthe onlymoveisthebest moveand assigning itavalue. But
+since we have to make the move anyway, knowing the move s value is useless. Similarly, if
+thereisoneobviouslygoodmoveandseveralmovesthatarelegalbutleadtoaquickloss,we
+Section5.9. Summary 189
+wouldnotwantalpha betatowastetimedeterminingaprecisevalueforthelonegoodmove.
+Bettertojustmakethemovequicklyandsavethetimeforlater. Thisleadstotheideaofthe
+utility of a node expansion. A good search algorithm should select node expansions of high
+utility that is, ones that are likely tolead tothe discovery ofa significantly better move. If
+there are no node expansions whose utility is higher than their cost (in terms of time), then
+the algorithm should stop searching and make a move. Notice that this works not only for
+clear-favorite situations but also forthe case of symmetrical moves, forwhich no amount of
+searchwillshowthatonemoveisbetterthananother.
+This kind of reasoning about what computations to do is called metareasoning (rea-
+METAREASONING
+soning about reasoning). It applies not just to game playing but to any kind of reasoning
+at all. All computations are done in the service of trying to reach better decisions, all have
+costs, andallhave somelikelihood ofresulting inacertain improvement indecision quality.
+Alpha beta incorporates thesimplest kindofmetareasoning, namely, atheorem totheeffect
+thatcertainbranches ofthetreecanbeignored withoutloss. Itispossible todomuchbetter.
+In Chapter16,wes

@@ -1,0 +1,32 @@
+00. RELATIONAL Onestepupfromattribute-based extractionsystemsare relationalextractionsystems,
+EXTRACTION
+which deal with multiple objects and the relations among them. Thus, when these systems
+seethetext 249.99, theyneedtodeterminenotjustthatitisaprice,butalsowhichobject
+hasthatprice. Atypicalrelational-based extractionsystemis FASTUS,whichhandlesnews
+storiesaboutcorporate mergersandacquisitions. Itcanreadthestory
+Section22.4. Information Extraction 875
+Bridgestone Sports Co. said Friday it has set up a joint venture in Taiwan with a local
+concernanda Japanesetradinghousetoproducegolfclubstobeshippedto Japan.
+andextracttherelations:
+e Joint Ventures Product(e, golf clubs ) Date(e, Friday ) Member(e, Bridgestone Sports Co ) Member(e, a local concern ) Member(e, a Japanesetrading house ).
+CASCADED
+A relational extraction system can be built asa series of cascaded finite-state transducers.
+FINITE-STATE
+TRANSDUCERS
+Thatis,thesystem consists ofaseries ofsmall,efficientfinite-state automata(FS As),where
+each automaton receives text as input, transduces the text into adifferent format, and passes
+italongtothenextautomaton. FASTUS consistsoffivestages:
+1. Tokenization
+2. Complex-wordhandling
+3. Basic-group handling
+4. Complex-phrase handling
+5. Structuremerging
+FASTUS s first stage is tokenization, which segments the stream of characters into tokens
+(words, numbers, and punctuation). For English, tokenization can be fairly simple; just sep-
+aratingcharacters atwhitespaceorpunctuation doesafairlygoodjob. Sometokenizers also
+dealwithmarkuplanguages suchas HTML,SGML,and XML.
+Thesecond stage handles complexwords, including collocations suchas setup and joint venture, as well as proper names such as Bridgestone Sports Co. These are rec-
+ognized by a combination of lexical entries and finite-state grammar rules. For example, a
+companynamemightberecognized bytherule
+Capitalized Word ( Company Co Inc Ltd )
+The third stage handles basic groups, meaning noun groups and verb groups. T

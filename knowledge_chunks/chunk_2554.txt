@@ -1,0 +1,27 @@
+ht each value according to its frequency among all
+of the examples that reach that node in the decision tree. The classification algorithm
+shouldfollowallbranchesatanynodeforwhichavalueismissingandshouldmultiply
+Exercises 765
+theweightsalongeachpath. Writeamodifiedclassificationalgorithmfordecisiontrees
+thathasthisbehavior.
+b. Now modify the information-gain calculation so that in any given collection of exam-
+ples C at a given node in the tree during the construction process, the examples with
+missingvaluesforanyoftheremaining attributes aregiven as-if values according to
+thefrequencies ofthosevaluesintheset C.
+18.10 In Section 18.3.6, we noted that attributes with many different possible values can
+causeproblemswiththegainmeasure. Suchattributes tendtosplittheexamplesintonumer-
+oussmallclassesorevensingletonclasses,therebyappearingtobehighlyrelevantaccording
+tothegainmeasure. Thegain-ratiocriterionselectsattributesaccordingtotheratiobetween
+their gain and their intrinsic information content that is, the amount of information con-
+tainedintheanswertothequestion, Whatisthevalueofthisattribute? Thegain-ratiocrite-
+rionthereforetriestomeasurehowefficientlyanattribute providesinformationonthecorrect
+classification ofanexample. Writeamathematical expression fortheinformation content of
+anattribute, andimplementthegainratiocriterion in DECISION-TREE-LEARNING.
+18.11 Supposeyouarerunningalearningexperimentonanewalgorithmfor Booleanclas-
+sification. You have a data set consisting of 100 positive and 100 negative examples. You
+plantouseleave-one-outcross-validation andcompareyouralgorithmtoabaselinefunction,
+a simple majority classifier. (A majority classifier is given a set of training data and then
+always outputs the class that is in the majority in the training set, regardless of the input.)
+You expect the majority classifier to score about 50 on leave-one-out cross-validation, but
+toyoursurprise, itscoreszeroeverytime. Canyouexplainwhy?
+18.12 Construct a decision list to

@@ -1,0 +1,36 @@
+dustrialmanipulation
+task, the robot arm cannot pick up an object until the pose is known. In the case of rigid
+objects, whether three-dimensional ortwo-dimensional, this problem hasasimple and well-
+definedsolution basedonthealignmentmethod,whichwenowdevelop.
+ALIGNMENTMETHOD
+The object is represented by M features or distinguished points m ,m ,...,m in
+1 2 M
+three-dimensional space perhaps the vertices of a polyhedral object. These are measured
+in some coordinate system that is natural for the object. The points are then subjected to
+an unknown three-dimensional rotation R, followed by translation by an unknown amount t
+and then projection to give rise to image feature points p ,p ,...,p on the image plane.
+1 2 N
+In general, N (cid:7) M, because some model points may be occluded, and the feature detector
+couldmisssomefeatures(orinventfalseonesduetonoise). Wecanexpressthisas
+p (Rm t) Q(m )
+i i i
+for a three-dimensional model point m and the corresponding image point p . Here, R
+i i
+is a rotation matrix, t is a translation, and denotes perspective projection or one of its
+approximations, suchasscaled orthographic projection. Thenetresultisatransformation Q
+that will bring the model point m into alignment with the image point p . Although we do
+i i
+notknow Qinitially,wedoknow(forrigidobjects)that Qmustbethesameforallthemodel
+points.
+Wecansolvefor Q,giventhethree-dimensional coordinates ofthreemodelpoints and
+theirtwo-dimensional projections. Theintuition is asfollows: wecanwrite downequations
+relating the coordinates of p to those of m . In these equations, the unknown quantities
+i i
+correspond totheparametersoftherotationmatrix Randthetranslation vectort. Ifwehave
+enough equations, we ought to be able to solve for Q. We will not give a proof here; we
+merelystatethefollowingresult:
+Given three noncollinear points m , m , and m in the model, and their scaled
+1 2 3
+orthographic projections p , p , and p on the image plane, there exist exactly
+1 2 3
+twotransformationsfro

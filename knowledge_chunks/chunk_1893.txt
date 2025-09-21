@@ -1,0 +1,29 @@
+tispossible toconstruct indices forallpossible queries
+thatunifywithit. Forthefact Employs(IBM,Richard),thequeriesare
+Employs(IBM,Richard) Does IB Memploy Richard?
+Employs(x,Richard) Whoemploys Richard?
+Employs(IBM,y) Whomdoes IB Memploy?
+Employs(x,y) Whoemployswhom?
+SUBSUMPTION These queries form a subsumption lattice, as shown in Figure 9.2(a). The lattice has some
+LATTICE
+interesting properties. For example, the child of any node in the lattice is obtained from its
+parent by a single substitution; and the highest common descendant of any two nodes is
+the result of applying their mostgeneral unifier. Theportion ofthe lattice above anyground
+factcanbeconstructedsystematically (Exercise9.5). Asentencewithrepeatedconstantshas
+a slightly different lattice, as shown in Figure 9.2(b). Function symbols and variables in the
+sentences tobestoredintroduce stillmoreinteresting latticestructures.
+The scheme we have described works very well whenever the lattice contains a small
+number of nodes. For a predicate with n arguments, however, the lattice contains O(2n)
+nodes. If function symbols are allowed, the number of nodes is also exponential in the size
+ofthetermsinthesentencetobestored. Thiscanleadtoahugenumberofindices. Atsome
+point, the benefits of indexing are outweighed by the costs of storing and maintaining all
+the indices. Wecan respond by adopting afixedpolicy, such as maintaining indices only on
+keyscomposedofapredicatepluseachargument,orbyusinganadaptivepolicythatcreates
+indices to meet the demands of the kinds of queries being asked. For most AI systems, the
+number of facts to be stored is small enough that efficient indexing is considered a solved
+problem. For commercial databases, where facts number in the billions, the problem has
+beenthesubjectofintensivestudyandtechnology development..
+330 Chapter 9. Inference in First-Order Logic
+9.3 FORWARD CHAINING
+A forward-chaining algorithm for propositional definite clauses was given in Section 7.5.
+The idea is simple:

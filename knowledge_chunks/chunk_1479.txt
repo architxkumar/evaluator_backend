@@ -1,0 +1,29 @@
+identify a good design for driving in general. For this
+46 Chapter 2. Intelligent Agents
+ENVIRONMENT reason, the code repository also includes an environment generator for each environment
+GENERATOR
+classthatselectsparticularenvironments (withcertainlikelihoods) inwhichtoruntheagent.
+Forexample,thevacuumenvironmentgeneratorinitializes thedirtpatternandagentlocation
+randomly. We are then interested in the agent s average performance over the environment
+class. A rational agent for a given environment class maximizes this average performance.
+Exercises 2.8 to 2.13 take you through the process of developing an environment class and
+evaluating variousagentstherein.
+2.4 THE STRUCTURE OF AGENTS
+Sofarwehavetalkedaboutagentsbydescribing behavior theactionthatisperformedafter
+any given sequence ofpercepts. Nowwemust bite the bullet and talk about how theinsides
+work. The job of AI is to design an agent program that implements the agent function AGENTPROGRAM
+the mapping from percepts to actions. We assume this program will run on some sort of
+computing devicewithphysicalsensorsandactuators we callthisthearchitecture:
+ARCHITECTURE
+agent architecture program .
+Obviously,theprogramwechoosehastobeonethatisappropriateforthearchitecture. Ifthe
+program isgoing torecommend actions like Walk,thearchitecture hadbetterhave legs. The
+architecture might be just an ordinary PC, or it might be a robotic car with several onboard
+computers, cameras, and other sensors. In general, the architecture makes the percepts from
+thesensorsavailabletotheprogram,runstheprogram,andfeedstheprogram sactionchoices
+to the actuators asthey are generated. Most ofthis book is about designing agent programs,
+although Chapters24and25dealdirectly withthesensorsandactuators.
+2.4.1 Agentprograms
+The agent programs that we design in this book all have the same skeleton: they take the
+current percept as input from the sensors and return an action to the actuators.4 Notice the
+differencebetweentheagentprogram,whichtake

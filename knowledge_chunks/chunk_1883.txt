@@ -1,0 +1,38 @@
+one by converting the knowledge base to propositional logic and using
+propositional inference, which we already know how to do. The next section points out an
+obviousshortcut, leadingtoinference methodsthatmanipulate first-ordersentences directly.
+9.1.1 Inference rules forquantifiers
+Let us begin with universal quantifiers. Suppose our knowledge base contains the standard
+folkloric axiomstatingthatallgreedykingsareevil: x King(x) Greedy(x) Evil(x).
+322
+Section9.1. Propositional vs.First-Order Inference 323
+Thenitseemsquitepermissible toinferanyofthefollowing sentences:
+King(John) Greedy(John) Evil(John)
+King(Richard) Greedy(Richard) Evil(Richard)
+King(Father(John)) Greedy(Father(John)) Evil(Father(John)).
+.
+.
+.
+UNIVERSAL The rule of Universal Instantiation (UI for short) says that we can infer any sentence ob-
+INSTANTIATION
+tained by substituting a ground term (a term without variables) for the variable.1 To write
+GROUNDTERM
+outtheinference ruleformally, weusethenotion of substitutionsintroduced in Section8.3.
+Let SUBST( , )denote theresult ofapplying thesubstitution tothesentence . Thenthe
+ruleiswritten v SUBST( v g , )
+for any variable v and ground term g. For example, the three sentences given earlier are
+obtained withthesubstitutions x John , x Richard ,and x Father(John) .
+EXISTENTIAL In the rule for Existential Instantiation, the variable is replaced by a single new con-
+INSTANTIATION
+stantsymbol. Theformalstatementisasfollows: foranysentence ,variablev,andconstant
+symbolk thatdoesnotappearelsewhereintheknowledgebase, v .
+SUBST( v k , )
+Forexample,fromthesentence x Crown(x) On Head(x,John)
+wecaninferthesentence
+Crown(C ) On Head(C ,John)
+1 1
+as long as C does not appear elsewhere in the knowledge base. Basically, the existential
+1
+sentence saysthereissomeobjectsatisfying acondition, andapplying theexistential instan-
+tiation rule just gives a name to that object. Of course, that name must not already belong
+toanotherobject. Mathematics provides anice example: 

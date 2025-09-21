@@ -1,0 +1,27 @@
+nformation set(thatis,theplayersdon tknowifthedieisfairornot). Andwhatifwe
+suspect the other opponent does know? Thenweadd another chance node, with one branch
+representing thecasewheretheopponent doesknow,andonewherehedoesn t.
+Utilities: What if wedon t know ouropponent s utilities? Again, that can be modeled
+with a chance node, such that the other agent knows its own utilities in each branch, but we
+don t. But what if we don t know our own utilities? For example, how do I know if it is
+rational toorderthe Chef ssaladif Idon tknowhowmuch Iwilllikeit? Wecanmodelthat
+withyetanotherchancenodespecifying anunobservable intrinsic quality ofthesalad.
+Thus,weseethatgametheoryisgoodatrepresentingmostsourcesofuncertainty but
+at the cost of doubling the size of the tree every time we add another node; a habit which
+quickly leads to intractably large trees. Because of these and other problems, game theory
+hasbeenusedprimarilytoanalyzeenvironmentsthatareatequilibrium,ratherthantocontrol
+agentswithinanenvironment. Nextweshallseehowitcanhelpdesignenvironments.
+Section17.6. Mechanism Design 679
+17.6 MECHANISM DESIGN
+In the previous section, we asked, Given a game, what is a rational strategy? In this sec-
+tion,weask, Giventhatagentspickrationalstrategies,whatgameshouldwedesign? More
+specifically,wewouldliketodesignagamewhosesolutions, consistingofeachagentpursu-
+ingitsownrational strategy, result inthemaximization of someglobal utility function. This
+problem is called mechanism design, or sometimes inverse game theory. Mechanism de-
+MECHANISMDESIGN
+signisastapleofeconomics andpolitical science. Capitalism 101saysthatifeveryonetries
+to get rich, the total wealth of society will increase. But the examples we will discuss show
+thatpropermechanismdesignisnecessarytokeeptheinvisiblehandontrack. Forcollections
+ofagents,mechanismdesignallowsustoconstructsmartsystemsoutofacollectionofmore
+limitedsystems evenuncooperative systems inmuchthesamewaythatteamsofhumans
+canachievegoalsbeyondthere

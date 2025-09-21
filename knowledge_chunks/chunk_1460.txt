@@ -1,0 +1,39 @@
+becalled intelligent.
+We begin by examining agents, environments, and the coupling between them. The
+observationthatsomeagentsbehavebetterthanothersleadsnaturallytotheideaofarational
+agent one that behaves as well as possible. How well an agent can behave depends on
+the nature of the environment; some environments are more difficult than others. We give a
+crude categorization of environments and show how properties of an environment influence
+thedesignofsuitableagentsforthatenvironment. Wedescribe anumberofbasic skeleton agentdesigns, whichwefleshoutintherestofthebook.
+2.1 AGENTS AND ENVIRONMENTS
+Anagentisanything thatcanbeviewedasperceiving itsenvironmentthrough sensors and
+ENVIRONMENT
+actinguponthatenvironmentthrough actuators. Thissimpleideaisillustratedin Figure2.1.
+SENSOR
+Ahumanagenthaseyes,ears,andotherorgansforsensorsandhands,legs,vocaltract,andso
+ACTUATOR
+on for actuators. A robotic agent might have cameras and infrared range finders for sensors
+and various motors for actuators. A software agent receives keystrokes, file contents, and
+network packets as sensory inputs and acts on the environment by displaying on the screen,
+writingfiles,andsending networkpackets.
+Weusethetermpercepttorefertotheagent sperceptualinputsatanygiveninstant. An
+PERCEPT
+agent sperceptsequenceisthecompletehistoryofeverythingtheagenthaseverperceived.
+PERCEPTSEQUENCE
+Ingeneral, an agent s choice ofaction atany given instant candepend on theentire percept
+sequenceobservedtodate,butnotonanything ithasn tperceived. Byspecifying theagent s
+choice of action for every possible percept sequence, we have said more or less everything
+34
+Section2.1. Agentsand Environments 35
+Agent
+Sensors
+Actuators
+Environment
+Percepts
+?
+Actions
+Figure2.1 Agentsinteractwithenvironmentsthroughsensorsandactuators.
+there is to say about the agent. Mathematically speaking, we say that an agent s behavior is
+described bytheagentfunctionthatmapsanygivenperceptsequence toanaction.
+AGENTFUNCTION
+Wecan imagine tabulating

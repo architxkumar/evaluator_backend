@@ -1,0 +1,56 @@
+ ENUMERATE-ALL(bn.VARS,exi )
+whereexi iseextendedwith X xi
+return NORMALIZE(Q(X))
+function ENUMERATE-ALL(vars,e)returnsarealnumber
+if EMPTY?(vars)thenreturn1.0
+Y FIRST(vars)
+if Y hasvaluey ine
+thenreturn(cid:2)P(y parents(Y)) ENUMERATE-ALL(REST(vars),e)
+elsereturn
+y
+P(y parents(Y)) ENUMERATE-ALL(REST(vars),ey)
+whereey iseextendedwith Y y
+Figure14.9 Theenumerationalgorithmforansweringquerieson Bayesiannetworks.
+526 Chapter 14. Probabilistic Reasoning
+wherethe operatorisnotordinarymatrixmultiplication butinsteadthepointwiseprod-
+POINTWISE uctoperation, tobedescribed shortly.
+PRODUCT
+The process of evaluation is a process of summing out variables (right to left) from
+pointwise products of factors to produce new factors, eventually yielding a factor that is the
+solution, i.e.,theposteriordistribution overthequeryvariable. Thestepsareasfollows: First,wesumout Afromtheproduct off ,f ,andf . Thisgivesusanew2 2factor
+3 4 5
+f (B,E)whoseindicesrangeoverjust B and E:
+6
+(cid:12)
+f (B,E) f (A,B,E) f (A) f (A)
+6 3 4 5
+a (f (a,B,E) f (a) f (a)) (f ( a,B,E) f ( a) f ( a)).
+3 4 5 3 4 5
+Nowweareleftwiththeexpression
+(cid:12)
+P(B j,m) f (B) f (E) f (B,E).
+1 2 6
+e Next,wesumout E fromtheproductof f andf :
+2 6
+(cid:12)
+f (B) f (E) f (B,E)
+7 2 6
+e f (e) f (B,e) f ( e) f (B, e).
+2 6 2 6
+Thisleavestheexpression
+P(B j,m) f (B) f (B)
+1 7
+whichcanbeevaluatedbytakingthepointwiseproduct andnormalizing theresult.
+Examiningthissequence,weseethattwobasiccomputationaloperationsarerequired: point-
+wiseproduct ofapairoffactors, andsumming out avariable from aproduct offactors. The
+nextsectiondescribes eachoftheseoperations.
+Operationsonfactors
+The pointwise product of two factors f and f yields a new factor f whose variables are
+1 2
+the union of the variables in f and f and whose elements are given by the product of the
+1 2
+correspondingelementsinthetwofactors. Supposethetwofactorshavevariables Y ,...,Y
+1 k
+incommon. Thenwehave
+f(X ...X ,Y ...Y ,Z ...Z ) f (X ...X ,Y ...Y )f (Y ...Y ,Z ...Z ).
+1 j 1 

@@ -1,0 +1,33 @@
+red
+among them. Any square may be probed by the agent; instant death follows if a mine is
+probed. Minesweeper indicates the presence of mines by revealing, in each probed square,
+the number of mines that are directly or diagonally adjacent. The goal is to probe every
+unminedsquare.
+a. Let X be true iffsquare i,j contains amine. Write down the assertion that exactly
+i,j
+two mines are adjacent to 1,1 as a sentence involving some logical combination of
+X propositions.
+i,j
+b. Generalize your assertion from (a) by explaining how to construct a CNF sentence
+assertingthat kofnneighbors contain mines.
+c. Explain precisely how an agent can use DPLL to prove that a given square does (or
+doesnot)containamine,ignoring theglobal constraint thatthereareexactly M mines
+inall.
+d. Supposethattheglobalconstraint isconstructed fromyourmethodfrompart(b). How
+does the number of clauses depend on M and N? Suggest a way to modify DPLL so
+thattheglobalconstraint doesnotneedtoberepresented explicitly.
+e. Are any conclusions derived by the method in part (c) invalidated when the global
+constraint istakenintoaccount?
+f. Give examples of configurations of probe values that induce long-range dependencies
+such that the contents of a given unprobed square would give information about the
+contentsofafar-distant square. (Hint: consideran N 1board.)
+7.23 How long does it take to prove KB using DPLL when is a literal already
+contained in KB? Explain.
+7.24 Trace the behavior of DPLL on the knowledge base in Figure 7.16 when trying to
+prove Q,andcomparethisbehaviorwiththatoftheforward-chaining algorithm.
+7.25 Write a successor-state axiom for the Locked predicate, which applies to doors, as-
+sumingtheonlyactionsavailable are Lock and Unlock.
+7.26 Section 7.7.1 provides some of the successor-state axioms required for the wumpus
+world. Writedownaxiomsforallremainingfluentsymbols.
+7.27 Modify the HYBRID-WUMPUS-AGENT to use the 1-CNF logical state estimation
+method described on page 271. We noted on that p

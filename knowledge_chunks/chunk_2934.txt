@@ -1,0 +1,25 @@
+the neural network learning process. In fact, we saw in Chapters 19 and 20 that there
+are techniques for using prior knowledge in learning algorithms. Those techniques,
+however,relyontheavailability ofknowledgeinexplicitform,somethingthat Dreyfus
+and Dreyfus strenuously deny. Inourview, thisisagood reason foraserious redesign
+of current models of neural processing so that they can take advantage of previously
+learnedknowledgeinthewaythatotherlearning algorithms do.
+2. Neural network learning is a form of supervised learning (see Chapter 18), requiring
+the prior identification of relevant inputs and correct outputs. Therefore, they claim,
+it cannot operate autonomously without the help of a human trainer. In fact, learning
+without a teacher can be accomplished by unsupervised learning (Chapter 20) and
+reinforcementlearning(Chapter21).
+3. Learning algorithms do not perform well with many features, and if we pick a subset
+offeatures, thereisnoknownwayofaddingnewfeaturesshouldthecurrentsetprove
+inadequate to account for the learned facts. In fact, new methods such as support
+vector machines handle large feature sets very well. With the introduction of large
+Web-based data sets, manyapplications inareas such aslanguage processing (Shaand
+Pereira, 2003) and computervision (Violaand Jones, 2002a) routinely handle millions
+of features. We saw in Chapter 19 that there are also principled ways to generate new
+features, although muchmoreworkisneeded.
+4. The brain is able to direct its sensors to seek relevant information and to process it
+to extract aspects relevant to the current situation. But, Dreyfus and Dreyfus claim, Currently, nodetails ofthismechanism areunderstood orevenhypothesized inaway
+that could guide AI research. In fact, the field of active vision, underpinned by the
+theory of information value (Chapter 16), is concerned with exactly the problem of
+directing sensors, and already some robots have incorporated the theoretical results
+obtained. STANLEY s132-mile t

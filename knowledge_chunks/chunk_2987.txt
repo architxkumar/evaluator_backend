@@ -1,0 +1,36 @@
+ticians define a vector as a memberof a vector space, but wewilluse amore con-
+VECTOR
+crete definition: avectorisanordered sequence ofvalues. Forexample, intwo-dimensional
+space, we have vectors such as x (cid:16)3,4(cid:17) and y (cid:16)0,2(cid:17). We follow the convention of bold-
+face characters for vector names, although some authors use arrows or bars over the names:
+(cid:23)xory . Theelements ofavectorcan beaccessed using subscripts: z (cid:16)z ,z ,...,z (cid:17). One
+1 2 n
+confusing point: this book is synthesizing work from many subfields, which variously call
+theirsequencesvectors,lists,ortuples,andvariouslyusethenotations(cid:16)1,2(cid:17), 1,2 ,or(1,2).
+1056 Appendix A. Mathematical background
+The two fundamental operations on vectors are vector addition and scalar multiplica-
+tion. Thevectoradditionx yistheelementwisesum: x y (cid:16)3 0,4 2(cid:17) (cid:16)3,6(cid:17). Scalar
+multiplication multiplieseachelementbyaconstant: 5x (cid:16)5 3,5 4(cid:17) (cid:16)15,20(cid:17).
+The length of a vector is denoted x(cid:10) and is computed by taking the square root of the
+sumofthesquares oftheelements: x (32 42) 5. Thedotproduct x y(also called
+scalar product) of two vectors is the sum of the products of corresponding elements, that is,
+(cid:2)
+x y x y ,orinourparticularcase, x y 3 0 4 2 8.
+i i i
+Vectors are often interpreted as directed line segments (arrows) in an n-dimensional
+Euclidean space. Vector addition is then equivalent to placing the tail of one vector at the
+head of the other, and the dot product x y is equal to x y cos , where is the angle
+betweenxandy.
+A matrix is a rectangular array of values arranged into rows and columns. Here is a
+MATRIX
+matrix Aofsize3 4: A A A A
+1,1 1,2 1,3 1,4 A A A A
+2,1 2,2 2,3 2,4
+A A A A
+3,1 3,2 3,3 3,4
+The first index of A specifies the row and the second the column. In programming lan-
+i,j
+guages, A isoftenwritten A i,j or A i j .
+i,j
+Thesumoftwomatricesisdefinedbyaddingtheircorrespondingelements;forexample
+(A B)

@@ -1,0 +1,31 @@
+: you glimpse
+brief,intermittent flashesofmotion;youtryhardtoguesswherethebirdisandwhereitwill
+appear next so that you don t lose it. Orimagine that you are a World War II radar operator
+peeringatafaint,wanderingblipthatappearsonceevery10secondsonthescreen. Or,going
+back further still, imagine you are Kepler trying to reconstruct the motions of the planets
+fromacollectionofhighlyinaccurateangularobservationstakenatirregularandimprecisely
+measuredintervals. Inallthesecases,youaredoingfiltering: estimatingstatevariables(here,
+position and velocity) from noisy observations over time. If the variables were discrete, we
+could model the system with a hidden Markov model. This section examines methods for
+handling continuous variables, using an algorithm called Kalman filtering, after one of its
+KALMANFILTERING
+inventors, Rudolf E.Kalman.
+Thebird sflightmightbespecifiedbysixcontinuousvariablesateachtimepoint;three
+forposition(X ,Y ,Z )andthreeforvelocity(X ,Y ,Z ). Wewillneedsuitableconditional
+t t t t t t
+densities to represent the transition and sensor models; as in Chapter 14, we will use linear
+Gaussian distributions. Thismeans that the next state X mustbe alinear function of the
+t 1
+currentstate X ,plussome Gaussiannoise,aconditionthatturnsouttobequitereasonablein
+t
+practice. Consider, forexample,the X-coordinate ofthebird,ignoring theothercoordinates
+for now. Let the time interval between observations be , and assume constant velocity
+duringtheinterval;thenthepositionupdateisgivenby X X X . Adding Gaussian
+t t
+noise(toaccount forwindvariation, etc.),weobtainalinear Gaussiantransition model:
+P(X x X x ,X x ) N(x x , 2)(x ).
+t t t t t t t t t The Bayesiannetworkstructureforasystemwithpositionvector X andvelocity X isshown
+t t
+in Figure 15.9. Note that this is a very specific form of linear Gaussian model; the general
+formwillbedescribed laterinthissectionandcoversavast arrayofapplications beyondthe
+simplemotionexamplesofthefirstparagraph. Thereadermightwishtoconsult Ap

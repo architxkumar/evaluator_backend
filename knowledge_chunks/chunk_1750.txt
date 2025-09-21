@@ -1,0 +1,29 @@
+Freuder(1985),who
+showedthat search onarcconsistent treesworks without any backtracking. Asimilarresult,
+with extensions to acyclic hypergraphs, was developed in the database community (Beeri
+et al., 1983). Bayardo and Miranker (1994) present an algorithm for tree-structured CS Ps
+thatrunsinlineartimewithoutanypreprocessing.
+Sincethosepaperswerepublished,therehasbeenagreatdealofprogressindeveloping
+moregeneralresultsrelatingthecomplexityofsolvinga CS Ptothestructureofitsconstraint
+graph. Thenotionoftreewidthwasintroducedbythegraphtheorists Robertsonand Seymour
+(1986). Dechter and Pearl (1987, 1989), building on the work of Freuder, applied a related
+notion (whichthey called inducedwidth)toconstraint satisfaction problems and developed
+thetreedecompositionapproachsketchedin Section6.5. Drawingonthisworkandonresults
+230 Chapter 6. Constraint Satisfaction Problems
+fromdatabasetheory,Gottlobetal.(1999a,1999b)developedanotion,hypertreewidth,that
+isbased onthecharacterization of the CS Pasahypergraph. Inaddition toshowing that any
+CSP with hypertree width w can be solved in time O(nw 1logn), they also showed that
+hypertree width subsumes all previously defined measures of width in the sense that there
+arecaseswherethehypertreewidthisboundedandtheothermeasuresareunbounded.
+Interestinlook-backapproachestobacktrackingwasrekindledbytheworkof Bayardo
+and Schrag(1997),whose RELSAT algorithmcombinedconstraintlearningandbackjumping
+and was shown to outperform many other algorithms of the time. This led to AND OR
+search algorithms applicable to both CS Ps and probabilistic reasoning (Dechter and Ma-
+teescu, 2007). Brown et al. (1988) introduce the idea of symmetry breaking in CS Ps, and
+Gentetal.(2006)givearecentsurvey.
+DISTRIBUTED
+Thefieldofdistributed constraint satisfaction looks atsolving CS Pswhenthere isa
+CONSTRAINT
+SATISFACTION
+collection of agents, each of which controls a subset of the constraint variables. There have
+been annual workshops on this problem since 2000, and 

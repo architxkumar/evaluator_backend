@@ -1,0 +1,36 @@
+nto its own inputs. This means that
+NETWORK
+theactivation levelsofthenetworkformadynamical system thatmayreach astablestateor
+exhibitoscillationsorevenchaoticbehavior. Moreover,theresponseofthenetworktoagiven
+input depends on its initial state, which may depend on previous inputs. Hence, recurrent
+networks (unlike feed-forward networks) can support short-term memory. This makes them
+more interesting as models of the brain, but also more difficult to understand. This section
+will concentrate on feed-forward networks; some pointers for further reading on recurrent
+networksaregivenattheendofthechapter.
+Feed-forwardnetworksareusuallyarrangedin layers,suchthateachunitreceivesinput
+LAYERS
+onlyfromunitsintheimmediatelyprecedinglayer. Inthenexttwosubsections, wewilllook
+at single-layer networks, in which every unit connects directly from the network s inputs to
+itsoutputs, andmultilayernetworks, whichhaveoneormore layersofhiddenunitsthatare
+HIDDENUNIT
+not connected tothe outputs of the network. Sofarinthis chapter, wehave considered only
+learningproblemswithasingleoutputvariable y,butneuralnetworksareoftenusedincases
+where multiple outputs are appropriate. For example, if we want to train a network to add
+twoinput bits, each a0ora1, wewillneed oneoutput forthesum bit andone forthecarry
+bit. Also, whenthelearning problem involves classification intomorethan twoclasses for
+example,whenlearningtocategorizeimagesofhandwritten digits itiscommontouseone
+outputunitforeachclass.
+18.7.2 Single-layerfeed-forward neural networks (perceptrons)
+Anetworkwithalltheinputsconnecteddirectlytotheoutputsiscalledasingle-layerneural
+PERCEPTRON network, or a perceptron network. Figure 18.20 shows a simple two-input, two-output
+NETWORK
+perceptronnetwork. Withsuchanetwork,wemighthopetolearnthetwo-bitadderfunction,
+forexample. Hereareallthetrainingdatawewillneed:
+x x y (carry) y (sum)
+1 2 3 4
+0 0 0 0
+0 1 0 1
+1 0 0 1
+1 1 1 0
+730 Chapter 18. Learningfrom Examples
+Thefirstthingtonoticeisthataperceptron

@@ -1,0 +1,29 @@
+nalargerfraction of thenegativeexamples twiceas
+many,because itallowsmothersaswellasfathers. Hence,wepreferthethirdclause.
+792 Chapter 19. Knowledgein Learning
+Now we need to specialize this clause further, to rule out the cases in which x is the
+fatherofsomez,butz isnotaparentofy. Addingthesingleliteral Parent(z,y)gives
+Father(x,z) Parent(z,y) Grandfather(x,y),
+which correctly classifies all the examples. FOIL will find and choose this literal, thereby
+solving the learning task. In general, the solution is a set of Horn clauses, each of which
+implies the target predicate. For example, if we didn t have the Parent predicate in our
+vocabulary, thenthesolution mightbe
+Father(x,z) Father(z,y) Grandfather(x,y)
+Father(x,z) Mother(z,y) Grandfather(x,y).
+Notethateachoftheseclausescoverssomeofthepositiveexamples,thattogethertheycover
+all the positive examples, and that NEW-CLAUSE is designed in such a way that no clause
+willincorrectly coveranegativeexample. Ingeneral FOIL willhavetosearchthrough many
+unsuccessful clauses beforefindingacorrectsolution.
+Thisexample isavery simpleillustration ofhow FOIL operates. Asketch of thecom-
+plete algorithm is shown in Figure 19.12. Essentially, the algorithm repeatedly constructs a
+clause,literalbyliteral,untilitagreeswithsomesubset ofthepositiveexamplesandnoneof
+the negative examples. Then the positive examples covered by the clause are removed from
+the training set, and the process continues until no positive examples remain. The two main
+subroutinestobeexplainedare NEW-LITERALS,whichconstructsallpossiblenewliteralsto
+addtotheclause, and CHOOSE-LITERAL,whichselectsaliteraltoadd.
+NEW-LITERALS takes a clause and constructs all possible useful literals that could
+beaddedtotheclause. Letususeasanexampletheclause
+Father(x,z) Grandfather(x,y).
+Therearethreekindsofliteralsthatcanbeadded:
+1. Literalsusingpredicates: theliteralcanbenegatedorunnegated,anyexistingpredicate
+(includingthegoalpredicate)canbeused,andtheargumentsmustallbevariables.

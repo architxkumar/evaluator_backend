@@ -1,0 +1,29 @@
+nt with the observations. To do ILP we
+use first-order literals instead ofattributes, and the hypothesis isaset ofclauses instead of a
+decision tree. Thissection describes FOIL (Quinlan, 1990),oneofthefirst IL Pprograms.
+Suppose we are trying to learn a definition of the Grandfather(x,y) predicate, using
+the same family data as before. As with decision-tree learning, we can divide the examples
+intopositiveandnegativeexamples. Positiveexamplesare
+(cid:16)George,Anne(cid:17), (cid:16)Philip,Peter(cid:17), (cid:16)Spencer,Harry(cid:17), ...
+andnegativeexamplesare
+(cid:16)George,Elizabeth(cid:17), (cid:16)Harry,Zara(cid:17), (cid:16)Charles,Philip(cid:17), ...
+Noticethateachexample isapair ofobjects, because Grandfather isabinary predicate. In
+all,thereare12positiveexamplesinthefamilytreeand388 negativeexamples(alltheother
+pairsofpeople).
+FOI Lconstructsasetofclauses,eachwith Grandfather(x,y)asthehead. Theclauses
+must classify the 12 positive examples as instances of the Grandfather(x,y) relationship,
+whilerulingoutthe388negativeexamples. Theclausesare Hornclauses,withtheextension
+thatnegatedliterals areallowedinthebody ofaclause andareinterpreted usingnegation as
+failure, asin Prolog. Theinitialclausehasanemptybody: Grandfather(x,y).
+Thisclause classifies every example as positive, so itneeds to bespecialized. Wedo this by
+addingliteralsoneatatimetotheleft-hand side. Herearethreepotential additions:
+Father(x,y) Grandfather(x,y).
+Parent(x,z) Grandfather(x,y).
+Father(x,z) Grandfather(x,y).
+(Noticethatweareassumingthataclausedefining Parent isalreadypartofthebackground
+knowledge.) Thefirstofthesethreeclausesincorrectly classifiesallofthe12positiveexam-
+ples as negative and can thus beignored. Thesecond and third agree withallof the positive
+examples, butthesecondisincorrect onalargerfraction of thenegativeexamples twiceas
+many,because itallowsmothersaswellasfathers. Hence,wepreferthethirdclause.
+792 Chapter 19. Knowledgein Learning
+Now we need to specialize this clause fu

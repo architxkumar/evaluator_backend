@@ -1,0 +1,34 @@
+. . . . 1062
+Bibliography 1063
+Index 1095
+1
+INTRODUCTION
+In which we try to explain why we consider artificial intelligence to be a subject
+mostworthyofstudy,andinwhichwetrytodecidewhatexactlyitis,thisbeinga
+goodthingtodecidebeforeembarking.
+We call ourselves Homo sapiens man the wise because our intelligence is so important
+INTELLIGENCE
+tous. Forthousands ofyears, wehavetried tounderstand how wethink; that is, how amere
+handful of matter can perceive, understand, predict, and manipulate a world far larger and
+ARTIFICIAL more complicated than itself. The field of artificial intelligence, or AI, goes further still: it
+INTELLIGENCE
+attemptsnotjusttounderstand butalsotobuildintelligent entities.
+AIisoneofthe newestfieldsinscience and engineering. Work started inearnest soon
+after World War II, and the name itself was coined in 1956. Along with molecular biology,
+AIisregularlycitedasthe field Iwouldmostliketobein byscientistsinotherdisciplines.
+Astudentinphysicsmightreasonably feelthatallthegoodideashavealreadybeentakenby
+Galileo, Newton, Einstein, and the rest. AI, on the other hand, still has openings forseveral
+full-time Einsteinsand Edisons.
+AIcurrentlyencompassesahugevarietyofsubfields,rangingfromthegeneral(learning
+andperception)tothespecific,suchasplayingchess,provingmathematicaltheorems,writing
+poetry, driving a car on a crowded street, and diagnosing diseases. AI is relevant to any
+intellectual task;itistrulyauniversal field.
+1.1 WHAT IS AI?
+We have claimed that AI is exciting, but we have not said what it is. In Figure 1.1 we see
+eight definitions of AI, laid out along twodimensions. The definitions on top are concerned
+withthoughtprocessesandreasoning,whereastheonesonthebottomaddressbehavior. The
+definitions on the left measure success in terms of fidelity to human performance, whereas
+the ones on the right measure against an ideal performance measure, called rationality. A
+RATIONALITY
+systemisrationalifitdoesthe rightthing, givenwhatitknows.
+Historically, al

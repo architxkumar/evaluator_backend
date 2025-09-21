@@ -1,0 +1,27 @@
+lgorithms began withthe Metropolis algorithm,
+due to Metropolis et al. (1953), which was also the source of the simulated annealing algo-
+rithm described in Chapter4. The Gibbssamplerwasdevised by Gemanand Geman(1984)
+for inference in undirected Markov networks. The application of MCMC to Bayesian net-
+worksisdueto Pearl(1987). Thepaperscollectedby Gilks etal.(1996)coverawidevariety
+of applications of MCMC, several of which were developed in the well-known BUGS pack-
+age(Gilksetal.,1994).
+Therearetwoveryimportant familiesofapproximation methods thatwedidnotcover
+VARIATIONAL in the chapter. The first is the family of variational approximation methods, which can be
+APPROXIMATION
+used to simplify complex calculations of all kinds. The basic idea is to propose a reduced
+version of the original problem that is simple to work with, but that resembles the original
+problem as closely as possible. The reduced problem is described by some variational pa-
+VARIATIONAL rameters that are adjusted to minimize a distance function D between the original and
+PARAMETER
+the reduced problem, often by solving the system of equations D 0. In many cases,
+strict upper and lower bounds can be obtained. Variational methods have long been used in
+statistics (Rustagi, 1976). In statistical physics, the mean-field method is a particular vari-
+MEANFIELD
+ational approximation in which the individual variables making up the model are assumed
+Bibliographical and Historical Notes 555
+to be completely independent. This idea was applied to solve large undirected Markov net-
+works (Peterson and Anderson, 1987; Parisi, 1988). Saul et al. (1996) developed the math-
+ematical foundations for applying variational methods to Bayesian networks and obtained
+accuratelower-boundapproximations forsigmoidnetworks withtheuseofmean-fieldmeth-
+ods. Jaakkola and Jordan (1996) extended the methodology to obtain both lower and upper
+bounds. Since these early papers, variational methods have been applied to many specific

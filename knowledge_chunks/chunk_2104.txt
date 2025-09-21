@@ -1,0 +1,22 @@
+mption that everyone prefers cheaper prices, fasterprocessors, and more storage.
+Someattributes,suchasscreensizeonanotebook,dependontheuser sparticularpreference
+(portability versusvisibility); forthese,theshopping agentwilljusthavetoasktheuser.
+The shopping agent we have described here is a simple one; many refinements are
+possible. Still, it has enough capability that with the right domain-specific knowledge it can
+actually be of use to a shopper. Because of its declarative construction, it extends easily to
+more complex applications. The main point of this section is to show that some knowledge
+representation in particular, theproducthierarchy isnecessaryforsuchanagent,andthat
+oncewehavesomeknowledgeinthisform,therestfollowsnaturally.
+12.8 SUMMARY
+By delving into the details of how one represents a variety of knowledge, we hope we have
+given the reader a sense of how real knowledge bases are constructed and a feeling for the
+interesting philosophical issuesthatarise. Themajorpointsareasfollows: Large-scale knowledge representation requires ageneral-purpose ontology to organize
+andtietogetherthevariousspecificdomainsofknowledge. Ageneral-purpose ontology needs tocoverawidevariety ofknowledge andshould be
+capable, inprinciple, ofhandling anydomain. Building a large, general-purpose ontology is a significant challenge that has yet to be
+fullyrealized, although currentframeworksseemtobequiterobust. We presented an upper ontology based on categories and the event calculus. We
+covered categories, subcategories, parts, structured objects, measurements, substances,
+events,timeandspace,change, andbeliefs.
+468 Chapter 12. Knowledge Representation Naturalkindscannotbedefinedcompletelyinlogic,butpropertiesofnaturalkindscan
+berepresented. Actions, events, and time can be represented either in situation calculus or in more
+expressiverepresentations suchaseventcalculus. Suchrepresentations enableanagent
+toconstruct plansbylogicalinference. Wepresentedadetailedanalysisofthe Inte

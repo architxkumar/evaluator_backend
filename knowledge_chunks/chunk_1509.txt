@@ -1,0 +1,24 @@
+tselfintoandtheactionsitcantake. The
+agent can use this information to consider subsequent stages of a hypothetical journey via
+eachofthethreetowns,tryingtofindajourneythateventuallygetsto Bucharest. Onceithas
+found a path on the map from Arad to Bucharest, it can achieve its goal by carrying out the
+driving actions that correspond to the legs of the journey. In general, an agent with several
+immediate options ofunknown valuecan decide whattodobyfirst examining future actions
+thateventually leadtostatesofknownvalue.
+To be more specific about what we mean by examining future actions, we have to
+be more specific about properties of the environment, as defined in Section 2.3. For now,
+1 Weareassumingthatmostreadersareinthesamepositionandcaneasilyimaginethemselvestobeasclueless
+asouragent.Weapologizeto Romanianreaderswhoareunabletotakeadvantageofthispedagogicaldevice.
+66 Chapter 3. Solving Problemsby Searching
+weassume that the environment is observable, so the agent always knows the current state.
+Forthe agent driving in Romania, it s reasonable to suppose that each city on the maphas a
+sign indicating its presence to arriving drivers. Wealso assume the environment is discrete,
+so at any given state there are only finitely many actions to choose from. This is true for
+navigating in Romania because each city isconnected toa small numberof other cities. We
+willassumetheenvironment isknown,sotheagentknowswhichstatesarereachedbyeach
+action. (Having an accurate map suffices to meet this condition for navigation problems.)
+Finally, we assume that the environment is deterministic, so each action has exactly one
+outcome. Under ideal conditions, this is true for the agent in Romania it means that if it
+chooses to drive from Arad to Sibiu, it does end up in Sibiu. Of course, conditions are not
+alwaysideal, asweshowin Chapter4.
+Under these assumptions, the solution to any problem is a fixed sequence of actions. Ofcourse! onemightsay, Whatelsecoulditbe? Well,ingeneralitcouldbeabra

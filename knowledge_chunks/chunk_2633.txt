@@ -1,0 +1,33 @@
+hat worked
+formixturesof Gaussians. Figure20.13represents asituation inwhichtherearetwobagsof
+candies that have been mixed together. Candies are described by three features: in addition
+to the Flavor and the Wrapper, some candies have a Hole in the middle and some do not.
+The distribution of candies in each bag is described by a naive Bayes model: the features
+are independent, given the bag, but the conditional probability distribution for each feature
+depends on the bag. The parameters are as follows: is the prior probability that a candy
+comes from Bag 1; and are the probabilities that the flavor is cherry, given that the
+F1 F2
+candy comes from Bag 1or Bag 2 respectively; and give the probabilities that the
+W1 W2
+wrapperisred;and and givetheprobabilities thatthecandy hasahole. Noticethat
+H1 H2
+the overall model is a mixture model. (In fact, we can also model the mixture of Gaussians
+as a Bayesian network, as shown in Figure 20.13(b).) In the figure, the bag is a hidden
+variable because, once thecandies have been mixedtogether, weno longer know which bag
+each candy came from. In such a case, can we recover the descriptions of the two bags by
+Section20.3. Learningwith Hidden Variables: The EM Algorithm 821
+observingcandiesfromthemixture? Letusworkthroughaniterationof EMforthisproblem.
+First,let slookatthedata. Wegenerated 1000samplesfrom amodelwhosetrueparameters
+areasfollows: 0.5, 0.8, 0.3. (20.7)
+F1 W1 H1 F2 W2 H2
+That is, the candies are equally likely to come from either bag; the first is mostly cherries
+with red wrappers and holes; the second is mostly limes with green wrappers and no holes.
+Thecountsfortheeightpossible kindsofcandyareasfollows:
+W red W green
+H 1 H 0 H 1 H 0
+F cherry 273 93 104 90
+F lime 79 100 94 167
+Westartbyinitializing theparameters. Fornumerical simplicity, wearbitrarily choose5 (0) 0.6, (0) (0) (0) 0.6, (0) (0) (0) 0.4. (20.8)
+F1 W1 H1 F2 W2 H2
+First, let us work on the parameter. In the fully observable case, we would estimate this
+direc

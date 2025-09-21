@@ -1,0 +1,25 @@
+ROVERB. In
+AAAI-99,pp.914 915.
+Lauritzen,S.,Dawid,A.P.,Larsen,B.,and Leimer, Letz,R.,Schumann,J.,Bayerl,S.,and Bibel,W.
+H. (1990). Independence properties of directed (1992). SETHEO: A high-performance theorem Liu,J.S.and Chen,R.(1998). Sequential Monte
+Markovfields.Networks,20(5),491 505. prover.JAR,8(2),183 212. Carlo methods for dynamic systems. JASA, 93,
+1022 1031.
+Lauritzen,S.and Spiegelhalter,D.J.(1988).Local Levesque,H.J.and Brachman,R.J.(1987). Ex-
+computationswithprobabilitiesongraphicalstruc- pressivenessandtractabilityinknowledgerepresen- Livescu,K.,Glass,J.,and Bilmes,J.(2003).Hidden
+turesandtheirapplicationtoexpertsystems.J.Royal tationandreasoning. Computational Intelligence, featuremodelingforspeechrecognitionusingdy-
+Statistical Society,B50(2),157 224. 3(2),78 93. namic Bayesiannetworks.In EUROSPEECH-2003,
+pp.2529 2532.
+Lauritzen,S.and Wermuth,N.(1989). Graphical Levin,D.A.,Peres,Y.,and Wilmer,E.L.(2008).
+modelsforassociationsbetweenvariables,someof Markov Chainsand Mixing Times.American Math- Livnat,A.and Pippenger,N.(2006). Anoptimal
+whicharequalitativeandsomequantitative. Annals ematical Society. braincanbecomposedofconflictingagents.PNAS,
+of Statistics,17,31 57. 103(9),3198 3202.
+Levitt,G.M.(2000). The Turk,Chess Automaton.
+La Valle, S.(2006). Planning Algorithms. Cam- Mc Farlandand Company. Locke,J.(1690).An Essay Concerning Human Un-
+bridge University Press. derstanding.William Tegg.
+Levy, D. (Ed.). (1988a). Computer Chess Com-
+Lavrauc,N.and Duzeroski,S.(1994). Inductive pendium.Springer-Verlag. Lodge,D.(1984).Small World.Penguin Books.
+Logic Programming: Techniquesand Applications.
+Ellis Horwood. Levy, D. (Ed.). (1988b). Computer Games. Loftus,E.and Palmer,J.(1974). Reconstructionof
+Springer-Verlag. automobiledestruction:Anexampleoftheinterac-
+Lawler,E.L.,Lenstra,J.K.,Kan,A.,and Shmoys, tionbetweenlanguageandmemory.J.Verbal Learn-
+D.B.(1992).The Travelling Salesman Problem.Wi- Levy,D.(1989).Themillionpoundbridgeprogram. ingand Verbal Behavior,

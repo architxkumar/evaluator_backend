@@ -1,0 +1,29 @@
+s a toothache. These variables are independent, how-
+ever, given thepresence ortheabsence ofacavity. Eachisdirectly caused bythecavity, but
+neither has a direct effect on the other: toothache depends on the state of the nerves in the
+tooth, whereas the probe s accuracy depends on the dentist s skill, to which the toothache is
+irrelevant.5 Mathematically, thisproperty iswrittenas
+P(toothache catch Cavity) P(toothache Cavity)P(catch Cavity). (13.17)
+CONDITIONAL Thisequationexpressestheconditionalindependenceoftoothache andcatchgiven Cavity.
+INDEPENDENCE
+Wecanplugitinto Equation(13.16)toobtaintheprobability ofacavity:
+P(Cavity toothache catch) P(toothache Cavity)P(catch Cavity)P(Cavity). (13.18)
+Now the information requirements are the same as for inference, using each piece of evi-
+dence separately: the prior probability P(Cavity) for the query variable and the conditional
+probability ofeacheffect, givenitscause.
+Thegeneraldefinitionofconditionalindependenceoftwovariables X and Y,givena
+thirdvariable Z,is
+P(X,Y Z) P(X Z)P(Y Z).
+Inthedentistdomain,forexample,itseemsreasonabletoassertconditional independence of
+thevariables Toothache and Catch,given Cavity:
+P(Toothache,Catch Cavity) P(Toothache Cavity)P(Catch Cavity). (13.19)
+Noticethatthisassertionissomewhatstrongerthan Equation(13.17),whichassertsindepen-
+dence only for specific values of Toothache and Catch. As with absolute independence in
+Equation(13.11), theequivalent forms
+P(X Y,Z) P(X Z) and P(Y X,Z) P(Y Z)
+can also be used (see Exercise 13.17). Section 13.4 showed that absolute independence as-
+sertionsallowadecomposition ofthefulljointdistribution intomuchsmallerpieces. Itturns
+out that the same is true for conditional independence assertions. For example, given the
+assertion in Equation(13.19), wecanderiveadecomposition asfollows:
+P(Toothache,Catch,Cavity) P(Toothache,Catch Cavity)P(Cavity) (productrule) P(Toothache Cavity)P(Catch Cavity)P(Cavity) (using13.19).
+(Thereadercaneasilycheck thatthisequation doesin

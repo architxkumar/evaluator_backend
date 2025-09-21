@@ -1,0 +1,29 @@
+as Hubs and Authorities or
+HITS, is another influential link-analysis algorithm (see Figure 22.1). HITS differs from
+Page Rankinseveralways. First,itisaquery-dependent measure: itratespages withrespect
+to a query. That means that it must be computed anew for each query a computational
+burden that most search engines have elected not totake on. Given aquery, HITS firstfinds
+a set of pages that are relevant to the query. It does that by intersecting hit lists of query
+words, andthen adding pages inthelink neighborhood ofthese pages pages thatlink toor
+arelinkedfromoneofthepagesintheoriginalrelevantset.
+Each page in this set is considered an authority on the query to the degree that other
+AUTHORITY
+pages in the relevant set point to it. A page is considered a hub to the degree that it points
+HUB
+to other authoritative pages in the relevant set. Just as with Page Rank, we don t want to
+merely count the number of links; we want to give more value to the high-quality hubs and
+authorities. Thus, as with Page Rank, weiterate a process that updates the authority score of
+a page to be the sum of the hub scores of the pages that point to it, and the hub score to be
+thesum oftheauthority scores ofthe pages itpoints to. Ifwe then normalize thescores and
+repeat k times,theprocesswillconverge.
+Both Page Rank and HITS played important roles in developing our understanding of
+Webinformationretrieval. Thesealgorithmsandtheirextensionsareusedinrankingbillions
+ofqueries dailyassearch engines steadily develop betterwaysofextracting yetfinersignals
+ofsearchrelevance.
+22.3.6 Questionanswering
+Information retrieval is the task of finding documents that are relevant to a query, where the
+QUESTION querymaybeaquestion, orjustatopicareaorconcept. Questionansweringisasomewhat
+ANSWERING
+different task, in which the query really is a question, and the answer is not a ranked list
+of documents but rather a short response a sentence, or even just a phrase. There have
+been question-answering NLP (nat

@@ -1,0 +1,47 @@
+observationsfrom1tot.
+15.2.2 Smoothing
+As we said earlier, smoothing is the process of computing the distribution over past states
+given evidence up to the present; that is, P(X e ) for 0 k t. (See Figure 15.3.)
+k 1:t
+Inanticipation ofanotherrecursive message-passing approach, wecansplit thecomputation
+intotwoparts the evidenceuptok andtheevidence fromk 1tot,
+P(X e ) P(X e ,e )
+k 1:t k 1:k k 1:t P(X e )P(e X ,e ) (using Bayes rule)
+k 1:k k 1:t k 1:k P(X e )P(e X ) (usingconditional independence)
+k 1:k k 1:t k f b . (15.8)
+1:k k 1:t
+where represents pointwise multiplication of vectors. Here we have defined a back-
+ward message b P(e X ), analogous tothe forward message f . Theforward
+k 1:t k 1:t k 1:k
+message f can becomputed byfiltering forward from 1to k, as givenby Equation (15.5).
+1:k
+It turns out that the backward message b can be computed by a recursive process that
+k 1:t
+runsbackwardfrom t:
+(cid:12)
+P(e X ) P(e X ,x )P(x X ) (conditioning on X )
+k 1:t k k 1:t k k 1 k 1 k k 1
+x (cid:12)k 1 P(e x )P(x X ) (byconditional independence)
+k 1:t k 1 k 1 k
+x (cid:12)k 1 P(e ,e x )P(x X )
+k 1 k 2:t k 1 k 1 k
+x (cid:12)k 1 P(e x )P(e x )P(x X ), (15.9)
+k 1 k 1 k 2:t k 1 k 1 k
+xk 1
+wherethelast stepfollows bytheconditional independence ofe and e ,given X .
+k 1 k 2:t k 1
+Ofthethreefactorsinthissummation,thefirstandthirdareobtaineddirectlyfromthemodel,
+andthesecondisthe recursive call. Usingthemessagenotation, wehave
+b
+k 1:t BACKWARD(b
+k 2:t
+,e
+k 1
+),
+where BACKWAR Dimplementstheupdatedescribedin Equation(15.9). Aswiththeforward
+recursion, thetimeandspaceneededforeachupdateareconstantandthusindependent oft.
+Wecan now see that the twoterms in Equation (15.8) can both be computed by recur-
+sions through time, one running forward from 1 to k and using the filtering equation (15.5)
+Section15.2. Inference in Temporal Models 575
+and the other running backward from t to k 1 and using Equation (15.9). Note that the
+backward phase is initialized with b P(e X ) P( X )1, where 1 is a 

@@ -1,0 +1,33 @@
+wdothesametoconvert MD Pswith R(s,a)into MD Pswith R(s).
+17.5 Fortheenvironment shownin Figure17.1, findallthethreshold values for R(s)such
+thattheoptimalpolicychanges whenthethreshold iscrossed. Youwillneedawaytocalcu-
+late the optimal policy and its value for fixed R(s). (Hint: Prove that the value of any fixed
+policyvarieslinearly with R(s).)
+17.6 Equation(17.7)onpage654statesthatthe Bellmanoperator isacontraction.
+a. Showthat,foranyfunctions f andg, maxf(a) maxg(a) max f(a) g(a) .
+a a a
+b. Write out an expression for (BU BU (cid:2) )(s) and then apply the result from (a) to
+i i
+completetheproofthatthe Bellmanoperatorisacontraction.
+17.7 This exercise considers two-player MD Ps that correspond to zero-sum, turn-taking
+games like those in Chapter 5. Let the players be A and B, and let R(s) be the reward for
+player Ainstates. (Therewardfor B isalwaysequalandopposite.)
+a. Let U (s)betheutilityofstateswhenitis A sturntomoveins,andlet U (s)bethe
+A B
+utilityofstateswhenitis B sturntomoveins. Allrewardsandutilitiesarecalculated
+from A spointofview(justasinaminimaxgametree). Writedown Bellmanequations
+defining U (s)and U (s).
+A B
+b. Explainhowtodotwo-playervalueiterationwiththeseequations,anddefineasuitable
+terminationcriterion.
+c. Consider the game described in Figure 5.17 on page 197. Draw the state space (rather
+thanthe gametree), showing themovesby Aassolid linesand movesby B asdashed
+lines. Markeachstatewith R(s). Youwillfindithelpfultoarrange thestates (s ,s )
+A B
+onatwo-dimensional grid,using s ands as coordinates. A B
+d. Nowapplytwo-playervalueiterationtosolvethisgame,andderivetheoptimalpolicy.
+17.8 Considerthe 3 3worldshownin Figure17.14(a). Thetransition modelisthesame
+asinthe4 3Figure17.1: 80 ofthetimetheagentgoesinthedirection itselects; therest
+ofthetimeitmovesatrightanglestotheintended direction.
+Implement value iteration for this world for each value of r below. Use discounted
+rewards with a discount factor of 0.99. Show the policy obtained in each case. E

@@ -1,0 +1,26 @@
+ply your chosen algorithm to compute an optimal sequence of actions for a 3 3
+worldwhoseinitialstatehasdirtinthethreetopsquares andtheagentinthecenter.
+c. Constructasearchagentforthevacuumworld,andevaluate itsperformance inasetof
+3 3worldswithprobability 0.2ofdirtineachsquare. Include thesearchcostaswell
+aspathcostintheperformance measure,usingareasonable exchange rate.
+d. Compare your best search agent with a simple randomized reflex agent that sucks if
+thereisdirtandotherwise movesrandomly.
+e. Consider what would happen if the world were enlarged to n n. How does the per-
+formanceofthesearchagentandofthereflexagentvarywith n?
+3.21 Proveeachofthefollowingstatements, orgiveacounterexample:
+a. Breadth-firstsearchisaspecialcaseofuniform-cost search.
+b. Depth-firstsearchisaspecialcaseofbest-firsttreesearch. c. Uniform-costsearchisaspecial caseof A search.
+118 Chapter 3. Solving Problemsby Searching 3.22 Compare the performance of A and RBFS on a set of randomly generated problems
+inthe8-puzzle(with Manhattandistance)and TSP(with MST see Exercise3.30)domains.
+Discussyourresults. Whathappenstotheperformance of RBF Swhenasmallrandomnum-
+berisaddedtotheheuristic valuesinthe8-puzzle domain? 3.23 Trace the operation of A search applied to the problem of getting to Bucharest from
+Lugojusing thestraight-line distance heuristic. Thatis, show thesequence ofnodes that the
+algorithm willconsiderandthe f,g,andhscoreforeachnode. 3.24 Deviseastatespaceinwhich A using GRAPH-SEARCH returnsasuboptimalsolution
+withanh(n)function thatisadmissible butinconsistent.
+HEURISTICPATH 3.25 The heuristic path algorithm (Pohl, 1977) is a best-first search in which the evalu-
+ALGORITHM
+ation function is f(n) (2 w)g(n) wh(n). For what values of w is this complete?
+Forwhat values is it optimal, assuming that h is admissible? What kind of search does this
+perform forw 0,w 1,andw 2?
+3.26 Considertheunbounded version oftheregular2Dgridshownin Figure3.9. Thestart
+stateisattheorigin, (0,0),andthegoalstatei

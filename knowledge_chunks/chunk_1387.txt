@@ -1,0 +1,24 @@
+sentations(inwhichastateisasetofattribute valuepairs),andstructured
+representations (inwhichtheworldconsists ofobjectsand relations betweenthem). Our coverage of planning goes into more depth on contingent planning in partially
+observable environments andincludes anewapproachtohierarchical planning. Wehaveaddednewmaterialonfirst-orderprobabilisticmodels,includingopen-universe
+modelsforcaseswherethereisuncertainty astowhatobjectsexist. We have completely rewritten the introductory machine-learning chapter, stressing a
+wider variety of more modern learning algorithms and placing them on a firmer theo-
+reticalfooting. We have expanded coverage of Web search and information extraction, and of tech-
+niquesforlearning fromverylargedatasets. 20 ofthecitations inthiseditionaretoworkspublished after2003. Weestimate that about 20 of the material is brand new. The remaining 80 reflects
+olderworkbuthasbeenlargely rewrittentopresentamoreunifiedpictureofthefield.
+vii
+viii Preface
+Overview of the book
+The main unifying theme is the idea of an intelligent agent. We define AI as the study of
+agents thatreceive percepts from theenvironment andperform actions. Eachsuchagent im-
+plements a function that maps percept sequences to actions, and we cover different ways to
+represent these functions, such as reactive agents, real-time planners, and decision-theoretic
+systems. Weexplaintheroleoflearningasextendingthereachofthedesignerintounknown
+environments, and we show how that role constrains agent design, favoring explicit knowl-
+edgerepresentation andreasoning. Wetreatroboticsandvisionnotasindependently defined
+problems, butasoccurring intheservice ofachieving goals. Westress theimportance ofthe
+taskenvironment indetermining theappropriate agentdesign.
+Ourprimaryaimistoconveytheideasthathaveemergedoverthepastfiftyyearsof AI
+researchandthepasttwomillenniaofrelatedwork. Wehavetriedtoavoidexcessiveformal-
+ityinthepresentationoftheseideaswhileretainingprecision. Wehaveincludedpseudocode
+algo

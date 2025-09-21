@@ -1,0 +1,32 @@
+,1082 metonymy,905,921 local,122
+Mc Guinness,D.,457,469,471,1064, Metropolis,N.,155,554,1082 minimum-remaining-values,216,333
+1066,1089 Metropolis Hastings,564 minimumdescriptionlength(MDL),
+Mc Ilraith,S.,314,1082 Metropolisalgorithm,155,554 713,759,805
+Mc Lachlan,G.J.,826,1082 Metzinger,T.,1042,1082 minimumslack,405
+Mc Mahan,B.,639,1079 Metzler,D.,884,1069 minimumspanningtree(MST),112,
+MCMC,535,535 538,552,554,596 MEXAR2,28 119
+Mc Millan,K.L.,395,1082 Meyer,U.,112,1069 MINISAT,277
+Mc Nealy,S.,1036 Me zard,M.,762,1082 Minker,J.,358,473,1073,1082
+Mc Phee,N.,156,1085 MGONZ,1021 Minkowskidistance,738
+MDL,713,759,805 MGSS ,191 Minsky,M.L.,16,18,19,22,24,27,
+MDP,10,647,684,686,830 MGU(mostgeneralunifier),327,329, 434,471,552,761,1020,1039,
+mean-fieldapproximation,554 353,361 1042,1082
+measure,444 MHT(multiplehypothesistracker),606 Minton,S.,154,229,432,799,1068,
+measurement,444 Mian,I.S.,604,605,1079,1083 1082
+mechanism,679 Michalski,R.S.,799,1082 Miranker,D.P.,229,1065
+strategy-proof,680 Michaylov,S.,359,1077 Misak,C.,313,1082
+mechanismdesign,679,679 685 Michie,D.,74,110,111,156,191,763, missingattributevalues,706
+medicaldiagnosis,23,505,517,548, 851,854,1012,1071,1082 missionariesandcannibals,109,115,
+629,1036 micro-electromechanicalsystems 468
+Meehan,J.,358,1068 (MEMS),1045 MIT,17 19,1012
+Meehl,P.,1022,1074,1082 micromort,616,637,642 Mitchell,D.,154,277,278,1069,1088
+Meek,C.,553,1092 Microsoft,553,874 Mitchell,M.,155,156,1082
+Meet(intervalrelation),448 microworld,19,20,21 Mitchell,T.M.,61,288,763,776,798,
+Megarianschool,275 Middleton,B.,519,552,1086 799,884,885,1047,1066,1067,
+megavariable,578 Miikkulainen,R.,435,1067 1069,1082,1084
+Meggido,N.,677,687,1078 Milch,B.,556,639,1078,1082,1085 Mitra,M.,870,1089
+Mehlhorn,K.,112,1069 Milgrom,P.,688,1082 mixedstrategy,667
+melfrequencycepstralcoefficient Milios,E.,1012,1081 mixingtime,573
+(MFCC),915 militaryusesof AI,1035 mixture
+Mellish,C.S.,359,1068 Mill,J.S.,7,770,798,1082 distribution,817
+memoization,343,357,780 Miller,A.C.

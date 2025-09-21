@@ -1,0 +1,80 @@
+ics(3rdedition).Addison Wesley.
+D B H a a il s v l e . i d s, S R ys . te a m nd si L n en A a r t t , ifi D ci . al B I . nt ( e 1 l 9 li 8 g 2 e ) n . ce K . n M ow c G le r d a g w e - - D so e n a , n A , . T (1 ., 9 K 93 a ) e . lb P l l i a n n g n , i L ng .P w ., it K h i d r e m a a d n li , n J e . s , i a n n s d to N ch ic a h s o ti l c - D na e t J io o n n s g . , I G n . I ( J 1 C 9 A 8 I 1 - ) 8 . 1 G ,p e p n . er 6 a 7 li z 6 a 9 ti . onsbasedonexpla-
+domains.In AAAI-93,pp.574 579. De Jong, G.(1982). Anoverviewofthe FRUMP
+Dayan,P.(1992). Theconvergenceof TD( )for system.In Lehnert,W.and Ringle,M.(Eds.),Strate-
+general .Machine Learning,8(3 4),341 362. D
+pr
+e
+o
+a
+je
+n
+c
+,
+ti
+T
+o
+.
+n
+a
+a
+n
+n
+d
+d
+K
+ac
+a
+t
+n
+io
+az
+n
+a
+.
+w
+In
+a,
+IJ
+K
+C
+.
+A
+(1
+I-
+9
+8
+8
+9
+9
+,
+a
+p
+)
+p
+.
+.
+A
+985
+m o
+9
+d
+9
+e
+0
+l
+.
+for
+giesfor Natural Language Processing,pp.149 176.
+Dayan,P.and Abbott,L.F.(2001).Theoretical Neu- Lawrence Erlbaum.
+roscience: Computationaland Mathematical Mod- Dean,T.and Kanazawa,K.(1989b). Amodelfor De Jong,G.and Mooney,R.(1986). Explanation-
+elingof Neural Systems.MIT Press. reasoningaboutpersistenceandcausation. Compu- basedlearning:Analternativeview.Machine Learn-
+tational Intelligence,5(3),142 150.
+Dayan,P.and Niv,Y.(2008).Reinforcementlearn- ing,1,145 176.
+ingandthebrain: Thegood,thebadandtheugly. Dean,T.,Kanazawa,K.,and Shewchuk,J.(1990). Del Moral,P.,Doucet,A.,and Jasra,A.(2006).Se-
+Current Opinionin Neurobiology,18(2),185 196. Prediction, observationandestimationinplanning quential Monte Carlosamplers. J.Royal Statistical
+de Dombal, F.T.,Leaper, D.J.,Horrocks, J.C., andcontrol. In5th IEEE International Symposium Society,Series B,68(3),411 436.
+on Intelligent Control,Vol.2,pp.645 650.
+and Staniland,J.R.(1974). Humanandcomputer- Del Moral,P.(2004).Feynman Kac Formulae,Ge-
+aideddiagnosisofabdominalpain: Furtherreport Dean,T.and Wellman,M.P.(1991). Planningand nealogicaland Interacting Particle Systemswith Ap-
+withemphasisonperformanceofclinicians.British

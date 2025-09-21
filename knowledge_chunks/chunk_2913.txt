@@ -1,0 +1,27 @@
+atingrobotsisestimatedatonemillion
+worldwide,morethanhalfofwhichareinstalled in Japan.
+Theliteratureonroboticsresearchcanbedividedroughlyintotwoparts: mobilerobots
+and stationary manipulators. Grey Walter s turtle, built in 1948, could be considered the
+firstautonomousmobilerobot,althoughitscontrolsystemwasnotprogrammable. The Hop-
+kins Beast, built in the early 1960s at Johns Hopkins University, was much more sophisti-
+cated; it had pattern-recognition hardware and could recognize the cover plate of a standard
+ACpoweroutlet. Itwascapableofsearchingforoutlets,pluggingitselfin,andthenrecharg-
+ing its batteries! Still, the Beast had a limited repertoire of skills. The first general-purpose
+mobilerobotwas Shakey, developedatwhatwasthenthe Stanford Research Institute(now
+1012 Chapter 25. Robotics
+SRI) in the late 1960s (Fikes and Nilsson, 1971; Nilsson, 1984). Shakey was the first robot
+to integrate perception, planning, and execution, and much subsequent research in AI was
+influenced by this remarkable achievement. Shakey appears on the cover of this book with
+project leader Charlie Rosen (1917 2002). Other influential projects include the Stanford
+Cart and the CMU Rover(Moravec, 1983). Cox and Wilfong (1990) describes classic work
+onautonomous vehicles.
+The field of robotic mapping has evolved from two distinct origins. The first thread
+began with work by Smith and Cheeseman (1986), who applied Kalman filters to the si-
+multaneous localization and mapping problem. This algorithm was first implemented by
+Moutarlier and Chatila (1989), and later extended by Leonard and Durrant-Whyte (1992);
+see Dissanayake et al. (2001) for an overview of early Kalman filtervariations. The second
+thread began with the development of the occupancy grid representation for probabilistic
+OCCUPANCYGRID
+mapping, which specifies the probability that each (x,y) location is occupied by an obsta-
+cle (Moravec and Elfes, 1985). Kuipers and Levitt (1988) were among the first to propose
+topological 

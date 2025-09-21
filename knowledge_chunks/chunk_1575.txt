@@ -1,0 +1,21 @@
+ited
+States, searching less than 0.1 of the graph. Others approaches to bidirectional search
+include a breadth-first search backward from the goal up to a fixed depth, followed by a forward IDA search(Dillenburg and Nelson,1994;Manzini,1995). A andotherstate-space searchalgorithms areclosely relatedtothebranch-and-bound
+techniques that are widely used in operations research (Lawler and Wood, 1966). The
+relationships between state-space search and branch-and-bound have been investigated in
+depth (Kumarand Kanal, 1983; Nauet al., 1984; Kumaret al., 1988). Martelli and Monta-
+nari (1978) demonstrate a connection between dynamic programming (see Chapter 17) and
+certaintypesofstate-spacesearch. Kumarand Kanal(1988)attempta grandunification of
+heuristic search, dynamic programming, and branch-and-bound techniques under the name
+of CDP the composite decision process. Becausecomputersinthelate1950sandearly1960shadatmostafewthousandwords
+of main memory, memory-bounded heuristic search wasan early research topic. The Graph
+Traverser (Doran and Michie, 1966), one of the earliest search programs, commits to an operatoraftersearchingbest-firstuptothememorylimit. IDA (Korf,1985a,1985b)wasthe
+first widely used optimal, memory-bounded heuristic search algorithm, and a large number of variants have been developed. Ananalysis of the efficiency of IDA and of its difficulties
+withreal-valued heuristics appearsin Patrick etal.(1992).
+RBFS (Korf, 1993) is actually somewhat more complicated than the algorithm shown
+in Figure 3.26, which is closer to anindependently developed algorithm called iterative ex-
+ITERATIVE pansion (Russell, 1992). RBF Suses a lower bound as well as the upper bound; the two al-
+EXPANSION
+gorithmsbehaveidentically withadmissible heuristics, but RBF Sexpandsnodesinbest-first
+112 Chapter 3. Solving Problemsby Searching
+order even with an inadmissible heuristic. The idea of keeping track of the best alternative pathappearedearlierin Bratko s(1986)elegant Prologimpleme

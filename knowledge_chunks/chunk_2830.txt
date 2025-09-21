@@ -1,0 +1,27 @@
+e the image brightness I(x,y),
+given the scene geometry and reflectance properties of the objects in the scene. Computer
+visionaimstoinverttheprocess that is,torecoverthegeometryandreflectance properties,
+given the image brightness I(x,y). This has proved to be difficult to do in anything but the
+simplestcases.
+From the physical model of section 24.1.4, we know that if a surface normal points
+toward the light source, the surface is brighter, and if it points away, the surface is darker.
+We cannot conclude that a dark patch has its normal pointing away from the light; instead,
+it could have low albedo. Generally, albedo changes quite quickly in images, and shading
+Section24.4. Reconstructing the3DWorld 953
+(a) (b)
+Figure24.20 (a)Atexturedscene.Assumingthattherealtextureisuniformallowsrecov-
+eryofthesurfaceorientation. Thecomputedsurfaceorientationisindicatedbyoverlayinga
+blackcircleandpointer,transformedasifthecirclewerepaintedonthesurfaceatthatpoint.
+(b)Recoveryofshapefromtextureforacurvedsurface(whitecircleandpointerthistime).
+Imagescourtesyof Jitendra Malikand Ruth Rosenholtz(1994).
+changes rather slowly, and humans seem to be quite good at using this observation to tell
+whether low illumination, surface orientation, or albedo caused a surface patch to be dark.
+To simplify the problem, let us assume that the albedo is known at every surface point. It
+is still difficult to recover the normal, because the image brightness is one measurement but
+thenormalhastwounknownparameters, sowecannot simplysolveforthenormal. Thekey
+to this situation seems to be that nearby normals will be similar, because most surfaces are
+smooth they donothavesharpchanges.
+Therealdifficultycomesindealingwithinterreflections. Ifweconsideratypicalindoor
+scene, such as the objects inside an office, surfaces are illuminated not only by the light
+sources, but also by the light reflected from other surfaces in the scene that effectively serve
+assecondary light sources. These mutual illumination effe

@@ -1,0 +1,26 @@
+orne out even in games such as chess, checkers (draughts),
+and backgammon (see next section), where efforts to learn an evaluation function by means
+ofamodelhavemetwithmoresuccessthan Q-learning methods.
+21.4 GENERALIZATION IN REINFORCEMENT LEARNING
+Sofar, wehave assumed that the utility functions and Q-functions learned by the agents are
+represented in tabular form with one output value for each input tuple. Such an approach
+worksreasonably wellforsmall statespaces, but thetimeto convergence and(for ADP)the
+timeperiterationincreaserapidlyasthespacegetslarger. Withcarefullycontrolled, approx-
+imate ADP methods, it might be possible to handle 10,000 states or more. This suffices for
+two-dimensional maze-like environments, but more realistic worlds are out of the question.
+Backgammon and chess are tiny subsets of the real world, yet their state spaces contain on
+the order of 1020 and 1040 states, respectively. It would be absurd to suppose that one must
+visitallthesestatesmanytimesinordertolearnhowtoplay thegame!
+FUNCTION One way to handle such problems is to use function approximation, which simply
+APPROXIMATION
+means using any sort of representation for the Q-function other than a lookup table. The
+representation isviewed asapproximate because itmight not bethe case that the true utility
+function or Q-function canberepresented inthechosen form. Forexample, in Chapter5we
+described an evaluation function for chess that is represented as aweighted linear function
+ofasetoffeatures(orbasisfunctions)f ,...,f :
+BASISFUNCTION 1 n
+U (s) f (s) f (s) f (s). 1 1 2 2 n n
+A reinforcement learning algorithm can learn values for the parameters ,..., such
+1 n
+that the evaluation function U approximates the true utility function. Instead of, say, 1040 values in a table, this function approximator is characterized by, say, n 20 parameters an enormous compression. Although no one knows the true utility function for chess, no
+one believes that it can be represented exactly in 20 numbers

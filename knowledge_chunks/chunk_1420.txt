@@ -1,0 +1,26 @@
+cisions. The work of
+Richard Bellman (1957) formalized a class of sequential decision problems called Markov
+decisionprocesses, whichwestudyin Chapters17and21.
+Work in economics and operations research has contributed much to our notion of ra-
+tional agents, yet for many years AI research developed along entirely separate paths. One
+reason was the apparent complexity of making rational decisions. The pioneering AI re-
+searcher Herbert Simon(1916 2001) wonthe Nobel Prizeineconomicsin1978forhisearly
+work showing that models based on satisficing making decisions that are good enough, SATISFICING
+rather than laboriously calculating an optimal decision gave a better description of actual
+human behavior (Simon, 1947). Since the 1990s, there has been a resurgence of interest in
+decision-theoretic techniques foragentsystems(Wellman,1995).
+1.2.4 Neuroscience Howdobrainsprocess information?
+Neuroscience is the study of the nervous system, particularly the brain. Although the exact
+NEUROSCIENCE
+wayinwhichthebrainenablesthoughtisoneofthegreatmysteriesofscience,thefactthatit
+doesenablethoughthasbeenappreciated forthousands ofyearsbecauseoftheevidencethat
+strong blowsto the head can lead tomental incapacitation. Ithas also long been known that
+humanbrains aresomehow different; inabout 335 B.C. Aristotle wrote, Ofalltheanimals,
+man has the largest brain in proportion to his size. 5 Still, it was not until the middle of the
+18th century thatthebrain waswidely recognized astheseat ofconsciousness. Before then,
+candidate locations included theheartandthespleen.
+Paul Broca s (1824 1880) study of aphasia (speech deficit) in brain-damaged patients
+in 1861 demonstrated the existence of localized areas of the brain responsible for specific
+cognitive functions. In particular, he showed that speech production was localized to the
+portion of the left hemisphere now called Broca s area.6 By that time, it was known that
+the brain consisted of nerve cells, or neurons, but it was not until 1873 

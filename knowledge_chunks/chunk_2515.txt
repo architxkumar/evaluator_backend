@@ -1,0 +1,60 @@
+curseofdimensionality.
+DIMENSIONALITY
+Anotherwaytolookatit: considerthepointsthatfallwithinathinshellmakingupthe
+outer 1 of the unit hypercube. These are outliers; in general it will be hard to find a good
+value forthembecause wewillbeextrapolating ratherthaninterpolating. Inonedimension,
+these outliers are only 2 of the points on the unit line (those points where x .01 or
+x .99), but in 200 dimensions, over 98 of the points fall within this thin shell almost
+allthepoints areoutliers. Youcanseeanexample ofapoornearest-neighbors fitonoutliers
+ifyoulookaheadto Figure18.28(b).
+The NN(k,x )function isconceptually trivial: givenasetof N examplesandaquery
+q
+x ,iteratethroughtheexamples,measurethedistanceto x fromeachone,andkeepthebest
+q q
+k. Ifwearesatisfiedwithanimplementation thattakes O(N)executiontime,thenthatisthe
+end of the story. But instance-based methods are designed for large data sets, so we would
+like an algorithm with sublinear run time. Elementary analysis of algorithms tells us that
+exact table lookup is O(N) with a sequential table, O(log N) with a binary tree, and O(1)
+with a hash table. We will now see that binary trees and hash tables are also applicable for
+findingnearest neighbors.
+18.8.2 Finding nearest neighbors with k-dtrees
+Abalancedbinarytreeoverdatawithanarbitrarynumberofdimensionsiscalledak-dtree,
+K-DTREE
+for k-dimensional tree. (In our notation, the number of dimensions is n, so they would be
+n-d trees. The construction of a k-d tree is similar to the construction of a one-dimensional
+balancedbinarytree. Westartwithasetofexamplesandattherootnodewesplitthemalong
+theithdimension bytesting whetherx m. Wechose thevaluemtobethemedian ofthe
+i
+examplesalongtheithdimension;thushalftheexampleswillbeintheleftbranchofthetree
+740 Chapter 18. Learningfrom Examples
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+25 50 75 100 125 150 175 200
+doohrobhgien
+fo
+htgnel
+egd E
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+25 50 75 100 125 150 175 200
+Number of dimensions
+llehs
+r

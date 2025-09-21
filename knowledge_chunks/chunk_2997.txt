@@ -1,0 +1,30 @@
+Science
+NIPS Advancesin Neural Information Processing Systems
+PAMI IEEE Transactionson Pattern Analysisand Machine Intelligence
+PNAS Proceedingsofthe National Academyof Sciencesofthe United Statesof America
+PODS Proceedingsofthe ACM International Symposiumon Principlesof Database Systems
+SIGIR Proceedingsofthe Special Interest Groupon Information Retrieval
+SIGMOD Proceedingsofthe ACMSIGMOD International Conferenceon Managementof Data
+SODA Proceedingsofthe Annual ACM SIAM Symposiumon Discrete Algorithms
+STOC Proceedingsofthe Annual ACM Symposiumon Theoryof Computing
+TARK Proceedingsofthe Conferenceon Theoretical Aspectsof Reasoningabout Knowledge
+UAI Proceedingsofthe Conferenceon Uncertaintyin Artificial Intelligence
+1063
+1064 Bibliography
+Aarup, M., Arentoft, M. M., Parrod, Y., Stader, Alekhnovich, M.,Hirsch,E.A.,and Itsykson,D. Appelt,D.(1999). Introductiontoinformationex-
+J., and Stokes, I. (1994). OPTIMUM-AIV: (2005). Exponentiallowerboundsfortherunning traction.CACM,12(3),161 172.
+Aknowledge-basedplanningandschedulingsystem time of DPLL algorithms on satisfiable formulas.
+Apt,K.R.(1999). Theessenceofconstraintprop-
+forspacecraft AIV. In Fox, M.and Zweben, M. JAR,35(1 3),51 72.
+agation. Theoretical Computer Science,221(1 2),
+(Eds.),Knowledge Based Scheduling.Morgan Kauf-
+Allais, M. (1953). Lecomportment de l homme 179 210.
+mann.
+rationneldevantlarisque: critiquedespostulatset Apt, K.R.(2003). Principlesof Constraint Pro-
+Abney, S. (2007). Semisupervised Learning for axiomesdel e cole Ame ricaine. Econometrica,21, gramming.Cambridge University Press.
+Computational Linguistics.CRC Press. 503 546.
+Apte ,C.,Damerau,F.,and Weiss,S.(1994). Auto-
+Abramson, B.and Yung,M.(1989). Divideand Allen,J.F.(1983). Maintainingknowledgeabout matedlearningofdecisionrulesfortextcategoriza-
+conquerunderglobalconstraints:Asolutiontothe temporalintervals.CACM,26(11),832 843. tion.ACM Transactionson Information Systems,12,
+N-queensproblem.J.Paralleland Distributed Com-
+puting,6(3),649 66

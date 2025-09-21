@@ -1,0 +1,32 @@
+n the future, however, then finding an optimal policy becomes considerably more difficult,
+because the agent must consider the effects of future observations on its beliefs about the
+transition model. Theproblem becomes a POMD Pwhosebelief states aredistributions over
+models. This concept provides an analytical foundation for understanding the exploration
+problem described in Section21.3.
+ROBUSTCONTROL Thesecond approach, derived from robustcontroltheory, allowsforasetofpossible
+THEORY
+models Handdefinesanoptimalrobustpolicyasonethatgivesthebestoutcomeintheworst
+caseover H: argmaxminu .
+h h
+Often, theset H willbethesetofmodels thatexceedsomelikelihood threshold on P(h e),
+so the robust and Bayesian approaches are related. Sometimes, the robust solution can be
+computed efficiently. There are, moreover, reinforcement learning algorithms that tend to
+produce robustsolutions, althoughwedonotcoverthemhere.
+21.2.3 Temporal-difference learning
+Solving the underlying MDP as in the preceding section is not the only way to bring the
+Bellman equations to bear on the learning problem. Another way is to use the observed
+transitions to adjust the utilities of the observed states so that they agree with the constraint
+equations. Consider, for example, the transition from (1,3) to (2,3) in the second trial on
+page 832. Suppose that, as a result of the firsttrial, the utility estimates are U (1,3) 0.84
+and U (2,3) 0.92. Now,ifthis transition occurred allthe time,wewould expect theutili-
+tiestoobeytheequation
+U (1,3) 0.04 U (2,3),
+so U (1,3)wouldbe0.88. Thus,itscurrentestimateof0.84mightbealittlelowandshould
+(cid:2)
+be increased. More generally, when a transition occurs from state s to state s, weapply the
+followingupdateto U (s):
+U (s) U (s) (R(s) U (s (cid:2) ) U (s)). (21.3)
+Here, isthelearningrateparameter. Becausethisupdateruleusesthedifferenceinutilities
+TEMPORAL- betweensuccessivestates, itisoftencalledthetemporal-difference, or TD,equation.
+DIFFERENCE
+All temporal-difference 

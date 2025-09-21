@@ -1,0 +1,26 @@
+ Probability.Chelsea.
+Macmillan. offfor M-gramlanguagemodeling. In ICASSP-95,
+pp.181 184. Kolmogorov,A.N.(1963). Ontablesofrandom
+Khare,R.(2006). Microformats:Thenext(small) numbers. Sankhya,the Indian Journalof Statistics,
+thingonthesemanticweb. IEEE Internet Comput- Knight,K.(1999). Astatistical MTtutorialwork- Series A25.
+ing,10(1),68 75. book. Preparedinconnectionwiththe Johns Hop-
+kins Universitysummerworkshop. Kolmogorov,A.N.(1965).Threeapproachestothe
+Khatib,O.(1986).Real-timeobstacleavoidancefor quantitativedefinitionofinformation. Problemsin
+robotmanipulatorandmobilerobots.Int.J.Robotics Knuth,D.E.(1964). Representingnumbersusing Information Transmission,1(1),1 7.
+Research,5(1),90 98. onlyone4. Mathematics Magazine,37(Nov Dec),
+308 310. Kolodner, J.(1983). Reconstructivememory: A
+Khmelev,D.V.and Tweedie,F.J.(2001). Using computermodel.Cognitive Science,7,281 328.
+Markovchainsforidentificationofwriter. Literary Knuth,D.E.(1968).Semanticsforcontext-freelan-
+and Linguistic Computing,16(3),299 307. guages. Mathematical Systems Theory,2(2),127 Kolodner,J.(1993). Case-Based Reasoning. Mor-
+145. gan Kaufmann.
+Kietz, J.-U.and Duzeroski, S.(1994). Inductive
+logicprogrammingandlearnability. SIGART Bul- Knuth,D.E.(1973).The Artof Computer Program- Kondrak,G.andvan Beek,P.(1997).Atheoretical
+letin,5(1),22 32. ming(secondedition).,Vol.2: Fundamental Algo- evaluationofselectedbacktrackingalgorithms.AIJ,
+rithms.Addison-Wesley. 89,365 387.
+Kilgarriff, A.and Grefenstette,G.(2006). Intro-
+ductiontothespecialissueonthewebascorpus. Knuth, D.E.(1975). Ananalysisofalpha beta Konolige,K.(1997).COLBERT:Alanguageforre-
+Computational Linguistics,29(3),333 347. pruning.AIJ,6(4),293 326. activecontrolin Saphira. In Ku nstliche Intelligenz:
+Advancesin Artificial Intelligence, LNAI,pp.31 Kim,J.H.(1983). CONVINCE:AConversational Knuth, D. E.and Bendix, P. B.(1970). Simple
+52.
+Inference Consolidation Engine. Ph.D.thesis,De- wordproblemsinuniversalalgebras. In Leech,J.
+partmentof Computer 

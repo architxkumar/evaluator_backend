@@ -1,0 +1,32 @@
+utthenewstatevariables.
+Consider,forexample,theproblemoftrackingarobotwanderingrandomlyonthe X Y
+plane. Onemightpropose thattheposition andvelocityarea sufficientsetofstatevariables:
+onecansimplyuse Newton slawstocalculatethenewposition,andthevelocitymaychange
+unpredictably. Iftherobotisbattery-powered,however,thenbatteryexhaustionwouldtendto
+haveasystematiceffectonthechangeinvelocity. Becausethisinturndependsonhowmuch
+powerwasused byallprevious maneuvers, the Markov property isviolated. Wecan restore
+the Markovproperty byincluding thechargelevel Battery asoneofthestatevariables that
+t
+make up X . This helps in predicting the motion of the robot, but in turn requires a model
+t
+for predicting Battery t from Battery t 1 and the velocity. In some cases, that can be done
+reliably, but more often we findthat error accumulates overtime. In that case, accuracy can
+beimprovedbyaddinganewsensorforthebatterylevel.
+15.2 INFERENCE IN TEMPORAL MODELS
+Havingsetupthestructureofagenerictemporalmodel,wecanformulatethebasicinference
+tasksthatmustbesolved: Filtering: This is the task of computing the belief state the posterior distribution
+FILTERING
+over the most recent state given all evidence to date. Filtering2 is also called state
+BELIEFSTATE
+estimation. Inourexample,wewishtocompute P(X e ). Intheumbrellaexample,
+STATEESTIMATION t 1:t
+this would mean computing the probability of rain today, given all the observations of
+the umbrella carrier made so far. Filtering is what a rational agent does to keep track
+of the current state so that rational decisions can be made. It turns out that an almost
+identicalcalculation providesthelikelihood oftheevidence sequence, P(e ).
+1:t Prediction: Thisisthetaskofcomputingtheposteriordistributionoverthefuturestate,
+PREDICTION
+givenall evidence todate. Thatis, wewishtocompute P(X e )forsome k 0.
+t k 1:t
+Inthe umbrella example, thismight meancomputing theprobability ofrainthree days
+fromnow,givenalltheobservationstodate. Predictionisusefulforevaluat

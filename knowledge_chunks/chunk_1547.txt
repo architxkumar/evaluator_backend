@@ -1,0 +1,35 @@
+ (In(Arad)) 366. Notice that the values of h cannot be computed from the
+SLD SLD
+problem description itself. Moreover, it takes a certain amount of experience to know that
+h iscorrelated withactualroaddistances andis,therefore, ausefulheuristic.
+SLD
+Figure 3.23 shows the progress of a greedy best-first search using h to find a path
+SLD
+from Arad to Bucharest. The first node to be expanded from Arad will be Sibiu because it
+is closer to Bucharest than either Zerind or Timisoara. The next node to be expanded will
+be Fagaras because it is closest. Fagaras in turn generates Bucharest, which is the goal. For
+this particular problem, greedy best-first search using h finds a solution without ever
+SLD
+8 Ourfirsteditioncalledthisgreedysearch; otherauthorshavecalleditbest-firstsearch. Ourmoregeneral
+usageofthelattertermfollows Pearl(1984).
+Section3.5. Informed(Heuristic)Search Strategies 93
+Arad 366 Mehadia 241
+Bucharest 0 Neamt 234
+Craiova 160 Oradea 380
+Drobeta 242 Pitesti 100
+Eforie 161 Rimnicu Vilcea 193
+Fagaras 176 Sibiu 253
+Giurgiu 77 Timisoara 329
+Hirsova 151 Urziceni 80
+Iasi 226 Vaslui 199
+Lugoj 244 Zerind 374
+Figure3.22 Valuesofh SLD straight-linedistancesto Bucharest.
+expanding a node that is not on the solution path; hence, its search cost is minimal. It is
+not optimal, however: the path via Sibiu and Fagaras to Bucharest is 32 kilometers longer
+than the path through Rimnicu Vilcea and Pitesti. This shows why the algorithm is called greedy at eachstepittriestogetasclosetothegoalasitcan.
+Greedy best-first tree search is also incomplete even in a finite state space, much like
+depth-first search. Consider the problem of getting from Iasi to Fagaras. The heuristic sug-
+gests that Neamt be expanded first because it is closest to Fagaras, but it is a dead end. The
+solution is to go first to Vaslui a step that is actually farther from the goal according to
+the heuristic and then to continue to Urziceni, Bucharest, and Fagaras. The algorithm will
+never find this solution, 

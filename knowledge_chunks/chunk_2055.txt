@@ -1,0 +1,27 @@
+ toswarmsofpenguins in Batman Returns. The NERO gameandthemeth-
+odsforlearningstrategies aredescribed by Bryantand Miikkulainen (2007).
+Recent book on multiagent systems include those by Weiss (2000a), Young (2004),
+Vlassis (2008), and Shoham and Leyton-Brown (2009). There is an annual conference on
+autonomous agentsandmultiagent systems(AAMAS).
+EXERCISES
+11.1 Thegoals wehave considered sofarall ask the planner to make the world satisfy the
+goal at just one time step. Not all goals can be expressed this way: you do not achieve the
+goal of suspending a chandelier above the ground by throwing it in the air. More seriously,
+you wouldn t want your spacecraft life-support system to supply oxygen one day but not
+the next. A maintenance goal is achieved when the agent s plan causes a condition to hold
+continuouslyfromagivenstateonward. Describehowtoextendtheformalismofthischapter
+tosupport maintenance goals.
+11.2 You have a number of trucks with which to deliver a set of packages. Each package
+startsatsomelocationonagridmap,andhasadestinationsomewhereelse. Eachtruckisdi-
+rectlycontrolled bymovingforwardandturning. Construct ahierarchy ofhigh-level actions
+forthisproblem. Whatknowledge aboutthesolution doesyourhierarchyencode?
+11.3 Suppose that a high-level action has exactly one implementation as a sequence of
+primitive actions. Give an algorithm for computing its preconditions and effects, given the
+completerefinementhierarchyandschemasfortheprimitive actions.
+11.4 Suppose thatthe optimistic reachable set ofahigh-level plan isasuperset ofthegoal
+set; can anything be concluded about whether the plan achieves the goal? What if the pes-
+simisticreachable setdoesn t intersect thegoalset? Explain.
+11.5 Writeanalgorithmthattakesaninitialstate(specifiedbyasetofpropositionalliterals)
+and a sequence of HL As (each defined by preconditions and angelic specifications of opti-
+mistic and pessimistic reachable sets) and computes optimistic and pessimistic descriptions
+ofthereachable s

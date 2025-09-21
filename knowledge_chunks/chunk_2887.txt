@@ -1,0 +1,29 @@
+Inrobotics, policies arecalled navigation functions. Thevalue
+FUNCTION
+function shown in Figure 25.16(a) can be converted into such a navigation function simply
+byfollowingthegradient.
+Justasin Chapter17,partialobservability makestheproblemmuchharder. Theresult-
+ing robot control problem is a partially observable MDP,or POMDP.In such situations, the
+robot maintains aninternal beliefstate, liketheonesdiscussed in Section25.3. Thesolution
+to a POMDP is a policy defined over the robot s belief state. Put differently, the input to
+thepolicyisanentire probability distribution. Thisenables therobottobase itsdecision not
+only on what it knows, but also on what it does not know. For example, if it is uncertain
+INFORMATION aboutacriticalstatevariable,itcanrationallyinvokeaninformationgatheringaction. This
+GATHERINGACTION
+is impossible inthe MD Pframework, since MD Psassume full observability. Unfortunately,
+techniquesthatsolve POMD Psexactlyareinapplicabletorobotics therearenoknowntech-
+niquesforhigh-dimensionalcontinuousspaces. Discretizationproduces POMD Psthatarefar
+too large to handle. Oneremedy isto makethe minimization of uncertainty acontrol objec-
+COASTAL tive. For example, the coastal navigation heuristic requires the robot to stay near known
+NAVIGATION
+landmarks to decrease its uncertainty. Another approach applies variants of the probabilis-
+tic roadmap planning method to the belief space representation. Such methods tend to scale
+bettertolargediscrete POMD Ps.
+25.5.1 Robustmethods
+Uncertaintycanalsobehandledusingso-calledrobustcontrolmethods(seepage836)rather
+ROBUSTCONTROL
+than probabilistic methods. A robust method is one that assumes a bounded amount of un-
+certainty in each aspect of a problem, but does not assign probabilities to values within the
+allowed interval. A robust solution is one that works no matter what actual values occur,
+providedtheyarewithintheassumedinterval. Anextremeformofrobustmethodisthecon-
+formant planningapproach given in Chapter11 it 

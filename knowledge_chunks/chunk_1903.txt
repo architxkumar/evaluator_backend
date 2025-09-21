@@ -1,0 +1,29 @@
+gnitivearchitectures that is,modelsofhu-
+ARCHITECTURES
+manreasoning such as ACT (Anderson, 1983)and SOAR (Lairdetal.,1987). Insuchsys-
+tems, the working memory of the system models human short-term memory, and the pro-
+ductionsarepartoflong-termmemory. Oneachcycleofoperation, productions arematched
+againsttheworkingmemoryoffacts. Aproduction whoseconditions aresatisfiedcanaddor
+delete facts in working memory. In contrast to the typical situation in databases, production
+systems often have many rules and relatively few facts. With suitably optimized matching
+technology, somemodernsystemscanoperateinrealtimewithtensofmillionsofrules.
+Irrelevant facts
+The final source of inefficiency in forward chaining appears to be intrinsic to the approach
+andalsoarisesinthepropositional context. Forwardchainingmakesallallowableinferences
+basedontheknownfacts,eveniftheyareirrelevanttothegoalathand. Inourcrimeexample,
+therewerenorulescapableofdrawingirrelevantconclusions, sothelackofdirectednesswas
+notaproblem. Inothercases(e.g.,ifmanyrulesdescribetheeatinghabitsof Americansand
+thepricesofmissiles), FOL-FC-ASK willgenerate manyirrelevant conclusions.
+One way to avoid drawing irrelevant conclusions is to use backward chaining, as de-
+scribedin Section9.4. Anothersolutionistorestrictforwardchainingtoaselectedsubsetof
+rules, as in PL-FC-ENTAILS? (page 258). A third approach has emerged in the field of de-
+DEDUCTIVE ductive databases, which are large-scale databases, like relational databases, but which use
+DATABASES
+forwardchainingasthestandardinferencetoolratherthan SQ Lqueries. Theideaistorewrite
+the rule set, using information from the goal, so that only relevant variable bindings those
+belongingtoaso-calledmagicset areconsideredduringforwardinference. Forexample,if
+MAGICSET
+thegoalis Criminal(West),therulethatconcludes Criminal(x)willberewrittentoinclude
+anextraconjunctthatconstrains thevalueof x:
+Magic(x) American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x).
+4 Thewordproductio

@@ -1,0 +1,28 @@
+ce t 1 differsfrom t 1 .
+robot
+landmark
+Figure25.12 Exampleoflocalizationusingtheextended Kalmanfilter. Therobotmoves
+ona straightline. As it progresses,its uncertaintyincreasesgradually,asillustrated bythe
+errorellipses. Whenitobservesalandmarkwithknownposition,theuncertaintyisreduced.
+the state vector to include the locations of the landmarks in the environment. Luckily, the
+EK Fupdatescalesquadratically, soforsmallmaps(e.g.,afewhundredlandmarks)thecom-
+putation is quite feasible. Richer maps are often obtained using graph relaxation methods,
+similartothe Bayesian network inference techniques discussed in Chapter14. Expectation maximization isalsousedfor SLAM.
+25.3.2 Othertypes ofperception
+Not all of robot perception is about localization or mapping. Robots also perceive the tem-
+perature, odors, acoustic signals, andsoon. Manyofthese quantities canbeestimated using
+variants of dynamic Bayes networks. Allthat is required for such estimators are conditional
+probability distributions that characterize the evolution ofstate variables overtime, andsen-
+sormodelsthatdescribe therelationofmeasurementstostatevariables.
+It is also possible to program a robot as a reactive agent, without explicitly reasoning
+aboutprobability distributions overstates. Wecoverthat approach in Section25.6.3.
+The trend in robotics is clearly towards representations with well-defined semantics.
+Section25.3. Robotic Perception 985
+(a) (b) (c)
+Figure 25.13 Sequence of drivable surface classifier results using adaptive vision. In
+(a)onlytheroadisclassifiedasdrivable(stripedarea). The V-shapeddarklineshowswhere
+thevehicleisheading. In(b)thevehicleiscommandedtodriveofftheroad,ontoa grassy
+surface, and the classifier is beginningto classify some of the grass as drivable. In (c) the
+vehiclehasupdateditsmodelofdrivablesurfacetocorrespondtograssaswellasroad.
+Probabilistictechniquesoutperformotherapproachesinmanyhardperceptualproblemssuch
+aslocalizationandmapping. However,statisticaltechniquesaresometim

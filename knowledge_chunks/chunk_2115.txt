@@ -1,0 +1,26 @@
+l metric representation. When such a representation is necessary,
+techniques developedinrobotics(Chapter25)canbeused.
+PSYCHOLOGICAL Psychological reasoning: Psychological reasoning involves the development of a working
+REASONING
+psychology for artificial agents to use in reasoning about themselves and other agents. This
+is often based on so-called folk psychology, the theory that humans in general are believed
+to use in reasoning about themselves and other humans. When AI researchers provide their
+artificialagentswithpsychological theoriesforreasoning aboutotheragents,thetheoriesare
+frequentlybasedontheresearchers descriptionofthelogicalagents owndesign. Psycholog-
+icalreasoning iscurrently mostuseful within thecontext ofnatural language understanding,
+wherediviningthespeaker s intentions isofparamount importance.
+Minker(2001)collectspapersbyleadingresearchersinknowledgerepresentation,sum-
+marizing 40 years of work in the field. The proceedings of the international conferences on
+Principles of Knowledge Representation and Reasoningprovide themostup-to-date sources
+for work in this area. Readings in Knowledge Representation (Brachman and Levesque,
+1985) and Formal Theories of the Commonsense World (Hobbs and Moore, 1985) are ex-
+cellent anthologies on knowledge representation; the former focuses more on historically
+important papers in representation languages and formalisms, the latter onthe accumulation
+of the knowledge itself. Davis (1990), Stefik (1995), and Sowa (1999) provide textbook in-
+troductions toknowledgerepresentation, van Harmelen etal.(2007)contributes ahandbook,
+andaspecialissueof AI Journal coversrecentprogress(Davisand Morgenstern, 2004). The
+biennial conference on Theoretical Aspects of Reasoning About Knowledge (TARK) covers
+applications ofthetheoryofknowledgein AI,economics, anddistributed systems.
+EXERCISES
+12.1 Define an ontology in first-order logic for tic-tac-toe. The ontology should contain
+situations,actions,squares,players,marks(X,O,orbl

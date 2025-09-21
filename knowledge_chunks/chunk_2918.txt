@@ -1,0 +1,28 @@
+ DARPA in 2004 and 2005, required
+CHALLENGE
+autonomous robots to travel more than 100 miles through unrehearsed desert terrain in less
+than 10 hours (Buehler et al., 2006). In the original event in 2004, no robot traveled more
+than 8miles, leading manyto believe the prize would neverbe claimed. In 2005, Stanford s
+robot STANLEY wonthe competition in just under 7 hours of travel (Thrun, 2006). DARPA
+thenorganizedthe Urban Challenge,acompetitioninwhichrobotshadtonavigate60miles
+URBANCHALLENGE
+in an urban environment with other traffic. Carnegie Mellon University s robot BOSS took
+firstplaceandclaimedthe 2millionprize(Urmsonand Whittaker, 2008). Earlypioneersin
+thedevelopmentofroboticcarsincluded Dickmannsand Zapp(1987)and Pomerleau(1993).
+Twoearly textbooks, by Dudek and Jenkin (2000) and Murphy (2000), cover robotics
+generally. A more recent overview is due to Bekey (2008). An excellent book on robot
+manipulation addresses advanced topics such as compliant motion (Mason, 2001). Robot
+motion planning is covered in Choset et al. (2004) and La Valle (2006). Thrun et al. (2005)
+provide an introduction into probabilistic robotics. The premiere conference for robotics is
+Robotics: Science and Systems Conference, followed bythe IEEE International Conference
+on Roboticsand Automation. Leadingroboticsjournalsinclude IEEE Roboticsand Automa-
+tion,the International Journalof Robotics Research,and Roboticsand Autonomous Systems.
+EXERCISES
+25.1 Monte Carlolocalization isbiasedforanyfinitesamplesize i.e., theexpected value
+of the location computed by the algorithm differs from the true expected value because of
+thewayparticlefilteringworks. Inthisquestion, youareaskedtoquantify thisbias.
+Tosimplify,consideraworldwithfourpossiblerobotlocations: X x ,x ,x ,x .
+1 2 3 4
+Initially, we draw N 1 samples uniformly from among those locations. As usual, it is
+perfectly acceptable if morethan one sample is generated forany of the locations X. Let Z
+bea Booleansensorvariable characterized byt

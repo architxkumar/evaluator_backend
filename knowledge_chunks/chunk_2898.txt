@@ -1,0 +1,28 @@
+ PD controller, which was able to keep a
+complexrobotarmontarget withoutanexplicitmodeloftherobotdynamics;itdid,however,
+require a reference path generated from a kinematic model.) Forthe hexapod robot we first
+choose agait, orpattern ofmovementofthelimbs. Onestatically stable gaitistofirstmove
+GAIT
+the right front, right rear, and left center legs forward (keeping the other three fixed), and
+then move the other three. This gait works well on flat terrain. On rugged terrain, obstacles
+may prevent a leg from swinging forward. This problem can be overcome by a remarkably
+simple control rule: when a leg s forward motion is blocked, simply retract it, lift it higher,
+1002 Chapter 25. Robotics
+Figure25.25 Multiple exposuresofan RC helicopterexecutinga flip based ona policy
+learnedwithreinforcementlearning.Imagescourtesyof Andrew Ng,Stanford University.
+andtry again. Theresulting controller isshownin Figure25.24(b) asafinitestate machine;
+itconstitutes areflex agent with state, where the internal state isrepresented by the index of
+thecurrentmachinestate(s through s ).
+1 4
+Variantsofthissimplefeedback-driven controllerhavebeenfoundtogenerate remark-
+ably robust walking patterns, capable ofmaneuvering therobot overrugged terrain. Clearly,
+such a controller is model-free, and it does not deliberate or use search for generating con-
+trols. Environmental feedbackplaysacrucialroleinthecontroller sexecution. Thesoftware
+alonedoesnotspecifywhatwillactuallyhappenwhentherobotisplacedinanenvironment.
+Behavior that emerges through the interplay of a (simple) controller and a (complex) envi-
+EMERGENT ronment is often referred to as emergent behavior. Strictly speaking, all robots discussed
+BEHAVIOR
+in this chapter exhibit emergent behavior, due to the fact that no model is perfect. Histori-
+cally, however, the term has been reserved for control techniques that do not utilize explicit
+environmental models. Emergentbehaviorisalsocharacteristic ofbiological organisms.
+25.6.4 Reinforceme

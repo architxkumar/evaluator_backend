@@ -1,0 +1,37 @@
+nthis plane. Because ofgravity, typical objects don t floatinairbut aresupported by
+thisgroundplane,andwecanexploittheveryspecialgeometryofthisviewingscenario.
+Let us work out the projection of objects of different heights and at different loca-
+tions on the ground plane. Suppose that the eye, or camera, is at a height h above
+c
+theground plane. Consider an object of height Y resting on the ground plane, whose
+bottom is at (X, h ,Z) and top is at (X, Y h ,Z). The bottom projects to the
+c c
+imagepoint(f X Z, fh Z)andthetopto(f X Z,f( Y h ) Z). Thebottomsof
+c c
+nearerobjects(small Z)projecttopointslowerintheimageplane;fartherobjects have
+bottomsclosertothehorizon.
+24.4.7 Objects and thegeometric structure ofscenes
+A typical adult human head is about 9 inches long. This means that for someone who is 43
+feetaway,theanglesubtendedbytheheadatthecamerais1degree. Ifweseeapersonwhose
+head appears to subtend just half a degree, Bayesian inference suggests we are looking at a
+normal person who is 86 feet away, rather than someone with a half-size head. This line of
+reasoning suppliesuswithamethodtochecktheresultsofapedestrian detector, aswellasa
+methodtoestimatethedistancetoanobject. Forexample,allpedestrians areaboutthesame
+height,andtheytendtostandonagroundplane. Ifweknowwherethehorizonisinanimage,
+wecanrankpedestrians bydistancetothecamera. Thisworks becauseweknowwheretheir
+Section24.4. Reconstructing the3DWorld 955
+Image plane
+Horizon
+Ground plane
+C
+C B
+B
+A
+A
+Figure 24.22 In an image of people standing on a ground plane, the people whose feet
+areclosertothehorizonintheimagemustbefartheraway(topdrawing). Thismeansthey
+mustlooksmallerintheimage(leftlowerdrawing).Thismeansthatthesizeandlocationof
+realpedestriansinanimagedependupononeanotherandonthelocationofthehorizon.To
+exploitthis, we need to identify the groundplane, which is done using shape-from-texture
+methods.Fromthisinformation,andfromsomelikelypedestrians,wecanrecoverahorizon
+asshowninthecenterimage.Ontheright,accept

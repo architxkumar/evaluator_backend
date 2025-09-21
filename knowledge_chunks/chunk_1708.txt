@@ -1,0 +1,33 @@
+ X ASSIGNMENT i
+v ,X v ,... . Anassignment that does not violate anyconstraints iscalled aconsistent
+CONSISTENT i j j
+COMPLETE orlegalassignment. Acompleteassignmentisoneinwhicheveryvariable isassigned, and
+ASSIGNMENT
+a solution to a CSP is a consistent, complete assignment. A partial assignment is one that
+SOLUTION
+PARTIAL assignsvaluestoonlysomeofthevariables.
+ASSIGNMENT
+6.1.1 Exampleproblem: Mapcoloring
+Suppose that, having tired of Romania, we are looking at a map of Australia showing each
+of its states and territories (Figure 6.1(a)). We are given the task of coloring each region
+either red, green, orblue in such away that no neighboring regions have the samecolor. To
+formulatethisasa CSP,wedefinethevariables tobetheregions
+X WA,NT,Q,NSW,V,SA,T .
+The domain of each variable is the set D red,green,blue . The constraints require
+i
+neighboring regionstohavedistinctcolors. Sincetherearenineplaceswhereregionsborder,
+therearenineconstraints:
+C SA (cid:7) WA,SA (cid:7) NT,SA (cid:7) Q,SA (cid:7) NSW,SA (cid:7) V,
+WA (cid:7) NT,NT (cid:7) Q,Q(cid:7) NSW,NSW (cid:7) V .
+Hereweareusingabbreviations; SA (cid:7) WAisashortcutfor(cid:16)(SA,WA),SA (cid:7) WA(cid:17),where
+SA (cid:7) WAcanbefullyenumerated inturnas (red,green),(red,blue),(green,red),(green,blue),(blue,red),(blue,green) .
+Therearemanypossible solutions tothisproblem, suchas WA red,NT green,Q red,NSW green,V red,SA blue,T red .
+It can be helpful to visualize a CSP as a constraint graph, as shown in Figure 6.1(b). The
+CONSTRAINTGRAPH
+nodes ofthegraph correspond tovariables oftheproblem, andalink connects anytwovari-
+ablesthatparticipate inaconstraint.
+Why formulate a problem as a CSP? One reason is that the CS Ps yield a natural rep-
+resentation for a wide variety of problems; if you already have a CSP-solving system, it is
+ofteneasiertosolveaproblemusingitthantodesignacustomsolutionusinganothersearch
+technique. Inaddition, CS Psolverscanbefasterthanstate-space searchers because the CSP
+solver canquickly elimin

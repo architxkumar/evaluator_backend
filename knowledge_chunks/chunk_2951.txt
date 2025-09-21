@@ -1,0 +1,22 @@
+done, and how they should be handled. See the
+handbook on the Ethics of Computing (Berleur and Brunnstein, 2001). AI, however, seems
+toposesomefreshproblemsbeyondthatof,say,building bridgesthatdon tfalldown: Peoplemightlosetheirjobstoautomation. Peoplemighthavetoomuch(ortoolittle)leisuretime. Peoplemightlosetheirsenseofbeingunique. AIsystemsmightbeusedtowardundesirable ends. Theuseof AIsystemsmightresultinalossofaccountability. Thesuccessof AImightmeantheendofthehumanrace.
+Wewilllookateachissueinturn.
+Peoplemightlose theirjobsto automation. Themodern industrial economy has be-
+comedependent oncomputers ingeneral,andselect AIprogramsinparticular. Forexample,
+much of the economy, especially in the United States, depends on the availability of con-
+sumer credit. Credit card applications, charge approvals, and fraud detection are now done
+by AI programs. One could say that thousands of workers have been displaced by these AI
+programs, but in fact if you took away the AI programs these jobs would not exist, because
+human laborwould addanunacceptable costtothetransactions. Sofar, automation through
+information technology in general and AI in particular has created more jobs than it has
+eliminated, and has created more interesting, higher-paying jobs. Nowthat thecanonical AI
+program isan intelligent agent designed toassistahuman,lossofjobsislessofaconcern
+than it was when AI focused on expert systems designed to replace humans. But some
+researchersthinkthatdoingthecompletejobistherightgoalfor AI.Inreflectingonthe25th
+Anniversaryofthe AAAI,Nils Nilsson(2005)setasachallenge thecreation ofhuman-level
+AIthat could pass theemployment testrather than the Turing Test arobot that could learn
+todoanyoneofarangeofjobs. Wemayendupinafuturewhereunemploymentishigh,but
+eventheunemployed serveasmanagers oftheirowncadreofrobotworkers.
+Peoplemighthavetoomuch(ortoolittle)leisuretime. Alvin Tofflerwrotein Future
+Shock (1970), The work week has been cut by 50 percent since the turn of the cen

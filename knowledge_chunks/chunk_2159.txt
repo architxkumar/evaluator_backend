@@ -1,0 +1,23 @@
+rrationally insomecases. The full joint probability distribution specifies the probability of each complete as-
+signment of values to random variables. It is usually too large to create or use in its
+explicitform,butwhenitisavailableitcanbeusedtoanswerqueriessimplybyadding
+upentriesforthepossible worldscorresponding tothequerypropositions. Absoluteindependencebetween subsets ofrandom variables allowsthe fulljoint dis-
+tribution tobefactored intosmallerjointdistributions, greatly reducing itscomplexity.
+Absoluteindependence seldomoccursinpractice. Bayes rule allows unknown probabilities to be computed from known conditional
+probabilities, usuallyinthecausaldirection. Applying Bayes rulewithmanypiecesof
+evidencerunsintothesamescalingproblemsasdoesthefull jointdistribution. Conditionalindependencebrought about bydirect causal relationships inthedomain
+might allow the full joint distribution to be factored into smaller, conditional distri-
+butions. The naive Bayes model assumes the conditional independence of all effect
+variables, givenasinglecausevariable, andgrowslinearly withthenumberofeffects. Awumpus-worldagentcancalculateprobabilities forunobservedaspectsoftheworld,
+therebyimprovingonthedecisionsofapurelylogicalagent. Conditionalindependence
+makesthesecalculations tractable.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Probability theory was invented as a way of analyzing games of chance. In about 850 A.D.
+the Indianmathematician Mahaviracaryadescribedhowtoarrangeasetofbetsthatcan tlose
+(what we now call a Dutch book). In Europe, the first significant systematic analyses were
+produced by Girolamo Cardano around 1565, although publication wasposthumous (1663).
+Bythattime,probability hadbeenestablished asamathematical discipline duetoaseriesof
+504 Chapter 13. Quantifying Uncertainty
+results established in a famous correspondence between Blaise Pascal and Pierre de Fermat
+in1654. Aswithprobabilityitself,theresultswereinitiallymotivatedbygamblingproblems
+(see Exercise 13.9). 

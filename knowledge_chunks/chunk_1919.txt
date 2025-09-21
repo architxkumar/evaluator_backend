@@ -1,0 +1,29 @@
+liftedversion ofthepropositional reso-
+lution rule given on page 253. Two clauses, which are assumed to be standardized apart so
+that they share no variables, can be resolved if they contain complementary literals. Propo-
+sitional literals are complementary if one is the negation of the other; first-order literals are
+complementary ifoneunifieswiththenegationoftheother. Thus,wehave
+(cid:3) (cid:3) , m m
+1 k 1 n
+SUBST( ,(cid:3) 1 (cid:3) i 1 (cid:3) i 1 (cid:3) k m 1 m j 1 m j 1 m n )
+where UNIFY((cid:3)
+i
+, m
+j
+) . Forexample, wecanresolvethetwoclauses Animal(F(x)) Loves(G(x),x) and Loves(u,v) Kills(u,v) by eliminating the complementary literals Loves(G(x),x) and Loves(u,v), with unifier u G(x),v x , toproducetheresolvent clause Animal(F(x)) Kills(G(x),x) .
+This rule is called the binary resolution rule because it resolves exactly two literals. The
+BINARYRESOLUTION
+binary resolution rulebyitself does notyield acomplete inference procedure. Thefullreso-
+lutionruleresolvessubsetsofliteralsineachclausethatareunifiable. Analternativeapproach
+is to extend factoring the removal of redundant literals to the first-order case. Proposi-
+tional factoring reduces two literals to one if they are identical; first-order factoring reduces
+twoliterals toone iftheyare unifiable. Theunifiermustbeapplied tothe entire clause. The
+combination ofbinaryresolution andfactoring iscomplete.
+9.5.3 Exampleproofs
+Resolution proves that KB by proving KB unsatisfiable, that is, by deriving the
+empty clause. The algorithmic approach is identical to the propositional case, described in
+348 Chapter 9. Inference in First-Order Logic American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x) Criminal(West)
+American(West) American(West) Weapon(y) Sells(West,y,z) Hostile(z) Missile(x) Weapon(x) Weapon(y) Sells(West,y,z) Hostile(z)
+Missile(M1) Missile(y) Sells(West,y,z) Hostile(z) Missile(x) Owns(Nono,x) Sells(West,x,Nono) Sells(West,M1,z) Hostile(z)
+Missile(M1) Missile(M1) Owns(Nono,M1) Hostile(Nono)
+Owns

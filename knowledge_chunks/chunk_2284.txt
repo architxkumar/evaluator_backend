@@ -1,0 +1,35 @@
+filter update cycle for a random walk with a prior
+given by 0 0.0 and 0 1.0, transition noise given by x 2.0, sensor noise given by z 1.0,andafirstobservationz
+1 2.5(markedonthex-axis). Noticehowtheprediction
+P(x )isflattenedout,relativeto P(x ), bythetransitionnoise. Noticealso thatthemean
+1 0
+oftheposteriordistribution P(x z )isslightlytotheleftoftheobservationz becausethe
+1 1 1
+meanisaweightedaverageofthepredictionandtheobservation.
+Thus,afteroneupdatecycle,wehaveanew Gaussiandistribution forthestatevariable.
+Fromthe Gaussianformulain Equation(15.19),weseethatthenewmeanandstandard
+deviation canbecalculated fromtheoldmeanandstandard deviation asfollows:
+( 2 2)z 2 ( 2 2) 2 t x t 1 z t and 2 t x z . (15.20)
+t 1 2 2 2 t 1 2 2 2
+t x z t x z
+Figure15.10showsoneupdatecycleforparticularvaluesofthetransitionandsensormodels.
+Equation (15.20) plays exactly the samerole asthe general filtering equation (15.5) or
+the HM Mfilteringequation (15.12). Becauseofthespecial natureof Gaussiandistributions,
+however, the equations have some interesting additional properties. First, we can interpret
+the calculation for the new mean as simply a weighted mean of the new observation
+t 1
+z and theold mean . Ifthe observation is unreliable, then 2 islarge and wepay more
+t 1 t z
+attention to the old mean; if the old mean is unreliable ( 2 is large) or the process is highly
+t
+unpredictable ( 2 is large), then we pay more attention to the observation. Second, notice
+x
+that the update for the variance 2 is independent of the observation. We can therefore
+t 1
+compute in advance what the sequence of variance values will be. Third, the sequence of
+variance values converges quickly to a fixed value that depends only on 2 and 2, thereby
+x z
+substantially simplifying thesubsequent calculations. (See Exercise15.12.)
+15.4.3 The general case
+The preceding derivation illustrates the key property of Gaussian distributions that allows
+Kalmanfiltering towork: thefact that the exponent isaquadratic form. This

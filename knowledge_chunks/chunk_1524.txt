@@ -1,0 +1,34 @@
+e in the search tree, generated in this case by a loopy path. Considering
+REPEATEDSTATE
+such loopy paths means that the complete search tree for Romania is infinite because there
+LOOPYPATH
+is no limit to how often one can traverse a loop. On the other hand, the state space the
+mapshownin Figure3.2 hasonly 20states. Aswediscuss in Section 3.4,loops cancause
+76 Chapter 3. Solving Problemsby Searching
+certainalgorithmstofail,makingotherwisesolvableproblemsunsolvable. Fortunately,there
+isnoneedtoconsiderloopypaths. Wecanrelyonmorethanintuition forthis: because path
+costs are additive and step costs are nonnegative, a loopy path to any given state is never
+betterthanthesamepathwiththeloopremoved.
+Loopypathsareaspecialcaseofthemoregeneralconceptofredundantpaths,which
+REDUNDANTPATH
+existwheneverthereismorethanonewaytogetfromonestatetoanother. Considerthepaths
+Arad Sibiu (140 km long) and Arad Zerind Oradea Sibiu (297 km long). Obviously, the
+secondpathisredundant it s justaworsewaytogettothesamestate. Ifyouareconcerned
+about reaching the goal, there s never any reason to keep more than one path to any given
+state, because any goal state that is reachable by extending one path is also reachable by
+extending theother.
+In some cases, it is possible to define the problem itself so as to eliminate redundant
+paths. Forexample, if we formulate the 8-queens problem (page 71) so that a queen can be
+placedinanycolumn,theneachstatewithnqueenscanbereachedbyn!differentpaths;but
+ifwereformulatetheproblemsothateachnewqueenisplacedintheleftmostemptycolumn,
+theneachstatecanbereached onlythrough onepath.
+(a) The initial state Arad
+Sibiu Timisoara Zerind
+Arad Fagaras Oradea Rimnicu Vilcea Arad Lugoj Arad Oradea
+(b) After expanding Arad Arad
+Sibiu Timisoara Zerind
+Arad Fagaras Oradea Rimnicu Vilcea Arad Lugoj Arad Oradea
+(c) After expanding Sibiu Arad
+Sibiu Timisoara Zerind
+Arad Fagaras Oradea Rimnicu Vilcea Arad Lugoj Arad Oradea
+Figure 3.6 Partial search trees for finding a route from Arad 

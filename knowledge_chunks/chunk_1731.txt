@@ -1,0 +1,28 @@
+ branching on these variables altogether by propagat-
+ing information from WA and Q. A second point to notice is that after V blue, the do-
+main of SA is empty. Hence, forward checking has detected that the partial assignment WA red,Q green,V blue is inconsistent with the constraints of the problem, and
+thealgorithm willtherefore backtrack immediately.
+For many problems the search will be more effective if we combine the MRV heuris-
+tic with forward checking. Consider Figure 6.7 after assigning WA red . Intuitively, it
+seems that that assignment constrains itsneighbors, NT and SA, soweshould handle those
+218 Chapter 6. Constraint Satisfaction Problems
+WA NT Q NSW V SA T
+Initial domains R G B R G B R G B R G B R G B R G B R G B
+After WA red R G B R G B R G B R G B G B R G B
+After Q green R B G R B R G B B R G B
+After V blue R B G R B R G B
+Figure 6.7 The progress of a map-coloring search with forward checking. WA red
+is assigned first; then forward checking deletes red from the domains of the neighboring
+variables NT and SA. After Q green is assigned, green is deleted from the domainsof
+NT,SA,and NSW. After V blue isassigned,blue isdeletedfromthedomainsof NSW
+and SA,leaving SAwithnolegalvalues.
+variables next, and then all the other variables will fall into place. That s exactly what hap-
+pens with MRV:NT and SAhave two values, soone of them ischosen first, then the other,
+then Q, NSW, and V in order. Finally T still has three values, and any one of them works.
+Wecanviewforwardchecking asanefficientwaytoincrementally compute theinformation
+thatthe MR Vheuristic needstodoitsjob.
+Althoughforwardcheckingdetectsmanyinconsistencies, itdoesnotdetectallofthem.
+The problem is that it makes the current variable arc-consistent, but doesn t look ahead and
+makealltheothervariablesarc-consistent. Forexample,considerthethirdrowof Figure6.7.
+Itshowsthatwhen WAisred and Qisgreen,both NT and SAareforcedtobeblue. Forward
+checking does notlook farenough ahead tonotice that thisis aninc

@@ -1,0 +1,33 @@
+enwecanconstructa
+newdummygoalstatewhoseimmediatepredecessors arealltheactualgoalstates. Butifthe
+goal isan abstract description, such as thegoal that no queen attacks another queen in the
+n-queensproblem,thenbidirectional searchisdifficulttouse.
+3.4.7 Comparing uninformed search strategies
+Figure 3.21 compares search strategies in terms of the four evaluation criteria set forth in
+Section 3.3.2. This comparison is for tree-search versions. For graph searches, the main
+differencesarethatdepth-firstsearchiscompleteforfinitestatespacesandthatthespaceand
+timecomplexities arebounded bythesizeofthestatespace.
+Breadth- Uniform- Depth- Depth- Iterative Bidirectional
+Criterion
+First Cost First Limited Deepening (ifapplicable)
+Complete? Yesa Yesa,b No No Yesa Yesa,d
+Time O(bd) O(b1 (cid:2)C (cid:2)(cid:3)) O(bm) O(b(cid:3)) O(bd) O(bd 2)
+Space O(bd) O(b1 (cid:2)C (cid:2)(cid:3)) O(bm) O(b(cid:3)) O(bd) O(bd 2)
+Optimal? Yesc Yes No No Yesc Yesc,d
+Figure3.21 Evaluationoftree-searchstrategies. bisthebranchingfactor; disthedepth
+ofthe shallowestsolution; m isthe maximumdepthofthe searchtree; l isthe depthlimit.
+Superscriptcaveatsareasfollows: a completeifbisfinite; b completeifstepcosts (cid:2)for
+positive(cid:2);coptimalifstepcostsareallidentical;difbothdirectionsusebreadth-firstsearch.
+92 Chapter 3. Solving Problemsby Searching
+3.5 INFORMED (HEURISTIC) SEARCH STRATEGIES
+Thissectionshowshowaninformedsearchstrategy onethatusesproblem-specificknowl-
+INFORMEDSEARCH
+edgebeyondthedefinitionoftheproblemitself canfindsolutionsmoreefficientlythancan
+anuninformedstrategy.
+The general approach we consider is called best-first search. Best-first search is an
+BEST-FIRSTSEARCH
+instance of the general TREE-SEARCH or GRAPH-SEARCH algorithm in which a node is
+EVALUATION selected for expansion based on an evaluation function, f(n). The evaluation function is
+FUNCTION
+construed as a cost estimate, so the node with the lowest evaluation is expanded first. The
+implementation of best-first graph se

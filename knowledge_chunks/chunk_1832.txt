@@ -1,0 +1,33 @@
+er to
+deal withpartial information, using disjunction and negation. Propositional logic hasathird
+property that is desirable in representation languages, namely, compositionality. In a com-
+COMPOSITIONALITY
+positional language, the meaning of asentence is a function of the meaning of its parts. For
+example, the meaning of S S is related to the meanings of S and S . It
+1,4 1,2 1,4 1,2
+wouldbeverystrange if S meantthatthere isastench insquare 1,4 and S meant
+1,4 1,2
+thatthereisastenchinsquare 1,2 ,but S S meantthat Franceand Polanddrew1 1
+1,4 1,2
+in last week s ice hockey qualifying match. Clearly, noncompositionality makes life much
+moredifficultforthereasoning system.
+As we saw in Chapter 7, however, propositional logic lacks the expressive power to
+concisely describe anenvironment withmanyobjects. Forexample, wewereforced towrite
+aseparate ruleaboutbreezes andpitsforeachsquare, suchas
+B (P P ).
+1,1 1,2 2,1
+In English,ontheotherhand,itseemseasyenoughtosay,onceandforall, Squaresadjacent
+topitsarebreezy. Thesyntaxandsemanticsof Englishsomehowmakeitpossibletodescribe
+theenvironment concisely.
+8.1.1 The languageofthought
+Natural languages (such as English or Spanish) are very expressive indeed. We managed to
+writealmostthiswholebookinnatural language, withonlyoccasional lapsesintootherlan-
+guages (including logic, mathematics, and the language of diagrams). There is a long tradi-
+tioninlinguisticsandthephilosophyoflanguagethatviewsnaturallanguageasadeclarative
+knowledge representation language. If we could uncover the rules for natural language, we
+could use it in representation and reasoning systems and gain the benefit of the billions of
+pagesthathavebeenwritteninnaturallanguage.
+Themodernviewofnaturallanguageisthatitservesaasamediumforcommunication
+ratherthanpurerepresentation. Whenaspeakerpoints andsays, Look! thelistenercomes
+to know that, say, Superman has finally appeared over the rooftops. Yet we would not want
+to say that the sentence Look! represents that fact

@@ -1,0 +1,47 @@
+es) is called a
+parametricmodel.
+PARAMETRICMODEL
+No matter how much data you throw at a parametric model, it won t change its mind
+abouthowmanyparametersitneeds. Whendatasetsaresmall,itmakessensetohaveastrong
+restrictionontheallowablehypotheses, toavoidoverfitting. Butwhentherearethousandsor
+millionsorbillionsofexamplestolearnfrom,itseemslike abetterideatoletthedataspeak
+for themselves rather than forcing them to speak through a tiny vector of parameters. If the
+data say that the correct answer is a very wiggly function, we shouldn t restrict ourselves to
+linearorslightly wigglyfunctions.
+NONPARAMETRIC Anonparametricmodelisonethatcannotbecharacterizedbyaboundedsetofparam-
+MODEL
+eters. Forexample, suppose that each hypothesis wegenerate simply retains within itself all
+ofthetraining examples andusesallofthemtopredict thenextexample. Suchahypothesis
+family would benonparametric because the effective number of parameters isunbounded INSTANCE-BASED it grows with the number of examples. This approach is called instance-based learning or
+LEARNING
+memory-basedlearning. Thesimplestinstance-basedlearningmethodistablelookup: take
+TABLELOOKUP
+allthetrainingexamples,puttheminalookuptable,andthenwhenaskedforh(x),seeifxis
+inthe table; ifitis, return thecorresponding y. Theproblem withthismethod is thatitdoes
+notgeneralize well: whenxisnotinthetableallitcandoisreturnsomedefault value.
+738 Chapter 18. Learningfrom Examples
+7.5 7.5
+7 7
+6.5 6.5
+6 6
+5.5 5.5
+x x
+1 5 1 5
+4.5 4.5
+4 4
+3.5 3.5
+3 3
+2.5 2.5
+4.5 5 5.5 6 6.5 7 4.5 5 5.5 6 6.5 7
+x x
+2 2
+(k 1) (k 5)
+Figure18.26 (a)Ak-nearest-neighbormodelshowingtheextentoftheexplosionclassfor
+thedatain Figure18.15,withk 1. Overfittingisapparent. (b)With k 5,theoverfitting
+problemgoesawayforthisdataset.
+18.8.1 Nearestneighbor models
+Wecanimproveontablelookupwithaslightvariation: givenaqueryx ,findthekexamples
+q
+NEAREST that are nearest to x . This is called k-nearest neighbors lookup. We ll use the notation
+NEIGHBORS q
+NN(k,x )todenotethesetofk n

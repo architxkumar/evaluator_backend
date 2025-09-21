@@ -1,0 +1,39 @@
+f
+the airports: (x ,y ), (x ,y ), and (x ,y ). This is a six-dimensional space; we also say
+1 1 2 2 3 3
+that states are defined by six variables. (In general, states are defined by an n-dimensional
+VARIABLE
+vector of variables, x.) Moving around in this space corresponds to moving one or more of
+the airports on the map. The objective function f(x ,y ,x ,y ,x ,y ) is relatively easy to
+1 1 2 2 3 3
+compute for any particular state once we compute the closest cities. Let C be the set of
+i
+citieswhoseclosestairport(inthecurrentstate)isairporti. Then,intheneighborhood ofthe
+currentstate,wherethe C sremainconstant, wehave
+i
+(cid:12)3 (cid:12)
+f(x ,y ,x ,y ,x ,y ) (x x )2 (y y )2 . (4.1)
+1 1 2 2 3 3 i c i c
+i 1c Ci
+This expression is correct locally, but not globally because the sets C are (discontinuous)
+i
+functions ofthestate.
+Onewaytoavoidcontinuousproblemsissimplytodiscretizetheneighborhoodofeach
+DISCRETIZATION
+state. Forexample, we can move only one airport at a time in either the x or y direction by
+a fixed amount . With 6 variables, this gives 12 possible successors for each state. We
+can then apply any of the local search algorithms described previously. We could also ap-
+ply stochastic hill climbing and simulated annealing directly, without discretizing the space.
+Thesealgorithmschoosesuccessorsrandomly,whichcanbedonebygeneratingrandomvec-
+torsoflength .
+Many methods attempt to use the gradient of the landscape to find a maximum. The
+GRADIENT
+gradientoftheobjectivefunctionisavector f thatgivesthemagnitudeanddirectionofthe
+steepest slope. Forourproblem,wehave
+(cid:13) (cid:14) f f f f f f f , , , , , . x y x y x y
+1 1 2 2 3 3
+Insomecases,wecanfindamaximumbysolvingtheequation f 0. (Thiscouldbedone,
+forexample,ifwewereplacingjustoneairport;thesolutionisthearithmeticmeanofallthe
+cities coordinates.) In many cases, however, this equation cannot be solved in closed form.
+For example, with three airports, the expression for the gradient depends on what cities are
+closest

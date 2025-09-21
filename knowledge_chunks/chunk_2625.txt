@@ -1,0 +1,27 @@
+
+some way. The MAP (or MDL) approach simply subtracts a penalty from the likelihood of
+each structure (after parameter tuning) before comparing different structures. The Bayesian
+approach places ajoint prioroverstructures and parameters. There are usually fartoo many
+structures to sum over (superexponential in the number of variables), so most practitioners
+use MCM Ctosampleoverstructures.
+Penalizingcomplexity(whetherby MA Por Bayesianmethods)introducesanimportant
+connection between the optimal structure and the nature of the representation for the condi-
+tional distributions in the network. With tabular distributions, the complexity penalty for a
+node s distribution growsexponentially with thenumber of parents, but with, say, noisy-OR
+distributions, itgrows only linearly. This means that learning with noisy-OR (orother com-
+pactlyparameterized)modelstendstoproducelearnedstructureswithmoreparentsthandoes
+learning withtabulardistributions.
+20.2.6 Density estimationwithnonparametric models
+Itispossibletolearnaprobabilitymodelwithoutmakinganyassumptionsaboutitsstructure
+and parameterization by adopting the nonparametric methods of Section 18.8. The task of
+NONPARAMETRIC nonparametric density estimation is typically done in continuous domains, such as that
+DENSITYESTIMATION
+shown in Figure 20.7(a). Thefigure shows aprobability density function on aspace defined
+by two continuous variables. In Figure 20.7(b) we see a sample of data points from this
+densityfunction. Thequestion is,canwerecoverthemodelfromthesamples?
+First we will consider k-nearest-neighbors models. (In Chapter 18 we saw nearest-
+neighbor models for classification and regression; here we see them for density estimation.)
+Givenasampleofdatapoints,toestimatetheunknownprobability densityataquerypointx
+wecansimplymeasurethedensityofthedatapointsintheneighborhoodofx. Figure20.7(b)
+shows two query points (small squares). For each query point we have drawn the smallest
+circle that encloses 10neighbors the 10-nea

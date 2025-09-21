@@ -1,0 +1,17 @@
+ler,E.L.,Lenstra,J.K.,Kan,A.,and Shmoys, tionbetweenlanguageandmemory.J.Verbal Learn-
+D.B.(1992).The Travelling Salesman Problem.Wi- Levy,D.(1989).Themillionpoundbridgeprogram. ingand Verbal Behavior,13,585 589.
+ley Interscience. In Levy,D.and Beal,D.(Eds.),Heuristic Program-
+mingin Artificial Intelligence.Ellis Horwood. Lohn, J.D., Kraus, W.F., and Colombano, S.P.
+Lawler,E.L.,Lenstra,J.K.,Kan,A.,and Shmoys, (2001). Evolutionaryoptimizationofyagi-udaan-
+D.B.(1993). Sequencingandscheduling: Algo- Levy,D.(2007).Loveand Sexwith Robots.Harper. tennas.In Proc.Fourth International Conferenceon
+rithms andcomplexity. In Graves, S.C., Zipkin, Lewis,D.D.(1998). Naive Bayesatforty:Thein- Evolvable Systems,pp.236 243.
+P.H.,and Kan,A.H.G.R.(Eds.),Logisticsof Pro-
+duction and Inventory: Handbooks in Operations dependenceassumptionininformationretrieval. In Longley,N.and Sankaran,S.(2005). The NHL s
+Researchand Management Science,Volume4,pp. ECML-98,pp.4 15. overtime-lossrule: Empiricallyanalyzingtheunin-
+445 522.North-Holland. Lewis,D.K.(1966). Anargumentfortheidentity tendedeffects.Atlantic Economic Journal.
+Lawler,E.L.and Wood,D.E.(1966).Branch-and- theory.J.Philosophy,63(1),17 25. Longuet-Higgins,H.C.(1981). Acomputeralgo-
+boundmethods: Asurvey. Operations Research, Lewis,D.K.(1980).Madpainand Martianpain.In rithmforreconstructingascenefromtwoprojec-
+14(4),699 719. Block,N.(Ed.),Readingsin Philosophyof Psychol- tions.Nature,293,133 135.
+Lazanas,A.and Latombe,J.-C.(1992).Landmark- ogy,Vol.1,pp.216 222.Harvard University Press. Loo,B.T.,Condie,T.,Garofalakis,M.,Gay,D.E.,
+basedrobotnavigation.In AAAI-92,pp.816 822. Leyton-Brown,K.and Shoham,Y.(2008). Essen- Hellerstein,J.M.,Maniatis,P.,Ramakrishnan,R.,
+L (1 e 9 C 89 u ) n . , Y H ., an Ja d c w k r e i l t , te L n ., di B g o it se r r e , co B g . n , i a ti n o d n: De A n p k p e l r i , ca J - . t I i n a t l r s od o u f c G ti a o m n. e M Th o e r o g r a y n : C A la C yp o o n o ci l s . e,Multidisciplinary R w SI o o G

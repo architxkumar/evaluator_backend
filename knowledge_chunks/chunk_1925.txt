@@ -1,0 +1,28 @@
+iction.
+Now that we have established that there is always a resolution proof involving some
+finite subset of the Herbrand base of S, the next step is to show that there is a resolution
+352 Chapter 9. Inference in First-Order Logic
+GO DEL S INCOMPLETENESS THEOREM
+Byslightly extending thelanguage offirst-orderlogic toallow forthe mathemat-
+ical induction schema in arithmetic, Kurt Go del was able to show, in his incom-
+pletenesstheorem,thattherearetruearithmetic sentences thatcannotbeproved.
+The proof of the incompleteness theorem is somewhat beyond the scope of
+thisbook, occupying, asitdoes, atleast30pages, butwecangiveahinthere. We
+beginwiththelogical theory ofnumbers. Inthis theory, there isasingle constant,
+0, and a single function, S (the successor function). In the intended model, S(0)
+denotes 1, S(S(0)) denotes 2, and soon; the language therefore has names forall
+thenaturalnumbers. Thevocabulary alsoincludesthefunctionsymbols , ,and
+Expt (exponentiation) andtheusualsetoflogicalconnectivesandquantifiers. The
+firststepistonoticethatthesetofsentencesthatwecanwriteinthislanguagecan
+be enumerated. (Imagine defining an alphabetical order on the symbols and then
+arranging, in alphabetical order, each of the sets of sentences of length 1, 2, and
+so on.) We can then number each sentence with a unique natural number (the Go del number). This is crucial: number theory contains a name for each of
+its own sentences. Similarly, we can number each possible proof P with a Go del
+number G(P),becauseaproofissimplyafinitesequence ofsentences.
+Now suppose we have a recursively enumerable set A of sentences that are
+true statements about the natural numbers. Recalling that A can be named by a
+givensetofintegers,wecanimaginewritinginourlanguage asentence (j,A)of
+thefollowingsort: i i is not the Go del number of a proof of the sentence whose Go del
+numberisj,wheretheproofusesonlypremisesin A.
+Thenlet bethesentence ( ,A),thatis,asentencethatstatesitsownunprov-
+abilityfrom A. (Thatthis

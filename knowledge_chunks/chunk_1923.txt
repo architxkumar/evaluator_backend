@@ -1,0 +1,33 @@
+ Itcanbesafely skipped bythosewho
+arewillingtotakeitonfaith.
+REFUTATION Weshowthatresolution isrefutation-complete, whichmeansthatifasetofsentences
+COMPLETENESS
+is unsatisfiable, then resolution will always be able to derive a contradiction. Resolution
+cannot be used to generate all logical consequences of a set of sentences, but it can be used
+toestablish that agivensentence isentailed bythesetofsentences. Hence, itcanbeusedto
+findallanswerstoagivenquestion, Q(x),byprovingthat KB Q(x)isunsatisfiable.
+Wetakeitasgiventhatanysentenceinfirst-orderlogic(withoutequality)canberewrit-
+ten as a set of clauses in CNF.This can be proved by induction on the form of the sentence,
+using atomic sentences as the base case (Davis and Putnam, 1960). Our goal therefore is to
+prove the following: if S is an unsatisfiable set of clauses, then the application of a finite
+numberofresolution stepsto S willyieldacontradiction.
+Our proof sketch follows Robinson s original proof with some simplifications from
+Genesereth and Nilsson(1987). Thebasicstructure oftheproof(Figure9.13)isasfollows:
+1. First, we observe that if S is unsatisfiable, then there exists a particular set of ground
+instancesoftheclausesof Ssuchthatthissetisalsounsatisfiable(Herbrand stheorem).
+2. Wethenappealtothegroundresolutiontheoremgivenin Chapter7,whichstatesthat
+propositional resolution iscompleteforgroundsentences.
+3. Wethen usealiftinglemmatoshowthat, foranypropositional resolution proof using
+the set of ground sentences, there is a corresponding first-order resolution proof using
+thefirst-ordersentences fromwhichthegroundsentences wereobtained.
+Section9.5. Resolution 351
+Any set of sentences S is representable in clausal form
+Assume S is unsatisfiable, and in clausal form
+Herbrand s theorem
+Some set S' of ground instances is unsatisfiable
+Ground resolution
+theorem
+Resolution can find a contradiction in S'
+Lifting lemma
+There is a resolution proof for the contradiction in S'
+Figure9.13 Structureofacompletenessprooff

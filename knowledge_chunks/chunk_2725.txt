@@ -1,0 +1,39 @@
+epresentmanydifferentstructuresofdependenciesamongthe
+LINEAR-CHAIN
+variables. One common structure is the linear-chain conditional random field for repre-
+CONDITIONAL
+RANDOMFIELD
+senting Markovdependencies amongvariables inatemporalsequence. Thus,HM Msarethe
+temporal version of naive Bayes models, and linear-chain CR Fs are the temporal version of
+logistic regression, where thepredicted target isan entire state sequence ratherthan asingle
+binaryvariable.
+Lete be the observations (e.g., words in a document), and x be the sequence of
+1:N 1:N
+hidden states (e.g., the prefix, target, and postfix states). A linear-chain conditional random
+fielddefinesaconditional probability distribution:
+P
+P(x e ) e N i 1 F(x i 1,x i,e,i) ,
+1:N 1:N
+where isanormalizationfactor(tomakesuretheprobabilitiessumto1),and F isafeature
+function definedastheweightedsumofacollection ofk component featurefunctions:
+(cid:12)
+F(x i 1 ,x i ,e,i) k f k (x i 1 ,x i ,e,i).
+k
+Section22.4. Information Extraction 879
+The parameter values are learned with a MAP (maximum a posteriori) estimation proce-
+k
+durethatmaximizestheconditional likelihood ofthetraining data. Thefeaturefunctions are
+thekeycomponentsofa CRF.Thefunctionf k hasaccesstoapairofadjacentstates,x i 1 and
+x ,butalsotheentireobservation(word)sequence e,andthecurrentpositioninthetemporal
+i
+sequence, i. This gives us a lot of flexibility in defining features. We can define a simple
+feature function, forexample one that produces avalue of1ifthe current wordis ANDREW
+andthecurrentstateis SPE(cid:24)AKER:
+f 1 (x i 1 ,x i ,e,i) 0 1 o if th x e i r wis S e PEAKER ande i ANDREW
+Howarefeaturesliketheseused? Itdependsontheircorresponding weights. If 0,then
+1
+whenever f is true, it increases the probability of the hidden state sequence x . This is
+1 1:N
+another way of saying the CR Fmodel should prefer the target state SPEAKER for the word
+ANDREW. If on the other hand 1 0, the CRF model will try to avoid this association,
+andif 0,thisfeatureisignored. Para

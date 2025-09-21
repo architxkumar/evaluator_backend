@@ -1,0 +1,33 @@
+024 Sanna,R.,761,1073
+Rochester,N.,17,18,1020,1082 withuncertainty,547 549 Sanskrit,468,919
+Rock,I.,968,1087 Rumelhart,D.E.,24,761,1087 Santorini,B.,895,921,1081
+Rockefeller Foundation,922 Rummery,G.A.,855,1087 SAPA,431
+Ro ger,G.,111,1075 Ruspini,E.H.,557,1087 Sapir Whorfhypothesis,287
+rollout,180 Russell,A.,111,1071 Saraswat,V.,228,1091
+Romania,65,203 Russell,B.,6,16,18,357,1092 Sarawagi,S.,885,1087
+Roomba,1009 Russell,J.G.B.,637,1087 SARSA,844
+Roossin,P.,922,1067 Russell,J.R.,360,1083 Sastry,S.,60,606,852,857,1013,
+rootmeansquare,1059 Russell,S.J.,111,112,157,191,192, 1075,1084
+Roscoe,T.,275,1080 198,278,345,432,444,556, SAT,250
+Rosenblatt,F.,20,761,1066,1087 604 606,686,687,799,800, Satia,J.K.,686,1087
+Rosenblatt,M.,827,1087 826,855 857,1012,1048,1050, satisfaction(inlogic),240
+Rosenblitt,D.,394,1081 1064,1066,1069 1071,1073, satisfiability,250,277
+Rosenbloom,P.S.,26,27,336,358, 1076,1077,1081 1085,1087, satisfiabilitythresholdconjecture,264,
+432,799,1047,1075,1079 1090,1092,1093 278
+Rosenblueth,A.,15,1087 Russia,21,192,489 satisficing,10,1049
+Rosenbluth,A.,155,554,1082 Rustagi,J.S.,554,1087 SATMC,279
+Rosenbluth,M.,155,554,1082 Ruzzo,W.L.,920,1074 Sato,T.,359,556,1087,1090
+Rosenholtz,R.,953,968,1081 Ryan,M.,314,1076 SATPLAN,387,392,396,402,420,433
+Rosenschein,J.S.,688,1087,1089 RYBKA,186,193 SATPLAN,272
+Rosenschein,S.J.,60,278,279,1077, Rzepa,H.S.,469,1083 saturation,351
+1087 SATZ,277
+Ross,P.E.,193,1087 S Saul,L.K.,555,606,1077,1088
+Ross,S.M.,1059,1087 Saund,E.,883,1087
+Rossi,F.,228,230,1066,1087 S-set,774 Savage,L.J.,489,504,637,1088
+rotation,956 Sabharwal,A.,277,395,1074,1076 Sayre,K.,1020,1088
+Roth,D.,556,1070 Sabin,D.,228,1087 scaledorthographicprojection,932
+Roughgarden,T.,688,1084 Sacerdoti,E.D.,394,432,1087 scanninglidars,974
+Roussel,P.,314,358,359,1069,1087 Sackinger,E.,762,967,1080 Scarcello,F.,230,472,1071,1074
+routefinding,73 Sadeh,N.M.,688,1064 scene,929
+Rouveirol,C.,800,1087 Sadri,F.,470,1087 Schabes,Y.,884,1087
+Roveri,M.,396,433,1066,1068 Sagiv,Y.,3

@@ -1,0 +1,34 @@
+fbetadistributions. Eachbetadistribution isdefinedby
+BETADISTRIBUTION
+twohyperparameters3 aandbsuchthat
+HYPERPARAMETER
+beta a,b ( ) a 1(1 )b 1
+, (20.6)
+for intherange 0,1 . Thenormalizationconstant ,whichmakesthedistributionintegrate
+to1,depends onaandb. (See Exercise 20.7.) Figure20.5showswhatthedistribution looks
+like forvarious values of aand b. The meanvalue of the distribution is a (a b), so larger
+values of a suggest a belief that is closer to 1 than to 0. Larger values of a b make the
+distribution more peaked, suggesting greater certainty about the value of . Thus, the beta
+familyprovides ausefulrangeofpossibilities forthehypothesis prior.
+Besides its flexibility, the beta family has another wonderful property: if has aprior
+beta a,b , then, after a data point is observed, the posterior distribution for is also a beta
+distribution. In other words, beta is closed under update. The beta family is called the
+conjugate prior for the family of distributions for a Boolean variable.4 Let s see how this
+CONJUGATEPRIOR
+works. Supposeweobserveacherrycandy;thenwehave
+3 Theyarecalledhyperparametersbecausetheyparameterizeadistributionover ,whichisitselfaparameter.
+4 Otherconjugatepriorsincludethe Dirichletfamilyfortheparametersofadiscretemultivalueddistribution
+andthe Normal Wishartfamilyfortheparametersofa Gaussiandistribution.See Bernardoand Smith(1994).
+812 Chapter 20. Learning Probabilistic Models Flavor Flavor Flavor
+1 2 3
+Wrapper Wrapper Wrapper
+1 2 3 1 2
+Figure20.6 ABayesiannetworkthatcorrespondstoa Bayesianlearningprocess. Poste-
+riordistributionsfortheparametervariables , ,and canbeinferredfromtheirprior
+1 2
+distributionsandtheevidenceinthe Flavoriand Wrapperi variables.
+P( D cherry) P(D cherry )P( )
+1 1 (cid:2) beta a,b ( ) (cid:2) a 1(1 )b 1 (cid:2) a(1 )b 1 beta a 1,b ( ).
+Thus, after seeing acherry candy, wesimply increment the aparameter toget the posterior;
+similarly, after seeing a lime candy, weincrement the b parameter. Thus, we can view the a
+and bhyper

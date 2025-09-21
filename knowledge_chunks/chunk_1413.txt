@@ -1,0 +1,29 @@
+is outside of nature,
+exempt from physical laws. Animals, on the other hand, did not possess this dual quality;
+they could be treated as machines. An alternative to dualism is materialism, which holds
+MATERIALISM
+that the brain s operation according to the laws of physics constitutes the mind. Free will is
+simplythewaythattheperception ofavailable choicesappears tothechoosing entity.
+Given a physical mind that manipulates knowledge, the next problem is to establish
+the source of knowledge. The empiricism movement, starting with Francis Bacon s (1561 EMPIRICISM
+1626)Novum Organum,2 ischaracterizedbyadictumof John Locke(1632 1704): Nothing
+is in the understanding, which was not first in the senses. David Hume s (1711 1776) A
+Treatise of Human Nature (Hume, 1739) proposed what is now known as the principle of
+induction: thatgeneralrulesareacquiredbyexposuretorepeatedassociations betweentheir
+INDUCTION
+elements. Building on the work of Ludwig Wittgenstein (1889 1951) and Bertrand Russell
+(1872 1970), the famous Vienna Circle, led by Rudolf Carnap (1891 1970), developed the
+doctrineoflogicalpositivism. Thisdoctrineholdsthatallknowledgecanbecharacterizedby
+LOGICALPOSITIVISM
+OBSERVATION logical theories connected, ultimately, to observation sentences that correspond to sensory
+SENTENCES
+inputs;thuslogicalpositivismcombinesrationalismandempiricism.3 Theconfirmationthe-
+CONFIRMATION oryof Carnapand Carl Hempel(1905 1997) attempted toanalyze theacquisition ofknowl-
+THEORY
+edge from experience. Carnap s book The Logical Structure of the World (1928) defined an
+explicit computational procedure for extracting knowledge from elementary experiences. It
+wasprobably thefirsttheoryofmindasacomputational process.
+2 The Novum Organum isanupdate of Aristotle s Organon, orinstrument ofthought. Thus Aristotlecanbe
+seenasbothanempiricistandarationalist.
+3 Inthispicture,allmeaningfulstatementscanbeverifiedorfalsifiedeitherbyexperimentationorbyanalysis
+ofthemeaningofthewords.Becausethisrules

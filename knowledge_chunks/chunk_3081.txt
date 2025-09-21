@@ -1,0 +1,22 @@
+dingsubgraph
+and graph isomorphisms. Information Sciences, and Inductive:Beinga Connected Viewofthe Prin- Mitchell,T.M.(2005). Readingtheweb:Abreak-
+19(3),229 250. ciplesof Evidence,and Methodsof Scientific Inves- throughgoalfor AI.AI Mag,26(3),12 16.
+tigation.J.W.Parker,London.
+Mc Ilraith,S.and Zeng,H.(2001). Semanticweb Mitchell,T.M.(2007). Learning,informationex-
+services.IEEE Intelligent Systems,16(2),46 53. Mill,J.S.(1863). Utilitarianism. Parker,Sonand tractionandtheweb.In ECML PKDD,p.1.
+Bourn,London.
+Mc Lachlan,G.J.and Krishnan,T.(1997).The EM Mitchell, T. M., Shinkareva, S. V., Carlson, A.,
+Algorithmand Extensions.Wiley. Miller,A.C.,Merkhofer,M.M.,Howard,R.A., Chang, K.-M., Malave, V.L., Mason, R.A., and
+Matheson,J.E.,and Rice,T.R.(1976). Develop- Just,M.A.(2008). Predictinghumanbrainactiv-
+Mc Millan,K.L.(1993).Symbolic Model Checking. mentofautomatedaidsfordecisionanalysis.Tech- ityassociatedwiththemeaningsofnouns. Science,
+Kluwer. nicalreport,SRI International. 320,1191 1195.
+Meehl,P.(1955).Clinicalvs.Statistical Prediction. Minker, J.(2001). Logic-Based Artificial Intelli- Mohr,R.and Henderson,T.C.(1986).Arcandpath
+Universityof Minnesota Press. gence.Kluwer. consistencyrevisited.AIJ,28(2),225 233.
+Bibliography 1083
+Mohri, M., Pereira, F., and Riley, M. (2002). Morjaria,M.A.,Rink,F.J.,Smith,W.D.,Klemp- Murphy, K. and Russell, S. J. (2001). Rao-
+Weightedfinite-statetransducersinspeechrecogni- ner,G.,Burns,C.,and Stein,J.(1995).Elicitationof blackwellised particle filtering for dynamic
+tion.Computer Speechand Language,16(1),69 88. probabilitiesforbeliefnetworks: Combiningquali- Bayesian networks. In Doucet, A., de Freitas,
+tativeandquantitativeinformation. In UAI-95,pp. N., and Gordon, N. J. (Eds.), Sequential Monte
+Montague, P.R., Dayan, P., Person, C., and Se- 141 148. Carlo Methodsin Practice.Springer-Verlag.
+jnowski,T.(1995). Beeforaginginuncertainenvi-
+ronmentsusingpredictive Hebbianlearning.Nature, Morrison, P. and Morrison, E. (Eds.). (1961). Murphy, 

@@ -1,0 +1,27 @@
+machine can
+compute. For example, no machine can tell in general whether a given program will return
+anansweronagiveninputorrunforever.
+Althoughdecidabilityandcomputabilityareimportanttoanunderstandingofcomputa-
+tion,thenotionoftractability hashadanevengreaterimpact. Roughlyspeaking, aproblem
+TRACTABILITY
+iscalledintractableifthetimerequiredtosolveinstancesoftheproblemgrowsexponentially
+with the size of the instances. The distinction between polynomial and exponential growth
+incomplexity wasfirstemphasized inthemid-1960s (Cobham, 1964; Edmonds, 1965). Itis
+important because exponential growthmeansthatevenmoderately largeinstances cannot be
+solved in any reasonable time. Therefore, one should strive to divide the overall problem of
+generating intelligent behaviorintotractable subproblems ratherthanintractable ones.
+Howcanone recognize an intractable problem? Thetheory of NP-completeness, pio-
+NP-COMPLETENESS
+neeredby Steven Cook(1971)and Richard Karp(1972), provides amethod. Cookand Karp
+showed theexistence oflarge classes ofcanonical combinatorial search andreasoning prob-
+lems that are NP-complete. Anyproblem class to which the class of NP-complete problems
+canbereducedislikelytobeintractable. (Althoughithasnotbeenprovedthat NP-complete
+4 Frege sproposed notation for first-orderlogic an arcane combination of textual and geometric features neverbecamepopular.
+Section1.2. The Foundations of Artificial Intelligence 9
+problems are necessarily intractable, most theoreticians believe it.) These results contrast
+with the optimism with which the popular press greeted the first computers Electronic
+Super-Brains that were Faster than Einstein! Despite the increasing speed of computers,
+careful use of resources will characterize intelligent systems. Put crudely, the world is an
+extremely large problem instance! Work in AI has helped explain why some instances of
+NP-completeproblems arehard,yetothersareeasy(Cheesemanetal.,1991).
+Besideslogicandcomputation, thethirdgreatcontrib

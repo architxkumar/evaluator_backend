@@ -1,0 +1,23 @@
+aposteriordistribution
+overstatevariables. Theplanningofrobotmotionisusuallydoneinconfigurationspace,whereeachpoint
+specifiesthelocation andorientation oftherobotanditsjointangles. Configuration space search algorithms include cell decomposition techniques, which
+decomposethespaceofallconfigurations intofinitelymanycells,andskeletonization
+techniques, whichprojectconfiguration spacesontolower-dimensional manifolds. The
+motionplanning problem isthensolvedusingsearchinthese simplerstructures. Apath found byasearch algorithm can be executed byusing the path asthe reference
+trajectory for a PID controller. Controllers are necessary in robotics to accommodate
+smallperturbations; pathplanning aloneisusually insufficient. Potential field techniques navigate robots by potential functions, defined overthe dis-
+tance to obstacles and the goal location. Potential field techniques may get stuck in
+localminima,buttheycangeneratemotiondirectlywithouttheneedforpathplanning. Sometimes itis easier to specify a robot controller directly, rather than deriving apath
+from an explicit model of the environment. Such controllers can often be written as
+simplefinitestatemachines.
+Bibliographical and Historical Notes 1011 There exist different architectures for software design. The subsumption architec-
+tureenablesprogrammerstocomposerobotcontrollersfrominterconnectedfinitestate
+machines. Three-layer architectures are common frameworks for developing robot
+software that integrate deliberation, sequencing of subgoals, and control. The related
+pipelinearchitecture processes datainparallel through asequence ofmodules, corre-
+sponding toperception, modeling, planning, control, androbotinterfaces.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+The word robot waspopularized by Czech playwright Karel Capek in his 1921 play R.U.R.
+(Rossum s Universal Robots). The robots, which were grown chemically rather than con-
+structed mechanically, end up resenting their masters and decide to take over. It appears
+(Glan

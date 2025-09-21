@@ -1,0 +1,26 @@
+sfiability threshold conjecture states that, for each k, there is a sharp satisfiability
+THRESHOLD
+CONJECTURE threshold r ,suchthatasthenumberofvariables n ,instances belowthethreshold are
+k
+satisfiable with probability 1, while those above the threshold are unsatisfiable with proba-
+bility1. Theconjecture wasnotquiteprovedby Friedgut(1999): asharpthresholdexistsbut
+its location might depend on n even as n . Despite significant progress in asymptotic
+analysis of the threshold location for large k (Achlioptas and Peres, 2004; Achlioptas et al.,
+2007), all that can be proved for k 3 is that it lies in the range 3.52,4.51 . Current theory
+suggests that apeak in the run time of a SA Tsolver is not necessarily related to the satisfia-
+bility threshold, but instead to a phase transition in the solution distribution and structure of
+SAT instances. Empirical results due to Coarfa et al. (2003) support this view. In fact, al-
+SURVEY gorithms suchas surveypropagation (Parisiand Zecchina, 2002; Manevaetal.,2007)take
+PROPAGATION
+advantage ofspecial properties ofrandom SA Tinstances nearthesatisfiability threshold and
+greatlyoutperform general SA Tsolversonsuchinstances.
+Thebestsources forinformation onsatisfiability, boththeoretical andpractical, arethe
+Handbook of Satisfiability (Biere et al., 2009) and the regular International Conferences on
+Theoryand Applications of Satisfiability Testing,knownas SAT.
+The idea of building agents with propositional logic can be traced back to the seminal
+paper of Mc Culloch and Pitts (1943), which initiated the field of neural networks. Con-
+trary topopular supposition, thepaperwasconcerned withthe implementation ofa Boolean
+circuit-based agentdesign inthebrain. Circuit-based agents, whichperform computation by
+propagating signals in hardware circuits rather than running algorithms in general-purpose
+computers, have received little attention in AI, however. The most notable exception is the
+work of Stan Rosenschein (Rosenschein, 1985; Kaelbl

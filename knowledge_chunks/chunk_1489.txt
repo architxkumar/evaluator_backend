@@ -1,0 +1,28 @@
+though the goal-based agent appears less efficient, it is more flexible because the
+knowledgethatsupportsitsdecisionsisrepresentedexplicitlyandcanbemodified. Ifitstarts
+torain,theagentcanupdateitsknowledgeofhoweffectivelyitsbrakeswilloperate;thiswill
+automatically cause all of the relevant behaviors to be altered to suit the new conditions.
+For the reflex agent, on the other hand, we would have to rewrite many condition action
+rules. Thegoal-based agent sbehaviorcaneasilybechanged togotoadifferentdestination,
+simply by specifying that destination as the goal. The reflex agent s rules for when to turn
+and when to go straight will work only fora single destination; they must all be replaced to
+gosomewherenew.
+2.4.5 Utility-basedagents
+Goals alone are not enough to generate high-quality behavior in most environments. For
+example, many action sequences will get the taxi to its destination (thereby achieving the
+goal) but somearequicker, safer, morereliable, orcheaper thanothers. Goalsjust provide a
+crudebinarydistinctionbetween happy and unhappy states. Amoregeneralperformance
+measureshouldallowacomparisonofdifferentworldstates accordingtoexactlyhowhappy
+theywouldmaketheagent. Because happy doesnotsoundveryscientific, economists and
+computerscientists usetheterm utilityinstead.6
+UTILITY
+Wehavealreadyseenthataperformancemeasureassignsascoretoanygivensequence
+of environment states, so it can easily distinguish between more and less desirable ways of
+getting to the taxi s destination. An agent s utility function is essentially an internalization
+UTILITYFUNCTION
+of the performance measure. If the internal utility function and the external performance
+measure are in agreement, then an agent that chooses actions to maximize its utility will be
+rationalaccording totheexternalperformance measure.
+Let us emphasize again that this is not the only way to be rational we have already
+seen a rational agent program for the vacuum world (Figure 2.8) that has no idea what its
+utility fu

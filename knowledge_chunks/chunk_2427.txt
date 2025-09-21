@@ -1,0 +1,25 @@
+derstomanipulateprices.
+COLLUSION
+Itcanhappeninsecretbackroom dealsortacitly, withinthe rulesofthemechanism.
+For example, in 1999, Germany auctioned ten blocks of cell-phone spectrum with a
+simultaneous auction (bidsweretakenonalltenblocksatthesametime),usingtherulethat
+anybidmustbeaminimumofa10 raiseoverthepreviousbidonablock. Therewereonly
+two credible bidders, and the first, Mannesman, entered the bid of 20 million deutschmark
+onblocks1-5and18.18milliononblocks6-10. Why18.18M?Oneof T-Mobile smanagers
+said they interpreted Mannesman s first bid as an offer. Both parties could compute that
+a 10 raise on 18.18M is 19.99M; thus Mannesman s bid was interpreted as saying we
+can each get half the blocks for 20M; let s not spoil it by bidding the prices up higher. And in fact T-Mobile bid 20M on blocks 6-10 and that was the end of the bidding. The
+German government got less than they expected, because the two competitors were able to
+use the bidding mechanism to come to a tacit agreement on how not to compete. From
+the government s point of view, a better result could have been obtained by any of these
+changes to the mechanism: a higher reserve price; a sealed-bid first-price auction, so that
+the competitors could not communicate through their bids; or incentives to bring in a third
+bidder. Perhaps the 10 rule was an error in mechanism design, because it facilitated the
+precisesignaling from Mannesmanto T-Mobile.
+In general, both the seller and the global utility function benefit if there are more bid-
+ders, although global utility can suffer if you count the cost of wasted time of bidders that
+have no chance of winning. One way to encourage more bidders is to make the mechanism
+easier for them. After all, if it requires too much research orcomputation on the part of the
+bidders, they may decide to take their money elsewhere. So it is desirable that the bidders
+haveadominantstrategy. Recallthat dominant meansthatthestrategy worksagainst all
+other strategies, which in tur

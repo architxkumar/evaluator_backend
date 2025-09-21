@@ -1,0 +1,26 @@
+lly more successful than a
+sloweractiontakenaftercarefuldeliberation.
+Alltheskillsneededforthe Turing Testalsoallowanagenttoactrationally. Knowledge
+representation and reasoning enable agents to reach good decisions. We need to be able to
+generate comprehensible sentences in natural language to get by in a complex society. We
+need learning not only for erudition, but also because it improves our ability to generate
+effectivebehavior.
+The rational-agent approach has two advantages over the other approaches. First, it
+is more general than the laws of thought approach because correct inference is just one
+of several possible mechanisms for achieving rationality. Second, it is more amenable to
+Section1.2. The Foundations of Artificial Intelligence 5
+scientificdevelopmentthanareapproaches basedonhumanbehaviororhumanthought. The
+standard of rationality is mathematically well defined and completely general, and can be unpacked togenerateagentdesignsthatprovablyachieve it. Humanbehavior, ontheother
+hand, is well adapted for one specific environment and is defined by, well, the sum total
+of all the things that humans do. This book therefore concentrates on general principles
+of rational agents and on components for constructing them. We will see that despite the
+apparent simplicity with which the problem can be stated, an enormous variety of issues
+comeupwhenwetrytosolveit. Chapter2outlines someoftheseissuesinmoredetail.
+Oneimportantpointtokeepinmind: Wewillseebeforetoolongthatachievingperfect
+rationality always doing the right thing is notfeasible in complicated environments. The
+computational demands are just too high. Formost of the book, however, we will adopt the
+working hypothesis that perfect rationality isa good starting point foranalysis. It simplifies
+the problem and provides the appropriate setting for most of the foundational material in
+LIMITED the field. Chapters 5 and 17 deal explicitly with the issue of limited rationality acting
+RATIONALITY
+appropriately whe

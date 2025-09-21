@@ -1,0 +1,31 @@
+
+Lefthandandrighthand. Onepersonplayseach Hand. Thetwo Handsstandnextto
+each other, each wearing an oven mitt on one hand, Hands execute only simple commands
+from the Brain for example, Left Hand, move two inches forward. They cannot execute
+commandsotherthanmotions;forexample,theycannotbecommandedto Pickupthebox. The Hands must be blindfolded. The only sensory capability they have is the ability to tell
+when their path is blocked by an immovable obstacle such as a table or the other Hand. In
+suchcases, theycanbeeptoinformthe Brainofthedifficulty.
+26
+PHILOSOPHICAL
+FOUNDATIONS
+In which we consider what it means to think and whether artifacts could and
+shouldeverdoso.
+Philosophers have been around far longer than computers and have been trying to resolve
+some questions that relate to AI: How do minds work? Is it possible for machines to act
+intelligently in the way that people do, and if they did, would they have real, conscious
+minds? Whataretheethicalimplications ofintelligent machines?
+First,someterminology: theassertionthatmachinescouldactasiftheywereintelligent
+iscalled theweak AIhypothesis byphilosophers, andtheassertion thatmachines thatdoso
+WEAKAI
+areactuallythinking (notjustsimulating thinking) iscalledthestrong AIhypothesis.
+STRONGAI
+Most AIresearchers take the weak AIhypothesis forgranted, and don t careabout the
+strong AI hypothesis as long as their program works, they don t care whether you call it a
+simulation of intelligence or real intelligence. All AI researchers should be concerned with
+theethicalimplications oftheirwork.
+26.1 WEAK AI: CAN MACHINES ACT INTELLIGENTLY?
+The proposal for the 1956 summer workshop that defined the field of Artificial Intelligence
+(Mc Carthyetal.,1955)madetheassertionthat Everyaspectoflearningoranyotherfeature
+ofintelligencecanbesopreciselydescribedthatamachinecanbemadetosimulateit. Thus,
+AI wasfounded on theassumption that weak AI ispossible. Others have asserted that weak
+AI is impossible: Artificial intelligence pursued 

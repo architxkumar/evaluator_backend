@@ -1,0 +1,19 @@
+ts space complexity is linear in the depth of the deepest optimal solution, but
+its time complexity is rather difficult to characterize: it depends both on the accuracy of the
+heuristic function andonhowoftenthebestpathchanges asnodesareexpanded. IDA and RBFS suffer from using too little memory. Between iterations, IDA retains
+only a single number: the current f-cost limit. RBFS retains more information in memory,
+butitusesonlylinearspace: evenifmorememorywereavailable,RBF Shasnowaytomake
+useofit. Becausetheyforgetmostofwhattheyhavedone,bothalgorithmsmayendupreex-
+pandingthesamestatesmanytimesover. Furthermore,theysufferthepotentiallyexponential
+increase incomplexityassociated withredundant pathsingraphs(see Section3.3).
+It seems sensible, therefore, to use all available memory. Two algorithms that do this are MA (memory-bounded A ) and SMA (simplified MA). SMA is well simpler, so
+MA wewilldescribeit. SMA proceedsjustlike A,expanding thebestleafuntilmemoryisfull.
+SMA Atthispoint,itcannotaddanewnodetothesearchtreewithoutdropping anoldone. SMA always drops the worst leaf node the one with the highest f-value. Like RBFS, SMA
+then backs up the value of the forgotten node to its parent. In this way, the ancestor of a
+forgotten subtree knows the quality of the best path in that subtree. With this information, SMA regenerates thesubtree onlywhenallotherpaths havebeenshowntolookworsethan
+thepathithasforgotten. Anotherwayofsayingthisisthat, ifallthedescendants ofanoden
+are forgotten, then we will not know which way to go from n, but we will still have an idea
+ofhowworthwhileitistogoanywherefrom n.
+Thecompletealgorithmistoocomplicatedtoreproducehere,10 butthereisonesubtlety worthmentioning. Wesaidthat SMA expands thebestleafanddeletestheworstleaf. What
+if all the leaf nodes have the same f-value? To avoid selecting the same node for deletion and expansion, SMA expands the newest best leaf and deletes the oldest worst leaf. These
+coincide whenthereisonlyoneleaf,butinthatcase,t

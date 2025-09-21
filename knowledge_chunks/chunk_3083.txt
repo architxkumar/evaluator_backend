@@ -1,0 +1,24 @@
+9 154.
+robotic3-Dmappingofurbanstructures. In Proc.
+International Symposiumon Experimental Robotics. Motzkin,T.S.and Schoenberg,I.J.(1954). The Muscettola,N.,Nayak,P.,Pell,B.,and Williams,
+Springer Tractsin Advanced Robotics(STAR). relaxationmethodforlinearinequalities. Canadian B.(1998).Remoteagent:Toboldlygowhereno AI
+Journalof Mathematics,6(3),393 404. systemhasgonebefore.AIJ,103,5 48.
+Montemerlo,M.,Thrun,S.,Koller,D.,and Weg-
+breit,B.(2002). Fast SLAM:Afactoredsolutionto Moutarlier,P.and Chatila,R.(1989). Stochastic Muslea,I.(1999). Extractionpatternsforinforma-
+thesimultaneouslocalizationandmappingproblem. multisensorydatafusionformobilerobotlocation tionextractiontasks: Asurvey. In Proc.AAAI-99
+In AAAI-02. andenvironmentmodeling.In ISRR-89. Workshopon Machine Learningfor Information Ex-
+traction.
+Mueller, E.T.(2006). Commonsense Reasoning.
+Mooney,R.(1999).Learningforsemanticinterpre-
+Morgan Kaufmann. Myerson,R.(1981).Optimalauctiondesign.Math-
+tation:Scalingupwithoutdumbingdown. In Proc. ematicsof Operations Research,6,58 73.
+1st Workshopon Learning Languagein Logic,pp. Muggleton,S.H.(1991). Inductivelogicprogram-
+7 15. ming.New Generation Computing,8,295 318. Myerson,R.(1986). Multistagegameswithcom-
+munication.Econometrica,54,323 358.
+Moore,A.and Wong,W.-K.(2003). Optimalrein- Muggleton,S.H.(1992).Inductive Logic Program-
+sertion: Anewsearchoperatorforacceleratedand ming.Academic Press. Myerson, R.(1991). Game Theory: Analysisof
+moreaccurate Bayesiannetworkstructurelearning. Muggleton, S.H.(1995). Inverseentailmentand Conflict.Harvard University Press.
+In ICML-03. Progol. New Generation Computing,13(3-4),245 Nagel,T.(1974). Whatisitliketobeabat? Philo-
+Moore,A.W.and Atkeson, C.G.(1993). Prior- 286. sophical Review,83,435 450.
+itizedsweeping Reinforcementlearningwithless Muggleton,S.H.(2000). Learningstochasticlogic Nalwa,V.S.(1993). AGuided Tourof Computer
+dataandlesstime.Machine Learning,13,103 130. programs.Proc.AAAI2000Workshopon Learning Vision.Addison-W

@@ -1,0 +1,42 @@
+tionorproofbycontradiction. Oneassumesa
+REFUTATION
+sentence tobefalseandshowsthatthisleadstoacontradiction withknownaxioms . This
+CONTRADICTION
+contradiction isexactlywhatismeantbysayingthatthesentence ( )isunsatisfiable.
+7.5.1 Inference andproofs
+Thissectioncoversinferencerulesthatcanbeappliedtoderiveaproof achainofconclu-
+INFERENCERULES
+sions that leads tothe desired goal. Thebest-known rule is called Modus Ponens(Latin for
+PROOF
+modethataffirms)andiswritten
+MODUSPONENS , . The notation means that, whenever any sentences of the form and are given, then
+thesentence canbeinferred. Forexample,if(Wumpus Ahead Wumpus Alive) Shoot
+and(Wumpus Ahead Wumpus Alive)aregiven,then Shoot canbeinferred.
+Anotherusefulinferenceruleis And-Elimination,whichsaysthat,fromaconjunction,
+AND-ELIMINATION
+anyoftheconjuncts canbeinferred: . Forexample,from (Wumpus Ahead Wumpus Alive),Wumpus Alive canbeinferred.
+By considering the possible truth values of and , one can show easily that Modus
+Ponens and And-Elimination are sound once and for all. These rules can then be used in
+any particular instances where they apply, generating sound inferences without the need for
+enumerating models.
+Allofthelogicalequivalences in Figure7.11canbeusedasinferencerules. Forexam-
+ple,theequivalence forbiconditional elimination yields thetwoinference rules ( ) ( )
+and .
+( ) ( ) Section7.5. Propositional Theorem Proving 251
+Notall inference rules work inboth directions like this. Forexample, wecannot run Modus
+Ponensintheoppositedirection toobtain and from .
+Letusseehowtheseinferencerulesandequivalencescanbeusedinthewumpusworld.
+We start with the knowledge base containing R through R and show how to prove P ,
+1 5 1,2
+thatis,thereisnopitin 1,2 . First,weapplybiconditional elimination to R toobtain
+2
+R : (B (P P )) ((P P ) B ).
+6 1,1 1,2 2,1 1,2 2,1 1,1
+Thenweapply And-Elimination to R toobtain
+6
+R : ((P P ) B ).
+7 1,2 2,1 1,1
+Logicalequivalence forcontrapositives gives
+R : ( B (P P )).
+8 1,1 1,2 2,1
+Nowwecanappl

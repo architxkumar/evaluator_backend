@@ -1,0 +1,31 @@
+B, then A will sometimes make a move
+that greatly complicates thesituation, in thehopes ofgaining an advantage because he
+hasmoretimetoworkouttheproperstrategy.
+478 Chapter 12. Knowledge Representation
+c. Ashopping agentinanenvironment inwhichtherearecostsofgatheringinformation.
+d. Reasoning about public key cryptography, which rests on the intractability of certain
+computational problems.
+12.20 Translate the following description logic expression (from page 457) into first-order
+logic,andcommentontheresult:
+And(Man,At Least(3,Son),At Most(2,Daughter),
+All(Son,And(Unemployed,Married,All(Spouse,Doctor))),
+All(Daughter,And(Professor,Fills(Department,Physics,Math)))).
+12.21 Recall that inheritance information in semantic networks can be captured logically
+by suitable implication sentences. This exercise investigates the efficiency of using such
+sentences forinheritance.
+a. Consider the information in a used-car catalog such as Kelly s Blue Book for exam-
+ple, that 1973 Dodge vans are (or perhaps were once) worth 575. Suppose all this
+information (for 11,000 models) is encoded as logical sentences, as suggested in the
+chapter. Write down three such sentences, including that for 1973 Dodge vans. How
+would you use the sentences to find the value of a particular car, given a backward-
+chainingtheorem proversuchas Prolog?
+b. Comparethetimeefficiencyofthebackward-chaining methodforsolvingthisproblem
+withtheinheritance methodusedinsemanticnets.
+c. Explain how forward chaining allows a logic-based system to solve the same problem
+efficiently,assuming thatthe KBcontainsonlythe11,000sentences aboutprices.
+d. Describe a situation in which neither forward nor backward chaining on the sentences
+willallowthepricequeryforanindividual cartobehandled efficiently.
+e. Can you suggest a solution enabling this type of query to be solved efficiently in all
+cases in logic systems? (Hint: Remember that two cars of the same year and model
+havethesameprice.)
+12.22 One might suppose that the syn

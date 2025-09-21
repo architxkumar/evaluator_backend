@@ -1,0 +1,46 @@
+ftheproblems. Thus, intheearly
+years of building these systems, experts were asked for the probability of a cause given an
+effect. Ingeneraltheyfoundthisdifficulttodo,andwerebetterabletoassesstheprobability
+ofaneffectgivenacause. Somodernsystemsusuallyassesscausalknowledgeandencodeit
+directly in the Bayesian network structure of the model, leaving the diagnostic reasoning to
+the Bayesiannetworkinferencealgorithms (Shachterand Heckerman, 1987).
+Assign utilities. When there are a small number of possible outcomes, they can be
+enumeratedandevaluatedindividuallyusingthemethodsof Section16.3.1. Wewouldcreate
+a scale from best to worst outcome and give each a numeric value, for example 0 for death
+and 1 for complete recovery. We would then place the other outcomes on this scale. This
+canbedonebytheexpert, butitisbetterifthepatient (orin thecaseofinfants, thepatient s
+parents)canbeinvolved, becausedifferentpeoplehavedifferentpreferences. Ifthereareex-
+ponentially manyoutcomes, weneed some waytocombine them using multiattribute utility
+functions. Forexample,wemaysaythatthecostsofvariouscomplications areadditive.
+Verify and refine the model. To evaluate the system we need a set of correct (input,
+output) pairs; a so-called gold standard to compare against. For medical expert systems
+GOLDSTANDARD
+this usually means assembling the best available doctors, presenting them with a few cases,
+Section16.7. Decision-Theoretic Expert Systems 635
+Sex
+Postcoarctectomy
+Syndrome
+Tachypnea Tachycardia
+Paradoxical
+Failure Hypertension
+To Thrive
+Aortic
+Intercostal Aneurysm
+Dyspnea
+Recession
+Paraplegia
+Heart Intermediate Late
+Age Treatment
+Failure Result Result
+Hepato-
+CVA
+megaly
+Pulmonary Aortic
+Crepitations Dissection
+Myocardial
+Cardiomegaly
+Infarction
+U
+Figure16.10 Influencediagramforaorticcoarctation(courtesyof Peter Lucas).
+and asking them for their diagnosis and recommended treatment plan. We then see how
+wellthe system matches theirrecommendations. Ifitdoes poorly, wetryto isolate thep

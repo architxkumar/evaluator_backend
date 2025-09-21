@@ -1,0 +1,41 @@
+es two kinds of knowl-
+edge to be encoded in the agent program. First, we need some information about how the
+worldevolvesindependently oftheagent forexample,thatanovertakingcargenerallywill
+be closer behind than it was a moment ago. Second, we need some information about how
+theagent sownactionsaffecttheworld forexample,thatwhentheagentturnsthesteering
+wheel clockwise, the car turns to the right, or that after driving for five minutes northbound
+onthefreeway,oneisusuallyaboutfivemilesnorthofwhereonewasfiveminutesago. This
+knowledge about how the world works whether implemented in simple Boolean circuits
+orincomplete scientific theories is called a modelofthe world. Anagent that uses such a
+MODEL-BASED modeliscalledamodel-basedagent.
+AGENT
+Figure2.11givesthestructureofthemodel-basedreflexagentwithinternalstate,show-
+ing how the current percept is combined with the old internal state to generate the updated
+descriptionofthecurrentstate,basedontheagent smodelofhowtheworldworks. Theagent
+programisshownin Figure2.12. Theinterestingpartisthefunction UPDATE-STATE,which
+Section2.4. The Structureof Agents 51
+Agent
+Environment
+Sensors
+State
+How the world evolves What the world
+is like now
+What my actions do
+What action I
+Condition-action rules
+should do now
+Actuators
+Figure2.11 Amodel-basedreflexagent.
+function MODEL-BASED-REFLEX-AGENT(percept)returnsanaction
+persistent: state,theagent scurrentconceptionoftheworldstate
+model,adescriptionofhowthenextstatedependsoncurrentstateandaction
+rules,asetofcondition actionrules
+action,themostrecentaction,initiallynone
+state UPDATE-STATE(state,action,percept,model)
+rule RULE-MATCH(state,rules)
+action rule.ACTION
+returnaction
+Figure2.12 Amodel-basedreflexagent. Itkeepstrackofthecurrentstateoftheworld,
+usinganinternalmodel.Itthenchoosesanactioninthesamewayasthereflexagent.
+is responsible forcreating the new internal state description. Thedetails of how models and
+states are represented vary widely depending on the type of environment and 

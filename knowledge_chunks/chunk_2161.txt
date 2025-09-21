@@ -1,0 +1,26 @@
+s. The
+distinction wasfirstdrawnclearlyby James Bernoulli(1654 1705).
+Leibnizintroduced the classical notion ofprobability asaproportion ofenumerated,
+equally probable cases,whichwasalsousedby Bernoulli, although itwasbrought topromi-
+nence by Laplace (1749 1827). Thisnotion isambiguous between thefrequency interpreta-
+tionandthesubjective interpretation. Thecasescanbethought tobeequally probable either
+because of a natural, physical symmetry between them, or simply because we do not have
+any knowledge that would lead us to consider one more probable than another. The use of
+this latter, subjective consideration to justify assigning equal probabilities is known as the
+PRINCIPLEOF principle ofindifference. Theprinciple is often attributed to Laplace, but he neverisolated
+INDIFFERENCE
+the principle explicitly. George Boole and John Venn both referred to it as the principle of
+PRINCIPLEOF
+insufficientreason;themodernnameisdueto Keynes(1921).
+INSUFFICIENT
+REASON
+The debate between objectivists and subjectivists became sharper in the 20th century.
+Kolmogorov (1963), R. A. Fisher (1922), and Richard von Mises (1928) were advocates of
+therelativefrequencyinterpretation. Karl Popper s(1959,firstpublishedin Germanin1934) propensity interpretation traces relative frequencies to an underlying physical symmetry.
+Frank Ramsey (1931), Bruno de Finetti (1937), R. T. Cox (1946), Leonard Savage (1954),
+Richard Jeffrey (1983), and E. T. Jaynes (2003) interpreted probabilities as the degrees of
+belief of specific individuals. Their analyses of degree of belief were closely tied to utili-
+tiesandtobehavior specifically, tothewillingness toplacebets. Rudolf Carnap, following
+Leibniz and Laplace, offered a different kind of subjective interpretation of probability not as any actual individual s degree of belief, but as the degree of belief that an idealized
+individual should have in a particular proposition a, given a particular body of evidence e.
+Bibliographical and Historical Notes 50

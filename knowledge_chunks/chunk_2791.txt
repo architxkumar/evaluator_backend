@@ -1,0 +1,26 @@
+early workby the
+IBM group (Brown et al., 1988, 1993) and the recent work by the ISI and Google research
+groups (Och and Ney, 2004; Zollmann et al., 2008). A textbook introduction on statistical
+machinetranslationisgivenby Koehn(2009),andashorttutorialby Kevin Knight(1999)has
+beeninfluential. Earlyworkonsentencesegmentationwasdoneby Palmerand Hearst(1994).
+Ochand Ney(2003)and Moore(2005)coverbilingual sentence alignment.
+The prehistory of speech recognition began in the 1920s with Radio Rex, a voice-
+activated toy dog. Rex jumped out of his doghouse in response to the word Rex! (or
+actually almostanysufficientlyloudword). Somewhatmoreserious workbeganafter World
+War II. At AT TBell Labs, a system was built for recognizing isolated digits (Davis et al.,
+1952)bymeansofsimplepatternmatchingofacousticfeatures. Startingin1971,the Defense
+Advanced Research Projects Agency (DARPA)of the United States Department of Defense
+funded four competing five-year projects to develop high-performance speech recognition
+systems. Thewinner,andtheonlysystemtomeetthegoalof90 accuracywitha1000-word
+vocabulary, was the HARPY system at CMU (Lowerre and Reddy, 1980). The final version
+of HARP Ywasderivedfromasystemcalled DRAGO Nbuiltby CM Ugraduatestudent James
+Baker (1975); DRAGON was the first to use HM Ms for speech. Almost simultaneously, Je-
+linek (1976) at IBM had developed another HMM-based system. Recent years have been
+characterized by steady incremental progress, larger data sets and models, and more rigor-
+ouscompetitions onmorerealistic speech tasks. In1997, Bill Gatespredicted, The PCfive
+yearsfrom now youwon trecognize it,because speech willcomeintotheinterface. That
+didn t quitehappen, butin2008 hepredicted Infiveyears, Microsoft expects more Internet
+searches to be done through speech than through typing on a keyboard. History will tell if
+heisrightthistimearound.
+Several good textbooks on speech recognition are available (Rabiner and Juang, 1993;
+Jelinek, 1997; Goldand Morga

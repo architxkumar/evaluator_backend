@@ -1,0 +1,20 @@
+(1999). Geneticalgorithmsforthe AIJ,21(1 2),61 98.
+travellingsalesmanproblem:Areviewofrepresen- Lin,S.and Kernighan,B.W.(1973). Aneffective
+tationsandoperators.Artificial Intelligence Review, Lenat,D.B.and Brown,J.S.(1984).Why AMand heuristicalgorithmforthetravelling-salesmanprob-
+13,129 170. EURISK Oappeartowork.AIJ,23(3),269 294. lem.Operations Research,21(2),498 516.
+Larson,S.C.(1931). Theshrinkageofthecoef- Lenat,D.B.and Guha,R.V.(1990).Building Large Lindley,D.V.(1956). Onameasureoftheinfor-
+ficientofmultiplecorrelation. J.Educational Psy- Knowledge-Based Systems: Representationand In- mationprovidedbyanexperiment.Annalsof Math-
+chology,22,45 55. ferenceinthe CYC Project.Addison-Wesley. ematical Statistics,27(4),986 1005.
+Laskey,K.B.(2008).MEBN:Alanguageforfirst- Leonard,H.S.and Goodman,N.(1940). Thecal- Lindsay, R. K., Buchanan, B. G., Feigenbaum,
+orderbayesianknowledgebases.AIJ,172,140 178. culusofindividualsanditsuses.JSL,5(2),45 55. E.A.,and Lederberg,J.(1980).Applicationsof Arti-
+Latombe, J.-C.(1991). Robot Motion Planning. Leonard,J.and Durrant-Whyte,H.(1992).Directed ficial Intelligencefor Organic Chemistry:The DEN-
+Kluwer. sonarsensingformobilerobotnavigation.Kluwer. DRAL Project.Mc Graw-Hill.
+Lauritzen,S.(1995).The EMalgorithmforgraphi- Les niewski, S. (1916). Podstawy ogo lnej teorii Littman,M.L.(1994). Markovgamesasaframe-
+calassociationmodelswithmissingdata.Computa- mnogos ci.Moscow. work for multi-agent reinforcement learning. In
+tional Statisticsand Data Analysis,19,191 201. ICML-94,pp.157 163.
+Lettvin,J.Y.,Maturana,H.R.,Mc Culloch,W.S.,
+Lauritzen,S.(1996). Graphicalmodels. Oxford and Pitts,W.(1959). Whatthefrog seyetellsthe Littman,M.L.,Keim,G.A.,and Shazeer,N.M.
+University Press. frog sbrain.Proc.IRE,47(11),1940 1951. (1999). Solvingcrosswordswith PROVERB. In
+AAAI-99,pp.914 915.
+Lauritzen,S.,Dawid,A.P.,Larsen,B.,and Leimer, Letz,R.,Schumann,J.,Bayerl,S.,and Bibel,W.
+H. (1990). Independence properties of directed (1992). SETHEO: A high-performanc

@@ -1,0 +1,23 @@
+ble methods such as boosting often perform better than individual methods. In
+onlinelearningwecanaggregatetheopinionsofexpertstocomearbitrarily closetothe
+bestexpert sperformance, evenwhenthedistribution ofthedataisconstantly shifting.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Chapter1outlinedthehistoryofphilosophicalinvestigationsintoinductivelearning. William
+of Ockham16 (1280 1349), the most influential philosopher of his century and a majorcon-
+tributortomedievalepistemology, logic,andmetaphysics, iscreditedwithastatementcalled Ockham s Razor in Latin,Entianonsuntmultiplicanda praeternecessitatem, andin En-
+glish, Entitiesarenottobemultipliedbeyond necessity. Unfortunately, thislaudable piece
+of advice is nowhere to be found in his writings in precisely these words (although he did
+say Pluralitas non est ponenda sine necessitate, or plurality shouldn t be posited without
+necessity ). A similar sentiment was expressed by Aristotle in 350 B.C. in Physics book I,
+chapter VI: Forthemorelimited,ifadequate, isalwayspreferable. The first notable use of decision trees was in EPAM, the Elementary Perceiver And
+Memorizer (Feigenbaum, 1961), which was a simulation of human concept learning. ID3
+(Quinlan, 1979)addedthecrucialideaofchoosing theattribute withmaximumentropy; itis
+thebasisforthedecisiontreealgorithminthischapter. Informationtheorywasdevelopedby
+Claude Shannon to aid in the study of communication (Shannon and Weaver, 1949). (Shan-
+non also contributed one of the earliest examples of machine learning, a mechanical mouse
+named Theseus that learned to navigate through a maze by trial and error.) The 2 method
+of tree pruning was described by Quinlan (1986). C4.5, an industrial-strength decision tree
+package, canbefound in Quinlan (1993). Anindependent tradition ofdecision treelearning
+exists inthestatistical literature. Classification and Regression Trees(Breiman etal.,1984),
+knownasthe CAR Tbook, istheprincipal reference.
+16 Thenameisoftenmisspelledas Occam, perhapsfrom

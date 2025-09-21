@@ -1,0 +1,25 @@
+tive acts(Cohen
+and Levesque, 1990; Cohen et al., 1990). Boutilier and Brafman (2001) show how to adapt
+partial-order planning to a multiactor setting. Brafman and Domshlak (2008) devise a mul-
+tiactor planning algorithm whose complexity growsonly linearly withthe number ofactors,
+providedthatthedegreeofcoupling(measuredpartlybythe treewidthofthegraphofinter-
+actionsamongagents)isbounded. Petrikand Zilberstein(2009)showthatanapproachbased
+onbilinearprogramming outperforms thecover-setapproach weoutlinedinthechapter.
+We have barely skimmed the surface of work on negotiation in multiagent planning.
+Durfeeand Lesser(1989) discuss how tasks canbeshared out amongagents bynegotiation.
+Krausetal.(1991)describe asystemforplaying Diplomacy,aboardgame requiring negoti-
+ation, coalition formation, and dishonesty. Stone (2000) shows how agents can cooperate as
+teammatesinthecompetitive,dynamic,partiallyobservableenvironmentofroboticsoccer. In
+a later article, Stone (2003) analyzes two competitive multiagent environments Robo Cup,
+a robotic soccer competition, and TAC, the auction-based Trading Agents Competition and finds that the computational intractability of our current theoretically well-founded ap-
+proaches hasledtomanymultiagent systemsbeingdesigned byadhocmethods.
+Inhishighly influential Society of Mindtheory, Marvin Minsky(1986, 2007) proposes
+thathumanmindsareconstructed fromanensemble ofagents. Livnatand Pippenger (2006)
+provethat,fortheproblemofoptimalpath-finding,andgivenalimitationonthetotalamount
+ofcomputing resources, the best architecture foranagent isanensemble ofsubagents, each
+ofwhichtriestooptimizeitsownobjective,andallofwhichareinconflictwithoneanother.
+Exercises 435
+Theboid model on page 429 is due to Reynolds (1987), whowon an Academy Award
+foritsapplication toswarmsofpenguins in Batman Returns. The NERO gameandthemeth-
+odsforlearningstrategies aredescribed by Bryantand Miikkulainen (2007).
+Recent book on multiagent systems include those by Weiss (2000a)

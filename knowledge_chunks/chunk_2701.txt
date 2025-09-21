@@ -1,0 +1,28 @@
+
+22.1.4 N-gram wordmodels
+Now weturn to n-gram models overwords rather than characters. Allthe same mechanism
+applies equally towordandcharacter models. Themaindifference isthatthevocabulary VOCABULARY
+the set of symbols that make up the corpus and the model is larger. There are only about
+100 characters in most languages, and sometimes we build character models that are even
+more restrictive, for example by treating A and a as the same symbol or by treating all
+punctuation asthesamesymbol. Butwithwordmodelswehaveatleasttensofthousands of
+symbols,andsometimesmillions. Thewiderangeisbecauseitisnotclearwhatconstitutesa
+word. In Englishasequenceofletterssurroundedbyspacesisaword,butinsomelanguages,
+like Chinese,wordsarenotseparatedbyspaces,andevenin Englishmanydecisionsmustbe
+madetohaveaclearpolicyonwordboundaries: howmanywordsarein ne er-do-well ? Or
+in (Tel:1-800-960-5660x123) ?
+OUTOF Wordn-grammodelsneedtodealwithoutofvocabularywords. Withcharactermod-
+VOCABULARY
+els, we didn t have to worry about someone inventing a new letter of the alphabet.1 But
+withwordmodels thereisalwaysthechance ofanewwordthatwasnotseen inthetraining
+corpus, so we need to model that explicitly in our language model. This can be done by
+adding just one new word to the vocabulary: UNK , standing for the unknown word. We
+can estimate n-gram counts for UNK by this trick: go through the training corpus, and
+the first time any individual word appears it is previously unknown, so replace it with the
+symbol UNK . Allsubsequent appearances of the word remain unchanged. Then compute
+n-gram counts forthe corpus as usual, treating UNK just like anyother word. Then when
+anunknown wordappears inatestset, welook upitsprobability under UNK . Sometimes
+multiple unknown-word symbols are used, for different classes. For example, any string of
+digitsmightbereplaced with NUM ,oranyemailaddress with EMAIL .
+To get a feeling for what word models can do, we built unigram, bigram, and trigram
+modelsoverthewordsinthi

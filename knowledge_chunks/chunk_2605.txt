@@ -1,0 +1,25 @@
+s,ledto FOIL (Quinlan,1990), whichforthefirsttimeallowedpractical induc-
+tion of relational rules. The field of relational learning was reinvigorated by Muggleton and
+Buntine(1988),whose CIGO Lprogramincorporated aslightlyincompleteversionofinverse
+resolution andwascapableofgenerating newpredicates. Theinverseresolution methodalso
+appears in(Russell, 1986), withasimple algorithm given in afootnote. Thenextmajorsys-
+tem was GOLEM (Muggleton and Feng, 1990), which uses a covering algorithm based on
+Plotkin s concept of relative least general generalization. ITOU (Rouveirol and Puget, 1989)
+and CLINT (De Raedt, 1992) wereothersystemsofthatera. Morerecently, PROGOL (Mug-
+gleton, 1995) has taken a hybrid (top-down and bottom-up) approach to inverse entailment
+and has been applied to a number of practical problems, particularly in biology and natural
+language processing. Muggleton (2000) describes anextension of PROGOL tohandle uncer-
+taintyintheformofstochastic logicprograms.
+A formal analysis of ILP methods appears in Muggleton (1991), a large collection of
+papers in Muggleton (1992), and a collection of techniques and applications in the book
+by Lavraucand Duzeroski(1994). Pageand Srinivasan(2002)giveamorerecentoverviewof
+thefield shistory andchallenges forthefuture. Earlycomplexity results by Haussler(1989)
+suggestedthatlearningfirst-ordersentenceswasintractible. However,withbetterunderstand-
+ingoftheimportance ofsyntactic restrictions onclauses, positiveresults havebeenobtained
+even for clauses with recursion (Duzeroski et al., 1992). Learnability results for ILP are
+surveyedby Kietzand Duzeroski(1994)and Cohenand Page(1995).
+Although IL Pnowseemstobethedominant approach toconstructive induction, ithas
+not been the only approach taken. So-called discovery systems aim to model the process
+DISCOVERYSYSTEM
+of scientific discovery of new concepts, usually by a direct search in the space of concept
+definitions. Doug Lenat s Automated Mathematician, or AM (Davis and Lenat,

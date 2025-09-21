@@ -1,0 +1,28 @@
+putsinnormal
+brainsarestilloperating intheelectronic version, which istherefore conscious.
+2. Theconsciousmentaleventsinthenormalbrainhavenocausalconnectiontobehavior,
+andaremissingfromtheelectronic brain, whichistherefore notconscious.
+3. Theexperimentisimpossible, andtherefore speculation aboutitismeaningless.
+Althoughwecannotruleoutthesecondpossibility, itreducesconsciousnesstowhatphiloso-
+pherscallanepiphenomenalrole something thathappens, butcastsnoshadow,asitwere,
+EPIPHENOMENON
+on the observable world. Furthermore, if consciousness is indeed epiphenomenal, then it
+cannotbethecasethatthesubjectsays Ouch becauseithurts thatis,becauseofthecon-
+sciousexperience ofpain. Instead, thebrainmustcontain a second, unconscious mechanism
+thatisresponsible forthe Ouch. Patricia Churchland (1986) points out that the functionalist arguments that operate at
+the level of the neuron can also operate at the level of any larger functional unit a clump
+of neurons, a mental module, a lobe, a hemisphere, or the whole brain. That means that if
+youacceptthenotionthatthebrainreplacementexperiment showsthatthereplacementbrain
+is conscious, then you should also believe that consciousness is maintained when the entire
+brainisreplacedbyacircuitthatupdatesitsstateandmaps frominputstooutputsviaahuge
+lookup table. This is disconcerting to many people (including Turing himself), who have
+theintuition thatlookup tablesarenotconscious or atleast, thattheconscious experiences
+generated during table lookup are not the same as those generated during the operation of a
+Section26.2. Strong AI:Can Machines Really Think? 1031
+system thatmightbedescribed (eveninasimple-minded, computational sense)asaccessing
+andgenerating beliefs, introspections, goals,andsoon.
+26.2.3 Biologicalnaturalism and the Chinese Room
+A strong challenge to functionalism has been mounted by John Searle s (1980) biological
+BIOLOGICAL naturalism,accordingtowhichmentalstatesarehigh-levelemergentfeaturesthatarecaused
+NATURALISM
+by low

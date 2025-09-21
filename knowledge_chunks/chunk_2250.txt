@@ -1,0 +1,50 @@
+,M) P(B)P(I)P(M).
+(ii) P(J G) P(J G,I).
+(iii) P(M G,B,I) P(M G,B,I,J).
+Exercises 563
+B M P(I)
+t t .9
+t f .5
+f t .5
+P(B) f f .1 P(M)
+.9 .1
+B I M
+B I M P(G)
+G
+t t t .9
+t t f .8
+t f t .0
+t f f .0 G P(J)
+f t t .2 J t .9
+f t f .1 f .0
+f f t .0
+f f f .0
+Figure 14.23 A simple Bayes net with Boolean variables B Broke Election Law,
+I Indicted,M Politically Motivated Prosecutor,G Found Guilty,J Jailed.
+b. Calculatethevalueof P(b,i, m,g,j).
+c. Calculate the probability that someone goes to jail given that they broke the law, have
+beenindicted, andfaceapolitically motivatedprosecutor.
+d. A context-specific independence (see page 542) allows a variable to be independent
+ofsomeofitsparentsgivencertainvaluesofothers. Inadditiontotheusualconditional
+independences given bythegraph structure, whatcontext-specific independences exist
+inthe Bayesnetin Figure14.23?
+e. Supposewewanttoaddthevariable P Presidential Pardon tothenetwork;drawthe
+newnetworkandbrieflyexplainanylinksyouadd.
+14.15 Considerthevariable eliminationalgorithm in Figure14.11(page528).
+a. Section14.4appliesvariableelimination tothequery
+P(Burglary John Calls true,Mary Calls true).
+Performthecalculations indicated andcheckthattheansweriscorrect.
+b. Countthenumberofarithmetic operations performed, andcompare itwiththenumber
+performedbytheenumeration algorithm.
+c. Supposeanetworkhastheformofachain: asequenceof Booleanvariables X ,...,X
+1 n
+where Parents(X i ) X i 1 for i 2,...,n. What is the complexity of computing
+P(X X true)usingenumeration? Usingvariableelimination?
+1 n
+d. Provethatthecomplexityofrunningvariableeliminationonapolytreenetworkislinear
+inthesizeofthetreeforanyvariableordering consistent withthenetworkstructure.
+14.16 Investigate thecomplexity ofexactinferenceingeneral Bayesiannetworks:
+a. Provethatany3-SA Tproblemcanbereducedtoexactinferenceina Bayesiannetwork
+constructed to represent the particular problem and hence that exact inference is NP-
+564 Chapter 14. Probabilistic Reasoning
+hard. (Hint: Consideran

@@ -1,0 +1,26 @@
+oncewedefinetheacousticandlanguage
+models. Wecoverthemnext.
+914 Chapter 23. Natural Languagefor Communication
+Vowels Consonants B N Consonants P Z
+Phone Example Phone Example Phone Example iy beat b bet p pet ih bit ch Chet r rat eh bet d debt s set bat f fat sh shoe ah but g get t ten ao bought hh hat th thick ow boat hv high dh that uh book jh jet dx butter ey bait k kick v vet er Bert l let w wet ay buy el bottle wh which oy boy m met y yet axr diner em bottom z zoo aw down n net zh measure ax about en button ix roses ng sing aa cot eng washing - silence
+Figure 23.14 The ARPA phonetic alphabet, or ARP Abet, listing all the phonesused in
+American English. There are several alternative notations, including an International Pho-
+netic Alphabet(IPA),whichcontainsthephonesinallknownlanguages.
+23.5.1 Acousticmodel
+Sound waves are periodic changes in pressure that propagate through the air. When these
+waves strike the diaphragm of a microphone, the back-and-forth movement generates an
+electric current. An analog-to-digital converter measures the size of the current which ap-
+proximates theamplitude ofthesound wave atdiscrete intervals called the samplingrate.
+SAMPLINGRATE
+Speechsounds, whicharemostlyintherangeof100Hz(100cyclespersecond)to1000Hz,
+are typically sampled at arate of 8 k Hz. (CDs and mp3 files are sampled at 44.1 k Hz.) The
+QUANTIZATION precisionofeachmeasurementisdeterminedbythequantizationfactor;speechrecognizers
+FACTOR
+typically keep 8 to 12 bits. That means that a low-end system, sampling at 8 k Hzwith 8-bit
+quantization, wouldrequirenearlyhalfamegabyteperminuteofspeech.
+Since we only want to know what words were spoken, not exactly what they sounded
+like, wedon t need tokeep allthatinformation. Weonly need todistinguish between differ-
+entspeechsounds. Linguistshaveidentifiedabout100speechsounds,orphones,thatcanbe
+PHONE
+composed to form all the words in all known human languages. Roughly speaking, a phone
+is the sound that corresponds to a single vowel 

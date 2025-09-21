@@ -1,0 +1,31 @@
+given B a 5, even though most other cus-
+2
+tomers find it quite dismal. In that case, it is extremely likely that A is the author of B .
+1 2
+544 Chapter 14. Probabilistic Reasoning
+The emergence of sophisticated reasoning like this from an RPM model of just a few lines
+isanintriguing exampleofhow probabilistic influences spread through thewebofintercon-
+nectionsamongobjectsinthemodel. Asmoredependencies andmoreobjectsareadded,the
+pictureconveyed bytheposteriordistribution oftenbecomesclearerandclearer.
+The next question is how to do inference in RP Ms. One approach is to collect the
+evidence and query and the constant symbols therein, construct the equivalent Bayes net,
+and apply any of the inference methods discussed in this chapter. This technique is called
+unrolling. Theobvious drawbackisthattheresulting Bayesnetmaybeverylarge. Further-
+UNROLLING
+more,iftherearemanycandidate objectsforanunknownrelationorfunction for example,
+theunknownauthorof B thensomevariables inthenetworkmayhavemanyparents.
+2
+Fortunately, much can be done to improve on generic inference algorithms. First, the
+presence of repeated substructure in the unrolled Bayes net means that many of the factors
+constructed during variable elimination (and similar kinds of tables constructed by cluster-
+ing algorithms) will be identical; effective caching schemes have yielded speedups of three
+ordersofmagnitudeforlargenetworks. Second,inferencemethodsdevelopedtotakeadvan-
+tage ofcontext-specific independence in Bayesnets findmanyapplications in RP Ms. Third,
+MCMC inference algorithms have some interesting properties when applied to RP Ms with
+relational uncertainty. MCM Cworksbysamplingcomplete possible worlds,soineachstate
+therelational structure iscompletely known. Intheexamplegivenearlier, each MCM Cstate
+wouldspecifythevalueof Author(B ),andsotheotherpotential authorsarenolongerpar-
+2
+entsoftherecommendationnodesfor B . For MCMC,then,relationaluncertainty causesno
+2
+increaseinnetworkcomplexity; instead

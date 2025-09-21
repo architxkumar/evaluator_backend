@@ -1,0 +1,29 @@
+ften
+optimal for both A and B to attack C rather than each other, lest C destroy each of them
+individually. In this way, collaboration emerges from purely selfish behavior. Of course,
+as soon as C weakens under the joint onslaught, the alliance loses its value, and either A
+or B could violate the agreement. In some cases, explicit alliances merely make concrete
+what would have happened anyway. In other cases, a social stigma attaches to breaking an
+alliance,soplayersmustbalancetheimmediateadvantageofbreakinganallianceagainstthe
+long-term disadvantage of being perceived as untrustworthy. See Section 17.5 for more on
+thesecomplications.
+If the game is not zero-sum, then collaboration can also occur with just two players.
+Suppose,forexample,thatthereisaterminalstatewithutilities(cid:16)v 1000,v 1000(cid:17)and
+A B
+that1000 isthehighest possible utility foreachplayer. Thentheoptimalstrategy isforboth
+players to do everything possible to reach this state that is, the players will automatically
+cooperate toachieveamutuallydesirable goal.
+5.3 ALPHA BETA PRUNING
+The problem with minimax search is that the number of game states it has to examine is
+exponential in the depth of the tree. Unfortunately, we can t eliminate the exponent, but it
+turnsoutwecaneffectivelycutitinhalf. Thetrickisthatitispossibletocomputethecorrect
+minimaxdecisionwithoutlookingateverynodeinthegametree. Thatis,wecanborrowthe
+idea of pruningfrom Chapter 3 to eliminate large parts of the tree from consideration. The
+ALPHA BETA particular technique weexamine iscalled alpha beta pruning. Whenapplied toastandard
+PRUNING
+minimax tree, it returns the same move as minimax would, but prunes away branches that
+cannotpossibly influencethefinaldecision.
+Consideragainthetwo-plygametreefrom Figure5.2. Let sgothroughthecalculation
+of the optimal decision once more, this time paying careful attention to what we know at
+eachpoint intheprocess. Thestepsareexplained in Figure5.5. Theoutcome isthatwecan
+identify theminimax

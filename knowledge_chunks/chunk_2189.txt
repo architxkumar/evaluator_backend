@@ -1,0 +1,35 @@
+, Equation (14.2) on page 513 shows that the terms P(x,e,y) in the joint distri-
+butioncanbewrittenasproducts ofconditional probabilities fromthenetwork. Therefore, a
+query can be answered using a Bayesian network by computing sums of products of condi-
+tionalprobabilities fromthenetwork.
+Consider the query P(Burglary John Calls true,Mary Calls true). The hidden
+variables for this query are Earthquake and Alarm. From Equation (13.9), using initial
+lettersforthevariables toshortentheexpressions, wehave4
+(cid:12)(cid:12)
+P(B j,m) P(B,j,m) P(B,j,m,e,a,).
+e a
+The semantics of Bayesian networks (Equation (14.2)) then gives us an expression in terms
+of CP Tentries. Forsimplicity, wedothisjustfor Burglary true:
+(cid:12)(cid:12)
+P(b j,m) P(b)P(e)P(a b,e)P(j a)P(m a).
+e a
+To compute this expression, we have to add four terms, each computed by multiplying five
+numbers. Intheworstcase,wherewehavetosumoutalmostallthevariables,thecomplexity
+ofthealgorithm foranetworkwith n Booleanvariables is O(n2n).
+An improvement can be obtained from the following simple observations: the P(b)
+termisaconstantandcanbemovedoutsidethesummationsoveraande,andthe P(e)term
+canbemovedoutsidethesummationovera. Hence,wehave
+(cid:12) (cid:12)
+P(b j,m) P(b) P(e) P(a b,e)P(j a)P(m a). (14.4)
+e a
+Thisexpression canbeevaluated bylooping through thevariables inorder, multiplying CPT
+entries as we go. For each summation, we also need to loop over the variable s possible
+P
+4 Anexpressionsuchas P(a,e)meanstosum P(A a,E e)forallpossiblevaluesofe. When E is
+e
+Boolean,thereisanambiguityinthat P(e)isusedtomeanboth P(E true)and P(E e),butitshouldbe
+clearfromcontextwhichisintended;inparticular,inthecontextofasumthelatterisintended.
+524 Chapter 14. Probabilistic Reasoning
+values. The structure of this computation is shown in Figure 14.8. Using the numbers from
+Figure 14.2, we obtain P(b j,m) 0.00059224. The corresponding computation for byields 0.0014919;hence,
+P(B j,m) (cid:16)0.00059224,0.0014919(cid:17) (cid:16)0.28

@@ -1,0 +1,30 @@
+t the simple grammar for E overgenerates, producing nonsen-
+0
+tencessuchas Mesmellastench. Toavoidthisproblem,ourgrammarwouldhavetoknow
+that me isnotavalid NP whenitisthesubjectofasentence. Linguistssaythatthepronoun I is in the subjective case, and me is in the objective case.4 We can account for this by
+4 Thesubjectivecaseisalsosometimescalledthenominativecaseandtheobjectivecaseissometimescalled
+theaccusativecase.Manylanguagesalsohaveadativecaseforwordsintheindirectobjectposition.
+900 Chapter 23. Natural Languagefor Communication
+splitting NP intotwocategories, NP and NP ,tostand fornounphrases inthesubjective
+S O
+and objective case, respectively. Wewould also need to split the category Pronoun into the
+two categories Pronoun (which includes I ) and Pronoun (which includes me ). The
+S O
+toppartof Figure23.7showsthegrammarforcaseagreement;wecalltheresultinglanguage
+CASEAGREEMENT
+E . Noticethatallthe NP rulesmustbeduplicated, oncefor NP andoncefor NP .
+1 S O
+SUBJECT VERB Unfortunately, E still overgenerates. English requires subject verb agreement for
+AGREEMENT 1
+person and number of the subject and main verb of a sentence. For example, if I is the
+subject, then I smell isgrammatical, but I smells isnot. If it isthe subject, weget the
+reverse. In English, the agreement distinctions are minimal: most verbs have one form for
+third-person singular subjects (he, she, or it), and a second form for all other combinations
+ofperson and number. Thereisoneexception: the verb tobe hasthree forms, I am you
+are he is. So one distinction (case) splits NP two ways, another distinction (person and
+number)splits NP threeways,andasweuncoverotherdistinctionswewouldendupwithan
+exponential numberofsubscripted NP formsifwetooktheapproach of E . Augmentations
+1
+areabetterapproach: theycanrepresent anexponential numberofformsasasinglerule.
+In the bottom of Figure 23.7 wesee (part of) an augmented grammarfor the language
+E , which handles case agreement, subject verb agreement, and head wor

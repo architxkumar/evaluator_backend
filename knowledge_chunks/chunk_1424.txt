@@ -1,0 +1,26 @@
+is even now described as the single most important treatise on the
+physics and physiology of human vision (Nalwa, 1993, p.15). In 1879, Wundt opened the
+first laboratory of experimental psychology, at the University of Leipzig. Wundt insisted
+on carefully controlled experiments in which his workers would perform a perceptual oras-
+sociative task while introspecting on their thought processes. The careful controls went a
+long way toward making psychology a science, but the subjective nature of the data made
+it unlikely that an experimenter would ever disconfirm his or her own theories. Biologists
+studying animal behavior, onthe otherhand, lacked introspective data and developed an ob-
+jectivemethodology,asdescribedby H.S.Jennings(1906)inhisinfluentialwork Behaviorof
+the Lower Organisms. Applying this viewpoint to humans, the behaviorism movement, led
+BEHAVIORISM
+by John Watson(1878 1958), rejectedanytheoryinvolvingmentalprocessesonthegrounds
+Section1.2. The Foundations of Artificial Intelligence 13
+thatintrospection couldnotprovidereliableevidence. Behavioristsinsistedonstudyingonly
+objective measures of the percepts (or stimulus) given to an animal and its resulting actions
+(or response). Behaviorism discovered a lot about rats and pigeons but had less success at
+understanding humans.
+COGNITIVE Cognitive psychology, which views the brain as an information-processing device,
+PSYCHOLOGY
+can be traced back at least to the works of William James (1842 1910). Helmholtz also
+insisted that perception involved a form of unconscious logical inference. The cognitive
+viewpoint waslargely eclipsed by behaviorism in the United States, but at Cambridge s Ap-
+plied Psychology Unit, directed by Frederic Bartlett (1886 1969), cognitive modeling was
+able to flourish. The Nature of Explanation, by Bartlett s student and successor Kenneth
+Craik (1943), forcefully reestablished the legitimacy of such mental terms as beliefs and
+goals, arguing that they are just as scientific as, say, us

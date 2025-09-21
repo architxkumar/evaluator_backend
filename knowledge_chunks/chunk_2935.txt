@@ -1,0 +1,28 @@
+he
+theory of information value (Chapter 16), is concerned with exactly the problem of
+directing sensors, and already some robots have incorporated the theoretical results
+obtained. STANLEY s132-mile trip through thedesert (page 28) wasmadepossible in
+largepartbyanactivesensingsystem ofthiskind.
+Insum, manyofthe issues Dreyfus has focused on background commonsense knowledge,
+the qualification problem, uncertainty, learning, compiled forms of decision making are
+indeed important issues, and have by now been incorporated into standard intelligent agent
+design. Inourview,thisisevidence of AI sprogress, notof itsimpossibility.
+One of Dreyfus strongest arguments is for situated agents rather than disembodied
+logicalinferenceengines. Anagentwhoseunderstandingof dog comesonlyfromalimited
+set of logical sentences such as Dog(x) Mammal(x) is at a disadvantage compared
+to an agent that has watched dogs run, has played fetch with them, and has been licked by
+one. As philosopher Andy Clark (1998) says, Biological brains are first and foremost the
+control systems for biological bodies. Biological bodies move and act in rich real-world
+1026 Chapter 26. Philosophical Foundations
+surroundings. Tounderstandhowhuman(orotheranimal)agentswork,wehavetoconsider
+EMBODIED thewholeagent,notjusttheagentprogram. Indeed,theembodiedcognitionapproachclaims
+COGNITION
+that it makes no sense to consider the brain separately: cognition takes place within a body,
+which is embedded in an environment. We need to study the system as a whole; the brain
+augmentsitsreasoning byreferringtotheenvironment, asthereaderdoesinperceiving (and
+creating) marks on paper to transfer knowledge. Under the embodied cognition program,
+robotics, vision, andothersensorsbecomecentral, notperipheral.
+26.2 STRONG AI: CAN MACHINES REALLY THINK?
+Many philosophers have claimed that a machine that passes the Turing Test would still not
+be actually thinking, but would be only a simulation of thinking. Again, the objection was
+fores

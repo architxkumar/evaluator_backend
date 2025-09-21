@@ -1,0 +1,41 @@
+Advances in Computer Chess, starting with Clarke
+(1977). Volume 134 of the journal Artificial Intelligence (2002) contains descriptions of
+state-of-the-art programs forchess, Othello, Hex, shogi, Go, backgammon, poker, Scrabble,
+andothergames. Since1998,abiennial Computersand Gamesconference hasbeenheld.
+EXERCISES
+5.1 Suppose you have an oracle, OM(s), that correctly predicts the opponent s move in
+any state. Using this, formulate the definition of a game as a (single-agent) search problem.
+Describeanalgorithm forfindingtheoptimalmove.
+5.2 Considertheproblem ofsolvingtwo8-puzzles.
+a. Giveacompleteproblem formulation inthestyleof Chapter 3.
+b. Howlargeisthereachable statespace? Giveanexactnumericalexpression.
+c. Suppose wemake the problem adversarial as follows: the two players take turns mov-
+ing;acoinisflippedtodeterminethepuzzleonwhichtomakeamoveinthatturn;and
+the winner is the first to solve one puzzle. Which algorithm can be used to choose a
+moveinthissetting?
+d. Giveaninformalproofthatsomeonewilleventuallywinifbothplayperfectly.
+196 Chapter 5. Adversarial Search
+e
+(a) a b c d
+P E
+f
+bd
+cd ad
+(b)
+ce cf cc ae af ac
+? ? ? ? ?
+de df
+dd dd
+Figure5.16 (a)Amapwherethecostofeveryedgeis1.Initiallythepursuer P isatnode
+bandtheevader E isatnoded. (b)Apartialgametreeforthismap. Eachnodeislabeled
+withthe P,E positions.P movesfirst. Branchesmarked ? haveyettobeexplored.
+5.3 Imagine that, in Exercise 3.3, oneof thefriends wantstoavoid the other. Theproblem
+then becomes a two-player pursuit evasion game. We assume now that the players take
+PURSUIT EVASION
+turns moving. The game ends only when the players are on the same node; the terminal
+payoff tothepursuer isminusthe totaltimetaken. (Theevader wins byneverlosing.) An
+exampleisshownin Figure5.16.
+a. Copythegametreeandmarkthevaluesoftheterminalnodes.
+b. Next to each internal node, write the strongest fact you can infer about its value (a
+number,oneormoreinequalities suchas 14 ,ora ? ).
+c. Beneatheachquestion mark,writethenameof

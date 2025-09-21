@@ -1,0 +1,30 @@
+s collection of cells (or of atoms), blindly operating according to the laws of
+biochemistry(orofphysics) what stheretobeamind? Whycanahunkofbrainbeamind
+whileahunkoflivercannot? Thatremainsthegreatmystery.
+26.2.4 Consciousness,qualia, and theexplanatory gap
+Running through all the debates about strong AI the elephant in the debating room, so
+to speak is the issue of consciousness. Consciousness is often broken down into aspects
+CONSCIOUSNESS
+such as understanding and self-awareness. The aspect we will focus on is that of subjective
+experience: whyitisthatitfeelslikesomethingtohavecertainbrainstates(e.g.,whileeating
+ahamburger), whereasitpresumablydoesnotfeellikeanythingtohaveotherphysicalstates
+(e.g.,whilebeingarock). Thetechnicaltermfortheintrinsicnatureofexperiences isqualia
+QUALIA
+(fromthe Latinwordmeaning,roughly, suchthings ).
+Qualia present a challenge for functionalist accounts of the mind because different
+qualia could be involved in what are otherwise isomorphic causal processes. Consider, for
+INVERTED example,theinvertedspectrumthoughtexperiment,whichthesubjectiveexperienceofper-
+SPECTRUM
+son X when seeing red objects is the same experience that the rest of us experience when
+seeinggreenobjects,andviceversa. X stillcallsredobjects red, stopsforredtrafficlights,
+and agrees that the redness of red traffic lights is a more intense red than the redness of the
+settingsun. Yet,X ssubjective experience isjustdifferent.
+Qualiaarechallengingnotjustforfunctionalism butforallofscience. Suppose,forthe
+sakeofargument,thatwehavecompletedtheprocessofscientificresearchonthebrain we
+have found that neural process P in neuron N transforms molecule Ainto molecule B,
+12 177
+and so on, and on. There is simply no currently accepted form of reasoning that would lead
+from such findings to the conclusion that the entity owning those neurons has any particular
+subjective experience. This explanatory gap has led some philosophers to conclude that
+EXPLANATORYGAP
+humansaresimplyincap

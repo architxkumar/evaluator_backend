@@ -1,0 +1,28 @@
+those
+in the conversation imagined by Turing.4 Searle then argues: the person in the room does
+not understand Chinese (given). The rule book and the stacks of paper, being just pieces of
+paper, do not understand Chinese. Therefore, there is no understanding of Chinese. Hence,
+accordingto Searle,runningtherightprogramdoesnotnecessarilygenerateunderstanding.
+Like Turing, Searle considered and attempted to rebuff a number of replies to his ar-
+gument. Several commentators, including John Mc Carthy and Robert Wilensky, proposed
+what Searle calls the systems reply. The objection is that asking if the human in the room
+understands Chinese is analogous to asking if the CPU can take cube roots. In both cases,
+the answer is no, and in both cases, according to the systems reply, the entire system does
+havethecapacityinquestion. Certainly,ifoneasksthe Chinese Roomwhetheritunderstands
+Chinese, theanswerwouldbeaffirmative(influent Chinese). By Turing spoliteconvention,
+thisshouldbeenough. Searle sresponse istoreiteratethe pointthattheunderstanding isnot
+inthehumanand cannot beinthepaper, sothere cannot beanyunderstanding. Heseemsto
+be relying on the argument that a property of the whole must reside in one of the parts. Yet
+4 Thefact that thestacks of paper might contain trillionsof pages and thegeneration of answerswould take
+millionsofyearshasnobearingonthelogicalstructureoftheargument. Oneaimofphilosophicaltrainingisto
+developafinelyhonedsenseofwhichobjectionsaregermaneandwhicharenot.
+1032 Chapter 26. Philosophical Foundations
+wateriswet, even though neither Hnor O is. Therealclaim madeby Searle rests upon the
+2
+followingfouraxioms(Searle,1990):
+1. Computerprogramsareformal(syntactic).
+2. Humanmindshavementalcontents (semantics).
+3. Syntaxbyitselfisneitherconstitutive ofnorsufficient forsemantics.
+4. Brainscauseminds.
+From the first three axioms Searle concludes that programs are not sufficient for minds. In
+otherwords,anagentrunningaprogram mightbeamind,butitisnotnecessarilya

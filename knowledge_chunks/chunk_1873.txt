@@ -1,0 +1,25 @@
+c-based AIwereadvancedsignificantlyby
+Robinson s (1965) development ofresolution, acomplete procedure forfirst-order inference
+describedin Chapter9. Thelogicistapproachtookrootat Stanford University. Cordell Green
+(1969a,1969b)developedafirst-orderreasoningsystem,QA3,leadingtothefirstattemptsto
+buildalogicalrobotat SRI(Fikesand Nilsson,1971). First-orderlogicwasappliedby Zohar
+Manna and Richard Waldinger (1971) for reasoning about programs and later by Michael
+Genesereth (1984) for reasoning about circuits. In Europe, logic programming (a restricted
+formoffirst-orderreasoning) wasdevelopedforlinguistic analysis(Colmerauer etal.,1973)
+and for general declarative systems (Kowalski, 1974). Computational logic was also well
+entrenchedat Edinburghthroughthe LCF(Logicfor Computable Functions)project(Gordon
+etal.,1979). Thesedevelopments arechronicled furtherin Chapters9and12.
+Practical applications built with first-order logic include a system for evaluating the
+manufacturing requirementsforelectronicproducts(Mannion,2002),asystemforreasoning
+about policies for fileaccess and digital rights management (Halpern and Weissman, 2008),
+andasystemfortheautomatedcomposition of Webservices (Mc Ilraithand Zeng,2001).
+Reactions to the Whorf hypothesis (Whorf, 1956) and the problem of language and
+thoughtingeneral,appearinseveralrecentbooks(Gumperz and Levinson,1996;Bowerman
+and Levinson,2001;Pinker,2003;Gentnerand Goldin-Meadow,2003). The theory theory
+(Gopnik and Glymour, 2002; Tenenbaum et al., 2007) views children s learning about the
+world as analogous to the construction of scientific theories. Just as the predictions of a
+machine learning algorithm depend strongly on the vocabulary supplied to it, so will the
+child sformulationoftheoriesdependonthelinguisticenvironmentinwhichlearningoccurs.
+There are a number of good introductory texts on first-order logic, including some by
+leading figures in the history of logic: Alfred Tarski (1941), Alonzo Church (1956), and
+W.V.Quine(198

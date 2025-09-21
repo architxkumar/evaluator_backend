@@ -1,0 +1,30 @@
+oth in
+the detail they can reveal and in the sheer amount of data they produce. A video camera
+for robotic applications might produce a million 24-bit pixels at 60 Hz; a rate of 10 GB per
+minute. The problem for a vision-capable agent then is: Which aspects of the rich visual
+stimulusshouldbeconsideredtohelptheagentmakegoodactionchoices,andwhichaspects
+should be ignored? Vision and all perception serves to further the agent s goals, not as
+anendtoitself.
+FEATURE We can characterize three broad approaches to the problem. The feature extraction
+EXTRACTION
+approach, as exhibited by Drosophila, emphasizes simple computations applied directly to
+the sensor observations. Inthe recognition approach an agent drawsdistinctions among the
+RECOGNITION
+objectsitencountersbasedonvisualandotherinformation. Recognitioncouldmeanlabeling
+eachimagewithayesornoastowhetheritcontainsfoodthatweshouldforage,orcontains
+Grandma s face. Finally, in the reconstruction approach an agent builds ageometric model
+RECONSTRUCTION
+oftheworldfromanimageorasetofimages.
+The last thirty years of research have produced powerful tools and methods for ad-
+dressing these approaches. Understanding these methods requires an understanding of the
+processes bywhich imagesareformed. Therefore, wenowcoverthephysical andstatistical
+phenomena thatoccurintheproduction ofanimage.
+24.1 IMAGE FORMATION
+Imaging distorts the appearance of objects. For example, a picture taken looking down a
+long straight set of railway tracks will suggest that the rails converge and meet. As another
+example, if you hold your hand in front of your eye, you can block out the moon, which is
+not smaller than your hand. Asyou moveyour hand back and forth ortilt it, your hand will
+seem toshrink and grow in the image, but itis not doing so inreality (Figure 24.1). Models
+oftheseeffectsareessential forbothrecognition andreconstruction.
+24.1.1 Imageswithoutlenses: The pinholecamera
+Image sensors gather light scattered from objects in a scene and cr

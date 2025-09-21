@@ -1,0 +1,24 @@
+stems,pp.52 61.American Instituteof and Bayesian Analysis.Springer Verlag.
+Ballard,B.W.(1983). The -minimaxsearchpro- Physics. Berkson,J.(1944).Applicationofthelogisticfunc-
+cedurefortreescontainingchancenodes.AIJ,21(3), Baum, L. E. and Petrie, T. (1966). Statistical tiontobio-assay.JASA,39,357 365.
+327 350.
+inference for probabilistic functions offinite state Berlekamp,E.R.,Conway,J.H.,and Guy,R.K.
+Baluja,S.(1997). Geneticalgorithmsandexplicit Markovchains. Annalsof Mathematical Statistics, (1982). Winning Ways, For Your Mathematical
+searchstatistics.In Mozer,M.C.,Jordan,M.I.,and 41. Plays.Academic Press.
+Petsche,T.(Eds.),NIPS9,pp.319 325.MIT Press.
+Baxter, J.and Bartlett, P.(2000). Reinforcement Berlekamp,E.R.and Wolfe,D.(1994).Mathemat-
+Bancilhon, F., Maier, D., Sagiv, Y., and Ullman, learningin POMDP sviadirectgradientascent. In ical Go:Chilling Getsthe Last Point.A.K.Peters.
+J.D.(1986). Magicsetsandotherstrangewaysto ICML-00,pp.41 48.
+implementlogicprograms.In PODS-86,pp.1 16. Berleur, J.and Brunnstein, K.(2001). Ethicsof
+Bayardo, R. J. and Miranker, D. P. (1994). An Computing:Codes,Spacesfor Discussionand Law.
+Banko,M.and Brill,E.(2001).Scalingtoveryvery optimalbacktrackalgorithmfortree-structuredcon- Chapmanand Hall.
+largecorporafornaturallanguagedisambiguation. straintsatisfactionproblems.AIJ,71(1),159 181.
+In ACL-01,pp.26 33. Berliner,H.J.(1979).The B treesearchalgorithm:
+Bayardo, R.J.and Schrag, R.C.(1997). Using Abest-firstproofprocedure.AIJ,12(1),23 40.
+Banko, M., Brill, E., Dumais, S. T., and Lin, J. CS Plook-backtechniquestosolvereal-world SAT
+(2002). Askmsr: Question answering using the instances.In AAAI-97,pp.203 208. Berliner, H. J. (1980a). Backgammoncomputer
+worldwideweb.In Proc.AAAI Spring Symposiumon programbeatsworldchampion.AIJ,14,205 220.
+Bayes,T.(1763). Anessaytowardssolvingaprob-
+Mining Answersfrom Textsand Knowledge Bases, leminthedoctrineofchances.Philosophical Trans- Berliner,H.J.(1980b). Computerbackgammon.
+pp.7 9.
+actionsofthe Royal So

@@ -1,0 +1,27 @@
+e
+5-6-7-8couldbeadded,sincethetwosubproblems seemnottooverlap. Wouldthisstillgive
+an admissible heuristic? The answer is no, because the solutions of the 1-2-3-4 subproblem
+and the 5-6-7-8 subproblem for a given state will almost certainly share some moves it is
+13 By working backward from the goal, the exact solution cost of every instance encountered is immediately
+available.Thisisanexampleofdynamicprogramming,whichwediscussfurtherin Chapter17.
+Section3.6. Heuristic Functions 107
+unlikely that1-2-3-4 can bemovedinto place without touching 5-6-7-8, andvice versa. But
+whatifwedon t count those moves? Thatis, werecord notthetotal costofsolving the1-2-
+3-4 subproblem, but just the number of moves involving 1-2-3-4. Then it is easy to see that
+thesumofthetwocostsisstillalowerboundonthecostofsolvingtheentireproblem. This
+DISJOINTPATTERN is the idea behind disjoint pattern databases. With such databases, it is possible to solve
+DATABASES
+random 15-puzzles in a few milliseconds the number of nodes generated is reduced by a
+factorof10,000compared withtheuseof Manhattan distance. For24-puzzles, aspeedup of
+roughly afactorofamillioncanbeobtained.
+Disjoint pattern databases work for sliding-tile puzzles because the problem can be
+dividedupinsuchawaythateachmoveaffectsonlyonesubproblem because onlyonetile
+ismoved atatime. Foraproblem such as Rubik s Cube, this kind ofsubdivision isdifficult
+because each move affects 8 or 9 of the 26 cubies. More general ways of defining additive,
+admissible heuristics have been proposed that do apply to Rubik s cube (Yang et al., 2008),
+buttheyhavenotyieldedaheuristicbetterthanthebestnonadditiveheuristicfortheproblem.
+3.6.4 Learning heuristics from experience
+A heuristic function h(n) is supposed to estimate the cost of a solution beginning from the
+state at node n. How could an agent construct such a function? One solution was given in
+the preceding sections namely, to devise relaxed problems for which an optimal solution
+can befound easily. 

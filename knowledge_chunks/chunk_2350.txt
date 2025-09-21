@@ -1,0 +1,41 @@
+
+e j j jk ejk j jk
+k
+To get some intuition for this formula, consider the simple case where there are only two
+actions,a anda ,fromwhichtochoose. Theircurrentexpectedutilitiesare U and U . The
+1 2 1 2
+(cid:2) (cid:2)
+information E e will yield some new expected utilities U and U for the actions, but
+j jk 1 2
+before weobtain E ,wewillhavesome probability distributions overthe possible values of
+j
+(cid:2) (cid:2)
+U and U (whichweassumeareindependent).
+1 2
+Suppose that a and a represent two different routes through a mountain range in
+1 2
+winter. a is anice, straight highway through a low pass, and a is awinding dirt road over
+1 2
+the top. Just given this information, a is clearly preferable, because it is quite possible that
+1
+a is blocked by avalanches, whereas it is unlikely that anything blocks a . U is therefore
+2 1 1
+clearly higher than U . Itispossible toobtain satellite reports E on theactual state ofeach
+2 j
+(cid:2) (cid:2)
+road that would give new expectations, U and U , for the two crossings. The distributions
+1 2
+fortheseexpectations areshownin Figure16.8(a). Obviously,inthiscase,itisnotworththe
+expenseofobtainingsatellitereports,becauseitisunlikelythattheinformationderivedfrom
+themwillchangetheplan. Withnochange, information hasnovalue.
+Nowsuppose thatwearechoosing betweentwodifferentwindingdirtroadsofslightly
+different lengths and we are carrying a seriously injured passenger. Then, even when U
+1
+(cid:2) (cid:2)
+and U are quite close, the distributions of U and U are very broad. There is a significant
+2 1 2
+possibility thatthesecondroutewillturnouttobeclearwhilethefirstisblocked, andinthis
+11 There isno loss of expressiveness in requiring perfect information. Suppose we wanted to model the case
+inwhichwebecomesomewhat morecertainabout avariable. We candothatbyintroducing anothervariable
+aboutwhichwelearnperfectinformation. Forexample, supposeweinitiallyhavebroaduncertaintyabout the
+variable Temperature. Then we gain the perfect knowledge Thermometer 37; t

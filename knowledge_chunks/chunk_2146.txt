@@ -1,0 +1,28 @@
+e., all possible combinations of values of the
+unobserved variables Y). Notice that together the variables X, E, and Yconstitute the com-
+pletesetofvariablesforthedomain,so P(X,e,y)issimplyasubsetofprobabilities fromthe
+fulljointdistribution.
+Giventhe fulljoint distribution toworkwith, Equation (13.9) can answerprobabilistic
+queries for discrete variables. It does not scale well, however: for a domain described by n
+Booleanvariables,itrequiresaninputtableofsize O(2n)andtakes O(2n)timetoprocessthe
+494 Chapter 13. Quantifying Uncertainty
+table. Ina realistic problem wecould easily have n 100, making O(2n) impractical. The
+fulljointdistributionintabularformisjustnotapracticaltoolforbuildingreasoningsystems.
+Instead,itshouldbeviewedasthetheoreticalfoundationonwhichmoreeffectiveapproaches
+maybebuilt,justastruthtablesformedatheoreticalfoundationformorepracticalalgorithms
+like DPLL. The remainder of this chapter introduces some of the basic ideas required in
+preparation forthedevelopment ofrealistic systemsin Chapter14.
+13.4 INDEPENDENCE
+Letusexpandthefulljointdistribution in Figure13.3byaddingafourthvariable, Weather.
+Thefulljointdistribution thenbecomes P(Toothache,Catch,Cavity,Weather),whichhas
+2 2 2 4 32 entries. It contains four editions of the table shown in Figure 13.3,
+one for each kind of weather. What relationship do these editions have to each other and to
+theoriginalthree-variable table? Forexample,howare P(toothache,catch,cavity,cloudy)
+and P(toothache,catch,cavity)related? Wecanusetheproductrule:
+P(toothache,catch,cavity,cloudy) P(cloudy toothache,catch,cavity)P(toothache,catch,cavity).
+Now, unless one is in the deity business, one should not imagine that one s dental problems
+influence theweather. Andforindoordentistry, atleast, it seemssafetosaythattheweather
+doesnotinfluencethedentalvariables. Therefore, thefollowingassertion seemsreasonable:
+P(cloudy toothache,catch,cavity) P(cloudy). (13.10)
+Fromthis,wecandeduce
+P(toothache,catch,cavity,cloudy) P(cloudy)

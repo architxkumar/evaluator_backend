@@ -1,0 +1,28 @@
+ing
+Withtwocustomers andtwobooks, the Bayesnetlooks like the onein Figure14.17(b). For
+larger numbers of books and customers, it becomes completely impractical to specify the
+networkbyhand.
+Fortunately, the network has a lot of repeated structure. Each Recommendation(c,b)
+variablehasasitsparentsthevariables Honest(c),Kindness(c),and Quality(b). Moreover,
+the CP Ts for all the Recommendation(c,b) variables are identical, as are those for all the
+Honest(c) variables, and so on. The situation seems tailor-made for a first-order language.
+Wewouldliketosaysomething like
+Recommendation(c,b) Rec CPT(Honest(c),Kindness(c),Quality(b))
+with the intended meaning that a customer s recommendation for a book depends on the
+customer s honesty and kindness and the book s quality according to some fixed CPT. This
+sectiondevelops alanguage thatletsussayexactlythis,andalotmorebesides.
+14.6.1 Possibleworlds
+Recall from Chapter 13 that a probability model defines a set of possible worlds with
+a probability P( ) for each world . For Bayesian networks, the possible worlds are as-
+signments of values to variables; for the Boolean case in particular, the possible worlds are
+identical to those of propositional logic. For a first-order probability model, then, it seems
+we need the possible worlds to be those of first-order logic that is, a set of objects with
+relations among them and aninterpretation that maps constant symbols toobjects, predicate
+symbols to relations, and function symbols to functions on those objects. (See Section 8.2.)
+Themodelalsoneedstodefineaprobability foreachsuchpossibleworld,justasa Bayesian
+networkdefinesaprobability foreachassignment ofvaluestovariables.
+Letus suppose, fora moment, that wehave figured out how to do this. Then, as usual
+(see page 485), we can obtain the probability of any first-order logical sentence as a sum
+overthepossible worldswhereitistrue:
+(cid:12)
+P( ) P( ). (14.13) : istruein Conditional probabilities P( e)canbe obtained similarly, sowecan, 

@@ -1,0 +1,25 @@
+o give the
+systemsutilityfunctions thatwillremainfriendly inthefaceofsuchchanges.
+Wecan tjustgiveaprogramastaticutilityfunction,becausecircumstances,andourde-
+sired responses tocircumstances, change overtime. Forexample, iftechnology hadallowed
+us to design a super-powerful AI agent in 1800 and endow it with the prevailing morals of
+thetime, itwouldbefighting today toreestablish slavery andabolish women s right tovote.
+Ontheotherhand,ifwebuild an AIagenttodayandtellittoevolveitsutility function, how
+canweassure that itwon treason that Humans think itismoraltokill annoying insects, in
+part because insect brains are so primitive. But human brains are primitive compared to my
+powers,soitmustbemoralformetokillhumans. Omohundro (2008) hypothesizes that even an innocuous chess program could pose a
+risk to society. Similarly, Marvin Minsky once suggested that an AI program designed to
+solve the Riemann Hypothesis might end up taking over all the resources of Earth to build
+more powerful supercomputers to help achieve its goal. The moral is that even if you only
+want your program to play chess or prove theorems, if you give it the capability to learn
+and alter itself, you need safeguards. Omohundro concludes that Social structures which
+cause individuals to bearthecost oftheirnegative externalities would go along way toward
+ensuringastableandpositivefuture, Thisseemstobeanexcellentideaforsocietyingeneral,
+regardlessofthepossibility ofultraintelligent machines.
+6 Arobotmightnoticetheinequitythatahumanisallowedtokillanotherinself-defense,butarobotisrequired
+tosacrificeitsownlifetosaveahuman.
+1040 Chapter 26. Philosophical Foundations
+We should note that the idea of safeguards against change in utility function is not a
+newone. Inthe Odyssey,Homer(ca. 700B.C.) described Ulysses encounterwiththesirens,
+whose song was so alluring it compelled sailors to cast themselves into the sea. Knowing it
+would have that effect on him, Ulysses ordered his crew to bind him to the mast so tha

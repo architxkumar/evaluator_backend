@@ -1,0 +1,31 @@
+owledgebasemakeuseofthe
+proposition symbols P ,P ,and P ,thenonepossible modelis
+1,2 2,2 3,1
+m P false, P false, P true .
+1 1,2 2,2 3,1
+With three proposition symbols, there are 23 8 possible models exactly those depicted
+in Figure 7.5. Notice, however, that the models are purely mathematical objects with no
+necessary connection to wumpus worlds. P is just asymbol; itmight mean there is apit
+1,2
+in 1,2 or I min Paristodayandtomorrow. The semantics for propositional logic must specify how to compute the truth value of
+any sentence, given a model. This is done recursively. All sentences are constructed from
+atomicsentences andthefiveconnectives; therefore, weneed tospecify how tocompute the
+truthofatomicsentences andhowtocomputethetruthofsentences formedwitheachofthe
+fiveconnectives. Atomicsentences areeasy: True istrueineverymodeland False isfalseineverymodel. The truth value of every other proposition symbol must be specified directly in the
+model. Forexample,inthemodelm givenearlier, P isfalse.
+1 1,2
+Forcomplexsentences, wehave fiverules, whichhold foranysubsentences P and Qinany
+modelm(here iff means ifandonlyif ): P istrueiff P isfalseinm. P Qistrueiffboth P and Qaretruein m. P Qistrueiffeither P or Qistrueinm. P Qistrueunless P istrueand Qisfalseinm. P Qistrueiff P and Qarebothtrueorbothfalsein m.
+The rules can also be expressed with truth tables that specify the truth value of a complex
+TRUTHTABLE
+sentence foreach possible assignment oftruth values toits components. Truthtables forthe
+fiveconnectives aregiven in Figure7.8. Fromthese tables, thetruth value ofanysentence s
+canbecomputedwithrespecttoanymodelmbyasimplerecursiveevaluation. Forexample,
+246 Chapter 7. Logical Agents
+P Q P P Q P Q P Q P Q
+false false true false false true true
+false true true false true true false
+true false false false true false false
+true true false true true true true
+Figure7.8 Truthtablesforthefivelogicalconnectives. Tousethetabletocompute,for
+example,thevalueof P Qwhen P istruean

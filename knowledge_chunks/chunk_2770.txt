@@ -1,0 +1,29 @@
+oves Mary Jean aime Marie
+Figure 23.12 The Vauquois triangle: schematic diagram of the choices for a machine
+translationsystem (Vauquois,1968). We startwith English textatthe top. An interlingua-
+based system follows the solid lines, parsing English first into a syntactic form, then into
+a semanticrepresentationandaninterlinguarepresentation,andthenthroughgenerationto
+a semantic, syntactic, andlexicalformin French. A transfer-basedsystem usesthe dashed
+linesasa shortcut. Differentsystemsmakethetransferatdifferentpoints; somemakeitat
+multiplepoints.
+23.4.2 Statisticalmachine translation
+Now that we have seen how complex the translation task can be, it should come as no sur-
+prisethatthemostsuccessfulmachinetranslationsystemsarebuiltbytrainingaprobabilistic
+model using statistics gathered from a large corpus of text. This approach does not need
+a complex ontology of interlingua concepts, nor does it need handcrafted grammars of the
+sourceandtargetlanguages, norahand-labeled treebank. Allitneedsisdata sampletrans-
+lationsfromwhichatranslationmodelcanbelearned. Totranslateasentencein,say,English (e)into French(f),wefindthestringofwords f thatmaximizes
+f argmax P(f e) argmax P(e f)P(f).
+f
+Here the factor P(f)is the target language model for French; it says how probable a given
+LANGUAGEMODEL
+TRANSLATION sentence is in French. P(e f) is the translation model; it says how probable an English
+MODEL
+sentence is as a translation for a given French sentence. Similarly, P(f e) is a translation
+modelfrom Englishto French.
+Shouldweworkdirectly on P(f e),orapply Bayes ruleandworkon P(e f)P(f)?
+In diagnostic applications like medicine, it is easier to model the domain in the causal di-
+rection: P(symptoms disease)ratherthan P(disease symptoms). Butintranslation both
+directions are equally easy. The earliest work in statistical machine translation did apply
+Bayes rule in part because the researchers had agood language model, P(f), andwanted
+to make use of it, and in part because they

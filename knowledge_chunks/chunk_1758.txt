@@ -1,0 +1,34 @@
+ineofaknowledge-based agentprogram. Likeallouragents,
+ittakesaperceptasinputandreturnsanaction. Theagentmaintainsaknowledgebase, KB,
+BACKGROUND whichmayinitially containsomebackgroundknowledge.
+KNOWLEDGE
+Each time the agent program is called, it does three things. First, it TEL Ls the knowl-
+edge base what it perceives. Second, it AS Ks the knowledge base what action it should
+perform. In the process of answering this query, extensive reasoning may be done about
+the current state of the world, about the outcomes of possible action sequences, and so on.
+Third,theagentprogram TEL Lstheknowledgebasewhichactionwaschosen, andtheagent
+executestheaction.
+Thedetails oftherepresentation language arehidden insidethreefunctions thatimple-
+menttheinterface between thesensors andactuators ononesideandthecorerepresentation
+and reasoning system on the other. MAKE-PERCEPT-SENTENCE constructs a sentence as-
+sertingthattheagentperceivedthegivenperceptatthegiventime. MAKE-ACTION-QUERY
+constructs a sentence that asks what action should be done at the current time. Finally,
+MAKE-ACTION-SENTENCE constructs a sentence asserting that the chosen action was ex-
+ecuted. The details of the inference mechanisms are hidden inside TELL and ASK. Later
+sections willrevealthesedetails.
+Theagentin Figure7.1appearsquitesimilartotheagentswithinternalstatedescribed
+in Chapter 2. Because of the definitions of TELL and ASK, however, the knowledge-based
+agent is not an arbitrary program for calculating actions. It is amenable to a description at
+236 Chapter 7. Logical Agents
+function KB-AGENT(percept)returnsanaction
+persistent: KB,aknowledgebase
+t,acounter,initially0,indicatingtime
+TELL(KB,MAKE-PERCEPT-SENTENCE(percept,t))
+action ASK(KB,MAKE-ACTION-QUERY(t))
+TELL(KB,MAKE-ACTION-SENTENCE(action,t))
+t t 1
+returnaction
+Figure7.1 Agenericknowledge-basedagent.Givenapercept,theagentaddsthepercept
+toitsknowledgebase,askstheknowledgebaseforthebestaction,andtellstheknowledge
+basethatithasinfacttakenthataction.
+the 

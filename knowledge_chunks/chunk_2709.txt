@@ -1,0 +1,43 @@
+ i TF(q ,d ) k (1 b b dj )
+i 1 i j L
+where d is the length of document d in words, and L is the average document length
+j (cid:2) j
+in the corpus: L d N. We have two parameters, k and b, that can be tuned by
+i i
+cross-validation; typical values are k 2.0 and b 0.75. IDF(q )is the inverse document
+i
+Section22.3. Information Retrieval 869
+frequency ofword q ,givenby
+i
+N DF(q ) 0.5
+i
+IDF(q ) log .
+i
+DF(q ) 0.5
+i
+Of course, it would be impractical to apply the BM25 scoring function to every document
+in the corpus. Instead, systems create an index ahead of time that lists, for each vocabulary
+INDEX
+word,thedocumentsthatcontaintheword. Thisiscalledthehitlistfortheword. Thenwhen
+HITLIST
+given a query, we intersect the hit lists of the query words and only score the documents in
+theintersection.
+22.3.2 IR system evaluation
+Howdoweknow whetheran IRsystem isperforming well? Weundertake anexperiment in
+whichthesystemisgivenasetofqueriesandtheresultsetsarescoredwithrespecttohuman
+relevance judgments. Traditionally, therehavebeentwomeasures usedinthescoring: recall
+and precision. Weexplain them withthehelp ofanexample. Imagine thatan IRsystem has
+returned aresult setforasingle query, forwhich weknow which documents areandare not
+relevant, outofacorpusof100documents. Thedocument countsineachcategory aregiven
+inthefollowingtable:
+Inresultset Notinresultset
+Relevant 30 20
+Notrelevant 10 40
+Precision measures the proportion of documents in the result set that are actually relevant.
+PRECISION
+Inourexample,theprecision is 30 (30 10) .75. Thefalsepositive rateis1 .75 .25.
+Recall measures the proportion of all the relevant documents in the collection that are in
+RECALL
+the result set. In our example, recall is 30 (30 20) .60. The false negative rate is 1 .60 .40. Inaverylargedocumentcollection,suchasthe World Wide Web,recallisdifficult
+to compute, because there is no easy way to examine every page on the Web for relevance.
+Allwecandoiseitherestimaterecallbysamplingorignorerecallcomplete

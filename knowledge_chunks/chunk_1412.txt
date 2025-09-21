@@ -1,0 +1,24 @@
+623 by the German scientist Wilhelm
+Schickard (1592 1635), although the Pascaline, builtin1642by Blaise Pascal(1623 1662),
+6 Chapter 1. Introduction
+is more famous. Pascal wrote that the arithmetical machine produces effects which appear
+nearer to thought than all the actions of animals. Gottfried Wilhelm Leibniz (1646 1716)
+built amechanical device intended to carry out operations on concepts rather than numbers,
+but its scope was rather limited. Leibniz did surpass Pascal by building a calculator that
+could add, subtract, multiply, and take roots, whereas the Pascaline could only add and sub-
+tract. Some speculated that machines might not just do calculations but actually be able to
+think and act on their own. In his 1651 book Leviathan, Thomas Hobbes suggested the idea
+of an artificial animal, arguing For what is the heart but a spring; and the nerves, but so
+manystrings; andthejoints,butsomanywheels. It sonethingtosaythatthemindoperates,atleastinpart,accordingtologicalrules,and
+to build physical systems that emulate some of those rules; it s another to say that the mind
+itself is such a physical system. Rene Descartes (1596 1650) gave the first clear discussion
+ofthedistinction betweenmindandmatterandoftheproblemsthatarise. Oneproblemwith
+a purely physical conception of the mind is that it seems to leave little room for free will:
+if the mind is governed entirely by physical laws, then it has no more free will than a rock deciding tofalltowardthecenteroftheearth. Descarteswasastrongadvocateofthepower
+of reasoning in understanding theworld, aphilosophy now called rationalism, and one that
+RATIONALISM
+counts Aristotle and Leibnitz as members. But Descartes was also a proponent of dualism.
+DUALISM
+He held that there is a part of the human mind (or soul or spirit) that is outside of nature,
+exempt from physical laws. Animals, on the other hand, did not possess this dual quality;
+they could be treated as machines. An alternative to dualism is materialism, which holds

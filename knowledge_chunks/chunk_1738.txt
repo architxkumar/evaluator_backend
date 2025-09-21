@@ -1,0 +1,28 @@
+ may be millions of variable as-
+signments that are only one conflict away from a solution. Plateau search allowing side-
+waysmovestoanother state withthesamescore can helplocal search finditswayoffthis
+plateau. This wandering on the plateau can be directed with tabu search: keeping a small
+listofrecentlyvisitedstatesandforbidding thealgorithm toreturntothosestates. Simulated
+annealing canalsobeusedtoescapefromplateaux.
+CONSTRAINT Anothertechnique,calledconstraintweighting,canhelpconcentratethesearchonthe
+WEIGHTING
+important constraints. Eachconstraint isgivenanumeric weight, W ,initially all1. Ateach
+i
+stepofthesearch,thealgorithmchoosesavariable value pairtochangethatwillresultinthe
+lowesttotalweightofallviolatedconstraints. Theweightsarethenadjustedbyincrementing
+theweightofeachconstraintthatisviolatedbythecurrentassignment. Thishastwobenefits:
+it adds topography to plateaux, making sure that it is possible to improve from the current
+state,anditalso,overtime,addsweighttotheconstraints thatareprovingdifficulttosolve.
+Another advantage of local search is that it can be used in an online setting when the
+problem changes. This is particularly important in scheduling problems. A week s airline
+schedule may involve thousands of flights and tens of thousands of personnel assignments,
+butbadweatheratoneairportcanrenderthescheduleinfeasible. Wewouldliketorepairthe
+schedule with a minimum number of changes. This can be easily done with a local search
+algorithm starting from the current schedule. A backtracking search with the new set of
+constraints usually requires much more time and might find a solution with many changes
+fromthecurrentschedule.
+6.5 THE STRUCTURE OF PROBLEMS
+In this section, we examine ways in which the structure of the problem, as represented by
+theconstraint graph, can beused tofindsolutions quickly. Mostofthe approaches herealso
+applytootherproblemsbesides CS Ps,suchasprobabilistic reasoning. Afterall,theonlyway
+wecan possibly hope todeal withthe real

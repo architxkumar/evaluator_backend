@@ -1,0 +1,30 @@
+xed strategy for two-finger Morra might be 0.5:one;0.5:two . A strategy profile is an assignment of a strategy to each player; given
+STRATEGYPROFILE
+thestrategyprofile,thegame soutcomeisanumericvalueforeachplayer.
+OUTCOME
+668 Chapter 17. Making Complex Decisions
+Asolutiontoagameisastrategyprofileinwhicheachplayeradoptsarationalstrategy.
+SOLUTION
+We will see that the most important issue in game theory is to define what rational means
+when each agent chooses only part of the strategy profile that determines the outcome. It is
+important to realize that outcomes are actual results of playing a game, while solutions are
+theoretical constructs used to analyze a game. We will see that some games have a solution
+only in mixed strategies. But that does not mean that a player must literally be adopting a
+mixedstrategytoberational.
+Consider the following story: Two alleged burglars, Alice and Bob, are caught red-
+handednearthesceneofaburglary andareinterrogated separately. Aprosecutorofferseach
+a deal: if you testify against your partner as the leader of a burglary ring, you ll go free for
+being thecooperative one, while yourpartner willserve 10 years inprison. However, if you
+both testify against each other, you ll both get5years. Alice and Bobalsoknow that ifboth
+refuse to testify they will serve only 1 year each for the lesser charge of possessing stolen
+PRISONER S property. Now Alice and Bob face the so-called prisoner s dilemma: should they testify
+DILEMMA
+or refuse? Being rational agents, Alice and Bob each want to maximize their own expected
+utility. Let sassumethat Aliceiscallouslyunconcernedaboutherpartner sfate,soherutility
+decreases in proportion to the number of years she will spend in prison, regardless of what
+happensto Bob. Bobfeelsexactlythesameway. Tohelpreacharational decision, theyboth
+construct thefollowingpayoffmatrix:
+Alice:testify Alice:refuse
+Bob:testify A 5,B 5 A 10,B 0
+Bob:refuse A 0,B 10 A 1,B 1
+Alice analyzes the payoff matrix as follows: Suppose B

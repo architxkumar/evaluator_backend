@@ -1,0 +1,30 @@
+al set of samples generated will be completely independent
+of the evidence. For example, even if the boss brings in the umbrella every day, the sam-
+pling process could stillhallucinate endless days ofsunshine. Whatthismeansinpractice is
+that the fraction of samples that remain reasonably close to the actual series of events (and
+therefore have nonnegligible weights) drops exponentially with t, the length of the observa-
+tionsequence. Inotherwords, tomaintain agivenlevelofaccuracy, weneed toincrease the
+number of samples exponentially with t. Given that a filtering algorithm that works in real
+timecanuseonlyafixednumberofsamples,whathappensinpracticeisthattheerrorblows
+upafteraverysmallnumberofupdatesteps.
+Clearly, we need a better solution. The second key innovation is to focus the set of
+samples on the high-probability regions of the state space. This can be done by throwing
+away samples that have very low weight, according to the observations, while replicating
+thosethathavehighweight. Inthatway,thepopulationofsampleswillstayreasonablyclose
+toreality. Ifwethinkofsamplesasaresource formodelingtheposteriordistribution, thenit
+makessensetousemoresamplesinregionsofthestatespacewheretheposteriorishigher.
+A family of algorithms called particle filtering is designed to do just that. Particle
+PARTICLEFILTERING
+filteringworksasfollows: First,apopulationof N initial-statesamplesiscreatedbysampling
+fromthepriordistribution P(X ). Thentheupdate cycleisrepeated foreachtimestep:
+0
+1. Each sample is propagated forward by sampling the next state value x given the
+t 1
+currentvalue x forthesample,basedonthetransition model P(X x ).
+t t 1 t
+2. Eachsampleisweightedbythelikelihooditassignstothenewevidence,P(e x ).
+t 1 t 1
+3. The population is resampled to generate a new population of N samples. Each new
+sample isselected from the current population; theprobability that aparticular sample
+isselectedisproportional toitsweight. Thenewsamplesareunweighted.
+The algorithm is shown in detai

@@ -1,0 +1,31 @@
+rfactual situations.
+Modernpropositionalsolvershavewideapplicabilityinindustrialapplications. Theap-
+plication ofpropositional inference inthe synthesis ofcomputer hardware isnow astandard
+technique having manylarge-scale deployments (Nowick etal.,1993). The SATMC satisfi-
+abilitycheckerwasusedtodetectapreviously unknownvulnerability ina Webbrowseruser
+sign-onprotocol (Armando etal.,2008).
+Thewumpus world wasinvented by Gregory Yob(1975). Ironically, Yob developed it
+because he was bored with games played on a rectangular grid: the topology of his original
+wumpus world was a dodecahedron, and we put it back in the boring old grid. Michael
+Genesereth wasthefirsttosuggest thatthewumpusworldbeusedasanagenttestbed.
+EXERCISES
+7.1 Supposetheagenthasprogressedtothepointshownin Figure 7.4(a),page239,having
+perceivednothingin 1,1 ,abreezein 2,1 ,andastenchin 1,2 ,andisnowconcernedwith
+the contents of 1,3 , 2,2 , and 3,1 . Each of these can contain a pit, and at most one can
+containawumpus. Followingtheexampleof Figure7.5,constructthesetofpossibleworlds.
+(You should find 32 of them.) Mark the worlds in which the KB is true and those in which
+280 Chapter 7. Logical Agents
+eachofthefollowingsentences istrue: Thereisnopitin 2,2 . 2 Thereisawumpusin 1,3 . 3
+Henceshowthat KB and KB .
+2 3
+7.2 (Adapted from Barwise and Etchemendy (1993).) Given the following, can you prove
+thattheunicornismythical? Howaboutmagical? Horned?
+Iftheunicorn ismythical, thenitisimmortal, but ifitisnotmythical, thenitisa
+mortalmammal. Iftheunicorn iseitherimmortaloramammal, thenitishorned.
+Theunicornismagicalifitishorned.
+7.3 Consider the problem of deciding whether a propositional logic sentence is true in a
+givenmodel.
+a. Write a recursive algorithm PL-TRUE?(s,m) that returns true if and only if the sen-
+tence s is true in the model m (where m assigns a truth value for every symbol in s).
+Thealgorithm shouldrunintimelinearinthesizeofthesentence. (Alternatively, usea
+versionofthisfunction fromtheonlinecod

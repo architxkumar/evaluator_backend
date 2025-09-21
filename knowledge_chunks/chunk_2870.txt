@@ -1,0 +1,27 @@
+dvantage that there is no need to identify a landmark before the range scan can be
+interpreted; indeed, in Figure 25.8(b), the robot faces a featureless wall. On the other hand,
+ifthere arevisible, identifiable landmarks, theymayprovideinstant localization.
+Chapter 15 described the Kalman filter, which represents the belief state as a single
+multivariate Gaussian, andtheparticle filter,whichrepresents thebeliefstatebyacollection
+of particles that correspond to states. Most modern localization algorithms use one of two
+representations oftherobot s belief P(X t z 1:t ,a 1:t 1 ).
+MONTECARLO Localization using particle filtering is called Monte Carlo localization, or MCL. The
+LOCALIZATION
+MC Lalfgorithm isaninstance oftheparticle-filtering algorithm of Figure15.17(page598).
+All we need to do is supply the appropriate motion model and sensor model. Figure 25.9
+showsoneversionusingtherange-scanmodel. Theoperationofthealgorithmisillustratedin
+Figure25.10astherobotfindsoutwhereitisinsideanofficebuilding. Inthefirstimage,the
+particles areuniformly distributed based ontheprior, indicating globaluncertainty aboutthe
+robot s position. In the second image, the first set of measurements arrives and the particles
+form clusters in the areas of high posterior belief. In the third, enough measurements are
+available topushalltheparticles toasinglelocation.
+The Kalman filter is the other major way to localize. A Kalman filter represents the
+posterior P(X t z 1:t ,a 1:t 1 )bya Gaussian. Themeanofthis Gaussianwillbedenoted t and
+itscovariance . Themainproblemwith Gaussianbeliefsisthattheyareonly closedunder
+t
+linearmotionmodelsf andlinearmeasurementmodels h. Fornonlinear f orh,theresultof
+updating a filteris in general not Gaussian. Thus, localization algorithms using the Kalman
+filter linearize the motion and sensor models. Linearization is a local approximation of a
+LINEARIZATION
+nonlinear function by a linear function. Figure 25.11 illustrates the concept of linearization
+fora(one-dim

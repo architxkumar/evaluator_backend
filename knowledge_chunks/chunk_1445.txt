@@ -1,0 +1,29 @@
+Alvey report reinstated thefunding that
+wascutbythe Lighthillreport.13 Inallthreecountries, however,theprojectsnevermettheir
+ambitiousgoals.
+Overall,the AIindustryboomedfromafewmilliondollarsin1980tobillionsofdollars
+in 1988, including hundreds of companies building expert systems, vision systems, robots,
+and software and hardware specialized for these purposes. Soon after that came a period
+calledthe AI Winter, inwhichmanycompaniesfellbythewaysideastheyfailedtodeliver
+onextravagant promises.
+1.3.7 The return ofneural networks (1986 present)
+In the mid-1980s at least four different groups reinvented the back-propagation learning
+BACK-PROPAGATION
+algorithm first found in 1969 by Bryson and Ho. The algorithm was applied to many learn-
+ing problems in computer science and psychology, and the widespread dissemination of the
+results in the collection Parallel Distributed Processing (Rumelhart and Mc Clelland, 1986)
+causedgreatexcitement.
+These so-called connectionist models of intelligent systems were seen by some as di-
+CONNECTIONIST
+rect competitors both to the symbolic models promoted by Newell and Simon and to the
+logicist approach of Mc Carthy and others (Smolensky, 1988). It might seem obvious that
+at some level humans manipulate symbols in fact, Terrence Deacon s book The Symbolic
+13 Tosaveembarrassment,anewfieldcalled IKBS(Intelligent Knowledge-Based Systems)wasinventedbecause
+Artificial Intelligencehadbeenofficiallycanceled.
+Section1.3. The Historyof Artificial Intelligence 25
+Species (1997) suggests that this is the defining characteristic of humans but the most ar-
+dentconnectionistsquestionedwhethersymbolmanipulationhadanyrealexplanatoryrolein
+detailed modelsofcognition. Thisquestion remainsunanswered, butthecurrent viewisthat
+connectionistandsymbolicapproachesarecomplementary, notcompeting. Asoccurredwith
+the separation of AI and cognitive science, modern neural network research has bifurcated
+into two fields, one concerned with creating effective network ar

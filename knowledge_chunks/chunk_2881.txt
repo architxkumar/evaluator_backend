@@ -1,0 +1,30 @@
+ces,becausethenumberofgridcellsincreasesexponentially withd,thenumberof
+dimensions. Sounds familiar? This is the curse!dimensionality of dimensionality. Second,
+thereistheproblemofwhattodowithcellsthatare mixed thatis,neitherentirelywithin
+free space norentirely within occupied space. Asolution path that includes such a cell may
+not be areal solution, because there may be no wayto cross the cell in the desired direction
+inastraight line. Thiswouldmakethepathplanner unsound. Ontheotherhand, ifweinsist
+thatonlycompletely freecellsmaybeused, theplannerwillbeincomplete, becauseitmight
+990 Chapter 25. Robotics
+goal
+start
+goal
+start
+(a) (b)
+Figure25.16 (a)Valuefunctionandpathfoundforadiscretegridcellapproximationof
+theconfigurationspace. (b)Thesamepathvisualizedinworkspacecoordinates.Noticehow
+therobotbendsitselbowtoavoidacollisionwiththeverticalobstacle.
+bethe casethat theonly paths tothegoal gothrough mixedcells especially ifthecell size
+is comparable to that of the passageways and clearances in the space. And third, any path
+through adiscretized statespacewillnotbesmooth. Itisgenerally difficulttoguarantee that
+a smooth solution exists near the discrete path. So a robot may not be able to execute the
+solution foundthroughthisdecomposition.
+Cell decomposition methods can be improved in a number of ways, to alleviate some
+oftheseproblems. Thefirstapproachallows furthersubdivision ofthemixedcells perhaps
+using cells of half the original size. This can be continued recursively until a path is found
+that lies entirely within free cells. (Of course, the method only works if there is a way to
+decideifagivencellisamixedcell,whichiseasyonlyiftheconfigurationspaceboundaries
+haverelativelysimplemathematicaldescriptions.) Thismethodiscompleteprovidedthereis
+aboundonthesmallestpassagewaythroughwhichasolutionmustpass. Althoughitfocuses
+most of the computational effort on the tricky areas within the configuration space, it still
+fails to scale well to high-dimensional problems becaus

@@ -1,0 +1,29 @@
+ods have both leveled off, withnosolution found, wecan terminate with
+failurebecause thereisnopossibility ofasubsequent changethatcouldaddasolution.
+386 Chapter 10. Classical Planning
+Nowallwehavetodoisprovethatthegraphandtheno-goodswillalwaysleveloff. The
+keytothisproofisthatcertainproperties ofplanninggraphsaremonotonically increasingor
+decreasing. Xincreases monotonically meansthat theset of Xsatleveli 1isasuperset
+(notnecessarily proper)ofthesetatlevel i. Theproperties areasfollows: Literals increase monotonically: Once a literal appears at a given level, it will appear
+atallsubsequent levels. Thisisbecause ofthepersistence actions; oncealiteral shows
+up,persistence actionscauseittostayforever. Actionsincrease monotonically: Onceanaction appears atagiven level, itwillappear
+atall subsequent levels. Thisis aconsequence of the monotonic increase ofliterals; if
+thepreconditionsofanactionappearatonelevel,theywillappearatsubsequentlevels,
+andthussowilltheaction. Mutexesdecreasemonotonically: Iftwoactionsaremutexatagivenlevel A ,thenthey
+i
+willalsobemutexforallpreviouslevelsatwhichtheybothappear. Thesameholdsfor
+mutexes between literals. It might not always appear that way in the figures, because
+the figures have a simplification: they display neither literals that cannot hold at level
+S nor actions that cannot be executed at level A . We can see that mutexes decrease
+i i
+monotonically istrueifyouconsiderthattheseinvisible literalsandactionsaremutex
+witheverything.
+The proof can be handled by cases: if actions A and B are mutex at level A , it
+i
+must be because of one of the three types of mutex. The first two, inconsistent effects
+and interference, are properties of the actions themselves, so if the actions are mutex
+at A , they will be mutex at every level. The third case, competing needs, depends on
+i
+conditions at level S : that level must contain a precondition of A that is mutex with
+i
+a precondition of B. Now, these two preconditions can be mutex if they are ne

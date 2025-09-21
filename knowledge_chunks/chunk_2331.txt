@@ -1,0 +1,28 @@
+accept about 400 inlieu ofagamble that
+gives 1000halfthetimeand 0theotherhalf thatis,thecertaintyequivalentofthelottery
+is 400,whilethe EM Vis 500. Thedifferencebetweenthe EM Vofalotteryanditscertainty
+INSURANCE equivalent is called the insurance premium. Risk aversion is the basis for the insurance
+PREMIUM
+industry, because it means that insurance premiums are positive. People would rather pay a
+small insurance premium than gamble the price of their house against the chance of a fire.
+From the insurance company s point of view, the price of the house is very small compared
+with the firm s total reserves. This means that the insurer s utility curve is approximately
+linearoversuchasmallregion, andthegamblecoststhecompanyalmostnothing.
+Noticethatforsmallchanges inwealthrelative tothecurrentwealth, almostany curve
+willbeapproximately linear. Anagent thathasalinearcurveissaidtoberisk-neutral. For
+RISK-NEUTRAL
+gambles with small sums, therefore, we expect risk neutrality. In a sense, this justifies the
+simplified procedure that proposed small gambles to assess probabilities and to justify the
+axiomsofprobability in Section13.2.3.
+16.3.3 Expected utilityand post-decisiondisappointment Therational waytochoosethebestaction, a ,istomaximizeexpected utility:
+a argmax EU(a e).
+a
+Ifwehavecalculatedtheexpectedutilitycorrectlyaccordingtoourprobability model,andif
+the probability model correctly reflects the underlying stochastic processes that generate the
+outcomes, then,onaverage,wewillgettheutilityweexpectifthewholeprocess isrepeated
+manytimes.
+In reality, however, our model usually oversimplifies the real situation, either because
+we don t know enough (e.g., when making a complex investment decision) or because the
+computation of the true expected utility is too difficult (e.g., when estimating the utility of
+successor states of the root node in backgammon). In that case, we are really working with
+estimates E ! U(a e) of the true expected utility. We will assume, kindly perha

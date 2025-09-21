@@ -1,0 +1,26 @@
+ate can be represented by a conjunction of size O(n). This is a very comforting result,
+considering that there are 2n states in the world. It says we can compactly represent all the
+subsetsofthose2n statesthatwewilleverneed. Moreover,theprocessofcheckingforbelief
+Section11.3. Planningand Actingin Nondeterministic Domains 419
+states that are subsets or supersets of previously visited belief states is also easy, at least in
+thepropositional case.
+Theflyinthe ointment of this pleasant picture isthat itonly works foraction schemas
+that have the same effects for all states in which their preconditions are satisfied. It is this
+propertythatenablesthepreservationofthe1-CN Fbelief-staterepresentation. Assoonasthe
+effect can depend on the state, dependencies are introduced between fluents and the 1-CNF
+property is lost. Consider, for example, the simple vacuum world defined in Section 3.2.1.
+Let the fluents be At L and At R for the location of the robot and Clean L and Clean R for
+the state of the squares. According to the definition of the problem, the Suck action has no
+precondition itcanalwaysbedone. Thedifficultyisthatitseffectdependsontherobot slo-
+cation: whentherobotis At L,theresultis Clean L,butwhenitis At R,theresultis Clean R.
+CONDITIONAL Forsuch actions, ouraction schemas will need something new: a conditional effect. These
+EFFECT
+have the syntax when condition: effect, where condition is a logical formula to be com-
+pared against the current state, and effect is a formula describing the resulting state. Forthe
+vacuumworld,wehave
+Action(Suck,
+EFFECT:when At L:Clean L when At R:Clean R).
+When applied to the initial belief state True, the resulting belief state is (At L Clean L) (At R Clean R), which is no longer in 1-CNF. (This transition can be seen in Figure 4.14
+on page 141.) In general, conditional effects can induce arbitrary dependencies among the
+fluentsinabeliefstate, leadingtobeliefstatesofexponential sizeintheworstcase.
+It is important to understand the 

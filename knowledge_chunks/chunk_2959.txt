@@ -1,0 +1,28 @@
+ularity, but some computer scientists and
+futurists relish it. Hans Moravec (2000) encourages ustogiveeveryadvantage toour mind
+children, the robots we create, which may surpass us in intelligence. There is even a new
+word transhumanism fortheactivesocialmovementthatlooksforwardtothisfuturein
+TRANSHUMANISM
+which humans are merged with or replaced by robotic and biotech inventions. Suffice it
+tosaythatsuchissuespresentachallengeformostmoraltheorists,whotakethepreservation
+ofhuman lifeand thehuman species tobe agood thing. Ray Kurzweiliscurrently themost
+visibleadvocate forthesingularity view,writingin The Singularity is Near(2005):
+The Singularitywillallowustotranscendtheselimitationsofourbiologicalbodiesand
+brain. We will gainpoweroverourfates. Ourmortality will be in ourown hands. We
+willbeabletoliveaslongaswewant(asubtlydifferentstatementfromsayingwewill
+liveforever).Wewillfullyunderstandhumanthinkingandwillvastlyextendandexpand
+itsreach. Bytheendofthiscentury,thenonbiologicalportionofourintelligencewillbe
+trillionsoftrillionsoftimesmorepowerfulthanunaidedhumanintelligence.
+Kurzweil also notes the potential dangers, writing Butthe Singularity will also amplify the
+abilitytoactonourdestructive inclinations, soitsfullstoryhasnotyetbeenwritten. If ultraintelligent machines are a possibility, we humans would do well to make sure
+that wedesign their predecessors in such a way that they design themselves to treat us well.
+Science fiction writer Isaac Asimov (1942) was the first to address this issue, with his three
+lawsofrobotics:
+1. A robot may not injure a human being or, through inaction, allow a human being to
+cometoharm.
+2. Arobotmustobeyordersgiventoitbyhumanbeings,except wheresuchorderswould
+conflictwiththe First Law.
+Section26.3. The Ethicsand Risksof Developing Artificial Intelligence 1039
+3. Arobotmustprotectitsownexistenceaslongassuchprotection doesnotconflictwith
+the Firstor Second Law.
+Theselawsseemreasonable, atleast toushumans.6 Butthetrickishowtoimplemen

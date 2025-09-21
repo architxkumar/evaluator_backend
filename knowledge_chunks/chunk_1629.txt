@@ -1,0 +1,29 @@
+nitial
+state. Anonlinevariantofiterativedeepeningsolvesthis problem;foranenvironment thatis
+auniform tree,thecompetitive ratioofsuchanagentisasmallconstant.
+Because of its method of backtracking, ONLINE-DFS-AGENT works only in state
+spaces where the actions are reversible. There are slightly more complex algorithms that
+workingeneralstatespaces,butnosuchalgorithm hasabounded competitiveratio.
+4.5.3 Onlinelocalsearch
+Like depth-first search, hill-climbing search has the property of locality in its node expan-
+sions. In fact, because it keeps just one current state in memory, hill-climbing search is
+already an online search algorithm! Unfortunately, it is not very useful in its simplest form
+because it leaves the agent sitting at local maxima with nowhere to go. Moreover, random
+restartscannotbeused,becausetheagentcannottransport itselftoanewstate.
+Instead of random restarts, one might consider using a random walk to explore the
+RANDOMWALK
+environment. Arandom walksimply selects atrandom one oftheavailable actions from the
+Section4.5. Online Search Agentsand Unknown Environments 151
+S G
+Figure4.22 Anenvironmentinwhicharandomwalkwilltakeexponentiallymanysteps
+tofindthegoal.
+current state; preference can be given to actions that have not yet been tried. It is easy to
+prove that a random walk will eventually find a goal or complete its exploration, provided
+thatthespaceisfinite.14 Ontheotherhand, theprocess canbeveryslow. Figure4.22shows
+an environment in which a random walk will take exponentially many steps to find the goal
+because, ateachstep,backwardprogressistwiceaslikelyasforwardprogress. Theexample
+is contrived, of course, but there are many real-world state spaces whose topology causes
+thesekindsof traps forrandomwalks.
+Augmenting hill climbing withmemoryrather than randomness turns out to beamore
+effective approach. The basic idea is to store a current best estimate H(s) of the cost to
+reach the goal from each state that has been visited. H(s) starts out being j

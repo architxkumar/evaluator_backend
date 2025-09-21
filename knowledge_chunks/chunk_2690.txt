@@ -1,0 +1,26 @@
+ge by adding primitives for unspecified choices that must be filled in by
+learning. Reinforcement learning is then applied to learn the best behavior consistent with
+the partial program. The combination of function approximation, shaping, and hierarchical
+reinforcement learning hasbeenshowntosolvelarge-scale problems forexample,policies
+thatexecutefor104stepsinstatespacesof10100stateswithbranchingfactorsof1030(Marthi
+et al., 2005). One key result (Dietterich, 2000) is that the hierarchical structure provides a
+natural additive decomposition oftheoverallutility function intotermsthatdepend onsmall
+subsetsofthevariablesdefiningthestatespace. Thisissomewhatanalogoustotherepresen-
+tationtheoremsunderlying theconciseness of Bayesnets(Chapter14).
+Thetopicofdistributedandmultiagentreinforcementlearningwasnottoucheduponin
+thechapterbutisofgreatcurrent interest. Indistributed RL,theaimistodevisemethodsby
+whichmultiple,coordinatedagentslearntooptimizeacommonutilityfunction. Forexample,
+Bibliographical and Historical Notes 857
+can wedevise methods whereby separate subagents forrobot navigation and robot obstacle
+SUBAGENT
+avoidance could cooperatively achieve a combined control system that is globally optimal?
+Some basic results in this direction have been obtained (Guestrin et al., 2002; Russell and
+Zimdars, 2003). The basic idea is that each subagent learns its own Q-function from its
+ownstream of rewards. Forexample, arobot-navigation component can receive rewards for
+makingprogresstowardsthegoal,whiletheobstacle-avoidance componentreceivesnegative
+rewards foreverycollision. Eachglobal decision maximizes thesumof Q-functions andthe
+wholeprocessconverges toglobally optimalsolutions.
+Multiagent RL is distinguished from distributed RL by the presence of agents who
+cannot coordinate their actions (except by explicit communicative acts) and who may not
+share the same utility function. Thus, multiagent RL deals with sequential game-theoretic
+problems or Markovgames, asdefined in C

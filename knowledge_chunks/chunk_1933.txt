@@ -1,0 +1,21 @@
+ntial instan-
+tiation) to propositionalize the inference problem. Typically, this approach is slow,
+unlessthedomainissmall. Theuseofunificationtoidentify appropriate substitutions forvariables eliminates the
+instantiationstepinfirst-orderproofs,makingtheprocessmoreefficientinmanycases. A lifted version of Modus Ponens uses unification to provide a natural and powerful
+inference rule, generalized Modus Ponens. The forward-chaining and backward-
+chainingalgorithmsapplythisruletosetsofdefiniteclauses. Generalized Modus Ponens is complete for definite clauses, although the entailment
+problem is semidecidable. For Datalog knowledge bases consisting of function-free
+definiteclauses, entailment isdecidable. Forward chaining is used in deductive databases, where it can be combined with re-
+lational database operations. It is also used in production systems, which perform
+efficient updates with very large rule sets. Forward chaining is complete for Datalog
+andrunsinpolynomial time. Backward chaining is used in logic programming systems, which employ sophisti-
+cated compiler technology to provide very fast inference. Backward chaining suffers
+fromredundant inferences andinfiniteloops;thesecanbealleviated bymemoization. Prolog, unlike first-order logic, uses aclosed worldwiththe unique names assumption
+and negation as failure. These make Prolog a more practical programming language,
+butbringitfurtherfrompurelogic. The generalized resolution inference rule provides a complete proof system for first-
+orderlogic,usingknowledgebasesinconjunctive normalform. Several strategies exist for reducing the search space of a resolution system without
+compromisingcompleteness. Oneofthemostimportantissuesisdealingwithequality;
+weshowedhowdemodulationandparamodulationcanbeused. Efficient resolution-based theorem provers have been used to prove interesting mathe-
+maticaltheoremsandtoverifyandsynthesize softwareandhardware.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Gottlob Frege, who developed full 

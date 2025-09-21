@@ -1,0 +1,29 @@
+dle prob-
+lems with millions of variables. Beginning in 2002, SAT competitions have been held reg-
+ularly; most of the winning entries have either been descendants of CHAFF orhave used the
+samegeneral approach. RSAT (Pipatsrisawat and Darwiche, 2007), the2007winner, falls in
+thelattercategory. Alsonoteworthyis MINISAT (Eenand So rensson,2003),anopen-source
+implementation available at http: minisat.sethat is designed to be easily modified
+andimproved. Thecurrentlandscape ofsolversissurveyedby Gomesetal.(2008).
+Local search algorithms for satisfiability were tried by various authors throughout the
+1980s; all ofthe algorithms werebased onthe idea ofminimizing the number ofunsatisfied
+clauses (Hansen and Jaumard, 1990). A particularly effective algorithm was developed by
+Gu(1989) and independently by Selman etal. (1992), whocalled it GSAT and showed that
+it wascapable of solving a wide range of very hard problems very quickly. The WALKSAT
+algorithm described inthechapterisdueto Selman etal.(1996).
+The phase transition in satisfiability of random k-SAT problems was first observed
+by Simon and Dubois (1989) and has given rise to a great deal of theoretical and empirical
+research due, inpart,totheobviousconnection tophasetransitionphenomenainstatistical
+physics. Cheeseman etal. (1991) observed phase transitions in several CS Psand conjecture
+that all NP-hard problems have a phase transition. Crawford and Auton (1993) located the
+3-SAT transition at a clause variable ratio of around 4.26, noting that this coincides with a
+278 Chapter 7. Logical Agents
+sharppeakintheruntimeoftheir SA Tsolver. Cookand Mitchell(1997)provideanexcellent
+summaryoftheearlyliterature ontheproblem.
+The current state of theoretical understanding is summarized by Achlioptas (2009).
+SATISFIABILITY
+The satisfiability threshold conjecture states that, for each k, there is a sharp satisfiability
+THRESHOLD
+CONJECTURE threshold r ,suchthatasthenumberofvariables n ,instances belowthethreshold are
+k
+satisfiab

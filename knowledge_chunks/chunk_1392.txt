@@ -1,0 +1,26 @@
+,
+Roberto Cipolla, David Cohen,James Coleman,Julie Ann Comparini, Corinna Cortes,Gary
+Cottrell, Ernest Davis, Tom Dean, Rina Dechter, Tom Dietterich, Peter Drake, Chuck Dyer,
+Doug Edwards, Robert Egginton, Asma a El-Budrawy, Barbara Engelhardt, Kutluhan Erol,
+Oren Etzioni, Hana Filip, Douglas Fisher, Jeffrey Forbes, Ken Ford, Eric Fosler-Lussier,
+John Fosler, Jeremy Frank, Alex Franz, Bob Futrelle, Marek Galecki, Stefan Gerberding,
+Stuart Gill, Sabine Glesner, Seth Golub, Gosta Grahne, Russ Greiner, Eric Grimson, Bar-
+bara Grosz, Larry Hall, Steve Hanks, Othar Hansson, Ernst Heinz, Jim Hendler, Christoph
+Herrmann,Paul Hilfinger,Robert Holte,Vasant Honavar,Tim Huang,Seth Hutchinson,Joost
+Jacob,Mark Jelasity,Magnus Johansson,Istvan Jonyer,Dan Jurafsky,Leslie Kaelbling,Keiji
+Kanazawa, Surekha Kasibhatla, Simon Kasif, Henry Kautz, Gernot Kerschbaumer, Max
+Khesin, Richard Kirby, Dan Klein, Kevin Knight, Roland Koenig, Sven Koenig, Daphne
+Koller, Rich Korf, Benjamin Kuipers, James Kurien, John Lafferty, John Laird, Gus Lars-
+son, John Lazzaro, Jon Le Blanc, Jason Leatherman, Frank Lee, Jon Lehto, Edward Lim,
+Phil Long, Pierre Louveaux, Don Loveland, Sridhar Mahadevan, Tony Mancill, Jim Martin,
+Andy Mayer, John Mc Carthy, David Mc Grane, Jay Mendelsohn, Risto Miikkulanien, Brian
+Milch,Steve Minton,Vibhu Mittal,Mehryar Mohri,Leora Morgenstern,Stephen Muggleton,
+Kevin Murphy,Ron Musick,Sung Myaeng,Eric Nadeau,Lee Naish,Pandu Nayak,Bernhard
+Nebel,Stuart Nelson,Xuan Long Nguyen,Nils Nilsson,Illah Nourbakhsh, Ali Nouri,Arthur
+Nunes-Harwitt,Steve Omohundro,David Page,David Palmer,David Parkes,Ron Parr,Mark
+Preface xi
+Paskin,Tony Passera,Amit Patel,Michael Pazzani,Fernando Pereira,Joseph Perla,Wim Pi-
+jls,Ira Pohl,Martha Pollack,David Poole,Bruce Porter,Malcolm Pradhan,Bill Pringle,Lor-
+raine Prior,Greg Provan,William Rapaport,Deepak Ravichandran, Ioannis Refanidis,Philip
+Resnik, Francesca Rossi, Sam Roweis, Richard Russell, Jonathan Schaeffer, Richard Scherl,
+Hinrich Schuetze, L

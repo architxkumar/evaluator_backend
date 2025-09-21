@@ -1,0 +1,23 @@
+foreachofthevariables. Thesegroundactionsarenot
+partofthetranslation, butwillbeusedinsubsequent steps. Define the initial state: assert F0 for every fluent F in the problem s initial state, and F foreveryfluentnotmentioned intheinitialstate. Propositionalize thegoal: foreveryvariableinthegoal,replacetheliteralsthatcontain
+thevariablewithadisjunction overconstants. Forexample,thegoalofhavingblock A
+388 Chapter 10. Classical Planning
+onanotherblock, On(A,x) Block(x)inaworldwithobjects A,B and C,wouldbe
+replacedbythegoal
+(On(A,A) Block(A)) (On(A,B) Block(B)) (On(A,C) Block(C)). Addsuccessor-state axioms: Foreachfluent F,addanaxiomoftheform
+Ft 1 Action Causes Ft (Ft Action Causes Not Ft),
+where Action Causes F is a disjunction of all the ground actions that have F in their
+addlist, and Action Causes Not F isadisjunction ofalltheground actions thathave F
+intheirdeletelist. Addprecondition axioms: Foreach ground action A, add the axiom At PRE(A)t,
+thatis,ifanactionistakenattimet,thenthepreconditions musthavebeentrue. Addactionexclusion axioms: saythateveryactionisdistinctfromeveryotheraction.
+Theresulting translation isintheformthatwecanhandto SATPLAN tofindasolution.
+10.4.2 Planning asfirst-order logicaldeduction: Situation calculus
+PDD Lisalanguagethatcarefullybalancestheexpressiveness ofthelanguagewiththecom-
+plexity ofthealgorithms thatoperate onit. Butsomeproblemsremaindifficulttoexpress in
+PDDL. Forexample, we can t express the goal move all the cargo from A to B regardless
+ofhowmanypiecesofcargothereare in PDDL,butwecandoitinfirst-orderlogic,usinga
+universal quantifier. Likewise, first-orderlogiccanconcisely express global constraints such
+as nomorethanfourrobotscanbeinthesameplaceatthesame time. PDD Lcanonlysay
+thiswithrepetitious preconditions oneverypossible actionthatinvolves amove.
+The propositional logic representation of planning problems also has limitations, such
+as the fact that the notion of time is tied directly to fluents. For example, South2 means the

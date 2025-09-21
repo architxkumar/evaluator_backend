@@ -1,0 +1,27 @@
+lebranches,nota
+purestrategythatalwayschoosesthebestbranch. Second,itishardertoheuristicallyevaluate
+anonterminal node,because wearedealing withinformation sets,notindividual states.
+Koller et al. (1996) come to the rescue with an alternative representation of extensive
+games, called the sequence form, that is only linear in the size of the tree, rather than ex-
+SEQUENCEFORM
+ponential. Rather than represent strategies, it represents paths through the tree; the number
+of paths is equal to the number of terminal nodes. Standard linear programming methods
+can again be applied to this representation. The resulting system can solve poker variants
+with 25,000 states in a minute ortwo. This is an exponential speedup overthe normal-form
+approach, butstillfallsfarshortofhandling fullpoker, with1018 states.
+If we can t handle 1018 states, perhaps we can simplify the problem by changing the
+gametoasimplerform. Forexample,if Iholdanaceandamconsidering thepossibility that
+thenextcardwillgivemeapairofaces,then Idon tcareaboutthesuitofthenextcard;any
+suit will do equally well. This suggests forming an abstraction of the game, one in which
+ABSTRACTION
+suits are ignored. The resulting game tree will be smaller by a factor of 4! 24. Suppose I
+can solve this smaller game; how will the solution to that game relate to the original game?
+Ifnoplayerisgoingforaflush(orbluffingso),thenthesuits don t mattertoanyplayer, and
+thesolution fortheabstraction willalsobeasolution fortheoriginal game. However, ifany
+playeriscontemplatingaflush,thentheabstractionwillbeonlyanapproximatesolution(but
+itispossibletocomputeboundsontheerror).
+Therearemanyopportunitiesforabstraction. Forexample, atthepointinagamewhere
+each player has two cards, if I hold a pair of queens, then the other players hands could be
+abstracted into three classes: better (only a pair of kings or a pair of aces), same (pair of
+queens) or worse (everything else). However, this abstraction might be too coarse. A better
+abstraction woul

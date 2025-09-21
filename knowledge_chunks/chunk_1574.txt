@@ -1,0 +1,25 @@
+thunitstep
+Bibliographical and Historical Notes 111
+costsandasinglegoalnode(Pohl,1977;Gaschnig,1979;Huynetal.,1980;Pearl,1984)and
+withmultiple goalnodes (Dinhetal., 2007). The effective branching factor wasproposed
+by Nilsson (1971) as an empirical measure of the efficiency; it is equivalent to assuming a
+timecostof O((b )d). Fortreesearchappliedtoagraph,Korfetal.(2001)arguethatthetime
+cost is better modeled as
+O(bd k),
+where k depends on the heuristic accuracy; this analysis
+has elicited some controversy, however. For graph search, Helmert and Ro ger (2008) noted
+that several well-known problems contained exponentially many nodes on optimal solution paths,implyingexponential timecomplexity for A evenwithconstant absolute errorin h. Therearemanyvariationsonthe A algorithm. Pohl(1973)proposedtheuseofdynamic
+weighting, whichusesaweightedsumf (n) w g(n) w h(n)ofthecurrentpathlength
+w g h
+andtheheuristicfunctionasanevaluationfunction,ratherthanthesimplesumf(n) g(n) h(n)used in A. Theweights w and w are adjusted dynamically asthe search progresses.
+g h
+Pohl salgorithmcanbeshowntobe(cid:2)-admissible thatis,guaranteedtofindsolutionswithin
+afactor 1 (cid:2)of the optimal solution, where (cid:2) isaparameter supplied tothe algorithm. The samepropertyisexhibitedbythe A algorithm(Pearl,1984),whichcanselectanynodefrom
+(cid:2)
+thefrontierprovideditsf-costiswithinafactor1 (cid:2)ofthelowest-f-costfrontiernode. The
+selection canbedonesoastominimizesearchcost. Bidirectional versions of A have been investigated; a combination of bidirectional A
+and known landmarks was used to efficiently find driving routes for Microsoft s online map
+service(Goldbergetal.,2006). Aftercachingasetofpathsbetweenlandmarks,thealgorithm
+canfindanoptimalpathbetweenanypairofpointsina24millionpointgraphofthe United
+States, searching less than 0.1 of the graph. Others approaches to bidirectional search
+include a breadth-first search backward from the goal up to a fixed depth, followed by a forward IDA search

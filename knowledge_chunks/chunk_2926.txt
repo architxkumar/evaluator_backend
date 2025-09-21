@@ -1,0 +1,26 @@
+besopreciselydescribedthatamachinecanbemadetosimulateit. Thus,
+AI wasfounded on theassumption that weak AI ispossible. Others have asserted that weak
+AI is impossible: Artificial intelligence pursued within the cult of computationalism stands
+notevenaghostofachanceofproducing durableresults (Sayre,1993).
+Clearly, whether AI isimpossible depends on how itisdefined. In Section 1.1, wede-
+fined AIasthequestforthebestagentprogramonagivenarchitecture. Withthisformulation,
+AI isby definition possible: forany digital architecture with k bits ofprogram storage there
+areexactly2k agentprograms,andallwehavetodotofindthebestoneisenumerateandtest
+them all. This might not be feasible for large k, but philosophers deal with the theoretical,
+notthepractical.
+1020
+Section26.1. Weak AI:Can Machines Act Intelligently? 1021
+Our definition of AI works well for the engineering problem of finding a good agent,
+given an architecture. Therefore, we re tempted to end this section right now, answering the
+title question in the affirmative. But philosophers are interested in the problem of compar-
+ing two architectures human and machine. Furthermore, they have traditionally posed the
+CANMACHINES question notintermsofmaximizingexpected utilitybutratheras, Canmachinesthink? THINK?
+Thecomputerscientist Edsger Dijkstra (1984) said that Thequestion ofwhether Ma-
+CANSUBMARINES chines Can Think ...isabout asrelevant asthequestion ofwhether Submarines Can Swim. SWIM?
+The American Heritage Dictionary s first definition of swim is To move through water by
+means of the limbs, fins, or tail, and most people agree that submarines, being limbless,
+cannot swim. Thedictionary alsodefines flyas Tomovethrough theairbymeansofwings
+orwinglikeparts, andmostpeopleagreethatairplanes,havingwinglikeparts,canfly. How-
+ever,neitherthequestionsnortheanswershaveanyrelevance tothedesignorcapabilities of
+airplanes andsubmarines; rathertheyareabout theusage of wordsin English. (Thefactthat
+ships do swim in Russian only ampl

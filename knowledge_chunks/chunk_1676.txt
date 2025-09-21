@@ -1,0 +1,27 @@
+ectly and reveal his position,
+leadingtocheckmate. The KBB Kendgame,ontheotherhand,iswonwithprobability1 (cid:2).
+White can force a win only by leaving one of his bishops unprotected for one move. If
+Blackhappens tobeintherightplaceandcaptures thebishop (amovethatwouldloseifthe
+bishopsareprotected), thegameisdrawn. Whitecanchoosetomaketheriskymoveatsome
+randomlychosenpointinthemiddleofaverylongsequence,thusreducing(cid:2)toanarbitrarily
+smallconstant, butcannotreduce (cid:2)tozero.
+It is quite rare that a guaranteed or probabilistic checkmate can be found within any
+reasonabledepth,exceptintheendgame. Sometimesacheckmatestrategyworksforsomeof
+theboardstatesinthecurrentbeliefstatebutnotothers. Tryingsuchastrategymaysucceed,
+ACCIDENTAL leadingtoanaccidentalcheckmate accidental inthesensethat Whitecouldnotknowthat
+CHECKMATE
+itwouldbecheckmate if Black spieceshappentobeintherightplaces. (Mostcheckmates
+in games between humans are of this accidental nature.) This idea leads naturally to the
+question ofhow likely itis that agiven strategy willwin, whichleads inturn tothe question
+ofhowlikelyitisthateachboardstateinthecurrentbeliefstateisthetrueboardstate.
+Section5.6. Partially Observable Games 183
+One sfirstinclinationmightbetoproposethatallboardstatesinthecurrentbeliefstate
+are equally likely but this can t be right. Consider, for example, White s belief state after
+Black s first move of the game. By definition (assuming that Black plays optimally), Black
+musthaveplayedanoptimalmove,soallboardstatesresultingfromsuboptimalmovesought
+tobeassignedzeroprobability. Thisargumentisnotquiterighteither,because eachplayer s
+goal is not just to move pieces tothe right squares but also tominimize the information that
+the opponent has about their location. Playing any predictable optimal strategy provides
+the opponent with information. Hence, optimal play in partially observable games requires
+a willingness to play somewhat randomly. (This is why restaurant hygiene inspectors do
+rand

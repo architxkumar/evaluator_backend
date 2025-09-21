@@ -1,0 +1,37 @@
+is happening in the None and
+Some branches.
+2. Iftherearesomepositiveandsomenegativeexamples,thenchoosethebestattributeto
+splitthem. Figure18.4(b)shows Hungry beingusedtosplittheremainingexamples.
+3. Iftherearenoexamplesleft,itmeansthatnoexamplehasbeenobserved forthiscom-
+Section18.3. Learning Decision Trees 701
+1 3 4 6 8 12 1 3 4 6 8 12
+2 5 7 9 10 11 2 5 7 9 10 11
+Type? Patrons?
+French Italian Thai Burger None Some Full
+1 6 4 8 3 12 1 3 6 8 4 12
+5 10 2 11 7 9 7 11 2 5 9 10
+No Yes Hungry?
+No Yes
+4 12
+5 9 2 10
+(a) (b)
+Figure 18.4 Splitting the examples by testing on attributes. At each node we show the
+positive(lightboxes) and negative(darkboxes)examplesremaining. (a) Splitting on Type
+bringsusnonearertodistinguishingbetweenpositiveandnegativeexamples. (b)Splitting
+on Patronsdoesagoodjobofseparatingpositiveandnegativeexamples. Aftersplittingon
+Patrons,Hungryisafairlygoodsecondtest.
+bination ofattribute values, and wereturn adefault value calculated from the plurality
+classificationofalltheexamplesthatwereusedinconstructingthenode sparent. These
+arepassedalonginthevariable parent examples.
+4. If there are no attributes left, but both positive and negative examples, it means that
+theseexampleshaveexactlythesamedescription,butdifferentclassifications. Thiscan
+happen because there is an error or noise in the data; because the domain is nondeter-
+NOISE
+ministic; orbecause wecan t observe anattribute thatwoulddistinguish theexamples.
+Thebestwecandoisreturntheplurality classification oftheremainingexamples.
+The DECISION-TREE-LEARNING algorithm is shown in Figure 18.5. Note that the set of
+examples iscrucial for constructing thetree, butnowheredotheexamplesappearinthetree
+itself. A tree consists of just tests on attributes in the interior nodes, values of attributes on
+the branches, and output values on the leaf nodes. Thedetails of the IMPORTANCE function
+are given in Section 18.3.4. The output of the learning algorithm on our sample training
+set is shown in Figure 18.6. Th

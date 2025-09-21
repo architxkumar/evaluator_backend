@@ -1,0 +1,28 @@
+ry,Bibliographical and Historical Notes,Exercises . . . . . . . . . 757
+19 Knowledgein Learning 768
+19.1 ALogical Formulationof Learning . . . . . . . . . . . . . . . . . . . . . 768
+Contents xvii
+19.2 Knowledgein Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . 777
+19.3 Explanation-Based Learning . . . . . . . . . . . . . . . . . . . . . . . . 780
+19.4 Learning Using Relevance Information . . . . . . . . . . . . . . . . . . . 784
+19.5 Inductive Logic Programming . . . . . . . . . . . . . . . . . . . . . . . . 788
+19.6 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 797
+20 Learning Probabilistic Models 802
+20.1 Statistical Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 802
+20.2 Learningwith Complete Data . . . . . . . . . . . . . . . . . . . . . . . . 806
+20.3 Learningwith Hidden Variables: The EM Algorithm . . . . . . . . . . . . 816
+20.4 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 825
+21 Reinforcement Learning 830
+21.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 830
+21.2 Passive Reinforcement Learning . . . . . . . . . . . . . . . . . . . . . . 832
+21.3 Active Reinforcement Learning . . . . . . . . . . . . . . . . . . . . . . . 839
+21.4 Generalization in Reinforcement Learning . . . . . . . . . . . . . . . . . 845
+21.5 Policy Search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 848
+21.6 Applications of Reinforcement Learning . . . . . . . . . . . . . . . . . . 850
+21.7 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 853
+VI Communicating, perceiving, and acting
+22 Natural Language Processing 860
+22.1 Language Models . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 860
+22.2 Text Classification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 865
+22.3 Information Retrieval . . . . . . . . . . . . . . . . . . . . . . . . . . . . 867
+22.4 Information Extraction . . . . . . . . . . . .

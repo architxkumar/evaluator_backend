@@ -1,0 +1,30 @@
+on forthedevelopmentofthegeneraltheories ofuncertainreasoning
+andrationaldecisions thatwepresent inthisandsubsequent chapters.
+13.1.1 Summarizing uncertainty
+Let s consider an example of uncertain reasoning: diagnosing a dental patient s toothache.
+Diagnosis whether for medicine, automobile repair, or whatever almost always involves
+uncertainty. Letustrytowriterulesfordentaldiagnosisusingpropositional logic,sothatwe
+canseehowthelogicalapproach breaksdown. Considerthefollowingsimplerule:
+Toothache Cavity .
+The problem is that this rule is wrong. Not all patients with toothaches have cavities; some
+ofthemhavegumdisease, anabscess, oroneofseveralotherproblems:
+Toothache Cavity Gum Problem Abscess...
+Unfortunately, in order to make the rule true, we have to add an almost unlimited list of
+possible problems. Wecouldtryturningtheruleintoacausalrule:
+Cavity Toothache .
+But this rule is not right either; not all cavities cause pain. The only way to fix the rule
+is to make it logically exhaustive: to augment the left-hand side with all the qualifications
+required for a cavity to cause a toothache. Trying to use logic to cope with a domain like
+medicaldiagnosis thusfailsforthreemainreasons: Laziness: It is too much work to list the complete set of antecedents or consequents
+LAZINESS
+neededtoensureanexceptionless ruleandtoohardtousesuchrules.
+THEORETICAL Theoreticalignorance: Medicalsciencehasnocompletetheoryforthedomain.
+IGNORANCE
+PRACTICAL Practical ignorance: Even if we know all the rules, we might be uncertain about a
+IGNORANCE
+particularpatientbecausenotallthenecessary testshave beenorcanberun.
+The connection between toothaches and cavities is just not a logical consequence in either
+direction. This is typical of the medical domain, as well as most other judgmental domains:
+law,business,design,automobilerepair,gardening,dating,andsoon. Theagent sknowledge
+482 Chapter 13. Quantifying Uncertainty
+can at best provide only a degree of belief in the relevant sentences. Our mai

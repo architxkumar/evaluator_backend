@@ -1,0 +1,35 @@
+entiretrainingset,ithastobeconsistentwitheachexampleinthetraining
+set. What would it mean for it to be inconsistent with an example? There are two possible
+waysthatthiscanhappen:
+770 Chapter 19. Knowledgein Learning Anexample canbeafalsenegative forthehypothesis, ifthehypothesis saysitshould
+FALSENEGATIVE
+benegativebutinfactitispositive. Forinstance, thenewexample X described by
+13
+Patrons(X ,Full) Hungry(X ) ... Will Wait(X )
+13 13 13
+wouldbeafalsenegativeforthehypothesis h givenearlier. From h andtheexample
+r r
+description, we can deduce both Will Wait(X ), which is what the example says,
+13
+and Will Wait(X ), which is what the hypothesis predicts. The hypothesis and the
+13
+examplearethereforelogically inconsistent. Anexample can be a false positive forthe hypothesis, if the hypothesis says it should
+FALSEPOSITIVE
+bepositivebutinfactitisnegative.1
+If an example is afalse positive or false negative fora hypothesis, then the example and the
+hypothesis arelogically inconsistent witheachother. Assumingthattheexampleisacorrect
+observation offact,thenthehypothesis canberuledout. Logically, thisisexactlyanalogous
+to the resolution rule of inference (see Chapter 9), where the disjunction of hypotheses cor-
+responds toaclause andtheexample corresponds toaliteral thatresolves against oneofthe
+literalsintheclause. Anordinarylogicalinferencesystemthereforecould,inprinciple,learn
+from the example by eliminating one or more hypotheses. Suppose, for example, that the
+exampleisdenotedbythesentence I ,andthehypothesisspaceish h h h . Thenif
+1 1 2 3 4
+I isinconsistentwithh andh ,thelogicalinferencesystemcandeducethenewhypothesis
+1 2 3
+spaceh h .
+1 4
+We therefore can characterize inductive learning in a logical setting as a process of
+gradually eliminating hypotheses that are inconsistent with the examples, narrowing down
+the possibilities. Because the hypothesis space is usually vast (oreveninfinite inthe case of
+first-order logic), we do not recommend trying to build a learning sy

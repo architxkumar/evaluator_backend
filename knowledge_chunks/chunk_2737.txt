@@ -1,0 +1,26 @@
+SES
+22.1 This exercise explores the quality of the n-gram model of language. Find or create a
+monolingual corpus of100,000 wordsormore. Segmentitinto words, andcompute the fre-
+quencyofeachword. Howmanydistinctwordsarethere? Alsocountfrequenciesofbigrams
+(twoconsecutive words)and trigrams(three consecutive words). Nowusethose frequencies
+togeneratelanguage: fromtheunigram,bigram,andtrigram models,inturn,generatea100-
+word text by making random choices according to the frequency counts. Compare the three
+generated textswithactuallanguage. Finally, calculatetheperplexity ofeachmodel.
+886 Chapter 22. Natural Language Processing
+22.2 Write a program to do segmentation of words without spaces. Given a string, such
+asthe URL thelongestlistofthelongeststuffatthelongestdomainnameatlonglast.com, returna
+list ofcomponent words: the, longest, list, ... . Thistask isuseful forparsing UR Ls,
+for spelling correction when words runtogether, and for languages such as Chinese that do
+not have spaces between words. It can be solved with aunigram orbigram word model and
+adynamicprogramming algorithm similartothe Viterbialgorithm.
+22.3 (Adaptedfrom Jurafskyand Martin(2000).) Inthisexercise youwilldevelopaclassi-
+fierforauthorship: given atext, the classifier predicts which oftwocandidate authors wrote
+the text. Obtain samples of text from two different authors. Separate them into training and
+test sets. Now train a language model on the training set. You can choose what features to
+use; n-grams of words orletters are the easiest, but you can add additional features that you
+think may help. Then compute the probability of the text under each language model and
+chose the most probable model. Assess the accuracy of this technique. How does accuracy
+change as you alter the set of features? This subfield of linguistics is called stylometry; its
+STYLOMETRY
+successesincludetheidentificationoftheauthorofthedisputed Federalist Papers(Mosteller
+and Wallace, 1964) and some disputed works of Shake

@@ -1,0 +1,26 @@
+rcuits rather than running algorithms in general-purpose
+computers, have received little attention in AI, however. The most notable exception is the
+work of Stan Rosenschein (Rosenschein, 1985; Kaelbling and Rosenschein, 1990), who de-
+veloped ways to compile circuit-based agents from declarative descriptions of the task envi-
+ronment. (Rosenschein s approach is described at some length in the second edition of this
+book.) Theworkof Rod Brooks(1986,1989)demonstratestheeffectivenessofcircuit-based
+designs for controlling robots a topic we take up in Chapter 25. Brooks (1991) argues
+that circuit-based designs are all that is needed for AI that representation and reasoning
+are cumbersome, expensive, and unnecessary. In our view, neither approach is sufficient by
+itself. Williams et al. (2003) show how a hybrid agent design not too different from our
+wumpusagenthasbeenusedtocontrol NAS Aspacecraft, planningsequencesofactionsand
+diagnosing andrecoveringfromfaults.
+Thegeneral problem ofkeeping track of apartially observable environment wasintro-
+duced for state-based representations in Chapter 4. Its instantiation for propositional repre-
+sentations was studied by Amir and Russell (2003), who identified several classes of envi-
+ronments that admit efficient state-estimation algorithms and showed that for several other
+TEMPORAL- classes theproblem isintractable. The temporal-projection problem, whichinvolves deter-
+PROJECTION
+mining what propositions hold true after an action sequence is executed, can be seen as a
+specialcaseofstateestimationwithemptypercepts. Manyauthorshavestudiedthisproblem
+because of its importance in planning; some important hardness results were established by
+Exercises 279
+Liberatore (1997). The idea of representing a belief state with propositions can be traced to
+Wittgenstein (1922).
+Logical state estimation, of course, requires a logical representation of the effects of
+actions a key problem in AI since the late 1950s. The dominant proposal has b

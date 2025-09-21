@@ -1,0 +1,25 @@
+r,neitherthequestionsnortheanswershaveanyrelevance tothedesignorcapabilities of
+airplanes andsubmarines; rathertheyareabout theusage of wordsin English. (Thefactthat
+ships do swim in Russian only amplifies this point.). The practical possibility of thinking
+machines hasbeenwithusforonly50yearsorso,notlongenoughforspeakersof Englishto
+settleonameaningfortheword think does itrequire abrain orjust brain-like parts. Alan Turing,inhisfamouspaper Computing Machineryand Intelligence (1950),sug-
+gested that instead of asking whether machines can think, we should ask whether machines
+canpassabehavioral intelligencetest,whichhascometobecalledthe Turing Test. Thetest
+TURINGTEST
+is for a program to have a conversation (via online typed messages) with an interrogator for
+five minutes. The interrogator then has to guess if the conversation is with a program or a
+person; the program passes the test if it fools the interrogator 30 of the time. Turing con-
+jectured that,bytheyear2000, acomputerwithastorage of 109 unitscouldbeprogrammed
+wellenoughtopassthetest. Hewaswrong programshaveyettofoolasophisticatedjudge.
+On the other hand, many people have been fooled when they didn t know they might
+be chatting with a computer. The ELIZA program and Internet chatbots such as MGONZ
+(Humphrys, 2008) and NATACHATA have fooled their correspondents repeatedly, and the
+chatbot CYBERLOVER hasattractedtheattentionoflawenforcementbecauseofitspenchant
+fortrickingfellowchattersintodivulging enoughpersonalinformation thattheiridentitycan
+be stolen. The Loebner Prize competition, held annually since 1991, is the longest-running
+Turing Test-likecontest. Thecompetitions haveledtobettermodelsofhumantypingerrors.
+Turing himself examined a wide variety of possible objections to the possibility of in-
+telligent machines, including virtually all of those that have been raised in the half-century
+sincehispaperappeared. Wewilllookatsomeofthem.
+26.1.1 The argument from disability
+The argument from disability make

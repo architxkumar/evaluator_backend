@@ -1,0 +1,36 @@
+ion for each state: a set of variables, each of which has a value.
+A problem is solved when each variable has a value that satisfies all the constraints on the
+CONSTRAINT
+variable. Aproblem described thiswayiscalleda constraintsatisfaction problem,or CSP.
+SATISFACTION
+PROBLEM
+CS Psearchalgorithmstakeadvantageofthestructureofstatesandusegeneral-purpose
+ratherthanproblem-specific heuristicstoenablethesolutionofcomplexproblems. Themain
+ideaistoeliminatelargeportionsofthesearchspaceallatoncebyidentifyingvariable value
+combinations thatviolatetheconstraints.
+6.1 DEFINING CONSTRAINT SATISFACTION PROBLEMS
+Aconstraint satisfaction problemconsists ofthreecomponents, X,D,and C:
+X isasetofvariables, X ,...,X .
+1 n
+Disasetofdomains, D ,...,D ,oneforeachvariable.
+1 n
+C isasetofconstraints thatspecifyallowablecombinations ofvalues.
+Each domain D consists of a set of allowable values, v ,...,v for variable X . Each
+i 1 k i
+constraint C consistsofapair(cid:16)scope,rel(cid:17),wherescope isatupleofvariablesthatparticipate
+i
+intheconstraintandrel isarelationthatdefinesthevaluesthatthosevariablescantakeon. A
+relationcanberepresented asanexplicitlistofalltuples ofvaluesthatsatisfytheconstraint,
+or as an abstract relation that supports two operations: testing if a tuple is a member of the
+relation andenumerating themembersoftherelation. Forexample, if X and X bothhave
+1 2
+202
+Section6.1. Defining Constraint Satisfaction Problems 203
+the domain A,B , then the constraint saying the two variables must have different values
+canbewrittenas(cid:16)(X ,X ), (A,B),(B,A) (cid:17) oras(cid:16)(X ,X ),X (cid:7) X (cid:17).
+1 2 1 2 1 2
+To solve a CSP, we need to define a state space and the notion of a solution. Each
+state in a CSP is defined by an assignment of values to some or all of the variables, X ASSIGNMENT i
+v ,X v ,... . Anassignment that does not violate anyconstraints iscalled aconsistent
+CONSISTENT i j j
+COMPLETE orlegalassignment. Acompleteassignmentisoneinwhicheveryvariable isassigne

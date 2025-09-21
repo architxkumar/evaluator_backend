@@ -1,0 +1,24 @@
+ctiontothe1922edition.
+Wiener,N.(1942).Theextrapolation,interpolation, for hierarchical planning. Computational Intelli-
+andsmoothingofstationarytimeseries. Osrd370, Wittgenstein, L.(1953). Philosophical Investiga- gence,6,12 24.
+Reporttothe Services19, Research Project DIC- tions.Macmillan. Yarowsky,D.(1995).Unsupervisedwordsensedis-
+6037,MIT. Wojciechowski,W.S.and Wojcik,A.S.(1983).Au- ambiguationrivalingsupervisedmethods. In ACL-
+Wiener,N.(1948).Cybernetics.Wiley. tomateddesignofmultiple-valuedlogiccircuitsby 95,pp.189 196.
+automatedtheoremprovingtechniques.IEEE Trans-
+Yedidia,J.,Freeman,W.,and Weiss,Y.(2005).Con-
+Wilensky, R. (1978). Understanding goal-based actionson Computers,C-32(9),785 798.
+structing free-energy approximations and general-
+stories.Ph.D.thesis,Yale University.
+Wolfe,J.and Russell,S.J.(2007).Exploitingbelief izedbeliefpropagationalgorithms. IEEE Transac-
+Wilensky,R.(1983).Planningand Understanding. statestructureingraphsearch. In ICAPS Workshop tionson Information Theory,51(7),2282 2312.
+Addison-Wesley. on Planningin Games.
+Yip,K.M.-K.(1991). KAM:ASystemfor Intelli-
+Wilkins,D.E.(1980). Usingpatternsandplansin Woods,W.A.(1973). Progressinnaturallanguage gently Guiding Numerical Experimentationby Com-
+chess.AIJ,14(2),165 203. understanding:Anapplicationtolunargeology. In puter.MIT Press.
+AFIPS Conference Proceedings,Vol.42,pp.441 Wilkins,D.E.(1988).Practical Planning:Extend- 450. Yngve,V.(1955). Amodelandanhypothesisfor
+ingthe AI Planning Paradigm.Morgan Kaufmann. languagestructure.In Locke,W.N.and Booth,A.D.
+Woods,W.A.(1975). What sinalink? Founda- (Eds.),Machine Translationof Languages,pp.208 Wilkins,D.E.(1990). Can AIplannerssolveprac- tionsforsemanticnetworks. In Bobrow,D.G.and 226.MIT Press.
+ticalproblems? Computational Intelligence, 6(4), Collins, A.M.(Eds.), Representationand Under-
+232 246. standing: Studiesin Cognitive Science,pp.35 82. Yob,G.(1975). Huntthewumpus! Creative Com-
+Academic Press. puting,Sep Oct.
+Williams,B.,Ingham,M.,Chun

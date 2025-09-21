@@ -1,0 +1,26 @@
+eometershavebeenattempting toformalizeshapefor
+centuries,thebasicconceptbeingthatshapeiswhatremainsunchangedundersomegroupof
+transformations for example,combinations ofrotations andtranslations. Thedifficultylies
+infindingarepresentationofglobalshapethatisgeneralenoughtodealwiththewidevariety
+ofobjectsintherealworld notjustsimpleformslikecylinders,cones,andspheres andyet
+canberecovered easily fromthevisual input. Theproblem of characterizing the localshape
+of a surface is much better understood. Essentially, this can be done in terms of curvature:
+howdoesthesurface normalchangeasonemovesindifferentdirections onthesurface? For
+a plane, there is no change at all. For a cylinder, if one moves parallel to the axis, there is
+no change, but in the perpendicular direction, the surface normal rotates at a rate inversely
+proportional to the radius of the cylinder, and so on. All this is studied in the subject called
+differential geometry.
+Theshape ofanobject isrelevantforsomemanipulation tasks(e.g.,deciding whereto
+graspanobject), butitsmostsignificant roleisinobjectrecognition, wheregeometric shape
+alongwithcolorandtextureprovidethemostsignificantcuestoenableustoidentifyobjects,
+classifywhatisintheimageasanexampleofsomeclassonehasseenbefore,andsoon.
+24.5 OBJECT RECOGNITION FROM STRUCTURAL INFORMATION
+Puttingaboxaroundpedestriansinanimagemaywellbeenoughtoavoiddrivingintothem.
+Wehaveseenthatwecanfindaboxbypooling theevidence provided byorientations, using
+histogram methodstosuppress potentially confusing spatial detail. Ifwewanttoknowmore
+aboutwhatsomeoneisdoing,wewillneedtoknowwheretheirarms,legs,body,andheadlie
+inthepicture. Individual bodyparts arequitedifficulttodetect ontheirownusingamoving
+windowmethod,becausetheircolorandtexturecanvarywidelyandbecausetheyareusually
+small in images. Often, forearms and shins are as small as two to three pixels wide. Body
+parts do not usually appear on their own, and representing what is connected to what could
+bequitepowerful,becausepar

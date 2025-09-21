@@ -1,0 +1,31 @@
+domain, including all the
+constants, functions, andpredicates mentionedinthechapter.
+8.17 Explain what is wrong with the following proposed definition of adjacent squares in
+thewumpusworld: x,y Adjacent( x,y , x 1,y ) Adjacent( x,y , x,y 1 ).
+8.18 Write out the axioms required for reasoning about the wumpus s location, using a
+constant symbol Wumpus and a binary predicate At(Wumpus,Location). Remember that
+thereisonlyonewumpus.
+8.19 Assuming predicates Parent(p,q) and Female(p) and constants Joan and Kevin,
+withtheobviousmeanings, expresseachofthefollowingsentences infirst-orderlogic. (You
+mayusetheabbreviation 1 tomean thereexistsexactlyone. )
+a. Joanhasadaughter(possibly morethanone,andpossibly sonsaswell).
+b. Joanhasexactlyonedaughter(butmayhavesonsaswell).
+c. Joanhasexactlyonechild,adaughter.
+d. Joanand Kevinhaveexactlyonechildtogether.
+e. Joanhasatleastonechildwith Kevin,andnochildren withanyoneelse.
+Exercises 319
+8.20 Arithmetic assertions can be written in first-order logic with the predicate symbol ,
+the function symbols and , and theconstant symbols 0and 1. Additional predicates can
+alsobedefinedwithbiconditionals.
+a. Representtheproperty xisanevennumber. b. Representtheproperty xisprime. c. Goldbach s conjecture is the conjecture (unproven as yet) that every even number is
+equaltothesumoftwoprimes. Representthisconjecture asa logicalsentence.
+8.21 In Chapter6,weusedequalitytoindicatetherelationbetweenavariableanditsvalue.
+For instance, we wrote WA red to mean that Western Australia is colored red. Repre-
+senting this in first-order logic, we must write more verbosely Color Of(WA) red. What
+incorrectinferencecouldbedrawnifwewrotesentencessuchas WA red directlyaslogical
+assertions?
+8.22 Write in first-order logic the assertion that every key and at least one of every pair of
+sockswilleventuallybelostforever,usingonlythefollowingvocabulary: Key(x),xisakey;
+Sock(x), x is a sock; Pair(x,y), x and y are a pair; Now, the current time; Before(t ,t ),
+1 2
+timet com

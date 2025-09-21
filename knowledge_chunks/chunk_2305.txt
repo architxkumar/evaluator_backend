@@ -1,0 +1,35 @@
+specific observations (1 or 2) that assigns to A and B.
+t t t
+(For n objects, will have n! possible values; here, n! 2.) Because the labels 1 ad
+t 2 on the observations are assigned arbitrarily, the prior on is uniform and is inde-
+t t
+pendent of the states of the objects, x A and x B). So we can condition the observation term
+t t
+P(e1,e2 x A,x B)on andthensimplify:
+i i i i t (cid:12)
+P(e1,e2 x A,x B) P(e1,e2 x A,x B, )P( x A,x B)
+i i i i i i i i i i i i
+(cid:12) i P(e i(A) x A)P(e i(B) x B)P( x A,x B)
+i i i i i i i i
+(cid:12)
+1 P(e i(A) x A)P(e i(B) x B).
+2 i i i i i
+Plugging this into Equation (15.24), we get an expression that is only in terms of transition
+andsensormodelsforindividual objects andobservations.
+As for all probability models, inference means summing out the variables other than
+the query and the evidence. Forfiltering in HM Ms and DB Ns, wewere able to sum out the
+statevariablesfrom1tot 1byasimpledynamicprogrammingtrick;for Kalmanfilters,we
+tookadvantageofspecialpropertiesof Gaussians. Fordataassociation, wearelessfortunate.
+There is no (known) efficient exact algorithm, for the same reason that there is none for the
+switching Kalman filter (page 589): the filtering distribution P(x A e1 ,e2 ) for object A
+t 1:t 1:t
+ends up as a mixture of exponentially many distributions, one for each way of picking a
+sequence ofobservations toassignto A.
+As a result of the complexity of exact inference, many different approximate methods
+have been used. The simplest approach is to choose a single best assignment at each time
+step, given the predicted positions of the objects at the current time step. This assignment
+associates observations with objects and enables the track of each object to be updated and
+a prediction made for the next time step. Forchoosing the best assignment, it is common
+NEAREST-NEIGHBOR to use the so-called nearest-neighbor filter, which repeatedly chooses the closest pairing
+FILTER
+of predicted position and observation and adds that pairin

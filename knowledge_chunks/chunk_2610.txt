@@ -1,0 +1,65 @@
+ur candy example, we will assume for the time being that the prior distribution
+LIKELIHOOD
+over h ,...,h is given by (cid:16)0.1,0.2,0.4,0.2,0.1(cid:17), as advertised by the manufacturer. The
+1 5
+likelihood of the data is calculated under the assumption that the observations are i.i.d. (see
+page708),sothat
+(cid:25)
+P(d h ) P(d h ). (20.3)
+i j i
+j
+For example, suppose the bag is really an all-lime bag (h ) and the first 10 candies are all
+5
+lime;then P(d h )is0.510,because halfthecandies inanh bagarelime.2 Figure20.1(a)
+3 3
+shows how the posterior probabilities of the five hypotheses change as the sequence of 10
+lime candies is observed. Notice that the probabilities start out at their prior values, so h
+3
+is initially the most likely choice and remains so after 1 lime candy is unwrapped. After 2
+limecandies areunwrapped, h ismostlikely; after3ormore, h (thedreadedall-limebag)
+4 5
+is the most likely. After 10 in a row, we are fairly certain of our fate. Figure 20.1(b) shows
+thepredicted probability thatthenextcandyislime,based on Equation(20.2). Aswewould
+expect,itincreases monotonically toward1.
+1 Statisticallysophisticatedreaderswillrecognizethisscenarioasavariantoftheurn-and-ballsetup. Wefind
+urnsandballslesscompellingthancandy;furthermore,candylendsitselftoothertasks,suchasdecidingwhether
+totradethebagwithafriend see Exercise20.2.
+2 Westatedearlierthatthebagsofcandyareverylarge;otherwise,thei.i.d.assumptionfailstohold.Technically,
+itismorecorrect(butlesshygienic)torewrapeachcandyafterinspectionandreturnittothebag.
+804 Chapter 20. Learning Probabilistic Models
+1
+0.8
+0.6
+0.4
+0.2
+0
+0 2 4 6 8 10
+sisehtopyh
+fo
+ytilibaborp
+roiretso P
+1
+P(h d)
+1
+P(h d)
+P(h 2 d) 0.9 3
+P(h d)
+P(h 4 d) 0.8
+5
+0.7
+0.6
+0.5
+0.4
+0 2 4 6 8 10
+Number of observations in d
+emil
+si ydnac
+txen
+taht
+ytilibabor P
+Number of observations in d
+(a) (b)
+Figure 20.1 (a) Posterior probabilities P(hi d
+1
+,...,d N) from Equation (20.1). The
+number of observations N ranges from 1 to 10, and each observation is 

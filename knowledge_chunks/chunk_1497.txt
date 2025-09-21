@@ -1,0 +1,30 @@
+ fixed set of
+REPRESENTATION
+variables or attributes, each of which can have a value. While two different atomic states
+VARIABLE
+have nothing in common they are just different black boxes two different factored states
+ATTRIBUTE
+cansharesomeattributes(suchasbeingatsomeparticular GP Slocation)andnotothers(such
+VALUE
+as having lots of gas or having no gas); this makes it much easier to work out how to turn
+onestateintoanother. Withfactored representations, wecanalsorepresent uncertainty for
+example, ignorance about the amount of gas in the tank can be represented by leaving that
+attribute blank. Manyimportant areasof AIarebased onfactored representations, including
+constraint satisfaction algorithms (Chapter 6), propositional logic (Chapter 7), planning
+(Chapters 10 and 11), Bayesian networks (Chapters 13 16), and the machine learning al-
+gorithmsin Chapters18,20,and21.
+For many purposes, we need to understand the world as having things in it that are
+related to each other, not just variables with values. For example, we might notice that a
+largetruck aheadofusisreversing intothedrivewayofadairy farmbutacowhasgotloose
+and is blocking the truck s path. A factored representation is unlikely to be pre-equipped
+withtheattribute Truck Ahead Backing Into Dairy Farm Driveway Blocked By Loose Cow with
+STRUCTURED value true or false. Instead, we would need a structured representation, in which ob-
+REPRESENTATION
+jects such as cows and trucks and their various and varying relationships can be described
+explicitly. (See Figure 2.16(c).) Structured representations underlie relational databases
+and first-order logic (Chapters 8, 9, and 12), first-order probability models (Chapter 14),
+knowledge-based learning (Chapter 19) and much of natural language understanding
+(Chapters 22 and 23). In fact, almost everything that humans express in natural language
+concerns objectsandtheirrelationships.
+As we mentioned earlier, the axis along which atomic, factored, and structured repre-
+sentati

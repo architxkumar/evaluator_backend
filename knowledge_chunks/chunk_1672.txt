@@ -1,0 +1,27 @@
+for MIN and MAX
+nodes is unchanged, but wecan also prune chance nodes, using a bit of ingenuity. Consider
+thechance node C in Figure5.11and whathappens toitsvalue asweexamine and evaluate
+its children. Is it possible to find an upper bound on the value of C before we have looked
+atallitschildren? (Recall that thisiswhatalpha beta needs inordertoprune anode andits
+subtree.) Atfirstsight, itmightseem impossible because thevalueof C istheaverage ofits
+children s values, and in order to compute the average of a set of numbers, we must look at
+all the numbers. But ifweput bounds on the possible values of the utility function, then we
+can arrive atbounds forthe average without looking atevery number. Forexample, say that
+allutilityvaluesarebetween 2and 2;thenthevalueofleafnodesisbounded, andinturn
+wecanplaceanupperboundonthevalueofachancenodewithoutlookingatallitschildren.
+MONTECARLO An alternative is to do Monte Carlo simulation to evaluate a position. Start with
+SIMULATION
+an alpha beta (or other) search algorithm. From a start position, have the algorithm play
+thousands of games against itself, using random dice rolls. In the case of backgammon, the
+resulting win percentage has been shown to be a good approximation of the value of the
+position, even if the algorithm has an imperfect heuristic and is searching only a few plies
+(Tesauro,1995). Forgameswithdice,thistypeofsimulation iscalledarollout.
+ROLLOUT
+5.6 PARTIALLY OBSERVABLE GAMES
+Chess has often been described as war in miniature, but it lacks at least one major charac-
+teristic of real wars, namely, partial observability. In the fog of war, the existence and
+disposition of enemy units is often unknown until revealed by direct contact. As a result,
+warfareincludestheuseofscoutsandspiestogatherinformationandtheuseofconcealment
+and bluff to confuse the enemy. Partially observable games share these characteristics and
+arethusqualitatively differentfromthegamesdescribed inthepreceding sections.
+5.6.1 Kriegspiel: Parti

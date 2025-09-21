@@ -1,0 +1,42 @@
+achrule in KB do
+(p
+1 ... pn q) STANDARDIZE-VARIABLES(rule)
+foreach suchthat SUBST( ,p
+1 ... pn) SUBST( ,p
+1
+(cid:5) ... p
+n
+(cid:5))
+forsomep(cid:5),...,p(cid:5) in KB
+1 n
+q(cid:5) SUBST( ,q)
+ifq(cid:5) doesnotunifywithsomesentencealreadyin KB ornew then
+addq(cid:5)tonew UNIFY(q(cid:5), )
+if isnotfail thenreturn addnew to KB
+returnfalse
+Figure 9.3 A conceptually straightforward, but very inefficient, forward-chainingalgo-
+rithm. Oneachiteration,itaddsto KB alltheatomicsentencesthatcanbeinferredinone
+step fromthe implicationsentencesandtheatomicsentencesalreadyin KB. Thefunction
+STANDARDIZE-VARIABLES replacesallvariablesinitsargumentswithnewonesthathave
+notbeenusedbefore.
+Criminal(West)
+Weapon(M) Sells(West,M,Nono) Hostile(Nono)
+1 1
+American(West) Missile(M) Owns(Nono,M) Enemy(Nono,America)
+1 1
+Figure9.4 Theprooftreegeneratedbyforwardchainingonthecrimeexample.Theinitial
+factsappearatthe bottomlevel, factsinferredon the firstiterationin the middlelevel, and
+factsinferredontheseconditerationatthetoplevel.
+possible factsthatcanbeadded, whichdetermines themaximumnumberofiterations. Letk
+bethemaximumarity(numberofarguments)ofanypredicate, pbethenumberofpredicates,
+and n be the number of constant symbols. Clearly, there can be no more than pnk distinct
+groundfacts,soafterthismanyiterationsthealgorithmmusthavereachedafixedpoint. Then
+wecanmakeanargumentverysimilartotheproofofcompletenessforpropositionalforward
+Section9.3. Forward Chaining 333
+chaining. (See page 258.) The details of how to make the transition from propositional to
+first-ordercompleteness aregivenfortheresolution algorithm in Section9.5.
+For general definite clauses with function symbols, FOL-FC-ASK can generate in-
+finitely many new facts, so we need to be more careful. Forthe case in which an answer to
+the query sentence q is entailed, we must appeal to Herbrand s theorem to establish that the
+algorithm will find a proof. (See Section 9.5 for the resolution case.) If the query has no
+answer, the algorithm

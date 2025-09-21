@@ -1,0 +1,32 @@
+quired tospecify a Bayesiannetwork. This,inturn,candramatically reduce theamountof
+dataneededtolearntheparameters.
+Hidden variables are important, but they do complicate the learning problem. In Fig-
+ure 20.10(a), for example, it is not obvious how to learn the conditional distribution for
+Heart Disease,givenitsparents, becausewedonotknowthevalueof Heart Disease ineach
+case; the same problem arises in learning the distributions for the symptoms. This section
+EXPECTATION describes an algorithm called expectation maximization, or EM, that solves this problem
+MAXIMIZATION
+in avery general way. Wewill show three examples and then provide a general description.
+The algorithm seems like magic at first, but once the intuition has been developed, one can
+findapplications for EMinahugerangeoflearning problems.
+Section20.3. Learningwith Hidden Variables: The EM Algorithm 817
+2 2 2 2 2 2
+Smoking Diet Exercise Smoking Diet Exercise
+54 Heart Disease
+6 6 6 54 162 486
+Symptom Symptom Symptom Symptom Symptom Symptom
+1 2 3 1 2 3
+(a) (b)
+Figure20.10 (a)Asimple diagnosticnetworkforheartdisease, whichisassumedtobe
+a hidden variable. Each variable has three possible values and is labeled with the number
+of independent parameters in its conditional distribution; the total number is 78. (b) The
+equivalent network with Heart Disease removed. Note that the symptom variables are no
+longerconditionallyindependentgiventheirparents.Thisnetworkrequires708parameters.
+20.3.1 Unsupervised clustering: Learning mixtures of Gaussians
+UNSUPERVISED Unsupervised clustering is the problem of discerning multiple categories in a collection of
+CLUSTERING
+objects. Theproblemisunsupervisedbecausethecategorylabelsarenotgiven. Forexample,
+suppose we record the spectra of a hundred thousand stars; are there different types of stars
+revealed by the spectra, and, if so, how many types and what are their characteristics? We
+are all familiar with terms such as red giant and white dwarf, but the stars do not carry
+the

@@ -1,0 +1,27 @@
+mayalready haveafewkeywords)withadditional appropriate keywords.
+In the most straightforward version of this task, we have a set of correctly tagged ex-
+ample images, and we wish to tag some test images. This problem is sometimes known as
+auto-annotation. Themostaccurate solutions areobtained using nearest-neighbors methods.
+One finds the training images that are closest tothe test image in a feature space metric that
+istrained usingexamples, thenreportstheirtags.
+Another version of the problem involves predicting which tags to attach to which re-
+gionsinatestimage. Herewedonotknowwhichregionsproducedwhichtagsforthetrain-
+ingdata. Wecanuseaversionofexpectationmaximizationtoguessaninitialcorrespondence
+between textandregions, andfrom thatestimate abetterdecomposition into regions, andso
+on.
+24.6.2 Reconstruction from many views
+Binocular stereopsis works because for each point we have four measurements constraining
+three unknown degrees of freedom. The four measurements are the (x,y) positions of the
+pointineachview,andtheunknowndegreesoffreedomarethe(x,y,z)coordinatevaluesof
+thepointinthescene. Thisrathercrudeargumentsuggests, correctly,thattherearegeometric
+constraints thatpreventmostpairsofpointsfrombeingacceptablematches. Manyimagesof
+asetofpointsshouldrevealtheirpositions unambiguously.
+We don t always need a second picture to get a second view of a set of points. If we
+believe the original set of points comes from a familiar rigid 3D object, then wemight have
+Section24.6. Using Vision 963
+anobject modelavailable asasource ofinformation. Ifthis objectmodelconsists ofasetof
+3Dpointsorofasetofpictures oftheobject, andifwecanestablish pointcorrespondences,
+wecandeterminetheparametersofthecamerathatproducedthepointsintheoriginalimage.
+This is very powerful information. We could use it to evaluate our original hypothesis that
+the points come from an object model. We do this by using some points to determine the
+parameters of the camera, then projecting model points i

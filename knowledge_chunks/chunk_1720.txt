@@ -1,0 +1,30 @@
+nly two: WA red,SA blue and WA blue,SA red . We can see that with both of these assignments NT can be
+neither red nor blue (because it would conflict with either WA or SA). Because there is no
+validchoicefor NT,weeliminatebothassignments,andweendupwithnovalidassignments
+for WA,SA . Therefore, weknow that there canbenosolution tothisproblem. The PC-2
+algorithm (Mackworth, 1977) achieves path consistency in much the same way that AC-3
+achievesarcconsistency. Becauseitissosimilar, wedonot showithere.
+1 The AC-4algorithm(Mohrand Henderson,1986)runsin O(cd2)worst-casetimebutcanbeslowerthan AC-3
+onaveragecases.See Exercise6.13.
+Section6.2. Constraint Propagation: Inferencein CS Ps 211
+6.2.4 K-consistency
+Stronger forms of propagation can be defined with the notion of k-consistency. A CSP is
+K-CONSISTENCY
+k-consistent if, for any set of k 1 variables and for any consistent assignment to those
+variables, a consistent value can always be assigned to any kth variable. 1-consistency says
+that, given the empty set, we can make any set of one variable consistent: this is what we
+called node consistency. 2-consistency is the same as arc consistency. Forbinary constraint
+networks, 3-consistency isthesameaspathconsistency.
+STRONGLY A CSP is strongly k-consistent if it is k-consistent and is also (k 1)-consistent,
+K-CONSISTENT
+(k 2)-consistent, ... all the way down to 1-consistent. Now suppose we have a CS Pwith
+n nodes and make it strongly n-consistent (i.e., strongly k-consistent for k n). We can
+then solve the problem as follows: First, we choose a consistent value for X . We are then
+1
+guaranteed to be able to choose a value for X because the graph is 2-consistent, for X
+2 3
+becauseitis3-consistent, andsoon. Foreachvariable X ,weneedonlysearchthroughthed
+i
+valuesinthedomaintofindavalueconsistent with X 1 ,...,X i 1 . Weareguaranteed tofind
+a solution in time O(n2d). Ofcourse, there is no free lunch: any algorithm for establishing
+n-consistency must take time exponential in n in 

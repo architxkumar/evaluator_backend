@@ -1,0 +1,28 @@
+r string consisting ofordinary words interspersed withfor-
+matting commands in the HTML markup language. Figure 12.8 shows a Web page and a
+corresponding HTML character string. The perception problem for the shopping agent in-
+volvesextracting usefulinformation frompercepts ofthis kind.
+Clearly, perception on Webpages iseasier than, say, perception while driving ataxi in
+Cairo. Nonetheless, therearecomplications tothe Internetperception task. The Webpagein
+Figure12.8issimplecomparedtorealshoppingsites,whichmayinclude CSS,cookies,Java,
+Javascript, Flash,robotexclusionprotocols, malformed HTML,soundfiles,movies,andtext
+that appears only as part of a JPEG image. An agent that can deal with all of the Internet is
+almost as complex as a robot that can move in the real world. We concentrate on a simple
+agentthatignoresmostofthesecomplications.
+Theagent sfirsttaskistocollectproductoffersthatarerelevanttoaquery. Ifthequery
+is laptops, then a Web page with a review of the latest high-end laptop would be relevant,
+butifitdoesn t provideawaytobuy, itisn t anoffer. Fornow,wecansayapageisanoffer
+ifitcontainsthewords buy or price or addtocart withinan HTM Llinkorformonthe
+464 Chapter 12. Knowledge Representation
+page. Forexample,ifthepagecontainsastringoftheform a...add to cart... a thenitisanoffer. Thiscouldberepresentedinfirst-orderlogic,butitismorestraightforward
+toencodeitintoprogramcode. Weshowhowtodomoresophisticatedinformationextraction
+in Section22.4.
+12.7.1 Followinglinks
+Thestrategy istostartatthehomepage ofanonline store and considerallpagesthatcanbe
+reached byfollowing relevantlinks.11 Theagent willhaveknowledge ofanumberofstores,
+forexample:
+Amazon Online Stores Homepage(Amazon, amazon.com ).
+Ebay Online Stores Homepage(Ebay, ebay.com ).
+Example Store Online Stores Homepage(Example Store, example.com ).
+These stores classify their goods into product categories, and provide links tothe major cat-
+egories from their home page. Minor categories can be reached through a 

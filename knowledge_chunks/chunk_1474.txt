@@ -1,0 +1,29 @@
+competitive environments, randomizedbehaviorisrational because
+itavoids thepitfallsofpredictability.
+Deterministic vs. stochastic. If the next state of the environment is completely deter-
+DETERMINISTIC
+minedbythecurrentstateandtheactionexecutedbytheagent,thenwesaytheenvironment
+STOCHASTIC
+isdeterministic;otherwise,itisstochastic. Inprinciple,anagentneednotworryaboutuncer-
+tainty in a fully observable, deterministic environment. (In our definition, we ignore uncer-
+tainty that arises purely from the actions of other agents in a multiagent environment; thus,
+a game can be deterministic even though each agent may be unable to predict the actions of
+the others.) If the environment is partially observable, however, then it could appear to be
+stochastic. Most real situations are so complex that it is impossible to keep track of all the
+unobserved aspects;forpracticalpurposes, theymustbetreatedasstochastic. Taxidrivingis
+clearly stochastic inthissense, because one canneverpredict thebehavior oftrafficexactly;
+moreover, one s tires blow out and one s engine seizes up without warning. The vacuum
+worldaswedescribed itisdeterministic, butvariations caninclude stochastic elementssuch
+asrandomly appearing dirtandanunreliable suction mechanism (Exercise 2.13). Wesayan
+environment is uncertain if it is not fully observable or not deterministic. One final note:
+UNCERTAIN
+our use of the word stochastic generally implies that uncertainty about outcomes is quan-
+tified in terms of probabilities; a nondeterministic environment is one in which actions are
+NONDETERMINISTIC
+characterized by their possible outcomes, but no probabilities are attached to them. Nonde-
+terministic environment descriptions are usually associated with performance measures that
+requiretheagenttosucceed forallpossible outcomesofitsactions.
+Episodic vs. sequential: In an episodic task environment, the agent s experience is
+EPISODIC
+dividedintoatomicepisodes. Ineachepisodetheagentreceivesaperceptandthenperforms
+SEQ

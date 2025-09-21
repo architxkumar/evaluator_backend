@@ -1,0 +1,27 @@
+Thisapproximatelyconfirmed Uncle Bernie srule. Therulewasnamedafter Bernie Widrow,whorecom-
+mendedusingroughlytentimesasmanyexamplesasweights.
+Exercises 763
+weight is a partial encoding of all the photographs. One of the most interesting theoretical
+resultsisthat Hopfieldnetworkscanreliablystoreupto0.138N trainingexamples,where N
+isthenumberofunitsinthenetwork.
+BOLTZMANN Boltzmannmachines(Hintonand Sejnowski,1983,1986)alsousesymmetricweights,
+MACHINE
+but include hidden units. In addition, they use a stochastic activation function, such that
+the probability of the output being 1 is some function of the total weighted input. Boltz-
+mannmachinesthereforeundergostatetransitionsthatresembleasimulatedannealingsearch
+(see Chapter4)forthe configuration that bestapproximates thetraining set. Itturns out that
+Boltzmannmachinesareverycloselyrelatedtoaspecialcaseof Bayesiannetworksevaluated
+withastochastic simulationalgorithm. (See Section14.5.)
+Forneuralnets,Bishop(1995),Ripley(1996),and Haykin(2008)aretheleadingtexts.
+Thefieldofcomputational neuroscience iscoveredby Dayanand Abbott(2001).
+Theapproachtakeninthischapterwasinfluencedbytheexcellentcoursenotesof David
+Cohn,Tom Mitchell,Andrew Moore,and Andrew Ng. Thereareseveraltop-notchtextbooks
+in Machine Learning(Mitchell,1997;Bishop,2007)andinthecloselyalliedandoverlapping
+fields of pattern recognition (Ripley, 1996; Duda et al., 2001), statistics (Wasserman, 2004;
+Hastieetal.,2001), datamining(Handetal.,2001; Wittenand Frank, 2005), computational
+learning theory(Kearnsand Vazirani,1994;Vapnik, 1998)andinformation theory(Shannon
+and Weaver, 1949; Mac Kay, 2002; Cover and Thomas, 2006). Other books concentrate on
+implementations (Segaran, 2007; Marsland, 2009) and comparisons of algorithms (Michie
+et al., 1994). Current research in machine learning is published in the annual proceedings
+ofthe International Conference on Machine Learning (ICML)and theconference on Neural
+Information Processing Systems (NIPS), in Machine Learning

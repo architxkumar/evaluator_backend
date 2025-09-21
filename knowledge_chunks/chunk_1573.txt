@@ -1,0 +1,22 @@
+breadth-first
+search on graphs. The two-point shortest-path algorithm of Dijkstra (1959) is the origin
+of uniform-cost search. These works also introduced the idea of explored and frontier sets
+(closedandopenlists).
+A version of iterative deepening designed to make efficient use of the chess clock was
+first used by Slate and Atkin (1977) in the CHESS 4.5 game-playing program. Martelli s algorithm B(1977)includesaniterativedeepeningaspectandalsodominates A sworst-case
+performance with admissible but inconsistent heuristics. The iterative deepening technique
+came to the fore in work by Korf (1985a). Bidirectional search, which was introduced by
+Pohl(1971), canalsobeeffectiveinsomecases.
+Theuseofheuristicinformationinproblemsolvingappears inanearlypaperby Simon
+and Newell (1958), but the phrase heuristic search and the use of heuristic functions that
+estimate the distance to the goal came somewhat later (Newell and Ernst, 1965; Lin, 1965).
+Doran and Michie (1966) conducted extensive experimental studies of heuristic search. Al-
+thoughtheyanalyzed pathlengthand penetrance (theratioofpathlengthtothetotalnum-
+ber of nodes examined so far), they appear to have ignored the information provided by the path cost g(n). The A algorithm, incorporating the current path cost into heuristic search,
+wasdevelopedby Hart,Nilsson,and Raphael(1968),withsomelatercorrections(Hartetal., 1972). Dechterand Pearl(1985)demonstrated theoptimalefficiencyof A. Theoriginal A paperintroduced theconsistency condition onheuristic functions. The
+monotoneconditionwasintroducedby Pohl(1977)asasimplerreplacement,but Pearl(1984)
+showedthatthetwowereequivalent.
+Pohl(1977) pioneered thestudyoftherelationship between theerrorinheuristic func- tionsandthetimecomplexityof A. Basicresultswereobtainedfortreesearchwithunitstep
+Bibliographical and Historical Notes 111
+costsandasinglegoalnode(Pohl,1977;Gaschnig,1979;Huynetal.,1980;Pearl,1984)and
+withmultiple goalnodes (Dinhetal., 2007). The effective branching fact

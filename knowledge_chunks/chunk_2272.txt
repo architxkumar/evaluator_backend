@@ -1,0 +1,29 @@
+l have the
+probability forthemostlikelysequencereaching eachofthefinalstates. Onecanthuseasily
+select the most likely sequence overall (the states outlined in bold). In order to identify the
+actualsequence, asopposed tojustcomputing itsprobability, thealgorithm willalsoneedto
+record, foreach state, the best state that leads toit; these areindicated by thebold arrowsin
+Figure15.5(b). Theoptimalsequenceisidentifiedbyfollowingtheseboldarrowsbackwards
+fromthebestfinalstate.
+Thealgorithmwehavejustdescribediscalledthe Viterbialgorithm,afteritsinventor.
+VITERBIALGORITHM
+Like the filtering algorithm, its time complexity is linear in t, the length of the sequence.
+Unlike filtering, which uses constant space, its space requirement is also linear in t. This
+is because the Viterbi algorithm needs to keep the pointers that identify the best sequence
+leadingtoeachstate.
+15.3 HIDDEN MARKOV MODELS
+Theprecedingsectiondevelopedalgorithmsfortemporalprobabilisticreasoningusingagen-
+eralframeworkthatwasindependent ofthespecificformofthetransitionandsensormodels.
+In this and the next two sections, we discuss more concrete models and applications that
+illustrate thepowerofthebasicalgorithms andinsomecasesallowfurtherimprovements.
+HIDDENMARKOV We begin with the hidden Markov model, or HMM. An HMM is a temporal proba-
+MODEL
+bilistic modelinwhichthestateoftheprocess isdescribed byasingle discrete random vari-
+able. The possible values of the variable are the possible states of the world. The umbrella
+example described in the preceding section is therefore an HMM, since it has just one state
+variable: Rain . Whathappensifyouhaveamodelwithtwoormorestatevariables? Youcan
+t
+still fititinto the HM Mframework by combining the variables into asingle megavariable whose values are all possible tuples of values of the individual state variables. We will see
+thattherestricted structure of HM Msallowsforasimpleand elegantmatriximplementation
+ofallthebasicalgorithms.4
+4 Thereaderunfamiliarwithbasicoperat

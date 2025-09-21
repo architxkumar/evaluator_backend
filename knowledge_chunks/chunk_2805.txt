@@ -1,0 +1,31 @@
+dow
+Figure24.4 Avarietyofilluminationeffects. Therearespecularities onthemetalspoon
+andonthemilk. Thebrightdiffusesurfaceisbrightbecauseitfacesthelightdirection. The
+darkdiffusesurfaceisdarkbecauseitistangentialtotheilluminationdirection.Theshadows
+appearatsurfacepointsthatcannotseethelightsource.Photoby Mike Linksvayer(mlinksva
+onflickr).
+astrong,ifambiguous,cuetotheshapeofanobject,andfromtheretoitsidentity. Peopleare
+usually able to distinguish the three main causes of varying brightness and reverse-engineer
+the object s properties. Thefirstcause is overall intensity ofthelight. Eventhough awhite
+OVERALLINTENSITY
+object inshadow maybelessbright thanablackobject indirectsunlight, theeyecandistin-
+guishrelativebrightnesswell,andperceivethewhiteobjectaswhite. Second,differentpoints
+in the scene may reflect more or less of the light. Usually, the result is that people perceive
+REFLECT
+these points aslighterordarker, andsoseetexture ormarkings ontheobject. Third, surface
+patches facing thelightarebrighter thansurface patches tilted awayfrom thelight, aneffect
+known as shading. Typically, people can tell that this shading comes from the geometry of
+SHADING
+theobject, butsometimesgetshading andmarkingsmixedup. Forexample, astreakofdark
+makeupunderacheekbonewilloftenlooklikeashadingeffect,makingthefacelookthinner.
+DIFFUSE Most surfaces reflect light by a process of diffuse reflection. Diffuse reflection scat-
+REFLECTION
+terslightevenlyacross thedirections leaving asurface, sothebrightness ofadiffusesurface
+doesn t depend ontheviewingdirection. Mostcloth, paints, roughwoodensurfaces, vegeta-
+tion, and rough stone are diffuse. Mirrors are not diffuse, because what you see depends on
+the direction in which you look at the mirror. The behavior of a perfect mirror is known as
+SPECULAR specularreflection. Somesurfaces such asbrushed metal, plastic, orawetfloor display
+REFLECTION
+smallpatcheswherespecularreflection hasoccurred, calledspecularities. Theseareeasyto
+SPECULARITIES
+i

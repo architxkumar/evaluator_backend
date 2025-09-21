@@ -1,0 +1,38 @@
+thecardsare
+dealtrandomlyanddeterminethemovesavailabletoeachplayer,butallthe dice arerolled
+atthe beginning! Even though this analogy turns out tobe incorrect, itsuggests an effective
+algorithm: consider all possible deals of the invisible cards; solve each one as if it were a
+fullyobservablegame;andthenchoosethemovethathasthebestoutcomeaveragedoverall
+thedeals. Supposethateachdealsoccurswithprobability P(s);thenthemovewewantis
+(cid:12)
+argmax P(s)MINIMAX(RESULT(s,a)). (5.1)
+a
+s
+Here,werunexact MINIMAX ifcomputationally feasible;otherwise, werun H-MINIMAX.
+Now, in most card games, the number of possible deals is rather large. For example,
+inbridge play, each player sees just two(cid:20)of(cid:21)the fourhands; there aretwounseen hands of13
+cards each, so the number of deals is 26 10,400,600. Solving even one deal is quite
+13
+difficult, so solving ten million is out of the question. Instead, we resort to a Monte Carlo
+184 Chapter 5. Adversarial Search
+approximation: instead of adding up all the deals, we take a random sample of N deals,
+wheretheprobability ofdeal sappearing inthesampleisproportional to P(s):
+(cid:12)N
+1
+argmax MINIMAX(RESULT(s
+i
+,a)). (5.2)
+N
+a
+i 1
+(Notice that P(s) does not appear explicitly in the summation, because the samples are al-
+ready drawn according to P(s).) As N grows large, the sum over the random sample tends
+totheexact value, but evenforfairly small N say, 100to1,000 the method gives agood
+approximation. Itcanalso beapplied todeterministic gamessuchas Kriegspiel, givensome
+reasonable estimateof P(s).
+Forgameslikewhistandhearts,wherethereisnobidding orbetting phasebeforeplay
+commences, each deal will be equally likely and so the values of P(s) are all equal. For
+bridge, play ispreceded byabidding phase inwhicheachteam indicates howmanytricks it
+expects towin. Since players bid based on the cards they hold, the other players learn more
+abouttheprobability ofeachdeal. Takingthisintoaccount indeciding howtoplaythehand
+istricky, forthereaso

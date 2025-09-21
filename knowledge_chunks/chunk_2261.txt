@@ -1,0 +1,29 @@
+ Thatis, wewishtocompute P(X e )forsome k 0.
+t k 1:t
+Inthe umbrella example, thismight meancomputing theprobability ofrainthree days
+fromnow,givenalltheobservationstodate. Predictionisusefulforevaluatingpossible
+coursesofactionbasedontheirexpectedoutcomes.
+2 Theterm filtering referstotherootsofthisprobleminearlyworkonsignalprocessing,wheretheproblem
+istofilteroutthenoiseinasignalbyestimatingitsunderlyingproperties.
+Section15.2. Inference in Temporal Models 571 Smoothing: This is the task of computing the posterior distribution over a past state,
+SMOOTHING
+givenallevidenceuptothepresent. Thatis,wewishtocompute P(X e )forsomek
+k 1:t
+suchthat0 k t. Intheumbrellaexample,itmightmeancomputingtheprobability
+that it rained last Wednesday, given all the observations of the umbrella carrier made
+uptotoday. Smoothing provides abetterestimate ofthestate thanwasavailable atthe
+time,becauseitincorporates moreevidence.3 Mostlikelyexplanation: Givenasequence ofobservations, wemightwishtofindthe
+sequence ofstates thatismostlikely tohavegenerated those observations. Thatis, we
+wishtocomputeargmax P(x e ). Forexample,iftheumbrellaappearsoneach
+x1:t 1:t 1:t
+ofthefirstthreedaysandisabsentonthefourth,thenthemostlikelyexplanationisthat
+itrained on the first three days and did not rain on the fourth. Algorithms forthis task
+areusefulinmanyapplications, includingspeechrecognition where theaimistofind
+themostlikely sequence ofwords, givenaseries ofsounds and thereconstruction of
+bitstringstransmitted overanoisychannel.
+Inaddition totheseinference tasks,wealsohave Learning: The transition and sensor models, if not yet known, can be learned from
+observations. Justaswithstatic Bayesiannetworks,dynamic Bayesnetlearningcanbe
+done as a by-product of inference. Inference provides an estimate of what transitions
+actually occurred andofwhatstatesgenerated thesensorreadings, andthese estimates
+canbeused toupdate themodels. Theupdated models provide newestimates, and the
+process iterates to convergence

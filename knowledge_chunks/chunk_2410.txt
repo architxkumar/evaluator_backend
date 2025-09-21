@@ -1,0 +1,30 @@
+an be done either by establishing
+a convention that orders the solutions before the game begins or by negotiating to reach a
+mutually beneficial solution during the game (which would mean including communicative
+actions aspartofasequential game). Communication thus arises ingametheory forexactly
+thesamereasonsthatitaroseinmultiagentplanningin Section11.4. Gamesinwhichplayers
+COORDINATION needtocommunicatelikethisarecalled coordination games.
+GAME
+A game can have more than one Nash equilibrium; how do we know that every game
+must have at least one? Some games have no pure-strategy Nash equilibria. Consider, for
+example, any pure-strategy profile for two-finger Morra (page 666). If the total number of
+fingersiseven,then Owillwanttoswitch;ontheotherhand(sotospeak),ifthetotalisodd,
+then E willwanttoswitch. Therefore, nopurestrategy profilecanbeanequilibrium andwe
+mustlooktomixedstrategies instead.
+Butwhichmixed strategy? In 1928, von Neumann developed amethod forfinding the
+optimal mixed strategy for two-player, zero-sum games games in which the sum of the
+ZERO-SUMGAME
+payoffsisalwayszero.6 Clearly,Morraissuchagame. Fortwo-player, zero-sum games,we
+know that the payoffs are equal and opposite, so we need consider the payoffs of only one
+player, whowillbethemaximizer(justasin Chapter5). For Morra,wepicktheevenplayer
+Etobethemaximizer,sowecandefinethepayoffmatrixbythevalues U (e,o) thepayoff
+E
+to E if E doeseand O doeso. (Forconvenience wecallplayer E her and O him. ) Von
+Neumann smethodiscalledthethemaximintechnique, anditworksasfollows:
+MAXIMIN Suppose we change the rules as follows: first E picks her strategy and reveals it to
+O. Then O picks his strategy, with knowledge of E s strategy. Finally, we evaluate
+the expected payoff of the game based on the chosen strategies. This gives us a turn-
+taking game to which we can apply the standard minimax algorithm from Chapter 5.
+Let s suppose this gives an outcome U . Clearly, this game favors O, so the true
+E,O
+utility U of 

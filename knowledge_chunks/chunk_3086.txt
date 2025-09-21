@@ -1,0 +1,26 @@
+xford University Press. G.Teubner.
+Murphy, K. and Mian, I. S. (1999). Modelling
+Morgenstern,L.(1998). Inheritancecomesofage: gene expression data using Bayesian networks. Nevill-Manning, C. G. and Witten, I. H. (1997).
+Applyingnonmonotonictechniquestoproblemsin people.cs.ubc.ca murphyk Papers Identifyinghierarchicalstructuresinsequences: A
+industry.AIJ,103,237 271. ismb99.pdf. linear-timealgorithm.JAIR,7,67 82.
+1084 Bibliography
+Newell,A.(1982).Theknowledgelevel.AIJ,18(1), Nilsson,N.J.(1984). Shakeytherobot. Technical O Reilly,U.-M.and Oppacher,F.(1994). Program
+82 127. note323,SRI International. searchwithahierarchicalvariablelengthrepresen-
+tation: Geneticprogramming, simulatedannealing
+Newell,A.(1990). Unified Theoriesof Cognition. Nilsson,N.J.(1986).Probabilisticlogic.AIJ,28(1),
+andhillclimbing.In Proc.Third Conferenceon Par-
+Harvard University Press. 71 87.
+allel Problem Solvingfrom Nature,pp.397 406.
+Newell,A.and Ernst,G.(1965).Thesearchforgen- Nilsson, N.J.(1991). Logicandartificialintelli-
+Ormoneit,D.and Sen,S.(2002). Kernel-basedre-
+erality.In Proc.IFIP Congress,Vol.1,pp.17 24. gence.AIJ,47(1 3),31 56.
+inforcementlearning. Machine Learning,49(2 3),
+Newell,A.,Shaw,J.C.,and Simon,H.A.(1957). Nilsson,N.J.(1995). Eyeontheprize. AI Mag, 161 178.
+Empirical explorations with the logic theory ma- 16(2),9 17. Osborne,M.J.(2004). An Introductionto Game
+chine. Proc.Western Joint Computer Conference, Nilsson,N.J.(1998).Artificial Intelligence:ANew Theory.Oxford University Pres.
+15,218 239. Reprintedin Feigenbaumand Feld- Synthesis.Morgan Kaufmann.
+man(1963). Osborne,M.J.and Rubinstein,A.(1994).ACourse
+Nilsson,N.J.(2005). Human-levelartificialintelli- in Game Theory.MIT Press.
+Newell,A.,Shaw,J.C.,and Simon,H.A.(1958). gence?beserious!AI Mag,26(4),68 75.
+Chessplayingprogramsandtheproblemofcom- Osherson, D. N., Stob, M., and Weinstein, S.
+plexity.IBM Journalof Researchand Development, Nilsson,N.J.(2009).The Questfor Artificial Intel- (1986). Systems That Learn: An Introdu

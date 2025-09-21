@@ -1,0 +1,29 @@
+Its Eloratingofapproximately 1400waswellabovethenovicelevelof1000.
+The Fredkin Prize, established in 1980, offered awards for progressive milestones in
+chess play. The 5,000 prize forthe firstprogram toachieve a masterrating wentto BELLE
+(Condon and Thompson, 1982), which achieved a rating of2250. The 10,000 prize forthe
+first program to achieve a USCF (United States Chess Federation) rating of 2500 (near the
+grandmaster level) was awarded to DEEP THOUGHT (Hsu et al., 1990) in 1989. The grand
+prize, 100,000, went to DEEP BLUE (Campbell et al., 2002; Hsu, 2004) for its landmark
+victoryoverworldchampion Garry Kasparovina1997exhibition match. Kasparovwrote:
+Thedecisivegameofthematchwas Game2,whichleftascarinmymemory...wesaw
+somethingthatwentwellbeyondourwildestexpectationsofhowwellacomputerwould
+be able to foresee the long-termpositionalconsequencesof its decisions. The machine
+refusedtomovetoapositionthathadadecisiveshort-termadvantage showingavery
+humansenseofdanger.(Kasparov,1997)
+Probably the most complete description of a modern chess program is provided by Ernst
+Heinz (2000), whose DARKTHOUGHT program was the highest-ranked noncommercial PC
+program atthe1999worldchampionships.
+5 ARussianprogram,BES Mmayhavepredated Bernstein sprogram.
+Bibliographical and Historical Notes 193
+(a) (b)
+Figure5.15 Pioneersincomputerchess:(a)Herbert Simonand Allen Newell,developers
+of the NSS program (1958); (b) John Mc Carthy and the Kotok Mc Carthy program on an
+IBM7090(1967).
+In recent years, chess programs are pulling ahead of even the world s best humans.
+In 2004 2005 HYDRA defeated grand master Evgeny Vladimirov 3.5 0.5, world champion
+Ruslan Ponomariov2 0,andseventh-ranked Michael Adams5.5 0.5. In2006, DEEP FRITZ
+beat world champion Vladimir Kramnik 4 2, and in 2007 RYBKA defeated several grand
+masters in games in which it gave odds (such as a pawn) to the human players. Asof 2009,
+the highest Elorating everrecorded was Kasparov s 2851. HYDRA (Donninger and Lorenz,
+2004)israted

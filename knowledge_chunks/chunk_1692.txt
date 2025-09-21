@@ -1,0 +1,24 @@
+ 1996). Plaat et al. (1996) developed a new viewof SSS asacombination ofalpha beta andtransposition tables, showinghowtoover-
+come the drawbacks of the original algorithm and developing a new variant called MTD(f)
+thathasbeenadopted byanumberoftopprograms.
+D. F.Beal (1980) and Dana Nau (1980, 1983) studied the weaknesses of minimax ap-
+pliedtoapproximate evaluations. Theyshowedthatundercertainassumptions aboutthedis-
+tributionofleafvaluesinthetree,minimaxingcanyieldvaluesattherootthatareactuallyless
+reliable than the direct use of the evaluation function itself. Pearl s book Heuristics (1984)
+partially explains this apparent paradox and analyzes many game-playing algorithms. Baum
+and Smith (1997) propose a probability-based replacement for minimax, showing that it re-
+sults in better choices in certain games. The expectiminimax algorithm was proposed by
+Donald Michie (1966). Bruce Ballard (1983) extended alpha beta pruning to cover trees
+withchancenodesand Hauk(2004)reexaminesthisworkandprovides empiricalresults.
+Koller and Pfeffer (1997) describe a system for completely solving partially observ-
+able games. The system is quite general, handling games whose optimal strategy requires
+randomized moves and games that are more complex than those handled by any previous
+system. Still, it can t handle games as complex as poker, bridge, and Kriegspiel. Frank
+et al. (1998) describe several variants of Monte Carlo search, including one where MIN has
+192 Chapter 5. Adversarial Search
+complete information but MAX does not. Among deterministic, partially observable games,
+Kriegspiel has received the most attention. Ferguson demonstrated hand-derived random-
+izedstrategiesforwinning Kriegspielwithabishopandknight(1992)ortwobishops(1995)
+against a king. The first Kriegspiel programs concentrated on finding endgame checkmates
+and performed AND OR search in belief-state space (Sakuta and Iida, 2002; Bolognesi and
+Ciancarini,2003). Incrementalbelief-statealgorithmsenabledmuchmorecom

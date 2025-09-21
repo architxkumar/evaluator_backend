@@ -1,0 +1,28 @@
+at will help a lot, a myopic agent might
+hastily take an action when it would have been better to request two or more variables first
+and then take action. A better approach in this situation would be to construct a conditional
+plan (as described in Section 11.3.2) that asks for variable values and takes different next
+stepsdepending ontheanswer.
+Onefinalconsideration istheeffectaseries ofquestions willhaveonahumanrespon-
+dent. Peoplemayrespondbettertoaseriesofquestionsifthey makesense, sosomeexpert
+systems are built to take this into account, asking questions in an order that maximizes the
+totalutilityofthesystemandhumanratherthananorderthatmaximizesvalueofinformation.
+16.7 DECISION-THEORETIC EXPERT SYSTEMS
+Thefieldofdecisionanalysis,whichevolvedinthe1950sand1960s,studiestheapplication
+DECISIONANALYSIS
+of decision theory to actual decision problems. It is used to help make rational decisions in
+important domains where the stakes are high, such as business, government, law, military
+strategy,medicaldiagnosisandpublichealth,engineering design,andresourcemanagement.
+The process involves a careful study of the possible actions and outcomes, as well as the
+preferences placed on each outcome. It is traditional in decision analysis to talk about two
+roles: the decision maker states preferences between outcomes, and the decision analyst
+DECISIONMAKER
+enumeratesthepossibleactionsandoutcomesandelicitspreferencesfromthedecisionmaker
+DECISIONANALYST
+to determine the best course of action. Until the early 1980s, the main purpose of decision
+analysis was to help humans make decisions that actually reflect their own preferences. As
+moreandmoredecision processes become automated, decision analysis isincreasingly used
+toensurethattheautomated processes arebehaving asdesired.
+Earlyexpertsystemresearchconcentrated onansweringquestions, ratherthanonmak-
+ing decisions. Those systems that did recommend actions rather than providing opinions on
+matters of fact generally did so using cond

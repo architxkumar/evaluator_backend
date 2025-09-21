@@ -1,0 +1,26 @@
+rstobethenaturalconnectivetousewith , isthenaturalconnective
+to use with . Using as the main connective with led to an overly strong statement in
+theexample inthe previous section; using with usually leads toavery weakstatement,
+indeed. Considerthefollowingsentence: x Crown(x) On Head(x,John).
+On the surface, this might look like a reasonable rendition of our sentence. Applying the
+semantics, weseethatthesentence saysthatatleastoneofthefollowingassertions istrue:
+Richardthe Lionheartisacrown Richardthe Lionheart ison John shead;
+King Johnisacrown King Johnison John s head;
+Richard sleftlegisacrown Richard sleftlegison John shead;
+andsoon. Nowanimplicationistrueifbothpremiseandconclusionaretrue,orifitspremise
+is false. So if Richard the Lionheart is not a crown, then the first assertion is true and the
+existential is satisfied. So, an existentially quantified implication sentence is true whenever
+anyobjectfailstosatisfythepremise;hencesuchsentences reallydonotsaymuchatall.
+Nestedquantifiers
+We will often want to express more complex sentences using multiple quantifiers. The sim-
+plestcaseiswherethequantifiers areofthesametype. Forexample, Brothersaresiblings canbewrittenas x y Brother(x,y) Sibling(x,y).
+7 Thereisavariantoftheexistentialquantifier,usuallywritten 1or !,thatmeans Thereexistsexactlyone. Thesamemeaningcanbeexpressedusingequalitystatements.
+298 Chapter 8. First-Order Logic
+Consecutive quantifiers of the same type can be written as one quantifier with several vari-
+ables. Forexample,tosaythatsiblinghood isasymmetricrelationship, wecanwrite x,y Sibling(x,y) Sibling(y,x).
+In other cases we will have mixtures. Everybody loves somebody means that for every
+person, thereissomeonethatpersonloves: x y Loves(x,y).
+Ontheotherhand,tosay Thereissomeonewhoislovedbyeveryone, wewrite y x Loves(x,y).
+Theorderofquantification isthereforeveryimportant. Itbecomesclearerifweinsertparen-
+theses. x( y Loves(x,y)) says that everyone has a particular property, namely, the prop-
+e

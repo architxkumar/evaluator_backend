@@ -1,0 +1,29 @@
+ustspecifytheutilityfunction
+for the agent. Because the decision problem is sequential, the utility function will depend
+on a sequence of states an environment history rather than on a single state. Later in
+this section, we investigate how such utility functions can be specified in general; for now,
+we simply stipulate that in each state s, the agent receives a reward R(s), which may be
+REWARD
+positive or negative, but must be bounded. For our particular example, the reward is 0.04
+in all states except the terminal states (which have rewards 1 and 1). The utility of an
+Section17.1. Sequential Decision Problems 647
+environment history is just (for now) the sum of the rewards received. For example, if the
+agent reaches the 1 state after 10 steps, its total utility will be 0.6. The negative reward of 0.04 gives the agent an incentive to reach (4,3) quickly, so our environment is a stochastic
+generalization of the search problems of Chapter 3. Another way of saying this is that the
+agentdoesnotenjoylivinginthisenvironment andsowantstoleaveassoonaspossible.
+Tosumup: asequentialdecisionproblemforafullyobservable,stochasticenvironment
+MARKOVDECISION witha Markoviantransitionmodelandadditiverewardsiscalleda Markovdecisionprocess,
+PROCESS
+or MDP,andconsistsofasetofstates(withaninitialstates
+0
+);aset ACTIONS(s)ofactions
+ineachstate;atransition model P(s (cid:2) s,a);andarewardfunction R(s).1
+Thenextquestion is,whatdoesasolution totheproblem look like? Wehaveseen that
+anyfixedactionsequence won tsolvetheproblem,becausetheagentmightendupinastate
+otherthanthegoal. Therefore,asolutionmustspecifywhattheagentshoulddoforanystate
+thattheagentmightreach. Asolutionofthiskindiscalledapolicy. Itistraditionaltodenote
+POLICY
+a policy by , and (s) is the action recommended by the policy for state s. If the agent
+has acomplete policy, then no matterwhat theoutcome of anyaction, theagent willalways
+knowwhattodonext.
+Eachtimeagivenpolicyisexecutedstartingfromtheinitialstate,thestochastic natu

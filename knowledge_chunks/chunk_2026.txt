@@ -1,0 +1,43 @@
+iteralwhosetruthvalueisunknowninb? Therearethreecases:
+(cid:2)
+1. Iftheactionadds(cid:3),then(cid:3)willbetrueinb regardless ofitsinitialvalue.
+(cid:2)
+2. Iftheactiondeletes(cid:3),then(cid:3)willbefalseinb regardlessofitsinitialvalue.
+3. Iftheactiondoesnotaffect(cid:3),then(cid:3)willretainitsinitialvalue(whichisunknown)and
+(cid:2)
+willnotappearinb.
+(cid:2)
+Hence,weseethatthecalculation ofb isalmostidentical totheobservable case, whichwas
+specifiedby Equation(10.1)onpage368:
+b (cid:2) RESULT(b,a) (b DEL(a)) ADD(a).
+(cid:2)
+We cannot quite use the set semantics because (1) we must make sure that b does not con-
+tain both (cid:3) and (cid:3), and (2) atoms may contain unbound variables. But it is still the case
+that RESULT(b,a) is computed by starting with b, setting any atom that appears in DEL(a)
+to false, and setting any atom that appears in ADD(a) to true. For example, if we apply
+Remove Lid(Can )totheinitialbeliefstateb ,weget
+1 0
+b Color(x,C(x)) Open(Can ).
+1 1
+Whenweapplytheaction Paint(Chair,Can ),theprecondition Color(Can ,c)issatisfied
+1 1
+bytheknownliteral Color(x,C(x))withbinding x Can ,c C(Can ) andthenewbelief
+1 1
+stateis
+b Color(x,C(x)) Open(Can ) Color(Chair,C(Can )).
+2 1 1
+Finally,weapplytheaction Paint(Table,Can )toobtain
+1
+b Color(x,C(x)) Open(Can ) Color(Chair,C(Can ))
+3 1 1 Color(Table,C(Can )).
+1
+Thefinalbeliefstatesatisfiesthegoal,Color(Table,c) Color(Chair,c),withthevariable
+cboundto C(Can ).
+1
+The preceding analysis of the update rule has shown a very important fact: the family
+of belief states defined as conjunctions of literals is closed under updates defined by PDDL
+actionschemas. Thatis,ifthebelief statestartsasaconjunction ofliterals, thenanyupdate
+will yield a conjunction of literals. That means that in a world with n fluents, any belief
+state can be represented by a conjunction of size O(n). This is a very comforting result,
+considering that there are 2n states in the world. It says we can compactly represent all the
+subsetsofthose2n s

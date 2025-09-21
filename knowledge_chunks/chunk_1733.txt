@@ -1,0 +1,28 @@
+chfor CS Ps 219
+Tasmania! Obviouslythisissilly recoloring Tasmaniacannotpossiblyresolvetheproblem
+with South Australia.
+Amoreintelligent approach tobacktracking istobacktrack toavariable thatmightfix
+the problem a variable that was responsible for making one of the possible values of SA
+impossible. To do this, we will keep track of a set of assignments that are in conflict with
+somevaluefor SA. Theset(inthiscase Q red,NSW green,V blue, ),iscalledthe
+conflict set for SA. The backjumpingmethod backtracks to the most recent assignment in
+CONFLICTSET
+the conflict set; in this case, backjumping would jump over Tasmania and try a new value
+BACKJUMPING
+for V. This method is easily implemented by a modification to BACKTRACK such that it
+accumulates the conflict set while checking for a legal value to assign. If no legal value is
+found, the algorithm should return the most recent element of the conflict setalong with the
+failureindicator.
+The sharp-eyed reader will have noticed that forward checking can supply the conflict
+setwithnoextrawork: wheneverforwardchecking basedonan assignment X xdeletes a
+value from Y s domain, it should add X x to Y s conflict set. If the last value is deleted
+from Y s domain, then the assignments in the conflict set of Y are added to the conflict set
+of X. Then,whenwegetto Y,weknowimmediately wheretobacktrack ifneeded.
+The eagle-eyed reader will have noticed something odd: backjumping occurs when
+every value in a domain is in conflict with the current assignment; but forward checking
+detects this event and prevents the search from ever reaching such a node! In fact, it can be
+shownthateverybranchprunedbybackjumping isalsoprunedbyforwardchecking. Hence,
+simple backjumping is redundant in a forward-checking search or, indeed, in a search that
+usesstrongerconsistency checking, suchas MAC.
+Despite the observations of the preceding paragraph, the idea behind backjumping re-
+mainsagoodone: tobacktrackbasedonthereasonsforfailure. Backjumpingnoticesfail

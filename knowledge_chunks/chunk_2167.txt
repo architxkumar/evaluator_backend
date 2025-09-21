@@ -1,0 +1,28 @@
+esent,whenitisnot). Test Bis90 effectiveatrecognizing thevirus,buthasa5 false
+positive rate. The two tests use independent methods of identifying the virus. The virus is
+carriedby1 ofallpeople. Saythatapersonistestedforthevirususingonlyoneofthetests,
+andthattestcomesbackpositiveforcarryingthevirus. Whichtestreturningpositiveismore
+indicative ofsomeonereallycarryingthevirus? Justifyyouranswermathematically.
+13.14 Suppose you are given a coin that lands heads with probability x and tails with
+probability 1 x. Are the outcomes of successive flips of the coin independent of each
+other given that you know the value of x? Are the outcomes of successive flips of the coin
+independent ofeachotherifyoudonotknowthevalueofx? Justifyyouranswer.
+13.15 After your yearly checkup, the doctor has bad news and good news. The bad news
+is that you tested positive for a serious disease and that the test is 99 accurate (i.e., the
+probability of testing positive when you do have the disease is 0.99, as is the probability of
+testingnegativewhenyoudon thavethedisease). Thegoodnewsisthatthisisararedisease,
+striking only 1 in 10,000 people of your age. Why is it good news that the disease is rare?
+Whatarethechances thatyouactuallyhavethedisease?
+13.16 It is quite often useful to consider the effect of some specific propositions in the
+context ofsomegeneral background evidence thatremainsfixed,ratherthaninthecomplete
+absence of information. The following questions ask you to prove more general versions of
+theproductruleand Bayes rule,withrespecttosomebackground evidencee:
+a. Provetheconditionalized versionofthegeneralproduct rule:
+P(X,Y e) P(X Y,e)P(Y e).
+b. Provetheconditionalized versionof Bayes rulein Equation(13.13).
+13.17 Showthatthestatementofconditional independence
+P(X,Y Z) P(X Z)P(Y Z)
+isequivalent toeachofthestatements
+P(X Y,Z) P(X Z) and P(B X,Z) P(Y Z).
+13.18 Supposeyouaregivenabagcontaining nunbiased coins. Youaretoldthatn 1of
+these coins are normal, with heads on one side and tail

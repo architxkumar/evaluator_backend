@@ -1,0 +1,35 @@
+return to and
+STRICTLYSTABLE
+Section25.6. Moving 999
+thenstayonitsreference pathuponsuchperturbations. Our Pcontrollerappears tobestable
+butnotstrictlystable, sinceitfailstostayanywherenear itsreference trajectory.
+The simplest controller that achieves strict stability in our domain is a PD controller.
+PDCONTROLLER
+Theletter P standsagainforproportional, and D standsforderivative. PDcontrollers are
+described bythefollowingequation: (y(t) x )
+a K (y(t) x ) K t . (25.2)
+t P t D t
+As this equation suggests, PD controllers extend P controllers by a differential component,
+which adds to the value of a a term that is proportional to the first derivative of the error
+t
+y(t) x overtime. Whatistheeffectofsuchaterm? Ingeneral, aderivativetermdampens
+t
+thesystemthatisbeingcontrolled. Toseethis,considerasituationwheretheerror(y(t) x )
+t
+ischanging rapidlyovertime,asisthecaseforour Pcontroller above. Thederivativeofthis
+error will then counteract the proportional term, which will reduce the overall response to
+theperturbation. However,ifthesameerrorpersists anddoesnotchange, thederivativewill
+vanishandtheproportional termdominates thechoiceofcontrol.
+Figure25.22(c) showstheresult ofapplying this PDcontroller toourrobot arm, using
+asgainparameters K .3and K .8. Clearly,theresulting pathismuchsmoother, and
+P D
+doesnotexhibitanyobviousoscillations.
+PD controllers do have failure modes, however. In particular, PD controllers may fail
+to regulate an error down to zero, even in the absence of external perturbations. Often such
+a situation is the result of a systematic external force that is not part of the model. An au-
+tonomouscardrivingonabanked surface, forexample, mayfinditselfsystematically pulled
+to one side. Wearand tear in robot arms cause similar systematic errors. In such situations,
+anover-proportionalfeedbackisrequiredtodrivetheerrorclosertozero. Thesolutiontothis
+problemliesinaddingathirdtermtothecontrollaw,basedontheintegratederrorovertime:
+(cid:26) (y(t) x )
+a K (y(t) x

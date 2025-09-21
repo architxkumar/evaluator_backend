@@ -1,0 +1,26 @@
+ns have to be constructed. Early vision
+image-processing algorithms extract primitive features from the image, such as edges
+andregions. There are various cues in the image that enable one to obtain three-dimensional in-
+formation about the scene: motion, stereopsis, texture, shading, and contour analysis.
+Eachof these cues relies on background assumptions about physical scenes to provide
+nearlyunambiguous interpretations. Objectrecognitioninitsfullgeneralityisaveryhardproblem. Wediscussedbrightness-
+based and feature-based approaches. We also presented a simple algorithm for pose
+estimation. Otherpossibilities exist.
+966 Chapter 24. Perception
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Theeye developed in the Cambrian explosion (530 million years ago), apparently in acom-
+mon ancestor. Since then, endless variations have developed in different creatures, but the
+same gene, Pax-6, regulates the development of the eye in animals as diverse as humans,
+mice,and Drosophila.
+Systematic attempts to understand human vision can be traced back to ancient times.
+Euclid (ca. 300 B.C.) wrote about natural perspective the mapping that associates, with
+eachpoint P inthethree-dimensionalworld,thedirectionoftheray OP joiningthecenterof
+projection O tothepoint P. Hewaswellawareofthenotion ofmotionparallax. Theuseof
+perspective in art was developed in ancient Roman culture, as evidenced by art found in the
+ruinsof Pompeii(A.D.79),butwasthenlargelylostfor1300years. Themathematicalunder-
+standingofperspectiveprojection, thistimeinthecontextofprojectionontoplanarsurfaces,
+haditsnextsignificantadvanceinthe15th-century in Renaissance Italy. Brunelleschi (1413)
+isusually credited withcreating thefirstpaintings based on geometrically correct projection
+ofa three-dimensional scene. In 1435, Alberti codified therules and inspired generations of
+artistswhoseartisticachievementsamazeustothisday. Particularlynotableintheirdevelop-
+mentofthescienceofperspective,asitwascalledinthosedays,were Leonardoda 

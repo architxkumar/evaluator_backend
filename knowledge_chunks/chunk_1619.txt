@@ -1,0 +1,40 @@
+sitions from one belief state
+tothenextforaparticularactionasoccurring inthreestages, asshownin Figure4.15: Thepredictionstageisthesameasforsensorlessproblems: giventheactionainbelief
+stateb,thepredicted beliefstateis b PREDICT(b,a).11 The observation prediction stage determines the set of percepts o that could be ob-
+servedinthepredicted beliefstate:
+POSSIBLE-PERCEPTS( b) o: o PERCEPT(s)ands b . The update stage determines, for each possible percept, the belief state that would
+result from the percept. The new belief state b is just the set of states in b that could
+o
+haveproduced thepercept:
+b
+o UPDATE( b,o) s :o PERCEPT(s)ands b .
+Noticethateachupdatedbeliefstateb canbenolargerthanthepredictedbeliefstate b;
+o
+observations can only help reduce uncertainty compared to the sensorless case. More-
+over, for deterministic sensing, the belief states for the different possible percepts will
+bedisjoint, formingapartition oftheoriginal predicted beliefstate.
+11 Here,andthroughoutthebook,the hat in bmeansanestimatedorpredictedvalueforb.
+Section4.4. Searchingwith Partial Observations 143 B,Dirty 2
+Right
+1 2
+(a)
+3 4 B,Clean 4 B,Dirty 2
+Right 2
+1 1 A,Dirty 1
+(b)
+3 3 3
+4 B,Clean 4
+Figure 4.15 Two example of transitions in local-sensing vacuum worlds. (a) In the de-
+terministic world, Right is applied in the initial belief state, resulting in a new belief state
+with two possible physicalstates; forthose states, the possible perceptsare B,Dirty and B,Clean , leading to two belief states, each of which is a singleton. (b) In the slippery
+world, Right is applied in the initial belief state, giving a new belief state with four physi-
+calstates; forthosestates, thepossibleperceptsare A,Dirty , B,Dirty , and B,Clean ,
+leadingtothreebeliefstatesasshown.
+Puttingthesethreestagestogether, weobtainthepossible beliefstatesresultingfromagiven
+actionandthesubsequent possible percepts:
+RESULTS(b,a) b
+o
+:b
+o UPDATE(PREDICT(b,a),o)and
+o POSSIBLE-PERCEPTS(PREDICT(b,a)) . (4.5)
+Again,thenondetermi

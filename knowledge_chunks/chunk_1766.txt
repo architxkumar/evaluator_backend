@@ -1,0 +1,29 @@
+(b) Dotted line shows
+1
+modelsof (nopitin 2,2 ).
+2
+tomeanthatthesentence entailsthesentence . Theformaldefinitionofentailmentisthis: ifandonlyif,ineverymodelinwhich istrue, isalsotrue. Usingthenotationjust
+introduced, wecanwrite ifandonlyif M( ) M( ).
+(Notethedirection ofthe here: if ,then isastronger assertionthan : itrulesout
+more possible worlds.) The relation of entailment is familiar from arithmetic; we are happy
+with the idea that the sentence x 0 entails the sentence xy 0. Obviously, in any model
+wherexiszero,itisthecasethatxy iszero(regardlessofthevalueof y).
+Wecanapplythesamekindofanalysistothewumpus-worldreasoning examplegiven
+in the preceding section. Consider the situation in Figure 7.3(b): the agent has detected
+nothing in 1,1 andabreezein 2,1 . Thesepercepts, combined withtheagent s knowledge
+of the rules of the wumpus world, constitute the KB. The agent is interested (among other
+things) in whether the adjacent squares 1,2 , 2,2 , and 3,1 contain pits. Each of the three
+squaresmightormightnotcontainapit,so(forthepurposes ofthisexample)thereare23 8
+possible models. Theseeightmodelsareshownin Figure7.5.2
+The KB can be thought of as a set of sentences or as a single sentence that asserts all
+the individual sentences. The KB is false in models that contradict what the agent knows for example, the KB is false in any model in which 1,2 contains a pit, because there is
+no breeze in 1,1 . Thereare in fact just three models inwhich the KBis true, and these are
+2 Althoughthefigureshowsthemodelsaspartialwumpusworlds,theyarereallynothingmorethanassignments
+oftrue andfalsetothesentences thereisapitin 1,2 etc. Models,inthemathematicalsense,donotneedto
+have orrible airywumpusesinthem.
+242 Chapter 7. Logical Agents
+shownsurroundedbyasolidlinein Figure7.5. Nowletusconsidertwopossibleconclusions: Thereisnopitin 1,2 . 1 Thereisnopitin 2,2 . 2
+Wehavesurrounded themodelsof and withdotted linesin Figures7.5(a)and 7.5(b),
+1 2
+respectively. Byinspection, weseethefollowing:
+i

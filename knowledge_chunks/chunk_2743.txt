@@ -1,0 +1,34 @@
+y ever to devise a
+0
+completegrammarfor English, ifonlybecausenotwopersons wouldagreeentirelyonwhat
+constitutes valid English.
+23.1.1 The lexiconof E
+0
+Firstwedefinethelexicon,orlistofallowablewords. Thewordsaregroupedintothelexical
+LEXICON
+categories familiar to dictionary users: nouns, pronouns, and names to denote things; verbs
+to denote events; adjectives to modify nouns; adverbs to modify verbs; and function words:
+articles (such as the), prepositions (in), and conjunctions (and). Figure 23.1 shows a small
+lexiconforthelanguage E .
+0
+Eachofthecategories endsin...toindicate thatthereareotherwordsinthecategory.
+For nouns, names, verbs, adjectives, and adverbs, it is infeasible even in principle to list all
+the words. Not only are there tens of thousands of members in each class, but new ones like i Pod or biodiesel are being added constantly. These five categories are called open
+classes. Forthecategoriesofpronoun, relativepronoun, article, preposition, andconjunction
+OPENCLASS
+we could have listed all the words with a little more work. These are called closed classes;
+CLOSEDCLASS
+they have a small number of words (a dozen or so). Closed classes change over the course
+ofcenturies, notmonths. Forexample, thee and thou werecommonly used pronouns in
+the17thcentury, wereonthedeclineinthe19th,andareseen todayonlyinpoetryandsome
+regionaldialects.
+23.1.2 The Grammarof E
+0
+The next step is to combine the words into phrases. Figure 23.2 shows a grammar for E ,
+0
+with rules for each of the six syntactic categories and an example for each rewrite rule.2
+Figure 23.3 shows a parse tree for the sentence Every wumpus smells. The parse tree
+PARSETREE
+1 PCF Gsarealsoknownasstochasticcontext-freegrammars,or SCF Gs.
+2 A relative clause follows and modifies a noun phrase. It consists of a relative pronoun (such as who or that )followedbyaverbphrase. Anexampleofarelativeclauseisthatstinksin Thewumpusthatstinksisin
+22. Anotherkindofrelativeclausehasnorelativepronoun,e.g.,Iknowin thema

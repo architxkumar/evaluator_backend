@@ -1,0 +1,38 @@
+rmance measure.
+Let us emphasize again that this is not the only way to be rational we have already
+seen a rational agent program for the vacuum world (Figure 2.8) that has no idea what its
+utility function is but, likegoal-based agents, autility-based agent hasmanyadvantages in
+termsofflexibilityandlearning. Furthermore,intwokinds ofcases,goalsareinadequatebut
+autility-based agentcanstillmakerationaldecisions. First,whenthereareconflictinggoals,
+only some of which can be achieved (for example, speed and safety), the utility function
+specifies the appropriate tradeoff. Second, when there are several goals that the agent can
+aim for, none of which can be achieved with certainty, utility provides a way in which the
+likelihood ofsuccesscanbeweighedagainsttheimportance ofthegoals.
+Partialobservabilityandstochasticityareubiquitousintherealworld,andso,therefore,
+is decision making under uncertainty. Technically speaking, a rational utility-based agent
+chooses the action that maximizes the expected utility of the action outcomes that is, the
+EXPECTEDUTILITY
+utility the agent expects to derive, on average, given the probabilities and utilities of each
+6 Theword utility hererefersto thequalityofbeinguseful, nottotheelectriccompanyorwaterworks.
+54 Chapter 2. Intelligent Agents
+Agent
+Environment
+Sensors
+State
+What the world
+How the world evolves is like now
+What it will be like
+What my actions do if I do action A
+How happy I will be
+Utility
+in such a state
+What action I
+should do now
+Actuators
+Figure2.14 Amodel-based,utility-basedagent. Itusesamodeloftheworld,alongwith
+autilityfunctionthatmeasuresitspreferencesamongstatesoftheworld.Thenitchoosesthe
+actionthatleadstothebestexpectedutility,whereexpectedutilityiscomputedbyaveraging
+overallpossibleoutcomestates,weightedbytheprobabilityoftheoutcome.
+outcome. (Appendix Adefinesexpectation moreprecisely.) In Chapter16,weshowthatany
+rational agent must behave as if it possesses a utility function whose expected value it tries
+tomaximi

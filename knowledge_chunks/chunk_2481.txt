@@ -1,0 +1,41 @@
+
+error(h) Gen Loss (h) L (y,h(x))P(x,y) .
+L0 1 0 1
+x,y
+In other words, error(h) is the probability that h misclassifies a new example. This is the
+samequantitybeingmeasuredexperimentally bythelearning curvesshownearlier.
+A hypothesis h is called approximately correct if error(h) (cid:2), where (cid:2) is a small
+constant. Wewillshow thatwecanfindan N such that, afterseeing N examples, withhigh
+probability, all consistent hypotheses will be approximately correct. One can think of an
+approximately correcthypothesisasbeing close tothetruefunctioninhypothesisspace: it
+(cid:2) liesinside whatiscalled the(cid:2)-ballaround thetruefunction f. Thehypothesis spaceoutside
+-BALL
+thisballiscalled H .
+bad
+We can calculate the probability that a seriously wrong hypothesis h H is
+b bad
+consistent with the first N examples as follows. We know that error(h ) (cid:2). Thus, the
+b
+probability that it agrees with a given example is at most 1 (cid:2). Since the examples are
+independent, theboundfor N examplesis
+P(h agreeswith N examples) (1 (cid:2))N .
+b
+Section18.5. The Theoryof Learning 715
+The probability that H contains at least one consistent hypothesis is bounded by the sum
+bad
+oftheindividual probabilities:
+P(H contains aconsistent hypothesis) H (1 (cid:2))N H (1 (cid:2))N ,
+bad bad
+where we have used the fact that H H . We would like to reduce the probability of
+bad
+thiseventbelowsomesmallnumber : H (1 (cid:2))N .
+Giventhat1 (cid:2) e (cid:2),wecanachievethisifweallowthealgorithm tosee
+(cid:13) (cid:14)
+1 1
+N ln ln H (18.1)
+(cid:2) examples. Thus,ifalearningalgorithm returnsahypothesis thatisconsistentwiththismany
+examples, then with probability at least 1 , it has error at most (cid:2). In other words, it is
+probably approximately correct. Thenumberofrequired examples, asafunction of(cid:2) and ,
+SAMPLE iscalledthesamplecomplexityofthehypothesis space.
+COMPLEXITY
+As we saw earlier, if H is the set of all Boolean functions on n attributes, then H 22n . Thus, thesample complexity

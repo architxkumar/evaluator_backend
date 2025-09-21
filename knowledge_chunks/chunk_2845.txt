@@ -1,0 +1,24 @@
+We could use it to evaluate our original hypothesis that
+the points come from an object model. We do this by using some points to determine the
+parameters of the camera, then projecting model points in this camera and checking to see
+whetherthereareimagepointsnearby.
+Wehavesketchedhereatechnologythatisnowveryhighlydeveloped. Thetechnology
+can be generalized to deal with views that are not orthographic; to deal with points that are
+observed in only some views; to deal with unknown camera properties like focal length; to
+exploitvarioussophisticated searchesforappropriatecorrespondences; andtodoreconstruc-
+tion from verylarge numbers ofpoints andofviews. Ifthelocations ofpoints intheimages
+areknownwithsomeaccuracyandtheviewingdirectionsarereasonable, veryhighaccuracy
+cameraandpointinformation canbeobtained. Someapplications are Model-building: For example, one might build a modeling system that takes a video
+sequence depicting an object and produces a very detailed three-dimensional mesh of
+texturedpolygonsforuseincomputergraphicsandvirtualrealityapplications. Models
+like this can now be built from apparently quite unpromising sets of pictures. For ex-
+ample, Figure 24.26 shows a model of the Statue of Liberty built from pictures found
+onthe Internet. Matching moves: To place computer graphics characters into real video, we need to
+know how the camera moved for the real video, so that we can render the character
+correctly. Path reconstruction: Mobile robots need to know where they have been. If they are
+moving in a world of rigid objects, then performing a reconstruction and keeping the
+camerainformation isonewaytoobtainapath.
+24.6.3 Usingvisionforcontrolling movement
+Oneoftheprincipal usesofvisionistoprovideinformation bothformanipulating objects pickingthemup,graspingthem,twirlingthem,andsoon andfornavigatingwhileavoiding
+obstacles. The ability to use vision for these purposes is present in the most primitive of
+animal visual systems. In many cases, the visual system

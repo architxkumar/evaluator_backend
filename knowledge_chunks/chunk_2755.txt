@@ -1,0 +1,52 @@
+mmar rule to definite clause allows us to talk about parsing
+as logical inference. This makes it possible to reason about languages and strings in many
+differentways. Forexample,itmeanswecandobottom-upparsingusingforwardchainingor
+top-downparsingusingbackwardchaining. Infact,parsing naturallanguagewith DC Gswas
+Section23.3. Augmented Grammarsand Semantic Interpretation 899
+oneofthefirstapplications of(andmotivationsfor)the Prologlogicprogramminglanguage.
+LANGUAGE Itissometimespossible toruntheprocessbackwardanddo languagegeneration aswellas
+GENERATION
+parsing. Forexample, skipping ahead to Figure 23.10 (page 903), a logic program could be
+giventhesemanticform Loves(John,Mary)andapplythedefinite-clause rulestodeduce
+S(Loves(John,Mary), John,loves,Mary ).
+Thisworksfortoyexamples,butseriouslanguage-generationsystemsneedmorecontrolover
+theprocessthanisaffordedbythe DC Grulesalone.
+E : S NP VP ...
+1 S
+NP Pronoun Name Noun ...
+S S
+NP Pronoun Name Noun ...
+O O
+VP VP NP ...
+O
+PP Prep NP
+O
+Pronoun I you he she it ...
+S
+Pronoun me you him her it ...
+O
+...
+E : S(head) NP(Sbj,pn,h) VP(pn,head) ...
+2
+NP(c,pn,head) Pronoun(c,pn,head) Noun(c,pn,head) ...
+VP(pn,head) VP(pn,head) NP(Obj,p,h) ...
+PP(head) Prep(head) NP(Obj,pn,h)
+Pronoun(Sbj,1S,I) I
+Pronoun(Sbj,1P,we) we
+Pronoun(Obj,1S,me) me
+Pronoun(Obj,3P,them) them
+...
+Figure 23.7 Top: part of a grammarfor the language E , which handles subjective and
+1
+objective cases in noun phrases and thus does not overgeneratequite as badly as E . The
+0
+portionsthatareidenticalto E havebeenomitted. Bottom: partofanaugmentedgrammar
+0
+for E , withthreeaugmentations: caseagreement,subject verbagreement,andheadword.
+2
+Sbj,Obj,1S,1Pand3Pareconstants,andlowercasenamesarevariables.
+23.3.3 Caseagreement andsubject verb agreement
+We saw in Section 23.1 that the simple grammar for E overgenerates, producing nonsen-
+0
+tencessuchas Mesmellastench. Toavoidthisproblem,ourgrammarwouldhavetoknow
+that me isnotavalid NP whenitisthesubjectofasentence. Linguistss

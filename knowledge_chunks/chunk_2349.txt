@@ -1,0 +1,50 @@
+d
+profitof C (n 1) C n C n(n 1)dollars.
+Nowwecancalculate theexpected profit,giventhesurveyinformation:
+1 (n 1)C n 1 C C n.
+n n n n(n 1)
+Therefore, the company should be willing to pay the seismologist up to C n dollars for the
+information: theinformation isworthasmuchastheblockitself.
+The value of information derives from the fact that with the information, one s course
+of action can be changed to suit the actual situation. One can discriminate according to the
+situation, whereas without the information, one has to do what s best on average over the
+possible situations. In general, the value of a given piece of information is defined to be the
+difference inexpected valuebetweenbestactionsbeforeandafterinformation isobtained.
+10 Inthe United States,theonlyquestionthatisalwaysaskedbeforehandiswhetherthepatienthasinsurance.
+630 Chapter 16. Making Simple Decisions
+16.6.2 A general formulaforperfect information
+Itissimpletoderiveageneralmathematicalformulaforthevalueofinformation. Weassume
+that exact evidence canbeobtained about the value ofsomerandom variable E (that is, we
+j
+VALUEOFPERFECT learn E e ),sothephrase valueofperfectinformation(VPI)isused.11
+INFORMATION j j
+Let the agent s initial evidence be e. Then the value of the current best action is
+definedby
+(cid:12)
+EU( e) max P(RESULT(a) s (cid:2) a,e)U(s (cid:2) ),
+a
+s(cid:3)
+andthevalueofthenewbestaction(afterthenewevidence E e isobtained) willbe
+j j
+(cid:12)
+EU( ej e,e
+j
+) max P(RESULT(a) s (cid:2) a,e,e
+j
+)U(s (cid:2) ).
+a
+s(cid:3)
+But E isarandom variable whosevalue is currently unknown, sotodetermine thevalue of
+j
+discovering E ,givencurrentinformation ewemustaverageoverallpossiblevaluese that
+j jk
+wemightdiscoverfor E ,usingourcurrentbeliefsaboutitsvalue:
+j
+(cid:31)
+(cid:12)
+VPI (E ) P(E e e)EU( e,E e ) EU( e).
+e j j jk ejk j jk
+k
+To get some intuition for this formula, consider the simple case where there are only two
+actions,a anda ,fromwhichtochoose. Theircurrentexpectedutilitiesare U and U . The
+1 2 1 2

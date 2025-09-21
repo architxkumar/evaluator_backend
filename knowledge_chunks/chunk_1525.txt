@@ -1,0 +1,37 @@
+ea Arad Lugoj Arad Oradea
+(c) After expanding Sibiu Arad
+Sibiu Timisoara Zerind
+Arad Fagaras Oradea Rimnicu Vilcea Arad Lugoj Arad Oradea
+Figure 3.6 Partial search trees for finding a route from Arad to Bucharest. Nodes that
+have been expanded are shaded; nodes that have been generated but not yet expanded are
+outlinedinbold;nodesthathavenotyetbeengeneratedareshowninfaintdashedlines.
+Section3.3. Searchingfor Solutions 77
+function TREE-SEARCH(problem)returnsasolution,orfailure
+initializethefrontierusingtheinitialstateofproblem
+loopdo
+ifthefrontierisemptythenreturnfailure
+choosealeafnodeandremoveitfromthefrontier
+ifthenodecontainsagoalstatethenreturnthecorrespondingsolution
+expandthechosennode,addingtheresultingnodestothefrontier
+function GRAPH-SEARCH(problem)returnsasolution,orfailure
+initializethefrontierusingtheinitialstateofproblem
+initializetheexploredsettobeempty
+loopdo
+ifthefrontierisemptythenreturnfailure
+choosealeafnodeandremoveitfromthefrontier
+ifthenodecontainsagoalstatethenreturnthecorrespondingsolution
+addthenodetotheexploredset
+expandthechosennode,addingtheresultingnodestothefrontier
+onlyifnotinthefrontierorexploredset
+Figure 3.7 An informal description of the general tree-search and graph-search algo-
+rithms. The parts of GRAPH-SEARCH marked in bold italic are the additions needed to
+handlerepeatedstates.
+In other cases, redundant paths are unavoidable. This includes all problems where
+the actions are reversible, such as route-finding problems and sliding-block puzzles. Route-
+findingonarectangular grid(liketheoneusedlaterfor Figure3.9)isaparticularly impor-
+RECTANGULARGRID
+tant example in computer games. In such a grid, each state has four successors, so a search
+treeofdepthdthatincludesrepeatedstateshas4dleaves;butthereareonlyabout2d2distinct
+stateswithindstepsofanygivenstate. Ford 20,thismeansaboutatrillionnodesbutonly
+about 800 distinct states. Thus, following redundant paths can cause a tractable problem to
+becomeintractable. Thisistrueevenforalgor

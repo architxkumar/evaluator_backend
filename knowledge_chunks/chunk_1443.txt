@@ -1,0 +1,26 @@
+as some experts, and considerably better than junior doctors. It also contained two
+major differences from DENDRAL. First, unlike the DENDRAL rules, no general theoretical
+modelexistedfromwhichthe MYCIN rulescouldbededuced. Theyhadtobeacquiredfrom
+extensive interviewing of experts, who in turn acquired them from textbooks, other experts,
+anddirectexperienceofcases. Second,theruleshadtoreflecttheuncertaintyassociatedwith
+CERTAINTYFACTOR
+medical knowledge. MYCIN incorporated acalculus of uncertainty called certainty factors
+(see Chapter14),whichseemed(atthetime)tofitwellwithhowdoctorsassessedtheimpact
+ofevidence onthediagnosis.
+The importance of domain knowledge was also apparent in the area of understanding
+natural language. Although Winograd s SHRDLU system forunderstanding natural language
+hadengendered agooddealofexcitement,itsdependence onsyntacticanalysiscausedsome
+of the same problems as occurred in the early machine translation work. It was able to
+overcome ambiguity and understand pronoun references, but this wasmainly because itwas
+designed specifically foronearea the blocks world. Several researchers, including Eugene
+Charniak, a fellow graduate student of Winograd s at MIT, suggested that robust language
+understanding would require general knowledge about the world and a general method for
+usingthatknowledge.
+At Yale, linguist-turned-AI-researcher Roger Schank emphasized this point, claiming, Thereisnosuchthingassyntax, whichupsetalotoflinguistsbutdidservetostartauseful
+discussion. Schank and his students built a series of programs (Schank and Abelson, 1977;
+Wilensky, 1978; Schank and Riesbeck, 1981; Dyer, 1983) that all had the task of under-
+standing naturallanguage. Theemphasis, however,wasless onlanguage perseandmoreon
+theproblemsofrepresenting andreasoning withtheknowledgerequiredforlanguageunder-
+standing. The problems included representing stereotypical situations (Cullingford, 1981),
+24 Chapter 1. Introduction
+describing human memory organization (

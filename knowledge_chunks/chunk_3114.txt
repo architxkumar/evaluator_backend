@@ -1,0 +1,24 @@
+isticmodelsforrelationaldata.
+derivationsandfiniteinterpretations.In Proc.Inter- In UAI-02. Thrun,S.,Burgard,W.,and Fox,D.(2005).Proba-
+national Joint Conferenceon Automated Reasoning, bilistic Robotics.MIT Press.
+pp.67 81. Tate,A.(1975a).Interactinggoalsandtheiruse.In Thrun,S.,Fox,D.,and Burgard,W.(1998).Aprob-
+Sutherland,I.(1963). Sketchpad:Aman-machine IJCAI-75,pp.215 218. abilisticapproachtoconcurrentmappingandlocal-
+graphicalcommunicationsystem. In Proc.Spring Tate,A.(1975b). Using Goal Structureto Direct izationformobilerobots. Machine Learning,31,
+Joint Computer Conference,pp.329 346. Searchina Problem Solver.Ph.D.thesis,University 29 53.
+Sutton,C.and Mc Callum,A.(2007). Anintroduc- of Edinburgh. Thrun,S.(2006). Stanley,therobotthatwonthe
+tiontoconditionalrandomfieldsforrelationallearn- Tate,A.(1977). Generatingprojectnetworks. In DARPA Grand Challenge. J.Field Robotics,23(9),
+ing.In Getoor,L.and Taskar,B.(Eds.),Introduction IJCAI-77,pp.888 893. 661 692.
+to Statistical Relational Learning.MIT Press. Tikhonov, A.N. (1963). Solution ofincorrectly
+Tate,A.and Whiter,A.M.(1984). Planningwith
+Sutton, R.S.(1988). Learningtopredictbythe formulatedproblemsandtheregularizationmethod.
+multipleresourceconstraintsandanapplicationtoa
+methodsoftemporaldifferences. Machine Learn- Soviet Math.Dokl.,5,1035 1038.
+navalplanningproblem. In Proc.First Conference
+ing,3,9 44. on AI Applications,pp.410 416. Titterington,D.M.,Smith,A.F.M.,and Makov,
+Sutton,R.S.,Mc Allester,D.A.,Singh,S.P.,and U.E.(1985). Statisticalanalysisoffinitemixture
+Mansour,Y.(2000).Policygradientmethodsforre- Tatman,J.A.and Shachter,R.D.(1990).Dynamic distributions.Wiley.
+programmingandinfluencediagrams. IEEE Trans-
+inforcementlearningwithfunctionapproximation. actions on Systems, Man and Cybernetics, 20(2), Toffler,A.(1970).Future Shock.Bantam.
+In Solla,S.A.,Leen,T.K.,and Mu ller,K.-R.(Eds.),
+NIPS12,pp.1057 1063.MIT Press. 365 379. Tomasi,C.and Kanade,T.(1992). Shapeandmo-
+S le u a t r t n o i n ng , , R p . l

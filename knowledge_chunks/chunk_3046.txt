@@ -1,0 +1,23 @@
+01-72,Microsoft Greiner,R.(1989). Towardsaformalanalysisof Hand,D.,Mannila,H.,and Smyth,P.(2001).Prin-
+Research. EBL.In ICML-89,pp.450 453. ciplesof Data Mining.MIT Press.
+Bibliography 1075
+Handschin,J.E.and Mayne,D.Q.(1969). Monte Hastie,T.and Tibshirani,R.(1996). Discriminant Heinz,E.A.(2000). Scalablesearchincomputer
+Carlotechniquestoestimatetheconditionalexpecta- adaptivenearestneighborclassificationandregres- chess.Vieweg.
+tioninmulti-stagenonlinearfiltering.Int.J.Control, sion. In Touretzky,D.S.,Mozer,M.C.,and Has-
+Held, M.and Karp, R.M.(1970). Thetraveling
+9(5),547 559. selmo,M.E.(Eds.),NIPS8,pp.409 15.MIT Press.
+salesmanproblemandminimumspanningtrees.Op-
+Hansen,E.(1998). Solving POMD Psbysearching Hastie,T.,Tibshirani,R.,and Friedman,J.(2001). erations Research,18,1138 1162.
+inpolicyspace.In UAI-98,pp.211 219. The Elementsof Statistical Learning:Data Mining, Helmert,M.(2001).Onthecomplexityofplanning
+Hansen, E.and Zilberstein, S.(2001). LAO : a Inferenceand Prediction(2ndedition). Springer- intransportationdomains.In ECP-01.
+Verlag.
+heuristicsearchalgorithmthatfindssolutionswith Helmert,M.(2003). Complexityresultsforstan-
+loops.AIJ,129(1 2),35 62. Hastie,T.,Tibshirani,R.,and Friedman,J.(2009). dardbenchmarkdomainsinplanning. AIJ,143(2),
+Hansen, P. and Jaumard, B.(1990). Algorithms T In h f e er E en le c m e e a n n ts d o P f r S e t d a i t c is ti t o ic n al (2 L n e d ar e n d in it g io : n D ). ata Sp M ri i n n g in e g r- , 219 262.
+forthemaximumsatisfiabilityproblem.Computing, Verlag. Helmert,M.(2006). Thefastdownwardplanning
+44(4),279 303. system.JAIR,26,191 246.
+Haugeland,J.(Ed.).(1985). Artificial Intelligence:
+Hanski,I.and Cambefort,Y.(Eds.).(1991). Dung The Very Idea.MIT Press. Helmert,M.and Richter,S.(2004).Fastdownward
+Beetle Ecology.Princeton University Press. Makinguseofcausaldependenciesintheprob-
+Hauk, T. (2004). Search in Trees with Chance lemrepresentation. In Proc.International Planning
+Hansson,O.and Mayer,A.(1989).Heuristicsearch Nod

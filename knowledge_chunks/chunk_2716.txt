@@ -1,0 +1,23 @@
+: an n-gram that came back from a very specific query rewrite (such as the exact
+phrase match query Abraham Lincoln was killed by ) would get more weight than one
+from a general query rewrite, such as Abraham OR Lincoln OR killed . We would expect
+that John Wilkes Booth wouldbeamongthehighlyrankedn-gramsretrieved,butsowould Abraham Lincoln and theassassination of and Ford s Theatre. Once the n-grams are scored, they are filtered by expected type. If the original query
+startswith who, thenwefilteronnamesofpeople;for howmany wefilteronnumbers,for when, onadateortime. Thereisalsoafilterthatsaystheanswershouldnotbepartofthe
+question; together these should allow us to return John Wilkes Booth (and not Abraham
+Lincoln )asthehighest-scoring response.
+In some cases the answer will be longer than three words; since the components re-
+sponses only go up to 3-grams, a longer response would have to be pieced together from
+shorter pieces. For example, in a system that used only bigrams, the answer John Wilkes
+Booth couldbepiecedtogetherfromhigh-scoringpieces John Wilkes and Wilkes Booth. At the Text Retrieval Evaluation Conference (TREC), ASKMSR was rated as one of
+the top systems, beating out competitors with the ability to do far more complex language
+understanding. ASKMSR relies upon the breadth of the content on the Web rather than on
+its own depth of understanding. It won t be able to handle complex inference patterns like
+associating whokilled with ended thelifeof. Butitknowsthatthe Webissovastthatit
+canaffordtoignorepassages likethatandwaitforasimplepassage itcanhandle.
+22.4 INFORMATION EXTRACTION
+INFORMATION Informationextractionistheprocessofacquiringknowledgebyskimmingatextandlook-
+EXTRACTION
+ing for occurrences of a particular class of object and for relationships among objects. A
+typical task is to extract instances of addresses from Web pages, with database fields for
+street, city, state, and zip code; or instances of storms from weather reports, with fields for
+tem

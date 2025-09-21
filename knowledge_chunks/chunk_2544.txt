@@ -1,0 +1,34 @@
+Although there aremany possible universal Turing machines,
+and hence many possible shortest programs, these programs differ in length by at most a
+constant that is independent of the amount of data. This beautiful insight, which essentially
+shows that any initial representation bias will eventually be overcome by the data itself, is
+marredonlybytheundecidability ofcomputing thelength of theshortest program. Approx-
+MINIMUM
+imate measures such as the minimum description length, or MDL (Rissanen, 1984, 2007)
+DESCRIPTION
+LENGTH
+can be used instead and have produced excellent results in practice. The text by Li and Vi-
+tanyi(1993)isthebestsourcefor Kolmogorovcomplexity.
+Thetheoryof PAC-learningwasinauguratedby Leslie Valiant(1984). Hisworkstressed
+theimportanceofcomputationalandsamplecomplexity. With Michael Kearns(1990),Valiant
+showed that several concept classes cannot be PAC-learned tractably, even though sufficient
+informationisavailableintheexamples. Somepositiveresultswereobtainedforclassessuch
+asdecision lists(Rivest,1987).
+Anindependent traditionofsample-complexity analysishasexistedinstatistics, begin-
+UNIFORM
+ningwiththeworkonuniformconvergence theory(Vapnikand Chervonenkis, 1971). The
+CONVERGENCE
+THEORY
+so-called VCdimensionprovidesameasureroughlyanalogousto,butmoregeneralthan,the
+VCDIMENSION
+ln H measureobtainedfrom PA Canalysis. The VCdimensioncanbeappliedtocontinuous
+function classes, to which standard PAC analysis does not apply. PAC-learning theory and
+VCtheory were firstconnected by the four Germans (none ofwhom actually is German):
+Blumer,Ehrenfeucht, Haussler, and Warmuth(1989).
+Linear regression with squared error loss goes back to Legendre (1805) and Gauss
+(1809), who were both working on predicting orbits around the sun. The modern use of
+multivariate regression for machine learning is covered in texts such as Bishop (2007). Ng
+(2004)analyzed thedifferences between L and L regularization.
+1 2
+760 Chapter 18. Learningfrom Examples
+Theterm logistic f

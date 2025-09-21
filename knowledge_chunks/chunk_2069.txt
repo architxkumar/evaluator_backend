@@ -1,0 +1,32 @@
+dscaleofvalues. Exerciseshavedifficulty,dessertshave
+deliciousness,andpoemshavebeauty,yetnumberscannotbeassignedtothesequalities. One
+might,inamomentofpureaccountancy,dismisssuchpropertiesasuselessforthepurposeof
+logical reasoning; or, stillworse, attempttoimpose anumerical scaleonbeauty. Thiswould
+be agrave mistake, because it isunnecessary. Themost important aspect of measures is not
+theparticularnumericalvalues, butthefactthatmeasures canbeordered.
+Although measures are not numbers, we can still compare them, using an ordering
+symbol such as . For example, we might well believe that Norvig s exercises are tougher
+than Russell s, andthatonescoreslessontougherexercises:
+e Exercises e Exercises Wrote(Norvig,e ) Wrote(Russell,e ) 1 2 1 2
+Difficulty(e ) Difficulty(e ).
+1 2
+e Exercises e Exercises Difficulty(e ) Difficulty(e ) 1 2 1 2
+Expected Score(e ) Expected Score(e ).
+1 2
+Thisisenoughtoallowonetodecidewhichexercisestodo,eventhoughnonumericalvalues
+for difficulty were ever used. (One does, however, have to discover who wrote which exer-
+cises.) Thesesortsofmonotonicrelationships amongmeasuresformthebasisforthefieldof
+qualitative physics, a subfield of AI that investigates how to reason about physical systems
+without plunging into detailed equations and numerical simulations. Qualitative physics is
+discussed inthehistorical notessection.
+Section12.2. Categoriesand Objects 445
+12.2.3 Objects: Things andstuff
+The real world can be seen as consisting of primitive objects (e.g., atomic particles) and
+composite objects built from them. Byreasoning at the level of large objects such as apples
+andcars,wecanovercomethecomplexityinvolvedindealingwithvastnumbersofprimitive
+objectsindividually. Thereis,however,asignificantportionofrealitythatseemstodefyany
+obviousindividuation division intodistinctobjects. Wegivethisportionthegenericname
+INDIVIDUATION
+stuff. For example, suppose I have some butter and an aardvark in front of me. I can say
+STUFF
+thereisoneaardvark, butthereisno

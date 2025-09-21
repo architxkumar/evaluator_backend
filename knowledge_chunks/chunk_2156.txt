@@ -1,0 +1,42 @@
+he Wumpus World Revisited 501
+ables forsquares otherthan the Known squares and the query square 1,3 . Then, by Equa-
+tion(13.9),wehave
+(cid:12)
+P(P known,b) P(P ,unknown,known,b).
+1,3 1,3
+unknown
+The full joint probabilities have already been specified, so we are done that is, unless we
+care about computation. There are 12 unknown squares; hence the summation contains
+212 4096terms. Ingeneral,thesummationgrowsexponentiallywiththenumberofsquares.
+Surely, one might ask, aren t the other squares irrelevant? How could 4,4 affect
+whether 1,3 has a pit? Indeed, this intuition is correct. Let Frontier be the pit variables
+(other than the query variable) that are adjacent to visited squares, in this case just 2,2 and 3,1 . Also,let Other bethepitvariablesfortheotherunknownsquares;inthiscase,thereare
+10othersquares,asshownin Figure13.5(b). Thekeyinsight isthattheobservedbreezesare
+conditionally independent of the other variables, given the known, frontier, and query vari-
+ables. Touse the insight, wemanipulate the query formula into aform inwhich the breezes
+areconditioned onalltheothervariables, andthenweapply conditional independence:
+P(P known,b)
+1,3 (cid:12) P(P ,known,b,unknown) (by Equation(13.9))
+1,3
+un(cid:12)known P(b P ,known,unknown)P(P ,known,unknown)
+1,3 1,3
+unknown
+(bytheproductrule)
+(cid:12) (cid:12) P(b known,P ,frontier,other)P(P ,known,frontier,other)
+1,3 1,3
+frontierother
+(cid:12) (cid:12) P(b known,P ,frontier)P(P ,known,frontier,other),
+1,3 1,3
+frontierother
+wherethe finalstepuses conditional independence: bisindependent ofother givenknown,
+P , and frontier. Now, the first term in this expression does not depend on the Other
+1,3
+variables, sowecanmovethesummationinward:
+P(P known,b)
+1,3 (cid:12) (cid:12) P(b known,P ,frontier) P(P ,known,frontier,other).
+1,3 1,3
+frontier other
+By independence, as in Equation (13.20), the prior term can be factored, and then the terms
+canbereordered:
+P(P known,b)
+1,3 (cid:12) (cid:12) P(b known,P ,frontier) P(P )P(known)P

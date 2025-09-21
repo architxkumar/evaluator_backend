@@ -1,0 +1,39 @@
+reedy search used in decision tree learning is designed to approximately minimize the
+depth of the final tree. The idea is to pick the attribute that goes as far as possible toward
+providing an exact classification of the examples. A perfect attribute divides the examples
+intosets,eachofwhichareallpositiveorallnegativeandthuswillbeleavesofthetree. The
+Patrons attribute isnotperfect,butitisfairlygood. Areallyuselessattribute, suchas Type,
+leaves the example sets with roughly the same proportion of positive and negative examples
+astheoriginal set.
+Allweneed,then,isaformalmeasureof fairlygood and reallyuseless andwecan
+implement the IMPORTANCE function of Figure 18.5. Wewillusethe notion ofinformation
+gain, which is defined in terms of entropy, the fundamental quantity in information theory
+ENTROPY
+(Shannonand Weaver,1949).
+Entropyisameasureoftheuncertaintyofarandomvariable; acquisitionofinformation
+corresponds to a reduction in entropy. A random variable with only one value a coin that
+always comesupheads has nouncertainty andthus itsentropy isdefined aszero; thus, we
+gain no information by observing its value. Aflipof afair coin is equally likely to come up
+heads or tails, 0 or 1, and we will soon show that this counts as 1 bit of entropy. The roll
+ofafairfour-sided diehas2bitsofentropy, because ittakestwobitstodescribe oneoffour
+equallyprobablechoices. Nowconsideranunfaircointhatcomesupheads99 ofthetime.
+Intuitively,thiscoinhaslessuncertaintythanthefaircoin ifweguessheadswe llbewrong
+only1 ofthetime sowewouldlikeittohaveanentropymeasurethatisclosetozero,but
+704 Chapter 18. Learningfrom Examples
+positive. Ingeneral,theentropyofarandomvariable V withvaluesv ,eachwithprobability
+k
+P(v ),isdefinedas
+k
+(cid:12) (cid:12)
+1
+Entropy: H(V) P(v )log P(v )log P(v ).
+k 2 P(v ) k 2 k
+k
+k k
+Wecancheckthattheentropy ofafaircoinflipisindeed1bit:
+H(Fair) (0.5log 0.5 0.5log 0.5) 1.
+2 2
+Ifthecoinisloadedtogive99 heads, weget
+H(Loaded) (0.99log 0.99 0.01log 0.01) 0.08bits.
+2 2
+It will 

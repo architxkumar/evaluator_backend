@@ -1,0 +1,33 @@
+esent anexponential numberofformsasasinglerule.
+In the bottom of Figure 23.7 wesee (part of) an augmented grammarfor the language
+E , which handles case agreement, subject verb agreement, and head words. We have just
+2
+one NP category, but NP(c,pn,head) has three augmentations: c is a parameter for case,
+pn is a parameter for person and number, and head is a parameter for the head word of
+the phrase. The other categories also are augmented with heads and other arguments. Let s
+consideroneruleindetail:
+S(head) NP(Sbj,pn,h) VP(pn,head).
+Thisruleiseasiesttounderstand right-to-left: whenan NPanda VPareconjoined theyform
+an S, but only if the NPhas the subjective (Sbj) case and the person and number (pn) of the
+NP and VP are identical. If that holds, then we have an S whose head is the same as the
+headofthe VP.Notetheheadofthe NP,denoted bythedummyvariable h,isnotpartofthe
+augmentationofthe S.Thelexicalrulesfor E fillinthevaluesoftheparametersandarealso
+2
+bestreadright-to-left. Forexample,therule
+Pronoun(Sbj,1S,I) I
+saysthat I canbeinterpretedasa Pronouninthesubjectivecase,first-personsingular,with
+head I. For simplicity we have omitted the probabilities for these rules, but augmentation
+does work with probabilities. Augmentation can also work with automated learning mecha-
+nisms. Petrov and Klein (2007c) show how a learning algorithm can automatically split the
+NP category into NP and NP .
+S O
+23.3.4 Semantic interpretation
+To show how to add semantics to a grammar, we start with an example that is simpler than
+English: thesemanticsofarithmeticexpressions. Figure23.8showsagrammarforarithmetic
+expressions, whereeachruleisaugmentedwithavariableindicatingthesemanticinterpreta-
+tionofthephrase. Thesemanticsofadigitsuchas 3 isthedigititself. Thesemanticsofan
+expression suchas 3 4 istheoperator applied tothesemantics ofthephrase 3 and
+Section23.3. Augmented Grammarsand Semantic Interpretation 901
+Exp(x) Exp(x )Operator(op)Exp(x ) x Apply(op,x ,x ) 1 2 1 2
+Exp(x) (Exp(x) )
+Exp

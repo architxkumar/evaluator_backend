@@ -1,0 +1,25 @@
+id function is discussed by
+Jordan (1995). Bayesian parameter learning for neural networks was proposed by Mac Kay
+762 Chapter 18. Learningfrom Examples
+(1992) and is explored further by Neal(1996). Thecapacity ofneural networks to represent
+functionswasinvestigated by Cybenko(1988,1989),whoshowedthattwohiddenlayersare
+enough to represent any function and a single layer is enough to represent any continuous
+function. The optimalbraindamage methodforremovinguselessconnectionsisby Le Cun
+et al. (1989), and Sietsma and Dow (1988) show how to remove useless units. The tiling
+algorithm for growing larger structures is due to Me zard and Nadal (1989). Le Cun et al.
+(1995)surveyanumberofalgorithmsforhandwrittendigitrecognition. Improvederrorrates
+since then were reported by Belongie et al. (2002) for shape matching and De Coste and
+Scho lkopf (2002) for virtual support vectors. At the time of writing, the best test error rate
+reported is0.39 by Ranzato etal.(2007)usingaconvolutional neuralnetwork.
+Thecomplexityofneuralnetworklearninghasbeeninvestigatedbyresearchersincom-
+putational learning theory. Early computational results were obtained by Judd (1990), who
+showedthatthegeneralproblemoffindingasetofweightsconsistentwithasetofexamples
+is NP-complete,evenunderveryrestrictiveassumptions. Someofthefirstsamplecomplexity
+results were obtained by Baum and Haussler (1989), who showed that the number of exam-
+ples required for effective learning grows as roughly W log W, where W is the number of
+weights.17 Since then, a much more sophisticated theory has been developed (Anthony and
+Bartlett, 1999), including theimportant resultthattherepresentational capacity ofanetwork
+depends on the size of the weights as well as on their number, a result that should not be
+surprising inthelightofourdiscussion ofregularization.
+The most popular kind of neural network that we did not cover is the radial basis
+RADIALBASIS function,or RBF,network. Aradialbasisfunctioncombinesaweightedcollectionofk

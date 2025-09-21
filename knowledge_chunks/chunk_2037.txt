@@ -1,0 +1,25 @@
+l success. If someone comes along
+andpaintsthetableredatthesametimethattheagentispaintingthechairred,thenthefinal
+planpreconditionsaresatisfied(thegoalhasbeenachieved),andtheagentcangohomeearly.
+It is straightforward to modify a planning algorithm so that each action in the plan
+is annotated with the action s preconditions, thus enabling action monitoring. It is slightly
+4 Planmonitoringmeansthatfinally,after424pages,wehaveanagentthatissmarterthanadungbeetle(see
+page39). Aplan-monitoringagentwouldnoticethatthedungballwasmissingfromitsgraspandwouldreplan
+togetanotherballandplugitshole.
+Section11.4. Multiagent Planning 425
+more complex to enable plan monitoring. Partial-order and planning-graph planners have
+the advantage that they have already built up structures that contain the relations necessary
+forplanmonitoring. Augmentingstate-space planners with thenecessary annotations canbe
+donebycarefulbookkeeping asthegoalfluentsareregressed throughtheplan.
+Now that we have described a method for monitoring and replanning, we need to ask, Does it work? This is a surprisingly tricky question. If we mean, Can we guarantee that
+the agent will always achieve the goal? then the answer is no, because the agent could
+inadvertently arrive at a dead end from which there is no repair. For example, the vacuum
+agent might have a faulty model of itself and not know that its batteries can run out. Once
+theydo,itcannot repairanyplans. Ifweruleoutdeadends assume thatthereexists aplan
+to reach the goal from any state in the environment and assume that the environment is
+really nondeterministic, in the sense that such a plan always has some chance of success on
+anygivenexecutionattempt,thentheagentwilleventually reachthegoal.
+Trouble occurs when an action is actually not nondeterministic, but rather depends on
+some precondition that the agent does not know about. For example, sometimes a paint
+canmaybeempty,sopaintingfromthatcanhasnoeffect. Noamountofretrying isgoingto
+changethis.5 Onesolu

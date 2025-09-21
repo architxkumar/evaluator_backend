@@ -1,0 +1,20 @@
+erysimple: States: Positivenumbers. Initialstate: 4. Actions: Applyfactorial, squareroot,orflooroperation (factorial forintegersonly). Transitionmodel: Asgivenbythemathematicaldefinitions oftheoperations. Goaltest: Stateisthedesiredpositiveinteger.
+Toourknowledge thereisnobound onhowlarge anumbermightbeconstructed inthepro-
+cessofreaching agiventarget for example, thenumber620,448,401,733,239,439,360,000
+is generated in the expression for 5 so the state space for this problem is infinite. Such
+state spaces arise frequently in tasks involving the generation of mathematical expressions,
+circuits, proofs, programs, andotherrecursively definedobjects.
+3.2.2 Real-worldproblems
+ROUTE-FINDING We have already seen how the route-finding problem is defined in terms of specified loca-
+PROBLEM
+tionsandtransitionsalonglinksbetweenthem. Route-findingalgorithmsareusedinavariety
+of applications. Some, such as Web sites and in-car systems that provide driving directions,
+are relatively straightforward extensions of the Romania example. Others, such as routing
+videostreamsincomputernetworks,militaryoperationsplanning,andairlinetravel-planning
+systems,involvemuchmorecomplexspecifications. Considertheairlinetravelproblemsthat
+mustbesolvedbyatravel-planning Website: States: Eachstate obviously includes alocation (e.g., anairport) and the current time.
+Furthermore, because the cost of an action (a flight segment) may depend on previous
+segments, their fare bases, and their status as domestic or international, the state must
+recordextrainformation aboutthese historical aspects. Initialstate: Thisisspecifiedbytheuser squery. Actions: Take any flight from the current location, in any seat class, leaving after the
+currenttime,leavingenough timeforwithin-airport transferifneeded. Transition model: The state resulting from taking a flight will have the flight s desti-
+nationasthecurrentlocation andtheflight sarrivaltimeasthecurrenttime. Goaltest: Areweatthefinaldestination specifiedbytheuser? 

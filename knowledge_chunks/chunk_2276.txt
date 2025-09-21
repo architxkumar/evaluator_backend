@@ -1,0 +1,37 @@
+e isnosimple
+relationship between the old backward message b t d 1:t and the new backward message
+b t d 2:t 1 . Instead, we will examine the relationship between the old backward message
+b t d 1:t andthebackward messageatthefrontofthesequence, b t 1:t . Todothis,weapply
+Equation(15.13)dtimestoget
+(cid:31)
+(cid:25)t
+b t d 1:t TO i b t 1:t B t d 1:t 1, (15.14)
+i t d 1
+where the matrix B t d 1:t is the product of the sequence of T and O matrices. B can be
+thought of as a transformation operator that transforms a later backward message into an
+earlierone. Asimilarequation holds forthenewbackward messages afterthenextobserva-
+tionarrives:
+(cid:31)
+t(cid:25) 1
+b t d 2:t 1 TO i b t 2:t 1 B t d 2:t 1 1. (15.15)
+i t d 2
+Examiningtheproductexpressions in Equations(15.14)and (15.15),weseethattheyhavea
+simple relationship: to get the second product, divide the first product by the firstelement
+TO t d 1 , and multiply by the new last element TO t 1 . In matrix language, then, there is a
+simplerelationship betweentheoldandnew Bmatrices:
+B t d 2:t 1 O t 1 d 1 T 1B t d 1:t TO t 1 . (15.16)
+Thisequation providesanincremental updateforthe Bmatrix,whichinturn(through Equa-
+tion (15.15)) allows us to compute the new backward message b t d 2:t 1 . The complete
+algorithm, whichrequiresstoring andupdating fand B,isshownin Figure15.6.
+15.3.2 Hidden Markov model example: Localization
+Onpage145,weintroducedasimpleformofthelocalizationproblemforthevacuumworld.
+In that version, the robot had a single nondeterministic Move action and its sensors reported
+perfectly whether or not obstacles lay immediately to the north, south, east, and west; the
+robot sbeliefstatewasthesetofpossiblelocations itcouldbein.
+Here we make the problem slightly more realistic by including a simple probability
+model forthe robot s motion andby allowing fornoise inthesensors. Thestate variable X
+t
+represents the location of the robot on the discrete grid; the domain of this variable is the
+set of empty squares s
+1
+,...,s

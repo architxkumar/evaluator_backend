@@ -1,0 +1,30 @@
+is true. Models are assignments of true or false to
+every proposition symbol. Returning to our wumpus-world example, the relevant proposi-
+tion symbols are B , B , P , P , P , P , and P . With seven symbols, there are
+1,1 2,1 1,1 1,2 2,1 2,2 3,1
+27 128 possible models; in three of these, KB is true (Figure 7.9). In those three models, P istrue,hencethereisnopitin 1,2 . Ontheotherhand, P istrueintwoofthethree
+1,2 2,2
+modelsandfalseinone,sowecannotyettellwhetherthereisapitin 2,2 .
+Figure7.9reproduces inamoreprecise form thereasoning illustrated in Figure7.5. A
+generalalgorithmfordecidingentailmentinpropositionallogicisshownin Figure7.10. Like
+the BACKTRACKING-SEARCH algorithm on page 215, TT-ENTAILS? performs a recursive
+enumeration of afinite space of assignments to symbols. Thealgorithm is soundbecause it
+implements directly thedefinition ofentailment, and completebecause itworksforany KB
+and andalwaysterminates there areonlyfinitelymanymodelsto examine.
+Of course, finitely many is not always the same as few. If KB and contain n
+symbols in all, then there are 2n models. Thus, the time complexity of the algorithm is
+O(2n). (Thespacecomplexityisonly O(n)becausetheenumeration isdepth-first.) Laterin
+this chapter weshow algorithms that are much more efficient in many cases. Unfortunately,
+propositional entailment isco-NP-complete (i.e.,probably noeasierthan NP-complete see
+Appendix A), so every known inference algorithm for propositional logic has a worst-case
+complexity thatisexponential inthesizeoftheinput.
+248 Chapter 7. Logical Agents
+B 1,1 B 2,1 P 1,1 P 1,2 P 2,1 P 2,2 P 3,1 R 1 R 2 R 3 R 4 R 5 KB
+false false false false false false false true true true true false false
+false false false false false false true true true false true false false
+. . . . . . . . . . . . .
+. . . . . . . . . . . . .
+. . . . . . . . . . . . .
+false true false false false false false true true false true true false
+false true false false false false true true true true true true true
+false

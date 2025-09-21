@@ -1,0 +1,33 @@
+entation andlearning.
+19.1 A LOGICAL FORMULATION OF LEARNING
+Chapter 18 defined pure inductive learning as a process of finding a hypothesis that agrees
+withtheobservedexamples. Here,wespecializethisdefinitiontothecasewherethehypoth-
+esisisrepresentedbyasetoflogicalsentences. Exampledescriptionsandclassificationswill
+also be logical sentences, and a new example can be classified by inferring a classification
+sentence from the hypothesis and the example description. This approach allows for incre-
+mentalconstructionofhypotheses,onesentenceatatime. Italsoallowsforpriorknowledge,
+because sentences that are already known can assist in the classification of new examples.
+Thelogical formulation oflearning mayseemlikealotofextraworkatfirst,butitturns out
+toclarify manyoftheissues inlearning. Itenables ustogowellbeyond the simplelearning
+methodsof Chapter18byusingthefullpoweroflogicalinferenceintheserviceoflearning.
+19.1.1 Examples andhypotheses
+Recallfrom Chapter18therestaurant learningproblem: learningarulefordecidingwhether
+towaitforatable. Examplesweredescribedbyattributessuchas Alternate,Bar,Fri Sat,
+768
+Section19.1. ALogical Formulationof Learning 769
+and so on. In a logical setting, an example is described by a logical sentence; the attributes
+become unary predicates. Let us generically call the ith example X . For instance, the first
+i
+examplefrom Figure18.3(page700)isdescribed bythesentences
+Alternate(X ) Bar(X ) Fri Sat(X ) Hungry(X ) ...
+1 1 1 1
+Wewillusethenotation D (X )torefertothedescriptionof X ,where D canbeanylogical
+i i i i
+expression taking a single argument. The classification of the example is given by a literal
+usingthegoalpredicate, inthiscase
+Will Wait(X ) or Will Wait(X ).
+1 1
+Thecompletetrainingsetcanthusbeexpressedastheconjunctionofalltheexampledescrip-
+tionsandgoalliterals.
+The aim of inductive learning in general is to find a hypothesis that classifies the ex-
+amples well and generalizes well to new examples. Herewe are concerned withhypotheses

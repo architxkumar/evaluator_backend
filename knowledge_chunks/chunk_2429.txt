@@ -1,0 +1,40 @@
+tion, because the advantaged com-
+pany can always bid higher. Thus, the competitors may not enter at all, and the advantaged
+companyendsupwinningatthereserveprice.
+Anothernegativepropertyofthe Englishauctionisitshighcommunicationcosts. Either
+theauction takesplaceinoneroomorallbiddershavetohave high-speed, securecommuni-
+cationlines;ineithercasetheyhavetohavethetimeavailabletogothroughseveralroundsof
+bidding. Analternative mechanism,whichrequires muchlesscommunication, isthesealed-
+SEALED-BID bidauction. Eachbiddermakes asingle bidandcommunicates ittotheauctioneer, without
+AUCTION
+theotherbidders seeing it. Withthismechanism, thereisno longer asimple dominant strat-
+egy. If your value is v and you believe that the maximum of all the other agents bids will
+i
+be b , then you should bid b (cid:2), for some small (cid:2), if that is less than v . Thus, your bid
+o o i
+depends on your estimation of the other agents bids, requiring you to do more work. Also,
+note that the agent with the highest v might not win the auction. This is offset by the fact
+i
+thattheauctionismorecompetitive, reducing thebiastowardanadvantaged bidder.
+A small change in the mechanism for sealed-bid auctions produces the sealed-bid
+SEALED-BID second-priceauction,alsoknownasa Vickreyauction.10 Insuchauctions,thewinnerpays
+SECOND-PRICE
+AUCTION
+the price of the second-highest bid, b , rather than paying his own bid. This simple modifi-
+VICKREYAUCTION o
+cation completely eliminates thecomplexdeliberations required forstandard (or first-price)
+sealed-bidauctions, becausethedominantstrategyisnowsimplytobidv ;themechanismis
+i
+truth-revealing. Notethattheutilityofagentiintermsofhisbidb ,hisvaluev ,andthebest
+i i
+bidamongtheotheragents, b ,is
+o
+(cid:24)
+(v b ) ifb b
+u i o i o
+i 0 otherwise.
+To see that b v is a dominant strategy, note that when (v b ) is positive, any bid
+i i i o
+that wins the auction is optimal, and bidding v in particular wins the auction. On the other
+i
+hand, when (v b )isnegative, anybid 

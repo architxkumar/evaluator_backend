@@ -1,0 +1,32 @@
+ief-statespaceofsingletonbeliefstates.
+Section4.4. Searchingwith Partial Observations 139
+alwaysknowsitsownbeliefstate. Furthermore, thesolution (ifany)isalwaysasequence of
+actions. Thisisbecause,asintheordinaryproblemsof Chapter3,theperceptsreceivedafter
+eachactionarecompletelypredictable they re alwaysempty! Sotherearenocontingencies
+toplanfor. Thisistrue eveniftheenvironment isnondeterminstic.
+It is instructive to see how the belief-state search problem is constructed. Suppose
+theunderlying physical problem P isdefined by ACTIONSP , RESULTP , GOAL-TESTP ,and
+STEP-COSTP . Thenwecandefinethecorresponding sensorless problem asfollows: Beliefstates: Theentirebelief-statespacecontainseverypossiblesetofphysicalstates.
+If P has N states,thenthesensorless problemhasupto2N states,although manymay
+beunreachable fromtheinitialstate. Initial state: Typically the set of allstates in P, although insome cases the agent will
+havemoreknowledge thanthis. Actions: This is slightly tricky. Suppose the agent is in belief state b s ,s , but
+1 2
+ACTIONSP (s
+1
+) (cid:7) ACTIONSP (s
+2
+);thentheagent isunsure ofwhichactions arelegal.
+If we assume that illegal actions have no effect on the environment, then it is safe to
+taketheunionofalltheactionsinanyofthephysicalstatesinthecurrent beliefstateb:
+(cid:15)
+ACTIONS(b) ACTIONSP (s).
+s b
+Ontheotherhand, ifanillegalactionmightbetheendoftheworld, itissafertoallow
+only the intersection, that is, the set of actions legal in all the states. For the vacuum
+world,everystatehasthesamelegalactions, sobothmethodsgivethesameresult. Transition model: The agent doesn t know which state in the belief state is the right
+one; so as far as it knows, it might get to any of the states resulting from applying the
+action tooneofthe physical states inthebelief state. Fordeterministic actions, theset
+ofstatesthatmightbereached is
+b (cid:2) RESULT(b,a) s (cid:2) : s (cid:2) RESULTP (s,a)ands b . (4.4)
+(cid:2)
+Withdeterministic actions, b isneverlargerthan b. Withnon

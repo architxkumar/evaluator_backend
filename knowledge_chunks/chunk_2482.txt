@@ -1,0 +1,28 @@
+of(cid:2) and ,
+SAMPLE iscalledthesamplecomplexityofthehypothesis space.
+COMPLEXITY
+As we saw earlier, if H is the set of all Boolean functions on n attributes, then H 22n . Thus, thesample complexity ofthespace growsas 2n. Becausethenumberofpossible
+examples is also 2n, this suggests that PAC-learning in the class of all Boolean functions
+requires seeing all, or nearly all, of the possible examples. A moment s thought reveals the
+reason for this: H contains enough hypotheses to classify any given set of examples in all
+possibleways. Inparticular, foranysetof N examples,thesetofhypothesesconsistent with
+those examples contains equal numbers of hypotheses that predict x to be positive and
+N 1
+hypotheses thatpredict x tobenegative.
+N 1
+To obtain real generalization to unseen examples, then, it seems we need to restrict
+the hypothesis space H in some way; but of course, if we do restrict the space, we might
+eliminatethetruefunctionaltogether. Therearethreewaystoescapethisdilemma. Thefirst,
+which wewillcoverin Chapter19, is tobring priorknowledge tobear onthe problem. The
+second, which we introduced in Section 18.4.3, is to insist that the algorithm return not just
+anyconsistenthypothesis,butpreferablyasimpleone(asisdoneindecisiontreelearning). In
+cases where finding simple consistent hypotheses istractable, the sample complexity results
+are generally better than for analyses based only on consistency. The third escape, which
+we pursue next, is to focus on learnable subsets of the entire hypothesis space of Boolean
+functions. This approach relies on the assumption that the restricted language contains a
+hypothesis h that is close enough to the true function f; the benefits are that the restricted
+hypothesisspaceallowsforeffectivegeneralization andistypicallyeasiertosearch. Wenow
+examineonesuchrestricted language inmoredetail.
+18.5.1 PA Clearning example: Learning decisionlists
+We now show how to apply PAC learning to a new hypothesis space: decision lists. A
+DECISIONLIS

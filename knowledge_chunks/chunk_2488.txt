@@ -1,0 +1,42 @@
+ecayovertimeasthelearning processproceeds.
+Forunivariateregression, thelossfunctionisaquadratic function, sothepartialderiva-
+tive will be a linear function. (The only calculus you need to know is that x2 2x and x x 1.) Let s first work out the partial derivatives the slopes in the simplified case of x
+4 Withsomecaveats: the L2 lossfunctionisappropriatewhenthereisnormally-distributednoisethatisinde-
+pendentofx;allresultsrelyonthestationarityassumption;etc.
+720 Chapter 18. Learningfrom Examples
+onlyonetraining example, (x,y): Loss(w) (y h (x))2
+w w w
+i i 2(y h (x)) (y h (x))
+w w w
+i 2(y h (x)) (y (w x w )), (18.5)
+w 1 0 w
+i
+applying thistobothw andw weget:
+0 1 Loss(w) 2(y h (x)); Loss(w) 2(y h (x)) x
+w w w w
+0 1
+Then,pluggingthisbackinto Equation(18.4),andfoldingthe2intotheunspecifiedlearning
+rate ,wegetthefollowinglearning rulefortheweights:
+w w (y h (x)); w w (y h (x)) x
+0 0 w 1 1 w
+These updates make intuitive sense: if h (x) y, i.e., the output of the hypothesis is too
+w
+large, reduce w a bit, and reduce w if x was a positive input but increase w if x was a
+0 1 1
+negativeinput.
+Theprecedingequationscoveronetrainingexample. For N trainingexamples,wewant
+tominimizethesumoftheindividuallossesforeachexample. Thederivativeofasumisthe
+sumofthederivatives, sowehave:
+(cid:12) (cid:12)
+w w (y h (x )); w w (y h (x )) x .
+0 0 j w j 1 1 j w j j
+j j
+BATCHGRADIENT These updates constitute the batch gradient descent learning rule for univariate linear re-
+DESCENT
+gression. Convergence to the unique global minimum is guaranteed (as long as we pick smallenough) butmaybeveryslow: wehavetocyclethrough allthetraining dataforevery
+step,andtheremaybemanysteps.
+STOCHASTIC There is another possibility, called stochastic gradient descent, where we consider
+GRADIENTDESCENT
+only a single training point at a time, taking a step after each one using Equation (18.5).
+Stochastic gradient descent can be used in an online setting, where new data are coming in
+one at a time, or offline, where we 

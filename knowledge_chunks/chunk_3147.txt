@@ -1,0 +1,33 @@
+ustivedecomposition,441 Fahlman,S.E.,20,472,1072
+epiphenomenalism,1030 existenceuncertainty,541 failuremodel,593
+episodicenvironment,43 existentialgraph,454 falsealarm(indataassociation),602
+epistemologicalcommitment,289,290, Existential Instantiation,323 falsenegative,770
+313,482 Existential Introduction,360 falsepositive,770
+Epstein,R.,30,1071 expansion(ofstates),75 familytree,788
+EQP,360 expectation,1058 Farrell,R.,358,1067
+equality,353 expectedmonetaryvalue,616 FASTDIAGONALLYDOWNWARD,387
+equality(inlogic),299 expectedutility,53,61,483,610,611, FASTDOWNWARD,395
+equalitysymbol,299 616 FASTFORWARD,379
+equilibrium,183,668 expectedvalue(inagametree),172, FASTUS,874,875,884
+equivalence(logical),249 178 Faugeras,O.,968,1072
+Erdmann,M.A.,156,1071 expectiminimax,178,191 Fearing,R.S.,1013,1072
+ergodic,537 complexityof,179 Featherstone,R.,1013,1072
+Ernst,G.,110,1084 expertsystem,468,633,636,800,1036 feature(inspeech),915
+Ernst,H.A.,1012,1071 commercial,336 feature(ofastate),107,172
+Ernst,M.,395,1071 decision-theoretic,633 636 featureextraction,929
+Erol,K.,432,1071,1072 first,23 featureselection,713,866
+error(ofahypothesis),708,714 firstcommercial,24 feed-forwardnetwork,729
+errorfunction,1058 HPP(Heuristic Programming feedbackloop,548
+errorrate,708 Project),23 Feigenbaum,E.A.,22,23,468,758,
+Essig,A.,505,1074 logical,546 1067,1072,1080
+Etchemendy,J.,280,314,1065 medical,557 Feiten,W.,1012,1066
+ethics,1034 1040 Prolog-based,339 Feldman,J.,639,1072
+Etzioni,A.,1036,1072 withuncertainty,26 Feldman,R.,799,1089
+Etzioni,O.,61,433,439,469,881,885, explainingaway,548 Fellbaum,C.,921,1072
+1036,1050,1065,1072,1079, explanation,462,781 Fellegi,I.,556,1072
+1091 explanation-basedgeneralization,187 Felner,A.,107,112,395,1072,1079,
+Euclid,8,966 explanation-basedlearning(EBL),432, 1092
+EURISKO,800 778,780 784,798,799 Felzenszwalb,P.,156,959,1072
+Europe,24 explanatorygap,1033 Feng,C.,800,1083
+European Space Agency,432 exploitation,839 Feng,L.,1012,1066
+evaluationfunction,92,108,162, explorati

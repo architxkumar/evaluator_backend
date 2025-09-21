@@ -1,0 +1,43 @@
+ Section 18.6. Now we can under-
+standwhy: minimizingthesumofsquarederrorsgivesthemaximum-likelihood straight-line
+model,provided thatthedataaregenerated with Gaussiannoiseoffixedvariance.
+20.2.4 Bayesianparameter learning
+Maximum-likelihood learning gives rise to some very simple procedures, but it has some
+serious deficiencies with small data sets. For example, after seeing one cherry candy, the
+maximum-likelihood hypothesis is that the bag is 100 cherry (i.e., 1.0). Unless one s
+hypothesis prior is that bags must be either all cherry or all lime, this is not a reasonable
+conclusion. It is more likely that the bag is a mixture of lime and cherry. The Bayesian
+approach to parameter learning starts by defining a prior probability distribution over the
+possible hypotheses. We call this the hypothesis prior. Then, as data arrives, the posterior
+HYPOTHESISPRIOR
+probability distribution isupdated.
+Section20.2. Learningwith Complete Data 811
+2.5
+2
+1.5
+1
+0.5
+0
+0 0.2 0.4 0.6 0.8 1
+) (P
+6 5,5 5 2,2 4
+3 1,1 2
+1
+0
+0 0.2 0.4 0.6 0.8 1
+Parameter ) (P 30,10 6,2 3,1 Parameter (a) (b)
+Figure20.5 Examplesofthebeta a,b distributionfordifferentvaluesof a,b .
+The candy example in Figure 20.2(a) has one parameter, : the probability that a ran-
+domly selected piece of candy is cherry-flavored. In the Bayesian view, is the (unknown)
+value of a random variable that defines the hypothesis space; the hypothesis prior is just
+thepriordistribution P( ). Thus,P( )isthepriorprobabilitythatthebaghasafraction ofcherrycandies.
+If the parameter can be any value between 0 and 1, then P( ) must be a continuous
+distributionthatisnonzeroonlybetween0and1andthatintegratesto1. Theuniformdensity
+P( ) Uniform 0,1 ( ) is one candidate. (See Chapter 13.) It turns out that the uniform
+density isamemberofthefamilyofbetadistributions. Eachbetadistribution isdefinedby
+BETADISTRIBUTION
+twohyperparameters3 aandbsuchthat
+HYPERPARAMETER
+beta a,b ( ) a 1(1 )b 1
+, (20.6)
+for intherange 0,1 . Thenormalizationconstant ,w

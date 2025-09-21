@@ -1,0 +1,35 @@
+ble by the anti-B
+drug. Nowthattherearethreehypotheses, whatwillthetwostatisticians do?
+20.4 Explainhowtoapplytheboostingmethodof Chapter18tonaive Bayeslearning. Test
+theperformance oftheresulting algorithm ontherestaurant learning problem.
+20.5 Consider N datapoints(x ,y ),wherethey saregeneratedfromthex saccordingto
+j j j j
+thelinear Gaussianmodelin Equation(20.5). Findthevaluesof , ,and thatmaximize
+1 2
+theconditional loglikelihood ofthedata.
+20.6 Consider the noisy-OR model for fever described in Section 14.3. Explain how to
+applymaximum-likelihoodlearningtofittheparametersofsuchamodeltoasetofcomplete
+data. (Hint: usethechainruleforpartialderivatives.)
+20.7 Thisexerciseinvestigatespropertiesofthe Betadistributiondefinedin Equation(20.6).
+a. By integrating over the range 0,1 , show that the normalization constant for the dis-
+tribution beta a,b is given by (a b) (a) (b) where (x) is the Gamma
+function,definedby (x 1) x (x)and (1) 1. (Forinteger x, (x 1) x!.)
+GAMMAFUNCTION
+b. Showthatthemeanisa (a b).
+c. Findthemode(s)(themostlikelyvalue(s)of ).
+d. Describethedistributionbeta (cid:2),(cid:2) forverysmall(cid:2). Whathappensassuchadistribution
+isupdated?
+20.8 Consideranarbitrary Bayesian network, acomplete dataset forthatnetwork, andthe
+likelihood for the data set according to the network. Give a simple proof that the likelihood
+ofthedatacannotdecreaseifweaddanewlinktothenetworkandrecomputethemaximum-
+likelihood parametervalues.
+20.9 Consider a single Boolean random variable Y (the classification ). Let the prior
+probability P(Y true)be . Let strytofind ,givenatrainingset D (y ,...,y )with
+1 N
+N independent samples of Y. Furthermore, suppose p of the N are positive and n of the N
+arenegative.
+Exercises 829
+a. Write down an expression for the likelihood of D (i.e., the probability of seeing this
+particularsequence ofexamples,givenafixedvalueof )intermsof ,p,andn.
+b. Bydifferentiatingtheloglikelihood L,findthevalueof thatmaximizesthelikelihood.
+c. Nowsuppose weaddink

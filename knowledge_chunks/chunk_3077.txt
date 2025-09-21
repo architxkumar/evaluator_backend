@@ -1,0 +1,24 @@
+c. Symposium on Mechanisation of
+Mac Kenzie,D.(2004). Mechanizing Proof. MIT gationintothe Human Representationand Process- Thought Processes,Vol.1,pp.77 84.
+Press. ingof Visual Information.W.H.Freeman.
+Mc Carthy,J.(1963).Situations,actions,andcausal
+Mackworth,A.K.(1977).Consistencyinnetworks Marriott,K.and Stuckey,P.J.(1998). Program- laws.Memo2,Stanford University Artificial Intelli-
+ofrelations.AIJ,8(1),99 118. mingwith Constraints:An Introduction.MIT Press. gence Project.
+1082 Bibliography
+Mc Carthy, J. (1968). Programs with common Mendel, G. (1866). Versuche u ber pflanzen- Minsky,M.L.(1975). Aframeworkforrepresent-
+sense. In Minsky,M.L.(Ed.),Semantic Informa- hybriden. Verhandlungen des Naturforschenden ingknowledge.In Winston,P.H.(Ed.),The Psychol-
+tion Processing,pp.403 418.MIT Press. Vereins,Abhandlungen,Bru nn,4,3 47. Translated ogyof Computer Vision,pp.211 277.Mc Graw-Hill.
+into Englishby C.T.Druery,publishedby Bateson Originallyan MITAI Laboratorymemo;the1975
+Mc Carthy,J.(1980). Circumscription: Aformof
+(1902). versionisabridged,butisthemostwidelycited.
+non-monotonicreasoning.AIJ,13(1 2),27 39.
+Mercer,J.(1909). Functionsofpositiveandnega- Minsky,M.L.(1986). Thesocietyofmind. Simon
+Mc Carthy,J.(2007).Fromheretohuman-level AI. tivetypeandtheirconnectionwiththetheoryofin- and Schuster.
+AIJ,171(18),1174 1182.
+tegralequations.Philos.Trans.Roy.Soc.London,A, Minsky,M.L.(2007).The Emotion Machine:Com-
+Mc Carthy,J.and Hayes,P.J.(1969). Somephilo- 209,415 446. monsense Thinking,Artificial Intelligence, andthe
+sophicalproblemsfromthestandpointofartificial Merleau-Ponty,M.(1945).Phenomenologyof Per- Futureofthe Human Mind.Simonand Schuster.
+intelligence.In Meltzer,B.,Michie,D.,and Swann,
+M.(Eds.),Machine Intelligence4,pp.463 502.Ed- ception.Routledge. Minsky,M.L.and Papert,S.(1969). Perceptrons:
+inburgh University Press. Metropolis, N., Rosenbluth, A., Rosenbluth, M., An Introduction to Computational Geometry (first
+Teller,A.,and Teller,E.(1953). Equationsofstate ed

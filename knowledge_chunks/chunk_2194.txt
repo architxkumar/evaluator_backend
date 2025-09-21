@@ -1,0 +1,38 @@
+4 5 4 5 2 3
+e e
+Now the pointwise product inside the summation is computed, and the variable is summed
+outoftheresulting matrix.
+Notice that matrices are not multiplied until we need to sum out a variable from the
+accumulated product. Atthatpoint, wemultiply justthose matrices thatinclude thevariable
+to be summed out. Given functions for pointwise product and summing out, the variable
+elimination algorithm itselfcanbewrittenquitesimply,asshownin Figure14.11.
+Variableorderingandvariablerelevance
+Thealgorithmin Figure14.11includesanunspecified ORDE Rfunctiontochooseanordering
+for the variables. Every choice of ordering yields a valid algorithm, but different orderings
+cause different intermediate factors to be generated during the calculation. For example, in
+the calculation shown previously, we eliminated A before E; if we do it the other way, the
+calculation becomes
+(cid:12) (cid:12)
+P(B j,m) f (B) f (A) f (A) f (E) f (A,B,E),
+1 4 5 2 3
+a e
+duringwhichanewfactor f (A,B)willbegenerated.
+6
+In general, the time and space requirements of variable elimination are dominated by
+the size of the largest factor constructed during the operation of the algorithm. This in turn
+528 Chapter 14. Probabilistic Reasoning
+function ELIMINATION-ASK(X,e,bn)returnsadistributionover X
+inputs:X,thequeryvariable
+e,observedvaluesforvariables E
+bn,a Bayesiannetworkspecifyingjointdistribution P(X
+1
+,...,Xn)
+factors foreachvar in ORDER(bn.VARS)do
+factors MAKE-FACTOR(var,e) factors ifvar isahiddenvariablethenfactors SUM-OUT(var,factors)
+return NORMALIZE(POINTWISE-PRODUCT(factors))
+Figure14.11 Thevariableeliminationalgorithmforinferencein Bayesiannetworks.
+is determined by the order of elimination of variables and by the structure of the network.
+It turns out to be intractable to determine the optimal ordering, but several good heuristics
+are available. One fairly effective method is a greedy one: eliminate whichever variable
+minimizesthesizeofthenextfactortobeconstructed.
+Let us consider one more

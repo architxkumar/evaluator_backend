@@ -1,0 +1,71 @@
+ymeasurethedensityofthedatapointsintheneighborhoodofx. Figure20.7(b)
+shows two query points (small squares). For each query point we have drawn the smallest
+circle that encloses 10neighbors the 10-nearest-neighborhood. Wecansee thatthe central
+circle is large, meaning there is a low density there, and the circle on the right is small,
+meaningthereisahighdensitythere. In Figure20.8weshowthreeplotsofdensityestimation
+using k-nearest-neighbors, for different values of k. It seems clear that (b) is about right,
+while(a)istoospiky(k istoosmall)and(c)istoosmooth(k istoobig).
+Section20.2. Learningwith Complete Data 815
+Density
+18
+16 1
+14
+0.9
+12
+10 0.8
+8
+6 0.7
+4
+1 0.6
+2 0.8
+0 0 0.6 0.5
+0.2 0.4
+0.4 0.6 0.2 0.4
+0.8 0
+1
+0.3
+0 0.2 0.4 0.6 0.8 1
+(a) (b)
+Figure20.7 (a)A3Dplotofthemixtureof Gaussiansfrom Figure20.11(a). (b)A128-
+pointsampleofpointsfromthemixture,togetherwithtwoquerypoints(smallsquares)and
+their10-nearest-neighborhoods(mediumandlargecircles).
+Density Density Density
+1 1 1
+0.8 0.8 0.8
+0.6 0.6 0.6
+0 0.20.40.60.8
+0
+0.2 0.4 0 0.20.40.60.8
+0
+0.2 0.4 0 0.20.40.60.8
+0
+0.2 0.4
+(a) (b) (c)
+Figure 20.8 Density estimation using k-nearest-neighbors, applied to the data in Fig-
+ure 20.7(b), for k 3, 10, and 40 respectively. k 3 is too spiky, 40 is too smooth, and
+10isjustaboutright.Thebestvalueforkcanbechosenbycross-validation.
+Density Density Density
+1 1 1
+0.8 0.8 0.8
+0.6 0.6 0.6
+0 0.20.40.60.8
+0
+0.2 0.4 0 0.20.40.60.8
+0
+0.2 0.4 0 0.20.40.60.8
+0
+0.2 0.4
+(a) (b) (c)
+Figure20.9 Kerneldensityestimationforthedatain Figure20.7(b),using Gaussianker-
+nelswithw 0.02,0.07,and0.20respectively.w 0.07isaboutright.
+816 Chapter 20. Learning Probabilistic Models
+Another possibility is to use kernel functions, as we did for locally weighted regres-
+sion. Toapplyakernelmodeltodensityestimation,assumethateachdatapointgeneratesits
+ownlittledensityfunction, usinga Gaussiankernel. Theestimateddensityataquerypointx
+isthentheaverage densityasgivenbyeachkernelfunction:
+(cid:12)N
+1
+P(x) K(x,x ).
+j
+N
+j

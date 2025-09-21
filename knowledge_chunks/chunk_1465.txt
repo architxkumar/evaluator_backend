@@ -1,0 +1,25 @@
+ent is known a priori (Figure 2.2) but the dirt distri-
+butionandtheinitiallocationoftheagentarenot. Cleansquaresstaycleanandsucking
+cleans the current square. The Left and Right actions move the agent left and right
+exceptwhenthiswouldtaketheagentoutsidetheenvironment, inwhichcasetheagent
+remainswhereitis. Theonlyavailable actionsare Left,Right,and Suck. Theagentcorrectly perceivesitslocation andwhetherthat location contains dirt.
+We claim that under these circumstances the agent is indeed rational; its expected perfor-
+manceisatleastashighasanyotheragent s. Exercise2.2asksyoutoprovethis.
+One can see easily that the same agent would be irrational under different circum-
+stances. Forexample, once allthedirtiscleaned up, theagent willoscillate needlessly back
+andforth;iftheperformancemeasureincludesapenaltyofonepointforeachmovementleft
+or right, the agent will fare poorly. A better agent for this case would do nothing once it is
+sure that allthe squares are clean. Ifclean squares can become dirty again, the agent should
+occasionally check and re-clean them if needed. If the geography of the environment is un-
+known, the agent will need to explore it rather than stick to squares A and B. Exercise 2.2
+asksyoutodesignagentsforthesecases.
+2.2.2 Omniscience, learning, andautonomy
+We need to be careful to distinguish between rationality and omniscience. An omniscient
+OMNISCIENCE
+agent knows the actual outcome of its actions and can act accordingly; but omniscience is
+impossible in reality. Consider the following example: I am walking along the Champs
+Elyse es one day and I see an old friend across the street. There is no traffic nearby and I m
+not otherwise engaged, so, being rational, I start to cross the street. Meanwhile, at 33,000
+feet, a cargo door falls off a passing airliner,2 and before I make it to the other side of the
+street Iamflattened. Was Iirrationaltocrossthestreet? Itisunlikelythatmyobituarywould
+read Idiotattemptstocrossstreet. This example shows that rat

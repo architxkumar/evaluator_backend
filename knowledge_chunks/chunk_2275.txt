@@ -1,0 +1,36 @@
+ricescontainingthesensormodelinformation
+addettotheendofet d:t
+Ot diagonalmatrixcontaining P(et Xt)
+ift dthen
+f FORWARD(f,et)
+removeet d 1 fromthebeginningofet d:t
+Ot d diagonalmatrixcontaining P(et d Xt d)
+B O t 1
+d
+T 1BT Ot
+else B BT Ot
+t t 1
+ift dthenreturn NORMALIZE(f B1)elsereturnnull
+Figure 15.6 An algorithm for smoothing with a fixed time lag of d steps, implemented
+as an online algorithm that outputs the new smoothed estimate given the observation for a
+new time step. Notice that the final output NORMALIZE(f B1) is just f b, by Equa-
+tion(15.14).
+b and ftogether, using them to compute the smoothed estimate ateach step. Since only one
+copy of each message is needed, the storage requirements are constant (i.e., independent of
+t, the length of the sequence). There are two significant restrictions on this algorithm: it re-
+quires thatthetransition matrixbeinvertible andthatthe sensormodelhavenozeroes that
+is,thateveryobservation bepossible ineverystate.
+A second area in which the matrix formulation reveals an improvement is in online
+smoothing with a fixed lag. The fact that smoothing can be done in constant space suggests
+that there should exist an efficient recursive algorithm for online smoothing that is, an al-
+gorithm whose time complexity is independent of the length of the lag. Let us suppose that
+the lag is d; that is, we are smoothing at time slice t d, where the current time is t. By
+Equation(15.8),weneedtocompute f 1:t d b t d 1:t
+forslicet d. Then,whenanewobservation arrives,weneedtocompute f 1:t d 1 b t d 2:t 1
+forslicet d 1. Howcanthisbedoneincrementally? First,wecancomputef 1:t d 1 from
+f 1:t d ,usingthestandard filteringprocess, Equation(15.5).
+Section15.3. Hidden Markov Models 581
+Computing the backward message incrementally istrickier, because there isnosimple
+relationship between the old backward message b t d 1:t and the new backward message
+b t d 2:t 1 . Instead, we will examine the relationship between the old backward message
+b t d 1:t and

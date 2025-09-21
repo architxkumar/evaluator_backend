@@ -1,0 +1,30 @@
+atethevehicle.
+Section25.7. Robotic Software Architectures 1003
+What is remarkable about this example is the ease with which this learning approach
+solvesachallengingroboticsproblem. Thisisoneofthemanysuccessesofmachinelearning
+inscientificfieldspreviously dominated bycarefulmathematicalanalysis andmodeling.
+25.7 ROBOTIC SOFTWARE ARCHITECTURES
+SOFTWARE Amethodologyforstructuring algorithmsiscalleda softwarearchitecture. Anarchitecture
+ARCHITECTURE
+includes languages and tools forwriting programs, as wellas an overall philosophy forhow
+programscanbebroughttogether.
+Modern-day software architectures for robotics must decide how to combine reactive
+control and model-based deliberative planning. In many ways, reactive and deliberate tech-
+niques have orthogonal strengths and weaknesses. Reactive control is sensor-driven and ap-
+propriate for making low-level decisions in real time. However, it rarely yields a plausible
+solutionatthegloballevel,becauseglobalcontroldecisionsdependoninformationthatcan-
+not be sensed at the time of decision making. For such problems, deliberate planning is a
+moreappropriate choice.
+Consequently, most robot architectures use reactive techniques at the lower levels of
+control anddeliberative techniques atthe higherlevels. Weencountered such acombination
+in our discussion of PD controllers, where we combined a (reactive) PD controller with a
+(deliberate) path planner. Architectures that combine reactive and deliberate techniques are
+HYBRID calledhybridarchitectures.
+ARCHITECTURE
+25.7.1 Subsumption architecture
+SUBSUMPTION Thesubsumptionarchitecture (Brooks, 1986) isaframework forassembling reactive con-
+ARCHITECTURE
+trollers out of finite state machines. Nodes in these machines may contain tests for certain
+sensorvariables, inwhichcasetheexecutiontraceofafinitestatemachineisconditioned on
+the outcome of such a test. Arcs can be tagged with messages that will be generated when
+traversingthem,andthataresenttotherobot smotorsorto otherfinitestate

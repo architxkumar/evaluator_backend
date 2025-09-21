@@ -1,0 +1,44 @@
+o a landmark with known location
+and increases again as the robot loses sight of the landmark. EKF algorithms work well if
+landmarks are easily identified. Otherwise, the posterior distribution may be multimodal, as
+in Figure25.10(b). Theproblem ofneeding toknow theidentity oflandmarks isaninstance
+ofthedataassociation problemdiscussed in Figure15.6.
+Insomesituations, nomapoftheenvironment isavailable. Thentherobotwillhaveto
+acquire amap. Thisis abit ofachicken-and-egg problem: the navigating robot willhave to
+determine its location relative to a map it doesn t quite know, at the same time building this
+mapwhileitdoesn tquiteknowitsactuallocation. Thisproblemisimportantformanyrobot
+applications, and it has been studied extensively under the name simultaneous localization
+SIMULTANEOUS
+andmapping,abbreviated as SLAM.
+LOCALIZATIONAND
+MAPPING
+SLAM problems are solved using many different probabilistic techniques, including
+theextended Kalmanfilterdiscussed above. Usingthe EK Fisstraightforward: justaugment
+Section25.3. Robotic Perception 983
+Robot position
+(a)
+Robot position
+(b)
+Robot position
+(c)
+Figure25.10 Monte Carlolocalization,aparticlefilteringalgorithmformobilerobotlo-
+calization. (a)Initial,globaluncertainty. (b)Approximatelybimodaluncertaintyafternavi-
+gatinginthe(symmetric)corridor.(c)Unimodaluncertaintyafterenteringaroomandfinding
+ittobedistinctive.
+984 Chapter 25. Robotics f(X, a) f( , a) F(X )
+X X t t t t t t t
+t 1 f(X, a) t 1 f(X, a)
+t t t t f( , a) f( , a)
+t 1 t t t 1 t t t 1 X X
+t t t t t t
+(a) (b)
+Figure25.11 One-dimensionalillustrationofalinearizedmotionmodel:(a)Thefunction
+f,andtheprojectionofamean t
+andacovarianceinterval(basedon t)intotimet 1.
+(b)Thelinearizedversionisthetangentoff at . Theprojectionofthemean iscorrect.
+t t
+However,theprojectedcovariance t 1 differsfrom t 1 .
+robot
+landmark
+Figure25.12 Exampleoflocalizationusingtheextended Kalmanfilter. Therobotmoves
+ona straightline. As it progresses,its uncertaintyincreasesgradually,asillustrated

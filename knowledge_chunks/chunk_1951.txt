@@ -1,0 +1,31 @@
+ed are false.) The goal is just like a
+GOAL
+precondition: aconjunction ofliterals (positive ornegative) thatmaycontain variables, such
+as At(p,SFO) Plane(p). Anyvariables aretreatedasexistentially quantified, sothisgoal
+is to have any plane at SFO. The problem is solved when wecan find a sequence of actions
+thatendinastatesthatentailsthegoal. Forexample,thestate Rich Famous Miserable
+entails the goal Rich Famous, and the state Plane(Plane ) At(Plane ,SFO) entails
+1 1
+thegoal At(p,SFO) Plane(p).
+Nowwehavedefinedplanningasasearchproblem: wehaveaninitialstate,an ACTIONS
+function, a RESULT function, and a goal test. We ll look at some example problems before
+investigating efficientsearchalgorithms.
+10.1.1 Example: Aircargo transport
+Figure10.1showsanaircargotransport problem involving loading andunloading cargoand
+flyingitfrom placetoplace. Theproblem canbedefined withthree actions: Load,Unload,
+and Fly. Theactions affecttwopredicates: In(c,p)meansthatcargo cisinsideplanep,and
+At(x,a)meansthatobjectx(eitherplaneorcargo)isatairport a. Notethatsomecaremust
+be taken to make sure the At predicates are maintained properly. When a plane flies from
+oneairporttoanother, allthecargo insidetheplane goeswithit. Infirst-orderlogicitwould
+beeasytoquantify overallobjects thatareinside theplane. Butbasic PDDL doesnothave
+a universal quantifier, so we need a different solution. The approach we use is to say that a
+pieceofcargoceasestobe Atanywherewhenitis Inaplane;thecargoonlybecomes Atthe
+new airport when it is unloaded. So At really means available for use at a given location. Thefollowingplanisasolution totheproblem: Load(C ,P ,SFO),Fly(P ,SFO,JFK),Unload(C ,P ,JFK),
+1 1 1 1 1
+Load(C ,P ,JFK),Fly(P ,JFK,SFO),Unload(C ,P ,SFO) .
+2 2 2 2 2
+370 Chapter 10. Classical Planning
+Finally, there is the problem ofspurious actions such as Fly(P ,JFK,JFK), which should
+1
+beano-op, butwhich hascontradictory effects (according tothedefinition, theeffect would
+include At(P ,JFK) At(P ,JFK)). It is

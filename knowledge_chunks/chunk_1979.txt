@@ -1,0 +1,23 @@
+04 Satisficing FASTDIAGONALLYDOWNWARD(forwardsearchwithcausalgraph)
+2002 Automated LPG(localsearch,planninggraphsconvertedto CS Ps)
+2002 Hand-coded TLPLAN(temporalactionlogicwithcontrolrulesforforwardsearch)
+2000 Automated FF(forwardsearch)
+2000 Hand-coded TALPLANNER(temporalactionlogicwithcontrolrulesforforwardsearch)
+1998 Automated IPP(planninggraphs);HSP(forwardsearch)
+Figure10.11 Someofthetop-performingsystemsinthe International Planning Compe-
+tition. Eachyearthere are varioustracks: Optimal means the plannersmustproducethe
+shortestpossibleplan,while Satisficing meansnonoptimalsolutionsareaccepted. Hand-
+coded meansdomain-specificheuristicsareallowed; Automated meanstheyarenot.
+10.4 OTHER CLASSICAL PLANNING APPROACHES
+Currentlythemostpopularandeffectiveapproaches tofullyautomated planning are: Translatingtoa Booleansatisfiability (SAT)problem Forwardstate-space searchwithcarefully craftedheuristics (Section10.2) Searchusingaplanning graph(Section10.3)
+These three approaches are not the only ones tried inthe 40-year history of automated plan-
+ning. Figure10.11showssomeofthetopsystemsinthe International Planning Competitions,
+whichhavebeenheldeveryevenyearsince1998. Inthissectionwefirstdescribethetransla-
+tiontoasatisfiability problem andthendescribe threeotherinfluential approaches: planning
+asfirst-orderlogicaldeduction; asconstraint satisfaction; andasplanrefinement.
+10.4.1 Classicalplanning as Booleansatisfiability
+In Section7.7.4wesawhow SATPLA Nsolvesplanningproblemsthatareexpressedinpropo-
+sitional logic. Here we show how to translate a PDDL description into a form that can be
+processed by SATPLAN. Thetranslation isaseriesofstraightforward steps: Propositionalize the actions: replace each action schema with a set of ground actions
+formedbysubstitutingconstantsforeachofthevariables. Thesegroundactionsarenot
+partofthetranslation, butwillbeusedinsubsequent steps. Define the initial state: assert F0 for every fluent F in the problem s initial state, and F fore

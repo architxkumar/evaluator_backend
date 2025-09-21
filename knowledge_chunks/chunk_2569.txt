@@ -1,0 +1,33 @@
+ S (bydefinition), sowethrowitoutofthe S-set.
+i
+2. Falsenegativefor S : Thismeans S istoospecific,sowereplaceitbyallitsimmediate
+i i
+generalizations, provided theyaremorespecificthansomememberof G.
+3. Falsepositivefor G : Thismeans G istoogeneral,sowereplaceitbyallitsimmediate
+i i
+specializations, provided theyaremoregeneralthansomememberof S.
+776 Chapter 19. Knowledgein Learning
+4. Falsenegative for G : Thismeans G istoospecific, butthere areno consistent gener-
+i i
+alizations of G (bydefinition) sowethrowitoutofthe G-set.
+i
+Wecontinuetheseoperations foreachnewexampleuntiloneofthreethingshappens:
+1. Wehave exactly one hypothesis left inthe version space, in which case wereturn itas
+theunique hypothesis.
+2. The version space collapses either S or G becomes empty, indicating that there are
+noconsistent hypotheses forthetraining set. Thisisthesamecaseasthefailure ofthe
+simpleversionofthedecision treealgorithm.
+3. We run out of examples and have several hypotheses remaining in the version space.
+This means the version space represents a disjunction of hypotheses. For any new
+example,ifallthedisjunctsagree,thenwecanreturntheirclassificationoftheexample.
+Iftheydisagree, onepossibility istotakethemajorityvote.
+Weleaveasanexercisetheapplication ofthe VERSION-SPACE-LEARNING algorithm tothe
+restaurant data.
+Therearetwoprincipal drawbackstotheversion-space approach: Ifthedomaincontainsnoiseorinsufficientattributesforexactclassification,theversion
+spacewillalwayscollapse. Ifweallowunlimiteddisjunction inthehypothesis space,the S-setwillalwayscontain
+a single most-specific hypothesis, namely, the disjunction of the descriptions of the
+positiveexamplesseentodate. Similarly,the G-setwillcontainjustthenegationofthe
+disjunction ofthedescriptions ofthenegativeexamples. For some hypothesis spaces, the number of elements in the S-set or G-set may grow
+exponentiallyinthenumberofattributes,eventhoughefficientlearningalgorithmsexist
+forthosehypothesis spaces.
+To date, no completely succe

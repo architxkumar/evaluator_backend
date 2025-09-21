@@ -1,0 +1,77 @@
+wenowhave
+1
+h (x) Logistic(w x) .
+w 1 e w x
+Anexampleofsuchahypothesisforthetwo-inputearthquake explosion problemisshownin
+Figure 18.17(c). Notice that the output, being anumberbetween 0and 1, can beinterpreted
+as a probability of belonging to the class labeled 1. The hypothesis forms a soft boundary
+in the input space and gives a probability of 0.5 for any input at the center of the boundary
+region,andapproaches 0or1aswemoveawayfromtheboundary.
+Theprocess offittingtheweights ofthis modeltominimize lossonadatasetiscalled
+LOGISTIC logisticregression. Thereisnoeasyclosed-formsolutiontofindtheoptimalvalueofwwith
+REGRESSION
+thismodel,butthegradient descent computation isstraightforward. Becauseourhypotheses
+no longer output just 0 or 1, we will use the L loss function; also, to keep the formulas
+2
+(cid:2)
+readable, we lluseg tostandforthelogisticfunction, withg itsderivative.
+For a single example (x,y), the derivation of the gradient is the same as for linear
+regression (Equation (18.5)) up to the point where the actual form of his inserted. (Forthis
+(cid:2)
+derivation, wewillneedthechainrule: g(f(x)) x g (f(x)) f(x) x.) Wehave
+CHAINRULE Loss(w) (y h (x))2
+w w w
+i i 2(y h (x)) (y h (x))
+w w w
+i 2(y h (x)) g (cid:2) (w x) w x
+w w
+i 2(y h (x)) g (cid:2) (w x) x .
+w i
+Section18.7. Artificial Neural Networks 727
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 1000 2000 3000 4000 5000
+elpmaxe
+rep
+rorre
+derauq S
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20000 40000 60000 80000 100000
+Number of weight updates
+elpmaxe
+rep
+rorre
+derauq S
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20000 40000 60000 80000 100000
+Number of weight updates
+elpmaxe
+rep
+rorre
+derauq S
+Number of weight updates
+(a) (b) (c)
+Figure 18.18 Repeat of the experiments in Figure 18.16 using logistic regression and
+squarederror. Theplotin(a)covers5000iterationsrather than1000,while(b)and(c)use
+thesamescale.
+Thederivative g (cid:2) ofthelogistic functionsatisfiesg (cid:2) (z) g(z)(1 g(z)), sowehave
+g (cid:2) (w x) g(w x)(1 g(w x)) h (x)(1 h (x))
+w w
+sotheweightu

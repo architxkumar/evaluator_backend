@@ -1,0 +1,26 @@
+al thinking, respectively. It is now a common
+(although far from universal) view among psychologists that a cognitive theory should be
+likeacomputerprogram (Anderson,1980);thatis,itshoulddescribeadetailedinformation-
+processing mechanismwherebysomecognitivefunction mightbeimplemented.
+1.2.6 Computer engineering Howcanwebuildanefficientcomputer?
+For artificial intelligence to succeed, we need two things: intelligence and an artifact. The
+computer has been the artifact of choice. The modern digital electronic computer was in-
+ventedindependently andalmostsimultaneously byscientistsinthreecountriesembattledin
+14 Chapter 1. Introduction
+World War II. The first operational computer was the electromechanical Heath Robinson,8
+built in 1940 by Alan Turing s team forasingle purpose: deciphering German messages. In
+1943, the same group developed the Colossus, a powerful general-purpose machine based
+on vacuum tubes.9 The first operational programmable computer was the Z-3, the inven-
+tionof Konrad Zusein Germanyin1941. Zusealsoinvented floating-point numbers andthe
+first high-level programming language, Plankalku l. The first electronic computer, the ABC,
+was assembled by John Atanasoff and his student Clifford Berry between 1940 and 1942
+at Iowa State University. Atanasoff s research received little support or recognition; it was
+the ENIAC, developed as part of a secret military project at the University of Pennsylvania
+by a team including John Mauchly and John Eckert, that proved to be the most influential
+forerunnerofmoderncomputers.
+Sincethattime,eachgenerationofcomputerhardwarehasbroughtanincreaseinspeed
+andcapacityandadecreaseinprice. Performancedoubledevery18monthsorsountilaround
+2005,whenpowerdissipationproblemsledmanufacturers to startmultiplyingthenumberof
+CP Ucoresratherthantheclockspeed. Currentexpectations arethatfutureincreasesinpower
+willcomefrommassiveparallelism a curious convergence withtheproperties ofthebrain.
+Of course, there were calculating devices befo

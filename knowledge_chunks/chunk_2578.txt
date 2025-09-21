@@ -1,0 +1,37 @@
+gupwiththeideainthefirstplace.
+19.3.1 Extracting general rules from examples
+Thebasic idea behind EB Lisfirst toconstruct anexplanation ofthe observation using prior
+knowledge, and then to establish adefinition of the class of cases forwhich thesame expla-
+nation structure can be used. This definition provides the basis fora rule covering all of the
+casesintheclass. The explanation canbealogicalproof, butmoregenerally itcanbeany
+reasoning orproblem-solving process whose steps arewell defined. The keyis tobe able to
+identify thenecessary conditions forthosesamestepstoapplytoanothercase.
+We will use for our reasoning system the simple backward-chaining theorem prover
+described in Chapter9. Theprooftreefor Derivative(X2,X) 2X istoolargetouseasan
+example, so we will use a simpler problem to illustrate the generalization method. Suppose
+ourproblem istosimplify 1 (0 X). Theknowledgebaseincludes thefollowingrules:
+Rewrite(u,v) Simplify(v,w) Simplify(u,w).
+Primitive(u) Simplify(u,u).
+Arithmetic Unknown(u) Primitive(u).
+Number(u) Primitive(u).
+Rewrite(1 u,u).
+Rewrite(0 u,u).
+.
+.
+.
+The proof that the answer is X is shown in the top half of Figure 19.7. The EBL method
+actually constructs twoprooftreessimultaneously. Thesecondprooftreeusesa variabilized
+goal inwhich the constants from the original goal are replaced by variables. Asthe original
+proof proceeds, the variabilized proof proceeds in step, using exactly the same rule applica-
+tions. This could cause some of the variables to become instantiated. Forexample, in order
+tousetherule Rewrite(1 u,u),thevariablexinthesubgoal Rewrite(x (y z),v)must
+(cid:2)
+bebound to1. Similarly, y mustbebound to0inthesubgoal Rewrite(y z,v )inorderto
+usetherule Rewrite(0 u,u). Oncewehavethe generalized proof tree, wetake theleaves
+782 Chapter 19. Knowledgein Learning
+Simplify(1 (0 X),w)
+Rewrite(1 (0 X),v) Simplify(0 X,w)
+Yes, v 0 X Rewrite(0 X,v') Simplify(X,w)
+Yes, v' X w X Primitive(X)
+Arithmetic Unknown(X)
+Simplify(x (y z),w) Yes, Rewrite(x

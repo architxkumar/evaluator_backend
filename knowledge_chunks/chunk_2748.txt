@@ -1,0 +1,21 @@
+h subsequence. It returns the
+wholetable, P, in whichan entry P X, start, len is the probabilityofthe mostprobable
+X of lengthlen starting atposition start. If thereis no X of thatsize atthatlocation, the
+probabilityis0.
+equivalent to Autumnabandons autumn.) With E thesentence hasfourparses:
+0 S S NP Fallleaves fall and S NP springleaves spring S S NP Fallleaves fall and S spring VP leavesspring S S Fall VP leavesfall and S NP springleaves spring S S Fall VP leavesfall and S spring VP leavesspring .
+Ifwehadctwo-ways-ambiguous conjoined subsentences, wewouldhave2c waysofchoos-
+ing parses forthe subsentences.3 How does the CYK algorithm process these 2c parse trees
+in O(c3) time? The answer is that it doesn t examine all the parse trees; all it has to do is
+compute the probability of the most probable tree. The subtrees are all represented in the P
+table,andwithalittleworkwecouldenumeratethemall(inexponentialtime),butthebeauty
+ofthe CY Kalgorithm isthatwedon thavetoenumeratethemunlesswewantto.
+Inpracticeweareusuallynotinterestedinallparses;justthebestoneorbestfew. Think
+of the CYK algorithm as defining the complete state space defined by the apply grammar rule operator. It is possible to search just part of this space using A search. Each state
+in this space is a list of items (words or categories), as shown in the bottom-up parse table
+(Figure 23.4). The start state is a list of words, and a goal state is the single item S. The
+3 Therealsowouldbe O(c!)ambiguityinthewaythecomponentsconjoin forexample,(X and(Y and Z))
+versus((Xand Y)and Z).Butthatisanotherstory,onetoldwellby Churchand Patil(1982).
+Section23.2. Syntactic Analysis(Parsing) 895 S NP-SBJ-2Hereyes VPwere VPglazed NP -2 SBAR-AD Vasif S NP-SB Jshe VPdidn t VP VPhear NP -1 or VP ADV Peven see NP -1 NP-1him . Figure23.6 Annotatedtree forthe sentence Hereyeswere glazedasif she didn thear
+orevensee him. fromthe Penn Treebank. Notethatinthisgrammarthereisadistinction
+betweenanobjectnounphrase(NP)andasubjectnounphr

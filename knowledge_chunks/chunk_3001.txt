@@ -1,0 +1,18 @@
+n n m a T n e h t d h e o R o d r e e m i t n i o c p t a e a l t C t f e o o r u n n n tr r d o e a c l t , o i 2 o g 5 n n , s it 8 i o o 2 f n 1 l t e 8 h a 3 e r 7 n . p in o g te . n A ti u a - l i h n ig g h a d lg im or e it n h s m io s ns fo . r In ap F p O ro C x S im -0 a 6 t . enearestneighborin D Lo ., g a ic nd H P a a n t d e b l- o S o c k hn (2 e n id d e e r, d P it . io (2 n 0 ). 07 C ). am Th b e rid D g e e sc U r n ip iv ti e o r n -
+Andre,D.and Russell,S.J.(2002).Stateabstraction sity Press.
+Al-Chang,M.,Bresina,J.,Charest,L.,Chase,A., forprogrammablereinforcementlearningagents.In Baader,F.and Snyder,W.(2001). Unificationthe-
+Hsu,J.,Jonsson,A.,Kanefsky,B.,Morris,P.,Rajan, AAAI-02,pp.119 125. ory.In Robinson,J.and Voronkov,A.(Eds.),Hand-
+K.,Yglesias,J.,Chafin,B.,Dias,W.,and Maldague,
+P.(2004).MAPGEN:Mixed-Initiativeplanningand Anthony,M.and Bartlett,P.(1999). Neural Net- bookof Automated Reasoning,pp.447 533.Else-
+schedulingforthe Mars Exploration Rovermission. work Learning: Theoretical Foundations. Cam- vier.
+IEEE Intelligent Systems,19(1),8 12. bridge University Press. Bacchus,F.(1990). Representingand Reasoning
+Albus,J.S.(1975).Anewapproachtomanipulator Aoki,M.(1965). Optimalcontrolofpartiallyob- with Probabilistic Knowledge.MIT Press.
+control:Thecerebellarmodelarticulationcontroller servable Markov systems. J. Franklin Institute, Bacchus,F.and Grove,A.(1995).Graphicalmodels
+(CMAC). J.Dynamic Systems,Measurement,and 280(5),367 386. forpreferenceandutility.In UAI-95,pp.3 10.
+Control,97,270 277.
+Appel,K.and Haken,W.(1977).Everyplanarmap Bacchus,F.and Grove,A.(1996). Utilityindepen-
+Aldous,D.and Vazirani,U.(1994). Gowiththe is fourcolorable: Part I:Discharging. Illinois J. denceinaqualitativedecisiontheory.In KR-96,pp.
+winners algorithms.In FOCS-94,pp.492 501. Math.,21,429 490. 542 552.
+Bibliography 1065
+Bacchus,F.,Grove,A.,Halpern,J.Y.,and Koller, Barto,A.G.,Bradtke,S.J.,and Singh,S.P.(1995). Bellman,R.E.(1961).Adaptive Control Processes:
+D.(1

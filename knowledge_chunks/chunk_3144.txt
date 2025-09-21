@@ -1,0 +1,34 @@
+,592,811
+De Morgan srules,298 dental,481 conditional,nonparametric,520
+De Morgan,A.,227,313 medical,23,505,517,548,629,1036 cumulative,564,623,1058
+Dempster,A.P.,557,604,826,1070 diagnosticrule,317,517 mixture,817
+Dempster Shafertheory,547,549, dialysis,616 divide-and-conquer,606
+549 550,557 diameter(ofagraph),88 Dix,J.,472,1067
+DENDRAL,22,23,468 Dias,W.,28,1064 Dizdarevic,S.,158,1080
+dendrite,11 Dickmanns,E.D.,1014,1071 DLV,472
+Deng,X.,157,1070 dictionary,21 DNF(disjunctivenormalform),283
+Denis,F.,921,1070 Dietterich,T.,799,856,1064,1071 Do,M.B.,390,431,1071
+Denis,M.,28,1068 Difference Engine,14 Doctorow,C.,470,1071
+Denker,J.,762,967,1080 differentialdrive,976 DOF,975
+Dennett,D.C.,1024,1032,1033,1042, differentialequation,997 dolphin,860
+1070 stochastic,567 domain,486
+Denney,E.,360,1071 differential GPS,975 continuous,206
+densityestimation,806 differentiation,780 elementof,290
+nonparametric,814 diffusealbedo,934 finite,205,344
+De Oliveira,J.,469,1081 diffusereflection,933 infinite,205
+depth-firstsearch,85,85 87,108,408 Digital Equipment Corporation(DEC), infirst-orderlogic,290
+DEPTH-LIMITED-SEARCH,88 24,336 inknowledgerepresentation,300
+depthlimit,173 digitrecognition,753 755 domainclosure,299,540
+depthoffield,932 Dijkstra,E.W.,110,1021,1071 dominance
+derivationalanalogy,799 Dill,D.L.,279,1084 stochastic,622,636
+derivedsentences,242 Dillenburg,J.F.,111,1071 strict,622
+Descartes,R.,6,966,1027,1041,1071 Dimopoulos,Y.,395,1078 dominantstrategy,668,680
+descendant(in Bayesiannetworks),517 Dinh,H.,111,1071 dominantstrategyequilibrium,668
+Descotte,Y.,432,1071 Diophantineequations,227 dominatedplan(in POMDP),662
+descriptionlogic,454,456,456 458, Diophantus,227 domination(ofheuristics),104
+468,471 Diorio,C.,604,1086 Domingos,P.,505,556,826,1071
+descriptivetheory,619 Di Pasquo,D.,885,1069 Domshlak,C.,395,434,1067,1076
+detachment,547 Diplomacy,166 Donati,A.,28,1068
+detailedbalance,537 directedacyclicgraph(DAG),511,552 Donninger,C.,193,1071
+1104 Index
+Doorenbos,R.,358,1071 664

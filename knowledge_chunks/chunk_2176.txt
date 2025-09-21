@@ -1,0 +1,32 @@
+goodrepresentationofagivendomain. Wewillnowshowthat Equation(14.2)impliescertain
+conditional independence relationships that can be used to guide the knowledge engineer in
+constructing thetopologyofthenetwork. First,werewrite theentriesinthejointdistribution
+intermsofconditional probability, usingtheproduct rule (seepage486):
+P(x 1 ,...,x n ) P(x n x n 1 ,...,x 1 )P(x n 1 ,...,x 1 ).
+Thenwerepeattheprocess,reducingeachconjunctiveprobabilitytoaconditionalprobability
+andasmallerconjunction. Weendupwithonebigproduct:
+P(x 1 ,...,x n ) P(x n x n 1 ,...,x 1 )P(x n 1 x n 2 ,...,x 1 ) P(x 2 x 1 )P(x 1 )
+(cid:25)n P(x i x i 1 ,...,x 1 ).
+i 1
+Thisidentity iscalled thechainrule. Itholds foranysetofrandom variables. Comparingit
+CHAINRULE
+with Equation(14.2),weseethatthespecificationofthejointdistribution isequivalenttothe
+generalassertion that,foreveryvariable X inthenetwork,
+i
+P(X i X i 1 ,...,X 1 ) P(X i Parents(X i )), (14.3)
+providedthat Parents(X i ) X i 1 ,...,X 1 . Thislastconditionissatisfiedbynumbering
+thenodesinawaythatisconsistent withthepartialorderimplicitinthegraphstructure.
+What Equation (14.3) says is that the Bayesian network is a correct representation of
+the domain only if each node is conditionally independent of its other predecessors in the
+nodeordering, givenitsparents. Wecansatisfythiscondition withthismethodology:
+1. Nodes: Firstdeterminethesetofvariables thatarerequired tomodelthedomain. Now
+orderthem, X ,...,X . Anyorderwillwork,buttheresultingnetworkwillbemore
+1 n
+compactifthevariables areorderedsuchthatcausesprecedeeffects.
+2. Links: Fori 1tondo: Choose, from X 1 ,...,X i 1 , a minimal set of parents for X i , such that Equa-
+tion(14.3)issatisfied. Foreachparentinsertalinkfromtheparentto X .
+i CP Ts: Writedowntheconditional probability table, P(X Parents(X )).
+i i
+Section14.2. The Semanticsof Bayesian Networks 515
+Intuitively, the parents of node X i should contain all those nodes in X 1 , ..., X i 1 that
+directly influence X . For example, suppose 

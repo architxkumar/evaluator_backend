@@ -1,0 +1,25 @@
+xtract spectral features from the acoustic signal. We have
+discussed how the language model can be constructed from a corpus of written text, and we
+leave the details of signal processing to other textbooks. We are left with the pronunciation
+andphonemodels. Thestructureofthepronunciationmodels suchasthetomatomodelsin
+918 Chapter 23. Natural Languagefor Communication
+Figure23.17 isusuallydevelopedbyhand. Largepronunciation dictionaries arenowavail-
+able for English and other languages, although their accuracy varies greatly. The structure
+of the three-state phone models is the same for all phones, as shown in Figure 23.16. That
+leavestheprobabilities themselves.
+Asusual, wewillacquire theprobabilities from acorpus, thistimeacorpus ofspeech.
+The most common type of corpus to obtain is one that includes the speech signal for each
+sentence paired with a transcript of the words. Building a model from this corpus is more
+difficult than building an n-gram model of text, because we have to build a hidden Markov
+model thephonesequenceforeachwordandthephonestateforeachtimeframearehidden
+variables. In the early days of speech recognition, the hidden variables were provided by
+laborious hand-labeling of spectrograms. Recent systems use expectation maximization to
+automaticallysupplythemissingdata. Theideaissimple: givenan HM Mandanobservation
+sequence, wecan use thesmoothing algorithms from Sections 15.2 and15.3 tocompute the
+probability ofeachstateateachtimestepand,byasimpleextension, theprobability ofeach
+state state pair at consecutive time steps. These probabilities can be viewed as uncertain
+labels. From the uncertain labels, we can estimate new transition and sensor probabilities,
+and the EM procedure repeats. The method is guaranteed to increase the fit between model
+anddataoneachiteration,anditgenerallyconvergestoamuchbettersetofparametervalues
+thanthoseprovidedbytheinitial, hand-labeled estimates.
+The systems with the highest accuracy work by training a different mode

@@ -1,0 +1,42 @@
+orm, the sentence is easier to
+1,1 1,1
+understand: itsaysthatiftheagentisin 1,1 andthereisabreeze,then 1,1 isbreezy.
+In Horn form, the premise is called the body and the conclusion is called the head. A
+BODY
+sentence consisting of a single positive literal, such as L , is called a fact. It too can
+HEAD 1,1
+bewritteninimplication formas True L ,butitissimplertowritejust L .
+FACT 1,1 1,1
+Section7.5. Propositional Theorem Proving 257
+CNF Sentence Clause
+1 Clausen
+Clause Literal
+1 Literalm
+Literal Symbol Symbol
+Symbol P Q R ...
+Horn Clause Form Definite Clause Form Goal Clause Form
+Definite Clause Form (Symbol Symbol ) Symbol
+1 l
+Goal Clause Form (Symbol Symbol ) False
+1 l
+Figure7.14 Agrammarforconjunctivenormalform,Hornclauses,anddefiniteclauses.
+Aclausesuchas A B C isstilladefiniteclausewhenitiswrittenas A B C,
+butonlytheformerisconsideredthecanonicalformfordefiniteclauses. Onemoreclassis
+thek-CN Fsentence,whichisa CN Fsentencewhereeachclausehasatmostkliterals.
+2. Inferencewith Hornclausescanbedonethroughtheforward-chainingandbackward-
+FORWARD-CHAINING
+BACKWARD- chaining algorithms, which we explain next. Both of these algorithms are natural,
+CHAINING
+in that the inference steps are obvious and easy for humans to follow. This type of
+inferenceisthebasisforlogicprogramming, whichisdiscussed in Chapter9.
+3. Deciding entailment with Hornclauses can be done in timethat is linear inthe size of
+theknowledge base apleasant surprise.
+7.5.4 Forwardandbackward chaining
+The forward-chaining algorithm PL-FC-ENTAILS?(KB,q) determines if a single proposi-
+tion symbol q the query is entailed by a knowledge base of definite clauses. It begins
+from knownfacts (positive literals) intheknowledge base. Ifallthepremises ofanimplica-
+tion are known, then its conclusion is added to the set of known facts. For example, if L
+1,1
+and Breeze areknownand (L Breeze) B isintheknowledge base, then B can
+1,1 1,1 1,1
+beadded. Thisprocesscontinues untilthequery q isaddedoruntilnofurtherinferences can

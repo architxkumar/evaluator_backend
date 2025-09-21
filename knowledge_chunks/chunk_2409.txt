@@ -1,0 +1,27 @@
+t payoff matrix, making
+it a different game. We will see later that agents with limited computational powers, rather
+thantheabilitytoreasonabsolutelyrationally,canreachnon-equilibriumoutcomes,ascanan
+agentthatknowsthattheotheragenthaslimitedrationality. Ineachcase,weareconsidering
+adifferent gamethantheonedescribed bythepayoffmatrixabove.
+Now let s look at a game that has no dominant strategy. Acme, a video game console
+manufacturer, has todecide whether itsnext gamemachine willuse Blu-ray discs or DV Ds.
+Meanwhile, the video game software producer Best needs to decide whether to produce its
+nextgameon Blu-rayor DVD.Theprofitsforbothwillbepositiveiftheyagreeandnegative
+iftheydisagree, asshowninthefollowingpayoffmatrix:
+Acme:bluray Acme:dvd
+Best:bluray A 9,B 9 A 4,B 1
+Best:dvd A 3,B 1 A 5,B 5
+There is no dominant strategy equilibrium for this game, but there are two Nash equilibria:
+(bluray, bluray) and (dvd, dvd). We know these are Nash equilibria because if either player
+unilaterally movestoadifferent strategy, thatplayer willbeworse off. Nowtheagents have
+a problem: there are multiple acceptable solutions, but if each agent aims for a different
+solution, then both agents will suffer. How can they agree on a solution? One answer is
+that both should choose the Pareto-optimal solution (bluray, bluray); that is, we can restrict
+thedefinition of solution totheunique Pareto-optimal Nashequilibrium provided that one
+exists. Every game has at least one Pareto-optimal solution, but a game might have several,
+or they might not be equilibrium points. For example, if (bluray, bluray) had payoff (5,
+5), then there would be two equal Pareto-optimal equilibrium points. To choose between
+670 Chapter 17. Making Complex Decisions
+them the agents can either guess or communicate, which can be done either by establishing
+a convention that orders the solutions before the game begins or by negotiating to reach a
+mutually beneficial solution during the game (which would mean including co

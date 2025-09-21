@@ -1,0 +1,26 @@
+riate steering, acceleration, and braking ac-
+tionstobestaccomplish thesetasks.
+Forlateralcontrol,oneneedstomaintainarepresentation ofthepositionandorientation
+ofthecarrelativetothelane. Wecanuseedge-detectionalgorithmstofindedgescorrespond-
+ingtothelane-marker segments. Wecanthen fitsmooth curves tothese edgeelements. The
+parameters of these curves carry information about the lateral position of the car, the direc-
+tion it is pointing relative to the lane, and the curvature of the lane. This information, along
+with information about the dynamics of the car, is all that is needed by the steering-control
+system. Ifwehave good detailed mapsofthe road, then the vision system serves toconfirm
+ourposition (andtowatchforobstacles thatarenotonthemap).
+Forlongitudinal control, oneneeds toknowdistances tothe vehicles infront. Thiscan
+be accomplished with binocular stereopsis or optical flow. Using these techniques, vision-
+controlled carscannowdrivereliably athighwayspeeds.
+Themoregeneralcaseofmobilerobotsnavigating invarious indoorandoutdoorenvi-
+ronments has been studied, too. One particular problem, localizing the robot in its environ-
+ment, now has pretty good solutions. A group at Sarnoff has developed a system based on
+two cameras looking forward that track feature points in 3D and use that to reconstruct the
+Section24.7. Summary 965
+position of the robot relative tothe environment. In fact, they have twostereoscopic camera
+systems, one looking front and one looking back this gives greater robustness in case the
+robothastogothroughafeaturelesspatchduetodarkshadows,blankwalls,andthelike. Itis
+unlikelythattherearenofeatureseitherinthefrontorintheback. Nowofcourse,thatcould
+happen,soabackupisprovidedbyusinganinertialmotionunit(IMU)somewhatakintothe
+mechanisms for sensing acceleration that we humans have in our inner ears. By integrating
+the sensed acceleration twice, one can keep track of the change in position. Combining the
+datafromvisionandthe IM Uisaproblemofprobabili

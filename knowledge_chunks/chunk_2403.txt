@@ -1,0 +1,27 @@
+dlepartiallyobservable,uncertainenvironments andcaneasilyrevisetheir plans to
+handle unexpected evidence. Withappropriate sensormodels, theycanhandle sensorfailure
+andcanplantogatherinformation. Theyexhibit graceful degradation undertimepressure
+and incomplex environments, using various approximation techniques. Sowhatismissing?
+Onedefectofour DDN-basedalgorithmisitsrelianceonforwardsearchthroughstatespace,
+ratherthanusingthehierarchicalandotheradvancedplanningtechniquesdescribedin Chap-
+ter11. Therehavebeenattemptstoextendthesetechniquesintotheprobabilisticdomain,but
+sofarthey haveproved tobeinefficient. Asecond, related problem isthebasically proposi-
+tionalnature ofthe DD Nlanguage. Wewouldliketobeabletoextendsomeoftheideasfor
+first-order probabilistic languages to the problem of decision making. Current research has
+shownthatthisextension ispossible andhassignificant benefits, asdiscussed inthenotesat
+theendofthechapter.
+17.5 DECISIONS WITH MULTIPLE AGENTS: GAME THEORY
+This chapter has concentrated on making decisions in uncertain environments. But what if
+theuncertainty isduetootheragentsandthedecisionstheymake? Andwhatifthedecisions
+of those agents are in turn influenced by our decisions? We addressed this question once
+before, when westudied gamesin Chapter 5. There, however, wewereprimarily concerned
+with turn-taking games in fully observable environments, for which minimax search can be
+usedtofindoptimalmoves. Inthissectionwestudytheaspectsofgametheorythatanalyze
+GAMETHEORY
+games with simultaneous moves and other sources of partial observability. (Game theorists
+usethetermsperfectinformationandimperfectinformationratherthanfullyandpartially
+observable.) Gametheorycanbeusedinatleasttwoways:
+1. Agentdesign: Gametheorycananalyzetheagent sdecisionsandcomputetheexpected
+utility for each decision (under the assumption that other agents are acting optimally
+according to game theory). Forexample, in the game two-finger Morra, two players,
+O and E, simultaneously di

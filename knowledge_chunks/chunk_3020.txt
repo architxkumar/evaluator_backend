@@ -1,0 +1,27 @@
+,J.and Schaeffer,J.(1996). Searching
+ityininductivelogic programming: Methodsand principesmathe matiquesdelathe oriedesrichesses.
+with pattern databases. In Advances in Artificial
+results. New Generation Computing,13(3 4),369 L.Hachette,Paris.
+Intelligence(Lecture Notesin Artificial Intelligence
+409.
+Cover,T.and Thomas,J.(2006).Elementsof Infor- 1081),pp.402 416.Springer-Verlag.
+Cohn,A.G.,Bennett,B.,Gooday,J.M.,and Gotts, mation Theory(2ndedition).Wiley.
+Culberson, J. and Schaeffer, J. (1998). Pattern
+N.(1997).RCC:Acalculusforregionbasedqualita-
+tivespatialreasoning.Geo Informatica,1,275 316. Cowan,J.D.and Sharp,D.H.(1988a).Neuralnets. databases. Computational Intelligence,14(4),318 Quarterly Reviewsof Biophysics,21,365 427. 334.
+Collin, Z., Dechter, R., and Katz, S. (1999).
+Self-stabilizing distributed constraint satisfaction. Cowan,J.D.and Sharp,D.H.(1988b).Neuralnets Cullingford, R. E. (1981). Integrating knowl-
+Chicago Journalof Theoretical Computer Science, andartificialintelligence.Daedalus,117,85 121. edge sources for computer understanding tasks.
+IEEE Transactionson Systems,Manand Cybernet-
+1999(115). Cowell,R.,Dawid,A.P.,Lauritzen,S.,and Spiegel-
+ics(SMC),11.
+Collins,F.S.,Morgan,M.,and Patrinos,A.(2003). halter,D.J.(2002). Probabilistic Networksand Ex-
+The human genome project: Lessonsfrom large- pert Systems.Springer. Cummins,D.and Allen,C.(1998). The Evolution
+of Mind.Oxford University Press.
+scalebiology.Science,300(5617),286 290. Cox,I.(1993). Areviewofstatisticaldataassoci-
+Collins,M.(1999). Head-driven Statistical Models ationtechniquesformotioncorrespondence. IJCV, Cushing,W.,Kambhampati,S.,Mausam,and Weld,
+for Natural Language Processing.Ph.D.thesis,Uni- 10,53 66. D.S.(2007).Whenistemporalplanningreallytem-
+poral?In IJCAI-07.
+versityof Pennsylvania. Cox,I.and Hingorani,S.L.(1994).Anefficientim-
+Collins,M.and Duffy,K.(2002).Newrankingalgo- plementationandevaluationof Reid smultiplehy- Cybenko,G.(1988).Continuousvaluedneuralnet-
+rithmsforparsingandtag

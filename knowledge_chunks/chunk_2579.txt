@@ -1,0 +1,36 @@
+Knowledgein Learning
+Simplify(1 (0 X),w)
+Rewrite(1 (0 X),v) Simplify(0 X,w)
+Yes, v 0 X Rewrite(0 X,v') Simplify(X,w)
+Yes, v' X w X Primitive(X)
+Arithmetic Unknown(X)
+Simplify(x (y z),w) Yes, Rewrite(x (y z),v) Simplify(y z,w)
+Yes, x 1, v y z Rewrite(y z,v') Simplify(z,w)
+Yes, y 0, v' z w z Primitive(z)
+Arithmetic Unknown(z)
+Yes, Figure19.7 Prooftreesforthesimplificationproblem. Thefirsttreeshowstheprooffor
+theoriginalprobleminstance,fromwhichwecanderive
+Arithmetic Unknown(z) Simplify(1 (0 z),z).
+Thesecondtreeshowstheproofforaprobleminstancewithallconstantsreplacedbyvari-
+ables,fromwhichwecanderiveavarietyofotherrules.
+(withthenecessary bindings) andformageneral ruleforthe goalpredicate:
+Rewrite(1 (0 z),0 z) Rewrite(0 z,z) Arithmetic Unknown(z) Simplify(1 (0 z),z).
+Noticethatthefirsttwoconditions ontheleft-hand sideare true regardless ofthevalue ofz.
+Wecanthereforedropthemfromtherule,yielding
+Arithmetic Unknown(z) Simplify(1 (0 z),z).
+Ingeneral, conditions canbedropped fromthefinalruleiftheyimposenoconstraints onthe
+variables on the right-hand side of the rule, because the resulting rule will still be true and
+will be more efficient. Notice that we cannot drop the condition Arithmetic Unknown(z),
+because not all possible values of z are arithmetic unknowns. Values other than arithmetic
+unknownsmightrequiredifferent formsofsimplification: forexample,if z were2 3,then
+thecorrectsimplification of1 (0 (2 3))wouldbe6andnot2 3.
+Torecap,thebasic EB Lprocessworksasfollows:
+1. Givenanexample,constructaproofthatthegoalpredicateappliestotheexampleusing
+theavailable background knowledge.
+Section19.3. Explanation-Based Learning 783
+2. In parallel, construct a generalized proof tree for the variabilized goal using the same
+inferencestepsasintheoriginalproof.
+3. Construct a new rule whose left-hand side consists of the leaves of the proof tree and
+whose right-hand side is the variabilized goal (after applying the necessary bindings
+fromthegeneralized proof).
+4. Dropanyconditions fr

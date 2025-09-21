@@ -1,0 +1,52 @@
+dscape,155 frameproblem,266,279 g(pathcost),78
+Fix,E.,760,1072 inferential,447 G-set,774
+fixation,950 representational,267 Go delnumber,352
+FIXED-LAG-SMOOTHING,580 framingeffect,621 Gabor,Z.Z.,640
+fixed-lagsmoothing,576 Franco,J.,277,1072 Gaddum,J.H.,554,1073
+fixedpoint,258,331 Frank,E.,763,1092 Gaifman,H.,555,1073
+Flannery,B.P.,155,1086 Frank,I.,191,1072 gainparameter,998
+flaw,390 Frank,M.,231,1073 gainratio,707,765
+Floreano,D.,1045,1072 Frank,R.H.,1035,1072 gait,1001
+fluent,266,275,388,449 450 Frankenstein,1037 Gale,W.A.,883,1068
+flyeyes,948,963 Franz,A.,883,921,1072 Galileo,G.,1,56,796
+FMP,seeplanning,fine-motion Fratini,S.,28,1068 Gallaire,H.,358,1073
+f MRI,11,288 FREDDY,74,156,1012 Gallier,J.H.,277,314,1071,1073
+Fredkin Prize,192 Gamba,A.,761,1073
+focalplane,932
+Freeman,W.,555,1091,1092 Gambaperceptrons,761
+FOCUS,799
+freespace,988 Gamberini,L.,761,1073
+focusofexpansion,948
+freewill,6 gambling,9,613
+Fogel,D.B.,156,1072
+Frege,G.,8,276,313,357,1072 game,9,161
+Fogel,L.J.,156,1072
+Freitag,D.,877,885,1069,1072 ofchance,177 180
+FOIL,793
+frequentism,491 dice,183
+FOL-BC-ASK,338
+Freuder,E.C.,228 230,1072,1087 Go,186,194
+FOL-FC-ASK,332
+Freund,Y.,760,1072 ofimperfectinformation,162
+folkpsychology,473
+Friedberg,R.M.,21,156,1072 inspectiongame,666
+Foo,N.,279,1072
+Friedgut,E.,278,1073 multiplayer,165 167
+FOPC,seelogic,first-order
+Friedman,G.J.,155,1073 Othello,186
+Forbes,J.,855,1072
+Friedman,J.,758,761,763,827,1067, partiallyobservable,180 184
+FORBIN,431,432
+1073,1075 ofperfectinformation,161
+Forbus,K.D.,358,472,1072
+Friedman,N.,553,558,605,826,827, poker,507
+forcesensor,975
+855,1066,1070,1073,1078 pursuit evasion,196
+Ford,K.M.,30,1072
+Friendly AI,27,1039 repeated,669,673
+foreshortening,952 Fristedt,B.,855,1065 robot(withhumans),1019
+Forestier,J.-P.,856,1072 frontier,75 Scrabble,187,195
+Forgy,C.,358,1072 Frost,D.,230,1070 zero-sum,161,162,199,670
+formulate,search,execute,66 Fruhwirth,T.,230,1073 gameplaying,161 162,190
+Forrest,S.,155,1082 FRUMP,884 gameprograms,185 187
+Forsyt

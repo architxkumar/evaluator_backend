@@ -1,0 +1,43 @@
+ ifiwerenotinthegame; call
+thatsum W i .
+4. Eachagentipaysataxequalto W i B i .
+684 Chapter 17. Making Complex Decisions
+In this example, the VCG rule means that each winner would pay a tax equal to the highest
+reported value among the losers. That is, if I report my value as5, and that causes someone
+withvalue2tomissoutonanallocation, then Ipayataxof2. Allwinners should behappy
+because theypayataxthatislessthantheirvalue, andalllosersareashappy astheycanbe,
+becausetheyvaluethegoodslessthantherequiredtax.
+Why is it that this mechanism is truth-revealing? First, consider the payoff to agent i,
+whichisthevalueofgettinganitem,minusthetax:
+v
+i
+(A) (W i B i ). (17.14)
+Herewedistinguish the agent s true utility, v , from his reported utility b (but weare trying
+i i
+to show that a dominant strategy is b v ). Agent i knows that the center will maximize
+i i
+globalutilityusingthereportedvalues,
+(cid:12) (cid:12)
+b (A) b (A) b (A)
+j i j
+j j(cid:14) i
+whereasagentiwantsthecentertomaximize(17.14), whichcanberewritten as
+(cid:12)
+v
+i
+(A) b
+j
+(A) W i .
+j(cid:14) i
+Since agent i cannot affect the value of W i (it depends only on the other agents), the only
+wayicanmakethecenteroptimizewhatiwantsistoreportthetrueutility, b v .
+i i
+17.7 SUMMARY
+Thischapter showshowtouse knowledge about theworld tomakedecisions even whenthe
+outcomesofanactionareuncertainandtherewardsforactingmightnotbereapeduntilmany
+actionshavepassed. Themainpointsareasfollows: Sequential decision problems inuncertain environments, also called Markov decision
+processes, or MD Ps, are defined by a transition model specifying the probabilistic
+outcomesofactionsandarewardfunctionspecifying therewardineachstate. Theutilityofastatesequence isthesumofalltherewardsoverthesequence, possibly
+discounted over time. The solution of an MDP is a policy that associates a decision
+witheverystate thattheagent mightreach. Anoptimalpolicy maximizes theutility of
+thestatesequences encountered whenitisexecuted. The utility of a state is t

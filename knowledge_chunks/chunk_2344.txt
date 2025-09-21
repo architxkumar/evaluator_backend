@@ -1,0 +1,32 @@
+eindependent oftheparticularvaluesoftheattributes
+MUTUALLYUTILITY in Y. A set of attributes is mutually utility independent (MUI) if each of its subsets is
+INDEPENDENT
+utility-independent of the remaining attributes. Again, it seems reasonable to propose that
+theairportattributes are MUI.
+MUI implies that the agent s behavior can be described using a multiplicative utility
+MULTIPLICATIVE function(Keeney,1974). Thegeneralformofamultiplicativeutilityfunctionisbestseenby
+UTILITYFUNCTION
+looking atthecaseforthreeattributes. Forconciseness, weuse U tomean U (x ):
+i i i
+U k U k U k U k k U U k k U U k k U U
+1 1 2 2 3 3 1 2 1 2 2 3 2 3 3 1 3 1 k k k U U U .
+1 2 3 1 2 3
+Althoughthisdoesnotlookverysimple,itcontainsjustthreesingle-attributeutilityfunctions
+andthreeconstants. Ingeneral,ann-attributeproblemexhibiting MU Icanbemodeledusing
+n single-attribute utilities and n constants. Each of the single-attribute utility functions can
+be developed independently of the other attributes, and this combination will be guaranteed
+to generate the correct overall preferences. Additional assumptions are required to obtain a
+purelyadditiveutilityfunction.
+16.5 DECISION NETWORKS
+In this section, welook at a general mechanism formaking rational decisions. The notation
+is often called an influence diagram (Howard and Matheson, 1984), but we will use the
+INFLUENCEDIAGRAM
+more descriptive term decision network. Decision networks combine Bayesian networks
+DECISIONNETWORK
+withadditional nodetypesforactionsandutilities. Weuseairportsitingasanexample.
+16.5.1 Representing a decisionproblem witha decisionnetwork
+Initsmostgeneral form,adecisionnetworkrepresents information abouttheagent scurrent
+state, its possible actions, the state that will result from the agent s action, and the utility of
+that state. It therefore provides a substrate forimplementing utility-based agents of the type
+first introduced in Section 2.4.5. Figure 16.6 shows a decision network forthe airport siting
+problem. Itillustrat

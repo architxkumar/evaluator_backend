@@ -1,0 +1,26 @@
+ent forsemantics.
+4. Brainscauseminds.
+From the first three axioms Searle concludes that programs are not sufficient for minds. In
+otherwords,anagentrunningaprogram mightbeamind,butitisnotnecessarilyamindjust
+by virtue of running the program. From the fourth axiom he concludes Any other system
+capable of causing minds would have to have causal powers (at least) equivalent to those
+of brains. From there he infers that any artificial brain would have to duplicate the causal
+powers of brains, not just run a particular program, and that human brains do not produce
+mentalphenomena solelybyvirtueofrunningaprogram.
+The axioms are controversial. For example, axioms 1 and 2 rely on an unspecified
+distinction between syntax and semantics that seems to be closely related to the distinction
+betweennarrowandwidecontent. Ontheonehand,wecanviewcomputersasmanipulating
+syntactic symbols; on the other, we can view them as manipulating electric current, which
+happens to be what brains mostly do (according to our current understanding). So it seems
+wecouldequally saythatbrainsaresyntactic.
+Assuming we are generous in interpreting the axioms, then the conclusion that pro-
+grams are not sufficient for minds does follow. But the conclusion is unsatisfactory all
+Searlehasshownisthatifyouexplicitly denyfunctionalism (thatiswhathisaxiom3does),
+then you can t necessarily conclude that non-brains are minds. This is reasonable enough almost tautological so the whole argument comes down to whether axiom 3 can be ac-
+cepted. Accordingto Searle,thepointofthe Chinese Roomargumentistoprovideintuitions
+for axiom 3. The public reaction shows that the argument is acting as what Daniel Dennett
+(1991) calls an intuition pump: it amplifies one s prior intuitions, so biological naturalists
+INTUITIONPUMP
+are more convinced of their positions, and functionalists are convinced only that axiom 3 is
+unsupported, or that in general Searle s argument is unconvincing. The argument stirs up
+combatants, but has done

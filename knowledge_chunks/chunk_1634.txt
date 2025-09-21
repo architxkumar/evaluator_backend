@@ -1,0 +1,26 @@
+hentheagenthasnoideaaboutthestatesandactionsof
+itsenvironment. Forsafely explorable environments, onlinesearch agents can build a
+mapandfindagoalifoneexists. Updatingheuristicestimatesfromexperienceprovides
+aneffectivemethodtoescapefromlocalminima.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Local search techniques have a long history in mathematics and computer science. Indeed,
+the Newton Raphson method (Newton, 1671; Raphson, 1690) can be seen as a very effi-
+cient local search method for continuous spaces in which gradient information is available.
+Brent (1973) is a classic reference for optimization algorithms that do not require such in-
+formation. Beam search, which we have presented as a local search algorithm, originated
+as a bounded-width variant of dynamic programming for speech recognition in the HARPY
+system(Lowerre,1976). Arelatedalgorithm isanalyzed indepthby Pearl(1984,Ch.5).
+Thetopic oflocal search wasreinvigorated intheearly 1990s bysurprisingly good re-
+sults for large constraint-satisfaction problems such as n-queens (Minton et al., 1992) and
+logical reasoning (Selman et al., 1992) and by the incorporation of randomness, multiple
+simultaneoussearches,andotherimprovements. Thisrenaissanceofwhat Christos Papadim-
+itriou has called New Age algorithms also sparked increased interest among theoretical
+computer scientists (Koutsoupias and Papadimitriou, 1992; Aldous and Vazirani, 1994). In
+thefieldofoperationsresearch,avariantofhillclimbingcalledtabusearchhasgainedpopu-
+TABUSEARCH
+larity(Gloverand Laguna,1997). Thisalgorithmmaintains atabulistofkpreviouslyvisited
+statesthatcannotberevisited;aswellasimprovingefficiencywhensearchinggraphs,thislist
+canallow the algorithm toescape from somelocal minima. Anotheruseful improvement on
+hill climbing is the STAGE algorithm (Boyan and Moore, 1998). Theidea is touse the local
+maximafoundbyrandom-restart hillclimbingtogetanideaoftheoverallshapeoftheland-
+scape. Thealgorithm fitsasmoothsurface tothesetoflocalmaximaandthenc

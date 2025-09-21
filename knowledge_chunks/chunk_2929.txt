@@ -1,0 +1,24 @@
+
+ence and the ability to tell right from wrong. As far back as 1955, Paul Meehl (see also
+Groveand Meehl, 1996) studied the decision-making processes of trained experts atsubjec-
+tive tasks such as predicting the success of a student in a training program orthe recidivism
+of a criminal. In 19 out of the 20 studies he looked at, Meehl found that simple statistical
+learning algorithms(suchaslinearregression ornaive Bayes)predictbetterthantheexperts.
+The Educational Testing Service has used an automated program to grade millions of essay
+questions on the GMAT exam since 1999. The program agrees with human graders 97 of
+thetime,aboutthesamelevelthattwohumangraders agree(Burstein etal.,2001).
+Itisclearthatcomputerscandomanythingsaswellasorbetterthanhumans,including
+thingsthatpeoplebelieverequiregreathumaninsightandunderstanding. Thisdoesnotmean,
+ofcourse,thatcomputersuseinsightandunderstanding inperformingthesetasks thoseare
+not part of behavior, and we address such questions elsewhere but the point is that one s
+firstguessaboutthementalprocesses requiredtoproduceagivenbehaviorisoftenwrong. It
+is also true, of course, that there are many tasks at which computers do not yet excel (to put
+itmildly),including Turing staskofcarrying onanopen-ended conversation.
+26.1.2 The mathematical objection
+It is well known, through the work of Turing (1936) and Go del (1931), that certain math-
+ematical questions are in principle unanswerable by particular formal systems. Go del s in-
+completeness theorem (see Section 9.5) isthe most famous example of this. Briefly, forany
+formal axiomatic system F powerful enough to do arithmetic, it is possible to construct a
+so-called Go delsentence G(F)withthefollowingproperties: G(F)isasentence of F,butcannotbeprovedwithin F. If F isconsistent, then G(F)istrue.
+1 Forexample,theopera Coppe lia(1870),thenovel Do Androids Dreamof Electric Sheep?(1968),themovies
+AI(2001)and Wall-E(2008),andinsong,Noel Coward s1955versionof Let s Do It:Let s Fallin Love

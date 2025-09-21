@@ -1,0 +1,27 @@
+priate gift. Oneapparently has adirect
+sense ofhow things are done andwhattoexpect. Thesameclaim ismadeinthe context of
+chess playing: Amere chess mastermight need tofigure out whatto do, but a grandmaster
+justseestheboardasdemandingacertainmove...therightresponsejustpopsintohisorher
+head. Itiscertainlytruethatmuchofthethoughtprocessesofapresent-giverorgrandmaster
+is done at a level that is not open to introspection by the conscious mind. But that does not
+mean that the thought processes do not exist. The important question that Dreyfus does not
+answer is how the right move gets into the grandmaster s head. One is reminded of Daniel
+Dennett s(1984)comment,
+Itisratherasifphilosophersweretoproclaimthemselvesexpertexplainersofthemeth-
+ods of stage magicians, and then, when we ask how the magician does the sawing-the-
+lady-in-halftrick,theyexplainthatitisreallyquiteobvious: themagiciandoesn treally
+sawherinhalf;hesimplymakesitappearthathedoes. Buthowdoeshedothat? we
+ask. Notourdepartment, saythephilosophers.
+Dreyfus and Dreyfus (1986) propose a five-stage process of acquiring expertise, beginning
+with rule-based processing (of the sort proposed in GOFAI) and ending with the ability to
+select correct responses instantaneously. In making this proposal, Dreyfus and Dreyfus in
+effectmovefrombeing AIcriticsto AItheorists theyproposeaneuralnetworkarchitecture
+Section26.1. Weak AI:Can Machines Act Intelligently? 1025
+organized into a vast case library, but point out several problems. Fortunately, all of their
+problems havebeenaddressed, somewithpartialsuccess and somewithtotalsuccess. Their
+problemsincludethefollowing:
+1. Good generalization from examples cannot be achieved without background knowl-
+edge. They claim no one has any idea how to incorporate background knowledge into
+the neural network learning process. In fact, we saw in Chapters 19 and 20 that there
+are techniques for using prior knowledge in learning algorithms. Those techniques,
+however,relyontheavailability o

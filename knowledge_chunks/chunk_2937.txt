@@ -1,0 +1,30 @@
+shall Icomparetheetoasummer s
+day, wouldnota springday doaswellorbetter?
+MACHINE: Itwouldn tscan.
+HUMAN: Howabout awinter sday. Thatwouldscanallright.
+MACHINE: Yes,butnobodywantstobecomparedtoawinter sday.
+HUMAN: Wouldyousay Mr.Pickwickremindedyouof Christmas?
+MACHINE: Inaway.
+HUMAN: Yet Christmasisawinter sday,and Idonotthink Mr.Pickwickwouldmind
+thecomparison.
+Section26.2. Strong AI:Can Machines Really Think? 1027
+MACHINE: Idon tthinkyou reserious. Byawinter sdayonemeansatypicalwinter s
+day,ratherthanaspecialonelike Christmas.
+One can easily imagine some future time in which such conversations with machines are
+commonplace, and it becomes customary to make no linguistic distinction between real and artificial thinking. Asimilartransition occurred in theyearsafter1848,whenartificial
+urea wassynthesized forthe first timeby Frederick Wo hler. Priorto this event, organic and
+inorganic chemistry were essentially disjoint enterprises and many thought that no process
+could existthatwouldconvert inorganic chemicals intoorganic material. Oncethesynthesis
+was accomplished, chemists agreed that artificial urea was urea, because it had all the right
+physical properties. Those who had posited an intrinsic property possessed by organic ma-
+terial that inorganic material could never have were faced with the impossibility of devising
+anytestthatcouldrevealthesupposed deficiencyofartificialurea.
+For thinking, we have not yet reached our 1848 and there are those who believe that
+artificialthinking,nomatterhowimpressive,willneverbereal. Forexample,thephilosopher
+John Searle(1980)argues asfollows:
+Noonesupposesthatacomputersimulationofastormwillleaveusallwet...Whyon
+earthwouldanyoneinhisrightmindsupposeacomputersimulationofmentalprocesses
+actuallyhadmentalprocesses?(pp.37 38)
+While it is easy to agree that computer simulations of storms do not make us wet, it is not
+clear how to carry this analogy over to computer simulations of mental processes. After
+all, a Hollywood simulation of 

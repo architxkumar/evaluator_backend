@@ -1,0 +1,28 @@
+ssinganadditivevaluefunctionrequires assessingnseparate
+one-dimensionalvaluefunctionsratherthanonen-dimensionalfunction;typically,thisrepre-
+sentsanexponentialreductioninthenumberofpreferenceexperimentsthatareneeded. Even
+when MPI does not strictly hold, as might be the case at extreme values of the attributes, an
+additive value function might still provide a good approximation to the agent s preferences.
+This is especially true when the violations of MPI occur in portions of the attribute ranges
+thatareunlikely tooccurinpractice.
+Tounderstand MPI better, ithelps tolook at cases where it doesn t hold. Suppose you
+are at a medieval market, considering the purchase of some hunting dogs, some chickens,
+and some wicker cages for the chickens. The hunting dogs are very valuable, but if you
+don t haveenough cages forthechickens, thedogs willeatthechickens; hence, thetradeoff
+between dogs and chickens depends strongly on the number of cages, and MPI is violated.
+Theexistenceofthesekindsofinteractionsamongvariousattributesmakesitmuchharderto
+assesstheoverallvaluefunction.
+Preferences withuncertainty
+When uncertainty is present in the domain, we also need to consider the structure of prefer-
+ences between lotteries and to understand the resulting properties of utility functions, rather
+than just value functions. The mathematics of this problem can become quite complicated,
+sowepresent justoneofthemainresults togiveaflavorofwhatcanbedone. Thereaderis
+referredto Keeneyand Raiffa(1976)forathorough surveyof thefield.
+626 Chapter 16. Making Simple Decisions
+UTILITY The basic notion of utility independence extends preference independence to cover
+INDEPENDENCE
+lotteries: aset ofattributes Xisutility independent ofaset ofattributes Yifpreferences be-
+tweenlotteriesontheattributes in Xareindependent oftheparticularvaluesoftheattributes
+MUTUALLYUTILITY in Y. A set of attributes is mutually utility independent (MUI) if each of its subsets is
+INDEPENDENT
+utility-independent of the remai

@@ -1,0 +1,56 @@
+ calculate the number of hypotheses in the language. Let the language of tests conjunctions ofatmostk literals using nattributes be Conj(n,k). Because adecision list
+isconstructed oftests,andbecauseeachtestcanbeattachedtoeithera Yes ora No outcome
+orcanbeabsentfromthedecisionlist,thereareatmost3 Conj(n,k) distinctsetsofcomponent
+tests. Eachofthesesetsoftestscanbeinanyorder, so k-DL(n) 3 Conj(n,k) Conj(n,k) !.
+Thenumberofconjunctions ofk literalsfrom nattributes isgivenby
+(cid:13) (cid:14)
+(cid:12)k
+2n Conj(n,k) O(nk).
+i
+i 0
+Hence,aftersomework,weobtain k-DL(n) 2O(nklog2(nk)) .
+Wecanplugthisinto Equation (18.1)toshowthatthenumberofexamplesneeded for PAC-
+learning ak-DLfunction ispolynomial inn:
+(cid:13) (cid:14)
+1 1
+N ln O(nklog (nk)) .
+(cid:2) 2
+Therefore,anyalgorithmthatreturnsaconsistentdecisionlistwill PAC-learnak-DLfunction
+inareasonable numberofexamples,forsmall k.
+The next task is to find an efficient algorithm that returns a consistent decision list.
+We will use a greedy algorithm called DECISION-LIST-LEARNING that repeatedly finds a
+Section18.6. Regressionand Classification with Linear Models 717
+function DECISION-LIST-LEARNING(examples)returnsadecisionlist,orfailure
+ifexamples isemptythenreturnthetrivialdecisionlist No
+t atestthatmatchesanonemptysubsetexamples ofexamples
+t
+suchthatthemembersofexamples areallpositiveorallnegative
+t
+ifthereisnosucht thenreturnfailure
+iftheexamplesinexamples arepositivetheno Yes elseo No
+t
+returnadecisionlistwithinitialtestt andoutcomeo andremainingtestsgivenby
+DECISION-LIST-LEARNING(examples examples
+t
+)
+Figure18.11 Analgorithmforlearningdecisionlists.
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20 40 60 80 100
+tes
+tset
+no
+tcerroc
+noitropor P
+Decision tree
+Decision list
+Training set size
+Figure18.12 Learningcurvefor DECISION-LIST-LEARNIN Galgorithmontherestaurant
+data. Thecurvefor DECISION-TREE-LEARNIN Gisshownforcomparison.
+test that agrees exactly with some subset of the training set. Once it finds such a test, it
+adds it to the decision l

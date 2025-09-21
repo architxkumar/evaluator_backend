@@ -1,0 +1,26 @@
+.
+pp.210 214.
+Holte,R.and Hernadvolgyi,I.(2001).Stepstowards Hunter,L.and States,D.J.(1992). Bayesianclas-
+theautomaticcreationofsearchheuristics. Tech. Howard,R.A.(1960).Dynamic Programmingand sificationofproteinstructure. IEEE Expert,7(4),
+rep.TR04-02,CS Dept.,Univ.of Alberta. Markov Processes.MIT Press. 67 75.
+Howard,R.A.(1966). Informationvaluetheory. Hurst,M.(2000). The Interpretationof Textin Ta-
+Holzmann,G.J.(1997). The Spinmodelchecker.
+IEEE Transactionson Systems Scienceand Cyber- bles.Ph.D.thesis,Edinburgh.
+IEEE Transactionson Software Engineering,23(5),
+netics,SSC-2,22 26.
+279 295. Hurwicz,L.(1973). Thedesignofmechanismsfor
+Howard,R.A.(1977).Riskpreference.In Howard, resourceallocation.American Economic Review Pa-
+Hood, A. (1824). Case 4th 28 July 1824 (Mr. R.A.and Matheson,J.E.(Eds.),Readingsin De- persand Proceedings,63(1),1 30.
+Hood scasesofinjuriesofthebrain). Phrenologi- cision Analysis, pp. 429 465. Decision Analysis
+cal Journaland Miscellany,2,82 94.
+Group,SRI International.
+Husmeier, D. (2003). Sensitivity andspecificity
+ofinferringgeneticregulatoryinteractionsfrommi-
+Hooker,J.(1995).Testingheuristics:Wehaveitall Howard,R.A.(1989). Microrisksformedicalde- croarray experiments with dynamic bayesian net-
+wrong.J.Heuristics,1,33 42. cisionanalysis. Int. J.Technology Assessmentin works.Bioinformatics,19(17),2271 2282.
+Hoos,H.and Tsang,E.(2006). Localsearchmeth- Health Care,5,357 370. Huth, M. and Ryan, M. (2004). Logic in com-
+ods.In Rossi,F.,van Beek,P.,and Walsh,T.(Eds.), Howard,R.A.and Matheson,J.E.(1984). Influ- puterscience: modellingandreasoningaboutsys-
+Handbookof Constraint Processing,pp.135 168. encediagrams. In Howard, R.A.and Matheson, tems(2ndedition).Cambridge University Press.
+Elsevier. J.E.(Eds.),Readingsonthe Principlesand Appli- Huttenlocher,D.and Ullman,S.(1990).Recogniz-
+Hope,J.(1994). The Authorshipof Shakespeare s cationsof Decision Analysis,pp.721 762.Strategic ingsolidobjectsbyalignmentwithanimage.IJCV,
+Plays.Cambridge Universit

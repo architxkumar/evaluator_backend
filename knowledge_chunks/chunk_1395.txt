@@ -1,0 +1,29 @@
+. . . . . . . . 28
+1.5 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 29
+2 Intelligent Agents 34
+2.1 Agentsand Environments . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+2.2 Good Behavior: The Conceptof Rationality . . . . . . . . . . . . . . . . 36
+2.3 The Natureof Environments . . . . . . . . . . . . . . . . . . . . . . . . . 40
+2.4 The Structureof Agents . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+2.5 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 59
+II Problem-solving
+3 Solving Problemsby Searching 64
+3.1 Problem-Solving Agents . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+3.2 Example Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+3.3 Searchingfor Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+3.4 Uninformed Search Strategies . . . . . . . . . . . . . . . . . . . . . . . . 81
+3.5 Informed(Heuristic)Search Strategies . . . . . . . . . . . . . . . . . . . 92
+3.6 Heuristic Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+3.7 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 108
+4 Beyond Classical Search 120
+4.1 Local Search Algorithmsand Optimization Problems . . . . . . . . . . . 120
+4.2 Local Searchin Continuous Spaces . . . . . . . . . . . . . . . . . . . . . 129
+4.3 Searchingwith Nondeterministic Actions . . . . . . . . . . . . . . . . . . 133
+4.4 Searchingwith Partial Observations . . . . . . . . . . . . . . . . . . . . . 138
+4.5 Online Search Agentsand Unknown Environments . . . . . . . . . . . . 147
+4.6 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 153
+5 Adversarial Search 161
+5.1 Games . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+5.2 Optimal Decisionsin Games . . . . . . . . . . . . . . . . . . . . . . . . 163
+5.3 Alpha Beta Pruning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+5.4 Imperfect Real-Time Decisions 

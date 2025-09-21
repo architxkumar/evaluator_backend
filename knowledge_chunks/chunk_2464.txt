@@ -1,0 +1,49 @@
+k
+k
+k k
+Wecancheckthattheentropy ofafaircoinflipisindeed1bit:
+H(Fair) (0.5log 0.5 0.5log 0.5) 1.
+2 2
+Ifthecoinisloadedtogive99 heads, weget
+H(Loaded) (0.99log 0.99 0.01log 0.01) 0.08bits.
+2 2
+It will help to define B(q) as the entropy of a Boolean random variable that is true with
+probability q:
+B(q) (qlog q (1 q)log (1 q)).
+2 2
+Thus, H(Loaded) B(0.99) 0.08. Now let s get back to decision tree learning. If a
+training set contains p positive examples and n negative examples, then the entropy of the
+goalattribute onthewholesetis
+(cid:13) (cid:14)
+p
+H(Goal) B .
+p n
+The restaurant training set in Figure 18.3 has p n 6, so the corresponding entropy is
+B(0.5)orexactly1bit. Atestonasingleattribute Amightgiveusonlypartofthis1bit. We
+canmeasureexactlyhowmuchbylookingattheentropyremainingaftertheattribute test.
+Anattribute Awithddistinctvaluesdividesthetrainingset E intosubsets E ,...,E .
+1 d
+Each subset E has p positive examples and n negative examples, so if we go along that
+k k k
+branch, wewillneed anadditional B(p (p n ))bitsofinformation toanswertheques-
+k k k
+tion. Arandomlychosenexamplefromthetrainingsethasthekthvaluefortheattributewith
+probability (p n ) (p n),sotheexpectedentropy remainingaftertestingattribute Ais
+k k
+(cid:12)d
+Remainder(A) pk nk B( pk ).
+p n pk nk
+k 1
+Theinformationgainfromtheattribute teston Aistheexpectedreduction inentropy:
+INFORMATIONGAIN
+Gain(A) B( p ) Remainder(A).
+p n
+Infact Gain(A)isjustwhatweneedtoimplementthe IMPORTANCE function. Returningto
+theattributes considered in Figure18.4,wehave Gain(Patrons) 1 2 B(0) 4 B(4) 6 B(2) 0.541bits, 12 2 12 4 12 6 Gain(Type) 1 2 B(1) 2 B(1) 4 B(2) 4 B(2) 0bits,
+12 2 12 2 12 4 12 4
+confirming our intuition that Patrons is a better attribute to split on. In fact, Patrons has
+themaximumgainofanyoftheattributes andwouldbechosenbythedecision-tree learning
+algorithm astheroot.
+Section18.3. Learning Decision Trees 705
+18.3.5 Generalizationandoverfitting
+On some problems, the DECISION-TREE-LEARNING algorithm will

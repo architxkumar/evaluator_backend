@@ -1,0 +1,40 @@
+s author always gives the book a 5,
+regardlessofquality:
+Recommendation(c,b) if Honest(c)then
+if Fan(c,Author(b))then Exactly(5)
+else Honest Rec CPT(Kindness(c),Quality(b))
+else(cid:16)0.4,0.1,0.0,0.1,0.4(cid:17)
+Again,theconditional test Fan(c,Author(b))isunknown,butifacustomergivesonly5sto
+aparticularauthor sbooksandisnototherwiseespecially kind,thentheposteriorprobability
+that the customer is afan of that author willbe high. Furthermore, the posterior distribution
+willtendtodiscount thecustomer s5sinevaluating thequalityofthatauthor sbooks.
+Inthepreceding example,weimplicitlyassumedthatthevalueof Author(b)isknown
+forevery b,but this maynotbethe case. Howcanthesystem reason about whether, say, C
+1
+is a fan of Author(B ) when Author(B ) is unknown? The answer is that the system may
+2 2
+havetoreason about allpossible authors. Suppose (tokeepthings simple)thattherearejust
+two authors, A and A . Then Author(B ) is a random variable with two possible values,
+1 2 2
+A and A ,anditisaparentof Recommendation(C ,B ). Thevariables Fan(C ,A )and
+1 2 1 2 1 1
+Fan(C ,A )are parents too. Theconditional distribution for Recommendation(C ,B )is
+1 2 1 2
+then essentially a multiplexer in which the Author(B ) parent acts as a selector to choose
+MULTIPLEXER 2
+which of Fan(C ,A ) and Fan(C ,A ) actually gets to influence the recommendation. A
+1 1 1 2
+fragment of the equivalent Bayes net is shown in Figure 14.19. Uncertainty in the value
+of Author(B ), which affects the dependency structure of the network, is an instance of
+2
+RELATIONAL relational uncertainty.
+UNCERTAINTY
+In case you are wondering how the system can possibly work out who the author of
+B is: consider the possibility that three other customers are fans of A (and have no other
+2 1
+favorite authors in common) and all three have given B a 5, even though most other cus-
+2
+tomers find it quite dismal. In that case, it is extremely likely that A is the author of B .
+1 2
+544 Chapter 14. Probabilistic Reasoning
+The emergence of so

@@ -1,0 +1,30 @@
+).
+By far the most comprehensive source on heuristics and heuristic search algorithms
+is Pearl s (1984) Heuristics text. This book provides especially good coverage of the wide varietyofoffshootsandvariationsof A ,includingrigorousproofsoftheirformalproperties.
+Kanal and Kumar(1988) present an anthology of important articles on heuristic search, and
+Rayward-Smithetal.(1996)coverapproaches from Operations Research. Papersaboutnew
+search algorithms which, remarkably, continue to be discovered appear in journals such
+as Artificial Intelligence and Journal ofthe ACM.
+Thetopic ofparallel search algorithms wasnot coveredinthechapter, partly because
+PARALLELSEARCH
+it requires a lengthy discussion of parallel computer architectures. Parallel search became a
+populartopicinthe1990sinboth AIandtheoreticalcomputerscience(Mahantiand Daniels,
+1993; Grama and Kumar, 1995; Crauser et al., 1998) and is making a comeback in the era
+of new multicore and cluster architectures (Ralphs et al., 2004; Korf and Schultze, 2005).
+Also of increasing importance are search algorithms for very large graphs that require disk
+storage(Korf,2008).
+EXERCISES
+3.1 Explainwhyproblem formulation mustfollowgoalformulation.
+3.2 Yourgoalistonavigatearobotoutofamaze. Therobotstarts inthecenterofthemaze
+Exercises 113
+facing north. You can turn the robot to face north, east, south, or west. You can direct the
+robottomoveforwardacertaindistance, although itwillstopbeforehittingawall.
+a. Formulatethisproblem. Howlargeisthestatespace?
+b. In navigating a maze, the only place we need to turn is at the intersection of two or
+morecorridors. Reformulatethisproblemusingthisobservation. Howlargeisthestate
+spacenow?
+c. Fromeachpointinthemaze,wecanmoveinanyofthefourdirectionsuntilwereacha
+turningpoint, andthisistheonlyactionweneedtodo. Reformulatetheproblemusing
+theseactions. Doweneedtokeeptrackoftherobot sorientation now?
+d. In our initial description of the problem we already abstracted from the real world,
+restricting a

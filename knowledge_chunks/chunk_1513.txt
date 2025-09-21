@@ -1,0 +1,28 @@
+rthananexplicitlyenumer-
+atedsetofstates. Forexample,inchess,thegoalistoreach astatecalled checkmate, wheretheopponent s kingisunderattackandcan tescape. A path cost function that assigns a numeric cost to each path. The problem-solving
+PATHCOST
+agent chooses acost function that reflects its ownperformance measure. Forthe agent
+tryingtogetto Bucharest,timeisoftheessence,sothecostofapathmightbeitslength
+inkilometers. Inthischapter, weassumethatthecostofapathcanbedescribed asthe
+sumofthecostsoftheindividualactionsalongthepath.3 Thestepcostoftakingaction
+STEPCOST
+(cid:2) (cid:2)
+a in state s to reach state s is denoted by c(s,a,s). The step costs for Romania are
+shownin Figure3.2asroutedistances. Weassumethatstepcostsarenonnegative.4
+The preceding elements define a problem and can be gathered into a single data structure
+that is given as input to a problem-solving algorithm. A solution to a problem is an action
+sequence that leads from the initial state to agoal state. Solution quality is measured by the
+pathcostfunction, andanoptimalsolutionhasthelowestpathcostamongallsolutions.
+OPTIMALSOLUTION
+3.1.2 Formulatingproblems
+Intheprecedingsectionweproposed aformulationoftheproblemofgettingto Bucharestin
+termsoftheinitial state, actions, transition model, goal test, andpath cost. Thisformulation
+seems reasonable, but it is still a model an abstract mathematical description and not the
+3 Thisassumptionisalgorithmicallyconvenientbutalsotheoreticallyjustifiable seepage649in Chapter17.
+4 Theimplicationsofnegativecostsareexploredin Exercise3.8.
+Section3.2. Example Problems 69
+realthing. Comparethesimplestatedescriptionwehavechosen,In(Arad),toanactualcross-
+countrytrip,wherethestateoftheworldincludessomanythings: thetravelingcompanions,
+the current radio program, the scenery out of the window, the proximity of law enforcement
+officers, the distance to the next rest stop, the condition of the road, the weather, and so on.
+Alltheseconsiderations areleftoutofourstatedescriptionsbeca

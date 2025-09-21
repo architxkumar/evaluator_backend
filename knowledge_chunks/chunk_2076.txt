@@ -1,0 +1,26 @@
+ts, in the sense that a physical object is
+a chunk of space time. For example, USA can be thought of as an event that began in,
+say, 1776 as a union of 13 states and is still in progress today as a union of 50. We can
+describe the changing properties of USA using state fluents, such as Population(USA). A
+property ofthe US Athatchanges everyfouroreightyears, barring mishaps, isitspresident.
+One might propose that President(USA) is a logical term that denotes a different object
+at different times. Unfortunately, this is not possible, because a term denotes exactly one
+objectinagivenmodelstructure. (Theterm President(USA,t)candenotedifferentobjects,
+depending onthevalueoft,butourontology keeps timeindices separate from fluents.) The
+450 Chapter 12. Knowledge Representation
+only possibility is that President(USA) denotes a single object that consists of different
+people atdifferent times. Itistheobject thatis George Washington from1789to1797, John
+Adamsfrom1797to1801,andsoon,asin Figure12.3. Tosaythat George Washingtonwas
+president throughout 1790,wecanwrite
+T(Equals(President(USA),George Washington),AD1790).
+We use the function symbol Equals rather than the standard logical predicate , because
+we cannot have a predicate as an argument to T, and because the interpretation is not that
+George Washington and President(USA)are logically identical in1790; logical identity is
+notsomethingthatcanchangeovertime. Theidentityisbetweenthesubeventsofeachobject
+thataredefinedbytheperiod1790.
+12.4 MENTAL EVENTS AND MENTAL OBJECTS
+The agents we have constructed so far have beliefs and can deduce new beliefs. Yet none
+of them has any knowledge about beliefs or about deduction. Knowledge about one s own
+knowledgeandreasoningprocessesisusefulforcontrollinginference. Forexample,suppose
+Aliceasks whatisthesquare root of1764 and Bobreplies I don t know. If Alice insists think harder, Bob should realize that with some more thought, this question can in fact
+be answered. On the other hand, if

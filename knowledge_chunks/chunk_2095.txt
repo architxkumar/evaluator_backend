@@ -1,0 +1,28 @@
+e mark the sentence as being
+back in. In this way, the JTMS retains all the inference chains that it uses and need not
+rederivesentences whenajustification becomesvalidagain.
+In addition to handling the retraction of incorrect information, TM Ss can be used to
+speed up the analysis of multiple hypothetical situations. Suppose, for example, that the
+Romanian Olympic Committee is choosing sites for the swimming, athletics, and eques-
+trian events at the 2048 Games to be held in Romania. For example, let the first hypothe-
+sisbe Site(Swimming,Pitesti),Site(Athletics,Bucharest),and Site(Equestrian,Arad).
+A great deal of reasoning must then be done to work out the logistical consequences and
+hence the desirability of this selection. If we want to consider Site(Athletics,Sibiu) in-
+stead, the TMS avoids the need to start again from scratch. Instead, we simply retract
+Site(Athletics,Bucharest)andassert Site(Athletics,Sibiu)andthe TM Stakescareofthe
+necessary revisions. Inference chains generated from the choice of Bucharest can be reused
+with Sibiu,providedthattheconclusions arethesame.
+462 Chapter 12. Knowledge Representation
+Anassumption-based truthmaintenancesystem,or ATMS,makesthistypeofcontext-
+ATMS
+switching between hypothetical worldsparticularly efficient. Ina JTMS,themaintenance of
+justifications allows you to move quickly from one state to another by making a few retrac-
+tionsandassertions,butatanytimeonlyonestateisrepresented. An ATM Srepresentsallthe
+states that have everbeen considered at the same time. Whereas a JTMS simply labels each
+sentence as being in or out, an ATMS keeps track, for each sentence, of which assumptions
+wouldcausethesentencetobetrue. Inotherwords,eachsentencehasalabelthatconsistsof
+aset ofassumption sets. Thesentence holds justinthose cases inwhichalltheassumptions
+inoneoftheassumption setshold.
+Truth maintenance systems also provide a mechanism for generating explanations.
+EXPLANATION
+Technically, an explanation of a sentence P is a set 

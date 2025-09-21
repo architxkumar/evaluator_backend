@@ -1,0 +1,32 @@
+helearningrateparameter. Becausethisupdateruleusesthedifferenceinutilities
+TEMPORAL- betweensuccessivestates, itisoftencalledthetemporal-difference, or TD,equation.
+DIFFERENCE
+All temporal-difference methods work by adjusting the utility estimates towards the
+idealequilibrium thatholdslocally whentheutility estimates arecorrect. Inthecaseofpas-
+sivelearning, theequilibrium isgiven by Equation (21.2). Now Equation (21.3) does in fact
+cause theagenttoreachtheequilibrium givenby Equation (21.2), butthere issomesubtlety
+(cid:2)
+involved. First, notice that the update involves only the observed successor s, whereas the
+actualequilibriumconditionsinvolveallpossiblenextstates. Onemightthinkthatthiscauses
+animproperly largechangein U (s)whenaveryraretransition occurs;but,infact,because
+rare transitions occur only rarely, the average value of U (s) will converge to the correct
+value. Furthermore, if we change from a fixed parameter to a function that decreases as
+thenumberoftimesastate hasbeen visited increases, then U (s)itself willconverge tothe
+Section21.2. Passive Reinforcement Learning 837
+function PASSIVE-TD-AGENT(percept)returnsanaction
+inputs:percept,aperceptindicatingthecurrentstates(cid:5)andrewardsignalr(cid:5)
+persistent: ,afixedpolicy
+U,atableofutilities,initiallyempty
+Ns,atableoffrequenciesforstates,initiallyzero
+s,a,r,thepreviousstate,action,andreward,initiallynull
+ifs(cid:5)isnewthen U s(cid:5) r(cid:5)
+ifs isnotnullthen
+increment Ns s U s U s (Ns s )(r U s(cid:5) U s )
+ifs(cid:5).TERMINAL?thens,a,r nullelses,a,r s(cid:5), s(cid:5) ,r(cid:5)
+returna
+Figure21.4 Apassivereinforcementlearningagentthatlearnsutilityestimatesusingtem-
+poraldifferences.Thestep-sizefunction (n)ischosentoensureconvergence,asdescribed
+inthetext.
+correct value.1 Thisgivesustheagentprogram shownin Figure21.4. Figure21.5illustrates
+theperformance ofthepassive TDagentonthe 4 3world. Itdoesnotlearnquiteasfastas
+the AD Pagent and shows muchhigher variability, but itismuch simplerand requires

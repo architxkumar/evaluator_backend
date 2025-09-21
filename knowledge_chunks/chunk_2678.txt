@@ -1,0 +1,31 @@
+uires comparing ( ) and ( ) for some
+small . The problem is that the total reward on each trial may vary widely, so estimates
+of the policy value from a small number of trials will be quite unreliable; trying to compare
+twosuch estimates willbeeven moreunreliable. Onesolution issimply to runlots oftrials,
+measuring the sample variance and using it to determine that enough trials have been run
+to get a reliable indication of the direction of improvement for ( ). Unfortunately, this is
+impractical formanyrealproblemswhereeachtrialmaybeexpensive, time-consuming, and
+perhapsevendangerous.
+Forthecaseofastochastic policy (s,a),itispossibletoobtainanunbiasedestimate of the gradient at , ( ), directly from the results of trials executed at . Forsimplicity, wewillderive thisestimate forthesimple caseofanonsequential environment inwhich the
+reward R(a) is obtained immediately after doing action a in the start state s . In this case,
+0
+thepolicyvalueisjusttheexpected valueofthereward,and wehave
+(cid:12) (cid:12) ( ) (s ,a)R(a) ( (s ,a))R(a). 0 0
+a a
+Now we perform a simple trick so that this summation can be approximated by samples
+generated from the probability distribution defined by (s ,a). Suppose that we have N 0
+trialsinallandtheactiontakenonthejthtrialisa . Then
+j
+(cid:12) ( (s ,a))R(a) 1 (cid:12)N ( (s ,a ))R(a ) ( ) (s ,a) 0 0 j j . 0 (s ,a) N (s ,a ) 0 0 j
+a j 1
+Thus, the true gradient of the policy value is approximated by a sum of terms involving
+the gradient of the action-selection probability in each trial. For the sequential case, this
+generalizes to
+1 (cid:12)N ( (s,a ))R (s) ( ) j j N (s,a ) j
+j 1
+for each state s visited, where a is executed in s on the jth trial and R (s) is the total
+j j
+reward received from state s onwards in the jth trial. The resulting algorithm is called
+REINFORCE (Williams, 1992); it is usually much more effective than hill climbing using
+lotsoftrialsateachvalueof . Itisstillmuchslowerthannecessary, however.
+850 Chapter 21. Reinforceme

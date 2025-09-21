@@ -1,0 +1,34 @@
+t
+ACTIONLIST
+statingwhichactionsmustormustnotbeexecutedconcurrently. Forexample,the Hit action
+couldbedescribed asfollows:
+Action(Hit(a,Ball),
+CONCURRENT:b(cid:7) a Hit(b,Ball)
+PRECOND:Approaching(Ball,loc) At(a,loc)
+EFFECT:Returned(Ball)).
+In other words, the Hit action has its stated effect only if no other Hit action by another
+agent occurs at the same time. (In the SATPLAN approach, this would be handled by a
+partial action exclusion axiom.) Forsome actions, the desired effect is achieved only when
+anotheractionoccursconcurrently. Forexample,twoagentsareneededtocarryacoolerfull
+ofbeverages tothetenniscourt:
+Action(Carry(a,cooler,here,there),
+CONCURRENT:b (cid:7) a Carry(b,cooler,here,there)
+PRECOND:At(a,here) At(cooler,here) Cooler(cooler)
+EFFECT:At(a,there) At(cooler,there) At(a,here) At(cooler,here)).
+With these kinds of action schemas, any of the planning algorithms described in Chapter 10
+canbeadaptedwithonlyminormodificationstogeneratemultiactorplans. Totheextentthat
+thecouplingamongsubplansisloose meaning thatconcurrency constraints comeintoplay
+only rarely during plan search one would expect the various heuristics derived for single-
+agent planning to also be effective in the multiactor context. Wecould extend this approach
+withtherefinementsofthelasttwochapters HT Ns,partialobservability, conditionals, exe-
+cutionmonitoring, andreplanning but thatisbeyondthescopeofthisbook.
+11.4.2 Planning withmultipleagents: Cooperationand coordination
+Now let us consider the true multiagent setting in which each agent makes its own plan. To
+start with, let us assume that the goals and knowledge base are shared. One might think
+that this reduces to the multibody case each agent simply computes the joint solution and
+executes its own part of that solution. Alas, the the in the joint solution is misleading.
+Forourdoublesteam,morethanonejointsolutionexists:
+PLAN 2:
+A: Go(A,Left Net),No Op(A) B : Go(B,Right Baseline),Hit(B,Ball) .
+Section11.4. Multiagent Planning 429
+Ifboth

@@ -1,0 +1,26 @@
+ case, Q R) that is shorter than the other clause. When
+the unit preference strategy was first tried for propositional inference in 1964, it led to a
+dramaticspeedup,makingitfeasibletoprovetheoremsthat couldnotbehandledwithoutthe
+preference. Unitresolution is arestricted form of resolution in which every resolution step
+must involve a unit clause. Unit resolution is incomplete in general, but complete for Horn
+clauses. Unitresolution proofson Hornclauses resembleforwardchaining.
+The OTTER theoremprover(Organized Techniquesfor Theorem-proving and Effective
+Research, Mc Cune, 1992), uses a form of best-first search. Its heuristic function measures
+the weight ofeachclause,wherelighterclausesarepreferred. Theexactchoiceofheuristic
+is up to the user, but generally, the weight of a clause should be correlated with its size or
+difficulty. Unitclauses aretreated aslight; thesearch can thus beseenasageneralization of
+theunitpreference strategy.
+Set of support: Preferences that try certain resolutions first are helpful, but in general it is
+SETOFSUPPORT
+moreeffectivetotrytoeliminatesomepotential resolutions altogether. Forexample,wecan
+insist that every resolution step involve at least one element of a special set of clauses the
+set of support. The resolvent is then added into the set of support. If the set of support is
+smallrelativetothewholeknowledgebase,thesearchspace willbereduced dramatically.
+We have to be careful with this approach because a bad choice for the set of support
+will make the algorithm incomplete. However, if wechoose the set of support S so that the
+remainder of the sentences are jointly satisfiable, then set-of-support resolution is complete.
+Forexample, onecan usethenegated query asthe setofsupport, ontheassumption that the
+356 Chapter 9. Inference in First-Order Logic
+original knowledge base is consistent. (After all, if it is not consistent, then the fact that the
+queryfollowsfromitisvacuous.) Theset-of-support strategyhastheadditionaladvantageof
+gen

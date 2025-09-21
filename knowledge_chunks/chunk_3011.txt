@@ -1,0 +1,24 @@
+ernrecognition. In Fo-
+Buchanan, B. G. and Mitchell, T. M. (1978).
+Useof Knowledge by Computers, pp. 3 50.Aca- gelman Soulie ,F.and He rault,J.(Eds.),Neurocom-
+Model-directedlearningofproductionrules.In Wa-
+demic Press. puting:Algorithms,Architecturesand Applications.
+terman,D.A.and Hayes-Roth,F.(Eds.),Pattern-
+Springer-Verlag.
+Brachman,R.J.,Fikes,R.E.,and Levesque,H.J. Directed Inference Systems,pp.297 312.Academic
+(1983). Krypton: Afunctionalapproachtoknowl- Briggs, R. (1985). Knowledge representation in Press.
+edgerepresentation.Computer,16(10),67 73. Sanskritandartificialintelligence.AI Mag,6(1),32 Buchanan,B.G.,Mitchell,T.M.,Smith,R.G.,and
+Brachman,R.J.and Levesque,H.J.(Eds.).(1985). 39. Johnson,C.R.(1978). Modelsoflearningsystems.
+Readings in Knowledge Representation. Morgan Brin,D.(1998).The Transparent Society.Perseus. In Encyclopediaof Computer Scienceand Technol-
+Kaufmann. ogy,Vol.11.Dekker.
+Brin,S.(1999). Extractingpatternsandrelations
+Bradtke,S.J.and Barto,A.G.(1996).Linearleast- fromtheworldwideweb.Technicalreport1999-65, Buchanan, B. G. and Shortliffe, E. H. (Eds.).
+squaresalgorithmsfortemporaldifferencelearning. Stanford Info Lab. (1984). Rule-Based Expert Systems: The MYCIN
+Machine Learning,22,33 57. Experimentsofthe Stanford Heuristic Programming
+Brin, S.and Page, L.(1998). Theanatomyofa Project.Addison-Wesley.
+Brafman,O.and Brafman,R.(2009). Sway: The large-scalehypertextualwebsearchengine.In Proc.
+Irresistible Pullof Irrational Behavior. Broadway Seventh World Wide Web Conference. Buchanan, B.G.,Sutherland, G.L.,and Feigen-
+Business. baum,E.A.(1969). Heuristic DENDRAL:Apro-
+Bringsjord,S.(2008). If Iwerejudge. In Epstein, gramforgeneratingexplanatoryhypothesesinor-
+Brafman,R.I.and Domshlak,C.(2008).Fromone R.,Roberts,G.,and Beber,G.(Eds.),Parsingthe ganicchemistry. In Meltzer, B., Michie, D., and
+tomany: Planningforlooselycoupledmulti-agent Turing Test.Springer. Swann,M.(Eds.),Machine Intelligence4,pp.209 systems.In ICAPS-08,pp.28 35. 254.Edinburgh

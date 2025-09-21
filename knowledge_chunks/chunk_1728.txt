@@ -1,0 +1,36 @@
+ntlywithoutsuchdomain-specific knowl-
+edge. Instead, we can add some sophistication to the unspecified functions in Figure 6.5,
+usingthemtoaddressthefollowingquestions:
+1. Which variable should be assigned next (SELECT-UNASSIGNED-VARIABLE), and in
+whatordershoulditsvaluesbetried(ORDER-DOMAIN-VALUES)?
+216 Chapter 6. Constraint Satisfaction Problems
+WA red WA green WA blue
+WA red WA red
+NT green NT blue
+WA red WA red
+NT green NT green
+Q red Q blue
+Figure6.6 Partofthesearchtreeforthemap-coloringproblemin Figure6.1.
+2. Whatinferences should beperformed ateachstepinthesearch(INFERENCE)?
+3. Whenthesearcharrivesatanassignmentthatviolatesaconstraint,canthesearchavoid
+repeating thisfailure?
+Thesubsections thatfollowanswereachofthesequestions inturn.
+6.3.1 Variableand valueordering
+Thebacktracking algorithm containstheline
+var SELECT-UNASSIGNED-VARIABLE(csp) .
+Thesimpleststrategyfor SELECT-UNASSIGNED-VARIABLE istochoosethenextunassigned
+variableinorder, X ,X ,... . Thisstaticvariable ordering seldomresultsinthemosteffi-
+1 2
+cientsearch. Forexample,aftertheassignmentsfor WA red and NT greenin Figure6.6,
+thereisonlyonepossiblevaluefor SA,soitmakessensetoassign SA blue nextratherthan
+assigning Q. Infact,after SAisassigned,thechoicesfor Q,NSW,and V areallforced. This
+intuitiveidea choosingthevariablewiththefewest legal values iscalledtheminimum-
+MINIMUM- remaining-values(MRV)heuristic. Italsohasbeencalledthe mostconstrainedvariable or
+REMAINING-VALUES fail-first heuristic, thelatterbecause itpicksavariablethatismostlikelytocauseafailure
+soon, thereby pruning the search tree. If some variable X has no legal values left, the MRV
+heuristicwillselect X andfailurewillbedetectedimmediately avoiding pointlesssearches
+through other variables. The MRV heuristic usually performs better than a random or static
+ordering,sometimesbyafactorof1,000ormore,althoughtheresultsvarywidelydepending
+ontheproblem.
+The MR Vheuristic doesn t help atallinchoosing thefirstregion tocolorin Australia,
+because

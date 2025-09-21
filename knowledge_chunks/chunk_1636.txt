@@ -1,0 +1,26 @@
+mming(LP)wasfirststudiedsystematically bythe Russianmathemati-
+cian Leonid Kantorovich (1939). It was one of the first applications of computers; the sim-
+plexalgorithm(Dantzig,1949)isstilluseddespiteworst-caseexponential complexity. Kar-
+markar(1984)developedthefarmoreefficientfamilyof interior-pointmethods, whichwas
+showntohavepolynomialcomplexityforthemoregeneralclassofconvexoptimizationprob-
+lemsby Nesterovand Nemirovski(1994). Excellentintroductionstoconvexoptimizationare
+provided by Ben-Taland Nemirovski(2001)and Boydand Vandenberghe (2004).
+Work by Sewall Wright (1931) on the concept of a fitness landscape was an impor-
+tant precursor to the development of genetic algorithms. In the 1950s, several statisticians,
+including Box (1957) and Friedman (1959), used evolutionary techniques for optimization
+EVOLUTION problems,butitwasn tuntil Rechenberg(1965)introduced evolutionstrategies tosolveop-
+STRATEGY
+timization problemsforairfoils thattheapproach gainedpopularity. Inthe1960s and1970s,
+John Holland (1975) championed genetic algorithms, both as a useful tool and as a method
+toexpand ourunderstanding ofadaptation, biological orotherwise (Holland, 1995). Thear-
+tificial life movement (Langton, 1995) takes this idea one step further, viewing the products
+ARTIFICIALLIFE
+of genetic algorithms as organisms rather than solutions to problems. Work in this field by
+Hintonand Nowlan(1987) and Ackleyand Littman(1991) hasdonemuchtoclarify theim-
+plicationsofthe Baldwineffect. Forgeneralbackground onevolution, werecommend Smith
+and Szathma ry(1999),Ridley(2004), and Carroll(2007).
+Mostcomparisons ofgenetic algorithms tootherapproaches (especially stochastic hill
+climbing) have found that the genetic algorithms are slower to converge (O Reilly and Op-
+pacher,1994;Mitchelletal.,1996;Juelsand Wattenberg,1996;Baluja,1997). Suchfindings
+are not universally popular within the GA community, but recent attempts within that com-
+munity to understand population-based search as an appr

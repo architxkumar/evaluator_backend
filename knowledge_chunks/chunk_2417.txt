@@ -1,0 +1,28 @@
+orable (refuse, refuse) equilibrium. In
+thiscase,ignorance isbliss orrather, havingyouropponent believethatyouareignorantis
+bliss. Yoursuccess in these repeated games depends onthe other player s perception of you
+asabullyorasimpleton, andnotonyouractualcharacteristics.
+17.5.3 Sequential games
+Inthegeneralcase,agameconsistsofasequenceofturnsthatneednotbeallthesame. Such
+gamesarebestrepresentedbyagametree,whichgametheoristscalltheextensiveform. The
+EXTENSIVEFORM
+tree includes all the same information we saw in Section 5.1: an initial state S , a function
+0
+PLAYER(s) that tells which player has the move, a function ACTIONS(s) enumerating the
+possible actions, a function RESULT(s,a) that defines the transition to a new state, and a
+partial function UTILITY(s,p), which is defined only on terminal states, to give the payoff
+foreachplayer.
+To represent stochastic games, such as backgammon, we add a distinguished player,
+chance, that can take random actions. Chance s strategy is part of the definition of the
+Section17.5. Decisionswith Multiple Agents: Game Theory 675
+game, specified as a probability distribution over actions (the other players get to choose
+their own strategy). To represent games with nondeterministic actions, such as billiards, we
+breaktheactionintotwopieces: theplayer s actionitself hasadeterministic result, andthen
+chance hasaturntoreacttotheaction initsowncapricious way. Torepresent simultaneous
+moves,asintheprisoner sdilemmaortwo-finger Morra,weimposeanarbitraryorderonthe
+players,butwehavetheoptionofassertingthattheearlierplayer sactionsarenotobservable
+to the subsequent players: e.g., Alice must choose refuse or testify first, then Bob chooses,
+but Bob does not know what choice Alice made at that time (we can also represent the fact
+that the moveis revealed later). However, we assume the players always remember all their
+ownprevious actions;thisassumption iscalled perfectrecall.
+The key idea of extensive form that sets it apart from the game trees of

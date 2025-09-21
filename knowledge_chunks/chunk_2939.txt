@@ -1,0 +1,30 @@
+can control the body if the two are really separate.
+Descartesspeculated thatthetwomightinteractthroughthepinealgland,whichsimplybegs
+thequestion ofhowthemindcontrolsthepinealgland.
+1028 Chapter 26. Philosophical Foundations
+Themonisttheoryofmind,oftencalled physicalism,avoids thisproblem byasserting
+MONISM
+themindisnotseparate fromthebody that mentalstates arephysical states. Mostmodern
+PHYSICALISM
+philosophers ofmindarephysicalistsofoneformoranother, andphysicalismallows,atleast
+in principle, for the possibility of strong AI. The problem for physicalists is to explain how
+physicalstates in particular, themolecularconfigurations andelectrochemical processes of
+thebrain cansimultaneouslybementalstates,suchasbeinginpain,enjoyingahamburger,
+MENTALSTATES
+knowingthatoneisridingahorse,orbelieving that Viennaisthecapitalof Austria.
+26.2.1 Mental states andthe brainina vat
+Physicalistphilosophershaveattemptedtoexplicatewhatitmeanstosaythataperson and,
+byextension, acomputer is inaparticularmentalstate. Theyhavefocused inparticularon
+intentionalstates. Thesearestates,suchasbelieving, knowing,desiring, fearing,andsoon,
+INTENTIONALSTATE
+thatrefertosomeaspectoftheexternalworld. Forexample, theknowledgethatoneiseating
+ahamburgerisabelief aboutthehamburgerandwhatishappening toit.
+If physicalism is correct, it must be the case that the proper description of a person s
+mental state is determined by that person s brain state. Thus, if I am currently focused on
+eatingahamburgerinamindfulway,myinstantaneousbrainstateisaninstanceoftheclassof
+mentalstates knowingthatoneiseatingahamburger. Ofcourse,thespecificconfigurations
+of all the atoms ofmy brain are not essential: there are manyconfigurations of mybrain, or
+ofotherpeople sbrain,thatwouldbelongtothesameclassofmentalstates. Thekeypointis
+that the same brain state could not correspond toa fundamentally distinct mental state, such
+astheknowledge thatoneiseatingabanana.
+The simplicity of this view is challenged by some simple thought e

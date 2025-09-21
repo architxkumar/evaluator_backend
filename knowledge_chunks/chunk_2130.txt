@@ -1,0 +1,31 @@
+ the agents described in Chapters 4 and 7 that
+maintain a belief state reflecting the history of percepts to date. The primary difference is
+that the decision-theoretic agent s belief state represents not just the possibilities for world
+states but also their probabilities. Given the belief state, the agent can make probabilistic
+predictions ofactionoutcomesandhenceselecttheactionwithhighestexpectedutility. This
+chapterandthenextconcentrateonthetaskofrepresenting andcomputingwithprobabilistic
+information ingeneral. Chapter 15 deals with methods forthe specific tasks of representing
+and updating the belief state over time and predicting the environment. Chapter 16 covers
+utility theory in more depth, and Chapter 17 develops algorithms for planning sequences of
+actionsinuncertain environments.
+13.2 BASIC PROBABILITY NOTATION
+For our agent to represent and use probabilistic information, we need a formal language.
+The language of probability theory has traditionally been informal, written by human math-
+ematicians to other human mathematicians. Appendix Aincludes astandard introduction to
+elementary probability theory; here, wetake anapproach moresuited totheneeds of AIand
+moreconsistent withtheconcepts offormallogic.
+484 Chapter 13. Quantifying Uncertainty
+function DT-AGENT(percept)returnsanaction
+persistent: belief state,probabilisticbeliefsaboutthecurrentstateoftheworld
+action,theagent saction
+updatebelief state basedonaction andpercept
+calculateoutcomeprobabilitiesforactions,
+givenactiondescriptionsandcurrentbelief state
+selectaction withhighestexpectedutility
+givenprobabilitiesofoutcomesandutilityinformation
+returnaction
+Figure13.1 Adecision-theoreticagentthatselectsrationalactions.
+13.2.1 Whatprobabilities areabout
+Like logical assertions, probabilistic assertions are about possible worlds. Whereas logical
+assertions saywhichpossible worldsarestrictly ruled out (allthoseinwhichtheassertion is
+false), probabilistic assertions talkabouthowprobable thevariousworldsar

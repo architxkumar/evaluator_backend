@@ -1,0 +1,29 @@
+nning withscheduling, hasbeenusedtodevelopproduction
+plans for Hitachi. A typical problem involves a product line of 350 different products, 35
+assembly machines, and over 2000 different operations. The planner generates a 30-day
+schedulewiththree8-hourshiftsaday,involvingtensofmillionsofsteps. Anotherimportant
+aspect of HTN plans is that they are, by definition, hierarchically structured; usually this
+makesthemeasyforhumanstounderstand.
+Section11.2. Hierarchical Planning 409
+function HIERARCHICAL-SEARCH(problem,hierarchy)returnsasolution,orfailure
+frontier a FIF Oqueuewith Act astheonlyelement
+loopdo
+if EMPTY?(frontier)thenreturnfailure
+plan POP(frontier) choosestheshallowestplaninfrontier hla thefirst HL Ainplan,ornull ifnone
+prefix,suffix theactionsubsequencesbeforeandafterhla inplan
+outcome RESULT(problem.INITIAL-STATE,prefix)
+ifhla isnullthen soplan isprimitiveandoutcome isitsresult ifoutcome satisfiesproblem.GOAL thenreturnplan
+elseforeachsequence in REFINEMENTS(hla,outcome,hierarchy)do
+frontier INSERT(APPEND(prefix,sequence,suffix),frontier)
+Figure11.5 Abreadth-firstimplementationofhierarchicalforwardplanningsearch. The
+initial plan suppliedto the algorithmis Act . The REFINEMENTS functionreturnsa set of
+actionsequences,oneforeachrefinementofthe HL Awhosepreconditionsaresatisfied by
+thespecifiedstate,outcome.
+The computational benefits of hierarchical search can be seen by examining an ide-
+alized case. Suppose that a planning problem has a solution with d primitive actions. For
+a nonhierarchical, forward state-space planner with b allowable actions at each state, the
+cost is O(bd), as explained in Chapter 3. For an HTN planner, let us suppose a very reg-
+ular refinement structure: each nonprimitive action has r possible refinements, each into
+k actions at the next lower level. We want to know how many different refinement trees
+there are with this structure. Now, if there are d actions at the primitive level, then the
+number of levels below the root is log d

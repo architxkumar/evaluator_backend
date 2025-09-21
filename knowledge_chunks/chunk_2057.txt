@@ -1,0 +1,29 @@
+ntain the Clear predicate properly. Show how conditional
+effectscanbeusedtorepresent bothofthesecaseswithasingleaction.
+11.10 Conditionaleffectswereillustratedforthe Suck actioninthevacuumworld which
+squarebecomescleandependsonwhichsquaretherobotisin. Canyouthinkofanewsetof
+propositional variables todefinestatesofthevacuum world, suchthat Suck hasanuncondi-
+tional description? Writeout thedescriptions of Suck,Left,and Right,using yourproposi-
+tions,anddemonstrate thattheysufficetodescribeallpossible statesoftheworld.
+11.11 Find a suitably dirty carpet, free of obstacles, and vacuum it. Draw the path taken
+by the vacuum cleaner as accurately as you can. Explain it, with reference to the forms of
+planning discussed inthischapter.
+11.12 To the medication problem in the previous exercise, add a Test action that has the
+conditional effect Culture Growth when Disease is true and in any case has the perceptual
+effect Known(Culture Growth). Diagram a conditional plan that solves the problem and
+minimizestheuseofthe Medicate action.
+12
+KNOWLEDGE
+REPRESENTATION
+In which we show how to use first-order logic to represent the most important
+aspectsoftherealworld,suchasaction, space,time,thoughts, andshopping.
+The previous chapters described the technology for knowledge-based agents: the syntax,
+semantics, andproof theoryofpropositional andfirst-orderlogic, andtheimplementation of
+agents that use these logics. In this chapter we address the question of what content to put
+intosuchanagent sknowledge base howtorepresent factsabouttheworld.
+Section 12.1 introduces the idea of a general ontology, which organizes everything in
+the world into a hierarchy of categories. Section 12.2 covers the basic categories of objects,
+substances, andmeasures;Section12.3coversevents,and Section12.4discussesknowledge
+about beliefs. We then return to consider the technology for reasoning with this content:
+Section 12.5 discusses reasoning systems designed for efficient inference with categories,
+and Se

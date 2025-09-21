@@ -1,0 +1,27 @@
+iminal(West),therulethatconcludes Criminal(x)willberewrittentoinclude
+anextraconjunctthatconstrains thevalueof x:
+Magic(x) American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x).
+4 Thewordproductioninproductionsystemsdenotesacondition actionrule.
+Section9.4. Backward Chaining 337
+The fact Magic(West) is also added to the KB. In this way, even if the knowledge base
+contains factsaboutmillionsof Americans, only Colonel Westwillbeconsidered during the
+forward inference process. The complete process for defining magic sets and rewriting the
+knowledge base is too complex to go into here, but the basic idea is to perform a sort of generic backward inference from the goal in order to work out which variable bindings
+need to be constrained. The magic sets approach can therefore be thought of as a kind of
+hybridbetweenforwardinference andbackwardpreprocessing.
+9.4 BACKWARD CHAINING
+The second major family of logical inference algorithms uses the backward chaining ap-
+proach introduced in Section7.5fordefiniteclauses. These algorithms workbackward from
+the goal, chaining through rules to find known facts that support the proof. We describe
+thebasicalgorithm, andthenwedescribehowitisusedinlogicprogramming,whichisthe
+mostwidelyusedformofautomatedreasoning. Wealsoseethatbackwardchaininghassome
+disadvantages compared withforward chaining, and welook atwaysto overcome them. Fi-
+nally,welookatthecloseconnectionbetweenlogicprogrammingandconstraintsatisfaction
+problems.
+9.4.1 A backward-chaining algorithm
+Figure 9.6 shows a backward-chaining algorithm for definite clauses. FOL-BC-ASK(KB,
+goal)willbe proved iftheknowledge base contains aclause of the form lhs goal, where
+lhs (left-handside)isalistofconjuncts. Anatomicfactlike American(West)isconsidered
+asaclause whoselhs istheemptylist. Nowaquery thatcontains variables mightbeproved
+in multiple ways. For example, the query Person(x) could be proved with the substitution
+GENERATOR x John aswellaswith x Richard . Soweimplement FOL-BC

@@ -1,0 +1,25 @@
+out on the road and drives, using
+thisperformance element. Thecritic observes theworldand passes information along tothe
+learningelement. Forexample,afterthetaximakesaquickleftturnacrossthreelanesoftraf-
+fic,thecriticobservestheshockinglanguageusedbyotherdrivers. Fromthisexperience, the
+learningelementisabletoformulatearulesayingthiswasabadaction,andtheperformance
+element is modified by installation of the new rule. The problem generator might identify
+certainareasofbehaviorinneedofimprovementandsuggest experiments,suchastryingout
+thebrakesondifferentroadsurfaces underdifferentconditions.
+Thelearning elementcanmakechanges toanyofthe knowledge components shown
+intheagentdiagrams(Figures2.9,2.11,2.13,and2.14). Thesimplestcasesinvolvelearning
+directly from the percept sequence. Observation of pairs of successive states of the environ-
+mentcanallow theagent tolearn Howtheworldevolves, and observation oftheresults of
+itsactions canallowtheagenttolearn Whatmyactions do. Forexample, ifthetaxiexerts
+a certain braking pressure when driving on a wet road, then it will soon find out how much
+deceleration is actually achieved. Clearly, these two learning tasks are more difficult if the
+environment isonlypartially observable.
+The forms of learning in the preceding paragraph do not need to access the external
+performance standard in a sense, the standard is the universal one of making predictions
+that agree with experiment. The situation is slightly more complex for a utility-based agent
+thatwishestolearnutilityinformation. Forexample,suppose thetaxi-driving agentreceives
+no tips from passengers who have been thoroughly shaken up during the trip. The external
+performance standard mustinform theagentthatthelossoftipsisanegativecontribution to
+its overall performance; then the agent might be able to learn that violent maneuvers do not
+contribute to its own utility. In a sense, the performance standard distinguishes part of the
+incomingperceptasareward(orpenalty)thatprovidesdirectfe

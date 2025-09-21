@@ -1,0 +1,17 @@
+Jordan,M.I.(2005). Dirichletprocesses,Chinese Kambhampati,S.,Mali,A.D.,and Srivastava,B.
+Systems,14(3),339 395. restaurantprocessesandallthat. Tutorialpresenta- (1998). Hybridplanningforpartiallyhierarchical
+Jaynes,E.T.(2003).Probability Theory:The Logic tionatthe NIPS Conference. domains.In AAAI-98,pp.882 888.
+of Science.Cambridge Univ.Press. Jordan, M.I., Ghahramani, Z.,Jaakkola, T., and Kanal,L.N.and Kumar,V.(1988). Searchin Arti-
+Jefferson,G.(1949).Themindofmechanicalman: Saul,L.K.(1998). Anintroductiontovariational ficial Intelligence.Springer-Verlag.
+The Lister Orationdeliveredatthe Royal College methodsforgraphicalmodels.In Jordan,M.I.(Ed.), Kanazawa,K.,Koller,D.,and Russell,S.J.(1995).
+of Surgeonsin England. British Medical Journal, Learningin Graphical Models.Kluwer. Stochasticsimulationalgorithmsfordynamicprob-
+1(25),1105 1121. Jouannaud,J.-P.and Kirchner,C.(1991). Solving abilisticnetworks.In UAI-95,pp.346 351.
+Jeffrey,R.C.(1983). The Logicof Decision(2nd equationsinabstractalgebras: Arule-basedsurvey Kantorovich,L.V.(1939). Mathematicalmethods
+edition).Universityof Chicago Press. ofunification.In Lassez,J.-L.and Plotkin,G.(Eds.), oforganizingandplanningproduction. Publishdin
+Jeffreys,H.(1948).Theoryof Probability.Oxford. Computational Logic,pp.257 321.MIT Press. translationin Management Science,6(4),366 422,
+Judd,J.S.(1990). Neural Network Designandthe July1960.
+J b e y li s n ta e t k is , ti F c . a ( l 1 m 9 e 7 t 6 h ) o . ds C . o P n r t o in c u . o IE us EE sp , e 6 e 4 c ( h 4) r , e 5 c 3 o 2 g n 5 it 5 io 6 n . Complexityof Learning.MIT Press. Kaplan,D.and Montague,R.(1960).Aparadoxre-
+Juels, A.and Wattenberg, M.(1996). Stochastic gained. Notre Dame Journalof Formal Logic,1(3),
+Jelinek,F.(1997). Statistical Methodsfor Speech hillclimbingasabaselinemethodforevaluatingge- 79 90.
+Recognition.MIT Press. neticalgorithms.In Touretzky,D.S.,Mozer,M.C., Karmarkar,N.(1984).Anewpolynomial-timeal-
+Jelinek,F.and Mercer,R.L.(1980). Interpolated and Hasselmo

@@ -1,0 +1,34 @@
+stacles. No planning was involved in generating the potential field
+shown in the figure. Because of this, potential fields are well suited to real-time control.
+Figure 25.23(a) shows a trajectory of a robot that performs hill climbing in the potential
+field. In many applications, the potential field can be calculated efficiently for any given
+configuration. Moreover, optimizing the potential amounts to calculating the gradient of the
+potential for the present robot configuration. These calculations can be extremely efficient,
+especially when compared to path-planning algorithms, all of which are exponential in the
+dimensionality oftheconfiguration space(the DO Fs)intheworstcase.
+The fact that the potential field approach manages to find a path to the goal in such
+an efficient manner, even over long distances in configuration space, raises the question as
+to whether there is a need for planning in robotics at all. Are potential field techniques
+sufficient, or were we just lucky in our example? The answer is that we were indeed lucky.
+Potentialfieldshavemanylocalminimathatcantraptherobot. In Figure25.23(b),therobot
+approaches theobstacle bysimplyrotating itsshoulderjoint, untilitgetsstuckonthewrong
+side of the obstacle. The potential field is not rich enough to make the robot bend its elbow
+sothatthearmfitsundertheobstacle. Inotherwords,potentialfieldcontrolisgreatforlocal
+robotmotionbutsometimeswestillneedglobalplanning. Anotherimportantdrawbackwith
+potentialfieldsisthattheforcestheygeneratedependonlyontheobstacleandrobotpositions,
+notontherobot svelocity. Thus,potentialfieldcontrolisreallyakinematicmethodandmay
+failiftherobotismovingquickly.
+Section25.6. Moving 1001
+retract, lift higher
+yes
+move
+forward no
+S 3 stuck? S 4
+lift up set down
+push backward
+S S
+2 1
+(a) (b)
+Figure 25.24 (a) Genghis, a hexapod robot. (b) An augmented finite state machine
+(AFSM) for the control of a single leg. Notice that this AFSM reacts to sensor feedback:
+ifalegisstuckduringtheforwardswi

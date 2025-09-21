@@ -1,0 +1,25 @@
+dified therules and inspired generations of
+artistswhoseartisticachievementsamazeustothisday. Particularlynotableintheirdevelop-
+mentofthescienceofperspective,asitwascalledinthosedays,were Leonardoda Vinciand
+Albrecht Du rer. Leonardo s late15th century descriptions oftheinterplay oflightandshade
+(chiaroscuro), umbraandpenumbraregionsofshadows,andaerialperspectivearestillworth
+reading in translation (Kemp, 1989). Stork (2004) analyzes thecreation ofvarious pieces of
+Renaissance artusingcomputervisiontechniques.
+Although perspective was known to the ancient Greeks, they were curiously confused
+bytheroleoftheeyesinvision. Aristotlethoughtoftheeyesasdevicesemittingrays,rather
+inthemannerofmodernlaserrangefinders. Thismistakenviewwaslaidtorestbythework
+of Arabscientists, suchas Abu Ali Alhazen, inthe10thcentury. Alhazenalsodeveloped the
+cameraobscura,aroom(camerais Latinfor room or chamber )withapinholethatcasts
+an image on the opposite wall. Of course the image was inverted, which caused no end of
+confusion. If the eye was to be thought of as such an imaging device, how do we see right-
+side up? This enigma exercised the greatest minds of the era (including Leonardo). Kepler
+firstproposedthatthelensoftheeyefocusesanimageontheretina,and Descartessurgically
+removedanoxeyeanddemonstrated that Keplerwasright. Therewasstillpuzzlement asto
+whywedonotseeeverythingupsidedown;todaywerealizeitisjustaquestionofaccessing
+theretinaldatastructure intherightway.
+Inthe first half of the 20th century, the most significant research results in vision were
+obtained bythe Gestalt school ofpsychology, ledby Max Wertheimer. Theypointed outthe
+importance of perceptual organization: for a human observer, the image is not a collection
+of pointillist photoreceptor outputs (pixels in computer vision terminology); rather it is or-
+ganized into coherent groups. One could trace the motivation in computer vision of finding
+regions and curves back to this insight. The Gestaltists also drew attention t

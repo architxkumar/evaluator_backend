@@ -1,0 +1,41 @@
+227 73 2.78 1.42 1.24
+14 539 113 1.44 1.23
+16 1301 211 1.45 1.25
+18 3056 363 1.46 1.26
+20 7276 676 1.47 1.27
+22 18094 1219 1.48 1.28
+24 39135 1641 1.48 1.26
+Figure 3.29 Comparison of the search costs and effective branching factors for the
+ITERATIVE-DEEPENING-SEARCH and A algorithmswith h
+1
+, h
+2
+. Data are averagedover
+100instancesofthe8-puzzleforeachofvarioussolutionlengthsd.
+Onemightaskwhetherh isalwaysbetterthanh . Theansweris Essentially, yes. It
+2 1
+iseasytoseefromthedefinitions ofthetwoheuristics that, foranynode n,h (n) h (n).
+2 1 We thus say that h dominates h . Domination translates directly into efficiency: A using
+DOMINATION 2 1 h will never expand more nodes than A using h (except possibly for some nodes with
+2 1 f(n) C ). The argument is simple. Recall the observation on page 97 that every node with f(n) C will surely be expanded. This is the same as saying that every node with
+h(n) C g(n) will surely be expanded. But because h is at least as big as h for all
+2 1 nodes, everynodethat issurely expanded by A search withh willalsosurely beexpanded
+2
+with h , and h might cause other nodes to be expanded as well. Hence, it is generally
+1 1
+better to use a heuristic function with higher values, provided it is consistent and that the
+computation timefortheheuristic isnottoolong.
+3.6.2 Generating admissibleheuristics from relaxed problems
+We have seen that both h (misplaced tiles) and h (Manhattan distance) are fairly good
+1 2
+heuristics forthe 8-puzzle and that h isbetter. Howmight one have comeup with h ? Isit
+2 2
+possible foracomputertoinventsuchaheuristicmechanically?
+h andh areestimates oftheremaining pathlengthforthe8-puzzle, buttheyarealso
+1 2
+perfectlyaccurate pathlengthsfor simplifiedversionsofthepuzzle. Iftherulesofthepuzzle
+Section3.6. Heuristic Functions 105
+werechangedsothatatilecouldmoveanywhereinsteadofjusttotheadjacentemptysquare,
+thenh wouldgivetheexactnumberofstepsintheshortestsolution. Similarly,ifatilecould
+1
+moveonesquareinanydirection,eve

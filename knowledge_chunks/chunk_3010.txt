@@ -1,0 +1,87 @@
+y
+e
+a
+v
+n
+a
+,
+lu
+J
+a
+.
+ti
+A
+on
+.
+f
+a
+u
+n
+n
+d
+ct
+M
+ion
+o
+s
+or
+f
+e
+o
+,
+r
+A
+gl
+.
+ob
+W
+al
+.
+o
+(
+p
+1
+t
+9
+i
+9
+m
+8
+i
+)
+z
+.
+atio
+L
+n
+ea
+a
+r
+n
+n
+d
+-
+Magazine. Boole, G. (1847). The Mathematical Analysisof Booleansatisfiability.In AAAI-98.
+Logic:Beingan Essaytowardsa Calculusof Deduc-
+Bistarelli,S.,Montanari,U.,and Rossi,F.(1997). Boyd,S.and Vandenberghe,L.(2004).Convex Op-
+tive Reasoning.Macmillan,Barclay,and Macmillan,
+Semiring-basedconstraintsatisfactionandoptimiza- timization.Cambridge University Press.
+Cambridge.
+tion.JACM,44(2),201 236. Boyen,X.,Friedman,N.,and Koller,D.(1999).Dis-
+Booth,T.L.(1969). Probabilisticrepresentationof
+Bitner,J.R.and Reingold,E.M.(1975).Backtrack formallanguages. In IEEE Conference Recordof coveringthehiddenstructureofcomplexdynamic
+programmingtechniques.CACM,18(11),651 656. the1969Tenth Annual Symposiumon Switchingand systems.In UAI-99.
+Automata Theory,pp.74 81. Boyer,R.S.and Moore,J.S.(1979). AComputa-
+Bizer,C.,Auer,S.,Kobilarov,G.,Lehmann,J.,and
+tional Logic.Academic Press.
+Cyganiak,R.(2007).DB Pedia queryingwikipedia Borel,E.(1921). Lathe oriedujeuetlese quations
+likeadatabase. In Developers Track Presentation inte grales a noyau syme trique. Comptes Rendus Boyer,R.S.and Moore,J.S.(1984).Proofchecking
+atthe16th International Conferenceon World Wide Hebdomadairesdes Se ancesdel Acade miedes Sci- the RS Apublickeyencryptionalgorithm.American
+Web. ences,173,1304 1308. Mathematical Monthly,91(3),181 189.
+Bibliography 1067
+Brachman, R. J. (1979). On the epistemologi- Bridle,J.S.(1990). Probabilisticinterpretationof Bryson,A.E.and Ho,Y.-C.(1969). Applied Opti-
+calstatusofsemanticnetworks. In Findler,N.V. feedforwardclassificationnetworkoutputs,withre- mal Control.Blaisdell.
+(Ed.), Associative Networks: Representation and lationshipstostatisticalpatternrecognition. In Fo-
+Buchanan, B. G. and Mitchell, T. M. (1978).
+Useof Knowledge by Computers, pp. 3 50.Aca- gelman Soulie ,F.and He rault,J.(Eds.),Neurocom-
+Model-directedlearningofproductionrules.

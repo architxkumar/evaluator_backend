@@ -1,0 +1,32 @@
+c-consistent. Forexample,considerthethirdrowof Figure6.7.
+Itshowsthatwhen WAisred and Qisgreen,both NT and SAareforcedtobeblue. Forward
+checking does notlook farenough ahead tonotice that thisis aninconsistency: NT and SA
+areadjacentandsocannothavethesamevalue.
+MAINTAININGARC The algorithm called MAC (for Maintaining Arc Consistency (MAC)) detects this
+CONSISTENCY(MAC)
+inconsistency. Afteravariable X
+i
+isassignedavalue,the INFERENCE procedurecalls AC-3,
+but instead of a queue of all arcs in the CSP, we start with only the arcs (X ,X ) for all
+j i
+X thatareunassigned variables thatareneighbors of X . Fromthere, AC-3doesconstraint
+j i
+propagation intheusualway,andifanyvariablehasitsdomainreducedtotheemptyset,the
+call to AC-3 fails and we know to backtrack immediately. We can see that MAC is strictly
+morepowerfulthanforwardcheckingbecauseforwardcheckingdoesthesamethingas MAC
+on the initial arcs in MAC s queue; but unlike MAC, forward checking does not recursively
+propagate constraints whenchanges aremadetothedomainsofvariables.
+6.3.3 Intelligentbacktracking: Looking backward
+The BACKTRACKING-SEARCH algorithm in Figure6.5hasaverysimple policy forwhatto
+do when a branch of the search fails: back up to the preceding variable and try a different
+CHRONOLOGICAL value for it. This is called chronological backtracking because the most recent decision
+BACKTRACKING
+pointisrevisited. Inthissubsection, weconsiderbetterpossibilities.
+Consider what happens when we apply simple backtracking in Figure 6.1 with a fixed
+variable ordering Q, NSW, V, T, SA, WA, NT. Suppose we have generated the partial
+assignment Q red,NSW green,V blue,T red . When we try the next variable,
+SA, we see that every value violates a constraint. We back up to T and try a new color for
+Section6.3. Backtracking Searchfor CS Ps 219
+Tasmania! Obviouslythisissilly recoloring Tasmaniacannotpossiblyresolvetheproblem
+with South Australia.
+Amoreintelligent approach tobacktracking istobacktrack toavariable thatmightfix

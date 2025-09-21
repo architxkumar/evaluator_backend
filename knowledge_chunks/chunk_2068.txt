@@ -1,0 +1,36 @@
+tween logical definitions
+suitable for internal knowledge representation and the more nuanced criteria for
+felicitous linguistic usage. Thelattermaybeachieved by filtering theassertions
+derivedfromtheformer. Itisalsopossiblethatfailuresof linguistic usageserveas
+feedbackformodifyinginternaldefinitions,sothatfilteringbecomesunnecessary.
+444 Chapter 12. Knowledge Representation
+12.2.2 Measurements
+In both scientific and commonsense theories of the world, objects have height, mass, cost,
+and so on. The values that we assign for these properties are called measures. Ordi-
+MEASURE
+nary quantitative measures are quite easy to represent. We imagine that the universe in-
+cludes abstract measure objects, such as the length that is the length of this line seg-
+ment: . Wecancallthislength1.5inchesor3.81centimeters. Thus,
+the same length has different names in our language.We represent the length with a units
+function that takes a number as argument. (An alternative scheme is explored in Exer-
+UNITSFUNCTION
+cise12.9.) Ifthelinesegmentiscalled L ,wecanwrite
+1
+Length(L ) Inches(1.5) Centimeters(3.81).
+1
+Conversion betweenunitsisdonebyequatingmultiples ofoneunittoanother:
+Centimeters(2.54 d) Inches(d).
+Similaraxioms can be written for pounds and kilograms, seconds and days, and dollars and
+cents. Measurescanbeusedtodescribe objectsasfollows:
+Diameter(Basketball ) Inches(9.5).
+12
+List Price(Basketball ) (19).
+12
+d Days Duration(d) Hours(24).
+Notethat (1) isnotadollarbill! Onecanhavetwodollarbills, butthere isonly one object
+named (1). Note also that, while Inches(0) and Centimeters(0) refer to the same zero
+length, theyarenotidentical tootherzeromeasures, suchas Seconds(0).
+Simple, quantitative measures areeasy torepresent. Other measures present moreof a
+problem,becausetheyhavenoagreedscaleofvalues. Exerciseshavedifficulty,dessertshave
+deliciousness,andpoemshavebeauty,yetnumberscannotbeassignedtothesequalities. One
+might,inamomentofpureaccountancy,dismisssuchpropertiesasuselessfor

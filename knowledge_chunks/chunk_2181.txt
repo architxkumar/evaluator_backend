@@ -1,0 +1,38 @@
+opological semantics2 specifies that each vari-
+able is conditionally independent of its non-descendants, given its parents. Forexample, in
+DESCENDANT
+Figure14.2, John Calls isindependent of Burglary,Earthquake,and Mary Calls giventhe
+value of Alarm. Thedefinition isillustrated in Figure 14.4(a). From these conditional inde-
+pendence assertions and the interpretation of the network parameters (X Parents(X ))
+i i
+asspecifications ofconditional probabilities P(X Parents(X )), thefull jointdistribution
+i i
+given in Equation (14.2) can be reconstructed. In this sense, the numerical semantics and
+the topological semantics areequivalent.
+Another important independence property is implied by the topological semantics: a
+nodeisconditionallyindependentofallothernodesinthenetwork,givenitsparents,children,
+and children s parents that is, given its Markovblanket. (Exercise 14.7asks you toprove
+MARKOVBLANKET
+this.) Forexample,Burglary isindependentof John Calls and Mary Calls,given Alarm and
+Earthquake. Thisproperty isillustrated in Figure14.4(b).
+2 There is also a general topological criterion called d-separation for deciding whether a set of nodes X is
+conditionally independent of another set Y, givenathirdset Z. Thecriterionisrathercomplicated and isnot
+neededforderivingthealgorithmsinthischapter,soweomitit.Detailsmaybefoundin Pearl(1988)or Darwiche
+(2009).Shachter(1998)givesamoreintuitivemethodofascertainingd-separation.
+518 Chapter 14. Probabilistic Reasoning
+. . .
+U U
+1 m U 1 . . . U m
+X X
+Z Z Z Z
+1j nj 1j nj
+Y Y
+Y Y 1 . . . n
+1 . . . n
+(a) (b)
+Figure14.4 (a) A node X is conditionallyindependentofits non-descendants(e.g.,the
+Zijs) given its parents (the Uis shown in the gray area). (b) A node X is conditionally
+independentofallothernodesinthenetworkgivenits Markovblanket(thegrayarea).
+14.3 EFFICIENT REPRESENTATION OF CONDITIONAL DISTRIBUTIONS
+Evenifthe maximumnumberofparents k issmallish, filling inthe CP Tforanode requires
+upto O(2k)numbersandperhapsagreatdealofexperience

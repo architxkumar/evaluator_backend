@@ -1,0 +1,62 @@
+evelashaving acertainamountof inertia thathelpstoovercometempo-
+rary blips in the meter reading. The upper curve in Figure 15.14(b) shows that the transient
+failuremodelcanhandletransient failureswithoutacatastrophic changeinbeliefs.
+Somuchfortemporary blips. Whataboutapersistent sensorfailure? Sadly,failures of
+this kind are alltoo common. Ifthesensor returns 20 readings of5followed by20 readings
+of 0, then the transient sensor failure model described in the preceding paragraph willresult
+in the robot gradually coming to believe that its battery is empty when in fact it may be that
+the meter has failed. The lower curve in Figure 15.14(b) shows the belief trajectory for
+this case. By t 25 five readings of 0 the robot is convinced that its battery is empty.
+Obviously, we would prefer the robot to believe that its battery meter is broken if indeed
+thisisthemorelikelyevent.
+PERSISTENT Unsurprisingly, to handle persistent failure, we need a persistent failure model that
+FAILUREMODEL
+describes how the sensor behaves under normal conditions and after failure. To do this, we
+need to augment the state of the system with an additional variable, say, BM Broken, that
+describes the status of the battery meter. The persistence of failure must be modeled by an
+594 Chapter 15. Probabilistic Reasoning over Time
+5
+4
+3
+2
+1
+0
+-1
+15 20 25 30
+)yretta B(E t
+E(Battery ...5555005555...)
+t
+5
+4
+3
+2
+1
+0
+E(Battery ...5555000000...)
+t
+-1
+15 20 25 30
+Time step t
+)yretta B(E t
+E(Battery ...5555005555...)
+t
+E(Battery ...5555000000...)
+t
+Time step
+(a) (b)
+Figure15.14 (a)Uppercurve:trajectoryoftheexpectedvalueof Batterytforanobserva-
+tionsequenceconsistingofall5sexceptfor0satt 21andt 22,usingasimple Gaussian
+errormodel.Lowercurve:trajectorywhentheobservationremainsat0fromt 21onwards.
+(b)Thesameexperimentrunwiththetransientfailuremodel. Noticethatthetransientfail-
+ureishandledwell,butthepersistentfailureresultsinexcessivepessimismaboutthebattery
+charge.
+B
+0
+P(B
+1
+)
+5
+t 1.000
+f 0.001 4
+3
+BM Broken BM 

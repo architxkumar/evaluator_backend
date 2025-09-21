@@ -1,0 +1,27 @@
+nely. The key to its
+success seemstohavebeen itsability togenerate singular extensions beyond thedepth limit
+forsufficiently interesting lines offorcing forced moves. Insomecases thesearch reached a
+depth of 40 plies. Theevaluation function had over8000 features, many of them describing
+highly specific patterns of pieces. An opening book of about 4000 positions was used, as
+well as a database of 700,000 grandmaster games from which consensus recommendations
+could beextracted. Thesystem also used alarge endgame database of solved positions con-
+taining all positions with five pieces and many with six pieces. This database had the effect
+ofsubstantially extending theeffectivesearchdepth,allowing Deep Bluetoplayperfectlyin
+somecasesevenwhenitwasmanymovesawayfromcheckmate.
+Thesuccessof DEEP BLU Ereinforcedthewidelyheldbeliefthatprogressincomputer
+game-playing has come primarily from ever-more-powerful hardware a view encouraged
+by IBM. But algorithmic improvements have allowed programs running on standard PCs
+to win World Computer Chess Championships. A variety of pruning heuristics are used to
+reducetheeffectivebranchingfactortolessthan3(comparedwiththeactualbranchingfactor
+ofabout35). Themostimportantoftheseisthenullmoveheuristic, whichgenerates agood
+NULLMOVE
+lower bound on the value of a position, using a shallow search in which the opponent gets
+to move twice at the beginning. This lower bound often allows alpha beta pruning without
+theexpenseofafull-depth search. Alsoimportant is futilitypruning,whichhelpsdecidein
+FUTILITYPRUNING
+advancewhichmoveswillcauseabetacutoffinthesuccessor nodes.
+HYDRA can be seen as the successor to DEEP BLUE. HYDRA runs on a 64-processor
+cluster with1gigabyte perprocessor andwithcustom hardware intheform of FPGA(Field
+Programmable Gate Array)chips. HYDR Areaches200millionevaluationspersecond,about
+the same as Deep Blue, but HYDRA reaches 18 plies deep rather than just 14 because of
+aggressive useofthenullmoveheuristic andforwardpruning.

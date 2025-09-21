@@ -1,0 +1,46 @@
+l physical interaction with
+the environment. For example, robot manipulators must know the location of objects they
+seektomanipulate; navigating robotsmustknowwheretheyaretofindtheirwayaround.
+To keep things simple, let us consider a mobile robot that moves slowly in a flat 2D
+world. Letusalso assume therobot isgiven anexact mapofthe environment. (Anexample
+of such a map appears in Figure 25.10.) The pose of such a mobile robot is defined by its
+two Cartesian coordinates with values x and y and its heading with value , as illustrated in
+Figure25.8(a). Ifwearrange those threevalues inavector, thenanyparticular stateisgiven
+(cid:12)
+by X (x ,y , ) . Sofarsogood.
+t t t t
+980 Chapter 25. Robotics t
+t
+x y
+i, i t 1
+h(x) v t
+t t
+Z Z Z Z
+x 1 2 3 4
+t 1 t
+x
+t
+(a) (b)
+Figure25.8 (a)Asimplifiedkinematicmodelofamobilerobot. Therobotisshownasa
+circlewithaninteriorlinemarkingtheforwarddirection. Thestatextconsistsofthe(xt,yt)
+position (shown implicitly) and the orientation t. The new state xt 1 is obtained by an
+updateinpositionofvt t andinorientationof t t. Alsoshownisalandmarkat(xi,yi)
+observedattimet. (b)Therange-scansensormodel.Twopossiblerobotposesareshownfor
+agivenrangescan(z ,z ,z ,z ). Itismuchmorelikelythattheposeontheleftgenerated
+1 2 3 4
+therangescanthantheposeontheright.
+In the kinematic approximation, each action consists of the instantaneous specifica-
+tionoftwovelocities a translational velocity v andarotationalvelocity . Forsmalltime
+t t
+intervals t,acrudedeterministic modelofthemotionofsuchrobotsisgivenby v tcos t t
+X f(X ,v , ) X v tsin .
+t 1 t (cid:27)t(cid:28)(cid:29)(cid:30)t t t t t
+at t
+The notation
+X refers to a deterministic state prediction. Of course, physical robots are
+somewhat unpredictable. This is commonly modeled by a Gaussian distribution with mean
+f(X ,v , )andcovariance . (See Appendix Aforamathematicaldefinition.)
+t t t x
+P(X X ,v , ) N(X , ).
+t 1 t t t t 1 x
+Thisprobability distribution istherobot s motionmodel. Itmodels theeffects ofthemotion

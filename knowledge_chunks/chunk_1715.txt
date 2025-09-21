@@ -1,0 +1,31 @@
+Many real-world CS Psinclude preference constraints
+CONSTRAINTS
+indicating whichsolutions arepreferred. Forexample,ina university class-scheduling prob-
+lem there are absolute constraints that no professor can teach two classes at the same time.
+Butwealsomayallowpreference constraints: Prof.Rmightpreferteaching inthemorning,
+whereas Prof. N prefers teaching in the afternoon. A schedule that has Prof. R teaching at
+2p.m.wouldstillbeanallowablesolution(unless Prof.Rhappenstobethedepartmentchair)
+butwouldnotbeanoptimalone. Preference constraints canoftenbeencoded ascostsonin-
+dividual variable assignments for example, assigning an afternoon slot for Prof. R costs
+2 points against the overall objective function, whereas a morning slot costs 1. With this
+formulation, CS Ps with preferences can be solved with optimization search methods, either
+CONSTRAINT
+path-based or local. We call such a problem a constraint optimization problem, or COP.
+OPTIMIZATION
+PROBLEM
+Linearprogramming problemsdothiskindofoptimization.
+208 Chapter 6. Constraint Satisfaction Problems
+6.2 CONSTRAINT PROPAGATION: INFERENCE IN CSPS
+Inregular state-space search, analgorithm can doonly one thing: search. In CS Psthere is a
+choice: analgorithmcansearch(chooseanewvariableassignmentfromseveralpossibilities)
+or do a specific type of inference called constraint propagation: using the constraints to
+INFERENCE
+CONSTRAINT reduce the number of legal values for a variable, which in turn can reduce the legal values
+PROPAGATION
+foranothervariable, andsoon. Constraint propagation may beintertwined withsearch, orit
+maybedoneasapreprocessing step, before searchstarts. Sometimesthispreprocessing can
+solvethewholeproblem,sonosearchisrequired atall.
+LOCAL The key idea is local consistency. If we treat each variable as a node in a graph (see
+CONSISTENCY
+Figure 6.1(b)) and each binary constraint as an arc, then the process of enforcing local con-
+sistency ineach part of the graph causes inconsistent values tobe eliminate

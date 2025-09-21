@@ -1,0 +1,36 @@
+mplicated, sowewillgive them aformaldefinition byshowing how
+anaugmented rulecanbetranslated intoalogical sentence. Thesentence willhavetheform
+DEFINITECLAUSE ofadefiniteclause(seepage256),sotheresultiscalledadefiniteclausegrammar,or DCG.
+GRAMMAR
+We ll use as an example a version of a rule from the lexicalized grammar for NP with one
+newpieceofnotation:
+NP(n) Article(a) Adjs(j) Noun(n) Compatible(j,n) .
+Thenewaspecthereisthenotation constraint todenotealogicalconstraintonsomeofthe
+variables;theruleonlyholdswhentheconstraintistrue. Herethepredicate Compatible(j,n)
+ismeanttotestwhetheradjectivejandnounnarecompatible;itwouldbedefinedbyaseries
+ofassertions such as Compatible(black,dog). Wecanconvert thisgrammarruleintoadef-
+initeclause by(1)reversing theorderofright-andleft-hand sides, (2)makingaconjunction
+ofalltheconstituentsandconstraints,(3)addingavariables tothelistofargumentsforeach
+i
+constituent torepresent thesequence ofwords spanned bytheconstituent, (4)adding aterm
+for the concatenation of words, Append(s ,...), to the list of arguments for the root of the
+1
+tree. Thatgivesus
+Article(a,s ) Adjs(j,s ) Noun(n,s ) Compatible(j,n)
+1 2 3 NP(n,Append(s ,s ,s )).
+1 2 3
+Thisdefiniteclausesaysthatifthepredicate Article istrueofaheadwordaandastring s ,
+1
+and Adjs issimilarly trueofahead word j andastring s ,and Noun istrueofaheadword
+2
+n and a string s , and if j and n are compatible, then the predicate NP is true of the head
+3
+wordnandtheresultofappending strings s ,s ,ands .
+1 2 3
+The DC Gtranslationleftouttheprobabilities, butwecould putthembackin: justaug-
+menteachconstituent withonemorevariable representing theprobability oftheconstituent,
+andaugment therootwithavariable thatistheproduct ofthe constituent probabilities times
+theruleprobability.
+The translation from grammar rule to definite clause allows us to talk about parsing
+as logical inference. This makes it possible to reason about languages and strings in many
+differentways. Forexample,itmeanswecandobottom-u

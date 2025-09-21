@@ -1,0 +1,34 @@
+cording tothe
+316 Chapter 8. First-Order Logic
+standard semantics but not according to the new semantics. Discuss which outcome makes
+moreintuitivesenseforyourexamples.
+8.8 Does the fact Spouse(George,Laura) follow from the facts Jim (cid:7) George and
+Spouse(Jim,Laura)? If so, give aproof; if not, supply additional axioms as needed. What
+happens ifweuse Spouse asaunaryfunctionsymbolinsteadofabinarypredicate?
+8.9 Thisexerciseusesthefunction Map Color andpredicates In(x,y),Borders(x,y),and
+Country(x), whose arguments are geographical regions, along with constant symbols for
+various regions. In each of the following wegive an English sentence and a number ofcan-
+didate logical expressions. Foreach of the logical expressions, state whether it (1) correctly
+expresses the English sentence; (2) issyntactically invalid and therefore meaningless; or(3)
+issyntactically validbutdoesnotexpressthemeaningofthe Englishsentence.
+a. Parisand Marseillesarebothin France.
+(i) In(Paris Marseilles,France).
+(ii) In(Paris,France) In(Marseilles,France).
+(iii) In(Paris,France) In(Marseilles,France).
+b. Thereisacountrythatborders both Iraqand Pakistan.
+(i) c Country(c) Border(c,Iraq) Border(c,Pakistan).
+(ii) c Country(c) Border(c,Iraq) Border(c,Pakistan) .
+(iii) c Country(c) Border(c,Iraq) Border(c,Pakistan) .
+(iv) c Border(Country(c),Iraq Pakistan).
+c. Allcountries thatborder Ecuadorarein South America.
+(i) c Country(c) Border(c,Ecuador) In(c,South America).
+(ii) c Country(c) Border(c,Ecuador) In(c,South America) .
+(iii) c Country(c) Border(c,Ecuador) In(c,South America).
+(iv) c Country(c) Border(c,Ecuador) In(c,South America).
+d. Noregionin South Americabordersanyregionin Europe.
+(i) c,d In(c,South America) In(d,Europe) Borders(c,d) .
+(ii) c,d In(c,South America) In(d,Europe) Borders(c,d) .
+(iii) c In(c,South America) d In(d,Europe) Borders(c,d).
+(iv) c In(c,South America) d In(d,Europe) Borders(c,d).
+e. Notwoadjacentcountries havethesamemapcolor.
+(i) x,y Country(x) Country(y) Borders(x,y)

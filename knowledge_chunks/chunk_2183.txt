@@ -1,0 +1,39 @@
+, or
+Malaria is true. The noisy-OR model allows for uncertainty about the ability of each par-
+ent to cause the child to be true the causal relationship between parent and child may be
+Section14.3. Efficient Representation of Conditional Distributions 519
+inhibited, and so a patient could have a cold, but not exhibit a fever. The model makes two
+assumptions. First, it assumes that all the possible causes are listed. (If some are missing,
+we can always add a so-called leak node that covers miscellaneous causes. ) Second, it
+LEAKNODE
+assumes that inhibition of each parent is independent of inhibition of any other parents: for
+example,whateverinhibits Malaria fromcausingafeverisindependentofwhateverinhibits
+Flu from causing a fever. Given these assumptions, Fever is false if and only if all its true
+parents are inhibited, and the probability of this is the product of the inhibition probabilities
+q foreachparent. Letussuppose theseindividual inhibition probabilities areasfollows:
+q P( fever cold, flu, malaria) 0.6,
+cold
+q P( fever cold,flu, malaria) 0.2,
+flu
+q P( fever cold, flu,malaria) 0.1.
+malaria
+Then,fromthisinformation andthenoisy-OR assumptions, theentire CP Tcanbebuilt. The
+generalruleisthat
+(cid:25)
+P(x parents(X )) 1 q ,
+i i j j:Xj true where the product is taken over the parents that are set to true for that row of the CPT. The
+followingtableillustrates thiscalculation:
+Cold Flu Malaria P(Fever) P( Fever)
+F F F 0.0 1.0
+F F T 0.9 0.1
+F T F 0.8 0.2
+F T T 0.98 0.02 0.2 0.1
+T F F 0.4 0.6
+T F T 0.94 0.06 0.6 0.1
+T T F 0.88 0.12 0.6 0.2
+T T T 0.988 0.012 0.6 0.2 0.1
+In general, noisy logical relationships in which a variable depends on k parents can be de-
+scribed using O(k) parameters instead of O(2k) for the full conditional probability table.
+This makes assessment and learning much easier. For example, the CPCS network (Prad-
+han etal., 1994) uses noisy-OR and noisy-MAX distributions tomodel relationships among
+diseases and symptoms ininternal medicine. With 448

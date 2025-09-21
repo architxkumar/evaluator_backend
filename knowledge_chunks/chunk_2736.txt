@@ -1,0 +1,27 @@
+arly influential approaches toautomated knowledge engi-
+neeringwereby Riloff(1993),whoshowedthatanautomatically constructed dictionaryper-
+formedalmostaswellasacarefullyhandcrafteddomain-specificdictionary,andby Yarowsky
+(1995),whoshowedthatthetaskofwordsenseclassification(seepage756)couldbeaccom-
+plishedthroughunsupervised trainingonacorpusofunlabeledtextwithaccuracyasgoodas
+supervised methods.
+Theideaofsimultaneouslyextractingtemplatesandexamplesfromahandfuloflabeled
+examples was developed independently and simultaneously by Blum and Mitchell (1998),
+who called it cotraining and by Brin (1998), who called it DIPRE (Dual Iterative Pattern
+Relation Extraction). You can see why the term cotraining has stuck. Similar early work,
+underthenameofbootstrapping, wasdoneby Jonesetal.(1999). Themethodwasadvanced
+by the QXTRACT (Agichtein and Gravano, 2003) and KNOWITALL (Etzioni et al., 2005)
+systems. Machinereadingwasintroducedby Mitchell(2005)and Etzionietal.(2006)andis
+thefocusofthe TEXTRUNNER project(Banko etal.,2007;Bankoand Etzioni,2008).
+Thischapterhasfocused onnaturallanguage text,butitisalsopossible todoinforma-
+tion extraction based on the physical structure or layout of text rather than on the linguistic
+structure. HTML lists and tables in both HTML and relational databases are home to data
+thatcanbeextractedandconsolidated(Hurst,2000;Pintoetal.,2003;Cafarellaetal.,2008).
+The Association for Computational Linguistics (ACL) holds regular conferences and
+publishes the journal Computational Linguistics. There is also an International Conference
+on Computational Linguistics(COLING).Thetextbookby Manningand Schu tze(1999)cov-
+ers statistical language processing, while Jurafsky and Martin (2008) give a comprehensive
+introduction tospeechandnaturallanguage processing.
+EXERCISES
+22.1 This exercise explores the quality of the n-gram model of language. Find or create a
+monolingual corpus of100,000 wordsormore. Segmentitinto words, andcompute the fre-
+quencyofeachword. Howma

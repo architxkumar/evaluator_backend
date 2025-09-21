@@ -1,0 +1,33 @@
+line depth-first
+search, the state is simply dropped from the queue; in an online search, the agent has to
+backtrack physically. Indepth-firstsearch,thismeansgoingbacktothestatefromwhichthe
+agentmostrecentlyenteredthecurrentstate. Toachievethat,thealgorithmkeepsatablethat
+150 Chapter 4. Beyond Classical Search
+function ONLINE-DFS-AGENT(s(cid:5))returnsanaction
+inputs:s(cid:5),aperceptthatidentifiesthecurrentstate
+persistent: result,atableindexedbystateandaction,initiallyempty
+untried,atablethatlists,foreachstate,theactionsnotyettried
+unbacktracked,atablethatlists,foreachstate,thebacktracksnotyettried
+s,a,thepreviousstateandaction,initiallynull
+if GOAL-TEST(s(cid:5))thenreturnstop
+ifs(cid:5)isanewstate(notinuntried)thenuntried s(cid:5) ACTIONS(s(cid:5))
+ifs isnotnullthen
+result s,a s(cid:5)
+adds tothefrontofunbacktracked s(cid:5) ifuntried s(cid:5) isemptythen
+ifunbacktracked s(cid:5) isemptythenreturnstop
+elsea anactionb suchthatresult s(cid:5),b POP(unbacktracked s(cid:5) )
+elsea POP(untried s(cid:5) )
+s s(cid:5)
+returna
+Figure4.21 Anonlinesearchagentthatusesdepth-firstexploration. Theagentisappli-
+cableonlyinstatespacesinwhicheveryactioncanbe undone bysomeotheraction.
+lists, foreach state, the predecessor states to which the agent has not yet backtracked. If the
+agenthasrunoutofstatestowhichitcanbacktrack, thenits searchiscomplete.
+We recommend that the reader trace through the progress of ONLINE-DFS-AGENT
+when applied to the maze given in Figure 4.19. It is fairly easy to see that the agent will, in
+theworstcase, enduptraversing everylinkinthestatespace exactly twice. Forexploration,
+this is optimal; for finding a goal, on the other hand, the agent s competitive ratio could be
+arbitrarily bad if it goes off on a long excursion when there is a goal right next to the initial
+state. Anonlinevariantofiterativedeepeningsolvesthis problem;foranenvironment thatis
+auniform tree,thecompetitive ratioofsuchanagentisasmallconstant.
+Because of its method of backtracking, ONLI

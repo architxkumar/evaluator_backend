@@ -1,0 +1,30 @@
+etwork, the assertion that all persons have
+two legs has only default status; that is, a person is assumed to have two legs unless this is
+contradictedbymorespecificinformation. Thedefaultsemanticsisenforcednaturallybythe
+inheritance algorithm, because it follows links upwards from the object itself (John in this
+case)andstopsassoonasitfindsavalue. Wesaythatthedefaultisoverriddenbythemore
+OVERRIDING
+specific value. Notice that we could also override the default number of legs by creating a
+categoryof One Legged Persons,asubsetof Persons ofwhich John isamember.
+Wecanretainastrictly logical semantics forthenetworkif wesaythatthe Legs asser-
+tionfor Persons includes anexception for John: x x Persons x (cid:7) John Legs(x,2).
+For a fixed network, this is semantically adequate but will be much less concise than the
+networknotationitselfiftherearelotsofexceptions. Foranetworkthatwillbeupdatedwith
+moreassertions, however, such anapproach fails wereally wanttosay thatanypersons as
+yetunknownwithonelegareexceptionstoo. Section12.6goesintomoredepthonthisissue
+andondefaultreasoning ingeneral.
+12.5.2 Descriptionlogics
+The syntax of first-order logic is designed to make it easy to say things about objects. De-
+scription logics are notations that are designed to make it easier to describe definitions and
+DESCRIPTIONLOGIC
+properties of categories. Description logic systems evolved from semantic networks in re-
+sponse to pressure to formalize what the networks mean while retaining the emphasis on
+taxonomic structureasanorganizing principle.
+The principal inference tasks for description logics are subsumption (checking if one
+SUBSUMPTION
+category is a subset of another by comparing their definitions) and classification (checking
+CLASSIFICATION
+whetheranobject belongs toacategory).. Somesystems also include consistency ofacate-
+gorydefinition whether themembershipcriteria arelogically satisfiable.
+Section12.5. Reasoning Systemsfor Categories 457
+Concept Thing Concept Name And(Concept

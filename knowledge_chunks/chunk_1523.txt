@@ -1,0 +1,34 @@
+oblems like starting in Arad, get to Arad. ) Then we
+need to consider taking various actions. We do this by expanding the current state; that is,
+EXPANDING
+applying each legal action to the current state, thereby generating a new set of states. In
+GENERATING
+this case, we add three branches from the parent node In(Arad) leading to three new child
+PARENTNODE
+nodes: In(Sibiu), In(Timisoara), and In(Zerind). Now we must choose which of these three
+CHILDNODE
+possibilities toconsiderfurther.
+Thisistheessenceofsearch followinguponeoptionnowandputtingtheothersaside
+for later, in case the first choice does not lead to a solution. Suppose we choose Sibiu first.
+We check to see whether it is a goal state (it is not) and then expand it to get In(Arad),
+In(Fagaras), In(Oradea),and In(Rimnicu Vilcea). Wecanthenchooseanyofthesefourorgo
+back and choose Timisoara or Zerind. Each ofthese sixnodes isa leaf node, that is, anode
+LEAFNODE
+with no children in the tree. The set of all leaf nodes available for expansion at any given
+pointiscalledthefrontier. (Manyauthors callittheopenlist, whichisbothgeographically
+FRONTIER
+lessevocativeandlessaccurate, becauseotherdatastructures arebettersuitedthanalist.) In
+OPENLIST
+Figure3.6,thefrontierofeachtreeconsists ofthosenodes withboldoutlines.
+Theprocessofexpandingnodesonthefrontiercontinuesuntileitherasolutionisfound
+ortherearenomorestatestoexpand. Thegeneral TREE-SEARCH algorithm isshowninfor-
+mally in Figure 3.7. Search algorithms all share this basic structure; they vary primarily
+according tohowtheychoosewhichstatetoexpandnext theso-called search strategy.
+SEARCHSTRATEGY
+Theeagle-eyedreaderwillnoticeonepeculiarthingaboutthesearchtreeshownin Fig-
+ure3.6: itincludesthepathfrom Aradto Sibiuandbackto Aradagain! Wesaythat In(Arad)
+is a repeated state in the search tree, generated in this case by a loopy path. Considering
+REPEATEDSTATE
+such loopy paths means that the complete search tree for Romania is infinite because there
+LOOPYPATH
+is no limit

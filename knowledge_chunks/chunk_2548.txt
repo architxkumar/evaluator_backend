@@ -1,0 +1,23 @@
+enblatt (1957) invented the modern perceptron and proved the percep-
+tron convergence theorem (1960), although it had been foreshadowed by purely mathemat-
+ical work outside the context of neural networks (Agmon, 1954; Motzkin and Schoenberg,
+1954). Some early work was also done on multilayer networks, including Gamba percep-
+trons (Gamba et al., 1961) and madalines (Widrow, 1962). Learning Machines (Nilsson,
+1965) covers muchof thisearly workand more. Thesubsequent demise ofearly perceptron
+research efforts was hastened (or, the authors later claimed, merely explained) by the book
+Perceptrons (Minsky and Papert, 1969), which lamented the field s lack of mathematical
+rigor. Thebook pointed outthat single-layer perceptrons could represent only linearly sepa-
+rableconcepts andnotedthelackofeffectivelearning algorithms formultilayernetworks.
+The papers in (Hinton and Anderson, 1981), based on a conference in San Diego in
+1979, can be regarded as marking a renaissance of connectionism. The two-volume PDP (Parallel Distributed Processing) anthology (Rumelhart et al., 1986a) and a short article in
+Nature (Rumelhart et al., 1986b) attracted a great deal of attention indeed, the number of
+papers on neural networks multiplied by a factor of 200 between 1980 84 and 1990 94.
+The analysis of neural networks using the physical theory of magnetic spin glasses (Amit
+et al., 1985) tightened the links between statistical mechanics and neural network theory providingnotonlyusefulmathematicalinsightsbutalsorespectability. Theback-propagation
+techniquehadbeeninventedquiteearly(Brysonand Ho,1969)butitwasrediscoveredseveral
+times(Werbos,1974;Parker,1985).
+Theprobabilisticinterpretationofneuralnetworkshasseveralsources,including Baum
+and Wilczek (1988) and Bridle (1990). The role of the sigmoid function is discussed by
+Jordan (1995). Bayesian parameter learning for neural networks was proposed by Mac Kay
+762 Chapter 18. Learningfrom Examples
+(1992) and is explored further by Neal(1996). T

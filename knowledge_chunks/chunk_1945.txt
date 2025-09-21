@@ -1,0 +1,36 @@
+.
+(Note: youdonotneedanyadditional axioms.)
+9.21 Howcanresolution beusedtoshowthatasentence isvalid? Unsatisfiable?
+9.22 Construct an example of two clauses that can be resolved together in two different
+waysgivingtwodifferentoutcomes.
+9.23 From Horses are animals, it follows that The head of a horse is the head of an
+animal. Demonstrate thatthisinference isvalidbycarrying outthefollowingsteps:
+a. Translatethepremiseandtheconclusionintothelanguageoffirst-orderlogic. Usethree
+predicates: Head Of(h,x)(meaning histheheadofx ),Horse(x),and Animal(x).
+b. Negate the conclusion, and convert the premise and the negated conclusion into con-
+junctivenormalform.
+c. Useresolution toshowthattheconclusion followsfromthe premise.
+9.24 Herearetwosentences inthelanguage offirst-orderlogic:
+(A) x y (x y)
+(B) y x (x y)
+a. Assumethatthevariablesrangeoverallthenaturalnumbers0,1,2,..., andthatthe predicate means is greater than or equal to. Under this interpretation, translate
+(A)and(B)into English.
+b. Is(A)trueunderthisinterpretation?
+c. Is(B)trueunderthisinterpretation?
+d. Does(A)logically entail(B)?
+e. Does(B)logically entail(A)?
+f. Using resolution, tryto prove that (A)follows from (B). Do this even ifyou think that
+(B)does not logically entail (A);continue until the proof breaks downand you cannot
+proceed(ifitdoesbreakdown). Showtheunifyingsubstitutionforeachresolutionstep.
+Iftheprooffails,explainexactlywhere,how,andwhyitbreaksdown.
+g. Nowtrytoprovethat(B)followsfrom(A).
+9.25 Resolution can produce nonconstructive proofs for queries with variables, so we had
+tointroduce special mechanismstoextract definiteanswers. Explainwhythisissuedoesnot
+arisewithknowledgebasescontaining onlydefiniteclauses.
+9.26 We said in this chapter that resolution cannot be used to generate all logical conse-
+quences ofasetofsentences. Cananyalgorithm dothis?
+10
+CLASSICAL PLANNING
+Inwhichweseehowanagentcantakeadvantageofthestructureofaproblemto
+construct complexplansofaction.
+We have defined AI as the study 

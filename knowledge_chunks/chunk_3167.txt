@@ -1,0 +1,34 @@
+POMDP),658, Maxwell,J.,546,920,1081
+Maier,D.,229,358,1065 658 666,686 Mayer,A.,112,119,1075
+Mailath,G.,688,1081 Markovgames,857 Mayne,D.Q.,605,1075
+Majercik,S.M.,433,1081 Markovnetwork,553 Mazumder,P.,110,1088
+majorityfunction,731 Markovprocess,568 Mazurie,A.,605,1085
+makespan,402 Markovproperty,577,603,646 MBP,433
+Makov,U.E.,826,1090 Maron,M.E.,505,884,1081 Mc Allester,D.A.,25,156,191,198,
+Malave,V.L.,288,1082 Marr,D.,968,1081 394,395,472,855,856,1072,
+Maldague,P.,28,1064 Marriott,K.,228,1081 1077,1081,1090
+Mali,A.D.,432,1077 Marshall,A.W.,855,1077 MCC,24
+Malik,J.,604,755,762,941,942,953, Marsland,A.T.,195,1081 Mc Callum,A.,877,884,885,1069,
+967,968,1065,1070,1076, Marsland,S.,763,1081 1072,1077,1079,1081,1084,
+1081,1088 Martelli,A.,110,111,156,1081 1085,1090
+Malik,S.,277,1083 Marthi,B.,432,556,605,856,1081, Mc Carthy,J.,17 19,27,59,275,279,
+Manchak,D.,470,1091 1082,1085 314,395,440,471,1020,1031,
+Maneva,E.,278,1081 Martin,D.,941,967,1081 1081,1082
+Maniatis,P.,275,1080 Martin,J.H.,885,886,920 922,1077, Mc Cawley,J.D.,920,1082
+manipulator,971 1081 Mc Clelland,J.L.,24,1087
+Manna,Z.,314,1081 Martin,N.,358,1067 Mc Clure,M.,604,1065
+Mannila,H.,763,1074 Martin,P.,921,1076 Mc Corduck,P.,1042,1082
+1116 Index
+Mc Culloch,W.S.,15,16,20,278,727, metadata,870 MINIMAL-CONSISTENT-DET,786
+731,761,963,1080,1082 metalevel,1048 minimalmodel,459
+Mc Cune,W.,355,360,1082 metalevelstatespace,102 MINIMAX-DECISION,166
+Mc Dermott,D.,2,156,358,394,433, metaphor,906,921 minimaxalgorithm,165,670
+434,454,470,471,1068,1073, metaphysics,6 minimaxdecision,165
+1082 metareasoning,189 minimaxsearch,165 168,188,189
+Mc Dermott,J.,24,336,358,1082 decision-theoretic,1048 minimaxvalue,164,178
+Mc Donald,R.,288,920,1079 metarule,345 minimum
+Mc Eliece,R.J.,555,1082 meteorite,422,480 global,121
+Mc Gregor,J.J.,228,1082 metonymy,905,921 local,122
+Mc Guinness,D.,457,469,471,1064, Metropolis,N.,155,554,1082 minimum-remaining-values,216,333
+1066,1089 Metropolis Hastings,564 minimumdescriptionlength(MDL),
+Mc Ilrait

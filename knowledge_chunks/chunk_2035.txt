@@ -1,0 +1,32 @@
+executinganaction,theagentverifiesthattheremainingplan
+PLANMONITORING
+willstillsucceed. Goalmonitoring: beforeexecutinganaction,theagentcheckstoseeifthereisabetter
+GOALMONITORING
+setofgoalsitcouldbetryingtoachieve.
+In Figure 11.9 we see a schematic of action monitoring. The agent keeps track of both its
+original plan, wholeplan, and the part of the plan that has not been executed yet, which is
+denoted by plan. After executing the first few steps of the plan, the agent expects to be in
+state E. But the agent observes it is actually in state O. It then needs to repair the plan by
+findingsomepoint P ontheoriginalplanthatitcangetbackto. (Itmaybethat P isthegoal
+state,G.) Theagenttriestominimizethetotalcostoftheplan: therepairpart(from Oto P)
+plusthecontinuation (from P to G).
+424 Chapter 11. Planningand Actinginthe Real World
+Now let s return to the example problem of achieving a chair and table of matching
+color. Supposetheagentcomesupwiththisplan: Look At(Table),Look At(Chair),
+if Color(Table,c) Color(Chair,c)then No Op
+else Remove Lid(Can ),Look At(Can ),
+1 1
+if Color(Table,c) Color(Can ,c)then Paint(Chair,Can )
+1 1
+else REPLAN .
+Now the agent is ready to execute the plan. Suppose the agent observes that the table and
+can of paint are white and the chair is black. It then executes Paint(Chair,Can ). At this
+1
+point a classical planner would declare victory; the plan has been executed. But an online
+execution monitoring agent needs tocheck thepreconditions ofthe remaining emptyplan that the table and chair are the same color. Suppose the agent perceives that they do not
+have the same color in fact, the chair is now a mottled gray because the black paint is
+showing through. The agent then needs to figure out a position in whole plan to aim for
+and arepair action sequence toget there. Theagent notices thatthe current state isidentical
+to the precondition before the Paint(Chair,Can ) action, so the agent chooses the empty
+1
+sequence for repair and makes its plan be thesa

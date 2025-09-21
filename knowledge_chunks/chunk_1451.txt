@@ -1,0 +1,24 @@
+ject ofstudy. Butsomerecentworkin AIsuggests thatformanyproblems,it
+makes more sense to worry about the data and be less picky about what algorithm to apply.
+This is true because of the increasing availability of very large data sources: for example,
+trillionsofwordsof Englishandbillionsofimagesfromthe Web(Kilgarriffand Grefenstette,
+2006);orbillionsofbasepairsofgenomicsequences (Collinsetal.,2003).
+One influential paper in this line was Yarowsky s (1995) work on word-sense disam-
+biguation: giventheuseoftheword plant inasentence, doesthatrefertofloraorfactory?
+Previous approaches to the problem had relied on human-labeled examples combined with
+machine learning algorithms. Yarowsky showed that the task can be done, with accuracy
+above 96 , with no labeled examples at all. Instead, given a very large corpus of unanno-
+tatedtextandjustthedictionary definitions ofthetwosenses works, industrial plant and flora, plant life one can label examples in the corpus, and from there bootstrap to learn
+28 Chapter 1. Introduction
+new patterns that help label new examples. Banko and Brill (2001) show that techniques
+like this perform even better as the amount of available text goes from a million words to a
+billion and that the increase in performance from using more data exceeds any difference in
+algorithm choice; a mediocre algorithm with 100 million words of unlabeled training data
+outperforms thebestknownalgorithm with1millionwords.
+Asanotherexample, Haysand Efros(2007)discuss theproblem offillinginholesina
+photograph. Suppose you use Photoshop to mask out an ex-friend from a group photo, but
+now you need to fill in the masked area with something that matches the background. Hays
+and Efrosdefinedanalgorithmthatsearchesthroughacollectionofphotostofindsomething
+that will match. They found the performance of their algorithm was poor when they used
+a collection of only ten thousand photos, but crossed a threshold into excellent performance
+whentheygrewthecollection totwomillionpho

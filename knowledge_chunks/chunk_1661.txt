@@ -1,0 +1,34 @@
+e features, taken
+together,definevariouscategoriesorequivalenceclassesofstates: thestatesineachcategory
+have the same values for all the features. For example, one category contains all two-pawn
+vs. one-pawn endgames. Any given category, generally speaking, will contain some states
+that lead to wins, some that lead to draws, and some that lead to losses. The evaluation
+function cannot knowwhichstatesarewhich,butitcanreturnasinglevaluethatreflectsthe
+proportion of states with each outcome. Forexample, suppose our experience suggests that
+72 ofthe states encountered inthetwo-pawns vs. one-pawn category lead toawin(utility 1); 20 to a loss (0), and 8 to a draw (1 2). Then a reasonable evaluation for states in
+the category is the expected value: (0.72 1) (0.20 0) (0.08 1 2) 0.76. In
+EXPECTEDVALUE
+principle, the expected value canbe determined foreach category, resulting inan evaluation
+function that works for any state. As with terminal states, the evaluation function need not
+returnactualexpectedvaluesaslongasthe orderingofthestatesisthesame.
+In practice, this kind of analysis requires too many categories and hence too much
+experience to estimate all the probabilities of winning. Instead, most evaluation functions
+compute separate numerical contributions from each feature and then combine them to find
+the total value. Forexample, introductory chess books give an approximate material value
+MATERIALVALUE
+foreachpiece: eachpawnisworth1,aknightorbishopisworth3,arook5,andthequeen9.
+Otherfeatures suchas good pawnstructure and kingsafety mightbeworthhalfapawn,
+say. Thesefeaturevaluesarethensimplyaddeduptoobtaintheevaluation oftheposition.
+Asecure advantage equivalent toapawngivesasubstantial likelihood ofwinning, and
+asecureadvantageequivalenttothreepawnsshouldgivealmostcertainvictory,asillustrated
+in Figure5.8(a). Mathematically, thiskindofevaluation functioniscalledaweightedlinear
+WEIGHTEDLINEAR functionbecauseitcanbeexpressed as
+FUNCTION
+(cid:12)n
+EVAL(s) w
+1
+f
+1
+(s) w
+2
+f

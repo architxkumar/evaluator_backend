@@ -1,0 +1,37 @@
+RESOLUTION iscomplete.
+RESOLUTION Todothis,weintroducetheresolutionclosure RC(S)ofasetofclauses S,whichistheset
+CLOSURE
+of all clauses derivable by repeated application of the resolution rule to clauses in S ortheir
+derivatives. The resolution closure is what PL-RESOLUTION computes as the final value of
+thevariableclauses. Itiseasytoseethat RC(S)mustbefinite,becausethereareonlyfinitely
+manydistinctclausesthatcanbeconstructed outofthesymbols P ,...,P thatappearin S.
+1 k
+(Noticethatthiswouldnotbetruewithoutthefactoring stepthatremovesmultiplecopiesof
+literals.) Hence, PL-RESOLUTION alwaysterminates.
+The completeness theorem for resolution in propositional logic is called the ground
+GROUND
+resolution theorem:
+RESOLUTION
+THEOREM
+If a set of clauses is unsatisfiable, then the resolution closure of those clauses
+containstheemptyclause.
+This theorem is proved by demonstrating its contrapositive: if the closure RC(S) does not
+256 Chapter 7. Logical Agents
+contain the empty clause, then S is satisfiable. In fact, we can construct a model for S with
+suitable truthvaluesfor P ,...,P . Theconstruction procedure isasfollows:
+1 k
+Forifrom1tok, Ifaclausein RC(S)containstheliteral P andallitsotherliteralsarefalseunder
+i
+theassignment chosenfor P 1 ,...,P i 1 ,thenassignfalse to P i . Otherwise,assign true to P .
+i
+This assignment to P ,...,P is a model of S. To see this, assume the opposite that, at
+1 k
+some stage i in the sequence, assigning symbol P causes some clause C to become false.
+i
+Forthis tohappen, itmust bethe case that all the other literals in C mustalready have been
+falsifiedbyassignments to P 1 ,...,P i 1 . Thus,C mustnowlooklikeeither(false false false P )orlike(false false false P ). Ifjustoneofthesetwoisin RC(S),then
+i i
+the algorithm will assign the appropriate truth value to P to make C true, so C can only be
+i
+falsifiedifbothoftheseclausesarein RC(S). Now,since RC(S)isclosedunderresolution,
+itwillcontaintheresolventofthesetwoclauses,andthatresolventwillhaveallo

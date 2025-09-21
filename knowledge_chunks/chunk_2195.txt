@@ -1,0 +1,32 @@
+ ordering, but several good heuristics
+are available. One fairly effective method is a greedy one: eliminate whichever variable
+minimizesthesizeofthenextfactortobeconstructed.
+Let us consider one more query: P(John Calls Burglary true). As usual, the first
+stepistowriteoutthenestedsummation:
+(cid:12) (cid:12) (cid:12)
+P(J b) P(b) P(e) P(a b,e)P(J a) P(m a).
+e a m (cid:2)
+Evaluating thisexpression from right toleft, wenotice something interesting: P(m a)
+m
+isequal to1by definition! Hence, there wasnoneed toinclude itin thefirstplace; the vari-
+able M is irrelevant to this query. Another way of saying this is that the result of the query
+P(John Calls Burglary true) is unchanged if we remove Mary Calls from the network
+altogether. Ingeneral,wecanremoveanyleafnodethatisnotaqueryvariableoranevidence
+variable. Afteritsremoval, theremaybesomemoreleafnodes, andthesetoomaybeirrele-
+vant. Continuing this process, we eventually find that every variable that is not an ancestor
+of a query variable or evidence variable is irrelevant to the query. A variable elimination
+algorithm cantherefore removeallthesevariablesbeforeevaluating thequery.
+14.4.3 The complexityofexact inference
+Thecomplexityofexactinferencein Bayesiannetworksdependsstronglyonthestructureof
+thenetwork. Theburglarynetworkof Figure14.2belongstothefamilyofnetworksinwhich
+thereisatmostoneundirected pathbetweenanytwonodes inthenetwork. Thesearecalled
+singlyconnectednetworksorpolytrees,andtheyhaveaparticularlyniceproperty: Thetime
+SINGLYCONNECTED
+andspacecomplexityofexactinferenceinpolytreesislinearinthesizeofthenetwork. Here,
+POLYTREE
+the size is defined as the number of CPT entries; if the number of parents of each node is
+bounded byaconstant, thenthecomplexity willalsobelinearinthenumberofnodes.
+MULTIPLY Formultiplyconnectednetworks,suchasthatof Figure14.12(a),variableelimination
+CONNECTED
+can have exponential time and space complexity in the worst case, even when the number
+of parents per node is bounded. This is n

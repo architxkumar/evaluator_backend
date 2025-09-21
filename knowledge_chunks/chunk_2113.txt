@@ -1,0 +1,27 @@
+out
+negation has a unique minimal model. Recent years have seen renewed interest in applica-
+tionsofnonmonotonic logicstolarge-scale knowledgerepresentation systems. The BENINQ
+systemsforhandling insurance-benefit inquiries wasperhaps thefirstcommercially success-
+fulapplication ofanonmonotonic inheritance system (Morgenstern, 1998). Lifschitz (2001)
+discussestheapplicationofanswersetprogrammingtoplanning. Avarietyofnonmonotonic
+reasoning systems based on logic programming are documented in the proceedings of the
+conferences on Logic Programmingand Nonmonotonic Reasoning(LPNMR).
+The study of truth maintenance systems began with the TMS (Doyle, 1979) and RUP
+(Mc Allester, 1980) systems, both of which were essentially JTM Ss. Forbus and de Kleer
+(1993) explain in depth how TM Ss can be used in AI applications. Nayak and Williams
+(1997) show howanefficientincremental TM Scalled an ITM Smakes itfeasible toplan the
+operations ofa NAS Aspacecraft inrealtime.
+Thischaptercouldnotcovereveryareaofknowledgerepresentationindepth. Thethree
+principal topicsomittedarethefollowing:
+QUALITATIVE Qualitativephysics: Qualitativephysicsisasubfieldofknowledgerepresentationconcerned
+PHYSICS
+specificallywithconstructingalogical,nonnumerictheoryofphysicalobjectsandprocesses.
+The term was coined by Johan de Kleer (1975), although the enterprise could be said to
+have started in Fahlman s (1974) BUILD, a sophisticated planner for constructing complex
+towers of blocks. Fahlman discovered in the process of designing it that most of the effort
+(80 , by his estimate) went into modeling the physics of the blocks world to calculate the
+stability of various subassemblies of blocks, rather than into planning per se. He sketches a
+hypothetical naive-physics-like processtoexplainwhyyoungchildrencansolve BUILD-like
+problemswithoutaccesstothehigh-speedfloating-pointarithmeticusedin BUILD sphysical
+modeling. Hayes (1985a) uses histories four-dimensional slices of space-time similarto
+Davidson s events to c

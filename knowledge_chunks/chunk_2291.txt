@@ -1,0 +1,49 @@
+t us now consider a more interesting example: monitoring a battery-powered robot
+moving in the X Y plane, as introduced at the end of Section 15.1. First, we need state
+variables, which will include both X (X ,Y ) for position and X (X ,Y ) for velocity.
+t t t t t t
+We assume some method of measuring position perhaps a fixed camera or onboard GPS
+(Global Positioning System) yielding measurements Z . Theposition atthenext timestep
+t
+depends on the current position and velocity, as in the standard Kalman filter model. The
+velocity at the next step depends on the current velocity and the state of the battery. We
+add Battery to represent the actual battery charge level, which has as parents the previous
+t
+592 Chapter 15. Probabilistic Reasoning over Time
+BMeter
+1
+R P(R )
+P(R ) 0 1
+0 t 0.7 Battery Battery
+0.7 f 0.3 0 1
+Rain Rain
+0 1 X X
+0 1
+R P(U )
+1 1
+t 0.9
+XXt
+0
+X
+1
+f 0.2
+Umbrella 1 Z 1
+(a) (b)
+Figure 15.13 (a) Specification of the prior, transition model, and sensor model for the
+umbrella DBN.Allsubsequentslicesareassumedtobecopiesofslice1. (b)Asimple DBN
+forrobotmotioninthe X Yplane.
+batterylevelandthevelocity,andweadd BMeter ,whichmeasuresthebatterychargelevel.
+t
+Thisgivesusthebasicmodelshownin Figure15.13(b).
+It is worth looking in more depth at the nature of the sensor model for BMeter . Let
+t
+us suppose, for simplicity, that both Battery and BMeter can take on discrete values 0
+t t
+through 5. Ifthemeterisalwaysaccurate, thenthe CPTP(BMeter Battery )shouldhave
+t t
+probabilities of 1.0 along the diagonal and probabilities of 0.0elsewhere. In reality, noise
+always creeps into measurements. For continuous measurements, a Gaussian distribution
+with a small variance might be used.5 For our discrete variables, we can approximate a
+Gaussian using a distribution in which the probability of error drops off in the appropriate
+way, so that the probability of a large error is very small. We use the term Gaussian error
+GAUSSIANERROR modeltocoverboththecontinuous anddiscrete ve

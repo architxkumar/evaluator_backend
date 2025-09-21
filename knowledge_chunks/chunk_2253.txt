@@ -1,0 +1,31 @@
+ probability distribution, is
+indetailed balancewith .
+14.21 Three soccer teams A, B, and C, play each other once. Each match is between two
+teams, and can be won, drawn, orlost. Each team has afixed, unknown degree ofquality anintegerrangingfrom0to3 andtheoutcomeofamatchdependsprobabilistically onthe
+difference inquality betweenthetwoteams.
+a. Constructarelationalprobabilitymodeltodescribethis domain,andsuggestnumerical
+valuesforallthenecessary probability distributions.
+b. Constructtheequivalent Bayesiannetworkforthethreematches.
+c. Suppose that in the first two matches A beats B and draws with C. Using an exact
+inference algorithm ofyourchoice, compute theposterior distribution forthe outcome
+ofthethirdmatch.
+d. Suppose there are n teams in the league and we have the results for all but the last
+match. Howdoesthecomplexityofpredicting thelastgamevarywithn?
+e. Investigate theapplication of MCM Ctothisproblem. Howquicklydoesitconverge in
+practiceandhowwelldoesitscale?
+15
+PROBABILISTIC
+REASONING OVER TIME
+Inwhichwetrytointerpret thepresent, understand thepast,andperhaps predict
+thefuture, evenwhenverylittleiscrystalclear.
+Agentsinpartiallyobservableenvironmentsmustbeabletokeeptrackofthecurrentstate,to
+theextentthattheirsensorsallow. In Section4.4weshowedamethodologyfordoingthat: an
+agentmaintainsabeliefstatethatrepresentswhichstatesoftheworldarecurrentlypossible.
+From the belief state and a transition model, the agent can predict how the world might
+evolve in the next timestep. From the percepts observed and a sensor model, the agent can
+updatethebeliefstate. Thisisapervasiveidea: in Chapter4beliefstateswererepresentedby
+explicitly enumerated sets of states, whereas in Chapters 7 and 11 they were represented by
+logicalformulas. Thoseapproaches definedbeliefstatesintermsofwhichworldstateswere
+possible, butcouldsaynothing aboutwhichstateswerelikelyorunlikely. Inthischapter, we
+useprobability theorytoquantify thedegreeofbeliefinelementsofthebeliefstate.
+As we show in S

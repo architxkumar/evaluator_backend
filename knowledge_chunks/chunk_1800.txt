@@ -1,0 +1,35 @@
+
+are about 20 times more difficult to solve than those at a ratio of 3.3. The underconstrained
+problems are easiest to solve (because it is so easy to guess a solution); the overconstrained
+problemsarenotaseasyastheunderconstrained, butstillaremucheasierthantheonesright
+atthethreshold.
+Section7.7. Agents Basedon Propositional Logic 265
+7.7 AGENTS BASED ON PROPOSITIONAL LOGIC
+In this section, webring together what we have learned so far in order to construct wumpus
+worldagentsthatusepropositionallogic. Thefirststepistoenabletheagenttodeduce,tothe
+extent possible, thestate oftheworldgiven itspercept history. Thisrequires writing downa
+completelogicalmodeloftheeffectsofactions. Wealsoshowhowtheagentcankeeptrackof
+the world efficiently without going back into the percept history for each inference. Finally,
+we show how the agent can use logical inference to construct plans that are guaranteed to
+achieveitsgoals.
+7.7.1 The current stateofthe world
+As stated at the beginning of the chapter, a logical agent operates by deducing what to do
+from a knowledge base of sentences about the world. The knowledge base is composed of
+axioms general knowledge about how the world works and percept sentences obtained
+fromtheagent sexperienceinaparticularworld. Inthissection,wefocusontheproblemof
+deducing thecurrentstateofthewumpusworld wheream I,is thatsquaresafe,andsoon.
+Webegancollecting axioms in Section 7.4.3. Theagent knows thatthe starting square
+containsnopit( P )andnowumpus( W ). Furthermore, foreachsquare, itknowsthat
+1,1 1,1
+thesquareisbreezyifandonlyifaneighboringsquarehasapit;andasquareissmellyifand
+onlyifaneighboring squarehasawumpus. Thus,weinclude alargecollection ofsentences
+ofthefollowingform:
+B (P P )
+1,1 1,2 2,1
+S (W W )
+1,1 1,2 2,1 Theagentalsoknowsthatthereisexactlyonewumpus. Thisisexpressed intwoparts. First,
+wehavetosaythatthereisatleastonewumpus:
+W W W W .
+1,1 1,2 4,3 4,4
+Then, wehave tosaythat there is atmostonewumpus. Foreach pairoflocations, weadd a
+sentence s

@@ -1,0 +1,28 @@
+lse about the grammar remains the same, which is en-
+couraging news; it suggests we are on the right track if wecan so easily add a complication
+like the tense of verbs (although we have just scratched the surface of a complete grammar
+fortimeandtense). Itisalsoencouraging thatthedistinction betweenprocesses anddiscrete
+eventsthatwemadeinourdiscussion ofknowledge representation in Section12.3.1isactu-
+ally reflected in language use. We can say John slept a lot last night, where Sleeping is a
+process category, but it isodd to say John found aunicorn a lot last night, where Finding
+is a discrete event category. A grammar would reflect that fact by having a low probability
+foraddingtheadverbialphrase alot todiscrete events.
+Quantification: Consider the sentence Every agent feels abreeze. Thesentence has
+QUANTIFICATION
+only one syntactic parse under E , but it is actually semantically ambiguous; the preferred
+0
+904 Chapter 23. Natural Languagefor Communication
+meaning is For every agent there exists a breeze that the agent feels, but an acceptable
+alternativemeaningis Thereexistsabreezethateveryagentfeels. 5 Thetwointerpretations
+canberepresented as a a Agents b b Breezes e e Feel(a,b) During(Now,e); b b Breezes a a Agents e e Feel(a,b) During(Now,e).
+The standard approach to quantification is for the grammar to define not an actual logical
+QUASI-LOGICAL semantic sentence, butrathera quasi-logical form thatisthenturned into alogical sentence
+FORM
+byalgorithmsoutside oftheparsing process. Thosealgorithms canhavepreference rulesfor
+preferring one quantifier scope overanother preferences that need not be reflected directly
+inthegrammar.
+Pragmatics: We have shown how an agent can perceive a string of words and use a
+PRAGMATICS
+grammar to derive a set of possible semantic interpretations. Now we address the problem
+of completing the interpretation by adding context-dependent information about the current
+situation. The most obvious need for pragmatic information is in resolv

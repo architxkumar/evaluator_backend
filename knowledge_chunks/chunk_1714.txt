@@ -1,0 +1,37 @@
+ithonly binary constraints; thismakes the algorithms simpler.
+Anotherwaytoconvertann-ary CS Ptoabinaryoneisthedualgraphtransformation: create
+DUALGRAPH
+anewgraphinwhichtherewillbeonevariableforeachconstraint intheoriginal graph, and
+Section6.1. Defining Constraint Satisfaction Problems 207
+T W O F T U W R O T W O
+F O U R
+C C C
+3 2 1
+(a) (b)
+Figure6.2 (a)Acryptarithmeticproblem.Eachletterstandsforadistinctdigit;theaimis
+tofindasubstitutionofdigitsforletterssuchthattheresultingsumisarithmeticallycorrect,
+withtheaddedrestrictionthatnoleadingzeroesareallowed. (b)Theconstrainthypergraph
+for the cryptarithmetic problem, showing the Alldiff constraint (square box at the top) as
+wellasthecolumnadditionconstraints(foursquareboxesinthemiddle). Thevariables C ,
+1
+C ,and C representthecarrydigitsforthethreecolumns.
+2 3
+onebinaryconstraintforeachpairofconstraintsintheoriginalgraphthatsharevariables. For
+example, if the original graph has variables X,Y,Z and constraints (cid:16)(X,Y,Z),C (cid:17) and
+1
+(cid:16)(X,Y),C (cid:17) then the dual graph would have variables C ,C with the binary constraint
+2 1 2
+(cid:16)(X,Y),R (cid:17),where(X,Y)arethesharedvariablesand R isanewrelationthatdefinesthe
+1 1
+constraint betweenthesharedvariables, asspecifiedbythe original C and C .
+1 2
+Therearehowevertworeasonswhywemightpreferaglobalconstraintsuchas Alldiff
+rather than a set of binary constraints. First, it is easier and less error-prone to write the
+problem description using Alldiff. Second,itispossible todesignspecial-purpose inference
+algorithmsforglobalconstraintsthatarenotavailableforasetofmoreprimitiveconstraints.
+Wedescribetheseinference algorithmsin Section6.2.5.
+Theconstraintswehavedescribedsofarhaveallbeenabsoluteconstraints, violationof
+PREFERENCE which rules out apotential solution. Many real-world CS Psinclude preference constraints
+CONSTRAINTS
+indicating whichsolutions arepreferred. Forexample,ina university class-scheduling prob-
+lem there are absolute constraints that no prof

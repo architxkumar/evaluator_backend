@@ -1,0 +1,13 @@
+9Workshopon Text Mining:Founda- Kahneman,D.and Tversky,A.(1979). Prospect
+Jaakkola,T.,Singh,S.P.,and Jordan,M.I.(1995). tions,Techniques,and Applications,pp.52 63. theory:Ananalysisofdecisionunderrisk. Econo-
+Reinforcementlearningalgorithmforpartiallyob- metrica,pp.263 291.
+servable Markovdecisionproblems. In NIPS7,pp. Jones,T.(2007). Artificial Intelligence: ASystems
+345 352. Approach.Infinity Science Press. Kaindl, H. and Khorsand, A. (1994). Memory-
+boundedbidirectionalsearch.In AAAI-94,pp.1359 Jackson,F.(1982). Epiphenomenalqualia. Philo- Jonsson,A.,Morris,P.,Muscettola,N.,Rajan,K., 1364.
+sophical Quarterly,32,127 136. and Smith, B.(2000). Planningininterplanetary
+J p a ro ff g a ra r m ,J m .a in n g d . L In as P se ro z, c. J. F - o L u . r ( t 1 e 9 e 8 n 7 th ). A C C o M ns C tr o a n in fe t r l e o n g c ic e s 1 p 8 a 6 c . e: Theoryandpractice. In AIPS-00,pp.177 8 K in 2 g a , l 3 m a 5 n a d n 4 p , 6 r R . ed . i ( c 1 t 9 io 6 n 0) p . r A ob n le e m w s a . pp J. ro B a a c s h ic to E l n in g e in ar ee fi r l i t n e g r- ,
+on Principlesof Programming Languages,pp.111 Jordan,M.I.(1995). Whythelogisticfunction?
+119.Associationfor Computing Machinery. atutorialdiscussiononprobabilitiesandneuralnet- Kambhampati,S.(1994). Exploitingcausalstruc-
+J R a . f H fa . r C , . J ( ., 19 M 92 ic ) h . a T y h lo e v C , L S. P , (R St ) u l c a k n e g y u , a P g . e J a ., nd an s d ys Y te a m p . , w re o p r o k r s t . 95 C 03 o , m M pu a t s a s t a i c o h n u a s l e c tt o s g I n n i s ti t v it e ut s e c o ie f n T c e e ch te n c o h l n o i g c y a . l t r u eu re se t . o C c o o m n p tr u o t l at r io et n r a ie l v I a n l te a ll n i d gen re c fi e t , t 1 in 0 g ,2 d 1 u 3 r in 2 g 44 p . lan
+ACM Transactionson Programming Languagesand Jordan,M.I.(2005). Dirichletprocesses,Chinese Kambhampati,S.,Mali,A.D.,and Srivastava,B.
+Systems,14(3),339 395. restaurantprocessesandallthat. Tutorialpresenta- (1998). Hybridplanningforpartiallyhiera

@@ -1,0 +1,26 @@
+e probabilistic roadmap, a skeletonization
+ROADMAP
+approach that offers morepossible routes, andthus deals betterwithwide-open spaces. Fig-
+ure25.18(b)showsanexampleofaprobabilisticroadmap. Thegraphiscreatedbyrandomly
+generating a large number of configurations, and discarding those that do not fall into free
+space. Two nodes are joined by an arc if it is easy to reach one node from the other for
+example, by a straight line in free space. The result of all this is a randomized graph in the
+robot s free space. If we add the robot s start and goal configurations to this graph, path
+planning amounts to adiscrete graph search. Theoretically, this approach is incomplete, be-
+cause a bad choice of random points may leave us without any paths from start to goal. It
+is possible to bound the probability of failure in terms of the number of points generated
+and certain geometric properties of the configuration space. It is also possible to direct the
+generation of sample points towards the areas where a partial search suggests that a good
+path may be found, working bidirectionally from both the start and the goal positions. With
+theseimprovements,probabilisticroadmapplanningtendstoscalebettertohigh-dimensional
+configuration spacesthanmostalternative path-planning techniques.
+25.5 PLANNING UNCERTAIN MOVEMENTS
+Noneoftherobotmotion-planning algorithmsdiscussedthusfaraddressesakeycharacteris-
+ticofroboticsproblems: uncertainty. Inrobotics,uncertaintyarisesfrompartialobservability
+oftheenvironment andfromthestochastic (orunmodeled) effectsoftherobot s actions. Er-
+rorscanalsoarisefrom theuseofapproximation algorithms suchasparticle filtering, which
+doesnotprovide therobotwithanexactbelief stateevenifthestochastic nature oftheenvi-
+ronmentismodeledperfectly.
+Most of today s robots use deterministic algorithms for decision making, such as the
+path-planning algorithms of the previous section. To do so, it is common practice to extract
+the most likely state from the probability distri

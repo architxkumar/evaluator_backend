@@ -1,0 +1,27 @@
+not competitive with human experts. The TD-GAMMON
+project was an attempt to learn from self-play alone. The only reward signal was given at
+the end of each game. The evaluation function was represented by a fully connected neural
+network with a single hidden layer containing 40 nodes. Simply by repeated application of
+Equation (21.12), TD-GAMMON learned toplayconsiderably betterthan NEUROGAMMON,
+eventhoughtheinputrepresentation contained justtheraw boardpositionwithnocomputed
+features. Thistookabout200,000traininggamesandtwoweeksofcomputertime. Although
+that may seem like a lot of games, it is only a vanishingly small fraction of the state space.
+Whenprecomputedfeatureswereaddedtotheinputrepresentation,anetworkwith80hidden
+nodes wasable, after300,000 training games, toreach astandard ofplay comparable tothat
+of the top three human players worldwide. Kit Woolsey, a top player and analyst, said that Thereisnoquestion inmymindthatitspositional judgment isfarbetterthanmine. 21.6.2 Applicationto robot control
+The setup for the famous cart pole balancing problem, also known as the inverted pendu-
+CART POLE
+INVERTED lum, is shown in Figure 21.9. The problem is to control the position x of the cart so that
+PENDULUM
+the pole stays roughly upright ( 2), while staying within the limits of the cart track
+as shown. Several thousand papers in reinforcement learning and control theory have been
+published on this seemingly simple problem. The cart pole problem differs from the prob-
+lemsdescribedearlierinthatthestatevariables
+x, ,x ,and arecontinuous. Theactionsare
+BANG-BANG usuallydiscrete: jerkleftorjerkright,theso-called bang-bangcontrolregime.
+CONTROL
+The earliest work on learning for this problem was carried out by Michie and Cham-
+bers(1968). Their BOXES algorithm wasabletobalancethepoleforoveranhourafteronly
+about30trials. Moreover,unlikemanysubsequentsystems, BOXE Swasimplementedwitha
+852 Chapter 21. Reinforcement Learning
+realcartandpole,notasimulation. Thealgorithmfirstdi

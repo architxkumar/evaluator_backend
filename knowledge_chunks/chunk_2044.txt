@@ -1,0 +1,29 @@
+he joint solution is misleading.
+Forourdoublesteam,morethanonejointsolutionexists:
+PLAN 2:
+A: Go(A,Left Net),No Op(A) B : Go(B,Right Baseline),Hit(B,Ball) .
+Section11.4. Multiagent Planning 429
+Ifbothagentscanagreeoneitherplan1orplan2,thegoalwillbeachieved. Butif Achooses
+plan2and Bchoosesplan1,thennobodywillreturntheball. Conversely,if Achooses1and
+B chooses 2,then theywillboth trytohittheball. Theagents mayrealize this, but howcan
+theycoordinate tomakesuretheyagreeontheplan?
+Oneoption is to adopt aconvention before engaging in joint activity. A convention is
+CONVENTION
+anyconstraintontheselectionofjointplans. Forexample, theconvention sticktoyourside
+ofthecourt wouldrule outplan 1,causing thedoubles partners toselect plan 2. Driverson
+aroadfacetheproblemofnotcollidingwitheachother;this is(partially)solvedbyadopting
+the convention stay on the right side of the road in most countries; the alternative, stay
+on the left side, works equally well as long as all agents in an environment agree. Similar
+considerations applytothedevelopmentofhumanlanguage, wheretheimportantthingisnot
+which language each individual should speak, but the fact that a community all speaks the
+samelanguage. Whenconventions arewidespread, theyarecalled sociallaws.
+SOCIALLAWS
+In the absence of a convention, agents can use communication to achieve common
+knowledge of a feasible joint plan. For example, a tennis player could shout Mine! or Yours! toindicateapreferredjointplan. Wecovermechanismsforcommunicationinmore
+depth in Chapter 22, where we observe that communication does not necessarily involve a
+verbalexchange. Forexample,oneplayercancommunicateapreferredjointplantotheother
+simply by executing the first part of it. If agent Aheads forthe net, then agent B is obliged
+togobacktothebaselinetohittheball,becauseplan2istheonlyjointplanthatbeginswith
+A s heading forthe net. This approach to coordination, sometimes called planrecognition,
+PLANRECOGNITION
+workswhenasingleaction(orshortsequence ofactio

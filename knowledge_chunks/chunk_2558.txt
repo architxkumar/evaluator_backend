@@ -1,0 +1,33 @@
+eismeasuredin Figure18.25hasfour
+hidden nodes. Thisnumberwaschosen somewhatarbitrarily. Useacross-validation method
+tofindthebestnumberofhiddennodes.
+18.25 Considertheproblemofseparating N datapointsintopositiveandnegativeexamples
+using a linear separator. Clearly, this can always be done for N 2 points on a line of
+dimension d 1, regardless of how the points are labeled or where they are located (unless
+thepointsareinthesameplace).
+a. Showthatitcanalwaysbedonefor N 3pointsonaplaneofdimensiond 2,unless
+theyarecollinear.
+b. Showthatitcannot alwaysbedonefor N 4pointsonaplaneofdimensiond 2.
+c. Showthatitcanalwaysbedonefor N 4pointsinaspaceofdimension d 3,unless
+theyarecoplanar.
+d. Showthatitcannot alwaysbedonefor N 5pointsinaspaceofdimension d 3.
+e. The ambitious student may wish to prove that N points in general position (but not
+N 1)arelinearlyseparable inaspaceofdimension N 1.
+19
+KNOWLEDGE IN
+LEARNING
+Inwhichweexaminetheproblem oflearning whenyouknowsomething already.
+Inalloftheapproaches tolearning described intheprevious chapter, theideaistoconstruct
+afunction thathastheinput output behaviorobserved inthedata. Ineachcase,thelearning
+methodscanbeunderstoodassearchingahypothesisspacetofindasuitablefunction,starting
+from only a very basic assumption about the form of the function, such as second-degree
+polynomial or decision tree and perhaps a preference for simpler hypotheses. Doing this
+amounts to saying that before you can learn something new, you must first forget (almost)
+everything you know. In this chapter, we study learning methods that can take advantage
+of prior knowledge about the world. In most cases, the prior knowledge is represented
+PRIORKNOWLEDGE
+as general first-order logical theories; thus for the first time we bring together the work on
+knowledgerepresentation andlearning.
+19.1 A LOGICAL FORMULATION OF LEARNING
+Chapter 18 defined pure inductive learning as a process of finding a hypothesis that agrees
+withtheobservedexamples. Here,wespecializethisd

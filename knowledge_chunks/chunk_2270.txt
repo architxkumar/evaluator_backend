@@ -1,0 +1,42 @@
+ariables: fv,avectorofforwardmessagesforsteps0,...,t
+b,arepresentationofthebackwardmessage,initiallyall1s
+sv,avectorofsmoothedestimatesforsteps1,...,t
+fv 0 prior
+fori 1totdo
+fv i FORWARD(fv i 1 ,ev i )
+fori tdownto1do
+sv i NORMALIZE(fv i b)
+b BACKWARD(b,ev i )
+returnsv
+Figure15.4 Theforward backwardalgorithmforsmoothing: computingposteriorprob-
+abilities of a sequence of states given a sequence of observations. The FORWARD and
+BACKWAR Doperatorsaredefinedby Equations(15.5)and(15.9),respectively.
+Section15.2. Inference in Temporal Models 577
+Rain Rain Rain Rain Rain
+1 2 3 4 5
+true true true true true
+(a)
+false false false false false
+Umbrellat true true false true true
+.8182 .5155 .0361 .0334 .0210
+(b)
+.1818 .0491 .1237 .0173 .0024
+m m m m m
+1:1 1:2 1:3 1:4 1:5
+Figure15.5 (a)Possiblestatesequencesfor Raintcanbeviewedaspathsthroughagraph
+of the possible states ateach time step. (States are shownas rectanglesto avoid confusion
+with nodes in a Bayes net.) (b) Operationof the Viterbi algorithm for the umbrella obser-
+vationsequence true,true,false,true,true . Foreacht, wehaveshownthevaluesofthe
+messagem 1:t,whichgivestheprobabilityofthebestsequencereachingeachstateattimet.
+Also,foreachstate,theboldarrowleadingintoitindicatesitsbestpredecessorasmeasured
+bytheproductoftheprecedingsequenceprobabilityandthetransitionprobability.Following
+theboldarrowsbackfromthemostlikelystateinm givesthemostlikelysequence.
+1:5
+butions over single time steps, whereas to find the most likely sequence we must consider
+joint probabilities over all the time steps. The results can in fact be quite different. (See
+Exercise15.4.)
+There is a linear-time algorithm for finding the most likely sequence, but it requires a
+littlemorethought. Itreliesonthesame Markovpropertythatyieldedefficientalgorithmsfor
+filteringandsmoothing. Theeasiestwaytothinkabouttheproblemistovieweachsequence
+as a path through a graph whose nodes are the possible states at each time step. Such a
+graph is shown for the umbrella wo

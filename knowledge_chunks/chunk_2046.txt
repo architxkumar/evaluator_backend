@@ -1,0 +1,29 @@
+eration thatmaximizestheweightedsumofthesethreecomponents:
+430 Chapter 11. Planningand Actinginthe Real World
+(a) (b) (c)
+Figure11.11 (a)Asimulatedflockofbirds,using Reynold sboidsmodel.Imagecourtesy
+Giuseppe Randazzo,novastructura.net. (b)An actualflock ofstarlings. Imageby Eduardo
+(pastaboy sleeps on flickr). (c) Two competitiveteams of agents attempting to capture the
+towersinthe NER Ogame.Imagecourtesy Risto Miikkulainen.
+1. Cohesion: apositivescoreforgettingclosertotheaverageposition oftheneighbors
+2. Separation: anegativescoreforgetting tooclosetoanyoneneighbor
+3. Alignment: apositivescoreforgetting closertotheaverageheadingoftheneighbors
+EMERGENT If all the boids execute this policy, the flock exhibits the emergent behavior of flying as a
+BEHAVIOR
+pseudorigid body with roughly constant density that does not disperse over time, and that
+occasionally makessudden swooping motions. Youcanseeastillimages in Figure11.11(a)
+and compare it to an actual flock in (b). As with ants, there is no need for each agent to
+possessajointplanthatmodelstheactionsofotheragents.
+Themostdifficultmultiagentproblemsinvolvebothcooperationwithmembersofone s
+own team and competition against members of opposing teams, all without centralized con-
+trol. Weseethisingamessuchasroboticsoccerorthe NER Ogameshownin Figure11.11(c),
+inwhich two teamsof software agents compete to capture the control towers. Asyet, meth-
+ods for efficient planning in these kinds of environments for example, taking advantage of
+loosecoupling are intheirinfancy.
+11.5 SUMMARY
+Thischapterhasaddressedsomeofthecomplicationsofplanningandactingintherealworld.
+Themainpoints: Manyactionsconsumeresources,suchasmoney,gas,orrawmaterials. Itisconvenient
+to treat these resources as numeric measures in a pool rather than try to reason about,
+say, each individual coin and bill in the world. Actions can generate and consume
+resources, anditisusually cheapandeffective tocheck partialplans forsatisfaction of
+resourceconstraints befor

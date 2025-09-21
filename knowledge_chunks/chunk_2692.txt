@@ -1,0 +1,30 @@
+l theagent knowsabout astate isthe
+set of available actions and the utilities of the resulting states (or of state-action pairs). But
+it is also possible to apply reinforcement learning to structured representations rather than
+RELATIONAL
+atomicones;thisiscalledrelational reinforcementlearning(Tadepallietal.,2004).
+REINFORCEMENT
+LEARNING
+Thesurveyby Kaelblingetal.(1996)providesagoodentrypointtotheliterature. The
+textby Suttonand Barto(1998),twoofthefield spioneers,focusesonarchitecturesandalgo-
+rithms,showinghowreinforcement learning weavestogethertheideasoflearning, planning,
+and acting. The somewhat more technical work by Bertsekas and Tsitsiklis (1996) gives a
+rigorous grounding in the theory of dynamic programming and stochastic convergence. Re-
+inforcement learning papers arepublished frequently in Machine Learning, inthe Journalof
+Machine Learning Research, andinthe International Conferences on Machine Learning and
+the Neural Information Processing Systemsmeetings.
+858 Chapter 21. Reinforcement Learning
+EXERCISES
+21.1 Implement apassive learning agent inasimpleenvironment, suchasthe4 3world.
+Forthe case of an initially unknown environment model, compare the learning performance
+ofthedirect utility estimation, TD,and AD Palgorithms. Dothecomparison fortheoptimal
+policy and for several random policies. For which do the utility estimates converge faster?
+What happens when the size of the environment is increased? (Try environments with and
+withoutobstacles.)
+21.2 Chapter 17 defined a proper policy for an MDP as one that is guaranteed to reach a
+terminal state. Show that it is possible for a passive ADP agent to learn a transition model
+for which its policy is improper even if is proper for the true MDP; with such models,
+the POLICY-EVALUATION step may fail if 1. Show that this problem cannot arise if
+POLICY-EVALUATION isapplied tothelearnedmodelonlyattheendofatrial.
+21.3 Starting withthepassive AD Pagent, modifyittouseanapproximate AD Palgorithm
+asdiscussed inthe

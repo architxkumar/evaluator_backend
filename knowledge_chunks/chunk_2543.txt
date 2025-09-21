@@ -1,0 +1,26 @@
+eelearning
+exists inthestatistical literature. Classification and Regression Trees(Breiman etal.,1984),
+knownasthe CAR Tbook, istheprincipal reference.
+16 Thenameisoftenmisspelledas Occam, perhapsfromthe Frenchrendering, Guillaumed Occam. Bibliographical and Historical Notes 759
+Cross-validation was first introduced by Larson (1931), and in a form close to what
+we show by Stone (1974) and Golub et al. (1979). The regularization procedure is due to
+Tikhonov (1963). Guyon and Elisseeff (2003) introduce ajournal issue devoted tothe prob-
+lemoffeature selection. Bankoand Brill(2001) and Halevy etal.(2009) discuss theadvan-
+tages of using large amounts of data. It was Robert Mercer, a speech researcher who said
+in 1985 There is no data like more data. (Lyman and Varian, 2003) estimate that about 5
+exabytes (5 1018 bytes) of data was produced in 2002, and that the rate of production is
+doubling every3years.
+Theoretical analysis of learning algorithms began with the work of Gold (1967) on
+identification in the limit. This approach was motivated in part by models of scientific
+discovery fromthephilosophy ofscience (Popper, 1962), buthasbeenapplied mainlytothe
+problem oflearning grammarsfromexamplesentences (Oshersonetal.,1986).
+Whereastheidentification-in-the-limit approachconcentratesoneventualconvergence,
+KOLMOGOROV the study of Kolmogorov complexityor algorithmic complexity, developed independently
+COMPLEXITY
+by Solomonoff(1964,2009)and Kolmogorov(1965),attemptstoprovideaformaldefinition
+for the notion of simplicity used in Ockham s razor. To escape the problem that simplicity
+depends on the way in which information is represented, it is proposed that simplicity be
+measuredbythelengthoftheshortest program forauniversal Turingmachinethatcorrectly
+reproduces theobserved data. Although there aremany possible universal Turing machines,
+and hence many possible shortest programs, these programs differ in length by at most a
+constant that is independent of the amount of data. T

@@ -1,0 +1,33 @@
+lways decide whether the needle is in
+thehaystack. Formanyknowledge bases, however, thehaystack ofconsequences isinfinite,
+and completeness becomes an important issue.5 Fortunately, there are complete inference
+procedures forlogicsthataresufficiently expressivetohandle manyknowledgebases.
+We have described a reasoning process whose conclusions are guaranteed to be true
+in any world in which the premises are true; in particular, if KB is true in the real world,
+thenanysentence derived from KB byasoundinference procedure isalsotrueinthereal
+world. So,whileaninferenceprocessoperateson syntax internal physicalconfigurations
+such as bits in registers or patterns of electrical blips in brains the process corresponds
+3 Theagentcancalculatetheprobabilitythatthereisapitin 2,2 ;Chapter13showshow.
+4 Model checking works if the space of models isfinite forexample, inwumpus worlds of fixedsize. For
+arithmetic,ontheotherhand,thespaceofmodelsisinfinite: evenifwerestrictourselvestotheintegers,there
+areinfinitelymanypairsofvaluesforxandyinthesentencex y 4.
+5 Comparewiththecaseofinfinitesearchspacesin Chapter3,wheredepth-firstsearchisnotcomplete.
+Section7.4. Propositional Logic: AVery Simple Logic 243
+Sentences Sentence
+Entails
+Follows
+Semantics Semantics
+Representation
+World
+Aspects of the Aspect of the
+real world real world
+Figure7.6 Sentencesarephysicalconfigurationsoftheagent,andreasoningisaprocess
+of constructing new physical configurations from old ones. Logical reasoning should en-
+surethatthenewconfigurationsrepresentaspectsoftheworldthatactuallyfollowfromthe
+aspectsthattheoldconfigurationsrepresent.
+to the real-world relationship whereby some aspect of the real world is the case6 by virtue
+of other aspects of the real world being the case. This correspondence between world and
+representation isillustrated in Figure7.6.
+The final issue to consider is grounding the connection between logical reasoning
+GROUNDING
+processes andthe real environment inwhich theagent exists. Inparti

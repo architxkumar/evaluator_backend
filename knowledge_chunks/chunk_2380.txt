@@ -1,0 +1,31 @@
+ds are exactly equivalent to additive rewards, so additive rewards are a special
+case of discounted rewards. Discounting appears to be a good model of both animal
+andhumanpreferencesovertime. Adiscountfactorof isequivalenttoaninterestrate
+of(1 ) 1.
+For reasons that will shortly become clear, we assume discounted rewards in the remainder
+ofthechapter, although sometimesweallow 1.
+Lurking beneath our choice of infinite horizons is a problem: if the environment does
+not contain aterminal state, orifthe agent neverreaches one, then all environment histories
+will be infinitely long, and utilities with additive, undiscounted rewards will generally be
+650 Chapter 17. Making Complex Decisions
+infinite. Whilewecanagreethat isbetterthan ,comparingtwostatesequenceswith utilityismoredifficult. Therearethreesolutions, twoofwhichwehaveseenalready:
+1. With discounted rewards, the utility of an infinite sequence is finite. In fact, if 1
+andrewardsareboundedby R ,wehave
+max
+(cid:12) (cid:12) U ( s ,s ,s ,... ) t R(s ) t R R (1 ), (17.1)
+h 0 1 2 t max max
+t 0 t 0
+usingthestandard formulaforthesumofaninfinitegeometricseries.
+2. Iftheenvironment contains terminal states and ifthe agent isguaranteed to getto one
+eventually, then we will never need to compare infinite sequences. A policy that is
+guaranteed toreachaterminalstateiscalledaproperpolicy. Withproperpolicies, we
+PROPERPOLICY
+can use 1 (i.e., additive rewards). The first three policies shown in Figure 17.2(b)
+areproper,butthefourthisimproper. Itgainsinfinitetotalrewardbystayingawayfrom
+theterminalstateswhentherewardforthenonterminalstatesispositive. Theexistence
+of improper policies can cause the standard algorithms for solving MD Ps to fail with
+additiverewards,andsoprovides agoodreasonforusingdiscounted rewards.
+3. Infinite sequences can be compared in terms of the average reward obtained pertime
+AVERAGEREWARD
+step. Suppose that square (1,1) in the 4 3 world has a reward of 0.1 while the other
+nonterminal states have a reward 

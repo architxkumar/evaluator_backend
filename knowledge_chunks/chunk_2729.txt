@@ -1,0 +1,27 @@
+ame seven components as a
+match. The Author and Title are regexes consisting of any characters (but beginning and
+ending in letters) and constrained to have a length from half the minimum length of the
+examples to twice the maximum length. The prefix, middle, and postfix are restricted to
+literal strings, not regexes. The middle is the easiest to learn: each distinct middle string in
+the set of matches is a distinct candidate template. For each such candidate, the template s
+Prefixisthendefinedasthelongestcommonsuffixofalltheprefixesinthematches,andthe
+Postfixisdefinedasthelongestcommonprefixofallthepostfixesinthematches. Ifeitherof
+these is of length zero, then the template is rejected. The URL of the template is defined as
+thelongestprefixofthe UR Lsinthematches.
+In the experiment run by Brin, the first 199 matches generated three templates. The
+mostproductivetemplatewas LI B Title B by Author(
+URL:www.sff.net locus c
+Thethreetemplateswerethenusedtoretrieve4047more(author,title)examples. Theexam-
+ples were then used to generate more templates, and so on, eventually yielding over 15,000
+titles. Givenagood setoftemplates, thesystem can collect agood setofexamples. Givena
+goodsetofexamples,thesystemcanbuildagoodsetoftemplates.
+The biggest weakness in this approach is the sensitivity to noise. If one of the first
+few templates isincorrect, errors can propagate quickly. One waytolimit this problem isto
+not accept a new example unless it is verified by multiple templates, and not accept a new
+templateunlessitdiscoversmultipleexamplesthatarealsofoundbyothertemplates.
+22.4.6 Machinereading
+Automatedtemplateconstructionisabigstepupfromhandcraftedtemplateconstruction, but
+itstill requires ahandful oflabeled examples ofeachrelation toget started. Tobuild alarge
+ontology withmanythousands ofrelations, eventhatamount ofworkwould beonerous; we
+wouldliketohaveanextractionsystemwithnohumaninputofanykind asystemthatcould
+readonitsownandbuildupitsowndatabase. Suchasystemwouldberela

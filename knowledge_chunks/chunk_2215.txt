@@ -1,0 +1,28 @@
+ Mshave constant, function, and predicate symbols. (It turns out to
+be easier to view predicates as functions that return true or false.) We will also assume a
+typesignatureforeachfunction,thatis,aspecificationofthetypeofeachargumentandthe
+TYPESIGNATURE
+function svalue. Ifthetypeofeachobjectisknown,manyspuriouspossibleworldsareelim-
+inated by this mechanism. For the book-recommendation domain, the types are Customer
+and Book,andthetypesignatures forthefunctions andpredicates areasfollows:
+Honest : Customer true,false Kindness : Customer 1,2,3,4,5 Quality :Book 1,2,3,4,5 Recommendation : Customer Book 1,2,3,4,5 Theconstantsymbolswillbewhatevercustomerandbooknamesappearintheretailer sdata
+set. Intheexamplegivenearlier(Figure14.17(b)), thesewere C , C and B , B .
+1 2 1 2
+Given the constants and their types, together with the functions and their type signa-
+tures,therandomvariablesofthe RP Mareobtainedbyinstantiating eachfunction witheach
+possible combination of objects: Honest(C ), Quality(B ), Recommendation(C ,B ),
+1 2 1 2
+and so on. These are exactly the variables appearing in Figure 14.17(b). Because each type
+hasonlyfinitelymanyinstances, thenumberofbasicrandomvariables isalsofinite.
+To complete the RPM, we have to write the dependencies that govern these random
+variables. Thereisonedependency statement foreachfunction, whereeachargument ofthe
+function isalogicalvariable (i.e.,avariablethatranges overobjects, asinfirst-orderlogic):
+Honest(c) (cid:16)0.99,0.01(cid:17)
+Kindness(c) (cid:16)0.1,0.1,0.2,0.3,0.3(cid:17)
+Quality(b) (cid:16)0.05,0.2,0.4,0.2,0.15(cid:17)
+Recommendation(c,b) Rec CPT(Honest(c),Kindness(c),Quality(b))
+where Rec CPT is a separately defined conditional distribution with 2 5 5 50 rows,
+each with 5 entries. The semantics of the RPM can be obtained by instantiating these de-
+pendencies for all known constants, giving a Bayesian network (as in Figure 14.17(b)) that
+definesajointdistribution overthe RPM srandomvariables.8
+CONTEXT-SPECIFIC Wecanrefin

@@ -1,0 +1,33 @@
+ovetotheirintended destination inonestep. Noticethatitis
+crucialthattherelaxedproblemsgeneratedbythistechniquecanbesolvedessentiallywithout
+search,becausetherelaxedrulesallowtheproblemtobedecomposedintoeightindependent
+subproblems. If the relaxed problem is hard to solve, then the values of the corresponding
+heuristic willbeexpensivetoobtain.12
+Aprogram called ABSOLVER cangenerate heuristics automatically from problem def-
+initions, using the relaxed problem method and various other techniques (Prieditis, 1993).
+ABSOLVER generated a new heuristic for the 8-puzzle that was better than any preexisting
+heuristic andfoundthefirstusefulheuristicforthefamous Rubik s Cubepuzzle.
+One problem with generating new heuristic functions is that one often fails to get a
+single clearly best heuristic. If a collection of admissible heuristics h ...h is available
+1 m
+foraproblem andnoneofthemdominates anyoftheothers, whichshould wechoose? Asit
+turnsout,weneednotmakeachoice. Wecanhavethebestofallworlds,bydefining
+h(n) max h (n),...,h (n) .
+1 m
+11 In Chapters8and10,wedescribeformallanguagessuitableforthistask;withformaldescriptionsthatcanbe
+manipulated,theconstructionofrelaxedproblemscanbeautomated.Fornow,weuse English.
+12 Notethataperfect heuristiccanbeobtainedsimplybyallowinghtorunafullbreadth-first search onthe
+sly. Thus,thereisatradeoffbetweenaccuracyandcomputationtimeforheuristicfunctions.
+106 Chapter 3. Solving Problemsby Searching
+2 4 1 2
+5 6 3 54 6
+8 3 1 7 8
+Start State Goal State
+Figure3.30 A subproblemofthe 8-puzzleinstance givenin Figure 3.28. Thetask is to
+gettiles 1, 2, 3, and4 intotheircorrectpositions,without worryingaboutwhathappensto
+theothertiles.
+This composite heuristic uses whichever function is most accurate on the node in question.
+Becausethecomponentheuristicsareadmissible, hisadmissible;itisalsoeasytoprovethat
+hisconsistent. Furthermore, hdominatesallofitscomponent heuristics.
+3.6.3 Generating admissibleheuristics from subproblems: Patterndatabases
+Admissible h

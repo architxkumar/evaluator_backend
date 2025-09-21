@@ -1,0 +1,25 @@
+gram considers two possible theories of the world, both
+ofwhichareconsistentwithallthedata,themostcommonwayofbreakingthetieistochoose
+themostsuccincttheory andthatdependsonthelanguageusedtorepresenttheories. Thus,
+theinfluenceoflanguage onthoughtisunavoidable foranyagentthatdoeslearning.
+8.1.2 Combining the bestofformaland natural languages
+Wecan adopt the foundation of propositional logic a declarative, compositional semantics
+that is context-independent and unambiguous and build a more expressive logic on that
+foundation, borrowing representational ideas fromnatural language whileavoiding itsdraw-
+backs. Whenwelookatthesyntaxofnaturallanguage,themostobviouselementsarenouns
+and noun phrases that referto objects (squares, pits, wumpuses) and verbs and verbphrases
+OBJECT
+that refer to relations among objects (is breezy, is adjacent to, shoots). Some of these rela-
+RELATION
+tions are functions relations in which there is only one value for a given input. It is
+FUNCTION
+easytostartlistingexamplesofobjects, relations, andfunctions: Objects: people,houses,numbers,theories,Ronald Mc Donald,colors,baseballgames,
+wars,centuries ... Relations: thesecanbeunaryrelations or propertiessuchasred,round, bogus, prime,
+PROPERTY
+multistoried ...,ormoregeneral n-aryrelations suchasbrotherof,biggerthan,inside,
+partof,hascolor,occurred after,owns,comesbetween, ... Functions: fatherof,bestfriend,thirdinningof,onemore than,beginning of...
+Indeed, almost any assertion can be thought of as referring toobjects and properties orrela-
+tions. Someexamplesfollow:
+Section8.1. Representation Revisited 289 Oneplustwoequalsthree. Objects: one, two, three, one plus two; Relation: equals; Function: plus. ( One plus
+two is a name for the object that is obtained by applying the function plus to the
+objects one and two. Three isanothernameforthisobject.) Squaresneighboring thewumpusaresmelly. Objects: wumpus,squares; Property: smelly;Relation: neighboring. Evil King Johnruled Englandin1200. Objects: John

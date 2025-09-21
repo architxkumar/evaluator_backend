@@ -1,0 +1,30 @@
+ withlinearratherthanexponential growthincomplexity. Inthecaseof
+Bayesian networks, it is reasonable to suppose that in most domains each random variable
+is directly influenced by at most k others, for some constant k. If we assume n Boolean
+variables for simplicity, then the amount of information needed to specify each conditional
+probability table will be at most 2k numbers, and the complete network can be specified by
+n2k numbers. Incontrast, thejointdistribution contains 2n numbers. Tomakethisconcrete,
+suppose we have n 30 nodes, each with five parents (k 5). Then the Bayesian network
+requires 960numbers,butthefulljointdistribution requiresoverabillion.
+There are domains in which each variable can be influenced directly by all the others,
+sothatthenetwork isfullyconnected. Thenspecifying theconditional probability tables re-
+quiresthesameamountofinformationasspecifying thejointdistribution. Insomedomains,
+there will be slight dependencies that should strictly be included by adding a new link. But
+if these dependencies are tenuous, then it maynot be worth the additional complexity in the
+network for the small gain in accuracy. For example, one might object to our burglary net-
+work on the grounds that if there is an earthquake, then John and Mary would not call even
+if they heard the alarm, because they assume that the earthquake is the cause. Whether to
+add the link from Earthquake to John Calls and Mary Calls (and thus enlarge the tables)
+depends oncomparing theimportance ofgetting moreaccurate probabilities withthecostof
+specifying theextrainformation.
+516 Chapter 14. Probabilistic Reasoning
+Mary Calls Mary Calls
+John Calls John Calls
+Alarm Earthquake
+Burglary Burglary
+Earthquake Alarm
+(a) (b)
+Figure 14.3 Network structure depends on order of introduction. In each network, we
+haveintroducednodesintop-to-bottomorder.
+Even in a locally structured domain, we will get a compact Bayesian network only if
+we choose the node ordering well. What happens if we happen to

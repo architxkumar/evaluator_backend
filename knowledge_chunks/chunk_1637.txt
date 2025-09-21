@@ -1,0 +1,26 @@
+96;Juelsand Wattenberg,1996;Baluja,1997). Suchfindings
+are not universally popular within the GA community, but recent attempts within that com-
+munity to understand population-based search as an approximate form of Bayesian learning
+(see Chapter 20) might help close the gap between the field and its critics (Pelikan et al.,
+1999). The theory of quadratic dynamical systems may also explain the performance of
+GAs(Rabani etal.,1998). See Lohnetal.(2001) foranexampleof GAsapplied toantenna
+design, and Rennerand Ekart(2003)foranapplication tocomputer-aided design.
+GENETIC Thefieldofgeneticprogrammingiscloselyrelatedtogeneticalgorithms. Theprinci-
+PROGRAMMING
+pal difference is that the representations that are mutated and combined are programs rather
+156 Chapter 4. Beyond Classical Search
+thanbitstrings. Theprogramsarerepresentedintheformof expressiontrees;theexpressions
+canbeinastandard language suchas Lisporcanbespecially designed torepresent circuits,
+robot controllers, and so on. Crossover involves splicing together subtrees rather than sub-
+strings. This form of mutation guarantees that the offspring are well-formed expressions,
+whichwouldnotbethecaseifprogramsweremanipulated asstrings.
+Interestingeneticprogrammingwasspurredby John Koza swork(Koza,1992,1994),
+but it goes back at least to early experiments with machine code by Friedberg (1958) and
+withfinite-state automata by Fogeletal. (1966). Aswithgenetic algorithms, there isdebate
+about the effectiveness of the technique. Kozaet al. (1999) describe experiments in the use
+ofgenetic programmingtodesigncircuitdevices.
+Thejournals Evolutionary Computation and IEEE Transactions on Evolutionary Com-
+putation covergenetic algorithms and genetic programming; articles are alsofound in Com-
+plex Systems, Adaptive Behavior, and Artificial Life. The main conference is the Genetic
+and Evolutionary Computation Conference(GECCO).Goodoverviewtextsongeneticalgo-
+rithmsaregivenby Mitchell (1996), Fogel(2000), and Langdon and Poli(

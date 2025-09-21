@@ -1,0 +1,25 @@
+yhelmets)maygiveanationoverconfidence, causingittogotowarmore
+recklessly than necessary. In most wars, at least one party is overconfident in its military
+abilities otherwise theconflictwouldhavebeenresolvedpeacefully.
+Weizenbaum (1976) also pointed out that speech recognition technology could lead to
+widespread wiretapping, andhencetoalossofcivilliberties. Hedidn tforesee aworldwith
+terroristthreatsthatwouldchangethebalanceofhowmuchsurveillancepeoplearewillingto
+1036 Chapter 26. Philosophical Foundations
+accept, buthedidcorrectly recognize that AIhasthepotential tomass-produce surveillance.
+Hisprediction has inpart come true: the U.K.now has anextensive network ofsurveillance
+cameras, andothercountries routinely monitor Webtrafficandtelephone calls. Someaccept
+thatcomputerization leads toaloss ofprivacy Sun Microsystems CEO Scott Mc Nealyhas
+said You have zero privacy anyway. Get over it. David Brin (1998) argues that loss of
+privacy is inevitable, and the way to combat the asymmetry of power of the state over the
+individual is to make the surveillance accessible to all citizens. Etzioni (2004) argues for a
+balancing ofprivacyandsecurity; individual rightsandcommunity.
+Theuseof AIsystemsmightresultinalossofaccountability. Inthelitigious atmo-
+sphere that prevails in the United States, legal liability becomes an important issue. When a
+physicianreliesonthejudgmentofamedicalexpertsystemforadiagnosis, whoisatfaultif
+thediagnosisiswrong? Fortunately,dueinparttothegrowinginfluenceofdecision-theoretic
+methods in medicine, it is now accepted that negligence cannot be shown if the physician
+performsmedicalproceduresthathavehigh expectedutility,eveniftheactualresultiscatas-
+trophic for the patient. The question should therefore be Who is at fault if the diagnosis is
+unreasonable? So far, courts have held that medical expert systems play the same role as
+medicaltextbooksandreferencebooks;physiciansareresponsibleforunderstanding therea-
+soning behind any decision and for usin

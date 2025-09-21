@@ -1,0 +1,18 @@
+ Wahrheit.J.Springer. ofbeliefpropagationin Gaussiangraphicalmodels
+van Hoeve,W.-J.(2001).Thealldifferentconstraint: von Neumann, J. (1928). Zur Theorie der ofarbitrarytopology. Neural Computation,13(10),
+asurvey. In6th Annual Workshopofthe ERCIM Gesellschaftsspiele. Mathematische Annalen, 2173 2200.
+Working Groupon Constraints. 100(295 320). Weizenbaum,J.(1976). Computer Powerand Hu-
+van Hoeve, W.-J.and Katriel, I. (2006). Global von Neumann,J.and Morgenstern,O.(1944).The- man Reason.W.H.Freeman.
+constraints. In Rossi,F.,van Beek,P.,and Walsh, oryof Gamesand Economic Behavior(firstedition). Weld,D.S.(1994). Anintroductiontoleastcom-
+T.(Eds.),Handbookof Constraint Processing,pp. Princeton University Press. mitmentplanning.AI Mag,15(4),27 61.
+169 208.Elsevier. von Winterfeldt,D.and Edwards,W.(1986).Deci- Weld,D.S.(1999).Recentadvancesin AIplanning.
+van Lambalgen, M.and Hamm, F.(2005). The sion Analysisand Behavioral Research.Cambridge AI Mag,20(2),93 122.
+Proper Treatmentof Events.Wiley-Blackwell. University Press. Weld, D. S., Anderson, C. R., and Smith, D. E.
+van Nunen, J.A.E.E.(1976). Asetofsucces- Vossen, T., Ball, M., Lotem, A., and Nau, D. S. (1998). Extendinggraphplantohandleuncertainty
+siveapproximationmethodsfordiscounted Marko- (2001). Applyingintegerprogrammingto AIplan- andsensingactions.In AAAI-98,pp.897 904.
+viandecisionproblems. Zeitschriftfur Operations ning.Knowledge Engineering Review,16,85 100. Weld,D.S.andde Kleer,J.(1990). Readingsin
+Research,Serie A,20(5),203 208. Wainwright,M.J.and Jordan,M.I.(2008).Graph- Qualitative Reasoningabout Physical Systems.Mor-
+Van Roy,B.(1998). Learningandvaluefunction icalmodels,exponentialfamilies,andvariationalin- gan Kaufmann.
+approximationincomplexdecisionprocesses.Ph.D. ference.Machine Learning,1(1 2),1 305. Weld,D.S.and Etzioni,O.(1994). Thefirstlawof
+thesis,Laboratoryfor Informationand Decision Sys- Waldinger,R.(1975). Achievingseveralgoalssi- robotics:Acalltoarms.In AAAI-94.
+tems,MIT. multaneously. In Elcock

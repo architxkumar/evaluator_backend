@@ -1,0 +1,25 @@
+(Shachter et al., 1990). Theelimination algorithm wedescribe
+is closest to that developed by Zhang and Poole (1994). Criteria for pruning irrelevant vari-
+ablesweredeveloped by Geigeretal.(1990)andby Lauritzen etal.(1990); thecriterion we
+giveisasimplespecialcaseofthese. Dechter(1999)showshowthevariableeliminationidea
+NONSERIALDYNAMIC isessentiallyidenticaltononserialdynamicprogramming(Berteleand Brioschi,1972),an
+PROGRAMMING
+algorithmic approach thatcanbeapplied tosolve arange ofinference problems in Bayesian
+networks for example, finding the most likely explanation for a set of observations. This
+connects Bayesiannetworkalgorithmstorelatedmethodsforsolving CS Psandgivesadirect
+measureofthecomplexityofexactinferenceintermsofthetreewidthofthenetwork. Wexler
+and Meek (2009) describe a method of preventing exponential growth in the size of factors
+computed invariable elimination; theiralgorithm breaks downlarge factors into products of
+smallerfactorsandsimultaneously computesanerrorbound fortheresultingapproximation.
+The inclusion of continuous random variables in Bayesian networks was considered
+by Pearl (1988) and Shachter and Kenley (1989); these papers discussed networks contain-
+ing only continuous variables with linear Gaussian distributions. The inclusion of discrete
+variables has been investigated by Lauritzen and Wermuth (1989) and implemented in the
+554 Chapter 14. Probabilistic Reasoning
+c HUGIN system (Olesen, 1993). Further analysis of linear Gaussian models, with connec-
+tionstomanyothermodelsusedinstatistics, appearsin Roweisand Ghahramani(1999)The
+probit distribution is usually attributed to Gaddum (1933) and Bliss (1934), although it had
+been discovered several times in the 19th century. Bliss s work was expanded considerably
+by Finney(1947). Theprobit hasbeenusedwidelyformodeling discrete choicephenomena
+andcanbeextended tohandlemorethantwochoices(Daganzo,1979). Thelogitmodelwas
+introduced by Berkson (1944); initially much derided, it eventually beca

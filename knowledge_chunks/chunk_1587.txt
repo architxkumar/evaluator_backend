@@ -1,0 +1,28 @@
+ld.
+Chapter 3 addressed a single category of problems: observable, deterministic, known envi-
+ronmentswherethesolutionisasequenceofactions. Inthischapter,welookatwhathappens
+whentheseassumptionsarerelaxed. Webeginwithafairlysimplecase: Sections4.1and4.2
+coveralgorithms thatperform purely localsearch inthestate space, evaluating andmodify-
+ingoneormorecurrentstatesratherthansystematically exploringpathsfromaninitialstate.
+Thesealgorithms are suitable forproblems inwhich allthat mattersisthe solution state, not
+thepathcost toreach it. Thefamilyoflocal search algorithms includes methods inspired by
+statistical physics(simulatedannealing)andevolutionary biology (geneticalgorithms).
+Then, in Sections 4.3 4.4, we examine what happens when we relax the assumptions
+ofdeterminismandobservability. Thekeyideaisthatifanagentcannotpredictexactlywhat
+percept it will receive, then it will need to consider what to do under each contingency that
+its percepts may reveal. With partial observability, the agent will also need to keep track of
+thestatesitmightbein.
+Finally, Section 4.5investigates onlinesearch, inwhichtheagent isfaced withastate
+spacethatisinitially unknownandmustbeexplored.
+4.1 LOCAL SEARCH ALGORITHMS AND OPTIMIZATION PROBLEMS
+The search algorithms that we have seen so far are designed to explore search spaces sys-
+tematically. Thissystematicity isachieved by keeping one ormore paths in memory and by
+recordingwhichalternativeshavebeenexploredateachpointalongthepath. Whenagoalis
+found,thepathtothatgoalalsoconstitutesasolutiontotheproblem. Inmanyproblems,how-
+ever, the path to the goal is irrelevant. Forexample, in the 8-queens problem (see page 71),
+whatmattersisthefinalconfiguration ofqueens, nottheorderinwhichthey areadded. The
+same general property holds for many important applications such as integrated-circuit de-
+sign,factory-floorlayout,job-shopscheduling,automaticprogramming,telecommunications
+networkoptimization, vehiclerouting, andportfolio management.
+120
+Sect

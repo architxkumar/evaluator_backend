@@ -1,0 +1,27 @@
+illing to accept that price. (If multiple bidders accept
+the price, one is arbitrarily chosen as the winner.) More formally, the seller begins with a
+price p and gradually lowers p by increments of d until at least one buyer accepts the price.
+Assumingallbidders actrationally, isittruethatforarbitrarily small d,a Dutchauctionwill
+alwaysresultinthebidderwiththehighestvaluefortheitemobtainingtheitem? Ifso,show
+mathematically why. Ifnot,explainhowitmaybepossible forthebidderwithhighestvalue
+fortheitemnottoobtainit.
+17.20 Imagine anauction mechanism thatisjustlikeanascending-bid auction, except that
+at the end, the winning bidder, the one who bid b , pays only b 2 rather than b .
+max max max
+Assuming all agents are rational, what is the expected revenue to the auctioneer for this
+mechanism, comparedwithastandard ascending-bid auction?
+17.21 Teams in the National Hockey League historically received 2 points for winning a
+game and 0 for losing. If the game is tied, an overtime period is played; if nobody wins in
+overtime, the game is a tie and each team gets 1 point. But league officials felt that teams
+were playing too conservatively inovertime (to avoid aloss), and it would be more exciting
+if overtime produced a winner. So in 1999 the officials experimented in mechanism design:
+theruleswerechanged, giving ateam thatloses inovertime1 point, not0. Itisstill2points
+forawinand1foratie.
+a. Washockeyazero-sum gamebeforetherulechange? After?
+b. Suppose thatatacertain timetinagame,thehometeam hasprobability pofwinning
+in regulation time, probability 0.78 p of losing, and probability 0.22 of going into
+overtime, where they have probability q of winning, .9 q of losing, and .1 of tying.
+Giveequations fortheexpected valueforthehomeandvisiting teams.
+c. Imagine that it werelegal and ethical forthetwo teamsto enterinto apact where they
+agreethat theywillskate toatieinregulation time,and thenboth tryinearnest towin
+in overtime. Under what conditions, in terms of p and q, would it be

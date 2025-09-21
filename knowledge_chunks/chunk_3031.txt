@@ -1,0 +1,21 @@
+uteof Electrical Engineers. Elio,R.(Ed.).(2002). Common Sense,Reasoning,
+ence. Dredze,M.,Crammer,K.,and Pereira,F.(2008). and Rationality.Oxford University Press.
+Dillenburg,J.F.and Nelson,P.C.(1994).Perimeter Confidence-weightedlinearclassification.In ICML- Elkan,C.(1993).Theparadoxicalsuccessoffuzzy
+search.AIJ,65(1),165 178. 08,pp.264 271. logic.In AAAI-93,pp.698 703.
+Dinh,H.,Russell,A.,and Su,Y.(2007). Onthe Dreyfus,H.L.(1972). What Computers Can t Do: Elkan, C. (1997). Boosting and naive Bayesian
+valueofgoodadvice: Thecomplexityof A with ACritiqueof Artificial Reason.Harperand Row. learning. Tech.rep.,Departmentof Computer Sci-
+accurateheuristics.In AAAI-07. Dreyfus,H.L.(1992). What Computers Still Can t enceand Engineering,Universityof California,San
+Dissanayake,G.,Newman,P.,Clark,S.,Durrant- Do:ACritiqueof Artificial Reason.MIT Press. Diego.
+Whyte,H.,and Csorba,M.(2001).Asolutiontothe Dreyfus,H.L.and Dreyfus,S.E.(1986).Mindover Ellsberg,D.(1962).Risk,Ambiguity,and Decision.
+simultaneouslocalisationandmapbuilding(SLAM) Machine:The Powerof Human Intuitionand Exper- Ph.D.thesis,Harvard University.
+problem. IEEE Transactionson Roboticsand Au- tiseinthe Eraofthe Computer.Blackwell. Elman,J.,Bates,E.,Johnson,M.,Karmiloff-Smith,
+tomation,17(3),229 241.
+Dreyfus, S. E. (1969). An appraisal of some A.,Parisi,D.,and Plunkett,K.(1997). Rethinking
+Do,M.B.and Kambhampati,S.(2001). Sapa: A shortest-pathsalgorithms.Operations Research,17, Innateness.MIT Press.
+domain-independentheuristicmetrictemporalplan- 395 412. Empson,W.(1953).Seven Typesof Ambiguity.New
+ner.In ECP-01.
+Dubois,D.and Prade,H.(1994).Asurveyofbelief Directions.
+Do,M.B.and Kambhampati,S.(2003).Planningas revisionandupdating rules invarious uncertainty Enderton,H.B.(1972). AMathematical Introduc-
+constraintsatisfaction: solvingtheplanninggraph models.Int.J.Intelligent Systems,9(1),61 100. tionto Logic.Academic Press.
+bycompilingitinto CSP.AIJ,132(2),151 182.
+Duda,R.O.,Gaschnig,J.,and Hart,P.E.(1979). Epstein, R

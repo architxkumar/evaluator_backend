@@ -1,0 +1,40 @@
+)
+1 N( x2) ( x )2 0 j 1 j
+j j
+Forthe example in Figure 18.13(a), the solution is w 0.232, w 246, and the line with
+1 0
+thoseweightsisshownasadashedlineinthefigure.
+Many forms of learning involve adjusting weights to minimize a loss, so it helps to
+haveamentalpicture ofwhat sgoingoninweightspace the space definedbyallpossible
+WEIGHTSPACE
+settings of the weights. Forunivariate linear regression, the weight space defined by w and
+0
+w istwo-dimensional, sowecangraphthelossasafunction ofw andw ina3Dplot(see
+1 0 1
+Figure18.13(b)). Weseethatthelossfunction isconvex,asdefinedonpage133;thisistrue
+for every linear regression problem with an L loss function, and implies that there are no
+2
+local minima. In some sense that s the end of the story for linear models; if we need to fit
+linestodata,weapply Equation(18.3).4
+To go beyond linear models, we will need to face the fact that the equations defining
+minimum loss (as in Equation (18.2)) will often have no closed-form solution. Instead, we
+will face a general optimization search problem in a continuous weight space. As indicated
+in Section 4.2(page 129), such problems can beaddressed by a hill-climbing algorithm that
+follows the gradient of the function to be optimized. In this case, because we are trying to
+minimize the loss, we will use gradient descent. We choose any starting point in weight
+GRADIENTDESCENT
+space here, a point in the (w , w ) plane and then move to a neighboring point that is
+0 1
+downhill,repeating untilweconverge ontheminimumpossibleloss:
+w anypointintheparameterspace
+loopuntilconvergence do
+foreachw inwdo
+i w w Loss(w) (18.4)
+i i w
+i
+Theparameter ,whichwecalledthestepsizein Section4.2,isusually called thelearning
+ratewhenwearetryingtominimizelossinalearningproblem. Itcanbeafixedconstant,or
+LEARNINGRATE
+itcandecayovertimeasthelearning processproceeds.
+Forunivariateregression, thelossfunctionisaquadratic function, sothepartialderiva-
+tive will be a linear function. (The only calculus you need to know is tha

@@ -1,0 +1,27 @@
+ionspacecontainsallhypothesesconsistentwiththeexamples.
+hypothesisspaceisenormous,sohowcanwepossiblywritedownthisenormousdisjunction?
+The following simple analogy is very helpful. How do you represent all the real num-
+bers between 1 and 2? After all, there are an infinite number of them! The answer is to use
+anintervalrepresentation thatjustspecifiestheboundaries oftheset: 1,2 . Itworksbecause
+wehaveanordering ontherealnumbers.
+Wealsohaveanorderingonthehypothesisspace,namely,generalization specialization.
+This is a partial ordering, which means that each boundary will not be a point but rather a
+set of hypotheses called a boundary set. The great thing is that we can represent the entire
+BOUNDARYSET
+version space using just twoboundary sets: amostgeneral boundary (the G-set) andamost
+G-SET
+specific boundary (the S-set). Everything in between isguaranteed to be consistent with the
+S-SET
+examples. Beforeweprovethis,letusrecap: The current version space is the set of hypotheses consistent with all the examples so
+far. Itisrepresented bythe S-setand G-set,eachofwhichis asetofhypotheses. Every member of the S-set is consistent with all observations so far, and there are no
+consistent hypotheses thataremorespecific. Every member of the G-set is consistent with all observations so far, and there are no
+consistent hypotheses thataremoregeneral.
+Wewanttheinitialversionspace(beforeanyexampleshavebeenseen)torepresentallpossi-
+blehypotheses. Wedothisbysettingthe G-settocontain True (thehypothesis thatcontains
+everything), andthe S-settocontain False (thehypothesis whoseextension isempty).
+Figure19.4showsthegeneralstructureoftheboundary-set representationoftheversion
+space. Toshowthattherepresentation issufficient,weneed thefollowingtwoproperties:
+Section19.1. ALogical Formulationof Learning 775
+1. Everyconsistenthypothesis(otherthanthoseintheboundarysets)ismorespecificthan
+somememberofthe G-set,andmoregeneral thansomememberof the S-set. (Thatis,
+there are no stragglers left out

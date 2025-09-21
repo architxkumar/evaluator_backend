@@ -1,0 +1,27 @@
+ncertainty quickly gives rise to alot of
+positional uncertainty and that dealing with rotational uncertainty is painful, whether
+uncertainty istreated in terms of hard intervals orprobabilistically, due to the fact that
+therelation betweenorientation andposition isbothnon-linearandnon-monotonic.
+25.9 Consider the simplified robot shown in Figure 25.33. Suppose the robot s Cartesian
+coordinates are known at all times, as are those of its goal location. However, the locations
+of the obstacles are unknown. The robot can sense obstacles in its immediate proximity, as
+illustrated in this figure. For simplicity, let us assume the robot s motion is noise-free, and
+thestatespaceisdiscrete. Figure25.33isonlyoneexample;inthisexerciseyouarerequired
+toaddress allpossible gridworldswithavalidpathfromthe starttothegoallocation.
+a. Design a deliberate controller that guarantees that the robot always reaches its goal
+location ifatallpossible. Thedeliberate controller canmemorizemeasurements inthe
+formofamapthatisbeing acquired astherobot moves. Betweenindividual moves,it
+mayspendarbitrarytimedeliberating.
+Exercises 1019
+b. Nowdesign a reactive controller forthe same task. Thiscontroller may not memorize
+pastsensormeasurements. (Itmaynotbuildamap!) Instead,ithastomakealldecisions
+based on the current measurement, which includes knowledge of its own location and
+that of the goal. The time to make a decision must be independent of the environment
+sizeorthenumberofpasttimesteps. Whatisthemaximumnumberofstepsthatitmay
+takeforyourrobottoarriveatthegoal?
+c. Howwillyourcontrollersfrom(a)and(b)performifanyofthefollowingsixconditions
+apply: continuous state space, noise in perception, noise in motion, noise in both per-
+ception andmotion, unknown location ofthegoal (thegoal canbedetected only when
+withinsensorrange),ormovingobstacles. Foreachcondition andeachcontroller, give
+anexampleofasituation wheretherobotfails(orexplainwhyitcannotfail).
+25.10 In Figure25.24(b) onpage 1001, weencountered

@@ -1,0 +1,29 @@
+-Agent Systems (AAMAS).Thejournal
+Autonomous Agents and Multi-Agent Systems was founded in 1998. Finally, Dung Beetle
+Ecology (Hanski and Cambefort, 1991) provides a wealth of interesting information on the
+behaviorofdungbeetles. You Tubefeatures inspiring video recordings oftheiractivities.
+EXERCISES
+2.1 Suppose that the performance measure is concerned with just the first T time steps of
+the environment and ignores everything thereafter. Show that a rational agent s action may
+dependnotjustonthestateoftheenvironment butalsoonthetimestepithasreached.
+2.2 Letusexaminetherationality ofvariousvacuum-cleaner agentfunctions.
+a. Show that the simple vacuum-cleaner agent function described in Figure 2.3 is indeed
+rationalundertheassumptions listedonpage38.
+b. Describearationalagentfunctionforthecaseinwhicheachmovementcostsonepoint.
+Doesthecorresponding agentprogram requireinternal state?
+c. Discuss possible agent designs for the cases in which clean squares can become dirty
+andthegeography oftheenvironment isunknown. Doesitmake sensefortheagentto
+learnfromitsexperience inthesecases? Ifso,whatshoulditlearn? Ifnot,whynot?
+2.3 For each of the following assertions, say whether it is true or false and support your
+answerwithexamplesorcounterexamples whereappropriate.
+a. Anagentthatsensesonlypartialinformationaboutthestatecannotbeperfectlyrational.
+62 Chapter 2. Intelligent Agents
+b. Thereexisttaskenvironments inwhichnopurereflexagentcanbehaverationally.
+c. Thereexistsataskenvironment inwhicheveryagentisrational.
+d. Theinputtoanagentprogram isthesameastheinputtotheagentfunction.
+e. Everyagentfunctionisimplementable bysomeprogram machine combination.
+f. Supposeanagentselectsitsactionuniformlyatrandomfromthesetofpossibleactions.
+Thereexistsadeterministic taskenvironment inwhichthis agentisrational.
+g. Itispossibleforagivenagenttobeperfectlyrationalintwodistincttaskenvironments.
+h. Everyagentisrationalinanunobservable environment.
+i. Aperfectly rationalpoker-playing agentneverlose

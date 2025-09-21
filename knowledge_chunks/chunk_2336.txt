@@ -1,0 +1,28 @@
+ribed as having a 90 survival rate about twice as
+muchasonedescribedashavinga 10 deathrate, eventhoughthesetwostatementsmean
+exactlythesamething. Thisdiscrepancyinjudgmenthasbeenfoundinmultipleexperiments
+andisaboutthesamewhetherthesubjectswerepatientsinaclinic,statisticallysophisticated
+business schoolstudents, orexperienced doctors.
+People feel more comfortable making relative utility judgments rather than absolute
+ones. Imayhavelittleideahowmuch Imightenjoythevariouswinesofferedbyarestaurant.
+Therestauranttakesadvantageofthisbyofferinga 200bottlethatitknowsnobodywillbuy,
+butwhichserves toskewupward thecustomer s estimate ofthevalueofallwinesandmake
+the 55bottleseemlikeabargain. Thisiscalledtheanchoringeffect.
+ANCHORINGEFFECT
+Ifhumaninformants insistoncontradictory preference judgments, thereisnothing that
+automatedagentscandotobeconsistentwiththem. Fortunately,preferencejudgmentsmade
+by humans are often open to revision in the light of further consideration. Paradoxes like
+the Allais paradox are greatly reduced (but not eliminated) if the choices are explained bet-
+ter. In work at the Harvard Business School on assessing the utility of money, Keeney and
+Raiffa(1976,p.210)foundthefollowing:
+Subjectstendtobetoorisk-averseinthesmallandtherefore...thefittedutilityfunctions
+exhibitunacceptablylargeriskpremiumsforlotterieswithalargespread. ...Mostofthe
+subjects, however,canreconciletheirinconsistenciesandfeelthattheyhavelearnedan
+importantlessonabouthowtheywanttobehave.Asaconsequence,somesubjectscancel
+theirautomobilecollisioninsuranceandtakeoutmoreterminsuranceontheirlives.
+The evidence for human irrationality is also questioned by researchers in the field of evo-
+EVOLUTIONARY lutionary psychology, who point to the fact that our brain s decision-making mechanisms
+PSYCHOLOGY
+did not evolve to solve word problems with probabilities and prizes stated as decimal num-
+bers. Let us grant, for the sake of argument, that the brain has built-in neural mechanism
+forcomputingwit

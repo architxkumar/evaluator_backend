@@ -1,0 +1,32 @@
+ll,
+why should maximizing the average utility be so special? What s wrong with an agent that
+1 Classicaldecisiontheoryl Peavesthecurrentstate S0implicit,butwecouldmakeitexplicitbywriting
+P(RESULT(a) s(cid:3) a,e) s
+P(RESULT(s,a) s(cid:3) a)P(S0 s e).
+612 Chapter 16. Making Simple Decisions
+maximizes the weighted sum of the cubes of the possible utilities, or tries to minimize the
+worst possible loss? Could an agent act rationally just by expressing preferences between
+states, without giving them numeric values? Finally, why should a utility function with the
+required properties existatall? Weshallsee.
+16.2.1 Constraints onrationalpreferences
+Thesequestions canbeansweredbywritingdownsomeconstraints onthepreferences thata
+rational agentshouldhaveandthenshowingthatthe ME Uprinciple canbederivedfromthe
+constraints. Weusethefollowingnotation todescribe anagent spreferences:
+A B theagentprefers Aover B.
+A B theagentisindifferent between Aand B. A B theagentprefers Aover B orisindifferent betweenthem.
+Now the obvious question is, what sorts of things are A and B? They could be states of the
+world, but more often than not there is uncertainty about what is really being offered. For
+example, an airline passenger who is offered the pasta dish or the chicken does not know
+whatlurksbeneath thetinfoilcover.2 Thepastacouldbedelicious orcongealed, thechicken
+juicyorovercooked beyondrecognition. Wecanthinkofthesetofoutcomes foreachaction
+asalottery think ofeachactionasaticket. Alottery Lwithpossibleoutcomes S ,...,S
+LOTTERY 1 n
+thatoccurwithprobabilities p ,...,p iswritten
+1 n
+L p ,S ; p ,S ; ... p ,S .
+1 1 2 2 n n
+Ingeneral, each outcome S ofalottery canbeeither anatomicstate oranother lottery. The
+i
+primary issue for utility theory is to understand how preferences between complex lotteries
+are related to preferences between the underlying states in those lotteries. To address this
+issuewelistsixconstraints thatwerequire anyreasonable preference relationtoobey: Orderability: Given

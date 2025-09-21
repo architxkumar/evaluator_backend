@@ -1,0 +1,37 @@
+ovalofmultiplecopies ofliterals iscalled factoring.
+FACTORING
+Forexample,ifweresolve (A B)with(A B),weobtain(A A),whichisreducedto
+just A.
+Thesoundnessoftheresolutionrulecanbeseeneasilybyconsidering theliteral(cid:3) that
+i
+is complementary to literal m in the other clause. If (cid:3) is true, then m is false, and hence
+j i j
+m 1 m j 1 m j 1 m n mustbetrue, because m 1 m n isgiven. If(cid:3) i is
+false,then(cid:3) 1 (cid:3) i 1 (cid:3) i 1 (cid:3) k mustbetruebecause (cid:3) 1 (cid:3) k isgiven. Now
+(cid:3) iseithertrueorfalse,sooneorotheroftheseconclusions holds exactly astheresolution
+i
+rulestates.
+Whatis moresurprising about theresolution rule is that itforms the basis forafamily
+ofcomplete inference procedures. Aresolution-based theorem prover can, foranysentences and in propositional logic, decide whether . The next two subsections explain
+howresolution accomplishes this.
+Conjunctivenormalform
+Theresolution ruleapplies onlytoclauses (that is,disjunctions ofliterals), soitwouldseem
+to be relevant only to knowledge bases and queries consisting of clauses. How, then, can
+it lead to a complete inference procedure for all of propositional logic? The answer is that
+every sentence of propositional logic is logically equivalent to a conjunction of clauses. A
+CONJUNCTIVE sentence expressed as a conjunction of clauses is said to be in conjunctive normal form or
+NORMALFORM
+CNF (see Figure 7.14). We now describe a procedure for converting to CNF. We illustrate
+the procedure by converting the sentence B (P P ) into CNF. The steps are as
+1,1 1,2 2,1
+follows:
+1. Eliminate ,replacing with( ) ( ).
+(B (P P )) ((P P ) B ).
+1,1 1,2 2,1 1,2 2,1 1,1
+2. Eliminate ,replacing with :
+( B P P ) ( (P P ) B ).
+1,1 1,2 2,1 1,2 2,1 1,1
+9 Ifaclauseisviewedasasetofliterals,thenthisrestrictionisautomaticallyrespected. Usingsetnotationfor
+clausesmakestheresolutionrulemuchcleaner,atthecostofintroducingadditionalnotation.
+254 Chapter 7. Logical Agents
+3. CN Frequires to appear only in literals, so

@@ -1,0 +1,29 @@
+mputer-aideddesign
+(CAD)system,oritcouldbevagueconstraints,suchasthefactthathumaneyesareusually5
+to7cmapart. Arenderingmodeldescribesthephysical,geometric,andstatisticalprocesses
+RENDERINGMODEL
+that produce thestimulus from theworld. Rendering models are quite accurate, but they are
+ambiguous. For example, a white object under low light may appear as the same color as a
+black object underintense light. Asmall nearby object maylook thesame asa large distant
+object. Without additional evidence, we cannot tell if the image that fills the frame is a toy
+Godzillaorarealmonster.
+Ambiguity can be managed with prior knowledge we know Godzilla is not real, so
+the image must be a toy or by selectively choosing to ignore the ambiguity. For example,
+the vision system for an autonomous car may not be able to interpret objects that are far in
+the distance, but the agent can choose to ignore the problem, because it is unlikely to crash
+intoanobjectthatismilesaway.
+928
+Section24.1. Image Formation 929
+Adecision-theoretic agent isnot theonlyarchitecture that canmakeuseofvision sen-
+sors. Forexample, fruit flies (Drosophila) are in part reflex agents: they have cervical giant
+fibersthatformadirectpathwayfromtheirvisualsystemtothewingmusclesthatinitiatean
+escape response an immediate reaction, without deliberation. Flies and many other flying
+animals make used of a closed-loop control architecture to land on an object. The visual
+system extracts an estimate of the distance to the object, and the control system adjusts the
+wingmusclesaccordingly,allowingveryfastchangesofdirection,withnoneedforadetailed
+modeloftheobject.
+Compared to the data from other sensors (such as the single bit that tells the vacuum
+robot that it has bumped into a wall), visual observations are extraordinarily rich, both in
+the detail they can reveal and in the sheer amount of data they produce. A video camera
+for robotic applications might produce a million 24-bit pixels at 60 Hz; a rate of 10 GB per
+minute. The 

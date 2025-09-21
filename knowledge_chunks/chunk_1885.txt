@@ -1,0 +1,29 @@
+ be replaced by
+one instantiation, a universally quantified sentence can be replaced by the set of all possible
+instantiations. Forexample, supposeourknowledgebasecontainsjustthesentences x King(x) Greedy(x) Evil(x)
+King(John)
+(9.1)
+Greedy(John)
+Brother(Richard,John).
+Then weapply UI to the first sentence using all possible ground-term substitutions from the
+vocabulary oftheknowledge base inthiscase, x John and x Richard . Weobtain
+King(John) Greedy(John) Evil(John)
+King(Richard) Greedy(Richard) Evil(Richard),
+and we discard the universally quantified sentence. Now, the knowledge base is essentially
+propositional if we view the ground atomic sentences King(John), Greedy(John), and
+so on as proposition symbols. Therefore, we can apply any of the complete propositional
+algorithms in Chapter7toobtainconclusions suchas Evil(John).
+This technique of propositionalization can be made completely general, as we show
+in Section 9.5; that is, every first-order knowledge base and query can be propositionalized
+in such a way that entailment is preserved. Thus, we have a complete decision procedure
+for entailment ... or perhaps not. There is a problem: when the knowledge base includes
+a function symbol, the set of possible ground-term substitutions is infinite! For example, if
+the knowledge base mentions the Father symbol, then infinitely many nested terms such as
+Father(Father(Father(John)))canbeconstructed. Ourpropositional algorithms willhave
+difficultywithaninfinitelylargesetofsentences.
+Fortunately, there is a famous theorem due to Jacques Herbrand (1930) to the effect
+thatifasentence isentailed bytheoriginal, first-order knowledge base, thenthere isaproof
+involving justafinite subset ofthepropositionalized knowledge base. Sinceanysuch subset
+has a maximum depth of nesting among its ground terms, we can find the subset by first
+generatingalltheinstantiations withconstantsymbols(Richard and John),thenalltermsof
+depth1(Father(Richard)and Father(John)),thenalltermsofdepth2,ands

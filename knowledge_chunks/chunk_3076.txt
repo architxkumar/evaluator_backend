@@ -1,0 +1,22 @@
+19(4),571 590.
+There s Something About Mary.MIT Press. tionofthe Human Mind.Mariner Books. Mc Allester,D.A.(1980).Anoutlookontruthmain-
+Luger,G.F.(Ed.).(1995).Computationandintelli- Marcus,M.P.,Santorini, B.,and Marcinkiewicz, tenance.Aimemo551,MITAI Laboratory.
+gence:Collectedreadings.AAAI Press. M.A.(1993). Buildingalargeannotatedcorpusof Mc Allester,D.A.(1988). Conspiracynumbersfor
+Lyman, P. and Varian, H. R. (2003). How english:Thepenntreebank.Computational Linguis- min-maxsearch.AIJ,35(3),287 310.
+much information? www.sims.berkeley. tics,19(2),313 330.
+edu how-much-info-2003. Markov, A.A.(1913). Anexampleofstatistical M ing c A is l s l u e e st f e a r c , in D g . A A I . a (1 n 9 d 9 t 8 h ) e . A W A h A at I i t s od th a e y? m C o a st nd p i r d e a ss te -
+Machina, M. (2005). Choice under uncertainty. investigationinthetextof Eugene Onegin illus- statement, electionfor Councilorofthe American
+In Encyclopediaof Cognitive Science,pp.505 514. tratingcouplingof tests inchains.Proc.Academy Associationfor Artificial Intelligence.
+Wiley. of Sciencesof St.Petersburg,7.
+Mc Allester,D.A.and Rosenblitt,D.(1991). Sys-
+Mac Kay, D. J. C. (1992). A practical Bayesian Maron,M.E.(1961). Automaticindexing:Anex- tematicnonlinearplanning. In AAAI-91,Vol.2,pp.
+frameworkforback-propagationnetworks. Neural perimentalinquiry.JACM,8(3),404 417. 634 639.
+Computation,4(3),448 472.
+Maron, M.E.and Kuhns, J.-L.(1960). Onrel- Mc Callum,A.(2003).Efficientlyinducingfeatures
+Mac Kay,D.J.C.(2002). Information Theory,In- evance, probabilistic indexingandinformation re- ofconditionalrandomfields.In UAI-03.
+ferenceand Learning Algorithms. Cambridge Uni- trieval.CACM,7,219 244.
+Mc Carthy, J. (1958). Programs with common
+versity Press.
+Marr,D.(1982). Vision:AComputational Investi- sense. In Proc. Symposium on Mechanisation of
+Mac Kenzie,D.(2004). Mechanizing Proof. MIT gationintothe Human Representationand Process- Thought Processes,Vol.1,pp.77 84.
+Press. ingof Visual Information.W.H.Freema

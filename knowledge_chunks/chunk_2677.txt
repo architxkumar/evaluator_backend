@@ -1,0 +1,25 @@
+anbeasmoothfunctionoftheparameters.) Thatis,there
+willbevaluesof suchthataninfinitesimalchangein causesthepolicytoswitchfromone
+action to another. This means that the value of the policy may also change discontinuously,
+whichmakesgradient-basedsearchdifficult. Forthisreason,policysearchmethodsoftenuse
+astochasticpolicyrepresentation (s,a),whichspecifiestheprobabilityofselectingaction
+STOCHASTICPOLICY ainstates. Onepopularrepresentation isthe softmaxfunction:
+SOFTMAXFUNCTION
+(cid:12) (s,a) e Q (s,a) e Q (s,a(cid:3)) . a(cid:3)
+Softmax becomes nearly deterministic if one action is much better than the others, but it
+always gives adifferentiable function of ; hence, the value of the policy (which depends in
+Section21.5. Policy Search 849
+a continuous fashion on the action selection probabilities) is a differentiable function of .
+Softmaxisageneralization ofthelogistic function(page725)tomultiplevariables.
+Nowletuslookatmethodsforimprovingthepolicy. Westartwiththesimplestcase: a
+deterministic policy and a deterministic environment. Let ( ) be the policy value, i.e., the
+POLICYVALUE
+expectedreward-to-gowhen isexecuted. Ifwecanderiveanexpressionfor ( )inclosed form,thenwehaveastandardoptimizationproblem,asdescribedin Chapter4. Wecanfollow
+the policy gradient vector ( ) provided ( ) is differentiable. Alternatively, if ( ) is
+POLICYGRADIENT not available in closed form, we can evaluate simply by executing it and observing the accumulatedreward. Wecanfollowtheempiricalgradientbyhillclimbing i.e.,evaluating
+the change in policy value for small increments in each parameter. With the usual caveats,
+thisprocesswillconverge toalocaloptimuminpolicyspace.
+When the environment (or the policy) is stochastic, things get more difficult. Suppose
+we are trying to do hill climbing, which requires comparing ( ) and ( ) for some
+small . The problem is that the total reward on each trial may vary widely, so estimates
+of the policy value from a small number of trials will be quite unreliable

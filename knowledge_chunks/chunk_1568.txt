@@ -1,0 +1,35 @@
+he
+state at node n. How could an agent construct such a function? One solution was given in
+the preceding sections namely, to devise relaxed problems for which an optimal solution
+can befound easily. Anothersolution isto learn from experience. Experience here means
+solvinglotsof8-puzzles,forinstance. Eachoptimalsolutiontoan8-puzzleproblemprovides
+examples from which h(n) can be learned. Each example consists of a state from the solu-
+tionpathandtheactualcostofthesolution fromthatpoint. Fromtheseexamples, alearning
+algorithm canbeusedtoconstruct afunction h(n)thatcan(withluck)predictsolution costs
+forotherstates thatarise during search. Techniques fordoing just thisusing neural nets, de-
+cisiontrees,andothermethodsaredemonstrated in Chapter 18. (Thereinforcement learning
+methodsdescribed in Chapter21arealsoapplicable.)
+Inductive learning methods work best when supplied with features of a state that are
+FEATURE
+relevant to predicting the state s value, rather than with just the raw state description. For
+example, the feature number of misplaced tiles might be helpful in predicting the actual
+distance of a state from the goal. Let s call this feature x (n). Wecould take 100 randomly
+1
+generated 8-puzzle configurations and gather statistics on their actual solution costs. We
+might find that when x (n) is 5, the average solution cost is around 14, and so on. Given
+1
+thesedata,thevalueofx canbeusedtopredicth(n). Ofcourse,wecanuseseveralfeatures.
+1
+Asecondfeaturex (n)mightbe numberofpairsofadjacenttilesthatarenotadjacentinthe
+2
+goalstate. Howshouldx (n)andx (n)becombinedtopredicth(n)? Acommonapproach
+1 2
+istousealinearcombination:
+h(n) c x (n) c x (n).
+1 1 2 2
+The constants c and c are adjusted to give the best fit to the actual data on solution costs.
+1 2
+Oneexpectsbothc andc tobepositivebecausemisplacedtilesandincorrectadjacentpairs
+1 2
+make the problem harder to solve. Notice that this heuristic does satisfy the condition that
+h(n) 0forgoalstates,butitisnotnecessarily a

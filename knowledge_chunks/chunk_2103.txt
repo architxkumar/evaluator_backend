@@ -1,0 +1,24 @@
+er(c,IBM) Model(c,Think Book970) Screen Size(c,Inches(14)) Screen Type(c,Color LCD) Memory Size(c,Gigabytes(2)) CPU Speed(c,GHz(1.2)) Offered Product(offer,c) Store(offer,Gen Store) URL(offer, example.com computers 34356.html ) Price(offer, (399)) Date(offer,Today).
+Thisexampleillustratesseveralissuesthatarisewhenwetakeseriouslythetaskofknowledge
+engineering forcommercialtransactions. Forexample, notice thatthepriceisanattribute of
+Section12.8. Summary 467
+the offer, not the product itself. This is important because the offer at a given store may
+change from day to day even for the same individual laptop; for some categories such as
+houses and paintings the same individual object may even be offered simultaneously by
+different intermediaries at different prices. There are still more complications that we have
+not handled, such asthe possibility that the price depends onthe method ofpayment and on
+the buyer s qualifications for certain discounts. The final task is to compare the offers that
+havebeenextracted. Forexample,considerthesethreeoffers:
+A :1.4GHz CPU,2GBRAM,250GBdisk, 299.
+B : 1.2GHz CPU,4GBRAM,350GBdisk, 500.
+C : 1.2GHz CPU,2GBRAM,250GBdisk, 399.
+C is dominated by A; that is, A is cheaper and faster, and they are otherwise the same. In
+general, X dominates Y if X hasabettervalueonatleast oneattribute, andisnotworseon
+any attribute. But neither A nor B dominates the other. To decide which is better we need
+to know how the buyer weighs CPU speed and price against memory and disk space. The
+general topic ofpreferences among multiple attributes isaddressed in Section16.4; fornow,
+our shopping agent will simply return a list of all undominated offers that meet the buyer s
+description. Inthisexample, both Aand B areundominated. Noticethatthisoutcomerelies
+on the assumption that everyone prefers cheaper prices, fasterprocessors, and more storage.
+Someattributes,suchasscreensizeonanotebook,dependontheuser sparticularpreference
+(portability versusvisibility); forthe

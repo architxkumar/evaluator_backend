@@ -1,0 +1,39 @@
+Bayes model naive because it is often
+NAIVEBAYES
+used (as a simplifying assumption) in cases where the effect variables are not actually
+conditionally independent given the cause variable. (The naive Bayes model is sometimes
+called a Bayesian classifier, a somewhat careless usage that has prompted true Bayesians
+to call it the idiot Bayes model.) In practice, naive Bayes systems can work surprisingly
+well, even when the conditional independence assumption is not true. Chapter 20 describes
+methodsforlearningnaive Bayesdistributions fromobservations.
+13.6 THE WUMPUS WORLD REVISITED
+Wecan combine of the ideas in this chapter to solve probabilistic reasoning problems in the
+wumpusworld. (See Chapter7foracompletedescriptionofthewumpusworld.) Uncertainty
+arises in the wumpus world because the agent s sensors give only partial information about
+the world. For example, Figure 13.5 shows a situation in which each of the three reachable
+squares 1,3 , 2,2 , and 3,1 might contain a pit. Pure logical inference can conclude
+nothing aboutwhichsquare ismostlikelytobesafe,soalogicalagentmighthavetochoose
+randomly. Wewillseethataprobabilistic agentcandomuchbetterthanthelogicalagent.
+Ouraimistocalculatetheprobabilitythateachofthethree squarescontainsapit. (For
+this example we ignore the wumpus and the gold.) The relevant properties of the wumpus
+world are that (1) a pit causes breezes in all neighboring squares, and (2) each square other
+than 1,1 contains a pit with probability 0.2. The first step is to identify the set of random
+variables weneed: As in the propositional logic case, we want one Boolean variable P for each square,
+ij
+whichistrueiffsquare i,j actuallycontains apit.
+500 Chapter 13. Quantifying Uncertainty
+1,4 2,4 3,4 4,4 1,4 2,4 3,4 4,4
+1,3 2,3 3,3 4,3 1,3 2,3 3,3 4,3
+OTHER
+QUERY
+1,2 2,2 3,2 4,2 1,2 2,2 3,2 4,2
+B
+OK
+FRONTIER
+1,1 2,1 3,1 4,1 1,1 2,1 3,1 4,1
+KNOWN
+B
+OK OK
+(a) (b)
+Figure13.5 (a)Afterfindingabreezeinboth 1,2 and 2,1 ,theagentisstuck thereis
+nosafeplacetoexpl

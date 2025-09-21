@@ -1,0 +1,24 @@
+ate bisjust b(s) (s),orb s p p
+if we think of them both as vectors. Hence, the expected utility of a fixed conditional
+planvarieslinearly withb;thatis,itcorresponds toahyperplane inbeliefspace.
+2. At any given belief state b, the optimal policy will choose to execute the conditional
+planwithhighestexpectedutility;andtheexpectedutilityofbundertheoptimalpolicy
+isjusttheutilityofthatconditional plan:
+U(b) U (b) maxb .
+p
+p Iftheoptimalpolicy choosestoexecutepstartingatb,thenitisreasonabletoexpect
+that it might choose to execute p in belief states that are very close to b; in fact, if we
+bound the depth of the conditional plans, then there are only finitely many such plans
+and the continuous space of belief states will generally be divided into regions, each
+corresponding toaparticularconditional planthatisoptimalinthatregion.
+Fromthese twoobservations, weseethattheutility function U(b)onbelief states, being the
+maximumofacollection ofhyperplanes, willbepiecewiselinearandconvex.
+Toillustrate this, weuseasimple two-state world. Thestates arelabeled 0and1,with
+R(0) 0 and R(1) 1. There are two actions: Stay stays put with probability 0.9 and Go
+switches to the other state with probability 0.9. Fornow we will assume the discount factor 1. Thesensor reports the correct state with probability 0.6. Obviously, the agent should
+Staywhenitthinksit sinstate1and Gowhenitthinksit sinstate0.
+The advantage of a two-state world is that the belief space can be viewed as one-
+dimensional, because the two probabilities must sum to 1. In Figure 17.8(a), the x-axis
+representsthebeliefstate,definedbyb(1),theprobabilityofbeinginstate1. Nowletuscon-
+sider the one-step plans Stay and Go , each of which receives the reward for the current
+statefollowedbythe(discounted) rewardforthestatereached aftertheaction: (0) R(0) (0.9R(0) 0.1R(1)) 0.1 Stay (1) R(1) (0.9R(1) 0.1R(0)) 1.9 Stay (0) R(0) (0.9R(1) 0.1R(0)) 0.9 Go (1) R(1) (0.9R(0) 0.1R(1)) 1.1 Go Thehyperplanes(lines,inthiscase)forb andb areshown

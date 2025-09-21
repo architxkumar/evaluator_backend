@@ -1,0 +1,29 @@
+ He is a Fellow and former Executive
+Council member of the American Association for Artificial Intelligence. He has published
+over 100 papers on a wide range of topics in artificial intelligence. His other books include
+The Useof Knowledgein Analogyand Inductionand(with Eric Wefald)Dothe Right Thing:
+Studiesin Limited Rationality.
+Peter Norvig iscurrently Directorof Research at Google, Inc., and wasthedirector respon-
+sibleforthecore Websearchalgorithms from2002to2005. He isa Fellowofthe American
+Association for Artificial Intelligence and the Association for Computing Machinery. Previ-
+ously,hewasheadofthe Computational Sciences Divisionat NASA Ames Research Center,
+where he oversaw NASA s research and development in artificial intelligence and robotics,
+and chief scientist at Junglee, where he helped develop one of the first Internet information
+extraction services. He received a B.S. in applied mathematics from Brown University and
+a Ph.D. in computer science from the University of California at Berkeley. He received the
+Distinguished Alumniand Engineering Innovationawardsfrom Berkeleyandthe Exceptional
+Achievement Medalfrom NASA.Hehasbeenaprofessoratthe Universityof Southern Cal-
+ifornia and a research faculty member at Berkeley. His other books are Paradigms of AI
+Programming: Case Studiesin Common Lispand Verbmobil: ATranslation Systemfor Face-
+to-Face Dialogand Intelligent Help Systemsfor UNIX.
+xii
+Contents
+I Artificial Intelligence
+1 Introduction 1
+1.1 What Is AI? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 The Foundations of Artificial Intelligence . . . . . . . . . . . . . . . . . . 5
+1.3 The Historyof Artificial Intelligence . . . . . . . . . . . . . . . . . . . . 16
+1.4 The Stateofthe Art . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+1.5 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 29
+2 Intelligent Agents 34
+2.1 Agentsand Environments . . . . . . . . . . . . . . . . . . . . . . . . . 

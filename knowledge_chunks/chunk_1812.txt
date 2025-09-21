@@ -1,0 +1,32 @@
+forknowledgebases
+because it reveals places where knowledge is missing. Inthis particular case, wecan fixthe
+knowledgebasebyassertingthat,ateachtimestep,theagentisinexactlyonelocation,using
+acollection ofsentences similartothoseusedtoasserttheexistence ofexactlyonewumpus.
+Alternatively,wecanassert L0 foralllocationsotherthan 1,1 ;thesuccessor-stateaxiom
+x,y
+for location takes care of subsequent time steps. The same fixes also work to make sure the
+agenthasonlyoneorientation.
+SATPLAN has more surprises in store, however. The first is that it finds models with
+impossibleactions,suchasshootingwithnoarrow. Tounderstandwhy,weneedtolookmore
+carefullyatwhatthesuccessor-state axioms(suchas Equation(7.3))sayaboutactionswhose
+preconditionsarenotsatisfied. Theaxiomsdopredictcorrectlythatnothingwillhappenwhen
+suchanaction isexecuted (see Exercise10.14), buttheydonotsaythattheactioncannot be
+PRECONDITION executed! Toavoid generating plans withillegal actions, wemustadd precondition axioms
+AXIOMS
+statingthatanactionoccurrencerequiresthepreconditionstobesatisfied.13 Forexample,we
+needtosay,foreachtimet,that
+Shoott Have Arrowt .
+This ensures that if a plan selects the Shoot action at any time, it must be the case that the
+agenthasanarrowatthattime.
+SATPLAN ssecondsurpriseisthecreationofplanswithmultiplesimultaneousactions.
+For example, it may come up with a model in which both Forward0 and Shoot0 are true,
+ACTIONEXCLUSION whichisnotallowed. Toeliminate thisproblem, weintroduce action exclusion axioms: for
+AXIOM
+everypairofactions At and At weaddtheaxiom
+i j At At .
+i j
+Itmight bepointed out that walking forward and shooting at the same timeis not so hard to
+do, whereas, say, shooting and grabbing atthesametimeis ratherimpractical. Byimposing
+action exclusion axioms only on pairs of actions that really do interfere with each other, we
+canallowforplansthatincludemultiplesimultaneousactions andbecause SATPLA Nfinds
+theshortestlegalplan,wecanbesurethatitwilltakeadvantage ofthiscapabili

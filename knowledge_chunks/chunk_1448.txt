@@ -1,0 +1,27 @@
+h models learned
+according to the principles of information theory. That approach fell out of favor in the
+1960s, butreturnedinthelate1990sandnowdominatesthefield.
+Neural networks also fitthis trend. Much of the work on neural nets in the 1980s was
+done inanattempt toscope out whatcould bedone and tolearn howneural netsdifferfrom traditional techniques. Usingimprovedmethodology and theoretical frameworks, thefield
+arrived at an understanding in which neural nets can now be compared with corresponding
+techniquesfromstatistics,patternrecognition,andmachinelearning,andthemostpromising
+technique can be applied to each application. As a result of these developments, so-called
+dataminingtechnology hasspawnedavigorous newindustry.
+DATAMINING
+Judea Pearl s(1988)Probabilistic Reasoningin Intelligent Systemsledtoanewaccep-
+tance ofprobability anddecision theory in AI,following aresurgence ofinterest epitomized
+by Peter Cheeseman s (1985) article In Defense of Probability. The Bayesian network
+BAYESIANNETWORK
+formalism was invented to allow efficient representation of, and rigorous reasoning with,
+uncertain knowledge. This approach largely overcomes many problems of the probabilistic
+reasoningsystemsofthe1960sand1970s;itnowdominates AIresearchonuncertainreason-
+ing and expert systems. The approach allows for learning from experience, and it combines
+thebestofclassical AIandneuralnets. Workby Judea Pearl(1982a)andby Eric Horvitzand
+David Heckerman(Horvitzand Heckerman,1986;Horvitzetal.,1986)promotedtheideaof
+normative expert systems: ones that act rationally according to the laws of decision theory
+anddonottrytoimitatethethoughtstepsofhumanexperts. The Windows TM operatingsys-
+tem includes several normative diagnostic expert systems for correcting problems. Chapters
+13to16coverthisarea.
+Similar gentle revolutions have occurred in robotics, computer vision, and knowledge
+representation. Abetterunderstanding oftheproblemsand theircomplexityproperties,com-
+bined withincreased math

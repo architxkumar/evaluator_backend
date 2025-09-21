@@ -1,0 +1,37 @@
+raint relates two variables. For example, SA (cid:7) NSW is a binary
+BINARYCONSTRAINT
+constraint. A binary CSP is one with only binary constraints; it can be represented as a
+constraint graph, asin Figure6.1(b).
+We can also describe higher-order constraints, such as asserting that the value of Y is
+between X and Z,withtheternaryconstraint Between(X,Y,Z).
+GLOBAL A constraint involving an arbitrary number of variables is called a global constraint.
+CONSTRAINT
+(Thenameistraditional butconfusing becauseitneednotinvolveallthevariablesinaprob-
+lem). One of the most common global constraints is Alldiff, which says that all of the
+variables involved in the constraint must have different values. In Sudoku problems (see
+Section 6.2.6), all variables in a row or column must satisfy an Alldiff constraint. An-
+other example isprovided by cryptarithmetic puzzles. (See Figure 6.2(a).) Each letter in a
+CRYPTARITHMETIC
+cryptarithmetic puzzle represents a different digit. For the case in Figure 6.2(a), this would
+be represented as the global constraint Alldiff(F,T,U,W,R,O). The addition constraints
+onthefourcolumnsofthepuzzlecanbewrittenasthefollowingn-aryconstraints:
+O O R 10 C
+10
+C W W U 10 C
+10 100
+C T T O 10 C
+100 1000
+C F ,
+1000
+where C ,C ,and C areauxiliaryvariablesrepresentingthedigitcarriedoverintothe
+10 100 1000
+tens, hundreds, or thousands column. These constraints can be represented in a constraint
+CONSTRAINT hypergraph,suchastheoneshownin Figure6.2(b). Ahypergraphconsistsofordinarynodes
+HYPERGRAPH
+(thecirclesinthefigure)andhypernodes (thesquares), whichrepresent n-aryconstraints.
+Alternatively, as Exercise 6.6 asks you to prove, every finite-domain constraint can be
+reducedtoasetofbinaryconstraintsifenoughauxiliaryvariablesareintroduced,sowecould
+transform any CS Pinto one withonly binary constraints; thismakes the algorithms simpler.
+Anotherwaytoconvertann-ary CS Ptoabinaryoneisthedualgraphtransformation: create
+DUALGRAPH
+anewgraphinwhichtherewillbeonevariableforeachcon

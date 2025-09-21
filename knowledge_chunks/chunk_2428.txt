@@ -1,0 +1,32 @@
+ders, they may decide to take their money elsewhere. So it is desirable that the bidders
+haveadominantstrategy. Recallthat dominant meansthatthestrategy worksagainst all
+other strategies, which in turn means that an agent can adopt it without regard for the other
+strategies. Anagentwithadominantstrategy canjustbid,without wastingtimecontemplat-
+ing other agents possible strategies. A mechanism where agents have a dominant strategy
+is called a strategy-proof mechanism. If, as is usually the case, that strategy involves the
+STRATEGY-PROOF
+biddersrevealingtheirtruevalue, v ,thenitiscalledatruth-revealing, ortruthful,auction;
+TRUTH-REVEALING i
+REVELATION theterm incentivecompatibleisalsoused. Therevelation principlestatesthatanymecha-
+PRINCIPLE
+Section17.6. Mechanism Design 681
+nismcanbetransformedintoanequivalenttruth-revealing mechanism,sopartofmechanism
+designisfindingtheseequivalent mechanisms.
+It turns out that the ascending-bid auction has most of the desirable properties. The
+bidder with the highest value v gets the goods at a price of b d, where b is the highest
+i o o
+bid among all the other agents and d is the auctioneer s increment.9 Bidders have a simple
+dominantstrategy: keepbiddingaslongasthecurrentcostisbelowyourv . Themechanism
+i
+isnotquitetruth-revealing, because thewinningbidderrevealsonlythathisv b d;we
+i o
+havealowerboundonv butnotanexactamount.
+i
+A disadvantage (from the point of view of the seller) of the ascending-bid auction is
+that it can discourage competition. Suppose that in a bid for cell-phone spectrum there is
+one advantaged company that everyone agrees would be able to leverage existing customers
+and infrastructure, and thus can make alarger profit than anyone else. Potential competitors
+can see that they have no chance in an ascending-bid auction, because the advantaged com-
+pany can always bid higher. Thus, the competitors may not enter at all, and the advantaged
+companyendsupwinningatthereserveprice.
+Anothernegativepropertyofthe English

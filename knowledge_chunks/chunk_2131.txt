@@ -1,0 +1,26 @@
+ about possible worlds. Whereas logical
+assertions saywhichpossible worldsarestrictly ruled out (allthoseinwhichtheassertion is
+false), probabilistic assertions talkabouthowprobable thevariousworldsare. Inprobability
+theory, the set of all possible worlds is called the sample space. The possible worlds are
+SAMPLESPACE
+mutually exclusive and exhaustive two possible worlds cannot both be the case, and one
+possible world must be the case. For example, if we are about to roll two (distinguishable)
+dice, there are 36 possible worlds to consider: (1,1), (1,2), ..., (6,6). The Greek letter (uppercase omega) is used to refer to the sample space, and (lowercase omega) refers to
+elementsofthespace, thatis,particularpossible worlds.
+Afullyspecifiedprobabilitymodelassociatesanumericalprobability P( )witheach
+PROBABILITYMODEL
+possible world.1 The basic axioms of probability theory say that every possible world has a
+probability between0and1andthatthetotalprobability ofthesetofpossible worldsis1:
+(cid:12)
+0 P( ) 1forevery and P( ) 1. (13.1) Forexample, if we assume that each die is fair and the rolls don t interfere with each other,
+then each of the possible worlds (1,1), (1,2), ..., (6,6) has probability 1 36. On the other
+hand,ifthediceconspiretoproducethesamenumber,thentheworlds(1,1),(2,2),(3,3),etc.,
+mighthavehigherprobabilities, leaving theotherswithlowerprobabilities.
+Probabilisticassertionsandqueriesarenotusuallyabout particularpossibleworlds,but
+about setsofthem. Forexample, wemightbeinterested inthe cases wherethetwodice add
+up to 11, the cases where doubles are rolled, and so on. In probability theory, these sets are
+called events a term already used extensively in Chapter 12for adifferent concept. In AI,
+EVENT
+the sets are always described by propositions in a formal language. (One such language is
+described in Section 13.2.2.) Foreach proposition, the corresponding set contains just those
+possibleworldsinwhichthepropositionholds. Theprobabilityassociatedwithapropositi

@@ -1,0 +1,30 @@
+hich is worse than just getting no money. So
+perhaps people who choose B over A and C over D are not being irrational; they are just
+sayingthattheyarewillingtogiveup 200of EM Vtoavoida20 chanceoffeelinglikean
+idiot.
+Arelatedproblemisthe Ellsbergparadox. Heretheprizesarefixed,buttheprobabilities
+areunderconstrained. Yourpayoffwilldependonthecolorofaballchosenfromanurn. You
+aretoldthattheurncontains 1 3redballs, and2 3eitherblackoryellowballs,butyoudon t
+knowhowmanyblackandhowmanyyellow. Again,youareaskedwhetheryoupreferlottery
+Aor B;andthen C or D:
+A: 100foraredball C : 100foraredoryellowball
+B : 100forablackball D : 100forablackoryellowball .
+Itshouldbeclearthatifyouthinktherearemoreredthanblackballsthenyoushould prefer
+A over B and C over D; if you think there are fewer red than black you should prefer the
+opposite. But it turns out that most people prefer A over B and also prefer D over C, even
+though there is no state of the world for which this is rational. It seems that people have
+AMBIGUITY ambiguity aversion: A gives you a 1 3 chance of winning, while B could be anywhere
+AVERSION
+between0and2 3. Similarly,Dgivesyoua2 3chance,while C couldbeanywherebetween
+1 3and3 3. Mostpeopleelecttheknownprobability ratherthantheunknownunknowns.
+6 Forexample, the mathematician magician Persi Diaconis can make a coin flip come out the way he wants
+everytime(Landhuis,2004).
+7 Eventhesurethingmaynotbecertain.Despitecast-ironpromises,wehavenotyetreceivedthat 27,000,000
+fromthe Nigerianbankaccountofapreviouslyunknowndeceasedrelative.
+Section16.3. Utility Functions 621
+Yet another problem is that the exact wording of a decision problem can have a big
+impactontheagent schoices;thisiscalledtheframingeffect. Experimentsshowthatpeople
+FRAMINGEFFECT
+like a medical procedure that it is described as having a 90 survival rate about twice as
+muchasonedescribedashavinga 10 deathrate, eventhoughthesetwostatementsmean
+exactlythesamething. Thisdiscrepancyinjudgmenthasbeenfoundinmultipleexperim

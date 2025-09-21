@@ -1,0 +1,31 @@
+nexampleofalpha betapruning. (e)Thefirstleafbelow Dhasthevalue14,
+so Disworthatmost14. Thisisstillhigherthan MAX sbestalternative(i.e.,3),soweneed
+to keep exploring D s successorstates. Notice also that we nowhave boundson all of the
+successorsoftheroot,sotheroot svalueisalsoatmost14. (f)Thesecondsuccessorof D
+isworth5,soagainweneedtokeepexploring. Thethirdsuccessorisworth2,sonow Dis
+worthexactly2. MAX sdecisionattherootistomoveto B,givingavalueof3.
+somewhereinthetree(see Figure5.6),suchthat Playerhasa choice ofmovingtothatnode.
+If Playerhasabetterchoicemeitherattheparentnodeofnoratanychoicepointfurtherup,
+thennwillneverbereached inactualplay. Sooncewehavefoundoutenough aboutn(by
+examiningsomeofitsdescendants) toreachthisconclusion, wecanpruneit.
+Remember that minimax search is depth-first, so at any one time we just have to con-
+sider the nodes along a single path in the tree. Alpha beta pruning gets its name from the
+followingtwoparametersthatdescribeboundsonthebacked-upvaluesthatappearanywhere
+alongthepath:
+Section5.3. Alpha Beta Pruning 169
+Player
+Opponent m Player
+Opponent n
+Figure5.6 Thegeneralcaseforalpha betapruning. If misbetterthannfor Player,we
+willnevergettoninplay. thevalueofthebest(i.e.,highest-value)choicewehavefoundsofaratanychoicepoint
+alongthepathfor MAX. thevalueofthebest(i.e.,lowest-value)choicewehavefoundsofaratanychoicepoint
+alongthepathfor MIN.
+Alpha beta search updates the values of and as it goes along and prunes the remaining
+branches at a node (i.e., terminates the recursive call) as soon as the value of the current
+node is known to be worse than the current or value for MAX or MIN, respectively. The
+complete algorithm is given in Figure 5.7. We encourage you to trace its behavior when
+appliedtothetreein Figure5.5.
+5.3.1 Moveordering
+Theeffectiveness ofalpha beta pruning ishighly dependent ontheorderinwhich thestates
+areexamined. Forexample,in Figure5.5(e)and(f),wecould notpruneanysuccessors of D
+at all because the worst successors (from t

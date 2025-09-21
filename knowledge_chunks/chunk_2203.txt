@@ -1,0 +1,49 @@
+arly, sample from P(Rain Cloudy true) (cid:16)0.8,0.2(cid:17); suppose this returns
+true.
+4. Wet Grass isanevidence variablewithvalue true. Therefore, weset
+w w P(Wet Grass true Sprinkler false,Rain true) 0.45.
+Here WEIGHTED-SAMPLE returns the event true,false,true,true with weight 0.45, and
+thisistalliedunder Rain true.
+To understand why likelihood weighting works, we start by examining the sampling
+probability S
+WS
+for WEIGHTED-SAMPLE. Rememberthattheevidencevariables Earefixed
+534 Chapter 14. Probabilistic Reasoning
+function LIKELIHOOD-WEIGHTING(X,e,bn,N)returnsanestimateof P(X e)
+inputs:X,thequeryvariable
+e,observedvaluesforvariables E
+bn,a Bayesiannetworkspecifyingjointdistribution P(X
+1
+,...,Xn)
+N,thetotalnumberofsamplestobegenerated
+localvariables: W,avectorofweightedcountsforeachvalueof X,initiallyzero
+forj 1to N do
+x,w WEIGHTED-SAMPLE(bn,e)
+W x W x w wherex isthevalueof X inx
+return NORMALIZE(W)
+function WEIGHTED-SAMPLE(bn,e)returnsaneventandaweight
+w 1;x aneventwithnelementsinitializedfrome
+foreachvariable Xiin X
+1
+,...,Xndo
+if Xiisanevidencevariablewithvaluexi ine
+thenw w P(Xi xi parents(Xi))
+elsex i arandomsamplefrom P(Xi parents(Xi))
+returnx,w
+Figure14.15 Thelikelihood-weightingalgorithmforinferencein Bayesiannetworks. In
+WEIGHTED-SAMPLE, each nonevidence variable is sampled according to the conditional
+distribution given the values already sampled for the variable s parents, while a weight is
+accumulatedbasedonthelikelihoodforeachevidencevariable.
+with values e. We call the nonevidence variables Z (including the query variable X). The
+algorithm sampleseachvariablein Zgivenitsparentvalues:
+(cid:25)l
+S (z,e) P(z parents(Z )). (14.7)
+WS i i
+i 1
+Noticethat Parents(Z )canincludebothnonevidencevariablesandevidencevariables. Un-
+i
+likethepriordistribution P(z),thedistribution S payssomeattentiontotheevidence: the
+WS
+sampled values foreach Z willbeinfluenced byevidence among Z sancestors. Forexam-
+i i
+ple,whensampling Sprinkler thealgorithmpaysattentiontotheev

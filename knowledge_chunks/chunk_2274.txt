@@ -1,0 +1,40 @@
+he forward backward algo-
+rithm (Figure 15.4) applied to a sequence of length t is O(S2t), because each step requires
+multiplying an S-element vector by an S S matrix. The space requirement is O(St), be-
+causetheforwardpassstores tvectorsofsize S.
+Besides providing an elegant description of the filtering and smoothing algorithms for
+HM Ms, the matrix formulation reveals opportunities for improved algorithms. The first is
+a simple variation on the forward backward algorithm that allows smoothing to be carried
+out in constant space, independently ofthe length of the sequence. Theidea isthat smooth-
+ingforanyparticulartimeslice krequiresthesimultaneouspresenceofboththeforwardand
+backwardmessages,f andb ,accordingto Equation(15.8). Theforward backwardal-
+1:k k 1:t
+gorithmachievesthisbystoringthefscomputedontheforwardpasssothattheyareavailable
+during the backward pass. Another way to achieve this is with a single pass that propagates
+both fandbinthesamedirection. Forexample, the forward message fcanbepropagated
+backwardifwemanipulate Equation(15.12)toworkintheotherdirection:
+f (cid:2)
+(T
+(cid:12)
+) 1O 1
+f .
+1:t t 1 1:t 1
+Themodifiedsmoothing algorithm worksbyfirstrunning thestandard forward passtocom-
+putef (forgetting alltheintermediate results) andthen running thebackward passforboth
+t:t
+580 Chapter 15. Probabilistic Reasoning over Time
+function FIXED-LAG-SMOOTHING(et,hmm,d)returnsadistributionover Xt d
+inputs:et,thecurrentevidencefortimestept
+hmm,ahidden Markovmodelwith S S transitionmatrix T
+d,thelengthofthelagforsmoothing
+persistent: t,thecurrenttime,initially1
+f,theforwardmessage P(Xt e 1:t),initiallyhmm.PRIOR
+B,thed-stepbackwardtransformationmatrix,initiallytheidentitymatrix
+et d:t,double-endedlistofevidencefromt dtot,initiallyempty
+localvariables: Ot d,Ot,diagonalmatricescontainingthesensormodelinformation
+addettotheendofet d:t
+Ot diagonalmatrixcontaining P(et Xt)
+ift dthen
+f FORWARD(f,et)
+removeet d 1 fromthebeginningofet d:t
+Ot d diagonalmatrixcontaining P(et d

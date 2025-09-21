@@ -1,0 +1,29 @@
+.2 Optimal Decisionsin Games . . . . . . . . . . . . . . . . . . . . . . . . 163
+5.3 Alpha Beta Pruning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+5.4 Imperfect Real-Time Decisions . . . . . . . . . . . . . . . . . . . . . . . 171
+5.5 Stochastic Games . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+xiii
+xiv Contents
+5.6 Partially Observable Games . . . . . . . . . . . . . . . . . . . . . . . . . 180
+5.7 State-of-the-Art Game Programs . . . . . . . . . . . . . . . . . . . . . . 185
+5.8 Alternative Approaches . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+5.9 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 189
+6 Constraint Satisfaction Problems 202
+6.1 Defining Constraint Satisfaction Problems . . . . . . . . . . . . . . . . . 202
+6.2 Constraint Propagation: Inference in CS Ps . . . . . . . . . . . . . . . . . 208
+6.3 Backtracking Searchfor CS Ps . . . . . . . . . . . . . . . . . . . . . . . . 214
+6.4 Local Searchfor CS Ps . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+6.5 The Structureof Problems . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+6.6 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 227
+III Knowledge, reasoning, andplanning
+7 Logical Agents 234
+7.1 Knowledge-Based Agents . . . . . . . . . . . . . . . . . . . . . . . . . . 235
+7.2 The Wumpus World . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 236
+7.3 Logic . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 240
+7.4 Propositional Logic: AVery Simple Logic . . . . . . . . . . . . . . . . . 243
+7.5 Propositional Theorem Proving . . . . . . . . . . . . . . . . . . . . . . . 249
+7.6 Effective Propositional Model Checking . . . . . . . . . . . . . . . . . . 259
+7.7 Agents Basedon Propositional Logic . . . . . . . . . . . . . . . . . . . . 265
+7.8 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 274
+8 First-Order Logic 285
+8.1 Representation

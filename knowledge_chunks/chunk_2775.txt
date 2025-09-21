@@ -1,0 +1,28 @@
+ishversion,determine whatsentence(s)
+it corresponds to in the French version. Usually, the next sentence of English corre-
+sponds tothe nextsentence of French ina1:1 match, but sometimes there isvariation:
+onesentenceinonelanguagewillbesplitintoa2:1match,ortheorderoftwosentences
+willbeswapped,resultingina2:2match. Bylookingatthesentencelengthsalone(i.e.
+shortsentences shouldalignwithshortsentences), itispossibletoalignthem(1:1,1:2,
+or 2:2, etc.) with accuracy in the 90 to 99 range using a variation on the Viterbi
+algorithm. Evenbetteralignmentcanbeachievedbyusinglandmarksthatarecommon
+toboth languages, such asnumbers, dates, proper names, orwords that weknow from
+abilingualdictionaryhaveanunambiguoustranslation. Forexample,ifthe3rd English
+and 4th French sentences contain the string 1989 and neighboring sentences do not,
+thatisgoodevidencethatthesentences shouldbealignedtogether.
+4. Alignphrases: Withinasentence,phrasescanbealignedbyaprocessthatissimilarto
+that used for sentence alignment, but requiring iterative improvement. When we start,
+wehavenowayofknowingthat quidort alignswith sleeping, butwecanarriveat
+thatalignmentbyaprocessofaggregationofevidence. Overalltheexamplesentences
+we have seen, we notice that qui dort and sleeping co-occur with high frequency,
+and that in the pair of aligned sentences, no phrase other than qui dort co-occurs so
+frequently in other sentences with sleeping. A complete phrase alignment over our
+corpusgivesusthephrasalprobabilities (afterappropriate smoothing).
+5. Extract distortions: Once we have an alignment of phrases we can define distortion
+probabilities. Simplycount howoften distortion occurs in thecorpus foreachdistance
+d 0, 1, 2,...,andapplysmoothing.
+6. Improveestimateswith EM:Useexpectation maximization toimprovetheestimates
+of P(f e) and P(d) values. We compute the best alignments with the current values
+oftheseparametersinthe Estep,thenupdatetheestimatesinthe Mstepanditeratethe
+processuntilconvergence.
+23.5 SPEECH RECOGNI

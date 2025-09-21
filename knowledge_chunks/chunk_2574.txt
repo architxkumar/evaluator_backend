@@ -1,0 +1,29 @@
+-
+thing factually new from the example. Theagent could have derived the example from what
+it already knew, although that might have required an unreasonable amount of computation.
+EBL is now viewed as a method for converting first-principles theories into useful, special-
+purpose knowledge. Wedescribealgorithms for EB Lin Section19.3.
+The situation of our traveler in Brazil is quite different, for she cannot necessarily ex-
+plain why Fernando speaks the way he does, unless she knows her papal bulls. Moreover,
+the same generalization would be forthcoming from a traveler entirely ignorant of colonial
+history. The relevant prior knowledge in this case is that, within any given country, most
+people tend to speak the same language; on the other hand, Fernando is not assumed to be
+thenameofall Brazilians because thiskindofregularity doesnotholdfornames. Similarly,
+thefreshman physics student alsowould behardputtoexplain theparticular values that she
+discoversfortheconductance anddensityofcopper. Shedoesknow,however,thatthemate-
+rial of which an object is composed and its temperature together determine its conductance.
+Ineachcase,thepriorknowledge Background concernstherelevanceofasetoffeaturesto
+RELEVANCE
+thegoal predicate. Thisknowledge, together withtheobservations, allowstheagent toinfer
+anew,generalrulethatexplains theobservations:
+Hypothesis Descriptions Classifications ,
+(19.4)
+Background Descriptions Classifications Hypothesis .
+RELEVANCE-BASED Wecallthiskindofgeneralization relevance-based learning,or RBL(although thenameis
+LEARNING
+not standard). Notice that whereas RB Ldoes make use ofthe content ofthe observations, it
+doesnotproducehypothesesthatgobeyondthelogicalcontentofthebackgroundknowledge
+and the observations. It is a deductive form of learning and cannot by itself account for the
+creation ofnewknowledgestarting fromscratch.
+In the case of the medical student watching the expert, we assume that the student s
+prior knowledge is sufficient to infer the pati

@@ -1,0 +1,28 @@
+uence (lateral walking
+isagoodchoice). Wetunethedetector tohavealowfalsepositive rate,soweknowwhenit
+responds that we have found a real person; and because wehave localized their torso, arms,
+legs,andhead,weknowwhatthesesegmentslooklike.
+24.6 USING VISION
+If vision systems could analyze video and understood what people are doing, we would be
+able to: design buildings and public places better by collecting and using data about what
+peopledoinpublic;buildmoreaccurate,moresecure,andlessintrusivesurveillancesystems;
+buildcomputersportscommentators;andbuildhuman-computerinterfacesthatwatchpeople
+and react to their behavior. Applications for reactive interfaces range from computer games
+thatmakeaplayergetupandmovearoundtosystemsthatsaveenergybymanagingheatand
+lightinabuilding tomatchwheretheoccupants areandwhattheyaredoing.
+Some problems are well understood. If people are relatively small in the video frame,
+andthebackgroundisstable,itiseasytodetectthepeoplebysubtractingabackgroundimage
+from the current frame. If the absolute value of the difference is large, this background
+BACKGROUND subtraction declares the pixel to be a foreground pixel; by linking foreground blobs over
+SUBTRACTION
+time,weobtainatrack.
+Structuredbehaviors likeballet,gymnastics, ortaichihavespecificvocabularies ofac-
+tions. Whenperformed againstasimplebackground, videos oftheseactionsareeasytodeal
+with. Background subtraction identifies the major moving regions, and we can build HOG
+features(keepingtrackofflowratherthanorientation)topresenttoaclassifier. Wecandetect
+consistent patterns of action with a variant of our pedestrian detector, where the orientation
+featuresarecollected intohistogram bucketsovertimeaswellasspace(Figure24.25).
+Moregeneral problems remain open. Thebig research question isto link observations
+of the body and the objects nearby to the goals and intentions of the moving people. One
+source ofdifficulty isthat welack asimple vocabulary ofhuman behavior. Behavior isalot
+962 Chapter 2

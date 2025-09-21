@@ -1,0 +1,33 @@
+Heckerman.) Thisexerciseconcernsthe Almanac Game,which
+is used by decision analysts to calibrate numeric estimation. For each of the questions that
+follow, give your best guess of the answer, that is, a number that you think is as likely to be
+too high as it is to be too low. Also give your guess at a 25th percentile estimate, that is, a
+number that you think has a 25 chance of being too high, and a 75 chance of being too
+low. Dothesameforthe75thpercentile. (Thus,youshould givethreeestimates inall low,
+median,andhigh foreachquestion.)
+a. Numberofpassengers whoflewbetween New Yorkand Los Angelesin1989.
+b. Populationof Warsawin1992.
+c. Yearinwhich Coronadodiscovered the Mississippi River.
+d. Numberofvotesreceivedby Jimmy Carterinthe1976presidential election.
+e. Ageoftheoldestlivingtree,asof2002.
+f. Heightofthe Hoover Daminfeet.
+g. Numberofeggsproduced in Oregonin1985.
+h. Numberof Buddhistsintheworldin1992.
+i. Numberofdeathsdueto AID Sinthe United Statesin1981.
+j. Numberof U.S.patentsgranted in1901.
+The correct answers appear after the last exercise of this chapter. From the point of view of
+decisionanalysis,theinteresting thingisnothowcloseyourmedianguessescametothereal
+answers, but rather how often the real answer came within your 25 and 75 bounds. If it
+was about half the time, then your bounds are accurate. But if you re like most people, you
+will be more sure of yourself than you should be, and fewer than half the answers will fall
+withinthebounds. Withpractice,youcancalibrateyourselftogiverealisticbounds,andthus
+bemoreusefulinsupplyinginformationfordecisionmaking. Trythissecondsetofquestions
+andseeifthereisanyimprovement:
+a. Yearofbirthof Zsa Zsa Gabor.
+b. Maximumdistance from Marstothesuninmiles.
+c. Valueindollarsofexportsofwheatfromthe United Statesin1992.
+d. Tonshandledbytheportof Honolulu in1991.
+e. Annualsalaryindollarsofthegovernorof California in1993.
+f. Populationof San Diegoin1990.
+g. Yearinwhich Roger Williamsfounded Providence, Rhode Island.
+h. Heighto

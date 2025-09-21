@@ -1,0 +1,21 @@
+lingforinferringthegoalsandneedsof Introductionto Modal Logic.Routledge.
+search.JAIR,14,253 302. softwareusers.In UAI-98,pp.256 265.
+Huhns,M.N.and Singh,M.P.(Eds.).(1998).Read-
+Hoffmann, J., Sabharwal, A., and Domshlak, C. Horvitz,E.J.,Breese,J.S.,and Henrion,M.(1988). ingsin Agents.Morgan Kaufmann.
+(2006).Friendsorfoes?An AIplanningperspective Decisiontheoryinexpertsystemsandartificialintel-
+onabstractionandsearch. In ICAPS-06,pp.294 ligence.IJAR,2,247 302. Hume,D.(1739).ATreatiseof Human Nature(2nd
+303. edition). Republishedby Oxford University Press,
+Horvitz,E.J.and Breese,J.S.(1996). Idealparti- 1978,Oxford,UK.
+Hogan,N.(1985).Impedancecontrol:Anapproach tionofresourcesformetareasoning.In AAAI-96,pp. Humphrys,M.(2008).Howmyprogrampassedthe
+tomanipulation.Parts I,II,and III.J.Dynamic Sys- 1229 1234. turingtest.In Epstein,R.,Roberts,G.,and Beber,G.
+tems,Measurement,and Control,107(3),1 24.
+Horvitz,E.J.and Heckerman,D.(1986).Theincon- (Eds.),Parsingthe Turing Test.Springer.
+Hoiem, D., Efros, A.A., and Hebert, M.(2008). sistentuseofmeasuresofcertaintyinartificialintel- Hunsberger,L.and Grosz,B.J.(2000). Acom-
+Puttingobjectsinperspective.IJCV,80(1). ligenceresearch. In Kanal,L.N.and Lemmer,J.F. binatorialauctionforcollaborativeplanning. In Int.
+Holland,J.H.(1975). Adaptionin Naturaland Ar- (Eds.),UAI2,pp.137 151.Elsevier North-Holland. Conferenceon Multi-Agent Systems(ICMAS-2000).
+tificial Systems.Universityof Michigan Press. Horvitz,E.J.,Heckerman,D.,and Langlotz,C.P. Hunt,W.and Brock,B.(1992).Aformal HD Land
+Holland,J.H.(1995).Hidden Order:How Adapta- (1986). Aframeworkforcomparingalternativefor- itsuseinthe FM9001verification. Philosophical
+tion Builds Complexity.Addison-Wesley. malismsforplausiblereasoning.In AAAI-86,Vol.1, Transactionsofthe Royal Societyof London,339.
+pp.210 214.
+Holte,R.and Hernadvolgyi,I.(2001).Stepstowards Hunter,L.and States,D.J.(1992). Bayesianclas-
+theautomaticcreationofsearchheuristics. Tech. Howard,R.A.(1960).Dynamic Programmingand sifica

@@ -1,0 +1,32 @@
+sti Arad
+366
+447
+Sibiu Timisoara Zerind
+393 447 449
+447
+Arad Fagaras Oradea Rimnicu Vilcea
+646 415 450 671 417
+447
+Craiova Pitesti Sibiu
+526 417 553
+Bucharest Craiova Rimnicu Vilcea
+418 615 607
+Figure 3.27 Stages in an RBFS search for the shortest route to Bucharest. The f-limit
+valueforeachrecursivecallisshownontopofeachcurrentnode,andeverynodeislabeled
+withitsf-cost.(a)Thepathvia Rimnicu Vilceaisfolloweduntilthecurrentbestleaf(Pitesti)
+hasavaluethatisworsethanthebestalternativepath(Fagaras). (b)Therecursionunwinds
+andthe bestleaf value of the forgottensubtree(417)is backedup to Rimnicu Vilcea; then
+Fagarasis expanded,revealinga bestleafvalueof 450. (c) Therecursionunwindsandthe
+bestleafvalueoftheforgottensubtree(450)isbackedupto Fagaras;then Rimnicu Vilceais
+expanded.Thistime,becausethebestalternativepath(through Timisoara)costsatleast447,
+theexpansioncontinuesto Bucharest.
+reexpandingthesubtreeatsomelatertime. Figure3.27showshow RBF Sreaches Bucharest. RBFS is somewhat more efficient than IDA, but still suffers from excessive node re-
+generation. In the example in Figure 3.27, RBFS follows the path via Rimnicu Vilcea, then
+Section3.5. Informed(Heuristic)Search Strategies 101 changes its mind and tries Fagaras, and then changes its mind back again. These mind
+changes occur because every time the current best path is extended, its f-value is likely to
+increase h is usually less optimistic for nodes closer to the goal. When this happens, the
+second-best path might become the best path, so the search has to backtrack to follow it. Eachmind change corresponds to aniteration of IDA and could require manyreexpansions
+offorgotten nodestorecreatethebestpathandextenditone morenode. Like A tree search, RBFS is an optimal algorithm if the heuristic function h(n) is
+admissible. Its space complexity is linear in the depth of the deepest optimal solution, but
+its time complexity is rather difficult to characterize: it depends both on the accuracy of the
+heuristic function andon

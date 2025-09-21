@@ -1,0 +1,17 @@
+r,A.(1970).Future Shock.Bantam.
+In Solla,S.A.,Leen,T.K.,and Mu ller,K.-R.(Eds.),
+NIPS12,pp.1057 1063.MIT Press. 365 379. Tomasi,C.and Kanade,T.(1992). Shapeandmo-
+S le u a t r t n o i n ng , , R p . la S n . n ( i 1 n 9 g 9 , 0 a ) n . d I r n e t a e c g t r i a n t g ed ba a s rc e h d it o e n ctu a r p e p s ro f x o - r C Ta o t l t le e c r t s i a o l n l, o C f . C (1 h 9 e 1 ss 1) P . os A iti T o h n o s u T sa h n a d t C E a n n d- b G e a W me o s n : o A r t to io r n iza fr t o io m nm im e a th g o e d s . tr I e J a C m V s , u 9 n , d 1 e 3 r 7 o r 1 t 5 h 4 o . graphy:Afac-
+imatingdynamic programming. In ICML-90, pp. Drawnbythe Best Play.British Chess Magazine. Torralba, A., Fergus, R., and Weiss, Y. (2008).
+216 224. Taylor,G.,Stensrud,B.,Eitelman,S.,and Dunham, Smallcodesandlargeimagedatabasesforrecogni-
+tion.In CVPR,pp.1 8.
+Sutton,R.S.and Barto,A.G.(1998). Reinforce- C.(2007). Towardsautomatingairspacemanage-
+ment Learning:An Introduction.MIT Press. ment.In Proc.Computational Intelligencefor Secu- Trucco,E.and Verri,A.(1998). Introductory Tech-
+rityand Defense Applications(CISDA)Conference, niquesfor3-DComputer Vision. S le v a o rn re in , g K a . pp a r n o d ach Bu fo rg r e i s m , p C ro . ve (2 d 0 b 0 m 9) 2 . 5re A trie m v a a c l. hin In e pp.1 5. Tsitsiklis,J.N.and Van Roy,B.(1997). Ananaly-
+Proc.Conferenceon Information Knowledge Man- Tenenbaum,J.,Griffiths,T.,and Niyogi,S.(2007). sisoftemporal-differencelearningwithfunctionap-
+agement. Intuitivetheoriesasgrammarsforcausalinference. proximation.IEEE Transactionson Automatic Con-
+In Gopnik,A.and Schulz,L.(Eds.),Causallearn- trol,42(5),674 690.
+Swade,D.(2000).Difference Engine:Charles Bab-
+bage And The Quest To Build The First Computer. ing:Psychology,Philosophy,and Computation.Ox- Tumer,K.and Wolpert,D.(2000).Collectiveintel-
+Diane Publishing Co. ford University Press. ligenceandbraess paradox. In AAAI-00,pp.104 Tesauro,G.(1992).Practicalissuesintemporaldif- 109.
+Swerling,P.(1959).Fir

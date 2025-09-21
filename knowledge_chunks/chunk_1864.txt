@@ -1,0 +1,28 @@
+ocess called knowledgeacquisition. Atthisstage, theknowledge isnotrepresented
+ACQUISITION
+formally. Theideaistounderstand thescope oftheknowledge base, asdetermined by
+thetask,andtounderstand howthedomainactuallyworks.
+For the wumpus world, which is defined by an artificial set of rules, the relevant
+knowledge is easy to identify. (Notice, however, that the definition of adjacency was
+not supplied explicitly in the wumpus-world rules.) For real domains, the issue of
+relevance can be quite difficult for example, a system for simulating VLSI designs
+mightormightnotneedtotakeintoaccountstraycapacitances andskineffects.
+308 Chapter 8. First-Order Logic
+3. Decide on a vocabulary of predicates, functions, and constants. That is, translate the
+important domain-level concepts intologic-level names. Thisinvolves manyquestions
+of knowledge-engineering style. Like programming style, this can have a significant
+impact on the eventual success of the project. Forexample, should pits be represented
+by objects or by a unary predicate on squares? Should the agent s orientation be a
+function or a predicate? Should the wumpus s location depend on time? Once the
+choices have been made, the result is a vocabulary that is known as the ontology of
+ONTOLOGY
+the domain. The word ontology means a particular theory of the nature of being or
+existence. Theontology determines what kinds of things exist, but does not determine
+theirspecificproperties andinterrelationships.
+4. Encode general knowledge about the domain. The knowledge engineer writes down
+the axioms for all the vocabulary terms. This pins down (to the extent possible) the
+meaningoftheterms, enabling theexpert tocheck thecontent. Often,thisstepreveals
+misconceptions orgaps in the vocabulary that mustbe fixedby returning tostep 3 and
+iteratingthrough theprocess.
+5. Encode a description of the specific problem instance. If the ontology is well thought
+out, this step will be easy. It will involve writing simple atomic sentences about i

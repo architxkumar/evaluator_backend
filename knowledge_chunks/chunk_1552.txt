@@ -1,0 +1,39 @@
+inan A searchfor Bucharest.Nodesarelabeledwithf g h. The
+hvaluesarethestraight-linedistancesto Bucharesttakenfrom Figure3.22.
+Section3.5. Informed(Heuristic)Search Strategies 97
+O
+N
+Z
+A I
+380 S
+F
+V
+400
+T R
+P
+L
+H
+M U
+B
+420
+D
+E
+C
+G
+Figure3.25 Mapof Romaniashowingcontoursatf 380,f 400,andf 420,with
+Aradas the start state. Nodesinside a givencontourhave f-costsless than orequalto the
+contourvalue.
+(cid:2)
+Figure 3.9; because f is nondecreasing along any path, n would have lower f-cost than n
+andwouldhavebeenselectedfirst.
+From the two preceding observations, it follows that the sequence of nodes expanded by A using GRAPH-SEARCH is in nondecreasing order of f(n). Hence, the first goal node
+selected forexpansion must be an optimal solution because f is the true cost forgoal nodes
+(whichhaveh 0)andalllatergoalnodeswillbeatleastasexpensive.
+The fact that f-costs are nondecreasing along any path also means that we can draw
+contours in the state space, just like the contours in a topographic map. Figure 3.25 shows
+CONTOUR
+an example. Inside the contour labeled 400, all nodes have f(n) less than or equal to 400, and so on. Then, because A expands the frontier node of lowest f-cost, we can see that an A searchfansoutfromthestartnode,addingnodesinconcentricbandsofincreasingf-cost. With uniform-cost search (A search using h(n) 0), the bands will be circular around the start state. With more accurate heuristics, the bands will stretch toward the goal state and become more narrowly focused around the optimal path. If C is the cost of the
+optimalsolutionpath,thenwecansaythefollowing: A expandsallnodeswithf(n) C . A mightthenexpandsomeofthenodesrightonthe goalcontour (wheref(n) C )
+beforeselecting agoalnode.
+Completeness requires that there be only finitely many nodes with cost less than orequal to C ,acondition thatistrueifallstepcostsexceedsomefinite(cid:2)andifbisfinite. Notice that A expands no nodes with f(n) C for example, Timisoara is not
+expanded in Figure 3.24 even though it

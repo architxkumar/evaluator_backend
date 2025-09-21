@@ -1,0 +1,22 @@
+d
+the first serious discussion of the feasibility of computer chess and checkers (Morrison and
+Morrison,1961). Hedidnotunderstandtheexponentialcomplexityofsearchtrees,claiming the combinations involved in the Analytical Engine enormously surpassed any required,
+even by the game of chess. Babbage also designed, but did not build, a special-purpose
+machine for playing tic-tac-toe. The first true game-playing machine was built around 1890
+by the Spanish engineer Leonardo Torresy Quevedo. Itspecialized inthe KRK (king and
+rookvs.king)chessendgame,guaranteeing awinwithkingandrookfromanyposition.
+The minimax algorithm is traced to a 1912 paper by Ernst Zermelo, the developer of
+modernsettheory. Thepaperunfortunatelycontainedseveralerrorsanddidnotdescribemin-
+imaxcorrectly. Ontheotherhand,itdidlayouttheideasofretrogradeanalysisandproposed
+(but did not prove) what became known as Zermelo s theorem: that chess is determined Whitecan force awinor Black canoritisadraw; wejust don t know which. Zermelosays
+thatshould weeventually know, Chesswouldofcourse losethecharacterofagameatall. A solid foundation for game theory was developed in the seminal work Theory of Games
+and Economic Behavior (von Neumannand Morgenstern, 1944), whichincluded ananalysis
+showingthatsomegamesrequirestrategiesthatarerandomized(orotherwiseunpredictable).
+See Chapter17formoreinformation.
+Bibliographical and Historical Notes 191
+John Mc Carthy conceived the idea of alpha beta search in 1956, although he did not
+publish it. The NS Schess program (Newell etal.,1958) used asimplified version ofalpha beta; itwasthe firstchess program todo so. Alpha beta pruning wasdescribed by Hartand
+Edwards(1961)and Hartetal.(1972). Alpha betawasusedbythe Kotok Mc Carthy chess
+program written by a student of John Mc Carthy (Kotok, 1962). Knuth and Moore (1975)
+proved the correctness ofalpha beta and analysed its timecomplexity. Pearl(1982b) shows
+alpha beta tobeasymptotically optimalamongallfixed-depthgame-treesearchalgorit

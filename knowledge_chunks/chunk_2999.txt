@@ -1,0 +1,22 @@
+ 973. pp.547 552. lar,J.,and Tobarra,L.(2008). Formalanalysisof
+SAML2.0webbrowsersinglesign-on: Breaking
+Ackley, D.H.and Littman, M.L.(1991). Inter- ALPAC(1966). Languageandmachines: Com- the SAML-basedsinglesign-onforgoogleapps. In
+actionsbetweenlearningandevolution. In Lang- puters in translation and linguistics. Tech. rep. FMSE 08: Proc. 6th ACM workshopon Formal
+ton, C.,Taylor, C., Farmer, J.D., and Ramussen, 1416, The Automatic Language Processing Advi- methodsinsecurityengineering,pp.1 10.
+S.(Eds.),Artificial Life II,pp.487 509.Addison- sory Committeeofthe National Academyof Sci-
+Wesley. ences. Arnauld,A.(1662).Lalogique,oul artdepenser.
+Chez Charles Savreux,aupieddela Tourde Nostre
+Adelson-Velsky,G.M.,Arlazarov,V.L.,Bitman, Alterman,R.(1988).Adaptiveplanning.Cognitive Dame,Paris.
+A.R.,Zhivotovsky,A.A.,and Uskov,A.V.(1970). Science,12,393 422.
+Programming acomputer toplaychess. Russian Arora,S.(1998). Polynomialtimeapproximation
+Mathematical Surveys,25,221 262. Amarel, S. (1967). An approach to heuristic schemesfor Euclideantravelingsalesmanandother
+problem-solvingandtheoremprovinginthepropo- geometricproblems.JACM,45(5),753 782.
+Adida,B.and Birbeck,M.(2008). RD Faprimer. sitional calculus. In Hart, J. and Takasu, S.
+Tech.rep.,W3C. (Eds.),Systemsand Computer Science.Universityof Arunachalam,R.and Sadeh,N.M.(2005). The
+Toronto Press. supplychaintradingagentcompetition. Electronic
+Agerbeck,C.and Hansen,M.O.(2008). Amulti- Commerce Researchand Applications,Spring,66 agentapproachtosolving NP-completeproblems. Amarel, S. (1968). On representations of prob- 84.
+Master sthesis,Technical Univ.of Denmark. lems of reasoning about actions. In Michie, D.
+(Ed.),Machine Intelligence3,Vol.3,pp.131 171. Ashby,W.R.(1940).Adaptivenessandequilibrium.
+Aggarwal,G.,Goel,A.,and Motwani,R.(2006). Elsevier North-Holland. J.Mental Science,86,478 483.
+Truthfulauctionsforpricingsearchkeywords. In
+EC-06,pp.1 7. Amir,E.and Russell,S.J.(2003).Logicalfiltering. Ashby,W.R.(1948).Designforabr

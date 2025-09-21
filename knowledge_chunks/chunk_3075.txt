@@ -1,0 +1,21 @@
+Letters,47,173 180. Press. Mason,M.and Salisbury,J.(1985). Robothands
+andthemechanicsofmanipulation.MIT Press.
+L Ph u i c l a o s s , op J. hy R , . 3 ( 6 1 . 961). Minds,machines,and Go del. M Int a ro n d n u in c g ti , o C n ., to Ra In g f h o a r v m a a n t , i P o . n ,a R n e d tr S i c e h va u l t . ze, C H a . m (2 b 0 ri 0 d 8 g ) e . Mataric,M.J.(1997). Reinforcementlearningin
+University Press. themulti-robotdomain. Autonomous Robots,4(1),
+Lucas,J.R.(1976). This Go deliskillingme: A 73 83.
+rejoinder.Philosophia,6(1),145 148. Mannion, M. (2002). Usingfirst-order logic for Mates,B.(1953). Stoic Logic. Universityof Cali-
+productlinemodelvalidation. In Software Product
+Lucas, P. (1996). Knowledge acquisition for Lines:Second International Conference.Springer. fornia Press.
+decision-theoreticexpertsystems. AISB Quarterly, Matuszek,C.,Cabral,J.,Witbrock,M.,and De O-
+94,23 33. Manzini,G.(1995). BIDA :Animprovedperime- liveira,J.(2006). Anintroductiontothesyntaxand
+tersearchalgorithm.AIJ,72(2),347 360.
+Lucas, P., vander Gaag, L., and Abu-Hanna, A. semanticsofcyc. In Proc.AAAI Spring Symposium
+(2004). Bayesian networks in biomedicine and Marbach,P.and Tsitsiklis,J.N.(1998).Simulation- on Formalizingand Compiling Background Knowl-
+health-care.Artificial Intelligencein Medicine. based optimization of Markov reward processes. edgeand Its Applicationsto Knowledge Representa-
+Technicalreport LIDS-P-2411,Laboratoryfor Infor- tionand Question Answering.
+Luce,D.R.and Raiffa,H.(1957). Gamesand De- mationand Decision Systems,Massachusetts Insti-
+cisions.Wiley. tuteof Technology. Maxwell,J.and Kaplan,R.(1993). Theinterface
+betweenphrasalandfunctionalconstraints.Compu-
+Ludlow,P.,Nagasawa,Y.,and Stoljar,D.(2004). Marcus,G.(2009). Kluge:The Haphazard Evolu- tational Linguistics,19(4),571 590.
+There s Something About Mary.MIT Press. tionofthe Human Mind.Mariner Books. Mc Allester,D.A.(1980).Anoutlookontruthmain-
+Luger,G.F.(Ed.).(1995).Computationandintelli- Marcus,M.P.,Santor

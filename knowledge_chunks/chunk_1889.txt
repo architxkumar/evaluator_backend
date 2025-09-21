@@ -1,0 +1,28 @@
+sentences and returns a unifier for
+themifoneexists:
+UNIFY(p,q) where SUBST( ,p) SUBST( ,q).
+Let us look at some examples of how UNIFY should behave. Suppose we have a query
+Ask Vars(Knows(John,x)): whom does John know? Answers to this query can be found
+2 Generalized Modus Ponensismoregeneralthan Modus Ponens(page249)inthesensethattheknownfacts
+andthepremiseoftheimplicationneedmatchonlyuptoasubstitution,ratherthanexactly. Ontheotherhand,
+Modus Ponensallowsanysentence asthepremise,ratherthanjustaconjunctionofatomicsentences.
+Section9.2. Unificationand Lifting 327
+byfindingallsentencesintheknowledgebasethatunifywith Knows(John,x). Herearethe
+resultsofunificationwithfourdifferentsentences thatmightbeintheknowledgebase:
+UNIFY(Knows(John,x), Knows(John,Jane)) x Jane UNIFY(Knows(John,x), Knows(y,Bill)) x Bill,y John UNIFY(Knows(John,x), Knows(y,Mother(y))) y John,x Mother(John) UNIFY(Knows(John,x), Knows(x,Elizabeth)) fail .
+The last unification fails because x cannot take on the values John and Elizabeth at the
+same time. Now, remember that Knows(x,Elizabeth) means Everyone knows Elizabeth, so we should be able to infer that John knows Elizabeth. The problem arises only because
+the two sentences happen to use the same variable name, x. The problem can be avoided
+STANDARDIZING by standardizing apart one of the two sentences being unified, which means renaming its
+APART
+variables to avoid name clashes. Forexample, we can rename xin Knows(x,Elizabeth) to
+x (anewvariablename)withoutchanging itsmeaning. Nowtheunification willwork:
+17
+UNIFY(Knows(John,x), Knows(x
+17
+,Elizabeth)) x Elizabeth,x
+17 John .
+Exercise9.12delvesfurtherintotheneedforstandardizing apart.
+There is one more complication: we said that UNIFY should return a substitution
+that makes the two arguments look the same. But there could be more than one such uni-
+fier. For example, UNIFY(Knows(John,x),Knows(y,z)) could return y John,x z or y John,x John,z John . The first unifier gives Knows(John,z) as the result 

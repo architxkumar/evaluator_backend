@@ -1,0 +1,46 @@
+fthestateattime t. (Both
+t
+ofthesearerandomvariables.) Withthisnotation,adynamicdecisionnetworklookslikethe
+oneshownin Figure17.10.
+Dynamicdecisionnetworkscanbeusedasinputsforany POMD Palgorithm,including
+thoseforvalueandpolicyiterationmethods. Inthissection,wefocusonlook-aheadmethods
+thatprojectactionsequencesforwardfromthecurrentbeliefstateinmuchthesamewayasdo
+the game-playing algorithms of Chapter 5. The network in Figure 17.10 has been projected
+three steps into the future; the current and future decisions A and the future observations
+Section17.4. Partially Observable MD Ps 665
+A in P(X E )
+t t 1:t
+E . . .
+t 1
+... ... ... ...
+A t 1 in P(X t 1 E 1:t 1 ) . . .
+... ... ...
+E . . .
+t 2
+... ... ...
+A t 2 in P(X t 2 E 1:t 2 ) . . .
+... ... ...
+E t 3 . . .
+... ... ...
+U(X ) . . .
+t 3
+10 4 6 3
+Figure17.11 Partofthelook-aheadsolutionofthe DD Nin Figure17.10. Eachdecision
+willbetakeninthebeliefstateindicated.
+E and rewards R are all unknown. Notice that the network includes nodes for the rewards
+for X and X , but the utility for X . This is because the agent must maximize the
+t 1 t 2 t 3
+(discounted) sum of all future rewards, and U(X ) represents the reward for X and all
+t 3 t 3
+subsequentrewards. Asin Chapter5,weassumethat U isavailableonlyinsomeapproximate
+form: ifexactutilityvalueswereavailable,look-aheadbeyonddepth1wouldbeunnecessary.
+Figure 17.11 shows part of the search tree corresponding to the three-step look-ahead
+DD Nin Figure17.10. Eachofthetriangularnodesisabeliefstateinwhichtheagentmakes
+a decision A for i 0,1,2,.... The round (chance) nodes correspond to choices by the
+t i
+environment, namely, what evidence E arrives. Notice that there are no chance nodes
+t i
+corresponding to the action outcomes; this is because the belief-state update for an action is
+deterministic regardless oftheactualoutcome.
+The belief state at each triangular node can be computed by applying a filtering al-
+gorithm to the sequence of percepts and actions leading to it. In this way, t

@@ -1,0 +1,30 @@
+he sequence of percepts and actions so
+far. Thisisessentiallythefilteringtaskdescribedin Chapter15. Thebasicrecursivefiltering
+equation (15.5 on page 572) shows how to calculate the new belief state from the previous
+belief state and thenew evidence. For POMD Ps,wealso have anaction to consider, but the
+result isessentially thesame. If b(s)wasthe previous belief state, and theagent does action
+aandthenperceivesevidence e,thenthenewbeliefstateisgivenby
+(cid:12)
+b (cid:2) (s (cid:2) ) P(e s (cid:2) ) P(s (cid:2) s,a)b(s),
+s
+where is anormalizing constant that makes the belief state sum to 1. Byanalogy with the
+updateoperatorforfiltering(page572),wecanwritethisas
+(cid:2)
+b FORWARD(b,a,e). (17.11)
+Inthe4 3POMDP,supposetheagentmoves Leftanditssensorreports1adjacentwall;then
+it s quite likely (although not guaranteed, because both the motion and the sensor are noisy)
+thattheagentisnowin(3,1). Exercise17.13asksyoutocalculatetheexactprobabilityvalues
+forthenewbeliefstate.
+The fundamental insight required to understand POMD Ps is this: the optimal action
+depends onlyontheagent s current belief state. Thatis,theoptimal policycanbedescribed by a mapping (b) from belief states to actions. It does not depend on the actual state the
+agentisin. Thisisagoodthing,becausetheagentdoesnotknowitsactualstate;allitknows
+isthebeliefstate. Hence,thedecision cycleofa POMD Pagentcanbebroken downintothe
+followingthreesteps: 1. Giventhecurrentbeliefstate b,executetheactiona (b).
+2. Receivepercept e.
+3. Setthecurrentbeliefstateto FORWARD(b,a,e)andrepeat.
+Nowwecanthink of POMD Psasrequiring asearch inbelief-state space, justlikethemeth-
+ods for sensorless and contingency problems in Chapter 4. The main difference is that the
+POMD Pbelief-state space iscontinuous, because a POMD Pbelief stateisaprobability dis-
+tribution. For example, a belief state for the 4 3 world is a point in an 11-dimensional
+continuous space. An action changes the belief state, not just the physical state. Hence, the
+action

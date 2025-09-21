@@ -1,0 +1,29 @@
+eadstothestatewiththehighestminimaxvalue,and MIN sbestreplyisb
+1
+,
+becauseitleadstothestatewiththelowestminimaxvalue.
+MIN,then MAX smovesinthestates resulting fromeverypossible response by MIN tothose
+moves, and so on. This is exactly analogous to the AND OR search algorithm (Figure 4.11)
+with MAX playing theroleof OR and MIN equivalent to AND. Roughly speaking, anoptimal
+strategy leads to outcomes at least as good as any other strategy when one is playing an
+infallible opponent. Webeginbyshowinghowtofindthisoptimalstrategy.
+Even a simple game like tic-tac-toe is too complex for us to draw the entire game tree
+ononepage,sowewillswitchtothetrivialgamein Figure5.2. Thepossiblemovesfor MAX
+at the root node are labeled a 1 , a 2 , and a 3 . The possible replies to a 1 for MIN are b 1 , b 2 ,
+b 3 , and so on. This particular game ends after one move each by MAX and MIN. (In game
+parlance,wesaythatthistreeisonemovedeep,consistingoftwohalf-moves,eachofwhich
+iscalledaply.) Theutilitiesoftheterminalstatesinthisgamerangefrom2to14.
+PLY
+Given a game tree, the optimal strategy can be determined from the minimax value
+MINIMAXVALUE
+of each node, which we write as MINIMAX(n). The minimax value of a node is the utility
+(for MAX) of being in the corresponding state, assuming that both players play optimally
+from there to the end of the game. Obviously, the minimax value of a terminal state is just
+its utility. Furthermore, given a choice, MAX prefers to move to a state of maximum value,
+whereas MIN prefersastateofminimumvalue. Sowehavethefollowing:
+MINIMAX(s) UTILITY(s) if TERMINAL-TEST(s) max a Actions(s) MINIMAX(RESULT(s,a)) if PLAYER(s) MAX
+min a Actions(s) MINIMAX(RESULT(s,a)) if PLAYER(s) MIN
+Letusapplythesedefinitionstothegametreein Figure5.2. Theterminalnodesonthebottom
+level get their utility values from the game s UTILITY function. The first MIN node, labeled
+B, has three successor states with values 3, 12, and 8, so its minimax value is 3. Similarly,
+the othertwo MIN nodes 

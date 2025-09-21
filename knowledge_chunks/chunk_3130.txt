@@ -1,0 +1,33 @@
+ions,5 16,845
+Allais,M.,620,638,1064 ANGELIC-SEARCH,414 futureof,1051 1052
+Allaisparadox,620 angelicsemantics,431 goalsof,1049 1051
+Alldiffconstraint,206 answerliteral,350 historyof,16 28
+Allen,B.,432,1072 answersetprogramming,359 journals,31
+Allen,C.,638,1069 antecedent,244 philosophyof,1020 1043
+Allen,J.F.,396,431,448,470,1064 Anthony,M.,762,1064 possibilityof,1020 1025
+alliance(inmultiplayergames),166 anytimealgorithm,1048 programminglanguage,19
+Allis,L.,194,1064 Aoki,M.,686,1064 real-time,1047
+Almanac Game,640 aorticcoarctation,634 societies,31
+Almuallim,H.,799,1064 apparentmotion,940 strong,1020,1026 1033,1040
+Almulla,M.,111,1085 appearance,942 subfields,1
+ALPAC.,922,1064 appearancemodel,959 asuniversalfield,1
+Alperin Resnick,L.,457,471,1066 Appel,K.,227,1064 weak,1020,1040 (normalizationconstant),497 Appelt,D.,884,921,1064,1075,1076 artificiallife,155
+alpha betapruning,167,199 APPEND,341 artificialurea,1027
+alpha betasearch,167 171,189,191 applicable,67,368,375 Arunachalam,R.,688,1064
+ALPHA-BETA-SEARCH,170 ap Alterman,R.,432,1064 approximatenear-neighbors,741 asbestosremoval,615
+Altman,A.,195,1064 Apt,K.R.,228,230,1064 Ashby,W.R.,15,1064
+altruism,483 Apte ,C.,884,1064 Asimov,I.,1011,1038,1064
+Alveyreport,24 Arbuthnot,J.,504,1064 ASKMSR,872,873,885
+AM,800 arcconsistency,208 assertion(logical),301
+Amarel,S.,109,115,156,468,1064 Archibald,C.,195,1064 assignment(ina CSP),203
+ambientillumination,934 architecture,46 associativememory,762
+ambiguity,287,465,861,904 912,919 agent,26,1047 assumption,462
+lexical,905 cognitive,336 Astrom,K.J.,156,686,1064
+semantic,905 forspeechrecognition,25 astronomer,562
+syntactic,905,920 hybrid,1003,1047 asymptoticanalysis,1054,1053 1054
+ambiguityaversion,620 parallel,112 asymptoticboundedoptimality,1050
+Amir,E.,195,278,556,1064,1070, pipeline,1005 Atanasoff,J.,14
+1086 reflective,1048 Atkeson,C.G.,854,1083
+Amit,D.,761,1064 rule-based,336 Atkin,L.R.,110,1089
+analogicalreasoning,799 three-layer,1004 atom,295
+ANALOGY,19,31 arcreversal,559

@@ -1,0 +1,25 @@
+y not terminate on unsolvable problems. The Bounded Plan SAT problem
+remains decidable even in the presence of function symbols. For proofs of the assertions in
+thissection, see Ghallabetal.(2004).
+Both Plan SA Tand Bounded Plan SA Tareinthecomplexity class PSPACE,aclassthat
+is larger (and hence more difficult) than NP and refers to problems that can be solved by a
+deterministic Turing machine with a polynomial amount of space. Even if we make some
+rather severe restrictions, the problems remain quite difficult. For example, if we disallow
+negative effects, both problems are still NP-hard. However, if we also disallow negative
+preconditions, Plan SA Treduces totheclass P.
+These worst-case results may seem discouraging. We can take solace in the fact that
+agents are usually not asked to find plans for arbitrary worst-case problem instances, but
+ratherareaskedforplansinspecificdomains(suchasblocks-worldproblemswithnblocks),
+which can be much easier than the theoretical worst case. For many domains (including the
+blocks world and the air cargo world), Bounded Plan SAT is NP-complete while Plan SAT is
+in P;inotherwords,optimalplanningisusuallyhard,butsub-optimalplanningissometimes
+easy. To do well on easier-than-worst-case problems, we will need good search heuristics.
+That s the true advantage of the classical planning formalism: it has facilitated the develop-
+ment of very accurate domain-independent heuristics, whereas systems based on successor-
+stateaxiomsinfirst-orderlogichavehadlesssuccess incomingupwithgoodheuristics.
+Section10.2. Algorithmsfor Planningas State-Space Search 373
+10.2 ALGORITHMS FOR PLANNING AS STATE-SPACE SEARCH
+Nowweturnourattentiontoplanningalgorithms. Wesawhowthedescription ofaplanning
+problem defines a search problem: we can search from the initial state through the space
+of states, looking for a goal. One of the nice advantages of the declarative representation of
+actionschemasisthatwecanalsosearchbackwardfromthegoal,lookingfortheinitialstat

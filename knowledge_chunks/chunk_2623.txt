@@ -1,0 +1,29 @@
+r ,whichisdependent on and :
+i 1 2
+P(Wrapper red Flavor cherry, ) i i 1 1 1
+P(Wrapper red Flavor lime, ) .
+i i 2 2 2
+Now, the entire Bayesian learning process can be formulated as an inference problem. We
+add new evidence nodes, then query the unknown nodes (in this case, , , ). This for-
+1 2
+mulation of learning and prediction makes it clear that Bayesian learning requires no extra principles oflearning. Furthermore, thereis, inessence, justonelearning algorithm the
+inference algorithm for Bayesian networks. Ofcourse, thenatureofthesenetworks issome-
+whatdifferent from those of Chapter14because ofthe potentially huge numberofevidence
+variables representing the training set and the prevalence of continuous-valued parameter
+variables.
+20.2.5 Learning Bayes net structures
+Sofar, wehaveassumed thatthestructure ofthe Bayesnetisgivenandwearejusttrying to
+learn the parameters. The structure of the network represents basic causal knowledge about
+the domain that is often easy for an expert, or even a naive user, to supply. In some cases,
+however, the causal model may be unavailable or subject to dispute for example, certain
+corporations have long claimed that smoking does not cause cancer so it is important to
+understand how the structure of a Bayes net can be learned from data. This section gives a
+briefsketchofthemainideas.
+The most obvious approach is to search for a good model. We can start with a model
+containing no links and begin adding parents for each node, fitting the parameters with the
+methods we have just covered and measuring the accuracy of the resulting model. Alterna-
+tively, we can start with an initial guess at the structure and use hill-climbing or simulated
+annealing search to make modifications, retuning the parameters after each change in the
+structure. Modifications can include reversing, adding, or deleting links. We must not in-
+troduce cycles in the process, so many algorithms assume that an ordering is given for the
+variables, and that a node can

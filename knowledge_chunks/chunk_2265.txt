@@ -1,0 +1,41 @@
+5(cid:17), after which it remains constant for all time. This is the stationary
+distribution ofthe Markov process defined by thetransition model. (Seealso page 537.) A
+great deal is known about the properties of such distributions and about the mixing time MIXINGTIME
+roughly, thetime taken to reach the fixedpoint. Inpractical terms, this dooms tofailure any
+attempt topredict the actual state foranumber ofsteps that is morethan asmall fraction of
+themixing time, unless the stationary distribution itself isstrongly peaked inasmallarea of
+the state space. Themore uncertainty there is inthe transition model, the shorter willbe the
+mixingtimeandthemorethefutureisobscured.
+In addition to filtering and prediction, we can use a forward recursion to compute the
+likelihoodoftheevidencesequence,P(e ). Thisisausefulquantityifwewanttocompare
+1:t
+different temporal models that might have produced the same evidence sequence (e.g., two
+different modelsforthepersistence ofrain). Forthisrecursion, weusealikelihood message
+(cid:3) (X ) P(X ,e ). Itisasimpleexercisetoshowthatthemessagecalculation isidentical
+1:t t t 1:t
+tothatforfiltering:
+(cid:3)
+1:t 1 FORWARD((cid:3)
+1:t
+,e
+t 1
+).
+Havingcomputed(cid:3) ,weobtaintheactuallikelihood bysummingout X :
+1:t (cid:12) t
+L P(e ) (cid:3) (x ). (15.7)
+1:t 1:t 1:t t
+xt
+Noticethatthelikelihood messagerepresents theprobabilities oflongerandlongerevidence
+sequencesastimegoesbyandsobecomesnumericallysmallerandsmaller,leadingtounder-
+flow problems with floating-point arithmetic. This is an important problem in practice, but
+weshallnotgointosolutions here.
+574 Chapter 15. Probabilistic Reasoning over Time
+X X X X
+0 1 k t
+E E E
+1 k t
+Figure 15.3 Smoothing computes P(Xk e 1:t), the posterior distribution of the state at
+somepasttimekgivenacompletesequenceofobservationsfrom1tot.
+15.2.2 Smoothing
+As we said earlier, smoothing is the process of computing the distribution over past states
+given evidence up to the present; that is, P(X e ) for 0 k t. (See Fi

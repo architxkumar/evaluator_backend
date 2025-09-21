@@ -1,0 +1,36 @@
+e
+observed observed
+smoothed smoothed
+11 11
+10 10
+Y 9 Y 9
+8 8
+7 7
+6 6
+8 10 12 14 16 X18 20 22 24 26 8 10 12 14 16 X18 20 22 24 26
+(a) (b)
+Figure 15.11 (a) Results of Kalman filtering for an object moving on the X Y plane,
+showing the true trajectory (left to right), a series of noisy observations, and the trajectory
+estimatedby Kalmanfiltering.Varianceinthepositionestimateisindicatedbytheovals.(b)
+Theresultsof Kalmansmoothingforthesameobservationsequence.
+The fact that Kalman filtering can be applied to a system does not mean that the re-
+sultswillbevalidoruseful. Theassumptions made alinear Gaussiantransition andsensor
+EXTENDEDKALMAN models areverystrong. The extended Kalmanfilter(EKF)attemptstoovercomenonlin-
+FILTER(EKF)
+earities in the system being modeled. A system is nonlinear if the transition model cannot
+NONLINEAR
+be described as a matrix multiplication of the state vector, as in Equation (15.21). The EKF
+worksbymodelingthesystemaslocallylinearinx intheregionofx ,themeanofthe
+t t t
+current state distribution. This works well forsmooth, well-behaved systems and allows the
+trackertomaintainandupdatea Gaussianstatedistributionthatisareasonableapproximation
+tothetrueposterior. Adetailedexampleisgivenin Chapter 25.
+What does it mean for a system to be unsmooth or poorly behaved ? Technically,
+it means that there is significant nonlinearity in system response within the region that is close (according to the covariance ) to the current mean . To understand this idea
+t t
+in nontechnical terms, consider the example of trying to track a bird as it flies through the
+jungle. The bird appears to be heading at high speed straight for a tree trunk. The Kalman
+filter,whetherregularorextended,canmakeonlya Gaussian predictionofthelocationofthe
+bird,andthemeanofthis Gaussianwillbecenteredonthetrunk,asshownin Figure15.12(a).
+Areasonablemodelofthebird,ontheotherhand,wouldpredictevasiveactiontoonesideor
+the other, asshown in Figure 15.12(b). Sucha model is highly nonlinear, beca

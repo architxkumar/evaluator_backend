@@ -1,0 +1,38 @@
+a 1with
+WEIGHT 0
+anassociated weightw . Eachunitj firstcomputesaweightedsumofitsinputs:
+0,j
+(cid:12)n
+in w a .
+j i,j i
+i 0
+ACTIVATION Thenitappliesanactivation functiong tothissumtoderivetheoutput:
+FUNCTION (cid:31)
+(cid:12)n
+a g(in ) g w a . (18.9)
+j j i,j i
+i 0
+8 Anoteonnotation: forthissection,weareforcedtosuspendourusualconventions. Inputattributesarestill
+indexed by i , so that an external activation ai is given by input xi; but index j will refer to internal units
+ratherthanexamples. Throughoutthissection,themathematicalderivationsconcernasinglegenericexamplex,
+omittingtheusualsummationsoverexamplestoobtainresultsforthewholedataset.
+Section18.7. Artificial Neural Networks 729
+Theactivation function g istypically eitherahardthreshold (Figure18.17(a)), inwhichcase
+theunitiscalledaperceptron,oralogisticfunction(Figure18.17(b)),inwhichcasetheterm
+PERCEPTRON
+SIGMOID sigmoid perceptron is sometimes used. Both of these nonlinear activation function ensure
+PERCEPTRON
+theimportantpropertythattheentirenetworkofunitscanrepresentanonlinearfunction(see
+Exercise18.22). Asmentionedinthediscussionoflogisticregression(page725),thelogistic
+activation functionhastheaddedadvantage ofbeingdifferentiable.
+Having decided on the mathematical model for individual neurons, the next task is
+to connect them together to form a network. There are two fundamentally distinct ways to
+FEED-FORWARD do this. A feed-forward network has connections only in one direction that is, it forms a
+NETWORK
+directedacyclicgraph. Everynodereceivesinputfrom upstream nodesanddeliversoutput
+to downstream nodes; therearenoloops. Afeed-forward networkrepresents afunction of
+itscurrentinput;thus,ithasnointernalstateotherthantheweightsthemselves. Arecurrent
+RECURRENT network, on the other hand, feeds its outputs back into its own inputs. This means that
+NETWORK
+theactivation levelsofthenetworkformadynamical system thatmayreach astablestateor
+exhibitoscillationsorevenchaoticbehavior. Moreover,theresponseofthenetwork

@@ -1,0 +1,28 @@
+yfactorsofmanyotherruleshadtobe tweaked whennewruleswere
+added. Forthesereasons, Bayesiannetworkshavelargelysupplanted rule-based methodsfor
+uncertain reasoning.
+14.7.2 Representing ignorance: Dempster Shafer theory
+DEMPSTER SHAFER The Dempster Shafer theory is designed to deal with the distinction between uncertainty
+THEORY
+and ignorance. Rather than computing the probability of a proposition, it computes the
+probability that the evidence supports the proposition. This measure of belief is called a
+belieffunction,written Bel(X).
+BELIEFFUNCTION
+We return to coin flipping for an example of belief functions. Suppose you pick a
+coin from a magician s pocket. Given that the coin might or might not be fair, what belief
+should you ascribe to the event that it comes up heads? Dempster Shafer theory says that
+because you have no evidence either way, you have to say that the belief Bel(Heads) 0
+and also that Bel( Heads) 0. This makes Dempster Shafer reasoning systems skeptical
+in a way that has some intuitive appeal. Now suppose you have an expert at your disposal
+who testifies with 90 certainty that the coin is fair (i.e., he is 90 sure that P(Heads) 0.5). Then Dempster Shafer theory gives Bel(Heads) 0.9 0.5 0.45 and likewise
+Bel( Heads) 0.45. Thereisstilla10percentage point gap thatisnotaccounted forby
+theevidence.
+The mathematical underpinnings of Dempster Shafer theory have a similar flavor to
+those of probability theory; the main difference is that, instead of assigning probabilities
+to possible worlds, the theory assigns masses to sets of possible world, that is, to events.
+MASS
+The masses still must add to 1 over all possible events. Bel(A) is defined to be the sum of
+masses for all events that are subsets of (i.e., that entail) A, including A itself. With this
+definition,Bel(A)and Bel( A)sumtoatmost1,andthegap theintervalbetween Bel(A)
+and1 Bel( A) isofteninterpreted asbounding theprobability of A.
+Aswithdefaultreasoning,thereisaprobleminconnectingbeliefstoactions. W

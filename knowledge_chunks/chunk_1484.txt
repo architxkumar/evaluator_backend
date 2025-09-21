@@ -1,0 +1,27 @@
+es
+thecurrentstate,asdefinedbythepercept.
+trivial;itgetsmoreinteresting shortly.) Weuserectangles todenotethecurrentinternalstate
+of the agent s decision process, and ovals to represent the background information used in
+the process. The agent program, which is also very simple, is shown in Figure 2.10. The
+INTERPRET-INPUT function generates anabstracted description ofthecurrentstatefromthe
+percept, and the RULE-MATCH function returns the firstrule inthe setof rules that matches
+the given state description. Note that the description in terms of rules and matching is
+purely conceptual; actual implementations can be as simple as a collection of logic gates
+implementing a Booleancircuit.
+Simplereflexagentshavetheadmirablepropertyofbeingsimple,buttheyturnouttobe
+oflimitedintelligence. Theagentin Figure2.10willworkonlyifthecorrectdecisioncanbe
+madeonthebasisofonlythecurrentpercept thatis,onlyiftheenvironmentisfullyobserv-
+able. Evenalittle bitofunobservability cancause serious trouble. Forexample, thebraking
+rule given earlier assumes that the condition car-in-front-is-braking can be determined from
+the current percept a single frame of video. This works if the car in front has a centrally
+mounted brake light. Unfortunately, older models have different configurations of taillights,
+50 Chapter 2. Intelligent Agents
+brake lights, and turn-signal lights, and it is not always possible to tell from a single image
+whetherthecarisbraking. Asimplereflexagentdrivingbehindsuchacarwouldeitherbrake
+continuously andunnecessarily, or,worse,neverbrakeatall.
+Wecanseeasimilarproblemarisinginthevacuumworld. Supposethatasimplereflex
+vacuum agent is deprived of its location sensor and has only a dirt sensor. Such an agent
+hasjusttwopossiblepercepts: Dirty and Clean . Itcan Suck inresponseto Dirty ;what
+shoulditdoinresponseto Clean ? Moving Left fails(forever)ifithappenstostartinsquare
+A,andmoving Right fails(forever)ifithappenstostartinsquare B. Infiniteloopsareoften
+unavoidable forsimplere

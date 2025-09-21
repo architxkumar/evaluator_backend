@@ -1,0 +1,28 @@
+pleapplication ofdynamicprogramming toreducethecomplexityto O(t). Aclue
+appears in the preceding analysis of the umbrella example, where wewere able to reuse the
+results of the forward-filtering phase. The key to the linear-time algorithm is to record the
+results of forward filtering over the whole sequence. Then we run the backward recursion
+from tdownto1,computing thesmoothed estimate ateachstep k fromthecomputed back-
+ward message b and the stored forward message f . The algorithm, aptly called the
+k 1:t 1:k
+FORWARD forward backwardalgorithm,isshownin Figure15.4.
+BACKWARD
+ALGORITHM
+The alert reader will have spotted that the Bayesian network structure shown in Fig-
+ure 15.3 is a polytree as defined on page 528. This means that a straightforward application
+of the clustering algorithm also yields a linear-time algorithm that computes smoothed es-
+timates for the entire sequence. It is now understood that the forward backward algorithm
+is in fact a special case of the polytree propagation algorithm used with clustering methods
+(although thetwoweredevelopedindependently).
+Theforward backwardalgorithmformsthecomputationalbackboneformanyapplica-
+tionsthatdealwithsequences ofnoisyobservations. Asdescribed sofar,ithastwopractical
+drawbacks. Thefirstisthatitsspacecomplexitycanbetoohighwhenthestatespaceislarge
+andthesequences arelong. Ituses O( f t)spacewhere f isthesizeoftherepresentation of
+the forward message. Thespace requirement can be reduced to O( f logt) witha concomi-
+576 Chapter 15. Probabilistic Reasoning over Time
+tant increase inthe time complexity by afactor of logt, asshown in Exercise 15.3. In some
+cases(see Section15.3),aconstant-space algorithm canbeused.
+The second drawback of the basic algorithm is that it needs to be modified to work
+in an online setting where smoothed estimates must be computed for earlier time slices as
+new observations are continuously added to the end of the sequence. The most common
+FIXED-LAG requirement is for fixed-lag smoothin

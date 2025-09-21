@@ -1,0 +1,26 @@
+d tolocationsinimageswherethebrightnessundergoes asharpchange, and
+so the magnitude of the gradient, I , should be large at an edge point. Of independent
+interestisthedirectionofthegradient
+(cid:13) (cid:14) I cos . I sin Thisgivesusa (x,y)ateverypixel,whichdefinestheedgeorientation atthatpixel.
+ORIENTATION
+Section24.2. Early Image-Processing Operations 939
+Asinonedimension, toformthegradientwedon tcompute I,butrather (I N ), the gradient after smoothing the image by convolving it with a Gaussian. And again, the
+shortcut is that this is equivalent to convolving the image with the partial derivatives of a
+Gaussian. Oncewehavecomputed thegradient, wecanobtain edges byfinding edge points
+and linking them together. To tell whether a point is an edge point, we must look at other
+points a small distance forward and back along the direction of the gradient. If the gradient
+magnitude at one of these points is larger, then we could get a better edge point by shifting
+the edge curve very slightly. Furthermore, if the gradient magnitude is too small, the point
+cannot be an edge point. So at an edge point, the gradient magnitude is a local maximum
+alongthedirectionofthegradient, andthegradient magnitudeisaboveasuitablethreshold.
+Oncewehavemarkededgepixelsbythisalgorithm,thenextstageistolinkthosepixels
+thatbelongtothesameedgecurves. Thiscanbedonebyassumingthatanytwoneighboring
+edgepixelswithconsistent orientations mustbelongtothesameedgecurve.
+24.2.2 Texture
+In everyday language, texture is the visual feel of a surface what you see evokes what
+TEXTURE
+the surface might feel like if you touched it ( texture has the same root as textile ). In
+computational vision, texture refers to a spatially repeating pattern on a surface that can be
+sensedvisually. Examplesincludethepatternofwindowsonabuilding,stitchesonasweater,
+spots on a leopard, blades of grass on a lawn, pebbles on a beach, and people in a stadium.
+Sometimes the arrangement is quite periodic, as in the stitches on a sweate

@@ -1,0 +1,32 @@
+ingresult:
+Given three noncollinear points m , m , and m in the model, and their scaled
+1 2 3
+orthographic projections p , p , and p on the image plane, there exist exactly
+1 2 3
+twotransformationsfromthethree-dimensionalmodelcoordinateframetoatwo-
+dimensional imagecoordinate frame.
+Thesetransformationsarerelatedbyareflectionaroundthe imageplaneandcanbecomputed
+by asimple closed-form solution. If wecould identify the corresponding model features for
+threefeatures intheimage,wecouldcompute Q,theposeoftheobject.
+Letusspecifypositionandorientationinmathematicalterms. Thepositionofapoint P
+inthesceneischaracterizedbythreenumbers,the (X,Y,Z)coordinatesof P inacoordinate
+frame with its origin at the pinhole and the Z-axis along the optical axis (Figure 24.2 on
+page 931). What we have available is the perspective projection (x,y) of the point in the
+image. This specifies the ray from the pinhole along which P lies; what we do not know is
+thedistance. Theterm orientation couldbeusedintwosenses:
+1. The orientation of the object as a whole. This can be specified in terms of a three-
+dimensional rotationrelating itscoordinate frametothat ofthecamera.
+Section24.5. Object Recognition from Structural Information 957
+2. Theorientation of thesurface oftheobject at P. Thiscan be specified by anormal
+vector,n whichisavectorspecifyingthedirectionthatisperpendiculartothesurface.
+Often weexpress the surface orientation using the variables slant and tilt. Slant is the
+SLANT
+anglebetweenthe Z-axisandn. Tiltistheanglebetweenthe X-axisandtheprojection
+TILT
+ofnontheimageplane.
+When the camera moves relative to an object, both the object s distance and its orientation
+change. What is preserved is the shape of the object. If the object is a cube, that fact is
+SHAPE
+notchanged whentheobjectmoves. Geometershavebeenattempting toformalizeshapefor
+centuries,thebasicconceptbeingthatshapeiswhatremainsunchangedundersomegroupof
+transformations for example,combinations ofrotations andtranslations. Thedi

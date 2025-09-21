@@ -1,0 +1,31 @@
+. Nowaquery thatcontains variables mightbeproved
+in multiple ways. For example, the query Person(x) could be proved with the substitution
+GENERATOR x John aswellaswith x Richard . Soweimplement FOL-BC-ASK asagenerator afunction thatreturnsmultipletimes,eachtimegivingone possible result.
+Backward chaining is a kind of AND OR search the OR part because the goal query
+canbeprovedbyanyruleintheknowledgebase,andthe AN Dpartbecausealltheconjuncts
+inthelhs ofaclausemustbeproved. FOL-BC-OR worksbyfetchingallclauses thatmight
+unify with the goal, standardizing the variables in the clause to be brand-new variables, and
+then, if the rhs of the clause does indeed unify with the goal, proving every conjunct in the
+lhs, using FOL-BC-AND. That function in turn works by proving each of the conjuncts in
+turn, keeping track oftheaccumulated substitution aswego. Figure 9.7isthe proof tree for
+deriving Criminal(West)fromsentences (9.3)through(9.10).
+Backward chaining, as we have written it, is clearly a depth-first search algorithm.
+This means that its space requirements are linear in the size of the proof (neglecting, for
+now, the space required to accumulate the solutions). It also means that backward chaining
+(unlikeforwardchaining)suffersfromproblemswithrepeatedstatesandincompleteness. We
+will discuss these problems and some potential solutions, but first we show how backward
+chaining isusedinlogicprogrammingsystems.
+338 Chapter 9. Inference in First-Order Logic
+function FOL-BC-ASK(KB,query)returnsageneratorofsubstitutions
+return FOL-BC-OR(KB,query, )
+generator FOL-BC-OR(KB,goal, )yieldsasubstitution
+foreachrule(lhs rhs)in FETCH-RULES-FOR-GOAL(KB,goal)do
+(lhs,rhs) STANDARDIZE-VARIABLES((lhs,rhs))
+foreach (cid:5)in FOL-BC-AND(KB,lhs,UNIFY(rhs,goal, ))do
+yield (cid:5)
+generator FOL-BC-AND(KB,goals, )yieldsasubstitution
+if failure thenreturn
+elseif LENGTH(goals) 0thenyield elsedo
+first,rest FIRST(goals),REST(goals)
+foreach (cid:5)in FOL-BC-OR(KB, SUBST( ,first), )do
+foreach (cid:5)(ci

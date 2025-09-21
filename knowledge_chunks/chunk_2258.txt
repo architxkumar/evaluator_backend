@@ -1,0 +1,44 @@
+rvalues. Thus,wemakea sensor Markovassumptionasfollows:
+ASSUMPTION
+P(E t X 0:t ,E 0:t 1 ) P(E t X t ). (15.2)
+Thus,P(E X )isoursensormodel(sometimescalledtheobservation model). Figure15.2
+t t
+shows both the transition model and the sensor model for the umbrella example. Notice the
+Section15.1. Timeand Uncertainty 569
+R P(R )
+t-1 t
+t 0.7
+f 0.3
+Rain Rain Rain
+t 1 t t 1
+R P(U )
+t t
+t 0.9
+f 0.2
+Umbrella Umbrella Umbrella
+t 1 t t 1
+Figure 15.2 Bayesian network structure and conditional distributions describing the
+umbrella world. The transition model is P(Raint Raint 1 ) and the sensor model is
+P(Umbrellat Raint).
+direction of the dependence between state and sensors: the arrows go from the actual state
+of the world to sensor values because the state of the world causes the sensors to take on
+particular values: the rain causes the umbrella to appear. (The inference process, of course,
+goes in the other direction; the distinction between the direction of modeled dependencies
+andthedirection ofinference isoneoftheprincipal advantages of Bayesiannetworks.)
+In addition to specifying the transition and sensor models, we need to say how every-
+thing gets started the prior probability distribution at time 0, P(X ). With that, we have a
+0
+specification of the complete joint distribution over all the variables, using Equation (14.2).
+Foranyt,
+(cid:25)t
+P(X 0:t ,E 1:t ) P(X 0 ) P(X i X i 1 )P(E i X i ). (15.3)
+i 1
+Thethreetermsontheright-hand sidearetheinitial statemodel P(X ),thetransition model
+0
+P(X i X i 1 ),andthesensormodel P(E i X i ).
+Thestructure in Figure 15.2 is a first-order Markov process the probability of rain is
+assumed todepend only onwhetheritrained theprevious day. Whethersuch anassumption
+isreasonable depends on the domain itself. Thefirst-order Markov assumption says that the
+state variables contain all the information needed tocharacterize the probability distribution
+forthenext time slice. Sometimes the assumption is exactly true forexample, ifaparticle
+is e

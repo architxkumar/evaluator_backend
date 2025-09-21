@@ -1,0 +1,38 @@
+ahead search.
+664 Chapter 17. Making Complex Decisions
+A A A A A
+t 2 t 1 t t 1 t 2
+X X X X X U
+t 1 t t 1 t 2 t 3 t 3
+R R R R
+t 1 t t 1 t 2
+E E E E E
+t 1 t t 1 t 2 t 3
+Figure17.10 Thegenericstructureofadynamicdecisionnetwork.Variableswithknown
+valuesareshaded.Thecurrenttimeistandtheagentmustdecidewhattodo thatis,choose
+avaluefor At. Thenetworkhasbeenunrolledintothefutureforthreestepsandrepresents
+futurerewards,aswellastheutilityofthestateatthelook-aheadhorizon.
+17.4.3 Onlineagents for POMD Ps
+Inthissection,weoutlineasimpleapproachtoagentdesignforpartiallyobservable,stochas-
+ticenvironments. Thebasicelementsofthedesignarealready familiar: The transition and sensor models are represented by a dynamic Bayesian network
+(DBN),asdescribed in Chapter15. Thedynamic Bayesian network is extended withdecision and utility nodes, as used in
+decision networks in Chapter 16. The resulting model is called a dynamic decision
+DYNAMICDECISION network,or DDN.
+NETWORK A filtering algorithm is used to incorporate each new percept and action and to update
+thebeliefstaterepresentation. Decisions are made by projecting forward possible action sequences and choosing the
+bestone.
+DB Ns are factored representations in the terminology of Chapter 2; they typically have
+an exponential complexity advantage over atomic representations and can model quite sub-
+stantial real-world problems. Theagentdesign istherefore apractical implementation ofthe
+utility-based agentsketched in Chapter2.
+In the DBN, the single state S becomes a set of state variables X , and there may be
+t t
+multipleevidencevariables E . Wewilluse A torefertotheactionattimet,sothetransition
+t t
+modelbecomes P(X X ,A )andthesensormodelbecomes P(E X ). Wewilluse R to
+t 1 t t t t t
+refertotherewardreceivedattime tand U torefertotheutility ofthestateattime t. (Both
+t
+ofthesearerandomvariables.) Withthisnotation,adynamicdecisionnetworklookslikethe
+oneshownin Figure17.10.
+Dynamicdecisionnetworkscanbeusedasinputsforany POMD Palgorithm,inclu

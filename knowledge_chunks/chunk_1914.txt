@@ -1,0 +1,27 @@
+344 Chapter 9. Inference in First-Order Logic
+bytheknowledgebase. Thereisnowaytoassertthatasentenceisfalsein Prolog. Thismakes
+Prologlessexpressivethanfirst-orderlogic,butitispart ofwhatmakes Prologmoreefficient
+andmoreconcise. Considerthefollowing Prologassertions aboutsomecourseofferings:
+Course(CS,101), Course(CS,102), Course(CS,106), Course(EE,101). (9.11)
+Under the unique names assumption, CS and EE are different (as are 101, 102, and 106),
+so this means that there are four distinct courses. Under the closed-world assumption there
+are no other courses, so there are exactly four courses. But if these were assertions in FOL
+rather than in Prolog, then all we could say is that there are somewhere between one and
+infinitycourses. That sbecause theassertions (in FOL)donotdenythepossibility thatother
+unmentionedcoursesarealsooffered,nordotheysaythatthecoursesmentionedaredifferent
+fromeachother. Ifwewantedtotranslate Equation(9.11)into FOL,wewouldgetthis:
+Course(d,n) (d CS n 101) (d CS n 102) (d CS n 106) (d EE n 101). (9.12)
+Thisis called the completion of Equation (9.11). Itexpresses in FO Lthe idea that there are
+COMPLETION
+atmostfourcourses. Toexpress in FO Ltheideathatthereare atleastfourcourses, weneed
+towritethecompletion oftheequality predicate:
+x y (x CS y CS) (x EE y EE) (x 101 y 101) (x 102 y 102) (x 106 y 106).
+Thecompletion isusefulforunderstanding database semantics, butforpractical purposes, if
+your problem can be described with database semantics, it is more efficient to reason with
+Prolog or some other database semantics system, rather than translating into FOL and rea-
+soningwithafull FO Ltheorem prover.
+9.4.6 Constraintlogicprogramming
+In our discussion of forward chaining (Section 9.3), we showed how constraint satisfaction
+problems (CS Ps) can be encoded as definite clauses. Standard Prolog solves such problems
+inexactlythesamewayasthebacktracking algorithm givenin Figure6.5.
+Becausebacktracking enumeratesthedomainsofthevariables,itworksonlyforfin

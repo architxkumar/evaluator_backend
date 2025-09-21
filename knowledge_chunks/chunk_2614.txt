@@ -1,0 +1,29 @@
+eneraltaskoflearningaprobability model,givendata thatareassumedtobegenerated
+from that model, is called density estimation. (The term applied originally to probability
+DENSITYESTIMATION
+densityfunctions forcontinuous variables, butisusednow fordiscretedistributions too.)
+This section covers the simplest case, where we have complete data. Data are com-
+COMPLETEDATA
+plete when each data point contains values forevery variable in the probability model being
+PARAMETER learned. We focus on parameter learning finding the numerical parameters for a proba-
+LEARNING
+bility model whose structure is fixed. For example, we might be interested in learning the
+conditional probabilities in a Bayesian network with a given structure. We will also look
+brieflyattheproblem oflearning structure andatnonparametric densityestimation.
+20.2.1 Maximum-likelihoodparameter learning: Discrete models
+Supposewebuyabagoflimeandcherrycandyfromanewmanufacturerwhoselime cherry
+proportions are completely unknown; the fraction could be anywhere between 0 and 1. In
+that case, we have a continuum of hypotheses. The parameter in this case, which we call , is the proportion of cherry candies, and the hypothesis is h . (The proportion of limes is just 1 .) If we assume that all proportions are equally likely a priori, then a maximum-
+likelihood approach is reasonable. If we model the situation with a Bayesian network, we
+needjustonerandomvariable, Flavor (theflavorofarandomlychosencandyfromthebag).
+Ithasvaluescherry andlime,wheretheprobabilityofcherry is (see Figure20.2(a)). Now
+suppose weunwrap N candies, ofwhich care cherries and (cid:3) N care limes. According
+to Equation(20.3), thelikelihood ofthisparticular datasetis
+(cid:25)N
+P(d h ) P(d h ) c (1 )(cid:3) . j j 1
+The maximum-likelihood hypothesis is given by the value of that maximizes this expres-
+sion. Thesamevalueisobtained bymaximizingtheloglikelihood,
+LOGLIKELIHOOD
+(cid:12)N
+L(d h ) log P(d h ) log P(d h ) clog (cid:3)log(1 ). j j 1
+(Bytaking lo

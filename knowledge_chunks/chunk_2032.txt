@@ -1,0 +1,28 @@
+an action and subse-
+quentperceptisdoneintwostages. Thefirststagecalculates thebeliefstateaftertheaction,
+justasforthesensorless agent: b (b DEL(a)) ADD(a)
+where,asbefore,wehaveassumedabeliefstaterepresented asaconjunction ofliterals. The
+second stage is a little trickier. Suppose that percept literals p ,...,p are received. One
+1 k
+might think that we simply need to add these into the belief state; in fact, we can also infer
+422 Chapter 11. Planningand Actinginthe Real World
+that the preconditions for sensing are satisfied. Now, if a percept p has exactly one percept
+axiom, Percept(p,PRECOND:c), where c is a conjunction of literals, then those literals can
+bethrownintothebeliefstatealongwithp. Ontheotherhand,ifphasmorethanonepercept
+axiomwhosepreconditions mightholdaccordingtothepredictedbeliefstate b,thenwehave
+to add in the disjunction of the preconditions. Obviously, this takes the belief state outside
+1-CNF and brings up the same complications as conditional effects, with much the same
+classesofsolutions.
+Givenamechanism forcomputing exact orapproximate belief states, wecan generate
+contingent plans with an extension of the AND OR forward search over belief states used
+in Section 4.4. Actions with nondeterministic effects which are defined simply by using a
+disjunction inthe EFFECT oftheactionschema can beaccommodated withminorchanges
+tothebelief-stateupdatecalculationandnochangetothesearchalgorithm.2 Fortheheuristic
+function, many of the methods suggested for sensorless planning are also applicable in the
+partially observable, nondeterministic case.
+11.3.3 Onlinereplanning
+Imagine watching aspot-welding robot inacarplant. Therobot s fast, accurate motions are
+repeated over and over again as each car passes down the line. Although technically im-
+pressive, the robot probably does not seem at all intelligent because the motion is a fixed,
+preprogrammed sequence; the robot obviously doesn t know what it s doing inany mean-
+ingful sense. Now suppose that a poorly 

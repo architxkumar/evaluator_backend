@@ -1,0 +1,26 @@
+le can be useful for answering probabilistic queries conditioned
+on one piece of evidence for example, the stiff neck. In particular, we have argued that
+probabilisticinformationisoftenavailableintheform P(effect cause). Whathappenswhen
+we have two or more pieces of evidence? For example, what can a dentist conclude if her
+nastysteelprobecatchesintheachingtoothofapatient? Ifweknowthefulljointdistribution
+(Figure13.3),wecanreadofftheanswer:
+P(Cavity toothache catch) (cid:16)0.108,0.016(cid:17) (cid:16)0.871,0.129(cid:17).
+We know, however, that such an approach does not scale up to larger numbers of variables.
+Wecantryusing Bayes ruletoreformulate theproblem:
+P(Cavity toothache catch) P(toothache catch Cavity)P(Cavity). (13.16)
+Forthisreformulation towork,weneedtoknowtheconditional probabilities oftheconjunc-
+tiontoothache catch foreachvalueof Cavity. Thatmightbefeasibleforjusttwoevidence
+variables, but again it does not scale up. If there are n possible evidence variables (X rays,
+diet,oralhygiene,etc.),thenthereare2n possiblecombinationsofobservedvaluesforwhich
+we would need to know conditional probabilities. We might as well go back to using the
+full joint distribution. Thisiswhatfirstledresearchers awayfrom probability theory toward
+498 Chapter 13. Quantifying Uncertainty
+approximate methodsforevidence combination that, whilegiving incorrect answers, require
+fewernumberstogiveanyansweratall.
+Rather than taking this route, we need to find some additional assertions about the
+domain that will enable ustosimplify the expressions. The notion of independencein Sec-
+tion13.4provides aclue, butneeds refining. Itwouldbenice if Toothache and Catch were
+independent, buttheyarenot: iftheprobe catches inthetooth, thenitislikely thatthetooth
+has a cavity and that the cavity causes a toothache. These variables are independent, how-
+ever, given thepresence ortheabsence ofacavity. Eachisdirectly caused bythecavity, but
+neither has a direct effect on the other: toothache depends 

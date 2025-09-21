@@ -1,0 +1,30 @@
+t-Order Logic
+original knowledge base is consistent. (After all, if it is not consistent, then the fact that the
+queryfollowsfromitisvacuous.) Theset-of-support strategyhastheadditionaladvantageof
+generating goal-directed prooftreesthatareofteneasyforhumanstounderstand.
+Inputresolution: Inthisstrategy,everyresolutioncombinesoneoftheinputsentences(from
+INPUTRESOLUTION
+the KB or the query) with some other sentence. The proof in Figure 9.11 on page 348 uses
+only input resolutions and has the characteristic shape of a single spine with single sen-
+tences combining onto the spine. Clearly, the space of proof trees of this shape is smaller
+than the space of all proof graphs. In Horn knowledge bases, Modus Ponens is a kind of
+inputresolutionstrategy,becauseitcombinesanimplicationfromtheoriginal KBwithsome
+othersentences. Thus,itisnosurprise thatinputresolution iscomplete forknowledge bases
+thatarein Hornform,butincomplete inthegeneral case. The linearresolution strategyisa
+LINEARRESOLUTION
+slightgeneralization thatallows P and Qtoberesolvedtogethereitherif P isintheoriginal
+KB orif P isanancestorof Qintheprooftree. Linearresolution iscomplete.
+Subsumption: Thesubsumption methodeliminates allsentences thataresubsumed by(that
+SUBSUMPTION
+is,morespecificthan)anexistingsentenceinthe KB.Forexample,if P(x)isinthe KB,then
+thereisnosenseinadding P(A)andevenlesssenseinadding P(A) Q(B). Subsumption
+helpskeepthe KBsmallandthushelpskeepthesearchspacesmall.
+Practicalusesofresolution theoremprovers
+Theorem provers can be applied to the problems involved in the synthesis and verification
+SYNTHESIS
+ofbothhardwareandsoftware. Thus,theorem-proving research iscarriedoutinthefieldsof
+VERIFICATION
+hardwaredesign, programminglanguages, andsoftwareengineering not justin AI.
+In the case of hardware, the axioms describe the interactions between signals and cir-
+cuit elements. (See Section 8.4.2 on page 309 for an example.) Logical reasoners designed
+specially for verification have been able to ver

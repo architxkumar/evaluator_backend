@@ -1,0 +1,26 @@
+is shown in Figure 15.15(a). Its
+performance on the two data sequences (temporary blip and persistent failure) is shown in
+Figure 15.15(b). There are several things to notice about these curves. First, in the case
+of the temporary blip, the probability that the sensor is broken rises significantly after the
+second 0 reading, but immediately drops back to zero once a 5 is observed. Second, in the
+case of persistent failure, the probability that the sensor is broken rises quickly to almost 1
+and stays there. Finally, once the sensor is known to be broken, the robot can only assume
+thatitsbatterydischargesatthe normal rate,asshownby thegraduallydescending levelof
+E(Battery ...).
+t
+So far, we have merely scratched the surface of the problem of representing complex
+processes. The variety of transition models is huge, encompassing topics as disparate as
+modeling thehumanendocrine system andmodelingmultiple vehicles driving onafreeway.
+Sensor modeling is also a vast subfield in itself, but even subtle phenomena, such as sensor
+drift, sudden decalibration, and the effects of exogenous conditions (such as weather) on
+sensorreadings,canbehandledbyexplicitrepresentation withindynamic Bayesiannetworks.
+15.5.2 Exactinference in DB Ns
+Having sketched some ideas for representing complex processes as DB Ns, we now turn to
+the question of inference. In a sense, this question has already been answered: dynamic
+Bayesian networks are Bayesian networks, and we already have algorithms for inference in
+Bayesian networks. Given a sequence of observations, one can construct the full Bayesian
+network representation of a DBN by replicating slices until the network is large enough to
+accommodate theobservations, asin Figure15.16. Thistechnique, mentioned in Chapter14
+inthecontext ofrelational probability models, iscalled unrolling. (Technically, the DB Nis
+equivalent to the semi-infinite network obtained by unrolling forever. Slices added beyond
+the last observation have no effect on inference

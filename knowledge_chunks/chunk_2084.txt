@@ -1,0 +1,42 @@
+lligence Meets Natural Stupidity. Anothercommonproblemwastheuseof Is Alinksfor
+bothsubsetandmembershiprelations,incorrespondencewith Englishusage: acatisamammal and Fifiisa
+cat. See Exercise12.22formoreontheseissues.
+Section12.5. Reasoning Systemsfor Categories 455
+Mammals
+Subset Of
+Has Mother Legs
+Persons 2
+Subset Of Subset Of
+Female Male
+Persons Persons
+Member Of Member Of
+Sister Of Legs
+Mary John 1
+Figure12.5 Asemanticnetworkwithfourobjects(John,Mary,1, and2)andfourcate-
+gories.Relationsaredenotedbylabeledlinks.
+Fly Events
+Member Of
+Fly
+17
+Agent During
+Origin Destination
+Shankar New York New Delhi Yesterday
+Figure12.6 Afragmentofasemanticnetworkshowingtherepresentation ofthelogical
+assertion Fly(Shankar,New York,New Delhi,Yesterday).
+mechanism, compared withlogical theorem proving, hasbeen oneofthemainattractions of
+semanticnetworks.
+Inheritancebecomescomplicatedwhenanobjectcanbelongtomorethanonecategory
+orwhenacategorycanbeasubsetofmorethanoneothercategory;thisiscalledmultiplein-
+MULTIPLE heritance. Insuchcases,theinheritance algorithmmightfindtwoormoreconflictingvalues
+INHERITANCE
+answeringthequery. Forthisreason,multipleinheritance isbannedinsomeobject-oriented
+programming (OOP)languages, such as Java, that useinheritance inaclass hierarchy. Itis
+usuallyallowedinsemanticnetworks, butwedeferdiscussion ofthatuntil Section12.6.
+Thereadermighthavenoticedanobviousdrawbackofsemanticnetworknotation,com-
+paredtofirst-orderlogic: thefactthatlinks betweenbubbles represent only binary relations.
+For example, the sentence Fly(Shankar,New York,New Delhi,Yesterday) cannot be as-
+serted directly in a semantic network. Nonetheless, we can obtain the effect of n-ary asser-
+tionsbyreifyingthepropositionitselfasaneventbelongingtoanappropriateeventcategory.
+Figure 12.6 shows the semantic network structure for this particular event. Notice that the
+restriction tobinaryrelations forcesthecreation ofarichontology ofreifiedconcepts.
+Reification of propositions makes it possible to re

@@ -1,0 +1,29 @@
+Breeze PIT Breeze
+START
+1 2 3 4
+Figure7.2 Atypicalwumpusworld.Theagentisinthebottomleftcorner,facingright.
+known;orwecouldsaythatthetransitionmodelitselfisunknownbecausetheagentdoesn t
+know which Forward actions are fatal in which case, discovering the locations of pits and
+wumpuscompletestheagent sknowledge ofthetransition model.
+Foran agent in the environment, the main challenge is its initial ignorance of the con-
+figurationoftheenvironment; overcomingthisignorance seemstorequirelogicalreasoning.
+Inmostinstancesofthewumpusworld,itispossiblefortheagenttoretrievethegoldsafely.
+Occasionally, theagentmustchoosebetweengoinghomeempty-handedandriskingdeathto
+find the gold. About 21 of the environments are utterly unfair, because the gold is in a pit
+orsurrounded bypits.
+Let us watch a knowledge-based wumpus agent exploring the environment shown in
+Figure 7.2. We use an informal knowledge representation language consisting of writing
+downsymbolsinagrid(asin Figures7.3and7.4).
+The agent s initial knowledge base contains the rules of the environment, as described
+previously; inparticular, itknowsthat itisin 1,1 and that 1,1 is asafe square; wedenote
+thatwithan A and OK, respectively, insquare 1,1 .
+Thefirstpercept is None,None,None,None,None , from which the agent can con-
+clude that its neighboring squares, 1,2 and 2,1 , are free of dangers they are OK. Fig-
+ure7.3(a)showstheagent sstateofknowledgeatthispoint.
+A cautious agent will move only into a square that it knows to be OK. Let us suppose
+theagentdecidestomoveforwardto 2,1 . Theagentperceivesabreeze(denotedby B )in 2,1 ,sotheremustbeapitinaneighboringsquare. Thepitcannotbein 1,1 ,bytherulesof
+the game, so there must be apitin 2,2 or 3,1 orboth. The notation P? in Figure 7.3(b)
+indicates apossible pitinthosesquares. Atthispoint, thereisonlyoneknownsquare thatis
+OKandthathasnotyetbeenvisited. Sotheprudentagentwillturnaround, gobackto 1,1 ,
+andthenproceed to 1,2 .
+The agent perceives a stench in 1,2 , resulting in the s

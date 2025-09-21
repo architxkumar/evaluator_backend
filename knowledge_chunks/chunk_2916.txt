@@ -1,0 +1,27 @@
+n the mobile robot arena.
+Keyworkapplying POMD Pmethods(Section17.4)tomotionplanning underuncertainty in
+robotics isdueto Pineau etal.(2003)and Royetal.(2005).
+Thecontrolofrobotsasdynamicalsystems whetherformanipulationornavigation has generated a huge literature that is barely touched on by this chapter. Important works
+include a trilogy on impedance control by Hogan (1985) and a general study of robot dy-
+namics by Featherstone (1987). Deanand Wellman (1991) were among the firstto try to tie
+togethercontroltheoryand AIplanningsystems. Threeclassictextbooksonthemathematics
+ofrobotmanipulation aredueto Paul(1981), Craig(1989), and Yoshikawa(1990). Thearea
+ofgraspingisalsoimportant inrobotics the problem ofdetermining astablegraspisquite
+GRASPING
+difficult(Masonand Salisbury, 1985). Competentgrasping requires touchsensing, orhaptic
+feedback,todetermine contactforcesanddetectslip(Fearingand Hollerbach, 1985).
+HAPTICFEEDBACK
+Potential-field control, which attempts to solve the motion planning and control prob-
+lemssimultaneously, wasintroduced into therobotics literature by Khatib(1986). Inmobile
+robotics, thisideawasviewedasapractical solution tothe collision avoidance problem, and
+VECTORFIELD was later extended into an algorithm called vector field histograms by Borenstein (1991).
+HISTOGRAMS
+Navigation functions, the robotics version of a control policy for deterministic MD Ps, were
+introduced by Koditschek(1987). Reinforcementlearninginroboticstookoffwiththesemi-
+nalworkby Bagnelland Schneider(2001)and Ngetal.(2004),whodevelopedtheparadigm
+inthecontextofautonomous helicoptercontrol.
+The topic of software architectures for robots engenders much religious debate. The
+good old-fashioned AI candidate the three-layer architecture dates back to the design of
+Shakeyandisreviewedby Gat(1998). Thesubsumptionarchitectureisdueto Brooks(1986),
+although similar ideas were developed independently by Braitenberg (1984), whose book,
+Vehicles, describes a series of simple robots bas

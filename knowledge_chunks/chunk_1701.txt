@@ -1,0 +1,33 @@
+e, then a player may jump over the
+opponenttothenextopenspaceifany.(Forexample,if Aison3and Bison2,then Amay
+movebackto1.) Thegameendswhenoneplayerreachestheoppositeendoftheboard. If
+player A reaches space 4 first, then the value of the game to A is 1; if player B reaches
+space1first,thenthevalueofthegameto Ais 1.
+5.8 Considerthetwo-playergamedescribed in Figure5.17.
+a. Drawthecompletegametree,usingthefollowingconventions: Writeeachstateas(s ,s ),wheres ands denotethetokenlocations.
+A B A B Puteachterminalstateinasquareboxandwriteitsgamevalueinacircle. Putloopstates(statesthatalreadyappearonthepathtotheroot)indouble square
+boxes. Sincetheirvalueisunclear, annotate eachwitha ? inacircle.
+b. Nowmarkeachnodewithitsbacked-up minimaxvalue(alsoinacircle). Explainhow
+youhandledthe ? valuesandwhy.
+c. Explain why the standard minimax algorithm would fail on this game tree and briefly
+sketch how you might fixit, drawing on youranswerto(b). Does yourmodified algo-
+rithmgiveoptimaldecisions forallgameswithloops?
+d. This4-square game can be generalized to n squares forany n 2. Prove that Awins
+ifnisevenandlosesifnisodd.
+5.9 This problem exercises the basic concepts of game playing, using tic-tac-toe (noughts
+and crosses) as an example. We define X as the number of rows, columns, or diagonals
+n
+198 Chapter 5. Adversarial Search
+with exactly n X s and no O s. Similarly, O is the number of rows, columns, ordiagonals
+n
+withjust n O s. Theutility function assigns 1toany position with X 1 and 1toany
+3
+position with O 1. Allotherterminal positions have utility 0. Fornonterminal positions,
+3
+weusealinearevaluationfunctiondefinedas Eval(s) 3X (s) X (s) (3O (s) O (s)).
+2 1 2 1
+a. Approximately howmanypossible gamesoftic-tac-toe arethere?
+b. Show the whole game tree starting from an empty board down to depth 2 (i.e., one X
+andone Oontheboard),takingsymmetryintoaccount.
+c. Markonyourtreetheevaluations ofallthepositions atdepth2.
+d. Usingtheminimaxalgorithm,markonyourtreethebacked-up valuesf

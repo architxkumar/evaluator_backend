@@ -1,0 +1,49 @@
+e product of the
+1 2
+correspondingelementsinthetwofactors. Supposethetwofactorshavevariables Y ,...,Y
+1 k
+incommon. Thenwehave
+f(X ...X ,Y ...Y ,Z ...Z ) f (X ...X ,Y ...Y )f (Y ...Y ,Z ...Z ).
+1 j 1 k 1 l 1 1 j 1 k 2 1 k , l
+If all the variables are binary, then f and f have 2j k and 2k l entries, respectively, and
+1 2
+the pointwise product has 2j k l entries. For example, given two factors f (A,B) and
+1
+f (B,C), the pointwise product f f f (A,B,C) has 21 1 1 8 entries, as illustrated
+2 1 2 3
+in Figure 14.10. Notice that the factor resulting from a pointwise product can contain more
+variablesthananyofthefactorsbeingmultipliedandthatthesizeofafactorisexponentialin
+the number of variables. This is where both space and time complexity arise in the variable
+elimination algorithm.
+Section14.4. Exact Inference in Bayesian Networks 527
+A B f (A,B) B C f (B,C) A B C f (A,B,C)
+1 2 3
+T T .3 T T .2 T T T .3 .2 .06
+T F .7 T F .8 T T F .3 .8 .24
+F T .9 F T .6 T F T .7 .6 .42
+F F .1 F F .4 T F F .7 .4 .28
+F T T .9 .2 .18
+F T F .9 .8 .72
+F F T .1 .6 .06
+F F F .1 .4 .04
+Figure14.10 Illustratingpointwisemultiplication:f (A,B) f (B,C) f (A,B,C).
+1 2 3
+Summingoutavariablefromaproductoffactorsisdonebyaddingupthesubmatrices
+formed by fixing the variable to each of its values in turn. For example, to sum out A from
+f (A,B,C),wewrite
+3 (cid:12)
+f(B,C) f (A,B,C) f (a,B,C) f ( a,B,C)
+3 3 3
+(cid:13)a (cid:14) (cid:13) (cid:14) (cid:13) (cid:14)
+.06 .24 .18 .72 .24 .96 .
+.42 .28 .06 .04 .48 .32
+Theonlytrick istonotice thatanyfactorthatdoes notdepend onthevariable tobesummed
+out can be moved outside the summation. Forexample, if wewere to sum out E first in the
+burglary network, therelevantpartoftheexpression would be
+(cid:12) (cid:12)
+f (E) f (A,B,E) f (A) f (A) f (A) f (A) f (E) f (A,B,E).
+2 3 4 5 4 5 2 3
+e e
+Now the pointwise product inside the summation is computed, and the variable is summed
+outoftheresulting matrix.
+Notice that matrices are not multiplied until we need to sum out a vari

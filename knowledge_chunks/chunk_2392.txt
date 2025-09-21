@@ -1,0 +1,27 @@
+ERVABLEMDP
+pronounced pom-dee-pees )areusuallyviewedasmuchmoredifficultthanordinary MD Ps.
+Wecannotavoid POMD Ps,however,becausetherealworldisone.
+17.4.1 Definitionof POMD Ps
+To get a handle on POMD Ps, we must first define them properly. A POMDP has the same
+elements as an MDP the transition model P(s(cid:2) s,a), actions A(s), and reward function
+R(s) but, like the partially observable search problems of Section 4.4, italso has asensor
+model P(e s). Here,asin Chapter15,thesensormodelspecifiestheprobability ofperceiv-
+ing evidence e in state s.3 For example, we can convert the 4 3 world of Figure 17.1 into
+a POMDP by adding a noisy or partial sensor instead of assuming that the agent knows its
+location exactly. Suchasensormightmeasure the number ofadjacent walls, whichhappens
+to be 2 in all the nonterminal squares except for those in the third column, where the value
+is1;anoisyversionmightgivethewrongvaluewithprobability 0.1.
+In Chapters 4 and 11, we studied nondeterministic and partially observable planning
+problems andidentified the beliefstate the setofactual states the agent might bein as a
+keyconceptfordescribingandcalculatingsolutions. In POMD Ps,thebeliefstatebbecomesa
+probability distribution overallpossiblestates,justasin Chapter15. Forexample, theinitial
+3 Aswiththerewardfunctionfor MD Ps,thesensormodelcanalsodependontheactionandoutcomestate,but
+againthischangeisnotfundamental.
+Section17.4. Partially Observable MD Ps 659
+beliefstateforthe4 3POMD Pcouldbetheuniformdistribution overtheninenonterminal
+states, i.e., (cid:16)1,1, 1,1, 1,1,1, 1,1,0,0(cid:17). We write b(s) for the probability assigned to the
+9 9 9 9 9 9 9 9 9
+actualstatesbybeliefstateb. Theagentcancalculateitscurrentbeliefstateastheconditional
+probability distribution over the actual states given the sequence of percepts and actions so
+far. Thisisessentiallythefilteringtaskdescribedin Chapter15. Thebasicrecursivefiltering
+equation (15.5 on page 572) shows how to calculate the new belief state f

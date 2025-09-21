@@ -1,0 +1,30 @@
+human world championship, far
+exceeding theexpectations ofmanyhumanexperts.
+Thereare several reasons why GIB plays atexpert level with Monte Carlosimulation,
+whereas Kriegspiel programs donot. First, GIB s evaluation ofthe fully observable version
+ofthegameisexact,searching thefullgametree, while Kriegspiel programs relyoninexact
+heuristics. But far more important is the fact that in bridge, most of the uncertainty in the
+partially observable information comesfromtherandomness ofthedeal,notfromtheadver-
+sarial play of the opponent. Monte Carlo simulation handles randomness well, but does not
+alwayshandlestrategy well,especially whenthestrategy involves thevalueofinformation.
+Scrabble: Mostpeoplethinkthehardpartabout Scrabbleiscomingupwithgoodwords,but
+SCRABBLE
+giventheofficialdictionary, itturnsouttoberathereasytoprogramamovegeneratortofind
+the highest-scoring move (Gordon, 1994). That doesn t mean the game is solved, however:
+merely taking the top-scoring move each turn results in a good but not expert player. The
+problem is that Scrabble is both partially observable and stochastic: you don t know what
+letters the other player has or what letters you will draw next. So playing Scrabble well
+combines the difficulties of backgammon and bridge. Nevertheless, in 2006, the QUACKLE
+program defeatedtheformerworldchampion, David Boys,3 2.
+5.8 ALTERNATIVE APPROACHES
+Because calculating optimal decisions in games is intractable in most cases, all algorithms
+must make some assumptions and approximations. The standard approach, based on mini-
+max,evaluationfunctions, andalpha beta, isjustonewaytodothis. Probablybecauseithas
+188 Chapter 5. Adversarial Search
+MAX
+MIN 99 100
+99 1000 1000 1000 100 101 102 100
+Figure5.14 Atwo-plygametreeforwhichheuristicminimaxmaymakeanerror.
+been worked on for so long, the standard approach dominates other methods in tournament
+play. Some believe that this has caused game playing to become divorced from the main-
+stream of AIresearch: thestandard 

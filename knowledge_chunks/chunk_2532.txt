@@ -1,0 +1,30 @@
+berof hypothesesin the ensemble.
+Noticethatthetestsetaccuracyimprovesslightlyevenafterthetrainingaccuracyreaches1,
+i.e.,aftertheensemblefitsthedataexactly.
+752 Chapter 18. Learningfrom Examples
+complex than necessary, but the graph tells us that the predictions improve as the ensemble
+hypothesis getsmorecomplex! Various explanations have been proposed forthis. Oneview
+is that boosting approximates Bayesian learning (see Chapter 20), which can be shown to
+be an optimal learning algorithm, and the approximation improves as more hypotheses are
+added. Another possible explanation is that the addition of further hypotheses enables the
+ensembletobemoredefiniteinitsdistinctionbetweenpositiveandnegativeexamples,which
+helpsitwhenitcomestoclassifying newexamples.
+18.10.1 Online Learning
+Sofar,everything wehavedoneinthischapterhasreliedontheassumption thatthedataare
+i.i.d. (independentandidenticallydistributed). Ontheonehand,thatisasensibleassumption:
+ifthefuturebearsnoresemblancetothepast,thenhowcanwepredictanything? Ontheother
+hand,itistoostronganassumption: itisrarethatourinputshavecapturedalltheinformation
+thatwouldmakethefuturetrulyindependent ofthepast.
+Inthissectionweexaminewhattodowhenthedataarenoti.i.d.;whentheycanchange
+overtime. Inthiscase,itmatterswhenwemakeaprediction,sowewilladopttheperspective
+calledonlinelearning: anagentreceivesaninputx fromnature,predictsthecorresponding
+ONLINELEARNING j
+y , and then is told the correct answer. Then the process repeats with x , and so on. One
+j j 1
+might think this task is hopeless if nature is adversarial, all the predictions may be wrong.
+Itturnsoutthattherearesomeguarantees wecanmake.
+Let us consider the situation where our input consists of predictions from a panel of
+experts. Forexample, each dayasetof K pundits predicts whetherthestock marketwillgo
+upordown, and ourtask istopool those predictions and makeourown. Onewaytodo this
+is to keep track of how welleach expert performs, and choose to believe them in proportion
+RA

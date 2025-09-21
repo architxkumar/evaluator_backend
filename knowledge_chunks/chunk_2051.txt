@@ -1,0 +1,25 @@
+t plans. Sacerdoti s NOAH solved the keysandboxes problem, aplanning chal-
+lenge problem in which the planner knows little about the initial state, using coercion. Ma-
+son (1993) argued that sensing often can and should be dispensed with in robotic planning,
+and described a sensorless plan that can move a tool into a specific position on a table by a
+sequence oftiltingactions, regardless oftheinitialposition.
+Goldmanand Boddy(1996)introducedthetermconformantplanning,notingthatsen-
+sorless plans are often effective even if the agent has sensors. The first moderately efficient
+conformant planner was Smith and Weld s (1998) Conformant Graphplan or CGP. Ferraris
+and Giunchiglia(2000)and Rintanen(1999)independently developed SATPLAN-basedcon-
+formantplanners. Bonetand Geffner(2000)describeaconformantplannerbasedonheuristic
+searchinthespaceofbeliefstates,drawingonideasfirstdevelopedinthe1960sforpartially
+observable Markovdecisionprocesses, or POMD Ps(see Chapter17).
+Currently, there are three main approaches to conformant planning. The first two use
+heuristic search in belief-state space: HSCP (Bertoli et al., 2001a) uses binary decision
+diagrams (BD Ds) to represent belief states, whereas Hoffmann and Brafman (2006) adopt
+the lazy approach of computing precondition and goal tests on demand using a SAT solver.
+The third approach, championed primarily by Jussi Rintanen (2007), formulates the entire
+sensorless planning problem as a quantified Boolean formula (QBF) and solves it using a
+general-purpose QB Fsolver. Currentconformantplannersarefiveordersofmagnitudefaster
+than CGP. The winner of the 2006 conformant-planning track at the International Planning
+Competition was T (Palaciosand Geffner, 2007), whichusesheuristic search inbelief-state
+0
+space while keeping the belief-state representation simple by defining derived literals that
+coverconditional effects. Bryceand Kambhampati(2007)discusshowaplanning graphcan
+begeneralized togenerategoodheuristics forconformant andcont

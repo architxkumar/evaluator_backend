@@ -1,0 +1,61 @@
+ng: if h(n) is consistent, then the values of
+f(n) along any path are nondecreasing. The proof follows directly from the definition of
+(cid:2) (cid:2) (cid:2)
+consistency. Suppose n isasuccessor of n; then g(n) g(n) c(n,a,n)forsome action
+a,andwehave
+f(n (cid:2) ) g(n (cid:2) ) h(n (cid:2) ) g(n) c(n,a,n (cid:2) ) h(n (cid:2) ) g(n) h(n) f(n). The next step is to prove that whenever A selects a node n for expansion, the optimal path
+to that node has been found. Were this not the case, there would have to be another frontier
+(cid:2)
+node n on the optimal path from the start node to n, by the graph separation property of
+9 Withanadmissiblebutinconsistentheuristic,A requiressomeextrabookkeepingtoensureoptimality.
+96 Chapter 3. Solving Problemsby Searching
+(a) The initial state
+Arad
+366 0 366
+(b) After expanding Arad
+Arad
+Sibiu Timisoara Zerind
+393 140 253 447 118 329 449 75 374
+(c) After expanding Sibiu
+Arad
+Sibiu Timisoara Zerind
+447 118 329 449 75 374
+Arad Fagaras Oradea Rimnicu Vilcea
+646 280 366 415 239 176671 291 380 413 220 193
+(d) After expanding Rimnicu Vilcea
+Arad
+Sibiu Timisoara Zerind
+447 118 329 449 75 374
+Arad Fagaras Oradea Rimnicu Vilcea
+646 280 366 415 239 176671 291 380
+Craiova Pitesti Sibiu
+526 366 160417 317 100 553 300 253
+(e) After expanding Fagaras
+Arad
+Sibiu Timisoara Zerind
+447 118 329 449 75 374
+Arad Fagaras Oradea Rimnicu Vilcea
+646 280 366 671 291 380
+Sibiu Bucharest Craiova Pitesti Sibiu
+591 338 253 450 450 0 526 366 160 417 317 100 553 300 253
+(f) After expanding Pitesti
+Arad
+Sibiu Timisoara Zerind
+447 118 329 449 75 374
+Arad Fagaras Oradea Rimnicu Vilcea
+646 280 366 671 291 380
+Sibiu Bucharest Craiova Pitesti Sibiu
+591 338 253 450 450 0 526 366 160 553 300 253
+Bucharest Craiova Rimnicu Vilcea
+418 418 0 615 455 160 607 414 193
+Figure3.24 Stagesinan A searchfor Bucharest.Nodesarelabeledwithf g h. The
+hvaluesarethestraight-linedistancesto Bucharesttakenfrom Figure3.22.
+Section3.5. Informed(Heuristic)Search Strategies 97
+O
+N
+Z
+A I
+380 S
+F
+V
+40

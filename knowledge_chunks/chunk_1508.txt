@@ -1,0 +1,24 @@
+tepinproblem solving.
+We will consider a goal to be a set of world states exactly those states in which the
+goal is satisfied. The agent s task is to find out how to act, now and in the future, so that it
+reaches a goal state. Before it can do this, it needs to decide (or we need to decide on its
+behalf) what sorts of actions and states it should consider. If it were to consider actions at
+thelevelof movetheleftfootforwardaninch or turnthesteering wheelonedegreeleft, the agent would probably never find its way out of the parking lot, let alone to Bucharest,
+because at that level of detail there is too much uncertainty in the world and there would be
+PROBLEM too many steps in a solution. Problem formulation is the process of deciding what actions
+FORMULATION
+andstatestoconsider, givenagoal. Wediscuss thisprocess inmoredetaillater. Fornow,let
+usassume thattheagent willconsider actions atthe levelof driving from onemajortownto
+another. Eachstatetherefore corresponds tobeinginaparticulartown.
+Our agent has now adopted the goal of driving to Bucharest and is considering where
+togofrom Arad. Threeroads lead outof Arad, onetoward Sibiu, oneto Timisoara, and one
+to Zerind. Noneoftheseachievesthegoal,sounlesstheagentisfamiliarwiththegeography
+of Romania, itwillnotknow whichroadtofollow.1 Inotherwords, theagent willnotknow
+which of its possible actions is best, because it does not yet know enough about the state
+that results from taking each action. If the agent has no additional information i.e., if the
+environment is unknowninthesense defined in Section 2.3 then itishas nochoice but to
+tryoneoftheactionsatrandom. Thissadsituationisdiscussed in Chapter4.
+But suppose the agent has a map of Romania. The point of a map is to provide the
+agentwithinformationaboutthestatesitmightgetitselfintoandtheactionsitcantake. The
+agent can use this information to consider subsequent stages of a hypothetical journey via
+eachofthethreetowns,tryingtofindajourneythateventuallygetsto Bucharest. 

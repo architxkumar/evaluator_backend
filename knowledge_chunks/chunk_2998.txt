@@ -1,0 +1,19 @@
+a-
+conquerunderglobalconstraints:Asolutiontothe temporalintervals.CACM,26(11),832 843. tion.ACM Transactionson Information Systems,12,
+N-queensproblem.J.Paralleland Distributed Com-
+puting,6(3),649 662. Allen,J.F.(1984). Towardsageneraltheoryofac- 233 251.
+tionandtime.AIJ,23,123 154. Arbuthnot, J. (1692). Of the Laws of Chance.
+Achlioptas, D.(2009). Randomsatisfiability. In
+Biere,A.,Heule,M.,van Maaren,H.,and Walsh,T. Allen,J.F.(1991).Timeandtimeagain:Themany Motte,London. Translationinto English,withad-
+(Eds.),Handbookof Satisfiability.IOS Press. waystorepresenttime.Int.J.Intelligent Systems,6, ditions,of Huygens(1657).
+341 355. Archibald, C., Altman, A., and Shoham, Y.
+Achlioptas,D.,Beame,P.,and Molloy,M.(2004).
+E ity xp th o r n e e s n h t o ia ld l . bo In un S d O s D fo A r -0 D 4 P . LLbelowthesatisfiabil- A Re ll a e d n i , n J g . s F i . n ,H Pl e a n n d n l i e n r, g. J. M ,a o n r d ga T n at K e, a A uf . m (E an d n s. . ).(1990). ( li 2 a 0 rd 0 s 9) p . lay A e n r. al I y n si I s JC o A f I a -0 w 9. inningcomputationalbil-
+A O c n h t l h io e p m ta a s x , im D u . m , N sa a t o is r, fia A b . i , lit a y n o d f P ra e n re d s o , m Y f . or ( m 20 u 0 la 7 s ) . . A co l n li n s e , c L t . fo ( u 1 r 9 . 8 T 8 h ). eg A am k e n i o s w s l o e l d v g ed e- : b W as h e i d te a w pp in ro s. ac M h a t s o - A ed r i i t e io ly n , ). D H . a (2 rp 0 e 0 r 9 . ). Predictably Irrational(Revised
+JACM,54(2). ter sthesis,Vrije Univ.,Amsterdam. Arkin,R.(1998). Behavior-Based Robotics. MIT
+Press.
+Achlioptas,D.and Peres,Y.(2004). Thethreshold Almuallim,H.and Dietterich,T.(1991). Learning
+forrandomk-SA Tis2klog2 o(k).J.American withmanyirrelevantfeatures. In AAAI-91,Vol.2, Armando, A.,Carbone,R.,Compagna,L.,Cuel-
+Mathematical Society,17(4),947 973. pp.547 552. lar,J.,and Tobarra,L.(2008). Formalanalysisof
+SAML2.0webbrowsersinglesign-on: Breaking
+Ackley, D.H.and Littman, M.L.(1991). Inter- ALPAC(1966). Languageandmachines: Com- the SAML-bas

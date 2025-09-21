@@ -1,0 +1,28 @@
+artotheonesusedinthezero-sumcase. Fortwoplay-
+ers these equations are linear and can be solved with basic linear programming techniques,
+butforthreeormoreplayers theyarenonlinearandmaybeverydifficulttosolve.
+17.5.2 Repeated games
+Sofarwehave looked only atgames that last a single move. The simplest kind of multiple-
+movegameistherepeatedgame,inwhichplayersfacethesamechoicerepeatedly, buteach
+REPEATEDGAME
+time with knowledge of the history of all players previous choices. A strategy profile for a
+repeated gamespecifies anaction choice foreach playerateachtimestep foreverypossible
+historyofpreviouschoices. Aswith MD Ps,payoffsareadditiveovertime.
+Let sconsidertherepeatedversionoftheprisoner sdilemma. Will Aliceand Bobwork
+together and refuse to testify, knowing they will meet again? The answer depends on the
+details of the engagement. For example, suppose Alice and Bob know that they must play
+exactly100roundsofprisoner sdilemma. Thentheybothknowthatthe100throundwillnot
+bearepeated game thatis,itsoutcomecanhavenoeffect onfuture rounds and therefore
+theywillbothchoose thedominant strategy, testify,inthatround. Butoncethe100thround
+is determined, the 99th round can have no effect on subsequent rounds, so it too will have
+adominant strategy equilibrium at (testify,testify). By induction, both players willchoose
+testify oneveryround,earning atotaljailsentence of500yearseach.
+We can get different solutions by changing the rules of the interaction. For example,
+suppose that after each round there is a 99 chance that the players will meet again. Then
+the expected number of rounds is still 100, but neither player knows for sure which round
+674 Chapter 17. Making Complex Decisions
+willbethelast. Undertheseconditions, morecooperative behaviorispossible. Forexample,
+one equilibrium strategy is foreach player to refuse unless the other player has ever played
+PERPETUAL testify. This strategy could be called perpetual punishment. Suppose both players have
+PUNISHMENT
+adoptedthisstra

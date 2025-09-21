@@ -1,0 +1,24 @@
+dealt with the problem of discovering molecular-structure-
+basedrulesforthemutagenicityofnitroaromaticcompounds. Thesecompoundsarefoundin
+automobileexhaustfumes. For80 ofthecompoundsinastandarddatabase,itispossibleto
+identify fourimportantfeatures, andlinearregression on thesefeaturesoutperforms ILP.For
+theremaining20 ,thefeaturesalonearenotpredictive, and IL Pidentifiesrelationships that
+allow it to outperform linear regression, neural nets, and decision trees. Most impressively,
+Kingetal.(2009)endowedarobotwiththeabilitytoperformmolecularbiologyexperiments
+and extended ILP techniques to include experiment design, thereby creating an autonomous
+scientistthatactuallydiscoverednewknowledgeaboutthefunctionalgenomicsofyeast. For
+alltheseexamplesitappearsthattheabilitybothtorepresentrelationsandtousebackground
+knowledgecontribute to ILP shighperformance. Thefactthattherulesfoundby IL Pcanbe
+interpreted by humans contributes to the acceptance of these techniques in biology journals
+ratherthanjustcomputersciencejournals.
+IL Phas made contributions to other sciences besides biology. One of the most impor-
+tant is natural language processing, where ILP has been used to extract complex relational
+information fromtext. Theseresultsaresummarizedin Chapter23.
+19.6 SUMMARY
+This chapter has investigated various ways in which prior knowledge can help an agent to
+learn from new experiences. Because much prior knowledge is expressed in terms of rela-
+tional models rather than attribute-based models, we have also covered systems that allow
+learning ofrelational models. Theimportantpointsare: The use of prior knowledge in learning leads to a picture of cumulative learning, in
+whichlearning agentsimprovetheirlearning abilityastheyacquiremoreknowledge. Priorknowledge helps learning byeliminating otherwise consistent hypotheses andby
+798 Chapter 19. Knowledgein Learning fillingin theexplanationofexamples,therebyallowingforshorterhypotheses. These
+contributions oftenresultinfasterlearning

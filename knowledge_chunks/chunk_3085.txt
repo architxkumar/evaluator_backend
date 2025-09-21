@@ -1,0 +1,20 @@
+propositionalreasoning. In
+(Eds.),Formal Theoriesofthe Commonsense World, Mu ller, M. (2003). Conditional combinatorial AAAI-97,pp.50 56.
+pp.319 358.Ablex. g ra a c m es es i , n a g n o d . th I e n i f r or a m pp a l t i i c o a n tio S n cie to nc a e n s a , ly 1 z 5 i 4 n ( g 3 c 4 a ) p , tu 1 r 8 in 9 g Neal,R.(1996).Bayesian Learningfor Neural Net-
+Moore,R.C.(2005). Association-basedbilingual 202. works.Springer-Verlag.
+word alignment. In Proc. ACL-05 Workshop on Mumford,D.and Shah,J.(1989).Optimalapprox- Nebel,B.(2000). Onthecompilabilityandexpres-
+Buildingand Using Parallel Texts,pp.1 8. imationsbypiece-wisesmoothfunctionsandasso- sive power of propositional planning formalisms.
+Moravec,H.P.(1983). Thestanfordcartandthe ciatedvariationalproblems. Commun.Pure Appl. JAIR,12,271 315.
+cmurover.Proc.IEEE,71(7),872 884. Math.,42,577 685. Nefian,A.,Liang,L.,Pi,X.,Liu,X.,and Murphy,
+Moravec,H.P.and Elfes,A.(1985). Highresolu- Murphy, K.,Weiss,Y.,and Jordan,M.I.(1999). K.(2002). Dynamicbayesiannetworksforaudio-
+tionmapsfromwideanglesonar. In ICRA-85,pp. Loopybeliefpropagationforapproximateinference: visualspeechrecognition.EURASIP,Journalof Ap-
+116 121. Anempiricalstudy.In UAI-99,pp.467 475. plied Signal Processing,11,1 15.
+Murphy, K. (2001). The Bayes net toolbox for Nesterov,Y.and Nemirovski,A.(1994). Interior-
+Moravec,H.P.(1988).Mind Children:The Future MATLAB.Computing Scienceand Statistics,33. Point Polynomial Methodsin Convex Programming.
+of Robotand Human Intelligence. Harvard Univer- SIAM(Societyfor Industrialand Applied Mathe-
+sity Press. Murphy,K.(2002). Dynamic Bayesian Networks: matics).
+Representation,Inferenceand Learning. Ph.D.the-
+Moravec,H.P.(2000). Robot: Mere Machineto sis,UC Berkeley. Netto,E.(1901). Lehrbuchder Combinatorik. B.
+Transcendent Mind.Oxford University Press. G.Teubner.
+Murphy, K. and Mian, I. S. (1999). Modelling
+Morgenstern,L.(1998). Inheritancecomesofage: gene expression data using Bayesian networks. Nevill-Manning, C. G. and Wit

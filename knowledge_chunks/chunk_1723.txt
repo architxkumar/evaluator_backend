@@ -1,0 +1,39 @@
+ suppose there are two flights, F and F , for which the planes have capacities 165 and
+1 2
+385,respectively. Theinitialdomainsforthenumbersofpassengers oneachflightarethen
+D 0,165 and D 0,385 .
+1 2
+Now suppose we have the additional constraint that the two flights together must carry 420
+people: F F 420. Propagating boundsconstraints, wereducethedomainsto
+1 2
+D 35,165 and D 255,385 .
+1 2
+BOUNDS We say that a CSP is bounds consistent if for every variable X, and for both the lower-
+CONSISTENT
+boundandupper-bound valuesof X,thereexistssomevalueof Y thatsatisfiestheconstraint
+between X and Y for every variable Y. This kind of bounds propagation is widely used in
+practical constraint problems.
+6.2.6 Sudoku example
+Thepopular Sudokupuzzlehasintroducedmillionsofpeopletoconstraintsatisfactionprob-
+SUDOKU
+lems, although they may not recognize it. A Sudoku board consists of 81 squares, some of
+which are initially filled with digits from 1 to 9. The puzzle is to fill in all the remaining
+squaressuchthatnodigitappearstwiceinanyrow,column,or3 3box(see Figure6.4). A
+row,column,orboxiscalledaunit.
+The Sudokupuzzles thatareprintedinnewspapers andpuzzle bookshavetheproperty
+that thereisexactly onesolution. Although somecanbetricky tosolve byhand, taking tens
+ofminutes, eventhehardest Sudokuproblemsyieldtoa CS Psolverinlessthan0.1second.
+ASudoku puzzle can beconsidered a CS Pwith 81 variables, one foreach square. We
+usethevariable names A1 through A9 forthetoprow(lefttoright), downto I1 through I9
+forthebottom row. Theemptysquares have the domain 1,2,3,4,5,6,7,8,9 and the pre-
+filled squares have a domain consisting of a single value. In addition, there are 27 different
+Section6.2. Constraint Propagation: Inferencein CS Ps 213
+1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9
+A 3 2 6 A 4 8 3 9 2 1 6 5 7
+B 9 3 5 1 B 9 6 7 3 4 5 8 2 1
+C 1 8 6 4 C 2 5 1 8 7 6 4 9 3
+D 8 1 2 9 D 5 4 8 1 3 2 9 7 6
+E 7 8 E 7 2 9 5 6 4 1 3 8
+F 6 7 8 2 F 1 3 6 7 9 8 2 4 5
+G 2 6 9 5 G 3 7 2 6 8 9 5 1 4
+H 8 2 3 9 H 8 1 4 2 

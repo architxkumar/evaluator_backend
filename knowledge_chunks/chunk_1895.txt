@@ -1,0 +1,33 @@
+on showshowtheforward-chaining algorithm solvestheproblem. ...itisacrimeforan Americantosellweaponstohostilenations :
+American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x). (9.3) Nono...hassomemissiles. Thesentence x Owns(Nono,x) Missile(x)istransformed
+intotwodefiniteclausesby Existential Instantiation, introducing anewconstant M :
+1
+Owns(Nono,M ) (9.4)
+1
+M. issile(M ) (9.5)
+1 Allofitsmissilesweresoldtoitby Colonel West :
+Missile(x) Owns(Nono,x) Sells(West,x,Nono). (9.6)
+Wewillalsoneedtoknowthatmissilesareweapons:
+Missile(x) Weapon(x) (9.7)
+Section9.3. Forward Chaining 331
+andwemustknowthatanenemyof Americacountsas hostile :
+Enemy(x,America) Hostile(x). (9.8) West,whois American... :
+American(West). (9.9) Thecountry Nono,anenemyof America ... :
+Enemy(Nono,America). (9.10)
+This knowledge base contains no function symbols and is therefore an instance of the class
+of Datalog knowledge bases. Datalog is a language that is restricted to first-order definite
+DATALOG
+clauses withnofunction symbols. Datalog getsitsnamebecause itcanrepresent thetypeof
+statements typically made in relational databases. We will see that the absence of function
+symbolsmakesinference mucheasier.
+9.3.2 A simpleforward-chaining algorithm
+Thefirstforward-chaining algorithmweconsiderisasimple one,shownin Figure9.3. Start-
+ing from the known facts, it triggers all the rules whose premises are satisfied, adding their
+conclusions to the known facts. The process repeats until the query is answered (assuming
+that just one answer is required) or no new facts are added. Notice that a fact is not new if it is just a renaming of a known fact. One sentence is a renaming of another if they
+RENAMING
+are identical except for the names of the variables. For example, Likes(x,Ice Cream) and
+Likes(y,Ice Cream) arerenamings ofeach otherbecause theydiffer only in thechoice of x
+ory;theirmeaningsareidentical: everyonelikesicecream.
+We use our crime problem to illustrate how FOL-FC-ASK works. The implication
+senten

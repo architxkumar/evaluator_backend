@@ -1,0 +1,26 @@
+iest Sudokupuzzles.
+Slightly harder ones can be solved by PC-2, but at a greater computational cost: there are
+255,960differentpathconstraintstoconsiderina Sudokupuzzle. Tosolvethehardestpuzzles
+andtomakeefficientprogress, wewillhavetobemoreclever.
+Indeed,theappealof Sudokupuzzlesforthehumansolveristheneedtoberesourceful
+in applying more complex inference strategies. Aficionados give them colorful names, such
+as naked triples. That strategy works as follows: in any unit (row, column or box), find
+three squares that each have a domain that contains the same three numbers or a subset of
+those numbers. Forexample, thethree domains mightbe 1,8 , 3,8 , and 1,3,8 . From
+that wedon t know which square contains 1,3, or8, but wedoknow that thethree numbers
+must be distributed among the three squares. Therefore we can remove 1, 3, and 8 from the
+domainsofeveryothersquareintheunit.
+It is interesting to note how far we can go without saying much that is specific to Su-
+doku. Wedoofcoursehavetosaythatthereare81variables,thattheirdomainsarethedigits
+1to9,andthatthereare27 Alldiff constraints. Butbeyond that, allthestrategies arc con-
+sistency, path consistency, etc. apply generally to all CS Ps, not just to Sudoku problems.
+Even naked triples is really a strategy for enforcing consistency of Alldiff constraints and
+hasnothingtodowith Sudokuperse. Thisisthepowerofthe CS Pformalism: foreachnew
+problem area, we only need to define the problem in terms of constraints; then the general
+constraint-solving mechanismscantakeover.
+6.3 BACKTRACKING SEARCH FOR CSPS
+Sudoku problems are designed to be solved by inference over constraints. But many other
+CS Ps cannot be solved by inference alone; there comes a time when we must search for a
+solution. In this section we look at backtracking search algorithms that work on partial as-
+signments;inthenextsectionwelookatlocalsearchalgorithmsovercompleteassignments.
+We could apply a standard depth-limited search (from Chapter 3). A state would be a

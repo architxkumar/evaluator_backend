@@ -1,0 +1,46 @@
+s book), find the corresponding French
+phrases (from the French translation of the book), and then reassemble the French phrases
+intoanorderthatmakessensein French. Inotherwords,givenasource Englishsentence, e,
+findinga Frenchtranslation f isamatterofthreesteps:
+1. Breakthe Englishsentenceintophrases e ,...,e .
+1 n
+2. For each phrase e , choose a corresponding French phrase f . We use the notation
+i i
+P(f e )forthephrasal probability that f isatranslation ofe .
+i i i i
+3. Choose a permutation of the phrases f ,...,f . Wewill specify this permutation in a
+1 n
+way that seems a little complicated, but is designed to have a simple probability dis-
+tribution: For each f , we choose a distortion d , which is the number of words that
+DISTORTION i i
+phrase f i hasmovedwithrespectto f i 1 ;positiveformovingtotheright, negativefor
+movingtotheleft,andzeroiff i immediatelyfollowsf i 1 .
+Figure 23.13 shows an example of the process. At the top, the sentence There is a smelly
+wumpus sleeping in 2 2 is broken into five phrases, e ,...,e . Each of them is translated
+1 5
+into a corresponding phrase f , and then these are permuted into the order f ,f ,f ,f ,f .
+i 1 3 4 2 5
+Wespecifythepermutation intermsofthedistortions d ofeach Frenchphrase, definedas
+i
+d i START(f i ) END(f i 1 ) 1,
+where START(f
+i
+)istheordinal numberofthefirstwordofphrase f
+i
+inthe Frenchsentence,
+and END(f i 1 )istheordinalnumberofthelastwordofphrase f i 1 . In Figure23.13wesee
+thatf , a 22, immediatelyfollowsf , quidort, andthusd 0. Phrasef ,however,has
+5 4 5 2
+movedonewords totheright of f ,sod 1. Asaspecial case wehave d 0, because f
+1 2 1 1
+startsatposition 1and END(f
+0
+)isdefinedtobe0(eventhough f
+0
+doesnotexist).
+Now that we have defined the distortion, d , we can define the probability distribution
+i
+for distortion, P(d ). Note that for sentences bounded by length n we have d n , and
+i i
+8 For the finer points of translation, n-grams are clearly not enough. Marcel Proust s 4000-page novel A la
+re cherched

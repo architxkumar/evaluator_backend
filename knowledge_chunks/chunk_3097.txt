@@ -1,0 +1,19 @@
+o p v . e 4 r 2 s 1 p 4 ro 2 b 7 - .
+Prieditis,A.E.(1993).Machinediscoveryofeffec- Reiter,R.(1980).Alogicfordefaultreasoning.AIJ,
+tiveadmissibleheuristics.Machine Learning,12(1 Rabani,Y.,Rabinovich,Y.,and Sinclair,A.(1998). 13(1 2),81 132.
+3),117 141. Acomputationalviewofpopulationgenetics. Ran-
+dom Structuresand Algorithms,12(4),313 334. Reiter,R.(1991). Theframeprobleminthesitu-
+Prinz,D.G.(1952).Robotchess.Research,5,261 ationcalculus: Asimplesolution(sometimes)and
+266. Rabiner,L.R.and Juang,B.-H.(1993).Fundamen- acompletenessresultforgoalregression. In Lif-
+Prosser,P.(1993).Hybridalgorithmsforconstraint talsof Speech Recognition. satisfactionproblems. Computational Intelligence, Ralphs, T.K., Ladanyi, L., and Saltzman, M. J. matical Theoryof Computation:Papersin Honorof
+9,268 299. (2004). Alibraryhierarchyforimplementingscal- John Mc Carthy,pp.359 380.Academic Press.
+Pullum,G.K.(1991). The Great Eskimo Vocabu- ableparallelsearchalgorithms. J.Supercomputing, Reiter,R.(2001). Knowledgein Action: Logical
+lary Hoax(and Other Irreverent Essaysonthe Study 28(2),215 234. Foundationsfor Specifyingand Implementing Dy-
+of Language).Universityof Chicago Press. Ramanan, D., Forsyth, D., and Zisserman, A. namical Systems.MIT Press.
+Pullum,G.K.(1996). Learnability,hyperlearning, (2007). Trackingpeoplebylearningtheirappear- Renner, G. and Ekart, A. (2003). Geneticalgo-
+andthepovertyofthestimulus. In22nd Annual ance. IEEE Pattern Analysisand Machine Intelli- rithmsincomputeraideddesign. Computer Aided
+Meetingofthe Berkeley Linguistics Society. gence. Design,35(8),709 726.
+Puterman, M.L.(1994). Markov Decision Pro- Ramsey, F.P.(1931). Truthandprobability. In Re nyi, A. (1970). Probability Theory.
+cesses:Discrete Stochastic Dynamic Programming. Braithwaite,R.B.(Ed.),The Foundationsof Math- Elsevier North-Holland.
+Wiley. ematicsand Other Logical Essays.Harcourt Brace Reynolds,C.W.(1987).Flocks,herds,andschools:
+Puterman,M.L.and Shin,M.C.(1978).Modified Jovanovich. Adistributedbehav

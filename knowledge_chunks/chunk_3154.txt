@@ -1,0 +1,40 @@
+Grove,W.,1022,1074 Hanks,S.,433,1072 Heckerman,D.,26,29,548,552,553,
+Gruber,T.,439,470,1074 Hanna,F.K.,800,1087 557,605,634,640,826,1067,
+grue,798 Hansard,911 1074 1076,1087 1089
+Grumberg,O.,395,1068 Hansen,E.,112,156,422,433,686, hedoniccalculus,637
+GSAT,277 1075,1093 Heidegger,M.,1041,1075
+Gu,J.,229,277,1074,1089 Hansen,M.O.,228,1064 Heinz,E.A.,192,1075
+Guard,J.,360,1074 Hansen,P.,277,1075 Held,M.,112,1075
+Guestrin,C.,639,686,856,857,1074, Hanski,I.,61,1075 Hellerstein,J.M.,275,1080
+1079,1081 Hansson,O.,112,119,1075 Helmert,M.,111,395,396,1075
+Guha,R.V.,439,469,1067,1080 happygraph,703 Helmholtz,H.,12
+Guibas,L.J.,1013,1074 haptics,1013 Hempel,C.,6
+Gumperz,J.,314,1074 Harabagiu,S.M.,885,1085 Henderson,T.C.,210,228,1082
+Index 1109
+Hendler,J.,27,396,432,469,1064, hierarchicaltasknetwork(HTN),406, horizon(in MD Ps),648
+1065,1071,1072,1075,1089 431 horizoneffect,174
+Henrion,M.,61,519,552,554,639, Hierholzer,C.,157,1075 Horn,A.,276,1076
+1075,1076,1086 higher-orderlogic,289 Horn,B.K.P.,968,1076
+Henzinger,M.,884,1088 highlevelaction,406 Horn,K.V.,505,1076
+Henzinger,T.A.,60,1075 Hilgard,E.R.,854,1075 Hornclause,256,791
+Hephaistos,1011 HILL-CLIMBING,122 Hornform,275,276
+Herbrand stheorem,351,358 hillclimbing,122,153,158 Horning,J.J.,1076
+Herbrand,J.,276,324,351,357,358, first-choice,124 Horowitz,E.,110,1076
+1075 random-restart,124 Horowitz,M.,279,1084
+Herbrandbase,351 stochastic,124 Horrocks,J.C.,505,1070
+Herbranduniverse,351,358 Hingorani,S.L.,606,1069 horse,1028
+Hernadvolgyi,I.,112,1076 Hinrichs,T.,195,1080 Horswill,I.,1013,1076
+Herskovits,E.,826,1069 Hintikka,J.,470,1075 Horvitz,E.J.,26,29,61,553,604,639,
+Hessian,132 Hinton,G.E.,155,761,763,1047, 1048,1076,1084,1087
+Heule,M.,278,1066 1075,1087 Hovel,D.,553,1076
+Hirsch,E.A.,277,1064 Howard,R.A.,626,637 639,685,
+heuristic,108
+Hirsh,H.,799,1075 1076,1082
+admissible,94,376
+Hitachi,408 Howe,A.,394,1073
+composite,106
+hitlist,869 Howe,D.,360,1076
+degree,216,228,261
+HITS,871,872 HSCP,433
+forplanning,376 379
+HMM,578,590,876,922 H

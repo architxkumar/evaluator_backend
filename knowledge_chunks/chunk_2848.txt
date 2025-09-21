@@ -1,0 +1,24 @@
+leration that we humans have in our inner ears. By integrating
+the sensed acceleration twice, one can keep track of the change in position. Combining the
+datafromvisionandthe IM Uisaproblemofprobabilisticevidencefusionandcanbetackled
+usingtechniques, suchas Kalmanfiltering, wehavestudiedelsewhereinthebook.
+In the use of visual odometry (estimation of change in position), as in other problems
+of odometry, there is the problem of drift, positional errors accumulating over time. The
+solution for this is to use landmarks to provide absolute position fixes: as soon as the robot
+passes a location in its internal map, it can adjust its estimate of its position appropriately.
+Accuracies ontheorderofcentimeters havebeendemonstrated withthethesetechniques.
+Thedriving examplemakesonepoint veryclear: foraspecific task, onedoes notneed
+to recover all the information that, in principle, can be recovered from an image. One does
+notneedtorecovertheexactshapeofeveryvehicle,solveforshape-from-textureonthegrass
+surfaceadjacenttothefreeway,andsoon. Instead,avisionsystemshouldcomputejustwhat
+isneeded toaccomplish thetask.
+24.7 SUMMARY
+Although perception appears to be an effortless activity for humans, it requires a significant
+amountofsophisticated computation. Thegoalofvisionistoextractinformation neededfor
+taskssuchasmanipulation, navigation, andobjectrecognition. The process of image formation is well understood in its geometric and physical as-
+pects. Givenadescriptionofathree-dimensionalscene,wecaneasilyproduceapicture
+ofitfromsomearbitrary cameraposition (thegraphicsproblem). Inverting theprocess
+bygoingfromanimagetoadescription ofthesceneismoredifficult. To extract the visual information necessary for the tasks of manipulation, navigation,
+and recognition, intermediate representations have to be constructed. Early vision
+image-processing algorithms extract primitive features from the image, such as edges
+andregions. There are various cues in the image that enable one to obtain t

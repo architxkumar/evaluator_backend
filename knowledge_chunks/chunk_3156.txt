@@ -1,0 +1,34 @@
+envariable,522,816 Hoos,H.,229,1076 humanpreference,649
+HIERARCHICAL-SEARCH,409 Hopcroft,J.,1012,1059,1064,1088 Hume,D.,6,1076
+hierarchicaldecomposition,406 Hope,J.,886,1076 Humphrys,M.,1021,1076
+hierarchicallookahead,415 Hopfield,J.J.,762,1076 Hungarianalgorithm,601
+hierarchicalreinforcementlearning, Hopfieldnetwork,762 Hunkapiller,T.,604,1065
+856,1046 Hopkins Beast,1011 Hunsberger,L.,682,688,1076
+hierarchicalstructure,1046 horizon(inanimage),931 Hunt,W.,360,1076
+1110 Index
+Hunter,L.,826,1076 imperfectinformation,190,666 informationvalue,629,639
+Hurst,M.,885,1076 implementation(ofahigh-levelaction), informedsearch,64,81,92,92 102,
+Hurwicz,L.,688,1076 407 108
+Husmeier,D.,605,1076 implementationlevel,236 infuencediagram,510,610,626,
+Hussein,A.I.,723,724,1078 implication,244 626 628,636,639,664
+Hutchinson,S.,1013,1014,1068 implicativenormalform,282,345 Ingerman,P.Z.,919,1076
+Huth,M.,314,1076 importancesampling,532,554 Ingham,M.,278,1092
+Huttenlocher,D.,959,967,1072,1076 incentive,426 inheritance,440,454,478
+Huygens,C.,504,687,1076 incentivecompatible,680 multiple,455
+Huyn,N.,111,1076 inclusion exclusionprinciple,489 initialstate,66,108,162,369
+Hwa,R.,920,1076 incompleteness,342 Inoue,K.,795,1076
+Hwang,C.H.,469,1076 theorem,8,352,1022 inputresolution,356
+HYBRID-WUMPUS-AGENT,270 inconsistentsupport,381 inside outsidealgorithm,896
+hybrid A ,991 incrementalformulation,72 instance(ofaschema),128
+hybridarchitecture,1003,1047 incrementallearning,773,777 instance-basedlearning,737,737 739,
+HYDRA,185,193 independence,494,494 495,498,503 855
+hyperparameter,811 absolute,494 insufficientreason,principleof,504
+hypertreewidth,230 conditional,498,502,503,517 523, insurancepremium,618
+hypothesis,695 551,574 intelligence,1,34
+approximatelycorrect,714 context-specific,542,563 intelligentbacktracking,218 220,262
+consistent,696 marginal,494 intentionality,1026,1042
+null,705
+independentsubproblems,222 intentionalstate,1028
+prior,803,810
+index,869 intercausalreasoning,548
+hypothesisprior,8

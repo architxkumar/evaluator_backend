@@ -1,0 +1,28 @@
+ndiscardedandrebuiltonthesecond
+iteration (when the rule succeeds). It would be better to retain and gradually complete the
+partialmatchesasnewfactsarrive,ratherthandiscarding them.
+The rete algorithm3 was the first to address this problem. The algorithm preprocesses
+RETE
+the set of rules in the knowledge base to construct a sort of dataflow network in which each
+3 Reteis Latinfornet.The Englishpronunciationrhymeswithtreaty.
+336 Chapter 9. Inference in First-Order Logic
+node is a literal from a rule premise. Variable bindings flow through the network and are
+filtered out when they fail to match a literal. If two literals in a rule share a variable for
+example, Sells(x,y,z) Hostile(z) in the crime example then the bindings from each
+literal are filtered through an equality node. A variable binding reaching a node for an n-
+ary literal such as Sells(x,y,z) might have towait forbindings forthe other variables tobe
+established before the process can continue. At any given point, the state of a rete network
+captures allthepartialmatchesoftherules,avoiding agreatdealofrecomputation.
+Rete networks, and various improvements thereon, have been a key component of so-
+PRODUCTION called production systems, which were among the earliest forward-chaining systems in
+SYSTEM
+widespread use.4 The XCON system (originally called R1; Mc Dermott, 1982) was built
+withaproduction-system architecture. XCO Ncontainedseveralthousand rulesfordesigning
+configurationsofcomputercomponentsforcustomersofthe Digital Equipment Corporation.
+It was one of the first clear commercial successes in the emerging field of expert systems.
+Manyothersimilarsystemshavebeenbuiltwiththesameunderlying technology, whichhas
+beenimplemented inthegeneral-purpose language OPS-5.
+COGNITIVE Productionsystemsarealsopopularincognitivearchitectures that is,modelsofhu-
+ARCHITECTURES
+manreasoning such as ACT (Anderson, 1983)and SOAR (Lairdetal.,1987). Insuchsys-
+tems, the working memory of the system models human short-term me

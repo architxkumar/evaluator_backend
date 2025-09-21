@@ -1,0 +1,30 @@
+reelucidatedby
+Robertson and Sparck Jones (1976). Domingos and Pazzani (1997) provide an explanation
+506 Chapter 13. Quantifying Uncertainty
+for the surprising success of naive Bayesian reasoning even in domains where the indepen-
+denceassumptions areclearlyviolated.
+There are many good introductory textbooks on probability theory, including those by
+Bertsekas and Tsitsiklis (2008) and Grinstead and Snell (1997). De Groot and Schervish
+(2001) offer a combined introduction to probability and statistics from a Bayesian stand-
+point. Richard Hamming s (1991) textbook gives a mathematically sophisticated introduc-
+tiontoprobabilitytheoryfromthestandpointofapropensityinterpretation basedonphysical
+symmetry. Hacking (1975) and Hald (1990) coverthe early history of theconcept of proba-
+bility. Bernstein(1996)givesanentertaining popularaccount ofthestoryofrisk.
+EXERCISES
+13.1 Showfromfirstprinciples that P(a b a) 1.
+13.2 Using the axioms of probability, prove that any probability distribution on a discrete
+randomvariable mustsumto1.
+13.3 Foreachofthefollowingstatements, eitherproveitistrue orgiveacounterexample.
+a. If P(a b,c) P(b a,c),then P(a c) P(b c)
+b. If P(a b,c) P(a),then P(b c) P(b)
+c. If P(a b) P(a),then P(a b,c) P(a c)
+13.4 Woulditberationalforanagenttoholdthethreebeliefs P(A) 0.4,P(B) 0.3,and
+P(A B) 0.5? Ifso,whatrangeofprobabilities wouldberationalforthe agenttoholdfor
+A B? Makeupatableliketheonein Figure13.2,andshowhowitsupportsyourargument
+about rationality. Then draw another version of the table where P(A B) 0.7. Explain
+whyitisrational tohave thisprobability, eventhough thetable showsonecase thatisaloss
+and three that just break even. (Hint: what is Agent 1committed to about the probability of
+eachofthefourcases,especially thecasethatisaloss?)
+13.5 This question deals with the properties of possible worlds, defined on page 488 as
+assignments to all random variables. We will work with propositions that correspond to
+exactly one possible world because they pin

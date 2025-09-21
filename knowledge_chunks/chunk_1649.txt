@@ -1,0 +1,55 @@
+od for
+MAX andbadfor MIN(whichishowtheplayersgettheirnames).
+For tic-tac-toe the game tree is relatively small fewer than 9! 362,880 terminal
+nodes. But for chess there are over 1040 nodes, so the game tree is best thought of as a
+theoretical construct that we cannot realize in the physical world. But regardless of the size
+SEARCHTREE
+ofthegametree,itis MAX sjobtosearchforagoodmove. Weusethetermsearchtreefora
+treethatissuperimposed onthefullgametree,andexamines enoughnodestoallowaplayer
+todetermine whatmovetomake.
+MAX (X)
+X X X
+MIN (O)
+X X X
+X X X
+XO X O X . . .
+MAX (X) O
+X O X XO X O . . .
+MIN (O) X X
+. . . . . . . . . . . .
+X O X X O X X O X . . .
+TERMINAL O X OO X X
+O X X O X O O
+Utility 1 0 1
+Figure 5.1 A (partial) game tree forthe game of tic-tac-toe. The top node is the initial
+state,and MA Xmovesfirst,placingan Xinanemptysquare.Weshowpartofthetree,giving
+alternatingmovesby MIN(O)and MAX(X),untilweeventuallyreachterminalstates,which
+canbeassignedutilitiesaccordingtotherulesofthegame.
+5.2 OPTIMAL DECISIONS IN GAMES
+In a normal search problem, the optimal solution would be a sequence of actions leading to
+a goal state a terminal state that is a win. In adversarial search, MIN has something to say
+STRATEGY about it. MAX therefore must find a contingent strategy, which specifies MAX s move in
+the initial state, then MAX s moves in the states resulting from every possible response by
+164 Chapter 5. Adversarial Search
+MAX 3 A
+a a
+1 3
+a
+2
+MIN 3 B 2 C 2 D
+b b c c d d
+1 3 1 3 1 3
+b c d
+2 2 2
+3 12 8 2 4 6 14 5 2
+Figure 5.2 A two-ply game tree. The (cid:14) nodes are MAX nodes, in which it is MAX s
+(cid:15)
+turntomove,andthe nodesare MI Nnodes. Theterminalnodesshowtheutilityvalues
+for MAX;theothernodesarelabeledwiththeirminimaxvalues. MAX sbestmoveattheroot
+isa
+1
+,becauseitleadstothestatewiththehighestminimaxvalue,and MIN sbestreplyisb
+1
+,
+becauseitleadstothestatewiththelowestminimaxvalue.
+MIN,then MAX smovesinthestates resulting fromeverypossible response by MIN tothose

@@ -1,0 +1,27 @@
+regression for machine learning is covered in texts such as Bishop (2007). Ng
+(2004)analyzed thedifferences between L and L regularization.
+1 2
+760 Chapter 18. Learningfrom Examples
+Theterm logistic functioncomesfrom Pierre-Franc ois Verhulst (1804 1849), astatis-
+tician whoused the curve tomodel population growth withlimited resources, amore realis-
+tic model than the unconstrained geometric growth proposed by Thomas Malthus. Verhulst
+called it the courbe logistique, because of its relation tothe logarithmic curve. Theterm re-
+gression is due to Francis Galton, nineteenth century statistician, cousin of Charles Darwin,
+andinitiatorofthefieldsofmeteorology, fingerprintanalysis, andstatistical correlation, who
+useditinthesenseofregressiontothemean. Thetermcurseofdimensionalitycomesfrom
+Richard Bellman(1961).
+Logistic regression can be solved with gradient descent, or with the Newton-Raphson
+method (Newton,1671; Raphson, 1690). Avariant ofthe Newtonmethodcalled L-BFG Sis
+sometimesusedforlarge-dimensional problems;the Lstandsfor limitedmemory, meaning
+that it avoids creating the full matrices all at once, and instead creates parts of them on the
+fly. BFG Sareauthors initials (Byrd etal.,1995).
+Nearest-neighbors modelsdatebackatleastto Fixand Hodges(1951)andhavebeena
+standardtoolinstatisticsandpatternrecognitioneversince. Within AI,theywerepopularized
+by Stanfilland Waltz(1986),whoinvestigatedmethodsforadaptingthedistancemetrictothe
+data. Hastieand Tibshirani(1996)developedawaytolocalizethemetrictoeachpointinthe
+space,dependingonthedistributionofdataaroundthatpoint. Gionisetal.(1999)introduced
+locality-sensitive hashing, which has revolutionized the retrieval of similar objects in high-
+dimensional spaces, particularly in computer vision. Andoni and Indyk (2006) provide a
+recentsurveyof LS Handrelatedmethods.
+The ideas behind kernel machines come from Aizerman et al. (1964) (who also in-
+troduced the kernel trick), but the full development of the theory is due to Vapnik

@@ -1,0 +1,31 @@
+ding of a conversation necessarily need to be more complex than the simple
+models aimed at, say, spam classification. We start with grammatical models of the phrase
+structure of sentences, add semantics to the model, and then apply it to machine translation
+andspeechrecognition.
+23.1 PHRASE STRUCTURE GRAMMARS
+The n-gram language models of Chapter 22 were based on sequences of words. The big
+issueforthesemodelsisdatasparsity withavocabulary of,say,105 words,thereare1015
+trigram probabilities to estimate, and so a corpus of even a trillion words will not be able to
+supply reliable estimates for all of them. We can address the problem of sparsity through
+generalization. Fromthefactthat black dog ismorefrequent than dogblack andsimilar
+observations, we can form the generalization that adjectives tend to come before nouns in
+English (whereas they tend to follow nouns in French: chien noir is more frequent). Of
+coursetherearealwaysexceptions; galore isanadjectivethatfollowsthenounitmodifies.
+Despitetheexceptions,thenotionofalexicalcategory(alsoknownasapartofspeech)such
+LEXICALCATEGORY
+asnounoradjective isausefulgeneralization useful initsownright,butmore sowhenwe
+SYNTACTIC string together lexical categories to form syntactic categories such as noun phrase or verb
+CATEGORIES
+phrase, and combine these syntactic categories into trees representing the phrase structure
+PHRASESTRUCTURE
+ofsentences: nestedphrases, eachmarkedwithacategory.
+888
+Section23.1. Phrase Structure Grammars 889
+GENERATIVE CAPACITY
+Grammaticalformalismscanbeclassifiedbytheirgenerativecapacity: thesetof
+languages theycanrepresent. Chomsky(1957)describesfourclassesofgrammat-
+ical formalisms that differ only in the form of the rewrite rules. The classes can
+be arranged in a hierarchy, where each class can be used to describe all the lan-
+guages that can be described by a less powerful class, as well as some additional
+languages. Herewelistthehierarchy, mostpowerfulclassfirst:
+Recursively enumerable grammars u

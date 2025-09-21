@@ -1,0 +1,35 @@
+(cid:5),a(cid:5) Q s,a )
+s,a,r s(cid:5),argmax
+a(cid:3)
+f(Q s(cid:5),a(cid:5) ,Nsa s(cid:5),a(cid:5) ),r(cid:5)
+returna
+Figure21.8 Anexploratory Q-learningagent. Itisanactivelearnerthatlearnsthevalue
+Q(s,a)of each actionin each situation. Ituses the same explorationfunctionf as the ex-
+ploratory AD Pagent,butavoidshavingtolearnthetransitionmodelbecausethe Q-valueof
+astatecanberelateddirectlytothoseofitsneighbors.
+itneedsarethe Qvalues. Theupdateequation for TDQ-learningis
+Q(s,a) Q(s,a) (R(s) max Q(s (cid:2) ,a (cid:2) ) Q(s,a)), (21.8)
+a(cid:3)
+(cid:2)
+whichiscalculated wheneveraction aisexecutedinstatesleading tostates.
+The complete agent design for an exploratory Q-learning agent using TD is shown in
+Figure 21.8. Notice that it uses exactly the same exploration function f as that used by the
+exploratory ADP agent hence the need to keep statistics on actions taken (the table N). If
+asimplerexploration policy isused say, acting randomly onsome fraction ofsteps, where
+thefractiondecreases overtime thenwecandispense withthestatistics.
+Q-learninghasacloserelativecalled SARSA(for State-Action-Reward-State-Action).
+SARSA
+Theupdaterulefor SARS Aisverysimilarto Equation(21.8):
+Q(s,a) Q(s,a) (R(s) Q(s (cid:2) ,a (cid:2) ) Q(s,a)), (21.9)
+(cid:2) (cid:2)
+where a is the action actually taken in state s. The rule is applied at the end of each
+(cid:2) (cid:2)
+s, a, r, s, a quintuplet hence the name. The difference from Q-learning is quite subtle:
+whereas Q-learning backs up the best Q-value from the state reached in the observed transi-
+tion, SARS Awaitsuntilanaction isactually takenand backsupthe Q-valueforthataction.
+Now, for a greedy agent that always takes the action with best Q-value, the two algorithms
+are identical. When exploration is happening, however, they differ significantly. Because
+Q-learning usesthebest Q-value, itpaysnoattention tothe actual policybeing followed it
+isanoff-policylearningalgorithm,whereas SARS Aisanon-policyalgorithm. Q-learningis
+OFF-POLICY
+mor

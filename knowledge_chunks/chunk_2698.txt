@@ -1,0 +1,26 @@
+uageandthattheprobabilityof Macedonian
+will be less than 1 . The exact number weselect forthese priors is not critical because the
+trigrammodelusuallyselectsonelanguagethatisseveralordersofmagnitudemoreprobable
+thananyother.
+Other tasks for character models include spelling correction, genre classification, and
+named-entity recognition. Genre classification means deciding if a text is a news story, a
+legal document, a scientific article, etc. While many features help make this classification,
+counts of punctuation and other character n-gram features go a long way (Kessler et al.,
+1997). Named-entity recognition is the task of finding names of things in a document and
+deciding whatclasstheybelong to. Forexample, inthetext Mr. Sopersteen wasprescribed
+aciphex, weshouldrecognizethat Mr. Sopersteen isthenameofapersonand aciphex is
+thenameofadrug. Character-level modelsaregoodforthistaskbecause theycanassociate
+thecharactersequence ex ( ex followedbyaspace)withadrugnameand steen with
+apersonname,andtherebyidentifywordsthattheyhaveneverseenbefore.
+22.1.2 Smoothing n-gram models
+The major complication of n-gram models is that the training corpus provides only an esti-
+mateofthetrueprobability distribution. Forcommoncharacter sequences suchas th any
+Englishcorpuswillgiveagoodestimate: about1.5 ofalltrigrams. Ontheotherhand, ht is very uncommon no dictionary words start with ht. It is likely that the sequence would
+have acount ofzero inatraining corpus ofstandard English. Does that meanweshould as-
+sign P( th ) 0? Ifwedid,thenthetext Theprogram issuesanhttprequest wouldhave
+Section22.1. Language Models 863
+an Englishprobabilityofzero,whichseemswrong. Wehaveaproblemingeneralization: we
+want ourlanguage models to generalize well totexts they haven t seen yet. Just because we
+haveneverseen http before doesnotmeanthatourmodelshould claimthatit isimpossi-
+ble. Thus, we will adjust our language model so that sequences that have a count of zero in
+thetraining corpuswillbeassignedas

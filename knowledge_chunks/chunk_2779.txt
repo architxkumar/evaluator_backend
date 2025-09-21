@@ -1,0 +1,30 @@
+uistshaveidentifiedabout100speechsounds,orphones,thatcanbe
+PHONE
+composed to form all the words in all known human languages. Roughly speaking, a phone
+is the sound that corresponds to a single vowel or consonant, but there are some complica-
+tions: combinations ofletters,suchas th and ng producesinglephones, andsomeletters
+producedifferentphonesindifferentcontexts(e.g.,the a inratandrate. Figure23.14lists
+Section23.5. Speech Recognition 915
+allthephones thatareused in English, withanexampleofeach. Aphonemeisthesmallest
+PHONEME
+unit of sound that has a distinct meaning to speakers of a particular language. Forexample,
+the t in stick sounds similarenough tothe t in tick thatspeakers of Englishconsider
+them thesamephoneme. Butthedifference issignificant inthe Thailanguage, sothere they
+aretwophonemes. Torepresentspoken Englishwewantarepresentationthatcandistinguish
+betweendifferentphonemes,butonethatneednotdistinguishthenonphonemicvariationsin
+sound: loudorsoft,fastorslow,maleorfemalevoice,etc.
+First, we observe that although the sound frequencies in speech may be several k Hz,
+the changes in the content of the signal occur much less often, perhaps at no more than 100
+Hz. Therefore, speechsystemssummarizetheproperties ofthesignalovertimeslicescalled
+frames. Aframelength ofabout 10milliseconds (i.e.,80samples at 8k Hz)isshort enough
+FRAME
+toensurethatfewshort-duration phenomena willbemissed. Overlapping framesareusedto
+makesurethatwedon tmissasignalbecause ithappens tofallonaframeboundary.
+Eachframe issummarized byavectorof features. Picking outfeatures from aspeech
+FEATURE
+signal is like listening to an orchestra and saying here the French horns are playing loudly
+and the violins are playing softly. We ll give a brief overview of the features in a typical
+system. First, a Fourier transform is used to determine the amount of acoustic energy at
+about a dozen frequencies. Then we compute a measure called the mel frequency cepstral
+MELFREQUENCY
+CEPSTRAL coefficient (MFCC)

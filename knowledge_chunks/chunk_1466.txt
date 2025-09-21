@@ -1,0 +1,26 @@
+liner,2 and before I make it to the other side of the
+street Iamflattened. Was Iirrationaltocrossthestreet? Itisunlikelythatmyobituarywould
+read Idiotattemptstocrossstreet. This example shows that rationality is not the same as perfection. Rationality max-
+imizes expected performance, while perfection maximizes actual performance. Retreating
+from a requirement of perfection is not just a question of being fair to agents. The point is
+that if we expect an agent to do what turns out to be the best action after the fact, it will be
+impossibletodesignanagenttofulfillthisspecification unlessweimprovetheperformance
+ofcrystal ballsortimemachines.
+2 See N.Henderson, Newdoorlatchesurgedfor Boeing747jumbojets, Washington Post,August24,1989.
+Section2.2. Good Behavior: The Conceptof Rationality 39
+Our definition of rationality does not require omniscience, then, because the rational
+choice depends only on the percept sequence to date. We must also ensure that we haven t
+inadvertently allowedtheagenttoengageindecidedly underintelligent activities. Forexam-
+ple,ifanagentdoesnotlookbothwaysbeforecrossingabusyroad,thenitsperceptsequence
+will not tell it that there is a large truck approaching at high speed. Does our definition of
+rationality saythatit snow OK tocross theroad? Farfromit! First,itwould notberational
+tocross the road given thisuninformative percept sequence: the riskofaccident from cross-
+ingwithoutlookingistoogreat. Second,arationalagentshouldchoosethe looking action
+before stepping into the street, because looking helps maximize the expected performance.
+Doing actions in order to modify future percepts sometimes called information gather-
+INFORMATION ing is an important part of rationality and is covered in depth in Chapter 16. A second
+GATHERING
+exampleofinformationgathering isprovidedbythe exploration thatmustbeundertaken by
+EXPLORATION
+avacuum-cleaning agentinaninitially unknownenvironment.
+Ourdefinition requires arational agentnotonlytogatherinformation butalsot

@@ -1,0 +1,28 @@
+trary. Theevidence
+suggests thathumansare predictably irrational (Ariely,2009).
+620 Chapter 16. Making Simple Decisions
+Thebest-knownproblemisthe Allaisparadox(Allais,1953). Peoplearegivenachoice
+betweenlotteries Aand B andthenbetween C and D,whichhavethefollowingprizes:
+A: 80 chanceof 4000 C : 20 chanceof 4000
+B : 100 chanceof 3000 D : 25 chanceof 3000
+Most people consistently prefer B over A (taking the sure thing), and C over D (taking the
+higher EMV). The normative analysis disagrees! We can see this most easily if we use the
+freedom implied by Equation (16.2) to set U( 0) 0. In that case, then B A implies
+that U( 3000) 0.8U( 4000), whereas C D implies exactly the reverse. In other
+words, there is no utility function that is consistent with these choices. One explanation for
+the apparently irrational preferences is the certainty effect (Kahneman and Tversky, 1979):
+CERTAINTYEFFECT
+peoplearestronglyattractedtogainsthatarecertain. Thereareseveralreasonswhythismay
+be so. First, people may prefer to reduce their computational burden; by choosing certain
+outcomes, they don t have to compute with probabilities. But the effect persists even when
+thecomputations involved areveryeasyones. Second, peoplemaydistrust thelegitimacyof
+thestatedprobabilities. Itrustthatacoinflipisroughly 50 50 if Ihavecontrol overthecoin
+andthe flip,but I maydistrust theresult iftheflipisdone bysomeone withavested interest
+intheoutcome.6 Inthepresenceofdistrust,itmightbebettertogoforthesurething.7 Third,
+people may be accounting for their emotional state as well as their financial state. People
+knowtheywouldexperienceregretiftheygaveupacertainreward(B)foran80 chanceat
+REGRET
+ahigherrewardandthenlost. Inotherwords,if Aischosen,thereisa20 chanceofgetting
+no money and feeling like a complete idiot, which is worse than just getting no money. So
+perhaps people who choose B over A and C over D are not being irrational; they are just
+sayingthattheyarewillingtogiveup 200of EM Vtoavoida20 chanceoffeeli

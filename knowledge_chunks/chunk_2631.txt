@@ -1,0 +1,49 @@
+(x C i)P(C i).
+ij j
+The term P(x C i) is just the probability at x of the ith Gaussian, and the term
+j j (cid:2)
+P(C i) is just the weight parameter for the ith Gaussian. Define n p , the
+i j ij
+effectivenumberofdatapointscurrently assigned tocomponenti.
+2. M-step: Computethenewmean,covariance, andcomponentweightsusingthefollow-
+ingstepsinsequence:
+Section20.3. Learningwith Hidden Variables: The EM Algorithm 819
+(cid:12) p x n
+i ij j i
+j
+(cid:12) p (x )(x ) (cid:12) n
+i ij j i j i i
+j
+w n N
+i i
+where N is the total number of data points. The E-step, or expectation step, can be viewed
+ascomputingtheexpectedvaluesp ofthehiddenindicatorvariables Z ,where Z is1if
+INDICATORVARIABLE ij ij ij
+datumx wasgeneratedbytheithcomponentand0otherwise. The M-step,ormaximization
+j
+step, finds the new values of the parameters that maximize the log likelihood of the data,
+giventheexpectedvaluesofthehidden indicatorvariables.
+Thefinalmodelthat EMlearnswhenitisappliedtothedatain Figure20.11(a)isshown
+in Figure 20.11(c); it is virtually indistinguishable from the original model from which the
+data were generated. Figure 20.12(a) plots the log likelihood of the data according to the
+currentmodelas EMprogresses.
+There are two points to notice. First, the log likelihood for the final learned model
+slightly exceeds that of the original model, from which the data were generated. This might
+seem surprising, but it simply reflects the fact that the data were generated randomly and
+might not provide an exact reflection of the underlying model. The second point is that EM
+increases theloglikelihood ofthedataateveryiteration. Thisfactcanbeprovedingeneral.
+Furthermore, under certain conditions (that hold in ost cases), EM can be proven to reach
+a local maximum in likelihood. (In rare cases, it could reach a saddle point or even a local
+minimum.) Inthis sense, EMresembles agradient-based hill-climbing algorithm, butnotice
+thatithasno stepsize parameter.
+700
+600
+500
+400
+300
+200
+100
+0
+-100
+-200
+0 5 10 

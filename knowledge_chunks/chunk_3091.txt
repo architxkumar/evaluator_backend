@@ -1,0 +1,24 @@
+ Iwa-
+374. Peirce,C.S.(1883).Atheoryofprobableinference. sawa,S.(2006). Howthe Body Shapesthe Way We
+Note B.Thelogicofrelatives.In Studiesin Logicby Think:ANew Viewof Intelligence.Bradford.
+Pasca, M., Lin, D., Bigham, J., Lifchits, A., and Membersofthe Johns Hopkins University,pp.187 Jain,A.(2006).Organizingandsearchingtheworld Pineau,J.,Gordon,G.,and Thrun,S.(2003).Point-
+203,Boston.
+wideweboffacts Stepone:Theone-millionfact based value iteration: An anytime algorithm for
+extractionchallenge.In AAAI-06. Peirce,C.S.(1902). Logicassemiotic: Thethe- POMD Ps.In IJCAI-03.
+oryofsigns. Unpublishedmanuscript;reprintedin
+Paskin,M.(2001).Grammaticalbigrams.In NIPS. Pinedo,M.(2008).Scheduling:Theory,Algorithms,
+(Buchler1955).
+and Systems.Springer Verlag.
+Pasula,H.,Marthi,B.,Milch,B.,Russell,S.J.,and Peirce,C.S.(1909). Existentialgraphs. Unpub-
+Shpitser,I.(2003). Identityuncertaintyandcitation lishedmanuscript;reprintedin(Buchler1955). Pinkas,G.and Dechter,R.(1995). Improvingcon-
+matching.In NIPS15.MIT Press. nectionistenergyminimization.JAIR,3,223 248.
+Pelikan, M., Goldberg, D.E., and Cantu-Paz, E.
+Pasula,H.and Russell,S.J.(2001). Approximate (1999). BOA: The Bayesian optimization algo- Pinker,S.(1995). Languageacquisition. In Gleit-
+inferenceforfirst-orderprobabilisticlanguages. In rithm.In GECCO-99:Proc.Geneticand Evolution- man, L. R., Liberman, M., and Osherson, D. N.
+IJCAI-01. ary Computation Conference,pp.525 532. (Eds.),An Invitationto Cognitive Science(second
+edition).,Vol.1.MIT Press.
+Pasula,H.,Russell,S.J.,Ostland,M.,and Ritov,Y. Pemberton,J.C.and Korf,R.E.(1992).Incremen-
+(1999). Trackingmanyobjectswithmanysensors. talplanningongraphswithcycles. In AIPS-92,pp. Pinker,S.(2003). The Blank Slate: The Modern
+In IJCAI-99. 525 532. Denialof Human Nature.Penguin.
+Patashnik, O. (1980). Qubic: 4x4x4tic-tac-toe. Penberthy,J.S.and Weld,D.S.(1992). UCPOP: Pinto,D.,Mc Callum,A.,Wei,X.,and Croft,W.B.
+Mathematics Magazine,53(4),202 216. Asound,complete,partialorderplannerfor ADL.

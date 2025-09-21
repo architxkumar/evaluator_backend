@@ -1,0 +1,26 @@
+ert,S.(1969). Perceptrons:
+inburgh University Press. Metropolis, N., Rosenbluth, A., Rosenbluth, M., An Introduction to Computational Geometry (first
+Teller,A.,and Teller,E.(1953). Equationsofstate edition).MIT Press.
+Mc Carthy, J.,Minsky, M.L.,Rochester,N.,and
+Shannon,C.E.(1955). Proposalforthe Dartmouth calculationsbyfastcomputingmachines.J.Chemi- Minsky,M.L.and Papert,S.(1988). Perceptrons:
+summer research project on artificial intelligence. cal Physics,21,1087 1091. An Introduction to Computational Geometry (Ex-
+Tech.rep.,Dartmouth College. Metzinger,T.(2009).The Ego Tunnel:The Science pandededition).MIT Press.
+ofthe Mindandthe Mythofthe Self.Basic Books. Minsky,M.L.,Singh,P.,and Sloman,A.(2004).
+Mc Cawley,J.D.(1988).The Syntactic Phenomena
+The st. thomas common sense symposium: De-
+of English,Vol.2volumes. Universityof Chicago Me zard,M.and Nadal,J.-P.(1989). Learningin
+signing architectures for human-level intelligence.
+Press. feedforwardlayerednetworks:Thetilingalgorithm.
+AI Mag,25(2),113 124.
+J.Physics,22,2191 2204.
+Mc Corduck,P.(2004).Machineswhothink:aper-
+Minton,S.(1984).Constraint-basedgeneralization:
+sonalinquiryintothehistoryandprospectsofartifi- Michalski,R.S.(1969). Onthequasi-minimalso- Learninggame-playingplansfromsingleexamples.
+cialintelligence(Revisededition).AK Peters. lution ofthe generalcovering problem. In Proc. In AAAI-84,pp.251 254.
+First International Symposiumon Information Pro-
+Mc Culloch,W.S.and Pitts,W.(1943). Alogical cessing,pp.125 128. Minton,S.(1988). Quantitativeresultsconcerning
+calculusoftheideasimmanentinnervousactivity. theutilityofexplanation-basedlearning. In AAAI-
+Bulletinof Mathematical Biophysics,5,115 137. Michalski,R.S.,Mozetic,I.,Hong,J.,and Lavrauc, 88,pp.564 569.
+N. (1986). The multi-purpose incremental learn-
+Mc Cune,W.(1992). Automateddiscoveryofnew ingsystem AQ15anditstestingapplicationtothree Minton, S., Johnston, M.D., Philips, A.B., and
+axiomatizationsoftheleftgroupandrightgroupcal- medicaldomains.In AAAI-86,p

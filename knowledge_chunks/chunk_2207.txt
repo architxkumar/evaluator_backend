@@ -1,0 +1,36 @@
+ntstateis false,true,true,true .
+Eachstatevisitedduringthisprocessisasamplethatcontributestotheestimateforthequery
+variable Rain. Iftheprocess visits20stateswhere Rain istrueand60states where Rain is
+false, then the answer to the query is NORMALIZE((cid:16)20,60(cid:17)) (cid:16)0.25,0.75(cid:17). The complete
+algorithm isshownin Figure14.16.
+Why Gibbssamplingworks
+We will now show that Gibbs sampling returns consistent estimates for posterior probabil-
+ities. The material in this section is quite technical, but the basic claim is straightforward:
+the sampling process settles into a dynamic equilibrium in which the long-run fraction of
+time spent in each state is exactly proportional to its posterior probability. This remarkable
+TRANSITION propertyfollowsfromthespecifictransitionprobabilitywithwhichtheprocessmovesfrom
+PROBABILITY
+one state to another, as defined by the conditional distribution given the Markov blanket of
+thevariablebeingsampled.
+Section14.5. Approximate Inferencein Bayesian Networks 537
+function GIBBS-ASK(X,e,bn,N)returnsanestimateof P(X e)
+localvariables: N,avectorofcountsforeachvalueof X,initiallyzero
+Z,thenonevidencevariablesinbn
+x,thecurrentstateofthenetwork,initiallycopiedfrome
+initializexwithrandomvaluesforthevariablesin Z
+forj 1to N do
+foreach Ziin Zdo
+setthevalueof Ziinxbysamplingfrom P(Zi mb(Zi))
+N x N x 1wherex isthevalueof X inx
+return NORMALIZE(N)
+Figure14.16 The Gibbssamplingalgorithmforapproximateinferencein Bayesian net-
+works;thisversioncyclesthroughthevariables,butchoosingvariablesatrandomalsoworks.
+Let q(x x (cid:2) ) be the probability that the process makes a transition from state x to
+(cid:2)
+statex. Thistransitionprobability defineswhatiscalleda Markovchainonthestatespace.
+MARKOVCHAIN
+(Markov chains also figure prominently in Chapters 15 and 17.) Now suppose that we run
+the Markov chain for t steps, and let (x) be the probability that the system is in state x at
+t
+(cid:2) (cid:2)
+time t. Similarly, let (x) be the probability of

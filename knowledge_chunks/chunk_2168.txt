@@ -1,0 +1,29 @@
+quivalent toeachofthestatements
+P(X Y,Z) P(X Z) and P(B X,Z) P(Y Z).
+13.18 Supposeyouaregivenabagcontaining nunbiased coins. Youaretoldthatn 1of
+these coins are normal, with heads on one side and tails on the other, whereas one coin is a
+fake,withheadsonbothsides.
+a. Supposeyoureachintothebag,pickoutacoinatrandom,flipit,andgetahead. What
+isthe(conditional) probability thatthecoinyouchoseisthefakecoin?
+Exercises 509
+b. Suppose you continue flipping the coin for atotal of k times after picking it and see k
+heads. Nowwhatistheconditional probability thatyoupickedthefakecoin?
+c. Supposeyouwantedtodecidewhetherthechosencoinwasfakebyflippingitk times.
+The decision procedure returns fake if all k flips come up heads; otherwise it returns
+normal. Whatisthe(unconditional) probability thatthisprocedure makesanerror?
+13.19 In this exercise, you will complete the normalization calculation for the meningitis
+example. First,makeupasuitable valuefor P(s m),anduseittocalculate unnormalized
+valuesfor P(m s)and P( m s)(i.e.,ignoringthe P(s)terminthe Bayes ruleexpression,
+Equation(13.14)). Nownormalize thesevaluessothattheyaddto1.
+13.20 Let X, Y, Z be Boolean random variables. Label the eight entries in the joint dis-
+tribution P(X,Y,Z) as a through h. Express the statement that X and Y are conditionally
+independent given Z, as a set of equations relating a through h. How many nonredundant
+equations arethere?
+13.21 (Adapted from Pearl (1988).) Suppose you are a witness to a nighttime hit-and-run
+accident involving a taxi in Athens. Alltaxis in Athens are blue orgreen. You swear, under
+oath, that the taxi wasblue. Extensive testing showsthat, under thedim lighting conditions,
+discrimination betweenblueandgreenis75 reliable.
+a. Isitpossible tocalculate themostlikelycolorforthetaxi? (Hint: distinguish carefully
+betweentheproposition thatthetaxiisblueandtheproposition thatitappearsblue.)
+b. Whatifyouknowthat9outof10Atheniantaxisaregreen?
+13.22 Textcategorization isthe taskofassigning agiv

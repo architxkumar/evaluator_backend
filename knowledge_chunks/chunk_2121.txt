@@ -1,0 +1,28 @@
+canberepresented formally.
+12.18 (Adapted from Fagin et al. (1995).) Consider a game played with a deck of just 8
+cards,4acesand4kings. Thethreeplayers,Alice,Bob,and Carlos,aredealttwocardseach.
+Withoutlookingatthem,theyplacethecardsontheirforeheads sothattheotherplayerscan
+see them. Then the players take turns either announcing that they know what cards are on
+their own forehead, thereby winning the game, or saying I don t know. Everyone knows
+theplayersaretruthfulandareperfectatreasoning aboutbeliefs.
+a. Game1. Alice and Bob have both said I don t know. Carlos sees that Alice has two
+aces(A-A)and Bobhastwokings (K-K).Whatshould Carlossay? (Hint: consider all
+threepossible casesfor Carlos: A-A,K-K,A-K.)
+b. Describeeachstepof Game1usingthenotation ofmodallogic.
+c. Game2. Carlos, Alice, and Boballsaid I don t know ontheirfirstturn. Aliceholds
+K-Kand Bobholds A-K.Whatshould Carlossayonhissecondturn?
+d. Game3. Alice,Carlos,and Boballsay Idon tknow ontheirfirstturn,asdoes Alice
+onhersecondturn. Aliceand Bobbothhold A-K.Whatshould Carlossay?
+e. Provethattherewillalwaysbeawinnertothisgame.
+12.19 Theassumption oflogical omniscience, discussed on page453, isofcourse not true
+of any actual reasoners. Rather, it is an idealization of the reasoning process that may be
+more or less acceptable depending on the applications. Discuss the reasonableness of the
+assumption foreachofthefollowingapplications ofreasoning aboutknowledge:
+a. Partial knowledge adversary games, such as card games. Here one player wants to
+reasonaboutwhathisopponent knowsaboutthestateofthegame.
+b. Chess with a clock. Here the player may wish to reason about the limits of his oppo-
+nent s or his own ability to find the best move in the time available. For instance, if
+player A has much more time left than player B, then A will sometimes make a move
+that greatly complicates thesituation, in thehopes ofgaining an advantage because he
+hasmoretimetoworkouttheproperstrategy.
+478 Chapter 12. Knowledge Representatio

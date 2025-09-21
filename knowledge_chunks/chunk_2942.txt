@@ -1,0 +1,24 @@
+tedwithroboticist Hans
+Moravec(1988). Itgoeslikethis: Supposeneurophysiology hasdevelopedtothepointwhere
+theinput outputbehaviorandconnectivityofalltheneuronsinthehumanbrainareperfectly
+understood. Supposefurtherthatwecanbuildmicroscopicelectronicdevicesthatmimicthis
+behavior and can be smoothly interfaced to neural tissue. Lastly, suppose that some mirac-
+ulous surgical technique can replace individual neurons with the corresponding electronic
+devices without interrupting the operation of the brain as a whole. The experiment consists
+ofgradually replacing alltheneurons insomeone s headwithelectronic devices.
+We are concerned with both the external behavior and the internal experience of the
+subject, during and after the operation. By the definition of the experiment, the subject s
+external behavior must remain unchanged compared with what would be observed if the
+operation were not carried out.3 Now although the presence or absence of consciousness
+cannot easily be ascertained by a third party, the subject of the experiment ought at least to
+be able to record any changes in his or her own conscious experience. Apparently, there is
+a direct clash of intuitions as to what would happen. Moravec, a robotics researcher and
+functionalist, isconvinced hisconsciousness wouldremainunaffected. Searle,aphilosopher
+andbiological naturalist, isequallyconvinced hisconsciousness wouldvanish:
+You find, to your total amazement, that you are indeed losing control of your external
+behavior. You find, forexample, thatwhen doctorstest yourvision, youhearthem say Weareholdinguparedobjectinfrontofyou;pleasetelluswhatyousee. Youwant
+3 Onecanimagineusinganidentical control subjectwhoisgivenaplacebooperation,forcomparison.
+1030 Chapter 26. Philosophical Foundations
+tocryout Ican tseeanything. I mgoingtotallyblind. Butyouhearyourvoicesaying
+in a way thatis completelyout of yourcontrol, I see a red object in frontof me. ...
+your conscious experience slowly shrinks to nothing, while your exter

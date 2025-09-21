@@ -1,0 +1,27 @@
+one, then the ordering does
+not matter because we have to consider every value anyway. The same holds if there are no
+solutions totheproblem.
+Whyshould variable selection be fail-first, but value selection be fail-last? It turns out
+that, for a wide variety of problems, a variable ordering that chooses a variable with the
+minimumnumberofremainingvalueshelpsminimizethenumberofnodesinthesearchtree
+by pruning larger parts of the tree earlier. Forvalue ordering, the trick is that we only need
+onesolution;thereforeitmakessensetolookforthemostlikelyvaluesfirst. Ifwewantedto
+enumerateallsolutions ratherthanjustfindone,thenvalue orderingwouldbeirrelevant.
+6.3.2 Interleaving searchand inference
+So far we have seen how AC-3 and other algorithms can infer reductions in the domain of
+variables before webeginthesearch. Butinference canbeevenmorepowerfulinthecourse
+of a search: every time we make a choice of a value for a variable, we have a brand-new
+opportunity toinfernewdomainreductions ontheneighboring variables.
+FORWARD One of the simplest forms of inference is called forward checking. Whenever a vari-
+CHECKING
+able X isassigned, the forward-checking process establishes arc consistency forit: foreach
+unassigned variable Y that is connected to X by a constraint, delete from Y s domain any
+value that is inconsistent withthe value chosen for X. Because forward checking only does
+arcconsistencyinferences,thereisnoreasontodoforward checkingifwehavealreadydone
+arcconsistency asapreprocessing step.
+Figure 6.7 shows the progress of backtracking search on the Australia CSP with for-
+ward checking. There are two important points to notice about this example. First, notice
+that after WA red and Q green are assigned, the domains of NT and SA are reduced
+to a single value; we have eliminated branching on these variables altogether by propagat-
+ing information from WA and Q. A second point to notice is that after V blue, the do-
+main of SA is empty. Hence, forward checking has detected th

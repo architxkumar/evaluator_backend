@@ -1,0 +1,20 @@
+. (1980). Qubic: 4x4x4tic-tac-toe. Penberthy,J.S.and Weld,D.S.(1992). UCPOP: Pinto,D.,Mc Callum,A.,Wei,X.,and Croft,W.B.
+Mathematics Magazine,53(4),202 216. Asound,complete,partialorderplannerfor ADL. (2003). Tableextractionusingconditionalrandom
+fields.In SIGIR-03.
+Patrick, B. G., Almulla, M., and Newborn, M. In KR-92,pp.103 114.
+(1992). Anupperboundonthetimecomplexityof Peng,J.and Williams,R.J.(1993). Efficientlearn- Pipatsrisawat,K.and Darwiche,A.(2007). RSat
+iterative-deepening-A .AIJ,5(2 4),265 278. ingandplanningwithinthe Dynaframework.Adap- 2.0:SA Tsolverdescription. Tech.rep.D 153,Au-
+tomated Reasoning Group, Computer Science De-
+Paul,R.P.(1981).Robot Manipulators:Mathemat- tive Behavior,2,437 454. partment,Universityof California,Los Angeles.
+ics,Programming,and Control.MIT Press. Penrose,R.(1989).The Emperor s New Mind.Ox-
+Plaat,A.,Schaeffer,J.,Pijls,W.,andde Bruin,A.
+Pauls,A.and Klein,D.(2009). K-best A parsing. ford University Press. (1996). Best-firstfixed-depthminimaxalgorithms.
+In ACL-09. Penrose,R.(1994). Shadowsofthe Mind. Oxford AIJ,87(1 2),255 293.
+Peano, G. (1889). Arithmetices principia, nova University Press. Place,U.T.(1956). Isconsciousnessabrainpro-
+methodoexposita.Fratres Bocca,Turin. Peot,M.and Smith,D.E.(1992).Conditionalnon- cess?British Journalof Psychology,47,44 50.
+Pearce,J.,Tambe,M.,and Maheswaran,R.(2008). linearplanning.In ICAPS-92,pp.189 197. Platt,J.(1999). Fasttrainingofsupportvectorma-
+Solvingmultiagentnetworksusingdistributedcon- Pereira, F. and Shieber, S. (1987). Prolog and chinesusingsequentialminimaloptimization.In Ad-
+straintoptimization.AI Mag,29(3),47 62. Natural-Language Analysis.Centerforthe Studyof vancesin Kernel Methods:Support Vector Learning,
+Pearl,J.(1982a). Reverend Bayesoninferenceen- Languageand Information(CSLI). pp.185 208.MIT Press.
+gines:Adistributedhierarchicalapproach.In AAAI- Pereira,F.and Warren,D.H.D.(1980). Definite Plotkin,G.(1971).Automatic Methodsof Inductive
+82,pp.133 136. clausegrammars forlang

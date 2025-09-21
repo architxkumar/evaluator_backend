@@ -1,0 +1,29 @@
+taskisclustering: detecting
+CLUSTERING
+Section18.2. Supervised Learning 695
+potentially useful clusters of input examples. For example, a taxi agent might gradually
+develop a concept of good traffic days and bad traffic days without ever being given
+labeledexamplesofeachbyateacher.
+REINFORCEMENT In reinforcement learning the agent learns from a series of reinforcements rewards
+LEARNING
+orpunishments. Forexample,thelackofatipattheendofthejourneygivesthetaxiagentan
+indication that itdid something wrong. The twopoints fora win at the end of achess game
+tellstheagentitdidsomethingright. Itisuptotheagenttodecidewhichoftheactionsprior
+tothereinforcement weremostresponsible forit.
+SUPERVISED Insupervisedlearningtheagentobservessomeexampleinput output pairsandlearns
+LEARNING
+afunctionthatmapsfrominputtooutput. Incomponent1above,theinputsarepercepts and
+the output are provided by ateacher who says Brake! or Turn left. In component 2, the
+inputsarecameraimagesandtheoutputsagaincomefromateacherwhosays that sabus. In3, thetheory ofbraking isafunction from states andbraking actions tostopping distance
+in feet. In this case the output value is available directly from the agent s percepts (after the
+fact);theenvironment istheteacher.
+SEMI-SUPERVISED In practice, these distinction are not always so crisp. In semi-supervised learning we
+LEARNING
+are given a few labeled examples and must make what we can of a large collection of un-
+labeled examples. Even the labels themselves may not be the oracular truths that we hope
+for. Imagine thatyou are trying tobuild asystem toguess aperson s age from aphoto. You
+gather some labeled examples by snapping pictures of people and asking their age. That s
+supervised learning. But in reality some of the people lied about their age. It s not just
+that there is random noise in the data; rather the inaccuracies are systematic, and to uncover
+themisanunsupervised learningprobleminvolving images, self-reported ages,andtrue(un-
+known)ages. Thus,bothnois

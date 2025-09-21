@@ -1,0 +1,27 @@
+Conceptof Rationality 37
+We answer this age-old question in an age-old way: by considering the consequences
+of the agent s behavior. When an agent is plunked down in an environment, it generates a
+sequenceofactionsaccordingtotheperceptsitreceives. Thissequenceofactionscausesthe
+environment to go through a sequence of states. If the sequence is desirable, then the agent
+PERFORMANCE has performed well. This notion of desirability is captured by aperformance measure that
+MEASURE
+evaluatesanygivensequence ofenvironment states.
+Notice that we said environment states, not agent states. If we define success in terms
+of agent s opinion ofits own performance, an agent could achieve perfect rationality simply
+bydeluding itselfthatitsperformance wasperfect. Humanagentsinparticular arenotorious
+for sour grapes believing they did not really want something (e.g., a Nobel Prize) after
+notgettingit.
+Obviously,thereisnotonefixedperformancemeasureforalltasksandagents;typically,
+adesigner willdevise one appropriate tothe circumstances. Thisis notas easy asit sounds.
+Consider, for example, the vacuum-cleaner agent from the preceding section. We might
+proposetomeasureperformancebytheamountofdirtcleaned upinasingleeight-hourshift.
+With a rational agent, of course, what you ask for is what you get. A rational agent can
+maximizethisperformance measurebycleaning upthedirt,thendumpingitallonthefloor,
+thencleaningitupagain,andsoon. Amoresuitableperformancemeasurewouldrewardthe
+agentforhavingacleanfloor. Forexample,onepointcouldbeawardedforeachcleansquare
+at each time step (perhaps with a penalty for electricity consumed and noise generated). As
+a general rule, it is better to design performance measures according to what one actually
+wantsintheenvironment, ratherthanaccording tohowonethinkstheagentshouldbehave.
+Evenwhentheobviouspitfallsareavoided,thereremainsomeknottyissuestountangle.
+For example, the notion of clean floor in the preceding paragraph is based on average
+cleanliness over time.

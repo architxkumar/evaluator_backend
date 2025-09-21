@@ -1,0 +1,17 @@
+Knowledgeandcommunication: de Marcken, C.(1996). Unsupervised Language Dechter,R.(1999).Bucketelimination:Aunifying
+Afirst-ordertheory. AIJ,166,81 140. Acquisition.Ph.D.thesis,MIT. frameworkforreasoning.AIJ,113,41 85.
+Davis,E.(2006). Theexpressivityofquantifying De Morgan,A.(1864). Onthesyllogism,No.IV, Dechter, R. and Pearl, J. (1985). Generalized
+overregions. J.Logicand Computation,16,891 andonthe logic ofrelations. Transactionofthe best-firstsearchstrategiesandtheoptimalityof A .
+916. Cambridge Philosophical Society,X,331 358. JACM,32(3),505 536.
+Davis,E.(2007).Physicalreasoning.Invan Harme- De Raedt,L.(1992). Interactive Theory Revision: Dechter,R.and Pearl, J.(1987). Network-based
+lan,F.,Lifschitz,V.,and Porter,B.(Eds.),The Hand- An Inductive Logic Programming Approach. Aca- heuristicsforconstraint-satisfactionproblems. AIJ,
+bookof Knowledge Representation,pp.597 620.El- demic Press. 34(1),1 38.
+sevier. Dechter,R.and Pearl,J.(1989).Treeclusteringfor
+de Salvo Braz,R.,Amir,E.,and Roth,D.(2007).
+Davis,E.(2008). Pouringliquids:Astudyincom- Liftedfirst-orderprobabilisticinference. In Getoor, constraintnetworks.AIJ,38(3),353 366.
+monsensephysicalreasoning.AIJ,172(1540 1578). L.and Taskar,B.(Eds.),Introductionto Statistical Dechter,R.(2003).Constraint Processing.Morgan
+Davis,E.and Morgenstern,L.(2004).Introduction: Relational Learning.MIT Press. Kaufmann.
+Progressinformalcommonsensereasoning. AIJ, Deacon,T.W.(1997). Thesymbolicspecies: The Dechter,R.and Frost,D.(2002). Backjump-based
+153,1 12. co-evolutionoflanguageandthebrain.W.W.Nor- backtracking for constraint satisfaction problems.
+Davis,E.and Morgenstern,L.(2005). Afirst-order ton. AIJ,136(2),147 188.
+t L h o e g o i r c y a o n f d c C o o m m m p u u n ta ic ti a o ti n o , n 15 a ( n 5 d ), m 7 u 0 l 1 ti - 7 a 4 g 9 en . tplans. J. Deale, M.,Yvanovich, M.,Schnitzius,D.,Kautz, D se e a c rc h h te s r p , a R ce . s a f n o d rg M ra a p te h e ic s a c l u, m R o . de ( l 2 s 0 . 0 A 7) I . J,1 A 7 N 1( D 2 O

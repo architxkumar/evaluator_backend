@@ -1,0 +1,25 @@
+led later). However, we assume the players always remember all their
+ownprevious actions;thisassumption iscalled perfectrecall.
+The key idea of extensive form that sets it apart from the game trees of Chapter 5 is
+the representation of partial observability. We saw in Section 5.6 that a player in a partially
+observable game such as Kriegspiel can create a game tree over the space of belief states.
+With that tree, wesaw that in somecases aplayer can findasequence of moves (astrategy)
+thatleadstoaforcedcheckmateregardlessofwhatactualstatewestartedin,andregardlessof
+whatstrategytheopponentuses. However,thetechniquesof Chapter5couldnottellaplayer
+what to do when there is no guaranteed checkmate. If the player s best strategy depends
+on the opponent s strategy and vice versa, then minimax (or alpha beta) by itself cannot
+find a solution. The extensive form does allow us to find solutions because it represents the
+belief states (game theorists call them information sets) of all players at once. From that
+INFORMATIONSETS
+representation wecanfindequilibrium solutions, justaswe didwithnormal-form games.
+Asasimple example ofasequential game, place twoagents inthe4 3world of Fig-
+ure17.1andhavethemmovesimultaneously untiloneagentreachesanexitsquare,andgets
+the payoff for that square. If we specify that no movement occurs when the two agents try
+to move into the same square simultaneously (a common problem at many traffic intersec-
+tions), then certain pure strategies can get stuck forever. Thus, agents need a mixedstrategy
+toperform wellinthisgame: randomly choosebetweenmoving aheadandstaying put. This
+isexactlywhatisdonetoresolvepacketcollisions in Ethernetnetworks.
+Next we ll consider a very simple variant of poker. The deck has only four cards, two
+aces and two kings. One card is dealt to each player. The first player then has the option
+to raise the stakes of the game from 1 point to 2, or to check. If player 1 checks, the game
+is over. If he raises, then player 2 has the 

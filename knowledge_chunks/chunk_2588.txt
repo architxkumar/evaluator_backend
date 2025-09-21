@@ -1,0 +1,27 @@
+fications. To illustrate this, we will use the problem of learning
+family relationships from examples. The descriptions will consist of an extended family
+tree, described in terms of Mother, Father, and Married relations and Male and Female
+properties. As an example, we will use the family tree from Exercise 8.14, shown here in
+Figure19.11. Thecorresponding descriptions areasfollows:
+Father(Philip,Charles) Father(Philip,Anne) ...
+Mother(Mum,Margaret) Mother(Mum,Elizabeth) ...
+Married(Diana,Charles) Married(Elizabeth,Philip) ...
+Male(Philip) Male(Charles) ...
+Female(Beatrice) Female(Margaret) ...
+Thesentencesin Classifications dependonthetargetconceptbeinglearned. Wemightwant
+to learn Grandparent, Brother In Law, or Ancestor, for example. For Grandparent, the
+3 Itmightbeappropriateatthispointforthereadertoreferto Chapter7forsomeoftheunderlyingconcepts,
+including Hornclauses,conjunctivenormalform,unification,andresolution.
+Section19.5. Inductive Logic Programming 789
+completesetof Classifications contains 20 20 400conjuncts oftheform
+Grandparent(Mum,Charles) Grandparent(Elizabeth,Beatrice) ... Grandparent(Mum,Harry) Grandparent(Spencer,Peter) ...
+Wecouldofcourselearnfromasubsetofthiscompleteset.
+The object of an inductive learning program is to come up with a set of sentences for
+the Hypothesis suchthattheentailmentconstraintissatisfied. Suppose,forthemoment,that
+the agent hasno background knowledge: Background isempty. Thenonepossible solution
+H:5 111-113 H:1 19-37 H:6 79-88 H:3 71-84 H:4 61-64 H:1 8-17 H:5 66-70 H:2 26-33 E:2 96-98 E:1 57-59 H:4 93-108 H:2 41-64 H:7 99-106 H:3 40-50 2mhr - Four-helical up-and-down bundle 1omd - EF-Hand
+(a) (b)
+Figure 19.10 (a) and (b) show positive and negative examples, respectively, of the four-helical up-and-down bundle concept in the domain of protein folding. Each
+example structure is coded into a logical expression of about 100 conjuncts such as
+Total Length(D2mhr,118) Number Helices(D2mhr,6) ....Fromthesedescriptionsand
+from 

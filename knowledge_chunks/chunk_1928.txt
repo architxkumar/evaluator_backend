@@ -1,0 +1,48 @@
+ledgebase. Weneedtosaythat
+equalityisreflexive,symmetric,andtransitive,andwealsohavetosaythatwecansubstitute
+equals for equals in any predicate orfunction. So weneed three basic axioms, and then one
+354 Chapter 9. Inference in First-Order Logic
+foreachpredicate andfunction: x x x x,y x y y x x,y,z x y y z x z x,y x y (P (x) P (y))
+1 1 x,y x y (P (x) P (y))
+2 2
+.
+.
+. w,x,y,z w y x z (F (w,x) F (y,z))
+1 1 w,x,y,z w y x z (F (w,x) F (y,z))
+2 2
+.
+.
+.
+Given these sentences, a standard inference procedure such as resolution can perform tasks
+requiringequalityreasoning,suchassolvingmathematicalequations. However,theseaxioms
+will generate a lot of conclusions, most of them not helpful to a proof. So there has been a
+search formoreefficientwaysofhandling equality. Onealternative istoadd inference rules
+rather than axioms. The simplest rule, demodulation, takes a unit clause x y and some
+clause that contains the term x, and yields a new clause formed by substituting y for x
+within . It works if the term within unifies with x; it need not be exactly equal to x.
+Notethat demodulation isdirectional; given x y,thexalways getsreplaced withy,never
+vice versa. That means that demodulation can be used for simplifying expressions using
+demodulators suchasx 0 xorx1 x. Asanotherexample, given
+Father(Father(x)) Paternal Grandfather(x)
+Birthdate(Father(Father(Bella)),1926)
+wecanconclude bydemodulation
+Birthdate(Paternal Grandfather(Bella),1926).
+Moreformally,wehave Demodulation: For any terms x, y, and z, where z appears somewhere in literal m
+DEMODULATION i
+andwhere UNIFY(x,z) ,
+x y, m m
+1 n
+.
+SUB(SUBST( ,x),SUBST( ,y),m
+1 m
+n
+)
+where SUBST is the usual substitution of a binding list, and SUB(x,y,m) means to
+replace xwithy everywherethat xoccurswithinm.
+Therulecanalsobeextendedtohandlenon-unitclausesinwhichanequalityliteralappears: Paramodulation: Foranyterms x,y,andz,wherez appearssomewhereinliteral m ,
+PARAMODULATION i
+andwhere UNIFY(x,z) ,
+(cid:3) (cid:3) x y, m m
+1 k 1 n
+.
+SUB(SUBST(

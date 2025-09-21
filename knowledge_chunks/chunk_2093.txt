@@ -1,0 +1,34 @@
+brakes. Theseconsiderationshaveledsomeresearcherstoconsider
+howtoembeddefaultreasoning withinprobability theoryor utilitytheory.
+12.6.2 Truth maintenance systems
+Wehave seen that many of the inferences drawn by a knowledge representation system will
+have only default status, rather than being absolutely certain. Inevitably, some of these in-
+ferredfactswillturnouttobewrongandwillhavetoberetractedinthefaceofnewinforma-
+tion. This process is called belief revision.10 Suppose that a knowledge base KB contains
+BELIEFREVISION
+a sentence P perhaps a default conclusion recorded by a forward-chaining algorithm, or
+perhaps just an incorrect assertion and we want to execute TELL(KB, P). Toavoid cre-
+ating a contradiction, we must first execute RETRACT(KB, P). This sounds easy enough.
+10 Beliefrevisionisoftencontrastedwithbeliefupdate,whichoccurswhenaknowledgebaseisrevisedtoreflect
+achangeintheworldratherthannewinformationaboutafixed world. Beliefupdatecombinesbeliefrevision
+withreasoningabouttimeandchange;itisalsorelatedtotheprocessoffilteringdescribedin Chapter15.
+Section12.6. Reasoning with Default Information 461
+Problems arise, however, if any additional sentences were inferred from P and asserted in
+the KB.Forexample,theimplication P Qmighthavebeenusedtoadd Q. Theobvious solution retracting allsentencesinferredfrom P failsbecausesuchsentencesmayhave
+other justifications besides P. For example, if R and R Q are also in the KB, then Q
+TRUTH
+does not have to be removed after all. Truth maintenance systems, or TM Ss, are designed
+MAINTENANCE
+SYSTEM
+tohandle exactlythesekindsofcomplications.
+One simple approach to truth maintenance is to keep track of the order in which sen-
+tences are told to the knowledge base by numbering them from P to P . When the call
+1 n
+RETRACT(KB,P
+i
+)ismade,thesystem revertstothestatejustbefore P
+i
+wasadded,thereby
+removingboth P andanyinferences thatwerederivedfrom P . Thesentences P through
+i i i 1
+P can then be added again. This is simple, and it

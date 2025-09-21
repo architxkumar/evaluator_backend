@@ -1,0 +1,36 @@
+tional decision, theyboth
+construct thefollowingpayoffmatrix:
+Alice:testify Alice:refuse
+Bob:testify A 5,B 5 A 10,B 0
+Bob:refuse A 0,B 10 A 1,B 1
+Alice analyzes the payoff matrix as follows: Suppose Bob testifies. Then I get 5 years if I
+testify and 10 years if I don t, so in that case testifying is better. On the other hand, if Bob
+refuses, then Iget0yearsif Itestifyand1yearif Irefuse,sointhatcaseaswelltestifying is
+better. Soineithercase,it sbetterformetotestify, sothat swhat Imustdo. DOMINANT Alice has discovered that testify is a dominant strategy for the game. We say that a
+STRATEGY
+(cid:2)
+STRONG strategysforplayerpstronglydominatesstrategys iftheoutcomeforsisbetterforpthan
+DOMINATION
+(cid:2)
+the outcome for s, for every choice of strategies by the other player(s). Strategy s weakly
+(cid:2) (cid:2)
+dominates s if sis betterthan s on atleast one strategy profile and no worse on anyother.
+WEAKDOMINATION
+Adominantstrategyisastrategythatdominatesallothers. Itisirrationaltoplayadominated
+strategy, and irrational not to play a dominant strategy if one exists. Being rational, Alice
+choosesthedominantstrategy. Weneedjustabitmoreterminology: wesaythatanoutcome
+is Paretooptimal5 ifthere isnootheroutcome thatallplayers would prefer. An outcome is
+PARETOOPTIMAL
+Paretodominatedbyanotheroutcomeifallplayers wouldprefertheotheroutcome.
+PARETODOMINATED
+If Alice is clever as well as rational, she will continue to reason as follows: Bob s
+dominant strategy isalsototestify. Therefore, hewilltestifyandwewillbothgetfiveyears.
+When each player has a dominant strategy, the combination of those strategies is called a
+DOMINANT
+STRATEGY dominant strategy equilibrium. In general, a strategy profile forms an equilibrium if no
+EQUILIBRIUM
+player canbenefit byswitching strategies, given that every otherplayer sticks withthesame
+EQUILIBRIUM
+5 Paretooptimalityisnamedaftertheeconomist Vilfredo Pareto(1848 1923).
+Section17.5. Decisionswith Multiple Agents: Game Theory 669
+strategy. Anequilibriu

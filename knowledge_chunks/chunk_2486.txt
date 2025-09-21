@@ -1,0 +1,49 @@
+own as fitting a straight line. Section 18.6.2 covers the multivariate case. Sec-
+tions 18.6.3 and 18.6.4 show how to turn linear functions into classifiers by applying hard
+andsoftthresholds.
+18.6.1 Univariatelinearregression
+Aunivariatelinearfunction(astraightline)withinputxandoutputyhastheformy w x 1
+w ,where w and w arereal-valued coefficients tobelearned. Weusethe letter w because
+0 0 1
+we think of the coefficients as weights; the value of y is changed by changing the relative
+WEIGHT
+weightofonetermoranother. We lldefine wtobethevector w ,w ,anddefine
+0 1
+h (x) w x w .
+w 1 0
+Figure 18.13(a) shows an example of a training set of n points in the x,y plane, each point
+representing the size in square feet and the price of a house offered for sale. The task of
+findingtheh thatbestfitsthesedataiscalled linearregression. Tofitalinetothedata,all
+LINEARREGRESSION w
+wehavetodoisfindthevaluesoftheweights w ,w thatminimizetheempiricalloss. Itis
+0 1
+traditional (going back to Gauss3)to use the squared loss function, L , summed overall the
+2
+training examples:
+(cid:12)N (cid:12)N (cid:12)N
+Loss(h ) L (y ,h (x )) (y h (x ))2 (y (w x w ))2 .
+w 2 j w j j w j j 1 j 0
+j 1 j 1 j 1
+3 Gaussshowedthatiftheyj valueshavenormallydistributednoise,thenthemostlikelyvaluesofw1andw0
+areobtainedbyminimizingthesumofthesquaresoftheerrors.
+Section18.6. Regressionand Classification with Linear Models 719
+(cid:2)
+We would like to find w argmin Loss(h ). The sum N (y (w x w ))2 is
+w w j 1 j 1 j 0
+minimizedwhenitspartialderivativeswithrespectto w andw arezero:
+0 1
+(cid:12)N (cid:12)N (y (w x w ))2 0and (y (w x w ))2 0. (18.2)
+j 1 j 0 j 1 j 0 w w
+0 1
+j 1 j 1
+Theseequations haveauniquesolution:
+(cid:2) (cid:2) (cid:2)
+(cid:12) (cid:12)
+N( x y ) ( x )( y )
+w (cid:2)j j (cid:2)j j ; w ( y w ( x )) N . (18.3)
+1 N( x2) ( x )2 0 j 1 j
+j j
+Forthe example in Figure 18.13(a), the solution is w 0.232, w 246, and the line with
+1 0
+thoseweightsisshownasadashedlineinthefigure.
+Many forms of learning involve adjus

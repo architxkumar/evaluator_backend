@@ -1,0 +1,26 @@
+rol
+the scheduling of operations for a spacecraft (Jonsson et al., 2000). REMOTE AGENT gen-
+erated plansfrom high-level goals specified fromtheground andmonitored theexecution of
+thoseplans detecting, diagnosing, andrecoveringfromproblemsastheyoccurred. Succes-
+sorprogram MAPGEN (Al-Chang etal.,2004)plans thedailyoperations for NASA s Mars
+Exploration Rovers,and MEXAR2(Cestaetal.,2007)didmissionplanning both logistics
+andscienceplanning for the European Space Agency s Mars Expressmissionin2008.
+Section1.5. Summary 29
+Game playing: IBM s DEEP BLUE became the first computer program to defeat the
+world champion in a chess match when it bested Garry Kasparov by a score of 3.5 to 2.5 in
+anexhibition match (Goodman and Keene, 1997). Kasparov said that hefelt a new kind of
+intelligence across the board from him. Newsweek magazine described the match as The
+brain s last stand. The value of IBM s stock increased by 18 billion. Human champions
+studied Kasparov s loss and were able to draw a few matches in subsequent years, but the
+mostrecenthuman-computer matcheshavebeenwonconvincingly bythecomputer.
+Spamfighting: Eachday,learningalgorithmsclassifyoverabillionmessagesasspam,
+savingtherecipientfromhavingtowastetimedeletingwhat,formanyusers,couldcomprise
+80 or90 ofallmessages,ifnotclassifiedawaybyalgorithms. Becausethespammersare
+continually updating theirtactics, itisdifficultforastaticprogrammed approach tokeepup,
+andlearning algorithmsworkbest(Sahami etal.,1998;Goodmanand Heckerman, 2004).
+Logistics planning: During the Persian Gulf crisis of 1991, U.S. forces deployed a
+Dynamic Analysis and Replanning Tool, DART (Cross and Walker, 1994), to doautomated
+logistics planning and scheduling for transportation. This involved up to 50,000 vehicles,
+cargo, and people at a time, and had to account for starting points, destinations, routes, and
+conflict resolution among all parameters. The AI planning techniques generated in hours
+a plan that would have taken weeks with older methods

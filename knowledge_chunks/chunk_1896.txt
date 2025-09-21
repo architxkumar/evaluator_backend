@@ -1,0 +1,40 @@
+enamings ofeach otherbecause theydiffer only in thechoice of x
+ory;theirmeaningsareidentical: everyonelikesicecream.
+We use our crime problem to illustrate how FOL-FC-ASK works. The implication
+sentences are(9.3),(9.6),(9.7),and(9.8). Twoiterations arerequired: Onthefirstiteration, rule(9.3)hasunsatisfiedpremises.
+Rule(9.6)issatisfiedwith x M ,and Sells(West,M ,Nono)isadded.
+1 1
+Rule(9.7)issatisfiedwith x M ,and Weapon(M )isadded.
+1 1
+Rule(9.8)issatisfiedwith x Nono ,and Hostile(Nono)isadded. On the second iteration, rule (9.3) is satisfied with x West,y M ,z Nono , and
+1
+Criminal(West)isadded.
+Figure 9.4shows theproof treethat isgenerated. Notice that nonewinferences arepossible
+at this point because every sentence that could be concluded by forward chaining is already
+containedexplicitlyinthe KB.Suchaknowledgebaseiscalledafixedpointoftheinference
+process. Fixedpointsreachedbyforwardchainingwithfirst-orderdefiniteclausesaresimilar
+tothoseforpropositional forwardchaining (page258);the principal difference isthatafirst-
+orderfixedpointcaninclude universally quantifiedatomicsentences.
+FOL-FC-ASK iseasy to analyze. First, itis sound,because every inference is just an
+applicationof Generalized Modus Ponens,whichissound. Second,itiscompletefordefinite
+clause knowledge bases; that is, it answers every query whose answers are entailed by any
+knowledgebaseofdefiniteclauses. For Datalogknowledgebases,whichcontainnofunction
+symbols, the proof of completeness is fairly easy. We begin by counting the number of
+332 Chapter 9. Inference in First-Order Logic
+function FOL-FC-ASK(KB, )returnsasubstitutionorfalse
+inputs:KB,theknowledgebase,asetoffirst-orderdefiniteclauses ,thequery,anatomicsentence
+localvariables: new,thenewsentencesinferredoneachiteration
+repeatuntilnew isempty
+new foreachrule in KB do
+(p
+1 ... pn q) STANDARDIZE-VARIABLES(rule)
+foreach suchthat SUBST( ,p
+1 ... pn) SUBST( ,p
+1
+(cid:5) ... p
+n
+(cid:5))
+forsomep(cid:5),...,p(cid:5) in KB
+1 n
+q(cid:5) SUBST( ,q)
+ifq(cid

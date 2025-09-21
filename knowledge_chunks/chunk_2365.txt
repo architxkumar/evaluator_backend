@@ -1,0 +1,26 @@
+virtue of its ability to affect decisions. Stratonovich s work
+was not known in the West, where Ron Howard (1966) pioneered the same idea. His paper
+endswiththeremark Ifinformationvaluetheoryandassociateddecisiontheoreticstructures
+do not in the future occupy a large part of the education of engineers, then the engineering
+professionwillfindthatitstraditionalroleofmanagingscientificandeconomicresourcesfor
+the benefit of man has been forfeited to another profession. Todate, the implied revolution
+inmanagerial methodshasnotoccurred.
+Recent work by Krause and Guestrin (2009) shows that computing the exact non-
+myopicvalueofinformationisintractableeveninpolytree networks. Thereareothercases morerestricted thangeneral valueofinformation in which themyopicalgorithm doespro-
+vide a provably good approximation to the optimal sequence of observations (Krause et al.,
+2008). Insomecases forexample, looking fortreasure buried inoneofnplaces ranking
+experimentsinorderofsuccessprobabilitydividedbycostgivesanoptimalsolution(Kadane
+and Simon,1977).
+Surprisingly few early AI researchers adopted decision-theoretic tools after the early
+applications inmedicaldecision makingdescribed in Chapter13. Oneofthefewexceptions
+was Jerry Feldman, who applied decision theory to problems in vision (Feldman and Yaki-
+movsky,1974)andplanning(Feldmanand Sproull,1977). Aftertheresurgenceofinterestin
+probabilisticmethodsin AIinthe1980s,decision-theoreticexpertsystemsgainedwidespread
+acceptance (Horvitz et al., 1988; Cowell et al., 2002). In fact, from 1991 onward, the cover
+design of the journal Artificial Intelligence has depicted a decision network, although some
+artisticlicenseappears tohavebeentakenwiththedirection ofthearrows.
+640 Chapter 16. Making Simple Decisions
+EXERCISES
+16.1 (Adaptedfrom David Heckerman.) Thisexerciseconcernsthe Almanac Game,which
+is used by decision analysts to calibrate numeric estimation. For each of the questions that
+follow, give your best guess of the answer, that is,

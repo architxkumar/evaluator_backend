@@ -1,0 +1,33 @@
+tor:Scott Disanno
+Production Editor:Jane Bonnell
+Senior Operations Supervisor:Alan Fischer
+Operations Specialist: Lisa Mc Dowell
+Marketing Manager:Erin Davis
+Marketing Assistant: Mack Patterson
+Cover Designers:Kirsten Simsand Geoffrey Cassar
+Cover Images:Stan Honda Getty,Libraryof Congress,NASA,National Museumof Rome,
+Peter Norvig,Ian Parker,Shutterstock,Time Life Getty
+Interior Designers:Stuart Russelland Peter Norvig
+Copy Editor:Mary Lou Nohr
+Art Editor:Greg Dulles
+Media Editor:Daniel Sandin
+Media Project Manager:Danielle Leone Upper Saddle River,New Jersey07458.
+Allrightsreserved. Manufacturedinthe United Statesof America. Thispublicationisprotectedby storage in a retrievalsystem, or transmission in any form or by any means, electronic, mechanical,
+photocopying,recording,orlikewise. Toobtainpermission(s)tousematerialsfromthiswork,please
+submitawrittenrequestto Pearson Higher Education,Permissions Department,1Lake Street,Upper
+Saddle River,NJ07458.
+The author and publisher of this book have used their best efforts in preparing this book. These
+effortsincludethedevelopment,research,andtestingofthetheoriesandprogramstodeterminetheir
+effectiveness. The author and publisher make no warranty of any kind, expressed or implied, with
+regardtotheseprogramsorthedocumentationcontainedinthisbook. Theauthorandpublishershall
+notbeliablein anyeventforincidentalorconsequentialdamagesin connectionwith, orarisingout
+of,thefurnishing,performance,oruseoftheseprograms.
+Libraryof Congress Cataloging-in-Publication Dataon File
+10 9 8 7 6 5 4 3 2 1 For Loy, Gordon,Lucy, George, and Isaac S.J.R.
+For Kris,Isabella,and Juliet P.N.
+This page intentionally left blank
+Preface
+Artificial Intelligence (AI)isabigfield,andthisisabigbook. Wehavetriedtoexplorethe
+fullbreadth ofthefield, whichencompasses logic, probability, andcontinuous mathematics;
+perception, reasoning, learning, and action; and everything from microelectronic devices to
+roboticplanetary explorers. Thebookisalsobigbecause we goint

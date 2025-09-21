@@ -1,0 +1,40 @@
+87,
+889,1085,1091
+Westinghouse,432 1092
+Warren,D.S.,359,1090
+Westphal,M.,395,1086 Wolpert,D.,688,1090
+Warren Abstract Machine(WAM),341,
+Wexler,Y.,553,1092 Wong,A.,884,1087
+359
+washingclothes,927
+Weymouth,T.,1013,1069 Wong,W.-K.,826,1083
+Washington,G.,450 White,J.L.,356,1075 Wood,D.E.,111,1080
+wasp,sphex,39,425 Whitehead,A.N.,16,357,781,1092 Woods,W.A.,471,921,1092
+Wasserman,L.,763,1091 Whiter,A.M.,431,1090 Wooldridge,M.,60,61,1068,1092
+Watkins,C.J.,685,855,1091 Whittaker,W.,1014,1091 Woolsey,K.,851
+Watson,J.,12 Whorf,B.,287,314,1092 workspacerepresentation,986
+Watson,J.D.,130,1091 widecontent,1028 worldmodel,indisambiguation,906
+Watt,J.,15 Widrow,B.,20,761,833,854,1092 worldstate,69
+Wattenberg,M.,155,1077 Widrow Hoffrule,846 World War II,10,552,604
+Waugh,K.,687,1091 Wiedijk,F.,360,1092 World Wide Web(WWW),27,462,
+WBRIDGE5,195 Wiegley,J.,156,1092 867,869
+weak AI,1020,1040 Wiener,N.,15,192,604,761,922, worstpossiblecatastrophe,615
+weakdomination,668 1087,1092 Wos,L.,359,360,1092
+weakmethod,22 wigglybeliefstate,271 wrapper(for Internetsite),466
+Weaver,W.,703,758,763,883,907, Wilczek,F.,761,1065 wrapper(forlearning),709
+908,922,1088,1091 Wilensky,R.,23,24,1031,1092 Wray,R.E.,358,1092
+Webber,B.L.,31,1091 Wilfong,G.T.,1012,1069 Wright,O.and W.,3
+Weber,J.,604,1076 Wilkins,D.E.,189,431,434,1092 Wright,R.N.,884,1085
+Wefald,E.H.,112,191,198,1048, Williams,B.,60,278,432,472,1083, Wright,S.,155,552,1092
+1087 1092 Wu,D.,921,1092
+1132 Index
+Wu,E.,885,1067 Yedidia,J.,555,1092 zero-sumgame,161,162,199,670
+Wu,F.,469,1092 Yglesias,J.,28,1064 Zettlemoyer,L.S.,556,921,1082,1093
+wumpusworld,236,236 240,246 247, Yip,K.M.-K.,472,1092 Zhai,C.,884,1079
+279,305 307,439,499 503, Yngve,V.,920,1092 Zhang,H.,277,1093
+509 Yob,G.,279,1092 Zhang,L.,277,553,1083,1093
+Wundt,W.,12 Yoshikawa,T.,1013,1092 Zhang,N.L.,553,639,1093
+Wurman,P.,688,1092 Young,H.P.,435,1092 Zhang,W.,112,1079
+WWW,27,462,867,869 Young,M.,797,1078 Zhang,Y.,885,1067
+Young,S.J.,896,920,1080 Zhao,Y.,277,1083
+X Younger,D.H.,920,1092 

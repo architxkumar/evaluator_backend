@@ -1,0 +1,27 @@
+l s degree of belief, but as the degree of belief that an idealized
+individual should have in a particular proposition a, given a particular body of evidence e.
+Bibliographical and Historical Notes 505
+Carnap attempted to go further than Leibniz or Laplace by making this notion of degree of
+confirmationmathematicallyprecise,asalogicalrelationbetweenaande. Thestudyofthis
+CONFIRMATION
+relation was intended to constitute a mathematical discipline called inductive logic, analo-
+INDUCTIVELOGIC
+gous to ordinary deductive logic (Carnap, 1948, 1950). Carnap was not able to extend his
+inductivelogicmuchbeyondthepropositional case,and Putnam(1963)showedbyadversar-
+ialargumentsthatsomefundamentaldifficultieswouldpreventastrictextensiontolanguages
+capableofexpressing arithmetic.
+Cox stheorem (1946) showsthatanysystem foruncertain reasoning thatmeetshisset
+of assumptions is equivalent to probability theory. This gave renewed confidence to those
+whoalready favored probability, but others werenot convinced, pointing to theassumptions
+(primarily thatbeliefmustberepresented byasinglenumber, andthusthebelief in pmust
+be a function of the belief in p). Halpern (1999) describes the assumptions and shows some
+gaps in Cox s original formulation. Horn (2003) shows how to patch up the difficulties.
+Jaynes(2003)hasasimilarargument thatiseasiertoread.
+Thequestionofreferenceclassesiscloselytiedtotheattempttofindaninductivelogic.
+Theapproach ofchoosing the mostspecific reference class ofsufficient size wasformally
+proposed by Reichenbach (1949). Various attempts have been made, notably by Henry Ky-
+burg (1977, 1983), to formulate more sophisticated policies in order to avoid some obvious
+fallacies that arise with Reichenbach s rule, but such approaches remain somewhat ad hoc.
+Morerecentworkby Bacchus,Grove,Halpern,and Koller(1992)extends Carnap smethods
+to first-order theories, thereby avoiding many of the difficulties associated with the straight-
+forward reference-class method. Kyburg and Te

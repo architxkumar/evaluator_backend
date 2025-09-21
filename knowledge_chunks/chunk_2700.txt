@@ -1,0 +1,33 @@
+te that the expression P(c i c i 2:i 1 ) asks for P(c 1 c-1:0 ) when
+i 1, but there are no characters before c . We can introduce artificial characters, for
+1
+example, defining c to be a space character or a special begin text character. Or we can
+0
+fall back on lower-order Markov models, in effect defining c-1:0 to be the empty sequence
+andthus P(c
+1 c-1:0 ) P(c
+1
+).
+22.1.3 Model evaluation
+With so many possible n-gram models unigram, bigram, trigram, interpolated smoothing
+withdifferent values of ,etc. howdoweknow whatmodeltochoose? Wecanevaluate a
+model with cross-validation. Split the corpus into a training corpus and a validation corpus.
+Determine the parameters of the model from the training data. Then evaluate the model on
+thevalidation corpus.
+The evaluation can be a task-specific metric, such as measuring accuracy on language
+identification. Alternatively wecanhave atask-independent model oflanguage quality: cal-
+culate the probability assigned to the validation corpus by the model; the higher the proba-
+bility the better. This metric is inconvenient because the probability of a large corpus will
+be a very small number, and floating-point underflow becomes an issue. A different way of
+describing theprobability ofasequenceiswithameasurecalledperplexity,definedas
+PERPLEXITY
+864 Chapter 22. Natural Language Processing 1
+Perplexity(c 1:N ) P(c 1:N ) N .
+Perplexity canbethought ofasthereciprocal ofprobability, normalized bysequence length.
+Itcanalsobethoughtofastheweightedaveragebranching factorofamodel. Supposethere
+are 100 characters in our language, and our model says they are all equally likely. Then for
+asequence ofanylength, theperplexity willbe100. Ifsomecharacters aremorelikely than
+others, andthemodelreflectsthat,thenthemodelwillhaveaperplexity lessthan100.
+22.1.4 N-gram wordmodels
+Now weturn to n-gram models overwords rather than characters. Allthe same mechanism
+applies equally towordandcharacter models. Themaindifference isthatthevocabulary VOCABULAR

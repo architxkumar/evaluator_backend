@@ -1,0 +1,31 @@
+ functions that violate the Bellman equations. For this reason, the algorithm
+oftenconverges veryslowly.
+834 Chapter 21. Reinforcement Learning
+function PASSIVE-ADP-AGENT(percept)returnsanaction
+inputs:percept,aperceptindicatingthecurrentstates(cid:5)andrewardsignalr(cid:5)
+persistent: ,afixedpolicy
+mdp,an MD Pwithmodel P,rewards R,discount U,atableofutilities,initiallyempty
+Nsa,atableoffrequenciesforstate actionpairs,initiallyzero
+Ns(cid:3) sa,atableofoutcomefrequenciesgivenstate actionpairs,initiallyzero
+s,a,thepreviousstateandaction,initiallynull
+ifs(cid:5)isnewthen U s(cid:5) r(cid:5);R s(cid:5) r(cid:5)
+ifs isnotnullthen
+increment Nsa s,a and Ns(cid:3) sa s(cid:5),s,a foreacht suchthat Ns(cid:3) sa t,s,a isnonzerodo
+P(t s,a) Ns(cid:3) sa t,s,a Nsa s,a U POLICY-EVALUATION( ,U,mdp)
+ifs(cid:5).TERMINAL?thens,a nullelses,a s(cid:5), s(cid:5) returna
+Figure21.2 Apassivereinforcementlearningagentbasedonadaptivedynamicprogram-
+ming. The POLICY-EVALUATION function solves the fixed-policy Bellman equations, as
+describedonpage657.
+21.2.2 Adaptivedynamicprogramming
+ADAPTIVEDYNAMIC An adaptive dynamic programming (or ADP) agent takes advantage of the constraints
+PROGRAMMING
+among the utilities of states by learning the transition model that connects them and solv-
+ing the corresponding Markov decision process using a dynamic programming method. For
+apassivelearningagent,thismeanspluggingthelearnedtransitionmodel P(s
+(cid:2) s, (s))and
+the observed rewards R(s) into the Bellman equations (21.2) to calculate the utilities of the
+states. As we remarked in our discussion of policy iteration in Chapter 17, these equations
+are linear (no maximization involved) so they can be solved using any linear algebra pack-
+age. Alternatively, we can adopt the approach of modified policy iteration (see page 657),
+using a simplified value iteration process to update the utility estimates after each change to
+the learned model. Because the model usually changes only slightly with each observa

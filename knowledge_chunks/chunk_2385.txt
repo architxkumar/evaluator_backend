@@ -1,0 +1,28 @@
+,fordifferentvaluesofc,asafunctionofthediscountfactor .
+max
+where the update is assumed to be applied simultaneously to all the states at each iteration.
+If we apply the Bellman update infinitely often, we are guaranteed to reach an equilibrium
+(see Section 17.2.3), in which case the final utility values must be solutions to the Bellman
+equations. Infact, theyarealsotheuniquesolutions, andthecorresponding policy(obtained
+using Equation (17.4)) is optimal. The algorithm, called VALUE-ITERATION, is shown in
+Figure17.4.
+Wecan apply value iteration to the 4 3 world in Figure 17.1(a). Starting with initial
+valuesofzero,theutilitiesevolveasshownin Figure17.5(a). Noticehowthestatesatdiffer-
+654 Chapter 17. Making Complex Decisions
+entdistancesfrom(4,3)accumulatenegativerewarduntilapathisfoundto(4,3),whereupon
+the utilities start to increase. We can think of the value iteration algorithm as propagating
+information through thestatespacebymeansoflocalupdates.
+17.2.3 Convergence ofvalueiteration
+Wesaid that value iteration eventually converges toaunique set ofsolutions ofthe Bellman
+equations. In this section, we explain why this happens. We introduce some useful mathe-
+maticalideasalongtheway,andweobtainsomemethodsforassessingtheerrorintheutility
+function returned whenthealgorithm isterminatedearly;thisisusefulbecause itmeansthat
+wedon thavetorunforever. Thissection isquitetechnical.
+Thebasicconceptusedinshowingthatvalueiterationconvergesisthenotionofacon-
+traction. Roughlyspeaking,acontractionisafunctionofoneargumentthat,whenappliedto
+CONTRACTION
+twodifferent inputs inturn, produces twooutputvalues thatare closertogether, byatleast
+some constant factor, than the original inputs. Forexample, the function divide by two is
+a contraction, because, after we divide any two numbers by two, their difference is halved.
+Noticethatthe dividebytwo function hasafixedpoint, namelyzero,thatisunchanged by
+the application ofthe function. Fromthis example, wecan discern twoimportant propertie

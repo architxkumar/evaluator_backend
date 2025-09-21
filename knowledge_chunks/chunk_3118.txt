@@ -1,0 +1,23 @@
+PRODIGY: Automatingcaseacquisition, structionset.Technicalnote309,SRI International.
+tems,23(2),66 68. storage,andutilization.Machine Learning,10,249 Warren,D.H.D.,Pereira,L.M.,and Pereira,F.
+278.
+Valiant, L. (1984). A theory of the learnable. (1977). PROLOG: The language and its imple-
+CACM,27,1134 1142. Vere,S.A.(1983). Planningintime:Windowsand mentationcomparedwith LISP. SIGPLAN Notices,
+durationsforactivitiesandgoals.PAMI,5,246 267. 12(8),109 115.
+van Beek, P. (2006). Backtracking search algo-
+rithms. In Rossi,F., van Beek,P.,and Walsh, T. Verma,V.,Gordon,G.,Simmons,R.,and Thrun, Wasserman,L.(2004).Allof Statistics.Springer.
+(Eds.),Handbookof Constraint Programming.Else- S.(2004). Particlefiltersforroverfaultdiagnosis. Watkins, C.J.(1989). Modelsof Delayed Rein-
+vier. IEEE Roboticsand Automation Magazine,June. forcement Learning. Ph.D.thesis,Psychology De-
+van Beek,P.and Chen,X.(1999). CPlan: Acon- Vinge, V.(1993). Thecomingtechnologicalsin- partment,Cambridge University.
+straintprogrammingapproachtoplanning.In AAAI- gularity: How to survive in the post-human era. Watson,J.D.and Crick,F.H.C.(1953).Astructure
+99,pp.585 590. In VISION-21Symposium.NASA Lewis Research fordeoxyribosenucleicacid.Nature,171,737.
+Centerandthe Ohio Aerospace Institute.
+van Beek,P.and Manchak,D.(1996). Thedesign Waugh, K., Schnizlein, D., Bowling, M., and
+andexperimentalanalysisofalgorithmsfortemporal Viola,P.and Jones,M.(2002a).Fastandrobustclas- Szafron,D.(2009). Abstractionpathologiesinex-
+reasoning.JAIR,4,1 18. sificationusingasymmetricadaboostandadetector tensivegames.In AAMAS-09.
+cascade.In NIPS14.
+van Bentham,J.andter Meulen,A.(1997). Hand- Weaver,W.(1949). Translation. In Locke,W.N.
+bookof Logicand Language.MIT Press. Viola,P.and Jones,M.(2002b). Robustreal-time and Booth,D.(Eds.),Machinetranslationoflan-
+objectdetection.ICCV. guages:fourteenessays,pp.15 23.Wiley.
+Van Emden,M.H.and Kowalski,R.(1976). The
+semanticsofpredicatelogicasaprogramminglan- Visser,U.and Burkhard,H.-D.(2007

@@ -1,0 +1,25 @@
+insun-
+Blinder, A.S.(1983). Issuesinthecoordination Alperin Resnick,L.(1989).CLASSIC:Astructural
+derpartialobservabilityviasymbolicmodelcheck-
+ofmonetaryandfiscalpolicies. In Monetary Policy datamodelforobjects.SIGMOD Record,18(2),58 ing.In IJCAI-01,pp.473 478.
+Issuesinthe1980s.Federal Reserve Bank,Kansas 67.
+Bertot, Y., Casteran, P., Huet, G., and Paulin- City,Missouri. Boroditsky, L. (2003). Linguistic relativity. In
+Mohring,C.(2004). Interactive Theorem Proving Bliss,C.I.(1934). Themethodofprobits. Science, Nadel,L.(Ed.),Encyclopediaof Cognitive Science,
+and Program Development.Springer. 79(2037),38 39. pp.917 921.Macmillan.
+Bertsekas,D.(1987). Dynamic Programming:De- Block,H.D.,Knight,B.,and Rosenblatt,F.(1962). Boser,B.,Guyon,I.,and Vapnik,V.N.(1992). A
+terministicand Stochastic Models. Rev.Modern Physics,34(1),275 282. COLT-92.
+Bertsekas,D.and Tsitsiklis,J.N.(1996). Neuro-
+dynamicprogramming.Athena Scientific. Blum,A.L.and Furst,M.(1995). Fastplanning Bosse, M., Newman, P., Leonard, J., Soika, M.,
+throughplanninggraphanalysis. In IJCAI-95,pp. Feiten, W., and Teller, S. (2004). Simultaneous
+Bertsekas,D.and Tsitsiklis,J.N.(2008).Introduc- 1636 1642. localizationandmapbuildinginlarge-scalecyclic
+tionto Probability(2ndedition).Athena Scientific. environments using the atlas framework. Int. J.
+Blum,A.L.and Furst,M.(1997). Fastplanning
+Bertsekas,D.and Shreve,S.E.(2007). Stochastic throughplanninggraphanalysis.AIJ,90(1 2),281 Robotics Research,23(12),1113 1139.
+Optimal Control: The Discrete-Time Case. Athena 300. Bourzutschky, M. (2006). 7-man
+Scientific. endgames with pawns. CCRL Discussion
+Blum,A.L.(1996). On-linealgorithmsinmachine
+Board, kirill-kryukov.com chess Bessie re, C. (2006). Constraint propagation. In learning.In Proc.Workshopon On-Line Algorithms,
+discussion-board viewtopic.php?t Rossi,F.,van Beek,P.,and Walsh,T.(Eds.),Hand- Dagstuhl,pp.306 325.
+805.
+bookof Constraint Programming.Elsevier. Blum,A.L.and Mitchell,T.M.(1998). Combin-
+Boutilier, C.and Brafm

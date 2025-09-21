@@ -1,0 +1,24 @@
+quence of HL As) is the concatenation of implementations of each
+HL Ainthesequence. Giventheprecondition effect definitionsofeachprimitiveaction,itis
+straightforward todeterminewhetheranygivenimplementationofahigh-levelplanachieves
+the goal. We can say, then, that a high-level plan achieves the goal from a given state if at
+least one ofitsimplementations achieves the goal from that state. The atleast one in this
+definitioniscrucial notallimplementationsneedtoachievethegoal,becausetheagentgets
+1 HTN planners often allow refinement into partially ordered plans, and they allow the refinements of two
+different HL Asinaplantoshareactions.Weomittheseimportantcomplicationsintheinterestofunderstanding
+thebasicconceptsofhierarchicalplanning.
+408 Chapter 11. Planningand Actinginthe Real World
+todecidewhichimplementation itwillexecute. Thus,thesetofpossible implementations in
+HTN planning each of which may have a different outcome is not the same as the set of
+possible outcomes innondeterministic planning. There, we required that aplan work for all
+outcomesbecause theagentdoesn t gettochoosetheoutcome;naturedoes.
+The simplest case is an HLA that has exactly one implementation. In that case, we
+can compute the preconditions and effects of the HLA from those of the implementation
+(see Exercise 11.3) and then treat the HLA exactly as if it were a primitive action itself. It
+can be shown that the right collection of HL As can result in the time complexity of blind
+search dropping from exponential in the solution depth to linear in the solution depth, al-
+though devising such a collection of HL As may be a nontrivial task in itself. When HL As
+have multiple possible implementations, there are two options: one is to search among the
+implementations foronethatworks,asin Section11.2.2;theotheristoreasondirectlyabout
+the HL As despitethemultiplicityofimplementations as explainedin Section11.2.3. The
+latter method enables the derivation of provably correct abstract plans, without the ne

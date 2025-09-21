@@ -1,0 +1,28 @@
+rch is required to make sure there
+isn t another short-cut across the gap.) The check can be done when each node is generated
+or selected for expansion and, with a hash table, will take constant time. For example, if a
+problem has solution depth d 6, and each direction runs breadth-first search one node at a
+time,thenintheworstcasethetwosearches meetwhentheyhavegenerated allofthenodes
+atdepth3. Forb 10,thismeansatotalof2,220nodegenerations,comparedwith1,111,110
+for a standard breadth-first search. Thus, the time complexity of bidirectional search using
+breadth-first searches in both directions is O(bd 2). The space complexity is also O(bd 2).
+Wecanreducethisbyroughly halfifoneofthetwosearches is donebyiterative deepening,
+butatleastoneofthefrontiers mustbekeptinmemorysothat theintersection checkcanbe
+done. Thisspacerequirement isthemostsignificant weaknessofbidirectional search.
+Section3.4. Uninformed Search Strategies 91
+Start Goal
+Figure 3.20 A schematic view of a bidirectionalsearch thatis aboutto succeed when a
+branchfromthestartnodemeetsabranchfromthegoalnode.
+Thereduction intimecomplexity makesbidirectional search attractive, buthowdowe
+search backward? This is not as easy as it sounds. Let the predecessors of a state x be all
+PREDECESSOR
+thosestatesthathavexasasuccessor. Bidirectional searchrequiresamethodforcomputing
+predecessors. Whenalltheactionsinthestatespacearereversible, thepredecessors of xare
+justitssuccessors. Othercasesmayrequiresubstantial ingenuity.
+Considerthequestion ofwhatwemeanby thegoal insearching backwardfromthe
+goal. Forthe8-puzzleandforfindingaroutein Romania,thereisjustonegoalstate,sothe
+backward search is very much like the forward search. If there are several explicitly listed
+goalstates forexample,thetwodirt-freegoalstatesin Figure3.3 thenwecanconstructa
+newdummygoalstatewhoseimmediatepredecessors arealltheactualgoalstates. Butifthe
+goal isan abstract description, such as thegoal that no queen attacks another queen in the
+n-queenspro

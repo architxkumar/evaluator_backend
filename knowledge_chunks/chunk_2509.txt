@@ -1,0 +1,62 @@
+a g(in ) 2 w j 2 w j
+k j,k k j,k w w
+i,j i,j in 2 w g (cid:2) (in ) j
+k j,k j w
+i,j (cid:31)
+(cid:12) 2 w g (cid:2) (in ) w a
+k j,k j i,j i w
+i,j
+i 2 w g (cid:2) (in )a a ,
+k j,k j i i j
+where isdefinedasbefore. Thus,weobtaintheupdaterulesobtainedearlierfromintuitive
+j
+considerations. Itisalsoclearthattheprocess canbecontinued fornetworkswithmorethan
+onehiddenlayer, whichjustifiesthegeneralalgorithm givenin Figure18.24.
+Having made it through (or skipped over) all the mathematics, let s see how a single-
+hidden-layer network performs on the restaurant problem. First, we need to determine the
+structure of the network. We have 10 attributes describing each example, so we will need
+10 input units. Should we have one hidden layer or two? How many nodes in each layer?
+Shouldtheybefullyconnected? Thereisnogoodtheorythatwilltellustheanswer. (Seethe
+nextsection.) Asalways,wecanusecross-validation: tryseveraldifferentstructures andsee
+whichoneworksbest. Itturnsoutthatanetworkwithonehiddenlayercontainingfournodes
+is about right for this problem. In Figure 18.25, we show two curves. The first is a training
+curve showing the mean squared error on a given training set of 100 restaurant examples
+736 Chapter 18. Learningfrom Examples
+14
+12
+10
+8
+6
+4
+2
+0
+0 50 100 150 200 250 300 350 400
+tes
+gniniart
+no
+rorre
+lato T
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 10 20 30 40 50 60 70 80 90 100
+Number of epochs
+tes
+tset
+no
+tcerroc
+noitropor P Decision tree
+Multilayer network
+Training set size
+(a) (b)
+Figure 18.25 (a) Training curve showing the gradual reduction in error as weights are
+modified over several epochs, for a given set of examples in the restaurant domain. (b)
+Comparativelearningcurvesshowingthatdecision-treelearningdoesslightlybetteronthe
+restaurantproblemthanback-propagationinamultilayernetwork.
+duringtheweight-updatingprocess. Thisdemonstratesthatthenetworkdoesindeedconverge
+to a perfect fit to the training data. The second curve is the standard learning curve for the
+restaurant data. The n

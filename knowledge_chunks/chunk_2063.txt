@@ -1,0 +1,30 @@
+uit is a
+subclass of Food and Apples is a subclass of Fruit, then we can infer that every apple is
+edible. We say that the individual apples inherit the property of edibility, in this case from
+theirmembership inthe Food category.
+Subclassrelationsorganizecategoriesintoataxonomy,ortaxonomichierarchy. Tax-
+TAXONOMY
+onomieshavebeenusedexplicitlyforcenturiesintechnicalfields. Thelargestsuchtaxonomy
+organizesabout10millionlivingandextinctspecies,manyofthembeetles,2 intoasinglehi-
+erarchy;librarysciencehasdeveloped ataxonomyofallfieldsofknowledge, encoded asthe
+Dewey Decimal system; and tax authorities and other government departments have devel-
+opedextensivetaxonomiesofoccupationsandcommercialproducts. Taxonomiesarealsoan
+importantaspectofgeneralcommonsense knowledge.
+First-order logic makes it easy to state facts about categories, either by relating ob-
+jects to categories orby quantifying overtheir members. Here are some types of facts, with
+examplesofeach: Anobjectisamemberofacategory.
+BB Basketballs
+9 Acategoryisasubclassofanothercategory.
+Basketballs Balls Allmembersofacategoryhavesomeproperties.
+(x Basketballs) Spherical(x)
+1 Turningapropositionintoanobjectiscalledreification,fromthe Latinwordres,orthing. John Mc Carthy
+proposedtheterm thingification, butitnevercaughton.
+2 Thefamousbiologist J.B.S.Haldanededuced Aninordinatefondnessforbeetles onthepartofthe Creator.
+Section12.2. Categoriesand Objects 441 Membersofacategory canberecognized bysomeproperties.
+Orange(x) Round(x) Diameter(x) 9.5 (cid:2)(cid:2) x Balls x Basketballs Acategoryasawholehassomeproperties.
+Dogs Domesticated Species
+Notice that because Dogs is acategory and is amemberof Domesticated Species, the latter
+must be a category of categories. Of course there are exceptions to many of the above rules
+(punctured basketballs arenotspherical); wedealwiththeseexceptions later.
+Although subclass and member relations are the most important ones for categories,
+we also want to be able to state relations be

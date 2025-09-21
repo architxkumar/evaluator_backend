@@ -1,0 +1,25 @@
+te 1990s, these two paradigms started to converge, as both sides adopted the
+probabilistic modeling and learning techniques that were becoming popular throughout AI.
+Twolinesofworkcontributed significantly. Onewasresearch onfacedetection, suchasthat
+968 Chapter 24. Perception
+of Rowley, Baluja and Kanade (1996), and of Viola and Jones (2002b) which demonstrated
+thepowerofpattern recognition techniques onclearly important and useful tasks. Theother
+wasthedevelopmentofpointdescriptors, whichenableonetoconstructfeaturevectorsfrom
+parts of objects. This was pioneered by Schmid and Mohr (1996). Lowe s (2004) SIFT
+descriptoriswidelyused. The HO Gdescriptorisdueto Dalal and Triggs(2005).
+Ullman (1979) and Longuet-Higgins (1981) are influential early works in reconstruc-
+tion from multiple images. Concerns about the stability of structure from motion were sig-
+nificantlyallayedbytheworkof Tomasiand Kanade(1992)whoshowedthatwiththeuseof
+multiple frames shape could berecovered quite accurately. Inthe 1990s, withgreat increase
+incomputerspeedandstorage,motionanalysis foundmanynewapplications. Buildinggeo-
+metrical models of real-world scenes for rendering by computer graphics techniques proved
+particularlypopular, ledbyreconstruction algorithmssuchastheonedevelopedby Debevec,
+Taylor, and Malik (1996). The books by Hartley and Zisserman (2000) and Faugeras et al.
+(2001)provideacomprehensive treatmentofthegeometryof multipleviews.
+Forsingle images, inferring shape from shading was first studied by Horn (1970), and
+Hornand Brooks (1989) present anextensive survey ofthemainpapers from aperiod when
+this was a much-studied problem. Gibson (1950) was the first to propose texture gradients
+asacuetoshape,thoughacomprehensive analysisforcurved surfacesfirstappears in Gard-
+ing (1992) and Malik and Rosenholtz (1997). The mathematics of occluding contours, and
+more generally understanding the visual events in the projection of smooth curved objects,
+owesmuchtotheworkof Koenderink andvan D

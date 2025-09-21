@@ -1,0 +1,34 @@
+n by the value of that maximizes this expres-
+sion. Thesamevalueisobtained bymaximizingtheloglikelihood,
+LOGLIKELIHOOD
+(cid:12)N
+L(d h ) log P(d h ) log P(d h ) clog (cid:3)log(1 ). j j 1
+(Bytaking logarithms, wereduce theproduct toasum overthe data, whichisusually easier
+tomaximize.) Tofindthemaximum-likelihood valueof ,wedifferentiate Lwithrespect to andsettheresulting expression tozero:
+d L(d h ) c (cid:3) c c 0 .
+d 1 c (cid:3) N
+In English, then, the maximum-likelihood hypothesis h asserts that the actual proportion
+ML
+ofcherries inthebagisequaltotheobserved proportion inthecandiesunwrapped sofar!
+It appears that we have done a lot of work to discover the obvious. In fact, though,
+wehavelaidoutonestandardmethodformaximum-likelihood parameterlearning,amethod
+withbroadapplicability:
+Section20.2. Learningwith Complete Data 807
+P(F cherry) P(F cherry) Flavor F P(W red F) Flavor cherry 1 lime 2
+Wrapper
+(a) (b)
+Figure20.2 (a)Bayesiannetworkmodelforthecaseofcandieswithanunknownpropor-
+tionofcherriesandlimes. (b)Modelforthecasewherethewrappercolordepends(proba-
+bilistically)onthecandyflavor.
+1. Writedownanexpressionforthelikelihoodofthedataasafunctionoftheparameter(s).
+2. Writedownthederivativeoftheloglikelihood withrespecttoeachparameter.
+3. Findtheparametervaluessuchthatthederivativesarezero.
+The trickiest step is usually the last. In our example, it was trivial, but we will see that in
+manycasesweneedtoresorttoiterativesolutionalgorithmsorothernumericaloptimization
+techniques, as described in Chapter 4. The example also illustrates a significant problem
+with maximum-likelihood learning in general: when the data set is small enough that some
+eventshavenotyetbeenobserved forinstance,nocherrycandies themaximum-likelihood
+hypothesis assigns zero probability to those events. Various tricks are used to avoid this
+problem,suchasinitializing thecountsforeacheventto1insteadof0.
+Letus look atanother example. Suppose this new candy manufacturer wants togive a
+littlehinttothecon

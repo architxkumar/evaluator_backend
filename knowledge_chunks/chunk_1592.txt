@@ -1,0 +1,27 @@
+er. Onecommonsolutionistoputalimitonthenumberofcon-
+secutive sideways moves allowed. Forexample, we could allow up to, say, 100 consecutive
+sideways moves in the 8-queens problem. This raises the percentage of problem instances
+solved by hill climbing from 14 to 94 . Success comes at a cost: the algorithm averages
+roughly 21stepsforeachsuccessful instance and64foreach failure.
+124 Chapter 4. Beyond Classical Search
+Figure4.4 Illustrationofwhyridgescausedifficultiesforhillclimbing.Thegridofstates
+(darkcircles)issuperimposedonaridgerisingfromlefttoright,creatingasequenceoflocal
+maxima that are not directly connected to each other. From each local maximum, all the
+availableactionspointdownhill.
+STOCHASTICHILL Manyvariantsofhillclimbinghavebeeninvented. Stochastichillclimbingchoosesat
+CLIMBING
+randomfromamongtheuphillmoves;theprobabilityofselectioncanvarywiththesteepness
+of the uphill move. This usually converges more slowly than steepest ascent, but in some
+FIRST-CHOICEHILL state landscapes, it finds better solutions. First-choice hill climbing implements stochastic
+CLIMBING
+hillclimbing bygenerating successors randomly until oneisgenerated thatisbetterthanthe
+currentstate. Thisisagoodstrategywhenastatehasmany(e.g.,thousands) ofsuccessors.
+The hill-climbing algorithms described so far are incomplete they often fail to find
+a goal when one exists because they can get stuck on local maxima. Random-restart hill
+RANDOM-RESTART climbingadopts thewell-known adage, Ifatfirstyou don t succeed, try, try again. Itcon-
+HILLCLIMBING
+ducts a series of hill-climbing searches from randomly generated initial states,1 until a goal
+is found. It is trivially complete with probability approaching 1, because it will eventually
+generate a goal state as the initial state. If each hill-climbing search has a probability p of
+success, then the expected number of restarts required is 1 p. For 8-queens instances with
+nosideways movesallowed, p 0.14,soweneed roughly 7iterations tofindagoal (6fail-

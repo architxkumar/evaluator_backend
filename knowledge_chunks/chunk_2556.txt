@@ -1,0 +1,34 @@
+hetwodimensions(x2,x2). Butwhatifthecircleisnotlocated
+1 2 1 2
+at the origin? What if it is an ellipse, not a circle? The general equation for a circle (and
+hencethedecisionboundary) is(x a)2 (x b)2 r2 0,andthegeneralequationfor
+1 2
+anellipseisc(x a)2 d(x b)2 1 0.
+1 2
+a. Expand out the equation for the circle and show what the weights w would be for the
+i
+decision boundary in the four-dimensional feature space (x ,x ,x2,x2). Explain why
+1 2 1 2
+thismeansthatanycircleislinearly separable inthisspace.
+b. Dothesameforellipses inthefive-dimensional featurespace(x ,x ,x2,x2,x x ).
+1 2 1 2 1 2
+18.17 Construct a support vector machine that computes the XOR function. Use values of 1 and 1 (instead of 1 and 0) for both inputs and outputs, so that an example looks like
+( 1,1 ,1)or( 1, 1 , 1). Maptheinput x ,x intoaspaceconsistingofx andx x .
+1 2 1 1 2
+Draw the four input points in this space, and the maximal margin separator. What is the
+margin? Nowdrawtheseparating linebackintheoriginal Euclideaninputspace.
+18.18 Consider an ensemble learning algorithm that uses simple majority voting among
+K learned hypotheses. Suppose that each hypothesis has error (cid:2) and that the errors made
+by each hypothesis are independent of the others . Calculate a formula for the error of the
+ensemble algorithm in terms of K and (cid:2), and evaluate it for the cases where K 5, 10, and
+20and(cid:2) 0.1,0.2,and0.4. Iftheindependence assumptionisremoved,isitpossibleforthe
+ensembleerrortobe worsethan(cid:2)?
+18.19 Construct by hand a neural network that computes the XOR function of two inputs.
+Makesuretospecify whatsortofunitsyouareusing.
+18.20
+Recallfrom Chapter18thatthereare22n
+distinct Booleanfunctionsofninputs. How
+manyofthesearerepresentable byathreshold perceptron?
+18.21 Section 18.6.4 (page 725) noted that the output of the logistic function could be in-
+terpreted asa probability passigned bythemodeltotheproposition that f(x) 1;theprob-
+ability that f(x) 0 is therefore 1 p. Write down the p

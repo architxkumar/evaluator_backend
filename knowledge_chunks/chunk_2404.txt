@@ -1,0 +1,27 @@
+cted
+utility for each decision (under the assumption that other agents are acting optimally
+according to game theory). Forexample, in the game two-finger Morra, two players,
+O and E, simultaneously display one or two fingers. Let the total number of fingers
+be f. If f is odd, O collects f dollars from E; and if f is even, E collects f dollars
+from O. Gametheory can determine the best strategy against a rational player and the
+expectedreturnforeachplayer.4
+4 Morraisarecreationalversionofaninspectiongame.Insuchgames,aninspectorchoosesadaytoinspecta
+facility(suchasarestaurantorabiologicalweaponsplant),andthefacilityoperatorchoosesadaytohideallthe
+nastystuff.Theinspectorwinsifthedaysaredifferent,andthefacilityoperatorwinsiftheyarethesame.
+Section17.5. Decisionswith Multiple Agents: Game Theory 667
+2. Mechanism design: When an environment is inhabited by many agents, it might be
+possible to define the rules of the environment (i.e., the game that the agents must
+play)sothatthecollective goodofallagentsismaximizedwheneachagentadoptsthe
+game-theoretic solution that maximizes its own utility. For example, game theory can
+help design the protocols for a collection of Internet traffic routers so that each router
+hasanincentive toactinsuch awaythat global throughput ismaximized. Mechanism
+designcanalsobeusedtoconstruct intelligent multiagentsystemsthatsolvecomplex
+problemsinadistributed fashion.
+17.5.1 Single-movegames
+Westartbyconsidering arestricted setofgames: oneswhere allplayerstakeactionsimulta-
+neously and the result of the game is based on this single set of actions. (Actually, it is not
+crucialthattheactionstakeplaceatexactlythesametime;whatmattersisthatnoplayerhas
+knowledge ofthe otherplayers choices.) Therestriction to asingle move (and the very use
+of the word game ) might make this seem trivial, but in fact, game theory is serious busi-
+ness. It is used in decision-making situations including the auctioning of oil drilling rights
+and wireless frequency spectrum ri

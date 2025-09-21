@@ -1,0 +1,30 @@
+e kind of problems that it is reasonable to
+expect. This works as long as the distribution of past examples is roughly the same as for
+future examples the same assumption used for PAC-learning in Section 18.5. If the EBL
+system is carefully engineered, it is possible to obtain significant speedups. For example, a
+very large Prolog-based natural language system designed for speech-to-speech translation
+between Swedish and English was able to achieve real-time performance only by the appli-
+cationof EB Ltotheparsingprocess (Samuelssonand Rayner, 1991).
+19.4 LEARNING USING RELEVANCE INFORMATION
+Ourtravelerin Brazilseemstobeabletomakeaconfidentgeneralizationconcerningthelan-
+guagespokenbyother Brazilians. Theinferenceissanctionedbyherbackgroundknowledge,
+namely, that people in a given country (usually) speak the same language. We can express
+thisinfirst-orderlogicasfollows:2
+Nationality(x,n) Nationality(y,n) Language(x,l) Language(y,l).(19.6)
+(Literal translation: If x and y have the samenationality n and x speaks language l, then y
+alsospeaksit. ) Itisnotdifficulttoshowthat,fromthissentence andtheobservation that
+Nationality(Fernando,Brazil) Language(Fernando,Portuguese),
+thefollowingconclusion isentailed(see Exercise19.1):
+Nationality(x,Brazil) Language(x,Portuguese).
+Sentencessuchas(19.6)express astrict formofrelevance: givennationality, language
+isfullydetermined. (Putanotherway: languageisafunctionofnationality.) Thesesentences
+FUNCTIONAL arecalled functionaldependenciesordeterminations. Theyoccursocommonly incertain
+DEPENDENCY
+kinds of applications (e.g., defining database designs) that a special syntax is used to write
+DETERMINATION
+them. Weadoptthenotation of Davies(1985):
+Nationality(x,n) Language(x,l).
+2 Weassumeforthesakeofsimplicitythatapersonspeaksonlyonelanguage. Clearly,therulewouldhaveto
+beamendedforcountriessuchas Switzerlandand India.
+Section19.4. Learning Using Relevance Information 785
+As usual, this is simply a syntactic sugaring, but it makes it cl

@@ -1,0 +1,46 @@
+ Fourier transform is used to determine the amount of acoustic energy at
+about a dozen frequencies. Then we compute a measure called the mel frequency cepstral
+MELFREQUENCY
+CEPSTRAL coefficient (MFCC) or MFCC for each frequency. We also compute the total energy in
+COEFFICIENT(MFCC)
+the frame. That gives thirteen features; for each one we compute the difference between
+this frame and the previous frame, and the difference between differences, for a total of 39
+features. These arecontinuous-valued; theeasiest waytofitthem intothe HM Mframework
+istodiscretizethevalues. (Itisalsopossibletoextendthe HM Mmodeltohandlecontinuous
+mixtures of Gaussians.) Figure 23.15 shows the sequence of transformations from the raw
+soundtoasequence offrameswithdiscrete features.
+We have seen how to go from the raw acoustic signal to a series of observations, e .
+t
+Now we have to describe the (unobservable) states of the HMM and define the transition
+model, P(X t X t 1 ), and the sensor model, P(E t X t ). The transition model can be broken
+into two levels: word and phone. We ll start from the bottom: the phone model describes
+PHONEMODEL
+Analog acoustic signal:
+Sampled, quantized
+digital signal:
+10 15 38 22 63 24 10 12 73
+Frames with features:
+52 47 82 89 94 11
+Figure23.15 Translatingthe acoustic signal into a sequence of frames. In this diagram
+each frame is described by the discretized values of three acoustic features; a real system
+wouldhavedozensoffeatures.
+916 Chapter 23. Natural Languagefor Communication
+Phone HMM for m :
+0.3 0.9 0.4
+0.7 0.1 0.6
+Onset Mid End FINAL
+Output probabilities for the phone HMM:
+Onset: Mid: End:
+C : 0.5 C : 0.2 C : 0.1
+1 3 4
+C : 0.2 C : 0.7 C : 0.5
+2 4 6
+C : 0.3 C : 0.1 C : 0.4
+3 5 7
+Figure 23.16 An HMM for the three-state phone m . Each state has several possible
+outputs,eachwithitsownprobability.The MFC Cfeaturelabels C through C arearbitrary,
+1 7
+standingforsomecombinationoffeaturevalues.
+(a) Word model with dialect variation:
+0.5 ey 1.0
+1.0 1.0 1.0 t ow 

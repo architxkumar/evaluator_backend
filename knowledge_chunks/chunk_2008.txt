@@ -1,0 +1,38 @@
+mple, theaction Goto San Francisco airport inthe
+HIGH-LEVELACTION
+Section11.2. Hierarchical Planning 407
+Refinement(Go(Home,SFO),
+STEPS: Drive(Home,SFO Long Term Parking),
+Shuttle(SFO Long Term Parking,SFO) )
+Refinement(Go(Home,SFO),
+STEPS: Taxi(Home,SFO) )
+Refinement(Navigate( a,b , x,y ),
+PRECOND:a x b y
+STEPS: )
+Refinement(Navigate( a,b , x,y ),
+PRECOND:Connected( a,b , a 1,b )
+STEPS: Left,Navigate( a 1,b , x,y ) )
+Refinement(Navigate( a,b , x,y ),
+PRECOND:Connected( a,b , a 1,b )
+STEPS: Right,Navigate( a 1,b , x,y ) )
+...
+Figure11.4 Definitionsofpossiblerefinementsfortwohigh-levelactions: goingto San
+Franciscoairportandnavigatinginthe vacuumworld. Inthe lattercase, notethe recursive
+natureoftherefinementsandtheuseofpreconditions.
+example given earlier. Each HLA has one or more possible refinements, into a sequence1
+REFINEMENT
+of actions, each of which may be an HLA or a primitive action (which has no refinements
+by definition). For example, the action Go to San Francisco airport, represented formally
+as Go(Home,SFO), might have two possible refinements, as shown in Figure 11.4. The
+same figure shows a recursive refinement for navigation in the vacuum world: to get to a
+destination, takeastep,andthengotothedestination.
+Theseexamplesshow thathigh-level actions andtheirrefinements embody knowledge
+abouthowtodothings. Forinstance, therefinements for Go(Home,SFO)saythattogetto
+the airport you can drive ortake ataxi; buying milk, sitting down, and moving the knight to
+e4arenottobeconsidered.
+An HLA refinement that contains only primitive actions is called an implementation
+IMPLEMENTATION
+of the HLA. For example, in the vacuum world, the sequences Right,Right,Down and Down,Right,Right both implement the HLA Navigate( 1,3 , 3,2 ). Animplementation
+of a high-level plan (a sequence of HL As) is the concatenation of implementations of each
+HL Ainthesequence. Giventheprecondition effect definitionsofeachprimitiveaction,itis
+straightforward todeterminewhetheranygivenimplemen

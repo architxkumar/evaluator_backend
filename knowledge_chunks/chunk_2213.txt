@@ -1,0 +1,31 @@
+ probability of any first-order logical sentence as a sum
+overthepossible worldswhereitistrue:
+(cid:12)
+P( ) P( ). (14.13) : istruein Conditional probabilities P( e)canbe obtained similarly, sowecan, inprinciple, ask any
+question we want of our model e.g., Which books are most likely to be recommended
+highlybydishonest customers? and getananswer. Sofar,sogood.
+There is, however, a problem: the set of first-order models is infinite. We saw this
+explicitlyin Figure8.4onpage293,whichweshowagainin Figure14.18(top). Thismeans
+that(1)thesummationin Equation(14.13)couldbeinfeasible,and(2)specifyingacomplete,
+consistent distribution overaninfinitesetofworldscould beverydifficult.
+Section 14.6.2 explores one approach to dealing with this problem. The idea is to
+borrow not from the standard semantics of first-order logic but from the database seman-
+tics defined in Section 8.2.8 (page 299). The database semantics makes the unique names
+assumption here, weadoptitfortheconstant symbols. Italsoassumes domainclosure there are no more objects than those that are named. We can then guarantee a finite set of
+possible worlds by making the set of objects in each world be exactly the set of constant
+Section14.6. Relational and First-Order Probability Models 541
+R J R J R J R J R J R J
+. . . . . .
+. . .
+R J R J R J R J R J
+R R R R . . . R
+J J J J J
+Figure14.18 Top:Somemembersofthesetofallpossibleworldsforalanguagewithtwo
+constantsymbols,Rand J,andonebinaryrelationsymbol,underthestandardsemanticsfor
+first-orderlogic. Bottom: thepossibleworldsunderdatabasesemantics. Theinterpretation
+oftheconstantsymbolsisfixed,andthereisadistinctobjectforeachconstantsymbol.
+symbols that are used; as shown in Figure 14.18 (bottom), there is no uncertainty about the
+mappingfromsymbolstoobjectsorabouttheobjectsthatexist. Wewillcallmodelsdefined
+RELATIONAL in this way relational probability models, or RP Ms.7 The most significant difference be-
+PROBABILITYMODEL
+tween the semantics of RP Msand the database se

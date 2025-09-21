@@ -1,0 +1,25 @@
+veasmanagers oftheirowncadreofrobotworkers.
+Peoplemighthavetoomuch(ortoolittle)leisuretime. Alvin Tofflerwrotein Future
+Shock (1970), The work week has been cut by 50 percent since the turn of the century. It
+is not out of the way to predict that it will be slashed in half again by 2000. Arthur C.
+Clarke (1968b) wrote that people in 2001 might be faced with a future of utter boredom,
+wherethemainproblem inlifeisdeciding whichofseveral hundred TVchannels toselect. Section26.3. The Ethicsand Risksof Developing Artificial Intelligence 1035
+The only one of these predictions that has come close to panning out is the number of TV
+channels. Instead, people working inknowledge-intensive industries have found themselves
+partofanintegratedcomputerized systemthatoperates24hoursaday;tokeepup,theyhave
+beenforcedtoworklongerhours. Inanindustrialeconomy,rewardsareroughlyproportional
+to the time invested; working 10 more would tend to mean a 10 increase in income. In
+an information economy marked by high-bandwidth communication and easy replication of
+intellectualproperty(what Frankand Cook(1996)callthe Winner-Take-All Society ),there
+isalargerewardforbeingslightlybetterthanthecompetition;working10 morecouldmean
+a 100 increase in income. So there is increasing pressure on everyone to work harder. AI
+increases the pace of technological innovation and thus contributes to this overall trend, but
+AIalso holds the promise ofallowing ustotake some timeoffand let ourautomated agents
+handlethingsforawhile. Tim Ferriss(2007)recommendsusingautomationandoutsourcing
+toachieveafour-hour workweek.
+Peoplemightlosetheirsenseofbeingunique. In Computer Powerand Human Rea-
+son, Weizenbaum (1976), theauthorofthe ELIZA program, points outsome ofthe potential
+threatsthat AIposestosociety. Oneof Weizenbaum sprincipalargumentsisthat AIresearch
+makespossibletheideathathumansareautomata anideathatresultsinalossofautonomy
+orevenofhumanity. Wenotethattheideahasbeenaroundmuchlongerthan AI,goingback
+at least to

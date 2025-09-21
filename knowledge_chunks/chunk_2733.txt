@@ -1,0 +1,25 @@
+ogle n-gram corpusof13millionunique wordsfrom atrillion
+wordsof Webtext;itisnowpublicly available. Thebagofwordsmodelgetsitsnamefrom
+a passage from linguist Zellig Harris (1954), language is not merely a bag of words but
+a tool with particular properties. Norvig (2009) gives some examples of tasks that can be
+accomplished withn-grammodels.
+Add-onesmoothing,firstsuggestedby Pierre-Simon Laplace(1816),wasformalizedby
+Jeffreys (1948), and interpolation smoothing is due to Jelinek and Mercer (1980), who used
+it for speech recognition. Other techniques include Witten Bell smoothing (1991), Good Turing smoothing (Church and Gale, 1991) and Kneser Ney smoothing (1995). Chen and
+Goodman(1996)and Goodman(2001)surveysmoothing techniques.
+Simple n-gram letter and word models are not the only possible probabilistic models.
+Blei et al. (2001) describe a probabilistic text model called latent Dirichlet allocation that
+viewsadocumentasamixtureoftopics,eachwithitsowndistribution ofwords. Thismodel
+can be seen as an extension and rationalization of the latent semantic indexing model of
+(Deerwester et al., 1990) (see also Papadimitriou et al. (1998)) and is also related to the
+multiple-cause mixturemodelof(Sahamietal.,1996).
+884 Chapter 22. Natural Language Processing
+Manningand Schu tze(1999)and Sebastiani(2002)surveytext-classificationtechniques.
+Joachims (2001) uses statistical learning theory and support vector machines to give a theo-
+reticalanalysisofwhenclassificationwillbesuccessful. Apte etal.(1994)reportanaccuracy
+of96 inclassifying Reutersnewsarticles intothe Earnings category. Kollerand Sahami
+(1997)reportaccuracyupto95 withanaive Bayesclassifier,andupto98.6 witha Bayes
+classifier that accounts for some dependencies among features. Lewis (1998) surveys forty
+years of application of naive Bayes techniques to text classification and retrieval. Schapire
+and Singer (2000) show that simple linear classifiers can often achieve accuracy almost as
+good as more complex models and 

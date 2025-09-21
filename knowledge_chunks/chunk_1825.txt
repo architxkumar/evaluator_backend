@@ -1,0 +1,47 @@
+ce s is true in the model m (where m assigns a truth value for every symbol in s).
+Thealgorithm shouldrunintimelinearinthesizeofthesentence. (Alternatively, usea
+versionofthisfunction fromtheonlinecoderepository.)
+b. Givethree examplesofsentences thatcanbedetermined tobetrueorfalseina partial
+modelthatdoesnotspecifyatruthvalueforsomeofthesymbols.
+c. Showthatthetruthvalue(ifany)ofasentenceinapartialmodelcannotbedetermined
+efficientlyingeneral.
+d. Modify your PL-TRUE? algorithm so that it can sometimes judge truth from partial
+models,whileretainingitsrecursivestructure andlinear runtime. Givethreeexamples
+ofsentences whosetruthinapartialmodelisnotdetected byyouralgorithm.
+e. Investigate whetherthemodifiedalgorithm makes TT-ENTAILS? moreefficient.
+7.4 Whichofthefollowingarecorrect?
+a. False True.
+b. True False.
+c. (A B) (A B).
+d. A B A B.
+e. A B A B.
+f. (A B) C (A C) (B C).
+g. (C ( A B)) ((A C) (B C)).
+h. (A B) ( C D E) (A B).
+i. (A B) ( C D E) (A B) ( D E).
+j. (A B) (A B)issatisfiable.
+k. (A B) ( A B)issatisfiable.
+l. (A B) C has the same number of models as (A B)forany fixed set of
+proposition symbolsthatincludes A,B,C.
+Exercises 281
+7.5 Proveeachofthefollowingassertions:
+a. isvalidifandonlyif True .
+b. Forany ,False .
+c. ifandonlyifthesentence ( )isvalid.
+d. ifandonlyifthesentence ( )isvalid.
+e. ifandonlyifthesentence ( )isunsatisfiable.
+7.6 Prove,orfindacounterexample to,eachofthefollowingassertions:
+a. If or (orboth)then( ) b. If ( )then and .
+c. If ( )then or (orboth).
+7.7 Consideravocabularywithonlyfourpropositions, A,B,C,and D. Howmanymodels
+arethereforthefollowingsentences?
+a. B C.
+b. A B C D.
+c. (A B) A B C D.
+7.8 Wehavedefinedfourbinarylogicalconnectives.
+a. Arethereanyothersthatmightbeuseful?
+b. Howmanybinaryconnectives cantherebe?
+c. Whyaresomeofthemnotveryuseful?
+7.9 Usingamethodofyourchoice,verifyeachoftheequivalencesin Figure7.11(page249).
+7.10 Decidewhethereachofthefollowingsentencesisvalid,unsatisfiable, orneither. Ver-
+ifyyourdecisions usingtruthtabl

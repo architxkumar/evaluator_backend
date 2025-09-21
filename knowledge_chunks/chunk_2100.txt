@@ -1,0 +1,37 @@
+se that query is laptops. Then
+Relevant Category Name(query,text)istruewhenoneofthefollowingholds: Thetextandquerynamethesamecategory e.g., notebooks and laptops. 11 Analternativetothelink-followingstrategyistousean Internetsearchengine;thetechnologybehind Internet
+search,informationretrieval,willbecoveredin Section22.3.
+Section12.7. The Internet Shopping World 465
+Name( books ,Books)
+Books Products
+Name( music ,Music Recordings)
+Music Recordings Products
+Name( CDs ,Music CDs)
+Music CDs Music Recordings
+Name( electronics ,Electronics)
+Electronics Products
+Name( digitalcameras ,Digital Cameras)
+Digital Cameras Electronics
+Name( stereos ,Stereo Equipment)
+Stereo Equipment Electronics
+Name( computers ,Computers)
+Computers Electronics
+Name( desktops ,Desktop Computers)
+Desktop Computers Computers
+Name( laptops ,Laptop Computers)
+Laptop Computers Computers
+Name( notebooks ,Laptop Computers)
+...
+...
+(a) (b)
+Figure12.9 (a)Taxonomyofproductcategories.(b)Namesforthosecategories. Thetextnamesasupercategory suchas computers. Thetextnamesasubcategory suchas ultralight notebooks. Thelogicaldefinition of Relevant Category Name isasfollows:
+Relevant Category Name(query,text) c ,c Name(query,c ) Name(text,c ) (c c c c ). (12.1)
+1 2 1 2 1 2 2 1
+Otherwise, theanchortextisirrelevant because itnamesacategory outside thisline, suchas clothes or lawn garden. To follow relevant links, then, it is essential to have a rich hierarchy of product cate-
+gories. Thetoppartofthishierarchymightlooklike Figure 12.9(a). Itwillnotbefeasibleto
+list all possible shopping categories, because a buyer could always come up with some new
+desire and manufacturers will always come out with new products to satisfy them (electric
+kneecap warmers?). Nonetheless, anontology ofabout athousand categories willserve asa
+veryusefultoolformostbuyers.
+In addition to the product hierarchy itself, we also need to have a rich vocabulary of
+names for categories. Life would be much easier if there were a one-to-one correspon

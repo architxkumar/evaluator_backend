@@ -1,0 +1,31 @@
+forederivingthegeneral result.)
+d. Writeoutanexpressionfortheloglikelihoodofthetabulatedcandydataonpage821in
+termsoftheparameters,calculatethepartialderivatives withrespecttoeachparameter,
+andinvestigate thenatureofthefixedpointreachedinpart(c).
+21
+REINFORCEMENT
+LEARNING
+In which we examine how an agent can learn from success and failure, from re-
+wardandpunishment.
+21.1 INTRODUCTION
+Chapters18,19,and20coveredmethodsthatlearnfunctions,logicaltheories,andprobability
+modelsfrom examples. Inthischapter, wewillstudyhowagents canlearn whattodointhe
+absenceoflabeledexamplesofwhattodo.
+Consider, for example, the problem of learning to play chess. A supervised learning
+agent needs tobe told the correct moveforeach position it encounters, but such feedback is
+seldom available. In the absence of feedback from a teacher, an agent can learn a transition
+modelforitsownmovesandcan perhaps learn topredict theopponent s moves, butwithout
+somefeedbackaboutwhatisgoodandwhatisbad,theagentwillhavenogroundsfordecid-
+ing which moveto make. Theagent needs toknow that something good has happened when
+it (accidentally) checkmates the opponent, and that something bad has happened when it is
+checkmated or vice versa, if the game is suicide chess. This kind of feedback is called a
+reward,orreinforcement. Ingameslikechess,thereinforcementisreceivedonlyattheend
+REINFORCEMENT
+of the game. In other environments, the rewards come more frequently. In ping-pong, each
+point scored can be considered a reward; when learning to crawl, any forward motion is an
+achievement. Our framework for agents regards the reward as part of the input percept, but
+the agent must be hardwired to recognize that part as a reward rather than as just another
+sensory input. Thus, animalsseemtobehardwired torecognize painandhungerasnegative
+rewards and pleasure andfood intake aspositive rewards. Reinforcement has been carefully
+studiedbyanimalpsychologists forover60years.
+Rewards were introduced in Chapter 17, where they serve

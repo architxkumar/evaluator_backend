@@ -1,0 +1,32 @@
+on for
+treatingdisease,theefficientmanagementofenergyresources,andtheverificationoftreaties
+concerning nuclearweapons are beingaddressed withthehelpof AItechnologies.
+Finally,itseemslikelythatalarge-scalesuccessin AI thecreationofhuman-levelin-
+telligence andbeyond would change thelivesofamajorityofhumankind. Theverynature
+ofourworkandplaywouldbealtered,aswouldourviewofintelligence, consciousness, and
+thefuturedestinyofthehumanrace. AIsystemsatthislevelofcapability couldthreatenhu-
+manautonomy,freedom,andevensurvival. Forthesereasons,wecannotdivorce AIresearch
+fromitsethicalconsequences (see Section26.3).
+1052 Chapter 27. AI:The Presentand Future
+Which waywillthe future go? Science fiction authors seem tofavor dystopian futures
+over utopian ones, probably because they make for more interesting plots. But so far, AI
+seemstofitinwithotherrevolutionarytechnologies(printing,plumbing,airtravel,telephony)
+whosenegativerepercussions areoutweighedbytheirpositiveaspects.
+In conclusion, wesee that AI has made great progress in its short history, but the final
+sentence of Alan Turing s (1950) essay on Computing Machinery and Intelligence is still
+validtoday:
+Wecanseeonlyashortdistance ahead,
+butwecanseethatmuchremainstobedone.
+A
+MATHEMATICAL
+BACKGROUND
+A.1 COMPLEXITY ANALYSIS AND O() NOTATION
+Computer scientists are often faced with the task of comparing algorithms to see how fast
+theyrunorhowmuchmemorytheyrequire. Therearetwoapproaches tothistask. Thefirst
+is benchmarking running the algorithms on a computer and measuring speed in seconds
+BENCHMARKING
+and memory consumption in bytes. Ultimately, this is what really matters, but a benchmark
+can be unsatisfactory because it is so specific: it measures the performance of a particular
+program written inaparticular language, running onaparticular computer, withaparticular
+compiler and particular input data. From the single result that the benchmark provides, it
+can be difficult to predict how well the algorithm would do on a diffe

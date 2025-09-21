@@ -1,0 +1,35 @@
+separatorthatclassifiesthedataperfectly provided thedataarelinearlyseparable. For
+asingleexample(x,y),wehave
+w w (y h (x)) x (18.7)
+i i w i
+whichisessentiallyidenticaltothe Equation(18.6),theupdateruleforlinearregression! This
+PERCEPTRON ruleiscalledtheperceptronlearningrule,forreasonsthatwillbecomeclearin Section18.7.
+LEARNINGRULE
+Because weareconsidering a0 1classification problem, however, thebehavior issomewhat
+different. Boththetruevalue yandthehypothesisoutputh (x)areeither0or1,sothereare
+w
+threepossibilities: Iftheoutputiscorrect, i.e.,y h (x),thentheweightsarenotchanged.
+w Ifyis1buth (x)is0,thenw isincreasedwhenthecorresponding inputx ispositive
+w i i
+and decreased when x is negative. This makes sense, because we want to make w x
+i
+biggersothath (x)outputsa1.
+w Ifyis0buth (x)is1,thenw isdecreasedwhenthecorrespondinginputx ispositive
+w i i
+and increased when x is negative. This makes sense, because we want to make w x
+i
+smallersothat h (x)outputsa0.
+w
+Typically the learning rule is applied one example at a time, choosing examples at random
+(as in stochastic gradient descent). Figure 18.16(a) shows atraining curve forthis learning
+TRAININGCURVE
+rule applied to the earthquake explosion data shown in Figure 18.15(a). A training curve
+measures the classifier performance on a fixed training set as the learning process proceeds
+on that same training set. The curve shows the update rule converging to a zero-error linear
+separator. The convergence processisn texactlypretty,butitalwaysworks. Thisparticular
+runtakes657stepstoconverge,foradatasetwith63examples,soeachexampleispresented
+roughly 10timesonaverage. Typically, thevariation acrossrunsisverylarge.
+We have said that the perceptron learning rule converges to a perfect linear separator
+when the data points are linearly separable, but what if they are not? This situation is all
+too common in the real world. For example, Figure 18.15(b) adds back in the data points
+left out by Kebeasy et al. (1998) when they plotted

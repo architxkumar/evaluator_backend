@@ -1,0 +1,30 @@
+n for this problem. How large
+(roughly) isthecompleteplan?
+Noticethatthiscontingencyplanisasolutionforeverypossibleenvironmentfittingthegiven
+description. Therefore, interleaving of search and execution is not strictly necessary even in
+unknownenvironments.
+4.13 Inthisexercise,weexaminehillclimbinginthecontextofrobotnavigation, usingthe
+environment in Figure3.31asanexample.
+a. Repeat Exercise 4.11 using hill climbing. Does your agent ever get stuck in a local
+minimum? Isitpossible forittogetstuckwithconvexobstacles?
+b. Constructanonconvex polygonal environment inwhichtheagentgetsstuck.
+c. Modifythehill-climbing algorithm sothat, instead ofdoing adepth-1 search todecide
+where to go next, it does a depth-k search. It should find the best k-step path and do
+onestepalongit,andthenrepeattheprocess.
+d. Istheresomekforwhichthenewalgorithmisguaranteedtoescapefromlocalminima? e. Explainhow LRTA enablestheagenttoescapefromlocalminimainthiscase.
+4.14 Like DFS,online DF Sisincompleteforreversiblestatespaceswithinfinitepaths. For
+example, suppose that states are points on the infinite two-dimensional grid and actions are
+unitvectors (1,0), (0,1), ( 1,0), (0, 1), triedinthatorder. Showthatonline DF Sstarting
+at (0,0) will not reach (1, 1). Suppose the agent can observe, in addition to its current
+state, all successor states and the actions that would lead to them. Write an algorithm that
+is complete even for bidirected state spaces with infinite paths. What states does it visit in
+reaching (1, 1)?
+5
+ADVERSARIAL SEARCH
+Inwhichweexaminetheproblemsthatarisewhenwetrytoplanaheadinaworld
+whereotheragentsareplanning againstus.
+5.1 GAMES
+Chapter 2 introduced multiagent environments, in which each agent needs to consider the
+actions of other agents and how they affect its own welfare. The unpredictability of these
+other agents can introduce contingencies into the agent s problem-solving process, as dis-
+cussedin Chapter4. Inthischapterwecovercompetitiveenvironments,inwhichtheagents goalsa

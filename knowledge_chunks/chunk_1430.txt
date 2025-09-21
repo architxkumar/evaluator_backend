@@ -1,0 +1,27 @@
+ Chapter 1. Introduction
+the field. But curiously, a review of the book became as well known as the book itself, and
+served to almost kill off interest in behaviorism. The author of the review was the linguist
+Noam Chomsky, who had just published a book on his own theory, Syntactic Structures.
+Chomsky pointed out that the behaviorist theory did not address the notion of creativity in
+language it didnotexplain howachild could understand and makeupsentences thatheor
+shehadneverheardbefore. Chomsky stheory based onsyntacticmodelsgoingbacktothe
+Indian linguist Panini(c. 350 B.C.) could explain this, andunlike previous theories, itwas
+formalenoughthatitcouldinprinciple beprogrammed.
+Modern linguistics and AI, then, were born at about the same time, and grew up
+COMPUTATIONAL together, intersectinginahybridfieldcalled computationallinguisticsornaturallanguage
+LINGUISTICS
+processing. Theproblemofunderstandinglanguagesoonturnedouttobeconsiderablymore
+complex than it seemed in 1957. Understanding language requires an understanding of the
+subjectmatterandcontext,notjustanunderstandingofthestructureofsentences. Thismight
+seem obvious, but it was not widely appreciated until the 1960s. Much of the early work in
+knowledge representation (the study of how to put knowledge into a form that a computer
+can reason with) was tied to language and informed by research in linguistics, which was
+connected inturntodecades ofworkonthephilosophical analysis oflanguage.
+1.3 THE HISTORY OF ARTIFICIAL INTELLIGENCE
+Withthebackground materialbehindus,wearereadytocover thedevelopment of AIitself.
+1.3.1 The gestationofartificialintelligence (1943 1955)
+The first work that is now generally recognized as AI was done by Warren Mc Culloch and
+Walter Pitts (1943). They drew on three sources: knowledge of the basic physiology and
+function of neurons in the brain; a formal analysis of propositional logic due to Russell and
+Whitehead; and Turing stheoryofcomputation. Theyproposed amodelofartificialneurons
+i

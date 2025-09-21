@@ -1,0 +1,23 @@
+equiredinthefulljointdistribution. (Efficient Bayesian
+network algorithms were unknown then.) As a result, probabilistic approaches fell out of
+favor from roughly 1975 to1988, and avariety ofalternatives toprobability weretried fora
+varietyofreasons: One common view is that probability theory is essentially numerical, whereas human
+judgmental reasoning is more qualitative. Certainly, we are not consciously aware
+of doing numerical calculations of degrees of belief. (Neither are we aware of doing
+unification, yet we seem to be capable of some kind of logical reasoning.) It might be
+that we have some kind of numerical degrees of belief encoded directly in strengths
+of connections and activations in our neurons. In that case, the difficulty of conscious
+accesstothosestrengthsisnotsurprising. Oneshouldalso notethatqualitativereason-
+Section14.7. Other Approaches to Uncertain Reasoning 547
+ingmechanisms canbebuiltdirectly ontopofprobability theory, sothe nonumbers argument against probability has little force. Nonetheless, some qualitative schemes
+have a good deal of appeal in their own right. One of the best studied is default rea-
+soning,whichtreats conclusions notas believed toacertaindegree, butas believed
+until a better reason is found to believe something else. Default reasoning is covered
+in Chapter12. Rule-based approaches to uncertainty have also been tried. Such approaches hope to
+build on the success of logical rule-based systems, but add a sort of fudge factor to
+eachruletoaccommodateuncertainty. Thesemethodsweredevelopedinthemid-1970s
+andformedthebasisforalargenumberofexpertsystemsinmedicineandotherareas. One area that we have not addressed so far is the question of ignorance, as opposed
+to uncertainty. Consider the flipping of a coin. If we know that the coin is fair, then
+a probability of 0.5 for heads is reasonable. If we know that the coin is biased, but
+we do not know which way, then 0.5 for heads is again reasonable. Obviously, the
+twocasesaredifferent

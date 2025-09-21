@@ -1,0 +1,27 @@
+986). Techniques
+forfindingtextureboundariesbasedonmultiscale,multiorientationfilteringofimagesdateto
+work such as Malik and Perona (1990). Combining multiple clues brightness, texture and
+color for finding boundary curves in a learning framework wasshown by Martin, Fowlkes
+and Malik(2004)toconsiderably improveperformance.
+The closely related problem of finding regions of coherent brightness, color, and tex-
+ture, naturally lends itself to formulations in which finding the best partition becomes an
+optimization problem. Three leading examples are the Markov Random Fields approach of
+Geman and Geman (1984), the variational formulation of Mumford and Shah (1989), and
+normalized cutsby Shiand Malik(2000).
+Through much of the 1960s, 1970s and 1980s, there were two distinct paradigms in
+which visual recognition was pursued, dictated by different perspectives on what was per-
+ceivedtobetheprimaryproblem. Computervisionresearchonobjectrecognitionlargelyfo-
+cusedonissuesarisingfromtheprojectionofthree-dimensionalobjectsontotwo-dimensional
+images. Theideaofalignment,alsofirstintroducedby Roberts,resurfacedinthe1980sinthe
+work of Lowe (1987) and Huttenlocher and Ullman (1990). Also popular was an approach
+GENERALIZED based on describing shapes in terms of volumetric primitives, with generalized cylinders,
+CYLINDER
+introduced by Tom Binford(1971),proving particularly popular.
+Incontrast,thepatternrecognitioncommunityviewedthe3D-to-2Daspectsoftheprob-
+lem asnot significant. Theirmotivating examples wereindomains such as optical character
+recognition andhandwritten zipcoderecognition wherethe primaryconcern isthatoflearn-
+ing the typical variations characteristic of a class of objects and separating them from other
+classes. See Le Cunetal.(1995)foracomparison ofapproaches.
+In the late 1990s, these two paradigms started to converge, as both sides adopted the
+probabilistic modeling and learning techniques that were becoming popular throughout AI.
+Twolinesofworkcontributed signific

@@ -1,0 +1,31 @@
+acologically ignorant but diagnostically sophisti-
+cated medical student observing a consulting session between a patient and an expert
+internist. After a series of questions and answers, the expert tells the patient to take a
+course of a particular antibiotic. The medical student infers the general rule that that
+particularantibiotic iseffectiveforaparticulartypeof infection.
+These are all cases in which the use of background knowledge allows much faster learning
+thanonemightexpectfromapureinduction program.
+19.2.2 Somegeneral schemes
+In each of the preceding examples, one can appeal to prior knowledge to try to justify the
+generalizations chosen. Wewillnowlookatwhatkindsofentailment constraints areoperat-
+ingineachcase. Theconstraints willinvolve the Background knowledge, inaddition tothe
+Hypothesis andtheobserved Descriptions and Classifications.
+In the case of lizard toasting, the cavemen generalize by explaining the success of the
+pointed stick: it supports the lizard while keeping the hand away from the fire. From this
+explanation,theycaninferageneralrule: thatanylong,rigid,sharpobjectcanbeusedtotoast
+small, soft-bodied edibles. Thiskind ofgeneralization process hasbeencalled explanation-
+EXPLANATION-
+based learning, or EBL.Notice that the general rule follows logically from the background
+BASED
+LEARNING
+knowledgepossessedbythecavemen. Hence,theentailmentconstraintssatisfiedby EB Lare
+thefollowing:
+Hypothesis Descriptions Classifications
+Background Hypothesis .
+Section19.2. Knowledgein Learning 779
+Because EBL uses Equation (19.3), it was initially thought to be a way to learn from ex-
+amples. But because it requires that the background knowledge be sufficient to explain the
+Hypothesis, which in turn explains the observations, the agent does not actually learn any-
+thing factually new from the example. Theagent could have derived the example from what
+it already knew, although that might have required an unreasonable amount of computation.
+EBL is now viewed as

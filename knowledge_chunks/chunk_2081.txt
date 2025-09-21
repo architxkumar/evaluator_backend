@@ -1,0 +1,37 @@
+owsisaspy;wecanwritethisas x K Spy(x),
+Bond
+which in modal logic means that there is an x that, in all accessible worlds, Bond knows to
+beaspy. Thesecondreading isthat Bondjustknowsthatthere isatleastonespy:
+K x Spy(x).
+Bond
+Themodallogic interpretation isthat ineach accessible worldthere isan xthat isaspy, but
+itneednotbethesamexineachworld.
+Now that we have a modal operator for knowledge, we can write axioms for it. First,
+we can say that agents are able to draw deductions; if an agent knows P and knows that P
+implies Q,thentheagentknows Q:
+(K P K (P Q)) K Q.
+a a a
+Fromthis(and afewotherrules about logical identities) we canestablish that K (P P)
+A
+is a tautology; every agent knows every proposition P is either true or false. On the other
+hand,(K P) (K P)isnotatautology; ingeneral, therewillbelotsofpropositions that
+A A
+anagentdoesnotknowtobetrueanddoesnotknowtobefalse.
+It is said (going back to Plato) that knowledge is justified true belief. That is, if it is
+true, if you believe it, and if you have an unassailably good reason, then you know it. That
+meansthatifyouknowsomething, itmustbetrue,andwehavetheaxiom:
+K P P .
+a
+Furthermore, logical agents should be able to introspect on their own knowledge. If they
+knowsomething, thentheyknowthattheyknowit:
+K P K (K P).
+a a a
+Wecandefinesimilaraxiomsforbelief(oftendenotedby B)andothermodalities. However,
+LOGICAL one problem with the modal logic approach is that it assumes logical omniscience on the
+OMNISCIENCE
+part of agents. Thatis, ifan agent knows aset of axioms, then it knows allconsequences of
+those axioms. Thisisonshaky ground evenforthesomewhatabstract notion ofknowledge,
+butitseemsevenworseforbelief, becausebeliefhasmoreconnotation ofreferringtothings
+that are physically represented in the agent, not just potentially derivable. There have been
+attempts to define a form of limited rationality for agents; to say that agents believe those
+assertions that can be derived with the application of no more than k reasonin

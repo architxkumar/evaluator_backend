@@ -1,0 +1,32 @@
+uple the actors to
+the extent possible, so that the complexity of the problem grows linearly with n rather than
+exponentially. Iftheactorshavenointeractionwithoneanother forexample,nactorseach
+playing agameofsolitaire then wecansimplysolve nseparate problems. Iftheactors are
+loosely coupled,canweattainsomething closetothisexponential improvement? Thisis,of
+LOOSELYCOUPLED
+course, a central question in many areas of AI. We have seen it explicitly in the context of
+CS Ps,where tree like constraint graphs yielded efficient solution methods (see page 225),
+as well as in the context of disjoint pattern databases (page 106) and additive heuristics for
+planning (page378).
+Thestandardapproachtolooselycoupledproblemsistopretendtheproblemsarecom-
+pletelydecoupledandthenfixuptheinteractions. Forthetransitionmodel,thismeanswriting
+actionschemasasiftheactorsactedindependently. Let sseehowthisworksforthedoubles
+tennisproblem. Let ssupposethatatonepointinthegame,theteamhasthegoalofreturning
+the ball that has been hit to them and ensuring that at least one of them is covering the net.
+428 Chapter 11. Planningand Actinginthe Real World
+A firstpass at amultiactor definition might look like Figure 11.10. With this definition, itis
+easytoseethatthefollowingjointplanplanworks:
+JOINTPLAN
+PLAN 1:
+A: Go(A,Right Baseline),Hit(A,Ball) B : No Op(B),No Op(B) .
+Problemsarise,however,whenaplanhasbothagentshitting theballatthesametime. Inthe
+real world, this won t work, but the action schema for Hit says that the ball will be returned
+successfully. Technically, the difficulty is that preconditions constrain the state in which an
+action canbeexecuted successfully, butdonotconstrain otheractions thatmightmessitup.
+CONCURRENT Wesolvethisbyaugmenting action schemaswithonenewfeature: a concurrentaction list
+ACTIONLIST
+statingwhichactionsmustormustnotbeexecutedconcurrently. Forexample,the Hit action
+couldbedescribed asfollows:
+Action(Hit(a,Ball),
+CONCURRENT:b(cid:7) a Hit(b,Ball)
+PRECOND:Approaching(Bal

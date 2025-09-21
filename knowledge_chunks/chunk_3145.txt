@@ -1,0 +1,55 @@
+.,885,1069 Domshlak,C.,395,434,1067,1076
+detachment,547 Diplomacy,166 Donati,A.,28,1068
+detailedbalance,537 directedacyclicgraph(DAG),511,552 Donninger,C.,193,1071
+1104 Index
+Doorenbos,R.,358,1071 664 Elisseeff,A.,759,1074
+Doran,J.,110,111,1071 dynamicdecisionnetwork,664,685 ELIZA,1021,1035
+Dorf,R.C.,60,1071 dynamicenvironment,44 Elkan,C.,551,826,1071
+Doucet,A.,605,1070,1071 dynamicprogramming,60,106,110, Ellington,C.,1045,1072
+Dow,R.J.F.,762,1088 111,342,575,685 Elliot,G.L.,228,1075
+Dowling,W.F.,277,1071 adaptive,834,834 835,853,858 Elliott,P.,278,1092
+Downey,D.,885,1072 nonserial,553 Ellsberg,D.,638,1071
+downwardrefinementproperty,410 dynamicstate,975 Ellsbergparadox,620
+Dowty,D.,920,1071 dynamicweighting,111 Elman,J.,921,1071
+Doyle,J.,60,229,471,472,638,1071, Dyson,G.,1042,1071 EMalgorithm,571,816 824
+1082,1092 dystopia,1052 structural,824
+DPLL,261,277,494 Duzeroski,S.,796,800,1071,1078, embodiedcognition,1026
+DPLL-SATISFIABLE?,261 1080 emergentbehavior,430,1002
+Drabble,B.,432,1071 EMNLP,923
+DRAGON,922 E empiricalgradient,132,849
+Draper,D.,433,1072 empiricalloss,712
+E,359
+Drebbel,C.,15 empiricism,6,923
+Dredze,M.,761,1071
+E 0(Englishfragment),890
+Empson,W.,921,1071
+Earley,J.,920,1071
+Dreussi,J.,432,1088 EMV(expectedmonetaryvalue),616
+earlystopping,706
+Dreyfus,H.L.,279,1024,1049,1071 Enderton,H.B.,314,358,1071
+earthquake,511
+Dreyfus,S.E.,109,110,685,1024, English,21,32
+Eastlake,D.E.,192,1074
+1065,1071 fragment,890
+EBL,432,778,780 784,798,799
+Driessens,K.,857,1090 ENIAC,14
+Ecker,K.,432,1066
+drillingrights,629 ensemblelearning,748,748 752
+Eckert,J.,14
+drone,1009 entailment,240,274
+economics,9 10,59,616
+droppingconditions,772 inverse,795
+Edelkamp,S.,111,112,395,1071,
+Drucker,H.,762,967,1080 entailmentconstraint,777,789,798
+1079
+Druzdzel,M.J.,554,1068 entropy,703
+edge(inanimage),936
+DT-AGENT,484
+edgedetection,936 939
+ENUMERATE-ALL,525
+dualgraph,206
+Edinburgh,800,1012
+ENUMERATION-ASK,525
+dualism,6,1027,1041 environment,34,40 46
+Edmonds,D.,16
+Dubois,D.,557,1071 artificia

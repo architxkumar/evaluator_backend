@@ -1,0 +1,26 @@
+ion enabling this type of query to be solved efficiently in all
+cases in logic systems? (Hint: Remember that two cars of the same year and model
+havethesameprice.)
+12.22 One might suppose that the syntactic distinction between unboxed links and singly
+boxed links in semantic networks is unnecessary, because singly boxed links are always at-
+tached to categories; an inheritance algorithm could simply assume that an unboxed link
+attached to a category is intended to apply to all members of that category. Show that this
+argumentisfallacious, givingexamplesoferrorsthatwouldarise.
+12.23 One part of the shopping process that was not covered in this chapter is checking
+forcompatibility between items. Forexample, ifadigital cameraisordered, whataccessory
+batteries, memorycards,andcasesarecompatiblewiththecamera? Writeaknowledgebase
+thatcandetermine thecompatibility ofasetofitemsandsuggest replacements oradditional
+itemsiftheshoppermakesachoicethatisnotcompatible. Theknowledgebaseshouldworks
+withatleastonelineofproductsandextendeasilytootherlines.
+12.24 A complete solution to the problem of inexact matches to the buyer s description
+in shopping is very difficult and requires a full array of natural language processing and
+Exercises 479
+information retrieval techniques. (See Chapters 22 and 23.) One small step is to allow the
+usertospecifyminimumandmaximumvaluesforvariousattributes. Thebuyermustusethe
+followinggrammarforproductdescriptions:
+Description Category Connector Modifier Connector with and , Modifier Attribute Attribute Op Value
+Op Here, Category names a product category, Attribute is some feature such as CPU or price, and Value isthetargetvaluefortheattribute. Sothequery computer withatleasta
+2.5GHz CP Uforunder 500 mustbere-expressed as computer with CPU 2.5GHzand
+price 500. Implementashopping agentthatacceptsdescriptions inthislanguage.
+12.25 Ourdescriptionof Internetshoppingomittedtheall-importantstepofactuallybuying
+the product. Provide a formal logical descript

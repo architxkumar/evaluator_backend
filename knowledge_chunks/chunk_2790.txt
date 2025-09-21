@@ -1,0 +1,26 @@
+mar formalisms, such as
+regularlanguages(Denis,2001)andfinitestateautomata(Parekhand Honavar,2001). Abney
+(2007)isatextbookintroduction tosemi-supervised learning forlanguage models.
+Wordnet(Fellbaum,2001)isapubliclyavailabledictionaryofabout100,000wordsand
+phrases, categorized into parts of speech and linked by semantic relations such as synonym,
+antonym, and part-of. The Penn Treebank (Marcus et al., 1993) provides parse trees for a
+3-million-word corpus of English. Charniak (1996) and Klein and Manning (2001) discuss
+parsing with treebank grammars. The British National Corpus (Leech et al., 2001) contains
+100 million words, and the World Wide Web contains several trillion words; (Brants et al.,
+2007)describe n-grammodelsovera2-trillion-word Webcorpus.
+922 Chapter 23. Natural Languagefor Communication
+Inthe 1930s Petr Troyanskii applied fora patent fora translating machine, but there
+werenocomputersavailabletoimplementhisideas. In March1947,the Rockefeller Founda-
+tion s Warren Weaverwroteto Norbert Wiener,suggesting thatmachinetranslation mightbe
+possible. Drawingonworkincryptography andinformation theory, Weaverwrote, When I
+lookatanarticlein Russian,Isay: Thisisreallywrittenin English,butithasbeencodedin
+strange symbols. I will now proceed to decode. Forthe next decade, the community tried
+to decode in this way. IBM exhibited a rudimentary system in 1954. Bar-Hillel (1960) de-
+scribes the enthusiasm of this period. However, the U.S. government subsequently reported
+(ALPAC,1966) that there isno immediate orpredictable prospect ofuseful machine trans-
+lation. However, limited work continued, and starting in the 1980s, computer power had
+increased tothepointwherethe ALPA Cfindingswerenolonger correct.
+Thebasic statistical approach wedescribe inthe chapter is based on early workby the
+IBM group (Brown et al., 1988, 1993) and the recent work by the ISI and Google research
+groups (Och and Ney, 2004; Zollmann et al., 2008). A textbook introduction on statistical
+machi

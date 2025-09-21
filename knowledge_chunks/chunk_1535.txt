@@ -1,0 +1,41 @@
+t
+explored anemptyset
+loopdo
+if EMPTY?(frontier)thenreturnfailure
+node POP(frontier) choosesthelowest-costnodeinfrontier ifproblem.GOAL-TEST(node.STATE)thenreturn SOLUTION(node)
+addnode.STAT Etoexplored
+foreachaction inproblem.ACTIONS(node.STATE)do
+child CHILD-NODE(problem,node,action)
+ifchild.STAT Eisnotinexplored orfrontier then
+frontier INSERT(child,frontier)
+elseifchild.STAT Eisinfrontier withhigher PATH-COS Tthen
+replacethatfrontier nodewithchild
+Figure 3.14 Uniform-cost search on a graph. The algorithm is identical to the general
+graphsearchalgorithmin Figure3.7,exceptfortheuseofapriorityqueueandtheaddition
+ofanextracheckincaseashorterpathtoafrontierstateisdiscovered.Thedatastructurefor
+frontier needstosupportefficientmembershiptesting,soitshouldcombinethecapabilities
+ofapriorityqueueandahashtable.
+Sibiu Fagaras
+99
+80
+Rimnicu Vilcea
+211
+Pitesti
+97
+101
+Bucharest
+Figure3.15 Partofthe Romaniastatespace,selectedtoillustrateuniform-costsearch.
+may be on a suboptimal path. The second difference is that a test is added in case a better
+pathisfoundtoanodecurrently onthefrontier.
+Bothofthesemodificationscomeintoplayintheexampleshownin Figure3.15,where
+theproblemistogetfrom Sibiuto Bucharest. Thesuccessors of Sibiuare Rimnicu Vilceaand
+Fagaras,withcosts80and99,respectively. Theleast-cost node,Rimnicu Vilcea,isexpanded
+next, adding Pitesti with cost 80 97 177. The least-cost node is now Fagaras, so it is
+expanded, adding Bucharestwithcost99 211 310. Nowagoalnodehasbeengenerated,
+butuniform-costsearchkeepsgoing,choosing Pitestiforexpansionandaddingasecondpath
+Section3.4. Uninformed Search Strategies 85
+to Bucharestwithcost80 97 101 278. Nowthealgorithmcheckstoseeifthisnewpath
+is better than the old one; it is, so the old one is discarded. Bucharest, now with g-cost 278,
+isselected forexpansion andthesolution isreturned.
+It is easy to see that uniform-cost search is optimal in general. First, we observe that
+whenever uniform-cost search selects a node n for expansion, the 

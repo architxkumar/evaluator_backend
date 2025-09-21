@@ -1,0 +1,25 @@
+,
+1984, 1992). Churchland and Churchland (1982) rebut both these types of criticism. The
+Chinese Room has been debated endlessly (Searle, 1980, 1990; Preston and Bishop, 2002).
+We ll just mention here a related work: Terry Bisson s (1990) science fiction story They re
+Made out of Meat, in which alien robotic explorers who visit earth are incredulous to find
+thinking humanbeings whosemindsaremadeofmeat. Presumably, therobotic alien equiv-
+alentof Searlebelieves thathecanthink duetothespecial causal powersofrobotic circuits;
+causalpowersthatmeremeat-brains donotpossess.
+Ethical issues in AI predate the existence of the field itself. I. J. Good s (1965) ul-
+traintelligent machine idea was foreseen a hundred years earlier by Samuel Butler (1863).
+Written four years after the publication of Darwin s On the Origins of Species and at a time
+whenthemostsophisticatedmachinesweresteamengines,Butler sarticleon Darwin Among
+the Machinesenvisioned theultimatedevelopmentofmechanicalconsciousness bynatural
+selection. Thethemewasreiterated by George Dyson(1998)inabookofthesametitle.
+Thephilosophical literature onminds,brains, andrelated topicsislargeanddifficultto
+read without training in the terminology and methods of argument employed. The Encyclo-
+pedia of Philosophy (Edwards, 1967) is an impressively authoritative and very useful aid in
+this process. The Cambridge Dictionary of Philosophy (Audi, 1999) is a shorter and more
+accessible work, and the online Stanford Encyclopedia of Philosophy offers many excellent
+articles and up-to-date references. The MIT Encyclopedia of Cognitive Science (Wilson and
+Keil, 1999) covers the philosophy of mind as well as the biology and psychology of mind.
+There are several general introductions to the philosophical AI question (Boden, 1990;
+Haugeland, 1985; Copeland, 1993; Mc Corduck, 2004; Minsky, 2007). The Behavioral and
+Brain Sciences, abbreviated BBS, is a major journal devoted to philosophical and scientific
+debates about AI and neuroscienc

@@ -1,0 +1,35 @@
+utifthat returns too manyresults,
+itisdifficulttoknowwhattotrynext.
+22.3.1 IR scoring functions
+Most IRsystemshaveabandonedthe Booleanmodelandusemodelsbasedonthestatisticsof
+BM25SCORING wordcounts. Wedescribethe BM25scoringfunction,whichcomesfromthe Okapiproject
+FUNCTION
+of Stephen Robertson and Karen Sparck Jones at London s City College, and has been used
+insearchengines suchastheopen-source Luceneproject.
+Ascoringfunctiontakesadocumentandaqueryandreturnsanumericscore;themost
+relevant documents have the highest scores. In the BM25 function, the score is a linear
+weighted combination ofscores foreach ofthe words that makeup thequery. Threefactors
+affect the weight of a query term: First, the frequency with which a query term appears in
+a document (also known as TF for term frequency). For the query farming in Kansas ,
+documents that mention farming frequently will have higher scores. Second, the inverse
+document frequency oftheterm, or IDF. Theword in appears inalmostevery document,
+soithasahigh document frequency, andthus alowinverse document frequency, and thusit
+isnotasimportanttothequeryas farming or Kansas. Third,thelengthofthedocument.
+Amillion-worddocumentwillprobablymentionallthequery words,butmaynotactuallybe
+aboutthequery. Ashortdocument thatmentionsallthewords isamuchbettercandidate.
+The BM25 function takes all three of these into account. We assume we have created
+an index of the N documents in the corpus so that we can look up TF(q ,d ), the count of
+i j
+the number of times word q appears in document d . We also assume a table of document
+i j
+frequency counts, DF(q ), that gives the number of documents that contain the word q .
+i i
+Then,givenadocument d andaqueryconsisting ofthewords q ,wehave
+j 1:N
+(cid:12)N TF(q ,d ) (k 1)
+BM25(d ,q ) IDF(q ) i j ,
+j 1:N i TF(q ,d ) k (1 b b dj )
+i 1 i j L
+where d is the length of document d in words, and L is the average document length
+j (cid:2) j
+in the corpus: L d N. We have two parameters, k and b, that can be t

@@ -1,0 +1,28 @@
+y special-purpose
+domain (with the addition of domain-specific axioms). This means that no representa-
+tionalissuecanbefinessedorbrushed underthecarpet. In any sufficiently demanding domain, different areas of knowledge must be unified,
+because reasoning and problem solving could involve several areas simultaneously. A
+robotcircuit-repairsystem,forinstance,needstoreason aboutcircuitsintermsofelec-
+trical connectivity and physical layout, and about time, both forcircuit timing analysis
+and estimating labor costs. The sentences describing time therefore must be capable
+ofbeing combinedwiththosedescribing spatial layoutandmustworkequally wellfor
+nanoseconds andminutesandforangstroms andmeters.
+We should say up front that the enterprise of general ontological engineering has so far had
+only limited success. None of the top AI applications (as listed in Chapter 1) make use
+of a shared ontology they all use special-purpose knowledge engineering. Social political
+considerations can make it difficult for competing parties to agree on an ontology. As Tom
+Gruber (2004) says, Every ontology is a treaty a social agreement among people with
+some common motive in sharing. When competing concerns outweigh the motivation for
+sharing, therecanbenocommonontology. Thoseontologies thatdoexisthavebeencreated
+alongfourroutes:
+1. Byateamoftrainedontologist logicians, whoarchitect theontologyandwriteaxioms.
+The CYC systemwasmostlybuiltthisway(Lenatand Guha,1990).
+2. Byimporting categories, attributes, and values from an existing database ordatabases.
+DBPEDIA wasbuiltbyimportingstructured factsfrom Wikipedia (Bizeretal.,2007).
+3. Byparsing text documents and extracting information from them. TEXTRUNNER was
+builtbyreadingalargecorpusof Webpages(Bankoand Etzioni,2008).
+4. By enticing unskilled amateurs to enter commonsense knowledge. The OPENMIND
+system was built by volunteers who proposed facts in English (Singh et al., 2002;
+Chklovskiand Gil,2005).
+440 Chapter 12. Knowledge Representation
+1

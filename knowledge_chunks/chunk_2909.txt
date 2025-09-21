@@ -1,0 +1,29 @@
+ Robotsarebecomingveryeffectivetoolsforgathering
+DRONE
+information indomainsthataredifficult(ordangerous) for peopletoaccess.
+Personal Services. Service is an up-and-coming application domain of robotics. Ser-
+vice robots assist individuals in performing daily tasks. Commercially available domestic
+service robots include autonomous vacuum cleaners, lawn mowers, and golf caddies. The
+world s most popular mobile robot is a personal service robot: the robotic vacuum cleaner
+Roomba, shown in Figure 25.30(a). More than three million Roombas have been sold.
+ROOMBA
+Roombacannavigateautonomously andperform itstaskswithouthumanhelp.
+Other service robots operate in public places, such as robotic information kiosks that
+have been deployed in shopping malls and trade fairs, or in museums as tour guides. Ser-
+vice tasks require human interaction, and theability tocoperobustly withunpredictable and
+dynamicenvironments.
+Entertainment. Robots have begun to conquer the entertainment and toy industry.
+In Figure 25.6(b) we see robotic soccer, a competitive game very much like human soc-
+ROBOTICSOCCER
+cer, but played with autonomous mobile robots. Robot soccer provides great opportunities
+for research in AI, since it raises a range of problems relevant to many other, more serious
+robot applications. Annual robotic soccer competitions have attracted large numbers of AI
+researchers andaddedalotofexcitementtothefieldofrobotics.
+Human augmentation. A final application domain of robotic technology is that of
+human augmentation. Researchers have developed legged walking machines that can carry
+people around, very much like a wheelchair. Several research efforts presently focus on the
+developmentofdevicesthatmakeiteasierforpeopletowalkormovetheirarmsbyproviding
+additionalforcesthroughextraskeletalattachments. Ifsuchdevicesareattachedpermanently,
+1010 Chapter 25. Robotics
+they can be thought of as artificial robotic limbs. Figure 25.30(b) shows a robotic hand that
+mayserveasaprosthetic devicei

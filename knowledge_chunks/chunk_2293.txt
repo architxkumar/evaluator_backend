@@ -1,0 +1,28 @@
+ battery s being empty. A second reading of 0 at t 22 will make
+thisconclusion almostcertain. Ifthetransientfailurethendisappears andthereadingreturns
+to 5 from t 23 onwards, the estimate for the battery level will quickly return to 5, as if by
+magic. Thiscourseofeventsisillustratedintheuppercurveof Figure15.14(a),whichshows
+theexpectedvalueof Battery overtime,usingadiscrete Gaussianerrormodel.
+t
+Despitetherecovery,thereisatime(t 22)whentherobotisconvincedthatitsbattery
+is empty; presumably, then, it should send out a mayday signal and shut down. Alas, its
+oversimplified sensor model has led it astray. How can this be fixed? Consider a familiar
+examplefromeverydayhumandriving: onsharpcurvesorsteephills,one s fueltankempty warninglightsometimesturnson. Ratherthanlookingfortheemergency phone, onesimply
+recallsthatthefuelgaugesometimesgivesaverylargeerrorwhenthefuelissloshingaround
+in the tank. The moral of the story is the following: for the system to handle sensor failure
+properly, thesensormodelmustincludethepossibility offailure.
+The simplest kind of failure model for a sensor allows a certain probability that the
+sensor will return some completely incorrect value, regardless of the true state of the world.
+Forexample,ifthebatterymeterfailsbyreturning 0,wemightsaythat
+P(BMeter 0 Battery 5) 0.03,
+t t
+whichispresumably muchlarger thantheprobability assigned bythesimple Gaussian error
+TRANSIENTFAILURE model. Let s call this the transient failure model. How does it help when we are faced
+MODEL
+with a reading of 0? Provided that the predicted probability of an empty battery, according
+to the readings so far, is much less than 0.03, then the best explanation of the observation
+BMeter 0isthatthesensorhastemporarilyfailed. Intuitively, wecanthinkofthebelief
+21
+aboutthebatterylevelashaving acertainamountof inertia thathelpstoovercometempo-
+rary blips in the meter reading. The upper curve in Figure 15.14(b) shows that the transient
+failuremodelcanhandletransient failureswith

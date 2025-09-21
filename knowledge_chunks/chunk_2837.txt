@@ -1,0 +1,27 @@
+n images. Often, forearms and shins are as small as two to three pixels wide. Body
+parts do not usually appear on their own, and representing what is connected to what could
+bequitepowerful,becausepartsthatareeasytofindmighttelluswheretolookforpartsthat
+aresmallandhardtodetect.
+Inferring thelayoutofhumanbodies inpictures isanimportant taskinvision, because
+the layout of the body often reveals what people are doing. A model called a deformable
+DEFORMABLE templatecantelluswhichconfigurations areacceptable: theelbowcanbendbuttheheadis
+TEMPLATE
+neverjoinedtothefoot. Thesimplestdeformabletemplatemodelofapersonconnectslower
+armstoupperarms,upperarmstothetorso,andsoon. Therearerichermodels: forexample,
+958 Chapter 24. Perception
+we could represent the fact that left and right upper arms tend to have the same color and
+texture,asdoleftandrightlegs. Theserichermodelsremaindifficulttoworkwith,however.
+24.5.1 The geometry ofbodies: Finding arms andlegs
+For the moment, we assume that we know what the person s body parts look like (e.g., we
+know the color and texture of the person s clothing). We can model the geometry of the
+body asatreeofeleven segments (upperandlowerleftandright armsandlegsrespectively,
+a torso, a face, and hair on top of the face) each of which is rectangular. We assume that
+theposition andorientation (pose)oftheleftlowerarmisindependent ofallothersegments
+POSE
+given the pose of the left upper arm; that the pose of the left upper arm is independent of
+all segments given the pose of the torso; and extend these assumptions in the obvious way
+to include the right arm and the legs, the face, and the hair. Such models are often called cardboardpeople models. Themodelformsatree,whichisusuallyrootedatthetorso. We
+willsearchtheimageforthebestmatchtothiscardboardpersonusinginferencemethodsfor
+atree-structured Bayesnet(see Chapter14).
+There are two criteria for evaluating a configuration. First, an image rectangle should
+looklikeitssegment. Forthemoment,wewillremainva

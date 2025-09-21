@@ -1,0 +1,32 @@
+ry expected attribute has one
+target filler then the decision is easy: we have an instance of the desired relation. If there
+aremultiple fillers,weneedtodecide whichtochoose, aswediscussed withtemplate-based
+systems. HM Ms have the advantage of supplying probability numbers that can help make
+thechoice. Ifsometargets aremissing,weneedtodecideifthisisaninstance ofthedesired
+relationatall,orifthetargetsfoundarefalsepositives. Amachinelearningalgorithmcanbe
+trainedtomakethischoice.
+22.4.3 Conditionalrandom fields forinformationextraction
+One issue with HM Ms for the information extraction task is that they model a lot of prob-
+abilities that we don t really need. An HMM is a generative model; it models the full joint
+probability ofobservations andhiddenstates,andthuscanbeusedtogeneratesamples. That
+is, we can use the HMM model not only to parse a text and recover the speaker and date,
+butalsotogenerate arandom instance ofatextcontaining aspeakerandadate. Sincewe re
+not interested in that task, it is natural to ask whether we might be better off with a model
+that doesn t bother modeling that possibility. All we need in order to understand a text is a
+discriminative model, one that models the conditional probability of the hidden attributes
+given the observations (the text). Given a text e , the conditional model finds the hidden
+1:N
+statesequence X thatmaximizes P(X e ).
+1:N 1:N 1:N
+Modeling this directly gives us some freedom. We don t need the independence as-
+sumptions of the Markov model we can have an x that is dependent on x . A framework
+t 1
+CONDITIONAL forthistype of modelis the conditional random field,or CRF,which models aconditional
+RANDOMFIELD
+probability distribution of a set of target variables given a set of observed variables. Like
+Bayesiannetworks,CR Fscanrepresentmanydifferentstructuresofdependenciesamongthe
+LINEAR-CHAIN
+variables. One common structure is the linear-chain conditional random field for repre-
+CONDITIONAL
+RANDOMFIELD
+senting Markovdepende

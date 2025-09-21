@@ -1,0 +1,31 @@
+outheast.
+Keeping the HMM model fixed, explore the effect on localization and path accuracy as the
+southeasterly tendency increases, fordifferent valuesof (cid:2).
+15.8 Consideraversionofthevacuumrobot(page582)thathasthepolicyofgoingstraight
+foraslong as itcan; only when itencounters an obstacle does itchange toanew (randomly
+selected) heading. Tomodelthisrobot, eachstate inthemodelconsists ofa(location, head-
+ing)pair. Implementthismodelandseehowwellthe Viterbialgorithmcantrackarobotwith
+this model. The robot s policy is more constrained than the random-walk robot; does that
+meanthatpredictions ofthemostlikelypatharemoreaccurate?
+15.9 This exercise is concerned with filtering in an environment with no landmarks. Con-
+sideravacuumrobotinanemptyroom,representedbyann mrectangulargrid. Therobot s
+location is hidden; theonly evidence available totheobserver isanoisy location sensor that
+gives an approximation to the robot s location. If the robot is at location (x,y) then with
+probability .1 the sensor gives the correct location, with probability .05 each it reports one
+of the 8 locations immediately surrounding (x,y), with probability .025 each it reports one
+of the 16 locations that surround those 8, and with the remaining probability of .1 it reports no reading. The robot s policy is to pick a direction and follow it with probability .8 on
+eachstep;therobotswitchestoarandomlyselectednewheadingwithprobability .2(orwith
+608 Chapter 15. Probabilistic Reasoning over Time
+S S
+t t 1
+X X
+t t 1
+Z Z
+t t 1
+Figure 15.21 A Bayesian network representation of a switching Kalman filter. The
+switching variable St is a discrete state variable whose value determines the transition
+model for the continuous state variables Xt. For any discrete state i, the transition model
+P(Xt 1 Xt,St i) isa linear Gaussian model,just asin a regular Kalmanfilter. Thetran-
+sitionmodelforthediscretestate,P(St 1 St),canbethoughtofasamatrix,asinahidden
+Markovmodel.
+probability 1ifitencounters awall). Imple

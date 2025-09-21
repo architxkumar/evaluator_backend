@@ -1,0 +1,34 @@
+Fordeterministic actions, theset
+ofstatesthatmightbereached is
+b (cid:2) RESULT(b,a) s (cid:2) : s (cid:2) RESULTP (s,a)ands b . (4.4)
+(cid:2)
+Withdeterministic actions, b isneverlargerthan b. Withnondeterminism, wehave
+b (cid:2) RESULT(b,a) (cid:15)
+s (cid:2) : s (cid:2) RESULTSP (s,a)ands b RESULTSP (s,a),
+s b
+which may be larger than b, as shown in Figure 4.13. The process of generating
+(cid:2)
+the new belief state after the action is called the prediction step; the notation b PREDICTION
+PREDICTP (b,a)willcomeinhandy. Goaltest: The agent wants a plan that is sure to work, which means that a belief state
+satisfies the goal only if all the physical states in it satisfy GOAL-TESTP . The agent
+mayaccidentally achievethegoalearlier, butitwon t knowthatithasdoneso. Path cost: This is also tricky. If the same action can have different costs in different
+states, then the cost of taking an action in a given belief state could be one of several
+values. (Thisgives risetoanew class ofproblems, which weexplore in Exercise 4.9.)
+For now we assume that the cost of an action is the same in all states and so can be
+transferred directlyfromtheunderlying physical problem.
+140 Chapter 4. Beyond Classical Search
+1
+1 2 1 2
+3 4 3 4
+3
+(a) (b)
+Figure 4.13 (a) Predicting the next belief state for the sensorless vacuum world with a
+deterministicaction,Right. (b)Predictionforthesamebeliefstateandactionintheslippery
+versionofthesensorlessvacuumworld.
+Figure 4.14 shows the reachable belief-state space for the deterministic, sensorless vacuum
+world. Thereareonly12reachable beliefstatesoutof 28 256possible beliefstates.
+Thepreceding definitions enabletheautomaticconstruction ofthebelief-state problem
+formulation from the definition of the underlying physical problem. Once this is done, we
+can apply any of the search algorithms of Chapter 3. In fact, we can do a little bit more
+than that. In ordinary graph search, newly generated states are tested to see if they are
+identical toexisting states. 

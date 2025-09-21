@@ -1,0 +1,27 @@
+nwhichalltheassumptions
+inoneoftheassumption setshold.
+Truth maintenance systems also provide a mechanism for generating explanations.
+EXPLANATION
+Technically, an explanation of a sentence P is a set of sentences E such that E entails P.
+If the sentences in E are already known to be true, then E simply provides a sufficient ba-
+sis for proving that P must be the case. But explanations can also include assumptions ASSUMPTION
+sentences that are not known to be true, but would suffice to prove P if they were true. For
+example, one might not have enough information to prove that one s car won t start, but a
+reasonableexplanationmightincludetheassumptionthatthebatteryisdead. This,combined
+with knowledge of how cars operate, explains the observed nonbehavior. In most cases, we
+willpreferanexplanation E thatisminimal,meaningthatthereisnopropersubsetof E that
+isalsoanexplanation. An ATM Scangenerateexplanations forthe carwon tstart problem
+bymakingassumptions (such as gasincar or battery dead ) inanyorderwelike, evenif
+some assumptions are contradictory. Then we look at the label for the sentence car won t
+start toreadoffthesetsofassumptions thatwouldjustify thesentence.
+Theexact algorithms used toimplement truth maintenance systems arealittle compli-
+cated,andwedonotcoverthemhere. Thecomputationalcomplexityofthetruthmaintenance
+problem is at least as great as that of propositional inference that is, NP-hard. Therefore,
+you should not expect truth maintenance to be a panacea. When used carefully, however, a
+TMS can provide a substantial increase in the ability of a logical system to handle complex
+environments andhypotheses.
+12.7 THE INTERNET SHOPPING WORLD
+Inthisfinalsection weputtogether allwehave learned toencode knowledge forashopping
+research agent that helps a buyer find product offers on the Internet. The shopping agent is
+given a product description by the buyer and has the task of producing a list of Web pages
+that offer such a product for sale, and ranking which o

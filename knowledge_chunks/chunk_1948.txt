@@ -1,0 +1,43 @@
+ometimes
+SETSEMANTICS
+easiertodealwith.
+Actionsaredescribedbyasetofactionschemasthatimplicitlydefinethe ACTIONS(s)
+and RESULT(s,a)functionsneededtodoaproblem-solvingsearch. Wesawin Chapter7that
+anysystemforactiondescriptionneedstosolvetheframeproblem tosaywhatchangesand
+what stays the same as the result ofthe action. Classical planning concentrates on problems
+where mostactions leave mostthings unchanged. Think ofaworld consisting ofabunch of
+objects onaflatsurface. Theaction ofnudging anobject causes that object tochange itslo-
+cationbyavector . Aconcisedescriptionoftheactionshouldmentiononly ;itshouldn t
+havetomentionalltheobjectsthatstayinplace. PDDL doesthatbyspecifying theresultof
+anactionintermsofwhatchanges;everything thatstaysthe sameisleftunmentioned.
+A set of ground (variable-free) actions can be represented by a single action schema.
+ACTIONSCHEMA
+Theschemaisaliftedrepresentation it liftsthelevelofreasoning frompropositional logic
+to a restricted subset of first-order logic. For example, here is an action schema for flying a
+planefromonelocation toanother:
+Action(Fly(p,from,to),
+PRECOND:At(p,from) Plane(p) Airport(from) Airport(to)
+EFFECT: At(p,from) At(p,to))
+The schema consists of the action name, a list of all the variables used in the schema, a
+precondition and an effect. Although we haven t said yet how the action schema converts
+PRECONDITION
+into logical sentences, think of the variables as being universally quantified. We are free to
+EFFECT
+choosewhatevervalueswewanttoinstantiatethevariables. Forexample,hereisoneground
+1 PDD Lwasderivedfromtheoriginal STRIP Splanninglanguage(Fikesand Nilsson,1971). whichisslightly
+morerestrictedthan PDDL:STRIP Spreconditionsandgoalscannotcontainnegativeliterals.
+368 Chapter 10. Classical Planning
+actionthatresultsfromsubstituting valuesforallthevariables:
+Action(Fly(P ,SFO,JFK),
+1
+PRECOND:At(P
+1
+,SFO) Plane(P
+1
+) Airport(SFO) Airport(JFK)
+EFFECT: At(P
+1
+,SFO) At(P
+1
+,JFK))
+Theprecondition andeffectofanactionareeachc

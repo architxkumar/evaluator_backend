@@ -1,0 +1,34 @@
+olumn.)
+3.6 Givea complete problem formulation foreach of the following. Choose aformulation
+thatisprecise enoughtobeimplemented.
+a. Using only four colors, you have to color a planar map in such a way that no two
+adjacentregionshavethesamecolor.
+b. A 3-foot-tall monkey is in a room where some bananas are suspended from the 8-foot
+ceiling. Hewould like to get the bananas. Theroom contains twostackable, movable,
+climbable3-foot-high crates.
+114 Chapter 3. Solving Problemsby Searching
+G
+S
+Figure3.31 Ascenewithpolygonalobstacles. S and Garethestartandgoalstates.
+c. Youhave aprogram that outputs the message illegal input record when feda certain
+file of input records. You know that processing of each record is independent of the
+otherrecords. Youwanttodiscoverwhatrecordisillegal.
+d. Youhavethreejugs,measuring12gallons,8gallons,and3gallons,andawaterfaucet.
+Youcanfillthejugsuporemptythemoutfromonetoanotherorontotheground. You
+needtomeasureoutexactlyonegallon.
+3.7 Considertheproblemoffindingtheshortestpathbetweentwopointsonaplanethathas
+convex polygonal obstacles as shown in Figure 3.31. This is an idealization of the problem
+thatarobothastosolvetonavigateinacrowdedenvironment.
+a. Suppose the state space consists of all positions (x,y) in the plane. How many states
+arethere? Howmanypathsaretheretothegoal?
+b. Explainbrieflywhytheshortestpathfromonepolygonvertextoanyotherinthescene
+must consist of straight-line segments joining some of the vertices of the polygons.
+Defineagoodstatespacenow. Howlargeisthisstatespace?
+c. Definethenecessaryfunctionstoimplementthesearchproblem,includingan ACTIONS
+functionthattakesavertexasinputandreturnsasetofvectors,eachofwhichmapsthe
+currentvertextooneoftheverticesthatcanbereachedinastraightline. (Donotforget
+the neighbors on the same polygon.) Use the straight-line distance for the heuristic
+function.
+d. Applyoneormoreofthealgorithms inthischaptertosolvea rangeofproblemsinthe
+domain,andcommentontheirperformance.
+3.8 Onpage 68, wesaid that wew

@@ -1,0 +1,26 @@
+ely ordifferlittle from threats posed
+by unintelligent technologies. One threat in particular is worthy of further consider-
+ation: that ultraintelligent machines might lead to a future that is very different from
+today we may not like it, and at that point we may not have a choice. Such consid-
+erations lead inevitably to the conclusion that we must weigh carefully, and soon, the
+possibleconsequences of AIresearch.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Sources for the various responses to Turing s 1950 paper and for the main critics of weak
+AIweregiveninthechapter. Although itbecamefashionable inthepost-neural-network era
+Bibliographical and Historical Notes 1041
+to deride symbolic approaches, not all philosophers are critical of GOFAI. Someare, in fact,
+ardent advocates and even practitioners. Zenon Pylyshyn (1984) has argued that cognition
+can best be understood through a computational model, not only in principle but also as a
+way of conducting research at present, and has specifically rebutted Dreyfus s criticisms of
+the computational model of human cognition (Pylyshyn, 1974). Gilbert Harman (1983), in
+analyzingbeliefrevision,makesconnections with AIresearchontruthmaintenancesystems.
+Michael Bratmanhasappliedhis belief-desire-intention modelofhumanpsychology(Brat-
+man, 1987) to AI research on planning (Bratman, 1992). At the extreme end of strong AI,
+Aaron Sloman (1978, p. xiii) has even described as racialist the claim by Joseph Weizen-
+baum(1976)thatintelligent machinescanneverberegarded aspersons.
+Proponents of the importance of embodiment in cognition include the philosophers
+Merleau-Ponty, whose Phenomenology of Perception (1945) stressed the importance of the
+bodyandthesubjectiveinterpretationofrealityaffordedbyoursenses,and Heidegger,whose
+Being and Time(1927) asked what it means to actually be an agent, and criticized all of the
+historyofphilosophyfortakingthisnotionforgranted. Inthecomputerage,Alva Noe(2009)
+and Andy Clark (1998, 2008) propose that our 

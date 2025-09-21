@@ -1,0 +1,33 @@
+slanguage.
+Sometimes there is no choice that can yield a completely satisfactory translation. For
+example, an Italian love poem that uses the masculine ilsole (sun) and feminine laluna (moon) to symbolize two lovers will necessarily be altered when translated into German,
+wherethegendersarereversed,andfurtheralteredwhentranslatedintoalanguagewherethe
+gendersarethesame.7
+23.4.1 Machinetranslationsystems
+All translation systems must model the source and target languages, but systems vary in the
+typeofmodelstheyuse. Somesystemsattempttoanalyzethesourcelanguagetextalltheway
+into an interlingua knowledge representation and then generate sentences in the target lan-
+guagefromthatrepresentation. Thisisdifficultbecause it involves threeunsolvedproblems:
+creatingacompleteknowledgerepresentation ofeverything; parsingintothatrepresentation;
+andgenerating sentences fromthatrepresentation.
+Othersystemsarebasedonatransfermodel. Theykeepadatabaseoftranslationrules
+TRANSFERMODEL
+(orexamples), and wheneverthe rule (orexample) matches, they translate directly. Transfer
+can occur at the lexical, syntactic, or semantic level. For example, a strictly syntactic rule
+maps English Adjective Noun to French Noun Adjective . A mixed syntactic and lexical
+rulemaps French S etpuis S to English S andthen S . Figure23.12diagramsthe
+1 2 1 2
+varioustransferpoints.
+7 Warren Weaver(1949)reportsthat Max Zeldnerpointsoutthatthegreat Hebrewpoet H.N.Bialikoncesaid
+thattranslation islikekissingthebridethroughaveil. Section23.4. Machine Translation 909
+Interlingua Semantics
+Attraction(Named John, Named Mary, High)
+English Semantics French Semantics
+Loves(John, Mary) Aime(Jean, Marie)
+English Syntax French Syntax
+S(NP(John), VP(loves, NP(Mary))) S(NP(Jean), VP(aime, NP(Marie)))
+English Words French Words
+John loves Mary Jean aime Marie
+Figure 23.12 The Vauquois triangle: schematic diagram of the choices for a machine
+translationsystem (Vauquois,1968). We startwith English textatthe top. An interlingua-
+base

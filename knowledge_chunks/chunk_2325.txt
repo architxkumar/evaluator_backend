@@ -1,0 +1,41 @@
+s intothestatedescription; for
+example, Have 10andgambled couldbepreferredto Have 10anddidn tgamble. 614 Chapter 16. Making Simple Decisions
+A
+p
+A B
+q
+1 1 (1 p)
+(1 q)
+C
+is equivalent to
+A
+B C p
+(1 p)q
+B
+1 (1 p)(1 q) C
+(a) (b)
+Figure 16.1 (a) A cycle of exchanges showing that the nontransitive preferences A B C Aresultinirrationalbehavior.(b)Thedecomposabilityaxiom.
+Inotherwords,oncetheprobabilitiesandutilitiesofthepossibleoutcomestatesarespecified,
+theutilityofacompoundlotteryinvolvingthosestatesiscompletelydetermined. Becausethe
+outcomeofanondeterministic actionisalottery,itfollowsthatanagentcanactrationally thatis,consistentlywithitspreferences onlybychoosinganactionthatmaximizesexpected
+utilityaccording to Equation(16.1).
+Theprecedingtheoremsestablishthatautilityfunctionexistsforanyrationalagent,but
+theydonotestablish thatitisunique. Itiseasytosee,infact,thatanagent sbehaviorwould
+notchangeifitsutilityfunction U(S)weretransformed according to
+(cid:2)
+U (S) a U(S) b, (16.2)
+where a and b are constants and a 0; an affine transformation.4 This fact was noted in
+Chapter5fortwo-playergamesofchance;here,weseethatit iscompletelygeneral.
+As in game-playing, in a deterministic environment an agent just needs a preference
+ranking on states the numbers don t matter. This is called a value function or ordinal
+VALUEFUNCTION
+ORDINALUTILITY utilityfunction.
+FUNCTION
+It is important to remember that the existence of a utility function that describes an
+agent spreferencebehaviordoesnotnecessarilymeanthat theagentisexplicitlymaximizing
+thatutilityfunctioninitsowndeliberations. Asweshowedin Chapter2,rationalbehaviorcan
+be generated in any number of ways. By observing a rational agent s preferences, however,
+anobservercanconstruct theutilityfunction thatrepresents whattheagentisactually trying
+toachieve(eveniftheagentdoesn t knowit).
+4 Inthissense,utilitiesresembletemperatures:atemperaturein Fahrenheitis1.8timesthe Celsiustemperature
+plus32.Yougetthesameresultsineithermeasurementsys

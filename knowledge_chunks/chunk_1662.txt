@@ -1,0 +1,50 @@
+ctory,asillustrated
+in Figure5.8(a). Mathematically, thiskindofevaluation functioniscalledaweightedlinear
+WEIGHTEDLINEAR functionbecauseitcanbeexpressed as
+FUNCTION
+(cid:12)n
+EVAL(s) w
+1
+f
+1
+(s) w
+2
+f
+2
+(s) w
+n
+f
+n
+(s) w
+i
+f
+i
+(s),
+i 1
+whereeach w isaweight andeach f isafeature oftheposition. Forchess, the f could be
+i i i
+thenumbers ofeach kind ofpiece ontheboard, andthe w could bethevalues ofthe pieces
+i
+(1forpawn,3forbishop, etc.).
+Adding up the values of features seems like a reasonable thing to do, but in fact it
+involves a strong assumption: that the contribution of each feature is independent of the
+values of the other features. Forexample, assigning the value 3 to a bishop ignores the fact
+that bishops are more powerful in the endgame, when they have a lot of space to maneuver.
+Section5.4. Imperfect Real-Time Decisions 173
+(a) White to move (b) White to move
+Figure5.8 Twochesspositionsthatdifferonlyinthepositionoftherookatlowerright.
+In(a), Black has an advantageofa knightand two pawns, whichshouldbe enoughto win
+thegame. In(b),Whitewillcapturethequeen,givingitanadvantagethatshouldbestrong
+enoughtowin.
+Forthisreason,currentprogramsforchessandothergamesalsousenonlinearcombinations
+offeatures. Forexample,apairofbishopsmightbeworthslightlymorethantwicethevalue
+ofasinglebishop,andabishopisworthmoreintheendgame(thatis,whenthemovenumber
+featureishighorthe numberofremainingpiecesfeatureislow).
+Theastutereaderwillhavenoticedthatthefeaturesandweightsarenotpartoftherules
+ofchess! Theycomefromcenturiesofhumanchess-playingexperience. Ingameswherethis
+kind of experience is not available, the weights of the evaluation function can be estimated
+by the machine learning techniques of Chapter 18. Reassuringly, applying these techniques
+tochesshasconfirmedthatabishopisindeedworthaboutthreepawns.
+5.4.2 Cutting offsearch
+The next step is to modify ALPHA-BETA-SEARCH so that it will call the heuristic EVAL
+function when it is appropriate to cut off the search. We replace the two l

@@ -1,0 +1,30 @@
+epathcostisthenumberofstepsinthepath.
+What abstractions have weincluded here? The actions are abstracted to their beginning and
+finalstates,ignoringtheintermediatelocationswheretheblockissliding. Wehaveabstracted
+away actions such as shaking the board when pieces get stuck and ruled out extracting the
+pieceswithaknifeandputtingthembackagain. Weareleftwithadescriptionoftherulesof
+thepuzzle, avoiding allthedetailsofphysicalmanipulations.
+SLIDING-BLOCK The 8-puzzle belongs to the family of sliding-block puzzles, which are often used as
+PUZZLES
+test problems for new search algorithms in AI. This family is known to be NP-complete,
+so one does not expect to find methods significantly better in the worst case than the search
+algorithmsdescribedinthischapterandthenext. The8-puzzlehas9! 2 181,440reachable
+statesandiseasilysolved. The15-puzzle(ona4 4board)hasaround1.3trillionstates,and
+randominstancescanbesolvedoptimallyinafewmillisecondsbythebestsearchalgorithms.
+The24-puzzle (on a 5 5board) has around 1025 states, and random instances take several
+hourstosolveoptimally.
+The goal of the 8-queens problem is to place eight queens on a chessboard such that
+8-QUEENSPROBLEM
+no queen attacks any other. (A queen attacks any piece in the same row, column or diago-
+nal.) Figure3.5shows anattempted solution thatfails: the queen inthe rightmost column is
+attacked bythequeenatthetopleft.
+72 Chapter 3. Solving Problemsby Searching
+Figure3.5 Almostasolutiontothe8-queensproblem.(Solutionisleftasanexercise.)
+Although efficient special-purpose algorithms exist forthis problem and forthe whole
+n-queens family, it remains auseful test problem forsearch algorithms. Thereare twomain
+INCREMENTAL kindsofformulation. Anincrementalformulationinvolvesoperatorsthataugmentthestate
+FORMULATION
+description, starting with an empty state; for the 8-queens problem, this means that each
+COMPLETE-STATE action adds a queen to the state. A complete-state formulation starts with all 8 queens on
+FORMULATION
+thebo

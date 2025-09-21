@@ -1,0 +1,32 @@
+ denotes a list of three elements. first rest denotes a list formed by
+addingfirst tothelistrest. In Lisp,thisistheconsfunction. Sets: x,y,z denotesasetofthreeelements. x : p(x) denotesthesetofallelements
+xforwhichp(x)istrue. Arrays start at 1: Unless stated otherwise, the first index of an array is 1 as in usual
+mathematicalnotation, not0,asin Javaand C.
+B.3 ONLINE HELP
+Most of the algorithms in the book have been implemented in Java, Lisp, and Python at our
+onlinecoderepository:
+aima.cs.berkeley.edu
+The same Web site includes instructions for sending comments, corrections, or suggestions
+forimprovingthebook,andforjoiningdiscussion lists.
+Bibliography
+Thefollowingabbreviationsareusedforfrequentlycitedconferencesandjournals:
+AAAI Proceedingsofthe AAAI Conferenceon Artificial Intelligence
+AAMAS Proceedingsofthe International Conferenceon Autonomous Agentsand Multi-agent Systems
+ACL Proceedingsofthe Annual Meetingofthe Associationfor Computational Linguistics
+AIJ Artificial Intelligence
+AI Mag AI Magazine
+AIPS Proceedingsofthe International Conferenceon AI Planning Systems
+BBS Behavioraland Brain Sciences
+CACM Communicationsofthe Associationfor Computing Machinery
+COGSCI Proceedingsofthe Annual Conferenceofthe Cognitive Science Society
+COLING Proceedingsofthe International Conferenceon Computational Linguistics
+COLT Proceedingsofthe Annual ACM Workshopon Computational Learning Theory
+CP Proceedingsofthe International Conferenceon Principlesand Practiceof Constraint Programming
+CVPR Proceedingsofthe IEEE Conferenceon Computer Visionand Pattern Recognition
+EC Proceedingsofthe ACM Conferenceon Electronic Commerce
+ECAI Proceedingsofthe European Conferenceon Artificial Intelligence
+ECCV Proceedingsofthe European Conferenceon Computer Vision
+ECML Proceedingsofthe The European Conferenceon Machine Learning
+ECP Proceedingsofthe European Conferenceon Planning
+FGCS Proceedingsofthe International Conferenceon Fifth Generation Computer Systems
+FOCS Proceedingsofthe Annual Symposi

@@ -1,0 +1,48 @@
+lement move generators and evaluation functions forone ormore of the following
+games: Kalah,Othello, checkers, andchess.
+b. Constructageneralalpha beta game-playing agent.
+c. Compare theeffect ofincreasing search depth, improving moveordering, and improv-
+ingtheevaluationfunction. Howclosedoesyoureffectivebranchingfactorcometothe
+idealcaseofperfectmoveordering?
+d. Implementaselectivesearchalgorithm,suchas B (Berliner,1979),conspiracynumber
+search (Mc Allester, 1988), or MGSS (Russell and Wefald, 1989) and compare its
+performance to A .
+Exercises 199
+n
+1
+n
+2
+n
+j
+Figure5.18 Situationwhenconsideringwhethertoprunenodenj.
+5.12 Describe how the minimax and alpha beta algorithms change for two-player, non-
+zero-sumgamesinwhicheachplayerhasadistinctutilityfunction andbothutilityfunctions
+areknowntobothplayers. Iftherearenoconstraintsonthetwoterminalutilities,isitpossible
+for any node to be pruned by alpha beta? What if the player s utility functions on any state
+differbyatmostaconstant k,makingthegamealmostcooperative?
+5.13 Developaformalproofofcorrectness foralpha betapruning. Todothis,considerthe
+situation shown in Figure 5.18. The question is whether to prune node n , which is a max-
+j
+node and a descendant of node n . The basic idea is to prune it if and only if the minimax
+1
+valueofn canbeshowntobeindependent ofthevalueofn .
+1 j
+a. Moden takesontheminimumvalueamongitschildren: n min(n ,n ,...,n ).
+1 1 2 21 2b2
+Findasimilarexpression forn andhenceanexpression forn intermsofn .
+2 1 j
+b. Letl betheminimum(ormaximum)valueofthenodestotheleftofnoden atdepthi,
+i i
+whoseminimaxvalueisalreadyknown. Similarly,letr betheminimum(ormaximum)
+i
+valueoftheunexplored nodes totherightof n atdepthi. Rewriteyourexpression for
+i
+n intermsofthel andr values.
+1 i i
+c. Nowreformulate the expression to show that in orderto affect n , n must not exceed
+1 j
+acertainboundderivedfromthe l values.
+i
+d. Repeattheprocessforthecasewhere n isamin-node.
+j
+5.14 Provethatalpha betapruningtakestime O(2m 2)

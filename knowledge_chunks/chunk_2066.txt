@@ -1,0 +1,32 @@
+apples in the bag, but this would be
+amistake because thesetisan abstract mathematical concept thathas elements but does not
+have weight. Instead, we need a new concept, which we will call a bunch. Forexample, if
+BUNCH
+theapplesare Apple ,Apple ,and Apple ,then
+1 2 3
+Bunch Of( Apple ,Apple ,Apple )
+1 2 3
+denotesthecompositeobjectwiththethreeapplesasparts(notelements). Wecanthenusethe
+bunchasanormal,albeitunstructured,object. Noticethat Bunch Of( x ) x. Furthermore,
+Bunch Of(Apples)isthecompositeobjectconsisting ofallapples not tobeconfusedwith
+Apples,thecategory orsetofallapples.
+Wecan define Bunch Of in terms of the Part Of relation. Obviously, each element of
+sispartof Bunch Of(s): x x s Part Of(x,Bunch Of(s)).
+Furthermore, Bunch Of(s) is the smallest object satisfying this condition. In other words,
+Bunch Of(s)mustbepartofanyobjectthathasalltheelementsofsasparts: y x x s Part Of(x,y) Part Of(Bunch Of(s),y).
+LOGICAL These axioms are an example of a general technique called logical minimization, which
+MINIMIZATION
+meansdefininganobjectasthesmallestonesatisfying certain conditions.
+Section12.2. Categoriesand Objects 443
+NATURAL KINDS
+Some categories have strict definitions: an object is a triangle if and only if it is
+a polygon with three sides. On the other hand, most categories in the real world
+havenoclear-cutdefinition;thesearecallednaturalkindcategories. Forexample,
+tomatoestendtobeadullscarlet; roughly spherical; withanindentation atthetop
+where the stem was; about two to four inches in diameter; with a thin but tough
+skin; and with flesh, seeds, and juice inside. There is, however, variation: some
+tomatoes are yellow or orange, unripe tomatoes are green, some are smaller or
+larger than average, and cherry tomatoes are uniformly small. Rather than having
+acomplete definition of tomatoes, wehave aset offeatures that serves toidentify
+objects that are clearly typical tomatoes, but might not be able to decide forother
+objects. (Couldtherebeatomatothatisfuzzylikea

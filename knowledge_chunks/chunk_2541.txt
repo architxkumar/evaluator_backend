@@ -1,0 +1,21 @@
+training-setsize. Whentherearemultiplemodelstochoosefrom, cross-validation canbeusedtoselect
+amodelthatwillgeneralize well. Sometimes not all errors are equal. A loss function tells us how bad each error is; the
+goalisthentominimizelossoveravalidation set. Computational learning theory analyzes the sample complexity and computational
+complexityofinductive learning. Thereisatradeoff betweentheexpressiveness ofthe
+hypothesis language andtheeaseoflearning. Linear regression is a widely used model. The optimal parameters of a linear regres-
+sionmodelcanbefoundbygradientdescent search,orcomputedexactly. Alinearclassifierwithahardthreshold also knownasa perceptron can betrained
+by a simple weight update rule to fit data that are linearly separable. In other cases,
+therulefailstoconverge.
+758 Chapter 18. Learningfrom Examples Logistic regression replaces the perceptron s hard threshold with a soft threshold de-
+fined by a logistic function. Gradient descent works well even for noisy data that are
+notlinearly separable. Neural networks represent complex nonlinear functions with a network of linear-
+threshold units. term Multilayer feed-forward neural networks can represent any func-
+tion, given enough units. The back-propagation algorithm implements a gradient de-
+scentinparameterspacetominimizetheoutputerror. Nonparametric models use all the data to make each prediction, rather than trying to
+summarize the data first with a few parameters. Examples include nearest neighbors
+andlocallyweightedregression. Support vector machines find linear separators with maximum margin to improve
+the generalization performance of the classifier. Kernel methodsimplicitly transform
+theinputdataintoahigh-dimensional spacewherealinearseparatormayexist,evenif
+theoriginal dataarenon-separable. Ensemble methods such as boosting often perform better than individual methods. In
+onlinelearningwecanaggregatetheopinionsofexpertstocomearbitrarily closetothe
+bestexpert sperformance, evenwhenthedistribut

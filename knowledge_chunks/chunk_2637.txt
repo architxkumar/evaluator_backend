@@ -1,0 +1,29 @@
+stakenplace.
+20.3.4 The general form ofthe EM algorithm
+We have seen several instances of the EM algorithm. Each involves computing expected
+values ofhidden variables foreach example and then recomputing the parameters, using the
+expected values as if they were observed values. Let x be all the observed values in all the
+examples, let Z denote all the hidden variables for all the examples, and let be all the
+parameters fortheprobability model. Thenthe EMalgorithm is
+(cid:12) (i 1) argmax P(Z z x, (i))L(x,Z z ). z
+Thisequationisthe EMalgorithminanutshell. The E-stepisthecomputationofthesumma-
+tion,whichistheexpectationoftheloglikelihoodofthe completed datawithrespecttothe
+distribution P(Z z x, (i)),whichistheposterioroverthehiddenvariables,giventhedata.
+The M-step is the maximization of this expected log likelihood with respect to the parame-
+ters. Formixturesof Gaussians,thehiddenvariablesarethe Z s,where Z is1ifexamplej
+ij ij
+wasgeneratedbycomponent i. For Bayesnets,Z isthevalueofunobserved variable X in
+ij i
+examplej. For HM Ms,Z isthestateofthesequence inexamplej attimet. Startingfrom
+jt
+the general form, itis possible toderive an EM algorithm for aspecific application once the
+appropriate hiddenvariables havebeenidentified.
+As soon as we understand the general idea of EM, it becomes easy to derive all sorts
+of variants and improvements. For example, in many cases the E-step the computation of
+posteriors over the hidden variables is intractable, as in large Bayes nets. It turns out that
+one can use an approximate E-step and still obtain an effective learning algorithm. With a
+samplingalgorithm suchas MCMC(see Section14.5),thelearning processisveryintuitive:
+each state (configuration of hidden and observed variables) visited by MCMC is treated ex-
+actlyasifitwereacompleteobservation. Thus,theparameters canbeupdated directly after
+each MCM Ctransition. Otherformsofapproximate inference, suchasvariational andloopy
+methods, havealsoprovedeffectiveforlearning verylarg

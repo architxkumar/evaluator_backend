@@ -1,0 +1,34 @@
+agatewith,say,Gate(X ). The
+1
+behavior of each gate is determined by its type: one of the constants AND,OR, XOR, or
+NOT. Because a gate has exactly one type, a function is appropriate: Type(X ) XOR.
+1
+Circuits,likegates,areidentifiedbyapredicate: Circuit(C ).
+1
+Nextweconsiderterminals,whichareidentifiedbythepredicate Terminal(x). Agate
+orcircuitcanhaveoneormoreinputterminalsandoneormore outputterminals. Weusethe
+function In(1,X ) to denote the first input terminal for gate X . A similar function Out is
+1 1
+usedforoutputterminals. Thefunction Arity(c,i,j)saysthatcircuitchasiinputandj out-
+putterminals. Theconnectivitybetweengatescanberepresentedbyapredicate, Connected,
+whichtakestwoterminalsasarguments, asin Connected(Out(1,X ),In(1,X )).
+1 2
+Finally,weneedtoknowwhetherasignalisonoroff. Onepossibility istouseaunary
+predicate, On(t), which is true when the signal at a terminal is on. This makes it a little
+difficult, however, to pose questions such as What are all the possible values of the signals
+attheoutputterminalsofcircuit C ? Wethereforeintroduce asobjectstwosignalvalues, 1
+1
+and0,andafunction Signal(t)thatdenotes thesignalvaluefortheterminal t.
+Encodegeneralknowledgeofthedomain
+Onesignthatwehaveagoodontology isthatwerequireonlyafewgeneralrules,whichcan
+bestatedclearlyandconcisely. Thesearealltheaxiomswewillneed:
+1. Iftwoterminalsareconnected, thentheyhavethesamesignal: t ,t Terminal(t ) Terminal(t ) Connected(t ,t ) 1 2 1 2 1 2
+Signal(t ) Signal(t ).
+1 2
+Section8.4. Knowledge Engineering in First-Order Logic 311
+2. Thesignalateveryterminaliseither1or0: t Terminal(t) Signal(t) 1 Signal(t) 0 .
+3. Connectediscommutative: t ,t Connected(t ,t ) Connected(t ,t ).
+1 2 1 2 2 1
+4. Therearefourtypesofgates: g Gate(g) k Type(g) k AND k OR k XOR k NOT .
+5. An AN Dgate soutputis0ifandonlyifanyofitsinputsis0: g Gate(g) Type(g) AND Signal(Out(1,g)) 0 n Signal(In(n,g)) 0.
+6. An ORgate soutputis1ifandonlyifanyofitsinputsis1: g Gate(g) Type(g) OR Signal(Out(1,g)) 1 n Signal(In(n

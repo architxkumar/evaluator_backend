@@ -1,0 +1,33 @@
+fallthe
+cities coordinates.) In many cases, however, this equation cannot be solved in closed form.
+For example, with three airports, the expression for the gradient depends on what cities are
+closest to each airport in the current state. This means we can compute the gradient locally
+(butnotglobally); forexample,
+(cid:12) f 2 (x x ). (4.2)
+i c x
+1 c C1
+Givenalocallycorrectexpressionforthegradient,wecanperformsteepest-ascenthillclimb-
+6 Abasicknowledgeofmultivariatecalculusandvectorarithmeticisusefulforreadingthissection.
+132 Chapter 4. Beyond Classical Search
+ingbyupdatingthecurrentstateaccording totheformula
+x x f(x),
+where is a small constant often called the step size. In other cases, the objective function
+STEPSIZE
+mightnotbeavailableinadifferentiableformatall forexample,thevalueofaparticularset
+of airport locations might be determined by running some large-scale economic simulation
+EMPIRICAL package. In those cases, we can calculate a so-called empirical gradient by evaluating the
+GRADIENT
+response to small increments and decrements in each coordinate. Empirical gradient search
+isthesameassteepest-ascent hillclimbinginadiscretized versionofthestatespace.
+Hidden beneath the phrase is a small constant lies a huge variety of methods for
+adjusting . The basic problem is that, if is too small, too many steps are needed; if is too large, the search could overshoot the maximum. The technique of line search tries to
+LINESEARCH
+overcome this dilemma by extending the current gradient direction usually by repeatedly
+doubling untilf startstodecreaseagain. Thepointatwhichthisoccursbecomesthenew
+current state. There are several schools of thought about how the new direction should be
+chosenatthispoint.
+For many problems, the most effective algorithm is the venerable Newton Raphson
+NEWTON RAPHSON
+method. Thisisageneral technique forfindingrootsoffunctions that is,solvingequations
+of the form g(x) 0. It works by computing a new estimate for the root x according to
+Newton sfor

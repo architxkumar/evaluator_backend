@@ -1,0 +1,36 @@
+ORTANCE techniqueofimportancesampling,tailoredforinferencein Bayesiannetworks. Webeginby
+SAMPLING
+Section14.5. Approximate Inferencein Bayesian Networks 533
+function REJECTION-SAMPLING(X,e,bn,N)returnsanestimateof P(X e)
+inputs:X,thequeryvariable
+e,observedvaluesforvariables E
+bn,a Bayesiannetwork
+N,thetotalnumberofsamplestobegenerated
+localvariables: N,avectorofcountsforeachvalueof X,initiallyzero
+forj 1to N do
+x PRIOR-SAMPLE(bn)
+ifxisconsistentwithethen
+N x N x 1wherex isthevalueof X inx
+return NORMALIZE(N)
+Figure14.14 Therejection-samplingalgorithmforansweringqueriesgivenevidenceina
+Bayesiannetwork.
+describing howthealgorithmworks;thenweshowthatitworkscorrectly that is,generates
+consistent probability estimates.
+LIKELIHOOD-WEIGHTING (see Figure 14.15) fixes the values for the evidence vari-
+ables E and samples only the nonevidence variables. This guarantees that each event gener-
+ated is consistent with the evidence. Not all events are equal, however. Before tallying the
+countsinthedistribution forthequeryvariable, eacheventisweightedbythelikelihood that
+theeventaccordstotheevidence, asmeasuredbytheproduct oftheconditionalprobabilities
+foreach evidence variable, given itsparents. Intuitively, events inwhich the actual evidence
+appearsunlikely shouldbegivenlessweight.
+Let us apply the algorithm to the network shown in Figure 14.12(a), with the query
+P(Rain Cloudy true,Wet Grass true) and the ordering Cloudy, Sprinkler, Rain, Wet-
+Grass. (Anytopological ordering willdo.) Theprocess goes asfollows: First, theweight w
+issetto1.0. Thenaneventisgenerated:
+1. Cloudy isanevidence variablewithvaluetrue. Therefore, weset
+w w P(Cloudy true) 0.5.
+2. Sprinkler isnotanevidencevariable,sosamplefrom P(Sprinkler Cloudy true) (cid:16)0.1,0.9(cid:17);suppose thisreturns false.
+3. Similarly, sample from P(Rain Cloudy true) (cid:16)0.8,0.2(cid:17); suppose this returns
+true.
+4. Wet Grass isanevidence variablewithvalue true. Therefore, weset
+w w P(Wet Grass true Sprinkler false,Rain t

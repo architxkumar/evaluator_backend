@@ -1,0 +1,35 @@
+ibabor P
+Number of observations in d
+(a) (b)
+Figure 20.1 (a) Posterior probabilities P(hi d
+1
+,...,d N) from Equation (20.1). The
+number of observations N ranges from 1 to 10, and each observation is of a lime candy.
+(b)Bayesianprediction P(d N 1 lime d
+1
+,...,d N)from Equation(20.2).
+The example shows that the Bayesian prediction eventually agrees with the true hy-
+pothesis. This is characteristic of Bayesian learning. For any fixed prior that does not rule
+out the true hypothesis, the posterior probability of any false hypothesis will, under certain
+technical conditions, eventually vanish. Thishappens simplybecause theprobability ofgen-
+erating uncharacteristic data indefinitely is vanishingly small. (This point is analogous to
+one made in the discussion of PAC learning in Chapter 18.) More important, the Bayesian
+prediction is optimal, whetherthe data setbesmallorlarge. Giventhe hypothesis prior, any
+otherprediction isexpected tobecorrectlessoften.
+The optimality of Bayesian learning comes at a price, of course. For real learning
+problems, the hypothesis space is usually very large orinfinite, as wesaw in Chapter 18. In
+somecases, thesummationin Equation (20.2)(orintegration, inthecontinuous case)canbe
+carriedouttractably, butinmostcaseswemustresorttoapproximate orsimplifiedmethods.
+Averycommonapproximation onethatisusuallyadoptedinscience istomakepre-
+dictionsbasedonasinglemostprobablehypothesis that is,anh thatmaximizes P(h d).
+i i
+MAXIMUMA Thisisoftencalledamaximumaposteriorior MAP(pronounced em-ay-pee )hypothesis.
+POSTERIORI
+Predictions madeaccording toan MA Phypothesis h areapproximately Bayesian tothe
+MAP
+extentthat P(X d) P(X h ). Inourcandyexample,h h afterthreelimecan-
+MAP MAP 5
+diesinarow,sothe MA Plearnerthenpredicts thatthefourth candyislimewithprobability
+1.0 a much more dangerous prediction than the Bayesian prediction of 0.8 shown in Fig-
+ure20.1(b). Asmoredataarrive,the MA Pand Bayesian predictions becomecloser, because
+thecompetitors tothe MA Phy

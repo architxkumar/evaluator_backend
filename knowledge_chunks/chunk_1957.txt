@@ -1,0 +1,27 @@
+tespaces. Consideranaircargoproblem
+with10airports, whereeachairporthas5planesand20piecesofcargo. Thegoalistomove
+allthecargo atairport Atoairport B. Thereisasimplesolution totheproblem: loadthe20
+piecesofcargo intooneoftheplanes at A,flytheplaneto B,andunload thecargo. Finding
+the solution can be difficult because the average branching factor is huge: each of the 50
+planes can fly to 9 other airports, and each of the 200 packages can be either unloaded (if
+it is loaded) or loaded into any plane at its airport (if it is unloaded). So in any state there
+is a minimum of 450 actions (when all the packages are at airports with no planes) and a
+maximumof10,450(whenallpackagesandplanesareatthesameairport). Onaverage,let s
+saythereareabout2000possible actionsperstate,sothesearchgraphuptothedepthofthe
+obvioussolution hasabout200041 nodes.
+Clearly, even this relatively small problem instance is hopeless without an accurate
+heuristic. Althoughmanyreal-worldapplications ofplanninghavereliedondomain-specific
+heuristics,itturnsout(asweseein Section10.2.3)thatstrongdomain-independent heuristics
+canbederivedautomatically; thatiswhatmakesforwardsearchfeasible.
+10.2.2 Backward (regression) relevant-states search
+In regression search we start at the goal and apply the actions backward until we find a
+sequence ofstepsthatreaches theinitialstate. Itiscalled relevant-states search because we
+RELEVANT-STATES
+only consider actions that arerelevant tothegoal (orcurrent state). Asinbelief-state search
+(Section4.4),thereisasetofrelevantstatestoconsiderateachstep,notjustasingle state.
+Westartwiththegoal,whichisaconjunctionofliteralsformingadescriptionofasetof
+states forexample,thegoal Poor Famous describesthosestatesinwhich Poor isfalse,
+Famous is true, and any other fluent can have any value. If there are n ground fluents in a
+domain,thenthereare 2n groundstates(eachfluentcanbetrueorfalse), but 3n descriptions
+ofsetsofgoalstates(eachfluentcanbepositive, negative,ornotmentioned).
+In general, 

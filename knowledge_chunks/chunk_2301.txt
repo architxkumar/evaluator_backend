@@ -1,0 +1,37 @@
+amples. Each new
+sample isselected from the current population; theprobability that aparticular sample
+isselectedisproportional toitsweight. Thenewsamplesareunweighted.
+The algorithm is shown in detail in Figure 15.17, and its operation for the umbrella DB Nis
+illustrated in Figure15.18.
+598 Chapter 15. Probabilistic Reasoning over Time
+function PARTICLE-FILTERING(e,N,dbn)returnsasetofsamplesforthenexttimestep
+inputs:e,thenewincomingevidence
+N,thenumberofsamplestobemaintained
+dbn,a DB Nwithprior P(X ),transitionmodel P(X X ),sensormodel P(E X )
+0 1 0 1 1
+persistent: S,avectorofsamplesofsize N,initiallygeneratedfrom P(X )
+0
+localvariables: W,avectorofweightsofsize N
+fori 1to N do
+S i samplefrom P(X X S i ) step1 1 0
+W i P(e X S i ) step2 1
+S WEIGHTED-SAMPLE-WITH-REPLACEMENT(N,S,W) step3 return S
+Figure 15.17 The particle filtering algorithm implemented as a recursive update op-
+eration with state (the set of samples). Each of the sampling operations involves sam-
+pling the relevant slice variables in topological order, much as in PRIOR-SAMPLE. The
+WEIGHTED-SAMPLE-WITH-REPLACEMEN Toperationcanbeimplementedtorunin O(N)
+expectedtime. Thestepnumbersrefertothedescriptioninthetext.
+Rain Rain Rain Rain
+t t 1 t 1 t 1
+true
+false
+(a) Propagate (b) Weight (c) Resample
+Figure15.18 Theparticlefilteringupdatecyclefortheumbrella DB Nwith N 10,show-
+ingthesamplepopulationsofeachstate. (a)Attimet,8samplesindicaterain and2indicate rain. Eachispropagatedforwardbysamplingthenextstatethroughthetransitionmodel.
+Attimet 1, 6samplesindicaterain and4indicate rain. (b) umbrella isobservedat
+t 1. Eachsampleisweightedbyitslikelihoodfortheobservation,asindicatedbythesize
+ofthecircles. (c)Anewsetof10samplesisgeneratedbyweightedrandomselectionfrom
+thecurrentset,resultingin2samplesthatindicaterain and8thatindicate rain.
+Wecanshowthatthisalgorithmisconsistent givesthecorrectprobabilitiesas N tends
+toinfinity byconsideringwhathappensduringoneupdatecycle. Weassumethatthesample
+population starts with a

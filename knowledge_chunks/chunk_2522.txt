@@ -1,0 +1,35 @@
+hat
+make SV Msattractive:
+1. SV Msconstructamaximummarginseparator adecisionboundarywiththelargest
+possibledistance toexamplepoints. Thishelpsthemgeneralize well.
+2. SV Ms create a linear separating hyperplane, but they have the ability to embed the
+dataintoahigher-dimensional space, using theso-called kerneltrick. Often,datathat
+arenot linearly separable in the original input space are easily separable inthe higher-
+dimensional space. The high-dimensional linear separator is actually nonlinear in the
+original space. Thismeansthehypothesis space isgreatly expanded overmethods that
+usestrictly linearrepresentations.
+3. SV Msareanonparametricmethod theyretaintrainingexamplesandpotentiallyneed
+to store them all. On the other hand, in practice they often end up retaining only a
+smallfractionofthenumberofexamples sometimes asfewas asmallconstant times
+the numberof dimensions. Thus SV Mscombine the advantages of nonparametric and
+parametric models: they have the flexibility to represent complex functions, but they
+areresistant tooverfitting.
+You could say that SV Ms are successful because of one key insight and one neat trick. We
+willcovereachinturn. In Figure18.30(a),wehaveabinaryclassificationproblemwiththree
+candidate decision boundaries, each a linear separator. Each of them is consistent with all
+the examples, so from the point of view of 0 1 loss, each would be equally good. Logistic
+regression would find some separating line; the exact location of the line depends on all the
+example points. The key insight of SV Ms is that some examples are more important than
+others, andthatpayingattention tothemcanleadtobettergeneralization.
+Consider the lowest of the three separating lines in (a). It comes very close to 5 of the
+black examples. Although itclassifies allthe examples correctly, andthus minimizes loss, it
+Section18.9. Support Vector Machines 745
+1 1
+0.8 0.8
+0.6 0.6
+0.4 0.4
+0.2 0.2
+0 0
+0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1
+(a) (b)
+Figure18.30 Supportvectormachinec

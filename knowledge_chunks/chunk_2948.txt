@@ -1,0 +1,24 @@
+re convinced of their positions, and functionalists are convinced only that axiom 3 is
+unsupported, or that in general Searle s argument is unconvincing. The argument stirs up
+combatants, but has done little to change anyone s opinion. Searle remains undeterred, and
+has recently started calling the Chinese Room a refutation ofstrong AI rather than just an argument (Snell,2008).
+Eventhosewhoaccept axiom 3,andthus accept Searle s argument, haveonly theirin-
+tuitionstofallbackonwhendecidingwhatentitiesareminds. Theargumentpurportstoshow
+thatthe Chinese Roomisnotamindbyvirtueofrunningtheprogram,buttheargumentsays
+nothing about how to decide whether the room (ora computer, some other type of machine,
+oranalien)isamindbyvirtueofsomeotherreason. Searlehimselfsaysthatsomemachines
+do have minds: humans are biological machines with minds. According to Searle, human
+brains may or may not be running something like an AI program, but if they are, that is not
+the reason they are minds. It takes more to make a mind according to Searle, something
+equivalent tothecausal powersof individual neurons. What these powersare isleftunspec-
+ified. Itshould benoted, however, that neurons evolved to fulfill functional roles creatures
+Section26.2. Strong AI:Can Machines Really Think? 1033
+withneuronswerelearninganddecidinglongbeforeconsciousness appearedonthescene. It
+wouldbearemarkable coincidence ifsuchneurons justhappened togenerate consciousness
+because of some causal powers that are irrelevant to their functional capabilities; after all, it
+isthefunctional capabilities thatdictate survivaloftheorganism.
+In the case of the Chinese Room, Searle relies on intuition, not proof: just look at the
+room; what s there to be a mind? But one could make the same argument about the brain:
+just look at this collection of cells (or of atoms), blindly operating according to the laws of
+biochemistry(orofphysics) what stheretobeamind? Whycanahunkofbrainbeamind
+whileahunkoflivercannot? Thatremainsthegreatmy

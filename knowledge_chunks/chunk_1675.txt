@@ -1,0 +1,31 @@
+lief statefor Whitecanbeshowninasingle
+boardbymarkingeachpossible position ofthe Blackking.
+The general AND-OR search algorithm can be applied to the belief-state space to find
+guaranteed checkmates, just as in Section 4.4. The incremental belief-state algorithm men-
+tioned inthatsection oftenfindsmidgamecheckmates uptodepth9 probably wellbeyond
+theabilitiesofhumanplayers.
+In addition to guaranteed checkmates, Kriegspiel admits an entirely new concept that
+PROBABILISTIC makes no sense in fully observable games: probabilistic checkmate. Such checkmates are
+CHECKMATE
+stillrequiredtoworkineveryboardstateinthebeliefstate;theyareprobabilisticwithrespect
+torandomization ofthewinning player s moves. Togetthebasic idea, consider theproblem
+of finding a lone black king using just the white king. Simply by moving randomly, the
+white king will eventually bump into the black king even if the latter tries to avoid this fate,
+since Blackcannot keep guessing therightevasivemovesindefinitely. Intheterminology of
+probability theory, detection occurs with probability 1. The KBNK endgame king, bishop
+3 Sometimes,thebeliefstatewillbecometoolargetorepresentjustasalistofboardstates,butwewillignore
+thisissuefornow;Chapters7and8suggestmethodsforcompactlyrepresentingverylargebeliefstates.
+182 Chapter 5. Adversarial Search
+4
+3
+2
+1
+a b c d
+Kc3 ? OK Illegal Rc3 ? OK Check Figure 5.13 Part of a guaranteedcheckmatein the KRK endgame, shown on a reduced
+board. In the initial belief state, Black s king is in one of three possible locations. By a
+combination of probing moves, the strategy narrows this down to one. Completion of the
+checkmateisleftasanexercise.
+andknight against king is woninthis sense; Whitepresents Blackwithaninfiniterandom
+sequence of choices, for one of which Black will guess incorrectly and reveal his position,
+leadingtocheckmate. The KBB Kendgame,ontheotherhand,iswonwithprobability1 (cid:2).
+White can force a win only by leaving one of his bishops unprotected for one move. If

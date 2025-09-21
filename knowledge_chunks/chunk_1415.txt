@@ -1,0 +1,28 @@
+eved
+bythisandbywhatmeansthiswillbeachieved,tilltheycometothefirstcause,...and
+whatislastintheorderofanalysisseemstobefirstintheorderofbecoming. Andifwe
+comeonanimpossibility,wegiveupthesearch,e.g.,ifweneedmoneyandthiscannot
+begot;butifathingappearspossiblewetrytodoit.
+Aristotle s algorithm was implemented 2300 years later by Newell and Simon in their GPS
+program. Wewouldnowcallitaregression planning system(see Chapter10).
+Goal-based analysis is useful, but does not say what to do when several actions will
+achievethegoalorwhennoactionwillachieveitcompletely. Antoine Arnauld(1612 1694)
+correctly described a quantitative formula for deciding what action to take in cases like this
+(see Chapter16). John Stuart Mill s(1806 1873) book Utilitarianism (Mill,1863)promoted
+theideaofrationaldecisioncriteriainallspheresofhumanactivity. Themoreformaltheory
+ofdecisions isdiscussed inthefollowingsection.
+1.2.2 Mathematics Whataretheformalrulestodrawvalidconclusions? Whatcanbecomputed? Howdowereasonwithuncertain information?
+Philosophersstakedoutsomeofthefundamentalideasof AI,buttheleaptoaformalscience
+required a level of mathematical formalization in three fundamental areas: logic, computa-
+tion,andprobability.
+Theidea of formal logic can be traced back to the philosophers of ancient Greece, but
+itsmathematicaldevelopmentreallybeganwiththeworkof George Boole(1815 1864),who
+8 Chapter 1. Introduction
+worked out the details of propositional, or Boolean, logic (Boole, 1847). In 1879, Gottlob
+Frege(1848 1925) extended Boole slogictoincludeobjectsandrelations, creatingthefirst-
+order logic that is used today.4 Alfred Tarski (1902 1983) introduced a theory of reference
+thatshowshowtorelatetheobjectsinalogictoobjectsintherealworld.
+The next step was to determine the limits of what could be done with logic and com-
+putation. The first nontrivial algorithm is thought to be Euclid s algorithm for computing
+ALGORITHM
+greatest common divisors. Theword algorithm (and the idea of studying them) 

@@ -1,0 +1,55 @@
+y separable, but what if they are not? This situation is all
+too common in the real world. For example, Figure 18.15(b) adds back in the data points
+left out by Kebeasy et al. (1998) when they plotted the data shown in Figure 18.15(a). In
+Figure 18.16(b), we show the perceptron learning rule failing to converge even after 10,000
+steps: even though it hits the minimum-error solution (three errors) many times, the algo-
+rithm keeps changing the weights. In general, the perceptron rule may not converge to a
+Section18.6. Regressionand Classification with Linear Models 725
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 100 200 300 400 500 600 700
+tcerroc
+noitropor P
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20000 40000 60000 80000 100000
+Number of weight updates
+tcerroc
+noitropor P
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20000 40000 60000 80000 100000
+Number of weight updates
+tcerroc
+noitropor P
+Number of weight updates
+(a) (b) (c)
+Figure 18.16 (a) Plot of total training-setaccuracyvs. numberof iterationsthroughthe
+training set for the perceptron learning rule, given the earthquake explosion data in Fig-
+ure 18.15(a). (b) The same plot for the noisy, non-separable data in Figure 18.15(b); note
+thechangeinscale ofthex-axis. (c)Thesame plotasin(b),witha learningrateschedule (t) 1000 (1000 t).
+stable solution for fixed learning rate , but if decays as O(1 t) where t is the iteration
+number,thentherulecanbeshowntoconverge toaminimum-errorsolution whenexamples
+are presented in a random sequence.7 It can also be shown that finding the minimum-error
+solution is NP-hard,sooneexpectsthatmanypresentations oftheexampleswillberequired
+for convergence to be achieved. Figure 18.16(b) shows the training process with a learning
+rate schedule (t) 1000 (1000 t): convergence is not perfect after 100,000 iterations,
+butitismuchbetterthanthefixed- case.
+18.6.4 Linearclassificationwithlogisticregression
+We have seen that passing the output of a linear function through the threshold function
+creates a linear classifier; yet the hard natu

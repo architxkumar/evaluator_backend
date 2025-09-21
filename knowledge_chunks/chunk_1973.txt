@@ -1,0 +1,46 @@
+solution (cid:7) failure thenreturnsolution
+ifgraph andnogoods havebothleveledoffthenreturnfailure
+graph EXPAND-GRAPH(graph,problem)
+Figure10.9 The GRAPHPLAN algorithm. GRAPHPLAN calls EXPAND-GRAPH toadda
+leveluntileitherasolutionisfoundby EXTRACT-SOLUTION,ornosolutionispossible.
+Letusnowtracetheoperationof GRAPHPLA Nonthesparetireproblemfrompage370.
+The graph is shown in Figure 10.10. The first line of GRAPHPLAN initializes the planning
+graph to a one-level (S ) graph representing the initial state. The positive fluents from the
+0
+problem description s initial state areshown, asaretherelevant negative fluents. Notshown
+aretheunchanging positiveliterals(suchas Tire(Spare))andtheirrelevantnegativeliterals.
+Thegoal At(Spare,Axle)isnotpresent in S
+0
+,soweneed notcall EXTRACT-SOLUTION wearecertain that thereisnosolution yet. Instead, EXPAND-GRAPH adds into A
+0
+thethree
+actionswhosepreconditionsexistatlevel S (i.e.,alltheactionsexcept Put On(Spare,Axle)),
+0
+alongwithpersistence actionsforalltheliteralsin S . Theeffectsoftheactionsareaddedat
+0
+level S
+1
+. EXPAND-GRAPH thenlooksformutexrelations andaddsthemtothegraph.
+At(Spare,Axle)isstillnotpresentin S
+1
+,soagainwedonotcall EXTRACT-SOLUTION.
+Wecall EXPAND-GRAPH again, adding A
+1
+and S
+1
+and giving us the planning graph shown
+in Figure10.10. Nowthatwehavethefullcomplementofactions, itisworthwhiletolookat
+someoftheexamplesofmutexrelations andtheircauses: Inconsistent effects: Remove(Spare,Trunk) is mutex with Leave Overnight because
+onehastheeffect At(Spare,Ground)andtheotherhasitsnegation.
+384 Chapter 10. Classical Planning
+S A S A S
+0 0 1 1 2
+At(Spare,Trunk) At(Spare,Trunk) At(Spare,Trunk)
+Remove(Spare,Trunk)
+Remove(Spare,Trunk) At(Spare,Trunk) At(Spare,Trunk)
+Remove(Flat,Axle) Remove(Flat,Axle)
+At(Flat,Axle) At(Flat,Axle) At(Flat,Axle)
+Leave Overnight At(Flat,Axle) At(Flat,Axle)
+Leave Overnight At(Spare,Axle) At(Spare,Axle) At(Spare,Axle)
+Put On(Spare,Axle) At(Spare,Axle) At(Flat,Ground) At(Flat,Ground) At(Flat,Ground)
+A

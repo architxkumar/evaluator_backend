@@ -1,0 +1,26 @@
+d that no bounded competitive ratio is possible for exploring a general
+graph. Papadimitriouand Yannakakis(1991)examinedthequestionoffindingpathstoagoal
+ingeometricpath-planningenvironments(whereallactionsarereversible). Theyshowedthat
+a small competitive ratio is achievable with square obstacles, but with general rectangular
+obstacles noboundedratiocanbeachieved. (See Figure4.20.) The LRTA algorithm was developed by Korf (1990) as part of an investigation into
+real-time search for environments in which the agent must act after searching for only a
+REAL-TIMESEARCH fixed amount of time (a common situation in two-player games). LRTA is in fact a special
+caseofreinforcementlearningalgorithmsforstochasticenvironments(Bartoetal.,1995). Its
+policyofoptimismunderuncertainty alwaysheadfortheclosestunvisitedstate canresult
+in an exploration pattern that is less efficient in the uninformed case than simple depth-first
+search (Koenig, 2000). Dasguptaetal.(1994) show thatonline iterative deepening search is
+optimally efficient for finding a goal in a uniform tree with no heuristic information. Sev- eral informed variants on the LRTA theme have been developed with different methods for
+searching and updating within the known portion of the graph (Pemberton and Korf, 1992).
+As yet, there is no good understanding of how to find goals with optimal efficiency when
+usingheuristic information.
+EXERCISES
+4.1 Givethenameofthealgorithm thatresults fromeachofthefollowingspecialcases:
+a. Localbeamsearchwithk 1.
+b. Localbeamsearchwithoneinitialstateandnolimitonthenumberofstatesretained.
+c. Simulatedannealing with T 0atalltimes(andomittingthetermination test).
+d. Simulatedannealing with T atalltimes.
+e. Geneticalgorithm withpopulation size N 1.
+158 Chapter 4. Beyond Classical Search
+4.2 Exercise 3.16 considers the problem of building railway tracks under the assumption
+that pieces fit exactly with no slack. Now consider the real problem, in which pieces don t
+fitexactly butallow forupto10deg

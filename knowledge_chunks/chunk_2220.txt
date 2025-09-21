@@ -1,0 +1,25 @@
+emdoesn tknowwhatexists,ifanything,aroundthenextcorner,andmay
+notknowiftheobjectitseesnowisthesameoneitsawafewminutesago. Atext-understanding systemdoesnotknowinadvancetheentitiesthatwillbefeatured
+in a text, and must reason about whether phrases such as Mary, Dr. Smith, she, hiscardiologist, hismother, andsoonrefertothesame object. Anintelligence analyst hunting forspies never knows how many spies there really are
+andcanonlyguesswhethervariouspseudonyms, phonenumbers,andsightingsbelong
+tothesameindividual.
+In fact, a major part of human cognition seems to require learning what objects exist and
+beingabletoconnectobservations which almostnevercomewithunique IDsattached to
+hypothesized objectsintheworld.
+For these reasons, we need to be able to write so-called open-universe probability
+OPENUNIVERSE
+models or OUP Ms based on the standard semantics of first-order logic, as illustrated at the
+top of Figure 14.18. A language for OUP Ms provides a way of writing such models easily
+while guaranteeing a unique, consistent probability distribution over the infinite space of
+possible worlds.
+The basic idea is to understand how ordinary Bayesian networks and RP Ms manage
+to define a unique probability model and to transfer that insight to the first-order setting. In
+essence, a Bayes net generates each possible world, event by event, in the topological order
+defined bythenetwork structure, whereeach eventisanassignment ofavaluetoavariable.
+An RPM extends this to entire sets of events, defined by the possible instantiations of the
+logical variables inagiven predicate orfunction. OUP Msgo further byallowing generative
+steps that add objects to the possible world under construction, where the number and type
+of objects may depend on the objects that are already in that world. That is, the event being
+generated isnottheassignment ofavaluetoavariable, buttheveryexistence ofobjects.
+Onewaytodothisin OUP Msistoaddstatements thatdefineconditional distributions
+over the numbers of objec

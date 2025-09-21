@@ -1,0 +1,24 @@
+ow has the
+tongue near the bottom. When speaking quickly, the tongue doesn t have time to get into
+position for the ow , and we end up with t ah rather than t ow . Figure 23.17(b) gives
+a model for tomato that takes this coarticulation effect into account. More sophisticated
+phonemodelstakeintoaccountthecontextofthesurrounding phones.
+There can be substantial variation in pronunciation for a word. The most common
+pronunciation of because is b iy k ah z , but that only accounts for about a quarter of
+uses. Anotherquarter(approximately) substitutes ix , ih or ax forthefirstvowel,andthe
+remainder substitute ax or aa for the second vowel, zh or s for the final z , or drop be entirely, leaving cuz. 23.5.2 Languagemodel
+For general-purpose speech recognition, the language model can be an n-gram model of
+text learned from a corpus of written sentences. However, spoken language has different
+characteristics than written language, so it is better to get a corpus of transcripts of spoken
+language. For task-specific speech recognition, the corpus should be task-specific: to build
+yourairlinereservationsystem,gettranscriptsofpriorcalls. Italsohelpstohavetask-specific
+vocabulary, suchasalistofalltheairportsandcitiesserved,andalltheflightnumbers.
+Partofthedesignofavoiceuserinterfaceistocoercetheuserintosayingthingsfroma
+limitedsetofoptions,sothatthespeechrecognizerwillhaveatighterprobabilitydistribution
+todeal with. Forexample, asking What city do you wantto go to? elicits aresponse with
+ahighlyconstrained language model,whileasking Howcan Ihelpyou? doesnot.
+23.5.3 Building a speech recognizer
+Thequalityofaspeechrecognition systemdependsonthequalityofallofitscomponents the language model, the word-pronunciation models, the phone models, and the signal-
+processing algorithms used to extract spectral features from the acoustic signal. We have
+discussed how the language model can be constructed from a corpus of written text, and we
+leave the details of signal processing to other tex

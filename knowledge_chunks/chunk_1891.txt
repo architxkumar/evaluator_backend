@@ -1,0 +1,32 @@
+TCH(q) returns all unifiers such that the query q unifies with some
+328 Chapter 9. Inference in First-Order Logic
+function UNIFY(x,y, )returnsasubstitutiontomakex andy identical
+inputs:x,avariable,constant,list,orcompoundexpression
+y,avariable,constant,list,orcompoundexpression ,thesubstitutionbuiltupsofar(optional,defaultstoempty)
+if failurethenreturnfailure
+elseifx y thenreturn elseif VARIABLE?(x)thenreturn UNIFY-VAR(x,y, )
+elseif VARIABLE?(y)thenreturn UNIFY-VAR(y,x, )
+elseif COMPOUND?(x)and COMPOUND?(y)then
+return UNIFY(x.ARGS,y.ARGS,UNIFY(x.OP,y.OP, ))
+elseif LIST?(x)and LIST?(y)then
+return UNIFY(x.REST,y.REST,UNIFY(x.FIRST,y.FIRST, ))
+elsereturnfailure
+function UNIFY-VAR(var,x, )returnsasubstitution
+if var val thenreturn UNIFY(val,x, )
+elseif x val thenreturn UNIFY(var,val, )
+elseif OCCUR-CHECK?(var,x)thenreturnfailure
+elsereturnadd var x to Figure9.1 Theunificationalgorithm. Thealgorithmworksbycomparing thestructures
+oftheinputs,elementbyelement. Thesubstitution thatistheargumentto UNIFY isbuilt
+upalongthewayandisusedtomakesurethatlatercomparisonsareconsistentwithbindings
+thatwereestablishedearlier. Inacompoundexpressionsuchas F(A,B),the OPfieldpicks
+outthefunctionsymbol F andthe ARG Sfieldpicksouttheargumentlist(A,B).
+sentence in the knowledge base. The problem we used to illustrate unification finding all
+factsthatunifywith Knows(John,x) isaninstanceof FETC Hing.
+The simplest way to implement STORE and FETCH is to keep all the facts in one long
+list and unify each query against every element of the list. Such a process is inefficient, but
+it works, and it s all you need to understand the rest of the chapter. The remainder of this
+sectionoutlines waystomakeretrievalmoreefficient;itcanbeskippedonfirstreading.
+We can make FETCH more efficient by ensuring that unifications are attempted only
+with sentences that have some chance of unifying. For example, there is no point in trying
+tounify Knows(John,x)with Brother(Richard,John). Wecanavoidsuchunificationsby
+ind

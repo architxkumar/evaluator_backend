@@ -1,0 +1,30 @@
+, of course) into its own direct conflict set, which is NT,NSW ; the new conflict set is WA,NT,NSW . That is, there is no solution from
+Q onward, given the preceding assignment to WA,NT,NSW . Therefore, we backtrack
+to NT, the most recent of these. NT absorbs WA,NT,NSW NT into its own
+direct conflict set WA , giving WA,NSW (as stated in the previous paragraph). Now
+the algorithm backjumps to NSW, as wewould hope. Tosummarize: let X be the current
+j
+variable, and let conf(X ) be its conflict set. If every possible value for X fails, backjump
+j j
+tothemostrecentvariable X inconf(X ),andset
+i j
+conf(X ) conf(X ) conf(X ) X .
+i i j i
+When we reach a contradiction, backjumping can tell us how far to back up, so we don t
+waste time changing variables that won t fix the problem. But we would also like to avoid
+running into the same problem again. When the search arrives at a contradiction, we know
+CONSTRAINT thatsomesubsetoftheconflictsetisresponsiblefortheproblem. Constraintlearningisthe
+LEARNING
+ideaoffindingaminimumsetofvariablesfromtheconflictsetthatcausestheproblem. This
+set of variables, along with their corresponding values, is called a no-good. Wethen record
+NO-GOOD
+the no-good, either byadding anew constraint tothe CS Porby keeping aseparate cache of
+no-goods.
+For example, consider the state WA red,NT green,Q blue in the bottom
+row of Figure 6.6. Forward checking can tell us this state is a no-good because there is no
+validassignmentto SA. Inthisparticularcase,recordingtheno-goodwouldnothelp,because
+once we prune this branch from the search tree, we will never encounter this combination
+again. Butsupposethatthesearchtreein Figure6.6wereactuallypartofalargersearchtree
+that started by first assigning values for V and T. Then it would be worthwhile to record WA red,NT green,Q blue as a no-good because we are going to run into the
+sameproblemagainforeachpossible setofassignments to V and T.
+No-goods can be effectively used by forward checking orby backjumping. Constra

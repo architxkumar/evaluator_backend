@@ -1,0 +1,27 @@
+hathumanscouldbeascompetentastheyarewithoutsomesuchmechanism.
+11.2.3 Searching forabstractsolutions
+Thehierarchicalsearchalgorithmintheprecedingsection refines HL Asallthewaytoprimi-
+tiveactionsequencestodetermineifaplanisworkable. Thiscontradictscommonsense: one
+shouldbeabletodetermine thatthetwo-HL Ahigh-level plan Drive(Home,SFO Long Term Parking),Shuttle(SFO Long Term Parking,SFO) gets one to the airport without having to determine a precise route, choice of parking spot,
+andsoon. Thesolution seemsobvious: writeprecondition effect descriptions ofthe HL As,
+just as we write down what the primitive actions do. From the descriptions, it ought to be
+easytoprovethatthehigh-level planachieves thegoal. Thisistheholygrail,sotospeak, of
+hierarchical planning because if wederive ahigh-level plan that provably achieves the goal,
+working in a small search space of high-level actions, then we can commit to that plan and
+workontheproblemofrefiningeachstepoftheplan. Thisgivesustheexponentialreduction
+we seek. For this to work, it has to be the case that every high-level plan that claims to
+achieve the goal (by virtue of the descriptions of its steps) does in fact achieve the goal in
+thesensedefinedearlier: itmusthaveatleastoneimplementation thatdoesachievethegoal.
+DOWNWARD
+Thisproperty hasbeencalledthe downwardrefinementpropertyfor HL Adescriptions.
+REFINEMENT
+PROPERTY
+Writing HLA descriptions that satisfy the downward refinement property is, in princi-
+ple,easy: aslongasthedescriptions are true,thenanyhigh-level planthatclaimstoachieve
+the goal must in fact do so otherwise, the descriptions are making some false claim about
+whatthe HL Asdo. Wehave already seen howto writetrue descriptions for HL Asthathave
+exactly one implementation (Exercise 11.3); a problem arises when the HLA has multiple
+implementations. How can we describe the effects of an action that can be implemented in
+manydifferent ways?
+Onesafeanswer(atleastforproblemswhereallpreconditionsandgoalsarepositive)is
+to

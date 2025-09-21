@@ -1,0 +1,30 @@
+.
+0
+In classical planning, where the closed-world assumption is made, we would assume that
+any fluentnot mentioned inastate is false, but in sensorless (and partially observable) plan-
+ning we have to switch to an open-world assumption in which states contain both positive
+and negative fluents, and if a fluent does not appear, its value is unknown. Thus, the belief
+state corresponds exactly to the set of possible worlds that satisfy the formula. Given this
+initialbeliefstate,thefollowingactionsequence isasolution: Remove Lid(Can ),Paint(Chair,Can ),Paint(Table,Can ) .
+1 1 1
+We now show how to progress the belief state through the action sequence to show that the
+finalbeliefstatesatisfiesthegoal.
+First, note that in a given belief state b, the agent can consider any action whose pre-
+conditions aresatisfied by b. (Theotheractions cannot beused because thetransition model
+doesn t define the effects of actions whose preconditions might be unsatisfied.) According
+418 Chapter 11. Planningand Actinginthe Real World
+to Equation (4.4) (page 139), the general formula for updating the belief state b given an
+applicable actionainadeterministic worldisasfollows:
+b (cid:2) RESULT(b,a) s (cid:2) : s (cid:2) RESULTP (s,a)ands b where RESULTP definesthephysicaltransitionmodel. Forthetimebeing,weassumethatthe
+initial belief state is always a conjunction of literals, that is, a 1-CNF formula. To construct
+(cid:2)
+thenewbeliefstateb,wemustconsiderwhathappens toeachliteral (cid:3)ineachphysicalstate
+sinbwhenactionaisapplied. Forliteralswhosetruthvalueisalreadyknowninb,thetruth
+(cid:2)
+value in b is computed from the current value and the add list and delete list of the action.
+(For example, if (cid:3) is in the delete list of the action, then (cid:3) is added to b (cid:2) .) What about a
+literalwhosetruthvalueisunknowninb? Therearethreecases:
+(cid:2)
+1. Iftheactionadds(cid:3),then(cid:3)willbetrueinb regardless ofitsinitialvalue.
+(cid:2)
+2. Iftheactiondeletes(cid:3),then(cid:3)willbefa

@@ -1,0 +1,32 @@
+resultsinnomovement. Thetwoterminal
+stateshavereward 1and 1,respectively,andallotherstateshavearewardof 0.04.
+Iftheenvironment weredeterministic, asolutionwouldbeeasy: Up,Up,Right,Right,
+Right . Unfortunately, theenvironmentwon talwaysgoalongwiththissolution,becausethe
+actions are unreliable. The particular model of stochastic motion that weadopt isillustrated
+in Figure 17.1(b). Each action achieves the intended effect with probability 0.8, but the rest
+ofthetime,theactionmovestheagentatrightanglestotheintendeddirection. Furthermore,
+iftheagentbumpsintoawall,itstaysinthesamesquare. Forexample,fromthestartsquare
+(1,1), theaction Upmovestheagentto(1,2)withprobability 0.8,butwithprobability 0.1,it
+movesrightto(2,1),andwithprobability 0.1,itmovesleft,bumpsintothewall,andstaysin
+(1,1). In such an environment, the sequence Up,Up,Right,Right,Right goes up around
+thebarrierandreachesthegoalstateat(4,3)withprobability 0.85 0.32768. Thereisalsoa
+smallchanceofaccidentallyreachingthegoalbygoingtheotherwayaroundwithprobability
+0.14 0.8,foragrandtotalof0.32776. (Seealso Exercise17.1.)
+As in Chapter 3, the transition model (or just model, whenever no confusion can
+arise) describes the outcome of each action in each state. Here, the outcome is stochastic,
+so we write P(s
+(cid:2) s,a)
+to denote the probability of reaching state s
+(cid:2)
+if action a is done in
+states. Wewillassumethattransitionsare Markovianinthesenseof Chapter15,thatis,the
+(cid:2)
+probabilityofreachings fromsdependsonlyonsandnotonthehistoryofearlierstates. For
+now, you can think of P(s
+(cid:2) s,a)
+as a big three-dimensional table containing probabilities.
+Later,in Section17.4.3,wewillseethatthetransitionmodelcanberepresentedasadynamic
+Bayesiannetwork,justasin Chapter15.
+Tocompletethedefinitionofthetaskenvironment, wemustspecifytheutilityfunction
+for the agent. Because the decision problem is sequential, the utility function will depend
+on a sequence of states an environment history rather than on a single state. L

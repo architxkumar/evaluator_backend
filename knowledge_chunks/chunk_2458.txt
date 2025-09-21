@@ -1,0 +1,55 @@
+truth table over n attributes has 2n rows, one for each combination of
+valuesoftheattributes. Wecanconsiderthe answer columnofthetableasa2n-bitnumber
+thatdefinesthefunction.
+Thatmeansthereare22n
+differentfunctions(andtherewillbemore
+than that number of trees, since more than one tree can compute the same function). Thisis
+a scary number. Forexample, with just the ten Boolean attributes of our restaurant problem
+there are 21024 or about 10308 different functions to choose from, and for20 attributes there
+areover 10300,000. Wewillneed someingenious algorithms tofindgood hypotheses insuch
+alargespace.
+18.3.3 Inducing decisiontrees from examples
+Anexamplefora Booleandecisiontreeconsistsofan(x,y)pair,wherexisavectorofvalues
+fortheinputattributes, and y isasingle Booleanoutput value. Atraining setof12examples
+Patrons?
+None Some Full
+No Yes Wait Estimate? 60 30-60 10-30 0-10
+No Alternate? Hungry? Yes
+No Yes No Yes
+Reservation? Fri Sat? Yes Alternate?
+No Yes No Yes No Yes
+Bar? Yes No Yes Yes Raining?
+No Yes No Yes
+No Yes No Yes
+Figure18.2 Adecisiontreefordecidingwhethertowaitforatable.
+700 Chapter 18. Learningfrom Examples
+Input Attributes Goal
+Example
+Alt Bar Fri Hun Pat Price Rain Res Type Est Will Wait
+x Yes No No Yes Some No Yes French 0 10 y Yes
+1 1
+x Yes No No Yes Full No No Thai 30 60 y No
+2 2
+x No Yes No No Some No No Burger 0 10 y Yes
+3 3
+x Yes No Yes Yes Full Yes No Thai 10 30 y Yes
+4 4
+x Yes No Yes No Full No Yes French 60 y No
+5 5
+x No Yes No Yes Some Yes Yes Italian 0 10 y Yes
+6 6
+x No Yes No No None Yes No Burger 0 10 y No
+7 7
+x No No No Yes Some Yes Yes Thai 0 10 y Yes
+8 8
+x No Yes Yes No Full Yes No Burger 60 y No
+9 9
+x Yes Yes Yes Yes Full No Yes Italian 10 30 y No
+10 10
+x No No No No None No No Thai 0 10 y No
+11 11
+x Yes Yes Yes Yes Full No No Burger 30 60 y Yes
+12 12
+Figure18.3 Examplesfortherestaurantdomain.
+is shown in Figure 18.3. The positive examples are the ones in which the goal Will Wait is
+true(x ,x ,...);thenegativeexamplesaretheonesinwhichitisf

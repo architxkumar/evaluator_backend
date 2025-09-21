@@ -1,0 +1,24 @@
+ation.In AAAI-00.
+berg, J.(1971). Ongeneralityandproblemsolv- Fogel,L.J.,Owens,A.J.,and Walsh,M.J.(1966).
+ing: Acasestudyusingthe DENDRA Lprogram. Artificial Intelligencethrough Simulated Evolution. Freuder,E.C.(1978). Synthesizingconstraintex-
+In Meltzer,B.and Michie,D.(Eds.),Machine Intel- Wiley. pressions.CACM,21(11),958 966.
+ligence6,pp.165 190.Edinburgh University Press. Freuder,E.C.(1982). Asufficientconditionfor
+Foo, N.(2001). Whyengineeringmodelsdonot
+Feldman,J.and Sproull,R.F.(1977).Decisionthe- haveaframeproblem. In Discreteeventmodeling backtrack-freesearch.JACM,29(1),24 32.
+oryandartificialintelligence II:Thehungrymon- andsimulationtechnologies: atapestryofsystems Freuder,E.C.(1985). Asufficientconditionfor
+key. Technicalreport, Computer Science Depart- and AI-basedtheoriesandmethodologies.Springer. backtrack-boundedsearch.JACM,32(4),755 761.
+ment,Universityof Rochester.
+Forbes,J.(2002).Learning Optimal Controlfor Au- Freuder,E.C.and Mackworth,A.K.(Eds.).(1994).
+Feldman,J.and Yakimovsky,Y.(1974). Decision tonomous Vehicles.Ph.D.thesis,Universityof Cali- Constraint-basedreasoning.MIT Press.
+theoryandartificialintelligence I:Semantics-based fornia.
+regionanalyzer.AIJ,5(4),349 371. Freund,Y.and Schapire,R.E.(1996).Experiments
+Forbus,K.D.(1985). Qualitativeprocesstheory. withanewboostingalgorithm.In ICML-96.
+Fellbaum,C.(2001). Wordnet:An Electronic Lexi- In Bobrow,D.(Ed.),Qualitative Reasoning About
+Freund,Y.and Schapire,R.E.(1999).Largemargin
+cal Database.MIT Press. Physical Systems,pp.85 186.MIT Press.
+classificationusingtheperceptronalgorithm. Ma-
+Fellegi,I.and Sunter,A.(1969).Atheoryforrecord Forbus, K.D.andde Kleer, J.(1993). Building chine Learning,37(3),277 296.
+linkage .JASA,64,1183 1210. Problem Solvers.MIT Press.
+Friedberg, R. M. (1958). A learning machine:
+Felner,A.,Korf,R.E.,and Hanan,S.(2004).Addi- Ford,K.M.and Hayes,P.J.(1995). Turing Test Part I. IBM Journalof Researchand Development,
+tivepatterndatabaseheuristics.JAIR,22,279 318. consideredha

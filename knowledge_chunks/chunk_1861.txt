@@ -1,0 +1,29 @@
+ouldneedcopiesofeachsentence foreachtimestep.
+Simple reflex behaviorcanalsobeimplemented byquantifiedimplication sentences.
+Forexample,wehave t Glitter(t) Best Action(Grab,t).
+306 Chapter 8. First-Order Logic
+Giventheperceptandrulesfromthepreceding paragraphs, thiswouldyieldthedesiredcon-
+clusion Best Action(Grab,5) that is,Grab istherightthingtodo.
+We have represented the agent s inputs and outputs; now it is time to represent the
+environment itself. Let us begin with objects. Obvious candidates are squares, pits, and the
+wumpus. Wecouldnameeachsquare Square andsoon butthenthefactthat Square
+1,2 1,2
+and Square are adjacent would have to be an extra fact, and we would need one such
+1,3
+factforeach pairofsquares. Itisbettertouseacomplex term inwhich therowandcolumn
+appearasintegers; forexample,wecansimplyusethelistterm 1,2 . Adjacencyofanytwo
+squarescanbedefinedas x,y,a,b Adjacent( x,y , a,b ) (x a (y b 1 y b 1)) (y b (x a 1 x a 1)).
+We could name each pit, but this would be inappropriate for a different reason: there is no
+reason to distinguish among pits.10 It is simpler to use a unary predicate Pit that is true of
+squares containing pits. Finally, since there is exactly one wumpus, a constant Wumpus is
+justasgoodasaunarypredicate(andperhapsmoredignifiedfromthewumpus sviewpoint).
+The agent s location changes over time, so we write At(Agent,s,t) to mean that the
+agentisatsquaresattimet. Wecanfixthewumpus slocationwith t At(Wumpus, 2,2 ,t).
+Wecanthensaythatobjectscanonlybeatonelocation atatime: x,s ,s ,t At(x,s ,t) At(x,s ,t) s s .
+1 2 1 2 1 2
+Given its current location, the agent can infer properties of the square from properties of its
+current percept. For example, if the agent is at a square and perceives a breeze, then that
+squareisbreezy: s,t At(Agent,s,t) Breeze(t) Breezy(s).
+Itisusefultoknowthatasquareisbreezybecauseweknowthatthepitscannotmoveabout.
+Noticethat Breezy hasnotimeargument.
+Havingdiscovered whichplacesarebreezy(orsmelly)and,veryimportant, notbreezy

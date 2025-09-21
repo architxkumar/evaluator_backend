@@ -1,0 +1,20 @@
+s (2005). Microsoftcambridgeattrec-14:Enterprise 886 893.
+in Computer Chess3,pp.45 54.Pergamon. track. In Proc.Fourteenth Text REtrieval Confer-
+Congdon,C.B.,Huber,M.,Kortenkamp,D.,Bid- ence. Dantzig,G.B.(1949).Programmingofinterdepen-
+dentactivities:II.Mathematicalmodel. Economet-
+lack,C.,Cohen,C.,Huffman,S.,Koss,F.,Raschke, Crauser,A.,Mehlhorn,K.,Meyer,U.,and Sanders, rica,17,200 211.
+U., and Weymouth, T.(1992). CARME Lversus P.(1998). Aparallelizationof Dijkstra sshortest
+Flakey:Acomparisonoftworobots. Tech.rep.Pa- pathalgorithm. In Proc.23rd International Sym- Darwiche,A.(2001). Recursiveconditioning. AIJ,
+persfromthe AAAI Robot Competition,RC-92-01, posiumon Mathematical Foundationsof Computer 126,5 41.
+American Associationfor Artificial Intelligence. Science,,pp.722 731. Darwiche,A.and Ginsberg,M.L.(1992). Asym-
+Conlisk,J.(1989). Threevariantsonthe Allaisex- Craven,M.,Di Pasquo,D.,Freitag,D.,Mc Callum, bolicgeneralizationofprobabilitytheory. In AAAI-
+ample.American Economic Review,79(3),392 407. A., Mitchell, T. M., Nigam, K., and Slattery, S. 92,pp.622 627.
+Connell,J.(1989).AColony Architectureforan Ar- (2000).Learningtoconstructknowledgebasesfrom Darwiche,A.(2009).Modelingandreasoningwith
+tificial Creature.Ph.D.thesis,Artificial Intelligence the World Wide Web.AIJ,118(1 2),69 113. Bayesiannetworks.Cambridge University Press.
+Laboratory,MIT.Alsoavailableas AI Technical Re- Crawford,J.M.and Auton,L.D.(1993). Experi- Darwin,C.(1859). On The Originof Speciesby
+port1151. mentalresultsonthecrossoverpointinsatisfiability Meansof Natural Selection.J.Murray,London.
+Consortium,T.G.O.(2008). Thegeneontology problems.In AAAI-93,pp.21 27.
+Darwin,C.(1871).Descentof Man.J.Murray.
+projectin2008.Nucleic Acids Research,36. Cristianini,N.and Hahn,M.(2007). Introduction
+Cook, S.A.(1971). Thecomplexityoftheorem- to Computational Genomics: A Case Studies Ap- Dasgupta,P.,Chakrabarti,P.P.,andde Sarkar,S.C.
+provingprocedures.In STOC-71,pp.151 158. proach.Cambridge University Press. 

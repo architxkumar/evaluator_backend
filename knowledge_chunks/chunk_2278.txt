@@ -1,0 +1,53 @@
+ t t tii
+Forexample,theprobabilitythatasquarewithobstaclestothenorthandsouthwouldproduce
+asensorreading NSE is(1 (cid:2))3(cid:2)1.
+Given the matrices T and O , the robot can use Equation (15.12) to compute the pos-
+t
+terior distribution over locations that is, to work out where it is. Figure 15.7 shows the
+distributions P(X E NSW)and P(X E NSW,E NS). Thisisthesamemaze
+1 1 2 1 2
+wesawbefore in Figure 4.18(page 146), but there weused logical filtering tofindthe loca-
+tions that were possible, assuming perfect sensing. Those same locations are still the most
+likelywithnoisysensing, butnoweverylocation hassomenonzero probability.
+In addition to filtering to estimate its current location, the robot can use smoothing
+(Equation (15.13)) to work out where it was at any given past time for example, where it
+began attime 0 and it can use the Viterbi algorithm towork out the mostlikely path it has
+Section15.3. Hidden Markov Models 583
+6
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+2
+1.5
+1
+0.5
+0 5 10 15 20 25 30 35 40
+rorre
+noitazilaco L
+1 0.20 0.9 0.10 0.05 0.8 0.02 0.7 0.00
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0 5 10 15 20 25 30 35 40
+Number of observations
+ycarucca
+hta P 0.00 0.02 0.05 0.10 0.20
+Number of observations
+(a) (b)
+Figure15.8 Performanceof HM Mlocalizationasafunctionofthelengthoftheobserva-
+tionsequenceforvariousdifferentvaluesofthesensorerrorprobability(cid:2);dataaveragedover
+400runs.(a)Thelocalizationerror,definedasthe Manhattandistancefromthetruelocation.
+(b)The Viterbipathaccuracy,definedasthefractionofcorrectstatesonthe Viterbipath.
+takentogetwhereitisnow. Figure15.8showsthelocalizationerrorand Viterbipathaccuracy
+forvarious values of the per-bit sensor errorrate (cid:2). Evenwhen(cid:2) is20 which means that
+theoverallsensorreadingiswrong59 ofthetime therobot isusuallyabletoworkoutits
+location within two squares after 25 observations. This is because of the algorithm s ability
+tointegrate evidenceovertimeandtotakeintoaccount theprobabilistic constraints imposed
+on the location sequence by th

@@ -1,0 +1,24 @@
+ent but contradictory literary
+theorists the following question: What if you were right? None of the theorists seems to
+haveconsideredthisquestionbefore,perhapsbecausedebatingunfalsifiabletheoriesisanend
+initself. Similarconfusion canbeevoked byasking AIresearchers, Whatifyousucceed? As Section 26.3 relates, there are ethical issues to consider. Intelligent computers are
+morepowerfulthandumbones,butwillthatpowerbeusedforgoodorill? Thosewhostrive
+todevelop AIhavearesponsibility toseethattheimpactoftheirworkisapositiveone. The
+scopeoftheimpactwilldependonthedegreeofsuccessof AI.Evenmodestsuccessesin AI
+havealreadychangedthewaysinwhichcomputerscienceistaught(Stein,2002)andsoftware
+development ispracticed. AIhasmadepossible newapplications suchasspeechrecognition
+systems,inventory controlsystems,surveillance systems,robots, andsearchengines.
+We can expect that medium-level successes in AI would affect all kinds of people in
+theirdaily lives. Sofar, computerized communication networks, such ascell phones and the
+Internet,havehadthiskindofpervasiveeffectonsociety,but AIhasnot. AIhasbeenatwork
+behind the scenes for example, in automatically approving or denying credit card transac-
+tionsforeverypurchasemadeonthe Web buthasnotbeenvisibletotheaverageconsumer.
+Wecan imagine that truly useful personal assistants forthe office orthe home would have a
+large positive impact on people s lives, although they might cause some economic disloca-
+tion in the short term. Automated assistants fordriving could prevent accidents, saving tens
+of thousands of lives per year. A technological capability at this level might also be applied
+to the development of autonomous weapons, which many view as undesirable. Some of the
+biggestsocietal problemswefacetoday such astheharnessing ofgenomicinformation for
+treatingdisease,theefficientmanagementofenergyresources,andtheverificationoftreaties
+concerning nuclearweapons are beingaddressed withthehelpof AItechnologies.
+Finally,itseemslikelythatalarge-s

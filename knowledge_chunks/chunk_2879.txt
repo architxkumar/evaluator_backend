@@ -1,0 +1,27 @@
+ the robot s workspace. Ourexample in Figure 25.14(a) shows several
+suchobstacles, including afree-hanging obstacle thatprotrudes intothecenteroftherobot s
+workspace. In workspace, such obstacles take on simple geometric forms especially in
+most robotics textbooks, which tend to focus on polygonal obstacles. But how do they look
+inconfiguration space?
+Figure25.14(b)showstheconfigurationspaceforourexamplerobot,underthespecific
+obstacleconfigurationshownin Figure25.14(a). Theconfigurationspacecanbedecomposed
+into twosubspaces: thespace ofallconfigurations that arobot mayattain, commonly called
+free space, and the space of unattainable configurations, called occupied space. The white
+FREESPACE
+area in Figure 25.14(b) corresponds to the free space. All other regions correspond to occu-
+OCCUPIEDSPACE
+Section25.4. Planningto Move 989
+piedspace. Thedifferent shadings oftheoccupied spacecorresponds tothedifferent objects
+in the robot s workspace; the black region surrounding the entire free space corresponds to
+configurations inwhich the robot collides with itself. Itis easy tosee that extreme values of
+the shoulder or elbow angles cause such a violation. The two oval-shaped regions on both
+sidesoftherobotcorrespondtothetableonwhichtherobotismounted. Thethirdovalregion
+corresponds tothe leftwall. Finally, themostinteresting object inconfiguration space isthe
+verticalobstaclethathangsfromtheceilingandimpedestherobot smotions. Thisobjecthas
+afunnyshapeinconfiguration space: itishighlynonlinearandatplacesevenconcave. With
+a little bit of imagination the reader will recognize the shape of the gripper at the upper left
+end. We encourage the reader to pause for a moment and study this diagram. The shape of
+thisobstacle isnot atallobvious! Thedotinside Figure25.14(b) markstheconfiguration of
+the robot, as shown in Figure 25.14(a). Figure 25.15 depicts three additional configurations,
+both in workspace and in configuration space. In configuration conf-1, the gripper encloses
+thever

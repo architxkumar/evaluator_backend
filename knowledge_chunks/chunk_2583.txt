@@ -1,0 +1,26 @@
+ge. Clearly,therulewouldhaveto
+beamendedforcountriessuchas Switzerlandand India.
+Section19.4. Learning Using Relevance Information 785
+As usual, this is simply a syntactic sugaring, but it makes it clear that the determination is
+really a relationship between the predicates: nationality determines language. The relevant
+properties determining conductance anddensity canbeexpressed similarly:
+Material(x,m) Temperature(x,t) Conductance(x, );
+Material(x,m) Temperature(x,t) Density(x,d).
+Thecorrespondinggeneralizationsfollowlogicallyfromthedeterminationsandobservations.
+19.4.1 Determining the hypothesis space
+Although the determinations sanction general conclusions concerning all Brazilians, or all
+pieces of copper at a given temperature, they cannot, of course, yield a general predictive
+theory for all nationalities, or for all temperatures and materials, from a single example.
+Theirmaineffectcanbeseenaslimitingthespaceofhypothesesthatthelearningagentneed
+consider. In predicting conductance, for example, one need consider only material and tem-
+perature and can ignore mass, ownership, day of the week, the current president, and so on.
+Hypotheses can certainly include terms that are in turn determined by material and temper-
+ature, such as molecular structure, thermal energy, or free-electron density. Determinations
+specifyasufficientbasisvocabularyfromwhichtoconstructhypothesesconcerningthetarget
+predicate. This statement can be proven by showing that a given determination is logically
+equivalent toastatement thatthecorrect definition ofthetarget predicate isoneofthesetof
+alldefinitionsexpressible usingthepredicates ontheleft-hand sideofthedetermination.
+Intuitively, it is clear that a reduction in the hypothesis space size should make it eas-
+ier to learn the target predicate. Using the basic results of computational learning theory
+(Section 18.5), we can quantify the possible gains. First, recall that for Boolean functions,
+log( H ) examples are required to converge t

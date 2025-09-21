@@ -1,0 +1,24 @@
+(a)Theplanindicatedbytheblackarrowdefinitelyachieves
+thegoal,whiletheplanindicatedbythegrayarrowdefinitelydoesn t.(b)Aplanthatwould
+needtoberefinedfurthertodetermineifitreallydoesachievethegoal.
+then the plan doesn t work; if the pessimistic reachable set intersects the goal, then the plan
+does work (Figure 11.7(a)). With exact descriptions, a plan either works or it doesn t, but
+with approximate descriptions, there is a middle ground: if the optimistic set intersects the
+goal but the pessimistic set doesn t, then we cannot tell if the plan works (Figure 11.7(b)).
+When this circumstance arises, the uncertainty can be resolved by refining the plan. This is
+a very common situation in human reasoning. Forexample, in planning the aforementioned
+two-week Hawaii vacation, one might propose to spend two days on each of seven islands.
+Prudence would indicate that this ambitious plan needs to be refined by adding details of
+inter-island transportation.
+Analgorithm forhierarchical planning withapproximate angelicdescriptions isshown
+in Figure 11.8. For simplicity, we have kept to the same overall scheme used previously in
+Figure 11.5, that is, abreadth-first search in the space of refinements. Asjust explained, the
+algorithmcandetectplansthatwillandwon tworkbycheckingtheintersections oftheopti-
+misticandpessimisticreachablesetswiththegoal. (Thedetailsofhowtocomputethereach-
+ablesetsofaplan,givenapproximatedescriptionsofeachstep,arecoveredin Exercise11.5.)
+Whenaworkableabstractplanisfound, thealgorithm decomposes theoriginal probleminto
+subproblems, one for each step of the plan. The initial state and goal for each subproblem
+are obtained by regressing a guaranteed-reachable goal state through the action schemas for
+each step of the plan. (See Section 10.2.2 for a discussion of how regression works.) Fig-
+ure 11.6(b) illustrates the basic idea: the right-hand circled state is the guaranteed-reachable
+goal state, and the left-hand circled state is the intermediate goal obtained

@@ -1,0 +1,26 @@
+thatithappensordoesnot
+happen;andtoviewgeometricallytheproportionthatallthesethingshavetogether.
+Bibliographical and Historical Notes 637
+Modern texts talk of utility rather than good and evil, but this statement correctly notes that
+one should multiply utility by probability ( view geometrically ) to give expected utility,
+and maximize that over all outcomes ( all these things ) to judge what one must do. It
+is remarkable how much this got right, 350 years ago, and only 8 years after Pascal and
+Fermatshowed howtouse probability correctly. The Port-Royal Logicalso marked thefirst
+publication of Pascal swager.
+Daniel Bernoulli (1738), investigating the St. Petersburg paradox (see Exercise 16.3),
+was the first to realize the importance of preference measurement for lotteries, writing the
+value of an item must not be based on its price, but rather on the utility that it yields (ital-
+ics his). Utilitarian philosopher Jeremy Bentham (1823) proposed the hedonic calculus for
+weighing pleasures and pains, arguing that all decisions (not just monetary ones) could
+bereducedtoutilitycomparisons.
+The derivation of numerical utilities from preferences was first carried out by Ram-
+sey(1931); theaxiomsforpreference inthepresenttextare closerinformtothoserediscov-
+ered in Theory of Games and Economic Behavior (von Neumann and Morgenstern, 1944).
+Agoodpresentationoftheseaxioms,inthecourseofadiscussiononriskpreference,isgiven
+by Howard (1977). Ramsey had derived subjective probabilities (not just utilities) from an
+agent s preferences; Savage (1954) and Jeffrey (1983) carry out more recent constructions
+ofthis kind. Von Winterfeldt and Edwards (1986) provide amodern perspective ondecision
+analysis and its relationship to human preference structures. The micromort utility measure
+is discussed by Howard (1989). A 1994 survey by the Economist set the value of a life at
+between 750,000 and 2.6 million. However, Richard Thaler (1992) found irrational fram-
+ing effects on the price one i

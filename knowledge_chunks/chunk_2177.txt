@@ -1,0 +1,31 @@
+s(X )).
+i i
+Section14.2. The Semanticsof Bayesian Networks 515
+Intuitively, the parents of node X i should contain all those nodes in X 1 , ..., X i 1 that
+directly influence X . For example, suppose we have completed the network in Figure 14.2
+i
+exceptforthechoiceofparentsfor Mary Calls. Mary Calls iscertainlyinfluencedbywhether
+thereisa Burglary oran Earthquake,butnotdirectlyinfluenced. Intuitively, ourknowledge
+of the domain tells us that these events influence Mary s calling behavior only through their
+effectonthealarm. Also,giventhestateofthealarm,whether Johncallshasnoinfluenceon
+Mary s calling. Formally speaking, we believe that the following conditional independence
+statementholds:
+P(Mary Calls John Calls,Alarm,Earthquake,Burglary) P(Mary Calls Alarm).
+Thus,Alarm willbetheonlyparentnodefor Mary Calls.
+Becauseeachnodeisconnectedonlytoearliernodes,thisconstruction methodguaran-
+teesthatthenetworkisacyclic. Anotherimportantpropertyof Bayesiannetworksisthatthey
+contain no redundant probability values. If there is no redundancy, then there is no chance
+for inconsistency: it is impossible for the knowledge engineer or domain expert to create a
+Bayesiannetworkthatviolatestheaxiomsofprobability.
+Compactnessandnodeordering
+Aswellasbeingacompleteandnonredundant representation ofthedomain,a Bayesiannet-
+work can often be far more compact than the full joint distribution. This property is what
+makesitfeasible tohandle domains withmanyvariables. Thecompactness of Bayesian net-
+LOCALLY worksisanexampleofageneralpropertyoflocallystructured(alsocalledsparse)systems.
+STRUCTURED
+In a locally structured system, each subcomponent interacts directly with only a bounded
+SPARSE
+number ofother components, regardless ofthe total number of components. Local structure
+isusually associated withlinearratherthanexponential growthincomplexity. Inthecaseof
+Bayesian networks, it is reasonable to suppose that in most domains each random variable
+is directly influenced by at most k others, fo

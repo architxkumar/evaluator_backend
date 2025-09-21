@@ -1,0 +1,40 @@
+DEL(a)),andaddingthefluents
+ADDLIST
+thatarepositiveliteralsintheaction s effects(whatwecalltheaddlistor ADD(a)):
+RESULT(s,a) (s DEL(a)) ADD(a). (10.1)
+Forexample, withtheaction Fly(P ,SFO,JFK),wewouldremove At(P ,SFO)andadd
+1 1
+At(P ,JFK). Itisarequirement ofaction schemas that anyvariable intheeffect mustalso
+1
+appear in the precondition. That way, when the precondition is matched against the state s,
+allthe variables willbebound, and RESULT(s,a)willtherefore have only ground atoms. In
+otherwords,ground statesareclosedunderthe RESULT operation.
+Alsonotethatthefluentsdonotexplicitlyrefertotime,astheydidin Chapter7. There
+weneededsuperscripts fortime,andsuccessor-state axiomsoftheform
+Ft 1 Action Causes Ft (Ft Action Causes Not Ft).
+In PDDL the times and states are implicit in the action schemas: the precondition always
+referstotimetandtheeffecttotimet 1.
+Asetofactionschemasservesasadefinitionofaplanningdomain. Aspecificproblem
+within the domain is defined with the addition of an initial state and a goal. The initial
+Section10.1. Definitionof Classical Planning 369
+Init(At(C , SFO) At(C , JFK) At(P , SFO) At(P , JFK)
+1 2 1 2 Cargo(C ) Cargo(C ) Plane(P ) Plane(P )
+1 2 1 2 Airport(JFK) Airport(SFO))
+Goal(At(C , JFK) At(C , SFO))
+1 2
+Action(Load(c, p, a),
+PRECOND:At(c, a) At(p, a) Cargo(c) Plane(p) Airport(a)
+EFFECT: At(c, a) In(c, p))
+Action(Unload(c, p, a),
+PRECOND:In(c, p) At(p, a) Cargo(c) Plane(p) Airport(a)
+EFFECT:At(c, a) In(c, p))
+Action(Fly(p, from, to),
+PRECOND:At(p, from) Plane(p) Airport(from) Airport(to)
+EFFECT: At(p, from) At(p, to))
+Figure10.1 APDD Ldescriptionofanaircargotransportationplanningproblem.
+state is a conjunction of ground atoms. (As with all states, the closed-world assumption is
+INITIALSTATE
+used, which means that any atoms that are not mentioned are false.) The goal is just like a
+GOAL
+precondition: aconjunction ofliterals (positive ornegative) thatmaycontain variables, such
+as At(p,SFO) Plane(p). Anyvariables aretreatedasexistentially qua

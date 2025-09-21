@@ -1,0 +1,27 @@
+ article The Knowledge Level makesthecasethatrationalagentscanbedescribedandanalyzedatanabstractleveldefined
+bytheknowledgetheypossessratherthantheprogramstheyrun. Thedeclarativeandproce-
+dural approaches to AI are analyzed in depth by Boden (1977). The debate was revived by,
+amongothers, Brooks(1991) and Nilsson(1991), andcontinues tothisday(Shaparau etal.,
+2008). Meanwhile, thedeclarative approach has spread into otherareas ofcomputerscience
+suchasnetworking (Looetal.,2006).
+Logicitself haditsorigins inancient Greek philosophy and mathematics. Variouslog-
+ical principles principles connecting the syntactic structure of sentences with their truth
+and falsity, with their meaning, or with the validity of arguments in which they figure are
+scattered in the works of Plato. The first known systematic study of logic was carried out
+by Aristotle, whose work was assembled by his students after his death in 322 B.C. as a
+treatise called the Organon. Aristotle s syllogisms were what we would now call inference
+SYLLOGISM
+rules. Although thesyllogisms included elements ofbothpropositional andfirst-orderlogic,
+the system as a whole lacked the compositional properties required to handle sentences of
+arbitrary complexity.
+The closely related Megarian and Stoic schools (originating in the fifth century B.C.
+andcontinuingforseveralcenturiesthereafter)beganthe systematicstudyofthebasiclogical
+connectives. The use of truth tables fordefining connectives is due to Philo of Megara. The
+276 Chapter 7. Logical Agents
+Stoics took five basic inference rules as valid without proof, including the rule we now call
+Modus Ponens. They derived a number of other rules from these five, using, among other
+principles, the deduction theorem (page 249) and were much clearer about the notion of
+proofthanwas Aristotle. Agoodaccount ofthehistory of Megarianand Stoiclogic isgiven
+by Benson Mates(1953).
+Theidea of reducing logical inference toapurely mechanical process applied to afor-
+mallanguageisdueto W

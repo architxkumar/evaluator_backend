@@ -1,0 +1,29 @@
+ to describe all the lan-
+guages that can be described by a less powerful class, as well as some additional
+languages. Herewelistthehierarchy, mostpowerfulclassfirst:
+Recursively enumerable grammars use unrestricted rules: both sides of the
+rewrite rules can have any number of terminal and nonterminal symbols, asin the
+rule AB C D E. Thesegrammarsareequivalent to Turingmachinesintheir
+expressivepower.
+Context-sensitive grammars are restricted only in that the right-hand side
+must contain at least as many symbols as the left-hand side. The name context-
+sensitive comes from the fact that a rule such as A X B A Y B says that
+an X can be rewritten as a Y in the context of a preceding A and a following B.
+Context-sensitive grammars can represent languages such as anbncn (a sequence
+ofncopiesofafollowedbythesamenumberofbsandthencs).
+In context-free grammars (or CF Gs), the left-hand side consists of a sin-
+gle nonterminal symbol. Thus, each rule licenses rewriting the nonterminal as
+the right-hand side in any context. CF Gs are popular for natural-language and
+programming-language grammars, although itisnowwidelyaccepted thatatleast
+somenaturallanguageshaveconstructionsthatarenotcontext-free(Pullum,1991).
+Context-free grammarscanrepresent anbn,butnotanbncn.
+Regulargrammars are the most restricted class. Every rule has asingle non-
+terminalontheleft-handsideandaterminalsymboloptionallyfollowedbyanon-
+terminalontheright-handside. Regulargrammarsareequivalentinpowertofinite-
+state machines. They are poorly suited for programming languages, because they
+cannot represent constructs such as balanced opening and closing parentheses (a
+variation ofthe anbn language). Theclosest theycancomeisrepresenting a b ,a
+sequence ofanynumberofasfollowedbyanynumberofbs.
+The grammars higher up in the hierarchy have more expressive power, but
+the algorithms for dealing with them are less efficient. Up to the 1980s, linguists
+focusedoncontext-freeandcontext-sensitivelanguages. Sincethen,thereh

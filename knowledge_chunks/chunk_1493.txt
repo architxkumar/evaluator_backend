@@ -1,0 +1,26 @@
+thisonceithaslearned how? Givenanagentdesign, learningmechanisms
+canbeconstructed toimproveeverypartoftheagent.
+Thecritic tellsthe learning element how welltheagent isdoing withrespect toafixed
+performance standard. The critic is necessary because the percepts themselves provide no
+indication of the agent s success. For example, a chess program could receive a percept
+indicating that it has checkmated its opponent, but it needs a performance standard to know
+thatthisisagoodthing;theperceptitselfdoesnotsayso. Itisimportantthattheperformance
+56 Chapter 2. Intelligent Agents
+standard be fixed. Conceptually, one should think of it as being outside the agent altogether
+becausetheagentmustnotmodifyittofititsownbehavior.
+PROBLEM The last component of the learning agent is the problem generator. It is responsible
+GENERATOR
+for suggesting actions that will lead to new and informative experiences. The point is that
+if the performance element had its way, it would keep doing the actions that are best, given
+whatitknows. Butiftheagent iswillingtoexplore alittle anddosomeperhaps suboptimal
+actions inthe short run, itmight discover muchbetteractions forthelong run. Theproblem
+generator s job is to suggest these exploratory actions. This is what scientists do when they
+carry out experiments. Galileo did not think that dropping rocks from the top of a tower in
+Pisa was valuable in itself. He was not trying to break the rocks or to modify the brains of
+unfortunate passers-by. His aim was to modify his own brain by identifying a better theory
+ofthemotionofobjects.
+Tomake theoverall design moreconcrete, letusreturn tothe automated taxi example.
+The performance element consists of whatever collection of knowledge and procedures the
+taxi has for selecting its driving actions. The taxi goes out on the road and drives, using
+thisperformance element. Thecritic observes theworldand passes information along tothe
+learningelement. Forexample,afterthetaximakesaquickleftturnacrossthreelanesoftr

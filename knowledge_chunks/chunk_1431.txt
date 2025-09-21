@@ -1,0 +1,26 @@
+ basic physiology and
+function of neurons in the brain; a formal analysis of propositional logic due to Russell and
+Whitehead; and Turing stheoryofcomputation. Theyproposed amodelofartificialneurons
+inwhicheachneuronischaracterized asbeing on or off, withaswitchto on occurring
+in response to stimulation by a sufficient number of neighboring neurons. The state of a
+neuronwasconceivedofas factuallyequivalenttoapropositionwhichproposeditsadequate
+stimulus. They showed, for example, that any computable function could be computed by
+some network of connected neurons, and that all the logical connectives (and, or, not, etc.)
+could be implemented by simple net structures. Mc Culloch and Pitts also suggested that
+suitably defined networks could learn. Donald Hebb(1949) demonstrated asimple updating
+ruleformodifying theconnection strengths between neurons. Hisrule, nowcalled Hebbian
+learning,remainsaninfluential modeltothisday.
+HEBBIANLEARNING
+Twoundergraduate students at Harvard, Marvin Minsky and Dean Edmonds, built the
+first neural network computer in 1950. The SNARC, as it was called, used 3000 vacuum
+tubesandasurplusautomaticpilotmechanismfroma B-24bombertosimulateanetworkof
+40 neurons. Later, at Princeton, Minsky studied universal computation in neural networks.
+His Ph.D. committee was skeptical about whether this kind of work should be considered
+Section1.3. The Historyof Artificial Intelligence 17
+mathematics, butvon Neumannreportedly said, Ifitisn tnow,itwillbesomeday. Minsky
+waslatertoproveinfluentialtheoremsshowingthelimitationsofneuralnetworkresearch.
+There were a number of early examples of work that can be characterized as AI, but
+Alan Turing s vision wasperhaps themostinfluential. Hegavelectures onthetopic asearly
+as1947atthe London Mathematical Societyandarticulated apersuasive agenda inhis1950
+article Computing Machinery and Intelligence. Therein, he introduced the Turing Test,
+machine learning, genetic algorithms, and reinforcement learning. He proposed the

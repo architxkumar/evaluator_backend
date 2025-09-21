@@ -1,0 +1,22 @@
+ Artificial Life. The main conference is the Genetic
+and Evolutionary Computation Conference(GECCO).Goodoverviewtextsongeneticalgo-
+rithmsaregivenby Mitchell (1996), Fogel(2000), and Langdon and Poli(2002), andbythe
+freeonlinebookby Polietal.(2008).
+The unpredictability and partial observability of real environments were recognized
+early on in robotics projects that used planning techniques, including Shakey (Fikes et al.,
+1972) and FREDDY (Michie, 1974). Theproblems received moreattention after thepublica-
+tionof Mc Dermott s(1978a) influentialarticle, Planningand Acting.
+Thefirstworktomakeexplicituseof AND ORtreesseemstohavebeen Slagle s SAINT
+program for symbolic integration, mentioned in Chapter 1. Amarel (1967) applied the idea
+to propositional theorem proving, a topic discussed in Chapter 7, and introduced a search
+algorithm similar to AND-OR-GRAPH-SEARCH. The algorithm was further developed and formalized by Nilsson (1971), who also described AO which, as its name suggests, finds optimalsolutionsgivenanadmissibleheuristic. AO wasanalyzedandimprovedby Martelli and Montanari (1973). AO is a top-down algorithm; a bottom-up generalization of A is ALD,for A Lightest Derivation (Felzenszwalb and Mc Allester, 2007). Interest in AND OR
+search has undergone a revival in recent years, with new algorithms for finding cyclic solu-
+tions(Jimenezand Torras,2000;Hansenand Zilberstein, 2001)andnewtechniques inspired
+bydynamicprogramming (Bonetand Geffner,2005).
+Theideaoftransforming partially observable problemsintobelief-state problemsorig-
+inated with Astrom(1965) forthemuchmorecomplexcaseofprobabilistic uncertainty (see
+Chapter17). Erdmann and Mason (1988) studied theproblem of robotic manipulation with-
+outsensors, usingacontinuous formofbelief-state search. Theyshowedthatitwaspossible
+toorientapartonatablefromanarbitraryinitialposition byawell-designedsequenceoftilt-
+ingactions. Morepracticalmethods,basedonaseriesofpreciselyorienteddiagonalbarriers
+acrossaconveyorbelt,u

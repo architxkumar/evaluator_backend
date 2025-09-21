@@ -1,0 +1,29 @@
+ovide classification for a small area right in front of the robot.
+When this area is found to be flat in the laser range scan, it is used as a positive training
+examplefortheconcept drivable surface. Amixture-of-Gaussians technique similartothe
+EM algorithm discussed in Chapter 20 is then trained to recognize the specific color and
+texture coefficients of the small sample patch. The images in Figure 25.13 are the result of
+applying thisclassifiertothefullimage.
+986 Chapter 25. Robotics
+Methods that make robots collect theirowntraining data (with labels!) are called self-
+SELF-SUPERVISED supervised. Inthisinstance,therobotusesmachinelearningtoleverageashort-rangesensor
+LEARNING
+that works wellforterrain classification into asensor that cansee much farther. Thatallows
+therobot todrive faster, slowingdownonly whenthesensor modelsaysthere isachange in
+theterrainthatneedstobeexaminedmorecarefully bytheshort-range sensors.
+25.4 PLANNING TO MOVE
+Allof arobot s deliberations ultimately comedown to deciding how tomoveeffectors. The
+POINT-TO-POINT point-to-pointmotionproblemistodelivertherobotoritsendeffectortoadesignatedtarget
+MOTION
+location. A greater challenge is the compliant motion problem, in which a robot moves
+COMPLIANTMOTION
+whilebeinginphysicalcontact withanobstacle. Anexampleofcompliantmotionisarobot
+manipulatorthatscrewsinalightbulb,orarobotthatpushesaboxacrossatabletop.
+We begin by finding a suitable representation in which motion-planning problems can
+bedescribed andsolved. Itturnsoutthatthe configuration space thespaceofrobotstates
+defined by location, orientation, and joint angles is abetterplace towork than the original
+3Dspace. Thepathplanningproblem istofindapathfromone configuration toanotherin
+PATHPLANNING
+configurationspace. Wehavealreadyencounteredvariousversionsofthepath-planningprob-
+lem throughout this book; the complication added by robotics is that path planning involves
+continuousspaces. Therearetwomainapproaches: celldecompositionandskeletonizat

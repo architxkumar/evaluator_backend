@@ -1,0 +1,24 @@
+ers. We could also introduce more inter-
+esting classes of gates, for example, by describing the technology (TTL,CMOS,and so on)
+aswellastheinput output specification. Ifwewantedtodiscuss reliability ordiagnosis, we
+would include the possibility that the structure of the circuit or the properties of the gates
+might change spontaneously. Toaccount forstray capacitances, wewould need to represent
+wherethewiresareontheboard.
+Section12.1. Ontological Engineering 439
+Ifwelookatthewumpusworld,similarconsiderationsapply. Althoughwedorepresent
+time, ithasasimplestructure: Nothing happens except when theagent acts, andallchanges
+areinstantaneous. Amoregeneral ontology, bettersuitedfortherealworld,wouldallowfor
+simultaneouschangesextendedovertime. Wealsouseda Pit predicatetosaywhichsquares
+have pits. We could have allowed for different kinds of pits by having several individuals
+belonging to the class of pits, each having different properties. Similarly, we might want to
+allow for other animals besides wumpuses. It might not be possible to pin down the exact
+species from the available percepts, so we would need to build up a biological taxonomy to
+helptheagentpredictthebehaviorofcave-dwellers fromscantyclues.
+For any special-purpose ontology, it is possible to make changes like these to move
+toward greater generality. Anobvious question then arises: doall these ontologies converge
+on a general-purpose ontology? After centuries of philosophical and computational inves-
+tigation, the answer is Maybe. In this section, we present one general-purpose ontology
+that synthesizes ideas from those centuries. Two major characteristics of general-purpose
+ontologies distinguish themfromcollections ofspecial-purpose ontologies: A general-purpose ontology should be applicable in more or less any special-purpose
+domain (with the addition of domain-specific axioms). This means that no representa-
+tionalissuecanbefinessedorbrushed underthecarpet. In any sufficiently demanding domain, different

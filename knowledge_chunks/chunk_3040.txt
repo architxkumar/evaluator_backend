@@ -1,0 +1,23 @@
+sticsimulationin Gibson,J.J.(1950). The Perceptionofthe Visual
+Knowledge Representation,pp.285 316.Elsevier.
+Bayesiannetworks.In UAI-98,pp.209 220. World.Houghton Mifflin.
+Gaddum,J.H.(1933). Reportsonbiologicalstan- Gelly,S.and Silver,D.(2008). Achievingmaster Gibson,J.J.(1979). The Ecological Approachto
+dard III:Methodsofbiologicalassaydependingona levelplayin9x9computergo. In AAAI-08,pp. Visual Perception.Houghton Mifflin.
+quantalresponse. Specialreportseriesofthemedi- 1537 1540.
+Gilks,W.R.,Richardson,S.,and Spiegelhalter,D.J.
+calresearchcouncil183,Medical Research Council. Gelman,A.,Carlin,J.B.,Stern,H.S.,and Rubin, (Eds.).(1996). Markovchain Monte Carloinprac-
+Gaifman,H.(1964). Concerningmeasuresinfirst D.(1995). Bayesian Data Analysis. Chapman tice.Chapmanand Hall.
+ordercalculi. Israel Journalof Mathematics,2,1 Hall.
+Gilks,W.R.,Thomas,A.,and Spiegelhalter,D.J.
+18. Geman,S.and Geman,D.(1984).Stochasticrelax- (1994). A language and program for complex
+Gallaire,H.and Minker,J.(Eds.).(1978). Logic ation,Gibbsdistributions,and Bayesianrestoration Bayesianmodelling.The Statistician,43,169 178.
+and Databases.Plenum. ofimages.PAMI,6(6),721 741.
+Gilmore,P.C.(1960).Aproofmethodforquantifi-
+Gallier,J.H.(1986). Logicfor Computer Science: Genesereth,M.R.(1984). Theuseofdesignde- cationtheory: Itsjustificationandrealization. IBM
+Foundationsof Automatic Theorem Proving.Harper scriptions in automated diagnosis. AIJ, 24(1 3), Journalof Researchand Development,4,28 35.
+and Row. 411 436.
+Ginsberg,M.L.(1993). Essentialsof Artificial In-
+Gamba,A.,Gamberini,L.,Palmieri,G.,and Sanna, Genesereth,M.R.and Nilsson,N.J.(1987). Log- telligence.Morgan Kaufmann.
+R.(1961). Furtherexperimentswith PAPA. Nuovo ical Foundationsof Artificial Intelligence. Morgan Ginsberg, M. L. (1999). GIB: Steps toward an
+Cimento Supplemento,20(2),221 231. Kaufmann. expert-levelbridge-playingprogram. In IJCAI-99,
+Garding,J.(1992). Shapefromtextureforsmooth Genesereth, M. R. and Nourbakhsh, I. (1993). pp.584 589.

@@ -1,0 +1,24 @@
+lutionary psychology (Buss,2005), ontheotherhand, hasruncountertothis
+literature, arguing that humans are quite rational in evolutionarily appropriate contexts. Its
+adherents pointoutthatirrationality ispenalized bydefinitioninanevolutionary contextand
+showthatinsomecasesitisanartifactoftheexperimentalsetup(Cumminsand Allen,1998).
+There has been arecent resurgence of interest in Bayesian models of cognition, overturning
+decadesofpessimism (Oaksfordand Chater,1998;Elio,2002;Chaterand Oaksford,2008).
+Keeney and Raiffa (1976) give a thorough introduction to multiattribute utility the-
+ory. They describe early computer implementations of methods for eliciting the necessary
+parameters for a multiattribute utility function and include extensive accounts of real appli-
+cations of the theory. In AI, the principal reference for MAUT is Wellman s (1985) paper,
+which includes a system called URP (Utility Reasoning Package) that can use a collection
+of statements about preference independence and conditional independence to analyze the
+structure of decision problems. The use of stochastic dominance together with qualitative
+probability models was investigated extensively by Wellman (1988, 1990a). Wellman and
+Doyle (1992) provide apreliminary sketch of how acomplex set of utility-independence re-
+lationships might be used to provide a structured model of a utility function, in much the
+same way that Bayesian networks provide a structured model of joint probability distribu-
+tions. Bacchusand Grove(1995, 1996)and La Muraand Shoham(1999)givefurtherresults
+alongtheselines.
+Decision theory has been a standard tool in economics, finance, and management sci-
+encesincethe1950s. Untilthe1980s,decisiontreeswerethemaintoolusedforrepresenting
+simple decision problems. Smith (1988) gives an overview of the methodology of deci-
+sion analysis. Influence diagrams were introduced by Howard and Matheson (1984), based
+on earlier work at SRI (Miller et al., 1976). Howard and Matheson s method invo

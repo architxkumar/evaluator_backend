@@ -1,0 +1,36 @@
+
+anda50 chancethatitwillfallinany4C-wideregion,andsoon. Wewritetheprobability
+densityforacontinuousrandomvariable X atvaluexas P(X x)orjust P(x);theintuitive
+definition of P(x)istheprobability that X fallswithinanarbitrarily smallregion beginning
+atx,dividedbythewidthoftheregion:
+P(x) lim P(x X x dx) dx .
+dx 0
+For Noon Temp wehave
+(cid:24)
+1 if18C x 26C
+P(Noon Temp x) Uniform (x) 8C , 18C,26C 0otherwise
+where C stands forcentigrade (not for aconstant). In P(Noon Temp 20.18C) 1 , note
+8C
+that 1 is not a probability, it is a probability density. The probability that Noon Temp is
+8C
+exactly 20.18C is zero, because 20.18C is a region of width 0. Some authors use different
+symbolsfordiscretedistributions anddensityfunctions; weuse P inbothcases,sinceconfu-
+sionseldomarisesandtheequationsareusuallyidentical. Notethatprobabilities areunitless
+numbers,whereasdensityfunctionsaremeasuredwithaunit,inthiscasereciprocaldegrees.
+In addition to distributions on single variables, we need notation for distributions on
+multiple variables. Commas are used for this. For example, P(Weather,Cavity) denotes
+the probabilities of all combinations of the values of Weather and Cavity. This is a 4 2
+JOINTPROBABILITY table of probabilities called the joint probability distribution of Weather and Cavity. We
+DISTRIBUTION
+can also mix variables with and without values; P(sunny,Cavity) would be a two-element
+vector giving the probabilities of a sunny day with a cavity and a sunny day with no cavity.
+The Pnotation makes certain expressions much moreconcise than they might otherwise be.
+Forexample,theproduct rulesforallpossible valuesof Weather and Cavity canbewritten
+asasingleequation:
+P(Weather,Cavity) P(Weather Cavity)P(Cavity),
+488 Chapter 13. Quantifying Uncertainty
+insteadofasthese4 2 8equations (usingabbreviations W and C):
+P(W sunny C true) P(W sunny C true)P(C true)
+P(W rain C true) P(W rain C true)P(C true)
+P(W cloudy C true) P(W cloudy C true)P(C true)
+P(W snow C true) P(W snow C true)P(C 

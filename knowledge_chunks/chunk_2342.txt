@@ -1,0 +1,34 @@
+e,
+Cost,and Deaths toconsider, onemayproposethat Noise and Cost arepreferentially inde-
+Section16.4. Multiattribute Utility Functions 625
+pendentof Deaths. Forexample,ifwepreferastatewith20,000peopleresidingintheflight
+pathandaconstructioncostof 4billionoverastatewith70,000peopleresidingintheflight
+pathandacostof 3.7billionwhenthesafetylevelis0.06deathspermillionpassengermiles
+inboth cases, thenwewouldhavethesamepreference whenthe safetylevelis0.12or0.03;
+and the sameindependence would hold forpreferences between any other pairof values for
+Noise and Cost. It is also apparent that Cost and Deaths are preferentially independent of
+Noise and that Noise and Deaths are preferentially independent of Cost. We say that the
+MUTUAL set ofattributes Noise,Cost,Deaths exhibits mutualpreferential independence(MPI).
+PREFERENTIAL
+INDEPENDENCE
+MPI says that, whereas each attribute may be important, it does not affect the way in which
+onetradesofftheotherattributes againsteachother.
+Mutual preferential independence is something of a mouthful, but thanks to a remark-
+abletheoremduetotheeconomist Ge rard Debreu(1960),wecanderivefromitaverysimple
+form fortheagent s value function: Ifattributes X , ..., X aremutually preferentially in-
+1 n
+dependent, thentheagent spreferencebehaviorcanbedescribedasmaximizingthefunction
+(cid:12)
+V(x ,...,x ) V (x ),
+1 n i i
+i
+where each V is a value function referring only to the attribute X . For example, it might
+i i
+wellbethecasethattheairportdecision canbemadeusingavaluefunction
+V(noise,cost,deaths) noise 104 cost deaths 1012 .
+ADDITIVEVALUE Avalue function ofthistypeiscalled anadditivevaluefunction. Additivefunctions arean
+FUNCTION
+extremely natural way to describe an agent s preferences and are valid in many real-world
+situations. Fornattributes, assessinganadditivevaluefunctionrequires assessingnseparate
+one-dimensionalvaluefunctionsratherthanonen-dimensionalfunction;typically,thisrepre-
+sentsanexponentialreductioninthenumberofpreferenceexperimen

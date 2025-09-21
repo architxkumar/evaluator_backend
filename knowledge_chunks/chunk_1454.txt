@@ -1,0 +1,26 @@
+ to account for starting points, destinations, routes, and
+conflict resolution among all parameters. The AI planning techniques generated in hours
+a plan that would have taken weeks with older methods. The Defense Advanced Research
+Project Agency (DARPA) stated that this single application more than paid back DARPA s
+30-yearinvestment in AI.
+Robotics: The i Robot Corporation has sold overtwomillion Roomba robotic vacuum
+cleaners for home use. The company also deploys the more rugged Pack Bot to Iraq and
+Afghanistan, where it is used to handle hazardous materials, clear explosives, and identify
+thelocationofsnipers.
+Machine Translation: A computer program automatically translates from Arabic to
+English, allowing an English speaker to see the headline Ardogan Confirms That Turkey
+Would Not Accept Any Pressure, Urging Them to Recognize Cyprus. The program uses a
+statisticalmodelbuiltfromexamplesof Arabic-to-English translationsandfromexamplesof
+Englishtexttotalingtwotrillionwords(Brants etal.,2007). Noneofthecomputerscientists
+ontheteamspeak Arabic,buttheydounderstand statisticsandmachinelearningalgorithms.
+These are just a few examples of artificial intelligence systems that exist today. Not
+magic or science fiction but rather science, engineering, and mathematics, to which this
+bookprovidesanintroduction.
+1.5 SUMMARY
+This chapter defines AI and establishes the cultural background against which it has devel-
+oped. Someoftheimportantpointsareasfollows: Differentpeopleapproach AIwithdifferent goalsinmind. Twoimportant questions to
+askare: Areyouconcerned withthinking orbehavior? Doyou wanttomodelhumans
+orworkfromanidealstandard?
+30 Chapter 1. Introduction In this book, we adopt the view that intelligence is concerned mainly with rational
+action. Ideally, an intelligent agent takes the best possible action in a situation. We
+studytheproblem ofbuilding agentsthatareintelligent inthissense. Philosophers (going back to 400 B.C.) made AI conceivable by considering the ideas

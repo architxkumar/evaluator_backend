@@ -1,0 +1,22 @@
+thods in this chapter: the
+POLICYSEARCH
+ideaistokeeptwiddling thepolicyaslongasitsperformance improves,thenstop.
+Letus begin withthe policies themselves. Rememberthat apolicy isafunction that
+mapsstatestoactions. Weareinterestedprimarilyin parameterized representations of that
+have far fewer parameters than there are states in the state space (just as in the preceding
+section). For example, we could represent by a collection of parameterized Q-functions,
+oneforeachaction, andtaketheactionwiththehighestpredicted value: (s) max Q (s,a). (21.14) a
+Each Q-function could be a linear function of the parameters , as in Equation (21.10),
+or it could be a nonlinear function such as a neural network. Policy search will then ad-
+just the parameters to improve the policy. Notice that if the policy is represented by Q-
+functions, then policy search results in a process that learns Q-functions. This process is
+not the same as Q-learning! In Q-learning with function approximation, the algorithm finds
+a value of such that Q is close to Q , the optimal Q-function. Policy search, on the other hand, finds a value of that results in good performance; the values found by the two
+methods may differ very substantially. (For example, the approximate Q-function defined
+by Q (s,a) Q (s,a) 10 gives optimal performance, even though it is not at all close to Q .) Anotherclearinstance ofthe difference isthecase where (s)iscalculated using, say,
+depth-10 look-ahead search with anapproximate utility function U . Avalue of that gives goodresultsmaybealongwayfrommaking
+U resemblethetrueutilityfunction. One problem with policy representations of the kind given in Equation (21.14) is that
+thepolicy isadiscontinuous function oftheparameters whentheactions arediscrete. (Fora
+continuousactionspace,thepolicycanbeasmoothfunctionoftheparameters.) Thatis,there
+willbevaluesof suchthataninfinitesimalchangein causesthepolicytoswitchfromone
+action to another. This means that the value of the policy may also chan

@@ -1,0 +1,28 @@
+ithm is called
+REINFORCE (Williams, 1992); it is usually much more effective than hill climbing using
+lotsoftrialsateachvalueof . Itisstillmuchslowerthannecessary, however.
+850 Chapter 21. Reinforcement Learning
+Consider the following task: given two blackjack5 programs, determine which is best.
+One way to do this is to have each play against a standard dealer for a certain number of
+handsandthentomeasuretheirrespectivewinnings. Theproblemwiththis,aswehaveseen,
+isthatthewinningsofeachprogram fluctuatewidelydepending onwhetheritreceivesgood
+or bad cards. An obvious solution is to generate a certain number of hands in advance and
+have each program play the same set of hands. In this way, we eliminate the measurement
+CORRELATED error due to differences in the cards received. This idea, called correlated sampling, un-
+SAMPLING
+derlies a policy-search algorithm called PEGASUS (Ng and Jordan, 2000). The algorithm is
+applicable to domains for which a simulator is available so that the random outcomes of
+actions canberepeated. Thealgorithm worksbygenerating inadvance N sequences ofran-
+domnumbers, eachofwhichcanbeusedtorunatrialofanypolicy. Policysearchiscarried
+outbyevaluatingeachcandidatepolicyusingthesamesetofrandomsequencestodetermine
+theactionoutcomes. Itcanbeshownthatthenumberofrandomsequencesrequiredtoensure
+thatthevalueofeverypolicyiswellestimated depends onlyonthecomplexity ofthepolicy
+space,andnotatallonthecomplexityoftheunderlying domain.
+21.6 APPLICATIONS OF REINFORCEMENT LEARNING
+Wenowturntoexamplesoflarge-scale applications ofreinforcement learning. Weconsider
+applicationsingameplaying,wherethetransitionmodelisknownandthegoalistolearnthe
+utilityfunction, andinrobotics, wherethemodelisusually unknown.
+21.6.1 Applicationsto gameplaying
+Thefirstsignificant application ofreinforcement learning wasalsothefirstsignificant learn-
+ing program of any kind the checkers program written by Arthur Samuel (1959, 1967).
+Samuel first used a weighted linear function for the ev

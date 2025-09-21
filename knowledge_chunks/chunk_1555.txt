@@ -1,0 +1,25 @@
+ any case, the use of a
+goodheuristic stillprovidesenormoussavingscomparedto theuseofanuninformed search.
+In Section3.6,welookatthequestion ofdesigning goodheuristics. Computation timeisnot, however,A smaindrawback. Becauseitkeepsallgenerated nodes inmemory (asdo all GRAPH-SEARCH algorithms), A usually runs outof space long
+Section3.5. Informed(Heuristic)Search Strategies 99
+function RECURSIVE-BEST-FIRST-SEARCH(problem)returnsasolution,orfailure
+return RBFS(problem,MAKE-NODE(problem.INITIAL-STATE), )
+function RBFS(problem,node,f limit)returnsasolution,orfailureandanewf-costlimit
+ifproblem.GOAL-TEST(node.STATE)thenreturn SOLUTION(node)
+successors foreachaction inproblem.ACTIONS(node.STATE)do
+add CHILD-NODE(problem,node,action) intosuccessors
+ifsuccessors isemptythenreturnfailure, foreachs insuccessors do updatef withvaluefromprevioussearch,ifany s.f max(s.g s.h, node.f))
+loopdo
+best thelowestf-valuenodeinsuccessors
+ifbest.f f limit thenreturnfailure,best.f
+alternative thesecond-lowestf-valueamongsuccessors
+result,best.f RBFS(problem,best,min(f limit,alternative))
+ifresult (cid:7) failure thenreturnresult
+Figure3.26 Thealgorithmforrecursivebest-firstsearch. before it runs out of time. For this reason, A is not practical for many large-scale prob-
+lems. There are, however, algorithms that overcome the space problem without sacrificing
+optimality orcompleteness, atasmallcostinexecution time. Wediscussthesenext.
+3.5.3 Memory-bounded heuristic search The simplest way to reduce memory requirements for A is to adapt the idea of iterative
+ITERATIVE- D EEPENING deepening to the heuristic search context, resulting in the iterative-deepening A (IDA)al-
+A gorithm. Themaindifferencebetween IDA andstandarditerativedeepeningisthatthecutoff
+usedisthef-cost(g h)ratherthanthedepth;ateachiteration,thecutoffvalueisthesmall- est f-cost of any node that exceeded the cutoff on the previous iteration. IDA is practical
+for many problems with unit step costs and avoids the substantial overhea

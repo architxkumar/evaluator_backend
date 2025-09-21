@@ -1,0 +1,29 @@
+s. Italsoaugments thetraining setwithtransformations ofthe examples, just
+as Le Netdid. Avirtual SV Machievedthebesterrorraterecorded todate,0.56 .
+Shapematchingisatechniquefromcomputervisionusedtoaligncorrespondingparts
+of two different images of objects (Belongie et al., 2002). The idea is to pick out a set
+of points in each of the two images, and then compute, for each point in the first image,
+which point in the second image itcorresponds to. From this alignment, wethen compute a
+transformation between the images. The transformation gives us a measure of the distance
+betweentheimages. Thisdistancemeasureisbettermotivatedthanjustcountingthenumber
+of differing pixels, and it turns out that a 3 nearest neighbor algorithm using this distance
+measure performs very well. Training on only 20,000 of the 60,000 digits, and using 100
+sample points per image extracted from a Canny edge detector, a shape matching classifier
+achieved0.63 testerror.
+Humansareestimatedtohaveanerrorrateofabout0.2 onthisproblem. Thisfigure
+is somewhat suspect because humans have not been tested as extensively as have machine
+learning algorithms. On a similar data set of digits from the United States Postal Service,
+humanerrorswereat2.5 .
+The following figure summarizes the error rates, run time performance, memory re-
+quirements, and amount oftraining timeforthe seven algorithms wehave discussed. Italso
+adds another measure, the percentage of digits that must be rejected to achieve 0.5 error.
+For example, if the SVM is allowed to reject 1.8 of the inputs that is, pass them on for
+someone else to make the final judgment then its error rate on the remaining 98.2 of the
+inputsisreduced from1.1 to0.5 .
+The following table summarizes the error rate and some of the other characteristics of
+theseventechniques wehavediscussed.
+3 300 Boosted Virtual Shape
+NN Hidden Le Net Le Net SVM SVM Match
+Errorrate(pct.) 2.4 1.6 0.9 0.7 1.1 0.56 0.63
+Runtime(millisec digit) 1000 10 30 50 2000 200
+Memoryrequirements (

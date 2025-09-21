@@ -1,0 +1,36 @@
+algorithms that work on partial as-
+signments;inthenextsectionwelookatlocalsearchalgorithmsovercompleteassignments.
+We could apply a standard depth-limited search (from Chapter 3). A state would be a
+partial assignment, andanaction wouldbeadding var value totheassignment. Butfora
+CS Pwith nvariables of domain size d, wequickly notice something terrible: the branching
+factoratthetoplevelisndbecauseanyofdvaluescanbeassignedtoanyofnvariables. At
+the next level, the branching factor is (n 1)d, and so on for n levels. We generate a tree
+withn! dn leaves,eventhoughthereareonly dn possible completeassignments!
+Our seemingly reasonable but naive formulation ignores crucial property common to
+all CS Ps: commutativity. Aproblemiscommutativeiftheorderofapplication ofanygiven
+COMMUTATIVITY
+set of actions has no effect on the outcome. CS Psare commutative because when assigning
+values to variables, wereach the samepartial assignment regardless of order. Therefore, we
+need onlyconsider a single variable ateach node inthe search tree. Forexample, attheroot
+node of a search tree for coloring the map of Australia, we might make a choice between
+SA red, SA green, and SA blue, but we would never choose between SA red and
+WA blue. Withthisrestriction, thenumberofleavesis dn,aswewouldhope.
+Section6.3. Backtracking Searchfor CS Ps 215
+function BACKTRACKING-SEARCH(csp)returnsasolution,orfailure
+return BACKTRACK( ,csp)
+function BACKTRACK(assignment,csp)returnsasolution,orfailure
+ifassignment iscompletethenreturnassignment
+var SELECT-UNASSIGNED-VARIABLE(csp)
+foreachvalue in ORDER-DOMAIN-VALUES(var,assignment,csp)do
+ifvalue isconsistentwithassignment then
+add var value toassignment
+inferences INFERENCE(csp,var,value)
+ifinferences (cid:7) failure then
+addinferences toassignment
+result BACKTRACK(assignment,csp)
+ifresult (cid:7) failure then
+returnresult
+remove var value andinferences fromassignment
+returnfailure
+Figure6.5 Asimplebacktrackingalgorithmforconstraintsatisfactionproblems. Theal-
+go

@@ -1,0 +1,29 @@
+upplied by
+each percept. On the other hand, we will assume that the agent does not know how the en-
+vironment worksorwhatitsactions do,andwewillallow forprobabilistic action outcomes.
+Thus, the agent faces an unknown Markov decision process. We will consider three of the
+agentdesignsfirstintroduced in Chapter2: Autility-basedagentlearnsautilityfunctiononstatesandusesittoselectactionsthat
+maximizetheexpectedoutcomeutility. A Q-learning agent learns an action-utility function, or Q-function, giving the ex-
+Q-LEARNING
+pectedutilityoftakingagivenactioninagivenstate.
+Q-FUNCTION Areflexagentlearnsapolicythatmapsdirectly fromstatestoactions.
+Autility-based agentmustalsohaveamodel oftheenvironment inordertomakedecisions,
+because itmustknowthestates towhichitsactions willlead. Forexample, inordertomake
+useofabackgammonevaluationfunction, abackgammonprogrammustknowwhatitslegal
+moves are and how they affect the board position. Only in this way can it apply the utility
+function to the outcome states. A Q-learning agent, on the other hand, can compare the
+expectedutilitiesforitsavailable choiceswithoutneedingtoknowtheiroutcomes, soitdoes
+not need a model of the environment. On the other hand, because they do not know where
+theiractionslead,Q-learningagentscannotlookahead;thiscanseriouslyrestricttheirability
+tolearn, asweshallsee.
+Webegin in Section 21.2 with passive learning, where the agent s policy is fixed and
+PASSIVELEARNING
+thetaskistolearntheutilitiesofstates(orstate action pairs);thiscouldalsoinvolvelearning
+amodeloftheenvironment. Section21.3covers active learning, wheretheagent mustalso
+ACTIVELEARNING
+learn what to do. The principal issue is exploration: an agent must experience as much as
+EXPLORATION
+possible ofitsenvironment inordertolearn howtobehave in it. Section 21.4discusses how
+an agent can use inductive learning to learn much faster from its experiences. Section 21.5
+covers methods forlearning direct policy representations in reflexagents. Anunderstanding
+of Ma

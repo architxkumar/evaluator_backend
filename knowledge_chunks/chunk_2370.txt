@@ -1,0 +1,33 @@
+ units as x)
+becomeslarger, theindividual becomeslessrisk-averse.
+Exercises 643
+a. Assume Mary has an exponential utility function with R 500. Mary is given the
+choice between receiving 500 with certainty (probability 1) or participating in a lot-
+tery which has a 60 probability of winning 5000 and a40 probability of winning
+nothing. Assuming Marry acts rationally, which option would she choose? Show how
+youderivedyouranswer.
+b. Considerthechoicebetweenreceiving 100withcertainty (probability1)orparticipat-
+inginalottery whichhasa50 probability ofwinning 500anda50 probability of
+winningnothing. Approximatethevalueof R(to3significant digits)inanexponential
+utilityfunctionthatwouldcauseanindividualtobeindifferenttothesetwoalternatives.
+(Youmightfindithelpful towriteashortprogram tohelpyousolvethisproblem.)
+16.13 Repeat Exercise 16.16, using the action-utility representation shown in Figure 16.7.
+16.14 For either of the airport-siting diagrams from Exercises 16.16 and 16.13, to which
+conditional probability table entry is theutility most sensitive, given the available evidence?
+16.15 Considerastudentwhohasthechoicetobuyornotbuyatextbookforacourse. We ll
+modelthisasadecision problem withone Booleandecision node, B,indicating whetherthe
+agent chooses to buy the book, and two Boolean chance nodes, M, indicating whether the
+student has mastered the material in the book, and P, indicating whether the student passes
+thecourse. Ofcourse, thereisalso autility node, U. Acertain student, Sam,hasanadditive
+utilityfunction: 0fornotbuyingthebookand- 100forbuyingit;and 2000forpassingthe
+courseand0fornotpassing. Sam sconditional probability estimatesareasfollows:
+P(p b,m) 0.9 P(m b) 0.9
+P(p b, m) 0.5 P(m b) 0.7
+P(p b,m) 0.8
+P(p b, m) 0.3
+You might think that P would be independent of B given M, But this course has an open-
+bookfinal sohavingthebookhelps.
+a. Drawthedecisionnetworkforthisproblem.
+b. Computetheexpected utilityofbuying thebookandofnotbuyingit.
+c. Whatshould Samdo?
+16.16 T

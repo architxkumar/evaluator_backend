@@ -1,0 +1,27 @@
+e network structure
+shows that burglary and earthquakes directly affect the probability of the alarm s going off,
+but whether John and Mary call depends only on the alarm. The network thus represents
+ourassumptions thattheydonotperceive burglaries directly, theydonotnotice minorearth-
+quakes, andtheydonotconferbeforecalling.
+The conditional distributions in Figure 14.2 are shown as a conditional probability
+CONDITIONAL table, or CPT. (This form of table can be used for discrete variables; other representations,
+PROBABILITYTABLE
+including those suitable for continuous variables, are described in Section 14.2.) Each row
+in a CPT contains the conditional probability of each node value for a conditioning case.
+CONDITIONINGCASE
+A conditioning case is just a possible combination of values for the parent nodes a minia-
+ture possible world, if you like. Each row must sum to 1, because the entries represent an
+exhaustive setofcasesforthevariable. For Booleanvariables, onceyouknowthattheprob-
+abilityofatruevalueisp,theprobability offalsemustbe1 p,soweoftenomitthesecond
+number, asin Figure 14.2. Ingeneral, atable fora Boolean variable with k Boolean parents
+contains2k independentlyspecifiableprobabilities. Anodewithnoparentshasonlyonerow,
+representing thepriorprobabilities ofeachpossible valueofthevariable.
+Noticethatthenetworkdoesnothavenodescorrespondingto Mary scurrentlylistening
+toloud musicortothetelephone ringing andconfusing John. Thesefactors aresummarized
+intheuncertainty associated withthelinks from Alarm to John Calls and Mary Calls. This
+showsbothlazinessandignoranceinoperation: itwouldbealotofworktofindoutwhythose
+factorswouldbemoreorlesslikelyinanyparticularcase,andwehavenoreasonablewayto
+obtain the relevant information anyway. The probabilities actually summarize a potentially
+Section14.2. The Semanticsof Bayesian Networks 513
+infinite set of circumstances in which the alarm might fail to go off (high humidity, power
+failure, dead battery, cut wires, a dead mous

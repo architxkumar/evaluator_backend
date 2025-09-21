@@ -1,0 +1,35 @@
+ion4.1. Local Search Algorithmsand Optimization Problems 123
+18 12 14 13 13 12 14 14
+14 16 13 15 12 14 12 16
+14 12 18 13 15 12 14 14
+15 14 14 13 16 13 16
+14 17 15 14 16 16
+17 16 18 15 15
+18 14 15 15 14 16
+14 14 13 17 12 14 12 18
+(a) (b)
+Figure4.3 (a)An8-queensstatewithheuristiccostestimateh 17,showingthevalueof
+hforeachpossiblesuccessorobtainedbymovingaqueenwithinitscolumn.Thebestmoves
+aremarked. (b)Alocalminimuminthe8-queensstatespace;thestatehash 1butevery
+successorhasahighercost.
+concretely, thestate in Figure 4.3(b)isalocal maximum(i.e.,alocalminimum forthe
+costh);everymoveofasinglequeenmakesthesituationworse. Ridges: a ridge is shown in Figure 4.4. Ridges result in a sequence of local maxima
+RIDGE
+thatisverydifficultforgreedyalgorithms tonavigate. Plateaux: a plateau is a flat area of the state-space landscape. It can be a flat local
+PLATEAU
+maximum, from which no uphill exit exists, or a shoulder, from which progress is
+SHOULDER
+possible. (See Figure4.1.) Ahill-climbing searchmightgetlostontheplateau.
+Ineachcase,thealgorithmreachesapointatwhichnoprogressisbeingmade. Startingfrom
+arandomlygenerated8-queensstate,steepest-ascenthillclimbinggetsstuck86 ofthetime,
+solvingonly14 ofprobleminstances. Itworksquickly,takingjust4stepsonaveragewhen
+itsucceeds and3whenitgetsstuck not badforastatespacewith88 17millionstates.
+The algorithm in Figure 4.2 halts if it reaches a plateau where the best successor has
+the same value as the current state. Might it not be a good idea to keep going to allow a
+sidewaysmoveinthehopethattheplateauisreallyashoulder, asshownin Figure4.1? The
+SIDEWAYSMOVE
+answerisusuallyyes,butwemusttakecare. Ifwealwaysallowsidewaysmoveswhenthere
+are no uphill moves, an infinite loop will occur whenever the algorithm reaches a flat local
+maximumthatisnotashoulder. Onecommonsolutionistoputalimitonthenumberofcon-
+secutive sideways moves allowed. Forexample, we could allow up to, say, 100 consecutive
+sideways moves in the 8-queens problem. This raises the perc

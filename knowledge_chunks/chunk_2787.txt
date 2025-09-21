@@ -1,0 +1,26 @@
+learned.
+O S
+There have been many attempts to write formal grammars of natural languages, both
+in pure linguistics and in computational linguistics. There are several comprehensive but
+informalgrammarsof English(Quirk etal.,1985;Mc Cawley,1988;Huddlestonand Pullum,
+2002). Since the mid-1980s, there has been a trend toward putting more information in the
+lexicon and less in the grammar. Lexical-functional grammar, or LFG (Bresnan, 1982) was
+the first major grammar formalism to be highly lexicalized. If we carry lexicalization to an
+extreme, weendupwith categorial grammar (Clarkand Curran, 2004), inwhichthere can
+be as few as two grammar rules, or with dependency grammar (Smith and Eisner, 2008;
+Ku bleretal.,2009)inwhichtherearenosyntacticcategories, onlyrelationsbetweenwords.
+Sleator and Temperley (1993) describe a dependency parser. Paskin (2001) shows that a
+versionofdependency grammariseasiertolearnthan PCF Gs.
+The first computerized parsing algorithms were demonstrated by Yngve (1955). Ef-
+ficient algorithms were developed in the late 1960s, with a few twists since then (Kasami,
+1965;Younger, 1967;Earley,1970;Graham etal.,1980). Maxwelland Kaplan(1993)show
+how chart parsing with augmentations can be made efficient in the average case. Church
+and Patil (1982) address the resolution of syntactic ambiguity. Klein and Manning (2003) describe A parsing, and Pauls and Klein (2009) extend that to K-best A parsing, in which
+theresultisnotasingleparsebutthe Kbest.
+Leading parsers today include those by Petrov and Klein (2007b), which achieved
+90.6 accuracy on the Wall Street Journal corpus, Charniak and Johnson (2005), which
+achieved 92.0 , and Kooet al. (2008), which achieved 93.2 on the Penn treebank. These
+numbersarenotdirectlycomparable,andthereissomecriticismofthefieldthatitisfocusing
+toonarrowlyonafewselectcorpora, andperhapsoverfitting onthem.
+Formal semantic interpretation of natural languages originates within philosophy and
+formallogic, particularly Alfred Tarsk

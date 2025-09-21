@@ -1,0 +1,28 @@
+ningalgorithmsinwhichthisisnotpossible,onecaninsteadcreateareplicatedtrainingsetwhere
+thejthexampleappearswj times,usingrandomizationtohandlefractionalweights.
+750 Chapter 18. Learningfrom Examples
+h h h h 1 2 3 4
+h
+Figure18.33 Howtheboostingalgorithmworks. Eachshadedrectanglecorrespondsto
+anexample; the heightof therectanglecorrespondsto theweight. Thechecksandcrosses
+indicatewhethertheexamplewasclassifiedcorrectlybythecurrenthypothesis. Thesizeof
+thedecisiontreeindicatestheweightofthathypothesisinthefinalensemble.
+means that L always returns a hypothesis with accuracy on the training set that is slightly
+betterthanrandomguessing(i.e.,50 (cid:2)for Booleanclassification) then ADABOOS Twill
+return a hypothesis that classifies the training data perfectly for large enough K. Thus, the
+algorithm boosts the accuracy of the original learning algorithm on the training data. This
+result holds no matter how inexpressive the original hypothesis space and no matter how
+complexthefunction beinglearned.
+Letusseehowwellboostingdoesontherestaurantdata. Wewillchooseasouroriginal
+hypothesis spacetheclassofdecision stumps,whicharedecision treeswithjustonetest,at
+DECISIONSTUMP
+the root. The lower curve in Figure 18.35(a) shows that unboosted decision stumps are not
+veryeffectiveforthisdataset,reachingapredictionperformanceofonly81 on100training
+examples. When boosting is applied (with K 5), the performance is better, reaching 93 after100examples.
+Aninteresting thing happens astheensemble size K increases. Figure18.35(b) shows
+the training set performance (on 100 examples) as a function of K. Notice that the error
+reaches zero when K is 20; that is, a weighted-majority combination of 20 decision stumps
+sufficestofitthe100examplesexactly. Asmorestumpsareaddedtotheensemble, theerror
+remains at zero. The graph also shows that the test set performance continues to increase
+long after the training set error has reached zero. At K 20, the test performance is 0.95
+(or 0.05 error), and the pe

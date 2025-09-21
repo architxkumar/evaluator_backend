@@ -1,0 +1,28 @@
+t assignment, it is common
+NEAREST-NEIGHBOR to use the so-called nearest-neighbor filter, which repeatedly chooses the closest pairing
+FILTER
+of predicted position and observation and adds that pairing to the assignment. The nearest-
+neighborfilterworkswellwhentheobjectsarewellseparatedinstatespaceandtheprediction
+uncertainty and observation error are small in other words, when there is no possibility of
+confusion. When there is more uncertainty as to the correct assignment, a better approach
+is to choose the assignment that maximizes the joint probability of the current observations
+given the predicted positions. This can be done very efficiently using the Hungarian algo-
+HUNGARIAN rithm(Kuhn,1955), eventhoughtherearen!assignments tochoosefrom.
+ALGORITHM
+Anymethod that commits toasingle best assignment ateach timestep fails miserably
+under more difficult conditions. In particular, if the algorithm commits to an incorrect as-
+signment, the prediction at the next time step may be significantly wrong, leading to more
+602 Chapter 15. Probabilistic Reasoning over Time
+(a) (b)
+Figure15.20 Imagesfrom(a)upstreamand(b)downstreamsurveillancecamerasroughly
+two miles apart on Highway 99 in Sacramento, California. The boxed vehicle has been
+identifiedatbothcameras.
+incorrect assignments, and so on. Two modern approaches turn out to be much more effec-
+tive. Aparticlefilteringalgorithm (seepage598)fordataassociation worksbymaintaining
+alarge collection ofpossible current assignments. An MCM Calgorithm explores thespace
+ofassignment histories for example, Figure15.19(b c) mightbestatesinthe MCM Cstate
+space and can change its mind about previous assignment decisions. Current MCM Cdata
+association methods can handle many hundreds of objects in real time while giving a good
+approximation tothetrueposteriordistributions.
+The scenario described so far involved n known objects generating n observations at
+each time step. Real application of data association are typically much more com

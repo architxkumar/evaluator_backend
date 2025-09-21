@@ -1,0 +1,25 @@
+titive bidding in auctions: whoever wins the auction is very likely to have overes-
+timated the value of the object in question. Capen et al. quote a petroleum engineer on the
+638 Chapter 16. Making Simple Decisions
+topicofbiddingforoil-drilling rights: Ifonewinsatractagainsttwoorthreeothershemay
+feel fine about his good fortune. But how should he feel if he won against 50 others? Ill. REGRESSIONTOTHE Finally, behind both curses is the general phenomenon of regression to themean, whereby
+MEAN
+individualsselectedonthebasisofexceptionalcharacteristics previouslyexhibitedwill,with
+highprobability, becomelessexceptional infuture.
+The Allais paradox, due to Nobel Prize-winning economist Maurice Allais (1953) was
+tested experimentally (Tversky and Kahneman, 1982; Conlisk, 1989) to show that people
+are consistently inconsistent in their judgments. The Ellsberg paradox on ambiguity aver-
+sion was introduced in the Ph.D.thesis of Daniel Ellsberg (Ellsberg, 1962), who went on to
+become a military analyst at the RAND Corporation and to leak documents known as The
+Pentagon Papers, which contributed to the end of the Vietnam war and the resignation of
+President Nixon. Fox and Tversky (1995) describe a further study of ambiguity aversion.
+Mark Machina (2005) gives an overview of choice under uncertainty and how it can vary
+fromexpected utilitytheory.
+Therehasbeenarecentoutpouring ofmore-or-less popularbooksonhumanirrational-
+ity. The best known is Predictably Irrational (Ariely, 2009); others include Sway (Brafman
+and Brafman, 2009), Nudge (Thaler and Sunstein, 2009), Kluge (Marcus, 2009), How We
+Decide (Lehrer, 2009) and On Being Certain (Burton, 2009). They complement the classic
+(Kahneman et al., 1982) and the article that started it all (Kahneman and Tversky, 1979).
+Thefieldofevolutionary psychology (Buss,2005), ontheotherhand, hasruncountertothis
+literature, arguing that humans are quite rational in evolutionarily appropriate contexts. Its
+adherents pointoutthatirrationality

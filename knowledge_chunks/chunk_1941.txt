@@ -1,0 +1,35 @@
+f Prolog actually do allow this.) Show that such an
+inference enginewillallowtheconclusion y P(q,q)tobeinferred fromthepremise x y P(x,y).
+362 Chapter 9. Inference in First-Order Logic
+c. Suppose that a procedure that converts first-order logic to clausal form incorrectly
+Skolemizes x y P(x,y) to P(x,Sk0) that is, it replaces y by a Skolem con-
+stant rather than by a Skolem function of x. Show that an inference engine that uses
+such a procedure will likewise allow q P(q,q) to be inferred from the premise x y P(x,y).
+d. A common error among students is to suppose that, in unification, one is allowed to
+substituteatermfora Skolemconstantinsteadofforavariable. Forinstance, theywill
+saythattheformulas P(Sk1)and P(A)canbeunifiedunderthesubstitution Sk1 A .
+Giveanexamplewherethisleadstoaninvalidinference.
+9.8 Explainhowtowriteanygiven3-SA Tproblemofarbitrarysizeusingasinglefirst-order
+definiteclauseandnomorethan30ground facts.
+9.9 Supposeyouaregiventhefollowingaxioms:
+1. 0 3.
+2. 7 9.
+3. x x x.
+4. x x x 0.
+5. x x 0 x.
+6. x,y x y y x.
+7. w,x,y,z w y x z w x y z.
+8. x,y,z x y y z x z
+a. Giveabackward-chaining proof ofthesentence 7 3 9. (Besure, ofcourse, touse
+only the axioms given here, not anything else you may know about arithmetic.) Show
+onlythestepsthatleadstosuccess, nottheirrelevant steps.
+b. Givea forward-chaining proof of the sentence 7 3 9. Again, show only the steps
+thatleadtosuccess.
+9.10 A popular children s riddle is Brothers and sisters have I none, but that man s father
+is myfather s son. Use the rules ofthe family domain (Section 8.3.2on page 301) toshow
+whothatmanis. Youmayapplyanyoftheinferencemethodsdescribedinthischapter. Why
+doyouthinkthatthisriddleisdifficult?
+9.11 Suppose weput into alogical knowledge base a segment of the U.S.census data list-
+ing the age, city of residence, date of birth, and mother of every person, using social se-
+curity numbers as identifying constants for each person. Thus, George s age is given by
+Age(443-65-1282,56). Which oft

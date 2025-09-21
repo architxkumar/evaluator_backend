@@ -1,0 +1,29 @@
+ significant factor and can be influenced by the players conduct; otherwise, they can be
+treated asanaspect ofnature just liketheweather that is assumedtobeindifferent tothe
+players intentions.6
+Finally, some systems are a mixture of centralized and multiagent planning. For ex-
+ample, a delivery company may do centralized, offline planning for the routes of its trucks
+and planes each day, but leave some aspects open for autonomous decisions by drivers and
+pilots who can respond individually to traffic and weather situations. Also, the goals of the
+company and its employees are brought into alignment, to some extent, by the payment of
+incentives(salariesandbonuses) a suresignthatthisisatruemultiagentsystem.
+INCENTIVE
+The issues involved in multiagent planning can be divided roughly into two sets. The
+first, covered in Section 11.4.1, involves issues of representing and planning for multiple
+simultaneous actions;theseissuesoccurinallsettingsfrommultieffectortomultiagentplan-
+ning. The second, covered in Section 11.4.2, involves issues of cooperation, coordination,
+andcompetition arisingintruemultiagentsettings.
+11.4.1 Planning withmultiplesimultaneous actions
+Forthe time being, wewill treat the multieffector, multibody, and multiagent settings in the
+same way, labeling them generically as multiactor settings, using the generic term actor to
+MULTIACTOR
+cover effectors, bodies, and agents. The goal of this section is to work out how to define
+ACTOR
+transition models, correct plans, and efficient planning algorithms forthe multiactor setting.
+Acorrectplanisonethat,ifexecutedbytheactors,achievesthegoal. (Inthetruemultiagent
+setting, of course, the agents may not agree to execute any particular plan, but at least they
+6 We apologize to residents of the United Kingdom, where the mere act of contemplating a game of tennis
+guaranteesrain.
+Section11.4. Multiagent Planning 427
+Actors(A,B)
+Init(At(A,Left Baseline) At(B,Right Net) Approaching(Ball,Right Baseline)) Partner(A,B) Pa

@@ -1,0 +1,40 @@
+x A 1b.
+Afterinverting Aandmultiplying byb,wegettheanswer x 2 x y 3 .
+z 1
+A.3 PROBABILITY DISTRIBUTIONS
+Aprobability isameasureoverasetofeventsthatsatisfiesthreeaxioms:
+1. The measure of each event is between 0 and 1. Wewrite this as 0 P(X x ) 1,
+i
+where X is a random variable representing an event and x are the possible values of
+i
+X. In general, random variables are denoted by uppercase letters and their values by
+lowercaseletters.
+(cid:2)
+2. Themeasureofthewholesetis1;thatis, n P(X x ) 1.
+i 1 i
+3. Theprobability of aunion of disjoint events isthe sum ofthe probabilities ofthe indi-
+vidualevents;thatis,P(X x X x ) P(X x ) P(X x ),wherex and
+1 2 1 2 1
+x aredisjoint.
+2
+A probabilistic modelconsists of a sample space of mutually exclusive possible outcomes,
+togetherwithaprobabilitymeasureforeachoutcome. Forexample,inamodeloftheweather
+tomorrow, the outcomes might be sunny, cloudy, rainy, and snowy. A subset of these out-
+comesconstitutesanevent. Forexample,theeventofprecipitation isthesubsetconsistingof rainy,snowy .
+We use P(X) to denote the vector of values (cid:16)P(X x ),...,P(X x )(cid:17). We also
+(cid:2) 1(cid:2) n
+use P(x )asanabbreviation for P(X x )and P(x)for n P(X x ).
+i i x i 1 i
+Theconditionalprobability P(B A)isdefinedas P(B A) P(A). Aand Barecondi-
+tionally independent if P(B A) P(B)(orequivalently, P(A B) P(A)). Forcontinuous
+variables, thereareaninfinitenumberofvalues,andunless therearepointspikes, theproba-
+PROBABILITY bility ofanyone value is0. Therefore, wedefinea probability densityfunction, which we
+DENSITYFUNCTION
+also denote as P( ), but which has aslightly different meaning from thediscrete probability
+function. Thedensity function P(x)forarandom variable X, whichmightbethought ofas
+P(X x), is intuitively defined as the ratio of the probability that X falls into an interval
+around x,dividedbythewidthoftheinterval, astheinterval widthgoestozero:
+P(x) lim P(x X x dx) dx.
+dx 0
+1058 Appendix A. Mathematical background
+Thedensityfunction mustbeno

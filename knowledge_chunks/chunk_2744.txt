@@ -1,0 +1,39 @@
+ a relative pronoun (such as who or that )followedbyaverbphrase. Anexampleofarelativeclauseisthatstinksin Thewumpusthatstinksisin
+22. Anotherkindofrelativeclausehasnorelativepronoun,e.g.,Iknowin theman Iknow. Section23.1. Phrase Structure Grammars 891
+Noun stench 0.05 breeze 0.10 wumpus 0.15 pits 0.05 ...
+Verb is 0.10 feel 0.10 smells 0.10 stinks 0.05 ...
+Adjective right 0.10 dead 0.05 smelly 0.02 breezy 0.02 ...
+Adverb here 0.05 ahead 0.05 nearby 0.02 ...
+Pronoun me 0.10 you 0.03 I 0.10 it 0.10 ...
+Rel Pro that 0.40 which 0.15 who 0.20 whom 0.02 ...
+Name John 0.01 Mary 0.01 Boston 0.01 ...
+Article the 0.40 a 0.30 an 0.10 every 0.05 ...
+Prep to 0.20 in 0.10 on 0.05 near 0.10 ...
+Conj and 0.50 or 0.10 but 0.20 yet 0.02 ...
+Digit 0 0.20 1 0.20 2 0.20 3 0.20 4 0.20 ...
+Figure23.1 Thelexiconfor E .Rel Proisshortforrelativepronoun,Prepforpreposition,
+0
+and Conj forconjunction.Thesumoftheprobabilitiesforeachcategoryis1.
+E : S NP VP 0.90 I feelabreeze
+0 S Conj S 0.10 Ifeelabreeze and Itstinks
+NP Pronoun 0.30 I Name 0.10 John Noun 0.10 pits Article Noun 0.25 the wumpus Article Adjs Noun 0.05 the smellydead wumpus Digit Digit 0.05 34 NP PP 0.10 thewumpus in13 NP Rel Clause 0.05 thewumpus thatissmelly
+VP Verb 0.40 stinks VP NP 0.35 feel abreeze VP Adjective 0.05 smells dead VP PP 0.10 is in13 VP Adverb 0.10 go ahead
+Adjs Adjective 0.80 smelly Adjective Adjs 0.20 smelly dead
+PP Prep NP 1.00 to theeast
+Rel Clause Rel Pro VP 1.00 that issmelly
+Figure23.2 Thegrammarfor E ,withexamplephrasesforeachrule. Thesyntacticcat-
+0
+egories are sentence (S), noun phrase (NP), verb phrase (VP), list of adjectives (Adjs),
+prepositionalphrase(PP),andrelativeclause(Rel Clause).
+892 Chapter 23. Natural Languagefor Communication
+S
+0.90
+NP VP
+0.25 0.40
+Article Noun Verb
+0.05 0.15 0.10
+Every wumpus smells
+Figure23.3 Parsetreeforthesentence Everywumpussmells accordingtothegrammar
+E . Eachinteriornodeofthetreeislabeledwithitsprobability. Theprobabilityofthetree
+0
+asawholeis0.9 0.25 0.05 0.15 0.40 0.10

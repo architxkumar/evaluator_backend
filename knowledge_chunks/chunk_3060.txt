@@ -1,0 +1,24 @@
+icreasoning Monte-Carloplanning.In ECML-06.
+toproblemsolving. Working Notesofthe AIPS-98 ininferencesystems.In IJCAI-83,pp.190 193.
+Koditschek,D.(1987). Exactrobotnavigationby
+Workshopon Planningas Combinatorial Search.
+Kim, J.-H., Lee, C.-H., Lee, K.-H., and Kup- meansofpotentialfunctions:sometopologicalcon-
+Kavraki,L.,Svestka,P.,Latombe,J.-C.,and Over- puswamy,N.(2007). Evolvingpersonalityofage- siderations.In ICRA-87,Vol.1,pp.1 6.
+mars,M.(1996). Probabilisticroadmapsforpath neticrobotinubiquitousenvironment. In The16th
+Koehler,J.,Nebel,B.,Hoffmann,J.,and Dimopou-
+planninginhigh-dimensionalconfigurationspaces. IEEE International Symposiumon Robotand Hu-
+los,Y.(1997).Extendingplanninggraphstoan ADL
+IEEE Transactions on Robotics and Automation, maninteractive Communication,pp.848 853.
+subset.In ECP-97,pp.273 285.
+12(4),566 580.
+King,R.D.,Rowland,J.,Oliver,S.G.,and Young,
+Kay, M., Gawron, J. M., and Norvig, P. (1994). M.(2009). Theautomationofscience. Science, Koehn,P.(2009). Statistical Machine Translation.
+Verbmobil: ATranslation Systemfor Face-To-Face 324(5923),85 89. Cambridge University Press.
+Dialog.CSLI Press. Kirk,D.E.(2004). Optimal Control Theory: An Koenderink,J.J.(1990).Solid Shape.MIT Press.
+Kearns,M.(1990).The Computational Complexity Introduction.Dover. Koenig, S. (1991). Optimal probabilistic and
+of Machine Learning.MIT Press. Kirkpatrick, S.,Gelatt, C.D.,and Vecchi,M.P. decision-theoreticplanningusing Markoviandeci-
+Kearns,M.,Mansour,Y.,and Ng,A.Y.(2000).Ap- (1983). Optimizationbysimulatedannealing. Sci- siontheory. Master sreport,Computer Science Di-
+proximateplanninginlarge POMD Psviareusable ence,220,671 680. vision,Universityof California.
+trajectories.In Solla,S.A.,Leen,T.K.,and Mu ller, Kister, J., Stein, P., Ulam, S., Walden, W., and Koenig, S. (2000). Exploring unknown environ-
+K.-R.(Eds.),NIPS12.MIT Press. Wells,M.(1957). Experimentsinchess. JACM,4, mentswithreal-timesearchorreinforcementlearn-
+Kearns,M.and Singh,S.P.(1998). Near-optimal 174

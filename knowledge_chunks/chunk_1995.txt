@@ -1,0 +1,27 @@
+ightswitches.
+b. Writethesixactionschemas.
+c. Suppose the monkey wants to fool the scientists, who are off to tea, by grabbing the
+bananas, but leaving the box inits original place. Writethis as ageneral goal (i.e., not
+assumingthattheboxisnecessarilyat C)inthelanguageofsituationcalculus. Canthis
+goalbesolvedbyaclassical planningsystem?
+d. Your schema for pushing is probably incorrect, because if the object is too heavy, its
+positionwillremainthesamewhenthe Pushschemaisapplied. Fixyouractionschema
+toaccountforheavyobjects.
+10.4 The original STRIPS planner was designed to control Shakey the robot. Figure 10.14
+showsaversionof Shakey s worldconsisting offourroomslinedupalongacorridor, where
+eachroomhasadoorandalightswitch. Theactionsin Shakey sworldincludemovingfrom
+place toplace, pushing movable objects (such asboxes), climbing ontoanddownfromrigid
+398 Chapter 10. Classical Planning
+objects(suchasboxes),andturninglightswitchesonandoff. Therobotitselfcouldnotclimb
+onaboxortoggleaswitch,buttheplannerwascapableoffindingandprintingoutplansthat
+werebeyondtherobot sabilities. Shakey ssixactionsare thefollowing: Go(x,y,r), which requires that Shakey be At x and that x and y are locations In the
+sameroom r. Byconvention adoorbetweentworoomsisinbothofthem. Pushaboxbfromlocation xtolocationywithinthesameroom: Push(b,x,y,r). You
+willneedthepredicate Box andconstants fortheboxes. Climbontoaboxfrom position x: Climb Up(x,b); climbdownfrom aboxtoposition
+x: Climb Down(b,x). Wewillneedthepredicate On andtheconstant Floor. Turn a light switch on oroff: Turn On(s,b); Turn Off(s,b). To turn a light on oroff,
+Shakeymustbeontopofaboxatthelightswitch slocation.
+Write PDD Lsentences for Shakey ssixactions andtheinitialstatefrom Figure10.14. Con-
+structaplanfor Shakeytoget Box into Room .
+2 2
+10.5 Afinite Turingmachinehasafiniteone-dimensionaltapeofcells,eachcellcontaining
+one of a finite number of symbols. One cell has a read and write head above it. There is a
+finitesetofstates themachin

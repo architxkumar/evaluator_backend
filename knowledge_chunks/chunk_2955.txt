@@ -1,0 +1,24 @@
+e? So far, courts have held that medical expert systems play the same role as
+medicaltextbooksandreferencebooks;physiciansareresponsibleforunderstanding therea-
+soning behind any decision and for using their own judgment in deciding whether to accept
+the system s recommendations. In designing medical expert systems as agents, therefore,
+the actions should be thought of not as directly affecting the patient but as influencing the
+physician sbehavior. Ifexpertsystemsbecomereliablymoreaccuratethanhumandiagnosti-
+cians,doctorsmightbecomelegallyliableiftheydon tusetherecommendationsofanexpert
+system. Atul Gawande(2002)exploresthispremise.
+Similarissuesarebeginningtoariseregardingtheuseofintelligentagentsonthe Inter-
+net. Someprogress hasbeen madeinincorporating constraints intointelligent agents sothat
+theycannot,forexample,damagethefilesofotherusers(Weldand Etzioni,1994). Theprob-
+lem is magnified when money changes hands. If monetary transactions are made on one s
+behalf byan intelligent agent, isone liable forthedebts incurred? Would itbepossible for
+an intelligent agent to have assets itself and to perform electronic trades on its own behalf?
+So far, these questions do not seem to be well understood. To our knowledge, no program
+has been granted legal status as an individual for the purposes of financial transactions; at
+present, it seems unreasonable to do so. Programs are also not considered to be drivers forthepurposes ofenforcing trafficregulations onrealhighways. In California law,atleast,
+there do not seem to be any legal sanctions to prevent an automated vehicle from exceeding
+thespeedlimits,althoughthedesignerofthevehicle s controlmechanismwouldbeliablein
+thecase ofanaccident. Aswithhuman reproductive technology, the lawhasyet tocatch up
+withthenewdevelopments.
+The success of AI might mean the end of the human race. Almost any technology
+hasthepotentialtocauseharminthewronghands,butwith AIandrobotics,wehavethenew
+problemthatthewronghandsmightbelongtothetechno

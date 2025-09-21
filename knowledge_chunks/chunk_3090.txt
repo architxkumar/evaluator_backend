@@ -1,0 +1,26 @@
+ B. (1985). Learning logic. Tech-
+tems,pp.2 9. Oliver,N.,Garg,A.,and Horvitz,E.J.(2004).Lay- nicalreport TR-47, Centerfor Computational Re-
+eredrepresentationsforlearningandinferringoffice search in Economics and Management Science,
+Nilsson, D.and Lauritzen, S.(2000). Evaluating activityfrommultiplesensorychannels. Computer Massachusetts Instituteof Technology.
+influencediagramsusing LIMI Ds. In UAI-00,pp. Visionand Image Understanding,96,163 180.
+Parker,L.E.(1996). Onthedesignofbehavior-
+436 445.
+Oliver,R.M.and Smith,J.Q.(Eds.).(1990).Influ- based multi-robot teams. J. Advanced Robotics,
+Nilsson,N.J.(1965). Learning Machines: Foun- ence Diagrams,Belief Netsand Decision Analysis. 10(6).
+dations of Trainable Pattern-Classifying Systems. Wiley.
+Parr,R.and Russell,S.J.(1998). Reinforcement
+Mc Graw-Hill.Republishedin1990.
+Omohundro, S.(2008). Thebasic AIdrives. In learningwithhierarchiesofmachines. In Jordan,
+Nilsson,N.J.(1971). Problem-Solving Methodsin AGI-08Workshoponthe Sociocultural,Ethicaland M.I.,Kearns,M.,and Solla,S.A.(Eds.),NIPS10.
+Artificial Intelligence.Mc Graw-Hill. Futurological Implicationsof Artificial Intelligence. MIT Press.
+Bibliography 1085
+Parzen,E.(1962). Onestimationofaprobability Peirce,C.S.(1870).Descriptionofanotationforthe Pfeffer,A.(2007). Thedesignandimplementation
+densityfunctionandmode.Annalsof Mathematical logicofrelatives,resultingfromanamplificationof of IBAL:Ageneral-purposeprobabilisticlanguage.
+Statistics,33,1065 1076. theconceptionsof Boole scalculusoflogic. Mem- In Getoor,L.and Taskar,B.(Eds.),Introductionto
+oirsofthe American Academyof Artsand Sciences, Statistical Relational Learning.MIT Press.
+Pasca,M.and Harabagiu,S.M.(2001).Highperfor-
+9,317 378.
+mancequestion answering. In SIGIR-01,pp.366 Pfeifer,R., Bongard, J.,Brooks, R.A., and Iwa-
+374. Peirce,C.S.(1883).Atheoryofprobableinference. sawa,S.(2006). Howthe Body Shapesthe Way We
+Note B.Thelogicofrelatives.In Studiesin Logicby Think:ANew Viewof Intelligence.Bradford.
+Pasca, M.,

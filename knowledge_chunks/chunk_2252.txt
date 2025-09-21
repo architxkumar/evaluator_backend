@@ -1,0 +1,41 @@
+atabout Qn asn ?
+e. Explain how to do probabilistic inference in Bayesian networks, assuming that Qn is
+available. Isthisapractical waytodoinference?
+14.19 Thisexerciseexploresthestationary distribution for Gibbssamplingmethods.
+a. Theconvexcomposition ,q ;1 ,q ofq andq isatransition probability distri-
+1 2 1 2
+bution that first chooses one of q and q with probabilities and 1 , respectively,
+1 2
+and then applies whichever is chosen. Prove that if q and q are in detailed balance
+1 2
+with , then their convex composition is also in detailed balance with . (Note: this
+result justifies avariant of GIBBS-ASK inwhichvariables arechosen atrandom rather
+thansampledinafixedsequence.)
+b. Prove that if each of q and q has as its stationary distribution, then the sequential
+1 2
+composition q q q alsohas asitsstationary distribution.
+1 2
+METROPOLIS 14.20 The Metropolis Hastingsalgorithmisamemberofthe MCM Cfamily;assuch,itis
+HASTINGS
+designedtogeneratesamplesx(eventually)accordingtotargetprobabilities (x). (Typically
+Exercises 565
+weare interested in sampling from (x) P(x e).) Like simulated annealing, Metropolis (cid:2)
+PROPOSAL Hastingsoperatesintwostages. First,itsamplesanewstatex fromaproposaldistribution
+DISTRIBUTION
+q(x
+(cid:2) x),giventhecurrent
+state x. Then,itprobabilistically acceptsorrejects x
+(cid:2)
+according to
+ACCEPTANCE theacceptanceprobability
+PROBABILITY (cid:13) (cid:14) (x (cid:2) )q(x x (cid:2) ) (x
+(cid:2) x) min 1, . (x)q(x(cid:2) x)
+Iftheproposal isrejected, thestateremainsat x.
+a. Consider an ordinary Gibbs sampling step for a specific variable X . Show that this
+i
+step, considered as a proposal, is guaranteed to be accepted by Metropolis Hastings.
+(Hence,Gibbssamplingisaspecialcaseof Metropolis Hastings.)
+b. Showthatthetwo-stepprocessabove,viewedasatransition probability distribution, is
+indetailed balancewith .
+14.21 Three soccer teams A, B, and C, play each other once. Each match is between two
+teams, and can be won, drawn, orlost. Each team has afixed,

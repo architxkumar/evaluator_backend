@@ -1,0 +1,30 @@
+efforthasbeenexpendedtoimprovethecapabilities
+of TSP algorithms. In addition to planning trips for traveling salespersons, these algorithms
+havebeenusedfortaskssuchasplanningmovementsofautomaticcircuit-board drillsandof
+stocking machinesonshopfloors.
+A VLS Ilayout problem requires positioning millions of components and connections
+VLSILAYOUT
+on a chip to minimize area, minimize circuit delays, minimize stray capacitances, and max-
+imize manufacturing yield. The layout problem comes after the logical design phase and is
+usually split into two parts: cell layout and channel routing. In cell layout, the primitive
+components of the circuit are grouped into cells, each of which performs some recognized
+function. Each cell has a fixed footprint (size and shape) and requires a certain number of
+connectionstoeachoftheothercells. Theaimistoplacethecellsonthechipsothattheydo
+notoverlapandsothatthereisroomfortheconnecting wires tobeplacedbetweenthecells.
+Channelroutingfindsaspecificrouteforeachwirethroughthegapsbetweenthecells. These
+search problems are extremely complex, but definitely worth solving. Later in this chapter,
+wepresentsomealgorithmscapable ofsolving them.
+Robot navigation is a generalization of the route-finding problem described earlier.
+ROBOTNAVIGATION
+Rather than following a discrete set of routes, a robot can move in a continuous space with
+(in principle) an infinite set of possible actions and states. For a circular robot moving on a
+flat surface, the space is essentially two-dimensional. When the robot has arms and legs or
+wheelsthatmustalsobecontrolled, thesearchspacebecomesmany-dimensional. Advanced
+techniques are required just to make the search space finite. We examine some of these
+methods in Chapter 25. In addition to the complexity of the problem, real robots must also
+dealwitherrorsintheirsensorreadings andmotorcontrols.
+AUTOMATIC
+ASSEMBLY
+Automaticassemblysequencingofcomplexobjectsbyarobotwasfirstdemonstrated
+SEQUENCING
+by FREDDY (Michie, 1972). P

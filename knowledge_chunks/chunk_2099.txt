@@ -1,0 +1,23 @@
+age(Example Store, example.com ).
+These stores classify their goods into product categories, and provide links tothe major cat-
+egories from their home page. Minor categories can be reached through a chain of relevant
+links, andeventually wewillreachoffers. Inotherwords,a pageisrelevanttothequeryifit
+can be reached by achain of zero ormorerelevant category links from astore s home page,
+andthenfromonemorelinktotheproductoffer. Wecandefinerelevance:
+Relevant(page,query) store,home store Online Stores Homepage(store,home) url,url Relevant Chain(home,url ,query) Link(url ,url)
+2 2 2 page Contents(url).
+Here the predicate Link(from,to) means that there is a hyperlink from the from URL to
+the to URL. To define what counts as a Relevant Chain, we need to follow not just any old
+hyperlinks,butonlythoselinkswhoseassociatedanchortextindicatesthatthelinkisrelevant
+to the product query. Forthis, we use Link Text(from,to,text) to mean that there is a link
+between from and to with text as the anchor text. A chain of links between two UR Ls, start
+and end, is relevant to a description d if the anchor text of each link is a relevant category
+nameford. Theexistenceofthechainitselfisdetermined byarecursive definition, withthe
+emptychain(start end)asthebasecase:
+Relevant Chain(start,end,query) (start end) ( u,text Link Text(start,u,text) Relevant Category Name(query,text) Relevant Chain(u,end,query)).
+Now we must define what it means for text to be a Relevant Category Name for query.
+First, weneed to relate strings to the categories they name. This is done using the predicate
+Name(s,c),whichsaysthatstring sisanameforcategory c forexample,wemightassert
+that Name( laptops ,Laptop Computers). Some more examples of the Name predicate
+appear in Figure 12.9(b). Next, we define relevance. Suppose that query is laptops. Then
+Relevant Category Name(query,text)istruewhenoneofthefollowingholds: Thetextandquerynamethesamecategory e.g., notebooks and laptops. 11 Analternativetothelink-followingst

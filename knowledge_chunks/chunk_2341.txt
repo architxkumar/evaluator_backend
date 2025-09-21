@@ -1,0 +1,36 @@
+s for propagating this kind of qualitative
+QUALITATIVE
+information among uncertain variables in qualitative probabilistic networks, enabling a
+PROBABILISTIC
+NETWORKS
+systemtomakerationaldecisionsbasedonstochasticdominance,withoutusinganynumeric
+values.
+16.4.2 Preference structure and multiattribute utility
+Suppose we have n attributes, each of which has d distinct possible values. To specify the
+completeutilityfunction U(x ,...,x ),weneeddnvaluesintheworstcase. Now,theworst
+1 n
+casecorrespondstoasituationinwhichtheagent spreferenceshavenoregularityatall. Mul-
+tiattributeutilitytheoryisbasedonthesuppositionthatthepreferencesoftypicalagentshave
+muchmorestructurethanthat. Thebasicapproachistoidentifyregularitiesinthepreference
+REPRESENTATION behaviorwewouldexpecttoseeandtousewhatarecalledrepresentationtheoremstoshow
+THEOREM
+thatanagentwithacertainkindofpreference structure has autilityfunction
+U(x ,...,x ) F f (x ),...,f (x ) ,
+1 n 1 1 n n
+where F is, we hope, a simple function such as addition. Notice the similarity to the use of
+Bayesiannetworkstodecomposethejointprobability ofseveralrandom variables.
+Preferences withoutuncertainty
+Let us begin with the deterministic case. Rememberthat for deterministic environments the
+agent has a value function V(x ,...,x ); the aim is to represent this function concisely.
+1 n
+The basic regularity that arises in deterministic preference structures is called preference
+PREFERENCE independence. Twoattributes X and X are preferentially independent of a third attribute
+INDEPENDENCE 1 2
+X ifthe preference between outcomes (cid:16)x ,x ,x (cid:17)and (cid:16)x (cid:2) ,x (cid:2) ,x (cid:17)does not depend on the
+3 1 2 3 1 2 3
+particularvalue x forattribute X .
+3 3
+Going back to the airport example, where we have (among other attributes) Noise,
+Cost,and Deaths toconsider, onemayproposethat Noise and Cost arepreferentially inde-
+Section16.4. Multiattribute Utility Functions 625
+pendentof Deaths. Forexample,ifwepreferastatewith20,000peopler

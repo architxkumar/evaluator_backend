@@ -1,0 +1,25 @@
+n-board viewtopic.php?t Rossi,F.,van Beek,P.,and Walsh,T.(Eds.),Hand- Dagstuhl,pp.306 325.
+805.
+bookof Constraint Programming.Elsevier. Blum,A.L.and Mitchell,T.M.(1998). Combin-
+Boutilier, C.and Brafman, R.I.(2001). Partial-
+Bhar,R.and Hamori,S.(2004). Hidden Markov inglabeledandunlabeleddatawithco-training. In orderplanningwithconcurrentinteractingactions.
+Models: Applications to Financial Economics. COLT-98,pp.92 100. JAIR,14,105 136.
+Springer. Blumer,A.,Ehrenfeucht,A.,Haussler,D.,and War-
+Boutilier, C., Dearden, R., and Goldszmidt, M.
+muth, M. (1989). Learnability and the Vapnik-
+Bibel, W. (1993). Deduction: Automated Logic. (2000). Stochasticdynamicprogrammingwithfac-
+Chervonenkisdimension.JACM,36(4),929 965.
+Academic Press. toredrepresentations.AIJ,121,49 107.
+Bobrow,D.G.(1967).Naturallanguageinputfora
+Biere,A.,Heule,M.,van Maaren,H.,and Walsh, computerproblemsolvingsystem.In Minsky,M.L. Boutilier,C.,Reiter,R.,and Price,B.(2001).Sym-
+T.(Eds.).(2009). Handbookof Satisfiability. IOS (Ed.), Semantic Information Processing, pp.133 bolicdynamicprogrammingforfirst-order MD Ps.In
+Press. 215.MIT Press. IJCAI-01,pp.467 472.
+Billings, D., Burch, N., Davidson, A., Holte, R., Bobrow,D.G.,Kaplan,R.,Kay,M.,Norman,D.A., Boutilier, C.,Friedman, N., Goldszmidt, M.,and
+Schaeffer, J., Schauenberg, T., and Szafron, D. Thompson,H.,and Winograd,T.(1977). GUS,a Koller,D.(1996).Context-specificindependencein
+(2003). Approximating game-theoretic optimal framedrivendialogsystem.AIJ,8,155 173. Bayesiannetworks.In UAI-96,pp.115 123.
+strategiesforfull-scalepoker.In IJCAI-03. Bouzy,B.and Cazenave,T.(2001). Computergo:
+Boden, M. A.(1977). Artificial Intelligence and
+An AIorientedsurvey.AIJ,132(1),39 103.
+Binder,J.,Koller,D.,Russell,S.J.,and Kanazawa, Natural Man.Basic Books.
+K.(1997a). Adaptiveprobabilisticnetworkswith Boden,M.A.(Ed.).(1990). The Philosophyof Ar- Bowerman,M.and Levinson,S.(2001). Language
+hiddenvariables.Machine Learning,29,213 244. tificial Intelligence.Oxford University Pr

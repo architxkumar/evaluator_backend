@@ -1,0 +1,34 @@
+usworld, andillustrates theoperation ofaknowledge-based
+agentwithoutgoingintoanytechnicaldetail. Thenweexplainthegeneralprinciplesoflogic
+234
+Section7.1. Knowledge-Based Agents 235
+in Section 7.3 and the specifics of propositional logic in Section 7.4. While less expressive
+than first-order logic (Chapter 8), propositional logic illustrates all the basic concepts of
+logic; it also comes with well-developed inference technologies, which we describe in sec-
+tions7.5and7.6. Finally,Section7.7combinestheconceptofknowledge-based agentswith
+thetechnology ofpropositional logictobuildsomesimpleagentsforthewumpusworld.
+7.1 KNOWLEDGE-BASED AGENTS
+Thecentralcomponent ofaknowledge-based agentisitsknowledgebase,or KB.Aknowl-
+KNOWLEDGEBASE
+edge base is a set of sentences. (Here sentence is used as a technical term. It is related
+SENTENCE
+but not identical to the sentences of English and other natural languages.) Each sentence is
+KNOWLEDGE
+expressed in a language called a knowledge representation language and represents some
+REPRESENTATION
+LANGUAGE
+assertion about theworld. Sometimeswedignify asentence withthenameaxiom, whenthe
+AXIOM
+sentence istakenasgivenwithoutbeingderivedfromothersentences.
+There must be a way to add new sentences to the knowledge base and a way to query
+what is known. The standard names for these operations are TELL and ASK, respectively.
+Bothoperations mayinvolve inference that is,deriving newsentences fromold. Inference
+INFERENCE
+mustobeytherequirementthatwhenone AS Ksaquestionoftheknowledgebase,theanswer
+should follow from whathasbeen told(or TEL Led)totheknowledge basepreviously. Later
+in this chapter, we will be more precise about the crucial word follow. Fornow, take it to
+meanthattheinferenceprocess shouldnotmakethingsupasitgoesalong.
+Figure7.1showstheoutlineofaknowledge-based agentprogram. Likeallouragents,
+ittakesaperceptasinputandreturnsanaction. Theagentmaintainsaknowledgebase, KB,
+BACKGROUND whichmayinitially containsomebackgroundknowledge.
+KNOWLE

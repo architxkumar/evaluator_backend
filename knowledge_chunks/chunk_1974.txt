@@ -1,0 +1,29 @@
+(Flat,Axle)
+Leave Overnight At(Flat,Axle) At(Flat,Axle)
+Leave Overnight At(Spare,Axle) At(Spare,Axle) At(Spare,Axle)
+Put On(Spare,Axle) At(Spare,Axle) At(Flat,Ground) At(Flat,Ground) At(Flat,Ground)
+At(Flat,Ground) At(Flat,Ground) At(Spare,Ground) At(Spare,Ground) At(Spare,Ground)
+At(Spare,Ground) At(Spare,Ground)
+Figure10.10 The planninggraphforthe spare tire problemafterexpansionto level S .
+2
+Mutexlinksareshownasgraylines. Notalllinksareshown,becausethegraphwouldbetoo
+clutteredifweshowedthemall. Thesolutionisindicatedbyboldlinesandoutlines. Interference: Remove(Flat,Axle)ismutexwith Leave Overnight becauseonehasthe
+precondition At(Flat,Axle)andtheotherhasitsnegationasaneffect. Competing needs: Put On(Spare,Axle) is mutex with Remove(Flat,Axle) because
+onehas At(Flat,Axle)asaprecondition andtheotherhasitsnegation. Inconsistentsupport: At(Spare,Axle)ismutexwith At(Flat,Axle)in S becausethe
+2
+only way of achieving At(Spare,Axle) is by Put On(Spare,Axle), and that is mutex
+withthepersistence actionthatistheonlywayofachieving At(Flat,Axle). Thus,the
+mutexrelations detect theimmediate conflict that arises from trying toput twoobjects
+inthesameplaceatthesametime.
+This time, when wego back to the start of the loop, all the literals from the goal are present
+in S , and none of them is mutex with any other. That means that a solution might exist,
+2
+and EXTRACT-SOLUTION will try to find it. We can formulate EXTRACT-SOLUTION as a
+Boolean constraint satisfaction problem (CSP) where the variables are the actions at each
+level,thevaluesforeachvariableareinoroutoftheplan,andtheconstraintsarethemutexes
+andtheneedtosatisfyeachgoalandprecondition.
+Alternatively,wecandefine EXTRACT-SOLUTIO Nasabackwardsearchproblem,where
+each stateinthesearch contains apointertoalevelintheplanning graph and asetofunsat-
+isfiedgoals. Wedefinethissearchproblem asfollows: The initial state is the last level of the planning graph, S , along with the set of goals
+n
+fromtheplanning problem. The actions av

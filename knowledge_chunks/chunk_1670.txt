@@ -1,0 +1,34 @@
+EDVALUE
+overallpossible outcomesofthechancenodes.
+This leads us to generalize the minimax value for deterministic games to an expecti-
+EXPECTIMINIMAX minimaxvalueforgameswithchance nodes. Terminalnodes and MAX and MIN nodes (for
+VALUE
+which the dice roll is known) work exactly the same way as before. For chance nodes we
+compute the expected value, which is the sum of the value over all outcomes, weighted by
+theprobability ofeachchanceaction:
+EXPECTIMINIMAX(s) UTILITY(s) if TERMINAL-TEST(s) max a EXPECTIMINIMAX(RESULT(s,a)) if PLAYER(s) MAX m (cid:2) in a EXPECTIMINIMAX(RESULT(s,a)) if PLAYER(s) MIN
+P(r)EXPECTIMINIMAX(RESULT(s,r)) if PLAYER(s) CHANCE
+r
+where r represents apossible diceroll(orotherchance event)and RESULT(s,r)isthesame
+stateass,withtheadditional factthattheresultofthedicerollisr.
+5.5.1 Evaluationfunctions forgames ofchance
+As with minimax, the obvious approximation to make with expectiminimax is to cut the
+search offat some point and apply an evaluation function to each leaf. Onemight think that
+evaluation functions forgamessuchasbackgammonshould bejustlikeevaluation functions
+Section5.5. Stochastic Games 179
+forchess theyjustneedtogivehigherscorestobetterpositions. Butinfact,thepresenceof
+chance nodes means that one has tobe more careful about what the evaluation values mean.
+Figure 5.12 shows what happens: with an evaluation function that assigns the values 1, 2,
+3, 4 to the leaves, move a is best; with values 1, 20, 30, 400 , move a is best. Hence,
+1 2
+the program behaves totally differently if we make a change in the scale of some evaluation
+values! It turns out that to avoid this sensitivity, the evaluation function must be a positive
+lineartransformation oftheprobabilityofwinningfromaposition(or,moregenerally, ofthe
+expected utility of the position). This is an important and general property of situations in
+whichuncertainty isinvolved, andwediscussitfurtherin Chapter16.
+MAX
+a a a a
+1 2 1 2
+CHANCE 2.1 1.3 21 40.9
+.9 .1 .9 .1 .9 .1 .9 .1
+MIN 2 3 1

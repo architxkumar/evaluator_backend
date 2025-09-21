@@ -1,0 +1,27 @@
+thebelief in Wet Grass,
+which in turn increases the belief in Rain even more. Clearly, uncertain reasoning systems
+needtokeeptrackofthepathsalongwhichevidence ispropagated.
+Intercausal reasoning (orexplaining away)isalsotricky. Considerwhathappens when
+wehavethetworules
+Sprinkler Wet Grass and Wet Grass Rain .
+Supposeweseethatthesprinklerison. Chainingforwardthroughourrules,thisincreasesthe
+belief that the grass willbe wet, which in turn increases the belief that it is raining. But this
+is ridiculous: the fact that the sprinkler is on explains awaythe wetgrass and should reduce
+thebeliefinrain. Atruth-functional systemactsasifitalsobelieves Sprinkler Rain.
+Given these difficulties, how can truth-functional systems be made useful in practice?
+The answer lies in restricting the task and in carefully engineering the rule base so that un-
+desirable interactions do not occur. The most famous example of a truth-functional system
+CERTAINTYFACTOR
+foruncertain reasoning isthe certaintyfactors model,whichwasdeveloped forthe MYCIN
+medical diagnosis program and was widely used in expert systems of the late 1970s and
+1980s. Almostallusesofcertainty factorsinvolved rulesetsthatwereeitherpurelydiagnos-
+tic (as in MYCIN) or purely causal. Furthermore, evidence was entered only at the roots oftheruleset, andmostrulesetsweresingly connected. Heckerman(1986) hasshownthat,
+Section14.7. Other Approaches to Uncertain Reasoning 549
+underthesecircumstances, aminorvariationoncertainty-factor inferencewasexactlyequiv-
+alentto Bayesianinferenceonpolytrees. Inothercircumstances, certaintyfactorscouldyield
+disastrously incorrect degrees of belief through overcounting of evidence. As rule sets be-
+camelarger, undesirable interactions betweenrulesbecamemorecommon,andpractitioners
+foundthatthecertaintyfactorsofmanyotherruleshadtobe tweaked whennewruleswere
+added. Forthesereasons, Bayesiannetworkshavelargelysupplanted rule-based methodsfor
+uncertain reasoning.
+14.7.2 Representing ignorance: Dempste

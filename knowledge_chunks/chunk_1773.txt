@@ -1,0 +1,26 @@
+ue false
+true false false false true false false
+true true false true true true true
+Figure7.8 Truthtablesforthefivelogicalconnectives. Tousethetabletocompute,for
+example,thevalueof P Qwhen P istrueand Qisfalse,firstlookontheleftfortherow
+where P istrueand Qisfalse(thethirdrow).Thenlookinthatrowunderthe P Qcolumn
+toseetheresult: true.
+the sentence P (P P ), evaluated in m , gives true (false true) true 1,2 2,2 3,1 1
+true true. Exercise7.3asksyoutowritethealgorithm PL-TRUE?(s,m),whichcomputes
+thetruthvalueofapropositional logicsentence sinamodelm.
+Thetruth tables for and, or, and not areinclose accord withourintuitions about
+the Englishwords. Themainpointofpossibleconfusionisthat P Qistruewhen P istrue
+or Q is true or both. A different connective, called exclusive or ( xor for short), yields
+false when both disjuncts are true.7 There is no consensus on the symbol for exclusive or;
+somechoicesare or(cid:7) or .
+Thetruth table for maynot quite fitone s intuitive understanding of P implies Q or if P then Q. Foronething,propositionallogicdoesnotrequireanyrelationofcausation
+orrelevancebetween P and Q. Thesentence 5isoddimplies Tokyoisthecapitalof Japan is a true sentence of propositional logic (under the normal interpretation), even though it is
+a decidedly odd sentence of English. Another point of confusion is that any implication is
+true whenever its antecedent is false. Forexample, 5 is even implies Sam is smart is true,
+regardless of whether Sam is smart. This seems bizarre, but it makes sense if you think of P Q assaying, If P istrue,then Iamclaimingthat Qistrue. Otherwise Iammaking
+noclaim. Theonlywayforthissentence tobefalseisif P istruebut Qisfalse.
+The biconditional, P Q, is true whenever both P Q and Q P are true. In
+English,thisisoftenwrittenas P ifandonlyif Q. Manyoftherulesofthewumpusworld
+are best written using . Forexample, a square is breezy if a neighboring square has a pit,
+andasquareisbreezy onlyifaneighboring squarehasapit. Soweneedabiconditional,
+B (

@@ -1,0 +1,27 @@
+developedeffectiveheuristics forplanning withsituation calculus.
+10.4.3 Planning asconstraint satisfaction
+Wehaveseenthatconstraint satisfaction hasalotincommonwith Booleansatisfiability, and
+wehaveseenthat CS Ptechniquesareeffectiveforschedulingproblems,soitisnotsurprising
+thatitispossibletoencodeaboundedplanningproblem(i.e.,theproblemoffindingaplanof
+lengthk)asaconstraint satisfaction problem (CSP).Theencoding issimilartotheencoding
+to a SAT problem (Section 10.4.1), with one important simplification: at each time step we
+need only a single variable, Actiont, whose domain is the set of possible actions. We no
+longerneed one variable forevery action, and wedon t need theaction exclusion axioms. It
+isalsopossibletoencodeaplanninggraphintoa CSP.Thisistheapproachtakenby GP-CSP
+(Doand Kambhampati, 2003).
+10.4.4 Planning asrefinement ofpartially ordered plans
+Alltheapproaches wehaveseensofarconstruct totallyorderedplansconsisting ofastrictly
+linear sequences of actions. This representation ignores the fact that many subproblems are
+independent. A solution to an air cargo problem consists of a totally ordered sequence of
+actions,yetif30packagesarebeingloadedontooneplaneinoneairportand50packagesare
+beingloadedontoanotheratanotherairport,itseemspointlesstocomeupwithastrictlinear
+ordering of80loadactions; thetwosubsetsofactions shouldbethought ofindependently.
+An alternative is to represent plans as partially ordered structures: a plan is a set of
+actions and a set of constraints of the form Before(a ,a ) saying that one action occurs
+i j
+beforeanother. Inthebottomof Figure10.13,weseeapartiallyorderedplanthatisasolution
+to the spare tire problem. Actions are boxes and ordering constraints are arrows. Note that
+Remove(Spare,Trunk)and Remove(Flat,Axle)canbedoneineitherorderaslongasthey
+arebothcompleted beforethe Put On(Spare,Axle)action.
+Partially ordered plans are created by a search through the space of plans rather than
+through the state space. We start with the empty plan

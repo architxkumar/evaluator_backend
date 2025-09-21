@@ -1,0 +1,35 @@
+2,2
+ditional). Itspremiseorantecedentis(W P ),anditsconclusionorconsequent
+PREMISE 1,3 3,1
+is W . Implications arealsoknownas rulesorif thenstatements. Theimplication
+CONCLUSION 2,2
+symbolissometimeswritteninotherbooksas or .
+RULES (if and only if). The sentence W W is a biconditional. Some other books
+BICONDITIONAL 1,3 2,2
+writethisas .
+Sentence Atomic Sentence Complex Sentence
+Atomic Sentence True False P Q R ...
+Complex Sentence (Sentence ) Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence
+OPERATORPRECEDENCE : , , , , Figure 7.7 A BNF (Backus Naur Form) grammar of sentences in propositional logic,
+alongwithoperatorprecedences,fromhighesttolowest.
+Section7.4. Propositional Logic: AVery Simple Logic 245
+Figure7.7givesaformalgrammarofpropositional logic; seepage1060 ifyouarenot
+familiar with the BNF notation. The BNF grammar by itself is ambiguous; a sentence with
+severaloperatorscanbeparsedbythegrammarinmultipleways. Toeliminatetheambiguity
+wedefineaprecedenceforeachoperator. The not operator( )hasthehighestprecedence,
+which means that in the sentence A B the binds most tightly, giving us the equivalent
+of( A) Bratherthan (A B). (Thenotationforordinaryarithmeticisthesame: 2 4
+is2,not 6.) Whenindoubt,useparentheses tomakesureoftherightinterpretation. Square
+brackets meanthesamething asparentheses; thechoice ofsquare brackets orparentheses is
+solelytomakeiteasierforahumantoreadasentence.
+7.4.2 Semantics
+Having specified the syntax of propositional logic, we now specify its semantics. The se-
+mantics defines the rules for determining the truth of a sentence with respect to a particular
+model. Inpropositional logic, amodelsimply fixesthetruthvalue true orfalse forev-
+TRUTHVALUE
+eryproposition symbol. Forexample,ifthesentencesinthe knowledgebasemakeuseofthe
+proposition symbols P ,P ,and P ,thenonepossible modelis
+1,2 2,2 3,1
+m P false, P false, P true .
+1 1,2 2,2 3,1
+With three proposition symbols, there are 23 8 possible models e

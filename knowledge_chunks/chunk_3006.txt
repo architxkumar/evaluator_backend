@@ -1,0 +1,28 @@
+rrou, C., Glavieux, A., and Thitimajshima, P.
+Artech House. Bell,C.and Tate,A.(1985). Usingtemporalcon-
+(1993).Near Shannonlimiterrorcontrol-correcting
+straintstorestrictsearchinaplanner.In Proc.Third
+Bar-Shalom,Y.and Fortmann,T.E.(1988).Track- codinganddecoding:Turbo-codes.1.In Proc.IEEE
+Alvey IKBSSIG Workshop.
+ingand Data Association.Academic Press. International Conferenceon Communications, pp.
+Bell,J.L.and Machover,M.(1977). ACoursein 1064 1070.
+Bartak,R.(2001).Theoryandpracticeofconstraint
+Mathematical Logic.Elsevier North-Holland.
+propagation.In Proc.Third Workshopon Constraint Berry,D.A.and Fristedt,B.(1985). Bandit Prob-
+Programmingfor Decisionand Control(CPDC-01), Bellman,R.E.(1952). Onthetheoryofdynamic lems:Sequential Allocationof Experiments. Chap-
+pp.7 14. programming.PNAS,38,716 719. manand Hall.
+1066 Bibliography
+Bertele,U.and Brioschi,F.(1972). Nonserialdy- Blazewicz, J., Ecker, K., Pesch, E., Schmidt, G., Borenstein, J., Everett, B., and Feng, L. (1996).
+namicprogramming.Academic Press. and Weglarz, J. (2007). Handbook on Schedul- Navigating Mobile Robots:Systemsand Techniques.
+ing: Modelsand Methodsfor Advanced Planning A.K.Peters,Ltd.
+Bertoli, P., Cimatti, A., and Roveri, M. (2001a). (International Handbookson Information Systems).
+Heuristicsearch symbolicmodelchecking ef- Springer-Verlag New York,Inc. Borenstein,J.and Koren.,Y.(1991). Thevector
+ficientconformantplanning. In IJCAI-01,pp.467 fieldhistogram Fastobstacleavoidanceformobile
+472. Blei,D.M.,Ng,A.Y.,and Jordan,M.I.(2001). robots.IEEE Transactionson Roboticsand Automa-
+Latent Dirichlet Allocation. In Neural Information tion,7(3),278 288.
+Bertoli,P.,Cimatti,A.,Roveri,M.,and Traverso,P. Processing Systems,Vol.14.
+Borgida,A.,Brachman,R.J.,Mc Guinness,D.,and
+(2001b). Planninginnondeterministicdomainsun-
+Blinder, A.S.(1983). Issuesinthecoordination Alperin Resnick,L.(1989).CLASSIC:Astructural
+derpartialobservabilityviasymbolicmodelcheck-
+ofmonetaryandfiscalpolicies. In Monetary Policy datamodel

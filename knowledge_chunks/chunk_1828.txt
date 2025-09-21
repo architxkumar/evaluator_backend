@@ -1,0 +1,40 @@
+tvalid),
+orunsatisfiable.
+b. Convert the left-hand and right-hand sides of the main implication into CNF, showing
+eachstep,andexplainhowtheresultsconfirmyouranswerto(a).
+c. Proveyouranswerto(a)usingresolution.
+DISJUNCTIVE 7.19 Asentenceisindisjunctivenormalform(DNF)ifitisthedisjunctionofconjunctions
+NORMALFORM
+ofliterals. Forexample, thesentence (A B C) ( A C) (B C)isin DNF.
+a. Anypropositional logic sentence islogically equivalent totheassertion that somepos-
+sible world in which it would be true is in fact the case. From this observation, prove
+thatanysentence canbewrittenin DNF.
+b. Construct an algorithm that converts any sentence in propositional logic into DNF.
+(Hint: The algorithm is similar to the algorithm for conversion to CNF given in Sec-
+tion7.5.2.)
+c. Construct asimplealgorithm thattakes asinput asentence in DN Fandreturns asatis-
+fyingassignment ifoneexists,orreportsthatnosatisfying assignment exists.
+d. Applythealgorithms in(b)and(c)tothefollowingsetofsentences:
+A B
+B C
+C A.
+e. Since the algorithm in (b) is very similar to the algorithm for conversion to CNF, and
+since the algorithm in (c) is much simpler than any algorithm for solving a set of sen-
+tencesin CNF,whyisthistechnique notusedinautomated reasoning?
+7.20 Convertthefollowingsetofsentences toclausalform.
+S1: A (B E).
+S2: E D.
+S3: C F B.
+S4: E B.
+S5: B F.
+S6: B C
+Giveatraceoftheexecutionof DPL Lontheconjunction oftheseclauses.
+284 Chapter 7. Logical Agents
+7.21 Is arandomly generated 4-CNF sentence with n symbols and m clauses more orless
+likely to be solvable than a randomly generated 3-CNF sentence with n symbols and m
+clauses? Explain.
+7.22 Minesweeper,thewell-knowncomputergame,iscloselyrelatedtothewumpusworld.
+A minesweeper world is a rectangular grid of N squares with M invisible mines scattered
+among them. Any square may be probed by the agent; instant death follows if a mine is
+probed. Minesweeper indicates the presence of mines by revealing, in each probed square,
+the number of mines t

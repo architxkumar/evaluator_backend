@@ -1,0 +1,38 @@
+formalismknown
+aseventcalculus,whichisbasedonpointsoftimeratherthanonsituations.3
+EVENTCALCULUS
+Event calculus reifies fluents and events. The fluent At(Shankar,Berkeley) is an ob-
+ject that refers to the fact of Shankar being in Berkeley, but does not by itself say anything
+about whether it is true. To assert that a fluent is actually true at some point in time we use
+thepredicate T,asin T(At(Shankar,Berkeley),t).
+Eventsaredescribed asinstances ofeventcategories.4 Theevent E of Shankarflying
+1
+from San Franciscoto Washington, D.C.isdescribed as
+E Flyings Flyer(E ,Shankar) Origin(E ,SF) Destination(E ,DC).
+1 1 1 1
+If this is too verbose, we can define an alternative three-argument version of the category of
+flyingeventsandsay
+E Flyings(Shankar,SF,DC).
+1
+Wethenuse Happens(E ,i)tosaythattheevent E tookplaceoverthetimeinterval i,and
+1 1
+we say the same thing in functional form with Extent(E ) i. We represent time intervals
+1
+bya(start,end)pairoftimes;thatis, i (t ,t )isthetimeintervalthatstartsatt andends
+1 2 1
+att . Thecompletesetofpredicates foroneversionoftheeventcalculus is
+2
+T(f,t) Fluentf istrueattimet
+Happens(e,i) Eventehappens overthetimeinterval i
+Initiates(e,f,t) Eventecausesfluentf tostarttoholdattimet
+Terminates(e,f,t) Eventecausesfluentf toceasetoholdattimet
+Clipped(f,i) Fluentf ceasestobetrueatsomepointduringtimeinterval i
+Restored(f,i) Fluentf becomestruesometimeduringtimeinterval i
+Weassumeadistinguishedevent,Start,thatdescribestheinitialstatebysayingwhichfluents
+areinitiatedorterminatedatthestarttime. Wedefine T bysayingthatafluentholdsatapoint
+intimeifthefluentwasinitiatedbyaneventatsometimeinthepastandwasnotmadefalse
+(clipped)byaninterveningevent. Afluentdoesnotholdifitwasterminatedbyaneventand
+3 Theterms event and action maybeusedinterchangeably. Informally, action connotesanagentwhile event connotesthepossibilityofagentlessactions.
+4 Someversionsofeventcalculusdonotdistinguisheventcategoriesfrominstancesofthecategories.
+Section12.3. Events 447
+notm

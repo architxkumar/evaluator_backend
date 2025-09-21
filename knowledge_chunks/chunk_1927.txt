@@ -1,0 +1,41 @@
+e all of the properties of most general unifiers. Rather than repeat the proof
+here,wesimplyillustrate thelemma:
+C P(x,F(x,A)) Q(x,A) R(x,B)
+1
+C N(G(y),z) P(H(y),z)
+2
+C (cid:2) P(H(B),F(H(B),A)) Q(H(B),A) R(H(B),B)
+1
+C (cid:2) N(G(B),F(H(B),A)) P(H(B),F(H(B),A))
+2
+C (cid:2) N(G(B),F(H(B),A)) Q(H(B),A) R(H(B),B)
+C N(G(y),F(H(y),A)) Q(H(y),A) R(H(y),B).
+(cid:2) (cid:2) (cid:2)
+We see that indeed C is a ground instance of C. In general, for C and C to have any
+1 2
+resolvents, they must be constructed by first applying to C and C the most general unifier
+1 2
+ofapairofcomplementary literals in C and C . Fromtheliftinglemma,itiseasytoderive
+1 2
+asimilarstatement aboutanysequence ofapplications oftheresolution rule:
+(cid:2) (cid:2)
+Foranyclause C intheresolution closureof S thereisaclause C intheresolu-
+(cid:2)
+tionclosureof S suchthat C isagroundinstanceof C andthederivationof C is
+(cid:2)
+thesamelengthasthederivation of C .
+(cid:2)
+From this fact, it follows that if the empty clause appears in the resolution closure of S , it
+mustalsoappearintheresolution closureof S. Thisisbecausetheemptyclausecannotbea
+ground instance ofanyotherclause. Torecap: wehaveshownthatif S isunsatisfiable, then
+thereisafinitederivationoftheemptyclauseusingtheresolution rule.
+Theliftingoftheoremprovingfromgroundclausestofirst-orderclausesprovidesavast
+increaseinpower. Thisincreasecomesfromthefactthatthefirst-orderproofneedinstantiate
+variables only as far as necessary for the proof, whereas the ground-clause methods were
+required toexamineahugenumberofarbitrary instantiations.
+9.5.5 Equality
+Noneoftheinferencemethodsdescribedsofarinthischapterhandleanassertionoftheform
+x y. Threedistinctapproachescanbetaken. Thefirstapproachistoaxiomatizeequality towritedownsentencesabouttheequalityrelationintheknowledgebase. Weneedtosaythat
+equalityisreflexive,symmetric,andtransitive,andwealsohavetosaythatwecansubstitute
+equals for equals in any predicate orfunction. So weneed three basic axioms, and then one
+3

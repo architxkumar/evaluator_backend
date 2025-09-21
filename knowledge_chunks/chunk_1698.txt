@@ -1,0 +1,25 @@
+lished bythe Computer Go Association, describes currentdevelopments.
+Bridge: Smithetal.(1998) reportonhowtheirplanning-based program wonthe1998
+computerbridgechampionship,and(Ginsberg,2001)describeshowhis GI Bprogram,based
+on Monte Carlo simulation, wonthe following computer championship and did surprisingly
+wellagainsthumanplayersandstandard bookproblem sets. From2001 2007, thecomputer
+bridge championship was won five times by JACK and twice by WBRIDGE5. Neither has
+hadacademicarticlesexplainingtheirstructure,butboth arerumoredtousethe Monte Carlo
+technique, whichwasfirstproposed forbridgeby Levy(1989).
+Scrabble: Agood description ofatopprogram, MAVEN, isgivenby itscreator, Brian
+Sheppard (2002). Generating the highest-scoring move is described by Gordon (1994), and
+modelingopponents iscoveredby Richardsand Amir(2007).
+Soccer (Kitano et al., 1997b; Visser et al., 2008) and billiards (Lam and Greenspan,
+2008; Archibald et al., 2009) and other stochastic games with a continuous space of actions
+arebeginning toattractattention in AI,bothinsimulation andwithphysicalrobotplayers.
+Computergamecompetitions occurannually, andpapersappearinavarietyofvenues.
+The rather misleadingly named conference proceedings Heuristic Programming in Artificial
+Intelligence reportonthe Computer Olympiads, whichincludeawidevarietyofgames. The
+General Game Competition (Love etal.,2006) tests programs that mustlearn toplay anun-
+knowngamegivenonlyalogicaldescription oftherulesofthegame. Therearealsoseveral
+editedcollections ofimportantpapersongame-playing research(Levy,1988a,1988b;Mars-
+land and Schaeffer, 1990). The International Computer Chess Association (ICCA), founded
+in 1977, publishes the ICGA Journal (formerly the ICCA Journal). Important papers have
+been published in the serial anthology Advances in Computer Chess, starting with Clarke
+(1977). Volume 134 of the journal Artificial Intelligence (2002) contains descriptions of
+state-of-the-art programs forchess, Othello, Hex, shogi, Go, 

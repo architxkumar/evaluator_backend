@@ -1,0 +1,35 @@
+teachactiononthecritical pathhasnoslack(bydefinition).
+Togetherthe ES and LS timesforalltheactions constitute aschedulefortheproblem.
+SCHEDULE
+Thefollowingformulasserveasadefinitionfor ES and LS andalsoastheoutlineofa
+dynamic-programming algorithm to compute them. A and B are actions, and A B means
+that Acomesbefore B:
+ES(Start) 0
+ES(B) max A B ES(A) Duration(A)
+LS(Finish) ES(Finish)
+LS(A) min B(cid:9)A LS(B) Duration(A).
+404 Chapter 11. Planningand Actinginthe Real World 0,15 30,45 60,75 Add Engine1 Add Wheels1 Inspect1
+30 30 10 0,0 85,85 Start Finish 0,0 60,60 75,75 Add Engine2 Add Wheels2 Inspect2
+60 15 10
+Add Wheels1
+Add Engine1 Inspect1
+Add Engine2 Inspect2
+Add Wheels2
+0 10 20 30 40 50 60 70 80 90
+Figure11.2 Top:arepresentationofthetemporalconstraintsforthejob-shopscheduling
+problemof Figure11.1.Thedurationofeachactionisgivenatthebottomofeachrectangle.
+In solvingthe problem,we computethe earliest andlatest start times asthe pair ES,LS ,
+displayed in the upper left. The difference between these two numbers is the slack of an
+action;actionswithzeroslackareonthecriticalpath,shownwithboldarrows. Bottom: the
+samesolutionshownasatimeline. Greyrectanglesrepresenttimeintervalsduringwhichan
+actionmaybeexecuted,providedthattheorderingconstraintsarerespected.Theunoccupied
+portionofagrayrectangleindicatestheslack.
+The idea is that we start by assigning ES(Start) to be 0. Then, as soon as we get an action
+B such that all the actions that come immediately before B have ES values assigned, we
+set ES(B) to be the maximum of the earliest finish times of those immediately preceding
+actions, wheretheearliestfinishtimeofanactionisdefined astheearlieststarttimeplusthe
+duration. This process repeats until every action has been assigned an ES value. The LS
+valuesarecomputed inasimilarmanner,workingbackwardfromthe Finish action.
+Thecomplexity ofthecritical pathalgorithm isjust O(Nb),where N isthenumberof
+actionsandbisthemaximumbranchingfactorintooroutofanaction. (Toseethis,notethat
+th

@@ -1,0 +1,31 @@
+ateurs to enter commonsense knowledge. The OPENMIND
+system was built by volunteers who proposed facts in English (Singh et al., 2002;
+Chklovskiand Gil,2005).
+440 Chapter 12. Knowledge Representation
+12.2 CATEGORIES AND OBJECTS
+The organization of objects into categories is a vital part of knowledge representation. Al-
+CATEGORY
+thoughinteraction withtheworldtakesplaceatthelevelof individual objects, muchreason-
+ing takes place at the level of categories. For example, a shopper would normally have the
+goalofbuying abasketball, ratherthanaparticular basketball suchas BB . Categoriesalso
+9
+serve to make predictions about objects once they are classified. One infers the presence of
+certainobjectsfromperceptualinput,inferscategorymembershipfromtheperceivedproper-
+tiesoftheobjects, andthenusescategory information tomakepredictions abouttheobjects.
+For example, from its green and yellow mottled skin, one-foot diameter, ovoid shape, red
+flesh,blackseeds,andpresenceinthefruitaisle,onecaninferthatanobjectisawatermelon;
+fromthis,oneinfersthatitwouldbeusefulforfruitsalad.
+There are two choices for representing categories in first-order logic: predicates and
+objects. That is, we can use the predicate Basketball(b), or we can reify1 the category as
+REIFICATION
+an object, Basketballs. We could then say Member(b,Basketballs), which we will abbre-
+viate as b Basketballs, to say that b is a member of the category of basketballs. We say
+Subset(Basketballs,Balls), abbreviated as Basketballs Balls, tosay that Basketballs is
+asubcategoryof Balls. Wewillusesubcategory, subclass, andsubsetinterchangeably.
+SUBCATEGORY
+Categories serve to organize and simplify the knowledge base through inheritance. If
+INHERITANCE
+we say that all instances of the category Food are edible, and if we assert that Fruit is a
+subclass of Food and Apples is a subclass of Fruit, then we can infer that every apple is
+edible. We say that the individual apples inherit the property of edibility, in this case from
+theirm

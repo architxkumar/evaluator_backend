@@ -1,0 +1,27 @@
+presented several fixed strategies breadth-first, greedy best-first, and so on that
+have been designed by computer scientists. Could anagent learn how to search better? The
+METALEVELSTATE answerisyes,andthemethodrestsonanimportantconceptcalledthemetalevelstatespace.
+SPACE
+Eachstateinametalevelstatespacecaptures theinternal (computational) stateofaprogram
+OBJECT-LEVELSTATE that is searching in an object-level state space such as Romania. For example, the internal
+SPACE stateofthe A algorithmconsistsofthecurrentsearchtree. Eachactioninthemetalevelstate
+space is acomputation step that alters the internal state; forexample, each computation step in A expandsaleafnodeandaddsitssuccessors tothetree. Thus,Figure3.24,whichshows
+asequence of larger and larger search trees, can beseen asdepicting apath inthe metalevel
+statespacewhereeachstateonthepathisanobject-level searchtree.
+Now,thepathin Figure3.24hasfivesteps,includingonestep,theexpansionof Fagaras,
+that is not especially helpful. Forharder problems, there will be many such missteps, and a
+METALEVEL metalevellearningalgorithmcanlearnfromtheseexperiencestoavoidexploringunpromis-
+LEARNING
+ing subtrees. Thetechniques used forthis kind of learning are described in Chapter21. The
+goal of learning is to minimize the total cost of problem solving, trading off computational
+expenseandpathcost.
+3.6 HEURISTIC FUNCTIONS
+In this section, we look at heuristics for the 8-puzzle, in order to shed light on the nature of
+heuristics ingeneral.
+The 8-puzzle was one of the earliest heuristic search problems. As mentioned in Sec-
+tion 3.2, the object of the puzzle is toslide the tiles horizontally orvertically into the empty
+spaceuntiltheconfiguration matchesthegoalconfiguration (Figure3.28).
+Theaveragesolutioncostforarandomlygenerated8-puzzle instanceisabout22steps.
+The branching factor is about 3. (When the empty tile is in the middle, four moves are
+possible; when it is in a corner, two; and when it is along an edge, three.) This means
+t

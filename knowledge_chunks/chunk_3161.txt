@@ -1,0 +1,43 @@
+,60,1078 827,884,1012,1065,1066,
+Ladkin,P.,470,1079
+Kirkpatrick,S.,155,229,1078 1073,1074,1076 1078,1083,
+Lafferty,J.,884,885,1079
+Kirman,J.,686,1070 1085,1087,1090
+Lagoudakis,M.G.,854,857,1074,
+Kishimoto,A.,194,1088 Kolmogorov saxioms,489
+1079
+Kister,J.,192,1078 Kolmogorov,A.N.,504,604,759,1078
+Laguna,M.,154,1074
+Kisynski,J.,556,1078 Kolmogorovcomplexity,759
+Laird,J.,26,336,358,432,799,1047,
+Kitano,H.,195,1014,1078 Kolobov,A.,556,1082
+1077,1079,1092
+Kjaerulff,U.,604,1078 Kolodner,J.,24,799,1078
+Laird,N.,604,826,1070
+KL-ONE,471 Kondrak,G.,229,230,1078
+Laird,P.,154,229,1082
+Kleer,J.D.,60,1074 Konolige,K.,229,434,472,1012,
+Lake,R.,194,1088
+Klein,D.,883,896,900,920,921, 1013,1067,1078,1079 Lakemeyer,G.,1012,1067
+1074,1078,1085 Koo,T.,920,1079 Lakoff,G.,469,921,1041,1079
+Kleinberg,J.M.,884,1078 Koopmans,T.C.,685,1079 Lam,J.,195,1079
+Klemperer,P.,688,1078 Korb,K.B.,558,687,1079 LAMA,387,395
+Klempner,G.,553,1083 Koren.,Y.,1013,1066 Lamarck,J.B.,130,1079
+Kneser,R.,883,1078 Korf,R.E.,110 112,157,191,394, Lambert scosinelaw,934
+Knight,B.,20,1066 395,1072,1079,1085 Lambertiansurface,969
+Knight,K.,2,922,927,1078,1086 Kortenkamp,D.,1013,1069 Landauer,T.K.,883,1070
+Knoblock,C.A.,394,432,1068,1073 Koss,F.,1013,1069 Landhuis,E.,620,1079
+KNOWITALL,885 Kotok,A.,191,192,1079 landmark,980
+knowledge Koutsoupias,E.,154,277,1079 landscape(instatespace),121
+acquisition,860 Kowalski,R.,282,314,339,345,359, Langdon,W.,156,1079,1085
+andaction,7,453 470,472,1079,1087,1091 Langley,P.,800,1079
+background,235,349,777,1024, Kowalskiform,282,345 Langlotz,C.P.,26,1076
+1025 Koza,J.R.,156,1079 Langton,C.,155,1079
+base(KB),235,274,315 Kramer,S.,556,1078 language,860,888,890
+commonsense,19 Kraus,S.,434,1079 abhorssynonyms,870
+diagnostic,497 Kraus,W.F.,155,1080 formal,860
+engineering,307,307 312,514 Krause,A.,639,1079 model,860,909,913
+fordecision-theoreticsystems,634 Krauss,P.,555,1088 indisambiguation,906
+level,236,275 Kriegspiel,180 natural,4,286,861
+Index 1113
+processing,16,860 computationaltheory,7

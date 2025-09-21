@@ -1,0 +1,29 @@
+In statistics, the term graphical model refers to a somewhat
+broaderclassthatincludes Bayesiannetworks.Anextensionof Bayesiannetworkscalledadecisionnetworkor
+influencediagramiscoveredin Chapter16.
+510
+Section14.1. Representing Knowledgeinan Uncertain Domain 511
+ABayesiannetworkisadirected graph inwhicheachnodeisannotated withquantita-
+tiveprobability information. Thefullspecification isasfollows:
+1. Eachnodecorresponds toarandomvariable, whichmaybediscrete orcontinuous.
+2. Asetofdirectedlinksorarrowsconnectspairsofnodes. Ifthereisanarrowfromnode
+X tonode Y,X issaidtobeaparentof Y. Thegraphhasnodirectedcycles(andhence
+isadirected acyclicgraph, or DAG.
+3. Eachnode X hasaconditionalprobabilitydistribution P(X Parents(X ))thatquan-
+i i i
+tifiestheeffectoftheparentsonthenode.
+Thetopology ofthenetwork the setofnodesandlinks specifies theconditional indepen-
+dence relationships that hold in the domain, in a way that will be made precise shortly. The
+intuitive meaning ofanarrow istypically that X hasadirect influence on Y,whichsuggests
+thatcausesshouldbeparentsofeffects. Itisusuallyeasyforadomainexperttodecidewhat
+directinfluencesexistinthedomain mucheasier,infact,thanactuallyspecifyingtheprob-
+abilities themselves. Once the topology of the Bayesian network is laid out, we need only
+specify a conditional probability distribution for each variable, given its parents. We will
+see that the combination of the topology and the conditional distributions suffices tospecify
+(implicitly) thefulljointdistribution forallthevariables.
+Recallthesimpleworlddescribedin Chapter13,consisting ofthevariables Toothache,
+Cavity, Catch, and Weather. We argued that Weather is independent of the other vari-
+ables; furthermore, we argued that Toothache and Catch are conditionally independent,
+given Cavity. These relationships are represented by the Bayesian network structure shown
+in Figure 14.1. Formally, the conditional independence of Toothache and Catch, given
+Cavity,isindicated bytheabsence of

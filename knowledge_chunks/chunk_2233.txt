@@ -1,0 +1,26 @@
+Turing, developed probabilistic representations and Bayesian inference methods that could
+be regarded as a forerunner of modern Bayesian networks although the paper is not often
+citedinthiscontext.10 Thesamepaperistheoriginal sourceforthenoisy-OR model.
+The influence diagram representation for decision problems, which incorporated a
+DAG representation for random variables, was used in decision analysis in the late 1970s
+(see Chapter 16), but only enumeration was used for evaluation. Judea Pearl developed the
+message-passing methodforcarryingoutinferenceintreenetworks(Pearl,1982a)andpoly-
+tree networks (Kim and Pearl, 1983) and explained the importance of causal rather than di-
+agnostic probability models, incontrast tothecertainty-factor systemstheninvogue.
+The first expert system using Bayesian networks was CONVINCE (Kim, 1983). Early
+applicationsinmedicineincludedthe MUNI Nsystemfordiagnosingneuromusculardisorders
+(Andersen etal.,1989) andthe PATHFINDER system forpathology (Heckerman, 1991). The
+CPCS system (Pradhan et al., 1994) is a Bayesian network for internal medicine consisting
+10 I.J.Goodwaschiefstatisticianfor Turing scode-breakingteamin World War II.In2001: ASpace Odyssey
+(Clarke,1968a),Goodand Minskyarecreditedwithmakingthebreakthroughthatledtothedevelopmentofthe
+HAL9000computer.
+Bibliographical and Historical Notes 553
+of 448 nodes, 906 links and 8,254 conditional probability values. (The front cover shows a
+portionofthenetwork.)
+Applications in engineering include the Electric Power Research Institute s work on
+monitoring power generators (Morjaria et al., 1995), NASA s work on displaying time-
+criticalinformationat Mission Controlin Houston(Horvitzand Barry,1995),andthegeneral
+fieldofnetworktomography,whichaimstoinferunobserved localproperties ofnodesand
+links in the Internet from observations of end-to-end message performance (Castro et al.,
+2004). Perhaps the most widely used Bayesian network systems have been the diagnosis-
+and-repairmodules(e.g.,t

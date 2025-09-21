@@ -1,0 +1,26 @@
+F)istrue.
+1 Forexample,theopera Coppe lia(1870),thenovel Do Androids Dreamof Electric Sheep?(1968),themovies
+AI(2001)and Wall-E(2008),andinsong,Noel Coward s1955versionof Let s Do It:Let s Fallin Lovepredicted probablywe lllivetoseemachinesdoit. Hedidn t.
+Section26.1. Weak AI:Can Machines Act Intelligently? 1023
+Philosophers suchas J.R.Lucas(1961) haveclaimedthatthistheorem showsthatmachines
+arementallyinferiortohumans,becausemachinesareformalsystemsthatarelimitedbythe
+incompletenesstheorem theycannotestablishthetruthoftheirown Go delsentence while
+humans have no such limitation. This claim has caused decades of controversy, spawning a
+vast literature, including two books by the mathematician Sir Roger Penrose (1989, 1994)
+thatrepeattheclaimwithsomefreshtwists(suchasthehypothesisthathumansaredifferent
+becausetheirbrainsoperatebyquantumgravity). Wewillexamineonlythreeoftheproblems
+withtheclaim.
+First,Go del sincompletenesstheoremappliesonlytoformalsystemsthatarepowerful
+enough to do arithmetic. This includes Turing machines, and Lucas s claim is in part based
+ontheassertionthatcomputersare Turingmachines. Thisisagoodapproximation, butisnot
+quitetrue. Turingmachines areinfinite, whereascomputers arefinite,andanycomputercan
+therefore bedescribed asa(verylarge) system inpropositional logic, whichisnotsubject to
+Go del s incompleteness theorem. Second, anagent should notbetooashamed thatitcannot
+establish thetruthofsomesentence whileotheragentscan. Considerthesentence
+J.R.Lucascannotconsistentlyassertthatthissentenceistrue.
+If Lucas asserted this sentence, then he would be contradicting himself, so therefore Lucas
+cannotconsistently assertit,andhenceitmustbetrue. Wehavethusdemonstrated thatthere
+isasentencethat Lucascannotconsistentlyassertwhileotherpeople(andmachines)can. But
+thatdoesnotmakeusthinklessof Lucas. Totakeanotherexample,nohumancouldcompute
+the sum of a billion 10 digit numbers in his or her lifetime, but a computer could do it in
+seconds. Still, wedonotseeth

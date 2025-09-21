@@ -1,0 +1,31 @@
+onferenceon Machine Learning
+ECP Proceedingsofthe European Conferenceon Planning
+FGCS Proceedingsofthe International Conferenceon Fifth Generation Computer Systems
+FOCS Proceedingsofthe Annual Symposiumon Foundationsof Computer Science
+ICAPS Proceedingsofthe International Conferenceon Automated Planningand Scheduling
+ICASSP Proceedingsofthe International Conferenceon Acoustics,Speech,and Signal Processing
+ICCV Proceedingsofthe International Conferenceon Computer Vision
+ICLP Proceedingsofthe International Conferenceon Logic Programming
+ICML Proceedingsofthe International Conferenceon Machine Learning
+ICPR Proceedingsofthe International Conferenceon Pattern Recognition
+ICRA Proceedingsofthe IEEE International Conferenceon Roboticsand Automation
+ICSLP Proceedingsofthe International Conferenceon Speechand Language Processing
+IJAR International Journalof Approximate Reasoning
+IJCAI Proceedingsofthe International Joint Conferenceon Artificial Intelligence
+IJCNN Proceedingsofthe International Joint Conferenceon Neural Networks
+IJCV International Journalof Computer Vision
+ILP Proceedingsofthe International Workshopon Inductive Logic Programming
+ISMIS Proceedingsofthe International Symposiumon Methodologiesfor Intelligent Systems
+ISRR Proceedingsofthe International Symposiumon Robotics Research
+JACM Journalofthe Associationfor Computing Machinery
+JAIR Journalof Artificial Intelligence Research
+JAR Journalof Automated Reasoning
+JASA Journalofthe American Statistical Association
+JMLR Journalof Machine Learning Research
+JSL Journalof Symbolic Logic
+KDD Proceedingsofthe International Conferenceon Knowledge Discoveryand Data Mining
+KR Proceedingsofthe International Conferenceon Principlesof Knowledge Representationand Reasoning
+LICS Proceedingsofthe IEEE Symposiumon Logicin Computer Science
+NIPS Advancesin Neural Information Processing Systems
+PAMI IEEE Transactionson Pattern Analysisand Machine Intelligence
+PNAS Proceedingsofthe National Academyof Sciencesofthe United Statesof A

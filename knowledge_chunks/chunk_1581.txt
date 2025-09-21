@@ -1,0 +1,33 @@
+int(Amarel,1968).
+a. Formulate the problem precisely, making only those distinctions necessary to ensure a
+validsolution. Drawadiagram ofthecompletestatespace.
+b. Implementandsolvetheproblemoptimallyusinganappropriatesearchalgorithm. Isit
+agoodideatocheckforrepeated states?
+c. Whydoyouthinkpeoplehaveahardtimesolvingthispuzzle,giventhatthestatespace
+issosimple?
+3.10 Define in your own words the following terms: state, state space, search tree, search
+node,goal,action, transition model,andbranching factor.
+3.11 What s the difference between a world state, a state description, and a search node?
+Whyisthisdistinction useful?
+3.12 Anactionsuchas Go(Sibiu)reallyconsistsofalongsequenceoffiner-grainedactions:
+turn on the car, release the brake, accelerate forward, etc. Having composite actions of this
+kind reduces the number of steps in a solution sequence, thereby reducing the search time.
+Supposewetakethistothelogicalextreme,bymakingsuper-composite actions outofevery
+possible sequence of Go actions. Then every problem instance is solved by a single super-
+composite action, such as Go(Sibiu)Go(Rimnicu Vilcea)Go(Pitesti)Go(Bucharest). Explain
+how search would work in this formulation. Is this a practical approach for speeding up
+problem solving?
+3.13 Prove that GRAPH-SEARCH satisfies the graph separation property illustrated in Fig-
+ure3.9. (Hint: Beginbyshowingthatthepropertyholdsatthestart,thenshowthatifitholds
+before an iteration of the algorithm, it holds afterwards.) Describe a search algorithm that
+violates theproperty.
+116 Chapter 3. Solving Problemsby Searching
+x 12
+x 2 x 2
+x 16
+Figure3.32 Thetrackpiecesinawoodenrailwayset;eachislabeledwiththenumberof
+copiesintheset. Notethatcurvedpiecesand fork pieces( switches or points )canbe
+flippedoversotheycancurveineitherdirection.Eachcurvesubtends45degrees.
+3.14 Whichofthefollowingaretrueandwhicharefalse? Explainyouranswers. a. Depth-firstsearchalwaysexpandsatleastasmanynodesas A searchwithanadmissi-
+bleheuristic.
+b. h(n) 0i

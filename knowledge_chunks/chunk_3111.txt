@@ -1,0 +1,23 @@
+phicalquestionsin
+diedichte Mengen.Videnskapsselskapetsskrifter,I. lightofnewresearchonthebrain.California Alumni Stoffel,K.,Taylor,M.,and Hendler,J.(1997).Effi-
+Matematisk-naturvidenskabeligklasse,4. Magazine,March April. cientmanagementofverylargeontologies.In Proc.
+Skolem,T.(1928). U berdiemathematische Logik. AAAI-97,pp.442 447.
+Soderland,S.and Weld,D.S.(1991). Evaluating
+Norskmatematisktidsskrift,10,125 142. nonlinearplanning. Technicalreport TR-91-02-03, Stolcke,A.and Omohundro, S.(1994). Inducing
+Slagle,J.R.(1963).Aheuristicprogramthatsolves Universityof Washington Departmentof Computer probabilisticgrammarsby Bayesianmodelmerging.
+symbolicintegrationproblemsinfreshmancalculus. Scienceand Engineering. In Proc.Second International Colloquiumon Gram-
+JACM,10(4). matical Inferenceand Applications(ICGI-94), pp.
+Solomonoff, R.J.(1964). Aformaltheoryofin- 106 118.
+Slate,D.J.and Atkin,L.R.(1977). CHESS4.5 ductiveinference.Informationand Control,7,1 22,
+Northwestern Universitychessprogram. In Frey, 224 254. Stone,M.(1974). Cross-validatorychoiceandas-
+P.W.(Ed.),Chess Skillin Manand Machine, pp. sessmentofstatosticalpredictions.J.Royal Statisti-
+82 118.Springer-Verlag. Solomonoff,R.J.(2009). Algorithmicprobability cal Society,36(111 133).
+theoryandapplications. In Emmert-Streib,F.and
+Slater,E.(1950). Statisticsforthechesscomputer Dehmer,M.(Eds.),Information Theoryand Statiti- Stone,P.(2000). Layered Learningin Multi-Agent
+andthefactorofmobility. In Symposiumon Infor- cal Learning.Springer. Systems: AWinning Approachto Robotic Soccer.
+mation Theory,pp.150 152.Ministryof Supply. MIT Press.
+Sondik,E.J.(1971). The Optimal Controlof Par-
+Sleator,D.and Temperley,D.(1993). Parsing En- tially Observable Markov Decision Processes.Ph.D. Stone,P.(2003). Multiagentcompetitionsandre-
+glishwithalinkgrammar. In Third Annual Work- thesis,Stanford University. search:Lessonsfrom Robo Cupand TAC. In Lima,
+shopon Parsingtechnologies. P.U.and Rojas,P.(Eds.),Robo Cup-2002: Robot
+Sosic,R.an

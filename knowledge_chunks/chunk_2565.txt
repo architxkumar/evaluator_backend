@@ -1,0 +1,40 @@
+lsenegative.
+3 2
+Therefore,weneedtogeneralize h . Wedropthe Alternate condition, yielding
+2
+h : x Will Wait(x) Patrons(x,Some).
+3 Thefourthexample,X ,ispositive. h predictsittobenegative,soitisafalsenegative.
+4 3
+We therefore need to generalize h . We cannot drop the Patrons condition, because
+3
+that would yield an all-inclusive hypothesis that would be inconsistent with X . One
+2
+possibility istoaddadisjunct:
+h : x Will Wait(x) Patrons(x,Some)
+4 (Patrons(x,Full) Fri Sat(x)).
+Already,thehypothesis isstartingtolookreasonable. Obviously, thereareotherpossibilities
+consistent withthefirstfourexamples;herearetwoofthem:
+h (cid:2) : x Will Wait(x) Wait Estimate(x,30-60).
+4
+h (cid:2)(cid:2) : x Will Wait(x) Patrons(x,Some)
+4 (Patrons(x,Full) Wait Estimate(x,10-30)).
+The CURRENT-BEST-LEARNING algorithmisdescribednondeterministically, becauseatany
+point,theremaybeseveralpossiblespecializationsorgeneralizationsthatcanbeapplied. The
+Section19.1. ALogical Formulationof Learning 773
+function VERSION-SPACE-LEARNING(examples)returnsaversionspace
+localvariables: V,theversionspace:thesetofallhypotheses
+V thesetofallhypotheses
+foreachexamplee inexamples do
+if V isnotemptythen V VERSION-SPACE-UPDATE(V,e)
+return V
+function VERSION-SPACE-UPDATE(V,e)returnsanupdatedversionspace
+V h V : hisconsistentwithe Figure19.3 Theversionspacelearningalgorithm.Itfindsasubsetof V thatisconsistent
+withalltheexamples.
+choicesthataremadewillnotnecessarily leadtothesimplesthypothesis, andmayleadtoan
+unrecoverable situation wherenosimplemodificationofthe hypothesis isconsistent withall
+ofthedata. Insuchcases, theprogrammustbacktrack toaprevious choicepoint.
+The CURRENT-BEST-LEARNING algorithm and its variants have been used in many
+machine learning systems, starting with Patrick Winston s (1970) arch-learning program.
+Withalargenumberofexamplesandalargespace, however,somedifficulties arise:
+1. Checkingallthepreviousexamplesoveragainforeachmodificationisveryexpensive.
+2. Thesearchprocessmayinvolveagreatdeal

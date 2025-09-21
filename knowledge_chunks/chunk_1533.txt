@@ -1,0 +1,37 @@
+desgenerated is
+b b2 b3 bd O(bd).
+(Ifthealgorithmweretoapplythegoaltesttonodeswhenselectedforexpansion,ratherthan
+whengenerated, thewholelayerofnodesatdepth dwouldbeexpanded before thegoalwas
+detected andthetimecomplexitywouldbe O(bd 1).)
+As for space complexity: for any kind of graph search, which stores every expanded
+node in the explored set, the space complexity is always within a factor of b of the time
+complexity. For breadth-first graph search in particular, every node generated remains in
+memory. There will be O(bd 1) nodes in the explored set and O(bd) nodes in the frontier,
+A A A A
+B C B C B C B C
+D E F G D E F G D E F G D E F G
+Figure 3.12 Breadth-first search on a simple binary tree. At each stage, the node to be
+expandednextisindicatedbyamarker.
+Section3.4. Uninformed Search Strategies 83
+so the space complexity is O(bd), i.e., it is dominated by the size of the frontier. Switching
+toatreesearch would notsavemuchspace, andinastate space withmanyredundant paths,
+switchingcouldcostagreatdealoftime.
+An exponential complexity bound such as O(bd) is scary. Figure 3.13 shows why. It
+lists, forvarious values ofthesolution depth d,thetimeandmemoryrequired forabreadth-
+first search with branching factor b 10. The table assumes that 1 million nodes can be
+generated persecond and that anode requires 1000 bytes ofstorage. Manysearch problems
+fit roughly within these assumptions (give or take a factor of 100) when run on a modern
+personal computer.
+Depth Nodes Time Memory
+2 110 .11 milliseconds 107 kilobytes
+4 11,110 11 milliseconds 10.6 megabytes
+6 106 1.1 seconds 1 gigabyte
+8 108 2 minutes 103 gigabytes
+10 1010 3 hours 10 terabytes
+12 1012 13 days 1 petabyte
+14 1014 3.5 years 99 petabytes
+16 1016 350 years 10 exabytes
+Figure3.13 Timeandmemoryrequirementsforbreadth-firstsearch.Thenumbersshown
+assumebranchingfactorb 10;1millionnodes second;1000bytes node.
+Two lessons can be learned from Figure 3.13. First, the memory requirements are a
+bigger problem for breadth-fir

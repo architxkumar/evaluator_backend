@@ -1,0 +1,25 @@
+aw,business,design,automobilerepair,gardening,dating,andsoon. Theagent sknowledge
+482 Chapter 13. Quantifying Uncertainty
+can at best provide only a degree of belief in the relevant sentences. Our main tool for
+DEGREEOFBELIEF
+PROBABILITY dealing with degrees of belief is probability theory. In the terminology of Section 8.1, the
+THEORY
+ontological commitments of logic and probability theory are the same that the world is
+composed of facts that do or do not hold in any particular case but the epistemological
+commitments are different: a logical agent believes each sentence to be true or false or has
+no opinion, whereas a probabilistic agent may have a numerical degree of belief between 0
+(forsentences thatarecertainly false)and1(certainly true).
+Probability provides a way of summarizing the uncertainty that comes from our lazi-
+ness and ignorance, thereby solving the qualification problem. We might not know forsure
+what afflicts a particular patient, but we believe that there is, say, an 80 chance that is,
+a probability of 0.8 that the patient who has a toothache has a cavity. That is, we expect
+that outofallthesituations that areindistinguishable from the current situation asfarasour
+knowledge goes, the patient will have acavity in 80 of them. This belief could be derived
+from statistical data 80 of the toothache patients seen so far have had cavities or from
+somegeneraldentalknowledge, orfromacombination ofevidencesources.
+One confusing point is that at the time of our diagnosis, there is no uncertainty in the
+actual world: the patient either has a cavity or doesn t. So what does it mean to say the
+probability of a cavity is 0.8? Shouldn t it be either 0 or 1? The answer is that probability
+statementsaremadewithrespecttoaknowledgestate,notwithrespecttotherealworld. We
+say Theprobabilitythatthepatienthasacavity,giventhatshehasatoothache,is0.8. Ifwe
+later learn that the patient has a history of gum disease, we can make a different statement: Theprobability that the p

@@ -1,0 +1,42 @@
+e point in the scene corresponding to the point in the
+imageat(x,y).
+Note that both components of the optical flow, v (x,y) and v (x,y), are zero at the
+x y
+FOCUSOF point x T T ,y T T . This point is called the focus of expansion of the flow
+EXPANSION x z y z
+field. Suppose we change the origin in the x y plane to lie at the focus of expansion; then
+(cid:2) (cid:2)
+the expressions for optical flow take on a particularly simple form. Let (x,y ) be the new
+coordinates definedbyx (cid:2) x T T ,y (cid:2) y T T . Then
+x z y z
+(cid:2) (cid:2)
+x T y T
+(cid:2) (cid:2) z (cid:2) (cid:2) z
+v (x,y ) , v (x,y ) .
+x Z(x(cid:2),y(cid:2)) y Z(x(cid:2),y(cid:2))
+Notethatthere isascale-factor ambiguity here. Ifthecamerawasmoving twiceasfast, and
+everyobjectinthescenewastwiceasbigandattwicethedistance tothecamera,theoptical
+flowfieldwouldbeexactlythesame. Butwecanstillextractquiteusefulinformation.
+1. Suppose you are a fly trying to land on a wall and you want to know the time-to-
+contact at the current velocity. This time is given by Z T . Note that although the
+z
+instantaneous optical flow field cannot provide either the distance Z or the velocity
+component T , it can provide the ratio of the two and can therefore be used to control
+z
+thelanding approach. Thereisconsiderable experimental evidence thatmanydifferent
+animalspeciesexploitthiscue.
+2. Consider two points at depths Z , Z , respectively. We may not know the absolute
+1 2
+value of either of these, but by considering the inverse of the ratio of the optical flow
+magnitudes atthese points, wecandetermine thedepthratio Z Z . Thisisthecueof
+1 2
+motion parallax, one we use when we look out of the side window of a moving car or
+trainandinferthattheslowermovingpartsofthelandscape arefartheraway.
+Section24.4. Reconstructing the3DWorld 949
+Perceived object
+Left image Right image
+Right Left
+Disparity
+(a) (b)
+Figure 24.16 Translating a camera parallel to the image plane causes image features to
+move in the camera plane. The disparity i

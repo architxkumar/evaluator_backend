@@ -1,0 +1,45 @@
+values of the individual state variables. We will see
+thattherestricted structure of HM Msallowsforasimpleand elegantmatriximplementation
+ofallthebasicalgorithms.4
+4 Thereaderunfamiliarwithbasicoperationsonvectorsandmatricesmightwishtoconsult Appendix Abefore
+proceedingwiththissection.
+Section15.3. Hidden Markov Models 579
+15.3.1 Simplifiedmatrix algorithms
+With a single, discrete state variable X , we can give concrete form to the representations
+t
+of the transition model, the sensor model, and the forward and backward messages. Let the
+statevariable X havevaluesdenotedbyintegers1,...,S,where S isthenumberofpossible
+t
+states. Thetransition model P(X t X t 1 )becomesan S S matrix T,where
+T ij P(X t j X t 1 i).
+Thatis,T istheprobabilityofatransitionfromstate itostatej. Forexample,thetransition
+ij
+matrixfortheumbrellaworldis
+(cid:13) (cid:14)
+0.7 0.3
+T P(X t X t 1 ) 0.3 0.7 .
+Wealso putthesensor modelinmatrixform. Inthis case, because thevalue oftheevidence
+variable E is known at time t (call it e ), weneed only specify, for each state, how likely it
+t t
+isthatthestatecausese toappear: weneed P(e X i)foreachstatei. Formathematical
+t t t
+convenience we place these values into an S S diagonal matrix, O whose ith diagonal
+t
+entry is P(e X i)and whose other entries are 0. Forexample, on day 1 in the umbrella
+t t
+worldof Figure15.5, U true,andonday3,U false,so,from Figure15.2,wehave
+(cid:13) (cid:14)1 (cid:13) 3(cid:14)
+0.9 0 0.1 0
+O ; O .
+1 0 0.2 3 0 0.8
+Now,ifweusecolumnvectorstorepresenttheforwardandbackwardmessages,allthecom-
+putations becomesimplematrix vectoroperations. Theforwardequation (15.5)becomes
+(cid:12)
+f O T f (15.12)
+1:t 1 t 1 1:t
+andthebackwardequation (15.9)becomes
+b TO b . (15.13)
+k 1:t k 1 k 2:t
+From these equations, we can see that the time complexity of the forward backward algo-
+rithm (Figure 15.4) applied to a sequence of length t is O(S2t), because each step requires
+multiplying an S-element vector by an S S matrix. The space requirement is O(St), 

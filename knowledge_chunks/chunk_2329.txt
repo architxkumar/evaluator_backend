@@ -1,0 +1,43 @@
+eenlotteriesinvolving money.
+Supposeyouhavetriumphedovertheothercompetitorsinatelevisiongameshow. The
+host now offers you achoice: either you can take the 1,000,000 prize oryou can gamble it
+on the flip of a coin. If the coin comes up heads, you end up with nothing, but if it comes
+up tails, you get 2,500,000. If you re like most people, you would decline the gamble and
+pocketthemillion. Areyoubeingirrational?
+EXPECTED Assumingthecoinisfair,theexpectedmonetaryvalue(EMV)ofthegambleis 1( 0)
+MONETARYVALUE 2 1( 2,500,000) 1,250,000, which is more than the original 1,000,000. But that does
+2
+not necessarily mean that accepting the gamble is a better decision. Suppose we use S to
+n
+denote the state of possessing total wealth n, and that your current wealth is k. Then the
+expectedutilities ofthetwoactions ofaccepting anddeclining thegambleare
+EU(Accept) 1U(S ) 1U(S ),
+2 k 2 k 2,500,000
+EU(Decline) U(S ).
+k 1,000,000
+To determine what to do, we need to assign utilities to the outcome states. Utility is not
+directly proportional tomonetary value, because theutilityforyourfirstmillionisveryhigh
+(orso they say), whereas the utility foran additional million is smaller. Suppose you assign
+autilityof5toyourcurrentfinancialstatus(S ),a9tothestate S ,andan8tothe
+k k 2,500,000
+Section16.3. Utility Functions 617
+U U
+o o o o o o
+o o
+o
+o o
+o
+-150,000 o 800,000
+o
+o
+(a) (b)
+Figure16.2 Theutilityofmoney. (a)Empiricaldatafor Mr.Beardoveralimitedrange.
+(b)Atypicalcurveforthefullrange.
+state S . Then the rational action would beto decline, because the expected utility
+k 1,000,000
+of accepting is only 7 (less than the 8 for declining). On the other hand, a billionaire would
+mostlikely haveautility function that islocally linearoverthe range ofafewmillionmore,
+andthuswouldacceptthegamble.
+Inapioneeringstudyofactualutilityfunctions,Grayson(1960)foundthattheutilityof
+money was almost exactly proportional to the logarithm of the amount. (This idea was first
+suggested by Bernoulli (1738); see Exer

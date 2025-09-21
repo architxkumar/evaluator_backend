@@ -1,0 +1,25 @@
+ct or category names in ovals or boxes, and connects them with labeled
+links. Forexample, Figure 12.5 hasa Member Of link between Mary and Female Persons,
+corresponding tothelogical assertion Mary Female Persons;similarly, the Sister Of link
+between Mary and John corresponds totheassertion Sister Of(Mary,John). Wecancon-
+nect categories using Subset Of links, and so on. It is such fun drawing bubbles and arrows
+that one can get carried away. For example, we know that persons have female persons as
+mothers, socanwedrawa Has Mother link from Persons to Female Persons? Theanswer
+isno,because Has Mother isarelationbetweenapersonandhisorhermother,andcategories
+donothavemothers.5
+Forthisreason,wehaveusedaspecialnotation thedouble-boxedlink in Figure12.5.
+Thislinkassertsthat x x Persons y Has Mother(x,y) y Female Persons .
+Wemightalsowanttoassertthatpersonshavetwolegs thatis, x x Persons Legs(x,2).
+Asbefore, weneed tobe careful not to assert that acategory has legs; the single-boxed link
+in Figure12.5isusedtoassertproperties ofeverymemberof acategory.
+The semantic network notation makes it convenient to perform inheritance reasoning
+ofthekindintroducedin Section12.2. Forexample,byvirtueofbeingaperson,Maryinherits
+the property of having two legs. Thus, to find out how many legs Mary has, the inheritance
+algorithm follows the Member Of link from Mary to the category she belongs to, and then
+follows Subset Of links up the hierarchy until it finds a category for which there is a boxed
+Legs link inthiscase,the Persons category. Thesimplicityandefficiencyofthisinference
+5 Severalearlysystemsfailedtodistinguishbetweenpropertiesofmembersofacategoryandpropertiesofthe
+categoryasawhole. Thiscanleaddirectlytoinconsistencies,aspointedoutby Drew Mc Dermott(1976)inhis
+article Artificial Intelligence Meets Natural Stupidity. Anothercommonproblemwastheuseof Is Alinksfor
+bothsubsetandmembershiprelations,incorrespondencewith Englishusage: acatisamammal and Fifiisa
+cat. See Exercise12.22formo

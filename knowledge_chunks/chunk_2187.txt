@@ -1,0 +1,52 @@
+yingvariessmoothlyinsomeintermediateregion. Inotherwords,theconditionaldistribu-
+tionislikea soft threshold function. Onewaytomakesoftthresholds istousetheintegral
+ofthestandard normaldistribution:
+(cid:26)
+x (x) N(0,1)(x)dx . Thentheprobability of Buys given Cost mightbe
+P(buys Cost c) (( c ) ),
+whichmeansthatthecostthresholdoccursaround ,thewidthofthethresholdregionispro-
+portional to , and the probability ofbuying decreases as cost increases. Thisprobit distri-
+3 Itfollowsthatinferenceinlinear Gaussiannetworkstakesonly O(n3)timeintheworstcase,regardlessofthe
+networktopology.In Section14.4,weseethatinferencefornetworksofdiscretevariablesis NP-hard.
+522 Chapter 14. Probabilistic Reasoning
+1
+0.8
+0.6
+0.4
+0.2
+0
+0 2 4 6 8 10 12
+)c(P
+1
+0.8
+0.6
+0.4
+0.2
+0
+0 2 4 6 8 10 12
+Costc
+)c syub(P
+Logit
+Probit
+Costc
+(a) (b)
+Figure 14.7 (a) A normal (Gaussian) distribution for the cost threshold, centered on 6.0withstandarddeviation 1.0. (b)Logitandprobitdistributionsfortheprobability
+ofbuys givencost,fortheparameters 6.0and 1.0.
+PROBIT bution(pronounced pro-bit andshortfor probabilityunit )is illustratedin Figure14.7(a).
+DISTRIBUTION
+Theformcanbejustifiedbyproposingthattheunderlyingdecisionprocesshasahardthresh-
+old,butthatthepreciselocationofthethreshold issubjecttorandom Gaussiannoise.
+An alternative to the probit model is the logit distribution (pronounced low-jit ). It
+LOGITDISTRIBUTION
+usesthelogistic function1 (1 e x)toproduce
+asoftthreshold:
+LOGISTICFUNCTION
+1
+P(buys Cost c) .
+1 exp( 2 c ) Thisisillustrated in Figure14.7(b). Thetwodistributions look similar, butthelogitactually
+hasmuchlonger tails. Theprobitisoftenabetterfittorealsituations,butthelogitissome-
+times easier to deal with mathematically. It is used widely in neural networks (Chapter 20).
+Both probit and logit can be generalized to handle multiple continuous parents by taking a
+linearcombination oftheparentvalues.
+14.4 EXACT INFERENCE IN BAYESIAN NETWORKS
+The basic task for any probabilistic inference system is to

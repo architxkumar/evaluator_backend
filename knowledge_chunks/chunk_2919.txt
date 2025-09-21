@@ -1,0 +1,43 @@
+ N 1 samples uniformly from among those locations. As usual, it is
+perfectly acceptable if morethan one sample is generated forany of the locations X. Let Z
+bea Booleansensorvariable characterized bythefollowing conditional probabilities:
+P(z x ) 0.8 P( z x ) 0.2
+1 1
+P(z x ) 0.4 P( z x ) 0.6
+2 2
+P(z x ) 0.1 P( z x ) 0.9
+3 3
+P(z x ) 0.1 P( z x ) 0.9.
+4 4
+Exercises 1015
+B
+A A
+B
+Starting configuration 0.5, 7 Ending configuration 0.5, 7 Figure25.31 ARobotmanipulatorintwoofitspossibleconfigurations.
+MC Lusestheseprobabilitiestogenerateparticleweights,whicharesubsequentlynormalized
+and used in the resampling process. Forsimplicity, let us assume wegenerate only one new
+sample in the resampling process, regardless of N. This sample might correspond to any of
+thefourlocationsin X. Thus,thesamplingprocessdefinesaprobabilitydistributionover X.
+a. Whatistheresulting probability distribution over X forthisnewsample? Answerthis
+questionseparately for N 1,...,10,andfor N .
+b. Thedifference between twoprobability distributions P and Q can be measured by the
+KLdivergence, whichisdefinedas
+(cid:12)
+P(x )
+i
+KL(P,Q) P(x )log .
+i
+Q(x )
+i
+i
+Whatarethe KLdivergences betweenthedistributions in(a)andthetrueposterior?
+c. What modification of the problem formulation (not the algorithm!) would guarantee
+that the specific estimator above is unbiased even for finite values of N? Provide at
+leasttwosuchmodifications (eachofwhichshouldbesufficient).
+25.2 Implement Monte Carlolocalization forasimulated robot withrange sensors. Agrid
+map and range data are available from the code repository at aima.cs.berkeley.edu.
+Youshoulddemonstrate successful globallocalization oftherobot.
+25.3 Considerarobotwithtwosimplemanipulators,asshowninfigure25.31. Manipulator
+A is a square block of side 2 which can slide back and on a rod that runs along the x-axis
+from x 10 to x 10. Manipulator B is a square block of side 2 which can slide back and
+on a rod that runs along the y-axis from y 10 to y 10. The rods lie out

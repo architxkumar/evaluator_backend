@@ -1,0 +1,18 @@
+.S.and Etzioni,O.(1994). Thefirstlawof
+thesis,Laboratoryfor Informationand Decision Sys- Waldinger,R.(1975). Achievingseveralgoalssi- robotics:Acalltoarms.In AAAI-94.
+tems,MIT. multaneously. In Elcock, E. W. and Michie, D. Wellman,M.P.(1985).Reasoningaboutpreference
+Van Roy, P. L. (1990). Canlogic programming (Eds.), Machine Intelligence 8, pp. 94 138. Ellis models. Technicalreport MIT LCS TR-340,Labo-
+execute as fast as imperative programming? Re- Horwood. ratoryfor Computer Science,MIT.
+port UCB CSD90 600,Computer Science Division, Wallace,A.R.(1858).Onthetendencyofvarieties Wellman,M.P.(1988). Formulationof Tradeoffs
+Universityof California,Berkeley,California. todepartindefinitelyfromtheoriginaltype. Proc. in Planningunder Uncertainty. Ph.D.thesis,Mas-
+Vapnik,V.N.(1998). Statistical Learning Theory. Linnean Societyof London,3,53 62. sachusetts Instituteof Technology.
+Wiley. Waltz,D.(1975). Understandinglinedrawingsof Wellman,M.P.(1990a). Fundamentalconceptsof
+Vapnik,V.N.and Chervonenkis,A.Y.(1971). On sceneswithshadows. In Winston,P.H.(Ed.),The qualitativeprobabilisticnetworks. AIJ,44(3),257 theuniformconvergenceofrelativefrequenciesof Psychologyof Computer Vision.Mc Graw-Hill. 303.
+eventstotheirprobabilities. Theoryof Probability Wang, Y.and Gelly, S.(2007). Modificationsof Wellman,M.P.(1990b). The STRIP Sassumption
+and Its Applications,16,264 280. UC Tandsequence-likesimulationsfor Monte-Carlo forplanningunderuncertainty.In AAAI-90,pp.198 Varian,H.R.(1995).Economicmechanismdesign Go. In IEEE Symposiumon Computational Intelli- 203.
+genceand Games,pp.175 182.
+forcomputerizedagents. In USENIX Workshopon Wellman, M.P.(1995). Theeconomicapproach
+Electronic Commerce,pp.13 21. Wanner,E.(1974).Onremembering,forgettingand toartificialintelligence. ACM Computing Surveys,
+understandingsentences.Mouton. 27(3),360 362.
+Vauquois,B.(1968).Asurveyofformalgrammars
+andalgorithmsforrecognitionandtransformationin Warren,D.H.D.(1974). WARPLAN:ASystem Wellman, M. P., Breese, J.S., 

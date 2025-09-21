@@ -1,0 +1,39 @@
+ion, thentheaim istofindthehighest peak a globalmaximum. (You
+GLOBALMAXIMUM
+can convert from one to the other just by inserting a minus sign.) Local search algorithms
+explore this landscape. A complete local search algorithm always finds a goal ifone exists;
+anoptimalalgorithm alwaysfindsaglobalminimum maximum.
+objective function
+global maximum
+shoulder
+local maximum flat local maximum
+state space
+current
+state
+Figure4.1 Aone-dimensionalstate-spacelandscapeinwhichelevationcorrespondstothe
+objectivefunction. The aim is to find the globalmaximum. Hill-climbingsearch modifies
+thecurrentstatetotrytoimproveit,asshownbythearrow.Thevarioustopographicfeatures
+aredefinedinthetext.
+122 Chapter 4. Beyond Classical Search
+function HILL-CLIMBING(problem)returnsastatethatisalocalmaximum
+current MAKE-NODE(problem.INITIAL-STATE)
+loopdo
+neighbor ahighest-valuedsuccessorofcurrent
+ifneighbor.VALUE current.VALU Ethenreturncurrent.STATE
+current neighbor
+Figure4.2 Thehill-climbingsearchalgorithm,whichisthemostbasiclocalsearchtech-
+nique. At each step the currentnode is replaced by the best neighbor; in this version, that
+means the neighborwith the highest VALUE, but if a heuristic cost estimate h is used, we
+wouldfindtheneighborwiththelowesth.
+4.1.1 Hill-climbingsearch
+The hill-climbing search algorithm (steepest-ascent version) is shown in Figure 4.2. It is
+HILLCLIMBING
+simply a loop that continually moves in the direction of increasing value that is, uphill. It
+STEEPESTASCENT
+terminates when it reaches a peak where no neighbor has a higher value. The algorithm
+does not maintain a search tree, so the data structure for the current node need only record
+the state and the value of the objective function. Hill climbing does not look ahead beyond
+the immediate neighbors of thecurrent state. Thisresembles trying tofind thetop of Mount
+Everestinathickfogwhilesufferingfromamnesia.
+To illustrate hill climbing, we will use the 8-queens problem introduced on page 71.
+Local search algorithms typic

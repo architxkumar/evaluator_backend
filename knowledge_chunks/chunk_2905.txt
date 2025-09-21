@@ -1,0 +1,31 @@
+car. Dataenters thispipeline atthe sensor interface layer. Theperception layer
+LAYER
+PERCEPTIONLAYER
+1006 Chapter 25. Robotics
+(a) (b)
+Figure25.27 (a)The Helpmaterobottransportsfoodandothermedicalitemsindozens
+of hospitals worldwide. (b) Kiva robotsare part of a material-handlingsystem formoving
+shelvesinfulfillmentcenters. Imagecourtesyof Kiva Systems.
+then updates the robot s internal models of the environment based on this data. Next, these
+PLANNINGAND models are handed to the planning and control layer, which adjusts the robot s internal
+CONTROLLAYER
+plansturnsthemintoactualcontrols fortherobot. Thosearethencommunicated backtothe
+VEHICLEINTERFACE vehiclethroughthevehicleinterfacelayer.
+LAYER
+The key to the pipeline architecture is that this all happens in parallel. While the per-
+ception layer processes the most recent sensor data, the control layer bases its choices on
+slightly older data. In this way, the pipeline architecture is similar to the human brain. We
+don tswitchoffourmotioncontrollerswhenwedigestnewsensordata. Instead,weperceive,
+plan, andactallatthesametime. Processes inthepipeline architecture runasynchronously,
+andallcomputation isdata-driven. Theresulting systemisrobust, anditisfast.
+Thearchitecturein Figure25.26alsocontainsother,cross-cuttingmodules,responsible
+forestablishing communication betweenthedifferentelementsofthepipeline.
+25.8 APPLICATION DOMAINS
+Herearesomeoftheprimeapplication domainsforrobotictechnology.
+Industryand Agriculture. Traditionally, robotshavebeenfieldedinareasthatrequire
+difficult human labor, yet are structured enough to be amenable to robotic automation. The
+best example is the assembly line, where manipulators routinely perform tasks such as as-
+sembly, part placement, material handling, welding, and painting. In many of these tasks,
+robots have become more cost-effective than human workers. Outdoors, many of the heavy
+machines that we use to harvest, mine, or excavate earth have been turned into robots. For
+Section25

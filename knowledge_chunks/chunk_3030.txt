@@ -1,0 +1,19 @@
+J.Logic Programming,1, patterndatabases.In Model Checkingand Artificial
+Dickmanns, E. D. and Zapp, A. (1987). Au- 267 284. Intelligence(MOCHART),pp.49 65.
+tonomous high speed road vehicle guidance by
+computer vision. In Automatic Control World Dowty,D.,Wall,R.,and Peters,S.(1991). Intro- Edmonds, J. (1965). Paths, trees, and flowers.
+Congress,1987:Selected Papersfromthe10th Tri- ductionto Montague Semantics.D.Reidel. Canadian Journalof Mathematics,17,449 467.
+ennial World Congressofthe International Federa- Doyle,J.(1979). Atruthmaintenancesystem. AIJ, Edwards,P.(Ed.).(1967).The Encyclopediaof Phi-
+tionof Automatic Control,pp.221 226. 12(3),231 272. losophy.Macmillan.
+Dietterich,T.(1990). Machinelearning. Annual Doyle,J.(1983). Whatisrationalpsychology?To- Een, N. and So rensson, N. (2003). An extensi-
+Reviewof Computer Science,4,255 306. wardamodernmentalphilosophy.AI Mag,4(3),50 ble SAT-solver. In Giunchiglia,E.and Tacchella,
+Dietterich, T.(2000). Hierarchicalreinforcement 53. A.(Eds.),Theoryand Applicationsof Satisfiability
+learningwiththe MAX Qvaluefunctiondecompo- Doyle,J.and Patil,R.(1991).Twothesesofknowl- Testing: 6th International Conference(SAT2003).
+sition.JAIR,13,227 303. edge representation: Language restrictions, taxo- Springer-Verlag.
+Dijkstra,E.W.(1959). Anoteontwoproblemsin nomicclassification,andtheutilityofrepresentation Eiter, T., Leone, N., Mateis, C., Pfeifer, G., and
+connexionwithgraphs. Numerische Mathematik,1, services.AIJ,48(3),261 297. Scarcello,F.(1998). The KRsystemdlv: Progress
+269 271. Drabble,B.(1990). Missionschedulingforspace- report,comparisonsandbenchmarks.In KR-98,pp.
+Dijkstra,E.W.(1984). Thethreatstocomputing craft:Diariesof T-SCHED. In Expert Planning Sys- 406 417.
+science. In ACM South Central Regional Confer- tems,pp.76 81.Instituteof Electrical Engineers. Elio,R.(Ed.).(2002). Common Sense,Reasoning,
+ence. Dredze,M.,Crammer,K.,and Pereira,F.(2008). and Rationality.Oxford University Press.
+Dillenburg,J.F.and Nelson,P.C.(1994).

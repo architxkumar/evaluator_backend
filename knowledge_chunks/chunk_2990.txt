@@ -1,0 +1,39 @@
+that X falls into an interval
+around x,dividedbythewidthoftheinterval, astheinterval widthgoestozero:
+P(x) lim P(x X x dx) dx.
+dx 0
+1058 Appendix A. Mathematical background
+Thedensityfunction mustbenonnegative forallxandmusthave
+(cid:26) P(x)dx 1. CUMULATIVE We can also define a cumulative probability density function F (x), which is the proba-
+PROBABILITY X
+DENSITYFUNCTION
+bilityofarandom variablebeinglessthan x:
+(cid:26)
+x
+F (x) P(X x) P(u)du.
+X Notethattheprobability densityfunctionhasunits,whereasthediscreteprobability function
+isunitless. Forexample,ifvaluesof X aremeasuredinseconds,thenthedensityismeasured
+in Hz (i.e., 1 sec). If values of X are points in three-dimensional space measured in meters,
+thendensity ismeasuredin1 m3.
+GAUSSIAN Oneof the most important probability distributions is the Gaussian distribution, also
+DISTRIBUTION
+knownasthenormaldistribution. AGaussian distribution withmean andstandard devi-
+ation (andtherefore variance 2)isdefinedas
+1
+P(x) e (x )2 (2 2) , 2 where x is a continuous variable ranging from to . With mean 0 and variance
+STANDARDNORMAL 2 1,wegetthespecialcaseofthestandardnormaldistribution. Foradistribution over
+DISTRIBUTION
+MULTIVARIATE avectorxinndimensions, thereisthemultivariate Gaussiandistribution:
+GAUSSIAN P(x) (cid:10) 1 e 1 2 (x )(cid:4) 1 (x ) ,
+(2 )n where isthemeanvectorand isthecovariance matrix(seebelow).
+CUMULATIVE In one dimension, we can define the cumulative distribution function F(x) as the
+DISTRIBUTION
+probability thatarandomvariable willbelessthan x. Forthenormaldistribution, thisis
+(cid:26)x
+1 z F(x) P(z)dz (1 erf( )),
+2 2 whereerf(x)istheso-called errorfunction,whichhasnoclosed-form representation.
+CENTRALLIMIT The central limit theorem states that the distribution formed by sampling n indepen-
+THEOREM
+dent random variables and taking their mean tends to a normal distribution as n tends to
+infinity. Thisholdsforalmostanycollectionofrandomvariables, eveniftheyarenotstrictly
+independent, unlessthevarianceof

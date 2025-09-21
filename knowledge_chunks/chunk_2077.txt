@@ -1,0 +1,27 @@
+sks whatisthesquare root of1764 and Bobreplies I don t know. If Alice insists think harder, Bob should realize that with some more thought, this question can in fact
+be answered. On the other hand, if the question were Is your mother sitting down right
+now? then Bob should realize that thinking harder is unlikely to help. Knowledge about
+the knowledge of other agents is also important; Bob should realize that his mother knows
+whethersheissittingornot,andthataskingherwouldbeawaytofindout.
+What we need is a model of the mental objects that are in someone s head (or some-
+thing s knowledge base) and of the mental processes that manipulate those mental objects.
+The model does not have to be detailed. We do not have to be able to predict how many
+milliseconds itwilltake foraparticular agent tomakeadeduction. Wewillbehappy justto
+beabletoconclude thatmotherknowswhetherornotsheissitting.
+PROPOSITIONAL We begin with the propositional attitudes that an agent can have toward mental ob-
+ATTITUDE
+jects: attitudes such as Believes, Knows, Wants, Intends, and Informs. The difficulty is
+that these attitudes do not behave like normal predicates. Forexample, suppose we try to
+assertthat Loisknowsthat Supermancanfly:
+Knows(Lois,Can Fly(Superman)).
+Oneminorissuewiththisisthatwenormallythinkof Can Fly(Superman)asasentence,but
+hereitappearsasaterm. Thatissuecanbepatchedupjustbereifying Can Fly(Superman);
+making it a fluent. A more serious problem isthat, ifit is true that Superman is Clark Kent,
+thenwemustconcludethat Loisknowsthat Clarkcanfly:
+(Superman Clark) Knows(Lois,Can Fly(Superman)) Knows(Lois,Can Fly(Clark)).
+This is a consequence of the fact that equality reasoning is built into logic. Normally that is
+agood thing; ifouragent knowsthat 2 2 4and4 5, then wewantouragent toknow
+Section12.4. Mental Eventsand Mental Objects 451
+REFERENTIAL that 2 2 5. This property is called referential transparency it doesn t matter what
+TRANSPARENCY
+termalogicusestorefertoanobject,whatmattersisth

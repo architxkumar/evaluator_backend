@@ -1,0 +1,36 @@
+nt;
+thenweneedtorewritetheupdateequation (Equation(17.6) onpage652)toincorporate the
+optimisticestimate. Thefollowingequation doesthis:
+(cid:13) (cid:14)
+(cid:2)
+U (s) R(s) max f P(s (cid:2) s,a)U (s (cid:2) ), N(s,a) . (21.5)
+a s(cid:3)
+EXPLORATION Here, f(u,n) is called the exploration function. It determines how greed (preference for
+FUNCTION
+high values of u) is traded off against curiosity (preference for actions that have not been
+tried often and have low n). The function f(u,n) should be increasing in u and decreasing
+inn. Obviously, therearemanypossible functions thatfitthese conditions. Oneparticularly
+simpledefinitionis
+(cid:24)
+R ifn N
+f(u,n) e
+u otherwise
+where R isanoptimisticestimateofthebestpossiblerewardobtainableinanystateand N
+e
+is a fixed parameter. This will have the effect of making the agent try each action state pair
+atleast N times.
+e
+The fact that U rather than U appears on the right-hand side of Equation (21.5) is
+veryimportant. Asexploration proceeds,thestatesandactionsnearthestartstatemightwell
+be tried a large number of times. If we used U, the more pessimistic utility estimate, then
+the agent would soon become disinclined to explore further afield. The use of U means
+that the benefits of exploration are propagated back from the edges of unexplored regions,
+so that actions that lead toward unexplored regions are weighted more highly, rather than
+just actions that are themselves unfamiliar. Theeffect of this exploration policy can be seen
+clearlyin Figure21.7,whichshowsarapidconvergence towardoptimalperformance, unlike
+thatofthegreedyapproach. Averynearlyoptimalpolicyisfoundafterjust18trials. Notice
+that the utility estimates themselves do not converge as quickly. This is because the agent
+stops exploring the unrewarding parts of the state space fairly soon, visiting them only by
+accident thereafter. However,itmakesperfectsensefortheagentnottocareabouttheexact
+utilities ofstatesthatitknowsareundesirable andcanbeavoided.
+21.3.2 Learning an

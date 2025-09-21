@@ -1,0 +1,30 @@
+f how quickly its value es-
+timates improve, the ADP agent is limited only by its ability to learn the transition model.
+In this sense, it provides a standard against which to measure other reinforcement learning
+algorithms. Itis,however, intractable forlarge statespaces. Inbackgammon, forexample, it
+wouldinvolve solvingroughly 1050 equations in1050 unknowns.
+Areaderfamiliarwiththe Bayesianlearning ideasof Chapter20willhavenoticed that
+the algorithm in Figure 21.2 is using maximum-likelihood estimation to learn the transition
+model; moreover, by choosing a policy based solely on the estimated model it is acting as
+if the model were correct. This is not necessarily a good idea! For example, a taxi agent
+that didn t know about how traffic lights might ignore a red light once or twice without no
+ill effects and then formulate a policy to ignore red lights from then on. Instead, it might
+be a good idea to choose a policy that, while not optimal for the model estimated by maxi-
+mumlikelihood, worksreasonablywellforthewholerangeof modelsthathaveareasonable
+chanceofbeingthetruemodel. Therearetwomathematicalapproaches thathavethisflavor.
+BAYESIAN
+The first approach, Bayesian reinforcement learning, assumes a prior probability
+REINFORCEMENT
+LEARNING P(h)foreachhypothesis haboutwhatthetruemodelis;theposteriorprobability P(h e)is
+obtainedintheusualwayby Bayes rulegiventheobservationstodate. Then,iftheagenthas
+decided tostop learning, the optimal policy istheone that gives thehighest expected utility.
+Let u be the expected utility, averaged over all possible start states, obtained by executing
+h
+policy inmodelh. Thenwehave
+(cid:12) argmax P(h e)u .
+h h
+836 Chapter 21. Reinforcement Learning
+In somespecial cases, this policy can even be computed! If the agent willcontinue learning
+in the future, however, then finding an optimal policy becomes considerably more difficult,
+because the agent must consider the effects of future observations on its beliefs about the
+transition model.

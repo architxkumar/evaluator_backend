@@ -1,0 +1,29 @@
+ likely to arise: for k 30, the
+disappointment willbearoundtwicethestandarddeviation intheestimates.
+This tendency for the estimated expected utility of the best choice to be too high is
+called the optimizer s curse (Smith and Winkler, 2006). It afflicts even the most seasoned
+OPTIMIZER SCURSE
+decision analysts and statisticians. Serious manifestations include believing that an exciting
+new drug that has cured 80 patients in a trial will cure 80 of patients (it s been chosen
+from k thousands of candidate drugs) or that a mutual fund advertised as having above-
+average returns will continue to have them (it s been chosen to appear in the advertisement
+out of k dozens of funds in the company s overall portfolio). It can even be the case that
+what appears to be the best choice may not be, if the variance in the utility estimate is high:
+adrug, selected from thousands tried, that has cured 9of 10 patients is probably worse than
+onethathascured800of1000.
+Theoptimizer scursecropsupeverywherebecauseoftheubiquityofutility-maximizing
+selectionprocesses,sotakingtheutilityestimatesatfacevalueisabadidea. Wecanavoidthe
+cursebyusinganexplicitprobability model P(E ! U EU)oftheerrorintheutilityestimates.
+Giventhis model andaprior P(EU)onwhat wemight reasonably expect the utilities tobe,
+wetreattheutilityestimate,onceobtained,asevidenceandcomputetheposteriordistribution
+forthetrueutilityusing Bayes rule.
+16.3.4 Humanjudgment and irrationality
+Decision theory is a normative theory: it describes how a rational agent should act. A
+NORMATIVETHEORY
+DESCRIPTIVE descriptivetheory,ontheotherhand,describeshowactualagents forexample,humans THEORY
+really do act. The application of economic theory would be greatly enhanced if the two
+coincided, butthereappears tobesomeexperimental evidence tothecontrary. Theevidence
+suggests thathumansare predictably irrational (Ariely,2009).
+620 Chapter 16. Making Simple Decisions
+Thebest-knownproblemisthe Allaisparadox(Allais,1953). Peoplearegivenachoice
+betw

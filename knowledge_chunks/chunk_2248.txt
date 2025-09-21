@@ -1,0 +1,40 @@
+, andcalculateitscovariance matrix.
+1 2
+b. Prove by induction that the joint distribution for a general linear Gaussian network on
+X ,...,X isalsoamultivariate Gaussian.
+1 n
+14.10 Theprobit distribution definedonpage522describes theprobability distribution for
+a Booleanchild,givenasinglecontinuous parent.
+a. Howmightthedefinition beextended tocovermultiplecontinuous parents?
+b. Howmight itbe extended to handle amultivalued child variable? Consider both cases
+where the child s values are ordered (as in selecting a gear while driving, depending
+on speed, slope, desired acceleration, etc.) and cases where they are unordered (as in
+selecting bus, train, orcarto gettowork). (Hint: Considerways todivide the possible
+valuesintotwosets,tomimica Booleanvariable.)
+14.11 Inyourlocalnuclearpowerstation, thereisanalarmthatsenseswhenatemperature
+gauge exceeds agiven threshold. Thegaugemeasures thetemperature ofthecore. Consider
+the Boolean variables A (alarm sounds), F (alarm is faulty), and F (gauge is faulty) and
+A G
+themultivaluednodes G(gaugereading) and T (actualcoretemperature).
+a. Draw a Bayesian network for this domain, given that the gauge is more likely to fail
+whenthecoretemperature getstoohigh.
+b. Isyournetworkapolytree? Whyorwhynot?
+c. Supposetherearejusttwopossibleactualandmeasuredtemperatures,normalandhigh;
+theprobability thatthegaugegivesthecorrecttemperature isxwhenitisworking, but
+y whenitisfaulty. Givetheconditional probability tableassociated with G.
+d. Suppose the alarm works correctly unless it is faulty, in which case it never sounds.
+Givetheconditional probability tableassociated with A.
+e. Suppose the alarm and gauge are working and the alarm sounds. Calculate an expres-
+sion for the probability that the temperature of the core is too high, in terms of the
+variousconditional probabilities inthenetwork.
+562 Chapter 14. Probabilistic Reasoning
+F F F N F M M
+1 2 1 2 1 2
+M M N
+1 2
+M M
+1 2
+N F F
+1 2
+(i) (ii) (iii)
+Figure14.22 Threepossiblenetworksforthetelesco

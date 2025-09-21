@@ -1,0 +1,39 @@
+wherealmost alltheerrorswereclassifying
+spam as non-spam, would be better than a classifier with only a 0.5 error rate, if most of
+thoseerrorswereclassifying non-spam asspam. Wesawin Chapter16thatdecision-makers
+should maximize expected utility, and utility is what learners should maximize as well. In
+machine learning it is traditional to express utilities by means of a loss function. The loss
+LOSSFUNCTION
+function L(x,y,y ) is defined as the amount of utility lost by predicting h(x) y when the
+correctansweris f(x) y:
+L(x,y,y ) Utility(resultofusing y givenaninputx) Utility(resultofusing y givenaninputx)
+Section18.4. Evaluatingand Choosing the Best Hypothesis 711
+60
+50
+40
+30
+20
+10
+0
+1 2 3 4 5 6 7 8 9 10
+etar
+rorr E
+Validation Set Error
+Training Set Error
+Tree size
+Figure18.9 Errorrateson training data (lower, dashed line) and validationdata (upper,
+solidline)fordifferentsizedecisiontrees. We stopwhenthetrainingseterrorrateasymp-
+totes,andthenchoosethetreewithminimalerroronthevalidationset;inthiscasethetree
+ofsize7nodes.
+Thisisthe mostgeneral formulation of theloss function. Oftenasimplified version is used,
+L(y,y ), that is independent of x. We will use the simplified version for the rest of this
+chapter, which means we can t say that it is worse to misclassify a letter from Mom than it
+is to misclassify a letter from our annoying cousin, but we can say it is 10 times worse to
+classifynon-spam asspamthanvice-versa:
+L(spam,nospam) 1, L(nospam,spam) 10.
+Notethat L(y,y)isalwayszero; bydefinition thereisnoloss whenyouguess exactly right.
+For functions with discrete outputs, we can enumerate a loss value for each possible mis-
+classification, but we can t enumerate all the possibilities for real-valued data. If f(x) is
+137.035999, wewould be fairly happy with h(x) 137.036, but just how happy should we
+be? Ingeneralsmallerrors arebetterthanlargeones;twofunctions thatimplementthatidea
+are the absolute value of the difference (called the L loss), and the square of the diffe

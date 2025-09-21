@@ -1,0 +1,26 @@
+ach state has just three actions: Left, Right, and
+Suck. Largerenvironments mightalsoinclude Upand Down. Transition model: Theactions have their expected effects, except that moving Left in
+theleftmostsquare,moving Rightintherightmostsquare,and Suckinginacleansquare
+havenoeffect. Thecompletestatespaceisshownin Figure3.3. Goaltest: Thischeckswhetherallthesquares areclean. Pathcost: Eachstepcosts1,sothepathcostisthenumberofstepsinthepath.
+Compared with the real world, this toy problem has discrete locations, discrete dirt, reliable
+cleaning, anditnevergetsanydirtier. Chapter4relaxessomeoftheseassumptions.
+The8-puzzle,aninstanceofwhichisshownin Figure3.4,consistsofa3 3boardwith
+8-PUZZLE
+eight numbered tiles and a blank space. A tile adjacent to the blank space can slide into the
+space. Theobject istoreach aspecified goalstate, such astheoneshownontherightofthe
+figure. Thestandard formulation isasfollows:
+Section3.2. Example Problems 71
+7 2 4 1 2
+5 6 3 4 5
+8 3 1 6 7 8
+Start State Goal State
+Figure3.4 Atypicalinstanceofthe8-puzzle. States: Astatedescription specifiesthelocationofeachoftheeighttilesandtheblank
+inoneoftheninesquares. Initial state: Any state can be designated as the initial state. Note that any given goal
+canbereachedfromexactlyhalfofthepossible initialstates(Exercise3.4). Actions: Thesimplestformulationdefinestheactionsasmovementsoftheblankspace
+Left, Right, Up, or Down. Different subsets of these are possible depending on where
+theblankis. Transitionmodel: Givenastateandaction,thisreturnstheresultingstate;forexample,
+ifweapply Lefttothestartstatein Figure3.4,theresultingstatehasthe5andtheblank
+switched. Goaltest: Thischecks whetherthe state matches thegoal configuration shownin Fig-
+ure3.4. (Othergoalconfigurations arepossible.) Pathcost: Eachstepcosts1,sothepathcostisthenumberofstepsinthepath.
+What abstractions have weincluded here? The actions are abstracted to their beginning and
+finalstates,ignoringtheintermediatelocationswheretheblockissliding. Weha

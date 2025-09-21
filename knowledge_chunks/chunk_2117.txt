@@ -1,0 +1,27 @@
+ying, resizing, and moving windows; changing the state
+ofawindow;andbringing awindowtothefront. Treattheseactions asatomic;thatis,
+do not deal with the issue of relating them to mouse actions. Give axioms describing
+theeffectsofactionsonfluents. Youmayuseeithereventorsituation calculus.
+Assume an ontology containing situations, actions, integers (for x and y coordinates) and
+windows. Definealanguage overthisontology; thatis, alistofconstants, function symbols,
+andpredicates withan Englishdescription ofeach. Ifyouneedtoaddmorecategories tothe
+ontology(e.g.,pixels),youmaydoso,butbesuretospecifytheseinyourwrite-up. Youmay
+(andshould) usesymbolsdefinedinthetext,butbesuretolisttheseexplicitly.
+12.4 Statethefollowinginthelanguage youdevelopedforthepreviousexercise:
+a. In situation S , window W is behind W but sticks out on the left and right. Do not
+0 1 2
+stateexactcoordinates forthese;describe the generalsituation.
+b. Ifawindowisdisplayed, thenitstopedgeishigherthanitsbottomedge.
+c. Afteryoucreateawindow w,itisdisplayed.
+d. Awindowcanbeminimizedifitisdisplayed.
+12.5 (Adapted from an example by Doug Lenat.) Your mission is to capture, in logical
+form,enoughknowledgetoansweraseriesofquestionsabout thefollowingsimplescenario:
+Yesterday Johnwenttothe North Berkeley Safewaysupermarketandboughttwo
+poundsoftomatoesandapoundofgroundbeef.
+Start by trying to represent the content of the sentence as a series of assertions. You should
+writesentences that have straightforward logical structure (e.g., statements that objects have
+certainproperties,thatobjectsarerelatedincertainways,thatallobjectssatisfyingoneprop-
+ertysatisfyanother). Thefollowingmighthelpyougetstarted:
+Exercises 475 Whichclasses, objects, and relations would youneed? Whatare theirparents, siblings
+andsoon? (Youwillneedeventsandtemporalordering, among otherthings.) Wherewouldtheyfitinamoregeneralhierarchy? Whataretheconstraints andinterrelationships amongthem? Howdetailedmustyoubeabouteachofthevariousconcepts?
+To answ

@@ -1,0 +1,29 @@
+a flight but is available
+REUSABLE
+againwhentheflightisover). Resources canalsobe produced byactionswithnegativecon-
+sumption, including manufacturing, growing, andresupply actions. Asolution toajob-shop
+scheduling problem mustspecify thestarttimesforeachaction andmustsatisfy allthetem-
+poral ordering constraints and resource constraints. As with search and planning problems,
+solutions can be evaluated according to a cost function; this can be quite complicated, with
+nonlinear resource costs, time-dependent delay costs, and so on. For simplicity, we assume
+thatthecostfunction isjustthetotalduration oftheplan, whichiscalledthemakespan.
+MAKESPAN
+Figure11.1showsasimpleexample: aprobleminvolvingtheassemblyoftwocars. The
+problemconsistsoftwojobs,eachoftheform Add Engine,Add Wheels,Inspect . Thenthe
+Section11.1. Time,Schedules, and Resources 403
+Resources statement declares that there are four types of resources, and gives the number
+of each type available at the start: 1 engine hoist, 1 wheel station, 2 inspectors, and 500 lug
+nuts. The action schemas give the duration and resource needs of each action. The lug nuts
+are consumed as wheels are added to the car, whereas the other resources are borrowed at
+thestartofanactionandreleased attheaction send.
+The representation of resources as numerical quantities, such as Inspectors(2), rather
+than as named entities, such as Inspector(I ) and Inspector(I ), is an example of a very
+1 2
+general technique called aggregation. Thecentral idea ofaggregation istogroupindividual
+AGGREGATION
+objects into quantities when the objects are all indistinguishable with respect to the purpose
+athand. Inourassemblyproblem,itdoesnotmatterwhichinspectorinspectsthecar,sothere
+is no need to make the distinction. (The same idea works in the missionaries-and-cannibals
+problem in Exercise 3.9.) Aggregation is essential for reducing complexity. Consider what
+happens when a proposed schedule has 10 concurrent Inspect actions but only 9 inspectors
+areavail

@@ -1,0 +1,30 @@
+a beta algorithm, which is
+described by Ballard(1983), forpruning gametreeswithchance nodes. Trythemonagame
+suchasbackgammonandmeasurethepruning effectiveness of -alpha beta.
+5.18 Prove that with a positive linear transformation of leaf values (i.e., transforming a
+valuextoax bwherea 0),thechoiceofmoveremainsunchanged inagametree,even
+whentherearechancenodes.
+5.19 Considerthefollowingprocedure forchoosing movesingameswithchance nodes: Generatesomedice-roll sequences (say,50)downtoasuitabledepth(say,8). With known dice rolls, the game tree becomes deterministic. For each dice-roll se-
+quence,solvetheresultingdeterministic gametreeusingalpha beta.
+Exercises 201 Usetheresults toestimatethevalueofeachmoveandtochoosethebest.
+Willthisprocedure workwell? Why(orwhynot)?
+5.20 In the following, a max tree consists only of max nodes, whereas an expectimax tree consists of a max node at the root with alternating layers of chance and max nodes. At
+chance nodes, alloutcome probabilities arenonzero. Thegoal istofindthevalue oftheroot
+withabounded-depth search. Foreachof(a) (f), eithergiveanexampleorexplainwhythis
+isimpossible.
+a. Assuming that leaf values are finite but unbounded, is pruning (as in alpha beta) ever
+possibleinamaxtree?
+b. Ispruningeverpossible inanexpectimaxtreeunderthesameconditions?
+c. If leaf values are all nonnegative, is pruning ever possible in a max tree? Give an
+example,orexplainwhynot.
+d. Ifleaf values are allnonnegative, ispruning everpossible inanexpectimax tree? Give
+anexample,orexplainwhynot.
+e. Ifleaf values areallintherange 0,1 , ispruning everpossible inamaxtree? Givean
+example,orexplainwhynot.
+f. Ifleafvaluesareallintherange 0,1 ,ispruning everpossibleinanexpectimax tree?
+g. Considertheoutcomesofachancenodeinanexpectimaxtree. Whichofthefollowing
+evaluationordersismostlikelytoyieldpruning opportunities?
+(i) Lowestprobability first
+(ii) Highestprobability first
+(iii) Doesn tmakeanydifference
+5.21 Whichofthefollowingaretrueandwhicharefalse? Givebriefe

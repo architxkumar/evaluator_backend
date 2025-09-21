@@ -1,0 +1,32 @@
+nd learning much easier. For example, the CPCS network (Prad-
+han etal., 1994) uses noisy-OR and noisy-MAX distributions tomodel relationships among
+diseases and symptoms ininternal medicine. With 448 nodes and 906 links, it requires only
+8,254valuesinsteadof133,931,430 foranetworkwithfull CP Ts.
+Bayesiannetswithcontinuousvariables
+Manyreal-world problems involve continuous quantities, such asheight, mass, temperature,
+andmoney;infact,muchofstatisticsdealswithrandomvariableswhosedomainsarecontin-
+uous. By definition, continuous variables have an infinite number of possible values, so itis
+impossibletospecifyconditional probabilities explicitlyforeachvalue. Onepossiblewayto
+handlecontinuousvariablesistoavoidthembyusingdiscretization thatis,dividingupthe
+DISCRETIZATION
+520 Chapter 14. Probabilistic Reasoning
+Subsidy Harvest
+Cost
+Buys
+Figure14.5 Asimplenetworkwithdiscretevariables(Subsidyand Buys)andcontinuous
+variables(Harvest and Cost).
+possible values intoafixedsetofintervals. Forexample, temperatures could bedivided into
+( 0o C), (0o C 100o C), and ( 100o C). Discretization is sometimes an adequate solution,
+but often results in a considerable loss of accuracy and very large CP Ts. The most com-
+monsolutionistodefinestandardfamiliesofprobability densityfunctions(see Appendix A)
+that are specified by a finite number of parameters. For example, a Gaussian (or normal)
+PARAMETER
+distribution N( , 2)(x) has the mean and the variance 2 as parameters. Yet another
+solution sometimes called a nonparametric representation is to define the conditional
+NONPARAMETRIC
+distribution implicitly with a collection of instances, each containing specific values of the
+parentandchildvariables. Weexplorethisapproach furtherin Chapter18.
+A network with both discrete and continuous variables is called a hybrid Bayesian
+HYBRIDBAYESIAN network. To specify a hybrid network, we have to specify two new kinds of distributions:
+NETWORK
+the conditional distribution for a continuous variable given 

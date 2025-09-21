@@ -1,0 +1,25 @@
+tsaretoagreeonwhichjointplantoexecute. This chapter extends classic planning to cover nondeterministic environments (where
+outcomes of actions are uncertain), but it is not the last word on planning. Chapter 17
+describes techniques for stochastic environments (in which outcomes of actions have
+probabilities associated with them): Markov decision processes, partially observable
+Markovdecisionprocesses,andgametheory. In Chapter21weshowthatreinforcement
+learningallowsanagenttolearnhowtobehavefrompastsuccesses andfailures.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Planning with time constraints was first dealt with by DEVISER (Vere, 1983). The repre-
+sentation of time in plans was addressed by Allen (1984) and by Dean et al. (1990) in the
+FORBIN system. NONLIN (Tate and Whiter, 1984) and SIPE (Wilkins, 1988, 1990) could
+reason about the allocation of limited resources to various plan steps. O-PLAN (Bell and
+Tate, 1985), an HTN planner, had a uniform, general representation for constraints on time
+and resources. In addition to the Hitachi application mentioned in the text, O-PLAN has
+been applied tosoftware procurement planning at Price Waterhouse andback-axle assembly
+planning at Jaguar Cars.
+The two planners SAPA (Do and Kambhampati, 2001) and T4 (Haslum and Geffner,
+2001) both used forward state-space search with sophisticated heuristics to handle actions
+with durations and resources. An alternative is to use very expressive action languages, but
+guide them by human-written domain-specific heuristics, as is done by ASPEN (Fukunaga
+etal.,1997), HSTS(Jonssonetal.,2000), and Ix Te T(Ghallaband Laruelle,1994).
+432 Chapter 11. Planningand Actinginthe Real World
+A number of hybrid planning-and-scheduling systems have been deployed: ISIS (Fox
+et al., 1982; Fox, 1990) has been used forjob shop scheduling at Westinghouse, GARI (De-
+scotte and Latombe, 1985) planned the machining and construction of mechanical parts,
+FORBIN was used for factory control, and NONLIN was used for naval

@@ -1,0 +1,28 @@
+ret learning(because
+LEARNING
+theaverageamountofregretpertrialtendsto0asthenumber oftrialsincreases).
+Online learning is helpful when the data may be changing rapidly over time. It is also
+useful forapplications thatinvolve alargecollection ofdatathatisconstantly growing, even
+ifchangesaregradual. Forexample,withadatabaseofmillionsof Webimages,youwouldn t
+wanttotrain,say,alinearregressionmodelonallthedata, andthenretrainfromscratchevery
+timeanewimageisadded. Itwouldbemorepracticaltohaveanonlinealgorithmthatallows
+images to be added incrementally. For most learning algorithms based on minimizing loss,
+thereisanonlineversionbasedonminimizingregret. Itisa bonusthatmanyoftheseonline
+algorithms comewithguaranteed bounds onregret.
+Tosomeobservers, itissurprising thattherearesuchtight bounds onhowwellwecan
+do compared to a panel of experts. Toothers, the really surprising thing is that when panels
+of human experts congregate predicting stock market prices, sports outcomes, or political
+contests the viewing public is so willing to listen to them pontificate and so unwilling to
+quantify theirerrorrates.
+18.11 PRACTICAL MACHINE LEARNING
+Wehaveintroducedawiderangeofmachinelearningtechniques,eachillustratedwithsimple
+learningtasks. Inthissection,weconsidertwoaspectsofpracticalmachinelearning. Thefirst
+involvesfindingalgorithmscapableoflearningtorecognizehandwrittendigitsandsqueezing
+every last drop of predictive performance out of them. The second involves anything but pointingoutthatobtaining, cleaning,andrepresentingthedatacanbeatleastasimportantas
+algorithm engineering.
+18.11.1 Casestudy: Handwrittendigitrecognition
+Recognizing handwritten digits is an important problem with many applications, including
+automated sorting of mail by postal code, automated reading of checks and tax returns, and
+dataentryforhand-held computers. Itisanareawhererapid progresshasbeenmade,inpart
+because ofbetterlearning algorithms andinpartbecauseof theavailability ofbettertraining
+sets. The United

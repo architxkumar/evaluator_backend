@@ -1,0 +1,29 @@
+otheristoreasondirectlyabout
+the HL As despitethemultiplicityofimplementations as explainedin Section11.2.3. The
+latter method enables the derivation of provably correct abstract plans, without the need to
+considertheirimplementations.
+11.2.2 Searching forprimitivesolutions
+HT Nplanningisoftenformulatedwithasingle toplevel actioncalled Act,wheretheaimis
+tofindanimplementationof Actthatachievesthegoal. Thisapproachisentirelygeneral. For
+example,classicalplanning problemscanbedefinedasfollows: foreachprimitiveaction a ,
+i
+provide one refinement of Act with steps a ,Act . That creates a recursive definition of Act
+i
+thatletsusaddactions. Butweneedsomewaytostoptherecursion;wedothatbyproviding
+one more refinement for Act, one with an empty list of steps and with a precondition equal
+to the goal of the problem. This says that if the goal is already achieved, then the right
+implementation istodonothing.
+The approach leads to a simple algorithm: repeatedly choose an HLA in the current
+planandreplace itwithoneofitsrefinements, untiltheplan achievesthegoal. Onepossible
+implementation based onbreadth-first treesearch isshownin Figure11.5. Plansareconsid-
+eredinorderofdepth ofnesting oftherefinements, ratherthannumberofprimitivesteps. It
+isstraightforward todesignagraph-search versionofthealgorithm aswellasdepth-firstand
+iterativedeepening versions.
+Inessence,thisformofhierarchicalsearchexploresthespaceofsequencesthatconform
+totheknowledgecontained inthe HL Alibraryabouthowthingsaretobedone. Agreatdeal
+ofknowledgecanbeencoded,notjustintheactionsequencesspecifiedineachrefinementbut
+also in the preconditions for the refinements. For some domains, HTN planners have been
+able to generate huge plans with very little search. For example, O-PLAN (Bell and Tate,
+1985),whichcombines HT Nplanning withscheduling, hasbeenusedtodevelopproduction
+plans for Hitachi. A typical problem involves a product line of 350 different products, 35
+assembly machines, and over 2000 different operations. T

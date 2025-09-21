@@ -1,0 +1,43 @@
+ormulaisrearranged:
+P(X e ) P(X e ,e ) (dividing uptheevidence)
+t 1 1:t 1 t 1 1:t t 1 P(e X ,e )P(X e ) (using Bayes rule)
+t 1 t 1 1:t t 1 1:t P(e X )P(X e ) (bythesensor Markovassumption). (15.4)
+t 1 t 1 t 1 1:t
+Hereandthroughoutthischapter, isanormalizingconstantusedtomakeprobabilities sum
+up to 1. The second term, P(X e ) represents a one-step prediction of the next state,
+t 1 1:t
+andthefirsttermupdatesthiswiththenewevidence;noticethat P(e X )isobtainable
+t 1 t 1
+directly from the sensor model. Now weobtain the one-step prediction for the next state by
+conditioning onthecurrentstate X :
+t (cid:12)
+P(X e ) P(e X ) P(X x ,e )P(x e )
+t 1 1:t 1 t 1 t 1 t 1 t 1:t t 1:t
+(cid:12) xt P(e X ) P(X x )P(x e ) (Markovassumption). (15.5)
+t 1 t 1 t 1 t t 1:t
+xt
+Withinthesummation,thefirstfactorcomesfromthetransitionmodelandthesecondcomes
+fromthecurrentstatedistribution. Hence,wehavethedesiredrecursiveformulation. Wecan
+thinkofthefilteredestimate P(X e )asa message f thatispropagated forwardalong
+t 1:t 1:t
+thesequence, modifiedbyeachtransition andupdatedbyeachnewobservation. Theprocess
+isgivenby
+f
+1:t 1 FORWARD(f
+1:t
+,e
+t 1
+),
+where FORWAR Dimplementstheupdatedescribedin Equation(15.5)andtheprocessbegins
+with f P(X ). When all the state variables are discrete, the time for each update is
+1:0 0
+constant (i.e., independent of t), and the space required is also constant. (The constants
+depend, of course, on the size of the state space and the specific type of the temporal model
+inquestion.) Thetimeandspacerequirementsforupdatingmustbeconstantifanagentwith
+limitedmemoryistokeeptrackofthecurrentstatedistribution overanunbounded sequence
+ofobservations.
+Let us illustrate the filtering process for two steps in the basic umbrella example (Fig-
+ure15.2.) Thatis,wewillcompute P(R u )asfollows:
+2 1:2 Onday0,wehavenoobservations, onlythesecurityguard spriorbeliefs;let sassume
+thatconsistsof P(R ) (cid:16)0.5,0.5(cid:17).
+0 Onday1,theumbrellaappears, so U true. Theprediction from t 0tot 1is

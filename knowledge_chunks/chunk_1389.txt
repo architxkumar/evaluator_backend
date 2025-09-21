@@ -1,0 +1,20 @@
+s ofthealgorithmsinthebookinseveralprogramming languages, a list of over 1000 schools that have used the book, many with links to online course
+materialsandsyllabi, anannotated listofover800linkstositesaroundthe Webwithuseful AIcontent, achapter-by-chapter listofsupplementary materialandlinks, instructions onhowtojoinadiscussion groupforthebook,
+Preface ix instructions onhowtocontacttheauthorswithquestions orcomments, instructions onhowtoreporterrorsinthebook, inthelikelyeventthatsomeexist,and slidesandothermaterialsforinstructors.
+About the cover
+The cover depicts the final position from the decisive game 6 of the 1997 match between
+chess champion Garry Kasparov and program DEEP BLUE. Kasparov, playing Black, was
+forced to resign, making this the first time a computer had beaten a world champion in a
+chess match. Kasparov is shown at the top. To his left is the Asimo humanoid robot and
+to his right is Thomas Bayes (1702 1761), whose ideas about probability as a measure of
+beliefunderliemuchofmodern AItechnology. Belowthatweseea Mars Exploration Rover,
+a robot that landed on Mars in 2004 and has been exploring the planet ever since. To the
+right is Alan Turing (1912 1954), whose fundamental work defined the fields of computer
+science in general and artificial intelligence in particular. At the bottom is Shakey (1966 1972), the first robot to combine perception, world-modeling, planning, and learning. With
+Shakey is project leader Charles Rosen (1917 2002). At the bottom right is Aristotle (384
+B.C. 322 B.C.),whopioneered thestudyoflogic;hisworkwasstateofthe artuntilthe19th
+century(copyofabustby Lysippos). Atthebottomleft,lightlyscreenedbehindtheauthors names, isa planning algorithm by Aristotle from De Motu Animaliumin the original Greek.
+Behind the title is a portion of the CPSC Bayesian network for medical diagnosis (Pradhan
+etal., 1994). Behind thechess board ispart ofa Bayesian logic model fordetecting nuclear
+explosions fromseismicsignals.
+Credits: Stan Honda G

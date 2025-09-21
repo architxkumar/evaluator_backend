@@ -1,0 +1,32 @@
+the same action schema
+twice in a plan. The same approach was used in Chapter 9 for first-order logical inference.)
+This represents unloading the package from an unspecified plane at SFO;any plane will do,
+but we need not say which one now. We can take advantage of the power of first-order
+representations: asingledescription summarizesthepossibility ofusinganyoftheplanesby
+(cid:2)
+implicitlyquantifying overp. Theregressedstatedescription is
+g (cid:2) In(C ,p (cid:2) ) At(p (cid:2) ,SFO) Cargo(C ) Plane(p (cid:2) ) Airport(SFO).
+2 2
+Thefinalissueisdecidingwhichactionsarecandidates toregressover. Intheforwarddirec-
+tion wechose actions that were applicable those actions that could be the next step in the
+plan. Inbackward search wewantactions that are relevant those actions thatcould bethe
+RELEVANCE
+laststepinaplanleadinguptothecurrent goalstate.
+Foran action to be relevant to a goal it obviously must contribute to the goal: at least
+oneoftheaction seffects(eitherpositiveornegative)mustunifywithanelementofthegoal.
+What is less obvious is that the action must not have any effect (positive or negative) that
+negates an element of the goal. Now, if the goal is A B C and an action has the effect
+A B Cthenthereisacolloquialsenseinwhichthatactionisveryrelevanttothegoal it
+gets ustwo-thirds ofthe waythere. Butitisnot relevant inthe technical sense defined here,
+because this action could not be the final step of a solution we would always need at least
+onemoresteptoachieve C.
+Given the goal At(C ,SFO), several instantiations of Unload are relevant: we could
+2
+chose any specific plane to unload from, or we could leave the plane unspecified by using
+(cid:2)
+theaction Unload(C ,p,SFO). Wecan reduce thebranching factorwithout ruling outany
+2
+solutions byalways using theaction formed bysubstituting the mostgeneral unifierinto the
+(standardized) actionschema.
+As another example, consider the goal Own(0136042597), given an initial state with
+10billion A Action(Buy(i),PRECOND: As we me

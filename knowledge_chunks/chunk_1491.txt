@@ -1,0 +1,36 @@
+yoftheoutcome.
+outcome. (Appendix Adefinesexpectation moreprecisely.) In Chapter16,weshowthatany
+rational agent must behave as if it possesses a utility function whose expected value it tries
+tomaximize. Anagentthatpossesses anexplicit utility function canmakerational decisions
+with a general-purpose algorithm that does not depend on the specific utility function being
+maximized. In this way, the global definition of rationality designating as rational those
+agent functions that have the highest performance is turned into a local constraint on
+rational-agent designsthatcanbeexpressedinasimpleprogram.
+Theutility-based agent structure appears in Figure 2.14. Utility-based agent programs
+appearin Part IV,wherewedesign decision-making agents thatmusthandle theuncertainty
+inherent instochastic orpartially observable environments.
+Atthispoint,thereadermaybewondering, Isitthatsimple? Wejustbuildagentsthat
+maximize expected utility, and we re done? It s true that such agents would be intelligent,
+but it s not simple. A utility-based agent has to model and keep track of its environment,
+tasks that have involved a great deal of research on perception, representation, reasoning,
+and learning. The results of this research fill many of the chapters of this book. Choosing
+theutility-maximizing courseofactionisalsoadifficulttask,requiringingeniousalgorithms
+that fill several more chapters. Even with these algorithms, perfect rationality is usually
+unachievable inpractice becauseofcomputational complexity, aswenotedin Chapter1.
+2.4.6 Learning agents
+We have described agent programs with various methods for selecting actions. We have
+not, so far, explained how the agent programs come into being. In his famous early paper,
+Turing (1950) considers the idea of actually programming his intelligent machines by hand.
+Section2.4. The Structureof Agents 55
+Performance standard
+Agent
+Environment
+Critic Sensors
+feedback
+changes
+Learning Performance
+element element
+knowledge
+learning
+goals
+Pro

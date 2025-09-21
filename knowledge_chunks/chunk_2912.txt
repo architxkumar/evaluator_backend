@@ -1,0 +1,27 @@
+s 1921 play R.U.R.
+(Rossum s Universal Robots). The robots, which were grown chemically rather than con-
+structed mechanically, end up resenting their masters and decide to take over. It appears
+(Glanc, 1978) it was Capek s brother, Josef, who first combined the Czech words robota (obligatory work)and robotnik (serf)toyield robot in his1917shortstory Opilec.
+Theterm robotics was firstused by Asimov(1950). Robotics (under other names) has
+amuchlongerhistory,however. Inancient Greekmythology, amechanicalmannamed Talos
+was supposedly designed and built by Hephaistos, the Greek god of metallurgy. Wonderful
+automata were built in the 18th century Jacques Vaucanson s mechanical duck from 1738
+being one early example but the complex behaviors they exhibited were entirely fixed in
+advance. Possiblytheearliestexampleofaprogrammablerobot-likedevicewasthe Jacquard
+loom(1805),described onpage14.
+Thefirstcommercialrobotwasarobotarmcalled Unimate,shortforuniversalautoma-
+UNIMATE
+tion, developed by Joseph Engelberger and George Devol. In 1961, the first Unimate robot
+was sold to General Motors, where it was used for manufacturing TV picture tubes. 1961
+wasalsotheyearwhen Devolobtained thefirst U.S.patent ona robot. Elevenyears later, in
+1972, Nissan Corp. wasamong thefirst toautomate anentire assembly line withrobots, de-
+velopedby Kawasakiwithrobotssupplied by Engelberger and Devol scompany Unimation.
+This development initiated a major revolution that took place mostly in Japan and the U.S.,
+andthatisstillongoing. Unimationfollowedupin1978withthedevelopmentofthe PUMA
+PUMA
+robot, short for Programmable Universal Machine for Assembly. The PUM Arobot, initially
+developedfor General Motors,wasthedefactostandardforroboticmanipulationforthetwo
+decadesthatfollowed. Atpresent,thenumberofoperatingrobotsisestimatedatonemillion
+worldwide,morethanhalfofwhichareinstalled in Japan.
+Theliteratureonroboticsresearchcanbedividedroughlyintotwoparts: mobilerobots
+and stationary manipulators. Grey Wa

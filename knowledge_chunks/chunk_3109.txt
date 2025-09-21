@@ -1,0 +1,22 @@
+p.889 896. ficationofapipelinedmicroprocessor. IEEE Soft-
+ware,7(5),52 64.
+Simon, H. A. and Newell, A. (1958). Heuristic Smith,J.Q.(1988). Decision Analysis. Chapman
+problemsolving:Thenextadvanceinoperationsre- and Hall. Staab, S. (2004). Handbook on Ontologies.
+search.Operations Research,6,1 10. Springer.
+Smith,J.E.and Winkler,R.L.(2006). Theopti-
+Simon, H.A.and Newell, A.(1961). Computer mizer scurse:Skepticismandpostdecisionsurprise Stallman,R.M.and Sussman,G.J.(1977).Forward
+simulationofhumanthinkingandproblemsolving. indecisionanalysis. Management Science,52(3), reasoninganddependency-directedbacktrackingin
+Datamation,June July,35 37. 311 322. asystemforcomputer-aidedcircuitanalysis. AIJ,
+9(2),135 196.
+Simon, J.C.and Dubois, O.(1989). Numberof Smith,J.M.(1982). Evolutionandthe Theoryof
+solutionstosatisfiabilityinstances Applicationsto Games.Cambridge University Press. Stanfill,C.and Waltz,D.(1986). Towardmemory-
+knowledgebases.AIJ,3,53 65. basedreasoning.CACM,29(12),1213 1228.
+Smith, J.M.and Szathma ry,E.(1999). The Ori-
+Simonis,H.(2005). Sudokuasaconstraintprob- ginsof Life:Fromthe Birthof Lifetothe Originof Stefik,M.(1995). Introductionto Knowledge Sys-
+lem.In CP Workshopon Modelingand Reformulat- Language.Oxford University Press. tems.Morgan Kaufmann.
+ing Constraint Satisfaction Problems,pp.13 27. Smith, M. K., Welty, C., and Mc Guinness, D. Stein, L.A.(2002). Interactive Programmingin
+Singer,P.W.(2009).Wiredfor War.Penguin Press. (2004). OW Lwebontologylanguageguide. Tech. Java(pre-publicationdraft).Morgan Kaufmann.
+Singh,P.,Lin,T.,Mueller,E.T.,Lim,G.,Perkins, rep.,W3C. Stephenson,T.,Bourlard,H.,Bengio,S.,and Mor-
+T., and Zhu, W.L.(2002). Openmindcommon Smith,R.C.and Cheeseman,P.(1986).Ontherep- ris,A.(2000). Automaticspeechrecognitionusing
+sense:Knowledgeacquisitionfromthegeneralpub- resentationandestimationofspatialuncertainty.Int. dynamicbayesiannetworkswithbothacousticand
+lic. In Proc.First International Conferenceon On- J.Robotics Research,5(4),56 68. 

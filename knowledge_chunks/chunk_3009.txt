@@ -1,0 +1,91 @@
+robabilisticnetworkswith Boden,M.A.(Ed.).(1990). The Philosophyof Ar- Bowerman,M.and Levinson,S.(2001). Language
+hiddenvariables.Machine Learning,29,213 244. tificial Intelligence.Oxford University Press. acquisitionandconceptualdevelopment.Cambridge
+University Press.
+Binder,J.,Murphy,K.,and Russell,S.J.(1997b). Bolognesi,A.and Ciancarini,P.(2003). Computer
+Space-efficient inference in dynamic probabilistic programmingofkriegspielendings:Thecaseof KR Bowling,M.,Johanson,M.,Burch,N.,and Szafron,
+networks.In IJCAI-97,pp.1292 1296. vs.k.In Advancesin Computer Games10. D.(2008). Strategyevaluationinextensivegames
+withimportancesampling.In ICML-08.
+Binford,T.O.(1971). Visualperceptionbycom- Bonet, B.(2002). Anepsilon-optimalgrid-based
+Box, G.E.P.(1957). Evolutionaryoperation: A
+puter. Invitedpaperpresentedatthe IEEE Systems algorithmforpartiallyobservable Markovdecision
+methodofincreasingindustrialproductivity.Applied
+Scienceand Cybernetics Conference,Miami. processes.In ICML-02,pp.51 58.
+Statistics,6,81 101.
+Binmore, K. (1982). Essays on Foundations of Bonet, B. and Geffner, H. (1999). Planning as Box,G.E.P.,Jenkins,G.,and Reinsel,G.(1994).
+Game Theory.Pitman. heuristicsearch:Newresults. In ECP-99,pp.360 Time Series Analysis:Forecastingand Control(3rd
+372.
+Bishop,C.M.(1995). Neural Networksfor Pattern edition). Bonet, B.and Geffner,H.(2000). Planningwith
+Recognition.Oxford University Press. Boyan, J. A. (2002). Technical update: Least-
+incompleteinformationasheuristicsearchinbelief
+squares temporal difference learning. Machine
+Bishop,C.M.(2007).Pattern Recognitionand Ma- space.In ICAPS-00,pp.52 61. Learning,49(2 3),233 246.
+chine Learning.Springer-Verlag. Bonet,B.and Geffner,H.(2005).Analgorithmbet-
+Bisson,T.(1990).They remadeoutofmeat.Omni
+terthan AO ?In AAAI-05. B
+in
+o
+g
+y
+e
+a
+v
+n
+a
+,
+lu
+J
+a
+.
+ti
+A
+on
+.
+f
+a
+u
+n
+n
+d
+ct
+M
+ion
+o
+s
+or
+f
+e
+o
+,
+r
+A
+gl
+.
+ob
+W
+al
+.
+o
+(
+p
+1
+t
+9
+i
+9
+m
+8
+i
+)
+z
+.
+atio
+L
+n
+ea
+a
+r
+n
+n
+d
+-
+Magazine. Boole, G. (1847). The Mathematical Analysisof Bool

@@ -1,0 +1,26 @@
+ath Robinsonwasacartoonistfamousforhisdepictionsofwhimsicalandabsurdlycomplicatedcontrap-
+tionsforeverydaytaskssuchasbutteringtoast.
+9 Inthepostwarperiod, Turingwantedtousethesecomputers for AIresearch forexample, oneofthefirst
+chessprograms(Turingetal.,1953).Hiseffortswereblockedbythe Britishgovernment.
+Section1.2. The Foundations of Artificial Intelligence 15
+1.2.7 Control theory andcybernetics Howcanartifactsoperate undertheirowncontrol?
+Ktesibios of Alexandria (c. 250 B.C.) built the first self-controlling machine: a water clock
+with a regulator that maintained a constant flow rate. This invention changed the definition
+of what an artifact could do. Previously, only living things could modify their behavior in
+response to changes inthe environment. Otherexamples of self-regulating feedback control
+systems include the steam engine governor, created by James Watt (1736 1819), and the
+thermostat, invented by Cornelis Drebbel (1572 1633), who also invented the submarine.
+Themathematical theoryofstablefeedback systemswasdevelopedinthe19thcentury.
+The central figure in the creation of what is now called control theory was Norbert
+CONTROLTHEORY
+Wiener(1894 1964). Wienerwasabrilliant mathematician whoworkedwith Bertrand Rus-
+sell,amongothers,beforedevelopinganinterestinbiologicalandmechanicalcontrolsystems
+andtheirconnectiontocognition. Like Craik(whoalsousedcontrolsystemsaspsychological
+models), Wiener and his colleagues Arturo Rosenblueth and Julian Bigelow challenged the
+behaviorist orthodoxy (Rosenblueth et al., 1943). They viewed purposive behavior as aris-
+ingfromaregulatorymechanismtryingtominimize error thedifferencebetweencurrent
+state and goal state. In the late 1940s, Wiener, along with Warren Mc Culloch, Walter Pitts,
+and John von Neumann, organized a series of influential conferences that explored the new
+mathematicalandcomputational modelsofcognition. Wiener sbook Cybernetics(1948)be-
+CYBERNETICS
+came a bestseller and awoke the public to the possibility of

@@ -1,0 +1,36 @@
+le.2 The blocks can be stacked, but
+only one block can fitdirectly ontop ofanother. Arobot arm canpick up ablock and move
+it to another position, either on the table or on top of another block. The arm can pick up
+onlyoneblockatatime,soitcannotpickupablockthathasanotheroneonit. Thegoalwill
+alwaysbetobuildoneormorestacksofblocks, specified intermsofwhatblocksareontop
+2 Theblocksworldusedinplanningresearchismuchsimplerthan SHRDLU sversion,shownonpage20.
+Section10.1. Definitionof Classical Planning 371
+Init(On(A,Table) On(B,Table) On(C,A) Block(A) Block(B) Block(C) Clear(B) Clear(C))
+Goal(On(A,B) On(B,C))
+Action(Move(b,x,y),
+PRECOND:On(b,x) Clear(b) Clear(y) Block(b) Block(y) (b(cid:7) x) (b(cid:7) y) (x(cid:7) y),
+EFFECT:On(b,y) Clear(x) On(b,x) Clear(y))
+Action(Move To Table(b,x),
+PRECOND:On(b,x) Clear(b) Block(b) (b(cid:7) x),
+EFFECT:On(b,Table) Clear(x) On(b,x))
+Figure10.3 Aplanningproblemintheblocksworld: buildingathree-blocktower. One
+solutionisthesequence Move To Table(C,A),Move(B,Table,C),Move(A,Table,B) .
+A
+C B
+B A C
+Start State Goal State
+Figure10.4 Diagramoftheblocks-worldproblemin Figure10.3.
+of what other blocks. Forexample, a goal might be to get block A on B and block B on C
+(see Figure10.4).
+Weuse On(b,x)toindicate thatblock bisonx,where xiseitheranotherblock orthe
+table. Theaction formoving block bfrom thetopof xtothe topofy willbe Move(b,x,y).
+Now,oneofthepreconditions onmovingbisthatnootherblockbeonit. Infirst-orderlogic,
+this would be x On(x,b) or, alternatively, x On(x,b). Basic PDDL does not allow
+quantifiers, so instead we introduce a predicate Clear(x) that is true when nothing is on x.
+(Thecompleteproblem description isin Figure10.3.)
+Theaction Move movesablockbfrom xtoy ifbothbandy areclear. Afterthemove
+ismade,bisstillclearbuty isnot. Afirstattemptatthe Move schemais
+Action(Move(b,x,y),
+PRECOND:On(b,x) Clear(b) Clear(y),
+EFFECT:On(b,y) Clear(x) On(b,x) Clear(y)).
+Unfortunately, thisdoesnotmaintain Clear properly when xory isthetable. Whenxist

@@ -1,0 +1,31 @@
+ight make this seem trivial, but in fact, game theory is serious busi-
+ness. It is used in decision-making situations including the auctioning of oil drilling rights
+and wireless frequency spectrum rights, bankruptcy proceedings, product development and
+pricingdecisions,andnationaldefense situations involvingbillionsofdollarsandhundreds
+ofthousands oflives. Asingle-movegameisdefinedbythreecomponents: Players oragents who will be making decisions. Two-player games have received the
+PLAYER
+mostattention, although n-player games for n 2are also common. Wegive players
+capitalized names,like Aliceand Bobor O and E. Actionsthattheplayerscanchoose. Wewillgiveactionslowercasenames,likeone or
+ACTION
+testify. Theplayersmayormaynothavethesamesetofactionsavailable. Apayoff function that gives the utility toeach player foreach combination of actions
+PAYOFFFUNCTION
+by all the players. Forsingle-move games the payoff function can be represented by a
+matrix, a representation known as the strategic form (also called normal form). The
+STRATEGICFORM
+payoffmatrixfortwo-finger Morraisasfollows:
+O:one O:two
+E:one E 2,O 2 E 3,O 3
+E:two E 3,O 3 E 4,O 4
+Forexample, the lower-right corner shows that when player O chooses action two and
+E alsochoosestwo,thepayoffis 4for E and 4for O.
+Each player in a game must adopt and then execute a strategy (which is the name used in
+STRATEGY
+gametheoryforapolicy). Apurestrategyisadeterministicpolicy;forasingle-movegame,
+PURESTRATEGY
+a pure strategy is just a single action. Formany games an agent can do better with a mixed
+strategy, which is a randomized policy that selects actions according to aprobability distri-
+MIXEDSTRATEGY
+bution. The mixed strategy that chooses action a with probability p and action b otherwise
+is written p:a;(1 p):b . For example, a mixed strategy for two-finger Morra might be 0.5:one;0.5:two . A strategy profile is an assignment of a strategy to each player; given
+STRATEGYPROFILE
+thestrategyprofile,thegame soutcomeisanumericvaluef

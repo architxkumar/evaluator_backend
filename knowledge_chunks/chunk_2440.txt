@@ -1,0 +1,24 @@
+ageof21,John Nashpublishedhisideasconcerningequilibriaingeneral
+(non-zero-sum) games. Hisdefinition ofanequilibrium solution, although originating inthe
+work of Cournot (1838), became known as Nash equilibrium. After a long delay because
+oftheschizophrenia hesuffered from 1959 onward, Nashwasawarded the Nobel Memorial
+Prizein Economics(alongwith Reinhart Seltenand John Harsanyi)in1994. The Bayes Nash
+equilibrium is described by Harsanyi (1967) and discussed by Kadane and Larkey (1982).
+Someissuesintheuseofgametheoryforagentcontrolarecoveredby Binmore(1982).
+The prisoner s dilemma was invented as a classroom exercise by Albert W. Tucker in
+1950(basedonanexampleby Merrill Floodand Melvin Dresher)andiscoveredextensively
+by Axelrod (1985) and Poundstone (1993). Repeated games were introduced by Luce and
+Raiffa(1957), and gamesofpartial information inextensive form by Kuhn(1953). Thefirst
+practical algorithm for sequential, partial-information games was developed within AI by
+Kolleretal. (1996); the paper by Kollerand Pfeffer(1997) provides a readable introduction
+tothefieldanddescribeaworkingsystemforrepresenting andsolving sequential games.
+The use of abstraction to reduce a game tree to a size that can be solved with Koller s
+technique is discussed by Billings et al. (2003). Bowling et al. (2008) show how to use
+importance sampling to get a better estimate of the value of a strategy. Waugh et al. (2009)
+showthattheabstractionapproachisvulnerabletomakingsystematicerrorsinapproximating
+the equilibrium solution, meaning that the whole approach is on shaky ground: it works for
+some games but not others. Korb et al. (1999) experiment with an opponent model in the
+form of a Bayesian network. It plays five-card stud about as well as experienced humans.
+(Zinkevich et al., 2008) show how an approach that minimizes regret can find approximate
+equilibria forabstractions with 1012 states,100timesmorethanpreviousmethods.
+Game theory and MD Ps are combined in the theory of Markov g

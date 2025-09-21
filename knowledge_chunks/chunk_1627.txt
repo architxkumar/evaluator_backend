@@ -1,0 +1,25 @@
+s mazes
+and8-puzzles, canbeviewedasundirected graphsandareclearlysafelyexplorable.
+Even in safely explorable environments, no bounded competitive ratio can be guaran-
+teed if there are paths of unbounded cost. This is easy to show in environments with irre-
+versible actions, but in fact it remains true for the reversible case as well, as Figure 4.20(b)
+shows. Forthisreason,itiscommontodescribetheperformanceofonlinesearchalgorithms
+intermsofthesizeoftheentirestatespaceratherthanjust thedepthoftheshallowest goal.
+4.5.2 Onlinesearchagents
+Aftereachaction, anonlineagentreceivesapercepttelling itwhatstateithasreached; from
+this information, it can augment its map of the environment. The current map is used to
+decide where to go next. This interleaving of planning and action means that online search
+algorithmsarequitedifferentfromtheofflinesearchalgorithmswehaveseenpreviously. For example, offline algorithms such as A can expand a node in one part of the space and then
+immediately expand a node in another part of the space, because node expansion involves
+simulated rather than real actions. An online algorithm, on the other hand, can discover
+successors only for a node that it physically occupies. To avoid traveling all the way across
+thetreetoexpandthenextnode,itseemsbettertoexpandnodesinalocalorder. Depth-first
+searchhasexactlythisproperty because(exceptwhenbacktracking) thenextnodeexpanded
+isachildoftheprevious nodeexpanded.
+An online depth-first search agent is shown in Figure 4.21. This agent stores its map
+in a table, RESULT s,a , that records the state resulting from executing action a in state s.
+Whenever an action from the current state has not been explored, the agent tries that action.
+The difficulty comes when the agent has tried all the actions in a state. In offline depth-first
+search, the state is simply dropped from the queue; in an online search, the agent has to
+backtrack physically. Indepth-firstsearch,thismeansgoingbacktothestatefromwhichthe
+agentmostr

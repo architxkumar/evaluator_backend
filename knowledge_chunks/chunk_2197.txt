@@ -1,0 +1,29 @@
+queries
+costing O(n) each, for a total of O(n2) time. Using clustering algorithms (also known as
+CLUSTERING
+jointreealgorithms), thetimecanbereduced to O(n). Forthisreason, thesealgorithms are
+JOINTREE
+widelyusedincommercial Bayesiannetworktools.
+The basic idea of clustering is to join individual nodes of the network to form clus-
+ter nodes in such a way that the resulting network is a polytree. For example, the multiply
+connected network shown in Figure 14.12(a) can be converted into a polytree by combin-
+ing the Sprinkler and Rain node into a cluster node called Sprinkler Rain, as shown in
+Figure 14.12(b). The two Boolean nodes are replaced by a meganode that takes on four
+possible values: tt,tf,ft,andff. Themeganodehasonlyoneparent, the Booleanvariable
+Cloudy, so there are two conditioning cases. Although this example doesn t show it, the
+processofclustering oftenproduces meganodesthatsharesomevariables.
+530 Chapter 14. Probabilistic Reasoning
+Oncethenetworkisinpolytreeform,aspecial-purpose inferencealgorithmisrequired,
+becauseordinary inference methodscannothandlemeganodesthatsharevariables witheach
+other. Essentially,thealgorithmisaformofconstraintpropagation(see Chapter6)wherethe
+constraintsensurethatneighboringmeganodesagreeonthe posteriorprobabilityofanyvari-
+ablesthattheyhaveincommon. Withcarefulbookkeeping, thisalgorithmisabletocompute
+posterior probabilities forallthe nonevidence nodes inthenetwork intime linear inthesize
+oftheclustered network. However,the NP-hardnessoftheproblem hasnotdisappeared: ifa
+network requires exponential timeand space withvariable elimination, then the CP Tsinthe
+clustered networkwillnecessarily beexponentially large.
+14.5 APPROXIMATE INFERENCE IN BAYESIAN NETWORKS
+Giventhe intractability ofexact inference in large, multiply connected networks, itis essen-
+tialtoconsiderapproximate inferencemethods. Thissectiondescribesrandomized sampling
+algorithms, also called Monte Carlo algorithms, that provide approximate answers whose
+MON

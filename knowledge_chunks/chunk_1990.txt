@@ -1,0 +1,26 @@
+terleaved
+planners arecomplete.
+One solution to the interleaving problem was goal-regression planning, a technique in
+which steps in a totally ordered plan are reordered so as to avoid conflict between subgoals.
+This was introduced by Waldinger (1975) and also used by Warren s (1974) WARPLAN.
+WARPLAN is also notable in that it was the first planner to be written in a logic program-
+minglanguage (Prolog) andisoneofthebestexamples oftheremarkable economy thatcan
+sometimes be gained withlogic programming: WARPLAN isonly 100 lines ofcode, asmall
+fractionofthesizeofcomparable planners ofthetime.
+The ideas underlying partial-order planning include the detection of conflicts (Tate,
+1975a) and the protection of achieved conditions from interference (Sussman, 1975). The
+construction of partially ordered plans (then called task networks) was pioneered by the
+NOA Hplanner(Sacerdoti, 1975,1977)andby Tate s(1975b, 1977) NONLIN system.
+Partial-order planning dominated the next 20 years of research, yet the first clear for-
+mal exposition was TWEAK (Chapman, 1987), a planner that was simple enough to allow
+proofs of completeness and intractability (NP-hardness and undecidability) of various plan-
+ning problems. Chapman s work led to a straightforward description of a complete partial-
+orderplanner (Mc Allesterand Rosenblitt, 1991), then tothewidely distributed implementa-
+tions SNLP (Soderland and Weld, 1991) and UCPOP (Penberthy and Weld, 1992). Partial-
+order planning fell out of favor in the late 1990s as faster methods emerged. Nguyen and
+Kambhampati (2001) suggest that a reconsideration is merited: with accurate heuristics de-
+rived from aplanning graph, their REPOP planner scales up muchbetter than GRAPHPLAN
+inparallelizable domainsandiscompetitivewiththefasteststate-space planners.
+The resurgence of interest in state-space planning was pioneered by Drew Mc Der-
+mott s UNPO Pprogram(1996),whichwasthefirsttosuggesttheignore-delete-listheuristic,
+The name UNPOP was a reaction 

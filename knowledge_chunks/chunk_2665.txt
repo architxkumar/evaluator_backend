@@ -1,0 +1,32 @@
+ultsofeachactionsequenceinanygiven
+world. Here, a world isdefinedbythetransition model P(s
+(cid:2) s,a).
+Thus, inor-
+derto act optimally, the agent needs aprior distribution over the possible models.
+Theresulting optimization problemsareusuallywildlyintractable.
+Insomecases forexample,whenthepayoffofeachmachineisindependent
+and discounted rewards are used it is possible to calculate a Gittins index for
+each slot machine (Gittins, 1989). The index is a function only of the number of
+timestheslotmachinehasbeenplayedandhowmuchithaspaidoff. Theindexfor
+eachmachineindicateshowworthwhileitistoinvestmore;generallyspeaking,the
+higher the expected return and the higher the uncertainty in the utility of a given
+choice, the better. Choosing the machine with the highest index value gives an
+optimalexplorationpolicy. Unfortunately,nowayhasbeenfoundtoextend Gittins
+indicestosequential decision problems.
+One can use the theory of n-armed bandits to argue for the reasonableness
+of the selection strategy in genetic algorithms. (See Chapter 4.) If you consider
+each arm in an n-armed bandit problem to be a possible string of genes, and the
+investment of a coin in one arm to be the reproduction of those genes, then it can
+beproventhatgeneticalgorithmsallocatecoinsoptimally,givenanappropriateset
+ofindependence assumptions.
+842 Chapter 21. Reinforcement Learning
+unexplored state action pairs. Essentially, thisamounts toanoptimisticprioroverthepossi-
+bleenvironments andcauses theagenttobehave initially as ifthere werewonderful rewards
+scattered alloverthe place. Letus use U (s)todenote the optimistic estimate of the utility
+(i.e.,theexpected reward-to-go) ofthestate s,andlet N(s,a)bethenumberoftimesaction
+a has been tried in state s. Suppose we are using value iteration in an ADP learning agent;
+thenweneedtorewritetheupdateequation (Equation(17.6) onpage652)toincorporate the
+optimisticestimate. Thefollowingequation doesthis:
+(cid:13) (cid:14)
+(cid:2)
+U (s) R(s) max f P(s (cid:2) s,a)U (s 

@@ -1,0 +1,27 @@
+ their actions (except by explicit communicative acts) and who may not
+share the same utility function. Thus, multiagent RL deals with sequential game-theoretic
+problems or Markovgames, asdefined in Chapter17. Theconsequent requirement forran-
+domized policies isnot asignificant complication, aswesawonpage 848. Whatdoes cause
+problems is the fact that, while an agent is learning to defeat its opponent s policy, the op-
+ponent is changing its policy to defeat the agent. Thus, the environment is nonstationary
+(seepage568). Littman(1994)notedthisdifficultywhenintroducing thefirst RLalgorithms
+for zero-sum Markov games. Hu and Wellman (2003) present a Q-learning algorithm for
+general-sumgamesthatconvergeswhenthe Nashequilibrium isunique;whentherearemul-
+tipleequilibria, thenotionofconvergence isnotsoeasyto define(Shohametal.,2004).
+Sometimestherewardfunction isnoteasytodefine. Consider thetaskofdrivingacar.
+There are extreme states (such as crashing the car) that clearly should have a large penalty.
+But beyond that, it is difficult to be precise about the reward function. However, it is easy
+enough forahumantodriveforawhileandthentellarobot do itlikethat. Therobotthen
+AP LEARNING
+without explicit rewards. Ng etal. (2004) and Coates etal. (2009) show how this technique
+works for learning to fly a helicopter; see Figure 25.25 on page 1002 for an example of the
+acrobatics the resulting policy is capable of. Russell (1998) describes the task of inverse
+INVERSE
+reinforcement learning figuring out what the reward function must be from an example
+REINFORCEMENT
+LEARNING
+path through that state space. Thisis useful as a part of ap ofdoingscience wecanunderstand ananimalorrobotbyworkingbackwardsfromwhatit
+doestowhatitsrewardfunction mustbe.
+Thischapterhasdealt onlywithatomicstates all theagent knowsabout astate isthe
+set of available actions and the utilities of the resulting states (or of state-action pairs). But
+it is also possible to apply reinforcement learning to structured 

@@ -1,0 +1,43 @@
+robot s motion andby allowing fornoise inthesensors. Thestate variable X
+t
+represents the location of the robot on the discrete grid; the domain of this variable is the
+set of empty squares s
+1
+,...,s
+n . Let NEIGHBORS(s) be the set of empty squares that are
+adjacent to sand let N(s)be the size ofthat set. Then the transition model for Move action
+saysthattherobotisequally likelytoendupatanyneighboring square:
+P(X
+t 1 j X
+t i) T
+ij (1 N(i)ifj NEIGHBORS(i)else0).
+Wedon t know where the robot starts, so wewill assume auniform distribution overall the
+squares; thatis,P(X i) 1 n. Fortheparticularenvironment weconsider(Figure15.7),
+0
+n 42andthetransition matrix Thas42 42 1764entries.
+Thesensorvariable E has16possiblevalues,eachafour-bitsequencegivingthepres-
+t
+ence or absence of an obstacle in a particular compass direction. We will use the notation
+582 Chapter 15. Probabilistic Reasoning over Time
+(a)Posteriordistribution overrobotlocation after E NSW
+1
+(b)Posteriordistribution overrobotlocation after E NSW,E NS
+1 2
+Figure15.7 Posteriordistributionoverrobotlocation: (a)one observation E NSW;
+1
+(b)afterasecondobservation E NS.Thesizeofeachdiskcorrespondstotheprobability
+2
+thattherobotisatthatlocation.Thesensorerrorrateis (cid:2) 0.2.
+NS,forexample,tomeanthatthenorthandsouthsensorsreport anobstacleandtheeastand
+westdonot. Supposethateachsensor serrorrateis (cid:2)andthaterrorsoccurindependently for
+thefoursensordirections. Inthatcase,theprobability of gettingallfourbitsrightis(1 (cid:2))4
+andtheprobabilityofgettingthemallwrongis(cid:2)4. Furthermore,ifd isthediscrepancy the
+it
+numberofbitsthataredifferent between thetruevaluesforsquare iandtheactualreading
+e ,thentheprobability thatarobotinsquare iwouldreceiveasensorreading e is
+t t
+P(E e X i) O (1 (cid:2))4 dit(cid:2)dit .
+t t t tii
+Forexample,theprobabilitythatasquarewithobstaclestothenorthandsouthwouldproduce
+asensorreading NSE is(1 (cid:2))3(cid:2)1.
+Given the matrices T and O , the robot can use Equation (15.12) to c

@@ -1,0 +1,32 @@
+iscrete or
+continuous. Fornow wewillconcentrate on problems where the inputs have discrete values
+and the output has exactly two possible values; this is Boolean classification, where each
+exampleinputwillbeclassifiedastrue(apositiveexample)orfalse(anegativeexample).
+POSITIVE
+A decision tree reaches its decision by performing a sequence of tests. Each internal
+NEGATIVE
+node in the tree corresponds to a test of the value of one of the input attributes, A , and
+i
+the branches from the node are labeled with the possible values of the attribute, A v .
+i ik
+Each leaf node in the tree specifies avalue to be returned by the function. The decision tree
+representation is natural for humans; indeed, many How To manuals (e.g., for car repair)
+arewrittenentirelyasasingledecision treestretching overhundreds ofpages.
+As an example, we will build a decision tree to decide whether to wait for a table at a
+restaurant. The aim here is to learn a definition for the goal predicate Will Wait. First we
+GOALPREDICATE
+listtheattributes thatwewillconsideraspartoftheinput:
+1. Alternate: whetherthereisasuitablealternative restaurant nearby.
+2. Bar: whethertherestaurant hasacomfortable barareatowaitin.
+3. Fri Sat: trueon Fridaysand Saturdays.
+4. Hungry: whetherwearehungry.
+5. Patrons: howmanypeopleareintherestaurant (valuesare None,Some,and Full).
+6. Price: therestaurant s pricerange( , , ).
+7. Raining: whetheritisrainingoutside.
+8. Reservation: whetherwemadeareservation.
+9. Type: thekindofrestaurant (French,Italian,Thai,orburger).
+10. Wait Estimate: thewaitestimatedbythehost(0 10minutes,10 30, 30 60, or 60).
+Note that every variable has a small set of possible values; the value of Wait Estimate, for
+example, isnot aninteger, rather itisone ofthefourdiscrete values 0 10, 10 30, 30 60, or 60. Thedecisiontreeusuallyusedbyoneofus(SR)forthisdomainisshownin Figure18.2.
+Noticethatthetreeignoresthe Price and Type attributes. Examplesareprocessedbythetree
+starting attherootandfollowing theappropriate 

@@ -1,0 +1,26 @@
+ to be mated, a crossover point is chosen randomly from the positions in the string. In
+CROSSOVER
+Figure4.6,thecrossoverpointsareafterthethirddigitin thefirstpairandafterthefifthdigit
+inthesecondpair.5
+In (d), the offspring themselves are created by crossing over the parent strings at the
+crossoverpoint. Forexample,thefirstchildofthefirstpair getsthefirstthreedigitsfromthe
+first parent and the remaining digits from the second parent, whereas the second child gets
+the first three digits from the second parent and the rest from the first parent. The 8-queens
+states involved in this reproduction step are shown in Figure 4.7. The example shows that
+whentwoparent statesarequitedifferent, thecrossover operation canproduce astatethatis
+a long way from either parent state. It is often the case that the population is quite diverse
+earlyonintheprocess,socrossover(likesimulatedannealing)frequentlytakeslargestepsin
+the state space early in the search process and smaller steps later on when most individuals
+arequitesimilar.
+Finally, in (e), each location is subject to random mutation with a small independent
+MUTATION
+probability. One digit was mutated in the first, third, and fourth offspring. In the 8-queens
+problem, this corresponds to choosing a queen at random and moving it to a random square
+initscolumn. Figure4.8describes analgorithm thatimplementsallthesesteps.
+Like stochastic beam search, genetic algorithms combine an uphill tendency with ran-
+dom exploration and exchange of information among parallel search threads. The primary
+advantage, if any, of genetic algorithms comes from the crossover operation. Yet it can be
+shown mathematically that, if the positions of the genetic code are permuted initially in a
+random order, crossover conveys no advantage. Intuitively, the advantage comes from the
+abilityofcrossovertocombinelargeblocksoflettersthat haveevolvedindependently toper-
+form useful functions, thus raising the level of granularity at which the search operates. For

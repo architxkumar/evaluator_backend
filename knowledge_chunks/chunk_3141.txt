@@ -1,0 +1,35 @@
+figurationspace,986,987 20,202,202 207 Cox,I.,606,1012,1069
+confirmationtheory,6,505 constraintweighting,222 Cox,R.T.,490,504,505,1069
+conflict-directedbackjumping,219,227 constructiveinduction,791 CPCS,519,552
+conflictclauselearning,262 consumableresource,402 CPLAN,395
+conflictset,219 context,286 CPSC,ix
+1102 Index
+CPT,512 CYBERLOVER,1021 DBN,566,590,590 599,603,604,
+Craig,J.,1013,1069 cybernetics,15,15 646,664
+Craik,K.J.,13,1069 CYC,439,469,470 DBPEDIA,439,469
+Crammer,K.,761,1071 cyclicsolution,137 DCG,898,919
+Craswell,N.,884,1069 Cyganiak,R.,439,469,1066 DDN(dynamicdecisionnetwork),664,
+Crato,N.,229,1074 CYK-PARSE,894 685
+Crauser,A.,112,1069 CY Kalgorithm,893,919 Deacon,T.W.,25,1070
+Craven,M.,885,1069 deadend,149
+Crawford,J.M.,277,1069 D Deale,M.,432,1070
+creativity,16 Dean,J.,29,921,1067
+Cremers,A.B.,606,1012,1067,1088 D Ambrosio,B.,553,1088 Dean,M.E.,279,1084
+Cresswell,M.J.,470,1076 d-separation,517 Dean,T.,431,557,604,686,1012,
+CRF,878 DAG,511,552 1013,1048,1070
+Crick,F.H.C.,130,1091 Daganzo,C.,554,1069 Dearden,R.,686,855,1066,1070
+Cristianini,N.,760,1069 Dagum,P.,554,1069 Debevec,P.,968,1070
+critic(inlearning),55 Dahy,S.A.,723,724,1078 Debreu,G.,625,1070
+criticalpath,403 Dalal,N.,946,968,1069 debugging,308
+Crocker,S.D.,192,1074 DALTON,800 Dechter,R.,110,111,228 230,553,
+Crockett,L.,279,1069 Damerau,F.,884,1064 1069,1070,1076,1085
+Croft,B.,884,1069 Daniels,C.J.,112,1081 decision
+Croft,W.B.,884,885,1085 Danish,907 rational,481,610,633
+Cross,S.E.,29,1069 Dantzig,G.B.,155,1069 sequential,629,645
+CROSS-VALIDATION,710 DARKTHOUGHT,192 DECISION-LIST-LEARNING,717
+cross-validation,708,737,759,767 DARPA,29,922 DECISION-TREE-LEARNING,702
+CROSS-VALIDATION-WRAPPER,710 DARPA Grand Challenge,1007,1014 decisionanalysis,633
+crossover,128,153 Dartmouthworkshop,17,18 decisionboundary,723
+crosswordpuzzle,44,231 Darwiche,A.,277,517,554,557,558, decisionlist,715
+Cruse,D.A.,870,1069 1069,1085 decisionmaker,633
+cryptarithmetic,206 Darwin,C.,130,1035,1069 decisionnetwork,510,610,626,

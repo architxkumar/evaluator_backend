@@ -1,0 +1,35 @@
+correctly, andthus minimizes loss, it
+Section18.9. Support Vector Machines 745
+1 1
+0.8 0.8
+0.6 0.6
+0.4 0.4
+0.2 0.2
+0 0
+0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1
+(a) (b)
+Figure18.30 Supportvectormachineclassification: (a)Twoclassesofpoints(blackand
+white circles) and three candidate linear separators. (b) The maximum margin separator
+(heavy line), is at the midpoint of the margin (area between dashed lines). The support
+vectors(pointswithlargecircles)aretheexamplesclosesttotheseparator.
+should make you nervous that so many examples are close to the line; it may be that other
+blackexampleswillturnouttofallontheothersideoftheline.
+SV Msaddressthisissue: Insteadofminimizingexpectedempiricallossonthetraining
+data, SV Ms attempt to minimize expected generalization loss. We don t know where the
+as-yet-unseen points may fall, but under the probabilistic assumption that they are drawn
+from the same distribution as the previously seen examples, there are some arguments from
+computationallearningtheory(Section18.5)suggestingthatweminimizegeneralizationloss
+by choosing the separator that is farthest away from the examples we have seen so far. We
+MAXIMUMMARGIN callthisseparator, shownin Figure18.30(b) the maximummargin separator. Themargin
+SEPARATOR
+is the width of the area bounded by dashed lines in the figure twice the distance from the
+MARGIN
+separatortothenearestexamplepoint.
+Now, how do we find this separator? Before showing the equations, some notation:
+Traditionally SV Msuse the convention that class labels are 1and -1, instead ofthe 1 and
+0wehave been using so far. Also, where weput the intercept into the weight vector w(and
+a corresponding dummy 1 value into x ), SV Ms do not do that; they keep the intercept
+j,0
+as a separate parameter, b. With that in mind, the separator is defined as the set of points x : w x b 0 . We could search the space of w and b with gradient descent to find the
+parameters thatmaximizethemarginwhilecorrectly classifying alltheexamples.
+However, it

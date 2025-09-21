@@ -1,0 +1,27 @@
+ty ;what
+shoulditdoinresponseto Clean ? Moving Left fails(forever)ifithappenstostartinsquare
+A,andmoving Right fails(forever)ifithappenstostartinsquare B. Infiniteloopsareoften
+unavoidable forsimplereflexagentsoperating inpartially observable environments.
+Escape from infinite loops is possible if the agent can randomize its actions. For ex-
+RANDOMIZATION
+ample,ifthevacuumagentperceives Clean ,itmightflipacointochoosebetween Left and
+Right. Itiseasytoshowthattheagentwillreachtheothersquareinanaverageoftwosteps.
+Then, if that square is dirty, the agent will clean it and the task will be complete. Hence, a
+randomized simplereflexagentmightoutperform adeterministic simplereflexagent.
+Wementionedin Section2.3thatrandomizedbehavioroftherightkindcanberational
+insomemultiagentenvironments. Insingle-agentenvironments,randomizationisusuallynot
+rational. It is a useful trick that helps a simple reflex agent in some situations, but in most
+caseswecandomuchbetterwithmoresophisticated deterministic agents.
+2.4.3 Model-based reflex agents
+The most effective way to handle partial observability is for the agent to keep track of the
+part of the world it can t see now. That is, the agent should maintain some sort of internal
+statethatdepends onthepercepthistoryandtherebyreflectsatleastsomeoftheunobserved
+INTERNALSTATE
+aspects ofthecurrentstate. Forthebraking problem, theinternal stateisnottooextensive just the previous frame from the camera, allowing the agent to detect when twored lights at
+theedgeofthevehicle goonoroffsimultaneously. Forother driving taskssuchaschanging
+lanes,theagentneedstokeeptrackofwheretheothercarsareifitcan tseethemallatonce.
+Andforanydrivingtobepossibleatall,theagentneedstokeeptrackofwhereitskeysare.
+Updating this internal state information as time goes by requires two kinds of knowl-
+edge to be encoded in the agent program. First, we need some information about how the
+worldevolvesindependently oftheagent forexample,thatanovertakingcargenerallywill
+be closer

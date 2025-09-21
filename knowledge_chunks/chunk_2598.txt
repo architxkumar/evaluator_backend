@@ -1,0 +1,28 @@
+ms, aswesawwith SATPLAN in Chapter10.
+19.5.4 Making discoveries withinductive logicprogramming
+Aninverse resolution procedure that inverts a complete resolution strategy is, in principle, a
+complete algorithm for learning first-order theories. That is, if some unknown Hypothesis
+generates a set of examples, then an inverse resolution procedure can generate Hypothesis
+from the examples. This observation suggests an interesting possibility: Suppose that the
+available examples include avariety oftrajectories offalling bodies. Wouldaninverse reso-
+lutionprogrambetheoretically capableofinferringthelawofgravity? Theanswerisclearly
+yes,becausethelawofgravityallowsonetoexplaintheexamples,givensuitablebackground
+mathematics. Similarly,onecanimaginethatelectromagnetism,quantummechanics,andthe
+theoryofrelativityarealsowithinthescopeof IL Pprograms. Ofcourse,theyarealsowithin
+the scope of a monkey with a typewriter; we still need better heuristics and new ways to
+structure thesearchspace.
+Onethingthatinverseresolution systems willdoforyouisinventnewpredicates. This
+abilityisoftenseenassomewhatmagical,becausecomputersareoftenthoughtofas merely
+working with what they are given. In fact, new predicates fall directly out of the inverse
+resolution step. Thesimplestcasearises inhypothesizing twonewclauses C and C ,given
+1 2
+aclause C. Theresolutionof C and C eliminatesaliteralthatthetwoclausesshare;hence,
+1 2
+itisquite possible thattheeliminated literalcontained apredicate thatdoes notappearin C.
+Thus, whenworking backward, one possibility is togenerate anewpredicate from which to
+reconstruct themissingliteral.
+Figure19.14showsanexampleinwhichthenewpredicate P isgeneratedintheprocess
+oflearning adefinition for Ancestor. Oncegenerated, P canbeusedinlaterinverseresolu-
+tionsteps. Forexample,alaterstepmighthypothesizethat Mother(x,y) P(x,y). Thus,
+thenewpredicate P hasitsmeaningconstrainedbythegenerationofhypotheses thatinvolve
+it. Another example might lead to the constraint Father(x,y

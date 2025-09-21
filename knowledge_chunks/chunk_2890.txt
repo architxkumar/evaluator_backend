@@ -1,0 +1,25 @@
+ng until it reaches the bottom of the hole, because that is its termination
+condition. In spite of the control uncertainty, all possible trajectories of the robot terminate
+incontactwiththebottomofthehole thatis,unlesssurfaceirregularitiescausetherobotto
+stickinoneplace.
+As one might imagine, the problem of constructing fine-motion plans is not trivial; in
+fact, it is a good deal harder than planning with exact motions. One can either choose a
+fixed number of discrete values foreach motion oruse the environment geometry to choose
+directions that givequalitatively different behavior. Afine-motion planner takes asinput the
+configuration-spacedescription,theangleofthevelocityuncertaintycone,andaspecification
+ofwhatsensing ispossible fortermination (surface contact inthiscase). Itshould produce a
+multistepconditional planorpolicythatisguaranteed tosucceed, ifsuchaplanexists.
+Ourexample assumes that the planner has an exact model ofthe environment, but itis
+possible to allow forbounded errorinthis modelas follows. Iftheerror canbedescribed in
+termsofparameters,thoseparameterscanbeaddedasdegreesoffreedomtotheconfiguration
+space. In the last example, if the depth and width of the hole were uncertain, we could add
+them as two degrees of freedom to the configuration space. It is impossible to move the
+robot in these directions in the configuration space or to sense its position directly. But
+boththoserestrictionscanbeincorporated whendescribingthisproblemasan FM Pproblem
+by appropriately specifying control and sensor uncertainties. This gives a complex, four-
+dimensional planning problem, but exactly the same planning techniques can be applied.
+Section25.6. Moving 997
+Noticethatunlikethedecision-theoretic methodsin Chapter17,thiskindofrobustapproach
+results in plans designed for the worst-case outcome, rather than maximizing the expected
+qualityoftheplan. Worst-caseplansareoptimalinthedecision-theoretic senseonlyiffailure
+duringexecution ismuchworsethananyoftheothercostsinvo

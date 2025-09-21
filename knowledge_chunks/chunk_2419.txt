@@ -1,0 +1,55 @@
+is dealt to each player. The first player then has the option
+to raise the stakes of the game from 1 point to 2, or to check. If player 1 checks, the game
+is over. If he raises, then player 2 has the option to call, accepting that the game is worth 2
+points, or fold, conceding the 1 point. If the game does not end with a fold, then the payoff
+depends on the cards: it is zero for both players if they have the same card; otherwise the
+playerwiththekingpaysthestakestotheplayerwiththeace.
+Theextensive-form treeforthisgameisshownin Figure17.13. Nonterminalstatesare
+shownascircles, withtheplayertomoveinsidethecircle;player0ischance. Eachactionis
+depictedasanarrowwithalabel,correspondingtoaraise,check,call,orfold,or,forchance,
+thefourpossible deals( AK meansthatplayer1getsanaceandplayer2aking). Terminal
+states are rectangles labeled by their payoff to player 1 and player 2. Information sets are
+shown as labeled dashed boxes; for example, I is the information set where it is player
+1,1
+1 s turn, and he knows he has an ace (but does not know what player 2 has). In information
+set I , it is player 2 s turn and she knows that she has an ace and that player 1 has raised,
+2,1
+676 Chapter 17. Making Complex Decisions
+r c
+1 2 0,0!
+f
+k
+I I 1,-1!
+1,1 0,0! 2,1
+1 6: AA
+r c
+1 2 2,-2
+f
+k
+1 3: AK
+I 1,-1!
+0 1,-1! 2,2
+1 6: KK
+r c
+1 2 0,0
+f
+k
+1 3: KA
+I
+1,2
+0,0!
+I 1,-1!
+2,1
+r c
+1 22 -2, 2
+f
+k
+-1, 1! 1,-1!
+Figure17.13 Extensiveformofasimplifiedversionofpoker.
+but does not know what card player 1 has. (Due to the limits of two-dimensional paper, this
+information setisshownastwoboxesratherthanone.)
+Onewaytosolveanextensivegameistoconvertittoanormal-form game. Recallthat
+thenormalformisamatrix,eachrowofwhichislabeledwithapurestrategyforplayer1,and
+each column byapure strategy forplayer 2. Inan extensive gameapure strategy forplayer
+icorresponds toanaction foreachinformation setinvolving thatplayer. Soin Figure17.13,
+one pure strategy forplayer 1 is raise when in I (that is, when I have an ace), 

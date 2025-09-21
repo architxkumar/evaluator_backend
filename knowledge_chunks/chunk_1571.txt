@@ -1,0 +1,26 @@
+archers
+and to the establishment of problem solving as the canonical AI task. Work in operations
+research by Richard Bellman (1957) showed the importance of additive path costs in sim-
+plifying optimization algorithms. The text on Automated Problem Solving by Nils Nilsson
+(1971)established theareaonasolidtheoretical footing.
+Most of the state-space search problems analyzed in this chapter have a long history
+in the literature and are less trivial than they might seem. The missionaries and cannibals
+problem used in Exercise 3.9 was analyzed in detail by Amarel (1968). It had been consid-
+ered earlier in AIby Simonand Newell(1961) and inoperations research by Bellman and
+Dreyfus(1962).
+The8-puzzle isasmallercousin ofthe15-puzzle, whosehistory isrecounted atlength
+by Slocum and Sonneveld (2006). It was widely believed to have been invented by the fa-
+mous American game designer Sam Loyd, based on his claims to that effect from 1891 on-
+ward(Loyd, 1959). Actually itwasinvented by Noyes Chapman, apostmasterin Canastota,
+New York, in the mid-1870s. (Chapman was unable to patent his invention, as a generic
+patentcoveringslidingblockswithletters,numbers,orpictureswasgrantedto Ernest Kinsey
+in1878.) Itquickly attracted theattention ofthepublic andofmathematicians (Johnson and
+Story, 1879; Tait, 1880). The editors of the American Journal of Mathematics stated, The 15 puzzleforthelastfewweekshasbeenprominentlybeforethe Americanpublic,andmay
+safely be said to have engaged the attention of nine out of ten persons of both sexes and all
+agesandconditions ofthecommunity. Ratnerand Warmuth(1986)showedthatthegeneral
+n nversionofthe15-puzzle belongs totheclassof NP-complete problems.
+The 8-queens problem was first published anonymously in the German chess maga-
+zine Schach in 1848; it was later attributed to one Max Bezzel. It was republished in 1850
+and at that time drew the attention of the eminent mathematician Carl Friedrich Gauss, who
+110 Chapter 3. Solving Problemsby Searching
+a

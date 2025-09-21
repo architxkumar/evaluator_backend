@@ -1,0 +1,33 @@
+,967,1080
+Berkson,J.,554,1065 Bishop,C.M.,155,554,759,762,763, boundaryset,774
+Berlekamp,E.R.,113,186,1065 827,1066 boundedoptimality(BO),1050
+Berleur,J.,1034,1065 Bishop,M.,1042,1086 boundedrationality,1049
+Berliner,H.J.,191,194,198,1065 Bishop,R.H.,60,1071 boundsconsistent,212
+Bernardo,J.M.,811,1065 Bisson,T.,1042,1066 boundspropagation,212
+Berners-Lee,T.,469,1065 Bistarelli,S.,228,1066 Bourlard,H.,604,1089
+Bernoulli,D.,617,637,1065 Bitman,A.R.,192,1064 Bourzutschky,M.,176,1066
+Bernoulli,J.,9,504 Bitner,J.R.,228,1066 Boutilier,C.,434,553,686,1066
+Bernoulli,N.,641 Bizer,C.,439,469,1066 Bouzy,B.,194,1066
+Bernstein,A.,192,1065 Bjornsson,Y.,194,1088 Bowden,B.V.,14,192,1090
+Bernstein,P.L.,506,691,1065 BKG(backgammonprogram),194 Bower,G.H.,854,1075
+Berrou,C.,555,1065 BLACKBOX,395 Bowerman,M.,314,1066
+Berry,C.,14 Blake,A.,605,1077 Bowling,M.,687,1066,1091,1093
+Berry,D.A.,855,1065 Blakeslee,S.,1047,1075 Box,G.E.P.,155,604,1066
+Bertele,U.,553,1066 Blazewicz,J.,432,1066 BOXES,851
+Bertoli,P.,433,1066 Blei,D.M.,883,1066 Boyan,J.A.,154,854,1066
+Bertot,Y.,359,1066 Blinder,A.S.,691,1066 Boyd,S.,155,1066
+Bertsekas,D.,60,506,685,857,1059, blindsearch,seesearch,uninformed Boyden,E.,11,1074
+1066 Bliss,C.I.,554,1066 Boyen,X.,605,1066
+BESM,192 Block,H.D.,20,1066 Boyen Kolleralgorithm,605
+Bessie re,C.,228,1066 blocksworld,20,23,370,370 371,472 Boyer,R.S.,356,359,360,1066
+best-firstsearch,92,108 BLOG,556 Boyer Mooretheoremprover,359,360
+bestpossibleprize,615 bluff,184 Boyle,J.,360,1092
+betadistribution,592,811 Blum,A.L.,395,752,761,885,1066 Brachman,R.J.,457,471,473,1066,
+Betlem,H.,422,1077 Blumer,A.,759,1066 1067,1080
+Betlem,J.,422,1077 BM25scoringfunction,868,884 Bradshaw,G.L.,800,1079
+bettinggame,490 BNF(Backus Naurform),1060 Bradtke,S.J.,157,685,854,855,1065,
+Bezzel,M.,109 BO,1050 1067
+BGBLITZ,194 Bobick,A.,604,1077 Brady,J.M.,604,1084
+Bhar,R.,604,1066 Bobrow,D.G.,19,884,1066 Brafman,O.,638,1067
+Bialik,H.N.,908 Boddy,M.,156,433,1048,1070,1074 Brafman,R.,638,1067
+bias,declarative,787

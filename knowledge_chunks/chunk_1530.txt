@@ -1,0 +1,30 @@
+s,complexityisexpressedintermsofthreequantities: b,thebranching
+factor or maximum number of successors of any node; d, the depth of the shallowest goal
+BRANCHINGFACTOR
+node(i.e.,thenumberofstepsalong thepathfromtheroot); andm,themaximumlength of
+DEPTH
+anypathinthestatespace. Timeisoftenmeasuredintermsofthenumberofnodesgenerated
+during the search, and space in terms of the maximum number of nodes stored in memory.
+For the most part, we describe time and space complexity for search on a tree; for a graph,
+theanswerdepends onhow redundant thepathsinthestatespaceare.
+Toassesstheeffectivenessofasearchalgorithm,wecanconsiderjustthesearchcost SEARCHCOST
+which typically depends on the time complexity but can also include a term for memory
+usage orwecanusethetotalcost,whichcombinesthesearchcostandthepathcostofthe
+TOTALCOST
+solution found. For the problem of finding a route from Arad to Bucharest, the search cost
+isthe amount of timetaken bythe search and thesolution cost isthe total length of thepath
+Section3.4. Uninformed Search Strategies 81
+in kilometers. Thus, to compute the total cost, we have to add milliseconds and kilometers.
+Thereisno officialexchangerate betweenthetwo,butitmightbereasonableinthiscaseto
+convertkilometersintomillisecondsbyusinganestimateofthecar saveragespeed(because
+time is what the agent cares about). This enables the agent to find an optimal tradeoff point
+at which further computation to find a shorter path becomes counterproductive. The more
+generalproblem oftradeoffs betweendifferentgoodsistakenupin Chapter16.
+3.4 UNINFORMED SEARCH STRATEGIES
+This section covers several search strategies that come under the heading of uninformed
+UNINFORMED search (also called blind search). The term means that the strategies have no additional
+SEARCH
+information about states beyond that provided in the problem definition. All they can do is
+BLINDSEARCH
+generate successors and distinguish a goal state from a non-goal state. All search strategies
+are distinguished

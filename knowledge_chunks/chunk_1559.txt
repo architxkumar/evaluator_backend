@@ -1,0 +1,22 @@
+the same f-value? To avoid selecting the same node for deletion and expansion, SMA expands the newest best leaf and deletes the oldest worst leaf. These
+coincide whenthereisonlyoneleaf,butinthatcase,thecurrentsearchtreemustbeasingle
+pathfromroottoleafthatfillsallofmemory. Iftheleafisnotagoalnode,thenevenifitison
+anoptimalsolutionpath,thatsolutionisnotreachablewiththeavailablememory. Therefore,
+thenodecanbediscarded exactlyasifithadnosuccessors. SMA is complete if there is any reachable solution that is, if d, the depth of the
+shallowest goal node, is less than the memory size (expressed in nodes). It is optimal if any
+optimal solution is reachable; otherwise, it returns the best reachable solution. In practical terms,SMA isafairlyrobustchoiceforfindingoptimalsolutions,particularlywhenthestate
+space is a graph, step costs are not uniform, and node generation is expensive compared to
+theoverheadofmaintaining thefrontierandtheexploredset.
+10 Aroughsketchappearedinthefirsteditionofthisbook.
+102 Chapter 3. Solving Problemsby Searching Onveryhardproblems,however,itwilloftenbethecasethat SMA isforcedtoswitch
+backandforthcontinuallyamongmanycandidatesolutionpaths,onlyasmallsubsetofwhich
+canfitinmemory. (Thisresembles the problem of thrashingindisk paging systems.) Then
+THRASHING
+the extra time required for repeated regeneration of the same nodes means that problems that would be practically solvable by A , given unlimited memory, become intractable for SMA. That is to say, memory limitations can make a problem intractable from the point
+of view of computation time. Although no current theory explains the tradeoff between time
+and memory, it seems that this is an inescapable problem. The only way out is to drop the
+optimality requirement.
+3.5.4 Learning to search better
+We have presented several fixed strategies breadth-first, greedy best-first, and so on that
+have been designed by computer scientists. Could anagent learn how to search better? The
+METALEVELSTATE answerisyes,

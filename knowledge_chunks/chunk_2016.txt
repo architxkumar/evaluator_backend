@@ -1,0 +1,39 @@
+asastatevariable. Aprimitiveactioncanaddordelete
+a variable or leave it unchanged. (With conditional effects (see Section 11.3.1) there is a
+fourthpossibility: flippingavariabletoitsopposite.)
+An HLA under angelic semantics can do more: it can control the value of a variable,
+setting ittotrueorfalse depending onwhichimplementation ischosen. Infact, an HL Acan
+have nine different effects on a variable: if the variable starts out true, it can always keep
+it true, always make it false, or have a choice; if the variable starts out false, it can always
+keep it false, always make it true, or have a choice; and the three choices for each case can
+becombined arbitrarily, making nine. Notationally, this isabitchallenging. We llusethe (cid:23)
+(cid:23)
+symboltomean possibly, iftheagentsochooses. Thus,aneffect Ameans possibly add
+A, that is, either leave Aunchanged ormake it true. Similarly, (cid:23)
+A means possibly delete
+A and (cid:23)
+A means possibly add or delete A. For example, the HLA Go(Home,SFO),
+withthetworefinementsshownin Figure11.4,possiblydeletes Cash (iftheagentdecidesto
+take ataxi), soitshould havethe effect (cid:23)
+Cash. Thus, weseethat thedescriptions of HL As
+arederivable,inprinciple,fromthedescriptionsoftheirrefinements infact,thisisrequired
+if wewanttrue HL Adescriptions, such that the downward refinement property holds. Now,
+suppose wehavethefollowingschemasforthe HL Ash andh :
+1 2
+Action(h
+1
+,PRECOND: A,EFFECT:A (cid:23)
+B),
+Action(h
+2
+,PRECOND: B,EFFECT: (cid:23) A (cid:23) C).
+Thatis,h adds Aandpossibledeletes B,whileh possiblyadds Aandhasfullcontrolover
+1 2
+C. Now,ifonly B istrueintheinitial stateandthegoalis A C thenthesequence h ,h 1 2
+achieves the goal: we choose an implementation of h that makes B false, then choose an
+1
+implementation ofh thatleaves Atrueandmakes C true.
+2
+The preceding discussion assumes that the effects of an HLA the reachable set for
+anygiveninitial state can bedescribed exactlybydescribing theeffect oneachvariable. It
+would

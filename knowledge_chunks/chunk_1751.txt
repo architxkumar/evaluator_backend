@@ -1,0 +1,28 @@
+tsolving CS Pswhenthere isa
+CONSTRAINT
+SATISFACTION
+collection of agents, each of which controls a subset of the constraint variables. There have
+been annual workshops on this problem since 2000, and good coverage elsewhere (Collin
+etal.,1999;Pearceetal.,2008;Shohamand Leyton-Brown,2009).
+Comparing CS Palgorithmsismostlyanempiricalscience: fewtheoreticalresultsshow
+that one algorithm dominates another on all problems; instead, we need to run experiments
+to see which algorithms perform better on typical instances of problems. As Hooker (1995)
+points out, we need to be careful to distinguish between competitive testing as occurs in
+competitions among algorithms based on run time and scientific testing, whose goal is to
+identify theproperties ofanalgorithm thatdetermineitsefficacyonaclassofproblems.
+The recent textbooks by Apt (2003) and Dechter (2003), and the collection by Rossi
+etal. (2006) are excellent resources on constraint processing. There are several good earlier
+surveys,includingthoseby Kumar(1992),Dechterand Frost(2002),and Bartak(2001);and
+the encyclopedia articles by Dechter (1992) and Mackworth (1992). Pearson and Jeavons
+(1997) survey tractable classes of CS Ps, covering both structural decomposition methods
+and methods that rely on properties of the domains or constraints themselves. Kondrak and
+van Beek (1997) give an analytical survey of backtracking search algorithms, and Bacchus
+andvan Run(1995) giveamoreempirical survey. Constraint programming iscoveredinthe
+booksby Apt(2003)and Fruhwirthand Abdennadher(2003). Severalinterestingapplications
+aredescribedinthecollectioneditedby Freuderand Mackworth(1994). Papersonconstraint
+satisfactionappearregularlyin Artificial Intelligenceandinthespecialistjournal Constraints.
+The primary conference venue is the International Conference on Principles and Practice of
+Constraint Programming,oftencalled CP.
+EXERCISES
+6.1 Howmanysolutions arethere forthemap-coloring problem in Figure6.1? Howmany
+solutions iffourcolo

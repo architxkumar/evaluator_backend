@@ -1,0 +1,26 @@
+esstowards
+thegoal noactionwilleverundoprogressmadebyanotheraction. Itturnsoutitisstill NP-
+hardtofindtheoptimalsolution tothisrelaxed problem, but anapproximate solution canbe
+found in polynomial time by hill-climbing. Figure 10.6 diagrams part of the state space for
+two planning problems using the ignore-delete-lists heuristic. The dots represent states and
+the edges actions, and theheight ofeach dot abovethe bottom plane represents the heuristic
+value. States onthe bottom plane are solutions. Inboth these problems, there isawidepath
+tothegoal. Therearenodeadends,sononeedforbacktracking; asimplehillclimbingsearch
+willeasilyfindasolution totheseproblems(although itmaynotbeanoptimalsolution).
+The relaxed problems leave us with a simplified but still expensive planning prob-
+lemjusttocalculate thevalueoftheheuristic function. Manyplanning problems have 10100
+states ormore, and relaxing the actions does nothing to reduce the number of states. There-
+fore, we now look at relaxations that decrease the number of states by forming a state ab-
+straction a many-to-one mapping from states in the ground representation of the problem
+STATEABSTRACTION
+totheabstract representation.
+The easiest form of state abstraction is to ignore some fluents. For example, consider
+an air cargo problem with 10 airports, 50 planes, and 200 pieces of cargo. Each plane can
+be at one of 10 airports and each package can be either in one of the planes or unloaded at
+one of theairports. Sothere are 5010 20050 10 10155 states. Now consider a particular
+problem inthat domaininwhichithappens thatallthepackages areatjust 5oftheairports,
+andallpackagesatagivenairporthavethesamedestination. Thenausefulabstractionofthe
+problemistodropallthe Atfluentsexceptfortheonesinvolving oneplaneandonepackage
+at each of the 5 airports. Now there are only 510 55 10 1017 states. A solution in this
+abstract state space will be shorter than a solution in the original space (and thus will be an
+admissible heuristic), and the

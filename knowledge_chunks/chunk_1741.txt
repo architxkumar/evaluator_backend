@@ -1,0 +1,44 @@
+ing
+variables form a tree. Consider the constraint graph for Australia, shown again in Fig-
+ure 6.12(a). If we could delete South Australia, the graph would become a tree, as in (b).
+Fortunately, we can do this (in the graph, not the continent) by fixing a value for SA and
+4 Sadly,veryfewregionsoftheworldhavetree-structuredmaps,although Sulawesicomesclose.
+224 Chapter 6. Constraint Satisfaction Problems
+function TREE-CSP-SOLVER(csp)returnsasolution,orfailure
+inputs: csp,a CS Pwithcomponents X, D, C
+n numberofvariablesin X
+assignment anemptyassignment
+root anyvariablein X
+X TOPOLOGICALSORT(X,root)
+forj n downto2do
+MAKE-ARC-CONSISTENT(PARENT(Xj),Xj)
+ifitcannotbemadeconsistentthenreturnfailure
+fori 1ton do
+assignment Xi anyconsistentvaluefrom Di
+ifthereisnoconsistentvaluethenreturnfailure
+returnassignment
+Figure6.11 The TREE-CSP-SOLVER algorithmforsolvingtree-structured CS Ps. Ifthe
+CS Phasasolution,wewillfinditinlineartime;ifnot,wewilldetectacontradiction.
+NT NT
+Q Q
+WA WA
+SA NSW NSW
+V V
+T T
+(a) (b)
+Figure6.12 (a) Theoriginalconstraintgraphfrom Figure6.1. (b)The constraintgraph
+aftertheremovalof SA.
+deleting from the domains of the other variables any values that are inconsistent with the
+valuechosen for SA.
+Now, any solution for the CSP after SA and its constraints are removed will be con-
+sistent with the value chosen for SA. (This works for binary CS Ps; the situation is more
+complicated withhigher-order constraints.) Therefore, wecan solve theremaining treewith
+the algorithm given above and thus solve the whole problem. Ofcourse, in the general case
+(asopposed tomapcoloring), thevaluechosenfor SAcouldbethewrongone, sowewould
+needtotryeachpossible value. Thegeneralalgorithm isasfollows:
+Section6.5. The Structureof Problems 225
+1. Chooseasubset S ofthe CSP svariables suchthattheconstraint graphbecomesatree
+afterremovalof S. S iscalledacyclecutset.
+CYCLECUTSET
+2. Foreachpossible assignment tothevariables in S thatsatisfiesallconstraints on S,
+(a) remove from thedomain

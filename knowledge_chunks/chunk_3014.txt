@@ -1,0 +1,26 @@
+timation.
+theoretictroubleshooting: Aframeworkforrepair Computational Linguistics,19(2),263 311. Bylander,T.(1992). Complexityresultsforserial
+andexperiment.In UAI-96,pp.124 132. decomposability.In AAAI-92,pp.729 734.
+Brownston,L.,Farrell,R.,Kant,E.,and Martin,N.
+Breiman,L.(1996). Baggingpredictors. Machine Bylander,T.(1994).Thecomputationalcomplexity
+(1985). Programmingexpertsystemsin OPS5: An
+Learning,24(2),123 140. ofpropositional STRIP Splanning. AIJ,69, 165 introductiontorule-basedprogramming. Addison-
+204.
+Breiman,L.,Friedman,J.,Olshen,R.A.,and Stone, Wesley.
+C.J.(1984). Classificationand Regression Trees. Byrd,R.H.,Lu,P.,Nocedal,J.,and Zhu,C.(1995).
+Wadsworth International Group.
+Bruce,V.,Georgeson,M.,and Green,P.(2003).Vi-
+Alimitedmemoryalgorithmforboundconstrained
+sual Perception:Physiology,Psychologyand Ecol- optimization.SIAM Journalon Scientificand Statis-
+Brelaz,D.(1979).Newmethodstocolorthevertices ogy.Psychology Press. tical Computing,16(5),1190 1208.
+ofagraph.CACM,22(4),251 256.
+Bruner, J.S., Goodnow, J.J., and Austin, G.A. Cabeza,R.and Nyberg,L.(2001). Imagingcogni-
+Brent, R.P.(1973). Algorithmsforminimization (1957).AStudyof Thinking.Wiley. tion II:Anempiricalreviewof275PE Tandf MRI
+withoutderivatives. Bresnan,J.(1982). The Mental Representationof ingvisiblyintelligentbehaviorwithexample-guided Cafarella,M.J.,Halevy,A.,Zhang,Y.,Wang,D.Z.,
+Grammatical Relations.MIT Press. neuroevolution.In AAAI-07. and Wu,E.(2008).Webtables:Exploringthepower
+Brewka, G., Dix, J., and Konolige, K. (1997). Bryce, D.and Kambhampati, S.(2007). Atuto- oftablesontheweb.In VLDB-2008.
+Nononotonic Reasoning:An Overview.CSLI Publi- rialonplanninggraph-basedreachabilityheuristics. Calvanese, D., Lenzerini, M., and Nardi, D.
+cations. AI Mag,Spring,47 83. (1999). Unifying class-based representation for-
+malisms.JAIR,11,199 240.
+Brickley,D.and Guha,R.V.(2004). RD Fvocab- Bryce, D., Kambhampati, S., and Smith, D. E.
+ularydescriptionlanguage1.0:RD Fschema.Tech. (2006). Planninggraph

@@ -1,0 +1,39 @@
+erred models: one in
+2 3
+which Abnormal (Nixon)and Pacifist(Nixon)holdandoneinwhich Abnormal (Nixon)
+2 3
+and Pacifist(Nixon)hold. Thus,thecircumscriptivereasonerremainsproperly agnosticas
+to whether Nixon was a pacifist. If we wish, in addition, to assert that religious beliefs take
+PRIORITIZED precedenceoverpoliticalbeliefs,wecanuseaformalismcalledprioritizedcircumscription
+CIRCUMSCRIPTION
+togivepreference tomodelswhere Abnormal isminimized.
+3
+Defaultlogic is aformalism in which default rules can be written togenerate contin-
+DEFAULTLOGIC
+gent,nonmonotonic conclusions. Adefaultrulelookslikethis:
+DEFAULTRULES
+Bird(x) :Flies(x) Flies(x).
+Thisrulemeansthatif Bird(x)istrue,andif Flies(x)isconsistentwiththeknowledgebase,
+then Flies(x)maybeconcluded bydefault. Ingeneral, adefault rulehastheform
+P :J ,...,J C
+1 n
+where P is called the prerequisite, C is the conclusion, and J are the justifications if any
+i
+one of them can be proven false, then the conclusion cannot be drawn. Any variable that
+9 Fortheclosed-worldassumption,onemodelispreferredtoanotherifithasfewertrueatoms thatis,preferred
+modelsareminimalmodels. Thereisanaturalconnectionbetweentheclosed-worldassumptionanddefinite-
+clause KBs,becausethefixedpointreachedbyforwardchainingondefinite-clause KBsistheuniqueminimal
+model.Seepage258formoreonthispoint.
+460 Chapter 12. Knowledge Representation
+appears in J or C must also appear in P. The Nixon-diamond example can be represented
+i
+indefault logicwithonefactandtwodefaultrules:
+Republican(Nixon) Quaker(Nixon).
+Republican(x) : Pacifist(x) Pacifist(x).
+Quaker(x) :Pacifist(x) Pacifist(x).
+To interpret what the default rules mean, we define the notion of an extension of a default
+EXTENSION
+theory to be a maximal set of consequences of the theory. That is, an extension S consists
+of the original known facts and a set of conclusions from the default rules, such that no
+additionalconclusions canbedrawnfrom S andthejustificationsofeverydefaultconclusion
+in S areconsistentwith 

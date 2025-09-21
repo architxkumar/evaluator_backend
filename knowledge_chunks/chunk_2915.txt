@@ -1,0 +1,27 @@
+t lines. The first major effort at creating a hand eye machine was Hein-
+rich Ernst s MH-1,describedinhis MIT Ph.D.thesis(Ernst,1961). The Machine Intelligence
+project at Edinburgh also demonstrated an impressive early system for vision-based assem-
+bly called FREDDY (Michie, 1972). After these pioneering efforts, a great deal of work fo-
+cused on geometric algorithms fordeterministic and fully observable motion planning prob-
+lems. The PSPACE-hardness of robot motion planning was shown in a seminal paper by
+Reif(1979). Theconfiguration spacerepresentation isdueto Lozano-Perez (1983). Aseries
+of papers by Schwartz and Sharir on what they called piano movers problems (Schwartz
+PIANOMOVERS
+etal.,1987)washighlyinfluential.
+Recursivecelldecompositionforconfigurationspaceplanningwasoriginatedby Brooks
+and Lozano-Perez (1985) and improved significantly by Zhu and Latombe (1991). The ear-
+Bibliographical and Historical Notes 1013
+liest skeletonization algorithms were based on Voronoi diagrams (Rowat, 1979) and visi-
+bility graphs (Wesley and Lozano-Perez, 1979). Guibas et al. (1992) developed efficient
+VISIBILITYGRAPH
+techniques for calculating Voronoi diagrams incrementally, and Choset (1996) generalized
+Voronoi diagrams tobroader motion-planning problems. John Canny (1988) established the
+firstsingly exponential algorithm formotion planning. The seminal text by Latombe (1991)
+coversavarietyofapproachestomotion-planning, asdothetextsby Chosetetal.(2004)and
+La Valle(2006). Kavrakietal.(1996) developed probabilistic roadmaps, whicharecurrently
+one of the most effective methods. Fine-motion planning with limited sensing was investi-
+gated by Lozano-Perez et al. (1984) and Canny and Reif (1987). Landmark-based naviga-
+tion (Lazanas and Latombe, 1992) uses many of the same ideas in the mobile robot arena.
+Keyworkapplying POMD Pmethods(Section17.4)tomotionplanning underuncertainty in
+robotics isdueto Pineau etal.(2003)and Royetal.(2005).
+Thecontrolofrobotsasdynamicalsystems whe

@@ -1,0 +1,31 @@
+ models, every valid sentence
+is logically equivalent to True. What good are valid sentences? From our definition of
+DEDUCTION entailment, wecanderivethedeductiontheorem,whichwasknowntotheancient Greeks:
+THEOREM
+Foranysentences and , ifandonlyifthesentence( )isvalid.
+(Exercise7.5asksforaproof.) Hence, wecandecide if bychecking that( )is
+trueineverymodel whichisessentiallywhattheinference algorithmin Figure7.10does 250 Chapter 7. Logical Agents
+orby proving that ( ) isequivalent to True. Conversely, the deduction theorem states
+thateveryvalidimplication sentence describes alegitimateinference.
+The final concept we will need is satisfiability. A sentence is satisfiable if it is true
+SATISFIABILITY
+in, orsatisfied by, some model. Forexample, the knowledge base given earlier, (R R 1 2
+R R R ), is satisfiable because there are three models in which it is true, as shown
+3 4 5
+in Figure 7.9. Satisfiability can be checked by enumerating the possible models until one is
+found that satisfies the sentence. The problem of determining the satisfiability of sentences
+inpropositional logic the SA Tproblem was thefirstproblem proved tobe NP-complete.
+SAT
+Many problems in computer science are really satisfiability problems. For example, all the
+constraint satisfaction problems in Chapter 6 ask whether the constraints are satisfiable by
+someassignment.
+Validity and satisfiability are of course connected: is valid iff is unsatisfiable;
+contrapositively, issatisfiable iff isnotvalid. Wealsohavethefollowingusefulresult: ifandonlyifthesentence ( )isunsatisfiable.
+Proving from by checking the unsatisfiability of ( ) corresponds exactly to the
+REDUCTIOAD standard mathematical proof technique of reductio ad absurdum (literally, reduction to an
+ABSURDUM
+absurdthing ). Itisalsocalledproofbyrefutationorproofbycontradiction. Oneassumesa
+REFUTATION
+sentence tobefalseandshowsthatthisleadstoacontradiction withknownaxioms . This
+CONTRADICTION
+contradiction isexactlywhatismeantbysayingthatthesentenc

@@ -1,0 +1,32 @@
+ In the early
+RANGEFINDER
+days of robotics, robots were commonly equipped with sonar sensors. Sonar sensors emit
+SONARSENSORS
+directional sound waves, which are reflected by objects, with some of the sound making it
+974 Chapter 25. Robotics
+(a) (b)
+Figure25.3 (a) Time offlightcamera; image courtesyof Mesa Imaging Gmb H. (b)3D
+rangeimageobtainedwiththiscamera.Therangeimagemakesitpossibletodetectobstacles
+andobjectsinarobot svicinity.
+back into the sensor. The time and intensity of the returning signal indicates the distance
+to nearby objects. Sonar is the technology of choice for autonomous underwater vehicles.
+Stereovision(see Section24.4.2)reliesonmultiplecamerastoimagethe environment from
+STEREOVISION
+slightly different viewpoints, analyzing theresulting parallax intheseimagestocomputethe
+range of surrounding objects. For mobile ground robots, sonar and stereo vision are now
+rarelyused,becausetheyarenotreliablyaccurate.
+Mostgroundrobotsarenowequippedwithopticalrangefinders. Justlikesonarsensors,
+opticalrangesensorsemitactivesignals(light)andmeasurethetimeuntilareflectionofthis
+TIMEOFFLIGHT signalarrivesbackatthesensor. Figure25.3(a)showsa timeofflightcamera. Thiscamera
+CAMERA
+acquires range images like the one shown in Figure 25.3(b) at up to 60 frames per second.
+Other range sensors use laser beams and special 1-pixel cameras that can be directed using
+complex arrangements of mirrors or rotating elements. These sensors are called scanning
+lidars (short for light detection and ranging). Scanning lidars tend to provide longer ranges
+SCANNINGLIDARS
+thantimeofflightcameras,andtendtoperformbetterinbrightdaylight.
+Other common range sensors include radar, which is often the sensor of choice for
+UA Vs. Radar sensors can measure distances of multiple kilometers. On the other extreme
+end of range sensing are tactile sensors such as whiskers, bump panels, and touch-sensitive
+TACTILESENSORS
+skin. These sensors measure range based on physical contact, and can be deployed onl

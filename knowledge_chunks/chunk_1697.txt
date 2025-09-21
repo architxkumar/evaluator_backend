@@ -1,0 +1,26 @@
+1970s, first with the BKG pro-
+gram (Berliner, 1980b); it used a complex, manually constructed evaluation function and
+searchedonlytodepth1. Itwasthefirstprogramtodefeatahumanworldchampionatama-
+jorclassic game(Berliner, 1980a). Berlinerreadily acknowledged that BK Gwasverylucky
+withthedice. Gerry Tesauro s(1995) TD-GAMMON played consistently atworldchampion
+level. The BGBLITZ program wasthewinnerofthe2008Computer Olympiad.
+Goisadeterministic game,butthelargebranchingfactormakesitchalleging. Thekey
+issuesandearlyliteratureincomputer Goaresummarizedby Bouzyand Cazenave(2001)and
+Mu ller (2002). Up to 1997 there were no competent Go programs. Now the best programs
+play most of their moves at the master level; the only problem is that over the course of a
+game they usually make at least one serious blunder that allows a strong opponent to win.
+Whereas alpha beta search reigns in most games, many recent Go programs have adopted
+Monte Carlomethodsbasedonthe UCT(upperconfidence bounds ontrees)scheme(Kocsis
+and Szepesvari, 2006). The strongest Go program as of 2009 is Gelly and Silver s MOGO
+(Wangand Gelly,2007;Gellyand Silver,2008). In August2008, MOG Oscoredasurprising
+win against top professional Myungwan Kim, albeit with MOGO receiving a handicap of
+nine stones (about the equivalent of a queen handicap in chess). Kim estimated MOGO s
+strength at 2 3 dan, the low end of advanced amateur. For this match, MOGO was run on
+an 800-processor 15 teraflop supercomputer (1000 times Deep Blue). A few weeks later,
+MOGO,withonlyafive-stonehandicap, wonagainsta6-danprofessional. Inthe9 9form
+of Go, MOGO is at approximately the 1-dan professional level. Rapid advances are likely
+as experimentation continues with new forms of Monte Carlo search. The Computer Go
+Exercises 195
+Newsletter,published bythe Computer Go Association, describes currentdevelopments.
+Bridge: Smithetal.(1998) reportonhowtheirplanning-based program wonthe1998
+computerbridgechampionship,and(Ginsberg,2001)describesho

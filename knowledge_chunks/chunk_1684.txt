@@ -1,0 +1,29 @@
+t information: a player s cards are hidden from the other
+BRIDGE
+players. Bridge is also a multiplayer game with four players instead of two, although the
+Section5.8. Alternative Approaches 187
+players are paired into two teams. As in Section 5.6, optimal play in partially observable
+gameslikebridgecanincludeelementsofinformationgathering,communication,andcareful
+weighing of probabilities. Many of these techniques are used in the Bridge Baron program
+(Smith et al., 1998), which won the 1997 computer bridge championship. While it does
+not play optimally, Bridge Baron is one of the few successful game-playing systems to use
+complex,hierarchicalplans(see Chapter11)involvinghigh-levelideas,suchasfinessingand
+squeezing,thatarefamiliartobridgeplayers.
+The GI Bprogram(Ginsberg,1999)wonthe2000computerbridgechampionshipquite
+decisivelyusingthe Monte Carlomethod. Sincethen,otherwinningprogramshavefollowed
+EXPLANATION-
+GIB slead. GIB smajorinnovation isusingexplanation-based generalization tocompute
+BASED
+GENERALIZATION
+and cache general rules foroptimal play in various standard classes of situations rather than
+evaluating each situation individually. For example, in a situation where one player has the
+cards A-K-Q-J-4-3-2 of one suit and another player has 10-9-8-7-6-5, there are 7 6 42
+ways that the first player can lead from that suit and the second player can follow. But GIB
+treats these situations as just two: the first player can lead either a high card or a low card;
+theexactcardsplayeddon tmatter. Withthisoptimization (andafewothers), GI Bcansolve
+a52-card, fullyobservable deal exactly inabout asecond. GIB stactical accuracy makesup
+foritsinabilitytoreasonaboutinformation. Itfinished12thinafieldof35intheparcontest
+(involving just play of the hand, not bidding) at the 1998 human world championship, far
+exceeding theexpectations ofmanyhumanexperts.
+Thereare several reasons why GIB plays atexpert level with Monte Carlosimulation,
+whereas Kriegspiel programs donot. First, 

@@ -1,0 +1,39 @@
+wnin Figure24.8(top).
+Edgescorrespondtolocationsinimageswherethebrightnessundergoesasharpchange,
+so anaive idea would be todifferentiate the image and look forplaces where the magnitude
+(cid:2)
+ofthederivative I (x)islarge. Thatalmostworks. In Figure24.8(middle),weseethatthere
+isindeedapeakatx 50,buttherearealsosubsidiarypeaksatotherlocations(e.g.,x 75).
+These arise because of the presence of noise in the image. If wesmooth the image first, the
+spurious peaksarediminished, asweseeinthebottomofthefigure.
+Section24.2. Early Image-Processing Operations 937
+(a) (b)
+Figure24.7 (a)Photographofastapler. (b)Edgescomputedfrom(a).
+2
+1
+0 1
+0 10 20 30 40 50 60 70 80 90 100
+1
+0 1
+0 10 20 30 40 50 60 70 80 90 100
+1
+0 1
+0 10 20 30 40 50 60 70 80 90 100
+Figure24.8 Top:Intensityprofile I(x)alongaone-dimensionalsectionacrossanedgeat
+x 50. Middle: Thederivativeofintensity,I(cid:5)(x). Largevaluesofthisfunctioncorrespond
+to edges, but the function is noisy. Bottom: The derivative of a smoothed version of the
+intensity,(I G )(cid:5),whichcanbecomputedinonestepastheconvolution I G(cid:5) . Thenoisy
+candidateedgeatx 75hasdisappeared.
+The measurement of brightness at a pixel in a CCD camera is based on a physical
+process involving the absorption of photons and the release of electrons; inevitably there
+will be statistical fluctuations of the measurement noise. The noise can be modeled with
+938 Chapter 24. Perception
+a Gaussian probability distribution, with each pixel independent of the others. One way to
+smooth animage istoassign toeach pixel theaverage ofits neighbors. Thistends tocancel
+outextremevalues. Buthowmanyneighborsshouldweconsider onepixelaway,ortwo,or
+more? Onegoodanswerisaweighted average thatweights thenearest pixelsthemost,then
+gradually decreases the weight for more distant pixels. The Gaussian filter does just that.
+GAUSSIANFILTER
+(Usersof Photoshoprecognize thisasthe Gaussianbluroperation.) Recallthatthe Gaussian
+function withstandard deviation andmean0is
+N (x) 1 e x2 2 

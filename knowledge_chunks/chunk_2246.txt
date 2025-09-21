@@ -1,0 +1,44 @@
+thenumerical semanticsandfromthetopological semantics.
+b. Ifweobserve Alarm true,are Burglary and Earthquake independent? Justifyyour
+answerbycalculatingwhethertheprobabilities involvedsatisfythedefinitionofcondi-
+tionalindependence.
+14.5 Supposethatina Bayesiannetworkcontaining anunobserved variable Y,allthevari-
+ablesinthe Markovblanket MB(Y)havebeenobserved.
+a. Provethatremovingthenode Y fromthenetworkwillnotaffecttheposteriordistribu-
+tionforanyotherunobserved variableinthenetwork.
+b. Discusswhetherwecanremove Y ifweareplanning touse(i)rejection sampling and
+(ii)likelihood weighting.
+14.6 Let H bearandomvariabledenotingthehandednessofanindividualx,withpossible
+x
+values l orr. Acommonhypothesis isthatleft-orright-handedness isinherited byasimple
+mechanism; that is, perhaps there is a gene G , also with values l or r, and perhaps actual
+x
+handedness turns out mostly the same (with some probability s) as the gene an individual
+possesses. Furthermore, perhaps the gene itself is equally likely to be inherited from either
+ofanindividual s parents, withasmallnonzeroprobability mofarandom mutationflipping
+thehandedness.
+a. Which of the three networks in Figure 14.20 claim that P(G ,G ,G ) father mother child
+P(G )P(G )P(G )?
+father mother child
+b. Which of the three networks make independence claims that are consistent with the
+hypothesis abouttheinheritance ofhandedness?
+560 Chapter 14. Probabilistic Reasoning
+G G G G G G
+mother father mother father mother father
+H H H H H H
+mother father mother father mother father
+G G G
+child child child
+H H H
+child child child
+(a) (b) (c)
+Figure14.20 Threepossiblestructuresfora Bayesiannetworkdescribinggeneticinheri-
+tanceofhandedness.
+c. Whichofthethreenetworksisthebestdescription ofthehypothesis?
+d. Writedownthe CP Tforthe G nodeinnetwork(a),intermsof sandm.
+child
+e. Suppose that P(G l) P(G l) q. In network (a), derive an expres-
+father mother
+sionfor P(G l)intermsofmandq only,byconditioning onitsparentnodes.
+child
+f. Under condit

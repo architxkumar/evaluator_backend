@@ -1,0 +1,36 @@
+ry of set theory as syntactic sugar. The empty set is a
+constant written as . There is one unary predicate, Set, which is true of sets. The binary
+predicates are x s (x is a memberof set s)and s s (set s is a subset, not necessarily
+1 2 1
+proper, of set s ). The binary functions are s s (the intersection of two sets), s s
+2 1 2 1 2
+(the union of two sets), and x s (the set resulting from adjoining element x to set s). One
+possible setofaxiomsisasfollows:
+1. Theonlysetsaretheemptysetandthosemadebyadjoining something toaset: s Set(s) (s ) ( x,s Set(s ) s x s ).
+2 2 2
+2. The empty set has no elements adjoined into it. In other words, there is no way to
+decompose intoasmallersetandanelement: x,s x s .
+3. Adjoininganelementalreadyinthesethasnoeffect: x,s x s s x s .
+4. The only members of a set are the elements that were adjoined into it. We express
+this recursively, saying that x is a member of s if and only if s is equal to some set s
+2
+adjoinedwithsomeelementy,whereeither y isthesameasxorxisamemberofs :
+2 x,s x s y,s (s y s (x y x s )).
+2 2 2
+5. Asetisasubset ofanothersetifandonly ifallofthefirstset s membersaremembers
+ofthesecondset: s ,s s s ( x x s x s ).
+1 2 1 2 1 2
+6. Twosetsareequalifandonlyifeachisasubsetoftheother: s ,s (s s ) (s s s s ).
+1 2 1 2 1 2 2 1
+Section8.3. Using First-Order Logic 305
+7. Anobjectisintheintersection oftwosetsifandonlyifitisamemberofbothsets: x,s ,s x (s s ) (x s x s ).
+1 2 1 2 1 2
+8. Anobjectisintheunionoftwosetsifandonlyifitisamemberofeitherset: x,s ,s x (s s ) (x s x s ).
+1 2 1 2 1 2
+Lists are similar to sets. The differences are that lists are ordered and the same element can
+LIST
+appearmorethanonceinalist. Wecanusethevocabularyof Lispforlists: Nil istheconstant
+list with no elements; Cons, Append, First, and Rest are functions; and Find is the pred-
+icate that does for lists what Member does for sets. List? is a predicate that is true only of
+lists. Aswithsets,itiscommontousesyntacticsugarinlogicalsentencesinvolvinglists. The
+empty

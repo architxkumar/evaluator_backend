@@ -1,0 +1,26 @@
+odelofdrivablesurfacetocorrespondtograssaswellasroad.
+Probabilistictechniquesoutperformotherapproachesinmanyhardperceptualproblemssuch
+aslocalizationandmapping. However,statisticaltechniquesaresometimestoocumbersome,
+and simplersolutions maybejust as effective inpractice. Tohelp decide whichapproach to
+take,experience workingwithrealphysical robotsisyourbestteacher.
+25.3.3 Machinelearning inrobot perception
+Machine learning plays an important role in robot perception. This is particularly the case
+when the best internal representation is not known. One common approach is to map high-
+dimensionalsensorstreamsintolower-dimensionalspacesusingunsupervisedmachinelearn-
+LOW-DIMENSIONAL ing methods (see Chapter 18). Such an approach is called low-dimensional embedding.
+EMBEDDING
+Machine learning makes it possible to learn sensor and motion models from data, while si-
+multaneously discovering asuitableinternal representations.
+Another machine learning technique enables robots to continuously adapt to broad
+changes in sensor measurements. Picture yourself walking from a sun-lit space into a dark
+neon-litroom. Clearlythingsaredarkerinside. Butthechangeoflightsourcealsoaffectsall
+the colors: Neon light has a stronger component of green light than sunlight. Yet somehow
+weseem not to notice the change. If wewalk together with people into a neon-lit room, we
+don t think that suddenly theirfaces turned green. Ourperception quickly adapts tothe new
+lighting conditions, andourbrainignores thedifferences.
+Adaptive perception techniques enable robots to adjust to such changes. One example
+is shown in Figure 25.13, taken from the autonomous driving domain. Here an unmanned
+ground vehicle adapts its classifier of the concept drivable surface. How does this work?
+The robot uses a laser to provide classification for a small area right in front of the robot.
+When this area is found to be flat in the laser range scan, it is used as a positive training
+examplefortheconcept drivable surface. 

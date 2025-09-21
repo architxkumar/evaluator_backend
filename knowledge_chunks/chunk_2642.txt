@@ -1,0 +1,25 @@
+earning complexprobability models. The
+firstalgorithms forlearning Bayesnet structures usedconditional independence tests (Pearl,
+1988; Pearl and Verma, 1991). Spirtes et al. (1993) developed a comprehensive approach
+embodied in the TETRAD package for Bayes net learning. Algorithmic improvements since
+then led to a clear victory in the 2001 KDD Cup data mining competition for a Bayes net
+learning method (Cheng et al., 2002). (The specific task here was a bioinformatics prob-
+lem with 139,351 features!) A structure-learning approach based on maximizing likelihood
+wasdeveloped by Cooperand Herskovits (1992) and improved by Heckerman et al. (1994).
+Several algorithmic advances since that time have led to quite respectable performance in
+the complete-data case (Moore and Wong, 2003; Teyssier and Koller, 2005). Oneimportant
+component is an efficient data structure, the AD-tree, for caching counts over all possible
+combinations of variables and values (Moore and Lee, 1997). Friedman and Goldszmidt
+(1996)pointedouttheinfluenceoftherepresentation oflocalconditionaldistributions onthe
+learnedstructure.
+The general problem of learning probability models with hidden variables and miss-
+ing data wasaddressed by Hartley (1958), who described the general idea of what was later
+called EM and gave several examples. Further impetus came from the Baum Welch algo-
+rithm for HM Mlearning (Baumand Petrie, 1966), whichisaspecial caseof EM.Thepaper
+by Dempster, Laird, and Rubin (1977), which presented the EM algorithm in general form
+and analyzed its convergence, is one of the most cited papers in both computer science and
+statistics. (Dempster himself views EM as a schema rather than an algorithm, since a good
+deal of mathematical work may be required before it can be applied to a new family of dis-
+tributions.) Mc Lachlan and Krishnan (1997) devote an entire book to the algorithm and its
+properties. The specific problem of learning mixture models, including mixtures of Gaus-
+sians,iscov

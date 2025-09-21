@@ -1,0 +1,25 @@
+concentrated on finding endgame checkmates
+and performed AND OR search in belief-state space (Sakuta and Iida, 2002; Bolognesi and
+Ciancarini,2003). Incrementalbelief-statealgorithmsenabledmuchmorecomplexmidgame
+checkmates to be found (Russell and Wolfe, 2005; Wolfe and Russell, 2007), but efficient
+stateestimation remainstheprimaryobstacletoeffective generalplay(Parker etal.,2005).
+Chesswasoneofthefirsttasksundertakenin AI,withearlyefforts bymanyofthepio-
+neersofcomputing,including Konrad Zusein1945,Norbert Wienerinhisbook Cybernetics
+(1948), and Alan Turing in 1950 (see Turing et al., 1953). But it was Claude Shannon s
+article Programming a Computer for Playing Chess (1950) that had the most complete set
+of ideas, describing a representation for board positions, an evaluation function, quiescence
+search, andsomeideasforselective (nonexhaustive) game-treesearch. Slater(1950)andthe
+commentators onhisarticlealsoexplored thepossibilities forcomputerchessplay.
+D. G. Prinz (1952) completed a program that solved chess endgame problems but did
+not play a full game. Stan Ulam and a group at the Los Alamos National Lab produced a
+program that played chess on a 6 6 board with no bishops (Kister et al., 1957). It could
+search 4pliesdeepinabout12minutes. Alex Bernstein wrote thefirstdocumented program
+toplayafullgameofstandard chess(Bernsteinand Roberts, 1958).5
+Thefirstcomputerchessmatchfeaturedthe Kotok Mc Carthyprogramfrom MIT(Ko-
+tok, 1962) and the ITEP program written in the mid-1960s at Moscow s Institute of Theo-
+retical and Experimental Physics (Adelson-Velsky etal., 1970). Thisintercontinental match
+wasplayedbytelegraph. Itendedwitha3 1victoryforthe ITE Pprogramin1967. Thefirst
+chess program to compete successfully with humans was MIT s MACHACK-6 (Greenblatt
+etal.,1967). Its Eloratingofapproximately 1400waswellabovethenovicelevelof1000.
+The Fredkin Prize, established in 1980, offered awards for progressive milestones in
+chess play. The 5,000 prize forthe firstprogram 

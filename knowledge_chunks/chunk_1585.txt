@@ -1,0 +1,36 @@
+hat h is admissible? What kind of search does this
+perform forw 0,w 1,andw 2?
+3.26 Considertheunbounded version oftheregular2Dgridshownin Figure3.9. Thestart
+stateisattheorigin, (0,0),andthegoalstateisat(x,y).
+a. Whatisthebranching factorbinthisstatespace?
+b. Howmanydistinct statesarethereatdepth k(fork 0)?
+c. Whatisthemaximumnumberofnodesexpandedbybreadth-first treesearch?
+d. Whatisthemaximumnumberofnodesexpandedbybreadth-first graphsearch?
+e. Ish u x v y anadmissible heuristic forastateat(u,v)? Explain. f. Howmanynodesareexpandedby A graphsearchusing h?
+g. Doeshremainadmissible ifsomelinksareremoved?
+h. Doeshremainadmissible ifsomelinksareaddedbetweennonadjacent states?
+3.27 nvehiclesoccupysquares(1,1)through(n,1)(i.e.,thebottomrow)ofann ngrid.
+Thevehicles mustbemovedtothetoprowbutinreverseorder; sothevehicleithatstartsin
+(i,1)mustendupin(n i 1,n). Oneachtimestep,everyoneofthenvehiclescanmove
+one square up, down, left, or right, orstay put; but if a vehicle stays put, one other adjacent
+vehicle(butnotmorethanone)canhopoverit. Twovehiclescannotoccupythesamesquare.
+a. Calculatethesizeofthestatespaceasafunction ofn.
+b. Calculatethebranching factorasafunction ofn.
+c. Suppose that vehicle i is at (x ,y ); write a nontrivial admissible heuristic h for the
+i i i
+numberof moves itwillrequire to get toits goal location (n i 1,n), assuming no
+othervehiclesareonthegrid.
+d. Whichofthefollowingheuristics areadmissible fortheproblem ofmovingall nvehi-
+clestotheirdestinations? Explain.
+(cid:2)
+(i) n h .
+i 1 i
+(ii) max h ,...,h .
+1 n
+(iii) min h ,...,h .
+1 n
+Exercises 119
+3.28 Invent a heuristic function for the 8-puzzle that sometimes overestimates, and show
+howitcanleadtoasuboptimalsolution onaparticularproblem. (Youcanuseacomputerto help if you want.) Prove that if h never overestimates by more than c, A using h returns a
+solution whosecostexceedsthatoftheoptimalsolution bynomorethan c.
+3.29 Prove that if a heuristic is consistent, it must be admissible. Construct an admissibl

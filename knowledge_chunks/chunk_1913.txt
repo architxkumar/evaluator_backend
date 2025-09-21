@@ -1,0 +1,40 @@
+rwardchainingongraphsearchproblemsisanexampleof dynamicprogramming,
+PROGRAMMING
+in which the solutions to subproblems are constructed incrementally from those of smaller
+Section9.4. Backward Chaining 343
+A
+1
+A B C
+J
+4
+(a) (b)
+Figure 9.9 (a) Finding a path from A to C can lead Prolog into an infinite loop. (b) A
+graphinwhicheachnodeisconnectedtotworandomsuccessorsinthenextlayer.Findinga
+pathfrom A to J requires877inferences.
+1 4
+path(a,c)
+path(a,c)
+path(a,Y) link(Y,c)
+link(a,c) path(a,Y) link(b,c)
+fail path(a,Y ) link(Y ,Y)
+link(a,Y) Y b (a) (b)
+Figure 9.10 (a) Proof that a path exists from A to C. (b) Infinite proof tree generated
+whentheclausesareinthe wrong order.
+subproblems and are cached to avoid recomputation. We can obtain a similar effect in a
+backward chaining system using memoization that is, caching solutions to subgoals as
+they are found and then reusing those solutions when the subgoal recurs, rather than repeat-
+TABLEDLOGIC ingthepreviouscomputation. Thisistheapproachtakenbytabledlogicprogrammingsys-
+PROGRAMMING
+tems, which use efficient storage and retrieval mechanisms to perform memoization. Tabled
+logicprogramming combines thegoal-directedness ofbackward chaining withthedynamic-
+programming efficiency of forward chaining. It is also complete for Datalog knowledge
+bases, whichmeansthattheprogrammerneedworrylessabout infiniteloops. (Itisstillpos-
+sible to get an infinite loop with predicates like father(X,Y) that refer to a potentially
+unbounded numberofobjects.)
+9.4.5 Databasesemantics of Prolog
+Prologusesdatabasesemantics,asdiscussedin Section8.2.8. Theuniquenamesassumption
+says that every Prolog constant and every ground term refers to a distinct object, and the
+closed worldassumption says that the only sentences thatare true arethose that areentailed
+344 Chapter 9. Inference in First-Order Logic
+bytheknowledgebase. Thereisnowaytoassertthatasentenceisfalsein Prolog. Thismakes
+Prologlessexpressivethanfirst-orderlogic,butitispart ofwhatmakes Prologmo

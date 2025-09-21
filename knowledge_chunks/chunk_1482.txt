@@ -1,0 +1,30 @@
+es.
+In the remainder of this section, we outline four basic kinds of agent programs that
+embodytheprinciples underlying almostallintelligent systems: Simplereflexagents; Model-based reflexagents; Goal-basedagents; and Utility-based agents.
+Each kind of agent program combines particular components in particular ways to generate
+actions. Section2.4.6explains ingeneral termshowtoconvert alltheseagents into learning
+48 Chapter 2. Intelligent Agents
+function REFLEX-VACUUM-AGENT( location,status )returnsanaction
+ifstatus Dirty thenreturn Suck
+elseiflocation Athenreturn Right
+elseiflocation B thenreturn Left
+Figure2.8 Theagentprogramforasimplereflexagentinthetwo-statevacuumenviron-
+ment.Thisprogramimplementstheagentfunctiontabulatedin Figure2.3.
+agentsthatcanimprovetheperformanceoftheircomponentssoasto generatebetteractions.
+Finally, Section2.4.7describes thevariety ofwaysinwhichthecomponents themselves can
+be represented within the agent. This variety provides a major organizing principle for the
+fieldandforthebookitself.
+2.4.2 Simplereflex agents
+SIMPLEREFLEX Thesimplestkindofagentisthesimplereflexagent. Theseagentsselectactionsonthebasis
+AGENT
+ofthecurrentpercept,ignoringtherestofthepercepthistory. Forexample,thevacuumagent
+whose agent function is tabulated in Figure 2.3is asimple reflexagent, because its decision
+is based only on the current location and on whether that location contains dirt. An agent
+program forthisagentisshownin Figure2.8.
+Noticethatthevacuumagentprogramisverysmallindeedcomparedtothecorrespond-
+ing table. The most obvious reduction comes from ignoring the percept history, which cuts
+down the number of possibilities from 4T to just 4. A further, small reduction comes from
+thefactthatwhenthecurrent squareisdirty,theactiondoesnotdepend onthelocation.
+Simple reflex behaviors occur even in more complex environments. Imagine yourself
+asthedriveroftheautomatedtaxi. Ifthecarinfrontbrakes anditsbrakelightscomeon,then
+you should notice this and initiate braki

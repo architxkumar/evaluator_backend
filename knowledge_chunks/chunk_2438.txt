@@ -1,0 +1,23 @@
+entially the value iteration algorithm presented in this
+chapter was proposed by Edward Sondik (1971) in his Ph.D.thesis. (Alater journal paper
+by Smallwood and Sondik (1973) contains some errors, but is more accessible.) Lovejoy
+(1991) surveyed the first twenty-five years of POMDP research, reaching somewhat pes-
+simistic conclusions about the feasibility of solving large problems. The first significant
+contribution within AI was the Witness algorithm (Cassandra et al., 1994; Kaelbling et al.,
+1998), an improved version of POMD Pvalue iteration. Otheralgorithms soon followed, in-
+cluding anapproach dueto Hansen(1998)thatconstructs apolicyincrementally intheform
+ofafinite-state automaton. Inthispolicy representation, thebelief statecorresponds directly
+to a particular state in the automaton. More recent work in AI has focused on point-based
+value iteration methods that, at each iteration, generate conditional plans and -vectors for
+a finite set of belief states rather than for the entire belief space. Lovejoy (1991) proposed
+such an algorithm for a fixed grid of points, an approach taken also by Bonet (2002). An
+influential paper by Pineau et al. (2003) suggested generating reachable points by simulat-
+ing trajectories in a somewhat greedy fashion; Spaan and Vlassis (2005) observe that one
+need generate plans for only a small, randomly selected subset of points to improve on the
+plans from the previous iteration for all points in the set. Current point-based methods suchaspoint-based policyiteration(Jietal.,2007) cangeneratenear-optimal solutionsfor
+POMD Pswiththousands ofstates. Because POMD Psare PSPACE-hard(Papadimitriou and
+Tsitsiklis, 1987), furtherprogress mayrequire takingadvantage ofvariouskinds ofstructure
+withinafactored representation.
+Theonlineapproach using look-ahead searchtoselectanactionforthecurrentbelief
+state was first examined by Satia and Lave (1973). The use of sampling at chance nodes
+was explored analytically by Kearns et al. (2000) and Ng an

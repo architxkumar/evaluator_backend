@@ -1,0 +1,27 @@
+mitted to ignore lower-level
+HIERARCHY
+preconditions of actions in order to derive the general structure of a working plan. Austin
+Tate s Ph.D. thesis (1975b) and work by Earl Sacerdoti (1977) developed the basic ideas of
+HTN planning in its modern form. Many practical planners, including O-PLAN and SIPE,
+are HT Nplanners. Yang (1990) discusses properties of actions that make HT Nplanning ef-
+ficient. Erol, Hendler, and Nau (1994, 1996) present a complete hierarchical decomposition
+planner aswellasarange ofcomplexity results forpure HT Nplanners. Ourpresentation of
+HL Asandangelicsemanticsisdueto Marthietal.(2007,2008). Kambhampatietal.(1998)
+haveproposedanapproachinwhichdecompositionsarejustanotherformofplanrefinement,
+similartotherefinementsfornon-hierarchical partial-order planning.
+Beginningwiththeworkonmacro-operatorsin STRIPS,oneofthegoalsofhierarchical
+planninghasbeenthereuseofpreviousplanningexperience intheformofgeneralizedplans.
+The technique of explanation-based learning, described in depth in Chapter 19, has been
+applied in several systems as a means of generalizing previously computed plans, including
+SOAR (Laird etal.,1986) and PRODIGY (Carbonell etal.,1989). Analternative approach is
+to store previously computed plans in their original form and then reuse them to solve new,
+similarproblems by analogy to the original problem. Thisis theapproach taken by thefield
+CASE-BASED called case-based planning (Carbonell, 1983; Alterman, 1988; Hammond, 1989). Kamb-
+PLANNING
+hampati (1994) argues that case-based planning should be analyzed as a form of refinement
+planning andprovidesaformalfoundation forcase-based partial-order planning.
+Bibliographical and Historical Notes 433
+Early planners lacked conditionals and loops, but some could use coercion to form
+conformant plans. Sacerdoti s NOAH solved the keysandboxes problem, aplanning chal-
+lenge problem in which the planner knows little about the initial state, using coercion. Ma-
+son (1993) argued that sensing o

@@ -1,0 +1,25 @@
+aoneachiteration,anditgenerallyconvergestoamuchbettersetofparametervalues
+thanthoseprovidedbytheinitial, hand-labeled estimates.
+The systems with the highest accuracy work by training a different model for each
+speaker, thereby capturing differences indialect aswellasmale female andothervariations.
+This training can require several hours of interaction with the speaker, so the systems with
+themostwidespread adoption donotcreatespeaker-specific models.
+Theaccuracyofasystemdependsonanumberoffactors. First,thequalityofthesignal
+matters: ahigh-qualitydirectionalmicrophoneaimedatastationarymouthinapaddedroom
+will do much better than a cheap microphone transmitting a signal over phone lines from a
+car in traffic with the radio playing. The vocabulary size matters: when recognizing digit
+strings withavocabulary of11words(1-9plus oh and zero ), theworderrorratewillbe
+below 0.5 , whereas it rises to about 10 on news stories with a 20,000-word vocabulary,
+and20 onacorpuswitha64,000-wordvocabulary. Thetaskmatterstoo: whenthesystem
+is trying to accomplish a specific task book a flight or give directions to a restaurant the
+taskcanoftenbeaccomplished perfectly evenwithaworderrorrateof10 ormore.
+23.6 SUMMARY
+Natural language understanding is one of the most important subfields of AI. Unlike most
+otherareasof AI,naturallanguageunderstandingrequires anempiricalinvestigationofactual
+humanbehavior which turnsouttobecomplexandinteresting. Formal language theory and phrase structure grammars (and in particular, context-
+free grammar) are useful tools fordealing withsome aspects of natural language. The
+probabilistic context-free grammar(PCFG)formalismiswidelyused.
+Bibliographical and Historical Notes 919 Sentences in a context-free language can be parsed in O(n3) time by a chart parser
+suchasthe CY Kalgorithm,whichrequiresgrammarrulestobein Chomsky Normal
+Form. Atreebankcanbeusedtolearnagrammar. Itisalsopossibletolearnagrammarfrom
+anunparsed corpusofsentences, butthisislesssuccessful. 

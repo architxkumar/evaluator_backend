@@ -1,0 +1,31 @@
+edisparityof P,isjust . From Figure24.17,
+L R
+tan b 2 andtan( 2) b 2 ,butforsmallangles, tan ,so
+Z Z Z
+b 2 b 2 b Z 2 Z Z Z 2Z2
+and,sincetheactualdisparity is ,wehave
+b Z
+disparity .
+Z2
+Inhumans,b(thebaselinedistancebetweentheeyes)isabout6cm. Supposethat Z isabout
+BASELINE
+100 cm. If the smallest detectable (corresponding to the pixel size) is about 5 seconds
+of arc, this gives a Z of 0.4 mm. For Z 30 cm, we get the impressively small value Z 0.036 mm. Thatis, atadistance of30cm,humans candiscriminate depths thatdiffer
+byaslittleas0.036mm,enabling ustothreadneedlesandthelike.
+Section24.4. Reconstructing the3DWorld 951
+Figure24.18 (a)Fourframesfroma videosequencein whichthe camerais movedand
+rotatedrelativetotheobject.(b)Thefirstframeofthesequence,annotatedwithsmallboxes
+highlightingthefeaturesfoundbythefeaturedetector.(Courtesyof Carlo Tomasi.)
+24.4.3 Multipleviews
+Shapefromopticalfloworbinoculardisparityaretwoinstancesofamoregeneralframework,
+thatofexploiting multipleviewsforrecovering depth. Incomputervision, thereisnoreason
+forustoberestrictedtodifferentialmotionortoonlyusetwocamerasconvergingatafixation
+point. Therefore, techniques have been developed that exploit the information available in
+multiple views, even from hundreds or thousands of cameras. Algorithmically, there are
+threesubproblems thatneedtobesolved: The correspondence problem, i.e., identifying features in the different images that are
+projections ofthesamefeatureinthethree-dimensional world. The relative orientation problem, i.e., determining the transformation (rotation and
+translation) betweenthecoordinate systemsfixedtothedifferent cameras. Thedepthestimationproblem,i.e.,determiningthedepthsofvariouspointsintheworld
+forwhichimageplaneprojections wereavailable inatleast twoviews
+The development of robust matching procedures for the correspondence problem, accompa-
+niedbynumericallystablealgorithmsforsolvingforrelativeorientations andscenedepth,is
+oneofthesuccessstoriesofcomputervision. Resultsfr

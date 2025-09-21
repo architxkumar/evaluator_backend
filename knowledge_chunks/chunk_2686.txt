@@ -1,0 +1,27 @@
+n
+(2002), building on work by Bradtke and Barto (1996), argues that TD( ) and related algo-
+rithmsmake inefficient useofexperiences; essentially, theyareonline regression algorithms
+that converge much more slowly than offline regression. His LSTD (least-squares temporal
+differencing) algorithm is an online algorithm for passive reinforcement learning that gives
+the same results as offline regression. Least-squares policy iteration, or LSPI (Lagoudakis
+and Parr, 2003), combines this idea with the policy iteration algorithm, yielding a robust,
+statistically efficient,model-free algorithm forlearningpolicies.
+The combination of temporal-difference learning with the model-based generation of
+simulated experiences wasproposed in Sutton s DYN Aarchitecture (Sutton, 1990). Theidea
+of prioritized sweeping was introduced independently by Moore and Atkeson (1993) and
+Bibliographical and Historical Notes 855
+Pengand Williams(1993). Q-learningwasdevelopedin Watkins s Ph.D.thesis(1989),while
+SARS Aappeared inatechnical reportby Rummeryand Niranjan (1994).
+Banditproblems, whichmodeltheproblem ofexploration for nonsequential decisions,
+areanalyzedindepthby Berryand Fristedt(1985). Optimalexplorationstrategiesforseveral
+settings are obtainable using the technique called Gittins indices (Gittins, 1989). A vari-
+ety of exploration methods for sequential decision problems are discussed by Barto et al.
+(1995). Kearns and Singh (1998) and Brafman and Tennenholtz (2000) describe algorithms
+thatexploreunknown environments andareguaranteed toconverge onnear-optimal policies
+in polynomial time. Bayesian reinforcement learning (Dearden et al., 1998, 1999) provides
+anotherangleonbothmodeluncertainty andexploration.
+Function approximation in reinforcement learning goes back to the work of Samuel,
+whousedbothlinearandnonlinearevaluationfunctionsandalsousedfeature-selectionmeth-
+odstoreduce thefeature space. Latermethods include the CMAC(Cerebellar Model Artic-
+CMAC
+ulation Controller) (Albus, 1

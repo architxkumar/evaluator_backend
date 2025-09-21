@@ -1,0 +1,33 @@
+d finite-state grammar rules. For example, a
+companynamemightberecognized bytherule
+Capitalized Word ( Company Co Inc Ltd )
+The third stage handles basic groups, meaning noun groups and verb groups. The idea is
+to chunk these into units that will be managed by the later stages. We will see how to write
+a complex description of noun and verb phrases in Chapter 23, but here we have simple
+rules that only approximate the complexity of English, but have the advantage of being rep-
+resentable by finite state automata. The example sentence would emerge from this stage as
+thefollowingsequence oftaggedgroups:
+1 NG: Bridgestone Sports Co. 10 NG: a local concern
+2 VG: said 11 CJ: and
+3 NG: Friday 12 NG: a Japanese trading house
+4 NG: it 13 VG: to produce
+5 VG: had set up 14 NG: golf clubs
+6 NG: a joint venture 15 VG: to be shipped
+7 PR: in 16 PR: to
+8 NG: Taiwan 17 NG: Japan
+9 PR: with
+Here NGmeansnoungroup,VGisverbgroup, PRispreposition, and CJisconjunction.
+876 Chapter 22. Natural Language Processing
+The fourth stage combines the basic groups into complex phrases. Again, the aim
+is to have rules that are finite-state and thus can be processed quickly, and that result in
+unambiguous (or nearly unambiguous) output phrases. One type of combination rule deals
+withdomain-specific events. Forexample,therule
+Company Set Up Joint Venture( with Company )?
+captures one way to describe the formation of a joint venture. This stage is the first one in
+thecascadewheretheoutputisplacedintoadatabasetemplateaswellasbeingplacedinthe
+output stream. The final stage merges structures that were built up in the previous step. If
+thenextsentence says Thejointventurewillstartproduction in January, thenthisstepwill
+notice that there are two references to a joint venture, and that they should be merged into
+one. Thisisaninstance oftheidentityuncertaintyproblemdiscussed in Section14.6.3.
+Ingeneral,finite-statetemplate-basedinformationextractionworkswellforarestricted
+domaininwhichitispossible topredet

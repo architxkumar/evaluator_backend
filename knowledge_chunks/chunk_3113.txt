@@ -1,0 +1,20 @@
+D. E., Genesereth, M. R., and Ginsberg, Spirtes,P.,Glymour,C.,and Scheines,R.(1993). Stratonovich,R.L.(1965). Onvalueofinforma-
+M.L.(1986). Controllingrecursiveinference. AIJ, Causation,prediction,andsearch.Springer-Verlag. tion. Izvestiyaof USSR Academyof Sciences,Tech-
+30(3),343 389. Srinivasan,A.,Muggleton,S.H.,King,R.D.,and nical Cybernetics,5,3 12.
+Smith, D.A.and Eisner,J.(2008). Dependency Sternberg,M.J.E.(1994).Mutagenesis:IL Pexper- Subramanian,D.and Feldman,R.(1990).Theutil-
+parsingbybeliefpropagation.In EMNLP,pp.145 imentsinanon-determinatebiologicaldomain. In ityof EB Linrecursivedomaintheories.In AAAI-90,
+156. ILP-94,Vol.237,pp.217 232. Vol.2,pp.942 949.
+1090 Bibliography
+Subramanian,D.and Wang,E.(1994).Constraint- Tarski,A.(1941). Introductionto Logicandtothe Thielscher,M.(1999). Fromsituationcalculusto
+basedkinematicsynthesis. In Proc.International Methodologyof Deductive Sciences.Dover. fluentcalculus:Stateupdateaxiomsasasolutionto
+Conferenceon Qualitative Reasoning,pp.228 239. theinferentialframeproblem. AIJ,111(1 2),277 Tarski,A.(1956). Logic,Semantics,Metamathe- 299.
+Sussman,G.J.(1975). AComputer Modelof Skill matics:Papersfrom1923to1938. Oxford Univer-
+Acquisition.Elsevier North-Holland. sity Press. Thompson,K.(1986). Retrogradeanalysisofcer-
+tainendgames.J.International Computer Chess As-
+Sutcliffe,G.and Suttner,C.(1998).The TPTP Prob- Tash,J.K.and Russell,S.J.(1994).Controlstrate- sociation,May,131 139.
+lem Library:CNF Releasev1.2.1.JAR,21(2),177 giesforastochasticplanner.In AAAI-94,pp.1079 203. 1085. Thompson,K.(1996). 6-pieceendgames.J.Inter-
+national Computer Chess Association,19(4),215 Sutcliffe,G.,Schulz,S.,Claessen,K.,and Gelder, Taskar,B.,Abbeel,P.,and Koller,D.(2002). Dis- 226.
+A.V.(2006). Usingthe TPT Planguageforwriting
+criminativeprobabilisticmodelsforrelationaldata.
+derivationsandfiniteinterpretations.In Proc.Inter- In UAI-02. Thrun,S.,Burgard,W.,and Fox,D.(2005).Proba-
+national Joint Conferenceon Automated Reasoning, bilistic Roboti

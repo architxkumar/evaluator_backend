@@ -1,0 +1,23 @@
+on.
+Bibliographical and Historical Notes 883 Information retrieval systems use a very simple language model based on bags of
+words, yet still manage to perform well in terms of recall and precision on very large
+corporaoftext. On Webcorpora, link-analysis algorithmsimproveperformance. Questionansweringcanbehandledbyanapproachbasedoninformationretrieval,for
+questions that have multiple answers in the corpus. When more answers are available
+inthecorpus, wecanusetechniques thatemphasizeprecision ratherthanrecall. Information-extraction systems use a more complex model that includes limited no-
+tions of syntax and semantics in the form of templates. They can be built from finite-
+stateautomata,HM Ms,orconditionalrandomfields,andcanbelearnedfromexamples. Inbuildingastatisticallanguagesystem,itisbesttodeviseamodelthatcanmakegood
+useofavailable data,evenifthemodelseemsoverlysimplistic.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+N-gram letter models for language modeling were proposed by Markov (1913). Claude
+Shannon (Shannon and Weaver, 1949) was the first to generate n-gram word models of En-
+glish. Chomsky(1956,1957)pointedoutthelimitationsoffinite-statemodelscomparedwith
+context-free models, concluding, Probabilistic models give no particular insight into some
+ofthebasicproblemsofsyntacticstructure. Thisistrue, butprobabilisticmodelsdoprovide
+insight into some other basic problems problems that context-free models ignore. Chom-
+sky sremarkshadtheunfortunateeffectofscaringmanypeopleawayfromstatisticalmodels
+fortwodecades, untilthesemodelsreemerged foruseinspeechrecognition (Jelinek, 1976).
+Kessleretal.(1997)showhowtoapplycharactern-grammodelstogenreclassification,
+and Kleinet al. (2003) describe named-entity recognition with character models. Franz and
+Brants(2006) describe the Google n-gram corpusof13millionunique wordsfrom atrillion
+wordsof Webtext;itisnowpublicly available. Thebagofwordsmodelgetsitsnamefrom
+a passage from linguist Zellig Harris (1954), language is not merel

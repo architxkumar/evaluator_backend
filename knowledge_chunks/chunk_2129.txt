@@ -1,0 +1,26 @@
+Probability Notation 483
+Theutility of astate isrelative toan agent. Forexample, the utility ofastate in which
+Whitehascheckmated Blackinagameofchessisobviouslyhighfortheagentplaying White,
+butlowfortheagentplaying Black. Butwecan tgostrictlybythescoresof1,1 2,and0that
+aredictatedbytherulesoftournamentchess someplayers(includingtheauthors)mightbe
+thrilledwithadrawagainsttheworldchampion,whereasotherplayers(includingtheformer
+worldchampion)mightnot. Thereisnoaccounting fortasteorpreferences: youmightthink
+that anagent whoprefers jalapen o bubble-gum ice cream to chocolate chocolate chip is odd
+orevenmisguided,butyoucouldnotsaytheagentisirrational. Autilityfunctioncanaccount
+foranysetofpreferences quirkyortypical,nobleorperverse. Notethatutilitiescanaccount
+foraltruism,simplybyincluding thewelfareofothersasoneofthefactors.
+Preferences, as expressed by utilities, are combined with probabilities in the general
+theoryofrational decisions called decisiontheory:
+DECISIONTHEORY
+Decisiontheory probability theory utilitytheory.
+The fundamental idea of decision theory is that an agent is rational if and only if it chooses
+the action that yields the highest expected utility, averaged over all the possible outcomes
+MAXIMUMEXPECTED of the action. This is called the principle of maximum expected utility (MEU). Note that
+UTILITY expected might seem like avague, hypothetical term, but asitisused here ithas aprecise
+meaning: it means the average, or statistical mean of the outcomes, weighted by the
+probability of the outcome. We saw this principle in action in Chapter 5 when we touched
+brieflyonoptimaldecisions inbackgammon;itisinfactacompletely generalprinciple.
+Figure13.1sketchesthestructureofanagentthatusesdecisiontheorytoselectactions.
+The agent is identical, at an abstract level, to the agents described in Chapters 4 and 7 that
+maintain a belief state reflecting the history of percepts to date. The primary difference is
+that the decision-theoretic agent s belief state represents

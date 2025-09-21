@@ -1,0 +1,26 @@
+ouldspecifythevalueof Author(B ),andsotheotherpotential authorsarenolongerpar-
+2
+entsoftherecommendationnodesfor B . For MCMC,then,relationaluncertainty causesno
+2
+increaseinnetworkcomplexity; instead,the MCM Cprocessincludestransitions thatchange
+therelational structure, andhencethedependency structure, oftheunrolled network.
+Allofthemethodsjustdescribedassumethatthe RP Mhastobepartiallyorcompletely
+unrolled into a Bayesian network. This is exactly analogous to the method of proposition-
+alization for first-order logical inference. (See page 322.) Resolution theorem-provers and
+logic programming systems avoid propositionalizing by instantiating the logical variables
+onlyasneededtomaketheinferencegothrough;thatis,theylifttheinferenceprocessabove
+the level of ground propositional sentences and make each lifted step do the work of many
+ground steps. Thesame idea applied inprobabilistic inference. Forexample, inthe variable
+elimination algorithm, alifted factorcanrepresent anentire setofground factors that assign
+probabilitiestorandomvariablesinthe RPM,wherethoserandomvariablesdifferonlyinthe
+constant symbols usedtoconstruct them. Thedetailsofthis methodarebeyond thescopeof
+thisbook,butreferences aregivenattheendofthechapter.
+14.6.3 Open-universe probability models
+We argued earlier that database semantics was appropriate for situations in which we know
+exactlythesetofrelevantobjectsthatexistandcanidentifythemunambiguously. (Inpartic-
+ular, all observations about an object are correctly associated with the constant symbol that
+namesit.) Inmanyreal-worldsettings,however,theseassumptionsaresimplyuntenable. We
+gavetheexamplesofmultiple (towhichwewillreturninamoment),butthephenomenon isfarmorepervasive:
+Section14.6. Relational and First-Order Probability Models 545 Avisionsystemdoesn tknowwhatexists,ifanything,aroundthenextcorner,andmay
+notknowiftheobjectitseesnowisthesameoneitsawafewminutesago. Atext-understanding systemdoesnotknowinadvancetheentitiesthatwillbefeatured
+in

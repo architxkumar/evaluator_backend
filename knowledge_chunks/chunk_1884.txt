@@ -1,0 +1,27 @@
+isfying acondition, andapplying theexistential instan-
+tiation rule just gives a name to that object. Of course, that name must not already belong
+toanotherobject. Mathematics provides anice example: suppose wediscoverthatthere isa
+numberthatisalittlebiggerthan2.71828andthatsatisfiestheequationd(xy) dy xy forx.
+Wecan give this number a name, such as e, but it would be a mistake to give itthe name of
+an existing object, such as . In logic, the new name is called a Skolem constant. Existen-
+SKOLEMCONSTANT
+tial Instantiation isaspecial caseofamoregeneral process called skolemization, which we
+coverin Section9.5.
+Whereas Universal Instantiation can be applied many times to produce many different
+consequences, Existential Instantiation can be applied once, and then the existentially quan-
+tified sentence can be discarded. Forexample, weno longer need x Kill(x,Victim)once
+wehaveaddedthesentence Kill(Murderer,Victim). Strictlyspeaking, thenewknowledge
+INFERENTIAL baseisnotlogically equivalent totheold,butitcanbeshowntobeinferentially equivalent
+EQUIVALENCE
+inthesensethatitissatisfiableexactlywhentheoriginal knowledgebaseissatisfiable.
+1 Donotconfusethesesubstitutionswiththeextendedinterpretationsusedtodefinethesemanticsofquantifiers.
+The substitution replaces a variable with a term (a piece of syntax) to produce a new sentence, whereas an
+interpretationmapsavariabletoanobjectinthedomain.
+324 Chapter 9. Inference in First-Order Logic
+9.1.2 Reduction to propositional inference
+Once we have rules for inferring nonquantified sentences from quantified sentences, it be-
+comes possible to reduce first-order inference to propositional inference. In this section we
+givethemainideas;thedetailsaregivenin Section9.5.
+The first idea is that, just as an existentially quantified sentence can be replaced by
+one instantiation, a universally quantified sentence can be replaced by the set of all possible
+instantiations. Forexample, supposeourknowledgebasecontainsjustthesentences x King(x) Gr

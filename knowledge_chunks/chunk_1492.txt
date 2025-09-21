@@ -1,0 +1,42 @@
+lligent machines by hand.
+Section2.4. The Structureof Agents 55
+Performance standard
+Agent
+Environment
+Critic Sensors
+feedback
+changes
+Learning Performance
+element element
+knowledge
+learning
+goals
+Problem
+generator
+Actuators
+Figure2.15 Agenerallearningagent.
+Heestimateshowmuchworkthismighttakeandconcludes Somemoreexpeditiousmethod
+seems desirable. The method he proposes is to build learning machines and then to teach
+them. In many areas of AI, this is now the preferred method for creating state-of-the-art
+systems. Learning has another advantage, as wenoted earlier: it allows the agent to operate
+ininitially unknown environments andtobecomemorecompetent thanitsinitial knowledge
+alone might allow. In this section, we briefly introduce the main ideas of learning agents.
+Throughout the book, we comment on opportunities and methods for learning in particular
+kindsofagents. Part Vgoesintomuchmoredepthonthelearningalgorithms themselves.
+A learning agent can be divided into four conceptual components, as shown in Fig-
+ure 2.15. The most important distinction is between the learning element, which is re-
+LEARNINGELEMENT
+PERFORMANCE sponsibleformakingimprovements,andtheperformanceelement,whichisresponsiblefor
+ELEMENT
+selecting external actions. The performance element is what we have previously considered
+tobetheentire agent: ittakes inpercepts and decides onactions. Thelearning element uses
+feedback from the critic on how the agent is doing and determines how the performance
+CRITIC
+elementshouldbemodifiedtodobetterinthefuture.
+Thedesignofthelearningelementdependsverymuchonthedesignoftheperformance
+element. When trying to design an agent that learns a certain capability, the first question is
+not Howam Igoingtogetittolearnthis? but Whatkindofperformanceelementwillmy
+agentneedtodothisonceithaslearned how? Givenanagentdesign, learningmechanisms
+canbeconstructed toimproveeverypartoftheagent.
+Thecritic tellsthe learning element how welltheagent isdoing withrespect toafixed
+perfor

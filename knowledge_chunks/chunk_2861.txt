@@ -1,0 +1,33 @@
+ extreme
+end of range sensing are tactile sensors such as whiskers, bump panels, and touch-sensitive
+TACTILESENSORS
+skin. These sensors measure range based on physical contact, and can be deployed only for
+sensingobjects veryclosetotherobot.
+A second important class of sensors is location sensors. Most location sensors use
+LOCATIONSENSORS
+rangesensingasaprimarycomponenttodeterminelocation. Outdoors,the Global Position-
+GLOBAL
+ing System (GPS)is the most common solution to the localization problem. GPS measures
+POSITIONING
+SYSTEM
+the distance to satellites that emit pulsed signals. At present, there are 31 satellites in orbit,
+transmitting signalsonmultiple frequencies. GP Sreceiverscanrecoverthedistance tothese
+satellites by analyzing phase shifts. By triangulating signals from multiple satellites, GPS
+Section25.2. Robot Hardware 975
+receivers candetermine theirabsolute location on Earthto withinafewmeters. Differential
+GP Sinvolves asecond ground receiver with known location, providing millimeteraccuracy
+DIFFERENTIALGPS
+under ideal conditions. Unfortunately, GPS does not work indoors or underwater. Indoors,
+localization is often achieved by attaching beacons in the environment at known locations.
+Many indoor environments are full of wireless base stations, which can help robots localize
+through the analysis of the wireless signal. Underwater, active sonar beacons can provide a
+senseoflocation, usingsoundtoinform AU Vsoftheirrelativedistances tothosebeacons.
+PROPRIOCEPTIVE Thethirdimportantclassisproprioceptive sensors,whichinformtherobotofitsown
+SENSOR
+motion. To measure the exact configuration of a robotic joint, motors are often equipped
+withshaftdecodersthatcounttherevolution ofmotorsinsmallincrements. Onrobotarms,
+SHAFTDECODER
+shaft decoders can provide accurate information overany period of time. Onmobile robots,
+shaftdecoders thatreportwheelrevolutions canbeusedfor odometry themeasurementof
+ODOMETRY
+distance traveled. Unfortunately, wheels tend to drift and s

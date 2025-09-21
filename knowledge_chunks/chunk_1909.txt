@@ -1,0 +1,29 @@
+AS Kspendsagooddealoftimegener-
+atingsubstitutions. Insteadofexplicitlyconstructingsubstitutions, Prologhaslogicvariables
+that remember their current binding. At any point in time, every variable in the program ei-
+ther is unbound or is bound to some value. Together, these variables and values implicitly
+define the substitution for the current branch of the proof. Extending the path can only add
+new variable bindings, because an attempt to add a different binding for an already bound
+variable results in a failure of unification. When a path in the search fails, Prolog will back
+uptoaprevious choice point, andthen itmight have tounbind somevariables. Thisisdone
+bykeepingtrackofallthevariables thathavebeenboundinastackcalledthetrail. Aseach
+TRAIL
+newvariableisboundby UNIFY-VAR,thevariableispushedontothetrail. Whenagoalfails
+and it is time to back up to a previous choice point, each of the variables is unbound as it is
+removedfromthetrail.
+Even the most efficient Prolog interpreters require several thousand machine instruc-
+tions per inference step because of the cost of index lookup, unification, and building the
+recursive call stack. In effect, the interpreter always behaves as if it has never seen the pro-
+gram before; for example, it has to find clauses that match the goal. A compiled Prolog
+5 Notethatifthe Peanoaxiomsareprovided,suchgoalscanbesolvedbyinferencewithina Prologprogram.
+Section9.4. Backward Chaining 341
+procedure APPEND(ax,y,az,continuation)
+trail GLOBAL-TRAIL-POINTER()
+ifax and UNIFY(y,az)then CALL(continuation)
+RESET-TRAIL(trail)
+a,x,z NEW-VARIABLE(),NEW-VARIABLE(),NEW-VARIABLE()
+if UNIFY(ax, a x )and UNIFY(az, a z )then APPEND(x,y,z,continuation)
+Figure9.8 Pseudocoderepresentingtheresultofcompilingthe Appendpredicate. The
+function NEW-VARIABL Ereturnsanewvariable,distinctfromallothervariablesusedsofar.
+Theprocedure CALL(continuation)continuesexecutionwiththespecifiedcontinuation.
+program,ontheotherhand,isaninferenceprocedureforaspecificsetofclauses,

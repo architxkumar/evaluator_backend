@@ -1,0 +1,34 @@
+table? In other words, what makes an agent good or bad,
+intelligent orstupid? Weanswerthesequestions inthenextsection.
+1 Iftheagentusessomerandomizationtochoose itsactions, thenwewouldhavetotryeachsequence many
+timestoidentifytheprobabilityofeachaction. Onemightimaginethatactingrandomlyisrathersilly,butwe
+showlaterinthischapterthatitcanbeveryintelligent.
+36 Chapter 2. Intelligent Agents
+A B
+Figure2.2 Avacuum-cleanerworldwithjusttwolocations.
+Perceptsequence Action A,Clean Right A,Dirty Suck B,Clean Left B,Dirty Suck A,Clean , A,Clean Right A,Clean , A,Dirty Suck
+. .
+. .
+. . A,Clean , A,Clean , A,Clean Right A,Clean , A,Clean , A,Dirty Suck
+. .
+. .
+. .
+Figure 2.3 Partial tabulation of a simple agent function for the vacuum-cleaner world
+shownin Figure2.2.
+Beforeclosingthissection,weshouldemphasizethatthenotionofanagentismeantto
+be a tool for analyzing systems, not an absolute characterization that divides the world into
+agents and non-agents. One could view a hand-held calculator as an agent that chooses the
+action of displaying 4 when given the percept sequence 2 2 , but such an analysis
+wouldhardly aidourunderstanding ofthecalculator. Inasense, allareasofengineering can
+be seen as designing artifacts that interact with the world; AI operates at (what the authors
+consider to be) the most interesting end of the spectrum, where the artifacts have significant
+computational resources andthetaskenvironment requires nontrivial decision making.
+2.2 GOOD BEHAVIOR: THE CONCEPT OF RATIONALITY
+Arational agent is one that does the right thing conceptually speaking, every entry in the
+RATIONALAGENT
+table for the agent function is filled out correctly. Obviously, doing the right thing is better
+thandoingthewrongthing,butwhatdoesitmeantodotherightthing?
+Section2.2. Good Behavior: The Conceptof Rationality 37
+We answer this age-old question in an age-old way: by considering the consequences
+of the agent s behavior. When an agent is plunked down in an environment, it generates a
+seq

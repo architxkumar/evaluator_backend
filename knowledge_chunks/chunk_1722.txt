@@ -1,0 +1,32 @@
+applying AC-3
+with the partial assignment, the domain of each variable is reduced to green,blue . That
+is, we have three variables and only two colors, so the Alldiff constraint is violated. Thus,
+a simple consistency procedure for a higher-order constraint is sometimes more effective
+than applying arc consistency to an equivalent set of binary constraints. There are more
+212 Chapter 6. Constraint Satisfaction Problems
+complex inference algorithms for Alldiff (see van Hoeve and Katriel, 2006) that propagate
+moreconstraints butaremorecomputationally expensiveto run.
+RESOURCE Anotherimportanthigher-orderconstraintisthe resourceconstraint,sometimescalled
+CONSTRAINT
+the atmost constraint. For example, in a scheduling problem, let P ,...,P denote the
+1 4
+numbers of personnel assigned to each of four tasks. The constraint that no more than 10
+personnel are assigned in total is written as Atmost(10,P ,P ,P ,P ). We can detect an
+1 2 3 4
+inconsistency simply by checking the sum of the minimum values of the current domains;
+for example, if each variable has the domain 3,4,5,6 , the Atmost constraint cannot be
+satisfied. Wecanalsoenforceconsistencybydeletingthemaximumvalueofanydomainifit
+isnotconsistent withtheminimumvaluesoftheotherdomains. Thus,ifeachvariableinour
+examplehasthedomain 2,3,4,5,6 , thevalues5and6canbedeletedfromeachdomain.
+For large resource-limited problems with integer values such as logistical problems
+involving moving thousands of people in hundreds of vehicles it is usually not possible to
+representthedomainofeachvariableasalargesetofintegersandgraduallyreducethatsetby
+consistency-checking methods. Instead, domainsarerepresented byupperandlowerbounds
+BOUNDS and are managed by bounds propagation. For example, in an airline-scheduling problem,
+PROPAGATION
+let s suppose there are two flights, F and F , for which the planes have capacities 165 and
+1 2
+385,respectively. Theinitialdomainsforthenumbersofpassengers oneachflightarethen
+D 0,165 and D 0,385 .
+1 2
+No

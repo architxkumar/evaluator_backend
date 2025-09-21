@@ -1,0 +1,37 @@
+sionalsurface
+ofthearea.
+a. Givefiveexamplesofsymbolsinthemaplanguage.
+b. An explicit sentence is a sentence that the creator of the representation actually writes
+down. An implicit sentence is a sentence that results from explicit sentences because
+ofpropertiesoftheanalogical representation. Givethree exampleseachofimplicitand
+explicitsentences inthemaplanguage.
+c. Givethreeexamplesoffactsaboutthephysicalstructureofyourcountrythatcannotbe
+represented inthemaplanguage.
+d. Givetwoexamplesoffactsthataremucheasiertoexpressin themaplanguage thanin
+first-orderlogic.
+e. Givetwootherexamplesofusefulanalogical representations. Whataretheadvantages
+anddisadvantages ofeachoftheselanguages?
+8.2 Consider a knowledge base containing just two sentences: P(a) and P(b). Does this
+knowledgebaseentail x P(x)? Explainyouranswerintermsofmodels.
+8.3 Isthesentence x,y x y valid? Explain.
+8.4 Writedownalogicalsentencesuchthateveryworldinwhichitistruecontainsexactly
+oneobject.
+8.5 Consider a symbol vocabulary that contains c constant symbols, p predicate symbols
+k
+ofeach arity k, and f function symbols ofeach arity k, where 1 k A. Letthe domain
+k
+sizebefixedat D. Foranygivenmodel,eachpredicateorfunction symbolismappedontoa
+relationorfunction, respectively, ofthesamearity. Youmayassumethatthefunctions inthe
+modelallowsomeinputtuplestohavenovalueforthefunction(i.e.,thevalueistheinvisible
+object). Derivea formula forthe number of possible models foradomain with D elements.
+Don tworryabouteliminating redundant combinations.
+8.6 Whichofthefollowingarevalid(necessarily true)sentences?
+a. ( xx x) ( y z y z).
+b. x P(x) P(x).
+c. x Smart(x) (x x).
+8.7 Consider a version of the semantics for first-order logic in which models with empty
+domains areallowed. Giveatleasttwoexamples ofsentences thatarevalidaccording tothe
+316 Chapter 8. First-Order Logic
+standard semantics but not according to the new semantics. Discuss which outcome makes
+moreintuitivesenseforyourexamples.
+8.8 Does the fact Spouse(George

@@ -1,0 +1,24 @@
+wasalsoaseriousproblem. Inresponse, he andothersat MI Tinventedtime
+sharing. Also in 1958, Mc Carthy published a paper entitled Programs with Common Sense,
+in which he described the Advice Taker, ahypothetical program that can be seen as the first
+complete AI system. Like the Logic Theorist and Geometry Theorem Prover, Mc Carthy s
+program was designed to use knowledge to search forsolutions to problems. But unlike the
+others, it was to embody general knowledge of the world. For example, he showed how
+somesimpleaxiomswouldenabletheprogram togenerate aplantodrivetotheairport. The
+program wasalso designed toaccept new axioms inthe normal course ofoperation, thereby
+allowing it to achieve competence in new areas without being reprogrammed. The Advice
+Taker thus embodied the central principles of knowledge representation and reasoning: that
+it is useful to have a formal, explicit representation of the world and its workings and to be
+able to manipulate that representation with deductive processes. It is remarkable how much
+ofthe1958paperremainsrelevanttoday.
+1958alsomarkedtheyearthat Marvin Minskymovedto MIT.Hisinitialcollaboration
+with Mc Carthydidnotlast,however. Mc Carthystressedrepresentation andreasoning infor-
+mal logic, whereas Minsky was more interested in getting programs to work and eventually
+developed an anti-logic outlook. In 1963, Mc Carthy started the AIlab at Stanford. Hisplan
+to use logic to build the ultimate Advice Taker was advanced by J. A. Robinson s discov-
+ery in 1965 of the resolution method (a complete theorem-proving algorithm for first-order
+logic; see Chapter 9). Work at Stanford emphasized general-purpose methods for logical
+reasoning. Applications of logic included Cordell Green s question-answering and planning
+systems (Green, 1969b) and the Shakey robotics project at the Stanford Research Institute
+(SRI). The latter project, discussed further in Chapter 25, was the first to demonstrate the
+completeintegration oflogicalreasoning andphysica

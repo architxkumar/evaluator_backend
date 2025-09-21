@@ -1,0 +1,30 @@
+(Performance, Environment, Actuators, Sensors)description. Indesigning an
+PEAS
+agent,thefirststepmustalwaysbetospecify thetaskenvironment asfullyaspossible.
+Thevacuum worldwasasimpleexample;letusconsider amorecomplexproblem: an
+automated taxi driver. We should point out, before the reader becomes alarmed, that a fully
+automatedtaxiiscurrentlysomewhatbeyondthecapabilitiesofexistingtechnology. (page28
+describes anexisting driving robot.) Thefulldriving task isextremely open-ended. Thereis
+nolimittothenovelcombinations ofcircumstances thatcanarise another reasonwechose
+it as a focus for discussion. Figure 2.4 summarizes the PEAS description for the taxi s task
+environment. Wediscuss eachelementinmoredetailinthefollowingparagraphs.
+Agent Type Performance Environment Actuators Sensors
+Measure
+Taxidriver Safe,fast,legal, Roads,other Steering, Cameras,sonar,
+comfortabletrip, traffic, accelerator, speedometer,
+maximizeprofits pedestrians, brake,signal, GPS,odometer,
+customers horn,display accelerometer,
+enginesensors,
+keyboard
+Figure2.4 PEA Sdescriptionofthetaskenvironmentforanautomatedtaxi.
+First, what isthe performance measure towhich wewould like ourautomated driver
+toaspire? Desirablequalities includegetting tothecorrect destination; minimizingfuelcon-
+sumptionandwearandtear;minimizingthetriptimeorcost; minimizingviolationsoftraffic
+laws and disturbances to other drivers; maximizing safety and passenger comfort; maximiz-
+ingprofits. Obviously, someofthesegoalsconflict, sotradeoffs willberequired.
+Next, what is the driving environment that the taxi will face? Any taxi driver must
+deal with a variety of roads, ranging from rural lanes and urban alleys to 12-lane freeways.
+The roads contain other traffic, pedestrians, stray animals, road works, police cars, puddles,
+Section2.3. The Natureof Environments 41
+andpotholes. Thetaximustalsointeractwithpotentialandactualpassengers. Therearealso
+some optional choices. The taxi might need to operate in Southern California, where sn

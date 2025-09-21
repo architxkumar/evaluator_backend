@@ -1,0 +1,22 @@
+rd an
+Cimento Supplemento,20(2),221 231. Kaufmann. expert-levelbridge-playingprogram. In IJCAI-99,
+Garding,J.(1992). Shapefromtextureforsmooth Genesereth, M. R. and Nourbakhsh, I. (1993). pp.584 589.
+curvedsurfacesinperspectiveprojection. J.Mathe- Time-savingtipsforproblemsolvingwithincom- Ginsberg,M.L.,Frank,M.,Halpin,M.P.,and Tor-
+matical Imagingand Vision,2(4),327 350. pleteinformation.In AAAI-93,pp.724 730. rance,M.C.(1990). Searchlessonslearnedfrom
+Gardner, M.(1968). Logic Machines,Diagrams Genesereth,M.R.and Smith,D.E.(1981). Meta- crosswordpuzzles.In AAAI-90,Vol.1,pp.210 215.
+and Boolean Algebra.Dover. levelarchitecture. Memo HPP-81-6,Computer Sci- Ginsberg,M.L.(2001). GIB:Imperfectinfoorma-
+Garey,M.R.and Johnson,D.S.(1979).Computers ence Department,Stanford University. tioninacomputationallychallenginggame. JAIR,
+and Intractability.W.H.Freeman. 14,303 358.
+Gent,I.,Petrie,K.,and Puget,J.-F.(2006). Sym-
+Gaschnig,J.(1977).Ageneralbacktrackalgorithm metryinconstraintprogramming. In Rossi,F.,van Gionis,A.,Indyk,P.,and Motwani,R.(1999).Simi-
+thateliminatesmostredundanttests.In IJCAI-77,p. Beek,P.,and Walsh,T.(Eds.),Handbookof Con- laritysearchinhighdimensionsvishashing.In Proc.
+457. straint Programming.Elsevier. 25th Very Large Database(VLDB)Conference.
+1074 Bibliography
+Gittins,J.C.(1989).Multi-Armed Bandit Allocation Goodman,J.and Heckerman,D.(2004). Fighting Grinstead,C.and Snell,J.(1997). Introductionto
+Indices.Wiley. spamwithstatistics. Significance,the Magazineof Probability.AMS.
+the Royal Statistical Society,1,69 72.
+Glanc,A.(1978). Ontheetymologyoftheword Grove,W.and Meehl,P.(1996). Comparativeeffi- robot .SIGART Newsletter,67,12. Goodman,N.(1954). Fact,Fictionand Forecast. ciencyofinformal(subjective,impressionistic)and
+Universityof London Press. formal(mechanical,algorithmic)predictionproce-
+Glover, F. and Laguna, M.(Eds.).(1997). Tabu
+search.Kluwer. Goodman,N.(1977).The Structureof Appearance dures:Theclinicalstatisticalcontroversy. Psychol-
+(3rdedition

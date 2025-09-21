@@ -1,0 +1,46 @@
+andom variables and taking their mean tends to a normal distribution as n tends to
+infinity. Thisholdsforalmostanycollectionofrandomvariables, eveniftheyarenotstrictly
+independent, unlessthevarianceofanyfinitesubsetofvariables dominatestheothers.
+The expectation of a random variable, E(X), is the mean or average value, weighted
+EXPECTATION
+bytheprobability ofeachvalue. Foradiscrete variableitis:
+(cid:12)
+E(X) x P(X x ).
+i i
+i
+Foracontinuousvariable,replacethesummationwithanintegralovertheprobabilitydensity
+function, P(x):
+(cid:26) E(X) x P(x)dx, Bibliographical and Historical Notes 1059
+Therootmeansquare,RMS,ofasetofvalues(oftensamplesofarandomvariable)is
+ROOTMEANSQUARE
+thesquarerootofthemeanofthesquares ofthevalues,
+(cid:8)
+x2 ... x2
+RMS(x ,...,x ) 1 n .
+1 n
+n
+Thecovarianceoftworandomvariablesistheexpectationoftheproductoftheirdifferences
+COVARIANCE
+fromtheirmeans:
+cov(X,Y) E((X )(Y )).
+X Y
+The covariance matrix, often denoted , is a matrix of covariances between elements of a
+COVARIANCEMATRIX
+vector of random variables. Given X (cid:16)X ,...X (cid:17)(cid:12) , the entries of the covariance matrix
+1 n
+areasfollows: cov(X ,X ) E((X )(X )).
+i,j i j i i j j
+Afew more miscellaneous points: weuse log(x)forthe natural logarithm, log (x). Weuse
+e
+argmax f(x)forthevalueofxforwhichf(x)ismaximal.
+x
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+The O()notationsowidelyusedincomputersciencetodaywasfirstintroducedinthecontext
+of numbertheory by the Germanmathematician P.G.H. Bachmann (1894). Theconcept of
+NP-completeness was invented by Cook (1971), and the modern method for establishing a
+reduction fromoneproblem toanotherisdueto Karp(1972). Cookand Karphavebothwon
+the Turingaward,thehighesthonorincomputerscience, for theirwork.
+Classic works on the analysis and design ofalgorithms include those by Knuth (1973)
+and Aho, Hopcroft, and Ullman (1974); more recent contributions are by Tarjan (1983) and
+Cormen, Leiserson, and Rivest (1990). These books place an emphasis on designing and
+an

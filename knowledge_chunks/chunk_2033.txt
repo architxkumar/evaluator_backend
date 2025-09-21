@@ -1,0 +1,25 @@
+t probably does not seem at all intelligent because the motion is a fixed,
+preprogrammed sequence; the robot obviously doesn t know what it s doing inany mean-
+ingful sense. Now suppose that a poorly attached door falls off the car just as the robot is
+about to apply a spot-weld. The robot quickly replaces its welding actuator with a gripper,
+picks up the door, checks it forscratches, reattaches it to the car, sends an email to the floor
+supervisor, switches back to the welding actuator, and resumes its work. All of a sudden,
+the robot s behavior seems purposive rather than rote; we assume it results not from a vast,
+precomputed contingent plan but from an online replanning process which means that the
+robot doesneedtoknowwhatit stryingtodo.
+EXECUTION Replanningpresupposessomeformofexecutionmonitoringtodeterminetheneedfor
+MONITORING
+a new plan. One such need arises when a contingent planning agent gets tired of planning
+forevery little contingency, such as whether the sky might fall on its head.3 Some branches
+ofapartiallyconstructed contingent plancansimplysay Replan;ifsuchabranchisreached
+during execution, the agent reverts to planning mode. Aswementioned earlier, the decision
+as to how much of the problem to solve in advance and how much to leave to replanning
+is one that involves tradeoffs among possible events with different costs and probabilities of
+occurring. Nobodywantstohavetheircarbreakdowninthemiddleofthe Saharadesertand
+onlythenthinkabouthavingenough water.
+2 Ifcyclicsolutionsarerequiredforanondeterministicproblem,AND ORsearchmustbegeneralizedtoaloopy
+versionsuchas LAO (Hansenand Zilberstein,2001).
+3 In1954,a Mrs.Hodgesof Alabamawashitbymeteoritethatcrashedthroughherroof. In1992, apieceof
+the Mbalemeteoritehitasmallboyonthehead;fortunately,itsdescentwasslowedbybananaleaves(Jenniskens
+etal.,1994).Andin2009,a Germanboyclaimedtohavebeenhitinthehandbyapea-sizedmeteorite.Noserious
+injuriesresultedfromanyoftheseincidents,suggestingthattheneedforpreplanningaga

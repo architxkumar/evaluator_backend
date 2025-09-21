@@ -1,0 +1,29 @@
+ the loser. A game can be formally defined as a kind of search problem with the
+followingelements: S : Theinitialstate, whichspecifieshowthegameissetupatthestart.
+0 PLAYER(s): Defineswhichplayerhasthemoveinastate. ACTIONS(s): Returnsthesetoflegalmovesinastate. RESULT(s,a): Thetransitionmodel,whichdefinestheresultofamove.
+TERMINALTEST TERMINAL-TEST(s): A terminal test, which is true when the game is over and false
+otherwise. Stateswherethegamehasendedarecalled terminalstates.
+TERMINALSTATES UTILITY(s,p): Autilityfunction(alsocalledanobjectivefunctionorpayofffunction),
+definesthefinalnumericvalueforagamethatendsinterminal statesforaplayerp. In
+chess,theoutcomeisawin,loss,ordraw,withvalues 1,0,or 1. Somegameshavea
+2
+widervarietyofpossibleoutcomes;thepayoffsinbackgammonrangefrom0to 192.
+Azero-sum game is (confusingly) defined as one where the total payoff toall players
+isthe sameforevery instance ofthegame. Chessiszero-sum because everygamehas
+payoffofeither0 1,1 0or 1 1. Constant-sum wouldhavebeenabetterterm,
+2 2
+but zero-sum is traditional and makes sense if you imagine each player is charged an
+entryfeeof 1.
+2
+GAMETREE
+The initial state, ACTIONS function, and RESULT function define the game tree for the
+game a tree where the nodes are game states and the edges are moves. Figure 5.1 shows
+part of the game tree for tic-tac-toe (noughts and crosses). From the initial state, MAX has
+nine possible moves. Play alternates between MAX s placing an X and MIN s placing an O
+Section5.2. Optimal Decisions in Games 163
+until we reach leaf nodes corresponding to terminal states such that one player has three in
+a row or all the squares are filled. The number on each leaf node indicates the utility value
+ofthe terminal state from the point ofview of MAX; high values are assumed tobe good for
+MAX andbadfor MIN(whichishowtheplayersgettheirnames).
+For tic-tac-toe the game tree is relatively small fewer than 9! 362,880 terminal
+nodes. But for chess there are over 1040 nodes, so the gam

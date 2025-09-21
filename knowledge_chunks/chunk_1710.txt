@@ -1,0 +1,43 @@
+theproblemof
+schedulingtheassemblyofacar. Thewholejobiscomposedoftasks,andwecanmodeleach
+task as avariable, where the value of each variable isthe time that the task starts, expressed
+as an integer number of minutes. Constraints can assert that one task must occur before
+another for example, awheel must beinstalled before the hubcap isput on and that only
+so many tasks can go on at once. Constraints can also specify that a task takes a certain
+amountoftimetocomplete.
+Weconsiderasmallpartofthecarassembly, consisting of15 tasks: installaxles(front
+and back), affix all four wheels (right and left, front and back), tighten nuts for each wheel,
+affixhubcaps, andinspect thefinalassembly. Wecanrepresent thetaskswith15variables:
+X Axle ,Axle ,Wheel ,Wheel ,Wheel ,Wheel ,Nuts ,
+F B RF LF RB LB RF
+Nuts ,Nuts ,Nuts ,Cap ,Cap ,Cap ,Cap ,Inspect .
+LF RB LB RF LF RB LB
+The value of each variable is the time that the task starts. Next we represent precedence
+PRECEDENCE constraints between individual tasks. Whenever a task T must occur before task T , and
+CONSTRAINTS 1 2
+task T takesduration d tocomplete,weaddanarithmeticconstraint oftheform
+1 1
+T d T .
+1 1 2
+Section6.1. Defining Constraint Satisfaction Problems 205
+In our example, the axles have to be in place before the wheels are put on, and it takes 10
+minutestoinstallanaxle,sowewrite
+Axle 10 Wheel ; Axle 10 Wheel ;
+F RF F LF
+Axle 10 Wheel ; Axle 10 Wheel .
+B RB B LB
+Nextwesaythat,foreachwheel,wemustaffixthewheel(whichtakes1minute),thentighten
+thenuts(2minutes),andfinallyattachthehubcap(1minute,butnotrepresented yet):
+Wheel 1 Nuts ; Nuts 2 Cap ;
+RF RF RF RF
+Wheel 1 Nuts ; Nuts 2 Cap ;
+LF LF LF LF
+Wheel 1 Nuts ; Nuts 2 Cap ;
+RB RB RB RB
+Wheel 1 Nuts ; Nuts 2 Cap .
+LB LB LB LB
+Supposewehavefourworkerstoinstallwheels,buttheyhavetoshareonetoolthathelpsput
+DISJUNCTIVE the axle in place. We need a disjunctive constraint to say that Axle and Axle must not
+CONSTRAINT F B
+overlapintime;eitheronecomesfirstortheotherdoes:
+(Axle 10 Axle ) 

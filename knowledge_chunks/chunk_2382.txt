@@ -1,0 +1,39 @@
+ilities with infinite horizons is that the optimal policy is
+independent of the starting state. (Of course, the action sequence won t be independent;
+remember that a policy is a function specifying an action for each state.) This fact seems
+intuitivelyobvious: ifpolicy isoptimalstartinginaandpolicy isoptimalstartinginb,
+a b
+then, when they reach a third state c, there s no good reason for them to disagree with each
+other, orwith ,aboutwhattodonext.2 Sowecansimplywrite foranoptimalpolicy.
+c
+Given this definition, the true utility of a state is just
+U (s) that is, the expected
+sum of discounted rewards if the agent executes an optimal policy. We write this as U(s),
+matchingthenotation usedin Chapter16fortheutility ofan outcome. Noticethat U(s)and
+R(s) are quite different quantities; R(s) is the short term reward for being in s, whereas
+U(s) is the long term total reward from s onward. Figure 17.3 shows the utilities for the
+4 3world. Noticethattheutilities arehigherforstatesclosertothe 1exit,because fewer
+stepsarerequired toreachtheexit.
+3 0.812 0.868 0.918 1
+2 0.762 0.660 1
+1 0.705 0.655 0.611 0.388
+1 2 3 4
+Figure 17.3 The utilities of the states in the 4 3 world, calculated with 1 and
+R(s) 0.04fornonterminalstates.
+The utility function U(s) allows the agent to select actions by using the principle of
+maximum expected utility from Chapter 16 that is, choose the action that maximizes the
+expectedutilityofthesubsequent state:
+(cid:12) (s) argmax P(s
+(cid:2) s,a)U(s (cid:2)
+). (17.4)
+a A(s)
+s(cid:3)
+Thenexttwosections describealgorithms forfindingoptimalpolicies.
+2 Although this seems obvious, it does not hold for finite-horizon policies or for other ways of combining
+rewardsovertime. Theprooffollowsdirectlyfromtheuniquenessoftheutilityfunctiononstates,asshownin
+Section17.2.
+652 Chapter 17. Making Complex Decisions
+17.2 VALUE ITERATION
+In this section, we present an algorithm, called value iteration, for calculating an optimal
+VALUEITERATION
+policy. Thebasicideaistocalc

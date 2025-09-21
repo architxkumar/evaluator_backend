@@ -1,0 +1,26 @@
+sresultswerepublished slightlyearlier.
+Truthtablesasamethodoftestingvalidityorunsatisfiabilityinpropositionallogicwere
+introducedindependentlyby Emil Post(1921)and Ludwig Wittgenstein(1922). Inthe1930s,
+a great deal of progress was made on inference methods for first-order logic. In particular,
+Go del (1930) showed that a complete procedure for inference in first-order logic could be
+obtained via areduction topropositional logic, using Herbrand s theorem (Herbrand, 1930).
+We take up this history again in Chapter 9; the important point here is that the development
+of efficient propositional algorithms in the 1960s was motivated largely by the interest of
+mathematicians inaneffectivetheorem proverforfirst-orderlogic. The Davis Putnam algo-
+rithm(Davisand Putnam,1960)wasthefirsteffectivealgorithm forpropositional resolution
+butwasinmostcasesmuch lessefficient thanthe DPLL backtracking algorithm introduced
+twoyearslater(1962). Thefullresolution ruleandaproof ofitscompleteness appeared ina
+seminal paper by J. A. Robinson (1965), which also showed how to do first-order reasoning
+withoutresorttopropositional techniques.
+Stephen Cook (1971) showed that deciding satisfiability ofa sentence in propositional
+logic (the SAT problem) is NP-complete. Since deciding entailment is equivalent to decid-
+ingunsatisfiability, itisco-NP-complete. Manysubsets ofpropositional logic areknownfor
+which the satisfiability problem is polynomially solvable; Horn clauses are one such subset.
+Bibliographical and Historical Notes 277
+The linear-time forward-chaining algorithm for Horn clauses is due to Dowling and Gallier
+(1984), whodescribe theiralgorithm asadataflow process similartothepropagation of sig-
+nalsinacircuit.
+Early theoretical investigations showed that DPLL has polynomial average-case com-
+plexity for certain natural distributions of problems. This potentially exciting fact became
+less exciting when Franco and Paull (1983) showed that the same problems could be solved
+in constant ti

@@ -1,0 +1,35 @@
+ticetheory,360 neuralnetwork,16,736 737 Leone,N.,230,472,1071,1074
+Laugherty,K.,920,1074 newpredicates,790,796 Lesh,N.,433,1072
+Lauritzen,S.,553,558,639,826,1069, noise,705 706 Les niewski,S.,470,1080
+1080,1084,1089 nonparametric,737 Lesser,V.R.,434,1071
+La Valle,S.,396,1013,1014,1080 online,752,846 Lettvin,J.Y.,963,1080
+Lave,R.E.,686,1087 PAC,714,759,784 Letz,R.,359,1080
+Lavrauc,N.,796,799,800,1080,1082 parameter,806,810 813 level(inplanninggraphs),379
+LAWALY,432 passive,831 levelcost,382
+Lawler,E.L.,110,111,405,432,1080 Q,831,843,844,848,973 leveledoff(planninggraph),381
+lawsofthought,4 rateof,719,836 Levesque,H.J.,154,277,434,471,
+layers,729 reinforcement,685,695,830 859, 473,1067,1069,1080,1088
+Lazanas,A.,1013,1080 1025 Levin,D.A.,604,1080
+laziness,481 inverse,857 Levinson,S.,314,1066,1074
+La Mettrie,J.O.,1035,1041,1079 relational,857 Levitt,G.M.,190,1080
+La Mura,P.,638,1079 relevance-based,784 787 Levitt,R.E.,434,1077
+LCF,314 restaurantproblem,698 Levitt,T.S.,1012,1079
+Leacock,C.,1022,1067 statistical,802 805 Levy,D.,195,1022,1080
+leafnode,75 temporaldifference,836 838,853, Lewis,D.D.,884,1080
+leaknode,519 854 Lewis,D.K.,60,1042,1080
+Leaper,D.J.,505,1070 top-down,791 794 LEX,776,799
+leapingtoconclusions,778 tosearch,102 lexicalcategory,888
+learning,39,44,59,236,243,693, unsupervised,694,817 820,1025 lexicalizedgrammar,897
+1021,1025 utilityfunctions,831 lexicalized PCFG,897,919,920
+active,831 weak,749 lexicon,890,920
+ap assessingperformance,708 709 least-constraining-valueheuristic,217 1088
+Bayesian,752,803,803 804,825 leastcommitment,391 LFG,920
+Bayesiannetwork,813 814 leave-one-outcross-validation Li,C.M.,277,1080
+blocks-world,20 (LOOCV),708 Li,H.,686,1077
+cart poleproblem,851 Le Cun,Y.,760,762,967,1047,1065, Li,M.,759,1080
+checkers,18 1080,1086 liability,1036
+1114 Index
+Liang,G.,553,1068 Liu,J.S.,605,1080 logicalreasoning,249 264,284
+Liang,L.,604,1083 Liu,W.,826,1068 logicism,4
+Liao,X.,686,1077 Liu,X.,604,1083 logicprogramming,257,314,337,
+Liberatore,P.,279,1

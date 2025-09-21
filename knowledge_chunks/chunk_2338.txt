@@ -1,0 +1,34 @@
+ topography and
+weatherconditions; and so on. Problems like these, inwhich outcomes are characterized by
+MULTIATTRIBUTE twoormoreattributes, arehandledby multiattributeutilitytheory.
+UTILITYTHEORY
+We will call the attributes X X ,...,X ; a complete vector of assignments will be
+1 n
+x (cid:16)x ,...,x (cid:17),whereeachx iseitheranumericvalueoradiscretevaluewithanassumed
+1 n i
+ordering on values. We will assume that higher values of an attribute correspond to higher
+utilities, all other things being equal. For example, if we choose Absence Of Noise as an
+attributeintheairportproblem,thenthegreateritsvalue,thebetterthesolution.8 Webeginby
+examining casesinwhichdecisions canbemadewithoutcombining theattribute valuesinto
+a single utility value. Then we look at cases in which the utilities of attribute combinations
+canbespecifiedveryconcisely.
+16.4.1 Dominance
+Supposethatairportsite S costsless,generateslessnoisepollution,andissaferthansite S .
+1 2
+One would not hesitate to reject S . We then say that there is strict dominance of S over
+STRICTDOMINANCE 2 1
+S . Ingeneral, ifanoption isoflowervalueonallattributes thansomeotheroption, itneed
+2
+not be considered further. Strict dominance is often very useful in narrowing down the field
+of choices to the real contenders, although it seldom yields a unique choice. Figure 16.4(a)
+showsaschematicdiagram forthetwo-attribute case.
+Thatisfineforthedeterministic case, inwhichtheattribute valuesareknownforsure.
+What about the general case, where the outcomes are uncertain? A direct analog of strict
+dominancecanbeconstructed, where,despitetheuncertainty, allpossibleconcreteoutcomes
+for S strictly dominate all possible outcomes for S . (See Figure 16.4(b).) Of course, this
+1 2
+willprobably occurevenlessoftenthaninthedeterministic case.
+STOCHASTIC Fortunately, there isa more useful generalization called stochastic dominance, which
+DOMINANCE
+occurs very frequently in real problems. Stochastic dominance is easiest to understand in
+thecont

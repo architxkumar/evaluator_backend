@@ -1,0 +1,29 @@
+e. It therefore provides a substrate forimplementing utility-based agents of the type
+first introduced in Section 2.4.5. Figure 16.6 shows a decision network forthe airport siting
+problem. Itillustrates thethreetypesofnodesused: Chancenodes(ovals)representrandomvariables,justastheydoin Bayesiannetworks.
+CHANCENODES
+Theagentcould beuncertain about theconstruction cost,thelevelofairtrafficandthe
+potential forlitigation, andthe Deaths,Noise,andtotal Cost variables, eachofwhich
+alsodepends onthesitechosen. Eachchance node hasassociated withitaconditional
+distribution that is indexed by the state of the parent nodes. In decision networks, the
+parent nodes can include decision nodes as well as chance nodes. Note that each of
+the current-state chance nodes could be part of alarge Bayesian network for assessing
+construction costs,airtrafficlevels,orlitigationpotentials. Decision nodes(rectangles) represent points wherethedecision makerhas achoice of
+DECISIONNODES
+Section16.5. Decision Networks 627
+Airport Site
+Air Traffic Deaths
+Litigation Noise U
+Construction Cost
+Figure16.6 Asimpledecisionnetworkfortheairport-sitingproblem.
+actions. In this case, the Airport Site action can take on a different value for each site
+under consideration. The choice influences the cost, safety, and noise that will result.
+Inthis chapter, weassume thatwearedealing withasingle decision node. Chapter17
+dealswithcasesinwhichmorethanonedecision mustbemade. Utility nodes (diamonds) represent the agent s utility function.9 The utility node has
+UTILITYNODES
+as parents all variables describing the outcome that directly affect utility. Associated
+with the utility node is a description of the agent s utility as a function of the parent
+attributes. The description could be just a tabulation of the function, or it might be a
+parameterized additiveorlinearfunction oftheattribute values.
+A simplified form is also used in many cases. The notation remains identical, but the
+chancenodesdescribing theoutcomestat

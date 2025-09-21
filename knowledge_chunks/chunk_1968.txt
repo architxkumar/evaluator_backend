@@ -1,0 +1,39 @@
+because an action caused it, but we also want to say that a literal can
+PERSISTENCE persist ifnoaction negates it. Thisisrepresented bya persistence action (sometimes called
+ACTION
+ano-op). Foreveryliteral C,weaddtotheproblemapersistence actionwithprecondition C
+and effect C. Level A in Figure 10.8 shows one real action, Eat(Cake), along with two
+0
+persistence actionsdrawnassmallsquareboxes.
+Level A contains all the actions that could occur in state S , but just as important it
+0 0
+recordsconflictsbetweenactionsthatwouldpreventthemfromoccurringtogether. Thegray
+linesin Figure10.8indicate mutualexclusion(ormutex)links. Forexample, Eat(Cake)is
+MUTUALEXCLUSION
+mutually exclusive with the persistence of either Have(Cake) or Eaten(Cake). We shall
+MUTEX
+seeshortlyhowmutexlinksarecomputed.
+Level S containsalltheliteralsthatcouldresultfrompickinganysubsetoftheactions
+1
+in A , as well as mutex links (gray lines) indicating literals that could not appear together,
+0
+regardless ofthechoiceofactions. Forexample, Have(Cake)and Eaten(Cake)aremutex:
+Section10.3. Planning Graphs 381
+depending on the choice of actions in A , either, but not both, could be the result. In other
+0
+words, S represents a belief state: a set of possible states. The members of this set are all
+1
+subsetsoftheliteralssuchthatthereisnomutexlinkbetweenanymembersofthesubset.
+Wecontinue inthisway,alternating betweenstatelevel S andaction level A untilwe
+i i
+reach apoint wheretwoconsecutive levels areidentical. At thispoint, wesaythatthegraph
+hasleveledoff. Thegraphin Figure10.8levelsoffat S .
+LEVELEDOFF 2
+Whatweendupwithisastructurewhereevery A levelcontainsalltheactionsthatare
+i
+applicablein S ,alongwithconstraintssayingthattwoactionscannotbothbeexecutedatthe
+i
+samelevel. Every S level contains allthe literals that could result from anypossible choice
+i
+of actions in A i 1 , along with constraints saying which pairs of literals are not possible.
+It is important to note that the process of constructing the plann

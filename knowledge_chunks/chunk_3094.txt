@@ -1,0 +1,33 @@
+,995 1019. and Michie,D.(Eds.),Machine Intelligence8,pp.
+gan Kaufmann.
+55 72.Ellis Horwood.
+Petrik,M.and Zilberstein,S.(2009). Bilinearpro-
+Pearl,J.(2000).Causality:Models,Reasoning,and
+grammingapproachformultiagentplanning. JAIR, Poli,R.,Langdon,W.,and Mc Phee,N.(2008). A
+Inference.Cambridge University Press.
+35,235 274. Field Guideto Genetic Programming.Lulu.com.
+Pearl,J.and Verma,T.(1991).Atheoryofinferred
+Petrov, S.and Klein, D.(2007a). Discriminative Pomerleau,D.A.(1993). Neural Network Percep-
+causation.In KR-91,pp.441 452.
+log-lineargrammarswithlatentvariables.In NIPS. tionfor Mobile Robot Guidance.Kluwer.
+Pearson, J.and Jeavons, P.(1997). Asurveyof
+Petrov,S.and Klein,D.(2007b). Improvedinfer- Ponte,J.and Croft,W.B.(1998).Alanguagemod-
+tractableconstraintsatisfactionproblems. Techni-
+enceforunlexicalizedparsing.In ACL-07. elingapproachtoinformationretrieval.In SIGIR-98,
+calreport CSD-TR-97-15,Royal Holloway College,
+pp.275 281.
+U.of London. Petrov,S.and Klein,D.(2007c). Learningandin-
+ferenceforhierarchicallysplitpcfgs.In AAAI-07. Poole,D.(1993). Probabilistic Hornabductionand
+Pease,A.and Niles,I.(2002).IEE Estandardupper
+Bayesiannetworks.AIJ,64,81 129.
+ontology:Aprogressreport. Knowledge Engineer- Pfeffer,A.,Koller,D.,Milch,B.,and Takusagawa,
+ing Review,17(1),65 70. K.T.(1999). SPOOK:Asystemforprobabilistic Poole,D.(2003).First-orderprobabilisticinference.
+object-orientedknowledgerepresentation. In UAI- In IJCAI-03,pp.985 991.
+Pednault,E.P.D.(1986). Formulatingmultiagent,
+99.
+dynamic-world problems in the classicalplanning Poole,D.,Mackworth,A.K.,and Goebel,R.(1998).
+framework. In Reasoningabout Actionsand Plans: Pfeffer, A. (2000). Probabilistic Reasoning for Computational intelligence: A logical approach.
+Proc.1986Workshop,pp.47 82. Complex Systems.Ph.D.thesis,Stanford University. Oxford University Press.
+1086 Bibliography
+Popper,K.R.(1959). The Logicof Scientific Dis- Pylyshyn,Z.W.(1984). Computationand Cogni- Ratner, D. and Warmuth, M.(1986). Finding a
+c

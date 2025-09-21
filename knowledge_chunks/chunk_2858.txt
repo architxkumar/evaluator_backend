@@ -1,0 +1,30 @@
+ohumanoidrobots.
+(a) (b)
+Figure 25.2 (a) Predator, an unmanned aerial vehicle (UAV) used by the U.S. Military.
+Imagecourtesyof General Atomics Aeronautical Systems. (b)NASA s Sojourner,amobile
+robotthatexploredthesurfaceof Marsin July1997.
+military operations. Figure 25.2(a) shows a UAV commonly used by the U.S. military. Au-
+tonomous underwater vehicles (AU Vs) are used in deep sea exploration. Mobile robots
+AUV
+deliverpackagesintheworkplaceandvacuumthefloorsathome.
+The third type of robot combines mobility with manipulation, and is often called a
+MOBILE mobilemanipulator. Humanoidrobotsmimicthehuman torso. Figure25.1(b) showstwo
+MANIPULATOR
+early humanoid robots, both manufactured by Honda Corp. in Japan. Mobile manipulators
+HUMANOIDROBOT
+Section25.2. Robot Hardware 973
+canapplytheireffectorsfurtherafieldthananchoredmanipulators can,buttheirtaskismade
+harderbecausetheydon thavetherigidity thattheanchorprovides.
+The field of robotics also includes prosthetic devices (artificial limbs, ears, and eyes
+forhumans), intelligent environments (such as an entire house that is equipped withsensors
+andeffectors), andmultibodysystems,whereinroboticactionisachievedthroughswarmsof
+smallcooperating robots.
+Real robots must cope with environments that are partially observable, stochastic, dy-
+namic, and continuous. Many robot environments are sequential and multiagent as well.
+Partial observability and stochasticity are the result of dealing with a large, complex world.
+Robot cameras cannot see around corners, and motion commands are subject to uncertainty
+due to gears slipping, friction, etc. Also, the real world stubbornly refuses to operate faster
+thanrealtime. Inasimulatedenvironment,itispossibletousesimplealgorithms(suchasthe
+Q-learning algorithm described in Chapter21) tolearn inafew CP Uhours from millions of
+trials. Inarealenvironment, itmighttakeyearstorunthesetrials. Furthermore, realcrashes
+reallyhurt,unlikesimulatedones. Practicalroboticsystemsneedtoembodypriorknowled

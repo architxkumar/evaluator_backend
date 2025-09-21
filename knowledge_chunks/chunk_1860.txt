@@ -1,0 +1,30 @@
+d is the pred-
+icate that does for lists what Member does for sets. List? is a predicate that is true only of
+lists. Aswithsets,itiscommontousesyntacticsugarinlogicalsentencesinvolvinglists. The
+empty list is . Theterm Cons(x,y), where y isanonempty list, iswritten x y . Theterm
+Cons(x,Nil) (i.e., the list containing the element x) is written as x . A list of several ele-
+ments,suchas A,B,C ,correspondstothenestedterm Cons(A,Cons(B,Cons(C,Nil))).
+Exercise8.16asksyoutowriteouttheaxiomsforlists.
+8.3.4 The wumpus world
+Some propositional logic axioms for the wumpus world were given in Chapter 7. The first-
+orderaxioms inthis section aremuch moreconcise, capturing inanatural wayexactly what
+wewanttosay.
+Recall that the wumpus agent receives a percept vector with fiveelements. The corre-
+spondingfirst-ordersentencestoredintheknowledgebasemustincludeboththeperceptand
+thetimeatwhichitoccurred; otherwise,theagentwillgetconfused aboutwhenitsawwhat.
+Weuseintegersfortimesteps. Atypicalperceptsentence wouldbe
+Percept( Stench,Breeze,Glitter,None,None ,5).
+Here,Percept isabinary predicate, and Stench andsoonareconstants placedinalist. The
+actionsinthewumpusworldcanberepresented bylogicalterms:
+Turn(Right), Turn(Left), Forward, Shoot, Grab, Climb .
+Todetermine whichisbest,theagentprogram executesthequery
+ASKVARS( a Best Action(a,5)),
+which returns a binding list such as a Grab . The agent program can then return Grab as
+the action to take. The raw percept data implies certain facts about the current state. For
+example: t,s,g,m,c Percept( s,Breeze,g,m,c ,t) Breeze(t), t,s,b,m,c Percept( s,b,Glitter,m,c ,t) Glitter(t),
+andsoon. Theserulesexhibitatrivialformofthereasoning processcalledperception,which
+westudyindepthin Chapter24. Noticethequantificationovertimet. Inpropositionallogic,
+wewouldneedcopiesofeachsentence foreachtimestep.
+Simple reflex behaviorcanalsobeimplemented byquantifiedimplication sentences.
+Forexample,wehave t Glitter(t) Best Action(Grab,t).
+306 Chapter 8. First-Ord

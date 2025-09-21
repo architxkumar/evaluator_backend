@@ -1,0 +1,32 @@
+ermsteps,
+thentheplanachievesthegoalifb A G ,thatis,ifb A G isunsatisfiable.
+0 m m 0 m m
+Givenamodern SA Tsolver,itmaybepossibletodothismuchmorequicklythancomputing
+thefull belief state. Forexample, ifnoneofthe actions inthe sequence hasaparticular goal
+fluent in its add list, the solver will detect this immediately. It also helps if partial results
+aboutthebeliefstate forexample,fluentsknowntobetrueorfalse arecachedtosimplify
+subsequent computations.
+The final piece of the sensorless planning puzzle is a heuristic function to guide the
+search. The meaning of the heuristic function is the same as for classical planning: an esti-
+mate(perhaps admissible) ofthecostofachieving thegoal from thegivenbelief state. With
+belief states, we have one additional fact: solving any subset of a belief state is necessarily
+easierthansolvingthebeliefstate:
+ifb b thenh (b ) h (b ).
+1 2 1 2
+Hence,anyadmissibleheuristiccomputedforasubsetisadmissibleforthebeliefstateitself.
+Themostobvious candidates arethesingleton subsets, thatis,individual physicalstates. We
+Section11.3. Planningand Actingin Nondeterministic Domains 421
+can take any random collection of states s ,...,s that are in the belief state b, apply any
+1 N
+admissible heuristic hfrom Chapter10,andreturn
+H(b) max h(s ),...,h(s ) 1 N
+astheheuristicestimateforsolving b. Wecouldalsouseaplanninggraphdirectlyonbitself:
+if it is a conjunction of literals (1-CNF), simply set those literals to be the initial state layer
+ofthegraph. Ifbisnotin1-CNF,itmaybepossibletofindsetsofliteralsthattogetherentail
+b. For example, if b is in disjunctive normal form (DNF), each term of the DNF formula is
+a conjunction of literals that entails b and can form the initial layer of a planning graph. As
+before,wecantakethemaximumoftheheuristics obtainedfromeachsetofliterals. Wecan
+also use inadmissible heuristics such as the ignore-delete-lists heuristic (page 377), which
+seemstoworkquitewellinpractice.
+11.3.2 Contingent planning
+We saw in Chapter 4 that co

@@ -1,0 +1,41 @@
+s. Applying ILP directly to learn
+this predicate results inpoor performance: the induced parserhas only about 20 accuracy.
+Fortunately, IL Plearners canimprovebyadding knowledge. Inthiscase, mostofthe Parse
+predicate was defined as a logic program, and CHILL s task was reduced to inducing the
+controlrulesthatguidetheparsertoselectoneparseoveranother. Withthisadditional back-
+ground knowledge, CHILL can learn to achieve 70 to 85 accuracy on various database
+querytasks.
+23.3.5 Complications
+Thegrammarofreal Englishisendlessly complex. Wewillbrieflymentionsomeexamples.
+Time and tense: Suppose we want to represent the difference between John loves
+TIMEANDTENSE
+Mary and Johnloved Mary. Englishusesverbtenses(past, present,andfuture)toindicate
+Section23.3. Augmented Grammarsand Semantic Interpretation 903
+S(pred(obj)) NP(obj) VP(pred)
+VP(pred(obj)) Verb(pred)NP(obj)
+NP(obj) Name(obj)
+Name(John) John
+Name(Mary) Mary
+Verb( y x Loves(x,y)) loves
+Figure23.10 Agrammarthatcanderiveaparsetreeandsemanticinterpretationfor John
+loves Mary (andthreeothersentences).Eachcategoryisaugmentedwithasingleargument
+representingthesemantics.
+S(Loves(John,Mary))
+VP( x Loves(x,Mary))
+NP(John)
+NP(Mary)
+Name(John) Verb( y x Loves(x,y)) Name(Mary)
+John loves Mary
+Figure23.11 Aparsetreewithsemanticinterpretationsforthestring Johnloves Mary .
+the relative time of an event. One good choice to represent the time of events is the event
+calculus notationof Section12.3. Ineventcalculuswehave
+Johnlovesmary:E Loves(John,Mary) During(Now,Extent(E ))
+1 1
+Johnlovedmary:E Loves(John,Mary) After(Now,Extent(E )).
+2 2
+Thissuggests thatourtwolexicalrulesforthewords loves and loved should bethese:
+Verb( y x e Loves(x,y) During(Now,e)) loves
+Verb( y x e Loves(x,y) After(Now,e)) loved.
+Other than this change, everything else about the grammar remains the same, which is en-
+couraging news; it suggests we are on the right track if wecan so easily add a complication
+like the tense of verbs (although we have just scratche

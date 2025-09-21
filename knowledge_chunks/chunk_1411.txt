@@ -1,0 +1,25 @@
+rovides the appropriate setting for most of the foundational material in
+LIMITED the field. Chapters 5 and 17 deal explicitly with the issue of limited rationality acting
+RATIONALITY
+appropriately whenthereisnotenoughtimetodoallthecomputations onemightlike.
+1.2 THE FOUNDATIONS OF ARTIFICIAL INTELLIGENCE
+Inthissection,weprovideabriefhistoryofthedisciplinesthatcontributedideas,viewpoints,
+and techniques to AI. Like any history, this one is forced to concentrate on a small number
+of people, events, and ideas and to ignore others that also were important. We organize the
+history aroundaseriesofquestions. Wecertainly wouldnot wishtogivetheimpression that
+these questions arethe only ones the disciplines address or that the disciplines have allbeen
+workingtoward AIastheirultimatefruition.
+1.2.1 Philosophy Canformalrulesbeusedtodrawvalidconclusions? Howdoesthemindarisefromaphysical brain? Wheredoesknowledgecomefrom? Howdoesknowledgeleadtoaction?
+Aristotle (384 322 B.C.), whose bust appears on the front cover of this book, was the first
+to formulate a precise set of laws governing the rational part of the mind. He developed an
+informalsystemofsyllogismsforproperreasoning, whichinprincipleallowedonetogener-
+ate conclusions mechanically, given initial premises. Much later, Ramon Lull (d. 1315) had
+theideathatuseful reasoning couldactually becarried out byamechanical artifact. Thomas
+Hobbes (1588 1679) proposed thatreasoning waslike numerical computation, that weadd
+and subtract in our silent thoughts. The automation of computation itself was already well
+under way. Around 1500, Leonardo da Vinci (1452 1519) designed but did not build a me-
+chanical calculator; recent reconstructions have shown the design to be functional. Thefirst
+known calculating machine was constructed around 1623 by the German scientist Wilhelm
+Schickard (1592 1635), although the Pascaline, builtin1642by Blaise Pascal(1623 1662),
+6 Chapter 1. Introduction
+is more famous. Pascal wrote that the arithmetical 

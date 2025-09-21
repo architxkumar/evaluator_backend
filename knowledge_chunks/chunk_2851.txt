@@ -1,0 +1,25 @@
+terminology); rather it is or-
+ganized into coherent groups. One could trace the motivation in computer vision of finding
+regions and curves back to this insight. The Gestaltists also drew attention to the figure ground phenomenon a contour separating two image regions that, in the world, are at
+different depths, appears tobelong onlytothenearerregion, the figure, andnotthefarther
+Bibliographical and Historical Notes 967
+region,the ground. Thecomputervisionproblem ofclassifying imagecurvesaccording to
+theirsignificance inthescenecanbethoughtofasageneralization ofthisinsight.
+The period after World War II was marked by renewed activity. Most significant was
+theworkof J.J.Gibson(1950,1979),whopointedouttheimportanceofopticalflow,aswell
+astexturegradientsintheestimationofenvironmentalvariablessuchassurfaceslantandtilt.
+Hereemphasizedtheimportanceofthestimulusandhowrichitwas. Gibsonemphasizedthe
+roleoftheactiveobserverwhoseself-directedmovementfacilitatesthepickupofinformation
+abouttheexternalenvironment.
+Computer vision was founded in the 1960s. Roberts s (1963) thesis at MIT was one
+of the earliest publications in the field, introducing key ideas such as edge detection and
+model-based matching. There is an urban legend that Marvin Minsky assigned the problem
+of solving computervisiontoagraduatestudentasasummerproject. Accordingto Minsky
+the legend is untrue it was actually an undergraduate student. But it was an exceptional
+undergraduate, Gerald Jay Sussman(whoisnowaprofessor at MIT)andthetaskwasnotto solve vision, buttoinvestigate someaspectsofit.
+Inthe1960sand1970s,progresswasslow,hamperedconsiderably bythelackofcom-
+putationalandstorageresources. Low-levelvisualprocessing receivedalotofattention. The
+widely used Canny edge-detection technique was introduced in Canny (1986). Techniques
+forfindingtextureboundariesbasedonmultiscale,multiorientationfilteringofimagesdateto
+work such as Malik and Perona (1990). Combining multiple clues brightness, texture and
+color for f

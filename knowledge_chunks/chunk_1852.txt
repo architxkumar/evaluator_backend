@@ -1,0 +1,31 @@
+of Richard s brothersare Johnand Geoffrey isasfollows:
+Brother(John,Richard) Brother(Geoffrey,Richard) John (cid:7) Geoffrey x Brother(x,Richard) (x John x Geoffrey).
+For many purposes, this seems much more cumbersome than the corresponding natural-
+language expression. As a consequence, humans may make mistakes in translating their
+knowledge into first-order logic, resulting in unintuitive behaviors from logical reasoning
+systems that use the knowledge. Can we devise a semantics that allows a more straightfor-
+wardlogicalexpression?
+Oneproposalthatisverypopularindatabasesystemsworksasfollows. First,weinsist
+that every constant symbol refer to a distinct object the so-called unique-names assump-
+UNIQUE-NAMES tion. Second, we assume that atomic sentences not known to be true are in fact false the
+ASSUMPTION
+CLOSED-WORLD closed-world assumption. Finally, we invoke domain closure, meaning that each model
+ASSUMPTION
+DOMAINCLOSURE 8 Actuallyhehadfour,theothersbeing Williamand Henry.
+300 Chapter 8. First-Order Logic
+R J R J R J R J R J
+R R R R . . . R
+J J J J J
+Figure8.5 Somemembersofthesetofallmodelsforalanguagewithtwoconstantsym-
+bols,Rand J,andonebinaryrelationsymbol,underdatabasesemantics. Theinterpretation
+oftheconstantsymbolsisfixed,andthereisadistinctobjectforeachconstantsymbol.
+contains no more domain elements than those named by the constant symbols. Under the
+DATABASE resulting semantics, which we call database semantics to distinguish it from the standard
+SEMANTICS
+semantics of first-order logic, the sentence Equation (8.3) does indeed state that Richard s
+two brothers are John and Geoffrey. Database semantics is also used in logic programming
+systems,asexplained in Section9.4.5.
+It is instructive to consider the set of all possible models under database semantics for
+the same case as shown in Figure 8.4. Figure 8.5 shows some of the models, ranging from
+the model with no tuples satisfying the relation to the model with all tuples satisfying the
+relation. With 

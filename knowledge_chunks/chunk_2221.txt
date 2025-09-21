@@ -1,0 +1,28 @@
+ the event being
+generated isnottheassignment ofavaluetoavariable, buttheveryexistence ofobjects.
+Onewaytodothisin OUP Msistoaddstatements thatdefineconditional distributions
+over the numbers of objects of various kinds. For example, in the book-recommendation
+domain, we might want to distinguish between customers (real people) and their login IDs.
+Supposeweexpectsomewherebetween100and10,000distinctcustomers(whomwecannot
+observedirectly). Wecanexpressthisasapriorlog-normal distribution9 asfollows: Customer Log Normal 6.9,2.32 ().
+We expect honest customers to have just one ID, whereas dishonest customers might have
+anywherebetween10and1000IDs: Login ID(Owner c) if Honest(c)then Exactly(1)
+else Log Normal 6.9,2.32 ().
+This statement defines the number of login IDs for a given owner, who is a customer. The
+Owner function is called an origin function because it says where each generated object
+ORIGINFUNCTION
+camefrom. Intheformal semantics of BLOG (asdistinct from first-order logic), thedomain
+elementsineachpossibleworldareactuallygenerationhistories(e.g., thefourthlogin IDof
+theseventhcustomer )ratherthansimpletokens.
+9 Adistribution Log Normal , 2 (x)isequivalenttoadistribution N , 2 (x)overlog (x).
+e
+546 Chapter 14. Probabilistic Reasoning
+Subject to technical conditions of acyclicity and well-foundedness similar to those for
+RP Ms, open-universe models of this kind define a unique distribution over possible worlds.
+Furthermore, there exist inference algorithms such that, for every such well-defined model
+and every first-order query, the answer returned approaches the true posterior arbitrarily
+closely in the limit. There are some tricky issues involved in designing these algorithms.
+For example, an MCMC algorithm cannot sample directly in the space of possible worlds
+when the size of those worlds is unbounded; instead, it samples finite, partial worlds, rely-
+ing on the fact that only finitely many objects can be relevant to the query in distinct ways.
+Moreover, tr

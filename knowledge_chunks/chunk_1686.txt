@@ -1,0 +1,25 @@
+ed on for so long, the standard approach dominates other methods in tournament
+play. Some believe that this has caused game playing to become divorced from the main-
+stream of AIresearch: thestandard approach nolongerprovides muchroom fornewinsight
+intogeneralquestions ofdecision making. Inthissection, welookatthealternatives.
+First, let us consider heuristic minimax. It selects an optimal move in a given search
+tree provided that the leaf node evaluations are exactly correct. In reality, evaluations are
+usually crude estimates of the value of a position and can be considered to have large errors
+associated with them. Figure 5.14 shows a two-ply game tree for which minimax suggests
+taking the right-hand branch because 100 99. That is the correct move if the evaluations
+are all correct. But of course the evaluation function is only approximate. Suppose that
+the evaluation of each node has an error that is independent of other nodes and is randomly
+distributed with mean zero and standard deviation of . Then when 5, the left-hand
+branch is actually better 71 of the time, and 58 of the time when 2. The intuition
+behind this is that the right-hand branch has four nodes that are close to 99; if an error in
+the evaluation of any one of the four makes the right-hand branch slip below 99, then the
+left-hand branchisbetter.
+Inreality,circumstances areactuallyworsethanthisbecausetheerrorintheevaluation
+functionisnotindependent. Ifwegetonenodewrong,thechancesarehighthatnearbynodes
+in the tree will also be wrong. The fact that the node labeled 99 has siblings labeled 1000
+suggests that in fact it might have a higher true value. We can use an evaluation function
+thatreturns aprobability distribution overpossible values, butitisdifficulttocombinethese
+distributions properly, because wewon thaveagoodmodeloftheverystrongdependencies
+thatexistbetweenthevaluesofsiblingnodes
+Next,weconsiderthesearchalgorithmthatgeneratesthetree. Theaimofanalgorithm
+designeristospecifyacomputationthatru

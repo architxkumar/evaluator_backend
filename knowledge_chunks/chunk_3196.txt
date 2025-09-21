@@ -1,0 +1,63 @@
+ion),630 Weibull,J.,688,1091 1085,1087,1092
+Weidenbach,C.,359,1091 Williamson,J.,469,1083
+W weight,718 Williamson,M.,433,1072
+weight(inaneuralnetwork),728 Willighagen,E.L.,469,1083
+Wadsworth,C.P.,314,1074 WEIGHTED-SAMPLE,534 Wilmer,E.L.,604,1080
+Wahba,G.,759,1074 weightedlinearfunction,172 Wilson,A.,921,1080
+Wainwright,M.J.,278,555,1081,1091
+weightspace,719 Wilson,R.,227,1092
+Walden,W.,192,1078
+Weinstein,S.,759,1084 Wilson,R.A.,3,1042,1092
+Waldinger,R.,314,394,1081,1091
+Weiss,G.,61,435,1091 Windows,553
+Walker,E.,29,1069
+Weiss,S.,884,1064 Winikoff,M.,59,1084
+Walker,H.,826,1074
+Weiss,Y.,555,605,741,1083, Winker,S.,360,1092
+WALKSAT,263,395
+1090 1092 Winkler,R.L.,619,637,1089
+Wall,R.,920,1071
+Weissman,V.,314,1074 winner scurse,637
+Wallace,A.R.,130,1091
+Weizenbaum,J.,1035,1041,1091 Winograd,S.,20,1092
+Wallace,D.L.,886,1083
+Weld,D.S.,61,156,394 396,432, Winograd,T.,20,23,884,1066,1092
+Walras,L.,9
+433,469,472,885,1036,1069, Winston,P.H.,2,20,27,773,798,
+Walsh,M.J.,156,1072
+1071,1072,1079,1085,1089, 1065,1092
+Walsh,T.,228,230,278,1066,1087,
+1091,1092 Wintermute,S.,358,1092
+1089
+Wellman,M.P.,10,555,557,604,638, Witbrock,M.,469,1081
+Walsh,W.,688,1092
+685 688,857,1013,1070,1076, Witten,I.H.,763,883,884,921,1083,
+Walter,G.,1011
+1091,1092 1092
+Waltz,D.,20,228,760,1089,1091
+Wells,H.G.,1037,1092 Wittgenstein,L.,6,243,276,279,443,
+WAM,341,359
+Wells,M.,192,1078 469,1092
+Wang,D.Z.,885,1067
+Welty,C.,469,1089 Wizard,553
+Wang,E.,472,1090
+Werbos,P.,685,761,854,1092 Wo hler,F.,1027
+Wang,Y.,194,1091
+Wermuth,N.,553,1080 Wojciechowski,W.S.,356,1092
+Wanner,E.,287,1091
+Werneck,R.F.,111,1074 Wojcik,A.S.,356,1092
+Warmuth,M.,109,759,1066,1086
+Wertheimer,M.,966 Wolf,A.,920,1074
+WARPLAN,394
+Wesley,M.A.,1013,1092 Wolfe,D.,186,1065
+Warren,D.H.D.,339,341,359,394,
+West,Col.,330 Wolfe,J.,157,192,432,1081,1087,
+889,1085,1091
+Westinghouse,432 1092
+Warren,D.S.,359,1090
+Westphal,M.,395,1086 Wolpert,D.,688,1090
+Warren Abstract Machine(WAM),341,
+Wexler,Y.,553,1092 Wong,A.,884,1087
+359
+washingclothes,927
+Weymo

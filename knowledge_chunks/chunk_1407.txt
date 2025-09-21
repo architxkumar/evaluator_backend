@@ -1,0 +1,25 @@
+ 60 years later. Yet AI researchers have devoted little effort to passing
+the Turing Test, believing that it is more important to study the underlying principles of in-
+telligence thantoduplicate anexemplar. Thequest for artificial flight succeeded whenthe
+Wrightbrothers andothers stopped imitating birdsandstarted using windtunnels andlearn-
+ing about aerodynamics. Aeronautical engineering texts do not define the goal of their field
+asmaking machinesthatflysoexactlylikepigeonsthattheycanfoolevenotherpigeons. 1.1.2 Thinking humanly: The cognitivemodeling approach
+Ifwearegoing to saythat agiven program thinks like ahuman, wemusthave some wayof
+determining how humans think. Weneed toget inside the actual workings of human minds.
+There are three ways to do this: through introspection trying to catch our own thoughts as
+they go by; through psychological experiments observing a person in action; and through
+brain imaging observing the brain in action. Once wehave a sufficiently precise theory of
+themind,itbecomespossible toexpress thetheory asacomputer program. Iftheprogram s
+input output behavior matchescorresponding human behavior, thatisevidence thatsomeof
+the program s mechanisms could also be operating in humans. For example, Allen Newell
+and Herbert Simon,whodeveloped GPS,the General Problem Solver (Newelland Simon,
+1961), were not content merely to have their program solve problems correctly. They were
+more concerned with comparing the trace of its reasoning steps to traces of human subjects
+solving the same problems. The interdisciplinary field of cognitive science brings together
+COGNITIVESCIENCE
+computermodelsfrom AIandexperimentaltechniques frompsychologytoconstructprecise
+andtestabletheories ofthehumanmind.
+Cognitivescienceisafascinating fieldinitself,worthyofseveraltextbooksandatleast
+one encyclopedia (Wilson and Keil, 1999). Wewilloccasionally comment onsimilarities or
+differences between AItechniques andhumancognition. Realcognitive science, however,is
+nece

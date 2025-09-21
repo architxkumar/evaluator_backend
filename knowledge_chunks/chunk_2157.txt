@@ -1,0 +1,48 @@
+ 1,3
+frontier other
+By independence, as in Equation (13.20), the prior term can be factored, and then the terms
+canbereordered:
+P(P known,b)
+1,3 (cid:12) (cid:12) P(b known,P ,frontier) P(P )P(known)P(frontier)P(other)
+1,3 1,3
+frontier other
+(cid:12) (cid:12) P(known)P(P ) P(b known,P ,frontier)P(frontier) P(other)
+1,3 1,3
+frontier other
+(cid:12) (cid:2) P(P ) P(b known,P ,frontier)P(frontier),
+1,3 1,3
+frontier
+502 Chapter 13. Quantifying Uncertainty
+1,3 1,3 1,3 1,3 1,3
+1,2 2,2 1,2 2,2 1,2 2,2 1,2 2,2 1,2 2,2
+B B B B B
+OK OK OK OK OK
+1,1 2,1 3,1 1,1 2,1 3,1 1,1 2,1 3,1 1,1 2,1 3,1 1,1 2,1 3,1
+B B B B B
+OK OK OK OK OK OK OK OK OK OK
+0.2 x 0.2 0.04 0.2 x 0.8 0.16 0.8 x 0.2 0.16 0.2 x 0.2 0.04 0.2 x 0.8 0.16
+(a) (b)
+Figure 13.6 Consistent models for the frontier variables P 2,2 and P 3,1 , showing
+P(frontier) for each model: (a) three models with P 1,3 true showing two or three pits,
+and(b)twomodelswith P 1,3 false showingoneortwopits.
+where the last step folds P(known) into the normalizing constant and uses the fact that
+(cid:2)
+P(other)equals1.
+other
+Now, there are just four terms in the summation over the frontier variables P and
+2,2
+P . The use of independence and conditional independence has completely eliminated the
+3,1
+othersquaresfromconsideration.
+Noticethattheexpression P(b known,P ,frontier)is1whenthefrontierisconsis-
+1,3
+tentwiththebreezeobservations, and0otherwise. Thus,foreachvalueof P ,wesumover
+1,3
+the logical models for the frontier variables that are consistent with the known facts. (Com-
+pare with the enumeration over models in Figure 7.5 on page 241.) The models and their
+associated priorprobabilities P(frontier) areshownin Figure13.6. Wehave
+P(P known,b) (cid:2)(cid:16)0.2(0.04 0.16 0.16), 0.8(0.04 0.16)(cid:17) (cid:16)0.31,0.69(cid:17).
+1,3
+Thatis, 1,3 (and 3,1 bysymmetry)containsapitwithroughly31 probability. Asimilar
+calculation, which the reader might wish to perform, shows that 2,2 contains a pit with
+roughly 86 probability. The wumpus agent 

@@ -1,0 +1,41 @@
+5 14 13
+Figure5.10 A typicalbackgammonposition. Thegoalofthegameistomoveallone s
+piecesofftheboard. Whitemovesclockwisetoward25,and Blackmovescounterclockwise
+toward0.Apiececanmovetoanypositionunlessmultipleopponentpiecesarethere;ifthere
+isoneopponent,itiscapturedandmuststartover. Inthepositionshown,White hasrolled
+6 5 and must choose among four legal moves: (5 10,5 11), (5 11,19 24),(5 10,10 16),
+and(5 11,11 16),wherethenotation(5 11,11 16)meansmoveonepiecefromposition5
+to11,andthenmoveapiecefrom11to16.
+Although Whiteknowswhathisorherownlegalmovesare,Whitedoesnotknowwhat
+Blackisgoing torollandthus doesnotknow what Black s legalmoveswillbe. Thatmeans
+White cannot construct a standard game tree of the sort we saw in chess and tic-tac-toe. A
+CHANCENODES game tree in backgammon must include chance nodes in addition to MAX and MIN nodes.
+Chance nodes are shown as circles in Figure 5.11. The branches leading from each chance
+node denote the possible dice rolls; each branch is labeled with the roll and its probability.
+Thereare36waystorolltwodice,eachequallylikely;butbecausea6 5isthesameasa5 6,
+thereareonly21distinctrolls. Thesixdoubles(1 1through 6 6)eachhaveaprobability of
+1 36,sowesay P(1 1) 1 36. Theother15distinctrollseachhavea1 18probability.
+178 Chapter 5. Adversarial Search
+MAX
+CHANCE . . .
+B
+... ... ... ...
+1 36 1 18 1 18 1 36
+1,1 1,2 6,5 6,6
+MIN . . .
+... ... ...
+CHANCE C . . .
+... ... ...
+1 36 1 18 1 18 1 36
+1,1 1,2 6,5 6,6
+MAX . . .
+... ... ...
+TERMINAL 2 1 1 1 1
+Figure5.11 Schematicgametreeforabackgammonposition.
+Thenextstepistounderstand howtomakecorrect decisions. Obviously, westillwant
+to pick the move that leads to the best position. However, positions do not have definite
+minimaxvalues. Instead,wecanonlycalculatetheexpectedvalueofaposition: theaverage
+EXPECTEDVALUE
+overallpossible outcomesofthechancenodes.
+This leads us to generalize the minimax value for deterministic games to an expecti-
+EXPECTIMINIMAX minimaxvalueforgameswithchance nodes. Terminalnode

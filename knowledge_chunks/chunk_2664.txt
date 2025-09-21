@@ -1,0 +1,29 @@
+es;oneofthesimplest istohave theagentchoose aran-
+dom action a fraction 1 t of the time and to follow the greedy policy otherwise. While this
+does eventually converge to an optimal policy, it can be extremely slow. A more sensible
+approach would give some weight to actions that the agent has not tried very often, while
+tending to avoid actions that are believed to be of low utility. This can be implemented by
+altering the constraint equation (21.4) so that it assigns a higher utility estimate to relatively
+Section21.3. Active Reinforcement Learning 841
+EXPLORATION AND BANDITS
+In Las Vegas, a one-armed bandit is a slot machine. A gambler can insert a coin,
+pullthelever, and collect thewinnings (ifany). Ann-armedbandithasnlevers.
+The gambler must choose which lever to play on each successive coin the one
+thathaspaidoffbest,ormaybeonethathasnotbeentried?
+Then-armedbandit problem isaformal modelforreal problems inmanyvi-
+tally important areas, such as deciding on the annual budget for AI research and
+development. Each arm corresponds to an action (such as allocating 20 million
+forthedevelopmentofnew AItextbooks),andthepayofffrompullingthearmcor-
+responds to the benefits obtained from taking the action (immense). Exploration,
+whether it is exploration of a new research field orexploration of a new shopping
+mall,isrisky, isexpensive, andhasuncertain payoffs; ontheotherhand, failureto
+exploreatallmeansthatoneneverdiscovers anyactionsthatareworthwhile.
+Toformulateabanditproblemproperly,onemustdefineexactlywhatismeant
+by optimal behavior. Most definitions in the literature assume that the aim is to
+maximizetheexpectedtotalrewardobtained overtheagent slifetime. Thesedefi-
+nitionsrequirethattheexpectationbetakenoverthepossibleworldsthattheagent
+couldbein,aswellasoverthepossibleresultsofeachactionsequenceinanygiven
+world. Here, a world isdefinedbythetransition model P(s
+(cid:2) s,a).
+Thus, inor-
+derto act optimally, the agent needs aprior distribution over the possible models.

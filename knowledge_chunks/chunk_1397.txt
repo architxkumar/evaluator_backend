@@ -1,0 +1,28 @@
+ents Basedon Propositional Logic . . . . . . . . . . . . . . . . . . . . 265
+7.8 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 274
+8 First-Order Logic 285
+8.1 Representation Revisited . . . . . . . . . . . . . . . . . . . . . . . . . . 285
+8.2 Syntaxand Semanticsof First-Order Logic . . . . . . . . . . . . . . . . . 290
+8.3 Using First-Order Logic . . . . . . . . . . . . . . . . . . . . . . . . . . . 300
+8.4 Knowledge Engineering in First-Order Logic . . . . . . . . . . . . . . . . 307
+8.5 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 313
+9 Inferencein First-Order Logic 322
+9.1 Propositional vs.First-Order Inference . . . . . . . . . . . . . . . . . . . 322
+9.2 Unificationand Lifting . . . . . . . . . . . . . . . . . . . . . . . . . . . 325
+9.3 Forward Chaining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 330
+9.4 Backward Chaining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 337
+9.5 Resolution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 345
+9.6 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 357
+10 Classical Planning 366
+10.1 Definitionof Classical Planning . . . . . . . . . . . . . . . . . . . . . . . 366
+10.2 Algorithmsfor Planningas State-Space Search . . . . . . . . . . . . . . . 373
+10.3 Planning Graphs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 379
+Contents xv
+10.4 Other Classical Planning Approaches . . . . . . . . . . . . . . . . . . . . 387
+10.5 Analysisof Planning Approaches . . . . . . . . . . . . . . . . . . . . . . 392
+10.6 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 393
+11 Planningand Actinginthe Real World 401
+11.1 Time,Schedules, and Resources . . . . . . . . . . . . . . . . . . . . . . . 401
+11.2 Hierarchical Planning . . . . . . . . . . . . . . . . . . . . . . . . . . . . 406
+11.3 Planningand Actingin Nondeterministic Domains . . . . . . . . . . . . . 415
+11.4 Multiagent P

@@ -1,0 +1,43 @@
+rize the motion and sensor models. Linearization is a local approximation of a
+LINEARIZATION
+nonlinear function by a linear function. Figure 25.11 illustrates the concept of linearization
+fora(one-dimensional) robotmotionmodel. Ontheleft,itdepictsanonlinearmotionmodel
+f(x ,a ) (the control a is omitted in this graph since it plays no role in the linearization).
+t t t
+Ontheright,thisfunctionisapproximatedbyalinearfunctionf (x ,a ). Thislinearfunction
+t t
+is tangent to f at the point , the mean of ourstate estimate at time t. Such alinearization
+t
+982 Chapter 25. Robotics
+function MONTE-CARLO-LOCALIZATION(a,z,N,P(X(cid:5) X, v, ),P(z z ),m)returns
+asetofsamplesforthenexttimestep
+inputs:a,robotvelocitiesv and z,rangescanz
+1
+,...,z M
+P(X(cid:5) X, v, ),motionmodel
+P(z z ),rangesensornoisemodel
+m,2Dmapoftheenvironment
+persistent: S,avectorofsamplesofsize N
+localvariables: W,avectorofweightsofsize N
+S(cid:5),atemporaryvectorofparticlesofsize N
+W(cid:5),avectorofweightsofsize N
+if S isemptythen initializationphase fori 1to N do
+S i samplefrom P(X )
+0
+fori 1to N do updatecycle S(cid:5) i samplefrom P(X(cid:5) X S i ,v, )
+W(cid:5) i 1
+forj 1to M do
+z RAYCAST(j,X S(cid:5) i ,m)
+W(cid:5) i W(cid:5) i P(zj z )
+S WEIGHTED-SAMPLE-WITH-REPLACEMENT(N,S(cid:5),W(cid:5))
+return S
+Figure25.9 AMonte Carlolocalizationalgorithmusingarange-scansensormodelwith
+independentnoise.
+is called (firstdegree) Taylor expansion. AKalman filterthat linearizes f and h via Taylor
+TAYLOREXPANSION
+expansion is called an extended Kalman filter (or EKF). Figure 25.12 shows a sequence
+of estimates of a robot running an extended Kalman filter localization algorithm. As the
+robotmoves,theuncertainty initslocationestimateincreases, asshownbytheerrorellipses.
+Its error decreases as it senses the range and bearing to a landmark with known location
+and increases again as the robot loses sight of the landmark. EKF algorithms work well if
+landmarks are easily identified. Otherwise, the posterior distribution may be

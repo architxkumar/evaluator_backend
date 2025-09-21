@@ -1,0 +1,27 @@
+ionisimpossibleandtheagentretreatsto 1,1 andclimbsoutofthecave.
+7.7.3 Logicalstateestimation
+The agent program in Figure 7.20 works quite well, but it has one major weakness: as time
+goesby,thecomputationalexpenseinvolvedinthecallsto AS Kgoesupandup. Thishappens
+mainlybecausetherequiredinferenceshavetogobackfurtherandfurtherintimeandinvolve
+more and more proposition symbols. Obviously, this is unsustainable we cannot have an
+agent whose timetoprocess each percept grows inproportion to the length ofits life! What
+wereallyneedisaconstant updatetime thatis,independent oft. Theobviousansweristo
+save,orcache,theresultsofinference, sothattheinferenceprocessatthenexttimestepcan
+CACHING
+buildontheresultsofearlierstepsinstead ofhavingtostartagainfromscratch.
+As we saw in Section 4.4, the past history of percepts and all their ramifications can
+bereplaced bythe beliefstate that is,somerepresentation ofthesetofallpossible current
+statesoftheworld.12 Theprocessofupdating thebeliefstateasnewpercepts arriveiscalled
+state estimation. Whereas in Section 4.4 the belief state was an explicit list of states, here
+we can use a logical sentence involving the proposition symbols associated with the current
+timestep,aswellastheatemporal symbols. Forexample,the logicalsentence
+Wumpus Alive1 L1 B (P P ) (7.4)
+2,1 2,1 3,1 2,2
+represents the set of all states at time 1 in which the wumpus is alive, the agent is at 2,1 ,
+thatsquareisbreezy, andthereisapitin 3,1 or 2,2 orboth.
+Maintaining an exact belief state as a logical formula turns out not to be easy. If there
+arenfluentsymbolsfortimet,thenthereare2npossiblestates thatis,assignmentsoftruth
+valuestothosesymbols. Now,thesetofbeliefstatesisthepowerset(setofallsubsets)ofthe
+set of physical states. There are 2n physical states, hence 22n belief states. Even if weused
+the most compact possible encoding of logical formulas, with each belief state represented
+12 Wecanthinkofthepercepthistoryitselfasarepresentationofthebeliefstate,butonethatmakesin

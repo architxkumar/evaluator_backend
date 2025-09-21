@@ -1,0 +1,21 @@
+the Presenceof Noise.MIT Press. proving.JACM,14,698 704.
+Winograd, T.(1972). Understandingnaturallan- Wos, L.and Winker, S. (1983). Openquestions
+Werbos,P.(1977). Advancedforecastingmethods guage.Cognitive Psychology,3(1),1 191. solvedwiththeassistanceof AURA. In Automated
+forglobalcrisiswarningandmodelsofintelligence.
+General Systems Yearbook,22,25 38. Winston,P.H.(1970). Learningstructuraldescrip- Theorem Proving:After25Years:Proc.Special Ses-
+tionsfromexamples.Technicalreport MAC-TR-76, sionofthe89th Annual Meetingofthe American
+Wesley, M.A.and Lozano-Perez, T.(1979). An Departmentof Electrical Engineeringand Computer Mathematical Society,pp.71 88.American Math-
+algorithm for planningcollision-free paths among Science,Massachusetts Instituteof Technology. ematical Society.
+polyhedralobjects.CACM,22(10),560 570. Winston,P.H.(1992).Artificial Intelligence(Third Wos, L. and Pieper, G.(2003). Automated Rea-
+Wexler,Y.and Meek,C.(2009). MAS:Amulti- edition).Addison-Wesley. soningandthe Discoveryof Missingand Elegant
+plicativeapproximationschemeforprobabilisticin- Proofs.Rinton Press.
+Wintermute, S., Xu, J., and Laird, J. (2007).
+ference.In NIPS21. SORTS:Ahuman-levelapproachtoreal-timestrat- Wray,R.E.and Jones,R.M.(2005). Anintro-
+Whitehead,A.N.(1911).An Introductionto Math- egy AI.In Proc.Third Artificial Intelligenceand In- ductionto Soarasanagentarchitecture. In Sun,R.
+ematics.Williamsand Northgate. teractive Digital Entertainment Conference(AIIDE- (Ed.),Cognitionand Multi-agent Interaction:From
+07). Cognitive Modelingto Social Simulation,pp.53 78.
+Whitehead,A.N.and Russell,B.(1910).Principia Cambridge University Press.
+Mathematica.Cambridge University Press. Witten, I. H. and Bell, T.C. (1991). The zero-
+frequencyproblem: Estimatingtheprobabilitiesof Wright,S.(1921). Correlationandcausation. J.
+Whorf,B.(1956).Language,Thought,and Reality. novel eventsinadaptive textcompression. IEEE Agricultural Research,20,557 585.
+MIT Press. Transactionson Information Theory,37(4)

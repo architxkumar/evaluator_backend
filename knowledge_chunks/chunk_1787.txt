@@ -1,0 +1,34 @@
+ value to P to make C true, so C can only be
+i
+falsifiedifbothoftheseclausesarein RC(S). Now,since RC(S)isclosedunderresolution,
+itwillcontaintheresolventofthesetwoclauses,andthatresolventwillhaveallofitsliterals
+already falsified by the assignments to P 1 ,...,P i 1 . This contradicts our assumption that
+thefirstfalsifiedclauseappearsatstage i. Hence,wehaveprovedthattheconstruction never
+falsifies a clause in RC(S); that is, it produces a model of RC(S) and thus a model of S
+itself(since S iscontained in RC(S)).
+7.5.3 Hornclauses and definite clauses
+Thecompletenessofresolutionmakesitaveryimportantinferencemethod. Inmanypractical
+situations, however, the full power of resolution is not needed. Some real-world knowledge
+bases satisfy certain restrictions on the form of sentences they contain, which enables them
+touseamorerestricted andefficientinference algorithm.
+One such restricted form is the definite clause, which is a disjunction of literals of
+DEFINITECLAUSE
+whichexactlyoneispositive. Forexample,theclause( L Breeze B )isadefinite
+1,1 1,1
+clause, whereas( B P P )isnot.
+1,1 1,2 2,1
+Slightlymoregeneral isthe Hornclause, whichisadisjunction ofliterals ofwhich at
+HORNCLAUSE
+mostone is positive. Soall definite clauses are Horn clauses, as areclauses with no positive
+literals;thesearecalledgoalclauses. Hornclausesareclosedunderresolution: ifyouresolve
+GOALCLAUSES
+two Hornclauses, yougetbacka Hornclause.
+Knowledgebasescontaining onlydefiniteclausesareinteresting forthreereasons:
+1. Every definite clause can be written as an implication whose premise is a conjunction
+ofpositiveliteralsandwhoseconclusionisasinglepositiveliteral. (See Exercise7.13.)
+For example, the definite clause ( L Breeze B ) can be written as the im-
+1,1 1,1
+plication (L Breeze) B . In the implication form, the sentence is easier to
+1,1 1,1
+understand: itsaysthatiftheagentisin 1,1 andthereisabreeze,then 1,1 isbreezy.
+In Horn form, the premise is called the body and the conclusion is called the head.

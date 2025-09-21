@@ -1,0 +1,32 @@
+price auction isnottruth-revealing. Many Internet search
+engines use a mechanism where they auction k slots for ads on a page. The highest bidder
+wins the top spot, the second highest gets the second spot, and so on. Each winner pays the
+price bid by the next-lower bidder, with the understanding that payment is made only if the
+searcher actually clicks on the ad. The top slots are considered more valuable because they
+are more likely to be noticed and clicked on. Imagine that three bidders, b ,b and b , have
+1 2 3
+valuations foraclick of v 200,v 180, and v 100, and thatk 2slots are available,
+1 2 3
+where it is known that the top spot is clicked on 5 of the time and the bottom spot 2 . If
+all bidders bid truthfully, then b wins the top slot and pays 180, and has an expected return
+1
+of(200 180) 0.05 1. Thesecondslotgoestob . Butb canseethatifsheweretobid
+2 1
+anythingintherange101 179,shewouldconcedethetopslottob ,winthesecondslot,and
+2
+yieldanexpectedreturnof(200 100) .02 2. Thus,b candoubleherexpectedreturnby
+1
+biddinglessthanhertruevalueinthiscase. Ingeneral,biddersinthismultislotauctionmust
+spendalotofenergyanalyzing thebidsofotherstodeterminetheirbeststrategy; thereisno
+simpledominantstrategy. Aggarwal etal.(2006)showthatthereisauniquetruthfulauction
+mechanism for this multislot problem, in which the winner of slot j pays the full price for
+slot j just for those additional clicks that are available at slot j and not at slot j 1. The
+winner pays the price for the lower slot for the remaining clicks. In our example, b would
+1
+bid200truthfully, andwouldpay180fortheadditional .05 .02 .03clicksinthetopslot,
+but would pay only the cost of the bottom slot, 100, for the remaining .02 clicks. Thus, the
+totalreturnto b wouldbe(200 180) .03 (200 100) .02 2.6.
+1
+Anotherexample ofwhere auctions can come into play within AI is whenacollection
+of agents are deciding whether to cooperate on a joint plan. Hunsberger and Grosz (2000)
+show that this can be accomplished efficiently 

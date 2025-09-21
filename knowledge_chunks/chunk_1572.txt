@@ -1,0 +1,26 @@
+ later attributed to one Max Bezzel. It was republished in 1850
+and at that time drew the attention of the eminent mathematician Carl Friedrich Gauss, who
+110 Chapter 3. Solving Problemsby Searching
+attempted to enumerate all possible solutions; initially he found only 72, but eventually he
+found the correct answer of 92, although Nauck published all 92 solutions first, in 1850.
+Netto(1901)generalized theproblem tonqueens, and Abramsonand Yung(1989)foundan
+O(n)algorithm.
+Each of the real-world search problems listed in the chapter has been the subject of a
+gooddeal ofresearch effort. Methods forselecting optimal airline flightsremainproprietary
+forthemostpart,but Carlde Marcken(personalcommunication)hasshownthatairlineticket
+pricing and restrictions have become so convoluted that the problem of selecting an optimal
+flight is formally undecidable. The traveling-salesperson problem is a standard combinato-
+rial problem in theoretical computer science (Lawler et al., 1992). Karp (1972) proved the
+TS Pto be NP-hard, but effective heuristic approximation methods were developed (Lin and
+Kernighan, 1973). Arora (1998) devised a fully polynomial approximation scheme for Eu-
+clidean TS Ps. VLS Ilayout methods are surveyed by Shahookar and Mazumder (1991), and
+manylayout optimization papers appearin VLS Ijournals. Robotic navigation and assembly
+problemsarediscussed in Chapter25.
+Uninformedsearchalgorithmsforproblemsolvingareacentraltopicofclassicalcom-
+puterscience(Horowitzand Sahni,1978)andoperations research(Dreyfus, 1969). Breadth-
+first search was formulated for solving mazes by Moore (1959). The method of dynamic
+programming (Bellman, 1957; Bellman and Dreyfus, 1962), which systematically records
+solutions for all subproblems of increasing lengths, can be seen as a form of breadth-first
+search on graphs. The two-point shortest-path algorithm of Dijkstra (1959) is the origin
+of uniform-cost search. These works also introduced the idea of explored and frontier sets
+(close

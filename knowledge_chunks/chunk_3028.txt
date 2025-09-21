@@ -1,0 +1,22 @@
+ou,C.H.(1990). Explor-
+933 953. Sciences,1959.Stanford University Press. inganunknowngraph.In FOCS-90,pp.355 361.
+de Kleer, J. (1975). Qualitative andquantitative Dechter,R.(1990a).Enhancementschemesforcon- Denis, F. (2001). Learning regular languages
+knowledgeinclassicalmechanics. Tech.rep.AI- straintprocessing:Backjumping,learningandcutset fromsimplepositiveexamples. Machine Learning,
+TR-352,MIT Artificial Intelligence Laboratory. decomposition.AIJ,41,273 312. 44(1 2),37 66.
+de Kleer,J.(1989). Acomparisonof ATM Sand Dechter,R.(1990b). Ontheexpressivenessofnet- Dennett,D.C.(1984).Cognitivewheels:theframe
+CS Ptechniques.In IJCAI-89,Vol.1,pp.290 296. workswithhiddenvariables. In AAAI-90,pp.379 problemof AI. In Hookway,C.(Ed.),Minds,Ma-
+de Kleer,J.and Brown,J.S.(1985). Aqualitative 385. chines, and Evolution: Philosophical Studies, pp.
+physicsbasedonconfluences. In Hobbs,J.R.and Dechter, R. (1992). Constraint networks. In 129 151.Cambridge University Press.
+Moore,R.C.(Eds.),Formal Theoriesofthe Com- Shapiro,S.(Ed.),Encyclopediaof Artificial Intelli- Dennett,D.C.(1991). Consciousness Explained.
+monsense World,chap.4,pp.109 183.Ablex. gence(2ndedition).,pp.276 285.Wileyand Sons. Penguin Press.
+Bibliography 1071
+Denney,E.,Fischer,B.,and Schumann,J.(2006). Doorenbos,R.(1994).Combiningleftandrightun- Dunn,H.L.(1946).Recordlinkage .Am.J.Public
+An empirical evaluation of automated theorem linkingformatchingalargenumberoflearnedrules. Health,36(12),1412 1416.
+proversinsoftwarecertification. Int.J.AI Tools, In AAAI-94.
+Durfee,E.H.and Lesser,V.R.(1989). Negotiat-
+15(1),81 107.
+Doran,J.and Michie,D.(1966).Experimentswith ingtaskdecompositionandallocationusingpartial
+Descartes,R.(1637).Discourseonmethod.In Cot- thegraphtraverserprogram. Proc.Royal Societyof globalplanning.In Huhns,M.and Gasser,L.(Eds.),
+tingham,J.,Stoothoff,R.,and Murdoch,D.(Eds.), London,294,Series A,235 259. Distributed AI,Vol.2.Morgan Kaufmann.
+The Philosophical Writings of Descartes, Vol. I.
+Dorf,R.C.and Bish

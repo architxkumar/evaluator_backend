@@ -1,0 +1,30 @@
+trightanglestotheintended direction.
+Implement value iteration for this world for each value of r below. Use discounted
+rewards with a discount factor of 0.99. Show the policy obtained in each case. Explain
+intuitively whythevalueofr leadstoeachpolicy.
+a. r 100
+b. r 3
+c. r 0
+d. r 3
+690 Chapter 17. Making Complex Decisions
+r -1 10 50 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 Start -1 -1 -1 -50 1 1 1 1 1 1 1 (a) (b)
+Figure 17.14 (a) 3 3 world for Exercise 17.8. The reward for each state is indicated.
+Theupperrightsquareisaterminalstate. (b) 101 3worldfor Exercise17.9(omitting93
+identicalcolumnsinthemiddle).Thestartstatehasreward0.
+17.9 Consider the 101 3world shown in Figure 17.14(b). Inthe start state the agent has
+a choice of two deterministic actions, Up or Down, but in the other states the agent has one
+deterministic action, Right. Assuming a discounted reward function, for what values of the
+discount should the agent choose Up and for which Down? Compute the utility of each
+action as a function of . (Note that this simple example actually reflects many real-world
+situations in which one must weigh the value of an immediate action versus the potential
+continual long-term consequences, suchaschoosing todumppollutants intoalake.)
+17.10 Consider an undiscounted MD Phaving three states, (1, 2, 3), with rewards 1, 2,
+0, respectively. State 3isaterminal state. In states 1and 2there are twopossible actions: a
+andb. Thetransition modelisasfollows: Instate 1,actionamovestheagent tostate 2withprobability 0.8and makestheagent
+stayputwithprobability 0.2. Instate 2,actionamovestheagent tostate 1withprobability 0.8and makestheagent
+stayputwithprobability 0.2. In either state 1 orstate 2, action b moves the agent to state 3 with probability 0.1 and
+makestheagentstayputwithprobability 0.9.
+Answerthefollowingquestions:
+a. Whatcanbedetermined qualitatively abouttheoptimalpolicyinstates1and2?
+b. Apply policy iteration, showing each step in full, to determine the optimal policy and
+thevaluesofst

@@ -1,0 +1,32 @@
+naparticular computer, withaparticular
+compiler and particular input data. From the single result that the benchmark provides, it
+can be difficult to predict how well the algorithm would do on a different compiler, com-
+ANALYSISOF puter, or data set. The second approach relies on a mathematical analysis of algorithms,
+ALGORITHMS
+independently oftheparticularimplementation andinput, asdiscussed below.
+A.1.1 Asymptoticanalysis
+We will consider algorithm analysis through the following example, a program to compute
+thesumofasequence ofnumbers:
+function SUMMATION(sequence)returnsanumber
+sum 0
+fori 1to LENGTH(sequence)do
+sum sum sequence i returnsum
+The first step in the analysis is to abstract overthe input, in order to find some parameter or
+parameters that characterize the size of the input. In this example, the input can be charac-
+terized by the length of the sequence, which we will call n. The second step is to abstract
+overtheimplementation, tofindsomemeasurethatreflectstherunningtimeofthealgorithm
+butisnottiedtoaparticularcompilerorcomputer. Forthe SUMMATION program,thiscould
+be just the number of lines of code executed, or it could be more detailed, measuring the
+numberofadditions, assignments, arrayreferences, andbranches executed bythealgorithm.
+1053
+1054 Appendix A. Mathematical background
+Eitherwaygives usacharacterization ofthe total numberof steps taken by thealgorithm as
+afunction ofthe size of the input. Wewill call this characterization T(n). If wecount lines
+ofcode, wehave T(n) 2n 2forourexample.
+If all programs were as simple as SUMMATION, the analysis of algorithms would be a
+trivial field. Buttwoproblems make itmorecomplicated. First, itisrare tofindaparameter
+like n that completely characterizes the number of steps taken by an algorithm. Instead, the
+best we can usually do is compute the worst case T (n) or the average case T (n).
+worst avg
+Computinganaverage meansthattheanalystmustassumesomedistribution ofinputs.
+The second problem is that algorith

@@ -1,0 +1,22 @@
+rna-
+guage Processingand Computational Natural Lan- pathwithrotation. IEEE Transactionson Systems, tional Computer Chess Association,18(2),71 76.
+Manand Cybernetics,15(2),224 233.
+guage Learning,pp.858 867. Buro, M. (2002). Improving heuristic mini-max
+Bratko,I.(1986). Prolog Programmingfor Artifi- Brown,C.,Finkelstein,L.,and Purdom,P.(1988). searchbysupervisedlearning. AIJ,134(1 2),85 cial Intelligence(1stedition).Addison-Wesley. Backtracksearchinginthepresenceofsymmetry. 99.
+In Mora,T.(Ed.),Applied Algebra,Algebraic Al-
+Burstein,J.,Leacock,C.,and Swartz, R.(2001).
+Bratko,I.(2001). Prolog Programmingfor Artifi- gorithmsand Error-Correcting Codes,pp.99 110.
+Automatedevaluationofessaysandshortanswers.
+cial Intelligence(Thirdedition).Addison-Wesley. Springer-Verlag.
+In Fifth International Computer Assisted Assessment
+Bratman,M.E.(1987).Intention,Plans,and Prac- Brown,K.C.(1974).Anoteontheapparentbiasof (CAA)Conference.
+tical Reason.Harvard University Press. netrevenueestimates.J.Finance,29,1215 1216. Burton,R.(2009).On Being Certain:Believing You
+Bratman,M.E.(1992). Planningandthestability Brown, P. F., Cocke, J., Della Pietra, S. A., Are Right Even When You re Not.St.Martin s Grif-
+ofintention.Mindsand Machines,2(1),1 16. Della Pietra, V.J.,Jelinek,F., Mercer,R.L.,and fin.
+Breese,J.S.(1992). Constructionofbeliefandde- Roossin, P.(1988). Astatisticalapproachtolan- Buss,D.M.(2005).Handbookofevolutionarypsy-
+cisionnetworks. Computational Intelligence,8(4), guagetranslation.In COLING-88,pp.71 76. chology.Wiley.
+624 647. Brown,P.F.,Della Pietra,S.A.,Della Pietra,V.J., Butler,S.(1863).Darwinamongthemachines.The
+Breese,J.S.and Heckerman,D.(1996). Decision- and Mercer,R.L.(1993). Themathematicsofsta- Press(Christchurch,New Zealand),June13.
+tisticalmachinetranslation: Parameterestimation.
+theoretictroubleshooting: Aframeworkforrepair Computational Linguistics,19(2),263 311. Bylander,T.(1992). Complexityresultsforserial
+andexperiment.In UAI-96,pp.124 132. decomposability.In AA

@@ -1,0 +1,26 @@
+of MD Ps and POMDP in Chapter 21, when we study rein-
+forcement learningmethods that allow anagent toimproveitsbehavior from experience in
+sequential, uncertain environments.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Richard Bellmandevelopedtheideasunderlying themodernapproachtosequential decision
+problems while working atthe RAND Corporation beginning in 1949. According to his au-
+tobiography (Bellman, 1984), he coined the exciting term dynamic programming to hide
+from a research-phobic Secretary of Defense, Charles Wilson, the fact that his group was
+doingmathematics. (Thiscannotbestrictlytrue,becausehisfirstpaperusingtheterm(Bell-
+man,1952)appeared before Wilsonbecame Secretary of Defensein1953.) Bellman sbook,
+Dynamic Programming(1957),gavethenewfieldasolidfoundationandintroducedthebasic
+algorithmic approaches. Ron Howard s Ph.D. thesis (1960) introduced policy iteration and
+the idea of average reward for solving infinite-horizon problems. Several additional results
+were introduced by Bellman and Dreyfus (1962). Modified policy iteration is due to van
+Nunen (1976) and Puterman and Shin (1978). Asynchronous policy iteration was analyzed
+by Williamsand Baird(1993),whoalsoprovedthepolicylossboundin Equation(17.9). The
+analysis of discounting in terms of stationary preferences is due to Koopmans (1972). The
+texts by Bertsekas (1987), Puterman (1994), and Bertsekas and Tsitsiklis (1996) provide a
+rigorous introduction to sequential decision problems. Papadimitriou and Tsitsiklis (1987)
+describe resultsonthecomputational complexity of MD Ps.
+Seminalworkby Sutton(1988)and Watkins(1989)onreinforcementlearningmethods
+for solving MD Ps played a significant role in introducing MD Ps into the AI community, as
+did the later survey by Barto et al. (1995). (Earlier work by Werbos (1977) contained many
+similar ideas, but was not taken up to the same extent.) The connection between MD Psand
+AIplanning problemswasmadefirstby Sven Koenig(1991), whoshowedhowprobabilistic
+STRIPS operator

@@ -1,0 +1,26 @@
+atitisfocusing
+toonarrowlyonafewselectcorpora, andperhapsoverfitting onthem.
+Formal semantic interpretation of natural languages originates within philosophy and
+formallogic, particularly Alfred Tarski s(1935) workonthesemantics offormallanguages.
+Bar-Hillel (1954) was the firstto consider the problems ofpragmatics and propose that they
+could be handled by formal logic. For example, he introduced C. S. Peirce s (1902) term
+indexical into linguistics. Richard Montague s essay English as a formal language (1970)
+is a kind of manifesto for the logical analysis of language, but the books by Dowty et al.
+(1991)and Portnerand Partee(2002)aremorereadable.
+The first NLP system to solve an actual task was probably the BASEBALL question
+answeringsystem(Green etal.,1961),whichhandledquestionsaboutadatabaseofbaseball
+Bibliographical and Historical Notes 921
+statistics. Closeafterthatwas Woods s (1973) LUNAR,whichanswered questions about the
+rocks brought back from the moon by the Apollo program. Roger Schank and his students
+built a series of programs (Schank and Abelson, 1977; Schank and Riesbeck, 1981) that
+all had the task of understanding language. Modern approaches to semantic interpretation
+usually assume that the mapping from syntax to semantics will be learned from examples
+(Zelleand Mooney,1996;Zettlemoyerand Collins,2005).
+Hobbsetal. (1993) describes aquantitative nonprobabilistic framework forinterpreta-
+tion. More recent work follows an explicitly probabilistic framework (Charniak and Gold-
+man, 1992; Wu, 1993; Franz, 1996). Inlinguistics, optimality theory (Kager, 1999) isbased
+on the idea of building soft constraints into the grammar, giving a natural ranking to inter-
+pretations (similartoaprobability distribution), ratherthan having thegrammargenerate all
+possibilities with equal rank. Norvig (1988) discusses the problems of considering multiple
+simultaneous interpretations, rather than settling for a single maximum-likelihood interpre-
+tation. Literary critics 

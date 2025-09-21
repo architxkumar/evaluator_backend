@@ -1,0 +1,33 @@
+onaryentrieswithotherspammessagesandthuswillcompressbetterwhenappendedto
+acollection thatalready containsthespamdictionary.
+Experimentswithcompression-based classificationonsomeofthestandardcorporafor
+textclassification the 20-Newsgroups dataset,the Reuters-10Corpora, the Industry Sector
+corpora indicatethatwhereasrunningoff-the-shelfcompressionalgorithmslikegzip,RAR,
+and LZW can be quite slow, their accuracy is comparable to traditional classification algo-
+rithms. This is interesting in its own right, and also serves to point out that there is promise
+foralgorithmsthatusecharacter n-gramsdirectlywithnopreprocessing ofthetextorfeature
+selection: theyseemtobecaptiring somerealpatterns.
+22.3 INFORMATION RETRIEVAL
+INFORMATION Information retrieval is the task of finding documents that are relevant to a user s need for
+RETRIEVAL
+information. The best-known examples of information retrieval systems are search engines
+onthe World Wide Web. AWebusercantypeaquerysuchas AIbook 2 intoasearchengine
+and see a list of relevant pages. In this section, we will see how such systems are built. An
+information retrieval(henceforth IR)systemcanbecharacterized by
+IR
+1. Acorpusofdocuments. Eachsystemmustdecidewhatitwantstotreatasadocument:
+aparagraph, apage,oramultipage text.
+2. Queries posed in a query language. A query specifies what the user wants to know.
+QUERYLANGUAGE
+The query language can be just a list of words, such as AI book ; or it can specify
+a phrase of words that must be adjacent, as in AI book ; it can contain Boolean
+operatorsasin AIAN Dbook ;itcanincludenon-Booleanoperatorssuchas AINEAR
+book or AIbooksite:www.aaai.org .
+3. Aresultset. Thisisthesubsetofdocumentsthatthe IRsystemjudgestoberelevantto
+RESULTSET
+thequery. Byrelevant, wemeanlikely tobeofusetotheperson whoposed thequery,
+RELEVANT
+fortheparticularinformation needexpressedinthequery.
+4. A presentation of the result set. This can be as simple as a ranked list of document
+PRESENTATION
+titles or as complex as a rot

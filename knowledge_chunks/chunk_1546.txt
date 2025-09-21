@@ -1,0 +1,31 @@
+d on an evaluation function, f(n). The evaluation function is
+FUNCTION
+construed as a cost estimate, so the node with the lowest evaluation is expanded first. The
+implementation of best-first graph search is identical to that for uniform-cost search (Fig-
+ure3.14),exceptfortheuseoff insteadofg toorderthepriority queue.
+Thechoice off determines thesearch strategy. (Forexample, as Exercise 3.21shows,
+best-first tree search includes depth-first search asaspecial case.) Mostbest-first algorithms
+HEURISTIC includeasacomponent off aheuristicfunction,denoted h(n):
+FUNCTION
+h(n) estimatedcostofthecheapest pathfromthestateatnode ntoagoalstate.
+(Notice that h(n) takes anode as input, but, unlike g(n), itdepends only on the state at that
+node.) Forexample,in Romania,onemightestimatethecostofthecheapestpathfrom Arad
+to Bucharest viathestraight-line distance from Aradto Bucharest.
+Heuristic functions are the most common form in which additional knowledge of the
+problemisimpartedtothesearchalgorithm. Westudyheuristicsinmoredepthin Section3.6.
+Fornow,weconsiderthemtobearbitrary, nonnegative, problem-specificfunctions, withone
+constraint: ifnisagoalnode,thenh(n) 0. Theremainderofthissection coverstwoways
+touseheuristic information toguidesearch.
+3.5.1 Greedy best-first search
+GREEDYBEST-FIRST Greedybest-firstsearch8 triestoexpandthenodethatisclosest tothegoal, onthegrounds
+SEARCH
+that this is likely to lead to a solution quickly. Thus, it evaluates nodes by using just the
+heuristic function; thatis,f(n) h(n).
+Letusseehowthisworksforroute-finding problemsin Romania;weusethestraight-
+STRAIGHT-LINE line distance heuristic, which we will call h . If the goal is Bucharest, we need to
+DISTANCE SLD
+know the straight-line distances to Bucharest, which are shown in Figure 3.22. For exam-
+ple, h (In(Arad)) 366. Notice that the values of h cannot be computed from the
+SLD SLD
+problem description itself. Moreover, it takes a certain amount of experience to know that
+h iscorrelated withactualroa

@@ -1,0 +1,34 @@
+btainthepossible beliefstatesresultingfromagiven
+actionandthesubsequent possible percepts:
+RESULTS(b,a) b
+o
+:b
+o UPDATE(PREDICT(b,a),o)and
+o POSSIBLE-PERCEPTS(PREDICT(b,a)) . (4.5)
+Again,thenondeterminisminthepartiallyobservableproblemcomesfromtheinability
+topredict exactly whichpercept willbereceived afteracting; underlying nondeterminism in
+the physical environment may contribute to this inability by enlarging the belief state at the
+prediction stage, leadingtomorepercepts attheobservation stage.
+4.4.3 Solvingpartially observableproblems
+The preceding section showed how to derive the RESULTS function for a nondeterministic
+belief-state problem fromanunderlying physicalproblem andthe PERCEPT function. Given
+144 Chapter 4. Beyond Classical Search
+1
+3
+Suck Right A,Clean B,Dirty B,Clean 5
+2 4
+7
+Figure4.16 Thefirstlevelofthe AND OR searchtreeforaprobleminthelocal-sensing
+vacuumworld;Suck isthefirststepofthesolution.
+such a formulation, the AND OR search algorithm of Figure 4.11 can be applied directly to
+derive a solution. Figure 4.16 shows part of the search tree for the local-sensing vacuum
+world,assuminganinitialpercept A,Dirty . Thesolution istheconditional plan Suck,Right,if Bstate 6 then Suckelse .
+Notice that, because we supplied a belief-state problem to the AND OR search algorithm, it
+returned a conditional plan that tests the belief state rather than the actual state. This isas it
+shouldbe: inapartiallyobservableenvironmenttheagentwon tbeabletoexecuteasolution
+thatrequires testingtheactualstate.
+Asinthecaseofstandard search algorithms applied tosensorless problems, the AND OR search algorithm treats belief states as black boxes, just like any other states. One can
+improveonthisbycheckingforpreviouslygeneratedbeliefstatesthataresubsetsorsupersets
+of the current state, just as for sensorless problems. One can also derive incremental search
+algorithms, analogous to those described for sensorless problems, that provide substantial
+speedups overtheblack-box approa

@@ -1,0 +1,35 @@
+unctured basketballs arenotspherical); wedealwiththeseexceptions later.
+Although subclass and member relations are the most important ones for categories,
+we also want to be able to state relations between categories that are not subclasses of each
+other. Forexample, if wejust say that Males and Females are subclasses of Animals, then
+we have not said that a male cannot be a female. We say that two or more categories are
+disjoint if they have no members in common. Andeven if weknow that males and females
+DISJOINT
+are disjoint, we will not know that an animal that is not a male must be a female, unless
+EXHAUSTIVE we say that males and females constitute an exhaustive decomposition of the animals. A
+DECOMPOSITION
+disjointexhaustivedecompositionisknownasapartition. Thefollowingexamplesillustrate
+PARTITION
+thesethreeconcepts:
+Disjoint( Animals,Vegetables )
+Exhaustive Decomposition( Americans,Canadians,Mexicans ,
+North Americans)
+Partition( Males,Females ,Animals).
+(Note that the Exhaustive Decomposition of North Americans is not a Partition, because
+somepeoplehavedualcitizenship.) Thethreepredicates aredefinedasfollows:
+Disjoint(s) ( c ,c c s c s c (cid:7) c Intersection(c ,c ) )
+1 2 1 2 1 2 1 2
+Exhaustive Decomposition(s,c) ( i i c c c s i c )
+2 2 2
+Partition(s,c) Disjoint(s) Exhaustive Decomposition(s,c).
+Categories can also be defined by providing necessary and sufficient conditions for
+membership. Forexample,abachelorisanunmarriedadultmale:
+x Bachelors Unmarried(x) x Adults x Males .
+Aswediscuss in thesidebar onnatural kinds onpage 443, strict logical definitions forcate-
+goriesareneitheralwayspossible noralwaysnecessary.
+12.2.1 Physicalcomposition
+The idea that one object can be part of another is a familiar one. One s nose is part of one s
+head, Romania is part of Europe, and this chapter is part of this book. We use the general
+Part Of relationtosaythatonethingispartofanother. Objectscan begroupedinto Part Of
+hierarchies, reminiscent ofthe Subset hierarchy:
+Part 

@@ -1,0 +1,32 @@
+y
+1.0 a much more dangerous prediction than the Bayesian prediction of 0.8 shown in Fig-
+ure20.1(b). Asmoredataarrive,the MA Pand Bayesian predictions becomecloser, because
+thecompetitors tothe MA Phypothesis becomelessandlessprobable.
+Although our example doesn t show it, finding MAP hypotheses is often much easier
+than Bayesianlearning,becauseitrequiressolvinganoptimizationprobleminsteadofalarge
+summation(orintegration) problem. Wewillseeexamplesof thislaterinthechapter.
+Section20.1. Statistical Learning 805
+In both Bayesian learning and MAP learning, the hypothesis prior P(h ) plays an im-
+i
+portant role. We saw in Chapter 18 that overfitting can occur when the hypothesis space
+is too expressive, so that it contains many hypotheses that fit the data set well. Rather than
+placing an arbitrary limit on the hypotheses to be considered, Bayesian and MAP learning
+methods use the prior to penalize complexity. Typically, more complex hypotheses have a
+lower prior probability in part because there are usually many more complex hypotheses
+than simple hypotheses. Onthe otherhand, more complex hypotheses have agreater capac-
+ity to fit the data. (In the extreme case, a lookup table can reproduce the data exactly with
+probability 1.) Hence, the hypothesis priorembodies atradeoff between thecomplexity ofa
+hypothesis anditsdegreeoffittothedata.
+Wecanseetheeffectofthistradeoffmostclearlyinthelogicalcase,where H contains
+onlydeterministic hypotheses. Inthatcase,P(d h )is1ifh isconsistent and 0otherwise.
+i i
+Looking at Equation (20.1), we see that h will then be the simplest logical theory that
+MAP
+is consistent with the data. Therefore, maximum a posteriori learning provides a natural
+embodimentof Ockham srazor.
+Another insight into the tradeoff between complexity and degree of fit is obtained by
+taking the logarithm of Equation (20.1). Choosing h to maximize P(d h )P(h ) is
+MAP i i
+equivalent tominimizing log P(d h ) log P(h ).
+2 i 2 i
+Using the connection between information e

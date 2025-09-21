@@ -1,0 +1,26 @@
+ingremotecontrol.(Imagecourtesyof Andrew Ng.)
+Section21.7. Summary 853
+21.7 SUMMARY
+This chapter has examined the reinforcement learning problem: how an agent can become
+proficientinanunknownenvironment, givenonlyitsperceptsandoccasional rewards. Rein-
+forcement learning canbeviewedasamicrocosm fortheentire AIproblem, butitisstudied
+inanumberofsimplifiedsettingstofacilitate progress. Themajorpointsare: The overall agent design dictates the kind of information that must be learned. The
+three main designs we covered were the model-based design, using a model P and a
+utility function U; the model-free design, using an action-utility function Q; and the
+reflexdesign, usingapolicy . Utilitiescanbelearnedusingthreeapproaches:
+1. Direct utilityestimation usesthetotal observed reward-to-go foragivenstateas
+directevidenceforlearning itsutility.
+2. Adaptive dynamic programming (ADP) learns a model and a reward function
+from observations and then uses value or policy iteration to obtain the utilities or
+an optimal policy. ADP makes optimal use of the local constraints on utilities of
+statesimposedthroughtheneighborhood structure oftheenvironment.
+3. Temporal-difference(TD)methodsupdateutilityestimatestomatchthoseofsuc-
+cessorstates. Theycanbeviewedassimpleapproximations tothe AD Papproach
+thatcanlearnwithoutrequiring atransition model. Usinga learned modeltogen-
+eratepseudoexperiences can,however,resultinfasterlearning. Action-utility functions, or Q-functions, can be learned by an ADP approach or a TD
+approach. With TD, Q-learning requires no model in either the learning or action-
+selectionphase. Thissimplifiesthelearningproblembutpotentiallyrestrictstheability
+to learn in complex environments, because the agent cannot simulate the results of
+possiblecourses ofaction. When the learning agent is responsible for selecting actions while it learns, it must
+trade off the estimated value of those actions against the potential for learning useful
+new information. Anexact solution o

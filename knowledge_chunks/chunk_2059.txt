@@ -1,0 +1,24 @@
+veredlater in
+thechapter. Each linkindicatesthatthe lowerconceptisa specializationof the upperone.
+Specializations are not necessarily disjoint; a human is both an animal and an agent, for
+example.Wewillseein Section12.3.3whyphysicalobjectscomeundergeneralizedevents.
+use these to define more specific concepts like Spreadsheet Window. The general framework
+of concepts is called an upper ontology because of the convention of drawing graphs with
+UPPERONTOLOGY
+thegeneralconceptsatthetopandthemorespecificconcepts belowthem,asin Figure12.1.
+Before considering the ontology further, we should state one important caveat. We
+have elected to use first-order logic to discuss the content and organization of knowledge,
+althoughcertainaspectsoftherealworldarehardtocapturein FOL.Theprincipaldifficulty
+isthatmostgeneralizations haveexceptions orholdonly to adegree. Forexample, although tomatoes are red is a useful rule, some tomatoes are green, yellow, or orange. Similar
+exceptionscanbefoundtoalmostalltherulesinthischapter. Theabilitytohandleexceptions
+and uncertainty is extremely important, but is orthogonal to the task of understanding the
+generalontology. Forthisreason,wedelaythediscussionofexceptionsuntil Section12.5of
+thischapter, andthemoregeneraltopicofreasoning withuncertainty until Chapter13.
+Ofwhat use is an upper ontology? Consider the ontology for circuits in Section 8.4.2.
+Itmakesmanysimplifyingassumptions: timeisomittedcompletely; signalsarefixedanddo
+not propagate; the structure of the circuit remains constant. Amore general ontology would
+consider signals at particular times, and would include the wire lengths and propagation de-
+lays. This would allow us to simulate the timing properties of the circuit, and indeed such
+simulations are often carried out by circuit designers. We could also introduce more inter-
+esting classes of gates, for example, by describing the technology (TTL,CMOS,and so on)
+aswellastheinput output specification. Ifwewantedtodiscuss reliability 

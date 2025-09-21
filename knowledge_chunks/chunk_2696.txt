@@ -1,0 +1,36 @@
+arandom sentencewouldbewords.
+Naturallanguagesarealsoambiguous. Hesawherduck canmeaneitherthathesaw
+AMBIGUITY
+a waterfowl belonging to her, or that he saw her move to evade something. Thus, again, we
+cannot speak ofasingle meaning forasentence, but rather of aprobability distribution over
+possible meanings.
+Finally, natural languages are difficult to deal with because they are very large, and
+constantly changing. Thus, our language models are, at best, an approximation. We start
+withthesimplestpossible approximations andmoveupfromthere.
+22.1.1 N-gram character models
+Ultimately,awrittentextiscomposedofcharacters letters, digits,punctuation, andspaces
+CHARACTERS
+in English (and more exotic characters in some other languages). Thus, one of the simplest
+languagemodelsisaprobability distribution oversequencesofcharacters. Asin Chapter15,
+we write P(c ) for the probability of a sequence of N characters, c through c . In one
+1:N 1 N
+Webcollection,P( the ) 0.027and P( zgq ) 0.000000002. Asequenceofwrittensym-
+bolsoflength niscalledann-gram(from the Greekrootforwritingorletters), withspecial
+case unigram for1-gram, bigram for2-gram, and trigram for3-gram. A model ofthe
+N probability distribution of n-lettersequences is thus called an n-gram model. (Butbe care-
+-GRAMMODEL
+ful: we can have n-gram models over sequences of words, syllables, or other units; not just
+overcharacters.)
+Ann-gram modelisdefinedasa Markovchainoforder n 1. Recallfrompage 568
+that in a Markov chain the probability of character c depends only on the immediately pre-
+i
+ceding characters, not on any other characters. So in a trigram model (Markov chain of
+order2)wehave
+P(c i c 1:i 1 ) P(c i c i 2:i 1 ).
+We can define the probability of a sequence of characters P(c ) under the trigram model
+1:N
+byfirstfactoring withthechainruleandthenusingthe Markovassumption:
+(cid:25)N (cid:25)N
+P(c 1:N ) P(c i c 1:i 1 ) P(c i c i 2:i 1 ).
+i 1 i 1
+Foratrigramcharactermodelinalanguagewith100characters,P(C i C i 2:i 1 )hasam

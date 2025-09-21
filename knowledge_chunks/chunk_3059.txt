@@ -1,0 +1,24 @@
+ e e x c s h e a . a n r a r c e l h y p s L . is a A b a F o l C r g a o R to r L i r t y - h 6 . m 5-7 fo 5 r 8, co A n i t r ex F t o -f r r c e e e C la a n m g b u r a i g d e g s e .
+Jevons, W.S.(1874). The Principlesof Science. Hall.
+Routledge Thoemmes Press,London. Kasparov, G.(1997). IBM owesmea rematch.
+Kadane,J.B.and Simon,H.A.(1977). Optimal Time,149(21),66 67.
+Ji,S.,Parr,R.,Li,H.,Liao,X.,and Carin,L.(2007). strategiesforaclassofconstrainedsequentialprob-
+Point-basedpolicyiteration.In AAAI-07. lems.Annalsof Statistics,5,237 255. Kaufmann, M., Manolios, P., and Moore, J. S.
+(2000). Computer-Aided Reasoning:An Approach.
+Jimenez,P.and Torras,C.(2000). Anefficiental- Kadane,J.B.and Larkey,P.D.(1982). Subjective Kluwer.
+gorithmforsearchingimplicit AND ORgraphswith probabilityandthetheoryofgames. Management
+cycles.AIJ,124(1),1 30. Science,28(2),113 120. Kautz,H.(2006).Deconstructingplanningassatis-
+fiability.In AAAI-06.
+Joachims,T.(2001).Astatisticallearningmodelof Kaelbling, L.P., Littman, M.L., and Cassandra,
+textclassificationwithsupportvectormachines. In A.R.(1998). Planningandactionginpartiallyob- Kautz, H., Mc Allester, D. A., and Selman, B.
+SIGIR-01,pp.128 136. servablestochasticdomains.AIJ,101,99 134. (1996). Encodingplansinpropositionallogic. In
+KR-96,pp.374 384.
+Johnson,W.W.and Story,W.E.(1879). Noteson Kaelbling,L.P.,Littman,M.L.,and Moore,A.W.
+the 15 puzzle.American Journalof Mathematics, (1996). Reinforcementlearning:Asurvey. JAIR,4, Kautz,H.and Selman,B.(1992).Planningassatis-
+2,397 404. 237 285. fiability.In ECAI-92,pp.359 363.
+1078 Bibliography
+Kautz,H.and Selman,B.(1998). BLACKBOX:A Kim,J.H.and Pearl,J.(1983). Acomputational Kocsis,L.and Szepesvari,C.(2006). Bandit-based
+newapproachtotheapplicationoftheoremproving modelforcombinedcausalanddiagnosticreasoning Monte-Carloplanning.In ECML-06.
+toproblemsolving. Working Notesofthe AIPS-98 ininferencesystems.In IJCAI-83,pp.190 193.
+Koditschek,D.(1987). Exactrobotnavigationby
+Workshopon Planningas Co

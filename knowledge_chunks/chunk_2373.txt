@@ -1,0 +1,33 @@
+Sections 17.2 and 17.3 explain how they can
+be solved to produce optimal behavior that balances the risks and rewards of acting in an
+uncertain environment. Section 17.4 extends these ideas to the case of partially observable
+environments, and Section17.4.3developsacompletedesignfordecision-theoretic agentsin
+partially observable environments, combining dynamic Bayesian networks from Chapter 15
+withdecision networksfrom Chapter16.
+The second part of the chapter covers environments with multiple agents. In such en-
+vironments, the notion of optimal behavior is complicated by the interactions among the
+agents. Section 17.5 introduces the main ideas of game theory, including the idea that ra-
+tional agents might need tobehave randomly. Section 17.6looks athow multiagent systems
+canbedesigned sothatmultipleagentscanachieveacommongoal.
+17.1 SEQUENTIAL DECISION PROBLEMS
+Supposethatanagentissituatedinthe4 3environmentshownin Figure17.1(a). Beginning
+inthestartstate,itmustchooseanactionateachtimestep. Theinteraction withtheenviron-
+ment terminates when the agent reaches one of the goal states, marked 1 or 1. Just as for
+search problems, the actions available to the agent in each state are given by ACTIONS(s),
+sometimes abbreviated to A(s); in the 4 3 environment, the actions in every state are Up,
+Down,Left,and Right. Weassume fornowthattheenvironment is fullyobservable, sothat
+theagentalwaysknowswhereitis.
+645
+646 Chapter 17. Making Complex Decisions
+3 1 0.8
+0.1 0.1
+2 1
+1 START
+1 2 3 4
+(a) (b)
+Figure 17.1 (a) A simple 4 3 environment that presents the agent with a sequential
+decisionproblem. (b)Illustrationofthetransitionmodeloftheenvironment:the intended outcomeoccurswithprobability0.8,butwithprobability0.2theagentmovesatrightangles
+totheintendeddirection. Acollisionwithawallresultsinnomovement. Thetwoterminal
+stateshavereward 1and 1,respectively,andallotherstateshavearewardof 0.04.
+Iftheenvironment weredeterministic, asolutionwouldbeeasy: Up,Up,Right,Right,
+Right . Unfor

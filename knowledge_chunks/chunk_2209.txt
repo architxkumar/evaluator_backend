@@ -1,0 +1,35 @@
+ing step in GIBBS-ASK is
+actually aspecial case ofthemoregeneral definition of Gibbs sampling, according towhich
+each variable is sampled conditionally on the current values of all the other variables. We
+start by showing that this general definition of Gibbs sampling satisfies the detailed balance
+equation with a stationary distribution equal to P(x e), (the true posterior distribution on
+the nonevidence variables). Then, wesimply observe that, for Bayesian networks, sampling
+conditionallyonallvariablesisequivalenttosamplingconditionallyonthevariable s Markov
+blanket(seepage517).
+Toanalyze thegeneral Gibbssampler, whichsamples each X inturnwithatransition
+i
+probability q that conditions on all the other variables, we define X to be these other vari-
+i i
+ables (except the evidence variables); their values in the current state are x . If we sample a
+i
+(cid:2)
+newvaluex for X conditionally onalltheothervariables, including theevidence, wehave
+i i
+q (x x (cid:2) ) q ((x ,x ) (x (cid:2) ,x )) P(x (cid:2) x ,e).
+i i i i i i i i
+Nowweshow thatthetransition probability foreachstepofthe Gibbssamplerisindetailed
+balancewiththetrueposterior: (x)q (x x (cid:2) ) P(x e)P(x (cid:2) x ,e) P(x ,x e)P(x (cid:2) x ,e)
+i i i i i i i P(x x ,e)P(x e)P(x (cid:2) x ,e) (usingthechainruleonthefirstterm)
+i i i i i P(x x ,e)P(x (cid:2) ,x e) (usingthechainrulebackward)
+i i i i (x (cid:2) )q (x (cid:2) x).
+i
+Wecanthinkoftheloop foreach Z in Zdo in Figure14.16asdefiningonelargetransition
+i
+probability qthatisthesequentialcompositionq q q ofthetransitionprobabilities
+1 2 n
+for the individual variables. It is easy to show (Exercise 14.19) that if each of q and q has
+i j as its stationary distribution, then the sequential composition q q does too; hence the
+i j
+transition probability q for the whole loop has P(x e)as its stationary distribution. Finally,
+unless the CP Tscontain probabilities of 0 or 1 which can cause the state space to become
+disconnected it is easy to see that q is ergodic. Hen

@@ -1,0 +1,30 @@
+say Theprobabilitythatthepatienthasacavity,giventhatshehasatoothache,is0.8. Ifwe
+later learn that the patient has a history of gum disease, we can make a different statement: Theprobability that the patient has acavity, given that she has atoothache and ahistory of
+gum disease, is 0.4. If we gather further conclusive evidence against a cavity, we can say Theprobability thatthepatient hasacavity, givenallwenowknow,isalmost0. Notethat
+these statements do not contradict each other; each is a separate assertion about a different
+knowledgestate.
+13.1.2 Uncertainty andrational decisions
+Consider again the A plan for getting to the airport. Suppose it gives us a 97 chance
+90
+of catching our flight. Does this mean it is a rational choice? Not necessarily: there might
+be other plans, such as A , with higher probabilities. If it is vital not to miss the flight,
+180
+then itisworth risking the longer waitattheairport. What about A ,aplan that involves
+1440
+leavinghome24hoursinadvance? Inmostcircumstances, thisisnotagoodchoice,because
+although it almost guarantees getting there on time, it involves an intolerable wait not to
+mentionapossibly unpleasant dietofairportfood.
+Tomakesuchchoices, anagent mustfirsthave preferences between thedifferent pos-
+PREFERENCE
+sible outcomes of the various plans. An outcome is a completely specified state, including
+OUTCOME
+suchfactorsaswhethertheagentarrivesontimeandthelengthofthewaitattheairport. We
+useutilitytheorytorepresent andreason withpreferences. (Theterm utilityisusedherein
+UTILITYTHEORY
+the sense of the quality of being useful, not in the sense of the electric company or water
+works.) Utility theory says that every state has a degree of usefulness, orutility, to an agent
+andthattheagentwillpreferstateswithhigherutility.
+Section13.2. Basic Probability Notation 483
+Theutility of astate isrelative toan agent. Forexample, the utility ofastate in which
+Whitehascheckmated Blackinagameofchessisobviouslyhighfortheagentplaying White,
+butlowfort

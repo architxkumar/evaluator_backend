@@ -1,0 +1,30 @@
+.
+a. Showprooftreesandsolutionsforthequeries P(A, 2,1,3 )and P(2, 1,A,3 ).
+b. Whatstandard listoperation does Prepresent?
+9.16 Thisexerciselooksatsorting in Prolog.
+a. Write Prologclausesthatdefinethepredicate sorted(L),whichistrueifandonlyif
+list Lissortedinascending order.
+b. Writea Prolog definition forthe predicate perm(L,M),which is true ifand only if L
+isapermutation of M.
+c. Definesort(L,M)(Misasortedversionof L)usingpermandsorted.
+d. Runsortonlongerandlongerlistsuntilyoulosepatience. Whatisthetimecomplex-
+ityofyourprogram?
+e. Writeafastersortingalgorithm, suchasinsertion sortor quicksort, in Prolog.
+364 Chapter 9. Inference in First-Order Logic
+9.17 This exercise looks at the recursive application of rewrite rules, using logic program-
+ming. Arewriterule(ordemodulatorin OTTER terminology)isanequationwithaspecified
+direction. For example, the rewrite rule x 0 x suggests replacing any expression that
+matchesx 0withtheexpressionx. Rewriterulesareakeycomponentofequationalreason-
+ingsystems. Usethepredicate rewrite(X,Y)torepresentrewriterules. Forexample,the
+earlier rewrite rule is written as rewrite(X 0,X).Some terms are primitive and cannot
+befurthersimplified;thus,wewrite primitive(0)tosaythat0isaprimitiveterm.
+a. Writeadefinitionofapredicate simplify(X,Y),thatistruewhen Yisasimplified
+versionof X thatis,whennofurtherrewriterulesapplytoanysubexpression of Y.
+b. Write a collection of rules for the simplification of expressions involving arithmetic
+operators, andapplyyoursimplification algorithm tosomesampleexpressions.
+c. Writeacollectionofrewriterulesforsymbolicdifferentiation, andusethemalongwith
+your simplification rules to differentiate and simplify expressions involving arithmetic
+expressions, including exponentiation.
+9.18 This exercise considers the implementation of search algorithms in Prolog. Suppose
+that successor(X,Y)is true when state Y is a successor of state X; and that goal(X)
+istrue when Xisagoal state. Writeadefinition for solve(X,P),which mea

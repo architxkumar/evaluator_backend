@@ -1,0 +1,23 @@
+one and two. Three isanothernameforthisobject.) Squaresneighboring thewumpusaresmelly. Objects: wumpus,squares; Property: smelly;Relation: neighboring. Evil King Johnruled Englandin1200. Objects: John,England,1200;Relation: ruled;Properties: evil,king.
+Thelanguageoffirst-orderlogic,whosesyntaxandsemanticswedefineinthenextsection,
+isbuiltaroundobjectsandrelations. Ithasbeensoimportanttomathematics,philosophy,and
+artificial intelligence precisely because those fields and indeed, much of everyday human
+existence can beusefully thought ofasdealing withobjects andtherelations amongthem.
+First-order logic can also express facts about some orall of theobjects inthe universe. This
+enables one to represent general laws or rules, such as the statement Squares neighboring
+thewumpusaresmelly. Theprimarydifference betweenpropositional andfirst-orderlogicliesinthe ontologi-
+ONTOLOGICAL calcommitmentmadebyeachlanguage thatis,whatitassumesaboutthenatureofreality.
+COMMITMENT
+Mathematically, this commitmentisexpressed through thenature oftheformal modelswith
+respect to which the truth of sentences is defined. Forexample, propositional logic assumes
+that there are facts that either hold or do not hold in the world. Each fact can be in one
+of two states: true or false, and each model assigns true or false to each proposition sym-
+bol (see Section 7.4.2).2 First-order logic assumes more; namely, that the world consists of
+objects with certain relations among them that do or do not hold. The formal models are
+correspondingly morecomplicatedthanthoseforpropositional logic. Special-purpose logics
+make still further ontological commitments; forexample, temporal logic assumes that facts
+TEMPORALLOGIC
+hold at particular times and that those times (which may be points or intervals) are ordered.
+Thus, special-purpose logics givecertain kinds ofobjects (andtheaxioms about them) first
+class status within the logic, rather than simply defining them within the knowledge base.
+HIGHER-ORDER Higher-or

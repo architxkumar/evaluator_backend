@@ -1,0 +1,31 @@
+itself account for the
+creation ofnewknowledgestarting fromscratch.
+In the case of the medical student watching the expert, we assume that the student s
+prior knowledge is sufficient to infer the patient s disease D from the symptoms. This is
+not, however, enough to explain the fact that the doctor prescribes aparticular medicine M.
+The student needs to propose another rule, namely, that M generally is effective against D.
+Giventhisruleandthestudent spriorknowledge,thestudentcannowexplainwhytheexpert
+prescribes M in this particular case. We can generalize this example to come up with the
+entailment constraint
+Background Hypothesis Descriptions Classifications . (19.5)
+Thatis,thebackground knowledge andthenewhypothesis combinetoexplain theexamples.
+Aswithpureinductivelearning,thelearningalgorithmshouldproposehypothesesthatareas
+simple as possible, consistent with this constraint. Algorithms that satisfy constraint (19.5)
+KNOWLEDGE-BASED
+arecalled knowledge-basedinductivelearning,or KBIL,algorithms.
+INDUCTIVE
+LEARNING
+KBIL algorithms, which are described in detail in Section 19.5, have been studied
+INDUCTIVELOGIC mainly in the field of inductive logic programming, or ILP. In ILP systems, prior knowl-
+PROGRAMMING
+edgeplaystwokeyrolesinreducing thecomplexity oflearning:
+780 Chapter 19. Knowledgein Learning
+1. Becauseanyhypothesis generated mustbeconsistent withthepriorknowledge aswell
+as with the new observations, the effective hypothesis space size is reduced to include
+onlythosetheoriesthatareconsistent withwhatisalready known.
+2. For any given set of observations, the size of the hypothesis required to construct an
+explanation for the observations can be much reduced, because the prior knowledge
+will be available to help out the new rules in explaining the observations. The smaller
+thehypothesis, theeasieritistofind.
+In addition to allowing the use of prior knowledge in induction, ILP systems can formulate
+hypotheses in general first-order logic, rather than in the r

@@ -1,0 +1,28 @@
+s
+that the same brain state could not correspond toa fundamentally distinct mental state, such
+astheknowledge thatoneiseatingabanana.
+The simplicity of this view is challenged by some simple thought experiments. Imag-
+ine, if you will, that your brain was removed from your body at birth and placed in a mar-
+velouslyengineered vat. Thevatsustainsyourbrain,allowingittogrowanddevelop. Atthe
+sametime,electronic signalsarefedtoyourbrainfromacomputersimulation ofanentirely
+fictitious world, and motor signals from your brain are intercepted and used to modify the
+simulation as appropriate.2 In fact, the simulated life you live replicates exactly the life you
+would have lived, had your brain not been placed in the vat, including simulated eating of
+simulatedhamburgers. Thus,youcouldhaveabrainstateidenticaltothatofsomeonewhois
+really eating areal hamburger, but it would be literally false to say that you have the mental
+state knowing that one is eating a hamburger. You aren t eating a hamburger, you have
+neverevenexperienced ahamburger, andyoucouldnot,therefore, havesuchamentalstate.
+Thisexampleseemstocontradicttheviewthatbrainstatesdeterminementalstates. One
+waytoresolvethedilemmaistosaythatthecontentofmentalstatescanbeinterpreted from
+two different points of view. The wide content view interprets it from the point of view
+WIDECONTENT
+of an omniscient outside observer with access to the whole situation, who can distinguish
+differencesintheworld. Underthisview,thecontentofmentalstatesinvolvesboththebrain
+state and the environment history. Narrow content, on the other hand, considers only the
+NARROWCONTENT
+brainstate. Thenarrowcontentofthebrainstatesofarealhamburger-eater andabrain-in-a-
+vat hamburger - eater isthesameinbothcases.
+2 Thissituationmaybefamiliartothosewhohaveseenthe1999film The Matrix.
+Section26.2. Strong AI:Can Machines Really Think? 1029
+Widecontent isentirelyappropriate ifone sgoalsaretoascribe mentalstatestoothers
+who share one s world, to predict their like

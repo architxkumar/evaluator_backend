@@ -1,0 +1,28 @@
+evelop a remarkably accurate evaluator that is used with a search to depth 2
+or 3. After playing more than a million training games against itself, Tesauro s program,
+TD-GAMMON,iscompetitivewithtophumanplayers. Theprogram sopinionsontheopen-
+ingmovesofthegamehaveinsomecasesradicallyalteredthe receivedwisdom.
+Go is the most popular board game in Asia. Because the board is 19 19 and moves are
+GO
+allowed into (almost) every empty square, the branching factor starts at 361, which is too
+daunting for regular alpha beta search methods. In addition, it is difficult to write an eval-
+uation function because control of territory is often very unpredictable until the endgame.
+Therefore thetopprograms, suchas MOGO,avoid alpha beta search andinstead use Monte
+Carlorollouts. Thetrickistodecidewhatmovestomakeinthecourseoftherollout. Thereis
+noaggressive pruning; allmovesarepossible. The UCT(upperconfidence bounds ontrees)
+method works by making random moves in the first few iterations, and over time guiding
+thesampling process toprefermovesthathaveledtowinsinprevious samples. Sometricks
+are added, including knowledge-based rules that suggest particular moves whenever a given
+pattern isdetected andlimitedlocal searchtodecide tactical questions. Someprogramsalso
+COMBINATORIAL include special techniques from combinatorial game theory to analyze endgames. These
+GAMETHEORY
+techniques decompose aposition intosub-positions thatcanbeanalyzed separately andthen
+combined (Berlekamp and Wolfe, 1994; Mu ller, 2003). The optimal solutions obtained in
+this way have surprised many professional Go players, who thought they had been playing
+optimally allalong. Current Goprograms play atthemasterlevelonareduced 9 9board,
+butarestillatadvanced amateurlevelonafullboard.
+Bridge is a card game of imperfect information: a player s cards are hidden from the other
+BRIDGE
+players. Bridge is also a multiplayer game with four players instead of two, although the
+Section5.8. Alternative Approaches 187
+player

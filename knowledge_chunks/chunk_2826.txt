@@ -1,0 +1,32 @@
+49
+Perceived object
+Left image Right image
+Right Left
+Disparity
+(a) (b)
+Figure 24.16 Translating a camera parallel to the image plane causes image features to
+move in the camera plane. The disparity in positions that results is a cue to depth. If we
+superimposeleftandrightimage,asin(b),weseethedisparity.
+24.4.2 Binocularstereopsis
+Most vertebrates have two eyes. This is useful for redundancy in case of a lost eye, but it
+helps in other ways too. Most prey have eyes on the side of the head to enable a widerfield
+BINOCULAR of vision. Predators have the eyes in the front, enabling them to use binocular stereopsis.
+STEREOPSIS
+Theidea issimilartomotion parallax, except thatinstead ofusing images overtime, weuse
+two (or more) images separated in space. Because a given feature in the scene will be in a
+different place relative to the z-axis of each image plane, if we superpose the two images,
+there willbeadisparity inthe location oftheimage feature inthe twoimages. Youcan see
+DISPARITY
+this in Figure 24.16, where the nearest point of the pyramid is shifted to the left in the right
+imageandtotherightintheleftimage.
+Note that to measure disparity we need to solve the correspondence problem, that is,
+determine for a point in the left image, the point in the right image that results from the
+projection of the same scene point. This is analogous to what one has to do in measuring
+optical flow, and the most simple-minded approaches are somewhat similar and based on
+comparingblocksofpixelsaroundcorrespondingpointsusingthesumofsquareddifferences.
+Inpractice,weusemuchmoresophisticatedalgorithms,whichexploitadditionalconstraints.
+Assuming that we can measure disparity, how does this yield information about depth
+in the scene? We will need to work out the geometrical relationship between disparity and
+depth. First, wewill consider the case when both the eyes (or cameras) are looking forward
+withtheiropticalaxesparallel. Therelationship oftherightcameratotheleftcameraisthen
+just a dis

@@ -1,0 +1,39 @@
+n an infinite-horizon MDP
+containing aterminalstate.
+Thenext question wemust decide is how to calculate the utility of state sequences. In
+theterminologyofmultiattribute utilitytheory,eachstates canbeviewedasanattributeof
+i
+thestatesequence s ,s ,s ... . Toobtainasimpleexpression intermsoftheattributes, we
+0 1 2
+will need to make some sort of preference-independence assumption. The most natural as-
+STATIONARY sumptionisthattheagent s preferences betweenstatesequences arestationary. Stationarity
+PREFERENCE
+(cid:2) (cid:2) (cid:2)
+forpreferencesmeansthefollowing: iftwostatesequences s ,s ,s ,... and s ,s ,s ,... 0 1 2 0 1 2
+(cid:2)
+beginwiththesamestate(i.e.,s s ),thenthetwosequencesshouldbepreference-ordered
+0 0
+(cid:2) (cid:2)
+thesamewayasthesequences s ,s ,... and s ,s ,... . In English,thismeansthatifyou
+1 2 1 2
+prefer one future to another starting tomorrow, then you should still prefer that future if it
+were to start today instead. Stationarity is a fairly innocuous-looking assumption with very
+strong consequences: it turns out that under stationarity there are just two coherent ways to
+assignutilities tosequences:
+1. Additiverewards: Theutilityofastatesequence is
+ADDITIVEREWARD
+U ( s ,s ,s ,... ) R(s ) R(s ) R(s ) .
+h 0 1 2 0 1 2
+The 4 3 world in Figure 17.1 uses additive rewards. Notice that additivity was used
+implicitlyinouruseofpathcostfunctions inheuristicsearchalgorithms (Chapter3).
+DISCOUNTED 2. Discountedrewards: Theutilityofastatesequenceis
+REWARD
+U ( s ,s ,s ,... ) R(s ) R(s ) 2R(s ) ,
+h 0 1 2 0 1 2
+wherethediscountfactor isanumberbetween0and1. Thediscountfactordescribes
+DISCOUNTFACTOR
+the preference of an agent for current rewards over future rewards. When is close
+to0, rewards inthe distant future are viewed as insignificant. When is 1, discounted
+rewards are exactly equivalent to additive rewards, so additive rewards are a special
+case of discounted rewards. Discounting appears to be a good model of both animal
+andhumanpreferencesovertime. Adiscoun

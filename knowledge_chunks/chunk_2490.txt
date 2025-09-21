@@ -1,0 +1,44 @@
+ loss. Let y be the vector of
+outputs for the training examples, and X be the data matrix, i.e., the matrix of inputs with
+DATAMATRIX
+onen-dimensional exampleperrow. Thenthesolution
+w (X
+(cid:12)
+X) 1X (cid:12)
+y
+minimizesthesquared error.
+With univariate linear regression we didn t have to worry about overfitting. But with
+multivariate linear regression in high-dimensional spaces it is possible that some dimension
+thatisactually irrelevant appearsbychancetobeuseful,resulting inoverfitting.
+Thus,itiscommontouseregularizationonmultivariatelinearfunctionstoavoidover-
+fitting. Recall that with regularization we minimize the total cost of a hypothesis, counting
+boththeempiricallossandthecomplexity ofthehypothesis:
+Cost(h) Emp Loss(h) Complexity(h).
+For linear functions the complexity can be specified as a function of the weights. We can
+considerafamilyofregularization functions:
+(cid:12)
+Complexity(h ) L (w) w q .
+w q i
+i
+As with loss functions,6 with q 1 we have L regularization, which minimizes the sum of
+1
+theabsolute values; withq 2, L regularization minimizes thesum ofsquares. Whichreg-
+2
+ularization function should you pick? Thatdepends onthe specific problem, but L regular-
+1
+ization hasanimportant advantage: ittendstoproduce a sparsemodel. Thatis,itoften sets
+SPARSEMODEL
+manyweightstozero,effectivelydeclaringthecorresponding attributestobeirrelevant just
+as DECISION-TREE-LEARNING does(although byadifferent mechanism). Hypotheses that
+discardattributes canbeeasierforahumantounderstand, andmaybelesslikelytooverfit.
+6 Itisperhapsconfusingthat L1and L2areusedforbothlossfunctionsandregularizationfunctions.Theyneed
+notbeusedinpairs:youcoulduse L2losswith L1regularization,orviceversa.
+722 Chapter 18. Learningfrom Examples
+w w
+2 2
+w w w w
+1 1
+Figure18.14 Why L regularizationtendstoproduceasparsemodel. (a)With L regu-
+1 1
+larization(box),the minimalachievableloss(concentriccontours)oftenoccurson anaxis,
+meaninga weightof zero. (b)With L regularization(circle), the minima

@@ -1,0 +1,29 @@
+and . Still,
+readability ismoreimportant thanparsimony, sowewillkeepbothofthequantifiers.
+Section8.2. Syntaxand Semanticsof First-Order Logic 299
+8.2.7 Equality
+First-order logic includes onemorewaytomakeatomic sentences, otherthan using apredi-
+cateandtermsasdescribedearlier. Wecanusethe equalitysymboltosignifythattwoterms
+EQUALITYSYMBOL
+refertothesameobject. Forexample,
+Father(John) Henry
+saysthattheobjectreferred toby Father(John)andtheobjectreferred toby Henry arethe
+same. Because an interpretation fixes the referent of any term, determining the truth of an
+equalitysentenceissimplyamatterofseeingthatthereferentsofthetwotermsarethesame
+object.
+Theequalitysymbolcanbeusedtostatefactsaboutagivenfunction,aswejustdidfor
+the Father symbol. Itcanalsobeusedwithnegationtoinsistthattwotermsarenotthesame
+object. Tosaythat Richardhasatleasttwobrothers, wewouldwrite x,y Brother(x,Richard) Brother(y,Richard) (x y).
+Thesentence x,y Brother(x,Richard) Brother(y,Richard)
+doesnothavetheintendedmeaning. Inparticular, itistrue inthemodelof Figure8.2,where
+Richardhasonlyonebrother. Toseethis,considertheextended interpretation inwhichboth
+x and y are assigned to King John. The addition of (x y) rules out such models. The
+notation x (cid:7) y issometimesusedasanabbreviation for (x y).
+8.2.8 Analternativesemantics?
+Continuing the example from the previous section, suppose that webelieve that Richard has
+twobrothers, Johnand Geoffrey.8 Canwecapturethisstateofaffairsbyasserting
+Brother(John,Richard) Brother(Geoffrey,Richard)? (8.3)
+Not quite. First, this assertion is true in a model where Richard has only one brother we need to add John (cid:7) Geoffrey. Second, the sentence doesn t rule out models in which
+Richard has manymore brothers besides John and Geoffrey. Thus, thecorrect translation of Richard s brothersare Johnand Geoffrey isasfollows:
+Brother(John,Richard) Brother(Geoffrey,Richard) John (cid:7) Geoffrey x Brother(x,Richard) (x John x Geoffrey).
+For many purposes, this seems muc

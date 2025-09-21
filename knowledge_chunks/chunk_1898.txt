@@ -1,0 +1,28 @@
+ery sentence q is entailed, we must appeal to Herbrand s theorem to establish that the
+algorithm will find a proof. (See Section 9.5 for the resolution case.) If the query has no
+answer, the algorithm could fail to terminate in some cases. For example, if the knowledge
+baseincludes the Peanoaxioms
+Nat Num(0) n Nat Num(n) Nat Num(S(n)),
+then forward chaining adds Nat Num(S(0)), Nat Num(S(S(0))), Nat Num(S(S(S(0)))),
+and so on. This problem is unavoidable in general. As with general first-order logic, entail-
+mentwithdefiniteclauses issemidecidable.
+9.3.3 Efficient forwardchaining
+The forward-chaining algorithm in Figure 9.3 is designed for ease of understanding rather
+than for efficiency of operation. There are three possible sources of inefficiency. First, the inner loop of the algorithm involves finding all possible unifiers such that the premise of
+arule unifies with asuitable set offacts in the knowledge base. This is often called pattern
+matching and can be very expensive. Second, the algorithm rechecks every rule on every
+PATTERNMATCHING
+iteration to see whether its premises are satisfied, even ifvery few additions are made to the
+knowledge base on each iteration. Finally, the algorithm might generate many facts that are
+irrelevant tothegoal. Weaddresseachoftheseissuesinturn.
+Matchingrulesagainstknownfacts
+Theproblemofmatchingthepremiseofaruleagainstthefactsintheknowledgebasemight
+seemsimpleenough. Forexample,suppose wewanttoapplytherule
+Missile(x) Weapon(x).
+Thenweneedtofindallthefactsthatunifywith Missile(x);inasuitablyindexedknowledge
+base,thiscanbedoneinconstant timeperfact. Nowconsider arulesuchas
+Missile(x) Owns(Nono,x) Sells(West,x,Nono).
+Again,wecanfindalltheobjects ownedby Nonoinconstant timeperobject; then, foreach
+object, wecould check whether it isa missile. If the knowledge base contains manyobjects
+ownedby Nonoandveryfewmissiles,however,itwouldbebettertofindallthemissilesfirst
+CONJUNCT and then check whether they are owned by Nono. This is the con

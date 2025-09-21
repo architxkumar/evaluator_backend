@@ -1,0 +1,30 @@
+se, competing needs, depends on
+i
+conditions at level S : that level must contain a precondition of A that is mutex with
+i
+a precondition of B. Now, these two preconditions can be mutex if they are negations
+of each other (in which case they would be mutex in every level) or if all actions for
+achieving one aremutex withallactions forachieving the other. Butwealready know
+that the available actions are increasing monotonically, so, by induction, the mutexes
+mustbedecreasing. No-goods decrease monotonically: If a set of goals is not achievable at a given level,
+thentheyarenotachievableinanypreviouslevel. Theproofisbycontradiction: ifthey
+were achievable at some previous level, then we could just add persistence actions to
+makethemachievable atasubsequent level.
+Because the actions and literals increase monotonically and because there are only a finite
+number of actions and literals, there must come a level that has the same number of actions
+andliteralsasthepreviouslevel. Becausemutexesandno-goodsdecrease,andbecausethere
+can never be fewer than zero mutexes or no-goods, there must come a level that has the
+same number of mutexes and no-goods as the previous level. Once agraph has reached this
+state, then if one of the goals is missing oris mutex with another goal, then wecan stop the
+GRAPHPLAN algorithm and return failure. That concludes a sketch of the proof; for more
+detailssee Ghallabetal.(2004).
+Section10.4. Other Classical Planning Approaches 387
+Year Track Winning Systems(approaches)
+2008 Optimal GAMER(modelchecking,bidirectionalsearch)
+2008 Satisficing LAMA(fastdownwardsearchwith FFheuristic)
+2006 Optimal SATPLAN,MAXPLAN(Booleansatisfiability)
+2006 Satisficing SGPLAN(forwardsearch;partitionsintoindependentsubproblems)
+2004 Optimal SATPLAN(Booleansatisfiability)
+2004 Satisficing FASTDIAGONALLYDOWNWARD(forwardsearchwithcausalgraph)
+2002 Automated LPG(localsearch,planninggraphsconvertedto CS Ps)
+2002 Hand-coded TLPLAN(temporalactionlogicwithcontrolrulesforforward

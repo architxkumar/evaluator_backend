@@ -1,0 +1,37 @@
+Showeachstepoftheprocess andthefinalsetofrules.
+23.9 Using DCG notation, write a grammar for a language that is just like E , except that
+1
+itenforces agreement between thesubject andverb ofasentence andthus does notgenerate
+ungrammatical sentences suchas Ismellsthewumpus. 926 Chapter 23. Natural Languagefor Communication
+23.10 Considerthefollowing PCFG:
+S NP VP 1.0 NP Noun 0.6 Pronoun 0.4 VP Verb NP 0.8 Modal Verb 0.2 Noun can 0.1 fish 0.3 ...
+Pronoun I 0.4 ...
+Verb can 0.01 fish 0.1 ...
+Modal can 0.3 ...
+The sentence I can fish has two parse trees with this grammar. Show the two trees, their
+priorprobabilities, andtheirconditional probabilities, giventhesentence.
+23.11 Anaugmented context-free grammarcan represent languages thataregularcontext-
+free grammar cannot. Show an augmented context-free grammar for the language anbncn.
+The allowable values for augmentation variables are 1 and SUCCESSOR(n), where n is a
+value. Theruleforasentenceinthislanguage is
+S(n) A(n) B(n)C(n).
+Showtherule(s)foreachof A,B,and C.
+23.12 Augment the E grammar so that it handles article noun agreement. That is, make
+1
+surethat agents and anagent are NPs,but agent and anagents arenot.
+23.13 Considerthefollowingsentence (from The New York Times,July28,2008):
+Banks struggling to recover from multibillion-dollar loans on real estate are cur-
+tailingloansto Americanbusinesses,deprivingevenhealthycompaniesofmoney
+forexpansion andhiring.
+a. Whichofthewordsinthissentence arelexicallyambiguous?
+b. Findtwocasesofsyntactic ambiguity inthissentence (therearemorethantwo.)
+c. Giveaninstance ofmetaphorinthissentence.
+d. Canyoufindsemanticambiguity?
+23.14 Without lookingbackat Exercise23.1,answerthefollowing questions:
+a. Whatarethefourstepsthatarementioned?
+b. Whatstepisleftout?
+c. Whatis thematerial thatismentioned inthetext?
+d. Whatkindofmistakewouldbeexpensive?
+e. Isitbettertodotoofewthingsortoomany? Why?
+23.15 Select five sentences and submit them to an online translation service. Translate
+themfrom

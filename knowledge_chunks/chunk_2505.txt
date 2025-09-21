@@ -1,0 +1,28 @@
+such expressions
+with respect to the weights, we can use the gradient-descent loss-minimization method to
+train the network. Section 18.7.4 shows exactly how to do this. And because the function
+representedbyanetworkcanbehighlynonlinear composed, asitis,ofnestednonlinearsoft
+NONLINEAR threshold functions we canseeneuralnetworksasatoolfor doingnonlinearregression.
+REGRESSION
+Before delving into learning rules, let us look at the ways in which networks generate
+complicated functions. First,rememberthateachunitinasigmoidnetwork represents asoft
+threshold in its input space, as shown in Figure 18.17(c) (page 726). With one hidden layer
+and one output layer, as in Figure 18.20(b), each output unit computes a soft-thresholded
+linear combination of several such functions. For example, by adding two opposite-facing
+softthresholdfunctionsandthresholdingtheresult,wecanobtaina ridge functionasshown
+in Figure 18.23(a). Combining twosuch ridges atright angles toeach other(i.e., combining
+theoutputsfromfourhiddenunits), weobtaina bump asshownin Figure18.23(b).
+Withmorehiddenunits, wecanproduce morebumpsofdifferentsizesinmoreplaces.
+Infact,withasingle,sufficientlylargehiddenlayer,itispossibletorepresentanycontinuous
+function oftheinputs witharbitrary accuracy; withtwolayers, evendiscontinuous functions
+canberepresented.9 Unfortunately, forany particular network structure, itishardertochar-
+acterizeexactlywhichfunctions canberepresented andwhichonescannot.
+9 Theproofiscomplex,butthemainpointisthattherequirednumberofhiddenunitsgrowsexponentiallywith
+thenumberofinputs.Forexample,2n nhiddenunitsareneededtoencodeall Booleanfunctionsofninputs.
+Section18.7. Artificial Neural Networks 733
+18.7.4 Learning inmultilayernetworks
+First,letusdispensewithoneminorcomplicationarisinginmultilayernetworks: interactions
+among the learning problems when the network has multiple outputs. In such cases, we
+shouldthinkofthenetworkasimplementingavectorfunctionh ratherthanascalarfunction
+w
+h ; for example,

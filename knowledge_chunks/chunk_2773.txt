@@ -1,0 +1,38 @@
+ortion, P(d ). Note that for sentences bounded by length n we have d n , and
+i i
+8 For the finer points of translation, n-grams are clearly not enough. Marcel Proust s 4000-page novel A la
+re cherchedutempsperdubeginsandendswiththesameword(longtemps),sosometranslatorshavedecidedto
+dothesame,thusbasingthetranslationofthefinalwordononethatappearedroughly2millionwordsearlier.
+Section23.4. Machine Translation 911
+so the full probability distribution P(d ) has only 2n 1 elements, far fewer numbers to
+i
+learn than the number of permutations, n!. That is why we defined the permutation in this
+circuitous way. Of course, this is a rather impoverished model of distortion. It doesn t say
+that adjectives are usually distorted to appear after the noun when we are translating from
+Englishto French that factisrepresented inthe Frenchlanguage model,P(f). Thedistor-
+tion probability is completely independent of the words in the phrases it depends only on
+the integer value d . Theprobability distribution provides a summary of the volatility of the
+i
+permutations; howlikelyadistortion of P(d 2)is,comparedto P(d 0),forexample.
+We re ready now to put it all together: we can define P(f,d e), the probability that
+thesequenceofphrases f withdistortions disatranslation ofthesequenceofphrases e. We
+make the assumption that each phrase translation and each distortion is independent of the
+others, andthuswecanfactortheexpression as
+(cid:25)
+P(f,d e) P(f e )P(d )
+i i i
+i
+e e e e e
+1 2 3 4 5
+There is a smelly wumpus sleeping in 2 2
+f f f f f
+1 3 2 4 5
+Il y a un wumpus malodorant qui dort 2 2
+d 0 d -2 d 1 d 1 d 0
+1 3 2 4 5
+Figure23.13 Candidate Frenchphrasesforeachphraseofan Englishsentence,withdis-
+tortion(d)valuesforeach Frenchphrase.
+Thatgivesusawaytocomputetheprobability P(f,d e)foracandidate translation f
+anddistortion d. Buttofindthebestf anddwecan t justenumerate sentences; withmaybe
+100 French phrases for each English phrase in the corpus, there are 1005 different 5-phrase
+translations, a

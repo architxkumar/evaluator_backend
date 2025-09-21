@@ -1,0 +1,29 @@
+lse
+untilunchanged?
+return Figure17.7 Thepolicyiterationalgorithmforcalculatinganoptimalpolicy.
+658 Chapter 17. Making Complex Decisions
+The algorithms we have described so far require updating the utility or policy for all
+states at once. It turns out that this is not strictly necessary. In fact, on each iteration, we
+can pick any subset ofstates and apply either kind ofupdating (policy improvement orsim-
+plified value iteration) to that subset. This very general algorithm is called asynchronous
+ASYNCHRONOUS policy iteration. Given certain conditions on the initial policy and initial utility function,
+POLICYITERATION
+asynchronous policy iteration is guaranteed to converge to an optimal policy. The freedom
+to choose any states to work on means that we can design much more efficient heuristic
+algorithms for example, algorithms that concentrate on updating the values of states that
+arelikely tobereachedbyagoodpolicy. Thismakesalotofsenseinreallife: ifonehasno
+intention ofthrowing oneself offacliff, oneshould notspend timeworrying about theexact
+valueoftheresulting states.
+17.4 PARTIALLY OBSERVABLE MDPS
+Thedescription of Markov decision processes in Section 17.1assumed that theenvironment
+was fully observable. With this assumption, the agent always knows which state it is in.
+This,combinedwiththe Markovassumptionforthetransitionmodel,meansthattheoptimal
+policydependsonlyonthecurrentstate. Whentheenvironmentisonlypartiallyobservable,
+the situation is, one might say, much less clear. The agent does not necessarily know which
+stateitisin,soitcannotexecutetheaction (s)recommendedforthatstate. Furthermore,the
+utility ofastatesandtheoptimalactioninsdepend notjustons,butalsoonhowmuchthe
+PARTIALLY agent knows whenitisins. Forthese reasons, partially observable MD Ps(or POMD Ps OBSERVABLEMDP
+pronounced pom-dee-pees )areusuallyviewedasmuchmoredifficultthanordinary MD Ps.
+Wecannotavoid POMD Ps,however,becausetherealworldisone.
+17.4.1 Definitionof POMD Ps
+To get a handle on POMD P

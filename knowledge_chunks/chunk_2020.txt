@@ -1,0 +1,23 @@
+ional advantage over HIERARCHICAL-SEARCH, which in turn may have
+a large advantage over plain old BREADTH-FIRST-SEARCH. Consider, for example, clean-
+ing up a large vacuum world consisting of rectangular rooms connected by narrow corri-
+dors. It makes sense to have an HLA for Navigate (as shown in Figure 11.4) and one for
+Clean Whole Room. (Cleaning the room could be implemented with the repeated application
+of another HLA to clean each row.) Since there are five actions in this domain, the cost
+for BREADTH-FIRST-SEARCH grows as 5d, where d is the length of the shortest solution
+(roughly twice the total number of squares); the algorithm cannot manage even two 2 2
+rooms. HIERARCHICAL-SEARCH ismoreefficient,butstillsuffersfromexponential growth
+becauseittriesallwaysofcleaningthatareconsistentwiththehierarchy. ANGELIC-SEARCH
+scales approximately linearly inthe numberofsquares it commits toagood high-level se-
+Section11.3. Planningand Actingin Nondeterministic Domains 415
+quence and prunes away the other options. Notice that cleaning a set of rooms by cleaning
+each room in turn is hardly rocket science: it is easy for humans precisely because of the
+hierarchical structure of the task. When we consider how difficult humans find it to solve
+small puzzles such asthe 8-puzzle, itseems likely that the human capacity forsolving com-
+plex problems derives to a great extent from their skill in abstracting and decomposing the
+problem toeliminatecombinatorics.
+The angelic approach can be extended to find least-cost solutions by generalizing the
+notion of reachable set. Instead of a state being reachable or not, it has a cost for the most
+efficient way to get there. (The cost is for unreachable states.) The optimistic and pes-
+simisticdescriptions boundthesecosts. Inthisway,angelicsearchcanfindprovablyoptimal
+abstract planswithoutconsidering theirimplementations. Thesameapproach canbeusedto HIERARCHICAL obtain effective hierarchical lookahead algorithms for online search, in the s

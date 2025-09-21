@@ -1,0 +1,33 @@
+ willfindaglobaloptimumwithprobability approaching 1.
+Simulated annealing was first used extensively to solve VLSI layout problems in the
+early1980s. Ithasbeenapplied widelytofactoryscheduling andotherlarge-scale optimiza-
+tiontasks. In Exercise4.4,youareaskedtocompareitsperformancetothatofrandom-restart
+hillclimbingonthe8-queens puzzle.
+4.1.3 Local beam search
+Keeping just one node in memory might seem to be an extreme reaction to the problem of
+LOCALBEAM memory limitations. The local beam search algorithm3 keeps track of k states rather than
+SEARCH
+3 Localbeamsearchisanadaptationofbeamsearch,whichisapath-basedalgorithm.
+126 Chapter 4. Beyond Classical Search
+function SIMULATED-ANNEALING(problem,schedule)returnsasolutionstate
+inputs:problem,aproblem
+schedule,amappingfromtimeto temperature current MAKE-NODE(problem.INITIAL-STATE)
+fort 1to do
+T schedule(t)
+if T 0thenreturncurrent
+next arandomlyselectedsuccessorofcurrent E next.VALUE current.VALUE
+if E 0thencurrent next
+elsecurrent next onlywithprobabilitye E T
+Figure4.5 Thesimulatedannealingalgorithm,aversionofstochastichillclimbingwhere
+somedownhillmovesareallowed. Downhillmovesareacceptedreadilyearlyintheanneal-
+ingscheduleandthenlessoftenastimegoeson.Theschedule inputdeterminesthevalueof
+thetemperature T asafunctionoftime.
+justone. Itbegins withk randomly generated states. Ateach step, allthesuccessors ofallk
+states aregenerated. Ifanyoneisagoal, thealgorithm halts. Otherwise, itselects the k best
+successors fromthecompletelistandrepeats.
+At first sight, a local beam search with k states might seem to be nothing more than
+running k random restarts in parallel instead of in sequence. In fact, the two algorithms
+are quite different. In a random-restart search, each search process runs independently of
+the others. In a local beam search, useful information is passed among the parallel search
+threads. In effect, the states that generate the best successors say to the others, Come over
+here, the grass is greener! The a

@@ -1,0 +1,33 @@
+y,723
+crosswordpuzzle,44,231 Darwiche,A.,277,517,554,557,558, decisionlist,715
+Cruse,D.A.,870,1069 1069,1085 decisionmaker,633
+cryptarithmetic,206 Darwin,C.,130,1035,1069 decisionnetwork,510,610,626,
+Csorba,M.,1012,1071 Dasgupta,P.,157,1069 626 628,636,639,664
+Cuellar,J.,279,1064 data-driven,258 dynamic,664,685
+Culberson,J.,107,112,1069,1092 dataassociation,599,982 evaluationof,628
+culling,128 database,299 decisionnode,626
+Cullingford,R.E.,23,1069 databasesemantics,300,343,367,540 decisionstump,750
+cultofcomputationalism,1020 datacomplexity,334 decisiontheory,9,26,483,636
+Cummins,D.,638,1069 datacompression,866 decisiontree,638,697,698
+cumulativedistribution,564,623,1058 Datalog,331,357,358 expressiveness,698
+cumulativelearning,791,797 datamatrix,721 pruning,705
+cumulativeprobabilitydensityfunction, datamining,26 declarative,286
+1058 datasparsity,888 declarativebias,787
+curiosity,842 dativecase,899 declarativism,236,275
+Curran,J.R.,920,1068 Daun,B.,432,1070 decomposability(oflotteries),613
+current-best-hypothesis,770,798 Davidson,A.,678,687,1066 DECOMPOSE,414
+CURRENT-BEST-LEARNING,771 Davidson,D.,470,1069 decomposition,378
+Currie,K.W.,432,1073 Davies,T.R.,784,799,1069 De Coste,D.,760,762,1070
+curse Davis,E.,469 473,1069,1070 Dedekind,R.,313,1070
+ofdimensionality,739,760,989,997 Davis,G.,432,1070 deduction,seelogicalinference
+optimizer s,619,637 Davis,K.H.,922,1070 deductiontheorem,249
+winner s,637 Davis,M.,260,276,350,358,1070 deductivedatabase,336,357,358
+Cushing,W.,432,1069 Davis,R.,800,1070 deductivelearning,694
+cutofftest,171 Davis Putnamalgorithm,260 deepbeliefnetworks,1047
+cutset Dawid,A.P.,553,639,826,1069, DEEPBLUE,ix,29,185,192
+conditioning,225,227,554 1080,1089 DEEPFRITZ,193
+cutset,cycle,225 Dayan,P.,763,854,855,1070,1083, Deep Space One,60,392,432
+cutsetconditioning,225,227,554 1088 DEEPTHOUGHT,192
+Cybenko,G.,762,1069 da Vinci,L.,5,966 Deerwester,S.C.,883,1070
+Index 1103
+defaultlogic,459,468,471 detectionfailure(indataassociation), directedarcconsistency,

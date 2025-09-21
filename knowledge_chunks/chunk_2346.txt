@@ -1,0 +1,31 @@
+r it might be a
+parameterized additiveorlinearfunction oftheattribute values.
+A simplified form is also used in many cases. The notation remains identical, but the
+chancenodesdescribing theoutcomestateareomitted. Instead, theutilitynodeisconnected
+directlytothecurrent-statenodesandthedecisionnode. Inthiscase,ratherthanrepresenting
+autilityfunctiononoutcomestates,theutilitynoderepresentstheexpectedutilityassociated
+with each action, as defined in Equation (16.1) on page 611; that is, the node is associated
+ACTION-UTILITY with an action-utility function (also known as a Q-function in reinforcement learning, as
+FUNCTION
+described in Chapter 21). Figure 16.7 shows the action-utility representation of the airport
+sitingproblem.
+Noticethat,becausethe Noise,Deaths,and Cost chance nodesin Figure16.6referto
+future states, they can neverhave theirvalues set asevidence variables. Thus, thesimplified
+version that omits these nodes can be used whenever the more general form can be used.
+Although the simplified form contains fewer nodes, the omission of an explicit description
+of the outcome of the siting decision means that it is less flexible with respect to changes in
+circumstances. Forexample,in Figure16.6,achange inaircraft noiselevelscanbereflected
+by a change in the conditional probability table associated with the Noise node, whereas a
+change in the weight accorded to noise pollution in the utility function can be reflected by
+9 Thesenodesarealsocalledvaluenodesintheliterature.
+628 Chapter 16. Making Simple Decisions
+Airport Site
+Air Traffic
+Litigation U
+Construction
+Figure16.7 Asimplifiedrepresentationoftheairport-sitingproblem. Chancenodescor-
+respondingtooutcomestateshavebeenfactoredout.
+a change in the utility table. In the action-utility diagram, Figure 16.7, on the other hand,
+all such changes have to be reflected by changes to the action-utility table. Essentially, the
+action-utility formulation isacompiledversionoftheoriginal formulation.
+16.5.2 Evaluating decisio

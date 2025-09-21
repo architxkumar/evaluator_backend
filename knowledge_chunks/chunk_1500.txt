@@ -1,0 +1,25 @@
+inphilosophyandeconomics. In
+AI,theconceptwasofperipheralinterestuntilthemid-1980s,whenitbegantosuffusemany
+60 Chapter 2. Intelligent Agents
+discussions aboutthepropertechnical foundations ofthefield. Apaperby Jon Doyle(1983)
+predicted that rational agent design would come to be seen as the core mission of AI, while
+otherpopulartopicswouldspinofftoformnewdisciplines.
+Careful attention to the properties of the environment and their consequences for ra-
+tional agent design is most apparent in the control theory tradition for example, classical
+control systems (Dorf and Bishop, 2004; Kirk, 2004) handle fully observable, deterministic
+environments; stochastic optimal control (Kumar and Varaiya, 1986; Bertsekas and Shreve,
+2007) handles partially observable, stochastic environments; and hybrid control (Henzinger
+and Sastry, 1998; Cassandras and Lygeros, 2006) deals with environments containing both
+discrete andcontinuous elements. Thedistinction between fully andpartially observable en-
+vironments is also central in the dynamic programming literature developed in the field of
+operations research (Puterman,1994), whichwediscuss in Chapter17.
+Reflex agents were the primary model for psychological behaviorists such as Skinner
+(1953),whoattemptedtoreducethepsychologyoforganismsstrictlytoinput outputorstim-
+ulus response mappings. The advance from behaviorism to functionalism in psychology,
+which wasatleast partly driven bythe application ofthe computer metaphortoagents (Put-
+nam, 1960; Lewis, 1966), introduced the internal state of the agent into the picture. Most
+work in AI views the idea of pure reflex agents with state as too simple to provide much
+leverage, but work by Rosenschein (1985) and Brooks (1986) questioned this assumption
+(see Chapter 25). In recent years, a great deal of work has gone into finding efficient algo-
+rithmsforkeepingtrackofcomplexenvironments(Hamscheretal.,1992;Simon,2006). The
+Remote Agentprogram(describedonpage28)thatcontrolled the Deep Space On

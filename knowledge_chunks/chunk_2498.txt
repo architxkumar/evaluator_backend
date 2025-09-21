@@ -1,0 +1,31 @@
+er than1000,while(b)and(c)use
+thesamescale.
+Thederivative g (cid:2) ofthelogistic functionsatisfiesg (cid:2) (z) g(z)(1 g(z)), sowehave
+g (cid:2) (w x) g(w x)(1 g(w x)) h (x)(1 h (x))
+w w
+sotheweightupdateforminimizingthelossis
+w w (y h (x)) h (x)(1 h (x)) x . (18.8)
+i i w w w i
+Repeating the experiments of Figure 18.16 with logistic regression instead of the linear
+threshold classifier, we obtain the results shown in Figure 18.18. In (a), the linearly sep-
+arable case, logistic regression is somewhat slower to converge, but behaves much more
+predictably. In (b) and (c), where the data are noisy and nonseparable, logistic regression
+converges farmorequickly andreliably. Theseadvantages tendtocarryoverintoreal-world
+applications and logistic regression has become one of the most popular classification tech-
+niquesforproblemsinmedicine,marketingandsurveyanalysis,creditscoring,publichealth,
+andotherapplications.
+18.7 ARTIFICIAL NEURAL NETWORKS
+We turn now to what seems to be a somewhat unrelated topic: the brain. In fact, as we
+will see, the technical ideas we have discussed so far in this chapter turn out to be useful in
+buildingmathematicalmodelsofthebrain sactivity;conversely, thinkingaboutthebrainhas
+helpedinextendingthescopeofthetechnical ideas.
+Chapter 1 touched briefly on the basic findings of neuroscience in particular, the hy-
+pothesis that mental activity consists primarily of electrochemical activity in networks of
+brain cells called neurons. (Figure 1.2on page 11 showed a schematic diagram of atypical
+neuron.) Inspired by this hypothesis, some of the earliest AI work aimed to create artificial
+neural networks. (Other names for the field include connectionism, parallel distributed
+NEURALNETWORK
+processing, and neural computation.) Figure 18.19 shows a simple mathematical model
+of the neuron devised by Mc Culloch and Pitts (1943). Roughly speaking, it fires when a
+linearcombinationofitsinputsexceedssome(hardorsoft) threshold that is,itimplements
+728 Chapter 1

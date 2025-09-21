@@ -1,0 +1,26 @@
+ed andconcurrent events. Peter Ladkin(1986a,
+1986b) introduced concave time intervals (intervals with gaps; essentially, unions of ordi-
+nary convex timeintervals) andapplied thetechniques of mathematical abstract algebra to
+time representation. Allen (1991) systematically investigates the wide variety of techniques
+availablefortimerepresentation; van Beekand Manchak(1996)analyzealgorithmsfortem-
+poralreasoning. Therearesignificantcommonalitiesbetweentheevent-basedontologygiven
+in this chapter and an analysis of events due to the philosopher Donald Davidson (1980).
+Thehistoriesin Pat Hayes s(1985a) ontology ofliquids andthechronicles in Mc Dermott s
+(1985)theoryofplanswerealsoimportantinfluencesonthefieldandthischapter.
+Thequestion ofthe ontological status of substances has along history. Plato proposed
+that substances were abstract entities entirely distinct from physical objects; he would say
+Made Of(Butter ,Butter) rather than Butter Butter. This leads to a substance hierar-
+3 3
+chyinwhich,forexample,Unsalted Butter isamorespecificsubstancethan Butter. Thepo-
+sitionadoptedinthischapter, inwhichsubstances arecategoriesofobjects,waschampioned
+by Richard Montague(1973). Ithasalsobeenadoptedinthe CYC project. Copeland(1993)
+mountsaserious, butnotinvincible, attack. Thealternative approach mentioned inthechap-
+ter,inwhichbutterisoneobjectconsistingofallbutteryobjectsintheuniverse,wasproposed
+originallybythe Polishlogician Les niewski(1916). Hismereology(thenameisderivedfrom
+MEREOLOGY
+the Greek word for part ) used the part whole relation as a substitute for mathematical set
+theory, withtheaimofeliminating abstract entities suchassets. Amorereadable exposition
+of these ideas is given by Leonard and Goodman (1940), and Goodman s The Structure of
+Appearance(1977)appliestheideastovariousproblemsinknowledgerepresentation. While
+some aspects of the mereological approach are awkward for example, the need for asepa-
+rateinheritance mechanism based onpart whole relations the a

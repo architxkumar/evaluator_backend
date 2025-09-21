@@ -1,0 +1,53 @@
+hout replacement
+fromamongallclauseswithkdifferentliterals,whicharepositiveornegativeatrandom. (A
+symbolmaynotappeartwiceinaclause,normayaclauseappeartwiceinasentence.)
+Given a source of random sentences, we can measure the probability of satisfiability.
+Figure 7.19(a) plots the probability for CNF (m,50), that is, sentences with 50 variables
+3
+and 3 literals per clause, as a function of the clause symbol ratio, m n. As we expect, for
+small m n the probability of satisfiability is close to 1, and at large m n the probability
+is close to 0. The probability drops fairly sharply around m n 4.3. Empirically, we find
+that the cliff stays in roughly the same place (for k 3)and gets sharper and sharper as n
+SATISFIABILITY increases. Theoretically, the satisfiability threshold conjecture says that for every k 3,
+THRESHOLD
+CONJECTURE
+thereisathreshold ratio r suchthat,asngoestoinfinity,theprobability that CNF (n,rn)
+k k
+is satisfiable becomes 1 for all values of r below the threshold, and 0 for all values above.
+Theconjecture remainsunproven.
+1
+0.8
+0.6
+0.4
+0.2
+0
+0 1 2 3 4 5 6 7 8
+)elbaifsitas(P
+2000
+1800
+1600
+1400
+1200
+1000
+800
+600
+400
+200
+0
+0 1 2 3 4 5 6 7 8
+Clause symbol ratio m n
+emitnu R
+DPLL
+Walk SAT
+Clause symbol ratio m n
+(a) (b)
+Figure7.19 (a)Graphshowingtheprobabilitythatarandom3-CN Fsentencewithn 50
+symbolsissatisfiable,asafunctionoftheclause symbolratiom n.(b)Graphofthemedian
+runtime(measuredinnumberofrecursivecallsto DPLL,agoodproxy)onrandom3-CNF
+sentences.Themostdifficultproblemshaveaclause symbolratioofabout4.3.
+Nowthatwehaveagood ideawherethesatisfiable andunsatisfiable problems are, the
+next question is, where are the hard problems? It turns out that they are also often at the
+threshold value. Figure7.19(b) showsthat 50-symbol problems atthe threshold value of4.3
+are about 20 times more difficult to solve than those at a ratio of 3.3. The underconstrained
+problems are easiest to solve (because it is so easy to guess a solution); the overconstrained
+problemsar

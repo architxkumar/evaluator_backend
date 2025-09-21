@@ -1,0 +1,29 @@
+ore complex sentences, with the same syntax
+andsemanticsasinpropositional calculus. Herearefoursentences thataretrueinthemodel
+of Figure8.2underourintendedinterpretation: Brother(Left Leg(Richard),John)
+Brother(Richard,John) Brother(John,Richard)
+King(Richard) King(John) King(Richard) King(John).
+8.2.6 Quantifiers
+Once we have a logic that allows objects, it is only natural to want to express properties of
+entire collections of objects, instead of enumerating the objects by name. Quantifierslet us
+QUANTIFIER
+dothis. First-orderlogiccontains twostandard quantifiers, calleduniversal andexistential.
+Universalquantification( )
+Recall the difficulty we had in Chapter 7 with the expression of general rules in proposi-
+tional logic. Rules such as Squares neighboring the wumpus are smelly and All kings
+are persons are the bread and butter of first-order logic. We deal with the first of these in
+Section8.3. Thesecondrule, Allkingsarepersons, iswritteninfirst-orderlogicas x King(x) Person(x). is usually pronounced Forall ... . (Remember that the upside-down A stands for all. )
+Thus,thesentence says, Forallx,ifxisaking, thenxisaperson. Thesymbolxiscalled
+a variable. By convention, variables are lowercase letters. A variable is a term all by itself,
+VARIABLE
+and as such can also serve as the argument of a function for example, Left Leg(x). Aterm
+withnovariables iscalledagroundterm.
+GROUNDTERM
+Intuitively, the sentence x P, where P is any logical expression, says that P is true
+forevery object x. More precisely, x P istrue in agiven model if P istrue inall possible
+EXTENDED extendedinterpretationsconstructedfromtheinterpretationgiveninthemodel,whereeach
+INTERPRETATION
+6 Weusuallyfollowtheargument-orderingconventionthat P(x,y)isreadas xisa P ofy. 296 Chapter 8. First-Order Logic
+extended interpretation specifiesadomainelementtowhich xrefers.
+Thissoundscomplicated,butitisreallyjustacarefulwayofstatingtheintuitivemean-
+ing of universal quantification. Consider the model shown in Fi

@@ -1,0 +1,24 @@
+ithfirst-ordersentences and forwhichmodelswereprobability
+measures on possible worlds. Within AI, this idea was developed for propositional logic
+by Nilsson (1986) and for first-order logic by Halpern (1990). The first extensive inves-
+tigation of knowledge representation issues in such languages was carried out by Bacchus
+(1990). Thebasicideaisthateachsentence intheknowledgebaseexpressed aconstraint on
+the distribution over possible worlds; one sentence entails another if it expresses a stronger
+constraint. For example, the sentence x P(Hungry(x)) 0.2 rules out distributions
+in which any object is hungry with probability less than 0.2; thus, it entails the sentence x P(Hungry(x)) 0.1. It turns out that writing a consistent set of sentences in these
+languages is quite difficult and constructing a unique probability model nearly impossible
+unless oneadopts therepresentation approach of Bayesian networks bywritingsuitable sen-
+tencesaboutconditional probabilities.
+Beginning in the early 1990s, researchers working on complex applications noticed
+theexpressivelimitationsof Bayesiannetworksanddevelopedvariouslanguages forwriting templates withlogicalvariables,fromwhichlargenetworkscouldbeconstructed automat-
+ically for each problem instance (Breese, 1992; Wellman et al., 1992). The most important
+such language was BUGS (Bayesian inference Using Gibbs Sampling) (Gilks et al., 1994),
+INDEXEDRANDOM whichcombined Bayesiannetworkswiththeindexedrandomvariablenotationcommonin
+VARIABLE
+556 Chapter 14. Probabilistic Reasoning
+statistics. (In BUGS,anindexedrandomvariablelookslike X i ,whereihasadefinedinteger
+range.) Theselanguagesinheritedthekeypropertyof Bayesiannetworks: everywell-formed
+knowledgebasedefinesaunique,consistentprobabilitymodel. Languageswithwell-defined
+semantics based on unique names and domain closure drew on the representational capa-
+bilities of logic programming (Poole, 1993; Sato and Kameya, 1997; Kersting et al., 2000)
+and semantic networks (Koller and Pfe

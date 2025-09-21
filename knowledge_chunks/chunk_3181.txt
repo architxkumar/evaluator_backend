@@ -1,0 +1,33 @@
+cal,856,1046 reusableresource,402
+reasoning,4,19,234 multiagent,856 revelationprinciple,680
+default,458 460,547 off-policy,844 revenueequivalencetheorem,682
+intercausal,548 on-policy,844 Reversi,186
+logical,249 264,284 Reingold,E.M.,228,1066 revolutejoint,976
+uncertain,26 Reinsel,G.,604,1066 reward,56,646,684,830
+recall,869 Reiter,R.,279,395,471,686,1066, additive,649
+Rechenberg,I.,155,1086 1086 discounted,649
+recognition,929 REJECTION-SAMPLING,533 shaping,856
+recommendation,539 rejectionsampling,532 reward-to-go,833
+reconstruction,929 relation,288 rewardfunction,832,1046
+recurrentnetwork,729,762 relationalextraction,874 rewriterule,364,1060
+RECURSIVE-BEST-FIRST-SEARCH,99 relationalprobabilitymodel(RPM), Reynolds,C.W.,435,1086
+RECURSIVE-DLS,88 541,552 Riazanov,A.,359,360,1086
+recursivedefinition,792 relationalreinforcementlearning,857 Ribeiro,F.,195,1091
+recursiveestimation,571 relativeerror,98 Rice,T.R.,638,1082
+Reddy,R.,922,1081 relaxedproblem,105,376 Rich,E.,2,1086
+reduction,1059 relevance,246,375,779,799 Richards,M.,195,1086
+Reeson,C.G.,228,1086 relevance(ininformationretrieval),867 Richardson,M.,556,604,1071,1086
+Reeves,C.,112,1086 relevance-basedlearning(RBL),779, Richardson,S.,554,1073
+Reeves,D.,688,1092 784 787,798 Richter,S.,395,1075,1086
+referenceclass,491,505 relevant-states,374 ridge(inlocalsearch),123
+referencecontroller,997 Remote Agent,28,60,356,392,432 Ridley,M.,155,1086
+referencepath,997 REMOTEAGENT,28 Rieger,C.,24,1086
+referentialtransparency,451 renaming,331 Riesbeck,C.,23,358,921,1068,1088
+refinement(inhierarchicalplanning), renderingmodel,928 rightthing,doingthe,1,5,1049
+407 Renner,G.,155,1086 Riley,J.,688,1087
+reflectance,933,952 Re nyi,A.,504,1086 Riley,M.,889,1083
+REFLEX-VACUUM-AGENT,48 repeatedgame,669,673 Riloff,E.,885,1077,1087
+reflexagent,48,48 50,59,647,831 replanning,415,422 434 Rink,F.J.,553,1083
+refutation,250 REPOP,394 Rintanen,J.,433,1087
+refutationcompleteness,350 representation,seeknowledge Ripley,B.D.,763,1087
+regex,874 represent

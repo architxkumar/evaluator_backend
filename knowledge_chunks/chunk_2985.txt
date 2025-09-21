@@ -1,0 +1,25 @@
+ionisbetweenproblemsthatcanbesolvedinpolynomial
+time and problems that cannot be solved in polynomial time, no matter what algorithm is
+used. Theclassofpolynomialproblems those whichcanbesolvedintime O(nk)forsome
+k iscalled P.Thesearesometimescalled easy problems,becausetheclasscontainsthose
+problems with running times like O(logn) and O(n). But it also contains those with time
+O(n1000),sothename easy shouldnotbetakentooliterally.
+Another important class of problems is NP, the class of nondeterministic polynomial
+problems. Aproblem isinthis class ifthere issome algorithm thatcan guess asolution and
+then verify whether the guess is correct in polynomial time. The idea is that if you have an
+arbitrarily large numberofprocessors, sothat you can try allthe guesses atonce, oryou are
+very lucky and always guess right the first time, then the NP problems become P problems.
+Oneof thebiggest open questions in computer science is whetherthe class NPis equivalent
+Section A.2. Vectors,Matrices,and Linear Algebra 1055
+to the class P when one does not have the luxury of an infinite number of processors or
+omniscientguessing. Mostcomputerscientistsareconvinced that P(cid:7) NP;that NPproblems
+areinherentlyhardandhavenopolynomial-time algorithms. Butthishasneverbeenproven.
+Thosewhoareinterestedindecidingwhether P NPlookatasubclassof NPcalledthe
+NP-complete problems. The word complete is used here in the sense of most extreme NP-COMPLETE
+and thus refers to the hardest problems in the class NP. It has been proven that either all
+the NP-complete problems are in P or none of them is. This makes the class theoretically
+interesting, but the class is also of practical interest because many important problems are
+known to be NP-complete. An example is the satisfiability problem: given a sentence of
+propositional logic, is there an assignment of truth values to the proposition symbols of the
+sentence that makes it true? Unless a miracle occurs and P NP, there can be no algorithm
+that solves

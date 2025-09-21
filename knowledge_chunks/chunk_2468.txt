@@ -1,0 +1,26 @@
+f there are roughly equal numberof examples forallfour
+combinations of input values, then neither attribute willbeinformative, yet thecorrect thing
+todo istosplit onone ofthe attributes (it doesn t matterwhich one), and then atthesecond
+level we will get splits that are informative. Early stopping would miss this, but generate-
+and-then-prune handles itcorrectly.
+18.3.6 Broadening the applicabilityofdecisiontrees
+Inordertoextend decision tree induction toawidervariety ofproblems, anumberofissues
+must be addressed. We will briefly mention several, suggesting that a full understanding is
+bestobtained bydoingtheassociated exercises: Missing data: In many domains, not all the attribute values will be known for every
+example. The values might have gone unrecorded, or they might be too expensive to
+obtain. This gives rise to two problems: First, given a complete decision tree, how
+should one classify an example that is missing one of the test attributes? Second, how
+Section18.3. Learning Decision Trees 707
+should one modify the information-gain formula when some examples have unknown
+valuesfortheattribute? Thesequestions areaddressed in Exercise18.9. Multivalued attributes: When an attribute has many possible values, the information
+gain measure gives an inappropriate indication of the attribute s usefulness. In the ex-
+treme case, an attribute such as Exact Time has a different value for every example,
+which means each subset of examples is a singleton with a unique classification, and
+theinformationgainmeasurewouldhaveitshighestvalueforthisattribute. Butchoos-
+ingthissplitfirstisunlikely toyieldthebesttree. Onesolution istousethegainratio
+GAINRATIO
+(Exercise18.10). Anotherpossibilityistoallowa Booleantestoftheform A v ,that
+k
+is, picking out just one of the possible values for an attribute, leaving the remaining
+valuestopossibly betestedlaterinthetree. Continuous and integer-valued input attributes: Continuous or integer-valued at-
+tributessuchas Height and Weight,havea

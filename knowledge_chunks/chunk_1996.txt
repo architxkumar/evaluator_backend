@@ -1,0 +1,30 @@
+10.5 Afinite Turingmachinehasafiniteone-dimensionaltapeofcells,eachcellcontaining
+one of a finite number of symbols. One cell has a read and write head above it. There is a
+finitesetofstates themachine canbein, oneofwhichistheaccept state. Ateach timestep,
+dependingonthesymbolonthecellundertheheadandthemachine scurrentstate,thereare
+asetofactions wecanchoose from. Eachaction involves writingasymbol tothecellunder
+the head, transitioning the machine to a state, and optionally moving the head left or right.
+The mapping that determines which actions are allowed is the Turing machine s program.
+Yourgoalistocontrolthemachineintotheacceptstate.
+Represent the Turing machine acceptance problem as a planning problem. If you can
+dothis,itdemonstratesthatdeterminingwhetheraplanningproblemhasasolutionisatleast
+ashardasthe Turingacceptance problem,whichis PSPACE-hard.
+10.6 Explain why dropping negative effects from every action schema in a planning prob-
+lemresultsinarelaxedproblem.
+10.7 Figure 10.4 (page 371) shows a blocks-world problem that is known as the Sussman
+anomaly. The problem was considered anomalous because the noninterleaved planners of
+SUSSMANANOMALY
+the early 1970s could not solve it. Write a definition of the problem and solve it, either by
+handorwithaplanningprogram. Anoninterleaved planneris aplannerthat,whengiventwo
+subgoals G and G , produces either aplan for G concatenated with aplan for G , orvice
+1 2 1 2
+versa. Explainwhyanoninterleaved plannercannotsolvethisproblem.
+10.8 Provethatbackwardsearchwith PDD Lproblemsiscomplete.
+10.9 Constructlevels0,1,and2oftheplanninggraphfortheproblemin Figure10.1.
+10.10 Provethefollowingassertions aboutplanning graphs:
+a. Aliteralthatdoesnotappearinthefinallevelofthegraphcannotbeachieved.
+Exercises 399
+b. Thelevelcostofaliteralinaserialgraphisnogreaterthantheactualcostofanoptimal
+planforachievingit.
+10.11 The set-level heuristic (see page 382) uses a planning graph to estimate the cost of
+achieving a conjunctive goal from 

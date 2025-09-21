@@ -1,0 +1,36 @@
+ndants, untileachonehaseitherbeenpruned oraccepted asis.
+Thequestionis,howdowedetectthatanodeistestinganirrelevantattribute? Suppose
+weareatanodeconsistingofppositiveandnnegativeexamples. Iftheattributeisirrelevant,
+wewouldexpectthatitwouldsplittheexamplesintosubsetsthateachhaveroughlythesame
+proportion ofpositiveexamplesasthewholeset, p (p n),andsotheinformationgainwill
+beclosetozero.2 Thus,theinformation gainisagoodcluetoirrelevance. Now thequestion
+is,howlargeagainshouldwerequireinordertosplitonaparticular attribute?
+Wecan answerthisquestion byusing astatistical significance test. Suchatest begins
+SIGNIFICANCETEST
+byassumingthatthereisnounderlying pattern (theso-called nullhypothesis). Thentheac-
+NULLHYPOTHESIS
+tualdataareanalyzed tocalculate theextenttowhichtheydeviate fromaperfect absence of
+pattern. Ifthe degree ofdeviation isstatistically unlikely (usually taken to meana5 prob-
+ability or less), then that is considered to be good evidence for the presence of a significant
+patterninthedata. Theprobabilities arecalculatedfromstandarddistributions oftheamount
+ofdeviation onewouldexpecttoseeinrandomsampling.
+In this case, the null hypothesis is that the attribute is irrelevant and, hence, that the
+information gain for an infinitely large sample would be zero. We need to calculate the
+probability that, under the null hypothesis, a sample of size v n p would exhibit the
+observeddeviationfromtheexpecteddistribution ofpositiveandnegativeexamples. Wecan
+measurethedeviation bycomparingtheactualnumbersofpositiveandnegativeexamplesin
+2 Thegainwillbestrictlypositiveexceptfortheunlikelycasewherealltheproportionsare exactlythesame.
+(See Exercise18.5.)
+706 Chapter 18. Learningfrom Examples
+eachsubset, p andn ,withtheexpectednumbers, p andn ,assumingtrueirrelevance:
+k k k k
+p n p n
+p p k k n n k k .
+k k
+p n p n
+Aconvenient measureofthetotaldeviation isgivenby
+(cid:12)d (p p )2 (n n )2
+k k k k .
+p n k k
+k 1
+Under the null hypothesis, the value of is distributed according to th

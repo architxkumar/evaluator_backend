@@ -1,0 +1,29 @@
+a-
+System Sciences,21(2),156 178. The Hierarchical Generalized Voronoi Graph.Ph.D. nian,D.,and Yardi,M.(2003).Random3-SAT:The
+thesis,California Instituteof Technology. plotthickens.Constraints,8(3),243 261.
+Chang,C.-L.and Lee,R.C.-T.(1973). Symbolic
+Logicand Mechanical Theorem Proving.Academic Choset,H.,Lynch,K.,Hutchinson,S.,Kantor,G., Coates,A.,Abbeel,P.,and Ng,A.Y.(2009). Ap-
+Press. Burgard, W., Kavraki, L., and Thrun, S. (2004). Principlesof Robotic Motion: Theory,Algorithms, 52(7),97 105.
+Chapman, D. (1987). Planning for conjunctive and Implementation.MIT Press.
+Cobham, A.(1964). Theintrinsiccomputational
+goals.AIJ,32(3),333 377.
+Chung, K. L. (1979). Elementary Probability difficultyoffunctions. In Proc.1964International
+Charniak,E.(1993). Statistical Language Learn- Theory with Stochastic Processes (3rd edition). Congressfor Logic,Methodology,and Philosophyof
+ing.MIT Press. Springer-Verlag. Science,pp.24 30.
+Bibliography 1069
+Cohen,P.R.(1995). Empiricalmethodsforartifi- Copernicus (1543). De Revolutionibus Orbium Cross,S.E.and Walker,E.(1994). DART:Apply-
+cialintelligence.MIT Press. Coelestium.Apud Ioh.Petreium,Nuremberg. ingknowledgebasedplanningandschedulingtocri-
+sisactionplanning. In Zweben,M.and Fox,M.S.
+Cohen,P.R.and Levesque,H.J.(1990). Intention Cormen, T. H., Leiserson, C. E., and Rivest, R.
+(Eds.),Intelligent Scheduling,pp.711 729.Morgan
+ischoicewithcommitment.AIJ,42(2 3),213 261. (1990).Introductionto Algorithms.MIT Press.
+Kaufmann.
+Cohen,P.R.,Morgan,J.,and Pollack,M.E.(1990). Cortes,C.and Vapnik,V.N.(1995).Supportvector
+Cruse,D.A.(1986).Lexical Semantics.Cambridge
+Intentionsin Communication.MIT Press. networks.Machine Learning,20,273 297.
+University Press.
+Cohen,W.W.and Page,C.D.(1995). Learnabil- Cournot, A. (Ed.). (1838). Recherches sur les
+Culberson,J.and Schaeffer,J.(1996). Searching
+ityininductivelogic programming: Methodsand principesmathe matiquesdelathe oriedesrichesses.
+with pattern databases. In Advances in Artificial
+results. New Generat

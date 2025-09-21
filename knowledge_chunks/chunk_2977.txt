@@ -1,0 +1,29 @@
+urtherprogress. But
+where is this all leading? Dreyfus (1992) gives the analogy of trying to get to the moon by
+climbing a tree; one can report steady progress, all the way to the top of the tree. In this
+section, weconsiderwhether AI scurrentpathismorelikea treeclimborarockettrip.
+In Chapter1,wesaidthatourgoalwastobuildagentsthatactrationally. However,we
+alsosaidthat
+...achievingperfectrationality alwaysdoingtherightthing isnotfeasibleincompli-
+catedenvironments.Thecomputationaldemandsarejusttoohigh.Formostofthebook,
+however,wewilladopttheworkinghypothesisthatperfectrationalityisagoodstarting
+pointforanalysis.
+Nowitistimetoconsider againwhatexactly thegoalof AIis. Wewanttobuild agents, but
+withwhatspecification inmind? Herearefourpossibilities:
+PERFECT Perfect rationality. A perfectly rational agent acts at every instant in such a way as to
+RATIONALITY
+maximizeitsexpectedutility,giventheinformationithasacquiredfromtheenvironment. We
+have seen thatthe calculations necessary toachieve perfect rationality inmostenvironments
+aretootimeconsuming, soperfectrationality isnotarealisticgoal.
+CALCULATIVE Calculative rationality. This is the notion of rationality that we have used implicitly in de-
+RATIONALITY
+signinglogicalanddecision-theoretic agents,andmostoftheoretical AIresearchhasfocused
+on this property. A calculatively rational agent eventually returns what would have been the
+rationalchoiceatthebeginningofitsdeliberation. Thisisaninterestingpropertyforasystem
+to exhibit, but in most environments, the right answer at the wrong time is of no value. In
+practice, AIsystemdesignersareforcedtocompromiseondecisionqualitytoobtainreason-
+able overall performance; unfortunately, the theoretical basis of calculative rationality does
+notprovideawell-founded waytomakesuchcompromises.
+BOUNDED Boundedrationality. Herbert Simon(1957) rejected the notion ofperfect (oreven approx-
+RATIONALITY
+imately perfect) rationality and replaced it with bounded rationality, a descriptive theory o

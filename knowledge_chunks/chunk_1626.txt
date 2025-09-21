@@ -1,0 +1,29 @@
+sthetotalpathcost
+of the path that the agent actually travels. It is common to compare this cost with the path
+cost of the path the agent would follow if it knew the search space in advance that is, the
+actual shortest path (orshortest complete exploration). Inthelanguage ofonline algorithms,
+thisiscalledthecompetitiveratio;wewouldlikeittobeassmallaspossible.
+COMPETITIVERATIO
+Section4.5. Online Search Agentsand Unknown Environments 149
+Althoughthissounds likeareasonable request, itiseasytoseethatthebestachievable
+competitive ratio is infinite in some cases. For example, if some actions are irreversible IRREVERSIBLE
+i.e., they lead to a state from which no action leads back to the previous state the online
+searchmightaccidentally reachadead-endstatefromwhichnogoalstateisreachable. Per-
+DEADEND
+haps the term accidentally is unconvincing after all, there might be an algorithm that
+happensnottotakethedead-endpathasitexplores. Ourclaim,tobemoreprecise,isthatno
+algorithm canavoiddeadendsinallstatespaces. Considerthetwodead-end statespacesin
+Figure 4.20(a). To an online search algorithm that has visited states S and A, the two state
+spaces look identical, so it must make the same decision in both. Therefore, it will fail in
+ADVERSARY one of them. This isan example of an adversary argument wecan imagine an adversary
+ARGUMENT
+constructing the state space while the agent explores it and putting the goals and dead ends
+whereveritchooses.
+Deadendsarearealdifficultyforrobotexploration staircases, ramps,cliffs,one-way
+streets, andallkindsofnaturalterrainpresentopportunities forirreversibleactions. Tomake
+progress,wesimplyassumethatthestatespaceissafelyexplorable thatis,somegoalstate
+SAFELYEXPLORABLE
+is reachable from every reachable state. State spaces with reversible actions, such as mazes
+and8-puzzles, canbeviewedasundirected graphsandareclearlysafelyexplorable.
+Even in safely explorable environments, no bounded competitive ratio can be guaran-
+teed if there are paths of unboun

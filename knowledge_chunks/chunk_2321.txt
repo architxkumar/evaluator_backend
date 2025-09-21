@@ -1,0 +1,27 @@
+it goes.
+Butthisdoesnotmeanthatthe AIproblemissolvedbythedefinition!
+The MEU principle formalizes the general notion that the agent should do the right
+thing, but goes only a small distance toward a full operationalization of that advice. Es-
+timating the state of the world requires perception, learning, knowledge representation, and
+inference. Computing P(RESULT(a) a,e) requires a complete causal model of the world
+and,aswesawin Chapter14,NP-hardinferencein(verylarge)Bayesiannetworks. Comput-
+(cid:2)
+ing the outcome utilities U(s) often requires searching or planning, because an agent may
+not know how good astate is until itknows where it can get to from that state. So, decision
+theoryisnotapanacea thatsolvesthe AIproblem but itdoes provideausefulframework.
+The ME Uprinciplehasaclearrelationtotheideaofperformancemeasuresintroduced
+in Chapter 2. The basic idea is simple. Consider the environments that could lead to an
+agent having a given percept history, and consider the different agents that wecould design.
+If an agent acts so as to maximize a utility function that correctly reflects the performance
+measure, then the agent will achieve the highest possible performance score (averaged over
+all the possible environments). This is the central justification for the MEU principle itself.
+While the claim may seem tautological, it does in fact embody a very important transition
+from a global, external criterion of rationality the performance measure over environment
+histories toalocal,internalcriterioninvolvingthemaximizationofautilityfunctionapplied
+tothenextstate.
+16.2 THE BASIS OF UTILITY THEORY
+Intuitively, the principle of Maximum Expected Utility (MEU) seems like a reasonable way
+to make decisions, but it is by no means obvious that it is the only rational way. After all,
+why should maximizing the average utility be so special? What s wrong with an agent that
+1 Classicaldecisiontheoryl Peavesthecurrentstate S0implicit,butwecouldmakeitexplicitbywriting
+P(RESULT(a) s

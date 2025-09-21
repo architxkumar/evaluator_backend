@@ -1,0 +1,34 @@
+lelookupwithaslightvariation: givenaqueryx ,findthekexamples
+q
+NEAREST that are nearest to x . This is called k-nearest neighbors lookup. We ll use the notation
+NEIGHBORS q
+NN(k,x )todenotethesetofk nearestneighbors.
+q
+To do classification, first find NN(k,x ), then take the plurality vote of the neighbors
+q
+(which is the majority vote in the case of binary classification). To avoid ties, k is always
+chosen to be an odd number. To do regression, we can take the mean or median of the k
+neighbors, orwecansolvealinearregression problem onthe neighbors.
+In Figure 18.26, we show the decision boundary of k-nearest-neighbors classification
+for k 1 and 5 on the earthquake data set from Figure 18.15. Nonparametric methods are
+stillsubjecttounderfittingandoverfitting,justlikeparametricmethods. Inthiscase1-nearest
+neighborsisoverfitting;itreactstoomuchtotheblackoutlierintheupperrightandthewhite
+outlier at (5.4, 3.7). The 5-nearest-neighbors decision boundary is good; higher k would
+underfit. Asusual, cross-validation canbeusedtoselectthebestvalueofk.
+The very word nearest implies a distance metric. How do we measure the distance
+from a query point x to an example point x ? Typically, distances are measured with a
+q j
+MINKOWSKI Minkowskidistanceor Lp norm,definedas
+DISTANCE (cid:12)
+Lp(x ,x ) ( x x p)1 p .
+j q j,i q,i
+i
+With p 2this is Euclidean distance and withp 1itis Manhattan distance. With Boolean
+attribute values, the number of attributes on which the two points differ is called the Ham-
+mingdistance. Often p 2isused ifthedimensions aremeasuring similarproperties, such
+HAMMINGDISTANCE
+asthewidth, height and depth ofparts onaconveyor belt, and Manhattan distance isused if
+they aredissimilar, such as age, weight, and gender ofapatient. Note that ifweuse the raw
+numbers from each dimension then the total distance will be affected by a change in scale
+in any dimension. That is, if we change dimension i from measurements in centimeters to
+Section18.8. Nonparametric Models 739

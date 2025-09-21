@@ -1,0 +1,23 @@
+fknowledgein AI,economics, anddistributed systems.
+EXERCISES
+12.1 Define an ontology in first-order logic for tic-tac-toe. The ontology should contain
+situations,actions,squares,players,marks(X,O,orblank),andthenotionofwinning,losing,
+ordrawing agame. Also define the notion ofaforced win(ordraw): aposition from which
+a player can force a win (or draw) with the right sequence of actions. Write axioms for the
+domain. (Note: The axioms that enumerate the different squares and that characterize the
+winning positions are rather long. You need not write these out in full, but indicate clearly
+whattheylooklike.)
+474 Chapter 12. Knowledge Representation
+12.2 Figure 12.1 shows the top levels of a hierarchy for everything. Extend it to include
+as many real categories as possible. A good way to do this is to cover all the things in your
+everyday life. This includes objects and events. Start with waking up, and proceed in an
+orderly fashion noting everything that you see, touch, do, and think about. For example,
+a random sampling produces music, news, milk, walking, driving, gas, Soda Hall, carpet,
+talking, Professor Fateman,chicken curry,tongue, 7,sun,thedailynewspaper, andsoon.
+You should produce both a single hierarchy chart (on a large sheet of paper) and a
+listing of objects and categories with the relations satisfied by members of each category.
+Everyobjectshould beinacategory, andeverycategoryshouldbeinthehierarchy.
+12.3 Develop a representational system for reasoning about windows in a window-based
+computerinterface. Inparticular, yourrepresentation shouldbeabletodescribe: Thestateofawindow: minimized,displayed, ornonexistent. Whichwindow(ifany)istheactivewindow. Thepositionofeverywindowatagiventime. Theorder(fronttoback)ofoverlapping windows. Theactions of creating, destroying, resizing, and moving windows; changing the state
+ofawindow;andbringing awindowtothefront. Treattheseactions asatomic;thatis,
+do not deal with the issue of relating them to mouse actions. Give ax

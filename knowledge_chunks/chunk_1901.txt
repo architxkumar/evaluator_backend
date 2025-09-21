@@ -1,0 +1,32 @@
+.3. For
+example,ontheseconditeration, therule
+Missile(x) Weapon(x)
+matchesagainst Missile(M )(again), andofcourse theconclusion Weapon(M )isalready
+1 1
+known so nothing happens. Such redundant rule matching can be avoided if we make the
+following observation: Every new fact inferred on iteration t must be derived from at least
+one new fact inferred on iteration t 1. This is true because any inference that does not
+requireanewfactfromiteration t 1couldhavebeendoneatiteration t 1already.
+This observation leads naturally to an incremental forward-chaining algorithm where,
+atiterationt,wecheckaruleonlyifitspremiseincludesaconjunct p thatunifieswithafact
+i
+p (cid:2) newlyinferredatiteration t 1. Therule-matching stepthenfixesp tomatchwithp (cid:2) ,but
+i i i
+allows the other conjuncts of the rule to match with facts from any previous iteration. This
+algorithmgeneratesexactlythesamefactsateachiterationasthealgorithmin Figure9.3,but
+ismuchmoreefficient.
+With suitable indexing, it is easy to identify all the rules that can be triggered by any
+givenfact,andindeedmanyrealsystemsoperateinan update modewhereinforwardchain-
+ing occurs in response to each new fact that is TEL Led to the system. Inferences cascade
+through thesetofrulesuntilthefixedpointisreached, andthentheprocess beginsagainfor
+thenextnewfact.
+Typically,onlyasmallfractionoftherulesintheknowledgebaseareactuallytriggered
+by the addition of a given fact. This means that a great deal of redundant work is done in
+repeatedly constructing partial matches that have some unsatisfied premises. Our crime ex-
+ampleisrathertoosmalltoshowthiseffectively,butnoticethatapartialmatchisconstructed
+onthefirstiterationbetweentherule
+American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x)
+andthefact American(West). Thispartialmatchisthendiscardedandrebuiltonthesecond
+iteration (when the rule succeeds). It would be better to retain and gradually complete the
+partialmatchesasnewfactsarrive,ratherthandiscarding them.
+The rete algorithm

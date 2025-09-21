@@ -1,0 +1,30 @@
+made,thesystem revertstothestatejustbefore P
+i
+wasadded,thereby
+removingboth P andanyinferences thatwerederivedfrom P . Thesentences P through
+i i i 1
+P can then be added again. This is simple, and it guarantees that the knowledge base will
+n
+be consistent, but retracting P requires retracting and reasserting n isentences as wellas
+i
+undoing and redoing all the inferences drawn from those sentences. For systems to which
+manyfactsarebeingadded such aslargecommercialdatabases this isimpractical.
+Amoreefficientapproachisthejustification-basedtruthmaintenancesystem,or JTMS.
+JTMS
+Ina JTMS,each sentence inthe knowledge base isannotated withajustification consisting
+JUSTIFICATION
+of the set of sentences from which it was inferred. For example, if the knowledge base
+already contains P Q, then TELL(P) will cause Q to be added with the justification P, P Q . In general, a sentence can have any number of justifications. Justifica-
+tions make retraction efficient. Given the call RETRACT(P), the JTMS will delete exactly
+those sentences for which P is a member of every justification. So, if a sentence Q had
+the single justification P, P Q , it would be removed; if it had the additional justi-
+fication P, P R Q , it would still be removed; but if it also had the justification R, P R Q ,thenitwouldbespared. Inthisway,thetimerequiredforretractionof P
+depends onlyonthenumberofsentences derived from P ratherthanonthenumberofother
+sentences addedsince P enteredtheknowledge base.
+The JTM Sassumesthatsentencesthatareconsideredoncewillprobablybeconsidered
+again, so rather than deleting a sentence from the knowledge base entirely when it loses
+all justifications, we merely mark the sentence as being out of the knowledge base. If a
+subsequent assertion restores one of the justifications, then we mark the sentence as being
+back in. In this way, the JTMS retains all the inference chains that it uses and need not
+rederivesentences whenajustification becomesvalidagain.
+In addition to handling t

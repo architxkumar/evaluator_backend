@@ -1,0 +1,27 @@
+seobjects are all thatmatters is howmanythereareineachparticularmodel but
+for pedagogical purposes we ll use a concrete example. Figure 8.2 shows a model with five
+3 Itisimportantnottoconfusethedegreeofbeliefinprobabilitytheorywiththedegreeoftruthinfuzzylogic.
+Indeed,somefuzzysystemsallowuncertainty(degreeofbelief)aboutdegreesoftruth.
+Section8.2. Syntaxand Semanticsof First-Order Logic 291
+objects: Richardthe Lionheart,Kingof Englandfrom1189to1199;hisyoungerbrother, the
+evil King John,whoruledfrom1199to1215;theleftlegsof Richardand John;andacrown.
+The objects in the model may be related in various ways. In the figure, Richard and
+John are brothers. Formally speaking, a relation is just the set of tuples of objects that are
+TUPLE
+related. (Atuple isacollection ofobjects arranged inafixedorderandiswrittenwithangle
+brackets surrounding theobjects.) Thus,thebrotherhood relationinthismodelistheset (cid:16)Richard the Lionheart, King John(cid:17), (cid:16)King John, Richardthe Lionheart(cid:17) . (8.1)
+(Herewehavenamedtheobjectsin English,butyoumay,ifyouwish,mentallysubstitutethe
+picturesforthenames.) Thecrownison King John shead,sothe onhead relationcontains
+just one tuple, (cid:16)thecrown, King John(cid:17). The brother and on head relations are binary
+relations that is, they relate pairs of objects. The model also contains unary relations, or
+properties: the person propertyistrueofboth Richardand John;the king propertyistrue
+onlyof John(presumably because Richardisdeadatthispoint);andthe crown propertyis
+trueonlyofthecrown.
+Certain kinds of relationships are best considered as functions, in that a given object
+must berelated to exactly one object in this way. Forexample, each person has one left leg,
+sothemodelhasaunary leftleg function thatincludes thefollowingmappings:
+(cid:16)Richardthe Lionheart(cid:17) Richard sleftleg
+(8.2)
+(cid:16)King John(cid:17) John sleftleg.
+Strictly speaking, models in first-order logic require total functions, that is, there must be a
+TO

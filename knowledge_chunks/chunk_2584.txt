@@ -1,0 +1,35 @@
+ate. Using the basic results of computational learning theory
+(Section 18.5), we can quantify the possible gains. First, recall that for Boolean functions,
+log( H ) examples are required to converge to a reasonable hypothesis, where H is the
+size of the hypothesis space. If the learner has n Boolean features with which to construct
+hypotheses, then, in the absence of further restrictions, H O(22n ), so the number of ex-
+amples is O(2n). Ifthe determination contains dpredicates intheleft-hand side, the learner
+willrequireonly O(2d)examples,areduction of O(2n d).
+19.4.2 Learning and using relevanceinformation
+As we stated in the introduction to this chapter, prior knowledge is useful in learning; but
+it too has to be learned. In order to provide a complete story of relevance-based learning,
+we must therefore provide a learning algorithm for determinations. The learning algorithm
+wenowpresentisbasedonastraightforward attempttofindthesimplestdetermination con-
+sistent with the observations. A determination P Q says that if any examples match on
+P, then they must also match on Q. A determination is therefore consistent with a set of
+examples if every pair that matches on the predicates on the left-hand side also matches on
+the goal predicate. For example, suppose we have the following examples of conductance
+measurements onmaterialsamples:
+786 Chapter 19. Knowledgein Learning
+function MINIMAL-CONSISTENT-DET(E,A)returnsasetofattributes
+inputs:E,asetofexamples
+A,asetofattributes,ofsizen
+fori 0ton do
+foreachsubset Aiof Aofsizei do
+if CONSISTENT-DET?(Ai,E)thenreturn Ai
+function CONSISTENT-DET?(A,E)returnsatruthvalue
+inputs:A,asetofattributes
+E,asetofexamples
+localvariables: H,ahashtable
+foreachexamplee in E do
+ifsomeexamplein H hasthesamevaluesase fortheattributes A
+butadifferentclassificationthenreturnfalse
+storetheclassofe in H,indexedbythevaluesforattributes Aoftheexamplee
+returntrue
+Figure19.8 Analgorithmforfindingaminimalconsistentdetermination.
+Sample Mass Temperature 

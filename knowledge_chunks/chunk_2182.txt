@@ -1,0 +1,28 @@
+ayarea).
+14.3 EFFICIENT REPRESENTATION OF CONDITIONAL DISTRIBUTIONS
+Evenifthe maximumnumberofparents k issmallish, filling inthe CP Tforanode requires
+upto O(2k)numbersandperhapsagreatdealofexperiencewithallthepossibleconditioning
+cases. Infact,thisisaworst-case scenario inwhichtherelationship betweentheparents and
+the child is completely arbitrary. Usually, such relationships are describable by a canonical
+CANONICAL distributionthatfitssomestandardpattern. Insuchcases,thecompletetablecanbespecified
+DISTRIBUTION
+bynamingthepatternandperhaps supplying afewparameters much easierthansupplying
+anexponential numberofparameters.
+DETERMINISTIC The simplest example is provided by deterministic nodes. A deterministic node has
+NODES
+its value specified exactly by the values of its parents, with no uncertainty. The relationship
+canbealogicalone: forexample,therelationship betweentheparentnodes Canadian,US,
+Mexican and the child node North American is simply that the child is the disjunction of
+the parents. The relationship can also be numerical: for example, if the parent nodes are
+the prices of a particular model of car at several dealers and the child node is the price that
+a bargain hunter ends up paying, then the child node is the minimum of the parent values;
+or if the parent nodes are a lake s inflows (rivers, runoff, precipitation) and outflows (rivers,
+evaporation, seepage)andthechildisthechangeinthewaterlevelofthelake,thenthevalue
+ofthechildisthesumoftheinflowparents minusthesumoftheoutflowparents.
+Uncertain relationships can often be characterized by so-called noisy logical relation-
+ships. The standard example is the noisy-OR relation, which is a generalization of the log-
+NOISY-OR
+ical OR. In propositional logic, we might say that Fever is true if and only if Cold, Flu, or
+Malaria is true. The noisy-OR model allows for uncertainty about the ability of each par-
+ent to cause the child to be true the causal relationship between parent and child may be
+Section14.3. Ef

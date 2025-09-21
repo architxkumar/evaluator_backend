@@ -1,0 +1,21 @@
+ngreinforcementlearningpol- Expandededition).Centerforthe Studyof Language Belongie, S., Malik, J., and Puzicha, J. (2002).
+icysearchmethods.In ICRA-01. and Information(CSLI). Shapematchingandobjectrecognitionusingshape
+Baker, J. (1975). The Dragon system An Barwise,J.and Etchemendy,J.(2002). Language, contexts.PAMI,24(4),509 522.
+overview.IEEE Transactionson Acoustics;Speech; Proofand Logic.CSLI(Univ.of Chicago Press). Ben-Tal,A.and Nemirovski,A.(2001).Lectureson
+and Signal Processing,23,24 29. Baum,E.,Boneh,D.,and Garrett,C.(1995). On Modern Convex Optimization:Analysis,Algorithms,
+Baker,J.(1979). Trainablegrammarsforspeech geneticalgorithms.In COLT-95,pp.230 239. and Engineering Applications. SIAM(Societyfor
+recognition. In Speech Communication Papersfor Industrialand Applied Mathematics).
+Baum,E.and Haussler,D.(1989). Whatsizenet
+the97th Meetingofthe Acoustical Societyof Amer- gives valid generalization? Neural Computation, Bengio, Y.and Le Cun, Y.(2007). Scalinglearn-
+ica,pp.547 550. 1(1),151 160. ingalgorithmstowards AI. In Bottou,L.,Chapelle,
+Baldi, P., Chauvin, Y., Hunkapiller, T., and Mc- O.,De Coste,D.,and Weston,J.(Eds.),Large-Scale
+Clure,M.(1994). Hidden Markovmodelsofbio- Baum,E.and Smith,W.D.(1997).ABayesianap- Kernel Machines.MIT Press.
+proachtorelevanceingameplaying. AIJ,97(1 2),
+logicalprimarysequenceinformation.PNAS,91(3), 195 242. Bentham,J.(1823).Principlesof Moralsand Legis-
+1059 1063. lation.Oxford University Press,Oxford,UK.Orig-
+Baldwin,J.M.(1896). Anewfactorinevolution. Baum,E.and Wilczek,F.(1988).Supervisedlearn- inalworkpublishedin1789.
+ingofprobabilitydistributionsbyneuralnetworks.
+American Naturalist, 30, 441 451. Continuedon In Anderson,D.Z.(Ed.),Neural Information Pro- Berger,J.O.(1985). Statistical Decision Theory
+pages536 553. cessing Systems,pp.52 61.American Instituteof and Bayesian Analysis.Springer Verlag.
+Ballard,B.W.(1983). The -minimaxsearchpro- Physics. Berkson,J.(1944).Applicationofthelogisticfunc-
+cedurefortreescontainingch

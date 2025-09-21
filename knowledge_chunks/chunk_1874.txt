@@ -1,0 +1,28 @@
+ningoccurs.
+There are a number of good introductory texts on first-order logic, including some by
+leading figures in the history of logic: Alfred Tarski (1941), Alonzo Church (1956), and
+W.V.Quine(1982) (whichisoneofthemostreadable). Enderton (1972)givesamoremath-
+ematically oriented perspective. A highly formal treatment of first-order logic, along with
+many more advanced topics in logic, is provided by Bell and Machover (1977). Manna and
+Waldinger (1985) give a readable introduction to logic from a computer science perspec-
+tive, as do Huth and Ryan (2004), who concentrate on program verification. Barwise and
+Etchemendy(2002)takeanapproachsimilartotheoneusedhere. Smullyan(1995)presents
+results concisely, using the tableau format. Gallier (1986) provides an extremely rigorous
+mathematical exposition of first-order logic, along witha great deal ofmaterial on its use in
+automatedreasoning. Logical Foundationsof Artificial Intelligence (Geneserethand Nilsson,
+1987)isbothasolid introduction tologic andthefirstsystematic treatment oflogical agents
+with percepts and actions, and there are two good handbooks: van Bentham and ter Meulen
+(1997) and Robinson and Voronkov (2001). Thejournal ofrecord forthefieldofpuremath-
+ematical logic is the Journal of Symbolic Logic, whereas the Journal of Applied Logic deals
+withconcerns closertothoseofartificialintelligence.
+Exercises 315
+EXERCISES
+8.1 Alogicalknowledgebaserepresents theworldusingasetofsentenceswithnoexplicit
+structure. An analogical representation, ontheotherhand, hasphysical structure that corre-
+spondsdirectlytothestructureofthethingrepresented. Consideraroadmapofyourcountry
+asananalogicalrepresentation offactsaboutthecountry itrepresentsfactswithamaplan-
+guage. Thetwo-dimensionalstructureofthemapcorrespondstothetwo-dimensionalsurface
+ofthearea.
+a. Givefiveexamplesofsymbolsinthemaplanguage.
+b. An explicit sentence is a sentence that the creator of the representation actually writes
+down. An implicit sentence is a sent

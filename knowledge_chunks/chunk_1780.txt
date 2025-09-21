@@ -1,0 +1,41 @@
+(P P ) B ).
+6 1,1 1,2 2,1 1,2 2,1 1,1
+Thenweapply And-Elimination to R toobtain
+6
+R : ((P P ) B ).
+7 1,2 2,1 1,1
+Logicalequivalence forcontrapositives gives
+R : ( B (P P )).
+8 1,1 1,2 2,1
+Nowwecanapply Modus Ponenswith R andthepercept R (i.e., B ),toobtain
+8 4 1,1
+R : (P P ).
+9 1,2 2,1
+Finally,weapply De Morgan srule,givingtheconclusion
+R : P P .
+10 1,2 2,1
+Thatis,neither 1,2 nor 2,1 contains apit.
+Wefoundthisproofbyhand,butwecanapplyanyofthesearchalgorithmsin Chapter3
+tofindasequence ofstepsthatconstitutes aproof. Wejustneedtodefineaproofproblemas
+follows: INITIAL STATE: theinitialknowledgebase. ACTIONS: the set of actions consists of all the inference rules applied to all the sen-
+tencesthatmatchthetophalfoftheinferencerule. RESULT: theresultofanactionistoaddthesentenceinthebottomhalfoftheinference
+rule. GOAL: thegoalisastatethatcontainsthesentence wearetryingtoprove.
+Thus, searching for proofs is an alternative to enumerating models. In many practical cases
+findingaproofcanbemoreefficient becausetheproofcanignoreirrelevantpropositions, no
+matter how manyof them there are. Forexample, the proof given earlier leading to P 1,2 P does not mention the propositions B , P , P , or P . They can be ignored
+2,1 2,1 1,1 2,2 3,1
+becausethegoalproposition, P ,appearsonlyinsentence R ;theotherpropositions in R
+1,2 2 2
+appearonlyin R and R ;so R ,R ,and R havenobearingontheproof. Thesamewould
+4 2 1 3 5
+holdevenifweaddedamillionmoresentencestotheknowledgebase;thesimpletruth-table
+algorithm,ontheotherhand,wouldbeoverwhelmedbytheexponentialexplosionofmodels.
+One final property of logical systems is monotonicity, which says that the set of en-
+MONOTONICITY
+tailed sentences can only increase as information is added to the knowledge base.8 Forany
+sentences and ,
+if KB then KB .
+8 Nonmonotoniclogics, whichviolatethemonotonicity property, capturea commonproperty ofhuman rea-
+soning:changingone smind.Theyarediscussedin Section12.6.
+252 Chapter 7. Logical Agents
+Forexample,supposetheknow

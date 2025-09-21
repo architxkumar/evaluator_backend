@@ -1,0 +1,29 @@
+nareasyetunknown.Wheneveranewsymbolpfrom
+theagendaisprocessed,thecountisreducedbyoneforeachimplicationinwhosepremise
+p appears(easily identified in constanttime with appropriateindexing.) If a countreaches
+zero, all the premises of the implication are known, so its conclusion can be added to the
+agenda.Finally,weneedtokeeptrackofwhichsymbolshavebeenprocessed;asymbolthat
+isalreadyinthesetofinferredsymbolsneednotbeaddedtotheagendaagain. Thisavoids
+redundantworkandpreventsloopscausedbyimplicationssuchas P Qand Q P.
+Itiseasytoseethatforward chaining issound: everyinference isessentially anappli-
+cationof Modus Ponens. Forwardchaining isalsocomplete: everyentailed atomicsentence
+willbederived. Theeasiest waytoseethis istoconsider the finalstate oftheinferred table
+(after the algorithm reaches a fixed point where no new inferences are possible). The table
+FIXEDPOINT
+contains true for each symbol inferred during the process, and false for all other symbols.
+Wecanviewthetableasalogicalmodel;moreover,everydefiniteclauseintheoriginal KBis
+trueinthismodel. Toseethis,assumetheopposite,namelythatsomeclausea ... a b
+1 k
+is false in the model. Then a ... a must be true in the model and b must be false in
+1 k
+the model. But this contradicts ourassumption that the algorithm has reached a fixed point!
+Wecanconclude,therefore,thatthesetofatomicsentences inferredatthefixedpointdefines
+a model of the original KB. Furthermore, any atomic sentence q that is entailed by the KB
+must be true in all its models and in this model in particular. Hence, every entailed atomic
+sentence q mustbeinferred bythealgorithm.
+Forwardchainingisanexampleofthegeneralconceptof data-drivenreasoning that
+DATA-DRIVEN
+is,reasoninginwhichthefocusofattention startswiththeknowndata. Itcanbeusedwithin
+an agent to derive conclusions from incoming percepts, often without a specific query in
+mind. Forexample, thewumpusagent might TELL itspercepts totheknowledge baseusing
+Section7.6. Effective Propositional Model Checking

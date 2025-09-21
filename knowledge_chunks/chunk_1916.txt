@@ -1,0 +1,26 @@
+pproach to solving standard logic programming
+queries. Forexample, instead ofdepth-first, left-to-right backtracking, theymightuseanyof
+the more efficient algorithms discussed in Chapter 6, including heuristic conjunct ordering,
+backjumping, cutset conditioning, and so on. CLP systems therefore combine elements of
+constraint satisfaction algorithms, logicprogramming, anddeductive databases.
+Several systems that allow the programmer more control over the search order for in-
+ferencehavebeendefined. The MRS language(Genesereth and Smith,1981;Russell,1985)
+allows the programmer to write metarules to determine which conjuncts are tried first. The
+METARULE
+user could write a rule saying that the goal with the fewest variables should be tried first or
+couldwritedomain-specific rulesforparticularpredicates.
+9.5 RESOLUTION
+Thelastofourthreefamiliesoflogicalsystemsisbasedonresolution. Wesawonpage250
+that propositional resolution using refutation is a complete inference procedure for proposi-
+tionallogic. Inthissection, wedescribehowtoextendresolution tofirst-orderlogic.
+9.5.1 Conjunctive normal form forfirst-order logic
+As in the propositional case, first-order resolution requires that sentences be in conjunctive
+normalform(CNF) thatis,aconjunction ofclauses, whereeachclauseisadisjunction of
+literals.6 Literals can contain variables, which are assumed tobe universally quantified. For
+example,thesentence x American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x)
+becomes, in CNF, American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x).
+Every sentence of first-order logic can be converted into an inferentially equivalent CNF
+sentence. Inparticular,the CN Fsentencewillbeunsatisfiablejustwhentheoriginalsentence
+isunsatisfiable, sowehaveabasisfordoingproofsbycontradiction onthe CN Fsentences.
+6 Aclausecanalsoberepresentedasanimplicationwithaconjunctionofatomsinthepremiseandadisjunction
+ofatomsintheconclusion(Exercise7.13).Thisiscalledimplicativenormalformor Kowalskiform(especia

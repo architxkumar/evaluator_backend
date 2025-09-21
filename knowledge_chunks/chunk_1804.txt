@@ -1,0 +1,30 @@
+stepplanofactionintime O(kt)ratherthan O(nt).
+The solution to the problem involves changing one s focus from writing axioms about
+actions towriting axioms about fluents. Thus, foreach fluent F, wewillhavean axiom that
+definesthetruthvalueof Ft 1intermsoffluents(including F itself)attimetandtheactions
+thatmayhaveoccurredattimet. Now,thetruthvalueof Ft 1 canbesetinoneoftwoways:
+eithertheactionattimetcauses F tobetrueatt 1,or F wasalreadytrueattimetandthe
+actionattimetdoesnotcauseittobefalse. Anaxiomofthisformiscalledasuccessor-state
+SUCCESSOR-STATE axiomandhasthisschema:
+AXIOM
+Ft 1 Action Causes Ft (Ft Action Causes Not Ft).
+One of the simplest successor-state axioms is the one for Have Arrow. Because there is no
+actionforreloading, the Action Causes Ft partgoesawayandweareleftwith
+Have Arrowt 1 (Have Arrowt Shoott). (7.2)
+For the agent s location, the successor-state axioms are more elaborate. For example, Lt 1
+1,1
+is true if either (a) the agent moved Forward from 1,2 when facing south, or from 2,1 whenfacingwest;or(b)Lt wasalreadytrueandtheactiondidnotcausemovement(either
+1,1
+because the action wasnot Forward orbecause theaction bumped into awall). Written out
+inpropositional logic,thisbecomes
+Lt 1 (Lt ( Forwardt Bumpt 1))
+1,1 1,1 (Lt (Southt Forwardt)) (7.3)
+1,2 (Lt (Westt Forwardt)).
+2,1
+Exercise7.26asksyoutowriteoutaxiomsfortheremaining wumpusworldfluents.
+268 Chapter 7. Logical Agents
+Givenacompletesetofsuccessor-state axiomsandtheotheraxiomslistedatthebegin-
+ningofthissection, theagentwillbeableto ASK andansweranyanswerablequestionabout
+thecurrentstateoftheworld. Forexample,in Section7.2theinitialsequenceofperceptsand
+actionsis Stench0 Breeze0 Glitter0 Bump0 Scream0 ; Forward0 Stench1 Breeze1 Glitter1 Bump1 Scream1 ; Turn Right1 Stench2 Breeze2 Glitter2 Bump2 Scream2 ; Turn Right2 Stench3 Breeze3 Glitter3 Bump3 Scream3 ; Forward3 Stench4 Breeze4 Glitter4 Bump4 Scream4 ; Turn Right4 Stench5 Breeze5 Glitter5 Bump5 Scream5 ; Forward5
+Stench6 Breeze6 Glitter6 Bump

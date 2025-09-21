@@ -1,0 +1,27 @@
+ P(f e) and P(d) values. We compute the best alignments with the current values
+oftheseparametersinthe Estep,thenupdatetheestimatesinthe Mstepanditeratethe
+processuntilconvergence.
+23.5 SPEECH RECOGNITION
+SPEECH Speechrecognitionisthetaskofidentifyingasequenceofwordsutteredbyaspeaker, given
+RECOGNITION
+the acoustic signal. It has become one of the mainstream applications of AI millions of
+Section23.5. Speech Recognition 913
+people interact with speech recognition systems every day to navigate voice mail systems,
+search the Web from mobile phones, and other applications. Speech is an attractive option
+whenhands-free operation isnecessary, aswhenoperating machinery.
+Speech recognition is difficult because the sounds made by a speaker are ambiguous
+and, well, noisy. As a well-known example, the phrase recognize speech sounds almost
+the same as wreck a nice beach when spoken quickly. Even this short example shows
+several of the issues that make speech problematic. First, segmentation: written words in
+SEGMENTATION
+English have spaces between them, but in fast speech there are no pauses in wreck a nice that would distinguish it as a multiword phrase as opposed to the single word recognize. Second, coarticulation: when speaking quickly the s sound at the end of nice merges
+COARTICULATION
+with the b sound at the beginning of beach, yielding something that is close to a sp. Another problem that does not show up in this example is homophones words like to, HOMOPHONES too, and two thatsoundthesamebutdifferinmeaning.
+Wecanviewspeech recognition asaproblem inmost-likely-sequence explanation. As
+we saw in Section 15.2, this is the problem of computing the most likely sequence of state
+variables, x , given a sequence of observations e . In this case the state variables are the
+1:t 1:t
+words,andtheobservationsaresounds. Moreprecisely,anobservationisavectoroffeatures
+extractedfromtheaudiosignal. Asusual,themostlikelysequencecanbecomputedwiththe
+helpof Bayes ruletobe:
+argmax P(word 

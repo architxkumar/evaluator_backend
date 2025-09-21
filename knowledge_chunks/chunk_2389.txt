@@ -1,0 +1,51 @@
+it is possible to get an optimal policy even when
+the utility function estimate is inaccurate. If one action is clearly better than all others, then
+the exact magnitude of the utilities on the states involved need not be precise. This insight
+suggestsanalternativewaytofindoptimalpolicies. Thepolicyiterationalgorithmalternates
+POLICYITERATION
+thefollowingtwosteps,beginning fromsomeinitialpolicy :
+0 Policy evaluation: given a policy , calculate U U i, the utility of each state if POLICYEVALUATION i i i
+weretobeexecuted.
+POLICY Policy improvement: Calculate a new MEU policy , using one-step look-ahead
+IMPROVEMENT i 1
+basedon U (asin Equation(17.4)).
+i
+Thealgorithm terminateswhenthepolicyimprovementstepyieldsnochangeintheutilities.
+Atthis point, we know that the utility function U is a fixed point of the Bellman update, so
+i
+itisasolution tothe Bellmanequations, and mustbeanoptimalpolicy. Becausethereare
+i
+onlyfinitelymanypolicies forafinitestatespace, andeachiteration canbeshowntoyield a
+betterpolicy,policyiteration mustterminate. Thealgorithm isshownin Figure17.7.
+The policy improvement step is obviously straightforward, but how do we implement
+the POLICY-EVALUATION routine? It turns out that doing so is much simpler than solving
+the standard Bellman equations (which is what value iteration does), because the action in
+eachstateisfixedbythepolicy. Attheithiteration, thepolicy specifiestheaction (s)in
+i i
+1
+0.8
+0.6
+0.4
+0.2
+0
+0 2 4 6 8 10 12 14
+ssol
+ycilo P rorre
+xa M
+Max error
+Policy loss
+Number of iterations
+Figure 17.6 The maximum error Ui U of the utility estimates and the policy loss U i U ,asafunctionofthenumberofiterationsofvalueiteration.
+Section17.3. Policy Iteration 657
+states. Thismeansthatwehaveasimplifiedversion ofthe Bellmanequation (17.5)relating
+theutilityofs(under )totheutilitiesofitsneighbors:
+i
+(cid:12)
+U (s) R(s) P(s
+(cid:2) s, (s))U (s
+(cid:2)
+). (17.10)
+i i i
+s(cid:3)
+Forexample,suppose isthepolicyshownin Figure17.2(a). Thenwehave (1,1) Up,
+i i (1,

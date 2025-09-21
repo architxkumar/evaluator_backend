@@ -1,0 +1,31 @@
+where smoothed estimates must be computed for earlier time slices as
+new observations are continuously added to the end of the sequence. The most common
+FIXED-LAG requirement is for fixed-lag smoothing, which requires computing the smoothed estimate
+SMOOTHING
+P(X t d e 1:t ) for fixed d. That is, smoothing is done for the time slice d steps behind the
+current time t; as t increases, the smoothing has to keep up. Obviously, we can run the
+forward backward algorithm over the d-step window as each new observation is added,
+butthisseemsinefficient. In Section15.3, wewillseethatfixed-lagsmoothing can, insome
+cases,bedoneinconstanttimeperupdate,independent ofthelagd.
+15.2.3 Finding the mostlikely sequence
+Suppose that true,true,false,true,true is the umbrella sequence for the security guard s
+first five days on the job. What is the weather sequence most likely to explain this? Does
+the absence of the umbrella on day 3 mean that it wasn t raining, or did the director forget
+to bring it? If it didn t rain on day 3, perhaps (because weather tends to persist) it didn t
+rain on day 4 either, but the director brought the umbrella just in case. In all, there are 25
+possibleweathersequenceswecouldpick. Isthereawaytofindthemostlikelyone,shortof
+enumerating allofthem?
+Wecouldtrythislinear-timeprocedure: usesmoothingtofindtheposteriordistribution
+fortheweatherateachtimestep;thenconstruct thesequence, usingateachsteptheweather
+that is most likely according to the posterior. Such an approach should set off alarm bells
+in the reader s head, because the posterior distributions computed by smoothing are distri-
+function FORWARD-BACKWARD(ev,prior)returnsavectorofprobabilitydistributions
+inputs:ev,avectorofevidencevaluesforsteps1,...,t
+prior,thepriordistributionontheinitialstate,P(X )
+0
+localvariables: fv,avectorofforwardmessagesforsteps0,...,t
+b,arepresentationofthebackwardmessage,initiallyall1s
+sv,avectorofsmoothedestimatesforsteps1,...,t
+fv 0 prior
+fori 1totdo
+fv i FORWARD(fv i 1 ,ev i 

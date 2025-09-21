@@ -1,0 +1,60 @@
+heaction: (0) R(0) (0.9R(0) 0.1R(1)) 0.1 Stay (1) R(1) (0.9R(1) 0.1R(0)) 1.9 Stay (0) R(0) (0.9R(1) 0.1R(0)) 0.9 Go (1) R(1) (0.9R(0) 0.1R(1)) 1.1 Go Thehyperplanes(lines,inthiscase)forb andb areshownin Figure17.8(a)and Stay Go their maximum is shown in bold. The bold line therefore represents the utility function for
+the finite-horizon problem that allows just one action, and in each piece of the piecewise
+linear utility function the optimal action is the first action of the corresponding conditional
+plan. Inthiscase,theoptimalone-step policyisto Staywhenb(1) 0.5and Gootherwise.
+Oncewehave utilities (s)forallthe conditional plans pofdepth 1ineach physical
+p
+state s, we can compute the utilities for conditional plans of depth 2 by considering each
+possible first action, each possible subsequent percept, and then each way of choosing a
+depth-1plantoexecuteforeachpercept: Stay; if Percept 0then Stay else Stay Stay; if Percept 0then Stay else Go ...
+662 Chapter 17. Making Complex Decisions
+3
+2.5
+2
+1.5
+1
+0.5
+0
+0 0.2 0.4 0.6 0.8 1
+ytilit U
+3
+2.5
+2 Stay 1.5 Go 1
+0.5
+0
+0 0.2 0.4 0.6 0.8 1
+Probability of state 1
+ytilit U
+Probability of state 1
+(a) (b)
+3
+2.5
+2
+1.5
+1
+0.5
+0
+0 0.2 0.4 0.6 0.8 1
+ytilit U
+7.5
+7
+6.5
+6
+5.5
+5
+4.5
+0 0.2 0.4 0.6 0.8 1
+Probability of state 1
+ytilit U
+Probability of state 1
+(c) (d)
+Figure17.8 (a)Utility oftwo one-stepplansasa functionoftheinitialbeliefstate b(1)
+forthetwo-stateworld, with thecorrespondingutility functionshowninbold. (b)Utilities
+for8 distinct two-step plans. (c) Utilities forfourundominatedtwo-step plans. (d) Utility
+functionforoptimaleight-stepplans.
+There are eight distinct depth-2 plans in all, and their utilities are shown in Figure 17.8(b).
+Notice that four of the plans, shown as dashed lines, are suboptimal across the entire belief
+space we say these plans are dominated, and they need not be considered further. There
+DOMINATEDPLAN
+are four undominated plans, each of which is optimal in a specific region, as shown in Fig-
+ure17.8(c

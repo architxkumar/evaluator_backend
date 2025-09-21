@@ -1,0 +1,31 @@
+teries
+are related to preferences between the underlying states in those lotteries. To address this
+issuewelistsixconstraints thatwerequire anyreasonable preference relationtoobey: Orderability: Given any two lotteries, a rational agent must either prefer one to the
+ORDERABILITY
+otherorelseratethetwoasequallypreferable. Thatis,the agentcannotavoiddeciding.
+Aswesaidonpage490,refusing tobetislikerefusing toallowtimetopass.
+Exactlyoneof(A B), (B A), or(A B)holds. Transitivity: Givenany three lotteries, ifan agent prefers Ato B and prefers B to C,
+TRANSITIVITY
+thentheagentmustprefer Ato C.
+(A B) (B C) (A C). Continuity: If some lottery B is between A and C in preference, then there is some
+CONTINUITY
+probability pforwhichtherationalagentwillbeindifferentbetweengetting B forsure
+andthelotterythatyields Awithprobability pand C withprobability 1 p.
+A B C p p,A; 1 p,C B . Substitutability: If an agent is indifferent between two lotteries A and B, then the
+SUBSTITUTABILITY
+agentisindifferentbetweentwomorecomplexlotteriesthatarethesameexceptthat B
+2 Weapologizetoreaderswhoselocalairlinesnolongerofferfoodonlongflights.
+Section16.2. The Basisof Utility Theory 613
+is substituted for A in one of them. This holds regardless of the probabilities and the
+otheroutcome(s) inthelotteries.
+A B p,A; 1 p,C p,B;1 p,C .
+Thisalsoholdsifwesubstitute for inthisaxiom. Monotonicity: Suppose two lotteries have the sametwo possible outcomes, Aand B.
+MONOTONICITY
+If an agent prefers A to B, then the agent must prefer the lottery that has a higher
+probability for A(andviceversa).
+A B (p q p,A; 1 p,B q,A; 1 q,B ). Decomposability: Compound lotteries can be reduced to simpler ones using the laws
+DECOMPOSABILITY
+of probability. This has been called the no fun in gambling rule because it says that
+two consecutive lotteries can be compressed into a single equivalent lottery, as shown
+in Figure16.1(b).3 p,A; 1 p, q,B; 1 q,C p,A; (1 p)q,B; (1 p)(1 q),C .
+These constraints are known as the axioms of utility

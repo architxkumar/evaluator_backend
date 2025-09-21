@@ -1,0 +1,30 @@
+ner,workingbackwardfromthe Finish action.
+Thecomplexity ofthecritical pathalgorithm isjust O(Nb),where N isthenumberof
+actionsandbisthemaximumbranchingfactorintooroutofanaction. (Toseethis,notethat
+the LS and ES computations are done once for each action, and each computation iterates
+overatmostbotheractions.) Therefore,findingaminimum-durationschedule,givenapartial
+ordering ontheactionsandnoresource constraints, isquiteeasy.
+Mathematically speaking, critical-path problems areeasy tosolvebecause theyarede-
+fined as a conjunction of linear inequalities on the start and end times. When we introduce
+resource constraints, the resulting constraints on start and end times become more compli-
+cated. For example, the Add Engine actions, which begin at the same time in Figure 11.2,
+Section11.1. Time,Schedules, and Resources 405
+Engine Hoists(1) Add Engine1 Add Engine2
+Wheel Stations(1) Add Wheels1 Add Wheels2
+Inspect1
+Inspectors(2)
+Inspect2
+0 10 20 30 40 50 60 70 80 90 100 110 120
+Figure11.3 Asolutiontothejob-shopschedulingproblemfrom Figure11.1,takinginto
+account resource constraints. The left-hand margin lists the three reusable resources, and
+actions are shown aligned horizontally with the resources they use. There are two possi-
+ble schedules, depending on which assembly uses the engine hoist first; we ve shown the
+shortest-durationsolution,whichtakes115minutes.
+require the same Engine Hoist and so cannot overlap. The cannot overlap constraint is a
+disjunction of two linear inequalities, one for each possible ordering. The introduction of
+disjunctions turnsouttomakescheduling withresourceconstraints NP-hard.
+Figure 11.3 shows the solution with the fastest completion time, 115 minutes. This is
+30 minutes longer than the 85 minutes required for a schedule without resource constraints.
+Notice that there is no time at which both inspectors are required, so we can immediately
+moveoneofourtwoinspectors toamoreproductive position.
+The complexity of scheduling with resource cons

@@ -1,0 +1,35 @@
+n the hierarchy have more expressive power, but
+the algorithms for dealing with them are less efficient. Up to the 1980s, linguists
+focusedoncontext-freeandcontext-sensitivelanguages. Sincethen,therehasbeen
+renewed interest in regular grammars, brought about by the need to process and
+learn from gigabytes or terabytes of online text very quickly, even at the cost of
+a less complete analysis. As Fernando Pereira put it, The older I get, the further
+down the Chomsky hierarchy I go. To see what he means, compare Pereira and
+Warren (1980) with Mohri, Pereira, and Riley (2002) (and note that these three
+authorsallnowworkonlargetextcorporaat Google).
+890 Chapter 23. Natural Languagefor Communication
+There have been many competing language models based on the idea of phrase struc-
+PROBABILISTIC
+ture; we will describe a popular model called the probabilistic context-free grammar, or
+CONTEXT-FREE
+GRAMMAR PCFG.1 A grammar is a collection of rules that defines a language as a set of allowable
+GRAMMAR
+strings ofwords. Context-free isdescribed inthesidebar onpage 889, and probabilistic LANGUAGE
+meansthatthegrammarassignsaprobability toeverystring. Hereisa PCF Grule:
+VP Verb 0.70 VP NP 0.30 .
+NON-TERMINAL Here VP (verb phrase) and NP (noun phrase) are non-terminal symbols. The grammar
+SYMBOLS
+alsorefers toactual words, whicharecalled terminalsymbols. Thisruleissaying thatwith
+TERMINALSYMBOL
+probability 0.70 averb phrase consists solely ofa verb, and with probability 0.30 itis a VP
+followedbyan NP. Appendix Bdescribes non-probabilistic context-free grammars.
+Wenow defineagrammarforatiny fragment of English thatissuitable forcommuni-
+cationbetweenagentsexploringthewumpusworld. Wecallthislanguage E . Latersections
+0
+improve on E to make it slightly closer to real English. We are unlikely ever to devise a
+0
+completegrammarfor English, ifonlybecausenotwopersons wouldagreeentirelyonwhat
+constitutes valid English.
+23.1.1 The lexiconof E
+0
+Firstwedefinethelexicon,orlistofallowablewords. 

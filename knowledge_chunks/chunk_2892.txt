@@ -1,0 +1,30 @@
+ for the limitations of kinematic plans is to use a
+separate mechanism, acontroller, forkeeping therobotontrack. Controllers aretechniques
+CONTROLLER
+for generating robot controls in real time using feedback from the environment, so as to
+achieve a control objective. If the objective is to keep the robot on a preplanned path, it is
+REFERENCE oftenreferredtoasareferencecontrollerandthepathiscalledareferencepath. Controllers
+CONTROLLER
+that optimize aglobal cost function are known as optimal controllers. Optimal policies for
+REFERENCEPATH
+OPTIMAL continuous MD Psare,ineffect,optimalcontrollers.
+CONTROLLERS
+On the surface, the problem of keeping a robot on a prespecified path appears to be
+relatively straightforward. In practice, however, even this seemingly simple problem has its
+pitfalls. Figure 25.22(a) illustrates what can go wrong; it shows the path of a robot that
+attempts to follow a kinematic path. Whenever a deviation occurs whether due to noise or
+toconstraints ontheforcestherobotcanapply therobotprovidesanopposingforcewhose
+magnitude is proportional to this deviation. Intuitively, this might appear plausible, since
+deviations should be compensated by a counterforce to keep the robot on track. However,
+998 Chapter 25. Robotics
+(a) (b) (c)
+Figure 25.22 Robot arm control using (a) proportionalcontrol with gain factor 1.0, (b)
+proportionalcontrolwith gain factor 0.1, and (c) PD (proportionalderivative)controlwith
+gainfactors0.3fortheproportionalcomponentand0.8forthedifferentialcomponent.Inall
+casestherobotarmtriestofollowthepathshowningray.
+as Figure 25.22(a) illustrates, our controller causes the robot to vibrate rather violently. The
+vibration is the result of a natural inertia of the robot arm: once driven back to its reference
+positiontherobotthenovershoots,whichinducesasymmetricerrorwithoppositesign. Such
+overshooting may continue along an entire trajectory, and the resulting robot motion is far
+fromdesirable.
+Before we can define a better controller, let u

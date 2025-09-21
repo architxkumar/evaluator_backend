@@ -1,0 +1,34 @@
+D(KB,goals, )yieldsasubstitution
+if failure thenreturn
+elseif LENGTH(goals) 0thenyield elsedo
+first,rest FIRST(goals),REST(goals)
+foreach (cid:5)in FOL-BC-OR(KB, SUBST( ,first), )do
+foreach (cid:5)(cid:5)in FOL-BC-AND(KB,rest, (cid:5))do
+yield (cid:5)(cid:5)
+Figure9.6 Asimplebackward-chainingalgorithmforfirst-orderknowledgebases.
+Criminal(West)
+American(West) Weapon(y) Sells(West,M ,z) Hostile(Nono)
+1 z Nono Missile(y) Missile(M ) Owns(Nono,M ) Enemy(Nono,America)
+1 1 y M 1 Figure9.7 Prooftreeconstructedbybackwardchainingtoprovethat Westisacriminal.
+Thetreeshouldbereaddepthfirst,lefttoright.Toprove Criminal(West),wehavetoprove
+the four conjuncts below it. Some of these are in the knowledge base, and others require
+furtherbackward chaining. Bindings for each successful unification are shown next to the
+correspondingsubgoal.Notethatonceonesubgoalinaconjunctionsucceeds,itssubstitution
+isappliedtosubsequentsubgoals.Thus,bythetime FOL-BC-AS Kgetstothelastconjunct,
+originally Hostile(z),zisalreadyboundto Nono.
+Section9.4. Backward Chaining 339
+9.4.2 Logicprogramming
+Logic programming is a technology that comes fairly close to embodying the declarative
+idealdescribedin Chapter7: thatsystemsshouldbeconstructed byexpressingknowledgein
+aformallanguageandthatproblemsshouldbesolvedbyrunninginferenceprocessesonthat
+knowledge. Theidealissummedupin Robert Kowalski sequation,
+Algorithm Logic Control .
+Prolog isthemostwidelyused logicprogramming language. Itisused primarily asarapid-
+PROLOG
+prototypinglanguageandforsymbol-manipulationtaskssuchaswritingcompilers(Van Roy,
+1990) and parsing natural language (Pereira and Warren, 1980). Many expert systems have
+beenwrittenin Prologforlegal,medical, financial,andotherdomains.
+Prolog programs are sets of definite clauses written in a notation somewhat different
+from standard first-order logic. Prologuses uppercase letters forvariables and lowercase for
+constants the opposite ofourconvention forlogic. Commasseparate conjuncts inaclause,
+and

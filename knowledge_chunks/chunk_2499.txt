@@ -1,0 +1,50 @@
+hematical model
+of the neuron devised by Mc Culloch and Pitts (1943). Roughly speaking, it fires when a
+linearcombinationofitsinputsexceedssome(hardorsoft) threshold that is,itimplements
+728 Chapter 18. Learningfrom Examples
+Bias Weight
+a 0 1 w a j g(in j )
+0,j
+g
+in
+w j
+i,j
+a a
+i j
+Input Input Activation Output
+Output
+Links Function Function Links
+Figure(cid:2)18.19 Asimplemathematicalmodelforaneuron. Theunit soutputactivationis
+n
+aj g(
+i 0
+wi,jai),whereaiistheoutputactivationofunitiandwi,j istheweightonthe
+linkfromunititothisunit.
+a linear classifier of the kind described in the preceding section. A neural network is just a
+collection of units connected together; the properties of the network are determined by its
+topology andtheproperties ofthe neurons. Since 1943, much more detailed and realistic models have been developed, both for
+neurons and for larger systems in the brain, leading to the modern field of computational
+COMPUTATIONAL neuroscience. On the other hand, researchers in AI and statistics became interested in the
+NEUROSCIENCE
+moreabstractproperties ofneuralnetworks, suchastheirabilitytoperformdistributed com-
+putation, totolerate noisyinputs, andtolearn. Although weunderstand nowthatotherkinds
+of systems including Bayesian networks have these properties, neural networks remain
+one of the most popular and effective forms of learning system and are worthy of study in
+theirownright.
+18.7.1 Neural network structures
+Neural networks are composed of nodes or units (see Figure 18.19) connected by directed
+UNIT
+links. Alinkfromunititounitj servestopropagatetheactivationa fromitoj.8 Eachlink
+LINK i
+also hasanumeric weightw associated withit, which determines the strength andsign of
+ACTIVATION i,j
+theconnection. Justasinlinearregression models,eachunithasadummyinputa 1with
+WEIGHT 0
+anassociated weightw . Eachunitj firstcomputesaweightedsumofitsinputs:
+0,j
+(cid:12)n
+in w a .
+j i,j i
+i 0
+ACTIVATION Thenitappliesanactivation functiong tothissumtoderivetheoutput:
+FU

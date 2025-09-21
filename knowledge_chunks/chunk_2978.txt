@@ -1,0 +1,30 @@
+
+BOUNDED Boundedrationality. Herbert Simon(1957) rejected the notion ofperfect (oreven approx-
+RATIONALITY
+imately perfect) rationality and replaced it with bounded rationality, a descriptive theory of
+decision makingbyrealagents. Hewrote,
+Thecapacityofthe humanmindforformulatingandsolvingcomplexproblemsis very
+smallcomparedwiththesizeoftheproblemswhosesolutionisrequiredforobjectively
+rationalbehaviorintherealworld orevenforareasonable approximationtosuchob-
+jectiverationality.
+He suggested that bounded rationality works primarily by satisficing that is, deliberating
+only long enough to come up with an answer that is good enough. Simon won the Nobel
+Prizein economics forthis workand has written about itin depth (Simon, 1982). Itappears
+to be a useful model of human behaviors in many cases. It is not a formal specification
+for intelligent agents, however, because the definition of good enough is not given by the
+theory. Furthermore,satisficingseemstobejustoneofalargerangeofmethodsusedtocope
+withbounded resources.
+1050 Chapter 27. AI:The Presentand Future
+BOUNDED Bounded optimality (BO). A bounded optimal agent behaves as well as possible, given its
+OPTIMALITY
+computational resources. That is, the expected utility of the agent program for a bounded
+optimalagentisatleastashighastheexpectedutilityofanyotheragentprogramrunningon
+thesamemachine.
+Ofthesefourpossibilities, boundedoptimalityseemstoofferthebesthopeforastrong
+theoreticalfoundationfor AI.Ithastheadvantageofbeingpossibletoachieve: thereisalways
+atleast onebestprogram something thatperfect rationality lacks. Bounded optimal agents
+areactuallyusefulintherealworld,whereascalculativelyrationalagentsusuallyarenot,and
+satisficingagentsmightormightnotbe,depending onhowambitioustheyare.
+The traditional approach in AI has been to start with calculative rationality and then
+makecompromises tomeetresource constraints. Ifthe problems imposed bytheconstraints
+are minor, one would expect the final design to be similar to a BO

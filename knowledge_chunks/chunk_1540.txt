@@ -1,0 +1,33 @@
+xtsuc-
+cessor. Forproblemswithlargestatedescriptions, suchas roboticassembly,thesetechniques
+arecriticaltosuccess.
+3.4.4 Depth-limited search
+The embarrassing failure of depth-first search in infinite state spaces can be alleviated by
+supplying depth-first searchwithapredetermined depth limit(cid:3). Thatis,nodes atdepth(cid:3)are
+DEPTH-LIMITED treated as if they have no successors. This approach is called depth-limited search. The
+SEARCH
+depth limit solves the infinite-path problem. Unfortunately, it also introduces an additional
+sourceofincompleteness ifwechoose (cid:3) d,thatis,theshallowest goalisbeyondthedepth
+limit. (This is likely when d is unknown.) Depth-limited search will also be nonoptimal if
+wechoose(cid:3) d. Itstimecomplexityis O(b(cid:3))anditsspacecomplexityis O(b(cid:3)). Depth-first
+searchcanbeviewedasaspecialcaseofdepth-limited searchwith(cid:3) .
+Sometimes, depth limits can be based on knowledge of the problem. Forexample, on
+themapof Romaniathereare20cities. Therefore,weknowthatifthereisasolution,itmust
+be of length 19 at the longest, so (cid:3) 19 is a possible choice. But in fact if we studied the
+88 Chapter 3. Solving Problemsby Searching
+function DEPTH-LIMITED-SEARCH(problem,limit)returnsasolution,orfailure cutoff
+return RECURSIVE-DLS(MAKE-NODE(problem.INITIAL-STATE),problem,limit)
+function RECURSIVE-DLS(node,problem,limit)returnsasolution,orfailure cutoff
+ifproblem.GOAL-TEST(node.STATE)thenreturn SOLUTION(node)
+elseiflimit 0thenreturncutoff
+else
+cutoff occurred? false
+foreachaction inproblem.ACTIONS(node.STATE)do
+child CHILD-NODE(problem,node,action)
+result RECURSIVE-DLS(child,problem,limit 1)
+ifresult cutoff thencutoff occurred? true
+elseifresult (cid:7) failure thenreturnresult
+ifcutoff occurred?thenreturncutoff elsereturnfailure
+Figure3.17 Arecursiveimplementationofdepth-limitedtreesearch.
+mapcarefully, wewoulddiscoverthatanycitycanbereached fromanyothercityinatmost
+9steps. Thisnumber, knownasthediameterofthestatespace,givesusabetterdep

@@ -1,0 +1,31 @@
+cwetakeupin Chapter23,andsecond,
+toacquire information fromwrittenlanguage, thefocusofthischapter.
+There are over a trillion pages of information on the Web, almost all of it in natural
+KNOWLEDGE language. An agent that wants to do knowledge acquisition needs to understand (at least
+ACQUISITION
+partially) the ambiguous, messy languages that humans use. We examine the problem from
+the point of view of specific information-seeking tasks: text classification, information re-
+trieval,andinformationextraction. Onecommonfactorinaddressingthesetasksistheuseof
+languagemodels: modelsthatpredicttheprobability distribution oflanguage expressions.
+LANGUAGEMODEL
+22.1 LANGUAGE MODELS
+Formallanguages,suchastheprogramminglanguages Javaor Python,havepreciselydefined
+LANGUAGE language models. A language can be defined as a set of strings; print(2 2) is a
+legal program inthe language Python, whereas 2) (2 print isnot. Since there are an
+infinitenumberoflegalprograms,theycannotbeenumerated; insteadtheyarespecifiedbya
+set of rules called a grammar. Formallanguages also have rules that define the meaning or
+GRAMMAR
+SEMANTICS semanticsofaprogram;forexample,therulessaythatthe meaning of 2 2 is4,and
+themeaningof 1 0 isthatanerrorissignaled.
+860
+Section22.1. Language Models 861
+Natural languages, such as English or Spanish, cannot be characterized as a definitive
+set of sentences. Everyone agrees that Not to be invited is sad is a sentence of English,
+butpeople disagree onthegrammaticality of Tobenotinvited issad. Therefore, itismore
+fruitful todefineanatural language model asaprobability distribution oversentences rather
+than a definitive set. That is, rather than asking if a string of words is or is not a memberof
+thesetdefiningthelanguage, weinsteadaskfor P(S words) whatistheprobability that
+arandom sentencewouldbewords.
+Naturallanguagesarealsoambiguous. Hesawherduck canmeaneitherthathesaw
+AMBIGUITY
+a waterfowl belonging to her, or that he saw her move to evade something. Thus, again, we

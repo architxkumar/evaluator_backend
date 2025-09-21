@@ -1,0 +1,35 @@
+testruc-
+DISCRETEEVENTS
+ture. Shankar striphasabeginning, middle,andend. Ifinterruptedhalfway,theeventwould
+besomethingdifferent itwouldnotbeatripfrom San Franciscoto Washington,butinstead
+a trip from San Francisco to somewhere over Kansas. On the other hand, the category of
+events denoted by Flyings has a different quality. If we take a small interval of Shankar s
+flight, say, the third 20-minute segment (while he waitsanxiously forabag of peanuts), that
+eventisstillamemberof Flyings. Infact,thisistrueforanysubinterval.
+Categories of events with this property are called process categories or liquid event
+PROCESS
+categories. Anyprocess ethathappens overanintervalalsohappensoveranysubinterval:
+LIQUIDEVENT
+(e Processes) Happens(e,(t ,t )) (t t t t ) Happens(e,(t ,t )).
+1 4 1 2 3 4 2 3
+The distinction between liquid and nonliquid events is exactly analogous to the difference
+between substances, or stuff, and individual objects, or things. In fact, some have called
+TEMPORAL liquideventstemporalsubstances,whereassubstances likebutterare spatialsubstances.
+SUBSTANCE
+SPATIALSUBSTANCE
+448 Chapter 12. Knowledge Representation
+12.3.2 Timeintervals
+Event calculus opens us up to the possibility of talking about time, and time intervals. We
+willconsidertwokindsoftimeintervals: momentsandextendedintervals. Thedistinction is
+thatonlymomentshavezeroduration:
+Partition( Moments,Extended Intervals ,Intervals)
+i Moments Duration(i) Seconds(0).
+Next we invent a time scale and associate points on that scale with moments, giving us ab-
+solute times. The time scale is arbitrary; we measure it in seconds and say that the moment
+at midnight (GMT) on January 1, 1900, has time 0. The functions Begin and End pick out
+theearliestandlatestmomentsinaninterval,andthefunction Time deliversthepointonthe
+time scale for a moment. The function Duration gives the difference between the end time
+andthestarttime.
+Interval(i) Duration(i) (Time(End(i)) Time(Begin(i))).
+Time(Begin(AD1900)) Seconds(0).
+Time(B

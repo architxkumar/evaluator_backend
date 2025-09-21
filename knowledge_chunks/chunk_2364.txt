@@ -1,0 +1,25 @@
+rview of the methodology of deci-
+sion analysis. Influence diagrams were introduced by Howard and Matheson (1984), based
+on earlier work at SRI (Miller et al., 1976). Howard and Matheson s method involved the
+Bibliographical and Historical Notes 639
+derivationofadecisiontreefromadecisionnetwork,butin generalthetreeisofexponential
+size. Shachter(1986) developed amethod formaking decisions based directly onadecision
+network, without the creation of an intermediate decision tree. This algorithm was also one
+of the first to provide complete inference formultiply connected Bayesian networks. Zhang
+etal.(1994)showedhowtotakeadvantageofconditionalindependenceofinformationtore-
+ducethesizeoftreesinpractice;theyusethetermdecisionnetworkfornetworksthatusethis
+approach(although othersuseitasasynonymforinfluencediagram). Nilssonand Lauritzen
+(2000) link algorithms for decision networks to ongoing developments in clustering algo-
+rithmsfor Bayesiannetworks. Kollerand Milch(2003)showhowinfluencediagramscanbe
+usedtosolvegamesthatinvolvegathering information byopposing players, and Detwarasiti
+and Shachter(2005) show how influence diagrams can beused as anaid todecision making
+for a team that shares goals but is unable to share all information perfectly. The collection
+by Oliverand Smith(1990)hasanumberofusefularticlesondecisionnetworks,asdoesthe
+1990specialissueofthejournal Networks. Papersondecisionnetworksandutilitymodeling
+alsoappearregularly inthejournals Management Science and Decision Analysis.
+The theory of information value was explored first in the context of statistical experi-
+ments,whereaquasi-utility (entropy reduction) wasused(Lindley,1956). The Russiancon-
+troltheorist Ruslan Stratonovich(1965)developedthemoregeneraltheorypresentedhere,in
+which information has value by virtue of its ability to affect decisions. Stratonovich s work
+was not known in the West, where Ron Howard (1966) pioneered the same idea. His paper
+endswiththeremark Ifinformationvaluetheoryandassoci

@@ -1,0 +1,25 @@
+ppearance andpattern elements
+Many objects produce much more complex patterns than faces do. This is because several
+effectscanmovefeaturesaroundinanimageoftheobject. Effectsinclude (Figure24.13) Foreshortening,whichcausesapatternviewedataslanttobesignificantly distorted. Aspect, which causes objects to look different when seen from different directions.
+Evenassimpleanobjectasadoughnut hasseveralaspects;seenfromtheside,itlooks
+likeaflattenedoval,butfromaboveitisanannulus. Occlusion, where some parts are hidden from some viewing directions. Objects can
+occlude one another, or parts of an object can occlude other parts, an effect known as
+self-occlusion. Deformation, where internal degrees of freedom of the object change its appearance.
+Forexample,peoplecanmovetheirarmsandlegsaround,generatingaverywiderange
+ofdifferentbodyconfigurations.
+However, our recipe of searching across location and scale can still work. This is because
+some structure will be present in the images produced by the object. Forexample, apicture
+of a car is likely to show some of headlights, doors, wheels, windows, and hubcaps, though
+theymaybeinsomewhatdifferentarrangementsindifferentpictures. Thissuggestsmodeling
+objectswithpatternelements collectionsofparts. Thesepatternelementsmaymovearound
+Section24.3. Object Recognition by Appearance 945
+Foreshortening Aspect
+Occlusion Deformation
+Figure 24.13 Sources of appearancevariation. First, elements can foreshorten, like the
+circular patch on the top left. This patch is viewed at a slant, and so is elliptical in the
+image.Second,objectsviewedfromdifferentdirectionscanchangeshapequitedramatically,
+aphenomenonknownasaspect. On thetoprightarethreedifferentaspectsofadoughnut.
+Occlusion causes the handle of the mug on the bottom left to disappear when the mug is
+rotated. In this case, because the body and handle belong to the same mug, we have self-
+occlusion.Finally,onthebottomright,someobjectscandeformdramatically.
+withrespect toone another, but ifmostof

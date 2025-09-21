@@ -1,0 +1,25 @@
+how how an approach that minimizes regret can find approximate
+equilibria forabstractions with 1012 states,100timesmorethanpreviousmethods.
+Game theory and MD Ps are combined in the theory of Markov games, also called
+stochasticgames(Littman,1994;Huand Wellman,1998). Shapley(1953)actuallydescribed
+the value iteration algorithm independently of Bellman, but his results were not widely ap-
+preciated, perhaps because they were presented in the context of Markov games. Evolu-
+688 Chapter 17. Making Complex Decisions
+tionary game theory (Smith, 1982; Weibull, 1995) looks at strategy drift over time: if your
+opponent s strategy is changing, how should you react? Textbooks on game theory from
+aneconomics point ofview include those by Myerson (1991), Fudenberg and Tirole(1991),
+Osborne(2004),and Osborneand Rubinstein(1994);Mailathand Samuelson(2006)concen-
+trateonrepeated games. Froman AIperspective wehave Nisan etal.(2007),Leyton-Brown
+and Shoham(2008), and Shohamand Leyton-Brown(2009).
+The2007Nobel Memorial Prizein Economicswentto Hurwicz,Maskin,and Myerson forhaving laidthefoundations ofmechanism designtheory (Hurwicz,1973). Thetragedy
+ofthecommons,amotivatingproblemforthefield,waspresentedby Hardin(1968). Therev-
+elation principle isdue to Myerson (1986), and the revenue equivalence theorem wasdevel-
+oped independently by Myerson (1981) and Riley and Samuelson (1981). Two economists,
+Milgrom(1997)and Klemperer(2002),writeaboutthemultibillion-dollar spectrumauctions
+theywereinvolved in.
+Mechanism designisusedinmultiagent planning (Hunsbergerand Grosz,2000;Stone
+etal.,2009)andscheduling(Rassentietal.,1982). Varian(1995)givesabriefoverviewwith
+connectionstothecomputerscienceliterature, and Rosenscheinand Zlotkin(1994)presenta
+book-lengthtreatmentwithapplicationstodistributed AI.Relatedworkondistributed AIalso
+goesunderothernames,includingcollectiveintelligence(Tumerand Wolpert,2000;Segaran,
+2007) and market-based control (Clearwater, 1996). Since 2001 there has been an ann

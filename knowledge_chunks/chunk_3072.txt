@@ -1,0 +1,17 @@
+r r e , co B g . n , i a ti n o d n: De A n p k p e l r i , ca J - . t I i n a t l r s od o u f c G ti a o m n. e M Th o e r o g r a y n : C A la C yp o o n o ci l s . e,Multidisciplinary R w SI o o G s rk M co in O e g , D : T - L . 0 , a 6 a n . n g d ua S g t e o , ic e a x , ec I u . t ( i 2 o 0 n 0 a 6 n ). do D p e ti c m la i r z a a t t i i v o e n. ne I t n -
+tionsofneuralnetworkchipsandautomaticlearn- Li,C.M.and Anbulagan(1997). Heuristicsbased
+ing. IEEE Communications Magazine,27(11),41 onunitpropagationforsatisfiabilityproblems. In Love, N., Hinrichs, T., and Genesereth, M. R.
+46. IJCAI-97,pp.366 371. (2006). General game playing: Game descrip-
+tionlanguagespecification.Tech.rep.LG-2006-01,
+Le Cun, Y., Jackel, L., Bottou, L., Brunot, A., Li,M.and Vitanyi,P.M.B.(1993). An Introduc- Stanford University Computer Science Dept.
+Cortes, C., Denker, J., Drucker, H., Guyon, I., tionto Kolmogorov Complexityand Its Applications.
+Muller,U.,Sackinger,E.,Simard,P.,and Vapnik, Springer-Verlag. Lovejoy, W.S. (1991). A surveyof algorithmic
+V.N.(1995).Comparisonoflearningalgorithmsfor methodsforpartiallyobserved Markovdecisionpro-
+handwrittendigitrecognition.In Int.Conferenceon Liberatore,P.(1997). Thecomplexityofthelan- cesses.Annalsof Operations Research,28(1 4),47 Artificial Neural Networks,pp.53 60. guage A.Electronic Transactionson Artificial Intel- 66.
+ligence,1,13 38.
+Leech,G.,Rayson,P.,and Wilson,A.(2001).Word Loveland,D.(1970).Alinearformatforresolution.
+Frequenciesin Writtenand Spoken English: Based Lifschitz,V.(2001). Answersetprogrammingand In Proc.IRIA Symposiumon Automatic Demonstra-
+onthe British National Corpus.Longman. plangeneration.AIJ,138(1 2),39 54. tion,pp.147 162.
+Bibliography 1081
+Lowe,D.(1987). Three-dimensionalobjectrecog- Mackworth,A.K.(1992). Constraintsatisfaction. Marsland, A.T.and Schaeffer, J.(Eds.).(1990).
+nitionfromsingletwo-dimensionalimages.AIJ,31, In Shapiro,S.(Ed.),Encyclopediaof Artificial Intel- Computers,Chess,and Cognition.Spring

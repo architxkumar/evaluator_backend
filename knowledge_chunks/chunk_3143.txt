@@ -1,0 +1,31 @@
+tioning,225,227,554 1088 DEEPTHOUGHT,192
+Cybenko,G.,762,1069 da Vinci,L.,5,966 Deerwester,S.C.,883,1070
+Index 1103
+defaultlogic,459,468,471 detectionfailure(indataassociation), directedarcconsistency,223
+defaultreasoning,458 460,547 602 directutilityestimation,853
+defaultvalue,456 determination,784,799,801 Dirichletdistribution,811
+de Finetti stheorem,490 minimal,787 Dirichletprocess,827
+definiteclause,256,330 331 deterministicenvironment,43 disabilities,1043
+definition(logical),302 deterministicnode,518 disambiguation,904 912,919
+deformabletemplate,957 Detwarasiti,A.,639,1071 discontinuities,936
+degreeheuristic,216,228,261 Deville,Y.,228,1091 discountfactor,649,685,833
+degreeofbelief,482,489 DEVISER,431 discoverysystem,800
+interval-valued,547 Devroye,L.,827,1071 discreteevent,447
+degreeoffreedom,975 Dewey Decimalsystem,440 discretization,131,519
+degreeoftruth,289 de Bruin,A.,191,1085 discriminativemodel,878
+De Groot,M.H.,506,827,1070 de Dombal,F.T.,505,1070 disjointsets,441
+De Jong,G.,799,884,1070 de Finetti,B.,489,504,1070 disjunct,244
+deletelist,368 de Freitas,J.F.G.,605,1070 disjunction,244
+Delgrande,J.,471,1070 de Freitas,N.,605,1071 disjunctiveconstraint,205
+deliberativelayer,1005 de Kleer,J.,229,358,472,1070,1072, disjunctivenormalform,283
+Dellaert,F.,195,1012,1072,1091 1091 disparity,949
+Della Pietra,S.A.,922,1067 de Marcken,C.,921,1070 Dissanayake,G.,1012,1071
+Della Pietra,V.J.,922,1067 De Morgan,A.,1070 distantpointlightsource,934
+deltarule,846 De Raedt,L.,800,921,1070,1083 distortion,910
+Del Favero,B.A.,553,1088 de Salvo Braz,R.,556,1070 distribute over ,254,347
+Del Moral,P.,605,1070 de Sarkar,S.C.,112,157,1068,1069 distributedconstraintsatisfaction,230
+demodulation,354,359,364 Diaconis,P.,620 distribution
+Demopoulos,D.,278,1068 diagnosis,481,496,497,909 beta,592,811
+De Morgan srules,298 dental,481 conditional,nonparametric,520
+De Morgan,A.,227,313 medical,23,505,517,548,629,1036 cumulative,564,623,1058
+Dempster,A.P.,557,604,826,1070 diagnosticrule,317,51

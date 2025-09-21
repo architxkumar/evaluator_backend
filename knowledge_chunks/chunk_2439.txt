@@ -1,0 +1,25 @@
+ look-ahead searchtoselectanactionforthecurrentbelief
+state was first examined by Satia and Lave (1973). The use of sampling at chance nodes
+was explored analytically by Kearns et al. (2000) and Ng and Jordan (2000). The basic
+ideas for an agent architecture using dynamic decision networks were proposed by Dean
+and Kanazawa (1989a). Thebook Planning and Control by Deanand Wellman (1991) goes
+Bibliographical and Historical Notes 687
+into much greater depth, making connections between DBN DDN models and the classical
+control literature on filtering. Tatman and Shachter (1990) showed how to apply dynamic
+programming algorithms to DDN models. Russell (1998) explains various ways in which
+suchagentscanbescaledupandidentifiesanumberofopenresearchissues.
+The roots of game theory can be traced back to proposals made in the 17th century
+by Christiaan Huygens and Gottfried Leibniz to study competitive and cooperative human
+interactions scientifically and mathematically. Throughout the 19th century, several leading
+economists created simple mathematical examples to analyze particular examples of com-
+petitive situations. The first formal results in game theory are due to Zermelo (1913) (who
+had,theyearbefore,suggestedaformofminimaxsearchforgames,albeitanincorrectone).
+Emile Borel (1921) introduced the notion of a mixed strategy. John von Neumann (1928)
+provedthateverytwo-person, zero-sumgamehasamaximinequilibrium inmixedstrategies
+and a well-defined value. Von Neumann s collaboration with the economist Oskar Morgen-
+stern led to the publication in 1944 of the Theory of Games and Economic Behavior, the
+defining book for game theory. Publication of the book was delayed by the wartime paper
+shortage untilamemberofthe Rockefellerfamilypersonally subsidized itspublication.
+In1950,attheageof21,John Nashpublishedhisideasconcerningequilibriaingeneral
+(non-zero-sum) games. Hisdefinition ofanequilibrium solution, although originating inthe
+work of Cournot (1838), became known as Nash eq

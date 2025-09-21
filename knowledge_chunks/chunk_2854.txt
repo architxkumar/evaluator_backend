@@ -1,0 +1,27 @@
+lik and Rosenholtz (1997). The mathematics of occluding contours, and
+more generally understanding the visual events in the projection of smooth curved objects,
+owesmuchtotheworkof Koenderink andvan Doorn, whichfindsanextensive treatment in
+Koenderink s(1990)Solid Shape. Inrecentyears,attentionhasturnedtotreatingtheproblem
+ofshapeandsurfacerecoveryfromasingleimageasaprobabilisticinferenceproblem,where
+geometrical cues are not modeled explicitly, but used implicitly in a learning framework. A
+goodrepresentative istheworkof Hoiem,Efros,and Hebert(2008).
+Forthereaderinterested inhumanvision, Palmer(1999)provides thebestcomprehen-
+sive treatment; Bruce et al. (2003) is a shorter textbook. The books by Hubel (1988) and
+Rock (1984) are friendly introductions centered on neurophysiology and perception respec-
+tively. David Marr sbook Vision(Marr,1982)playedahistoricalroleinconnectingcomputer
+vision topsychophysics andneurobiology. Whilemanyofhis specific models haven t stood
+the test of time, the theoretical perspective from which each task is analyzed at an informa-
+tional, computational, andimplementation levelisstillilluminating.
+For computer vision, the most comprehensive textbook is Forsyth and Ponce (2002).
+Truccoand Verri(1998)isashorteraccount. Horn(1986)and Faugeras(1993)aretwoolder
+andstillusefultextbooks.
+Themain journals forcomputer vision are IEEE Transactions on Pattern Analysis and
+Machine Intelligence and International Journal of Computer Vision. Computer vision con-
+ferences include ICCV (International Conference on Computer Vision), CVPR (Computer
+Vision and Pattern Recognition), and ECCV (European Conference on Computer Vision).
+Researchwithamachinelearningcomponentisalsopublishedinthe NIPS(Neural Informa-
+tion Processing Systems)conference,andworkontheinterfacewithcomputergraphicsoften
+appearsatthe ACMSIGGRAPH(Special Interest Groupin Graphics) conference.
+Exercises 969
+EXERCISES
+24.1 In the shadow of a tree with a dense, leafy canopy, one sees a number

@@ -1,0 +1,26 @@
+ght in the causing of the observation. Thus,
+someone who iseight feet tall and weighs 190 pounds is very unlikely tobe called tall and
+heavy, eventhough eightfeet countsas tall and 190pounds counts as heavy. Fuzzy predicates can also be given a probabilistic interpretation in terms of random
+sets that is, random variables whosepossible values are sets of objects. Forexample, Tall
+RANDOMSET
+is a random set whose possible values are sets of people. The probability P(Tall S ),
+1
+where S is some particular set of people, is the probability that exactly that set would be
+1
+identified as tall by an observer. Then the probability that Nate is tall is the sum of the
+probabilities ofallthesetsofwhich Nateisamember.
+Both the hybrid Bayesian network approach and the random sets approach appear to
+capture aspects offuzziness without introducing degrees oftruth. Nonetheless, there remain
+manyopenissuesconcerning theproperrepresentation oflinguisticobservations andcontin-
+uousquantities issues thathavebeenneglected bymostoutside thefuzzycommunity.
+14.8 SUMMARY
+Thischapterhasdescribed Bayesiannetworks,awell-developedrepresentationforuncertain
+knowledge. Bayesian networks play a role roughly analogous to that of propositional logic
+fordefiniteknowledge. A Bayesian network is a directed acyclic graph whose nodes correspond to random
+variables;eachnodehasaconditional distribution forthe node,givenitsparents. Bayesiannetworksprovideaconcisewaytorepresent conditionalindependencerela-
+tionships inthedomain. ABayesian network specifies afull joint distribution; each joint entry isdefined asthe
+product of the corresponding entries in the local conditional distributions. A Bayesian
+networkisoftenexponentially smallerthananexplicitlyenumerated jointdistribution. Many conditional distributions can be represented compactly by canonical families of
+552 Chapter 14. Probabilistic Reasoning
+distributions. Hybrid Bayesian networks,whichincludebothdiscreteandcontinuous
+variables, useavarietyofcanon

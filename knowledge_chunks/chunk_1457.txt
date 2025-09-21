@@ -1,0 +1,28 @@
+h. Therearealso
+many conferences and journals devoted to specific areas, which we cover in the appropriate
+chapters. The main professional societies for AI are the American Association for Artificial
+Intelligence (AAAI), the ACM Special Interest Group in Artificial Intelligence (SIGART),
+and the Society for Artificial Intelligence and Simulation of Behaviour (AISB). AAAI s AI
+Magazine contains manytopical andtutorial articles, andits Website, aaai.org,contains
+news,tutorials, andbackground information.
+EXERCISES
+Theseexercisesareintendedtostimulatediscussion, andsomemightbesetastermprojects.
+Alternatively, preliminary attempts can be made now, and these attempts can be reviewed
+afterthecompletion ofthebook.
+1.1 Define in your own words: (a) intelligence, (b) artificial intelligence, (c) agent, (d)
+rationality, (e)logicalreasoning.
+1.2 Read Turing s original paper on AI (Turing, 1950). In the paper, he discusses several
+objectionstohisproposedenterpriseandhistestforintelligence. Whichobjectionsstillcarry
+weight? Are his refutations valid? Can you think of new objections arising from develop-
+ments since he wrotethe paper? Inthe paper, hepredicts that, bythe year2000, acomputer
+will have a 30 chance of passing a five-minute Turing Test with an unskilled interrogator.
+Whatchancedoyouthinkacomputerwouldhavetoday? Inanother50years?
+1.3 Arereflexactions(suchasflinchingfromahotstove)rational? Aretheyintelligent?
+1.4 Suppose weextend Evans s ANALOGY program so that it can score 200 on a standard
+IQtest. Wouldwethenhaveaprogram moreintelligent thanahuman? Explain.
+1.5 The neural structure of the sea slug Aplysia has been widely studied (first by Nobel
+Laureate Eric Kandel) because it has only about 20,000 neurons, most of them large and
+easily manipulated. Assuming that the cycle time foran Aplysia neuron is roughly the same
+as fora human neuron, how does the computational power, in terms of memory updates per
+second, comparewiththehigh-end computerdescribed in Figure1.3?
+32

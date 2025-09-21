@@ -1,0 +1,26 @@
+epresentation isillustrated in Figure7.6.
+The final issue to consider is grounding the connection between logical reasoning
+GROUNDING
+processes andthe real environment inwhich theagent exists. Inparticular, how do weknow
+that KB is true in the real world? (After all, KB is just syntax inside the agent s head.)
+This is a philosophical question about which many, many books have been written. (See
+Chapter26.) Asimpleansweristhattheagent ssensors createtheconnection. Forexample,
+our wumpus-world agent has a smell sensor. The agent program creates a suitable sentence
+whenever there is a smell. Then, whenever that sentence is in the knowledge base, it is
+true in the real world. Thus, the meaning and truth of percept sentences are defined by the
+processesofsensingandsentenceconstruction thatproducethem. Whatabouttherestofthe
+agent s knowledge, such as its belief that wumpuses cause smells in adjacent squares? This
+is not a direct representation of a single percept, but a general rule derived, perhaps, from
+perceptual experience but not identical to a statement of that experience. General rules like
+this are produced by a sentence construction process called learning, which is the subject
+of Part V. Learning is fallible. It could be the case that wumpuses cause smells except on
+February29inleapyears,whichiswhentheytaketheirbaths. Thus,KB maynotbetruein
+therealworld,butwithgoodlearning procedures, thereisreasonforoptimism.
+7.4 PROPOSITIONAL LOGIC: A VERY SIMPLE LOGIC
+PROPOSITIONAL Wenowpresentasimplebutpowerfullogiccalled propositional logic. Wecoverthesyntax
+LOGIC
+of propositional logic and its semantics the way in which the truth of sentences is deter-
+mined. Then we look at entailment the relation between a sentence and another sentence
+thatfollows from it andseehow thisleads toasimple algorithm forlogical inference. Ev-
+erything takesplace, ofcourse, inthewumpusworld.
+6 As Wittgenstein(1922)putitinhisfamous Tractatus: Theworldiseverythingthatisthecase. 244 Chapter 7. Log

@@ -1,0 +1,35 @@
+086
+proceduralapproach,236,286 Putnam,H.,60,260,276,350,358,505, Rabinovich,Y.,155,1086
+proceduralattachment,456,466 1041,1042,1070,1086 racingcars,1050
+process,447,447 Puzicha,J.,755,762,1065 radar,10
+PRODIGY,432 Pylyshyn,Z.W.,1041,1086 radialbasisfunction,762
+production,48 Radio Rex,922
+productionsystem,322,336,357,358 Q Raedt,L.D.,556,1078
+productrule,486,495 Raghavan,P.,883,884,1081,1084
+PROGOL,789,795,797,800 Q(s,a)(valueofactioninstate),843 Raiffa,H.,9,621,625,638,687,1078,
+programminglanguage,285 Q-function,627,831 1081
+progression,393 Q-learning,831,843,844,848,973 Rajan,K.,28,60,431,1064,1077
+Prolog,24,339,358,394,793,899 Q-LEARNING-AGENT,844 Ralaivola,L.,605,1085
+parallel,342 QA3,314 Ralphs,T.K.,112,1086
+Prolog Technology Theorem Prover QALY,616,637 Ramakrishnan,R.,275,1080
+(PTTP),359 Qi,R.,639,1093 Ramanan,D.,960,1086
+pronunciationmodel,917 QUACKLE,187 Ramsey,F.P.,9,504,637,1086
+proof,250 quadraticdynamicalsystems,155 RAND Corporation,638
+properpolicy,650,858 quadraticprogramming,746 randomization,35,50
+property(unaryrelation),288 qualia,1033 randomizedweightedmajority
+proposaldistribution,565 qualificationproblem,268,481,1024, algorithm,752
+proposition 1025 randomrestart,158,262
+probabilistic,483 qualitativephysics,444,472 randomset,551
+symbol,244 qualitativeprobabilisticnetwork,557, randomsurfermodel,871
+propositionalattitude,450 624 randomvariable,486,515
+propositionalization,324,357,368,544 quantification,903 continuous,487,519,553
+propositionallogic,235,243 247,274, quantifier,295,313 indexed,555
+286 existential,297 randomwalk,150,585
+proprioceptivesensor,975 inlogic,295 298 rangefinder,973
+PROSPECTOR,557 nested,297 298 laser,974
+Prosser,P.,229,1086 universal,295 296,322 rangesensorarray,981
+proteindesign,75 quantizationfactor,914 Ranzato,M.,762,1086
+prototypes,896 quasi-logicalform,904 Rao,A.,61,1092
+Proust,M.,910 Qubic,194 Rao,B.,604,1076
+Provan,G.M.,519,552,1086 query(logical),301 Rao,G.,678
+pruning,98,162,167,705 querylanguage,867 Raphael,B.,110,

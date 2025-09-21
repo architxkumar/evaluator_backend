@@ -1,0 +1,26 @@
+can be combined with conflict-directed back-
+jumping; Kondrak and van Beek (1997) present a hybrid algorithm that provably subsumes
+DYNAMIC eithermethodtaken separately. Themethodof dynamicbacktracking(Ginsberg, 1993) re-
+BACKTRACKING
+tains successful partial assignments from later subsets of variables when backtracking over
+anearlierchoicethatdoesnotinvalidate thelatersuccess.
+Empirical studies of several randomized backtracking methods were done by Gomes
+etal.(2000)and Gomesand Selman(2001). Van Beek(2006)surveysbacktracking.
+Local search in constraint satisfaction problems was popularized by the work of Kirk-
+patricketal.(1983)onsimulatedannealing(see Chapter4),whichiswidelyusedforschedul-
+ingproblems. Themin-conflictsheuristicwasfirstproposed by Gu(1989)andwasdeveloped
+independently by Mintonetal.(1992). Sosicand Gu(1994)showedhowitcouldbeapplied
+to solve the 3,000,000 queens problem in less than a minute. The astounding success of
+local search using min-conflicts on the n-queens problem led to a reappraisal of the nature
+and prevalence of easy and hard problems. Peter Cheeseman et al. (1991) explored the
+difficulty of randomly generated CS Ps and discovered that almost all such problems either
+are trivially easy or have no solutions. Only if the parameters of the problem generator are
+setin acertain narrow range, within which roughly half oftheproblems aresolvable, dowe
+find hard problem instances. We discuss this phenomenon further in Chapter 7. Konolige
+(1994)showedthatlocalsearchisinferiortobacktracking searchonproblemswithacertain
+degree of local structure; this led to work that combined local search and inference, such as
+thatby Pinkasand Dechter(1995). Hoosand Tsang(2006)surveylocalsearchtechniques.
+Workrelatingthestructureandcomplexityof CS Psoriginateswith Freuder(1985),who
+showedthat search onarcconsistent treesworks without any backtracking. Asimilarresult,
+with extensions to acyclic hypergraphs, was developed in the database community (Beeri
+et al., 

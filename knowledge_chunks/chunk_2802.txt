@@ -1,0 +1,44 @@
+.2). Photons from the scene must pass through the pinhole, so if it is small
+enough then nearby photons in the scene will be nearby in the image plane, and the image
+willbeinfocus.
+Thegeometryofsceneandimageiseasiesttounderstand withthepinholecamera. We
+useathree-dimensional coordinatesystemwiththeoriginatthepinhole,andconsiderapoint
+(cid:2)
+P in the scene, with coordinates (X,Y,Z). P gets projected to the point P in the image
+planewithcoordinates (x,y,z). Iff isthedistancefromthepinholetotheimageplane,then
+bysimilartriangles, wecanderivethefollowingequations: x X y Y f X f Y , x , y .
+f Z f Z Z Z
+PERSPECTIVE These equations define animage-formation process known as perspective projection. Note
+PROJECTION
+that the Z inthe denominator means that the farther awayan object is, the smallerits image
+Section24.1. Image Formation 931
+Image
+plane Y P
+X
+Z
+P Pinhole
+f
+Figure24.2 Eachlight-sensitiveelementintheimageplaneatthebackofapinholecam-
+erareceiveslightfromathesmallrangeofdirectionsthatpassesthroughthepinhole. Ifthe
+pinholeissmallenough,theresultisafocusedimageatthebackofthepinhole.Theprocess
+ofprojectionmeansthatlarge,distantobjectslookthesameassmaller,nearbyobjects.Note
+thattheimageisprojectedupsidedown.
+will be. Also, note that the minus signs mean that the image is inverted, both left right and
+up down, comparedwiththescene.
+Under perspective projection, distant objects look small. This is what allows you to
+coverthemoonwithyourhand(Figure24.1). Animportantresultofthiseffectisthatparallel
+linesconverge toapointonthehorizon. (Thinkofrailwaytracks, Figure24.1.) Alineinthe
+sceneinthedirection (U,V,W)andpassingthroughthepoint(X ,Y ,Z )canbedescribed
+0 0 0
+as the set of points (X U,Y V,Z W), with varying between and .
+0 0 0
+Differentchoices of(X ,Y ,Z )yielddifferent linesparallel tooneanother. Theprojection
+0 0 0
+ofapoint P fromthislineontotheimageplaneisgivenby
+(cid:13) (cid:14)
+X U Y V
+0 0
+f ,f .
+Z W Z W
+0 0
+As or , this becomes p (f U W,f V W) if W (cid:7) 0. This me

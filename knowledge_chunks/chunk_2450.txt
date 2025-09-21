@@ -1,0 +1,30 @@
+ By seeing many camera images that it is told contain buses, it can learn
+to recognize them (2). By trying actions and observing the results for example, braking
+hard on a wet road it can learn the effects of its actions (3). Then, when it receives no tip
+from passengers who have been thoroughly shaken up during the trip, it can learn a useful
+component ofitsoverallutilityfunction (4).
+Representation andpriorknowledge
+We have seen several examples of representations for agent components: propositional and
+first-order logical sentences for the components in a logical agent; Bayesian networks for
+the inferential components of adecision-theoretic agent, and so on. Effective learning algo-
+rithms have been devised for all of these representations. This chapter (and most of current
+machine learning research) covers inputs that form a factored representation a vector of
+attribute values and outputs that can be either a continuous numerical value or a discrete
+value. Chapter 19 covers functions and prior knowledge composed of first-order logic sen-
+tences, and Chapter20concentrates on Bayesiannetworks.
+There is another way to look at the various types of learning. We say that learning
+a (possibly incorrect) general function or rule from specific input output pairs is called in-
+INDUCTIVE ductive learning. We will see in Chapter 19 that we can also do analytical or deductive
+LEARNING
+DEDUCTIVE learning: going from a known general rule to a new rule that is logically entailed, but is
+LEARNING
+usefulbecauseitallowsmoreefficientprocessing.
+Feedbacktolearnfrom
+Therearethree typesoffeedback thatdeterminethethreemaintypesoflearning:
+UNSUPERVISED Inunsupervisedlearningtheagentlearnspatternsintheinputeventhoughnoexplicit
+LEARNING
+feedback issupplied. Themostcommonunsupervised learning taskisclustering: detecting
+CLUSTERING
+Section18.2. Supervised Learning 695
+potentially useful clusters of input examples. For example, a taxi agent might gradually
+develop a concept of good traffic d

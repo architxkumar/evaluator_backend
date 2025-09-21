@@ -1,0 +1,32 @@
+ous flaws. An obvious flaw is defined as a flaw that can be
+detected by considering two actions or two literals at a time in other words, by looking at
+themutexrelations. Therecould bemoresubtle flawsinvolving three, four, ormoreactions,
+but experience has shown that it is not worth the computational effort to keep track of these
+possibleflaws. Thisissimilartoalessonlearnedfromconstraintsatisfactionproblems that
+itisoftenworthwhiletocompute2-consistencybeforesearchingforasolution,butlessoften
+worthwhiletocompute3-consistency orhigher. (Seepage211.)
+Oneexampleofanunsolvableproblemthatcannotberecognizedassuchbyaplanning
+graphistheblocks-world problem wherethegoalistogetblock Aon B,B on C,and C on
+A. Thisisanimpossiblegoal;atowerwiththebottomontopofthetop. Butaplanninggraph
+Section10.3. Planning Graphs 383
+cannot detect the impossibility, because any twoof the three subgoals are achievable. There
+arenomutexesbetweenanypairofliterals,onlybetweenthe threeasawhole. Todetectthat
+thisproblem isimpossible, wewouldhavetosearchovertheplanning graph.
+10.3.2 The GRAPHPLAN algorithm
+Thissubsectionshowshowtoextractaplandirectlyfromtheplanninggraph,ratherthanjust
+using the graph to provide aheuristic. The GRAPHPLAN algorithm (Figure 10.9) repeatedly
+adds alevel to aplanning graph with EXPAND-GRAPH. Once all the goals show up as non-
+mutexinthegraph, GRAPHPLAN calls EXTRACT-SOLUTION tosearchforaplanthatsolves
+the problem. If that fails, it expands another level and tries again, terminating with failure
+whenthereisnoreasontogoon.
+function GRAPHPLAN(problem)returnssolutionorfailure
+graph INITIAL-PLANNING-GRAPH(problem)
+goals CONJUNCTS(problem.GOAL)
+nogoods anemptyhashtable
+fortl 0to do
+ifgoals allnon-mutexin Stofgraph then
+solution EXTRACT-SOLUTION(graph,goals,NUMLEVELS(graph),nogoods)
+ifsolution (cid:7) failure thenreturnsolution
+ifgraph andnogoods havebothleveledoffthenreturnfailure
+graph EXPAND-GRAPH(graph,problem)
+Figure10.9 The GRAPHPLAN algorithm. GRAPHPLAN calls EXPAND-GRAPH to

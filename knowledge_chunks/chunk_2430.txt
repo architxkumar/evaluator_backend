@@ -1,0 +1,35 @@
+ominant strategy, note that when (v b ) is positive, any bid
+i i i o
+that wins the auction is optimal, and bidding v in particular wins the auction. On the other
+i
+hand, when (v b )isnegative, anybid that loses the auction isoptimal, and bidding v in
+i o i
+9 Thereisactuallyasmallchancethattheagentwithhighestvifailstogetthegoods,inthecaseinwhich
+bo vi bo d.Thechanceofthiscanbemadearbitrarilysmallbydecreasingtheincrementd.
+10 Namedafter William Vickrey(1914 1996), whowonthe1996Nobel Prizeineconomicsforthisworkand
+diedofaheartattackthreedayslater.
+682 Chapter 17. Making Complex Decisions
+particularlosestheauction. Sobidding v isoptimalforallpossiblevaluesofb ,andinfact,
+i o
+v istheonlybidthathasthisproperty. Becauseofitssimplicityandtheminimalcomputation
+i
+requirements for both seller and bidders, the Vickrey auction is widely used in constructing
+distributed AI systems. Also, Internet search engines conduct over a billion auctions a day
+to sell advertisements along with their search results, and online auction sites handle 100
+billionayearingoods,allusingvariantsofthe Vickreyauction. Notethattheexpectedvalue
+to the seller is b , which is the same expected return as the limit of the English auction as
+o
+theincrement dgoestozero. Thisisactually averygeneral result: the revenueequivalence
+REVENUE
+theorem states that, with a few minor caveats, any auction mechanism where risk-neutral
+EQUIVALENCE
+THEOREM
+bidders have values v known only to themselves (but know a probability distribution from
+i
+whichthosevaluesaresampled),willyieldthesameexpectedrevenue. Thisprinciplemeans
+thatthevariousmechanismsarenotcompetingonthebasisofrevenuegeneration, butrather
+onotherqualities.
+Althoughthesecond-priceauctionistruth-revealing, itturnsoutthatextendingtheidea
+tomultiplegoods andusinganext-price auction isnottruth-revealing. Many Internet search
+engines use a mechanism where they auction k slots for ads on a page. The highest bidder
+wins the top spot, the second highest gets the second 

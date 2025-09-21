@@ -1,0 +1,46 @@
+valid plan 203 valuation function 783 valuations 437 value function 779 value iteration 789, 791 valuespace 495 variable neighbourhood descent 69 variable ordering 320 vector space model 694 version space 827 Viterbi algorithm 822 VLSI TSP 93 vocabulary 629, 632 Ww Wayland 676 weak methods 31 Web 3.0 501 web of data 501 web ontology language 601 well formed formula 424 width 306 winning strategy 241 Wordnet 561, 682, 687 WordNet similarity 697 word phrases 538 word sense disambiguation (WSD) 561, 682, 688 word senses 539 working memory 171 working memory elements (WMEs) 171 World TSP 93 Wumpus world 232 Xx XCON 169, 185 Z zero sum game 239 zugzwang 264
+
+=== END OF a-first-course-in-artificial-intelligence-deepak-khemani-clean.txt ===
+
+
+
+=== START OF AI-clean.txt ===
+
+Artificial Intelligence
+A Modern Approach
+Third Edition INARTIFICIALINTELLIGENCE
+Stuart Russelland Peter Norvig,Editors
+FORSYTH PONCE Computer Vision: AModern Approach
+GRAHAM ANSI Common Lisp
+JURAFSKY MARTIN Speechand Language Processing, 2nded.
+NEAPOLITAN Learning Bayesian Networks
+RUSSELL NORVIG Artificial Intelligence: AModern Approach,3rded.
+Artificial Intelligence
+A Modern Approach
+Third Edition
+Stuart J. Russell and Peter Norvig
+Contributingwriters:
+Ernest Davis
+Douglas D. Edwards
+David Forsyth
+Nicholas J. Hay
+Jitendra M.Malik
+Vibhu Mittal
+Mehran Sahami
+Sebastian Thrun
+Upper Saddle River Boston Columbus San Francisco New York
+Indianapolis London Toronto Sydney Singapore Tokyo Montreal
+Dubai Madrid Hong Kong Mexico City Munich Paris Amsterdam Cape Town
+Vice Presidentand Editorial Director,ECS:Marcia J.Horton
+Editor-in-Chief:Michael Hirsch
+Executive Editor:Tracy Dunkelberger
+Assistant Editor:Melinda Haggerty
+Editorial Assistant: Allison Michael
+Vice President,Production:Vince O Brien
+Senior Managing Editor:Scott Disanno
+Production Editor:Jane Bonnell
+Senior Operations Supervisor:Alan Fischer
+Operations Specialist: Lisa Mc Dowell
+Marketing Manager:Erin Davis
+Marketing Assistant: Mack Patterson
+Cover 

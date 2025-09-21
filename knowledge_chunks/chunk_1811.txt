@@ -1,0 +1,30 @@
+ isnotnullthen
+return EXTRACT-SOLUTION(model)
+returnfailure
+Figure 7.22 The SATPLAN algorithm. The planning problem is translated into a CNF
+sentenceinwhichthegoalisassertedtoholdatafixedtimesteptandaxiomsareincluded
+foreachtimestepuptot. Ifthesatisfiabilityalgorithmfindsamodel,thenaplanisextracted
+by looking at those proposition symbols that refer to actions and are assigned true in the
+model.Ifnomodelexists,thentheprocessisrepeatedwiththegoalmovedonesteplater.
+The key step in using SATPLAN is the construction of the knowledge base. It might
+seem, on casual inspection, that the wumpus world axioms in Section 7.7.1 suffice forsteps
+1(a)and1(b)above. Thereis,however,asignificantdifference betweentherequirements for
+entailment (as tested by ASK)and those forsatisfiability. Consider, forexample, theagent s
+location, initially 1,1 , and suppose the agent s unambitious goal isto be in 2,1 attime 1.
+Theinitialknowledgebasecontains L0 andthegoalis L1 . Using ASK,wecanprove L1
+1,1 2,1 2,1
+if Forward0 is asserted, and, reassuringly, we cannot prove L1 if, say, Shoot0 is asserted
+2,1
+instead. Now, SATPLAN will find the plan Forward0 ; so far, so good. Unfortunately,
+SATPLA Nalsofindstheplan Shoot0 . Howcouldthisbe? Tofindout,weinspectthemodel
+that SATPLAN constructs: it includes the assignment L0 , that is, the agent can be in 2,1 2,1
+attime1bybeingthereattime0andshooting. Onemightask, Didn twesaytheagentisin 1,1 attime0? Yes,wedid,butwedidn ttelltheagentthatitcan tbeintwoplacesatonce!
+For entailment, L0 is unknown and cannot, therefore, be used in a proof; for satisfiability,
+2,1
+Section7.7. Agents Basedon Propositional Logic 273
+on the other hand, L0 is unknown and can, therefore, be set to whatever value helps to
+2,1
+makethegoaltrue. Forthisreason, SATPLAN isagooddebuggingtoolforknowledgebases
+because it reveals places where knowledge is missing. Inthis particular case, wecan fixthe
+knowledgebasebyassertingthat,ateachtimestep,theagentisinexactlyonelocation,using
+acollectio

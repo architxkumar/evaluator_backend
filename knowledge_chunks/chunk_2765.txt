@@ -1,0 +1,26 @@
+emetonymicobjectmareidentical: m,x (m x) Metonymy(m,x).
+Forthe Chrysler example, a reasonable generalization is that an organization can be used to
+standforaspokesperson ofthatorganization: m,x x Organizations Spokesperson(m,x) Metonymy(m,x).
+Other metonymies include the author for the works (I read Shakespeare) or more generally
+theproducer fortheproduct (Idrivea Honda)andthepartforthewhole(The Red Soxneed
+a strong arm). Some examples of metonymy, such as The ham sandwich on Table 4 wants
+anotherbeer, aremorenovelandareinterpreted withrespecttoasituation.
+Ametaphor isanother figure ofspeech, inwhich a phrase withone literal meaning is
+METAPHOR
+used to suggest a different meaning by way of an analogy. Thus, metaphor can be seen as a
+kindofmetonymywheretherelationisoneofsimilarity.
+Disambiguation is the process of recovering the most probable intended meaning of
+DISAMBIGUATION
+an utterance. In one sense wealready have a framework for solving this problem: each rule
+has a probability associated with it, so the probability of an interpretation is the product of
+the probabilities of the rules that led to the interpretation. Unfortunately, the probabilities
+reflect how common the phrases are in the corpus from which the grammar was learned,
+and thus reflect general knowledge, not specific knowledge of the current situation. To do
+disambiguation properly, weneedtocombinefourmodels:
+1. Theworldmodel: thelikelihoodthatapropositionoccursintheworld. Givenwhatwe
+know about the world, it is more likely that a speaker who says I m dead means I
+aminbigtrouble ratherthan Mylifeended,andyet Icanstilltalk. 2. Thementalmodel: thelikelihood thatthespeakerformstheintention ofcommunicat-
+ing a certain fact to the hearer. This approach combines models of what the speaker
+believes, what the speaker believes the hearer believes, and so on. Forexample, when
+a politician says, I am not a crook, the world model might assign a probability of
+only 50 to the proposition that the politician is no

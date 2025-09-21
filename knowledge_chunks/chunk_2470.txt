@@ -1,0 +1,32 @@
+kages have
+been built that meet these criteria, and they have been used to develop thousands of fielded
+systems. Inmanyareasofindustryandcommerce,decisiontreesareusuallythefirstmethod
+triedwhenaclassification methodistobeextracted from adataset. Oneimportant property
+ofdecisiontreesisthatitispossibleforahumantounderstandthereasonfortheoutputofthe
+learningalgorithm. (Indeed,thisisalegalrequirementforfinancialdecisionsthataresubject
+to anti-discrimination laws.) This is a property not shared by some other representations,
+suchasneuralnetworks.
+708 Chapter 18. Learningfrom Examples
+18.4 EVALUATING AND CHOOSING THE BEST HYPOTHESIS
+We want to learn a hypothesis that fits the future data best. To make that precise we need
+STATIONARITY to define future data and best. We make the stationarity assumption: that there is a
+ASSUMPTION
+probability distribution overexamples that remains stationary overtime. Each example data
+point(beforeweseeit)isarandomvariable E whoseobservedvaluee (x ,y )issampled
+j j j j
+fromthatdistribution, andisindependent oftheprevious examples:
+P(E j E j 1 ,E j 2 ,...) P(E j ),
+andeachexamplehasanidentical priorprobability distribution:
+P(E j ) P(E j 1 ) P(E j 2 ) .
+Examplesthatsatisfytheseassumptionsarecalledindependent andidenticallydistributed or
+i.i.d.. Ani.i.d.assumption connects thepasttothefuture; withoutsomesuchconnection, all
+I.I.D.
+bets are off the future could be anything. (We will see later that learning can still occur if
+thereare slowchangesinthedistribution.)
+The next step is to define best fit. We define the error rate of a hypothesis as the
+ERRORRATE
+proportionofmistakesitmakes theproportionoftimesthath(x) (cid:7) yforan(x,y)example.
+Now, just because a hypothesis h has a low error rate on the training set does not mean that
+itwillgeneralize well. Aprofessor knowsthatanexamwillnotaccurately evaluate students
+if they have already seen the exam questions. Similarly, to get an accurate evaluation of a
+hypothesis,weneedtotestitonasetofexampl

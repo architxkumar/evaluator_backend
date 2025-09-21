@@ -1,0 +1,24 @@
+ly easy. The earliest work in statistical machine translation did apply
+Bayes rule in part because the researchers had agood language model, P(f), andwanted
+to make use of it, and in part because they came from a background in speech recognition,
+which is a diagnostic problem. We follow their lead in this chapter, but we note that re-
+cent work in statistical machine translation often optimizes P(f e) directly, using a more
+sophisticated modelthattakesintoaccount manyofthefeatures fromthelanguage model.
+910 Chapter 23. Natural Languagefor Communication
+The language model, P(f), could address any level(s) on the right-hand side of Fig-
+ure 23.12, but the easiest and most common approach is to build an n-gram model from a
+French corpus, as we have seen before. This captures only a partial, local idea of French
+sentences; however,thatisoftensufficientforroughtranslation.8
+Thetranslationmodelislearnedfromabilingualcorpus acollectionofparalleltexts,
+BILINGUALCORPUS
+each an English French pair. Now, if we had an infinitely large corpus, then translating a
+sentence wouldjustbealookuptask: wewouldhaveseenthe Englishsentence beforeinthe
+corpus, so we could just return the paired French sentence. But of course our resources are
+finite, and most of the sentences we will be asked to translate will be novel. However, they
+will be composed of phrases that we have seen before (even if some phrases are as short as
+one word). For example, in this book, common phrases include in this exercise we will, sizeofthestatespace, asafunction ofthe and notesattheendofthechapter. Ifasked
+totranslatethenovelsentence Inthisexercisewewillcomputethesizeofthestatespaceasa
+function ofthenumberofactions. into French,weshouldbeabletobreakthesentenceinto
+phrases, find the phrases in the English corpus (this book), find the corresponding French
+phrases (from the French translation of the book), and then reassemble the French phrases
+intoanorderthatmakessensein French. Inotherwords,givenasource Englishse

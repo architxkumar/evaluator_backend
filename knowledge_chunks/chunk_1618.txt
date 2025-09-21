@@ -1,0 +1,26 @@
+d Classical Search
+thisleads toaspeedup proportional tothesizeofthebelief states, whichmaythemselves be
+aslargeasthephysicalstatespaceitself.
+Even the most efficient solution algorithm is not of much use when no solutions exist.
+Many things just cannot be done without sensing. For example, the sensorless 8-puzzle is
+impossible. On the other hand, a little bit of sensing can go a long way. Forexample, every
+8-puzzle instanceissolvableifjustonesquareisvisible the solution involves movingeach
+tileinturnintothevisiblesquareandthenkeeping trackof itslocation.
+4.4.2 Searching withobservations
+Forageneralpartiallyobservableproblem,wehavetospecifyhowtheenvironmentgenerates
+percepts for the agent. Forexample, we might define the local-sensing vacuum world to be
+oneinwhichtheagenthasapositionsensorandalocaldirtsensorbuthasnosensorcapable
+of detecting dirt in other squares. The formal problem specification includes a PERCEPT(s)
+function that returns the percept received in a given state. (If sensing is nondeterministic,
+thenweusea PERCEPTS functionthatreturnsasetofpossiblepercepts.) Forexample,inthe
+local-sensingvacuumworld,the PERCEP Tinstate1is A,Dirty . Fullyobservableproblems
+are aspecial case in which PERCEPT(s) sforevery state s, whilesensorless problems are
+aspecialcaseinwhich PERCEPT(s) null.
+Whenobservations are partial, itwillusually be the case that several states could have
+produced any given percept. For example, the percept A,Dirty is produced by state 3 as
+well as by state 1. Hence, given this as the initial percept, the initial belief state for the
+local-sensing vacuum world will be 1,3 . The ACTIONS, STEP-COST, and GOAL-TEST
+areconstructedfromtheunderlying physicalproblemjustasforsensorlessproblems,butthe
+transition model isabitmorecomplicated. Wecan think of transitions from one belief state
+tothenextforaparticularactionasoccurring inthreestages, asshownin Figure4.15: Thepredictionstageisthesameasforsensorlessproblems: giventheactionainbelief
+stateb,thepredic

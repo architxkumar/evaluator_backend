@@ -1,0 +1,38 @@
+edbybananaleaves(Jenniskens
+etal.,1994).Andin2009,a Germanboyclaimedtohavebeenhitinthehandbyapea-sizedmeteorite.Noserious
+injuriesresultedfromanyoftheseincidents,suggestingthattheneedforpreplanningagainstsuchcontingencies
+issometimesoverstated.
+Section11.3. Planningand Actingin Nondeterministic Domains 423
+whole plan
+plan
+S P E G
+continuation
+repair
+O
+Figure11.9 Beforeexecution,theplannercomesupwithaplan,herecalledwhole plan,
+togetfrom S to G. Theagentexecutesstepsoftheplanuntilitexpectstobeinstate E,but
+observesitisactuallyin O. Theagentthenreplansfortheminimalrepairpluscontinuation
+toreach G.
+Replanningmayalsobeneedediftheagent smodeloftheworldisincorrect. Themodel
+MISSING foran action may have a missing precondition for example, the agent may not know that
+PRECONDITION
+removing the lid of a paint can often requires a screwdriver; the model may have a missing
+effect forexample, painting anobjectmaygetpaintontheflooraswell;orthemodelmay
+MISSINGEFFECT
+MISSINGSTATE have a missing state variable for example, the model given earlier has no notion of the
+VARIABLE
+amountofpaint inacan,ofhowitsactions affectthisamount, oroftheneedfortheamount
+to be nonzero. The model may also lack provision for exogenous events such as someone
+EXOGENOUSEVENT
+knocking over the paint can. Exogenous events can also include changes in the goal, such
+as the addition of the requirement that the table and chair not be painted black. Without the
+ability to monitor and replan, an agent s behavior is likely to be extremely fragile if it relies
+onabsolutecorrectness ofitsmodel.
+Theonline agent hasachoice ofhow carefully tomonitortheenvironment. Wedistin-
+guishthreelevels: Actionmonitoring: beforeexecutinganaction,theagentverifiesthatalltheprecondi-
+ACTIONMONITORING
+tionsstillhold. Planmonitoring: beforeexecutinganaction,theagentverifiesthattheremainingplan
+PLANMONITORING
+willstillsucceed. Goalmonitoring: beforeexecutinganaction,theagentcheckstoseeifthereisabetter
+GOALMONITORING
+setofgoalsitcouldbetr

@@ -1,0 +1,59 @@
+trunwiththetransientfailuremodel. Noticethatthetransientfail-
+ureishandledwell,butthepersistentfailureresultsinexcessivepessimismaboutthebattery
+charge.
+B
+0
+P(B
+1
+)
+5
+t 1.000
+f 0.001 4
+3
+BM Broken BM Broken
+0 1
+2
+1
+BMeter
+1
+0
+-1
+Battery Battery 15 20 25 30
+0 1
+)yretta B(E t
+E(Battery ...5555005555...)
+t
+E(Battery ...5555000000...)
+t
+P(BM Broken ...5555000000...)
+t
+P(BM Broken ...5555005555...)
+t
+Time step
+(a) (b)
+Figure15.15 (a)ADBN fragmentshowingthesensorstatusvariablerequiredformod-
+eling persistentfailureof the battery sensor. (b)Uppercurves: trajectoriesof the expected
+valueof Batterytforthe transientfailure and permanentfailure observationssequences.
+Lowercurves:probabilitytrajectoriesfor BM Broken giventhetwoobservationsequences.
+arc linking BM Broken to BM Broken . This persistence arc has a CP Tthat gives asmall
+PERSISTENCEARC 0 1
+probability of failure in any given time step, say, 0.001, but specifies that the sensor stays
+broken once it breaks. When the sensor is OK, the sensor model for BMeter is identical to
+thetransientfailuremodel;whenthesensorisbroken,itsays BMeter isalways0,regardless
+oftheactualbatterycharge.
+Section15.5. Dynamic Bayesian Networks 595
+P(R 0) R t 0 P 0 (R .7 1 ) P(R 0) R t 0 P 0 (R .7 1 ) R t 1 P 0 (R .7 2 ) R t 2 P 0 (R .7 3 ) R t 3 P 0 (R .7 4 )
+0.7 f 0.3 0.7 f 0.3 f 0.3 f 0.3 f 0.3
+Rain Rain Rain Rain Rain Rain Rain
+0 1 0 1 2 3 4
+Umbrella 1 Umbrella 1 Umbrella 2 Umbrella 3 Umbrella 4
+R 1 P(U 1 ) R 1 P(U 1 ) R 2 P(U 2 ) R 3 P(U 3 ) R 4 P(U 4 )
+t 0.9 t 0.9 t 0.9 t 0.9 t 0.9
+f 0.2 f 0.2 f 0.2 f 0.2 f 0.2
+Figure15.16 Unrollingadynamic Bayesiannetwork: slicesarereplicatedtoaccommo-
+datetheobservationsequence Umbrella .Furthersliceshavenoeffectoninferenceswithin
+1:3
+theobservationperiod.
+The persistent failure model for the battery sensor is shown in Figure 15.15(a). Its
+performance on the two data sequences (temporary blip and persistent failure) is shown in
+Figure 15.15(b). There are several things to notice about these curves. First

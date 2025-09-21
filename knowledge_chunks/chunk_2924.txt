@@ -1,0 +1,27 @@
+en
+withinsensorrange),ormovingobstacles. Foreachcondition andeachcontroller, give
+anexampleofasituation wheretherobotfails(orexplainwhyitcannotfail).
+25.10 In Figure25.24(b) onpage 1001, weencountered anaugmented finitestatemachine
+for the control of a single leg of a hexapod robot. In this exercise, the aim is to design an
+AFSM that, when combined with six copies of the individual leg controllers, results in effi-
+cient, stable locomotion. Forthispurpose, you havetoaugment theindividual legcontroller
+topassmessagestoyournew AFS Mandtowaituntilothermessagesarrive. Arguewhyyour
+controller is efficient, in that it does not unnecessarily waste energy (e.g., by sliding legs),
+andinthatitpropels therobot atreasonably high speeds. Provethatyourcontroller satisfies
+thedynamicstabilitycondition givenonpage977.
+25.11 (This exercise was first devised by Michael Genesereth and Nils Nilsson. It works
+for first graders through graduate students.) Humans are so adept at basic household tasks
+that they often forget how complex these tasks are. In this exercise you will discover the
+complexity and recapitulate the last 30 years of developments in robotics. Consider the task
+ofbuilding anarchoutofthreeblocks. Simulatearobotwith fourhumansasfollows:
+Brain. The Brain direct the hands in the execution of a plan to achieve the goal. The
+Brain receives input from the Eyes, but cannot see the scene directly. The brain is the only
+onewhoknowswhatthegoalis.
+Eyes. The Eyesreportabriefdescription ofthescenetothe Brain: Thereisaredbox
+standingontopofagreenbox,whichisonitsside Eyescanalsoanswerquestionsfromthe
+Brain such as, Is there agap between the Left Hand and the red box? If you have a video
+camera,pointitatthesceneandallowtheeyestolookattheviewfinderofthevideocamera,
+butnotdirectlyatthescene.
+Lefthandandrighthand. Onepersonplayseach Hand. Thetwo Handsstandnextto
+each other, each wearing an oven mitt on one hand, Hands execute only simple commands
+from the Brain for example, Left Hand, mov

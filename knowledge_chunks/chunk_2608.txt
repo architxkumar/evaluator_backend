@@ -1,0 +1,38 @@
+n forthe Ancestor predicate.
+20
+LEARNING
+PROBABILISTIC MODELS
+Inwhichweviewlearning asaformofuncertain reasoning fromobservations.
+Chapter13pointedouttheprevalenceofuncertaintyinrealenvironments. Agentscanhandle
+uncertainty byusingthemethodsofprobability anddecision theory, butfirsttheymustlearn
+their probabilistic theories of the world from experience. This chapter explains how they
+can do that, by formulating the learning task itself as a process of probabilistic inference
+(Section20.1). Wewillseethata Bayesianviewoflearningisextremelypowerful,providing
+general solutions to the problems of noise, overfitting, and optimal prediction. It also takes
+intoaccountthefactthataless-than-omniscientagentcanneverbecertainaboutwhichtheory
+oftheworldiscorrect,yetmuststillmakedecisions byusingsometheoryoftheworld.
+Wedescribemethodsforlearningprobability models primarily Bayesiannetworks in Sections 20.2 and 20.3. Some of the material in this chapter is fairly mathematical, al-
+thoughthegenerallessonscanbeunderstoodwithoutplungingintothedetails. Itmaybenefit
+thereadertoreview Chapters13and14andpeekat Appendix A.
+20.1 STATISTICAL LEARNING
+The key concepts in this chapter, just as in Chapter 18, are data and hypotheses. Here, the
+dataareevidence thatis,instantiationsofsomeoralloftherandomvariablesdescribingthe
+domain. The hypotheses in this chapter are probabilistic theories of how the domain works,
+including logicaltheories asaspecial case.
+Consider a simple example. Our favorite Surprise candy comes in two flavors: cherry
+(yum)andlime(ugh). Themanufacturerhasapeculiarsenseofhumorandwrapseachpiece
+of candy in the same opaque wrapper, regardless of flavor. The candy is sold in very large
+bags,ofwhichthereareknowntobefivekinds again, indistinguishable fromtheoutside:
+h : 100 cherry,
+1
+h : 75 cherry 25 lime,
+2
+h : 50 cherry 50 lime,
+3
+h : 25 cherry 75 lime,
+4
+h : 100 lime .
+5
+802
+Section20.1. Statistical Learning 803
+Given a new bag of candy, the random variable H (for hypothesis) d

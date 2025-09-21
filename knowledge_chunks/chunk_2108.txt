@@ -1,0 +1,23 @@
+esimplestrepresentation schemes,suchasmicroformats(Khare,
+2006) and RD Fa (Adida and Birbeck, 2008), which use HTML and XHTML markup to
+add attributes to literal text. Usage of sophisticated RDF and OWL ontologies is not yet
+widespread, and the full vision of the Semantic Web (Berners-Lee et al., 2001) has not yet
+been realized. The conferences on Formal Ontology in Information Systems (FOIS)contain
+manyinteresting papersonbothgeneralanddomain-specific ontologies.
+The taxonomy used in this chapter was developed by the authors and is based in part
+on their experience in the CYC project and in part on work by Hwang and Schubert (1993)
+and Davis (1990, 2005). An inspirational discussion of the general project of commonsense
+knowledgerepresentation appearsin Hayes s(1978, 1985b) Naive Physics Manifesto. Successful deep ontologies within a specific field include the Gene Ontology project
+(Consortium, 2008)and CML,the Chemical Markup Language(Murray-Rust etal.,2003).
+470 Chapter 12. Knowledge Representation
+Doubts about the feasibility of a single ontology for all knowledge are expressed by
+Doctorow (2001), Gruber (2004), Halevy et al. (2009), and Smith (2004), who states, the
+initialprojectofbuilding onesingleontology ...has...largelybeenabandoned. Theeventcalculuswasintroducedby Kowalskiand Sergot(1986)tohandlecontinuous
+time,andtherehavebeenseveralvariations(Sadriand Kowalski,1995;Shanahan,1997)and
+overviews (Shanahan, 1999; Mueller, 2006). van Lambalgen and Hamm (2005) show how
+thelogic ofeventsmapsonto thelanguage weusetotalkabout events. Analternative tothe
+event and situation calculi is the fluent calculus (Thielscher, 1999). James Allen introduced
+timeintervalsforthesamereason(Allen,1984),arguingthatintervalsweremuchmorenatu-
+ralthansituations forreasoning aboutextended andconcurrent events. Peter Ladkin(1986a,
+1986b) introduced concave time intervals (intervals with gaps; essentially, unions of ordi-
+nary convex timeintervals) andapplied thetechniques of mathemat

@@ -1,0 +1,31 @@
+ut states beyond that provided in the problem definition. All they can do is
+BLINDSEARCH
+generate successors and distinguish a goal state from a non-goal state. All search strategies
+are distinguished by the order in which nodes are expanded. Strategies that know whether
+onenon-goalstateis morepromising thananotherarecalledinformedsearchorheuristic
+INFORMEDSEARCH
+search strategies; theyarecoveredin Section3.5.
+HEURISTICSEARCH
+3.4.1 Breadth-first search
+BREADTH-FIRST Breadth-firstsearchisasimplestrategyinwhichtherootnodeisexpandedfirst,thenallthe
+SEARCH
+successors of the root node are expanded next, then their successors, and so on. In general,
+all the nodes are expanded at a given depth in the search tree before any nodes at the next
+levelareexpanded.
+Breadth-firstsearchisaninstanceofthegeneralgraph-search algorithm (Figure3.7)in
+whichtheshallowestunexpandednodeischosenforexpansion. Thisisachievedverysimply
+byusinga FIF Oqueueforthefrontier. Thus,newnodes(which arealwaysdeeperthantheir
+parents)gotothebackofthequeue,andoldnodes,whichareshallowerthanthenewnodes,
+getexpandedfirst. Thereisoneslighttweakonthegeneralgraph-search algorithm,whichis
+thatthegoaltestisappliedtoeachnodewhenitisgeneratedratherthanwhenitisselectedfor
+expansion. This decision is explained below, where we discuss time complexity. Note also
+thatthealgorithm, followingthegeneral templateforgraphsearch, discards anynewpathto
+a state already in the frontier or explored set; it is easy to see that any such path must be at
+least as deep as the one already found. Thus, breadth-first search always has the shallowest
+pathtoeverynodeonthefrontier.
+Pseudocode isgiven in Figure 3.11. Figure 3.12 shows the progress ofthe search on a
+simplebinarytree.
+Howdoesbreadth-first search rateaccording tothefourcriteria from theprevious sec-
+tion? Wecaneasilyseethatitiscomplete iftheshallowestgoalnodeisatsomefinitedepth
+d, breadth-first search will eventually find it after generating all shallower nodes (provided
+the bran

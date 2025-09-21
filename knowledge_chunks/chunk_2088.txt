@@ -1,0 +1,24 @@
+o detour around sets of sentences that seem to be causing the system to take several
+weekstosolveaproblem. Thethrustindescriptionlogics,ontheotherhand,istoensurethat
+subsumption-testing canbesolvedintimepolynomial inthesizeofthedescriptions.7
+6 Notice that the language does not allow one to simply state that one concept, or category, is a subset of
+another. Thisisadeliberatepolicy:subsumptionbetweencategoriesmustbederivablefromsomeaspectsofthe
+descriptionsofthecategories.Ifnot,thensomethingismissingfromthedescriptions.
+7 CLASSI Cprovidesefficientsubsumptiontestinginpractice,buttheworst-caseruntimeisexponential.
+458 Chapter 12. Knowledge Representation
+This sounds wonderful in principle, until one realizes that it can only have one of two
+consequences: either hard problems cannot be stated at all, or they require exponentially
+large descriptions! However,thetractability results doshed lightonwhatsorts ofconstructs
+cause problems and thus help the user to understand how different representations behave.
+For example, description logics usually lack negation and disjunction. Each forces first-
+orderlogicalsystemstogothrough apotentially exponential caseanalysis inordertoensure
+completeness. CLASSIC allows only a limited form of disjunction in the Fills and One Of
+constructs, which permit disjunction overexplicitly enumerated individuals but not overde-
+scriptions. Withdisjunctive descriptions, nested definitions canleadeasily toanexponential
+numberofalternative routesbywhichonecategory cansubsumeanother.
+12.6 REASONING WITH DEFAULT INFORMATION
+Inthepreceding section,wesawasimpleexampleofanassertionwithdefaultstatus: people
+have two legs. This default can be overridden by more specific information, such as that
+Long John Silverhasone leg. Wesaw thatthe inheritance mechanism insemantic networks
+implements the overriding of defaults in a simple and natural way. In this section, we study
+defaults more generally, with a view toward understanding the semantics of defaults rat

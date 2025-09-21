@@ -1,0 +1,24 @@
+rthesamecarsinthesamemovie.
+288 Chapter 8. First-Order Logic
+Inafirst-orderlogicreasoningsystemthatuses CNF,wecanseethatthelinguisticform (A B) and A B are the same because we can look inside the system and see
+that the two sentences are stored as the same canonical CN Fform. Can wedo that with the
+human brain? Until recently the answer was no, but now it is maybe. Mitchell et al.
+(2008) put subjects in an f MRI (functional magnetic resonance imaging) machine, showed
+themwordssuchas celery, andimagedtheirbrains. Theresearcherswerethenabletotrain
+acomputerprogramtopredict,fromabrainimage,whatwordthesubjecthadbeenpresented
+with. Given two choices (e.g., celery or airplane ), the system predicts correctly 77 of
+the time. The system can even predict at above-chance levels for words it has never seen
+an f MRI image of before (by considering the images of related words) and for people it has
+never seen before (proving that f MRI reveals some level of common representation across
+people). This type of work is still in its infancy, but f MRI (and other imaging technology
+such as intracranial electrophysiology (Sahin et al., 2009)) promises to give us much more
+concrete ideasofwhathumanknowledge representations are like.
+From the viewpoint of formal logic, representing the same knowledge in two different
+ways makes absolutely no difference; the same facts will be derivable from either represen-
+tation. Inpractice, however, onerepresentation mightrequire fewerstepstoderiveaconclu-
+sion, meaning that a reasoner with limited resources could get to the conclusion using one
+representation but not the other. For nondeductive tasks such as learning from experience,
+outcomes are necessarily dependent on the form of the representations used. We show in
+Chapter 18 that when a learning program considers two possible theories of the world, both
+ofwhichareconsistentwithallthedata,themostcommonwayofbreakingthetieistochoose
+themostsuccincttheory andthatdependsonthelanguageusedtorepresentth

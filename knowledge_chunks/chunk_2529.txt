@@ -1,0 +1,33 @@
+ntheoriginalspace.
+Figure18.32showshowthiscanresultinamoreexpressivehypothesis space. Iftheoriginal
+hypothesis space allows for a simple and efficient learning algorithm, then the ensemble
+methodprovidesawaytolearnamuchmoreexpressiveclassofhypotheseswithoutincurring
+muchadditional computational oralgorithmic complexity.
+Themostwidelyusedensemblemethodiscalledboosting. Tounderstandhowitworks,
+BOOSTING
+WEIGHTEDTRAINING we need first to explain the idea of a weighted training set. In such a training set, each
+SET
+example has an associated weight w 0. The higher the weight of an example, the higher
+j
+is the importance attached to it during the learning of a hypothesis. It is straightforward to
+modifythelearning algorithmswehaveseensofartooperate withweightedtraining sets.14
+Boosting starts with w 1foralltheexamples (i.e., anormal training set). From this
+j
+set,itgeneratesthefirsthypothesis, h . Thishypothesiswillclassifysomeofthetrainingex-
+1
+amplescorrectly andsomeincorrectly. Wewouldlikethenexthypothesis todobetteronthe
+misclassifiedexamples,soweincreasetheirweightswhiledecreasingtheweightsofthecor-
+rectly classified examples. From this new weighted training set, wegenerate hypothesis h .
+2
+Theprocesscontinuesinthiswayuntilwehavegenerated K hypotheses,where K isaninput
+totheboostingalgorithm. Thefinalensemblehypothesisisaweighted-majoritycombination
+ofallthe Khypotheses,eachweightedaccordingtohowwellitperformedonthetrainingset.
+Figure18.33showshowthealgorithmworksconceptually. Therearemanyvariantsoftheba-
+sicboostingidea,withdifferentwaysofadjustingtheweightsandcombiningthehypotheses.
+Onespecificalgorithm,called ADABOOST,isshownin Figure18.34. ADABOOS Thasavery
+important property: if the input learning algorithm L is a weak learning algorithm which
+WEAKLEARNING
+14 Forlearningalgorithmsinwhichthisisnotpossible,onecaninsteadcreateareplicatedtrainingsetwhere
+thejthexampleappearswj times,usingrandomizationtohandlefractionalweights.
+750 Chapter 18. Learningfrom Examples
+h 

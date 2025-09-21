@@ -1,0 +1,27 @@
+ the worst-case outcome, rather than maximizing the expected
+qualityoftheplan. Worst-caseplansareoptimalinthedecision-theoretic senseonlyiffailure
+duringexecution ismuchworsethananyoftheothercostsinvolved inexecution.
+25.6 MOVING
+So far, we have talked about how to plan motions, but not about how to move. Ourplans particularlythoseproducedbydeterministicpathplanners assumethattherobotcansimply
+followanypaththatthealgorithm produces. Intherealworld,ofcourse, thisisnotthecase.
+Robots have inertia and cannot execute arbitrary paths except at arbitrarily slow speeds. In
+mostcases,therobotgetstoexertforcesratherthanspecifypositions. Thissectiondiscusses
+methodsforcalculating theseforces.
+25.6.1 Dynamicsand control
+Section 25.2introduced thenotion of dynamicstate, whichextends thekinematic state ofa
+robotbyitsvelocity. Forexample,inaddition totheangleofarobotjoint, thedynamicstate
+also captures the rate of change of the angle, and possibly even its momentary acceleration.
+The transition model for a dynamic state representation includes the effect of forces on this
+DIFFERENTIAL rate of change. Such models are typically expressed via differential equations, which are
+EQUATION
+equations that relate a quantity (e.g., a kinematic state) to the change of the quantity over
+time(e.g.,velocity). Inprinciple, wecould havechosen toplanrobot motionusing dynamic
+models, instead of ourkinematic models. Such a methodology would lead to superior robot
+performance, if wecould generate the plans. However, the dynamic state has higher dimen-
+sion than the kinematic space, and the curse of dimensionality would render many motion
+planningalgorithmsinapplicable forallbutthemostsimplerobots. Forthisreason,practical
+robotsystemoftenrelyonsimplerkinematicpathplanners.
+A common technique to compensate for the limitations of kinematic plans is to use a
+separate mechanism, acontroller, forkeeping therobotontrack. Controllers aretechniques
+CONTROLLER
+for generating robot controls in real time using f

@@ -1,0 +1,26 @@
+a distribution using the collection of data points.
+Thus,thenumberofparametersgrowswiththetrainingset. Nearest-neighborsmethods
+look at the examples nearest to the point in question, whereas kernel methods form a
+distance-weighted combination ofalltheexamples.
+Statisticallearningcontinuestobeaveryactiveareaofresearch. Enormousstrideshavebeen
+madeinboth theory andpractice, tothepoint whereitispossible tolearn almost anymodel
+forwhichexactorapproximate inference isfeasible.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+The application of statistical learning techniques in AI was an active area of research in the
+early years (see Duda and Hart, 1973) but became separated from mainstream AI as the
+latterfieldconcentratedonsymbolicmethods. Aresurgence ofinterestoccurredshortlyafter
+the introduction of Bayesian network models in the late 1980s; at roughly the same time,
+826 Chapter 20. Learning Probabilistic Models
+a statistical view of neural network learning began to emerge. In the late 1990s, there was
+a noticeable convergence of interests in machine learning, statistics, and neural networks,
+centered onmethodsforcreatinglargeprobabilistic modelsfromdata.
+The naive Bayes model is one of the oldest and simplest forms of Bayesian network,
+dating backtothe 1950s. Itsorigins werementioned in Chapter13. Itssurprising success is
+partially explained by Domingos and Pazzani (1997). Aboosted form ofnaive Bayes learn-
+ingwonthefirst KDD Cupdataminingcompetition (Elkan,1997). Heckerman(1998)gives
+an excellent introduction to the general problem of Bayes net learning. Bayesian parame-
+terlearningwith Dirichletpriorsfor Bayesiannetworkswasdiscussedby Spiegelhalter etal.
+(1993). The BUG Ssoftwarepackage(Gilksetal.,1994)incorporatesmanyoftheseideasand
+provides averypowerfultoolforformulating andlearning complexprobability models. The
+firstalgorithms forlearning Bayesnet structures usedconditional independence tests (Pearl,
+1988; Pearl and Verma, 1991). Spirtes et al. (1993) developed a compre

@@ -1,0 +1,45 @@
+rueposterior
+usingaconstantnumberofsamples. Undercertainassumptions inparticular, thattheprob-
+abilities in the transition and sensor models are strictly greater than 0 and less than 1 it is
+possible to prove that the approximation maintains bounded error with high probability. On
+the practical side, the range of applications has grown to include many fields of science and
+engineering; somereferences aregivenattheendofthechapter.
+15.6 KEEPING TRACK OF MANY OBJECTS
+The preceding sections have considered without mentioning it state estimation problems
+involving a single object. In this section, we see what happens when two or more objects
+generate the observations. What makes this case different from plain old state estimation is
+that there is now thepossibility of uncertainty about which object generated which observa-
+tion. Thisistheidentityuncertaintyproblemof Section14.6.3(page544),nowviewedina
+temporal context. Inthecontrol theory literature, this is the dataassociation problem that
+DATAASSOCIATION
+is,theproblem ofassociating observation datawiththeobjectsthatgenerated them.
+600 Chapter 15. Probabilistic Reasoning over Time
+1 5 1 5
+2 4 2 4
+3 3
+2 2
+4 4
+1 3 1 3
+5 5
+(a) (b)
+track termination
+1 5 1 5
+2 4 2 4
+3 3
+detection
+failure
+2 2
+4 4
+1 3 1 3
+track
+5 false alarm initiation 5
+(c) (d)
+Figure15.19 (a)Observationsmadeofobjectlocationsin2Dspaceoverfivetimesteps.
+Eachobservationislabeledwiththetimestepbutdoesnotidentifytheobjectthatproduced
+it. (b c) Possible hypothesesabout the underlyingobject tracks. (d) A hypothesisfor the
+caseinwhichfalsealarms,detectionfailures,andtrackinitiation terminationarepossible.
+The data association problem was studied originally in the context of radar tracking,
+wherereflectedpulsesaredetectedatfixedtimeintervalsbyarotatingradarantenna. Ateach
+timestep,multipleblipsmayappearonthescreen,butthereisnodirectobservationofwhich
+blips at timet belong to which blips at timet 1. Figure 15.19(a) shows a simple example
+with two blips pertime step fo

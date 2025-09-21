@@ -1,0 +1,41 @@
+k k
+18.6 Considerthefollowingdatasetcomprisedofthreebinaryinputattributes(A ,A ,and
+1 2
+A )andonebinaryoutput:
+3
+Example A A A Outputy
+1 2 3
+x 1 0 0 0
+1
+x 1 0 1 0
+2
+x 0 1 0 0
+3
+x 1 1 1 1
+4
+x 1 1 0 1
+5
+Usethealgorithm in Figure18.5(page 702)tolearn adecision treeforthesedata. Showthe
+computations madetodeterminetheattribute tosplitateachnode.
+18.7 Adecisiongraphisageneralizationofadecisiontreethatallowsnodes(i.e.,attributes
+used forsplits) tohavemultiple parents, ratherthan justa single parent. Theresulting graph
+muststillbeacyclic. Now,considerthe XO Rfunction ofthreebinaryinputattributes, which
+produces thevalue1ifandonlyifanoddnumberofthethreeinputattributes hasvalue1.
+a. Drawaminimal-sized decision treeforthethree-input XO Rfunction.
+b. Drawaminimal-sized decision graphforthethree-input XO Rfunction.
+18.8 Thisexerciseconsiders 2 pruning ofdecision trees(Section18.3.5).
+a. Createadata setwithtwoinput attributes, such that theinformation gain atthe rootof
+thetreeforbothattributesiszero,butthereisadecisiontreeofdepth2thatisconsistent
+with all the data. What would 2 pruning do on this data set if applied bottom up? If
+appliedtopdown?
+b. Modify DECISION-TREE-LEARNING to include 2-pruning. You might wish to con-
+sult Quinlan(1986)or Kearnsand Mansour(1998)fordetails.
+18.9 The standard DECISION-TREE-LEARNING algorithm described in the chapter does
+nothandlecasesinwhichsomeexampleshavemissingattribute values.
+a. First,weneedtofindawaytoclassifysuchexamples,givenadecisiontreethatincludes
+tests onthe attributes forwhich values can be missing. Suppose that anexample xhas
+a missing value for attribute A and that the decision tree tests for A at a node that x
+reaches. One way to handle this case is to pretend that the example has all possible
+values for the attribute, but to weight each value according to its frequency among all
+of the examples that reach that node in the decision tree. The classification algorithm
+shouldfollowallbranchesatanynodeforwhichavalueismissingandsho

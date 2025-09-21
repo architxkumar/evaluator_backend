@@ -1,0 +1,25 @@
+tle s logic deals with generalizations over objects, it fell far short of the ex-
+pressivepoweroffirst-orderlogic. Amajorbarriertoitsfurtherdevelopmentwasitsconcen-
+trationonone-place predicates totheexclusionofmany-placerelational predicates. Thefirst
+systematic treatment of relations was given by Augustus De Morgan (1864), who cited the
+followingexampletoshowthesortsofinferencesthat Aristotle slogiccouldnothandle: All
+horses are animals; therefore, the head of a horse is the head of an animal. This inference
+is inaccessible to Aristotle because any valid rule that can support this inference must first
+analyzethesentenceusingthetwo-placepredicate xistheheadofy. Thelogicofrelations
+wasstudied indepthby Charles Sanders Peirce(1870, 2004).
+Truefirst-orderlogicdatesfromtheintroductionofquantifiersin Gottlob Frege s(1879)
+Begriffschrift ( Concept Writing or Conceptual Notation ). Peirce (1883) also developed
+first-order logic independently of Frege, although slightly later. Frege s ability to nest quan-
+tifiers was a big step forward, but he used an awkward notation. The present notation for
+first-order logic isduesubstantially to Giuseppe Peano (1889), but thesemantics isvirtually
+identicalto Frege s. Oddlyenough,Peano saxiomsweredueinlargemeasureto Grassmann
+(1861)and Dedekind(1888).
+314 Chapter 8. First-Order Logic
+Leopold Lo wenheim(1915)gaveasystematictreatmentofmodeltheoryforfirst-order
+logic, including the firstproper treatment ofthe equality symbol. Lo wenheim s results were
+further extended by Thoralf Skolem (1920). Alfred Tarski (1935, 1956) gave an explicit
+definitionoftruthandmodel-theoretic satisfaction infirst-orderlogic,usingsettheory.
+Mc Carthy(1958)wasprimarilyresponsible fortheintroductionoffirst-orderlogicasa
+toolforbuilding AIsystems. Theprospectsforlogic-based AIwereadvancedsignificantlyby
+Robinson s (1965) development ofresolution, acomplete procedure forfirst-order inference
+describedin Chapter9. Thelogicistapproachtookrootat Stanford University. 

@@ -1,0 +1,25 @@
+links in the Internet from observations of end-to-end message performance (Castro et al.,
+2004). Perhaps the most widely used Bayesian network systems have been the diagnosis-
+and-repairmodules(e.g.,the Printer Wizard)in Microsoft Windows(Breeseand Heckerman,
+1996) and the Office Assistant in Microsoft Office (Horvitz et al., 1998). Another impor-
+tant application area is biology: Bayesian networks have been used for identifying human
+genesbyreferencetomousegenes(Zhangetal.,2003),inferringcellularnetworks Friedman
+(2004), and manyother tasks in bioinformatics. Wecould go on, but instead we ll refer you
+to Pourret etal.(2008), a400-page guidetoapplications of Bayesiannetworks.
+Ross Shachter(1986),workingintheinfluencediagramcommunity,developedthefirst
+complete algorithm for general Bayesian networks. His method was based on goal-directed
+reduction ofthenetworkusing posterior-preserving transformations. Pearl(1986) developed
+aclusteringalgorithmforexactinferenceingeneral Bayesiannetworks,utilizingaconversion
+to a directed polytree of clusters in which message passing was used to achieve consistency
+over variables shared between clusters. A similar approach, developed by the statisticians
+David Spiegelhalter and Steffen Lauritzen (Lauritzen and Spiegelhalter, 1988), is based on
+conversion to an undirected form of graphical model called a Markov network. This ap-
+MARKOVNETWORK
+proach isimplemented in the HUGIN system, anefficient and widely used tool foruncertain
+reasoning(Andersenetal.,1989). Boutilieretal.(1996)showhowtoexploitcontext-specific
+independence inclustering algorithms.
+The basic idea of variable elimination that repeated computations within the overall
+sum-of-productsexpressioncanbeavoidedbycaching appearedinthesymbolicprobabilis-
+tic inference (SPI)algorithm (Shachter et al., 1990). Theelimination algorithm wedescribe
+is closest to that developed by Zhang and Poole (1994). Criteria for pruning irrelevant vari-
+ablesweredeveloped by Geigeretal.(1990)andby 

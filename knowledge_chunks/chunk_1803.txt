@@ -1,0 +1,30 @@
+rise to the frame problem.11 One possible solution to the frame problem would
+FRAMEPROBLEM
+10 Section7.4.3convenientlyglossedoverthisrequirement.
+11 Thename frameproblem comesfrom frameofreference inphysics theassumedstationarybackground
+withrespecttowhichmotionismeasured. Italsohasananalogytotheframesofamovie, inwhichnormally
+mostofthebackgroundstaysconstantwhilechangesoccurintheforeground.
+Section7.7. Agents Basedon Propositional Logic 267
+be to add frame axioms explicitly asserting all the propositions that remain the same. For
+FRAMEAXIOM
+example,foreachtimetwewouldhave
+Forwardt (Have Arrowt Have Arrowt 1)
+Forwardt (Wumpus Alivet Wumpus Alivet 1) where we explicitly mention every proposition that stays unchanged from time t to time
+t 1 under the action Forward. Although the agent now knows that it still has the arrow
+aftermovingforwardandthatthewumpushasn t diedorcomebacktolife,theproliferation
+of frame axioms seems remarkably inefficient. In a world with m different actions and n
+fluents, the set of frame axioms will be of size O(mn). This specific manifestation of the
+REPRESENTATIONAL frame problem is sometimes called the representational frame problem. Historically, the
+FRAMEPROBLEM
+problemwasasignificantonefor AIresearchers; weexploreitfurtherinthenotesattheend
+ofthechapter.
+Therepresentational frameproblemissignificantbecausetherealworldhasverymany
+fluents, to put it mildly. Fortunately for us humans, each action typically changes no more
+than some small number k of those fluents the world exhibits locality. Solving the repre-
+LOCALITY
+sentational frameproblem requires definingthetransition modelwithasetofaxiomsofsize
+INFERENTIALFRAME O(mk) rather than size O(mn). There is also an inferential frame problem: the problem
+PROBLEM
+ofprojecting forwardtheresultsofa tstepplanofactionintime O(kt)ratherthan O(nt).
+The solution to the problem involves changing one s focus from writing axioms about
+actions towriting axioms about fluents. Thus, foreach fluent F, wewill

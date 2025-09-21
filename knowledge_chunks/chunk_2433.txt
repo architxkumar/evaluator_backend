@@ -1,0 +1,39 @@
+sm in which each agent is
+effectively requiredtomaximizeglobalutility, butcando sobymakingalocaldecision. For
+this example, a carbon tax would be an example of a mechanism that charges for use of the
+commonsinawaythat,ifimplemented well,maximizesglobalutility.
+Asafinalexample,considertheproblemofallocatingsomecommongoods. Supposea
+citydecidesitwantstoinstallsomefreewireless Internet transceivers. However,thenumber
+oftransceivers theycanaffordislessthanthenumberofneighborhoods thatwantthem. The
+city wants to allocate the goods efficiently, to the neighborhoods that would value them the
+(cid:2)
+most. That is, they want to maximize the global utility V v . The problem is that if
+i i
+theyjustaskeachneighborhood council howmuchdoyouvaluethisfreegift? theywould
+allhaveanincentive tolie,andreportahighvalue. Itturns outthereisamechanism, known
+VICKREY-CLARKE- as the Vickrey-Clarke-Groves, or VCG, mechanism, that makes it a dominant strategy for
+GROVES
+eachagent toreport itstrueutility andthatachieves anefficient allocation ofthegoods. The
+VCG
+trick is that each agent pays a tax equivalent to the loss in global utility that occurs because
+oftheagent s presenceinthegame. Themechanism workslike this:
+1. Thecenteraskseachagenttoreportitsvalueforreceivinganitem. Callthisb .
+i
+2. Thecenterallocatesthegoodstoasubsetofthebidders. Wecallthissubset A,anduse
+thenotation b (A) to meanthe result to iunder this allocation: b if iisin A(that is, i
+i i
+is a winner), and 0 otherwise. The center chooses A to maximize total reported utility
+(cid:2)
+B b (A).
+i i
+3. The center calculates (for each i) the sum of the reported utilities for all the winners
+(cid:2)
+except i. Weusethe notation B i j(cid:14) i
+b
+j
+(A). Thecenteralso computes (foreach
+i)theallocation thatwould maximizetotal global utility ifiwerenotinthegame; call
+thatsum W i .
+4. Eachagentipaysataxequalto W i B i .
+684 Chapter 17. Making Complex Decisions
+In this example, the VCG rule means that each winner would pay a tax equal to t

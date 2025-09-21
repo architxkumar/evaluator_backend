@@ -1,0 +1,26 @@
+rchcanfindprovablyoptimal
+abstract planswithoutconsidering theirimplementations. Thesameapproach canbeusedto HIERARCHICAL obtain effective hierarchical lookahead algorithms for online search, in the style of LRTA
+LOOKAHEAD
+(page152). Insomeways,suchalgorithmsmirroraspectsofhumandeliberationintaskssuch
+asplanningavacationto Hawaii consideration ofalternativesisdoneinitiallyatanabstract
+leveloverlongtimescales;somepartsoftheplanareleftquiteabstractuntilexecution time,
+suchashowtospendtwolazydayson Molokai,whileotherspartsareplannedindetail,such
+as the flights to be taken and lodging to be reserved without these refinements, there is no
+guarantee thattheplanwouldbefeasible.
+11.3 PLANNING AND ACTING IN NONDETERMINISTIC DOMAINS
+In this section we extend planning to handle partially observable, nondeterministic, and un-
+known environments. Chapter 4 extended search in similar ways, and the methods here are
+also similar: sensorless planning (also known as conformant planning) for environments
+with no observations; contingency planning for partially observable and nondeterministic
+environments; andonlineplanningandreplanningforunknownenvironments.
+While the basic concepts are the same as in Chapter 4, there are also significant dif-
+ferences. These arise because planners deal withfactored representations ratherthan atomic
+representations. Thisaffectsthewaywerepresenttheagent scapabilityforactionandobser-
+vation and the way we represent belief states the sets of possible physical states the agent
+might be in for unobservable and partially observable environments. We can also take ad-
+vantage of many of the domain-independent methods given in Chapter 10 for calculating
+searchheuristics.
+Considerthisproblem: givenachairandatable,thegoalistohavethemmatch have
+the same color. In the initial state wehave two cans of paint, but the colors of the paint and
+thefurniture areunknown. Onlythetableisinitiallyinthe agent s fieldofview:
+Init(Object(Table) Object(Chair) Can(C ) Can(C ) In 

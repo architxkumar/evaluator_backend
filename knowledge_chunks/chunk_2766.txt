@@ -1,0 +1,30 @@
+peaker believes the hearer believes, and so on. Forexample, when
+a politician says, I am not a crook, the world model might assign a probability of
+only 50 to the proposition that the politician is not a criminal, and 99.999 to the
+proposition thatheisnotahooked shepherd s staff. Nevertheless, weselecttheformer
+interpretation because itisamorelikelythingtosay.
+3. Thelanguagemodel: thelikelihoodthatacertainstringofwordswillbechosen,given
+thatthespeakerhastheintention ofcommunicating acertainfact.
+4. The acoustic model: for spoken communication, the likelihood that a particular se-
+quenceofsounds willbegenerated, giventhatthespeaker haschosen agivenstringof
+words. Section23.5coversspeechrecognition.
+Section23.4. Machine Translation 907
+23.4 MACHINE TRANSLATION
+Machinetranslationistheautomatictranslationoftextfromonenaturallanguage(thesource)
+to another (the target). It was one of the first application areas envisioned for computers
+(Weaver, 1949), but it is only in the past decade that the technology has seen widespread
+usage. Hereisapassagefrompage1ofthisbook:
+AI is one of the newestfields in science and engineering. Work started in earnest soon
+after World War II,andthenameitselfwascoinedin1956. Alongwithmolecularbiol-
+ogy, AI is regularlycited as the field I wouldmost like to be in by scientists in other
+disciplines.
+Andhereitistranslated from Englishto Danishbyanonlinetool,Google Translate:
+AIerenafdenyesteomra derindenforvidenskabogteknik. Arbejdestartedeforalvor
+lige efter Anden Verdenskrig, og navnet i sig selv var opfundet i 1956. Sammen med
+molekyl rbiologi, er AI j vnligtn vntsom feltet Jeg ville de fleste gernev re i af
+forskereiandrediscipliner.
+For those who don t read Danish, here is the Danish translated back to English. The words
+thatcameoutdifferentareinitalics:
+AIisoneofthenewestfieldsofscienceandengineering.Workbeganinearnestjustafter
+the Second World War,andthenameitselfwasinventedin1956.Togetherwithmolecular
+biology,AIisfrequentlymentionedas field

@@ -1,0 +1,45 @@
+stribution over some subset of variables or
+a single variable. Forexample, adding the entries in the first row gives the unconditional or
+MARGINAL marginalprobability4 ofcavity:
+PROBABILITY
+P(cavity) 0.108 0.012 0.072 0.008 0.2.
+Thisprocess iscalled marginalization, orsummingout because wesumuptheprobabil-
+MARGINALIZATION
+ities for each possible value of the other variables, thereby taking them out of the equation.
+Wecanwritethefollowinggeneralmarginalization rulefor anysetsofvariables Yand Z:
+(cid:12)
+P(Y) P(Y,z), (13.6)
+(cid:2)
+z Z
+where
+z Z
+meanstosumoverallt(cid:2)hepossiblecombinationsofvaluesofthesetofvariables
+Z. Wesometimesabbreviate thisas ,leaving Zimplicit. Wejustusedtheruleas
+(cid:12) z
+P(Cavity) P(Cavity,z). (13.7)
+z Catch,Toothache A variant of this rule involves conditional probabilities instead of joint probabilities, using
+theproductrule:
+(cid:12)
+P(Y) P(Y z)P(z). (13.8)
+z
+Thisruleiscalledconditioning. Marginalization andconditioning turnouttobeusefulrules
+CONDITIONING
+forallkindsofderivations involving probability expressions.
+In most cases, we are interested in computing conditional probabilities of some vari-
+ables, given evidence about others. Conditional probabilities can be found by first using
+4 Socalledbecauseofacommonpracticeamongactuariesofwritingthesumsofobservedfrequenciesinthe
+marginsofinsurancetables.
+Section13.3. Inference Using Full Joint Distributions 493
+Equation(13.3)toobtainanexpressionintermsofunconditional probabilities andtheneval-
+uating the expression from the full joint distribution. For example, we can compute the
+probability ofacavity, givenevidence ofatoothache, asfollows:
+P(cavity toothache)
+P(cavity toothache) P(toothache)
+0.108 0.012 0.6.
+0.108 0.012 0.016 0.064
+Justtocheck,wecanalsocomputetheprobability thatthere isnocavity, givenatoothache:
+P( cavity toothache)
+P( cavity toothache) P(toothache)
+0.016 0.064 0.4.
+0.108 0.012 0.016 0.064
+The two values sum to 1.0, as they should. Notice that in these two calculations t

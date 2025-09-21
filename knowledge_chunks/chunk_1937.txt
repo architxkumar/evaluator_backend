@@ -1,0 +1,26 @@
+n.
+Texts on logic programming and Prolog, including Shoham (1994), Bratko (2001),
+Clocksin (2003), and Clocksin and Mellish (2003). Priorto 2000, the Journal of Logic Pro-
+gramming was the journal of record; it has now been replaced by Theory and Practice of
+Logic Programming. Logic programming conferences include the International Conference
+on Logic Programming(ICLP)andthe International Logic Programming Symposium(ILPS).
+Research into mathematical theorem proving began even before the first complete
+first-order systemsweredeveloped. Herbert Gelernter s Geometry Theorem Prover(Gelern-
+ter, 1959) used heuristic search methods combined withdiagrams forpruning false subgoals
+and was able to prove some quite intricate results in Euclidean geometry. The demodula-
+tion and paramodulation rules for equality reasoning were introduced by Wos et al. (1967)
+and Wosand Robinson (1968), respectively. Theserules were also developed independently
+in the context of term-rewriting systems (Knuth and Bendix, 1970). The incorporation of
+equalityreasoningintotheunificationalgorithmisdueto Gordon Plotkin(1972). Jouannaud
+and Kirchner (1991) survey equational unification from a term-rewriting perspective. An
+overviewofunification isgivenby Baaderand Snyder(2001).
+A number of control strategies have been proposed for resolution, beginning with the
+unitpreferencestrategy(Wosetal.,1964). Theset-of-support strategywasproposedby Wos
+et al. (1965) to provide a degree of goal-directedness in resolution. Linear resolution first
+appeared in Loveland (1970). Genesereth and Nilsson (1987, Chapter5) provide ashort but
+thorough analysis ofawidevarietyofcontrolstrategies.
+A Computational Logic (Boyer and Moore, 1979) is the basic reference on the Boyer-
+Mooretheoremprover. Stickel(1992)coversthe Prolog Technology Theorem Prover(PTTP),
+whichcombinestheadvantagesof Prologcompilationwiththecompletenessofmodelelimi-
+nation. SETHEO(Letzetal.,1992)isanotherwidelyusedtheoremproverbasedonthisap-
+proach. LEAN

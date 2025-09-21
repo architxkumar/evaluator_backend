@@ -1,0 +1,25 @@
+on-based theorem provers have been used to prove interesting mathe-
+maticaltheoremsandtoverifyandsynthesize softwareandhardware.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Gottlob Frege, who developed full first-order logic in 1879, based his system of inference
+on a collection of valid schemas plus a single inference rule, Modus Ponens. Whitehead
+and Russell (1910) expounded the so-called rules of passage (the actual term is from Her-
+brand (1930)) that are used to move quantifiers to the front of formulas. Skolem constants
+358 Chapter 9. Inference in First-Order Logic
+and Skolem functions were introduced, appropriately enough, by Thoralf Skolem (1920).
+Oddlyenough, itwas Skolemwhointroduced the Herbranduniverse(Skolem,1928).
+Herbrand s theorem (Herbrand, 1930) has played a vital role in the development of
+automated reasoning. Herbrand is also the inventor of unification. Go del (1930) built on
+the ideas of Skolem and Herbrand to show that first-order logic has a complete proof pro-
+cedure. Alan Turing (1936) and Alonzo Church (1936) simultaneously showed, using very
+different proofs, that validity in first-order logic was not decidable. The excellent text by
+Enderton(1972)explainsalloftheseresultsinarigorousyetunderstandable fashion.
+Abraham Robinson proposed that an automated reasoner could be built using proposi-
+tionalizationand Herbrand stheorem,and Paul Gilmore(1960)wrotethefirstprogram. Davis
+and Putnam(1960)introducedthepropositionalizationmethodof Section9.1. Prawitz(1960)
+developed the key idea of letting the quest for propositional inconsistency drive the search,
+and generating terms from the Herbrand universe only when they were necessary to estab-
+lishpropositional inconsistency. Afterfurtherdevelopmentbyotherresearchers,thisidealed
+J.A.Robinson(norelation) todevelopresolution (Robinson, 1965).
+In AI, resolution was adopted for question-answering systems by Cordell Green and
+Bertram Raphael(1968). Early AIimplementations putagood dealofeffortinto datastruc-

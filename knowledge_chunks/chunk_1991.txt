@@ -1,0 +1,26 @@
+ers.
+The resurgence of interest in state-space planning was pioneered by Drew Mc Der-
+mott s UNPO Pprogram(1996),whichwasthefirsttosuggesttheignore-delete-listheuristic,
+The name UNPOP was a reaction to the overwhelming concentration on partial-order plan-
+ning at the time; Mc Dermott suspected that other approaches were not getting the attention
+they deserved. Bonet and Geffner s Heuristic Search Planner (HSP) and its later deriva-
+tives (Bonet and Geffner, 1999; Haslum et al., 2005; Haslum, 2006) were the first to make
+Bibliographical and Historical Notes 395
+state-space search practical for large planning problems. HSP searches in the forward di-
+rection while HSPR (Bonet and Geffner, 1999) searches backward. The most successful
+state-space searcher todate is FF (Hoffmann, 2001; Hoffmann and Nebel, 2001; Hoffmann,
+2005), winner of the AIPS 2000 planning competition. FASTDOWNWARD (Helmert, 2006)
+is a forward state-space search planner that preprocesses the action schemas into an alter-
+nativerepresentation whichmakessomeoftheconstraints moreexplicit. FASTDOWNWARD
+(Helmertand Richter,2004;Helmert,2006)wonthe2004planningcompetition,and LAMA
+(Richter and Westphal, 2008), a planner based on FASTDOWNWARD with improved heuris-
+tics,wonthe2008competition.
+Bylander (1994) and Ghallab et al. (2004) discuss the computational complexity of
+severalvariantsoftheplanningproblem. Helmert(2003)provescomplexityboundsformany
+ofthestandard benchmark problems, and Hoffmann (2005) analyzes thesearch space ofthe
+ignore-delete-list heuristic. Heuristicsfortheset-covering problem arediscussed by Caprara
+et al. (1995) for scheduling operations of the Italian railway. Edelkamp (2009) and Haslum
+et al. (2007) describe how to construct pattern databases for planning heuristics. As we
+mentionedin Chapter3,Felneretal.(2004)showencouragingresultsusingpatterndatabases
+forslidingblockspuzzles,whichcanbethoughtofasaplanningdomain,but Hoffmannetal.
+(2006)showsomelimitations ofabstraction forclassic

@@ -1,0 +1,42 @@
+,intherealworld,Bucharestisthecapitalof Romania,
+but for an agent that did not know that, other possible worlds are accessible, including ones
+wherethecapital of Romaniais Sibiuor Sofia. Presumably aworldwhere 2 2 5would
+notbeaccessible toanyagent.
+Ingeneral, a knowledge atom K P is true in world w if and only if P istrue in every
+A
+worldaccessible from w. Thetruthofmorecomplexsentences isderivedbyrecursive appli-
+cation ofthis rule and the normal rules offirst-order logic. Thatmeans that modal logic can
+be used to reason about nested knowledge sentences: what one agent knows about another
+agent s knowledge. For example, we can say that, even though Lois doesn t know whether
+Superman ssecretidentityis Clark Kent,shedoesknowthat Clarkknows:
+K K Identity(Superman,Clark) K Identity(Superman,Clark) Lois Clark Clark
+Figure12.4showssomepossibleworldsforthisdomain,withaccessibility relationsfor Lois
+and Superman.
+Inthe TOP-LEFT diagram,itiscommonknowledgethat Supermanknowshisowniden-
+tity, and neither henor Loishasseen the weatherreport. Soinw theworlds w and w are
+0 0 2
+accessible to Superman;mayberainispredicted, maybenot. For Loisallfourworldsareac-
+cessiblefromeachother;shedoesn tknowanythingaboutthereportorif Clarkis Superman.
+Butshedoesknowthat Superman knowswhetherheis Clark, because ineveryworldthatis
+accessible to Lois, either Superman knows I, orhe knows I. Loisdoes not know which is
+thecase,buteitherwaysheknows Supermanknows.
+In the TOP-RIGHT diagram it is common knowledge that Lois has seen the weather
+report. So in w she knows rain is predicted and in w she knows rain is not predicted.
+4 6
+452 Chapter 12. Knowledge Representation
+w: I,R w: I,R w: I,R w: I,R
+0 1 4 5
+w: I, R w: I, R w: I, R w: I, R
+2 3 6 7
+(a) (b)
+w: I,R w: I,R
+4 5
+w: I,R w: I,R
+0 1
+w: I, R w: I, R
+2 3
+w: I, R w: I, R
+6 7
+(c)
+Figure 12.4 Possible worlds with accessibility relations KSuperman (solid arrows) and
+KLois (dottedarrows). Theproposition Rmeans theweatherreportfortomorrowisrain and I me

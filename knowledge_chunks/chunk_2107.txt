@@ -1,0 +1,25 @@
+nne (1707 1778). The problems associated with
+natural kinds and inexact category boundaries have been addressed by Wittgenstein (1953),
+Quine(1953), Lakoff(1987),and Schwartz(1977),amongothers.
+Interest in larger-scale ontologies is increasing, as documented by the Handbook on
+Ontologies (Staab, 2004). The OPENCYC project (Lenat and Guha, 1990; Matuszek et al.,
+2006) hasreleased a150,000-concept ontology, withanupperontology similartotheonein
+Figure 12.1aswellasspecificconcepts like OLED Display and i Phone, whichisatype
+of cellular phone, which in turn is a type of consumer electronics, phone, wireless
+communication device, and other concepts. The DBPEDIA project extracts structured data
+from Wikipedia; specifically from Infoboxes: the boxes of attribute value pairs that accom-
+pany many Wikipedia articles (Wu and Weld, 2008; Bizer et al., 2007). As of mid-2009,
+DBPEDIA contains 2.6million concepts, withabout 100 facts perconcept. The IEE Ework-
+inggroup P1600.1createdthe Suggested Upper Merged Ontology(SUMO)(Nilesand Pease,
+2001; Pease and Niles, 2002), which contains about 1000 terms in the upper ontology and
+links to over 20,000 domain-specific terms. Stoffel et al. (1997) describe algorithms for ef-
+ficiently managing a very large ontology. A survey of techniques for extracting knowledge
+from Webpagesisgivenby Etzioni etal.(2008).
+On the Web, representation languages are emerging. RDF (Brickley and Guha, 2004)
+allows for assertions to be made in the form of relational triples, and provides some means
+forevolvingthemeaningofnamesovertime. OWL(Smithetal.,2004)isadescriptionlogic
+thatsupportsinferencesoverthesetriples. Sofar,usageseemstobeinverselyproportionalto
+representational complexity: thetraditional HTM Land CS Sformatsaccountforover99 of
+Webcontent,followedbythesimplestrepresentation schemes,suchasmicroformats(Khare,
+2006) and RD Fa (Adida and Birbeck, 2008), which use HTML and XHTML markup to
+add attributes to literal text. Usage of sophisticated RDF and O

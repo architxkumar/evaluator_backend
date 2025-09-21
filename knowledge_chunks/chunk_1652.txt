@@ -1,0 +1,36 @@
+is m and there are b legal moves at each point, then the
+timecomplexityoftheminimaxalgorithm is O(bm). Thespacecomplexityis O(bm)foran
+algorithm that generates allactions atonce, or O(m)foran algorithm that generates actions
+one at a time (see page 87). For real games, of course, the time cost is totally impractical,
+but this algorithm serves as the basis for the mathematical analysis of games and for more
+practical algorithms.
+5.2.2 Optimaldecisions inmultiplayergames
+Manypopulargamesallowmorethantwoplayers. Letusexaminehowtoextendtheminimax
+idea to multiplayer games. This is straightforward from the technical viewpoint, but raises
+someinteresting newconceptual issues.
+First, we need to replace the single value for each node with a vector of values. For
+example,inathree-playergamewithplayers A,B,and C,avector(cid:16)v ,v ,v (cid:17)isassociated
+A B C
+witheachnode. Forterminalstates,thisvectorgivestheutilityofthestatefromeachplayer s
+viewpoint. (Intwo-player,zero-sumgames,thetwo-elementvectorcanbereducedtoasingle
+valuebecausethevaluesarealwaysopposite.) Thesimplestwaytoimplementthisistohave
+the UTILITY function returnavectorofutilities.
+Nowwehavetoconsidernonterminalstates. Considerthenodemarked X inthegame
+tree shown in Figure 5.4. In that state, player C chooses what to do. The two choices lead
+toterminal states with utility vectors (cid:16)v 1,v 2,v 6(cid:17)and (cid:16)v 4,v 2,v 3(cid:17).
+A B C A B C
+Since6isbiggerthan3,Cshouldchoosethefirstmove. Thismeansthatifstate X isreached,
+subsequent play will lead to a terminal state with utilities (cid:16)v 1,v 2,v 6(cid:17). Hence,
+A B C
+thebacked-upvalueof X isthisvector. Thebacked-upvalueofanodenisalwaystheutility
+166 Chapter 5. Adversarial Search
+function MINIMAX-DECISION(state)returnsan action
+returnargmax
+a ACTIONS(s)
+MIN-VALUE(RESULT(state,a))
+function MAX-VALUE(state)returnsa utility value
+if TERMINAL-TEST(state)thenreturn UTILITY(state)
+v foreacha in ACTIONS(state)do
+v MAX(v,MIN-VALUE(RESULT(s,a)))
+returnv
+fun

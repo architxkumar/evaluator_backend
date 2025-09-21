@@ -1,0 +1,76 @@
+s called a hybrid Bayesian
+HYBRIDBAYESIAN network. To specify a hybrid network, we have to specify two new kinds of distributions:
+NETWORK
+the conditional distribution for a continuous variable given discrete or continuous parents;
+andtheconditionaldistributionforadiscretevariablegivencontinuousparents. Considerthe
+simple example in Figure 14.5, in which a customer buys some fruit depending on its cost,
+whichdependsinturnonthesizeoftheharvestandwhetherthegovernment ssubsidyscheme
+is operating. The variable Cost is continuous and has continuous and discrete parents; the
+variable Buys isdiscreteandhasacontinuous parent.
+For the Cost variable, we need to specify P(Cost Harvest,Subsidy). The discrete
+parent is handled by enumeration that is, by specifying both P(Cost Harvest,subsidy)
+and P(Cost Harvest, subsidy). Tohandle Harvest,wespecify howthedistribution over
+the cost c depends on the continuous value h of Harvest. In other words, we specify the
+parametersofthecostdistribution asafunctionofh. Themostcommonchoiceisthelinear
+Gaussian distribution, in which the child has a Gaussian distribution whose mean varies
+LINEARGAUSSIAN
+linearly with the value of the parent and whose standard deviation is fixed. We need two
+distributions, oneforsubsidy andonefor subsidy,withdifferentparameters: 1 1 c (ath bt) 2
+P(c h,subsidy) N(a
+t
+h b
+t
+, t
+2)(c) e 2 t 2 t 2
+1 1 c (afh bf)
+P(c h, subsidy) N(a h b , 2)(c) e 2 f .
+f f f 2 f
+Forthisexample,then,theconditional distribution for Cost isspecifiedbynamingthelinear
+Gaussiandistribution andprovidingtheparameters a ,b , ,a ,b ,and . Figures14.6(a)
+t t t f f f
+Section14.3. Efficient Representation of Conditional Distributions 521
+P(c h,subsidy) P(c h, subsidy) P(c h)
+0.4 0.4 0.4
+0.3 0.3 0.3
+0.2 0.2 0.2
+0.1 0.1 0.1
+12 12 12
+0 8 10 0 8 10 0 8 10
+0 2
+C
+4
+ost
+6
+c
+810 0 2
+H
+4
+a
+6
+rvesth
+0 2
+C
+4
+ost
+6
+c
+810 0 2
+H
+4
+a
+6
+rvesth
+0 2
+C
+4
+ost
+6
+c
+810 0 2
+H
+4
+a
+6
+rvesth
+(a) (b) (c)
+Figure 14.6 The graphs in (a) and (b) show the probability distributio

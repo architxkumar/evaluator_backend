@@ -1,0 +1,25 @@
+sk, in which the query really is a question, and the answer is not a ranked list
+of documents but rather a short response a sentence, or even just a phrase. There have
+been question-answering NLP (natural language processing) systems since the 1960s, but
+onlysince2001havesuchsystemsused Webinformation retrievaltoradically increase their
+breadthofcoverage.
+The ASKMSR system (Bankoetal., 2002) isatypical Web-based question-answering
+system. It is based on the intuition that most questions will be answered many times on the
+Web, so question answering should be thought of as a problem in precision, not recall. We
+don t have to deal with all the different ways that an answer might be phrased we only
+have to find one of them. For example, consider the query Who killed Abraham Lincoln? Suppose a system had to answer that question with access only to a single encyclopedia,
+whoseentryon Lincolnsaid
+John Wilkes Booth altered history with a bullet. He will foreverbe known as the man
+whoended Abraham Lincoln slife.
+Tousethispassagetoanswerthequestion, thesystem wouldhavetoknowthatendingalife
+canbeakilling,that He refersto Booth,andseveralother linguistic andsemanticfacts.
+Section22.4. Information Extraction 873
+ASKMS Rdoesnotattemptthiskindofsophistication itknowsnothingaboutpronoun
+reference,oraboutkilling,oranyotherverb. Itdoesknow15differentkindsofquestions,and
+howthey canberewritten asqueries toasearch engine. Itknowsthat Who killed Abraham
+Lincoln canberewritten asthequery killed Abraham Lincoln andas Abraham Lincoln
+waskilled by . Itissues theserewritten queries andexamines theresults thatcomeback not the full Web pages, just the short summaries of text that appear near the query terms.
+Theresultsarebrokeninto1-,2-,and3-gramsandtalliedforfrequencyintheresultsetsand
+for weight: an n-gram that came back from a very specific query rewrite (such as the exact
+phrase match query Abraham Lincoln was killed by ) would get more weight than one
+from a general query rewrite, such as

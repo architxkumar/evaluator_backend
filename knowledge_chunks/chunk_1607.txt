@@ -1,0 +1,31 @@
+ makingiteasierfortheagent toachieve
+itsgoals. Whentheenvironmentisnondeterministic, perceptstelltheagentwhichofthepos-
+sible outcomes ofits actions hasactually occurred. In both cases, the future percepts cannot
+bedeterminedinadvanceandtheagent sfutureactionswilldependonthosefuturepercepts.
+Sothesolutiontoaproblemisnotasequencebutacontingencyplan(alsoknownasastrat-
+CONTINGENCYPLAN
+egy) that specifies what to do depending on what percepts are received. In this section, we
+STRATEGY
+examinethecaseofnondeterminism, deferring partialobservability to Section4.4.
+4.3.1 The erraticvacuum world
+As an example, we use the vacuum world, first introduced in Chapter 2 and defined as a
+search problem in Section 3.2.1. Recall that the state space has eight states, as shown in
+Figure 4.9. There are three actions Left, Right, and Suck and the goal is to clean up all
+the dirt (states 7 and 8). If the environment is observable, deterministic, and completely
+known, then the problem is trivially solvable by any of the algorithms in Chapter 3 and the
+solution isanaction sequence. Forexample, iftheinitial state is1, then theaction sequence Suck,Right,Suck willreachagoalstate, 8.
+8 Asetofpoints Sisconvexifthelinejoininganytwopointsin Sisalsocontainedin S.Aconvexfunctionis
+oneforwhichthespace above itformsaconvexset;bydefinition,convexfunctionshavenolocal(asopposed
+toglobal)minima.
+134 Chapter 4. Beyond Classical Search
+1 2
+3 4
+5 6
+7 8
+Figure4.9 Theeightpossiblestatesofthevacuumworld;states7and8aregoalstates.
+Now suppose that we introduce nondeterminism in the form of a powerful but erratic
+ERRATICVACUUM vacuumcleaner. Intheerraticvacuumworld,the Suckactionworksasfollows:
+WORLD When applied to a dirty square the action cleans the square and sometimes cleans up
+dirtinanadjacentsquare, too. Whenapplied toacleansquaretheactionsometimesdeposits dirtonthecarpet.9
+Toprovideapreciseformulation ofthisproblem,weneedtogeneralize thenotionofatran-
+sitionmodelfrom Chapter3. Insteadofdefiningthetransiti

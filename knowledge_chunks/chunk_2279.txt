@@ -1,0 +1,27 @@
+ithin two squares after 25 observations. This is because of the algorithm s ability
+tointegrate evidenceovertimeandtotakeintoaccount theprobabilistic constraints imposed
+on the location sequence by the transition model. When (cid:2) is 10 , the performance after
+a half-dozen observations is hard to distinguish from the performance with perfect sensing.
+Exercise15.7asksyoutoexplore howrobust the HM Mlocalization algorithm istoerrorsin
+thepriordistribution P(X )andinthetransition modelitself. Broadly speaking, highlevels
+0
+of localization and path accuracy are maintained even in the face of substantial errors in the
+modelsused.
+The state variable for the example we have considered in this section is a physical
+location in the world. Other problems can, of course, include other aspects of the world.
+Exercise15.8asksyoutoconsideraversionofthevacuumrobotthathasthepolicyofgoing
+straight for as long as it can; only when it encounters an obstacle does it change to a new
+(randomly selected) heading. To model this robot, each state in the model consists of a
+(location, heading) pair. For the environment in Figure 15.7, which has 42 empty squares,
+thisleadsto168statesandatransitionmatrixwith1682 28,224entries stillamanageable
+number. Ifweaddthepossibility ofdirtinthesquares, thenumberofstates ismultiplied by
+242 and the transition matrix ends up with more than 1029 entries no longer a manageable
+number; Section 15.5showshowtousedynamic Bayesian networks tomodeldomains with
+many state variables. If we allow the robot to move continuously rather than in a discrete
+grid,thenumberofstatesbecomesinfinite;thenextsection showshowtohandlethiscase.
+584 Chapter 15. Probabilistic Reasoning over Time
+15.4 KALMAN FILTERS
+Imagine watching a small bird flying through dense jungle foliage at dusk: you glimpse
+brief,intermittent flashesofmotion;youtryhardtoguesswherethebirdisandwhereitwill
+appear next so that you don t lose it. Orimagine that you are a World War II radar operator
+peeringatafai

@@ -1,0 +1,27 @@
+REALLY THINK?
+Many philosophers have claimed that a machine that passes the Turing Test would still not
+be actually thinking, but would be only a simulation of thinking. Again, the objection was
+foreseen by Turing. Hecitesaspeechby Professor Geoffrey Jefferson(1949):
+Notuntilamachinecouldwriteasonnetorcomposeaconcertobecauseofthoughtsand
+emotionsfelt,andnotbythechancefallofsymbols,couldweagreethatmachineequals
+brain thatis,notonlywriteitbutknowthatithadwrittenit.
+Turing calls this theargument from consciousness the machine has to beaware ofits own
+mentalstatesandactions. Whileconsciousness isanimportant subject, Jefferson s keypoint
+actually relates to phenomenology, or the study of direct experience: the machine has to
+actually feel emotions. Others focus on intentionality that is, the question of whether the
+machine s purported beliefs, desires, and other representations are actually about some-
+thingintherealworld.
+Turing s response to the objection is interesting. He could have presented reasons that
+machines can in fact be conscious (or have phenomenology, or have intentions). Instead, he
+maintains that the question is just as ill-defined as asking, Can machines think? Besides,
+why should we insist on a higher standard for machines than we do for humans? After all,
+in ordinary life we never have any direct evidence about the internal mental states of other
+humans. Nevertheless,Turingsays, Insteadofarguingcontinuallyoverthispoint,itisusual
+tohavethepoliteconvention thateveryonethinks. Turing argues that Jefferson would be willing to extend the polite convention to ma-
+chinesifonlyhehadexperiencewithonesthatactintelligently. Hecitesthefollowingdialog,
+whichhasbecomesuchapartof AI soraltraditionthatwesimplyhavetoinclude it:
+HUMAN: Inthefirstlineofyoursonnetwhichreads shall Icomparetheetoasummer s
+day, wouldnota springday doaswellorbetter?
+MACHINE: Itwouldn tscan.
+HUMAN: Howabout awinter sday. Thatwouldscanallright.
+MACHINE: Yes,butnobodywantstobecomparedtoawinter 

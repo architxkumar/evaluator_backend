@@ -1,0 +1,40 @@
+planning graph records only a restricted subset of the possible negative interactions among
+actions; therefore, aliteral mightshow upatlevel S whenactually itcould notbetrueuntil
+j
+a later level, if at all. (A literal will never show up too late.) Despite the possible error, the
+level j at which a literal first appears is a good estimate of how difficult it is to achieve the
+literalfromtheinitialstate.
+Planning graphs work only for propositional planning problems ones with no vari-
+ables. As we mentioned on page 368, it is straightforward to propositionalize a set of ac-
+380 Chapter 10. Classical Planning
+Init(Have(Cake))
+Goal(Have(Cake) Eaten(Cake))
+Action(Eat(Cake)
+PRECOND:Have(Cake)
+EFFECT: Have(Cake) Eaten(Cake))
+Action(Bake(Cake)
+PRECOND: Have(Cake)
+EFFECT:Have(Cake))
+Figure10.7 The havecakeandeatcaketoo problem.
+S A S A S
+0 0 1 1 2
+Bake(Cake)
+Have(Cake) Have(Cake) Have(Cake) Have(Cake) Have(Cake)
+Eat(Cake) Eat(Cake)
+Eaten(Cake) Eaten(Cake) Eaten(Cake) Eaten(Cake) Eaten(Cake)
+Figure10.8 Theplanninggraphforthe havecakeandeatcaketoo problemuptolevel
+S . Rectangles indicate actions (small squares indicate persistence actions), and straight
+2
+linesindicatepreconditionsandeffects. Mutexlinksareshownascurvedgraylines. Notall
+mutexlinksareshown,becausethegraphwouldbetoocluttered. Ingeneral,iftwoliterals
+are mutex at Si, then the persistence actions for those literals will be mutex at Ai and we
+neednotdrawthatmutexlink.
+tion schemas. Despite the resulting increase inthe size ofthe problem description, planning
+graphshaveprovedtobeeffectivetoolsforsolvinghardplanningproblems.
+Figure 10.7 shows a simple planning problem, and Figure 10.8 shows its planning
+graph. Each action at level A is connected to its preconditions at S and its effects at S .
+i i i 1
+So a literal appears because an action caused it, but we also want to say that a literal can
+PERSISTENCE persist ifnoaction negates it. Thisisrepresented bya persistence action (sometimes called
+ACTION
+ano-op). Foreveryli

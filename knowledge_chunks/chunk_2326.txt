@@ -1,0 +1,29 @@
+ trying
+toachieve(eveniftheagentdoesn t knowit).
+4 Inthissense,utilitiesresembletemperatures:atemperaturein Fahrenheitis1.8timesthe Celsiustemperature
+plus32.Yougetthesameresultsineithermeasurementsystem.
+Section16.3. Utility Functions 615
+16.3 UTILITY FUNCTIONS
+Utilityisafunctionthatmapsfromlotteriestorealnumbers. Weknowtherearesomeaxioms
+on utilities that all rational agents must obey. Is that all we can say about utility functions?
+Strictlyspeaking, thatisit: anagentcanhaveanypreferences itlikes. Forexample,anagent
+mightprefertohaveaprimenumberofdollarsinitsbankaccount;inwhichcase,ifithad 16
+itwouldgiveaway 3. Thismightbeunusual, butwecan t callitirrational. Anagentmight
+prefer adented 1973 Ford Pinto toa shiny new Mercedes. Preferences can also interact: for
+example, the agent might prefer prime numbers of dollars only when it owns the Pinto, but
+whenitownsthe Mercedes,itmightprefermoredollarstofewer. Fortunately,thepreferences
+ofrealagentsareusually moresystematic, andthuseasiertodealwith.
+16.3.1 Utilityassessmentandutility scales
+If we want to build a decision-theoretic system that helps the agent make decisions or acts
+onhisorherbehalf, wemustfirstworkoutwhattheagent sutilityfunction is. Thisprocess,
+PREFERENCE often called preference elicitation, involves presenting choices to the agent and using the
+ELICITATION
+observed preferences topindowntheunderlying utilityfunction.
+Equation(16.2)saysthatthereisnoabsolutescaleforutilities,butitishelpful,nonethe-
+less,toestablishsomescaleonwhichutilitiescanberecordedandcomparedforany particu-
+larproblem. Ascalecanbeestablished byfixingtheutilitiesofanytwoparticularoutcomes,
+just as we fix a temperature scale by fixing the freezing point and boiling point of water.
+Typically, we fix the utility of a best possible prize at U(S) u(cid:12) and a worst possible
+NORMALIZED catastrophe at U(S) u . Normalizedutilitiesuseascalewithu 0andu(cid:12) 1.
+UTILITIES
+Given a utility scale between u(cid:12) and u , we can assess the util

@@ -1,0 +1,20 @@
+ticalalignmentmodel.Compu- Science,84(1),127 150.
+ing Department,Arizona State University. tational Linguistics,29(1),19 51. Papavassiliou,V.and Russell,S.J.(1999).Conver-
+Nicholson,A.and Brady,J.M.(1992).Thedataas- Och, F. J. and Ney, H. (2004). The alignment genceofreinforcementlearningwithgeneralfunc-
+sociationproblemwhenmonitoringrobotvehicles templateapproachtostatisticalmachinetranslation. tionapproximators.In IJCAI-99,pp.748 757.
+usingdynamic belief networks. In ECAI-92, pp. Computational Linguistics,30,417 449. Parekh,R.and Honavar,V.(2001). DF Alearning
+689 693. Ogawa,S.,Lee,T.-M.,Kay,A.R.,and Tank,D.W. fromsimpleexamples. Machine Learning,44,9 Niemela , I., Simons, P., and Syrja nen, T.(2000). (1990).Brainmagneticresonanceimagingwithcon- 35.
+Smodels: A system for answer set program- trastdependentonbloodoxygenation. PNAS,87, Parisi,G.(1988). Statisticalfieldtheory. Addison-
+ming. In Proc.8th International Workshopon Non- 9868 9872. Wesley.
+Monotonic Reasoning.
+Oh,S.,Russell,S.J.,and Sastry,S.(2009).Markov Parisi,M.M.G.and Zecchina,R.(2002). Ana-
+Nigam,K.,Mc Callum,A.,Thrun,S.,and Mitchell, chain Monte Carlodataassociationformulti-target lyticandalgorithmicsolutionofrandomsatisfiabil-
+T.M.(2000). Textclassificationfromlabeledand tracking. IEEE Transactionson Automatic Control, ityproblems.Science,297,812 815.
+unlabeleddocumentsusing EM.Machine Learning, 54(3),481 497.
+39(2 3),103 134. Parker,A., Nau,D.S.,and Subrahmanian, V.S.
+Olesen,K.G.(1993).Causalprobabilisticnetworks (2005).Game-treesearchwithcombinatoriallylarge
+Niles,I.and Pease,A.(2001). Towardsastandard withbothdiscreteandcontinuousvariables. PAMI, beliefstates.In IJCAI-05,pp.254 259.
+upperontology. In FOIS 01: Proc.international 15(3),275 279.
+conferenceon Formal Ontologyin Information Sys- Parker, D. B. (1985). Learning logic. Tech-
+tems,pp.2 9. Oliver,N.,Garg,A.,and Horvitz,E.J.(2004).Lay- nicalreport TR-47, Centerfor Computational Re-
+eredrepresentationsforlearningandinferringoffice search in E

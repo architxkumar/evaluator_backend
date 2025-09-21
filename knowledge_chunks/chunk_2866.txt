@@ -1,0 +1,31 @@
+obot Big Dog. Imagecourtesy Boston
+Dynamics,(cid:2)c 2009.(b)2009Robo Cup Standard Platform Leaguecompetition,showingthe
+winningteam,B-Human,fromthe DFK Icenteratthe Universityof Bremen.Throughoutthe
+match, B-Human outscored their opponents64:1. Their success was built on probabilistic
+stateestimationusingparticlefiltersand Kalmanfilters;onmachine-learningmodelsforgait
+optimization;andondynamickickingmoves.Imagecourtesy DFKI,(cid:2)c 2009.
+25.3 ROBOTIC PERCEPTION
+Perceptionistheprocessbywhichrobotsmapsensormeasurementsintointernalrepresenta-
+tions of the environment. Perception is difficult because sensors are noisy, and the environ-
+ment is partially observable, unpredictable, and often dynamic. In other words, robots have
+all the problems of state estimation (or filtering) that we discussed in Section 15.2. As a
+rule of thumb, good internal representations for robots have three properties: they contain
+enoughinformationfortherobottomakegooddecisions, theyarestructuredsothattheycan
+be updated efficiently, and they are natural in the sense that internal variables correspond to
+naturalstatevariablesinthephysical world.
+In Chapter15, wesawthat Kalmanfilters, HM Ms,anddynamic Bayesnets canrepre-
+sentthetransitionandsensormodelsofapartiallyobservableenvironment, andwedescribed
+bothexactandapproximate algorithms forupdating the beliefstate the posteriorprobabil-
+ity distribution over the environment state variables. Several dynamic Bayes net models for
+this process were shown in Chapter 15. For robotics problems, we include the robot s own
+past actions as observed variables in the model. Figure 25.7 shows the notation used in this
+chapter: X isthestateoftheenvironment(includingtherobot)attimet,Z istheobservation
+t t
+receivedattimet,and A istheactiontakenaftertheobservation isreceived.
+t
+Section25.3. Robotic Perception 979
+A t 2 A t 1 A t
+X t 1 X t X t 1
+Z t 1 Z t Z t 1
+Figure 25.7 Robot perception can be viewed as temporal inference from sequences of
+actionsandmeasuremen

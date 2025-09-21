@@ -1,0 +1,29 @@
+max search: reverse the rules of chess to do unmoves rather than moves. Any move by
+Whitethat,nomatterwhatmove Blackrespondswith,endsupinapositionmarkedasawin,
+must also be a win. Continue this search until all 3,494,568 positions are resolved as win,
+loss,ordraw,andyouhaveaninfallible lookuptableforall KBN Kendgames.
+Using this technique and a tour de force of optimization tricks, Ken Thompson (1986,
+1996) and Lewis Stiller (1992, 1996) solved all chess endgames with up to five pieces and
+some with six pieces, making them available on the Internet. Stiller discovered one case
+whereaforcedmateexistedbutrequired262moves;thiscausedsomeconsternation because
+the rules of chess require a capture or pawn move to occur within 50 moves. Laterwork by
+Marc Bourzutschky and Yakov Konoval (Bourzutschky, 2006) solved all pawnless six-piece
+andsomeseven-pieceendgames;thereisa KQNKRB Nendgamethatwithbestplayrequires
+517movesuntilacapture, whichthenleadstoamate.
+If we could extend the chess endgame tables from 6 pieces to 32, then White would
+know onthe opening movewhether itwould be awin, loss, ordraw. This has not happened
+sofarforchess,butithashappenedforcheckers, asexplained inthehistoricalnotessection.
+Section5.5. Stochastic Games 177
+5.5 STOCHASTIC GAMES
+In real life, many unpredictable external events can put us into unforeseen situations. Many
+games mirror this unpredictability by including a random element, such as the throwing of
+dice. We call these stochastic games. Backgammon is a typical game that combines luck
+STOCHASTICGAMES
+andskill. Dicearerolledatthebeginning ofaplayer s turn todetermine thelegalmoves. In
+the backgammon position of Figure 5.10, for example, White has rolled a 6 5 and has four
+possible moves.
+0 1 2 3 4 5 6 7 8 9 10 11 12
+25 24 23 22 21 20 19 18 17 16 15 14 13
+Figure5.10 A typicalbackgammonposition. Thegoalofthegameistomoveallone s
+piecesofftheboard. Whitemovesclockwisetoward25,and Blackmovescounterclockwise
+toward0.Apiececanmovetoanypositionunlessm

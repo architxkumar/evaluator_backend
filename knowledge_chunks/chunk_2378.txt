@@ -1,0 +1,29 @@
+bitrary, but it is
+not the only possibility for the utility function on environment histories, which we write as
+U ( s ,s ,...,s ). Ouranalysisdrawsonmultiattributeutilitytheory(Section16.4)and
+h 0 1 n
+issomewhattechnical; theimpatient readermaywishtoskip tothenextsection.
+Thefirstquestion toanswer is whetherthere is a finitehorizon oran infinitehorizon
+FINITEHORIZON
+fordecision making. Afinitehorizon means thatthere isa fixed time N afterwhichnothing
+INFINITEHORIZON
+matters the gameisover, sotospeak. Thus, U ( s ,s ,...,s ) U ( s ,s ,...,s )
+h 0 1 N k h 0 1 N
+forallk 0. Forexample,supposeanagentstartsat(3,1)inthe 4 3worldof Figure17.1,
+and suppose that N 3. Then, to have any chance of reaching the 1 state, the agent must
+head directly for it, and the optimal action is to go Up. On the other hand, if N 100,
+then there is plenty of time to take the safe route by going Left. So, with a finite horizon,
+Section17.1. Sequential Decision Problems 649
+the optimal action in a given state could change over time. We say that the optimal policy
+NONSTATIONARY for a finite horizon is nonstationary. With no fixed time limit, on the other hand, there is
+POLICY
+no reason to behave differently in the same state at different times. Hence, the optimal ac-
+tion depends only on the current state, and the optimal policy is stationary. Policies forthe
+STATIONARYPOLICY
+infinite-horizon casearetherefore simplerthanthoseforthefinite-horizon case,andwedeal
+mainly with the infinite-horizon case in this chapter. (We will see later that for partially ob-
+servableenvironments,theinfinite-horizoncaseisnotsosimple.) Notethat infinitehorizon does not necessarily mean that all state sequences are infinite; it just means that there is no
+fixed deadline. In particular, there can be finite state sequences in an infinite-horizon MDP
+containing aterminalstate.
+Thenext question wemust decide is how to calculate the utility of state sequences. In
+theterminologyofmultiattribute utilitytheory,eachstates canbe

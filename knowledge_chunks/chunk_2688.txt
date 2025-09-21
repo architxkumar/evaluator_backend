@@ -1,0 +1,26 @@
+g different configurations
+of a system was described formally by Kahn and Marshall (1953), but seems to have been
+known long before that. Its use in reinforcement learning is due to Van Roy (1998) and Ng
+and Jordan (2000); the latter paper also introduced the PEGASUS algorithm and proved its
+formalproperties.
+As we mentioned in the chapter, the performance of a stochastic policy is a continu-
+ous function of its parameters, which helps with gradient-based search methods. This is not
+the only benefit: Jaakkola et al. (1995) argue that stochastic policies actually work better
+than deterministic policies in partially observable environments, if both are limited to act-
+ing based on the current percept. (One reason is that the stochastic policy is less likely to
+get stuck because of some unseen hindrance.) Now, in Chapter 17 we pointed out that
+856 Chapter 21. Reinforcement Learning
+optimal policies in partially observable MD Ps are deterministic functions of the belief state
+ratherthanthecurrentpercept, sowewouldexpectstillbetterresultsbykeepingtrackofthe
+belief state using the filtering methods of Chapter 15. Unfortunately, belief-state space is
+high-dimensional and continuous, and effective algorithms have not yet been developed for
+reinforcement learningwithbeliefstates.
+Real-world environments also exhibit enormous complexity in terms of the number
+of primitive actions required to achieve significant reward. For example, a robot playing
+soccer might make a hundred thousand individual leg motions before scoring a goal. One
+commonmethod,usedoriginallyinanimaltraining,iscalledrewardshaping. Thisinvolves
+REWARDSHAPING
+supplying the agent with additional rewards, called pseudorewards, for making progress. PSEUDOREWARD
+For example, in soccer the real reward is for scoring a goal, but pseudorewards might be
+given for making contact with the ball or for kicking it toward the goal. Such rewards can
+speed up learning enormously and are simple to provide, but there is a risk 

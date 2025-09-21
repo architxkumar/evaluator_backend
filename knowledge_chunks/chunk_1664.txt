@@ -1,0 +1,26 @@
+tions inwhich favorable captures can be made
+arenotquiescentforanevaluation functionthatjustcountsmaterial. Nonquiescent positions
+can be expanded further until quiescent positions are reached. This extra search is called a
+QUIESCENCE quiescence search; sometimes it is restricted to consider only certain types of moves, such
+SEARCH
+ascapture moves,thatwillquickly resolvetheuncertainties intheposition.
+The horizon effect is more difficult to eliminate. It arises when the program is facing
+HORIZONEFFECT
+an opponent s move that causes serious damage and is ultimately unavoidable, but can be
+temporarily avoided by delaying tactics. Consider the chess game in Figure 5.9. It is clear
+that there isno wayforthe black bishop toescape. Forexample, the white rook cancapture
+itbymovingtoh1,thena1,thena2;acaptureatdepth6ply. But Blackdoeshaveasequence
+of moves that pushes the capture of the bishop over the horizon. Suppose Black searches
+todepth8ply. Mostmovesby Blackwillleadtotheeventualcaptureofthebishop, andthus
+will be marked as bad moves. But Black will consider checking the white king with the
+pawnate4. Thiswillleadtothekingcapturingthepawn. Now Blackwillconsiderchecking
+again, with the pawn at f5, leading to another pawn capture. That takes up 4 ply, and from
+there the remaining 4 ply is not enough to capture the bishop. Black thinks that the line of
+playhassavedthebishop atthepriceoftwopawns,whenactually allithasdoneispushthe
+inevitable captureofthebishopbeyondthehorizonthat Blackcansee.
+SINGULAR One strategy to mitigate the horizon effect is the singular extension, a move that is
+EXTENSION clearly better than all other moves in a given position. Once discovered anywhere in the
+treeinthecourseofasearch,thissingularmoveisremembered. Whenthesearchreachesthe
+normaldepth limit,thealgorithm checks toseeifthesingularextension isalegalmove;ifit
+is, the algorithm allows the moveto be considered. This makes the tree deeper, but because
+therewillbefewsingularextensions, itdoesnota

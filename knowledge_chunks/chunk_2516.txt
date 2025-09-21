@@ -1,0 +1,60 @@
+ples
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+25 50 75 100 125 150 175 200
+doohrobhgien
+fo
+htgnel
+egd E
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+25 50 75 100 125 150 175 200
+Number of dimensions
+llehs
+roiretxe
+ni
+stniop
+fo
+noitropor P
+Number of dimensions
+(a) (b)
+Figure18.27 Thecurseofdimensionality:(a)Thelengthoftheaverageneighborhoodfor
+10-nearest-neighborsinaunithypercubewith1,000,000points,asafunctionofthenumber
+of dimensions. (b) The proportion of points that fall within a thin shell consisting of the
+outer1 ofthehypercube,asafunctionofthenumberofdimensions.Sampledfrom10,000
+randomlydistributedpoints.
+and half inthe right. Wethen recursively makeatree fortheleft and right sets ofexamples,
+stopping when there are fewerthan two examples left. To choose a dimension to split on at
+each node of the tree, one can simply select dimension i mod n at level i of the tree. (Note
+thatwemayneedtosplitonanygivendimensionseveraltimesasweproceeddownthetree.)
+Anotherstrategyistosplitonthedimension thathasthewidestspreadofvalues.
+Exact lookup from a k-d tree is just like lookup from a binary tree (with the slight
+complicationthatyouneedtopayattentiontowhichdimensionyouaretestingateachnode).
+But nearest neighbor lookup is more complicated. As we go down the branches, splitting
+the examples in half, in some cases we can discard the other half of the examples. But not
+always. Sometimes the point we are querying for falls very close to the dividing boundary.
+The query point itself might be on the left hand side of the boundary, but one or more of
+the k nearest neighbors might actually be on the right-hand side. We have to test for this
+possibility by computing the distance of the query point to the dividing boundary, and then
+searching bothsides ifwecan t findk examplesontheleftthatarecloserthanthisdistance.
+Because ofthisproblem, k-dtreesareappropriate onlywhen therearemanymoreexamples
+than dimensions, preferably at least 2n examples. Thus, k-d trees work well with up to 10
+dimension

@@ -1,0 +1,32 @@
+robots must also
+dealwitherrorsintheirsensorreadings andmotorcontrols.
+AUTOMATIC
+ASSEMBLY
+Automaticassemblysequencingofcomplexobjectsbyarobotwasfirstdemonstrated
+SEQUENCING
+by FREDDY (Michie, 1972). Progress since then has been slow but sure, to the point where
+theassemblyofintricateobjectssuchaselectricmotorsiseconomicallyfeasible. Inassembly
+problems, the aim is to find an order in which to assemble the parts of some object. If the
+wrong order is chosen, there will be no way to add some part later in the sequence without
+Section3.3. Searchingfor Solutions 75
+undoing some of the work already done. Checking a step in the sequence for feasibility is a
+difficultgeometricalsearchproblemcloselyrelatedtorobotnavigation. Thus,thegeneration
+of legal actions is the expensive part of assembly sequencing. Any practical algorithm must
+avoidexploringallbutatinyfractionofthestatespace. Anotherimportantassemblyproblem
+isprotein design, inwhichthegoalistofindasequence ofaminoacids thatwillfoldinto a
+PROTEINDESIGN
+three-dimensional proteinwiththerightproperties tocuresomedisease.
+3.3 SEARCHING FOR SOLUTIONS
+Having formulated some problems, we now need to solve them. A solution is an action
+sequence, so search algorithms work by considering various possible action sequences. The
+possible action sequences starting at the initial state form asearch tree with the initial state
+SEARCHTREE
+at the root; the branches are actions and the nodes correspond to states in the state space of
+NODE
+theproblem. Figure3.6showsthefirstfewstepsingrowingthesearchtreeforfindingaroute
+from Arad to Bucharest. The root node of the tree corresponds to the initial state, In(Arad).
+The first step is to test whether this is a goal state. (Clearly it is not, but it is important to
+check so that we can solve trick problems like starting in Arad, get to Arad. ) Then we
+need to consider taking various actions. We do this by expanding the current state; that is,
+EXPANDING
+applying each legal action to the current st

@@ -1,0 +1,41 @@
+k, must be quite certain of what is going
+on. Controltheorists callthisan open-loopsystem,because ignoringthepercepts breaksthe
+OPEN-LOOP
+loopbetweenagentandenvironment.
+We first describe the process of problem formulation, and then devote the bulk of the
+chapter to various algorithms for the SEARCH function. We do not discuss the workings of
+the UPDATE-STATE and FORMULATE-GOAL functions furtherinthischapter.
+3.1.1 Well-defined problems and solutions
+Aproblemcanbedefinedformallybyfivecomponents:
+PROBLEM The initial state that the agent starts in. For example, the initial state for our agent in
+INITIALSTATE
+Romaniamightbedescribed as In(Arad).
+Section3.1. Problem-Solving Agents 67
+function SIMPLE-PROBLEM-SOLVING-AGENT(percept)returnsanaction
+persistent: seq,anactionsequence,initiallyempty
+state,somedescriptionofthecurrentworldstate
+goal,agoal,initiallynull
+problem,aproblemformulation
+state UPDATE-STATE(state,percept)
+ifseq isemptythen
+goal FORMULATE-GOAL(state)
+problem FORMULATE-PROBLEM(state,goal)
+seq SEARCH(problem)
+ifseq failure thenreturnanullaction
+action FIRST(seq)
+seq REST(seq)
+returnaction
+Figure 3.1 A simple problem-solving agent. It first formulates a goal and a problem,
+searchesforasequenceofactionsthatwouldsolvetheproblem,andthenexecutestheactions
+oneatatime. Whenthisiscomplete,itformulatesanothergoalandstartsover. A description of the possible actions available to the agent. Given a particular state s,
+ACTIONS
+ACTIONS(s) returns the set of actions that can be executed in s. We say that each of
+these actions is applicable in s. Forexample, from the state In(Arad), the applicable
+APPLICABLE
+actionsare Go(Sibiu),Go(Timisoara),Go(Zerind) . A description of what each action does; the formal name for this is the transition
+TRANSITIONMODEL
+model, specified by a function RESULT(s,a) that returns the state that results from
+doingactionainstates. Wealsousethetermsuccessortorefertoanystatereachable
+SUCCESSOR
+fromagivenstatebyasingleaction.2 Forexample,wehave
+RESULT

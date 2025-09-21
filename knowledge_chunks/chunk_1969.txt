@@ -1,0 +1,29 @@
+ could result from anypossible choice
+i
+of actions in A i 1 , along with constraints saying which pairs of literals are not possible.
+It is important to note that the process of constructing the planning graph does not require
+choosingamongactions,whichwouldentailcombinatorialsearch. Instead,itjustrecordsthe
+impossibility ofcertainchoices usingmutexlinks.
+Wenowdefinemutexlinksforbothactionsandliterals. Amutexrelationholdsbetween
+twoactions atagivenlevelifanyofthefollowingthreeconditions holds: Inconsistent effects: oneactionnegatesaneffectoftheother. Forexample, Eat(Cake)
+and the persistence of Have(Cake) have inconsistent effects because they disagree on
+theeffect Have(Cake). Interference: one of the effects of one action is the negation of a precondition of the
+other. Forexample Eat(Cake)interfereswiththepersistenceof Have(Cake)bynegat-
+ingitsprecondition. Competing needs: one of the preconditions of one action is mutually exclusive with a
+preconditionoftheother. Forexample,Bake(Cake)and Eat(Cake)aremutexbecause
+theycompeteonthevalueofthe Have(Cake)precondition.
+Amutexrelationholdsbetweentwoliteralsatthesamelevelifoneisthenegationoftheother
+or if each possible pair of actions that could achieve the two literals is mutually exclusive.
+This condition is called inconsistent support. Forexample, Have(Cake) and Eaten(Cake)
+are mutex in S because the only way of achieving Have(Cake), the persistence action, is
+1
+mutex with the only way of achieving Eaten(Cake), namely Eat(Cake). In S the two
+2
+literals are not mutex, because there are new ways of achieving them, such as Bake(Cake)
+andthepersistence of Eaten(Cake),thatarenotmutex.
+A planning graph is polynomial in the size of the planning problem. For a planning
+problem with l literals and a actions, each S has no more than l nodes and l2 mutex links,
+i
+and each A has nomore than a l nodes (including theno-ops), (a l)2 mutex links, and
+i
+2(al l) precondition and effect links. Thus, an entire graph with n levels has a siz

@@ -1,0 +1,38 @@
+e reflex behaviors occur even in more complex environments. Imagine yourself
+asthedriveroftheautomatedtaxi. Ifthecarinfrontbrakes anditsbrakelightscomeon,then
+you should notice this and initiate braking. In other words, some processing is done on the
+visualinputtoestablishtheconditionwecall Thecarinfrontisbraking. Then,thistriggers
+some established connection in the agent program to the action initiate braking. We call
+CONDITION ACTION suchaconnection acondition action rule,5 writtenas
+RULE
+ifcar-in-front-is-braking theninitiate-braking.
+Humansalsohavemanysuchconnections, someofwhicharelearnedresponses (asfordriv-
+ing)andsomeofwhichareinnatereflexes(suchasblinking whensomething approaches the
+eye). In the course of the book, we show several different ways in which such connections
+canbelearned andimplemented.
+The program in Figure 2.8 is specific to one particular vacuum environment. A more
+general and flexible approach is first to build a general-purpose interpreter for condition action rules and then to create rule sets for specific task environments. Figure 2.9 gives the
+structure ofthisgeneral programinschematicform,showinghowthecondition action rules
+allow the agent to make the connection from percept to action. (Do not worry if this seems
+5 Alsocalledsituation actionrules,productions,orif thenrules.
+Section2.4. The Structureof Agents 49
+Agent
+Environment
+Sensors
+What the world
+is like now
+What action I
+Condition-action rules
+should do now
+Actuators
+Figure2.9 Schematicdiagramofasimplereflexagent.
+function SIMPLE-REFLEX-AGENT(percept)returnsanaction
+persistent: rules,asetofcondition actionrules
+state INTERPRET-INPUT(percept)
+rule RULE-MATCH(state,rules)
+action rule.ACTION
+returnaction
+Figure 2.10 A simple reflex agent. It acts accordingto a rule whose conditionmatches
+thecurrentstate,asdefinedbythepercept.
+trivial;itgetsmoreinteresting shortly.) Weuserectangles todenotethecurrentinternalstate
+of the agent s decision process, and ovals to represent the background

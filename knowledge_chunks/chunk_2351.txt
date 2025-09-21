@@ -1,0 +1,36 @@
+yintroducing anothervariable
+aboutwhichwelearnperfectinformation. Forexample, supposeweinitiallyhavebroaduncertaintyabout the
+variable Temperature. Then we gain the perfect knowledge Thermometer 37; this gives us imperfect
+informationaboutthetrue Temperature,andtheuncertaintyduetomeasurementerrorisencodedinthesensor
+model P(Thermometer Temperature).See Exercise16.17foranotherexample.
+Section16.6. The Valueof Information 631
+P(U E) P(U E) P(U E)
+j j j
+U U U
+U U U U U U
+2 1 2 1 2 1
+(a) (b) (c)
+Figure16.8 Threegenericcasesforthevalueofinformation. In(a), a willalmostcer-
+1
+tainlyremainsuperiortoa ,sotheinformationisnotneeded.In(b),thechoiceisunclearand
+2
+theinformationiscrucial. In(c),thechoiceisunclear,butbecauseitmakeslittledifference,
+theinformationislessvaluable.(Note: Thefactthat U hasahighpeakin(c)meansthatits
+2
+expectedvalueisknownwithhighercertaintythan U .)
+1
+case the difference in utilities will be very high. The VPI formula indicates that it might be
+worthwhilegettingthesatellite reports. Suchasituation isshownin Figure16.8(b).
+Finally,supposethatwearechoosingbetweenthetwodirtroadsinsummertime,when
+blockage byavalanches isunlikely. Inthis case, satellite reports might show one route tobe
+more scenic than the other because of flowering alpine meadows, orperhaps wetterbecause
+of errant streams. It is therefore quite likely that we would change our plan if we had the
+information. In this case, however, the difference in value between the two routes is still
+likelytobeverysmall,sowewillnotbothertoobtainthereports. Thissituation isshownin
+Figure16.8(c).
+In sum, information has value to the extent that it is likely to cause a change of plan
+andtotheextentthatthenewplanwillbesignificantly betterthantheoldplan.
+16.6.3 Properties ofthe valueofinformation
+One might ask whether it is possible for information to be deleterious: can it actually have
+negative expected value? Intuitively, one should expect this to be impossible. After all, one
+couldintheworstcasejustignore

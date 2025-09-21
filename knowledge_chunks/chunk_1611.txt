@@ -1,0 +1,35 @@
+hods. Theconcept
+of a heuristic function must be modified to estimate the cost of a contingent solution rather than asequence, but the notion of admissibility carries over and there is an analog of the A
+algorithm forfindingoptimal solutions. Pointers aregiven inthebibliographical notes atthe
+endofthechapter.
+Section4.3. Searchingwith Nondeterministic Actions 137
+1
+Suck Right
+5 2
+Right
+6
+Figure4.12 Partofthesearchgraphfortheslipperyvacuumworld,wherewehaveshown
+(some)cyclesexplicitly. Allsolutionsforthisproblemarecyclicplansbecausethereis no
+waytomovereliably.
+4.3.3 Try,try again
+Consider the slippery vacuum world, which is identical to the ordinary (non-erratic) vac-
+uumworldexcept thatmovementactionssometimes fail,leaving theagentinthesameloca-
+tion. For example, moving Right in state 1 leads to the state set 1,2 . Figure 4.12 shows
+part of the search graph; clearly, there are no longer any acyclic solutions from state 1, and
+CYCLICSOLUTION
+AND-OR-GRAPH-SEARCH would return with failure. There is, however, a cyclic solution,
+whichistokeeptrying Right untilitworks. Wecanexpressthissolutionbyaddingalabelto
+LABEL
+denote someportion oftheplanandusing thatlabel laterinstead ofrepeating theplanitself.
+Thus,ourcyclicsolutionis Suck,L : Right,if State 5then L else Suck .
+1 1
+(A better syntax for the looping part of this plan would be while State 5 do Right. )
+In general a cyclic plan may be considered a solution provided that every leaf is a goal
+state and that a leaf is reachable from every point in the plan. The modifications needed
+to AND-OR-GRAPH-SEARCH arecoveredin Exercise4.6. Thekeyrealization isthataloop
+inthestatespacebacktoastate Ltranslates toaloopintheplanbacktothepointwherethe
+subplan forstate Lisexecuted.
+Giventhedefinitionofacyclicsolution,anagentexecutingsuchasolutionwilleventu-
+allyreachthegoalprovidedthateachoutcomeofanondeterministicactioneventuallyoccurs.
+Is this condition reasonable? It depends on the reason forthe nondeterminism. If the action
+rollsadi

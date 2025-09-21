@@ -1,0 +1,28 @@
+e the
+sumofweightsofconnections withinthegroups.
+Segmentation based purely on low-level, local attributes such as brightness and color
+cannot be expected to deliver the final correct boundaries of all the objects in the scene. To
+reliably find object boundaries we need high-level knowledge of the likely kinds of objects
+inthescene. Representing thisknowledge isatopicofactiveresearch. Apopularstrategy is
+to produce an over-segmentation of animage, containing hundreds of homogeneous regions
+known as superpixels. From there, knowledge-based algorithms can take over; they will
+SUPERPIXELS
+finditeasier todeal withhundreds ofsuperpixels ratherthan millions ofrawpixels. Howto
+exploithigh-level knowledgeofobjects isthesubjectofthenextsection.
+24.3 OBJECT RECOGNITION BY APPEARANCE
+Appearanceisshorthand forwhatanobject tendstolooklike. Someobject categories for
+APPEARANCE
+example, baseballs vary rather little in appearance; all of the objects in the category look
+about the same under most circumstances. In this case, we can compute a set of features
+describing eachclassofimageslikelytocontain theobject, thentestitwithaclassifier.
+Section24.3. Object Recognition by Appearance 943
+Otherobjectcategories for example,houses orballetdancers vary greatly. Ahouse
+canhavedifferentsize,color,andshapeandcanlookdifferentfromdifferentangles. Adancer
+looksdifferentineachpose,orwhenthestagelightschange colors. Ausefulabstractionisto
+saythatsomeobjectsaremadeupoflocalpatternswhichtendtomovearoundwithrespectto
+oneanother. Wecanthenfindtheobjectbylookingatlocalhistogramsofdetectorresponses,
+whichexposewhethersomepartispresent butsuppress thedetailsofwhereitis.
+Testing each class of images with a learned classifier is an important general recipe.
+It works extremely well for faces looking directly at the camera, because at low resolution
+and underreasonable lighting, allsuch faces look quite similar. Theface isround, and quite
+brightcomparedtotheeyesockets;thesearedark,becausetheyaresunken,andth

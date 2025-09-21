@@ -1,0 +1,30 @@
+stencode
+the hypothesis as a Turing machine program, and count the number of bits. Then count
+the number of bits required to encode the data, where a correctly predicted example costs
+zero bits and the cost ofan incorrectly predicted example depends on how large the error is.
+MINIMUM
+The minimum description length or MDL hypothesis minimizes the total number of bits
+DESCRIPTION
+LENGTH
+required. This works well in the limit, but for smaller problems there is a difficulty in that
+the choice of encoding for the program for example, how best to encode a decision tree
+as a bit string affects the outcome. In Chapter 20 (page 805), we describe a probabilistic
+interpretation ofthe MD Lapproach.
+18.5 THE THEORY OF LEARNING
+The main unanswered question in learning is this: How can we be sure that our learning
+algorithm hasproduced ahypothesis thatwillpredictthecorrectvalueforpreviously unseen
+inputs? Informalterms,howdoweknowthatthehypothesis hisclosetothetargetfunction
+f if we don t know what f is? These questions have been pondered for several centuries.
+In more recent decades, other questions have emerged: how many examples do we need
+to get a good h? What hypothesis space should we use? If the hypothesis space is very
+complex, can we even find the best h, or do we have to settle for a local maximum in the
+714 Chapter 18. Learningfrom Examples
+spaceofhypotheses? Howcomplexshouldhbe? Howdoweavoidoverfitting? Thissection
+examinesthesequestions.
+We ll start with the question of how many examples are needed for learning. We saw
+from the learning curve fordecision tree learning on the restaurant problem (Figure 18.7 on
+page 703) that improves with more training data. Learning curves are useful, but they are
+specifictoaparticularlearningalgorithm onaparticularproblem. Aretheresomemoregen-
+eralprinciples governing thenumberofexamples needed ingeneral? Questions likethis are
+COMPUTATIONAL addressed bycomputationallearningtheory, whichliesattheintersection of AI,statistics,
+LEARNIN

@@ -1,0 +1,53 @@
+ctednetwork,528 Smola,A.J.,760,1088
+Shimelevich,L.I.,605,1093 singular,1056 Smolensky,P.,24,1089
+singularextension,174
+Shin,M.C.,685,1086 smoothing,574 576,603,822,862,
+Shinkareva,S.V.,288,1082 singularity,12 863,938
+Shmoys,D.B.,110,405,432,1080 technological,1038 linearinterpolation,863
+sins,sevendeadly,122
+Shoham,Y.,60,195,230,359,435, online,580
+638,688,857,1064,1079,1080,
+SIPE,431,432,434
+Smullyan,R.M.,314,1089
+SIR,605
+1088 Smyth,P.,605,763,1074,1089
+Sittler,R.W.,556,606,1089
+short-termmemory,336 SNARC,16
+situatedagent,1025
+shortestpath,114 Snell,J.,506,1074
+situation,388
+Shortliffe,E.H.,23,557,1067,1088 Snell,M.B.,1032,1089
+situationcalculus,279,388,447
+shoulder(instatespace),123 SNLP,394
+Sjolander,K.,604,1079
+Shpitser,I.,556,1085 Snyder,W.,359,1064
+skeletonization,986,991
+SHRDLU,20,23,370 SOAR,26,336,358,432,799,1047
+Skinner,B.F.,15,60,1089
+Shreve,S.E.,60,1066 soccer,195
+Skolem,T.,314,358,1089
+sibylattack,541 sociallaws,429
+Skolemconstant,323,357
+sidewaysmove(instatespace),123 societyofmind,434
+Skolemfunction,346,358
+Sietsma,J.,762,1088 Socrates,4
+skolemization,323,346
+SIGART,31 Soderland,S.,394,469,885,1065,
+slack,403
+sigmoidfunction,726 1072,1089
+Slagle,J.R.,19,1089
+sigmoidperceptron,729 softbot,41,61
+SLAM,982
+signalprocessing,915 slant,957 softmargin,748
+significancetest,705 Slate,D.J.,110,1089 softmaxfunction,848
+signs,888 Slater,E.,192,1089 softthreshold,521
+Siklossy,L.,432,1088 Slattery,S.,885,1069 softwareagent,41
+Silver,D.,194,1073 Sleator,D.,920,1089 softwarearchitecture,1003
+Silverstein,C.,884,1088 sliding-blockpuzzle,71,376 Soika,M.,1012,1066
+Simard,P.,762,967,1080 slidingwindow,943 Solomonoff,R.J.,17,27,759,1089
+Simmons,R.,605,1012,1088,1091 Slocum,J.,109,1089 solution,66,68,108,134,203,668
+Simon spredictions,20 Sloman,A.,27,1041,1082,1089 optimal,68
+Simon,D.,60,1088 Slovic,P.,2,638,1077 solvinggames,163 167
+Simon,H.A.,3,10,17,18,30,60,109, small-scalelearning,712 soma,11
+110,191,276,356,393,639, Smallwood,R.D.,686,1089 Sompolinsky,H.,761,1064
+800,

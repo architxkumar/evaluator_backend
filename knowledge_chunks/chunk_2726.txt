@@ -1,0 +1,31 @@
+r way of saying the CR Fmodel should prefer the target state SPEAKER for the word
+ANDREW. If on the other hand 1 0, the CRF model will try to avoid this association,
+andif 0,thisfeatureisignored. Parametervaluescanbesetmanuallyorcanbelearned
+1
+fromdata. Nowconsiderasecondfeaturefunction:
+(cid:24)
+f 2 (x i 1 ,x i ,e,i) 0 1 o if th x e i r wis S e PEAKER ande i 1 SAID
+This feature is true if the current state is SPEAKER and the next word is said. One would
+therefore expect apositive valuetogowiththefeature. Moreinterestingly, notethatboth
+2
+f and f can hold at the same time for a sentence like Andrew said .... In this case, the
+1 2
+two features overlap each other and both boost the belief in x
+1 SPEAKER. Because of the
+independence assumption, HM Mscannot useoverlapping features; CR Fscan. Furthermore,
+a feature in a CR Fcan use any part of the sequence e . Features can also be defined over
+1:N
+transitionsbetweenstates. Thefeatureswedefinedherewerebinary,butingeneral,afeature
+functioncanbeanyreal-valuedfunction. Fordomainswherewehavesomeknowledgeabout
+the types of features we would like to include, the CRF formalism gives us a great deal of
+flexibility in defining them. This flexibility can lead to accuracies that are higher than with
+lessflexiblemodelssuchas HM Ms.
+22.4.4 Ontologyextractionfrom largecorpora
+So far we have thought of information extraction as finding a specific set of relations (e.g.,
+speaker, time, location) in a specific text (e.g., a talk announcement). A different applica-
+tion of extraction technology is building a large knowledge base or ontology of facts from
+a corpus. This is different in three ways: First it is open-ended we want to acquire facts
+about all types of domains, not just one specific domain. Second, with a large corpus, this
+taskisdominatedbyprecision, notrecall justaswithquestionansweringonthe Web(Sec-
+tion 22.3.6). Third, the results can be statistical aggregates gathered from multiple sources,
+ratherthanbeingextractedfromonespe

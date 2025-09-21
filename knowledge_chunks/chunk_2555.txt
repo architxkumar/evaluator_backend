@@ -1,0 +1,48 @@
+s of the input.)
+You expect the majority classifier to score about 50 on leave-one-out cross-validation, but
+toyoursurprise, itscoreszeroeverytime. Canyouexplainwhy?
+18.12 Construct a decision list to classify the data below. Select tests to be as small as
+possible(intermsofattributes), breakingtiesamongtestswiththesamenumberofattributes
+byselectingtheonethatclassifiesthegreatestnumberofexamplescorrectly. Ifmultipletests
+havethesamenumberofattributesandclassifythesamenumberofexamples,thenbreakthe
+tieusingattributes withlowerindexnumbers(e.g.,select A over A ).
+1 2
+Example A A A A y
+1 2 3 4
+x 1 0 0 0 1
+1
+x 1 0 1 1 1
+2
+x 0 1 0 0 1
+3
+x 0 1 1 0 0
+4
+x 1 1 0 1 1
+5
+x 0 1 0 1 0
+6
+x 0 0 1 1 1
+7
+x 0 0 1 0 0
+8
+18.13 Prove that a decision list can represent the same function as a decision tree while
+using atmostasmanyrulesasthereareleavesinthedecision treeforthatfunction. Givean
+exampleofafunctionrepresentedbyadecisionlistusingstrictlyfewerrulesthanthenumber
+ofleavesinaminimal-sized decisiontreeforthatsamefunction.
+766 Chapter 18. Learningfrom Examples
+18.14 Thisexerciseconcernstheexpressiveness ofdecisionlists(Section18.5).
+a. Show that decision lists can represent any Boolean function, if the size of the tests is
+notlimited.
+b. Showthatifthetestscancontainatmostkliteralseach,thendecisionlistscanrepresent
+anyfunction thatcanberepresented byadecision treeofdepthk.
+18.15 Supposea7-nearest-neighbors regressionsearchreturns 7,6,8,4,7,11,100 asthe
+7 nearest y values for a given x value. What is the value of y that minimizes the L loss
+1
+functiononthisdata? Thereisacommonnameinstatisticsforthisvalueasafunctionofthe
+y values;whatisit? Answerthesametwoquestions forthe L lossfunction.
+2
+18.16 Figure18.31showedhowacircleattheorigincanbelinearly separated bymapping
+fromthefeatures (x ,x )tothetwodimensions(x2,x2). Butwhatifthecircleisnotlocated
+1 2 1 2
+at the origin? What if it is an ellipse, not a circle? The general equation for a circle (and
+hencethedecisionboundary) is(x a)2 (x b)2 r

@@ -1,0 +1,26 @@
+ found the performance of their algorithm was poor when they used
+a collection of only ten thousand photos, but crossed a threshold into excellent performance
+whentheygrewthecollection totwomillionphotos.
+Worklikethissuggests thatthe knowledge bottleneck in AI theproblem ofhowto
+expressalltheknowledgethatasystemneeds maybesolvedinmanyapplicationsbylearn-
+ingmethodsratherthanhand-codedknowledgeengineering, providedthelearningalgorithms
+haveenoughdatatogoon(Halevyetal.,2009). Reportershavenoticedthesurgeofnewap-
+plications and have written that AI Winter may be yielding to a new Spring (Havenstein,
+2005). As Kurzweil (2005) writes, today, many thousands of AI applications are deeply
+embeddedintheinfrastructure ofeveryindustry. 1.4 THE STATE OF THE ART
+What can AI do today? A concise answer isdifficult because there are so many activities in
+somanysubfields. Herewesampleafewapplications; othersappearthroughout thebook.
+Robotic vehicles: A driverless robotic car named STANLEY sped through the rough
+terrain of the Mojave dessert at 22 mph, finishing the 132-mile course first to win the 2005
+DARPA Grand Challenge. STANLEY isa Volkswagen Touaregoutfittedwithcameras,radar,
+andlaserrangefinders tosensetheenvironment andonboard softwaretocommandthesteer-
+ing, braking, andacceleration (Thrun, 2006). Thefollowing year CMU s BOSS wonthe Ur-
+ban Challenge,safelydrivingintrafficthroughthestreets ofaclosed Air Forcebase,obeying
+trafficrulesandavoiding pedestrians andothervehicles.
+Speechrecognition: Atravelercalling United Airlinestobookaflightcanhavetheen-
+tireconversationguidedbyanautomatedspeechrecognitionanddialogmanagementsystem.
+Autonomousplanningandscheduling: Ahundredmillionmilesfrom Earth,NASA s
+Remote Agent program became the first on-board autonomous planning program to control
+the scheduling of operations for a spacecraft (Jonsson et al., 2000). REMOTE AGENT gen-
+erated plansfrom high-level goals specified fromtheground andmonitored theexecution of
+thoseplans detecting,

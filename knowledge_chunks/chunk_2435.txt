@@ -1,0 +1,23 @@
+n MDP is a policy that associates a decision
+witheverystate thattheagent mightreach. Anoptimalpolicy maximizes theutility of
+thestatesequences encountered whenitisexecuted. The utility of a state is the expected utility of the state sequences encountered when
+an optimal policy is executed, starting in that state. The value iteration algorithm for
+solving MD Psworksbyiterativelysolvingtheequationsrelatingtheutilityofeachstate
+tothoseofitsneighbors. Policy iteration alternates between calculating the utilities of states under the current
+policyandimprovingthecurrentpolicywithrespect tothecurrentutilities. Partially observable MD Ps, or POMD Ps, are much more difficult to solve than are
+MD Ps. Theycanbesolved byconversion toan MD Pinthecontinuous spaceofbelief
+Bibliographical and Historical Notes 685
+states; both value iteration and policy iteration algorithms have been devised. Optimal
+behavior in POMD Ps includes information gathering to reduce uncertainty and there-
+foremakebetterdecisions inthefuture. A decision-theoretic agent can be constructed for POMDP environments. The agent
+uses a dynamic decision network to represent the transition and sensor models, to
+updateitsbeliefstate,andtoprojectforwardpossible actionsequences. Game theory describes rational behavior for agents in situations in which multiple
+agentsinteract simultaneously. Solutions ofgamesare Nashequilibria strategy pro-
+filesinwhichnoagenthasanincentivetodeviatefromthespecifiedstrategy. Mechanism design can be used to set the rules by which agents will interact, in order
+to maximize some global utility through the operation of individually rational agents.
+Sometimes, mechanisms exist that achieve this goal without requiring each agent to
+considerthechoicesmadebyotheragents.
+We shall return to the world of MD Ps and POMDP in Chapter 21, when we study rein-
+forcement learningmethods that allow anagent toimproveitsbehavior from experience in
+sequential, uncertain environments.
+BIBLIOGRAPHICAL AND HISTO

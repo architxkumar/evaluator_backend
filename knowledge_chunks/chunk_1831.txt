@@ -1,0 +1,28 @@
+
+to understand what works and what fails. Our discussion will be cursory, compressing cen-
+turiesofthought, trial,anderrorintoafewparagraphs.
+Programming languages (such as C or Java or Lisp) are by far the largest class of
+formal languages in common use. Programs themselves represent, in a direct sense, only
+computational processes. Data structures within programs can represent facts; for example,
+aprogram could usea 4 4array torepresent the contents ofthe wumpusworld. Thus, the
+programminglanguagestatement World 2,2 Pit isafairlynaturalwaytoassertthatthere
+is apit in square 2,2 . (Such representations might be considered ad hoc; database systems
+were developed precisely to provide a more general, domain-independent way to store and
+1 Alsocalledfirst-orderpredicatecalculus,sometimesabbreviatedas FO Lor FOPC.
+285
+286 Chapter 8. First-Order Logic
+retrieve facts.) What programming languages lack is any general mechanism for deriving
+factsfromotherfacts;eachupdatetoadatastructureisdonebyadomain-specificprocedure
+whosedetails arederived bytheprogrammer fromhisorherownknowledge ofthedomain.
+Thisproceduralapproachcanbecontrastedwiththedeclarativenatureofpropositionallogic,
+inwhichknowledgeandinferenceareseparate,andinferenceisentirelydomainindependent.
+A second drawback of data structures in programs (and of databases, for that matter)
+is the lack of any easy way to say, for example, There is a pit in 2,2 or 3,1 or If the
+wumpusisin 1,1 thenheisnotin 2,2 . Programscanstoreasinglevalueforeachvariable,
+andsomesystemsallowthevaluetobe unknown, buttheylacktheexpressivenessrequired
+tohandle partialinformation.
+Propositional logic is a declarative language because its semantics is based on a truth
+relation between sentences and possible worlds. It also has sufficient expressive power to
+deal withpartial information, using disjunction and negation. Propositional logic hasathird
+property that is desirable in representation languages, namely, compositionality. In a com-
+COMPOSITIO

@@ -1,0 +1,42 @@
+, Kephart,J.O.,60,1078
+Joachims,T.,760,884,1077 431 433,1067,1069,1071, Kepler,J.,966
+job,402 1077,1084 kernel,743
+job-shopschedulingproblem,402 Kameya,Y.,556,1087 kernelfunction,747,816
+1112 Index
+polynomial,747 model-based,497 Kripke,S.A.,470,1079
+kernelization,748 prior,39,768,778,787 Krishnan,T.,826,1082
+kernelmachine,744 748 knowledge-basedagents,234 Krogh,A.,604,1079
+kerneltrick,744,748,760 knowledge-basedsystem,22 24,845 KRYPTON,471
+Kernighan,B.W.,110,1080 knowledgeacquisition,23,307,860 Ktesibiosof Alexandria,15
+Kersting,K.,556,1078,1082 knowledgecompilation,799 Ku bler,S.,920,1079
+Kessler,B.,862,883,1078 knowledgemap,see Bayesiannetwork Kuhn,H.W.,601,606,687,1079
+Keynes,J.M.,504,1078 knowledgerepresentation,2,16,19,24, Kuhns,J.-L.,884,1081
+Khare,R.,469,1078 234,285 290,437 479 Kuijpers,C.,158,1080
+Khatib,O.,1013,1078 analogical,315 Kuipers,B.J.,472,473,1012,1079
+Khmelev,D.V.,886,1078 everything,437 Kumar,P.R.,60,1079
+Khorsand,A.,112,1077 language,235,274,285 Kumar,V.,111,112,230,1074,1077,
+Kietz,J.-U.,800,1078 uncertain,510 513 1079,1083
+Kilgarriff,A.,27,1078 Knuth,D.E.,73,191,359,919,1013, Kuniyoshi,Y.,195,1014,1078
+killermove,170 1059,1074,1078 Kuppuswamy,N.,1022,1078
+Kim,H.J.,852,857,1013,1084 Kobilarov,G.,439,469,1066 Kurien,J.,157,1079
+Kim,J.-H.,1022,1078 Kocsis,L.,194,1078 Kurzweil,R.,2,12,28,1038,1079
+Kim,J.H.,552,1078 Koditschek,D.,1013,1078 Kwok,C.,885,1079
+Kim,M.,194 Koehler,J.,395,1078 Kyburg,H.E.,505,1079
+kinematics,987 Koehn,P.,922,1078
+L
+kinematicstate,975 Koenderink,J.J.,968,1078
+King,R.D.,797,1078,1089 Koenig,S.,157,395,434,685,1012,
+L-BFGS,760
+Kinsey,E.,109 1075,1078,1088
+label(inplans),137,158
+kinshipdomain,301 303 Koller,D.,191,505,553,556,558,604,
+Laborie,P.,432,1079
+Kirchner,C.,359,1077 605,639,677,686,687,826,
+Ladanyi,L.,112,1086
+Kirk,D.E.,60,1078 827,884,1012,1065,1066,
+Ladkin,P.,470,1079
+Kirkpatrick,S.,155,229,1078 1073,1074,1076 1078,1083,
+Lafferty,J.,884,885,1079
+Kirman,J.,686,1070 1085,1087,1090
+Lagoudakis,M.G.,854,857,1074,
+Kishi

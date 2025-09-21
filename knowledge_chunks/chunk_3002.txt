@@ -1,0 +1,25 @@
+,pp.492 501. Math.,21,429 490. 542 552.
+Bibliography 1065
+Bacchus,F.,Grove,A.,Halpern,J.Y.,and Koller, Barto,A.G.,Bradtke,S.J.,and Singh,S.P.(1995). Bellman,R.E.(1961).Adaptive Control Processes:
+D.(1992). Fromstatisticstobeliefs. In AAAI-92, Learningtoactusingreal-timedynamicprogram- AGuided Tour.Princeton University Press.
+pp.602 608. ming.AIJ,73(1),81 138.
+Bellman,R.E.(1965). Ontheapplicationofdy-
+Bacchus,F.andvan Beek,P.(1998).Ontheconver- Barto,A.G.,Sutton,R.S.,and Anderson,C.W. namicprogrammingtothedeterminationofoptimal
+sionbetweennon-binaryandbinaryconstraintsatis- (1983).Neuron-likeadaptiveelementsthatcansolve playinchessandcheckers.PNAS,53,244 246.
+factionproblems.In AAAI-98,pp.311 318. difficultlearningcontrolproblems. IEEE Transac-
+Bellman,R.E.(1978).An Introductionto Artificial
+tionson Systems,Manand Cybernetics,13, 834 Bacchus,F.andvan Run,P.(1995). Dynamicvari- Intelligence:Can Computers Think?Boyd Fraser
+846.
+ableorderingin CS Ps.In CP-95,pp.258 275. Publishing Company.
+Barto, A. G., Sutton, R. S., and Brouwer, P. S.
+Bachmann,P.G.H.(1894).Dieanalytische Zahlen- Bellman,R.E.(1984).Eyeofthe Hurricane.World
+(1981). Associativesearchnetwork: Areinforce-
+theorie.B.G.Teubner,Leipzig. Scientific.
+mentlearningassociativememory. Biological Cy-
+Backus,J.W.(1996).Transcriptofquestionandan- bernetics,40(3),201 211. Bellman,R.E.and Dreyfus,S.E.(1962). Applied
+swersession. In Wexelblat,R.L.(Ed.),Historyof Dynamic Programming.Princeton University Press.
+Barwise,J.and Etchemendy,J.(1993). The Lan-
+Programming Languages,p.162.Academic Press. guageof First-Order Logic: Includingthe Macin- Bellman, R. E. (1957). Dynamic Programming.
+Bagnell,J.A.and Schneider,J.(2001).Autonomous tosh Program Tarski s World4.0(Third Revisedand Princeton University Press.
+helicoptercontrolusingreinforcementlearningpol- Expandededition).Centerforthe Studyof Language Belongie, S., Malik, J., and Puzicha, J. (2002).
+icysearchmethods.In ICRA-01. and Information(CSLI). Shapematchingandobjectre

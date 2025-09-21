@@ -1,0 +1,25 @@
+and Gasser,L.(Eds.),
+tingham,J.,Stoothoff,R.,and Murdoch,D.(Eds.), London,294,Series A,235 259. Distributed AI,Vol.2.Morgan Kaufmann.
+The Philosophical Writings of Descartes, Vol. I.
+Dorf,R.C.and Bishop,R.H.(2004).Modern Con- Durme,B.V.and Pasca,M.(2008). Findingcars,
+Cambridge University Press,Cambridge,UK.
+trol Systems(10thedition). Descartes,R.(1641). Meditationsonfirstphiloso- of labeled instances for open-domain information
+Doucet, A. (1997). Monte Carlo methods for
+phy.In Cottingham,J.,Stoothoff,R.,and Murdoch, extraction.In AAAI-08,pp.1243 1248.
+Bayesianestimationofhidden Markovmodels:Ap-
+D.(Eds.),The Philosophical Writingsof Descartes,
+plicationtoradiationsignals. Ph.D.thesis,Univer- Dyer, M. (1983). In-Depth Understanding.
+Vol. II. Cambridge University Press, Cambridge,
+site de Paris-Sud. MIT Press.
+UK.
+Descotte, Y. and Latombe, J.-C. (1985). Mak- Doucet, A., de Freitas, N., and Gordon, N. Dyson,G.(1998).Darwinamongthemachines:the
+ingcompromisesamongantagonistconstraintsina (2001). Sequential Monte Carlo Methodsin Prac- evolutionofglobalintelligence.Perseus Books.
+planner.AIJ,27,183 217. tice.Springer-Verlag. Duzeroski,S.,Muggleton,S.H.,and Russell,S.J.
+Detwarasiti,A.and Shachter,R.D.(2005). Influ- Doucet,A.,de Freitas,N.,Murphy,K.,and Russell, (1992). PAC-learnabilityofdeterminatelogicpro-
+encediagramsforteamdecisionanalysis. Decision S.J.(2000). Rao-blackwellisedparticlefilteringfor grams.In COLT-92,pp.128 135.
+Analysis,2(4),207 228. dynamicbayesiannetworks.In UAI-00. Earley,J.(1970). Anefficientcontext-freeparsing
+Devroye,L.(1987). Acourseindensityestimation. Dowling,W.F.and Gallier,J.H.(1984). Linear- algorithm.CACM,13(2),94 102.
+Birkhauser. timealgorithmsfortestingthesatisfiabilityofpropo- Edelkamp,S.(2009).Scalingsearchwithsymbolic
+sitional Hornformulas. J.Logic Programming,1, patterndatabases.In Model Checkingand Artificial
+Dickmanns, E. D. and Zapp, A. (1987). Au- 267 284. Intelligence(MOCHART),pp.49 65.
+tonomous high speed road vehicle guidance by

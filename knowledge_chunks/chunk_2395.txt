@@ -1,0 +1,29 @@
+testheagentmightbein):
+(cid:12) (b) b(s)R(s).
+s
+Together, P(b
+(cid:2) b,a)
+and (b) define an observable MDP on the space of belief states. Fur- thermore,itcanbeshownthatanoptimalpolicyforthis MDP, (b),isalsoanoptimalpolicy
+fortheoriginal POMDP.Inotherwords, solving a POMD Ponaphysical statespace canbe
+reducedtosolvingan MD Ponthecorresponding belief-statespace. Thisfactisperhapsless
+surprisingifwerememberthatthebeliefstateisalwaysobservabletotheagent,bydefinition.
+Notice that, although we have reduced POMD Ps to MD Ps, the MD Pwe obtain has a
+continuous (and usually high-dimensional) state space. None of the MDP algorithms de-
+scribed in Sections 17.2 and 17.3 applies directly to such MD Ps. The next two subsec-
+tions describe a value iteration algorithm designed specifically for POMD Ps and an online
+decision-making algorithm, similartothosedeveloped for gamesin Chapter5.
+17.4.2 Valueiterationfor POMD Ps
+Section 17.2 described a value iteration algorithm that computed one utility value for each
+state. With infinitely many belief states, we need to be more creative. Consider an optimal policy and itsapplication in aspecific belief state b: the policy generates an action, then,
+foreachsubsequent percept, thebeliefstateisupdated and anewaction isgenerated, andso
+on. Forthisspecificb,therefore,thepolicyisexactlyequivalenttoaconditionalplan,asde-
+finedin Chapter4fornondeterministicandpartiallyobservableproblems. Insteadofthinking
+about policies, letusthink about conditional plans andhowtheexpected utility ofexecuting
+afixedconditional planvarieswiththeinitialbeliefstate. Wemaketwoobservations:
+Section17.4. Partially Observable MD Ps 661
+1. Lettheutilityofexecutingafixedconditionalplanpstartinginphysicalstatesbe (s).
+(cid:2) p
+Thentheexpected utility ofexecuting pinbelief state bisjust b(s) (s),orb s p p
+if we think of them both as vectors. Hence, the expected utility of a fixed conditional
+planvarieslinearly withb;thatis,itcorresponds toahyperplane inbeliefspace.
+2. At 

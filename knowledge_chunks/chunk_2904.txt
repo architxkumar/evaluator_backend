@@ -1,0 +1,43 @@
+e
+vehicle
+GPS position UKF Pose estimation state Throttle brake control
+Power server interface
+GPS compass vehicle state (pose, velocity)
+IMU interface Surface assessment velocity limit
+Wheel velocity
+Brake steering
+heart beats Linux processes start stop emergency stop
+health status
+Process controller Health monitor
+power on off
+data
+GLOBAL
+Data logger File system
+SERVICES
+Communication requests Communication channels clocks
+Inter-process communication (IPC) server Time server
+Figure 25.26 Software architecture of a robot car. This software implements a data
+pipeline,inwhichallmodulesprocessdatasimultaneously.
+The deliberative layer generates global solutions to complex tasks using planning.
+DELIBERATIVELAYER
+Because of the computational complexity involved in generating such solutions, its decision
+cycleisoftenintheorderofminutes. Thedeliberative layer(orplanning layer) usesmodels
+for decision making. Those models might be either learned from data or supplied and may
+utilizestateinformation gathered attheexecutivelayer.
+Variantsofthethree-layerarchitecturecanbefoundinmostmodern-dayrobotsoftware
+systems. Thedecomposition intothreelayersisnotverystrict. Somerobotsoftwaresystems
+possessadditionallayers,suchasuserinterfacelayersthatcontroltheinteractionwithpeople,
+oramultiagent level forcoordinating arobot s actions withthat of otherrobots operating in
+thesameenvironment.
+25.7.3 Pipelinearchitecture
+PIPELINE Anotherarchitectureforrobotsisknownasthe pipelinearchitecture. Justlikethesubsump-
+ARCHITECTURE
+tionarchitecture,thepipelinearchitectureexecutesmultipleprocessinparallel. However,the
+specificmodulesinthisarchitecture resemblethoseinthethree-layer architecture.
+Figure 25.26 shows an example pipeline architecture, which is used to control an au-
+SENSORINTERFACE tonomous car. Dataenters thispipeline atthe sensor interface layer. Theperception layer
+LAYER
+PERCEPTIONLAYER
+1006 Chapter 25. Robotics
+(a) (b)
+Figure25.27 (a)The Helpmaterobottransportsfoodandothermedicalitem

@@ -1,0 +1,36 @@
+eci-
+sion about the patient s food intake and insulin dose. Unlike the case of car repair, here the
+dynamic aspects of the problem are essential. Blood sugar levels and measurements thereof
+can change rapidly over time, depending on recent food intake and insulin doses, metabolic
+activity, the time of day, and so on. To assess the current state from the history of evidence
+andtopredict theoutcomes oftreatmentactions, wemustmodelthesechanges.
+Thesame considerations arise in many other contexts, such as tracking the location of
+a robot, tracking the economic activity of a nation, and making sense of a spoken orwritten
+sequence ofwords. Howcandynamicsituations likethesebemodeled?
+15.1.1 States and observations
+We view the world as a series of snapshots, or time slices, each of which contains a set of
+TIMESLICE
+random variables, some observable and some not.1 For simplicity, we will assume that the
+samesubsetofvariablesisobservableineachtimeslice(althoughthisisnotstrictlynecessary
+inanything thatfollows). Wewilluse X todenote thesetofstate variables attime t,which
+t
+are assumed to be unobservable, and E to denote the set of observable evidence variables.
+t
+Theobservation attimetis E e forsomesetofvalues e .
+t t t
+Considerthefollowingexample: Youarethesecurityguardstationedatasecretunder-
+ground installation. Youwanttoknowwhetherit srainingtoday, butyouronlyaccesstothe
+outside worldoccurseachmorningwhenyouseethedirectorcominginwith,orwithout, an
+umbrella. Foreachdayt,theset E thuscontainsasingleevidencevariable Umbrella or U
+t t t
+forshort(whethertheumbrellaappears),andtheset X containsasinglestatevariable Rain
+t t
+or R forshort(whetheritisraining). Otherproblemscaninvolve largersetsofvariables. In
+t
+thediabetes example,wemighthaveevidencevariables, suchas Measured Blood Sugar and
+t
+Pulse Rate , andstate variables, such as Blood Sugar and Stomach Contents . (Notice that
+t t t
+Blood Sugar and Measured Blood Sugar arenotthesamevariable; thisishowwedealwith
+t t
+noisymeasure

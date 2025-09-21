@@ -1,0 +1,39 @@
+:17) .
+To make X arc-consistent with respect to Y, we reduce X s domain to 0,1,2,3 . If we
+alsomake Y arc-consistent withrespect to X,then Y sdomainbecomes 0,1,4,9 andthe
+whole CS Pisarc-consistent.
+Ontheotherhand,arcconsistency candonothingforthe Australiamap-coloring prob-
+lem. Considerthefollowinginequality constraint on(SA,WA): (red,green),(red,blue),(green,red),(green,blue),(blue,red),(blue,green) .
+Section6.2. Constraint Propagation: Inferencein CS Ps 209
+function AC-3(csp)returnsfalseifaninconsistencyisfoundandtrueotherwise
+inputs:csp,abinary CS Pwithcomponents(X, D, C)
+localvariables: queue,aqueueofarcs,initiallyallthearcsincsp
+whilequeue isnotemptydo
+(Xi, Xj) REMOVE-FIRST(queue)
+if REVISE(csp,Xi, Xj)then
+ifsizeof Di 0thenreturnfalse
+foreach Xk in Xi.NEIGHBORS- Xj do
+add(Xk, Xi)toqueue
+returntrue
+function REVISE(csp,Xi, Xj)returnstrueiffwerevisethedomainof Xi
+revised false
+foreachx in Dido
+ifnovalueyin Dj allows(x,y)tosatisfytheconstraintbetween Xiand Xj then
+deletex from Di
+revised true
+returnrevised
+Figure 6.3 The arc-consistency algorithm AC-3. After applying AC-3, either every arc
+isarc-consistent,orsomevariablehasanemptydomain,indicatingthatthe CSP cannotbe
+solved. Thename AC-3 wasusedbythealgorithm sinventor(Mackworth,1977)because
+it sthethirdversiondevelopedinthepaper.
+No matter what value you choose for SA (or for WA), there is a valid value for the other
+variable. Soapplying arcconsistency hasnoeffectonthedomainsofeithervariable.
+The most popular algorithm for arc consistency is called AC-3 (see Figure 6.3). To
+makeeveryvariablearc-consistent, the AC-3algorithmmaintainsaqueueofarcstoconsider.
+(Actually, theorderofconsideration isnotimportant, sothedatastructure isreallyaset, but
+traditioncallsitaqueue.) Initially,thequeuecontainsallthearcsinthe CSP.AC-3thenpops
+offanarbitraryarc (X ,X )fromthequeueandmakes X arc-consistent withrespectto X .
+i j i j
+If this leaves D unchanged, the algorithm just moves on to the next arc. But if this revises
+i
+D (make

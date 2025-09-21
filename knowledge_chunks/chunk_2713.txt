@@ -1,0 +1,35 @@
+rannyof TF scores: ifthequeryis IBM ,howdowemakesurethat IBM shomepage,
+ibm.com,isthefirstresult,evenifanotherpagementionstheterm IBM morefrequently?
+Theideaisthatibm.comhasmanyin-links(linkstothepage),soitshouldberankedhigher:
+each in-link is a vote for the quality of the linked-to page. But if we only counted in-links,
+thenitwouldbepossible fora Webspammertocreateanetwork ofpages andhavethemall
+point to a page of his choosing, increasing the score of that page. Therefore, the Page Rank
+algorithm is designed to weight links from high-quality sites more heavily. What is a high-
+quality site? Onethatislinked tobyotherhigh-quality sites. Thedefinition isrecursive, but
+wewillseethattherecursion bottomsoutproperly. The Page Rankforapagepisdefinedas:
+(cid:12)
+1 d PR(in )
+i
+PR(p) d ,
+N C(in )
+i
+i
+where PR(p) is the Page Rank of page p, N is the total number of pages in the corpus, in
+i
+are the pages that link in to p, and C(in ) is the count of the total number of out-links on
+i
+page in . The constant d is a damping factor. It can be understood through the random
+i
+RANDOMSURFER surfer model: imagine a Web surfer who starts at some random page and begins exploring.
+MODEL
+With probability d (we ll assume d 0.85) the surfer clicks on one of the links on the page
+(choosing uniformly among them), and with probability 1 d she gets bored with the page
+and restarts on a random page anywhere on the Web. The Page Rank of page p is then the
+probability that the random surfer will be at page p at any point in time. Page Rank can be
+computed by an iterative procedure: start with all pages having PR(p) 1, and iterate the
+algorithm, updating ranksuntiltheyconverge.
+872 Chapter 22. Natural Language Processing
+22.3.5 The HIT Salgorithm
+The Hyperlink-Induced Topic Search algorithm, also known as Hubs and Authorities or
+HITS, is another influential link-analysis algorithm (see Figure 22.1). HITS differs from
+Page Rankinseveralways. First,itisaquery-dependent measure: itratespages withrespec

@@ -1,0 +1,23 @@
+entwants,anddecisiontheoryputsthetwotogether
+todescribe whatanagentshoulddo. We can use decision theory to build a system that makes decisions by considering all
+possible actions and choosing the one that leads to the best expected outcome. Such a
+systemisknownasarationalagent. Utility theory shows that an agent whose preferences between lotteries are consistent
+with a set of simple axioms can be described as possessing a utility function; further-
+more,theagentselectsactions asifmaximizingitsexpected utility. Multiattribute utility theory deals with utilities that depend on several distinct at-
+tributes of states. Stochastic dominance is a particularly useful technique for making
+unambiguous decisions, evenwithoutpreciseutilityvaluesforattributes. Decision networks provide a simple formalism for expressing and solving decision
+problems. Theyare anatural extension of Bayesian networks, containing decision and
+utilitynodesinaddition tochancenodes. Sometimes, solving a problem involves finding more information before making a de-
+cision. The value of information is defined as the expected improvement in utility
+comparedwithmakingadecisionwithouttheinformation. Expert systems that incorporate utility information have additional capabilities com-
+pared with pure inference systems. In addition to being able to make decisions, they
+canusethevalueofinformation todecide whichquestions toask, ifany;theycanrec-
+ommend contingency plans; and they can calculate the sensitivity of their decisions to
+smallchanges inprobability andutilityassessments.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Thebook L artde Penser,alsoknownasthe Port-Royal Logic(Arnauld,1662)states:
+Tojudgewhatonemustdotoobtainagoodoravoidanevil,itisnecessarytoconsider
+notonlythegoodandtheevilinitself,butalsotheprobabilitythatithappensordoesnot
+happen;andtoviewgeometricallytheproportionthatallthesethingshavetogether.
+Bibliographical and Historical Notes 637
+Modern texts talk of utility rather than good and evil, but th

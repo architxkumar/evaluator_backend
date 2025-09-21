@@ -1,0 +1,25 @@
+tation. Whenaspeakerpoints andsays, Look! thelistenercomes
+to know that, say, Superman has finally appeared over the rooftops. Yet we would not want
+to say that the sentence Look! represents that fact. Rather, the meaning of the sentence
+depends both on the sentence itself and on the context in which the sentence was spoken.
+Clearly, one could not store a sentence such as Look! in a knowledge base and expect to
+Section8.1. Representation Revisited 287
+recover its meaning without also storing a representation of the context which raises the
+question of how the context itself can be represented. Natural languages also suffer from
+ambiguity,aproblemforarepresentation language. As Pinker(1995)putsit: Whenpeople
+AMBIGUITY
+thinkaboutspring,surelytheyarenotconfusedastowhethertheyarethinkingaboutaseason
+or something that goes boing and if one word can correspond to two thoughts, thoughts
+can tbewords. The famous Sapir Whorf hypothesis claims that our understanding of the world is
+strongly influenced bythelanguage wespeak. Whorf(1956)wrote Wecutnature up,orga-
+nizeitintoconcepts, andascribe significances aswedo, largely because weareparties toan
+agreement to organize it this way an agreement that holds throughout our speech commu-
+nity and is codified in the patterns of our language. It is certainly true that different speech
+communities divide uptheworlddifferently. The Frenchhavetwowords chaise and fau-
+teuil, for a concept that English speakers cover with one: chair. But English speakers
+caneasilyrecognizethecategoryfauteuilandgiveitaname roughly open-armchair so
+does language really make a difference? Whorf relied mainly on intuition and speculation,
+but in the intervening years we actually have real data from anthropological, psychological
+andneurological studies.
+Forexample,canyourememberwhichofthefollowingtwophrasesformedtheopening
+of Section8.1? Inthissection, wediscussthenatureofrepresentation languages ... Thissectioncoversthetopicofknowledge representation languag

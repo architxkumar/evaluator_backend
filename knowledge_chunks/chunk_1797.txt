@@ -1,0 +1,32 @@
+
+picks a symbol in the clause to flip. It chooses randomly between two ways to pick which
+symboltoflip: (1)a min-conflicts stepthatminimizesthenumberofunsatisfied clausesin
+thenewstateand(2)a random walk stepthatpicksthesymbolrandomly.
+When WALKSAT returns a model, the input sentence is indeed satisfiable, but when
+it returns failure, there are two possible causes: either the sentence is unsatisfiable or we
+need togive the algorithm more time. If weset max flips and p 0, WALKSAT will
+eventually return a model (if one exists), because the random-walk steps will eventually hit
+Section7.6. Effective Propositional Model Checking 263
+function WALKSAT(clauses,p,max flips)returnsasatisfyingmodelorfailure
+inputs:clauses,asetofclausesinpropositionallogic
+p,theprobabilityofchoosingtodoa randomwalk move,typicallyaround0.5
+max flips,numberofflipsallowedbeforegivingup
+model arandomassignmentoftrue false tothesymbolsinclauses
+fori 1tomax flips do
+ifmodel satisfiesclauses thenreturnmodel
+clause arandomlyselectedclausefromclauses thatisfalseinmodel
+withprobabilitypflipthevalueinmodel ofarandomlyselectedsymbolfromclause
+elseflipwhicheversymbolinclause maximizesthenumberofsatisfiedclauses
+returnfailure
+Figure 7.18 The WALKSAT algorithm for checking satisfiability by randomly flipping
+thevaluesofvariables.Manyversionsofthealgorithmexist.
+upon the solution. Alas, if max flips is infinity and the sentence is unsatisfiable, then the
+algorithm neverterminates!
+Forthisreason, WALKSAT ismostuseful whenweexpect asolution toexist forex-
+ample,theproblemsdiscussedin Chapters3and6usuallyhavesolutions. Ontheotherhand,
+WALKSAT cannot always detect unsatisfiability, which is required for deciding entailment.
+For example, an agent cannot reliably use WALKSAT to prove that a square is safe in the
+wumpusworld. Instead, itcansay, Ithoughtaboutitforanhourandcouldn tcomeupwith
+apossible worldinwhichthesquare isn tsafe. Thismaybeagoodempirical indicator that
+thesquareissafe,butit scertainly notaproof.
+7.

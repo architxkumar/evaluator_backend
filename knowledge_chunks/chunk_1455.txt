@@ -1,0 +1,20 @@
+t takes the best possible action in a situation. We
+studytheproblem ofbuilding agentsthatareintelligent inthissense. Philosophers (going back to 400 B.C.) made AI conceivable by considering the ideas
+thatthemindisinsomewayslikeamachine,thatitoperatesonknowledgeencodedin
+someinternal language, andthatthought canbeusedtochoosewhatactionstotake. Mathematiciansprovidedthetoolstomanipulatestatementsoflogicalcertaintyaswell
+asuncertain, probabilistic statements. Theyalso setthe groundwork forunderstanding
+computation andreasoning aboutalgorithms. Economists formalized the problem of making decisions that maximize the expected
+outcometothedecisionmaker. Neuroscientistsdiscoveredsomefactsabouthowthebrainworksandthewaysinwhich
+itissimilartoanddifferentfromcomputers. Psychologistsadoptedtheideathathumansandanimalscanbeconsideredinformation-
+processing machines. Linguists showedthatlanguage usefitsintothismodel. Computerengineers provided the ever-more-powerful machines that make AI applica-
+tionspossible. Controltheorydealswithdesigning devicesthatactoptimally onthebasisoffeedback
+from the environment. Initially, the mathematical tools of control theory were quite
+differentfrom AI,butthefieldsarecomingclosertogether. Thehistoryof AIhashadcyclesofsuccess,misplacedoptimism,andresultingcutbacks
+in enthusiasm and funding. There have also been cycles of introducing new creative
+approaches andsystematically refiningthebestones. AIhasadvancedmorerapidlyinthepastdecadebecauseofgreateruseofthescientific
+methodinexperimenting withandcomparing approaches. Recentprogressinunderstanding thetheoretical basisfor intelligence hasgonehandin
+hand with improvements in the capabilities of real systems. The subfields of AI have
+becomemoreintegrated, and AIhasfoundcommonground withotherdisciplines.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Themethodologicalstatusofartificialintelligenceisinvestigatedin The Sciencesofthe Artifi-
+cial,by Herb Simon(1981),whichdiscussesresearchareasconcernedwithcomplexart

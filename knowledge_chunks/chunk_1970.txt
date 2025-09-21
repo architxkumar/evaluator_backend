@@ -1,0 +1,33 @@
+l nodes and l2 mutex links,
+i
+and each A has nomore than a l nodes (including theno-ops), (a l)2 mutex links, and
+i
+2(al l) precondition and effect links. Thus, an entire graph with n levels has a size of
+O(n(a l)2). Thetimetobuildthegraphhasthesamecomplexity.
+10.3.1 Planning graphs forheuristicestimation
+Aplanning graph,onceconstructed, isarichsource ofinformation abouttheproblem. First,
+ifanygoalliteralfailstoappearinthefinallevelofthegraph,thentheproblemisunsolvable.
+Second, we can estimate the cost of achieving any goal literal g from state s as the level at
+i
+which g first appears in the planning graph constructed from initial state s. Wecall this the
+i
+382 Chapter 10. Classical Planning
+levelcostofg . In Figure10.8,Have(Cake)haslevelcost0and Eaten(Cake)haslevelcost
+LEVELCOST i
+1. It is easy to show (Exercise 10.10) that these estimates are admissible for the individual
+goals. The estimate might not always be accurate, however, because planning graphs allow
+several actions at each level, whereas the heuristic counts just the level and not the number
+SERIALPLANNING of actions. For this reason, it is common to use a serial planning graph for computing
+GRAPH
+heuristics. A serial graph insists that only one action can actually occur at any given time
+step; thisisdonebyadding mutexlinks between everypairof nonpersistence actions. Level
+costsextractedfromserialgraphsareoftenquitereasonable estimatesofactualcosts.
+Toestimate the cost of a conjunction of goals, there are three simple approaches. The
+max-levelheuristic simplytakesthemaximumlevelcostofanyofthegoals;thisisadmissi-
+MAX-LEVEL
+ble,butnotnecessarily accurate.
+The level sum heuristic, following the subgoal independence assumption, returns the
+LEVELSUM
+sum of the level costs of the goals; this can be inadmissible but works well in practice
+for problems that are largely decomposable. It is much more accurate than the number-
+of-unsatisfied-goals heuristic from Section 10.2. For our problem, the level-sum heurist

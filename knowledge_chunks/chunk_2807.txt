@@ -1,0 +1,30 @@
+ly and dark pixels
+come from patches that see the light only tangentially, so that the shading on a surface pro-
+vides some shape information. We explore this cue in Section 24.4.5. If the surface is not
+reached bythelight source, thenitisin shadow. Shadowsareveryseldom auniform black,
+SHADOW
+because the shadowed surface receives some light from other sources. Outdoors, the most
+important such source is the sky, which is quite bright. Indoors, light reflected from other
+surfaces illuminates shadowed patches. These interreflections can have a significant effect
+INTERREFLECTIONS
+on the brightness of other surfaces, too. These effects are sometimes modeled by adding a
+AMBIENT constant ambientilluminationtermtothepredicted intensity.
+ILLUMINATION
+Section24.2. Early Image-Processing Operations 935
+24.1.5 Color
+Fruit is a bribe that a tree offers to animals to carry its seeds around. Trees have evolved to
+have fruit that turns red oryellow when ripe, and animals have evolved todetect these color
+changes. Light arriving at the eye has different amounts of energy at different wavelengths;
+thiscanberepresented byaspectralenergydensityfunction. Humaneyesrespondtolightin
+the 380 750nm wavelength region, with three different types of color receptor cells, which
+have peakreceptiveness at420mm (blue), 540nm (green), and 570nm (red). Thehumaneye
+cancaptureonlyasmallfractionofthefullspectralenergy densityfunction butitisenough
+totellwhenthefruitisripe.
+PRINCIPLEOF Theprincipleoftrichromacystatesthatforanyspectralenergydensity,nomatterhow
+TRICHROMACY
+complicated,itispossibletoconstructanotherspectralenergydensityconsistingofamixture
+ofjustthreecolors usually red,green,andblue suchthat ahumancan ttellthedifference
+between the two. That means that our TVs and computer displays can get by with just the
+three red green blue (or R G B) color elements. It makes our computer vision algorithms
+easier, too. Each surface can be modeled with three different albedos for R G B. Similarly,
+each l

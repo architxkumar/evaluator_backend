@@ -1,0 +1,27 @@
+ of dis-
+tributions.) Mc Lachlan and Krishnan (1997) devote an entire book to the algorithm and its
+properties. The specific problem of learning mixture models, including mixtures of Gaus-
+sians,iscoveredby Titterington etal.(1985). Within AI,thefirstsuccessfulsystemthatused
+EMformixture modeling was AUTOCLASS (Cheeseman etal.,1988; Cheeseman and Stutz,
+1996). AUTOCLAS Shasbeenappliedtoanumberofreal-worldscientificclassificationtasks,
+includingthediscoveryofnewtypesofstarsfromspectraldata(Goebeletal.,1989)andnew
+classesofproteinsandintronsin DNA proteinsequencedatabases(Hunterand States,1992).
+For maximum-likelihood parameter learning in Bayes nets with hidden variables, EM
+andgradient-basedmethodswereintroducedaroundthesametimeby Lauritzen(1995),Rus-
+sell et al. (1995), and Binder et al. (1997a). The structural EM algorithm was developed by
+Friedman (1998) and applied to maximum-likelihood learning of Bayes net structures with
+Exercises 827
+latentvariables. Friedmanand Koller(2003). describe Bayesianstructure learning.
+Theabilitytolearnthestructureof Bayesiannetworksiscloselyconnected totheissue
+of recovering causal information from data. That is, is it possible to learn Bayes nets in
+such a way that the recovered network structure indicates real causal influences? For many
+years,statisticiansavoidedthisquestion,believingthatobservationaldata(asopposedtodata
+generatedfromexperimentaltrials)couldyieldonlycorrelational information after all,any
+two variables that appear related might in fact be influenced by a third, unknown causal
+factor rather than influencing each other directly. Pearl (2000) has presented convincing
+arguments to the contrary, showing that there are in fact many cases where causality can be
+ascertained and developing the causal network formalism to express causes and the effects
+CAUSALNETWORK
+ofintervention aswellasordinary conditional probabilities.
+Nonparametric densityestimation, alsocalled Parzenwindowdensity estimation, was
+investigated initi

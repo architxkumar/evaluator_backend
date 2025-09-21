@@ -1,0 +1,23 @@
+traintsatisfaction. Marsland, A.T.and Schaeffer, J.(Eds.).(1990).
+nitionfromsingletwo-dimensionalimages.AIJ,31, In Shapiro,S.(Ed.),Encyclopediaof Artificial Intel- Computers,Chess,and Cognition.Springer-Verlag.
+355 395. ligence(secondedition).,Vol.1,pp.285 293.Wi-
+Marsland,S.(2009). Machine Learning:An Algo-
+ley.
+Lowe, D.(1999). Objectrecognition usinglocal rithmic Perspective.CRC Press.
+scaleinvariantfeature.In ICCV. Mahanti,A.and Daniels,C.J.(1993).ASIM Dap- Martelli, A.and Montanari, U.(1973). Additive
+Lowe,D.(2004). Distinctiveimagefeaturesfrom proachtoparallelheuristicsearch. AIJ,60(2),243 AND ORgraphs.In IJCAI-73,pp.1 11.
+282.
+scale-invariantkeypoints.IJCV,60(2),91 110. Martelli,A.and Montanari,U.(1978). Optimizing
+Lo wenheim,L.(1915).U bermo glichkeitenim Rel- Mailath,G.and Samuelson,L.(2006). Repeated decisiontreesthroughheuristicallyguidedsearch.
+ativkalku l.Mathematische Annalen,76,447 470. Gamesand Reputations: Long-Run Relationships. CACM,21,1025 1039.
+Oxford University Press.
+Lowerre,B.T.(1976). The HARPY Speech Recog- Martelli,A.(1977). Onthecomplexityofadmissi-
+nition System. Ph.D.thesis,Computer Science De- Majercik,S.M.and Littman,M.L.(2003).Contin- blesearchalgorithms.AIJ,8(1),1 13.
+gentplanningunderuncertaintyviastochasticsatis-
+partment,Carnegie-Mellon University. fiability.AIJ,pp.119 162. Marthi,B.,Pasula,H.,Russell,S.J.,and Peres,Y.
+Lowerre,B.T.and Reddy,R.(1980). The HARPY (2002). Decayed MCM Cfiltering. In UAI-02,pp.
+speechrecognition system. In Lea, W.A. (Ed.), Malik,J.and Perona,P.(1990).Preattentivetexture 319 326.
+T H r a e l n l. dsin Speech Recognition, chap.15. Lowry,M.(2008). Intelligentsoftwareengineering Malik, J.and Rosenholtz,R.(1994). Recovering learning.In IJCAI-05.
+toolsfor NASA screwexplorationvehicle.In Proc. surfacecurvatureandorientationfromtexturedistor- Marthi,B.,Russell,S.J.,and Wolfe,J.(2007).An-
+ISMIS. tion:Aleastsquaresalgorithmandsensitivityanal- gelicsemanticsforhigh-levelactions.In ICAPS-07.
+ysis.In ECCV,pp.353 364

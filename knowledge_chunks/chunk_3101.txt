@@ -1,0 +1,24 @@
+ (Eds.),Bayesian Statistics3,pp.395 402.Oxford
+University Press. Sacerdoti,E.D.(1977). AStructurefor Plansand
+Robertson,N.and Seymour,P.D.(1986). Graph Behavior.Elsevier North-Holland.
+minors.II.Algorithmicaspectsoftree-width. J.Al- Rumelhart,D.E.,Hinton,G.E.,and Williams,R.J.
+Sadri,F.and Kowalski,R.(1995). Variantsofthe
+gorithms,7(3),309 322. (1986a). Learninginternalrepresentationsbyerror
+eventcalculus.In ICLP-95,pp.67 81.
+propagation. In Rumelhart,D.E.and Mc Clelland,
+Robertson,S.E.(1977). Theprobabilityranking
+J.L.(Eds.),Parallel Distributed Processing,Vol.1, Sahami, M., Dumais, S. T., Heckerman, D., and
+principlein IR.J.Documentation,33,294 304.
+chap.8,pp.318 362.MIT Press. Horvitz,E.J.(1998). ABayesianapproachtofil-
+Robertson,S.E.and Sparck Jones,K.(1976).Rel- teringjunk E-mail.In Learningfor Text Categoriza-
+Rumelhart, D. E., Hinton, G. E., and Williams,
+evanceweightingofsearchterms.J.American Soci- tion:Papersfromthe1998Workshop.
+R.J.(1986b). Learningrepresentationsbyback-
+etyfor Information Science,27,129 146. propagatingerrors.Nature,323,533 536. Sahami,M.,Hearst,M.A.,and Saund,E.(1996).
+Robinson,A.and Voronkov,A.(2001). Handbook Applyingthemultiplecausemixturemodeltotext
+of Automated Reasoning.Elsevier. Rumelhart, D. E. and Mc Clelland, J. L. (Eds.). categorization.In ICML-96,pp.435 443.
+(1986).Parallel Distributed Processing.MIT Press.
+Robinson,J.A.(1965). Amachine-orientedlogic Sahin,N.T.,Pinker,S.,Cash,S.S.,Schomer,D.,
+basedontheresolutionprinciple.JACM,12,23 41. R lin u e m Q m - e le r a y r , ni G n . g A us . in a g nd co N n i n ra e n ct j i a o n n , is M ts . y ( s 1 te 9 m 94 s ) . . Te O c n h - . a le n x d ic H al a , l g g r r a e m n, m E a . ti ( c 2 a 0 l, 0 a 9 n ). dp S h e o q n u o e l n o t g ia ic l a p l r i o n c f e o s r s m in a g tio o n f
+Roche,E.and Schabes,Y.(1997).Finite-State Lan- rep.CUED F-INFENG TR166,Cambridge Univer- within Broca sarea.Science,326(5291),445 449.
+guage Processing(Language,Speechand Commu- sity Engin

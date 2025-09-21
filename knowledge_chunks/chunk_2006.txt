@@ -1,0 +1,25 @@
+tohandlethisinformation.
+For example, partial-order planners can detect resource constraint violations in much the
+same way they detect conflicts with causal links. Heuristics can be devised to estimate the
+totalcompletion timeofaplan. Thisiscurrently anactiveareaofresearch.
+406 Chapter 11. Planningand Actinginthe Real World
+11.2 HIERARCHICAL PLANNING
+Theproblem-solving andplanningmethodsoftheprecedingchaptersalloperatewithafixed
+set of atomic actions. Actions can be strung together into sequences orbranching networks;
+state-of-the-art algorithms cangenerate solutions containing thousands ofactions.
+Forplans executed by the human brain, atomic actions are muscle activations. In very
+round numbers, we have about 103 muscles to activate (639, by some counts, but many of
+themhavemultiple subunits); wecanmodulatetheiractivation perhaps 10timespersecond;
+and we are alive and awake for about 109 seconds in all. Thus, a human life contains about
+1013 actions, give or take one or two orders of magnitude. Even if we restrict ourselves to
+planning overmuchshorter timehorizons for example, atwo-weekvacation in Hawaii a
+detailed motorplanwouldcontainaround 1010 actions. Thisisalotmorethan1000.
+Tobridgethisgap,AIsystemswillprobablyhavetodowhathumansappeartodo: plan
+at higher levels of abstraction. A reasonable plan for the Hawaii vacation might be Go to
+San Franciscoairport;take Hawaiian Airlinesflight11to Honolulu;dovacationstufffortwo
+weeks;take Hawaiian Airlinesflight12backto San Francisco;gohome. Givensuchaplan,
+the action Go to San Francisco airport can be viewed as a planning task in itself, with a
+solution such as Drive to the long-term parking lot; park; take the shuttle to the terminal. Eachofthese actions, inturn, canbedecomposed further, until wereach thelevelofactions
+thatcanbeexecutedwithoutdeliberation togeneratetherequired motorcontrolsequences.
+In this example, we see that planning can occur both before and during the execution
+of the plan; for example, one would

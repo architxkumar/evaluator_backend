@@ -1,0 +1,38 @@
+rtwopossibleconclusions: Thereisnopitin 1,2 . 1 Thereisnopitin 2,2 . 2
+Wehavesurrounded themodelsof and withdotted linesin Figures7.5(a)and 7.5(b),
+1 2
+respectively. Byinspection, weseethefollowing:
+ineverymodelinwhich KB istrue, isalsotrue.
+1
+Hence,KB : thereisnopitin 1,2 . Wecanalsoseethat
+1
+insomemodelsinwhich KB istrue, isfalse.
+2
+Hence,KB (cid:7) : theagentcannotconcludethatthereisnopitin 2,2 . (Norcanitconclude
+2
+thatthere isapitin 2,2 .)3
+Theprecedingexamplenotonlyillustratesentailmentbutalsoshowshowthedefinition
+of entailment can be applied to derive conclusions that is, to carry out logical inference.
+LOGICALINFERENCE
+The inference algorithm illustrated in Figure 7.5 is called model checking, because it enu-
+MODELCHECKING
+meratesallpossible modelstocheckthat istrueinallmodelsinwhich KB istrue, thatis,
+that M(KB) M( ).
+Inunderstanding entailmentandinference,itmighthelptothinkofthesetofallconse-
+quences of KB asahaystack andof asaneedle. Entailmentisliketheneedlebeing inthe
+haystack;inferenceislikefindingit. Thisdistinctionisembodiedinsomeformalnotation: if
+aninferencealgorithm icanderive from KB,wewrite
+KB (cid:20) ,
+i
+whichispronounced isderivedfrom KB byi or iderives from KB. An inference algorithm that derives only entailed sentences is called sound or truth-
+SOUND
+preserving. Soundness is a highly desirable property. An unsound inference procedure es-
+TRUTH-PRESERVING
+sentiallymakesthingsupasitgoesalong itannouncesthediscoveryofnonexistentneedles.
+Itiseasytoseethatmodelchecking, whenitisapplicable,4 isasoundprocedure.
+The property of completeness is also desirable: an inference algorithm is complete if
+COMPLETENESS
+it can derive any sentence that is entailed. For real haystacks, which are finite in extent,
+it seems obvious that a systematic examination can always decide whether the needle is in
+thehaystack. Formanyknowledge bases, however, thehaystack ofconsequences isinfinite,
+and completeness becomes an important issue.5 Fortunately, there are complete

@@ -1,0 +1,26 @@
+f (a) and (b), a recursive divide-and-conquer algorithm can be con-
+structed by first running forward along the sequence and then backward from the end,
+storing just the required messages at the middle and the ends. Then the algorithm is
+calledoneachhalf. Writeoutthealgorithm indetail.
+d. Computethetimeandspacecomplexityofthealgorithmasafunctionoft,thelengthof
+thesequence. Howdoesthischangeifwedividetheinputintomorethantwopieces?
+15.4 Onpage577,weoutlinedaflawedprocedureforfindingthemostlikelystatesequence,
+given an observation sequence. The procedure involves finding the most likely state at each
+timestep, usingsmoothing, andreturning thesequence composed ofthesestates. Showthat,
+for some temporal probability models and observation sequences, this procedure returns an
+impossible statesequence (i.e.,theposteriorprobability ofthesequenceiszero).
+15.5 Equation (15.12) describes thefiltering process forthematrix formulation of HM Ms.
+Giveasimilarequationforthecalculation oflikelihoods, whichwasdescribedgenerically in
+Equation(15.7).
+15.6 Consider the vacuum worlds of Figure 4.18 (perfect sensing) and Figure 15.7 (noisy
+sensing). Suppose that the robot receives an observation sequence such that, with perfect
+sensing, there is exactly one possible location it could be in. Is this location necessarily the
+most probable location under noisy sensing for sufficiently small noise probability (cid:2)? Prove
+yourclaimorfindacounterexample.
+15.7 In Section 15.3.2, the prior distribution over locations is uniform and the transition
+model assumes an equal probability of moving to any neighboring square. What if those
+assumptions are wrong? Suppose that the initial location is actually chosen uniformly from
+the northwest quadrant of the room and the Move action actually tends to move southeast.
+Keeping the HMM model fixed, explore the effect on localization and path accuracy as the
+southeasterly tendency increases, fordifferent valuesof (cid:2).
+15.8 Consideraversionofthevacuumrobo

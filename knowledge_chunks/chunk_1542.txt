@@ -1,0 +1,45 @@
+ame (or
+nearly the same) branching factor at each level, most of the nodes are in the bottom level,
+so it does not mattermuch that the upper levels are generated multiple times. In an iterative
+deepening search, the nodes on the bottom level (depth d) are generated once, those on the
+Section3.4. Uninformed Search Strategies 89
+function ITERATIVE-DEEPENING-SEARCH(problem)returnsasolution,orfailure
+fordepth 0to do
+result DEPTH-LIMITED-SEARCH(problem,depth)
+ifresult (cid:7) cutoffthenreturnresult
+Figure 3.18 The iterative deepening search algorithm, which repeatedly applies depth-
+limitedsearchwithincreasinglimits. Itterminateswhena solutionisfoundorifthedepth-
+limitedsearchreturnsfailure,meaningthatnosolutionexists.
+Limit 0 A A
+Limit 1 A A A A
+B C B C B C B C
+Limit 2 A A A A
+B C B C B C B C
+D E F G D E F G D E F G D E F G
+A A A A
+B C B C B C B C
+D E F G D E F G D E F G D E F G
+Limit 3 A A A A
+B C B C B C B C
+D E F G D E F G D E F G D E F G
+H I J K L M N O H I J K L M N O H I J K L M N O H I J K L M N O
+A A A A
+B C B C B C B C
+D E F G D E F G D E F G D E F G
+H I J K L M N O H I J K L M N O H I J K L M N O H I J K L M N O
+A A A A
+B C B C B C B C
+D E F G D E F G D E F G D E F G
+H I J K L M N O H I J K L M N O H I J K L M N O H I J K L M N O
+Figure3.19 Fouriterationsofiterativedeepeningsearchonabinarytree.
+90 Chapter 3. Solving Problemsby Searching
+next-to-bottom levelaregenerated twice, andsoon, uptothechildren oftheroot, whichare
+generated dtimes. Sothetotalnumberofnodesgenerated intheworstcaseis
+N(IDS) (d)b (d 1)b2 (1)bd ,
+which gives a time complexity of O(bd) asymptotically the same as breadth-first search.
+Thereissomeextracostforgeneratingtheupperlevelsmultipletimes,butitisnotlarge. For
+example,ifb 10andd 5,thenumbersare
+N(IDS) 50 400 3,000 20,000 100,000 123,450
+N(BFS) 10 100 1,000 10,000 100,000 111,110.
+If you are really concerned about repeating the repetition, you can use a hybrid approach
+that runs breadth-first search until almost all the available memory is 

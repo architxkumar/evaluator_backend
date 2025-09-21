@@ -1,0 +1,30 @@
+ials, weob-
+0 1 2 tainasetofsamplevaluesof U (x,y),andwecanfindthebestfit,inthesenseofminimizing thesquarederror, usingstandard linearregression. (See Chapter18.)
+For reinforcement learning, it makes more sense to use an online learning algorithm
+that updates the parameters after each trial. Suppose we run a trial and the total reward
+obtained starting at (1,1) is 0.4. This suggests that U (1,1), currently 0.8, is too large and must be reduced. How should the parameters be adjusted to achieve this? As with neural-
+network learning, we write an error function and compute its gradient with respect to the
+parameters. If u (s) is the observed total reward from state s onward in the jth trial, then
+j
+theerrorisdefined as(half) thesquared difference ofthepredicted totalandtheactual total:
+E (s) (U (s) u (s))2 2. Therateofchangeoftheerrorwithrespecttoeachparameter
+j j is E ,sotomovetheparameterinthedirection ofdecreasing theerror,wewant
+i j i E (s) U (s) j (u (s) U (s)) . (21.11)
+i i i j i i
+This is called the Widrow Hoff rule, or the delta rule, for online least-squares. For the
+WIDROW HOFFRULE
+linearfunctionapproximator U (s)in Equation(21.10),wegetthreesimpleupdaterules:
+DELTARULE (u (s) U (s)),
+0 0 j (u (s) U (s))x,
+1 1 j (u (s) U (s))y .
+2 2 j 3 Wedoknowthattheexactutilityfunctioncanberepresentedinapageortwoof Lisp,Java,or C . Thatis,
+itcanberepresentedbyaprogramthatsolvesthegameexactlyeverytimeitiscalled. Weareinterestedonlyin
+functionapproximatorsthatuseareasonable amountofcomputation. Itmightinfactbebettertolearnavery
+simplefunctionapproximatorandcombineitwithacertainamountoflook-aheadsearch.Thetradeoffsinvolved
+arecurrentlynotwellunderstood.
+Section21.4. Generalization in Reinforcement Learning 847
+We can apply these rules to the example where U (1,1) is 0.8 and u (1,1) is 0.4. , , j 0 1
+and arealldecreased by 0.4 ,whichreduces theerrorfor(1,1). Noticethat changing the
+2
+parameters inresponsetoanobservedtransitionbetweentwostatesalsochangesthevalues
+of U for every

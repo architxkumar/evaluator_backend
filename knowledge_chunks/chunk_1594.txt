@@ -1,0 +1,26 @@
+ purely random walk that is, moving to a successor chosen uniformly
+at random from the set of successors is complete but extremely inefficient. Therefore, it
+seemsreasonabletotrytocombinehillclimbingwitharandomwalkinsomewaythatyields
+SIMULATED bothefficiencyandcompleteness. Simulatedannealingissuchanalgorithm. Inmetallurgy,
+ANNEALING
+annealing is the process used to temper or harden metals and glass by heating them to a
+hightemperature andthengradually coolingthem,thusallowingthematerialtoreachalow-
+energy crystalline state. To explain simulated annealing, we switch our point of view from
+hill climbing to gradient descent (i.e., minimizing cost) and imagine the task of getting a
+GRADIENTDESCENT
+ping-pong ball into thedeepest crevice inabumpy surface. Ifwejustlet theball roll, itwill
+come to rest at a local minimum. If weshake the surface, wecan bounce the ball out of the
+local minimum. The trick is to shake just hard enough to bounce the ball out of local min-
+ima but not hard enough to dislodge it from the global minimum. The simulated-annealing
+solution istostartbyshaking hard(i.e.,atahightemperature) andthengradually reduce the
+intensity oftheshaking (i.e.,lowerthetemperature).
+Theinnermostloopofthesimulated-annealing algorithm(Figure4.5)isquitesimilarto
+hillclimbing. Insteadofpickingthebestmove,however,itpicksarandommove. Ifthemove
+improvesthesituation,itisalwaysaccepted. Otherwise,thealgorithmacceptsthemovewith
+some probability less than 1. The probability decreases exponentially with the badness of
+the move the amount E by which the evaluation is worsened. The probability also de-
+creasesasthe temperature T goesdown: bad movesaremorelikelytobeallowedatthe
+startwhen T ishigh,andtheybecomemoreunlikely as T decreases. Iftheschedule lowers
+T slowlyenough, thealgorithm willfindaglobaloptimumwithprobability approaching 1.
+Simulated annealing was first used extensively to solve VLSI layout problems in the
+early1980s. Ithasbeenapplied widelytofactoryscheduling andothe

@@ -1,0 +1,49 @@
+derfunction,
+forexample. Hereareallthetrainingdatawewillneed:
+x x y (carry) y (sum)
+1 2 3 4
+0 0 0 0
+0 1 0 1
+1 0 0 1
+1 1 1 0
+730 Chapter 18. Learningfrom Examples
+Thefirstthingtonoticeisthataperceptronnetworkwithmoutputsisreallymseparate
+networks, because each weight affects only one of the outputs. Thus, there will be m sepa-
+rate training processes. Furthermore, depending on the type of activation function used, the
+trainingprocesseswillbeeitherthe perceptronlearningrule(Equation(18.7)onpage724)
+orgradient descentruleforthe logistic regression (Equation(18.8)onpage727).
+Ifyoutryeithermethodonthetwo-bit-adderdata,somethinginteresting happens. Unit
+3 learns the carry function easily, but unit 4 completely fails to learn the sum function. No,
+unit 4 isnot defective! The problem iswith the sum function itself. Wesawin Section 18.6
+thatlinearclassifiers(whetherhardorsoft)canrepresent lineardecisionboundariesinthein-
+putspace. Thisworksfineforthecarryfunction,whichisalogical AND(see Figure18.21(a)).
+Thesum function, however, is an XOR (exclusive OR)of the two inputs. As Figure 18.21(c)
+illustrates, thisfunction isnotlinearly separable sothe perceptron cannotlearnit.
+The linearly separable functions constitute just a small fraction of all Boolean func-
+tions; Exercise 18.20 asksyou toquantify thisfraction. Theinability ofperceptrons tolearn
+even such simple functions as XOR was a significant setback to the nascent neural network
+w w w
+1,3 1,3 3,5
+1 3 1 3 5
+w w w
+1,4 1,4 3,6
+w w w
+2,3 2,3 4,5
+2 4 2 4 6
+w w w
+2,4 2,4 4,6
+(a) (b)
+Figure18.20 (a)Aperceptronnetworkwithtwoinputsandtwooutputunits.(b)Aneural
+networkwithtwoinputs,onehiddenlayeroftwounits,andoneoutputunit. Notshownare
+thedummyinputsandtheirassociatedweights.
+x x x
+1 1 1
+1 1 1
+?
+0 0 0
+0 1 x 2 0 1 x 2 0 1 x 2
+(a)x andx (b)x orx (c)x xorx
+1 2 1 2 1 2
+Figure18.21 Linearseparabilityinthresholdperceptrons. Blackdotsindicateapointin
+theinputspacewherethevalueofthefunctionis1,andwhitedotsindicateapointwherethe
+valueis0. Th

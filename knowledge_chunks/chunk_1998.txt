@@ -1,0 +1,34 @@
+axioms of
+situation calculus.
+a. Consider the schema for Fly(p,from,to). Write a logical definition for the predicate
+Poss(Fly(p,from,to),s), which is true if the preconditions for Fly(p,from,to) are
+satisfiedinsituation s.
+b. Next, assuming that Fly(p,from,to) is the only action schema available to the agent,
+write down a successor-state axiom for At(p,x,s) that captures the same information
+astheactionschema.
+400 Chapter 10. Classical Planning
+c. Now suppose there is an additional method of travel: Teleport(p,from,to). It has
+theadditionalprecondition Warped(p)andtheadditionaleffect Warped(p). Explain
+howthesituation calculus knowledgebasemustbemodified.
+d. Finally, develop a general and precisely specified procedure forcarrying out the trans-
+lationfromasetofactionschemastoasetofsuccessor-state axioms.
+10.16 In the SATPLAN algorithm in Figure 7.22 (page 272), each call to the satisfiabil-
+ity algorithm asserts a goal g T, where T ranges from 0 to T . Suppose instead that the
+max
+satisfiability algorithm iscalledonlyonce,withthegoal g0 g1 g Tmax.
+a. Willthisalwaysreturnaplanifoneexistswithlengthless thanorequalto T ?
+max
+b. Doesthisapproach introduce anynewspurious solutions ?
+c. Discuss how one might modify a satisfiability algorithm such as WALKSAT so that it
+findsshortsolutions (iftheyexist)whengivenadisjunctive goalofthisform.
+11
+PLANNING AND ACTING
+IN THE REAL WORLD
+Inwhichweseehow moreexpressive representations and moreinteractive agent
+architectures leadtoplanners thatareusefulintherealworld.
+Thepreviouschapterintroduced themostbasicconcepts, representations, andalgorithmsfor
+planning. Planners that are are used in the real world for planning and scheduling the oper-
+ations of spacecraft, factories, and military campaigns are more complex; they extend both
+the representation language and the way the planner interacts with the environment. This
+chapter shows how. Section 11.1 extends the classical language for planning to talk about
+actions with durations an

@@ -1,0 +1,29 @@
+raltextbooksandatleast
+one encyclopedia (Wilson and Keil, 1999). Wewilloccasionally comment onsimilarities or
+differences between AItechniques andhumancognition. Realcognitive science, however,is
+necessarily based on experimental investigation of actual humans or animals. We will leave
+thatforotherbooks, asweassumethereaderhasonlyacomputerforexperimentation.
+In the early days of AI there was often confusion between the approaches: an author
+would argue that an algorithm performs well on a task and that it is therefore a good model
+of human performance, or vice versa. Modern authors separate the two kinds of claims;
+this distinction has allowed both AI and cognitive science to develop more rapidly. Thetwo
+fields continue to fertilize each other, most notably in computer vision, which incorporates
+neurophysiological evidence intocomputational models.
+4 Chapter 1. Introduction
+1.1.3 Thinking rationally: The lawsofthought approach
+The Greekphilosopher Aristotlewasoneofthefirsttoattempttocodify rightthinking, that
+is, irrefutable reasoning processes. His syllogisms provided patterns forargument structures
+SYLLOGISM
+thatalwaysyieldedcorrectconclusionswhengivencorrectpremises forexample, Socrates
+is a man; all men are mortal; therefore, Socrates is mortal. These laws of thought were
+supposed togoverntheoperation ofthemind;theirstudyinitiated thefieldcalledlogic.
+LOGIC
+Logiciansinthe19thcenturydevelopedaprecisenotationforstatementsaboutallkinds
+ofobjects intheworldandtherelations amongthem. (Contrastthiswithordinaryarithmetic
+notation, which provides only for statements about numbers.) By 1965, programs existed
+that could, inprinciple, solve anysolvable problem described inlogical notation. (Although
+ifnosolution exists, theprogram mightloop forever.) Theso-called logicist tradition within
+LOGICIST
+artificialintelligence hopestobuildonsuchprogramstocreateintelligent systems.
+There are two main obstacles to this approach. First, it is not easy to take informal
+knowledge and 

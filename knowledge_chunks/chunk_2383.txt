@@ -1,0 +1,38 @@
+.
+652 Chapter 17. Making Complex Decisions
+17.2 VALUE ITERATION
+In this section, we present an algorithm, called value iteration, for calculating an optimal
+VALUEITERATION
+policy. Thebasicideaistocalculate theutilityofeachstateandthenusethestateutilities to
+selectanoptimalactionineachstate.
+17.2.1 The Bellmanequation forutilities
+Section17.1.2definedtheutilityofbeinginastateastheexpectedsumofdiscountedrewards
+from that point onwards. From this, it follows that there is a direct relationship between the
+utility ofastate and theutility ofitsneighbors: the utility ofastate istheimmediate reward
+for that state plus the expected discounted utility of the next state, assuming that the agent
+choosestheoptimalaction. Thatis,theutilityofastateisgivenby
+(cid:12)
+U(s) R(s) max P(s
+(cid:2) s,a)U(s (cid:2)
+). (17.5)
+a A(s)
+s(cid:3)
+This is called the Bellman equation, after Richard Bellman (1957). The utilities of the
+BELLMANEQUATION
+states definedby Equation(17.2)astheexpectedutilityofsubsequentstatesequences are
+solutions ofthe set of Bellman equations. In fact, they are the unique solutions, as weshow
+in Section17.2.3.
+Let us look at one of the Bellman equations for the 4 3 world. The equation for the
+state(1,1)is
+U(1,1) 0.04 max 0.8U(1,2) 0.1U(2,1) 0.1U(1,1), (Up)
+0.9U(1,1) 0.1U(1,2), (Left)
+0.9U(1,1) 0.1U(2,1), (Down)
+0.8U(2,1) 0.1U(1,2) 0.1U(1,1) . (Right)
+Whenwepluginthenumbersfrom Figure17.3,wefindthat Upisthebestaction.
+17.2.2 The valueiterationalgorithm
+The Bellmanequation isthebasisofthevalueiterationalgorithm forsolving MD Ps. Ifthere
+arenpossiblestates,thentherearen Bellmanequations, oneforeachstate. Thenequations
+containnunknowns theutilitiesofthestates. Sowewouldliketosolvethesesimultaneous
+equations tofindtheutilities. Thereisoneproblem: theequationsarenonlinear, becausethe max operator is not a linear operator. Whereas systems of linear equations can be solved
+quicklyusinglinearalgebratechniques,systemsofnonlinearequationsaremoreproblematic.
+Onethingtotryisanite

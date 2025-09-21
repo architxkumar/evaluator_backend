@@ -1,0 +1,35 @@
+ture to discover whether the following tasks can currently be
+solvedbycomputers:
+a. Playingadecentgameoftabletennis(Ping-Pong).
+b. Drivinginthecenterof Cairo,Egypt.
+c. Drivingin Victorville, California.
+d. Buyingaweek sworthofgroceries atthemarket.
+e. Buyingaweek sworthofgroceries onthe Web.
+f. Playingadecentgameofbridgeatacompetitive level.
+g. Discoveringandprovingnewmathematical theorems.
+h. Writinganintentionally funnystory.
+i. Givingcompetentlegaladviceinaspecialized areaoflaw.
+j. Translatingspoken Englishintospoken Swedishinrealtime.
+k. Performingacomplexsurgical operation.
+Exercises 33
+Forthecurrently infeasible tasks, trytofindoutwhatthedifficultiesareandpredict when,if
+ever,theywillbeovercome.
+1.15 Varioussubfields of AIhaveheldcontests bydefining astandard taskandinviting re-
+searchers to do their best. Examples include the DARPA Grand Challenge for robotic cars,
+The International Planning Competition,the Robocuproboticsoccerleague,the TRE Cinfor-
+mation retrieval event, and contests in machine translation, speech recognition. Investigate
+fiveofthesecontests,anddescribetheprogressmadeovertheyears. Towhatdegreehavethe
+contestsadvancedtoestateoftheartin AI?Dowhatdegreedotheyhurtthefieldbydrawing
+energyawayfromnewideas?
+2
+INTELLIGENT AGENTS
+In which we discuss the nature of agents, perfect or otherwise, the diversity of
+environments, andtheresulting menagerieofagenttypes.
+Chapter 1 identified the concept of rational agents as central to our approach to artificial
+intelligence. Inthischapter,wemakethisnotionmoreconcrete. Wewillseethattheconcept
+ofrationality canbeappliedtoawidevarietyofagentsoperating inanyimaginable environ-
+ment. Ourplanin thisbook istousethis concept todevelop asmallsetof design principles
+forbuilding successful agents systems thatcanreasonably becalled intelligent.
+We begin by examining agents, environments, and the coupling between them. The
+observationthatsomeagentsbehavebetterthanothersleadsnaturallytotheideaofarational
+agent one that be

@@ -1,0 +1,32 @@
+has multiple
+implementations. How can we describe the effects of an action that can be implemented in
+manydifferent ways?
+Onesafeanswer(atleastforproblemswhereallpreconditionsandgoalsarepositive)is
+toincludeonlythepositiveeffectsthatareachievedbyeveryimplementationofthe HL Aand
+the negative effects of any implementation. Then the downward refinement property would
+besatisfied. Unfortunately,thissemanticsfor HL Asismuchtooconservative. Consideragain
+the HLA Go(Home,SFO), which has two refinements, and suppose, for the sake of argu-
+ment,asimpleworldinwhichonecanalwaysdrivetotheairport andpark, buttaking ataxi
+requires Cash as a precondition. In that case, Go(Home,SFO) doesn t always get you to
+theairport. Inparticular, itfailsif Cash isfalse,andsowecannotassert At(Agent,SFO)as
+aneffectofthe HLA.Thismakesnosense, however;iftheagentdidn t have Cash,itwould
+driveitself. Requiringthataneffectholdfor everyimplementation isequivalent toassuming
+that someone else an adversary will choose the implementation. Ittreats the HLA smul-
+tiple outcomes exactly asifthe HL Awereanondeterministicaction, asin Section 4.3. For
+ourcase,theagentitselfwillchoosetheimplementation.
+The programming languages community has coined the term demonic nondetermin-
+DEMONIC ismforthecasewhereanadversary makesthechoices, contrasting thiswithangelicnonde-
+NONDETERMINISM
+Section11.2. Hierarchical Planning 411
+(a) (b)
+Figure11.6 Schematicexamplesofreachablesets. Thesetofgoalstatesisshaded.Black
+andgrayarrowsindicatepossibleimplementationsofh andh ,respectively.(a)Thereach-
+1 2
+ablesetofan HL Ah inastates. (b)Thereachablesetforthesequence h ,h . Because
+1 1 2
+thisintersectsthegoalset,thesequenceachievesthegoal.
+ANGELIC terminism, wherethe agent itself makes the choices. Weborrow this term to defineangelic
+NONDETERMINISM
+semantics for HLA descriptions. The basic concept required for understanding angelic se-
+ANGELICSEMANTICS
+mantics is the reachable set of an HLA: given a state s, the reachable set for an 

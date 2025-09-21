@@ -1,0 +1,69 @@
+CHASTIC Fortunately, there isa more useful generalization called stochastic dominance, which
+DOMINANCE
+occurs very frequently in real problems. Stochastic dominance is easiest to understand in
+thecontextofasingleattribute. Supposewebelievethatthecostofsitingtheairportat S is
+1
+uniformlydistributedbetween 2.8billionand 4.8billionandthatthecostat S isuniformly
+2
+distributedbetween 3billionand 5.2billion. Figure16.5(a)showsthesedistributions, with
+cost plotted asanegative value. Then, given only the information that utility decreases with
+8 Insomecases,itmaybenecessarytosubdividetherangeofvaluessothatutilityvariesmonotonicallywithin
+eachrange.Forexample,ifthe Room Temperatureattributehasautilitypeakat70 F,wewouldsplititintotwo
+attributesmeasuringthedifferencefromtheideal,onecolderandonehotter.Utilitywouldthenbemonotonically
+increasingineachattribute.
+Section16.4. Multiattribute Utility Functions 623
+X X
+2 2
+This region
+dominates A
+B
+C B
+C
+A A
+D
+X X
+1 1
+(a) (b)
+Figure16.4 Strictdominance.(a)Deterministic:Option Aisstrictlydominatedby Bbut
+notby Cor D.(b)Uncertain:Aisstrictlydominatedby Bbutnotby C.
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+-6 -5.5 -5 -4.5 -4 -3.5 -3 -2.5 -2
+ytilibabor P
+1.2
+1
+0.8
+S S 0.6
+2 1
+0.4
+0.2
+0
+-6 -5.5 -5 -4.5 -4 -3.5 -3 -2.5 -2
+Negative cost
+ytilibabor P
+S
+2
+S
+1
+Negative cost
+(a) (b)
+Figure16.5 Stochastic dominance. (a) S stochastically dominates S on cost. (b) Cu-
+1 2
+mulativedistributionsforthenegativecostof S and S .
+1 2
+cost,wecansaythat S stochasticallydominates S (i.e.,S canbediscarded). Itisimportant
+1 2 2
+tonotethatthisdoesnotfollowfromcomparingtheexpectedcosts. Forexample,ifweknew
+thecostof S tobeexactly 3.8billion,thenwewouldbeunabletomakeadecisionwithout
+1
+additional information on theutility of money. (It might seem odd that moreinformation on
+the cost of S could make the agent less able to decide. The paradox is resolved by noting
+1
+thatintheabsenceofexactcostinformation, thedecisioniseasiertomakebutismorelikely
+tobewrong.)
+Theexactrelationship bet

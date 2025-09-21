@@ -1,0 +1,33 @@
+rk),728 validation variationalparameter,554
+unitclause,253,260,355 cross,737,759,767 Varzi,A.,470,1068
+United States,13,629,640,753,755, validation,cross,708 Vaucanson,J.,1011
+922,1034,1036 validationset,709 Vauquois,B.,909,1091
+unitpreference,355 validity,249,274 Vazirani,U.,154,763,1064,1078
+unitpreferencestrategy,355 value,58 Vazirani,V.,688,1084
+unitpropagation,261 VALUE-ITERATION,653 VCdimension,759
+unitresolution,252,355 valuedetermination,691 VCG,683
+unitsfunction,444 valuefunction,614 Vecchi,M.P.,155,229,1078
+universalgrammar,921 additive,625 vector,1055
+Universal Instantiation,323 valueiteration,652,652 656,684 vectorfieldhistograms,1013
+universalplan,434 point-based,686 vectorspacemodel,884
+unmannedairvehicle(UAV),971 valuenode,seeutilitynode vehicleinterfacelayer,1006
+unmannedgroundvehicle(UGV),971 valueofcomputation,1048 Veloso,M.,799,1091
+UNPOP,394 valueofinformation,628 633,636, Vempala,S.,883,1084
+unrolling,544,595 644,659,839,1025,1048 Venkataraman,S.,686,1074
+unsatisfiability,274 valueofperfectinformation,630 Venugopal,A.,922,1093
+unsupervisedlearning,694,817 820, valuesymmetry,226 Vere,S.A.,431,1091
+1025 VAMPIRE,359,360 verification,356
+UOSAT-II,432 van Beek,P.,228 230,395,470,1065, hardware,312
+update,142 1078,1087,1091 Verma,T.,553,826,1073,1085
+upperontology,467 van Bentham,J.,314,1091 Verma,V.,605,1091
+URL,463 Vandenberghe,L.,155,1066 Verri,A.,968,1090
+Urmson,C.,1014,1091 van Harmelen,F.,473,799,1091 VERSION-SPACE-LEARNING,773
+urn-and-ball,803 van Heijenoort,J.,360,1091 VERSION-SPACE-UPDATE,773
+URP,638 van Hoeve,W.-J.,212,228,1091 versionspace,773,774,798
+Uskov,A.V.,192,1064 vanishingpoint,931 versionspacecollapse,776
+Utgoff,P.E.,776,799,1082 van Lambalgen,M.,470,1091 Vetterling,W.T.,155,1086
+utilitarianism,7 van Maaren,H.,278,1066 Vickrey,W.,681
+utility,9,53,162,482 van Nunen,J.A.E.E.,685,1091 Vickrey-Clarke-Groves,683
+axiomsof,613 van Run,P.,230,1065 Vienna,1028
+estimation,833 vander Gaag,L.,505,1081 views,multiple,948
+expected,53,61,483,610,

@@ -1,0 +1,14 @@
+sudoku. In AAAI-07,pp.1976 Tryingtoestmateamonetaryvalueforthe QALY. D.(Ed.),Expert Systemsinthe Microelectronic Age. 1977.
+Tech.rep.WP Econ08.09,Univ.Pablo Olavide. Edinburgh University Press. Regin, J. (1994). A filtering algorithm for con-
+Pradhan, M., Provan, G.M., Middleton, B., and Quinlan,J.R.(1986). Inductionofdecisiontrees. straintsofdifferencein CS Ps.In AAAI-94,pp.362 Henrion, M. (1994). Knowledge engineering for Machine Learning,1,81 106. 367.
+largebeliefnetworks.In UAI-94,pp.484 490.
+Reichenbach,H.(1949). The Theoryof Probabil-
+Prawitz,D.(1960). Animprovedproofprocedure. Quinlan,J.R.(1990). Learninglogicaldefinitions ity: An Inquiryintothe Logicaland Mathematical
+Theoria,26,102 139. fromrelations.Machine Learning,5(3),239 266. Foundationsofthe Calculusof Probability(second
+Press,W.H.,Teukolsky,S.A.,Vetterling,W.T.,and Quinlan,J.R.(1993).C4.5:Programsformachine edition).Universityof California Press.
+Flannery,B.P.(2007). Numerical Recipes:The Art learning.Morgan Kaufmann. Reid,D.B.(1979). Analgorithmfortrackingmul-
+of Scientific Computing(thirdedition). Cambridge Quinlan, J.R.and Cameron-Jones,R.M.(1993). tipletargets.IEEE Trans.Automatic Control,24(6),
+University Press. FOIL:Amidtermreport.In ECML-93,pp.3 20. 843 854.
+C I P n r h t e e in s ll t e i o g s n e e , n R c J o e . o . a m n O d : x N f B o e i r w s d h U o E p s n , s i a v M e y r s . s o ( it 2 n y 0 S P 0 e 2 r a e ) s r . s le . V a ie n w d s A i r n t t i o fic t i h a e l Q J L . a u ( n 1 i g r 9 k u 8 a , 5 g R ). e . . A ,G L C o r o e n m e g n m p b r a a e n u h . m en , s S iv ., e L G e r e a c m h, m G a . r , o a f n t d he Sv E a n r g tv li i s k h , R l I e E m e E if E a , . n J d . g (1 e 9 n 7 e 9 ra ) l . iza C ti o o m ns p . le I x n it F y O o C f S t - h 7 e 9, m p o p v . e 4 r 2 s 1 p 4 ro 2 b 7 - .
+Prieditis,A.E.(1993).Machinediscoveryofeffec- Reiter,R.(1980).Alogicfordefaultreasoning.AIJ,
+tiveadmissibleheuristics.Machine Learning,12(1 Rabani,Y.,Rabinovich,Y.

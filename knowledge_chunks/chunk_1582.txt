@@ -1,0 +1,30 @@
+n.Eachcurvesubtends45degrees.
+3.14 Whichofthefollowingaretrueandwhicharefalse? Explainyouranswers. a. Depth-firstsearchalwaysexpandsatleastasmanynodesas A searchwithanadmissi-
+bleheuristic.
+b. h(n) 0isanadmissibleheuristic forthe8-puzzle. c. A isofnouseinrobotics becausepercepts, states, andactionsarecontinuous.
+d. Breadth-firstsearchiscompleteevenifzerostepcostsare allowed.
+e. Assumethatarookcanmoveonachessboard anynumberofsquaresinastraight line,
+vertically orhorizontally, but cannot jump overother pieces. Manhattan distance is an
+admissible heuristic for the problem of moving the rook from square A to square B in
+thesmallestnumberofmoves.
+3.15 Consider a state space where the start state is number 1 and each state k has two
+successors: numbers 2k and2k 1.
+a. Drawtheportionofthestatespaceforstates1to15.
+b. Suppose the goal state is 11. List the order in which nodes will be visited forbreadth-
+firstsearch,depth-limited searchwithlimit3,anditerativedeepening search.
+c. How well would bidirectional search work on this problem? What is the branching
+factorineachdirection ofthebidirectional search?
+d. Doestheanswerto(c)suggest areformulation oftheproblem thatwouldallow youto
+solvetheproblemofgettingfromstate1toagivengoalstate withalmostnosearch?
+e. Calltheactiongoingfrom k to2k Left,andtheactiongoingto2k 1Right. Canyou
+findanalgorithm thatoutputsthesolution tothisproblem withoutanysearchatall?
+3.16 A basic wooden railway set contains the pieces shown in Figure 3.32. The task is to
+connect these piecesintoarailwaythathasnooverlapping tracksandnoloose endswherea
+traincouldrunoffontothefloor.
+a. Supposethatthepiecesfittogetherexactlywithnoslack. Giveapreciseformulationof
+thetaskasasearchproblem.
+b. Identifyasuitable uninformed searchalgorithm forthistaskandexplainyourchoice.
+c. Explainwhyremovinganyoneofthe fork piecesmakestheproblem unsolvable.
+Exercises 117
+d. Give an upper bound on the total size of the state space defined by your formulation.
+(Hint: think about the ma

@@ -1,0 +1,27 @@
+ver breadth-first search,
+so why do we include it? The reason is the space complexity. For a graph search, there is
+no advantage, but a depth-first tree search needs to store only a single path from the root
+to a leaf node, along with the remaining unexpanded sibling nodes for each node on the
+path. Once a node has been expanded, it can be removed from memory as soon as all its
+descendants have been fully explored. (See Figure 3.16.) For a state space with branching
+factor b and maximum depth m, depth-first search requires storage of only O(bm) nodes.
+Usingthesameassumptions asfor Figure3.13andassumingthatnodesatthesamedepthas
+thegoalnodehavenosuccessors, wefindthatdepth-firstsearchwouldrequire156kilobytes
+instead of 10 exabytes at depth d 16, a factor of 7 trillion times less space. This has
+led to the adoption of depth-first tree search as the basic workhorse of many areas of AI,
+includingconstraintsatisfaction(Chapter6),propositionalsatisfiability(Chapter7),andlogic
+programming (Chapter 9). Forthe remainder ofthis section, wefocus primarily on thetree-
+searchversionofdepth-first search.
+BACKTRACKING Avariantofdepth-firstsearchcalled backtrackingsearchusesstilllessmemory. (See
+SEARCH
+Chapter6formoredetails.) Inbacktracking, onlyonesuccessor isgenerated atatimerather
+than all successors; each partially expanded node remembers which successor to generate
+next. In this way, only O(m) memory is needed rather than O(bm). Backtracking search
+facilitates yet another memory-saving (and time-saving) trick: the idea of generating a suc-
+cessor by modifying the current state description directly rather than copying it first. This
+reduces thememoryrequirements tojustonestatedescription and O(m)actions. Forthisto
+work,wemustbeabletoundoeachmodification whenwegobacktogenerate thenextsuc-
+cessor. Forproblemswithlargestatedescriptions, suchas roboticassembly,thesetechniques
+arecriticaltosuccess.
+3.4.4 Depth-limited search
+The embarrassing failure of depth-first search in infinite

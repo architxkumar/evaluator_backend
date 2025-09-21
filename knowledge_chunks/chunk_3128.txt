@@ -1,0 +1,26 @@
+rence. pp.173 180.
+This page intentionally left blank
+Index
+Pagenumbers in boldrefertodefinitions oftermsand algorithms; page numbers in italics refertoitemsin
+thebibliography.
+Symbols Ackley,D.H.,155,1064 active,839
+acousticmodel,913 architectureof,26,1047 (and),244 indisambiguation,906 autonomous,236 2(chisquared),706 ACT,336 components,1044 1047 (conslistcell),305 ACT ,799 decision-theoretic,483,610,664 666
+(cid:5)(derives),242 actingrationally,4 goal-based,52 53,59,60
+(cid:6)(determination),784 action,34,67,108,367 greedy,839 (entailment),240 high-level,406 hybrid,268
+(cid:8)-ball,714 joint,427 intelligent,30,1036,1044 (thereexists),297 monitoring,423,424 knowledge-based,13,234 236,285, (forall),295 primitive,406 1044 (given),485 rational,7,30 learning,54 57,61 (ifandonlyif),244 action-utilityfunction,627,831 logical,265 274,314 (implies),244 actionexclusionaxiom,273,428 model-based,50,50 52 (indifferent),612 actionmonitoring,423,424 onlineplanning,431 (lambda)-expression,294 actionschema,367 passive,832 (not),244 activationfunction,728 passive ADP,858 (or),244 activelearning,831 passivelearning,858
+(cid:6)(preferred),612 activesensing,928 problem-solving,64,64 69
+(cid:12) (uncertainrule),548 activevision,1025 rational,4,4 5,34,36 38,59,60,
+actor,426 636,1044
+A actuator,34,41 reflex,48,48 50,59,647,831
+hydraulic,977 situated,1025
+A(s)(actionsinastate),645 pneumatic,977 softwareagent,41
+A search,93 99 AD-tree,826 taxi-driving,56,1047
+AAAI(American Associationfor AI), ADABOOST,751 utility-based,53 54,59,664
+31 adalines,20 vacuum,37,62 63
+Aarup,M.,432,1064 Adams,J.,450 wumpus,238,305
+Abbeel,P.,556,857,1068,1090 Adaprogramminglanguage,14 agentfunction,35,647
+Abbott,L.F.,763,854,1070 adaptivecontroltheory,833,854 agentprogram,35,46,59
+AB Ccomputer,14 adaptivedynamicprogramming,834, Agerbeck,C.,228,1064
+Abdennadher,S.,230,1073 834 835,853,858 Aggarwal,G.,682,1064
+Abelson,R.P.,23,921,1088 adaptiveperception,985 aggregation,403
+Abney,S.,921,1064 add-onesmoothing,863 Agi

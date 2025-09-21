@@ -1,0 +1,24 @@
+space.
+Section4.6. Summary 153 butoftendoesmuchbetter. The LRTA agentisjustoneofalargefamilyofonlineagentsthat
+one can define by specifying the action selection rule and the update rule in different ways.
+Wediscussthisfamily,developed originally forstochastic environments, in Chapter21.
+4.5.4 Learning inonlinesearch
+Theinitialignoranceofonlinesearchagentsprovidesseveralopportunitiesforlearning. First,
+theagents learn a map ofthe environment more precisely, theoutcome ofeach action in
+each state simply by recording each of their experiences. (Notice that the assumption of
+deterministic environments means that one experience is enough for each action.) Second,
+thelocalsearchagentsacquiremoreaccurateestimatesofthecostofeachstatebyusinglocal updating rules, as in LRTA. In Chapter 21, weshow that these updates eventually converge
+to exact values for every state, provided that the agent explores the state space in the right
+way. Onceexact values are known, optimal decisions can be taken simply by moving to the
+lowest-cost successor that is,purehillclimbingisthenanoptimalstrategy.
+If you followed our suggestion to trace the behavior of ONLINE-DFS-AGENT in the
+environment of Figure 4.19, you will have noticed that the agent is not very bright. For
+example, after it has seen that the Up action goes from (1,1) to (1,2), the agent still has no
+idea that the Down action goes back to (1,1) or that the Up action also goes from (2,1) to
+(2,2), from (2,2) to (2,3), and so on. In general, we would like the agent to learn that Up
+increases they-coordinate unless thereisawallintheway,that Down reduces it,andsoon.
+For this to happen, we need two things. First, we need a formal and explicitly manipulable
+representation forthese kinds ofgeneral rules; sofar, wehavehidden the information inside
+theblack boxcalled the RESULT function. Part III isdevoted tothis issue. Second, weneed
+algorithms that can construct suitable general rules from the specific observations made by
+theagent. Thesear

@@ -1,0 +1,27 @@
+hthattheconstraint graphbecomesatree
+afterremovalof S. S iscalledacyclecutset.
+CYCLECUTSET
+2. Foreachpossible assignment tothevariables in S thatsatisfiesallconstraints on S,
+(a) remove from thedomains oftheremaining variables anyvalues that are inconsis-
+tentwiththeassignment for S,and
+(b) Iftheremaining CS Phasasolution, returnittogetherwiththeassignment for S.
+Ifthecyclecutsethassizec,thenthetotalruntimeis O(dc (n c)d2): wehavetotryeach
+of the dc combinations of values for the variables in S, and for each combination we must
+solveatreeproblemofsize n c. Ifthegraphis nearlyatree, then cwillbesmallandthe
+savingsoverstraightbacktracking willbehuge. Intheworstcase,however,ccanbeaslarge
+as(n 2). Finding the smallest cycle cutset is NP-hard, but several efficient approximation
+CUTSET algorithms are known. The overall algorithmic approach is called cutset conditioning; it
+CONDITIONING
+comesupagainin Chapter14,whereitisusedforreasoning aboutprobabilities.
+TREE The second approach is based on constructing a tree decomposition of the constraint
+DECOMPOSITION
+graphintoasetofconnectedsubproblems. Eachsubproblemissolvedindependently, andthe
+resulting solutions are then combined. Likemostdivide-and-conquer algorithms, this works
+well if no subproblem is too large. Figure 6.13 shows a tree decomposition of the map-
+coloring problem into five subproblems. A tree decomposition must satisfy the following
+threerequirements: Everyvariableintheoriginalproblem appearsinatleastoneofthesubproblems. Iftwovariablesareconnectedbyaconstraint intheoriginalproblem,theymustappear
+together(alongwiththeconstraint) inatleastoneofthesubproblems. Ifavariableappearsintwosubproblemsinthetree,itmustappearineverysubproblem
+alongthepathconnecting thosesubproblems.
+The first two conditions ensure that all the variables and constraints are represented in the
+decomposition. Thethird condition seemsrathertechnical, butsimply reflectstheconstraint
+that any given variable must have the same value in every sub

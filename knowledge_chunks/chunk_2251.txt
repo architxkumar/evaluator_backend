@@ -1,0 +1,32 @@
+lemcanbereducedtoexactinferenceina Bayesiannetwork
+constructed to represent the particular problem and hence that exact inference is NP-
+564 Chapter 14. Probabilistic Reasoning
+hard. (Hint: Consideranetworkwithonevariableforeachproposition symbol,onefor
+eachclause,andonefortheconjunction ofclauses.)
+b. Theproblem ofcounting thenumberofsatisfying assignments fora3-SA Tproblem is P-complete. Showthatexactinference isatleastashardasthis.
+14.17 Consider the problem of generating a random sample from a specified distribution
+on a single variable. Assume you have a random number generator that returns a random
+numberuniformly distributed between0and1.
+a. Let X be a discrete variable with P(X x ) p for i 1,...,k . The cumulative
+i i
+CUMULATIVE distributionof X givestheprobability that X x ,...,x foreachpossiblej. (See
+DISTRIBUTION 1 j
+also Appendix A.) Explain how to calculate the cumulative distribution in O(k) time
+and how to generate a single sample of X from it. Can the latter be done in less than
+O(k)time?
+b. Nowsuppose wewanttogenerate N samplesof X,where N k. Explainhowtodo
+thiswithanexpectedruntimepersamplethatis constant (i.e.,independent ofk).
+c. Now consider a continuous-valued variable with a parameterized distribution (e.g.,
+Gaussian). Howcansamplesbegenerated fromsuchadistribution?
+d. Suppose youwanttoquery acontinuous-valued variable and youareusing asampling
+algorithmsuchas LIKELIHOODWEIGHTING todotheinference. Howwouldyouhave
+tomodifythequery-answering process?
+14.18 Considerthequery P(Rain Sprinkler true,Wet Grass true)in Figure14.12(a)
+(page529)andhow Gibbssamplingcananswerit.
+a. Howmanystatesdoesthe Markovchainhave?
+b. Calculatethetransition matrix Qcontaining q(y y (cid:2) )forally,y (cid:2) .
+c. Whatdoes Q2,thesquareofthetransition matrix,represent?
+d. Whatabout Qn asn ?
+e. Explain how to do probabilistic inference in Bayesian networks, assuming that Qn is
+available. Isthisapractical waytodoinference?
+14.19 Thisexerciseexploresthestationary distributi

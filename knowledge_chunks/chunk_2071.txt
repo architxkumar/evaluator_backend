@@ -1,0 +1,29 @@
+ize,shape,
+or weight. We can define more specialized categories of butter such as Unsalted Butter,
+which is also a kind of stuff. Note that the category Pound Of Butter, which includes as
+members all butter-objects weighing one pound, is not a kind of stuff. If we cut a pound of
+butterinhalf,wedonot,alas,gettwopoundsofbutter.
+Whatisactuallygoingonisthis: somepropertiesare intrinsic: theybelongtothevery
+INTRINSIC
+substance of the object, rather than to the object as a whole. When you cut an instance of
+stuff in half, the twopieces retain the intrinsic properties things like density, boiling point,
+flavor, color, ownership, and so on. On the other hand, their extrinsic properties weight,
+EXTRINSIC
+length, shape, and so on are not retained under subdivision. A category of objects that
+includes in its definition only intrinsic properties is then a substance, or mass noun; a class
+that includes any extrinsic properties in its definition is acount noun. Thecategory Stuff is
+the mostgeneral substance category, specifying nointrinsic properties. Thecategory Thing
+isthemostgeneraldiscreteobjectcategory, specifying no extrinsicproperties.
+446 Chapter 12. Knowledge Representation
+12.3 EVENTS
+In Section 10.4.2, we showed how situation calculus represents actions and their effects.
+Situationcalculus islimitedinitsapplicability: itwasdesigned todescribe aworldinwhich
+actions are discrete, instantaneous, and happen one at a time. Consider a continuous action,
+suchasfillingabathtub. Situationcalculuscansaythatthetubisemptybeforetheactionand
+full when the action is done, but it can t talk about what happens during the action. It also
+can t describe two actions happening at the same time such as brushing one s teeth while
+waitingforthetubtofill. Tohandlesuchcasesweintroduce analternativeformalismknown
+aseventcalculus,whichisbasedonpointsoftimeratherthanonsituations.3
+EVENTCALCULUS
+Event calculus reifies fluents and events. The fluent At(Shankar,Berkeley) is an ob-
+ject that refers to

@@ -1,0 +1,29 @@
+world. Instead, itcansay, Ithoughtaboutitforanhourandcouldn tcomeupwith
+apossible worldinwhichthesquare isn tsafe. Thismaybeagoodempirical indicator that
+thesquareissafe,butit scertainly notaproof.
+7.6.3 The landscapeofrandom SA Tproblems
+Some SAT problems are harder than others. Easy problems can be solved by any old algo-
+rithm, but because weknow that SA Tis NP-complete, atleast someproblem instances must
+requireexponential runtime. In Chapter6,wesawsomesurprisingdiscoveries aboutcertain
+kindsofproblems. Forexample,the n-queensproblem thought tobequitetrickyforback-
+tracking search algorithms turned outtobetrivially easy forlocal search methods, such as
+min-conflicts. This is because solutions are very densely distributed in the space of assign-
+ments, and anyinitial assignment isguaranteed tohaveasolution nearby. Thus, n-queens is
+easybecause itisunderconstrained.
+UNDERCONSTRAINED
+When we look at satisfiability problems in conjunctive normal form, an undercon-
+strained problem is one with relatively few clauses constraining the variables. For example,
+hereisarandomlygenerated 3-CN Fsentence withfivesymbols andfiveclauses:
+( D B C) (B A C) ( C B E) (E D B) (B E C).
+Sixteen of the 32 possible assignments are models of this sentence, so, on average, it would
+take just two random guesses to find a model. This is an easy satisfiability problem, as are
+264 Chapter 7. Logical Agents
+most such underconstrained problems. On the other hand, an overconstrained problem has
+manyclauses relativetothenumberofvariablesandislikelytohavenosolutions.
+To go beyond these basic intuitions, we must define exactly how random sentences
+are generated. The notation CNF (m,n) denotes a k-CNF sentence with m clauses and n
+k
+symbols, where the clauses are chosen uniformly, independently, and without replacement
+fromamongallclauseswithkdifferentliterals,whicharepositiveornegativeatrandom. (A
+symbolmaynotappeartwiceinaclause,normayaclauseappeartwiceinasentence.)
+Given a source of random senten

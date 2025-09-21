@@ -1,0 +1,41 @@
+search examines all the nodes at
+the goal s depth to see if one has a lower cost; thus uniform-cost search does strictly more
+workbyexpanding nodesatdepthdunnecessarily.
+3.4.3 Depth-first search
+DEPTH-FIRST Depth-firstsearchalwaysexpandsthedeepestnodeinthecurrentfrontierofthesearchtree.
+SEARCH
+The progress of the search is illustrated in Figure 3.16. The search proceeds immediately
+to the deepest level of the search tree, where the nodes have no successors. As those nodes
+are expanded, they are dropped from the frontier, so then the search backs up to the next
+deepestnodethatstillhasunexplored successors.
+The depth-first search algorithm is an instance of the graph-search algorithm in Fig-
+ure3.7;whereasbreadth-first-searchusesa FIF Oqueue,depth-firstsearchusesa LIF Oqueue.
+A LIFO queue means that the most recently generated node is chosen for expansion. This
+mustbethedeepestunexpandednodebecauseitisonedeeperthanitsparent which,inturn,
+wasthedeepestunexpanded nodewhenitwasselected.
+As an alternative to the GRAPH-SEARCH-style implementation, it is common to im-
+plement depth-first search witharecursive function that callsitself oneach ofitschildren in
+turn. (Arecursivedepth-first algorithm incorporating adepthlimitisshownin Figure3.17.)
+6 No Op,or nooperation, isthenameofanassemblylanguageinstructionthatdoesnothing.
+7 Here,andthroughoutthebook,the star in C meansanoptimalvaluefor C.
+86 Chapter 3. Solving Problemsby Searching
+A A A
+B C B C B C
+D E F G D E F G D E F G
+H I J K L M N O H I J K L M N O H I J K L M N O
+A A A
+B C B C C
+D E F G D E F G E F G
+H I J K L M N O I J K L M N O J K L M N O
+A A
+C B C C
+E F G E F G F G
+J K L M N O K L M N O L M N O
+A A A
+C C C
+F G F G F G
+L M N O L M N O M N O
+Figure3.16 Depth-firstsearchonabinarytree. Theunexploredregionis showninlight
+gray. Explorednodeswithnodescendantsinthefrontierare removedfrommemory. Nodes
+atdepth3havenosuccessorsand M istheonlygoalnode.
+The properties of depth-first search depend strongly on whether the graph

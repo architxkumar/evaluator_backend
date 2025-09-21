@@ -1,0 +1,25 @@
+ it while we are achieving the other subgoals. A
+planner that uses the bottom-to-top trick can solve any problem in the blocks world without
+backtracking (although itmightnotalwaysfindtheshortest plan).
+Asa more complex example, for the Remote Agent planner that commanded NASA s
+Deep Space One spacecraft, it was determined that the propositions involved in command-
+ing a spacecraft are serializable. This is perhaps not too surprising, because a spacecraft is
+designed by its engineers to be as easy as possible to control (subject to other constraints).
+Taking advantage of the serialized ordering of goals, the Remote Agent planner was able to
+eliminate most of the search. This meant that it was fast enough to control the spacecraft in
+realtime,something previously considered impossible.
+Planners such as GRAPHPLAN, SATPLAN, and FF have moved the field of planning
+forward, by raising the level of performance of planning systems, by clarifying the repre-
+sentational and combinatorial issues involved, and by the development of useful heuristics.
+However,thereisaquestionofhowfarthesetechniqueswillscale. Itseemslikelythatfurther
+progress on larger problems cannot rely only on factored and propositional representations,
+and will require some kind of synthesis of first-order and hierarchical representations with
+theefficientheuristics currently inuse.
+Section10.6. Summary 393
+10.6 SUMMARY
+In this chapter, we defined the problem of planning in deterministic, fully observable, static
+environments. We described the PDDL representation for planning problems and several
+algorithmic approaches forsolving them. Thepointstoremember: Planningsystemsareproblem-solving algorithmsthatoperateonexplicitpropositional
+or relational representations of states and actions. These representations make possi-
+ble the derivation of effective heuristics and the development of powerful and flexible
+algorithmsforsolvingproblems. PDDL,the Planning Domain Definition Language, describes theinitialandgoal

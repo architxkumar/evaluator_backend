@@ -1,0 +1,25 @@
+ed in the previous section. First, we would need an accu-
+rate model of the terrain. The configuration space of a robot with six legs, each of which
+is driven by two independent motors, totals eighteen dimensions (twelve dimensions for the
+configuration of the legs, and six for the location and orientation of the robot relative to its
+environment). Evenifourcomputerswerefastenoughtofindpathsinsuchhigh-dimensional
+spaces, we would have to worry about nasty effects such as the robot sliding down a slope.
+Because of such stochastic effects, a single path through configuration space would almost
+certainly be too brittle, and even a PID controller might not be able to cope with such con-
+tingencies. Inother words, generating motion behavior deliberately issimply too complex a
+problem forpresent-day robotmotionplanning algorithms.
+Unfortunately, the subsumption architecture has its own problems. First, the AFS Ms
+are driven by raw sensor input, an arrangement that works if the sensor data is reliable and
+containsallnecessary informationfordecisionmaking,butfailsifsensordatahastobeinte-
+gratedinnontrivialwaysovertime. Subsumption-stylecontrollershavethereforemostlybeen
+appliedtosimpletasks,suchasfollowingawallormovingtowardsvisiblelightsources. Sec-
+ond,thelackofdeliberationmakesitdifficulttochangethetaskoftherobot. Asubsumption-
+style robot usually does just one task, and it has no notion of how to modify its controls to
+accommodate different goals (just like the dung beetle on page 39). Finally, subsumption-
+stylecontrollers tendtobedifficulttounderstand. Inpractice, theintricateinterplaybetween
+dozens of interacting AFS Ms (and the environment) is beyond what most human program-
+mers can comprehend. For all these reasons, the subsumption architecture is rarely used in
+robotics, despite its great historical importance. However, it has had an influence on other
+architectures, andonindividual components ofsomearchitectures.
+25.7.2 Three-layer architecture
+Hybrid architectu

@@ -1,0 +1,33 @@
+ory names from a variety of stores.
+Trytomakeyourdefinitiongeneral. Testitbylookingattenonlinestores,andatthecategory
+names they give for three different categories. Forexample, for the category of laptops, we
+found the names Notebooks, Laptops, Notebook Computers, Notebook, Laptops
+and Notebooks, and Notebook PCs. Someofthesecanbecoveredbyexplicit Name facts,
+whileotherscouldbecoveredbysentences forhandling plurals, conjunctions, etc.
+12.11 Writeeventcalculus axiomstodescribetheactionsinthewumpusworld.
+12.12 Statetheinterval-algebra relationthatholdsbetweeneverypairofthefollowingreal-
+worldevents:
+LK: Thelifeof President Kennedy.
+IK: Theinfancyof President Kennedy.
+PK: Thepresidency of President Kennedy.
+LJ: Thelifeof President Johnson.
+PJ: Thepresidency of President Johnson.
+LO: Thelifeof President Obama.
+Exercises 477
+12.13 Investigate ways to extend the event calculus to handle simultaneous events. Is it
+possible toavoidacombinatorial explosion ofaxioms?
+12.14 Constructarepresentationforexchangeratesbetweencurrenciesthatallowsfordaily
+fluctuations.
+12.15 Define the predicate Fixed, where Fixed(Location(x)) means that the location of
+objectxisfixedovertime.
+12.16 Describe the event of trading something for something else. Describe buying as a
+kindoftradinginwhichoneoftheobjectstradedisasumofmoney.
+12.17 The two preceding exercises assume a fairly primitive notion of ownership. Forex-
+ample, the buyer starts by owning the dollar bills. This picture begins to break down when,
+for example, one s money is in the bank, because there is no longer any specific collection
+of dollar bills that one owns. The picture is complicated still further by borrowing, leasing,
+renting,andbailment. Investigatethevariouscommonsenseandlegalconceptsofownership,
+andpropose aschemebywhichtheycanberepresented formally.
+12.18 (Adapted from Fagin et al. (1995).) Consider a game played with a deck of just 8
+cards,4acesand4kings. Thethreeplayers,Alice,Bob,and Carlos,aredealttwocardseach.
+Witho

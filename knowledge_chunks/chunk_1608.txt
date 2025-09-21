@@ -1,0 +1,25 @@
+pplied toacleansquaretheactionsometimesdeposits dirtonthecarpet.9
+Toprovideapreciseformulation ofthisproblem,weneedtogeneralize thenotionofatran-
+sitionmodelfrom Chapter3. Insteadofdefiningthetransition modelbya RESULT function
+that returns asingle state, weuse a RESULTS function thatreturns a setofpossible outcome
+states. Forexample, intheerratic vacuum world, the Suck action instate1leads toastatein
+theset 5,7 thedirtintheright-hand squaremayormaynotbevacuumedup.
+Wealsoneed togeneralize thenotion ofasolution totheproblem. Forexample, ifwe
+start in state 1, there is no single sequence of actions that solves the problem. Instead, we
+needacontingency plansuchasthefollowing: Suck,if State 5then Right,Suck else . (4.3)
+Thus, solutions for nondeterministic problems can contain nested if then else statements;
+this means that they are trees rather than sequences. This allows the selection of actions
+based oncontingencies arising during execution. Manyproblems in thereal, physical world
+are contingency problems because exact prediction is impossible. For this reason, many
+peoplekeeptheireyesopenwhilewalkingaroundordriving.
+9 We assume that most readers face similar problems and can sympathize with our agent. We apologize to
+ownersofmodern,efficienthomeapplianceswhocannottakeadvantageofthispedagogicaldevice.
+Section4.3. Searchingwith Nondeterministic Actions 135
+4.3.2 AND OR searchtrees
+The next question is how to find contingent solutions to nondeterministic problems. As in
+Chapter3,webeginbyconstructingsearchtrees,butherethetreeshaveadifferentcharacter.
+In adeterministic environment, the only branching isintroduced by the agent s ownchoices
+ORNODE in each state. We call these nodes OR nodes. In the vacuum world, for example, at an OR
+node the agent chooses Left or Right or Suck. In anondeterministic environment, branching
+is also introduced by the environment s choice of outcome for each action. We call these
+ANDNODE nodes AND nodes. For example, the Suck action in state 

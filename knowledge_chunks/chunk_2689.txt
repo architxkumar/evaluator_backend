@@ -1,0 +1,28 @@
+goal, but pseudorewards might be
+given for making contact with the ball or for kicking it toward the goal. Such rewards can
+speed up learning enormously and are simple to provide, but there is a risk that the agent
+willlearntomaximizethepseudorewards ratherthanthetruerewards;forexample,standing
+next to the ball and vibrating causes many contacts with the ball. Ng et al. (1999) show
+(cid:2)
+that the agent will still learn the optimal policy provided that the pseudoreward F(s,a,s)
+satisfies F(s,a,s (cid:2) ) (s (cid:2) ) (s),where isanarbitrary function ofthe state. canbe
+constructed to reflect any desirable aspects of the state, such as achievement of subgoals or
+distance toagoalstate.
+Thegeneration ofcomplexbehaviorscanalsobefacilitated byhierarchicalreinforce-
+HIERARCHICAL
+mentlearningmethods, whichattempttosolveproblemsatmultiplelevels ofabstraction REINFORCEMENT
+LEARNING
+much like the HT Nplanningmethods of Chapter11. Forexample, scoring agoal can be
+broken down into obtain possession, dribble towards the goal, and shoot; and each of
+these can be broken down further into lower-level motor behaviors. The fundamental result
+in this area is due to Forestier and Varaiya (1978), who proved that lower-level behaviors
+of arbitrary complexity can be treated just like primitive actions (albeit ones that can take
+varying amounts of time) from the point of view of the higher-level behavior that invokes
+them. Current approaches (Parr and Russell, 1998; Dietterich, 2000; Sutton et al., 2000;
+Andre and Russell, 2002) build on this result to develop methods for supplying an agent
+withapartial program thatconstrains theagent s behavior tohaveaparticular hierarchical
+PARTIALPROGRAM
+structure. The partial-programming language for agent programs extends an ordinary pro-
+gramming language by adding primitives for unspecified choices that must be filled in by
+learning. Reinforcement learning is then applied to learn the best behavior consistent with
+the partial program. The combinati

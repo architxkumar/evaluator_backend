@@ -1,0 +1,22 @@
+m using modern logic.
+Ross Quillian (1961), driven by an interest in human memory and language processing, ini-
+tiated workon semantic networks within AI.Aninfluential paperby Marvin Minsky (1975)
+presented a version of semantic networks called frames; a frame was a representation of
+an object or category, with attributes and relations to other objects or categories. The ques-
+tionofsemanticsarosequiteacutely withrespectto Quillian ssemanticnetworks (andthose
+of others who followed his approach), with their ubiquitous and very vague IS-A links Woods s(1975)famousarticle What s Ina Link? drewtheattentionof AIresearcherstothe
+need forprecise semantics in knowledge representation formalisms. Brachman (1979) elab-
+orated on this point and proposed solutions. Patrick Hayes s (1979) The Logic of Frames cut even deeper, claiming that Most of frames is just a new syntax for parts of first-order
+logic. Drew Mc Dermott s (1978b) Tarskian Semantics, or, No Notation without Denota-
+tion! argued that themodel-theoretic approach tosemantics used infirst-order logicshould
+be applied to all knowledge representation formalisms. This remains a controversial idea;
+notably, Mc Dermott himself has reversed his position in A Critique of Pure Reason (Mc-
+Dermott, 1987). Selman and Levesque (1993) discuss the complexity of inheritance with
+exceptions, showingthatinmostformulations itis NP-complete.
+The development of description logics is the most recent stage in a long line of re-
+search aimed at finding useful subsets of first-order logic for which inference is computa-
+tionally tractable. Hector Levesque and Ron Brachman (1987) showed that certain logical
+constructs notably, certain uses of disjunction and negation were primarily responsible
+for the intractability of logical inference. Building on the KL-ONE system (Schmolze and
+Lipkis, 1983), several researchers developed systems that incorporate theoretical complex-
+ity analysis, most notably KRYPTON (Brachman et al., 1983) and Classi

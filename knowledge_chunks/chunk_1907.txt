@@ -1,0 +1,28 @@
+somewhat different
+from standard first-order logic. Prologuses uppercase letters forvariables and lowercase for
+constants the opposite ofourconvention forlogic. Commasseparate conjuncts inaclause,
+and theclause iswritten backwards from whatweareused to; instead of A B C in
+Prologwehave C :- A, B.Hereisatypicalexample:
+criminal(X) :- american(X), weapon(Y), sells(X,Y,Z), hostile(Z).
+The notation E L denotes a list whose first element is E and whose rest is L. Here is a
+Prolog program for append(X,Y,Z),which succeeds if list Z is the result of appending
+lists Xand Y:
+append( ,Y,Y).
+append( A X ,Y, A Z ) :- append(X,Y,Z).
+In English, we can read these clauses as (1) appending an empty list with a list Y produces
+the same list Y and (2) A Z is the result of appending A X onto Y, provided that Z is
+the result ofappending Xonto Y.Inmost high-level languages wecan writeasimilar recur-
+sive function that describes how to append two lists. The Prolog definition is actually much
+more powerful, however, because it describes a relation that holds among three arguments,
+rather than a function computed from two arguments. For example, we can ask the query
+append(X,Y, 1,2 ): whattwo lists can be appended to give 1,2 ? Weget back the
+solutions
+X Y 1,2 ;
+X 1 Y 2 ;
+X 1,2 Y The execution of Prolog programs is done through depth-first backward chaining, where
+clauses are tried inthe order inwhich theyare written in the knowledge base. Someaspects
+of Prologfalloutsidestandard logicalinference: Prolog uses the database semantics of Section 8.2.8 rather than first-order semantics,
+andthisisapparent initstreatmentofequality andnegation(see Section9.4.5). Thereisasetofbuilt-in functions forarithmetic. Literalsusingthesefunction symbols
+are proved by executing code rather than doing further inference. For example, the
+340 Chapter 9. Inference in First-Order Logic
+goal Xis4 3 succeedswith Xboundto7. Ontheotherhand,thegoal 5is X Y fails,becausethebuilt-in functions donotdoarbitrary equationsol

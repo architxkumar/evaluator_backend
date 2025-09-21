@@ -1,0 +1,36 @@
+ks: interactions
+among the learning problems when the network has multiple outputs. In such cases, we
+shouldthinkofthenetworkasimplementingavectorfunctionh ratherthanascalarfunction
+w
+h ; for example, the network in Figure 18.20(b) returns a vector a ,a . Similarly, the
+w 5 6
+target output willbe avector y. Whereas aperceptron network decomposes into m separate
+learningproblemsforanm-outputproblem,thisdecompositionfailsinamultilayernetwork.
+Forexample, both a and a in Figure 18.20(b) depend on all of the input-layer weights, so
+5 6
+updatestothoseweightswilldependonerrorsinbotha anda . Fortunately,thisdependency
+5 6
+is very simple in the case of any loss function that is additive across the components of the
+errorvector y h (x). Forthe L loss,wehave,foranyweightw,
+w 2
+(cid:12) (cid:12) Loss(w) y h (x) 2 (y a )2 (y a )2 (18.10)
+w k k k k w w w w
+k k
+where the index k ranges over nodes in the output layer. Each term in the final summation
+is just the gradient of the loss for the kth output, computed as if the other outputs did not
+exist. Hence, we can decompose an m-output learning problem into m learning problems,
+providedweremembertoaddupthegradientcontributionsfromeachofthemwhenupdating
+theweights.
+The major complication comes from the addition of hidden layers to the network.
+Whereas the error y h at the output layer is clear, the error at the hidden layers seems
+w
+mysterious because the training data do not say what value the hidden nodes should have.
+Fortunately, it turns out that we can back-propagate the error from the output layer to the
+BACK-PROPAGATION
+hiddenlayers. Theback-propagationprocessemergesdirectlyfromaderivationoftheoverall
+errorgradient. First,wewilldescribetheprocesswithanintuitivejustification; then,wewill
+showthederivation.
+At the output layer, the weight-update rule is identical to Equation (18.8). We have
+multiple output units, so let Err be the kth component of the error vector y h . Wewill
+k w
+also find it convenient to define a modified er

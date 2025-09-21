@@ -1,0 +1,29 @@
+
+autonomous it should learn what it can to compensate forpartial or incorrect prior knowl-
+edge. Forexample,avacuum-cleaningagentthatlearnstoforeseewhereandwhenadditional
+dirt will appear will do better than one that does not. As a practical matter, one seldom re-
+quires complete autonomy from the start: when the agent has had little or no experience, it
+would have to act randomly unless the designer gave some assistance. So, just as evolution
+providesanimalswithenoughbuilt-inreflexestosurvivelongenoughtolearnforthemselves,
+it would be reasonable to provide an artificial intelligent agent with some initial knowledge
+as well as an ability to learn. After sufficient experience of its environment, the behavior
+of a rational agent can become effectively independent of its prior knowledge. Hence, the
+incorporation of learning allows one to design a single rational agent that will succeed in a
+vastvarietyofenvironments.
+40 Chapter 2. Intelligent Agents
+2.3 THE NATURE OF ENVIRONMENTS
+Now that we have a definition of rationality, we are almost ready to think about building
+rational agents. First, however, we must think about task environments, which are essen-
+TASKENVIRONMENT
+tiallythe problems towhichrational agentsarethe solutions. Webeginbyshowinghow
+to specify a task environment, illustrating the process with a number of examples. We then
+showthattask environments comeinavarietyofflavors. Theflavorofthetaskenvironment
+directlyaffectstheappropriate designfortheagentprogram.
+2.3.1 Specifying thetaskenvironment
+In our discussion of the rationality of the simple vacuum-cleaner agent, we had to specify
+theperformance measure, theenvironment, and theagent s actuators and sensors. Wegroup
+alltheseundertheheading ofthetaskenvironment. Fortheacronymically minded, wecall
+thisthe PEAS(Performance, Environment, Actuators, Sensors)description. Indesigning an
+PEAS
+agent,thefirststepmustalwaysbetospecify thetaskenvironment asfullyaspossible.
+Thevacuum worldwasasimpleexample;letusconsi

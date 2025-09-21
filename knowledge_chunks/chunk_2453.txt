@@ -1,0 +1,30 @@
+a
+conditional probability distribution, P(Y x).
+When the output y is one of a finite set of values (such as sunny, cloudy or rainy),
+the learning problem is called classification, and is called Boolean or binary classification
+CLASSIFICATION
+if there are only two values. When y is a number (such as tomorrow s temperature), the
+learning problem is called regression. (Technically, solving a regression problem is finding
+REGRESSION
+a conditional expectation or average value of y, because the probability that we have found
+exactlytherightreal-valued numberfor y is0.)
+Figure18.1showsafamiliarexample: fittingafunctionofasinglevariabletosomedata
+points. Theexamplesarepoints inthe (x,y)plane, wherey f(x). Wedon t knowwhatf
+is, butwewillapproximate itwithafunction hselected fromahypothesisspace, H,which
+HYPOTHESISSPACE
+forthisexamplewewilltaketobethesetofpolynomials,suchasx5 3x2 2. Figure18.1(a)
+shows some data with an exact fit by a straight line (the polynomial 0.4x 3). The line is
+calledaconsistenthypothesisbecauseitagreeswithallthedata. Figure18.1(b)showsahigh-
+CONSISTENT
+degree polynomial that is also consistent with the same data. This illustrates a fundamental
+problemininductivelearning: howdowechoosefromamongmultipleconsistenthypotheses?
+One answer is to prefer the simplest hypothesis consistent with the data. This principle is
+called Ockham srazor,afterthe14th-century Englishphilosopher Williamof Ockham,who
+OCKHAM SRAZOR
+usedittoarguesharplyagainstallsortsofcomplications. Definingsimplicityisnoteasy,but
+itseemsclearthatadegree-1polynomial issimplerthanadegree-7polynomial, andthus(a)
+shouldbepreferred to(b). Wewillmakethisintuitionmoreprecisein Section18.4.3.
+Figure 18.1(c) shows a second data set. There is no consistent straight line for this
+data set; in fact, it requires a degree-6 polynomial for an exact fit. There are just 7 data
+points, so a polynomial with 7 parameters does not seem to be finding any pattern in the
+data and we do not expect it to generalize we

@@ -1,0 +1,42 @@
+g(John)
+Greedy(John)
+seems completely obvious to a human being. We now show how to make it completely
+obvioustoacomputer.
+9.2.1 A first-order inference rule
+Theinferencethat Johnisevil thatis,that x John solvesthequery Evil(x) workslike
+this: to use the rule that greedy kings are evil, find some x such that x is a king and x is
+greedy, and then infer that this x is evil. More generally, if there is some substitution that
+makes each of the conjuncts of the premise of the implication identical to sentences already
+intheknowledgebase,thenwecanasserttheconclusion oftheimplication, afterapplying .
+Inthiscase,thesubstitution x John achievesthataim.
+We can actually make the inference step do even more work. Suppose that instead of
+knowing Greedy(John),weknowthateveryoneisgreedy: y Greedy(y). (9.2)
+Then we would still like to be able to conclude that Evil(John), because we know that
+John is a king (given) and John is greedy (because everyone is greedy). What we need for
+this to work is to find a substitution both for the variables in the implication sentence and
+for the variables in the sentences that are in the knowledge base. In this case, applying the
+substitution x John,y John totheimplicationpremises King(x)and Greedy(x)andthe
+knowledge-base sentences King(John) and Greedy(y) will make them identical. Thus, we
+caninfertheconclusion oftheimplication.
+This inference process can be captured as a single inference rule that we call Gener-
+GENERALIZED alized Modus Ponens:2 For atomic sentences p , p (cid:2) , and q, where there is a substitution MODUSPONENS i i
+326 Chapter 9. Inference in First-Order Logic
+(cid:2)
+suchthat SUBST( ,p
+i
+) SUBST( ,p
+i
+),foralli,
+p (cid:2) , p (cid:2) , ..., p (cid:2) , (p p ... p q)
+1 2 n 1 2 n
+.
+SUBST( ,q)
+(cid:2)
+Therearen 1premisestothisrule: thenatomicsentencesp andtheoneimplication. The
+i
+conclusion istheresultofapplying thesubstitution totheconsequent q. Forourexample:
+(cid:2)
+p is King(John) p is King(x)
+1 1
+(cid:2)
+p is Greedy(y) p is G

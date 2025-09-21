@@ -1,0 +1,27 @@
+ry.
+Chapter 13 introduced the basic elements of probability theory and noted the importance of
+independence and conditional independence relationships in simplifying probabilistic repre-
+sentations ofthe world. Thischapter introduces asystematic waytorepresent such relation-
+ships explicitly in the form of Bayesian networks. We define the syntax and semantics of
+these networks and show how they can be used to capture uncertain knowledge in a natu-
+ral and efficient way. We then show how probabilistic inference, although computationally
+intractable in the worst case, can be done efficiently in many practical situations. We also
+describe a variety of approximate inference algorithms that are often applicable when exact
+inferenceisinfeasible. Weexplorewaysinwhichprobabilitytheorycanbeappliedtoworlds
+withobjectsandrelations thatis,tofirst-order,asopposedtopropositional,representations.
+Finally,wesurveyalternative approaches touncertain reasoning.
+14.1 REPRESENTING KNOWLEDGE IN AN UNCERTAIN DOMAIN
+In Chapter13,wesawthatthefulljointprobabilitydistributioncanansweranyquestionabout
+thedomain,butcanbecomeintractablylargeasthenumberofvariablesgrows. Furthermore,
+specifying probabilities forpossible worldsonebyoneisunnatural andtedious.
+Wealsosawthatindependenceandconditionalindependencerelationshipsamongvari-
+ablescangreatlyreducethenumberofprobabilitiesthatneedtobespecifiedinordertodefine
+thefulljointdistribution. Thissectionintroducesadatastructurecalleda Bayesiannetwork1
+BAYESIANNETWORK
+torepresent the dependencies among variables. Bayesian networks can represent essentially
+anyfulljointprobability distribution andinmanycasescandosoveryconcisely.
+1 Thisisthemostcommonname,buttherearemanysynonyms,includingbeliefnetwork,probabilisticnet-
+work, causal network, and knowledge map. In statistics, the term graphical model refers to a somewhat
+broaderclassthatincludes Bayesiannetworks.Anextensionof Bayesiannetworkscalledadecisionnetworkor
+influencediagramiscoveredin Chapter16.
+510

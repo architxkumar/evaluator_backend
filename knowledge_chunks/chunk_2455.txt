@@ -1,0 +1,29 @@
+erall, every
+computable function can be represented by some Turing machine, and that is the best we
+can do. One problem with this idea is that it does not take into account the computational
+complexity oflearning. Thereisatradeoff between theexpressiveness ofahypothesis space
+and the complexity of finding a good hypothesis within that space. For example, fitting a
+straight line to data is an easy computation; fitting high-degree polynomials is somewhat
+harder; and fitting Turing machines is in general undecidable. A second reason to prefer
+simple hypothesis spaces is that presumably we will want to use h after we have learned it,
+and computing h(x) when h is a linear function is guaranteed to be fast, while computing
+anarbitrary Turingmachine program isnotevenguaranteed toterminate. Forthese reasons,
+mostworkonlearninghasfocused onsimplerepresentations.
+Wewillseethattheexpressiveness complexitytradeoffisnotassimpleasitfirstseems:
+itisoftenthecase,aswesawwithfirst-orderlogicin Chapter8,thatanexpressive language
+makesitpossibleforasimplehypothesistofitthedata,whereasrestrictingtheexpressiveness
+of the language means that any consistent hypothesis must be very complex. For example,
+therulesofchesscanbewritteninapageortwooffirst-order logic,butrequirethousandsof
+pageswhenwritteninpropositional logic.
+18.3 LEARNING DECISION TREES
+Decision tree induction is one of the simplest and yet most successful forms of machine
+learning. Wefirstdescribe therepresentation the hypothesis space and then showhowto
+learnagoodhypothesis.
+698 Chapter 18. Learningfrom Examples
+18.3.1 The decisiontree representation
+A decision tree represents a function that takes as input a vector of attribute values and
+DECISIONTREE
+returns a decision a single output value. The input and output values can be discrete or
+continuous. Fornow wewillconcentrate on problems where the inputs have discrete values
+and the output has exactly two possible values; this is Boolean classification, where each
+exampleinpu

@@ -1,0 +1,39 @@
+)
+MIN-VALUE(RESULT(state,a))
+function MAX-VALUE(state)returnsa utility value
+if TERMINAL-TEST(state)thenreturn UTILITY(state)
+v foreacha in ACTIONS(state)do
+v MAX(v,MIN-VALUE(RESULT(s,a)))
+returnv
+function MIN-VALUE(state)returnsa utility value
+if TERMINAL-TEST(state)thenreturn UTILITY(state)
+v foreacha in ACTIONS(state)do
+v MIN(v,MAX-VALUE(RESULT(s,a)))
+returnv
+Figure 5.3 An algorithm forcalculating minimax decisions. It returns the action corre-
+sponding to the best possible move, that is, the move that leads to the outcome with the
+bestutility,undertheassumptionthattheopponentplaystominimizeutility. Thefunctions
+MAX-VALUE and MIN-VALUE go throughthe whole game tree, all the way to the leaves,
+to determine the backed-up value of a state. The notation argmax f(a) computes the
+a S
+elementaofset S thathasthemaximumvalueoff(a).
+to move
+A (1, 2, 6)
+B (1, 2, 6) (1, 5, 2)
+C (1, 2, 6) X (6, 1, 2) (1, 5, 2) (5, 4, 5)
+A
+(1, 2, 6) (4, 2, 3) (6, 1, 2) (7, 4,1) (5,1,1) (1, 5, 2) (7, 7,1) (5, 4, 5)
+Figure5.4 Thefirstthreepliesofagametreewiththreeplayers(A,B,C). Eachnodeis
+labeledwithvaluesfromtheviewpointofeachplayer. Thebestmoveismarkedattheroot.
+vector of the successor state with the highest value for the player choosing at n. Anyone
+who plays multiplayer games, such as Diplomacy, quickly becomes aware that much more
+isgoing onthan intwo-player games. Multiplayer gamesusually involve alliances, whether
+ALLIANCE
+formalorinformal,amongtheplayers. Alliancesaremadeandbrokenasthegameproceeds.
+How are we to understand such behavior? Are alliances a natural consequence of optimal
+strategies foreach player in a multiplayer game? It turns out that they can be. Forexample,
+Section5.3. Alpha Beta Pruning 167
+suppose A and B are in weak positions and C is in a stronger position. Then it is often
+optimal for both A and B to attack C rather than each other, lest C destroy each of them
+individually. In this way, collaboration emerges from purely selfish behavior. Of course,
+as soon as C wea

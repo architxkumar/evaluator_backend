@@ -1,0 +1,24 @@
+lattachments. Ifsuchdevicesareattachedpermanently,
+1010 Chapter 25. Robotics
+they can be thought of as artificial robotic limbs. Figure 25.30(b) shows a robotic hand that
+mayserveasaprosthetic deviceinthefuture.
+Robotic teleoperation, or telepresence, is another form of human augmentation. Tele-
+operation involves carrying out tasks over long distances with the aid of robotic devices.
+A popular configuration for robotic teleoperation is the master slave configuration, where
+a robot manipulator emulates the motion of a remote human operator, measured through a
+haptic interface. Underwater vehicles are often teleoperated; the vehicles can go to a depth
+thatwouldbedangerous forhumansbutcanstillbeguided bythehumanoperator. Allthese
+systemsaugmentpeople sabilitytointeractwiththeirenvironments. Someprojectsgoasfar
+asreplicating humans,atleastataverysuperficiallevel. Humanoidrobotsarenowavailable
+commercially throughseveralcompaniesin Japan.
+25.9 SUMMARY
+Robotics concerns itself with intelligent agents that manipulate the physical world. In this
+chapter, wehavelearned thefollowingbasicsofrobothardwareandsoftware. Robots are equipped with sensors for perceiving their environment and effectors with
+which they can assert physical forces on their environment. Most robots are either
+manipulators anchored atfixedlocations ormobilerobotsthatcanmove. Robotic perception concerns itself with estimating decision-relevant quantities from
+sensor data. To do so, we need an internal representation and a method for updating
+this internal representation overtime. Commonexamples of hard perceptual problems
+includelocalization, mapping,andobjectrecognition. Probabilisticfilteringalgorithmssuchas Kalmanfiltersandparticle filtersareuseful
+forrobotperception. Thesetechniquesmaintainthebelief state,aposteriordistribution
+overstatevariables. Theplanningofrobotmotionisusuallydoneinconfigurationspace,whereeachpoint
+specifiesthelocation andorientation oftherobotanditsjointangles. Configuration space

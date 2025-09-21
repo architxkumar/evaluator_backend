@@ -1,0 +1,32 @@
+tations as well, we use two steps. We train a regression procedure
+to estimate the best orientation of any face present in a window. Now, for each window, we
+estimatetheorientation, reorientthewindow,thentestwhetheraverticalfaceispresentwith
+ourclassifier. Allthisyieldsasystemwhosearchitecture issketched in Figure24.12.
+Training data is quite easily obtained. There are several data sets of marked-up face
+images, and rotated face windows are easy to build (just rotate a window from a training
+data set). One trick that is widely used is to take each example window, then produce new
+examples by changing the orientation of the window, the center of the window, or the scale
+very slightly. This is an easy way of getting a bigger data set that reflects real images fairly
+well; the trick usually improves performance significantly. Face detectors built along these
+linesnowperform verywellforfrontalfaces(sideviewsare harder).
+944 Chapter 24. Perception
+Non-maximal
+suppresion
+Image Responses Detections
+Estimate
+orientation
+Correct Rotate
+Features Classifier
+illumination window
+Figure 24.12 Face finding systems vary, but most follow the architecture illustrated in
+two parts here. On the top, we go from images to responses, then apply non-maximum
+suppressionto findthestrongestlocalresponse. Theresponsesareobtainedbytheprocess
+illustratedonthebottom. Wesweepawindowoffixedsizeoverlargerandsmallerversions
+of the image, so as to find smaller or larger faces, respectively. The illumination in the
+window is corrected, and then a regression engine (quite often, a neural net) predicts the
+orientationofthe face. Thewindowiscorrectedto thisorientationandthen presentedto a
+classifier. Classifieroutputsarethenpostprocessedtoensurethatonlyonefaceisplacedat
+eachlocationintheimage.
+24.3.1 Complexappearance andpattern elements
+Many objects produce much more complex patterns than faces do. This is because several
+effectscanmovefeaturesaroundinanimageoftheobject. Effectsinclude (Figure24.13) Fore

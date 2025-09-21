@@ -1,0 +1,28 @@
+xt lower level. We want to know how many different refinement trees
+there are with this structure. Now, if there are d actions at the primitive level, then the
+number of levels below the root is log d, so the number of internal refinement nodes is
+k
+1 k k2 klogkd 1 (d 1) (k 1). Each internal node has r possible refine-
+ments,sor(d 1) (k 1)
+possibleregulardecompositiontreescouldbeconstructed. Examining
+this formula, we see that keeping r small and k large can result in huge savings: essentially
+wearetakingthekthrootofthenonhierarchical cost,if bandr arecomparable. Smallrand
+large k means a library of HL As with a small number of refinements each yielding a long
+action sequence (that nonetheless allows us to solve any problem). This is not always pos-
+sible: long action sequences that are usable across a wide range of problems are extremely
+precious.
+Thekeyto HT Nplanning, then, isthe construction ofaplan library containing known
+methods for implementing complex, high-level actions. One method of constructing the li-
+brary is to learn the methods from problem-solving experience. After the excruciating ex-
+perience of constructing a plan from scratch, the agent can save the plan in the library as a
+methodforimplementingthehigh-levelactiondefinedbythetask. Inthisway,theagentcan
+becomemoreandmorecompetentovertimeasnewmethodsarebuiltontopofoldmethods.
+One important aspect of this learning process is the ability to generalize the methods that
+are constructed, eliminating detail that is specific to the problem instance (e.g., the name of
+410 Chapter 11. Planningand Actinginthe Real World
+the builder or the address of the plot of land) and keeping just the key elements of the plan.
+Methodsforachievingthiskindofgeneralization aredescribed in Chapter19. Itseemstous
+inconceivable thathumanscouldbeascompetentastheyarewithoutsomesuchmechanism.
+11.2.3 Searching forabstractsolutions
+Thehierarchicalsearchalgorithmintheprecedingsection refines HL Asallthewaytoprimi-
+tiveactionsequenc

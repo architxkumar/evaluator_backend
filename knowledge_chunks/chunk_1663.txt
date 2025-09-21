@@ -1,0 +1,28 @@
+boutthreepawns.
+5.4.2 Cutting offsearch
+The next step is to modify ALPHA-BETA-SEARCH so that it will call the heuristic EVAL
+function when it is appropriate to cut off the search. We replace the two lines in Figure 5.7
+thatmention TERMINAL-TEST withthefollowingline:
+if CUTOFF-TEST(state,depth)thenreturn EVAL(state)
+Wealsomustarrangeforsomebookkeepingsothatthecurrent depth isincrementedoneach
+recursivecall. Themoststraightforwardapproachtocontrollingtheamountofsearchistoset
+afixeddepthlimitsothat CUTOFF-TEST(state,depth)returnstrue foralldepth greaterthan
+somefixeddepthd. (Itmustalsoreturn true forallterminalstates,justas TERMINAL-TEST
+did.) The depth d is chosen so that a move is selected within the allocated time. A more
+robust approach is to apply iterative deepening. (See Chapter 3.) When time runs out, the
+program returns the move selected by the deepest completed search. As a bonus, iterative
+deepening alsohelpswithmoveordering.
+174 Chapter 5. Adversarial Search
+These simple approaches can lead to errors due to the approximate nature of the eval-
+uation function. Consider again the simple evaluation function for chess based on material
+advantage. Suppose the program searches to the depth limit, reaching the position in Fig-
+ure 5.8(b), where Black is ahead by a knight and two pawns. It would report this as the
+heuristic value of the state, thereby declaring that the state is a probable win by Black. But
+White s next move captures Black s queen with no compensation. Hence, the position is
+reallywonfor White,butthiscanbeseenonlybylooking aheadonemoreply.
+Obviously,amoresophisticatedcutofftestisneeded. Theevaluationfunctionshouldbe
+appliedonlytopositions thatarequiescent thatis,unlikely toexhibitwildswingsinvalue
+QUIESCENCE
+in the nearfuture. Inchess, forexample, positions inwhich favorable captures can be made
+arenotquiescentforanevaluation functionthatjustcountsmaterial. Nonquiescent positions
+can be expanded further until quiescent positions are reached. This e

@@ -1,0 +1,28 @@
+rather depends on
+some precondition that the agent does not know about. For example, sometimes a paint
+canmaybeempty,sopaintingfromthatcanhasnoeffect. Noamountofretrying isgoingto
+changethis.5 Onesolutionistochooserandomlyfromamongthesetofpossiblerepairplans,
+ratherthantotrythesameoneeachtime. Inthiscase,therepairplanofopening anothercan
+might work. A better approach is to learn a better model. Every prediction failure is an
+opportunity forlearning; anagent should be able tomodify itsmodel ofthe worldto accord
+withitspercepts. Fromthen on,thereplanner willbeable to comeupwitharepairthatgets
+attherootproblem,ratherthanrelyingonlucktochooseagoodrepair. Thiskindoflearning
+isdescribed in Chapters18and19.
+11.4 MULTIAGENT PLANNING
+So far, we have assumed that only one agent is doing the sensing, planning, and acting.
+Whentherearemultiple agentsintheenvironment, eachagent facesamultiagentplanning
+MULTIAGENT probleminwhichittriestoachieveitsowngoalswiththehelporhindrance ofothers.
+PLANNINGPROBLEM
+Betweenthepurelysingle-agent andtrulymultiagentcases isawidespectrumofprob-
+lems that exhibit various degrees of decomposition of the monolithic agent. An agent with
+multiple effectors that can operate concurrently for example, a human who can type and
+MULTIEFFECTOR speak atthe same time needs to do multieffector planningto manage each effector while
+PLANNING
+handling positive and negative interactions among the effectors. When the effectors are
+physically decoupled into detached units as in a fleet of delivery robots in a factory MULTIBODY multieffector planning becomes multibody planning. A multibody problem is still a stan-
+PLANNING
+dard single-agent problemaslongastherelevantsensorinformationcollectedbyeachbody
+can be pooled either centrally or within each body to form a common estimate of the
+worldstatethattheninformstheexecution oftheoverallplan;inthiscase, themultiplebod-
+ies act as a single body. When communication constraints make this impossible, we have
+5 Futilerepetitio

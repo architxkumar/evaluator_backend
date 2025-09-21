@@ -1,0 +1,30 @@
+ntsinglepublicationinthegrowthof Bayesiannetworkswasundoubt-
+edly the text Probabilistic Reasoning in Intelligent Systems (Pearl, 1988). Several excellent
+texts (Lauritzen, 1996; Jensen, 2001; Korb and Nicholson, 2003; Jensen, 2007; Darwiche,
+2009; Koller and Friedman, 2009) provide thorough treatments of the topics we have cov-
+ered in this chapter. New research on probabilistic reasoning appears both in mainstream
+AI journals, such as Artificial Intelligence and the Journal of AI Research, and in more spe-
+cialized journals, suchasthe International Journalof Approximate Reasoning. Manypapers
+on graphical models, which include Bayesian networks, appear in statistical journals. The
+proceedings oftheconferences on Uncertainty in Artificial Intelligence (UAI),Neural Infor-
+mation Processing Systems (NIPS), and Artificial Intelligence and Statistics (AISTATS)are
+excellent sourcesforcurrentresearch.
+EXERCISES
+14.1 Wehaveabagofthree biased coins a,b,and cwithprobabilities ofcoming upheads
+of 20 , 60 , and 80 , respectively. Onecoin isdrawn randomly from the bag (with equal
+likelihood of drawing each of the three coins), and then the coin is flipped three times to
+generate theoutcomes X ,X ,and X .
+1 2 3
+a. Drawthe Bayesiannetworkcorresponding tothissetupanddefinethenecessary CP Ts.
+b. Calculate which coinwasmostlikely tohavebeen drawnfrom thebag iftheobserved
+flipscomeoutheadstwiceandtailsonce.
+14.2 Equation (14.1) on page 513 defines the joint distribution represented by a Bayesian
+networkintermsoftheparameters (X Parents(X )). Thisexerciseasksyoutoderivethe
+i i
+equivalence between the parameters and the conditional probabilities P(X Parents(X ))
+i i
+fromthisdefinition.
+a. Consider a simple network X Y Z with three Boolean variables. Use Equa-
+tions (13.3) and (13.6) (pages 485 and 492) to express the conditional probability
+P(z y)astheratiooftwosums,eachoverentriesinthejointdistribution P(X,Y,Z).
+b. Now use Equation (14.1) to write this expression in terms of the netwo

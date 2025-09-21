@@ -1,0 +1,31 @@
+LE
+P(a b) P(a b)P(b),
+Theproduct ruleisperhaps easiertoremember: itcomesfrom thefactthat,foraandbtobe
+true,weneedbtobetrue,andwealsoneed atobetruegivenb.
+13.2.2 The languageofpropositions inprobability assertions
+In this chapter and the next, propositions describing sets of possible worlds are written in a
+notationthatcombineselementsofpropositionallogicandconstraintsatisfactionnotation. In
+the terminology of Section 2.4.7, it is a factored representation, in which apossible world
+isrepresented byasetofvariable value pairs.
+Variablesinprobabilitytheoryarecalledrandomvariablesandtheirnamesbeginwith
+RANDOMVARIABLE
+anuppercase letter. Thus, inthe dice example, Total and Die are random variables. Every
+1
+random variable has a domain the set of possible values it can take on. The domain of
+DOMAIN
+Total for two dice is the set 2,...,12 and the domain of Die is 1,...,6 . A Boolean
+1
+random variable has the domain true,false (notice that values are always lowercase); for
+example, the proposition that doubles are rolled can be written as Doubles true. By con-
+vention, propositions of the form A true are abbreviated simply as a, while A false is
+abbreviated as a. (Theusesofdoubles,cavity,andtoothache inthepreceding section are
+abbreviations of this kind.) As in CS Ps, domains can be sets of arbitrary tokens; we might
+choose the domain of Age to be juvenile,teen,adult and the domain of Weather might
+be sunny,rain,cloudy,snow . Whennoambiguityispossible,itiscommontouseavalue
+byitselftostandfortheproposition thataparticularvariablehasthatvalue;thus, sunny can
+standfor Weather sunny.
+The preceding examples all have finite domains. Variables can have infinite domains,
+too eitherdiscrete(liketheintegers)orcontinuous(likethereals). Foranyvariablewithan
+ordereddomain,inequalitiesarealsoallowed,suchas Number Of Atoms In Universe 1070.
+Finally, we can combine these sorts of elementary propositions (including the abbre-
+viated forms for Boolean variables) by using the connectives of pro

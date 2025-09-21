@@ -1,0 +1,25 @@
+ntic network structure for this particular event. Notice that the
+restriction tobinaryrelations forcesthecreation ofarichontology ofreifiedconcepts.
+Reification of propositions makes it possible to represent every ground, function-free
+atomicsentenceoffirst-orderlogicinthesemanticnetworknotation. Certainkindsofuniver-
+456 Chapter 12. Knowledge Representation
+sallyquantifiedsentencescanbeassertedusinginverselinksandthesinglyboxedanddoubly
+boxed arrowsapplied tocategories, butthatstillleaves us alongwayshort offullfirst-order
+logic. Negation, disjunction, nested function symbols, and existential quantification are all
+missing. Nowitispossibletoextendthenotationtomakeitequivalenttofirst-orderlogic as
+in Peirce s existential graphs but doing so negates one ofthe main advantages of semantic
+networks,whichisthesimplicityandtransparency oftheinference processes. Designerscan
+build alarge networkandstillhaveagood ideaabout whatqueries willbeefficient, because
+(a)itiseasytovisualizethestepsthattheinferenceprocedurewillgothroughand(b)insome
+cases the query language is so simple that difficult queries cannot be posed. In cases where
+the expressive powerproves to be too limiting, many semantic network systems provide for
+procedural attachment to fill in the gaps. Procedural attachment is a technique whereby
+a query about (or sometimes an assertion of) a certain relation results in a call to a special
+procedure designed forthatrelationratherthanageneral inference algorithm.
+One of the most important aspects of semantic networks is their ability to represent
+defaultvaluesforcategories. Examining Figure12.5carefully,onenoticesthat Johnhasone
+DEFAULTVALUE
+leg,despitethefactthatheisapersonandallpersonshavetwolegs. Inastrictlylogical KB,
+this would be a contradiction, but in a semantic network, the assertion that all persons have
+two legs has only default status; that is, a person is assumed to have two legs unless this is
+contradictedbymorespecificinformation. Thedefaultsemanticsise

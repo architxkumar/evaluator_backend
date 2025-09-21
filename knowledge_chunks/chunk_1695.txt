@@ -1,0 +1,26 @@
+several grand
+masters in games in which it gave odds (such as a pawn) to the human players. Asof 2009,
+the highest Elorating everrecorded was Kasparov s 2851. HYDRA (Donninger and Lorenz,
+2004)isratedsomewherebetween2850and3000, basedmostly onitstrouncing of Michael
+Adams. The RYBKA program is rated between 2900 and 3100, but this is based on a small
+numberofgamesandisnotconsideredreliable. Ross(2004)showshowhumanplayershave
+learnedtoexploitsomeoftheweaknessesofthecomputerprograms.
+Checkers was the first of the classic games fully played by a computer. Christopher
+Strachey (1952) wrote the first working program for checkers. Beginning in 1952, Arthur
+Samuel of IBM, working in his spare time, developed a checkers program that learned its
+own evaluation function by playing itself thousands of times (Samuel, 1959, 1967). We
+describe this idea in more detail in Chapter 21. Samuel s program began as a novice but
+after only a few days self-play had improved itself beyond Samuel s own level. In 1962 it
+defeated Robert Nealy, a champion at blind checkers, through an error on his part. When
+one considers that Samuel s computing equipment (an IBM 704) had 10,000 words of main
+memory,magnetictapeforlong-termstorage,anda.000001GHzprocessor,thewinremains
+agreataccomplishment.
+Thechallenge started by Samuelwastaken upby Jonathan Schaefferofthe University
+of Alberta. His CHINOOK program came in second in the 1990 U.S. Open and earned the
+right to challenge forthe world championship. It then ran up against a problem, in the form
+of Marion Tinsley. Dr. Tinsley had been world champion for over 40 years, losing only
+three gamesinallthat time. Inthefirstmatchagainst CHINOOK,Tinsleysuffered hisfourth
+194 Chapter 5. Adversarial Search
+and fifth losses, but won the match 20.5 18.5. A rematch at the 1994 world championship
+ended prematurely when Tinsley had to withdraw forhealth reasons. CHINOOK became the
+official world champion. Schaeffer kept on building on his database of endgames, and

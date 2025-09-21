@@ -1,0 +1,39 @@
+every pair of
+sockswilleventuallybelostforever,usingonlythefollowingvocabulary: Key(x),xisakey;
+Sock(x), x is a sock; Pair(x,y), x and y are a pair; Now, the current time; Before(t ,t ),
+1 2
+timet comesbeforetimet ;Lost(x,t),objectxislostattimet.
+1 2
+8.23 Foreachofthefollowingsentences in English, decideiftheaccompanying first-order
+logic sentence is a good translation. If not, explain whynot and correct it. (Some sentences
+mayhavemorethanoneerror!)
+a. Notwopeoplehavethesamesocialsecurity number. x,y,n Person(x) Person(y) Has SS (x,n) Has SS (y,n) .
+b. John ssocialsecurity numberisthesameas Mary s. n Has SS (John,n) Has SS (Mary,n).
+c. Everyone ssocialsecuritynumberhasninedigits. x,n Person(x) Has SS (x,n) Digits(n,9) .
+d. Rewriteeachoftheabove(uncorrected)sentencesusingafunctionsymbol SS instead
+ofthepredicate Has SS .
+8.24 Represent the following sentences in first-order logic, using a consistent vocabulary
+(whichyoumustdefine):
+a. Somestudents took Frenchinspring2001.
+b. Everystudentwhotakes Frenchpassesit.
+c. Onlyonestudenttook Greekinspring2001.
+d. Thebestscorein Greekisalwayshigherthanthebestscorein French.
+e. Everypersonwhobuysapolicyissmart.
+f. Nopersonbuysanexpensivepolicy.
+g. Thereisanagentwhosellspolicies onlytopeoplewhoarenotinsured.
+320 Chapter 8. First-Order Logic
+X Y 0 0 Ad 0 Z 0
+X Y 1 1 Ad 1 Z 1 X 3 X 2 X 1 X 0 Y 3 Y 2 Y 1 Y 0
+X Y 2 2 Ad 2 Z 2 Z 4 Z 3 Z 2 Z 1 Z 0
+X Z
+Y 3 3 Ad 3 Z 3 4
+Figure8.8 Afour-bitadder.Each Adi isaone-bitadder,asin Figure8.6onpage309.
+h. Thereisabarberwhoshavesallmenintownwhodonotshavethemselves.
+i. Aperson born in the UK, each of whose parents is a UK citizen ora UK resident, is a
+UKcitizenbybirth.
+j. A person born outside the UK, one of whose parents is a UK citizen by birth, is a UK
+citizenbydescent.
+k. Politicianscanfoolsomeofthepeopleallofthetime,andtheycanfoolallofthepeople
+someofthetime,buttheycan tfoolallofthepeople allofthetime.
+l. All Greeks speak the same language. (Use Speaks(x,l) to mean that person x speaks
+langua

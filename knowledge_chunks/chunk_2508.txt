@@ -1,0 +1,46 @@
+orithmforlearninginmultilayernetworks.
+Nowtheweight-updaterulefortheweightsbetweentheinputsandthehiddenlayerisessen-
+tiallyidenticaltotheupdaterulefortheoutput layer:
+w w a .
+i,j i,j i j
+Theback-propagation processcanbesummarizedasfollows: Computethe valuesfortheoutputunits, usingtheobserved error. Starting with output layer, repeat the following foreach layer in the network, until the
+earliesthiddenlayerisreached: Propagatethe valuesbacktothepreviouslayer. Updatetheweightsbetweenthetwolayers.
+Thedetailed algorithm isshownin Figure18.24.
+For the mathematically inclined, we will now derive the back-propagation equations
+from first principles. The derivation is quite similar to the gradient calculation for logistic
+Section18.7. Artificial Neural Networks 735
+regression (leading upto Equation (18.8) onpage 727), except that wehavetouse thechain
+rulemorethanonce.
+Following Equation (18.10), we compute just the gradient for Loss (y a )2 at
+k k k
+the kthoutput. Thegradient ofthis loss with respect toweights connecting the hidden layer
+to the output layer will be zero except for weights w that connect to the kth output unit.
+j,k
+Forthoseweights, wehave Loss a g(in )
+k 2(y a ) k 2(y a ) k
+k k k k w w w
+j,k j,k j,k (cid:12) in 2(y a )g (cid:2) (in ) k 2(y a )g (cid:2) (in ) w a k k k k k k j,k j w w
+j,k j,k
+j 2(y a )g (cid:2) (in )a a ,
+k k k j j k
+with definedasbefore. Toobtainthegradientwithrespecttothe w weightsconnecting
+k i,j
+theinputlayertothehidden layer, wehavetoexpandoutthe activations a andreapply the
+j
+chainrule. Wewillshowthederivation ingorydetail because itisinteresting toseehowthe
+derivativeoperatorpropagates backthrough thenetwork: Loss a g(in )
+k 2(y a ) k 2(y a ) k
+k k k k w w w
+i,j i,j i,j (cid:12) in 2(y a )g (cid:2) (in ) k 2 w a k k k k j,k j w w
+i,j i,j
+j a g(in ) 2 w j 2 w j
+k j,k k j,k w w
+i,j i,j in 2 w g (cid:2) (in ) j
+k j,k j w
+i,j (cid:31)
+(cid:12) 2 w g (cid:2) (in ) w a
+k j,k j i,j i w
+i,j
+i 2 w g (cid:2) (in )a a ,
+k j,k j i i j
+where isdefin

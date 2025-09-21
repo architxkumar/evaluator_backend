@@ -1,0 +1,31 @@
+istinguish carefully
+betweentheproposition thatthetaxiisblueandtheproposition thatitappearsblue.)
+b. Whatifyouknowthat9outof10Atheniantaxisaregreen?
+13.22 Textcategorization isthe taskofassigning agivendocument toone ofafixedsetof
+categories on the basis of the text it contains. Naive Bayes models are often used for this
+task. Inthesemodels,thequeryvariable isthedocument category, andthe effect variables
+arethepresenceorabsenceofeachwordinthelanguage; theassumption isthatwordsoccur
+independently indocuments, withfrequencies determinedbythedocumentcategory.
+a. Explain precisely how such a model can be constructed, given as training data a set
+ofdocuments thathavebeenassigned tocategories.
+b. Explainprecisely howtocategorize anewdocument.
+c. Istheconditional independence assumption reasonable? Discuss.
+13.23 In our analysis of the wumpus world, we used the fact that each square contains a
+pit withprobability 0.2, independently ofthe contents of the othersquares. Suppose instead
+that exactly N 5 pits are scattered at random among the N squares other than 1,1 . Are
+the variables P and P still independent? What isthe joint distribution P(P ,...,P )
+i,j k,l 1,1 4,4
+now? Redothecalculation fortheprobabilities ofpitsin 1,3 and 2,2 .
+13.24 Redotheprobabilitycalculationforpitsin 1,3 and 2,2 ,assumingthateachsquare
+contains a pit with probability 0.01, independent of the other squares. What can you say
+abouttherelativeperformance ofalogicalversusaprobabilistic agentinthiscase?
+13.25 Implement a hybrid probabilistic agent for the wumpus world, based on the hybrid
+agentin Figure7.20andtheprobabilistic inference procedure outlined inthischapter.
+14
+PROBABILISTIC
+REASONING
+In which we explain how to build network models to reason under uncertainty
+according tothelawsofprobability theory.
+Chapter 13 introduced the basic elements of probability theory and noted the importance of
+independence and conditional independence relationships in simplifying probabilistic repre-
+sentations of

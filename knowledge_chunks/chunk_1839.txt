@@ -1,0 +1,28 @@
+ions true false unknown
+Temporallogic facts,objects,relations,times true false unknown
+Probabilitytheory facts degreeofbelief 0,1 Fuzzylogic factswithdegreeoftruth 0,1 knownintervalvalue
+Figure8.1 Formallanguagesandtheirontologicalandepistemologicalcommitments.
+Inthenextsection,wewilllaunchintothedetailsoffirst-orderlogic. Justasastudentof
+physicsrequiressomefamiliaritywithmathematics,astudentof AImustdevelopatalentfor
+workingwithlogicalnotation. Ontheotherhand,itisalsoimportantnottogettooconcerned
+with the specifics of logical notation after all, there are dozens of different versions. The
+mainthingstokeepholdofarehowthelanguage facilitates concise representations andhow
+itssemanticsleadstosoundreasoning procedures.
+8.2 SYNTAX AND SEMANTICS OF FIRST-ORDER LOGIC
+We begin this section by specifying more precisely the way in which the possible worlds
+of first-order logic reflect the ontological commitment to objects and relations. Then we
+introduce thevariouselementsofthelanguage, explaining theirsemantics aswegoalong.
+8.2.1 Models forfirst-order logic
+Recall from Chapter 7 that the models of a logical language are the formal structures that
+constitute the possible worlds under consideration. Each model links the vocabulary of the
+logical sentences to elements of the possible world, so that the truth of any sentence can
+be determined. Thus, models for propositional logic link proposition symbols to predefined
+truth values. Models forfirst-order logic are much moreinteresting. First, they have objects
+inthem! Thedomainofamodelisthesetofobjectsordomainelementsitcontains. Thedo-
+DOMAIN
+mainisrequiredtobenonempty everypossibleworldmustcontainatleastoneobject. (See
+DOMAINELEMENTS
+Exercise 8.7 for a discussion of empty worlds.) Mathematically speaking, it doesn t matter
+whattheseobjects are all thatmatters is howmanythereareineachparticularmodel but
+for pedagogical purposes we ll use a concrete example. Figure 8.2 shows a model with five
+3 Itisimportantnottoconfusethedegree

@@ -1,0 +1,34 @@
+
+Section15.2. Inference in Temporal Models 575
+and the other running backward from t to k 1 and using Equation (15.9). Note that the
+backward phase is initialized with b P(e X ) P( X )1, where 1 is a vector of
+t 1:t t 1:t t t
+1s. (Becausee isanemptysequence, theprobability ofobserving itis1.)
+t 1:t
+Let us now apply this algorithm to the umbrella example, computing the smoothed
+estimate for the probability of rain at time k 1, given the umbrella observations on days 1
+and2. From Equation(15.8),thisisgivenby
+P(R u ,u ) P(R u )P(u R ). (15.10)
+1 1 2 1 1 2 1
+The first term we already know to be (cid:16).818,.182(cid:17), from the forward filtering process de-
+scribed earlier. The second term can be computed by applying the backward recursion in
+Equation(15.9):
+(cid:12)
+P(u R ) P(u r )P( r )P(r R )
+2 1 2 2 2 2 1
+r2 (0.9 1 (cid:16)0.7,0.3(cid:17)) (0.2 1 (cid:16)0.3,0.7(cid:17)) (cid:16)0.69,0.41(cid:17).
+Pluggingthisinto Equation(15.10), wefindthatthesmoothedestimateforrainonday1is
+P(R u ,u ) (cid:16)0.818,0.182(cid:17) (cid:16)0.69,0.41(cid:17) (cid:16)0.883,0.117(cid:17).
+1 1 2
+Thus, the smoothed estimate for rain on day 1 is higher than the filtered estimate (0.818) in
+this case. This is because the umbrella on day 2 makes it more likely to have rained on day
+2;inturn,becauseraintendstopersist, thatmakesitmorelikelytohaverainedonday1.
+Both the forward and backward recursions take a constant amount of time per step;
+hence, the time complexity of smoothing with respect to evidence e is O(t). This is the
+1:t
+complexity for smoothing at a particular time step k. If we want to smooth the whole se-
+quence, one obvious method is simply to run the whole smoothing process once for each
+time step to be smoothed. This results in a time complexity of O(t2). A better approach
+usesasimpleapplication ofdynamicprogramming toreducethecomplexityto O(t). Aclue
+appears in the preceding analysis of the umbrella example, where wewere able to reuse the
+results of the forward-filtering phase

@@ -1,0 +1,36 @@
+ toasimple algorithm forlogical inference. Ev-
+erything takesplace, ofcourse, inthewumpusworld.
+6 As Wittgenstein(1922)putitinhisfamous Tractatus: Theworldiseverythingthatisthecase. 244 Chapter 7. Logical Agents
+7.4.1 Syntax
+The syntax of propositional logic defines the allowable sentences. The atomic sentences
+ATOMICSENTENCES
+PROPOSITION consist of a single proposition symbol. Each such symbol stands for a proposition that can
+SYMBOL
+be true or false. We use symbols that start with an uppercase letter and may contain other
+letters or subscripts, for example: P, Q, R, W and North. The names are arbitrary but
+1,3
+are often chosen to have some mnemonic value we use W to stand for the proposition
+1,3
+that the wumpus is in 1,3 . (Remember that symbols such as W are atomic, i.e., W, 1,
+1,3
+and3arenotmeaningfulpartsofthesymbol.) Therearetwoproposition symbolswithfixed
+meanings: True is the always-true proposition and False is the always-false proposition.
+COMPLEX Complex sentences are constructed from simpler sentences, using parentheses and logical
+SENTENCES
+LOGICAL connectives. Therearefiveconnectives incommonuse:
+CONNECTIVES (not). A sentence such as W is called the negation of W . A literal is either an
+NEGATION 1,3 1,3
+atomicsentence(apositiveliteral)oranegatedatomicsentence (anegative literal).
+LITERAL (and). A sentence whose main connective is , such as W P , is called a con-
+1,3 3,1
+junction;itspartsaretheconjuncts. (The lookslikean A for And. )
+CONJUNCTION (or). Asentenceusing ,suchas(W P ) W ,isadisjunctionofthedisjuncts
+DISJUNCTION 1,3 3,1 2,2
+(W P )and W . (Historically, the comes fromthe Latin vel, which means
+1,3 3,1 2,2 or. Formostpeople, itiseasiertoremember asanupside-down .) (implies). Asentencesuchas(W P ) W iscalledanimplication(orcon-
+IMPLICATION 1,3 3,1 2,2
+ditional). Itspremiseorantecedentis(W P ),anditsconclusionorconsequent
+PREMISE 1,3 3,1
+is W . Implications arealsoknownas rulesorif thenstatements. Theimplication
+CONCLUSION 2,2
+symbolissometimesw

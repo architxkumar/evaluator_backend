@@ -1,0 +1,30 @@
+omaticallyrespected. Usingsetnotationfor
+clausesmakestheresolutionrulemuchcleaner,atthecostofintroducingadditionalnotation.
+254 Chapter 7. Logical Agents
+3. CN Frequires to appear only in literals, so we move inwards by repeated appli-
+cationofthefollowingequivalences from Figure7.11: ( ) (double-negation elimination) ( ) ( ) (De Morgan) ( ) ( ) (De Morgan)
+Intheexample,werequirejustoneapplication ofthelastrule:
+( B P P ) (( P P ) B ).
+1,1 1,2 2,1 1,2 2,1 1,1
+4. Now we have a sentence containing nested and operators applied to literals. We
+applythedistributivity lawfrom Figure7.11,distributing over whereverpossible.
+( B P P ) ( P B ) ( P B ).
+1,1 1,2 2,1 1,2 1,1 2,1 1,1
+The original sentence is now in CNF,as aconjunction of three clauses. It is much harder to
+read,butitcanbeusedasinputtoaresolution procedure.
+Aresolution algorithm
+Inference procedures based on resolution work by using the principle of proof bycontradic-
+tion introduced on page 250. That is, to show that KB , we show that (KB ) is
+unsatisfiable. Wedothisbyproving acontradiction.
+A resolution algorithm is shown in Figure 7.12. First, (KB ) is converted into
+CNF. Then, the resolution rule is applied to the resulting clauses. Each pair that contains
+complementary literals is resolved to produce a new clause, which is added to the set if it is
+notalreadypresent. Theprocesscontinues untiloneoftwothingshappens: therearenonewclauses thatcanbeadded, inwhichcase KB doesnotentail ;or, twoclausesresolvetoyieldtheemptyclause,inwhichcase KB entails .
+Theemptyclause adisjunctionofnodisjuncts isequivalentto False becauseadisjunction
+is true only if at least one of its disjuncts is true. Another way to see that an empty clause
+represents acontradiction istoobservethatitarisesonly fromresolving twocomplementary
+unitclausessuchas P and P.
+Wecanapplytheresolutionproceduretoaverysimpleinferenceinthewumpusworld.
+Whentheagentisin 1,1 ,thereisnobreeze, sotherecanbenopitsinneighboring squares.
+Therelevantknowledgebaseis
+KB 

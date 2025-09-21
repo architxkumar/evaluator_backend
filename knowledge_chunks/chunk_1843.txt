@@ -1,0 +1,28 @@
+tisthejobof
+theknowledgebasetoruleoutmodelsthatareinconsistent withourknowledge.
+4 Later,in Section8.2.8,weexamineasemanticsinwhicheveryobjecthasexactlyonename.
+Section8.2. Syntaxand Semanticsof First-Order Logic 293
+Sentence Atomic Sentence Complex Sentence
+Atomic Sentence Predicate Predicate(Term,...) Term Term
+Complex Sentence (Sentence ) Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence Quantifier Variable,... Sentence
+Term Function(Term,...) Constant Variable
+Quantifier Constant A X John 1
+Variable a x s Predicate True False After Loves Raining Function Mother Left Leg OPERATORPRECEDENCE : , , , , , Figure8.3 The syntax of first-orderlogic with equality, specified in Backus Naurform
+(seepage1060ifyouarenotfamiliarwiththisnotation).Operatorprecedencesarespecified,
+from highest to lowest. The precedence of quantifiers is such that a quantifier holds over
+everythingtotherightofit.
+R J R J R J R J R J R J
+. . . . . . . . .
+Figure8.4 Somemembersofthesetofallmodelsforalanguagewithtwoconstantsym-
+bols,Rand J,andonebinaryrelationsymbol.Theinterpretationofeachconstantsymbolis
+shownbyagrayarrow.Withineachmodel,therelatedobjectsareconnectedbyarrows.
+294 Chapter 8. First-Order Logic
+Insummary,amodelinfirst-orderlogicconsistsofasetofobjectsandaninterpretation
+that maps constant symbols to objects, predicate symbols to relations on those objects, and
+function symbols to functions on those objects. Just as with propositional logic, entailment,
+validity, and so on are defined in terms of all possible models. To get an idea of what the
+set ofallpossible models looks like, see Figure 8.4. Itshows that models vary inhow many
+objects they contain from one up to infinity and in the way the constant symbols map
+to objects. If there are two constant symbols and one object, then both symbols must refer
+to the same object; but this can still happen even with more objects. When there are more
+objects thanconstant symbols, someoftheobjects willhave

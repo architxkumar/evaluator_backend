@@ -1,0 +1,23 @@
+ tion,7(1),9 20.
+Zadeh,L.A.(1978).Fuzzysetsasabasisforathe- ternational Symposiumon Artificial Intelligenceand
+oryofpossibility.Fuzzy Setsand Systems,1,3 28. Mathematics. Zimmermann,H.-J.(Ed.).(1999).Practicalappli-
+cationsoffuzzytechnologies.Kluwer.
+Zaritskii, V.S., Svetnik, V.B., and Shimelevich, Zhang,L.,Pavlovic,V.,Cantor,C.R.,and Kasif,S.
+L.I.(1975). Monte-Carlotechniqueinproblemsof (2003). Human-mousegeneidentificationbycom- Zimmermann, H.-J.(2001). Fuzzy Set Theory optimalinformationprocessing.Automationand Re- parativeevidenceintegrationandevolutionaryanal- And Its Applications(Fourthedition).Kluwer.
+mote Control,36,2015 22. ysis.Genome Research,pp.1 13.
+Zinkevich,M.,Johanson,M.,Bowling,M.,and Pic-
+Zelle,J.and Mooney,R.(1996). Learningtoparse Zhang,N.L.and Poole,D.(1994). Asimpleap- cione,C.(2008).Regretminimizationingameswith
+databasequeriesusinginductivelogicprogramming. proachto Bayesiannetworkcomputations. In Proc. incompleteinformation.In NIPS20,pp.1729 1736.
+In AAAI-96,pp.1050 1055. 10th Canadian Conferenceon Artificial Intelligence,
+Zermelo, E. (1913). Uber Eine Anwendung der pp.171 178. Zollmann,A.,Venugopal,A.,Och,F.J.,and Ponte,
+Mengenlehreaufdie Theoriedes Schachspiels. In Zhang,N.L.,Qi,R.,and Poole,D.(1994).Acom- J.(2008).Asystematiccomparisonofphrase-based,
+Proc. Fifth International Congress of Mathemati- putationaltheoryofdecisionnetworks. IJAR,11, hierarchicalandsyntax-augmentedstatistical MT.In
+cians,Vol.2,pp.501 504. 83 158. COLING-08.
+Zermelo,E.(1976). Anapplicationofsettheoryto Zhou,R.and Hansen,E.(2002).Memory-bounded Zweig,G.and Russell,S.J.(1998).Speechrecogni-
+thetheoryofchess-playing.Firbush News,6,37 42. A graphsearch. In Proc.15th International Flairs tionwithdynamic Bayesiannetworks. In AAAI-98,
+Englishtranslationof(Zermelo1913). Conference. pp.173 180.
+This page intentionally left blank
+Index
+Pagenumbers in boldrefertodefinitions oftermsand algorithms; page numbers in italics refertoitemsin
+thebibliography.
+Symbols Ackley,D.H.,155

@@ -1,0 +1,31 @@
+eech production was localized to the
+portion of the left hemisphere now called Broca s area.6 By that time, it was known that
+the brain consisted of nerve cells, or neurons, but it was not until 1873 that Camillo Golgi
+NEURON
+(1843 1926) developed a staining technique allowing the observation of individual neurons
+in the brain (see Figure 1.2). This technique was used by Santiago Ramon y Cajal (1852 1934)inhispioneering studiesofthebrain sneuronalstructures.7 Nicolas Rashevsky(1936,
+1938)wasthefirsttoapplymathematical modelstothestudyofthenervous sytem.
+5 Sincethen,ithasbeendiscoveredthatthetreeshrew(Scandentia)hasahigherratioofbraintobodymass.
+6 Manycite Alexander Hood(1824)asapossiblepriorsource.
+7 Golgipersistedinhisbeliefthatthebrain sfunctionswerecarriedoutprimarilyinacontinuousmediumin
+whichneuronswereembedded, whereas Cajalpropounded the neuronal doctrine. Thetwosharedthe Nobel
+prizein1906butgavemutuallyantagonisticacceptancespeeches.
+Section1.2. The Foundations of Artificial Intelligence 11
+Axonal arborization
+Axon from another cell
+Synapse
+Dendrite Axon
+Nucleus
+Synapses
+Cell body or Soma
+Figure 1.2 The parts of a nerve cell or neuron. Each neuron consists of a cell body,
+or soma, that contains a cell nucleus. Branching out from the cell body are a number of
+fiberscalleddendritesanda single longfibercalled the axon. Theaxonstretchesoutfora
+long distance, much longer than the scale in this diagram indicates. Typically, an axon is
+1cmlong(100timesthediameterofthecellbody),butcanreachupto1meter. Aneuron
+makesconnectionswith10to100,000otherneuronsatjunctionscalledsynapses.Signalsare
+propagatedfrom neuronto neuronby a complicated electrochemicalreaction. The signals
+controlbrainactivityintheshorttermandalsoenablelong-termchangesintheconnectivity
+ofneurons. Thesemechanismsarethoughttoformthebasisforlearninginthebrain. Most
+informationprocessinggoesoninthecerebralcortex,theouterlayerofthebrain. Thebasic
+organizationalunit appears to be a column of tissue about0.5 m

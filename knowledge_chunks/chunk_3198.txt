@@ -1,0 +1,38 @@
+hang,N.L.,553,639,1093
+Wurman,P.,688,1092 Young,H.P.,435,1092 Zhang,W.,112,1079
+WWW,27,462,867,869 Young,M.,797,1078 Zhang,Y.,885,1067
+Young,S.J.,896,920,1080 Zhao,Y.,277,1083
+X Younger,D.H.,920,1092 Zhivotovsky,A.A.,192,1064
+Yu,B.,553,1068 Zhou,R.,112,1093
+XCON,336
+Yudkowsky,E.,27,1039,1093 Zhu,C.,760,1067
+XML,875
+Yung,M.,110,119,1064,1075 Zhu,D.J.,1012,1093
+xor,246,766
+Yvanovich,M.,432,1070 Zhu,W.L.,439,1089
+Xu,J.,358,1092
+Zilberstein,S.,156,422,433,434,
+Xu,P.,29,921,1067
+Z 1075,1085
+Zimdars,A.,857,1087
+Y
+Z-3,14 Zimmermann,H.-J.,557,1093
+Yakimovsky,Y.,639,1072 Zadeh,L.A.,557,1093 Zinkevich,M.,687,1093
+Yale,23 Zahavi,U.,107,1092 Zisserman,A.,960,968,1075,1086
+Yan,D.,431,1073 Zapp,A.,1014,1071 Zlotkin,G.,688,1087
+Yang,C.S.,884,1087 Zaragoza,H.,884,1069 Zog,778
+Yang,F.,107,1092 Zaritskii,V.S.,605,1093 Zollmann,A.,922,1093
+Yang,Q.,432,1092 zebrapuzzle,231 Zuckerman,D.,124,1081
+Yannakakis,M.,157,229,1065,1084 Zecchina,R.,278,1084 Zufferey,J.C.,1045,1072
+Yap,R.H.C.,359,1077 Zeldner,M.,908 Zuse,K.,14,192
+Yardi,M.,278,1068 Zelle,J.,902,921,1093 Zweben,M.,432,1070
+Yarowsky,D.,27,885,1092 Zeng,H.,314,1082 Zweig,G.,604,1093
+Yates,A.,885,1072 Zermelo,E.,687,1093 Zytkow,J.M.,800,1079
+
+=== END OF AI-clean.txt ===
+
+
+
+=== START OF patterson-clean.txt ===
+
+Introduction . ,"" ... Preii D. ,_ . . dia LV!?ow@fr ~O[M]Dfr ~ ew Delhi110 001 . 2002' . : This Thirteenth. lndl n Reprlnt-Rs. ,50.00 (Original U.S. Edition--As. 3017.00) INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND 'EXP~RT. SYSTEMS by Dan W. Patterson . C 1990 by may be reproduced in any form, by mimeograph or any other means. without permission ih writing from the publisher. . . ' The al,llhor and publisher of this book have used their best elforla In preparing this book. These efforts Include the development, research, and tes Ung of the theories and programo to determine their effecttv.ne. ... The 8Uihort and publisher make no warranty of any kind, expre,sed or implied, with regard to these programs or th., documentation con

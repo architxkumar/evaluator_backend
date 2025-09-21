@@ -1,0 +1,50 @@
+ disparity and
+depth. First, wewill consider the case when both the eyes (or cameras) are looking forward
+withtheiropticalaxesparallel. Therelationship oftherightcameratotheleftcameraisthen
+just a displacement along the x-axis by an amount b, the baseline. We can use the optical
+flow equations from the previous section, if we think of this as resulting from a translation
+950 Chapter 24. Perception
+Left
+eye 2
+P
+L b P P
+0
+P
+R
+Right
+eye Z Z
+Figure24.17 Therelationbetweendisparityanddepthinstereopsis. Thecentersofpro-
+jectionofthetwoeyesarebapart,andtheopticalaxesintersectatthefixationpoint P . The
+0
+point P in the scene projects to points PL and PR in the two eyes. In angular terms, the
+disparitybetweentheseis . Seetext.
+vector T acting for time t, with T b t and T T 0. The horizontal and vertical
+x y z
+disparityaregivenbytheopticalflowcomponents,multipliedbythetimestep t,H v t,
+x
+V v t. Carryingoutthesubstitutions, wegettheresultthat H b Z,V 0. Inwords,
+y
+the horizontal disparity is equal to the ratio of the baseline to the depth, and the vertical
+disparity iszero. Giventhatweknow b,wecanmeasure H andrecoverthedepth Z.
+Under normal viewing conditions, humans fixate; that is, there is some point in the
+FIXATE
+sceneatwhichtheopticalaxesofthetwoeyesintersect. Figure24.17showstwoeyesfixated
+at a point P , which is at a distance Z from the midpoint of the eyes. For convenience,
+0
+we will compute the angular disparity, measured in radians. The disparity at the point of
+fixation P is zero. For some other point P in the scene that is Z farther away, we can
+0
+compute the angular displacements of the left and right images of P, which wewill call P
+L
+and P , respectively. If each of these is displaced by an angle 2 relative to P , then the
+R 0
+displacement between P and P ,whichisthedisparityof P,isjust . From Figure24.17,
+L R
+tan b 2 andtan( 2) b 2 ,butforsmallangles, tan ,so
+Z Z Z
+b 2 b 2 b Z 2 Z Z Z 2Z2
+and,sincetheactualdisparity is ,wehave
+b Z
+disparity .
+Z2
+Inhumans,b(theb

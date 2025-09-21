@@ -1,0 +1,30 @@
+nsors at all then the environment is unobserv-
+able. One might think that in such cases the agent s plight is hopeless, but, as wediscuss in
+UNOBSERVABLE
+Chapter4,theagent s goalsmaystillbeachievable, sometimeswithcertainty.
+Singleagent vs. multiagent: Thedistinction between single-agent andmultiagent en-
+SINGLEAGENT
+MULTIAGENT
+Section2.3. The Natureof Environments 43
+vironments may seem simple enough. Forexample, anagent solving acrossword puzzle by
+itself is clearly in a single-agent environment, whereas an agent playing chess is in a two-
+agentenvironment. Thereare,however, somesubtle issues. First,wehavedescribed howan
+entity may be viewed as an agent, but we have not explained which entities must be viewed
+as agents. Does an agent A (the taxi driver for example) have to treat an object B (another
+vehicle)asanagent,orcanitbetreatedmerelyasanobjectbehavingaccordingtothelawsof
+physics, analogous towavesatthebeach orleaves blowing inthewind? Thekeydistinction
+iswhether B sbehaviorisbestdescribedasmaximizingaperformancemeasurewhosevalue
+depends on agent A s behavior. For example, in chess, the opponent entity B is trying to
+maximize its performance measure, which, by the rules of chess, minimizes agent A s per-
+formancemeasure. Thus,chessisa competitivemultiagent environment. Inthetaxi-driving
+COMPETITIVE
+environment, on the other hand, avoiding collisions maximizes the performance measure of
+all agents, so it is a partially cooperative multiagent environment. It is also partially com-
+COOPERATIVE
+petitive because, for example, only one car can occupy a parking space. The agent-design
+problems inmultiagent environments areoftenquite different fromthose insingle-agent en-
+vironments;forexample, communicationoftenemergesasarationalbehaviorinmultiagent
+environments; insomecompetitive environments, randomizedbehaviorisrational because
+itavoids thepitfallsofpredictability.
+Deterministic vs. stochastic. If the next state of the environment is completely deter-
+DETERMINIST

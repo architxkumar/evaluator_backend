@@ -1,0 +1,35 @@
+4 istheoperator applied tothesemantics ofthephrase 3 and
+Section23.3. Augmented Grammarsand Semantic Interpretation 901
+Exp(x) Exp(x )Operator(op)Exp(x ) x Apply(op,x ,x ) 1 2 1 2
+Exp(x) (Exp(x) )
+Exp(x) Number(x)
+Number(x) Digit(x)
+Number(x) Number(x ) Digit(x ) x 10 x x 1 2 1 2
+Digit(x) x 0 x 9 Operator(x) x x , , , Figure23.8 Agrammarforarithmeticexpressions,augmentedwithsemantics.Eachvari-
+ablexirepresentsthesemanticsofaconstituent.Notetheuseofthe test notationtodefine
+logicalpredicatesthatmustbesatisfied,butthatarenotconstituents.
+Exp(5)
+Exp(2)
+Exp(2)
+Exp(3) Exp(4) Exp(2)
+Number(3) Number(4) Number(2)
+Digit(3) Operator( ) Digit(4) Operator( ) Digit(2)
+3 ( 4 2 )
+Figure23.9 Parsetreewithsemanticinterpretationsforthestring 3 (4 2) .
+COMPOSITIONAL the phrase 4. The rules obey the principle of compositional semantics the semantics of
+SEMANTICS
+aphraseisafunctionofthesemanticsofthesubphrases. Figure23.9showstheparsetreefor
+3 (4 2) according to this grammar. The root of the parse tree is Exp(5), an expression
+whosesemanticinterpretation is5.
+Nowlet smoveontothesemantics of English, oratleast of E . Westart bydetermin-
+0
+ingwhatsemanticrepresentations wewanttoassociatewithwhatphrases. Weusethesimple
+examplesentence Johnloves Mary. The NP John shouldhaveasitssemanticinterpreta-
+tion the logical term John, and the sentence as a whole should have as its interpretation the
+logical sentence Loves(John,Mary). That much seems clear. The complicated part is the
+VP loves Mary. The semantic interpretation of this phrase is neither a logical term nor a
+complete logical sentence. Intuitively, loves Mary is adescription that might ormight not
+902 Chapter 23. Natural Languagefor Communication
+apply to aparticular person. (In this case, it applies to John.) Thismeans that loves Mary is a predicate that, when combined with a term that represents a person (the person doing
+theloving), yields acomplete logical sentence. Using the -notation (see page 294), wecan
+represent loves Mary asth

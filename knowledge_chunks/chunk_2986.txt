@@ -1,0 +1,30 @@
+ce of
+propositional logic, is there an assignment of truth values to the proposition symbols of the
+sentence that makes it true? Unless a miracle occurs and P NP, there can be no algorithm
+that solves all satisfiability problems in polynomial time. However, AI is more interested in
+whether there are algorithms that perform efficiently on typical problems drawn from a pre-
+determineddistribution; aswesawin Chapter7,therearealgorithmssuchas WALKSAT that
+doquitewellonmanyproblems.
+Theclassco-NPisthecomplementof NP,inthesensethat,foreverydecision problem
+CO-NP
+in NP,thereisacorresponding problem inco-NPwiththe yes and no answers reversed.
+We know that P is a subset of both NP and co-NP, and it is believed that there are problems
+inco-NPthatarenotin P.Theco-NP-completeproblemsarethehardestproblemsinco-NP.
+CO-NP-COMPLETE
+Theclass P (pronounced sharp P )is the set of counting problems corresponding to
+thedecision problems in NP.Decision problems haveayes-or-no answer: isthere asolution
+tothis 3-SA Tformula? Counting problems have aninteger answer: how many solutions are
+there to this 3-SAT formula? In some cases, the counting problem is much harder than the
+decision problem. For example, deciding whether a bipartite graph has a perfect matching
+canbedone intime O(VE)(where thegraph has V vertices and E edges), butthecounting
+problem howmanyperfectmatchesdoesthisbipartitegraph have is P-complete,meaning
+thatitishardasanyproblem in Pandthusatleastashardasany NPproblem.
+Anotherclassistheclassof PSPAC Eproblems thosethatrequireapolynomialamount
+ofspace,evenonanondeterministic machine. Itisbelieved that PSPACE-hardproblemsare
+worse than NP-complete problems, although it could turn out that NP PSPACE,just as it
+couldturnoutthat P NP.
+A.2 VECTORS, MATRICES, AND LINEAR ALGEBRA
+Mathematicians define a vector as a memberof a vector space, but wewilluse amore con-
+VECTOR
+crete definition: avectorisanordered sequence ofvalues. Forexample, intwo-dimensional
+space, we have vectors such 

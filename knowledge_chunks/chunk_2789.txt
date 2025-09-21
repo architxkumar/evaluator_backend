@@ -1,0 +1,26 @@
+ies with equal rank. Norvig (1988) discusses the problems of considering multiple
+simultaneous interpretations, rather than settling for a single maximum-likelihood interpre-
+tation. Literary critics (Empson, 1953; Hobbs, 1990) have been ambiguous about whether
+ambiguityissomethingtoberesolved orcherished.
+Nunberg(1979)outlinesaformalmodelofmetonymy. Lakoffand Johnson(1980)give
+anengaginganalysisandcatalogofcommonmetaphorsin English. Martin(1990)and Gibbs
+(2006)offercomputational modelsofmetaphorinterpretation.
+The first important result on grammar induction was a negative one: Gold (1967)
+showed that it is not possible to reliably learn a correct context-free grammar, given a set of
+strings fromthatgrammar. Prominentlinguists, suchas Chomsky(1957) and Pinker(2003),
+UNIVERSAL have used Gold s result to argue that there must be an innate universal grammar that all
+GRAMMAR
+children have from birth. The so-called Poverty of the Stimulus argument says that children
+aren t given enough input tolearn a CFG,so theymust already know the grammarand be
+merelytuningsomeofitsparameters. Whilethisargumentcontinuestoholdswaythroughout
+muchof Chomskyanlinguistics,ithasbeendismissedbysomeotherlinguists(Pullum,1996;
+Elman et al., 1997) and most computer scientists. Asearly as 1969, Horning showed that it
+ispossibletolearn,inthesenseof PA Clearning, aprobabilistic context-freegrammar. Since
+then, there have been many convincing empirical demonstrations of learning from positive
+examplesalone,suchasthe IL Pworkof Mooney(1999)and Muggletonand De Raedt(1994),
+thesequencelearningof Nevill-Manningand Witten(1997),andtheremarkable Ph.D.theses
+of Schu tze (1995) and de Marcken (1996). There is an annual International Conference on
+Grammatical Inference (ICGI). It is possible to learn other grammar formalisms, such as
+regularlanguages(Denis,2001)andfinitestateautomata(Parekhand Honavar,2001). Abney
+(2007)isatextbookintroduction tosemi-supervised learning forlanguage models.
+Wordnet(Fellbaum,

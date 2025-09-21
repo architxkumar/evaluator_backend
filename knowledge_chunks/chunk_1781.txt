@@ -1,0 +1,35 @@
+toniclogics, whichviolatethemonotonicity property, capturea commonproperty ofhuman rea-
+soning:changingone smind.Theyarediscussedin Section12.6.
+252 Chapter 7. Logical Agents
+Forexample,supposetheknowledgebasecontainstheadditionalassertion statingthatthere
+areexactlyeightpitsintheworld. Thisknowledgemighthelptheagentdrawadditionalcon-
+clusions, but it cannot invalidate any conclusion already inferred such as the conclusion
+thatthereisnopitin 1,2 . Monotonicitymeansthatinferencerulescanbeappliedwhenever
+suitable premises are found in the knowledge base the conclusion of the rule must follow
+regardless ofwhatelseisintheknowledge base.
+7.5.2 Proofby resolution
+Wehave argued that the inference rules covered so farare sound, but wehave not discussed
+the question of completeness for the inference algorithms that use them. Search algorithms
+such as iterative deepening search (page 89) are complete in the sense that they will find
+any reachable goal, but if the available inference rules are inadequate, then the goal is not
+reachable no proof existsthatuses onlythose inference rules. Forexample, ifweremoved
+the biconditional elimination rule, the proof in the preceding section would not go through.
+The current section introduces a single inference rule, resolution, that yields a complete
+inference algorithm whencoupledwithanycompletesearchalgorithm.
+Webeginbyusingasimpleversion oftheresolution ruleinthewumpusworld. Letus
+consider the steps leading up to Figure 7.4(a): the agent returns from 2,1 to 1,1 and then
+goes to 1,2 , where it perceives a stench, but no breeze. We add the following facts to the
+knowledgebase:
+R : B .
+11 1,2
+R : B (P P P ).
+12 1,2 1,1 2,2 1,3
+By the same process that led to R earlier, we can now derive the absence of pits in 2,2 10
+and 1,3 (rememberthat 1,1 isalreadyknowntobepitless):
+R : P .
+13 2,2
+R : P .
+14 1,3
+We can also apply biconditional elimination to R , followed by Modus Ponens with R , to
+3 5
+obtainthefactthatthereisapitin 1,1 , 2,2 ,or 3,1 

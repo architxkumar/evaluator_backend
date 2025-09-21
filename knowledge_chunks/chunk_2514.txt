@@ -1,0 +1,29 @@
+h dimension then the total distance will be affected by a change in scale
+in any dimension. That is, if we change dimension i from measurements in centimeters to
+Section18.8. Nonparametric Models 739
+mileswhilekeeping theotherdimensions thesame,we llgetdifferent nearest neighbors. To
+avoidthis,itiscommontoapplynormalizationtothemeasurementsineachdimension. One
+NORMALIZATION
+simple approach is to compute the mean and standard deviation of the values in each
+i i
+dimension, and rescale them so that x becomes (x ) . A more complex metric
+j,i j,i i i
+MAHALANOBIS knownasthe Mahalanobisdistancetakesintoaccountthecovariance betweendimensions.
+DISTANCE
+In low-dimensional spaces with plenty of data, nearest neighbors works very well: we
+are likely to have enough nearby data points to get a good answer. But as the number of
+dimensions rises weencounter aproblem: the nearest neighbors inhigh-dimensional spaces
+areusually notverynear! Consider k-nearest-neighbors onadata setof N points uniformly
+distributed throughout the interior of an n-dimensional unit hypercube. We ll define the k-
+neighborhood ofapointasthesmallesthypercube thatcontains thek-nearest neighbors. Let
+(cid:3)betheaveragesidelengthofaneighborhood. Thenthevolumeoftheneighborhood(which
+contains k points) is (cid:3)n and the volume of the full cube (which contains N points) is 1. So,
+onaverage, (cid:3)n k N. Takingnthrootsofbothsidesweget(cid:3) (k N)1 n.
+To be concrete, let k 10 and N 1,000,000. In two dimensions (n 2; a unit
+square), the average neighborhood has (cid:3) 0.003, a small fraction of the unit square, and
+in3dimensions (cid:3)isjust2 oftheedgelengthoftheunitcube. Butbythetimewegetto17
+dimensions, (cid:3)ishalftheedgelengthoftheunithypercube, andin200dimensions itis94 .
+CURSEOF Thisproblem hasbeencalledthecurseofdimensionality.
+DIMENSIONALITY
+Anotherwaytolookatit: considerthepointsthatfallwithinathinshellmakingupthe
+outer 1 of the unit hypercube. These are outliers; in general it will be hard to find a

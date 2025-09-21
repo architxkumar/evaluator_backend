@@ -1,0 +1,28 @@
+The smaller
+thehypothesis, theeasieritistofind.
+In addition to allowing the use of prior knowledge in induction, ILP systems can formulate
+hypotheses in general first-order logic, rather than in the restricted attribute-based language
+of Chapter18. Thismeans thatthey canlearn inenvironments that cannot be understood by
+simplersystems.
+19.3 EXPLANATION-BASED LEARNING
+Explanation-based learning is a method for extracting general rules from individual obser-
+vations. As an example, consider the problem of differentiating and simplifying algebraic
+expressions (Exercise 9.17). If we differentiate an expression such as X2 with respect to
+X, we obtain 2X. (We use a capital letter for the arithmetic unknown X, to distinguish it
+from the logical variable x.) In a logical reasoning system, the goal might be expressed as
+ASK(Derivative(X2,X) d, KB),withsolutiond 2X.
+Anyonewhoknowsdifferentialcalculuscanseethissolution byinspection asaresult
+ofpracticeinsolvingsuchproblems. Astudentencounteringsuchproblemsforthefirsttime,
+or a program with no experience, will have a much more difficult job. Application of the
+standard rules of differentiation eventually yields the expression 1 (2 (X(2 1))), and
+eventually this simplifies to 2X. In the authors logic programming implementation, this
+takes 136 proof steps, of which 99 are on dead-end branches in the proof. After such an
+experience, we would like the program to solve the same problem much more quickly the
+nexttimeitarises.
+The technique of memoization has long been used in computer science to speed up
+MEMOIZATION
+programs by saving the results of computation. The basic idea of memo functions is to
+accumulate a database of input output pairs; when the function is called, it first checks the
+database to see whether it can avoid solving the problem from scratch. Explanation-based
+learning takes this a good deal further, by creating general rules that cover an entire class
+of cases. In the case of differentiation, memoization would rem

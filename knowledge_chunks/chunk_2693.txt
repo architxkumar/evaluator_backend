@@ -1,0 +1,33 @@
+ that this problem cannot arise if
+POLICY-EVALUATION isapplied tothelearnedmodelonlyattheendofatrial.
+21.3 Starting withthepassive AD Pagent, modifyittouseanapproximate AD Palgorithm
+asdiscussed inthetext. Dothisintwosteps:
+a. Implementapriorityqueueforadjustments totheutilityestimates. Wheneverastateis
+adjusted, all of its predecessors also become candidates for adjustment and should be
+added to the queue. Thequeue is initialized with the state from which the most recent
+transition tookplace. Allowonlyafixednumberofadjustments.
+b. Experiment with various heuristics forordering thepriority queue, examining theiref-
+fectonlearning ratesandcomputation time.
+21.4 Writeouttheparameterupdateequations for TDlearningwith
+(cid:9)
+U (x,y) x y (x x )2 (y y )2 .
+0 1 2 3 g g
+21.5 Implement an exploring reinforcement learning agent that uses direct utility estima-
+tion. Make two versions one with a tabular representation and one using the function ap-
+proximatorin Equation(21.10). Comparetheirperformance inthreeenvironments:
+a. The4 3worlddescribed inthechapter.
+b. A10 10worldwithnoobstacles anda 1rewardat(10,10).
+c. A10 10worldwithnoobstacles anda 1rewardat(5,5).
+21.6 Devisesuitable features forreinforcement learning instochastic gridworlds(general-
+izations ofthe 4 3 world) that contain multiple obstacles and multiple terminal states with
+rewardsof 1or 1.
+21.7 Extend the standard game-playing environment (Chapter 5) to incorporate a reward
+signal. Put two reinforcement learning agents into the environment (they may, of course,
+share the agent program) and have them play against each other. Apply the generalized TD
+updaterule(Equation(21.12))toupdatetheevaluationfunction. Youmightwishtostartwith
+asimplelinearweightedevaluation function andasimplegame,suchastic-tac-toe.
+Exercises 859
+21.8 Compute the true utility function and the best linear approximation in x and y (as in
+Equation(21.10))forthefollowingenvironments:
+a. A10 10worldwithasingle 1terminalstateat(10,10).
+b. Asin(a),

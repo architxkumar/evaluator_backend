@@ -1,0 +1,33 @@
+BGBLITZ,194 Bobick,A.,604,1077 Brady,J.M.,604,1084
+Bhar,R.,604,1066 Bobrow,D.G.,19,884,1066 Brafman,O.,638,1067
+Bialik,H.N.,908 Boddy,M.,156,433,1048,1070,1074 Brafman,R.,638,1067
+bias,declarative,787 Boden,M.A.,275,1042,1066 Brafman,R.I.,433,434,855,1066,
+Bibel,W.,359,360,1066,1080 body(of Hornclause),256 1067,1076
+Bickford,M.,356,1089 boid,429,435 Brahmagupta,227
+biconditional,244 Bolognesi,A.,192,1066 brain,16
+Biddulph,R.,922,1070 Boltzmannmachine,763 computationalpower,12
+bidirectionalsearch,90 112 Bonaparte,N.,190 computervs.,12
+Index 1099
+damage,optimal,737 Bryant,B.D.,435,1067 Cannyedgedetection,755,967
+replacement,1029 1031,1043 Bryce,D.,157,395,433,1067 canonicaldistribution,518
+super,9 Bryson,A.E.,22,761,1067 canonicalform,80
+inavat,1028 Buchanan,B.G.,22,23,61,468,557, Cantor,C.R.,553,1093
+brainscauseminds,11 776,799,1067,1072,1080 Cantu-Paz,E.,155,1085
+Braitenberg,V.,1013,1067 Buckley,C.,870,1089 Capek,K.,1011,1037
+branchingfactor,80,783 Buehler,M.,1014,1067 Capen,E.,637,1068
+effective,103,111,169 BUGS,554,555 Caprara,A.,395,1068
+Bransford,J.,927,1067 BUILD,472 Carbone,R.,279,1064
+Brants,T.,29,883,921,1067,1072 Bulfin,R.,688,1086 Carbonell,J.G.,27,432,799,1068,
+Bratko,I.,112,359,793,1067 bunch,442 1075,1091
+Bratman,M.E.,60,1041,1067 Bundy,A.,799,1091 Carbonell,J.R.,799,1068
+Braverman,E.,760,1064 Bunt,H.C.,470,1067 Cardano,G.,9,194,503,1068
+BREADTH-FIRST-SEARCH,82 Buntine,W.,800,1083 cardgames,183
+breadth-firstsearch,81,81 83,108,408 Burch,N.,194,678,687,1066,1088 Carin,L.,686,1077
+Breese,J.S.,61,553,555,639,1048, Burgard,W.,606,1012 1014,1067, Carlin,J.B.,827,1073
+1067,1076,1091 1068,1072,1088,1090 Carlson,A.,288,1082
+Breiman,L.,758,760,1067 Burges,C.,884,1090 CARMEL,1013
+Brelaz,D.,228,1067 burglaralarm,511 513 Carnap,R.,6,490,491,504,505,555,
+Brent,R.P.,154,1067 Burkhard,H.-D.,1014,1091 1068
+Bresina,J.,28,1064 Burns,C.,553,1083 Carnegie Mellon University,17,18
+Bresnan,J.,920,1067 Buro,M.,175,186,1067 Carpenter,M.,432,1070
+Brewka,G.,472,1067 Burstein,J.,1

@@ -1,0 +1,25 @@
+evance information in the form of functional dependencies was first developed in
+the database community, where it is used to structure large sets of attributes into manage-
+able subsets. Functional dependencies were used for analogical reasoning by Carbonell
+and Collins (1973) and rediscovered and given a full logical analysis by Davies and Rus-
+sell (Davies, 1985; Davies and Russell, 1987). Their role as prior knowledge in inductive
+learning was explored by Russell and Grosof (1987). The equivalence of determinations to
+arestricted-vocabulary hypothesis space wasproved in Russell (1988). Learning algorithms
+for determinations and the improved performance obtained by RBDTL were first shown in
+the FOCUS algorithm, due to Almuallim and Dietterich (1991). Tadepalli (1993) describes a
+veryingenious algorithm forlearning withdeterminations thatshowslarge improvements in
+learning speed.
+The idea that inductive learning can be performed by inverse deduction can be traced
+to W. S. Jevons (1874), who wrote, The study both of Formal Logic and of the Theory of
+Probabilities has led meto adopt theopinion that there isno such thing as adistinct method
+of induction as contrasted with deduction, but that induction is simply an inverse employ-
+mentofdeduction. Computational investigations beganwiththeremarkable Ph.D.thesisby
+800 Chapter 19. Knowledgein Learning
+Gordon Plotkin(1971) at Edinburgh. Although Plotkindeveloped manyofthetheorems and
+methodsthatareincurrentusein ILP,hewasdiscouragedbysomeundecidability resultsfor
+certainsubproblems ininduction. MIS(Shapiro, 1981)reintroduced theproblem oflearning
+logic programs, but was seen mainly as a contribution to the theory of automated debug-
+ging. Workonruleinduction, suchasthe ID3 (Quinlan, 1986) and CN2 (Clarkand Niblett,
+1989)systems,ledto FOIL (Quinlan,1990), whichforthefirsttimeallowedpractical induc-
+tion of relational rules. The field of relational learning was reinvigorated by Muggleton and
+Buntine(1988),whose CIGO Lprogram

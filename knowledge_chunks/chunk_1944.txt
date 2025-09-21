@@ -1,0 +1,31 @@
+tation of search algorithms in Prolog. Suppose
+that successor(X,Y)is true when state Y is a successor of state X; and that goal(X)
+istrue when Xisagoal state. Writeadefinition for solve(X,P),which means that Pis a
+path (list of states) beginning with X, ending in a goal state, and consisting of a sequence of
+legalstepsasdefinedbysuccessor.Youwillfindthatdepth-firstsearchistheeasiestway
+todothis. Howeasywoulditbetoaddheuristic searchcontrol?
+9.19 Supposeaknowledgebasecontainsjustthefollowingfirst-order Hornclauses:
+Ancestor(Mother(x),x)
+Ancestor(x,y) Ancestor(y,z) Ancestor(x,z)
+Consideraforwardchainingalgorithmthat,onthejthiteration,terminatesifthe KBcontains
+asentence that unifies withthe query, else adds tothe KBevery atomic sentence that canbe
+inferredfromthesentences alreadyinthe KBafteriterationj 1.
+a. Foreachofthefollowingqueries, saywhetherthealgorithm will(1)giveananswer(if
+so,writedownthatanswer);or(2)terminatewithnoanswer; or(3)neverterminate.
+(i) Ancestor(Mother(y),John)
+(ii) Ancestor(Mother(Mother(y)),John)
+(iii) Ancestor(Mother(Mother(Mother(y))),Mother(y))
+(iv) Ancestor(Mother(John),Mother(Mother(John)))
+b. Canaresolutionalgorithmprovethesentence Ancestor(John,John)fromtheorig-
+inalknowledgebase? Explainhow,orwhynot.
+c. Suppose we add the assertion that (Mother(x) x) and augment the resolution al-
+gorithmwithinferencerulesforequality. Nowwhatistheanswerto(b)?
+9.20 Let Lbethefirst-orderlanguagewithasinglepredicate S(p,q),meaning pshaves q. Assumeadomainofpeople.
+Exercises 365
+a. Consider the sentence There exists a person P who shaves every one who does not
+shavethemselves, andonlypeoplethatdonotshavethemselves. Expressthisin L.
+b. Convertthesentence in(a)toclausalform.
+c. Construct aresolution proof to show that the clauses in(b) are inherently inconsistent.
+(Note: youdonotneedanyadditional axioms.)
+9.21 Howcanresolution beusedtoshowthatasentence isvalid? Unsatisfiable?
+9.22 Construct an example of two clauses that can be resolved together in two differ

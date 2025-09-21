@@ -1,0 +1,31 @@
+raphy
+Erol,K.,Hendler,J.,and Nau,D.S.(1996). Com- Felzenszwalb,P.and Huttenlocher,D.(2000).Effi- Forgy,C.(1981). OPS5user smanual. Technical
+plexityresultsfor HT Nplanning.AIJ,18(1),69 93. cientmatchingofpictorialstructures.In CVPR. report CMU-CS-81-135,Computer Science Depart-
+ment,Carnegie-Mellon University.
+Etzioni,A.(2004). From Empireto Community:A Felzenszwalb,P.and Mc Allester,D.A.(2007).The
+New Approachto International Relation. Palgrave generalized A architecture.JAIR. Forgy,C.(1982). Afastalgorithmforthemany
+Macmillan. patterns manyobjectsmatchproblem. AIJ,19(1),
+Ferguson,T.(1992). Matewithknightandbishop
+17 37.
+Etzioni,O.(1989).Tractabledecision-analyticcon- inkriegspiel. Theoretical Computer Science,96(2),
+trol. In Proc. First International Conference on 389 403. Forsyth,D.and Ponce,J.(2002).Computer Vision:
+Knowledge Representationand Reasoning,pp.114 AModern Approach. Ferguson,T.(1995). Matewiththetwobishopsin
+125.
+kriegspiel.www.math.ucla.edu tom papers. Fourier, J. (1827). Analyse des travaux de
+Etzioni, O.,Banko, M.,Soderland, S.,and Weld, l Acade mie Royale des Sciences, pendantl anne e
+Ferguson, T.(1973). Bayesiananalysis ofsome
+D.S.(2008). Openinformationextractionfromthe 1824;partiemathe matique. Histoiredel Acade mie
+nonparametricproblems. Annalsof Statistics,1(2),
+web.CACM,51(12). Royaledes Sciencesde France,7,xlvii lv.
+209 230.
+Etzioni, O., Hanks, S., Weld, D. S., Draper, D., Fox,C.and Tversky,A.(1995). Ambiguityaver-
+Ferraris,P.and Giunchiglia,E.(2000).Planningas
+Lesh,N.,and Williamson,M.(1992). Anapproach sionandcomparativeignorance. Quarterly Journal
+satisabilityinnondeterministicdomains. In AAAI-
+toplanningwithincompleteinformation.In KR-92. of Economics,110(3),585 603.
+00,pp.748 753.
+Etzioni,O.and Weld,D.S.(1994).Asoftbot-based
+Ferriss,T.(2007).The4-Hour Workweek.Crown.
+Fox,D., Burgard, W.,Dellaert, F., and Thrun, S.
+interfacetothe Internet.CACM,37(7),72 76. (1999). Montecarlolocalization:Efficientposition
+Fikes,R.E.,Hart,P.E.,and Nilsso

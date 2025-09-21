@@ -1,0 +1,29 @@
+mathematics (Wos and
+Winker, 1983). The Boyer Moore theorem prover (Boyer and Moore, 1979) was used by
+Natarajan Shankar to give the first fully rigorous formal proof of Go del s Incompleteness
+Theorem (Shankar, 1986). The NUPRL system proved Girard s paradox (Howe, 1987) and
+Higman s Lemma(Murthyand Russell, 1990). In1933, Herbert Robbins proposed asimple
+setofaxioms the Robbinsalgebra that appearedtodefine Booleanalgebra, butnoproof
+ROBBINSALGEBRA
+could be found (despite serious work by Alfred Tarski and others). On October 10, 1996,
+aftereightdaysofcomputation, EQP (aversionof OTTER)foundaproof(Mc Cune,1997).
+Many early papers in mathematical logic are to be found in From Frege to Go del:
+A Source Book in Mathematical Logic (van Heijenoort, 1967). Textbooks geared toward
+automated deduction include the classic Symbolic Logic and Mechanical Theorem Prov-
+ing(Changand Lee,1973),aswellasmorerecentworksby Duffy(1991),Wosetal.(1992),
+Bibel (1993), and Kaufmann et al. (2000). The principal journal for theorem proving is the
+Journal of Automated Reasoning; the main conferences are the annual Conference on Auto-
+mated Deduction (CADE) and the International Joint Conference on Automated Reasoning
+(IJCAR). The Handbook of Automated Reasoning (Robinson and Voronkov, 2001) collects
+papersinthefield. Mac Kenzie s Mechanizing Proof(2004)coversthehistoryandtechnology
+oftheorem provingforthepopularaudience.
+EXERCISES
+9.1 Prove that Universal Instantiation is sound and that Existential Instantiation produces
+aninferentially equivalent knowledgebase.
+9.2 From Likes(Jerry,Ice Cream) it seems reasonable to infer x Likes(x,Ice Cream).
+EXISTENTIAL Writedownageneralinference rule, Existential Introduction,thatsanctions thisinference.
+INTRODUCTION
+Statecarefullytheconditionsthatmustbesatisfiedbythevariablesandtermsinvolved.
+Exercises 361
+9.3 Suppose a knowledge base contains just one sentence, x As High As(x,Everest).
+Whichofthefollowingarelegitimateresultsofapplying Existential Instant

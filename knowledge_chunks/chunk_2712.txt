@@ -1,0 +1,40 @@
+nonyms also
+play an important role in ranking terms like leather , wooden, or modern can serve
+to confirm that the document really is about couch. Synonyms and related words can be
+found in dictionaries or by looking for correlations in documents or in queries if we find
+that many users who ask the query new sofa follow it up with the query new couch , we
+caninthefuturealter newsofa tobe newsofa ORnewcouch .
+As a final refinement, IR can be improved by considering metadata data outside of
+METADATA
+thetext ofthe document. Examples include human-supplied keywords andpublication data.
+Onthe Web,hypertext linksbetweendocuments areacrucialsourceofinformation.
+LINKS
+22.3.4 The Page Rankalgorithm
+Page Rank3 wasoneofthetwooriginal ideas thatset Google s search apart from other Web
+PAGERANK
+search engines whenitwasintroduced in1997. (Theotherinnovation wastheuseofanchor
+3 Thenamestandsbothfor Webpagesandforcoinventor Larry Page(Brinand Page,1998).
+Section22.3. Information Retrieval 871
+function HITS(query)returnspages withhubandauthoritynumbers
+pages EXPAND-PAGES(RELEVANT-PAGES(query))
+foreachp inpages do
+p.AUTHORITY 1
+p.HUB 1
+repeatuntilconvergencedo
+foreachp inpages d(cid:2)o
+p.AUTHOR(cid:2)ITY i
+INLIN Ki(p).HUB
+p.HUB i
+OUTLIN Ki(p).AUTHORITY
+NORMALIZE(pages)
+returnpages
+Figure 22.1 The HITS algorithm for computing hubs and authorities with respect to a
+query. RELEVANT-PAGE Sfetchesthepagesthatmatchthequery,and EXPAND-PAGE Sadds
+ineverypagethatlinkstoorislinkedfromoneoftherelevantpages. NORMALIZ Edivides
+each page s score by the sum of the squares of all pages scores (separately for both the
+authorityandhubsscores).
+text theunderlinedtextinahyperlink toindexapage,eventhoughtheanchortextwason
+adifferent pagethantheonebeingindexed.) Page Rankwasinvented tosolvetheproblemof
+thetyrannyof TF scores: ifthequeryis IBM ,howdowemakesurethat IBM shomepage,
+ibm.com,isthefirstresult,evenifanotherpagementionstheterm IBM morefrequently?
+Theideaisthatibm.comhasmanyin-links(linkstothepage

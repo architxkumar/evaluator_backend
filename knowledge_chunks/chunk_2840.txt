@@ -1,0 +1,30 @@
+dthiswillrevealtheirappearance.
+24.5.2 Coherent appearance: Tracking people invideo
+Tracking people in video is an important practical problem. If we could reliably report the
+location of arms, legs, torso, and head in video sequences, we could build much improved
+game interfaces and surveillance systems. Filtering methods have not had much success
+withthisproblem, because people canproduce large accelerations andmovequite fast. This
+means that for 30 Hz video, the configuration of the body in frame i doesn t constrain the
+configurationofthebodyinframei 1allthatstrongly. Currently,themosteffectivemethods
+exploit thefactthatappearance changes veryslowlyfromframetoframe. Ifwecaninferan
+appearance model of an individual from the video, then we can use this information in a
+pictorial structure model to detect that person in each frame of the video. We can then link
+theselocations acrosstimetomakeatrack.
+960 Chapter 24. Perception
+torso
+arm
+Lateral walking Appearance Body part Detected figure
+detector model maps
+motion blur interlacing
+Figure 24.24 We can track moving people with a pictorial structure model by first ob-
+taininganappearancemodel,thenapplyingit. Toobtaintheappearancemodel,wescanthe
+image to find a lateral walking pose. The detector does not need to be very accurate, but
+shouldproducefewfalsepositives. Fromthedetectorresponse,we canreadoffpixelsthat
+lieoneachbodysegment,andothersthatdonotlieonthatsegment.Thismakesitpossibleto
+buildadiscriminativemodeloftheappearanceofeachbodypart,andthesearetiedtogether
+intoapictorialstructuremodelofthepersonbeingtracked. Finally,wecanreliablytrackby
+detectingthismodelineachframe.Astheframesinthelowerpartoftheimagesuggest,this
+procedurecantrackcomplicated,fast-changingbodyconfigurations,despitedegradationof
+thevideosignalduetomotionblur. Figurefrom Ramananetal.(2007)(cid:2)c IEEE.
+There are several ways to infer a good appearance model. We regard the video as a
+large stack of pictures of the person we wish to track. We can 

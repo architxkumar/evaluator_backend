@@ -1,0 +1,29 @@
+for
+the same case as shown in Figure 8.4. Figure 8.5 shows some of the models, ranging from
+the model with no tuples satisfying the relation to the model with all tuples satisfying the
+relation. With two objects, there are four possible two-element tuples, so there are 24 16
+different subsets oftuples that cansatisfy therelation. Thus, there are16possible modelsin
+all alotfewerthantheinfinitelymanymodelsforthestandardfirst-ordersemantics. Onthe
+otherhand,thedatabasesemantics requiresdefiniteknowledgeofwhattheworldcontains.
+This example brings up an important point: there is no one correct semantics for
+logic. The usefulness of any proposed semantics depends on how concise and intuitive it
+makes the expression of the kinds of knowledge we want to write down, and on how easy
+andnatural itistodevelop thecorresponding rules ofinference. Database semantics ismost
+useful when we are certain about the identity of all the objects described in the knowledge
+base and whenwehave allthe facts athand; inother cases, itisquite awkward. Forthe rest
+ofthischapter,weassumethestandardsemanticswhilenotinginstancesinwhichthischoice
+leadstocumbersomeexpressions.
+8.3 USING FIRST-ORDER LOGIC
+Nowthatwehavedefinedanexpressivelogicallanguage,itistimetolearnhowtouseit. The
+bestwaytodothisisthroughexamples. Wehaveseensomesimplesentencesillustrating the
+variousaspectsoflogicalsyntax;inthissection, weprovidemoresystematicrepresentations
+of some simple domains. In knowledge representation, a domain is just some part of the
+DOMAIN
+worldaboutwhichwewishtoexpresssomeknowledge.
+Webegin withabriefdescription ofthe TELL ASK interface forfirst-orderknowledge
+bases. Then we look at the domains of family relationships, numbers, sets, and lists, and at
+Section8.3. Using First-Order Logic 301
+thewumpusworld. Thenextsectioncontainsamoresubstantialexample(electroniccircuits)
+and Chapter12coverseverything intheuniverse.
+8.3.1 Assertions andqueries infirst-order logic
+Sentencesareaddedtoaknowledgebaseusing TELL

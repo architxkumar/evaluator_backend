@@ -1,0 +1,32 @@
+hould take into account the importance of each piece of information in
+relation to its cost, and should stop asking questions when that is appropriate. All of these
+capabilities canbeachievedbyusingthevalueofinformation asaguide.
+Figure 16.9 shows the overall design of an agent that can gather information intel-
+ligently before acting. For now, we assume that with each observable evidence variable
+E , there is an associated cost, Cost(E ), which reflects the cost of obtaining the evidence
+j j
+through tests, consultants, questions, orwhatever. Theagentrequests whatappears tobethe
+most efficient observation interms of utility gain perunit cost. Weassume that the result of
+theaction Request(E )isthatthenextperceptprovides thevalueof E . Ifnoobservation is
+j j
+worthitscost,theagentselectsa real action.
+The agent algorithm we have described implements a form of information gathering
+thatiscalled myopic. Thisisbecause itusesthe VP Iformula shortsightedly, calculating the
+MYOPIC
+value of information as if only a single evidence variable will be acquired. Myopic control
+is based on the same heuristic idea as greedy search and often works well in practice. (For
+example, it has been shown to outperform expert physicians in selecting diagnostic tests.)
+function INFORMATION-GATHERING-AGENT(percept)returnsanaction
+persistent: D,adecisionnetwork
+integratepercept into D
+j thevaluethatmaximizes VPI(Ej) Cost(Ej)
+if VPI(Ej) Cost(Ej)
+return REQUEST(Ej)
+elsereturnthebestactionfrom D
+Figure16.9 Designofasimpleinformation-gatheringagent. Theagentworksbyrepeat-
+edlyselecting the observationwith the highestinformationvalue, untilthe cost of the next
+observationisgreaterthanitsexpectedbenefit.
+Section16.7. Decision-Theoretic Expert Systems 633
+However, if there is no single evidence variable that will help a lot, a myopic agent might
+hastily take an action when it would have been better to request two or more variables first
+and then take action. A better approach in this situation would be

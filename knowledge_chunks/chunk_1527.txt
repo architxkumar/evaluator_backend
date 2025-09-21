@@ -1,0 +1,33 @@
+beenexpanded.In(c),theremainingsuccessorsoftheroot
+havebeenexpandedinclockwiseorder.
+the initial state to an unexplored state has to pass through a state in the frontier. (If this
+seemscompletely obvious, try Exercise 3.13now.) Thisproperty isillustrated in Figure 3.9.
+As every step moves a state from the frontier into the explored region while moving some
+statesfromtheunexploredregionintothefrontier,weseethatthealgorithmissystematically
+examiningthestatesinthestatespace, onebyone,untilitfindsasolution.
+3.3.1 Infrastructure forsearch algorithms
+Search algorithms require a data structure to keep track of the search tree that is being con-
+structed. Foreachnode nofthetree,wehaveastructure thatcontains fourcomponents: n.STATE: thestateinthestatespacetowhichthenodecorresponds; n.PARENT: thenodeinthesearchtreethatgenerated thisnode; n.ACTION: theactionthatwasappliedtotheparenttogeneratethenode; n.PATH-COST: thecost,traditionally denotedbyg(n),ofthepathfromtheinitialstate
+tothenode,asindicated bytheparentpointers.
+Section3.3. Searchingfor Solutions 79
+PARENT
+Node
+55 44 ACTION Right
+PATH-COST 6
+66 11 88
+STATE
+77 33 22
+Figure3.10 Nodesarethedatastructuresfromwhichthesearchtreeisconstructed.Each
+hasaparent,astate,andvariousbookkeepingfields. Arrowspointfromchildtoparent.
+Given the components for a parent node, it is easy to see how to compute the necessary
+components fora child node. The function CHILD-NODE takes a parent node and an action
+andreturnstheresulting childnode:
+function CHILD-NODE(problem,parent,action)returnsanode
+returnanodewith
+STATE problem.RESULT(parent.STATE,action),
+PARENT parent,ACTION action,
+PATH-COST parent.PATH-COST problem.STEP-COST(parent.STATE,action)
+The node data structure is depicted in Figure 3.10. Notice how the PARENT pointers
+stringthenodestogetherintoatreestructure. Thesepointersalsoallowthesolutionpathtobe
+extracted when agoal node is found; weuse the SOLUTION function to return the sequence
+ofactions obtained byfollowingparentpointers ba

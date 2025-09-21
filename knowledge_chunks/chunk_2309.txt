@@ -1,0 +1,25 @@
+ypically intractably large, but MCMC and particle filtering algorithms
+fordataassociation workwellinpractice.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Manyofthebasic ideasforestimating thestateofdynamical systemscamefrom themathe-
+matician C. F. Gauss (1809), who formulated adeterministic least-squares algorithm for the
+problem of estimating orbits from astronomical observations. A. A. Markov (1913) devel-
+oped what was later called the Markov assumption in his analysis of stochastic processes;
+604 Chapter 15. Probabilistic Reasoning over Time
+heestimated afirst-order Markov chain onletters from thetextof Eugene Onegin. Thegen-
+eraltheoryof Markovchainsandtheirmixingtimesiscoveredby Levinetal.(2008).
+Significantclassifiedworkonfilteringwasdoneduring World War IIby Wiener(1942)
+for continuous-time processes and by Kolmogorov (1941) for discrete-time processes. Al-
+though this work led to important technological developments over the next 20 years, its
+use of a frequency-domain representation made many calculations quite cumbersome. Di-
+rect state-space modeling of the stochastic process turned out to be simpler, as shown by
+Peter Swerling (1959) and Rudolf Kalman (1960). The latter paper described what is now
+known as the Kalman filter for forward inference in linear systems with Gaussian noise;
+Kalman sresultshad,however,beenobtainedpreviously bythe Danishstatistician Thorvold
+Thiele(1880)andbythe Russianmathematician Ruslan Stratonovich(1959),whom Kalman
+met in Moscow in 1960. After a visit to NASA Ames Research Center in 1960, Kalman
+saw the applicability of the method to the tracking of rocket trajectories, and the filter was
+later implemented forthe Apollo missions. Important results on smoothing were derived by
+Rauch et al. (1965), and the impressively named Rauch Tung Striebel smoother is still a
+standard technique today. Many early results are gathered in Gelb (1974). Bar-Shalom and
+Fortmann (1988) give amoremodern treatment witha Bayesian flavor, aswellas manyre

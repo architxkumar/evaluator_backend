@@ -1,0 +1,26 @@
+emergedoverthepastfiftyyearsof AI
+researchandthepasttwomillenniaofrelatedwork. Wehavetriedtoavoidexcessiveformal-
+ityinthepresentationoftheseideaswhileretainingprecision. Wehaveincludedpseudocode
+algorithms tomakethekeyideasconcrete; ourpseudocode is described in Appendix B.
+Thisbookisprimarilyintendedforuseinanundergraduate courseorcoursesequence.
+The book has 27 chapters, each requiring about a week s worth of lectures, so working
+through the whole book requires a two-semester sequence. A one-semester course can use
+selected chapters to suit the interests of the instructor and students. The book can also be
+used in a graduate-level course (perhaps with the addition of some of the primary sources
+suggested in the bibliographical notes). Sample syllabi are available at the book s Web site,
+aima.cs.berkeley.edu. The only prerequisite is familiarity with basic concepts of
+computer science (algorithms, data structures, complexity) at a sophomore level. Freshman
+calculusandlinearalgebraareusefulforsomeofthetopics;therequiredmathematicalback-
+groundissuppliedin Appendix A.
+Exercises are given at the end of each chapter. Exercises requiring significant pro-
+gramming are marked with a keyboard icon. These exercises can best be solved by taking
+advantage of the code repository at aima.cs.berkeley.edu. Some of them are large
+enough to be considered term projects. A numberof exercises require some investigation of
+theliterature; thesearemarkedwitha bookicon.
+Throughout the book, important points are marked with a pointing icon. We have in-
+cluded an extensive index of around 6,000 items to make it easy to find things in the book.
+Wherevera newtermisfirstdefined,itisalsomarkedinthemargin.
+NEWTERM
+About the Web site
+aima.cs.berkeley.edu,the Websiteforthebook,contains implementations ofthealgorithmsinthebookinseveralprogramming languages, a list of over 1000 schools that have used the book, many with links to online course
+materialsandsyllabi, anannotated listofover800linkstosit

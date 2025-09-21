@@ -1,0 +1,31 @@
+ have noticed that a little bit ofbackground knowledge would
+help in the representation of the Grandparent definition. For example, if Background in-
+cludedthesentence
+Parent(x,y) Mother(x,y) Father(x,y) ,
+thenthedefinitionof Grandparent wouldbereducedto
+Grandparent(x,y) z Parent(x,z) Parent(z,y) .
+This shows how background knowledge can dramatically reduce the size of hypotheses re-
+quiredtoexplaintheobservations.
+It is also possible for ILP algorithms to create new predicates in order to facilitate the
+expression of explanatory hypotheses. Given the example data shown earlier, it is entirely
+reasonable for the ILP program to propose an additional predicate, which we would call
+George Mum
+Spencer Kydd Elizabeth Philip Margaret
+Diana Charles Anne Mark Andrew Sarah Edward Sophie
+William Harry Peter Zara Beatrice Eugenie Louise James
+Figure19.11 Atypicalfamilytree.
+Section19.5. Inductive Logic Programming 791 Parent, in order to simplify the definitions of the target predicates. Algorithms that can
+CONSTRUCTIVE generate new predicates are called constructive inductionalgorithms. Clearly, constructive
+INDUCTION
+induction is a necessary part of the picture of cumulative learning. It has been one of the
+hardestproblemsinmachinelearning,butsome IL Ptechniquesprovideeffectivemechanisms
+forachieving it.
+In the rest of this chapter, we will study the two principal approaches to ILP. The first
+uses a generalization of decision tree methods, and the second uses techniques based on
+inverting aresolution proof.
+19.5.2 Top-down inductive learningmethods
+Thefirstapproachto IL Pworksbystartingwithaverygeneral ruleandgraduallyspecializing
+it so that it fits the data. This is essentially what happens in decision-tree learning, where a
+decision tree is gradually grown until it is consistent with the observations. To do ILP we
+use first-order literals instead ofattributes, and the hypothesis isaset ofclauses instead of a
+decision tree. Thissection describes FOIL (Quinlan, 1990),oneofth

@@ -1,0 +1,36 @@
+rrevolutejoints. Thischainofcoordinatetransformation
+isknownaskinematics.
+KINEMATICS
+Theinverseproblem ofcalculating theconfiguration ofarobotwhoseeffectorlocation
+INVERSE isspecifiedinworkspacecoordinatesisknownasinversekinematics. Calculatingtheinverse
+KINEMATICS
+kinematicsishard,especiallyforrobotswithmany DO Fs. Inparticular,thesolutionisseldom
+unique. Figure 25.14(a) shows one of twopossible configurations that put the gripper in the
+samelocation. (Theotherconfiguration wouldhastheelbowbelowtheshoulder.)
+988 Chapter 25. Robotics
+conf-2
+conf-1
+conf-3
+conf-3
+conf-1
+conf-2
+ee
+ss
+(a) (b)
+Figure25.15 Threerobotconfigurations,showninworkspaceandconfigurationspace.
+In general, this two-link robot arm has between zero and two inverse kinematic solu-
+tions for any set of workspace coordinates. Most industrial robots have sufficient degrees
+of freedom to find infinitely many solutions to motion problems. To see how this is possi-
+ble, simply imagine that we added a third revolute joint to our example robot, one whose
+rotational axis is parallel to the ones of the existing joints. In such a case, we can keep the
+location(butnottheorientation!) ofthegripperfixedandstillfreelyrotateitsinternaljoints,
+formostconfigurationsoftherobot. Withafewmorejoints(howmany?) wecanachievethe
+same effect while keeping the orientation of the gripper constant as well. We have already
+seen an example of this in the experiment of placing your hand on the desk and moving
+your elbow. The kinematic constraint of your hand position is insufficient to determine the
+configuration of your elbow. In other words, the inverse kinematics of your shoulder arm
+assemblypossesses aninfinitenumberofsolutions.
+The second problem with configuration space representations arises from the obsta-
+cles that may exist in the robot s workspace. Ourexample in Figure 25.14(a) shows several
+suchobstacles, including afree-hanging obstacle thatprotrudes intothecenteroftherobot s
+workspace. In workspace, such obstacles take

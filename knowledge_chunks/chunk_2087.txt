@@ -1,0 +1,28 @@
+systems also include consistency ofacate-
+gorydefinition whether themembershipcriteria arelogically satisfiable.
+Section12.5. Reasoning Systemsfor Categories 457
+Concept Thing Concept Name And(Concept,...) All(Role Name,Concept) At Least(Integer,Role Name) At Most(Integer,Role Name) Fills(Role Name,Individual Name,...) Same As(Path,Path) One Of(Individual Name,...)
+Path Role Name,... Figure12.7 Thesyntaxofdescriptionsinasubsetofthe CLASSI Clanguage.
+The CLASSIC language(Borgida etal.,1989)isatypicaldescription logic. Thesyntax
+of CLASSIC descriptions is shown in Figure 12.7.6 For example, to say that bachelors are
+unmarriedadultmaleswewouldwrite
+Bachelor And(Unmarried,Adult,Male).
+Theequivalent infirst-orderlogicwouldbe
+Bachelor(x) Unmarried(x) Adult(x) Male(x).
+Notice that the description logic has an an algebra of operations on predicates, which of
+coursewecan tdoinfirst-orderlogic. Anydescription in CLASSIC canbetranslated intoan
+equivalent first-order sentence, but some descriptions are more straightforward in CLASSIC.
+For example, to describe the set of men with at least three sons who are all unemployed
+and married to doctors, and at mosttwodaughters who areall professors in physics ormath
+departments, wewoulduse
+And(Man,At Least(3,Son),At Most(2,Daughter),
+All(Son,And(Unemployed,Married,All(Spouse,Doctor))),
+All(Daughter,And(Professor,Fills(Department,Physics,Math)))).
+Weleaveitasanexercisetotranslatethisintofirst-orderlogic.
+Perhapsthemostimportantaspectofdescriptionlogicsistheiremphasisontractability
+ofinference. Aproblem instance issolved bydescribing itandthen asking ifitissubsumed
+byoneofseveralpossiblesolutioncategories. Instandardfirst-orderlogicsystems,predicting
+thesolutiontimeisoftenimpossible. Itisfrequently lefttotheusertoengineertherepresen-
+tation to detour around sets of sentences that seem to be causing the system to take several
+weekstosolveaproblem. Thethrustindescriptionlogics,ontheotherhand,istoensurethat
+subsumption-testing canbesolvedint

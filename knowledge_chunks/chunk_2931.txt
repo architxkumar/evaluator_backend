@@ -1,0 +1,27 @@
+ut
+thatdoesnotmakeusthinklessof Lucas. Totakeanotherexample,nohumancouldcompute
+the sum of a billion 10 digit numbers in his or her lifetime, but a computer could do it in
+seconds. Still, wedonotseethisasafundamental limitation inthehuman s ability tothink.
+Humanswerebehavingintelligentlyforthousandsofyearsbeforetheyinventedmathematics,
+soitisunlikelythatformalmathematicalreasoningplaysmorethanaperipheralroleinwhat
+itmeanstobeintelligent.
+Third, and most important, even if we grant that computers have limitations on what
+they can prove, there is no evidence that humans are immune from those limitations. It is
+all too easy to show rigorously that a formal system cannot do X, and then claim that hu-
+manscando X usingtheirowninformalmethod,withoutgivinganyevidenceforthisclaim.
+Indeed, itisimpossible toprovethathumansarenotsubjectto Go del sincompleteness theo-
+rem,becauseanyrigorousproofwouldrequireaformalizationoftheclaimedunformalizable
+human talent, and hence refute itself. So weare left with an appeal to intuition that humans
+can somehow perform superhuman feats of mathematical insight. This appeal is expressed
+witharguments suchas wemustassumeourownconsistency, ifthought istobepossible at
+all (Lucas, 1976). But if anything, humans are known to be inconsistent. This is certainly
+true for everyday reasoning, but it is also true for careful mathematical thought. A famous
+example is the four-color map problem. Alfred Kempe published a proof in 1879 that was
+widely accepted and contributed to his election as a Fellow of the Royal Society. In 1890,
+however,Percy Heawoodpointed outaflawandthetheorem remainedunproveduntil1977.
+1024 Chapter 26. Philosophical Foundations
+26.1.3 The argument from informality
+Oneofthemostinfluentialandpersistentcriticismsof AIasanenterprise wasraisedby Tur-
+ingasthe argument from informality ofbehavior. Essentially, this istheclaim thathuman
+behavior is fartoo complex to be captured by any simple set of rules and that because com-
+puters cand

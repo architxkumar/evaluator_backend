@@ -1,0 +1,27 @@
+iveofhumansasautomataaswell,eventhoughhehimself
+did not take this step. The book L Homme Machine (La Mettrie, 1748) did explicitly argue
+thathumansareautomata.
+Modernanalyticphilosophyhastypicallyacceptedphysicalism,butthevarietyofviews
+on the content of mental states is bewildering. Theidentification of mental states with brain
+states is usually attributed to Place (1956) and Smart (1959). The debate between narrow-
+contentandwide-contentviewsofmentalstateswastriggeredby Hilary Putnam(1975),who
+introduced so-called twin earths (rather than brain-in-a-vat, as we did in the chapter) as a
+TWINEARTHS
+devicetogenerate identical brainstateswithdifferent (wide)content.
+1042 Chapter 26. Philosophical Foundations
+Functionalism isthephilosophy ofmindmostnaturally suggested by AI.Theideathat
+mental states correspond to classes of brain states defined functionally is due to Putnam
+(1960, 1967) and Lewis (1966, 1980). Perhaps the most forceful proponent of functional-
+ism is Daniel Dennett, whose ambitiously titled work Consciousness Explained (Dennett,
+1991)hasattractedmanyattemptedrebuttals. Metzinger(2009)arguesthereisnosuchthing
+asanobjective self, thatconsciousness isthesubjective appearance ofaworld. Theinverted
+spectrum argument concerning qualia was introduced by John Locke (1690). Frank Jack-
+son (1982) designed aninfluential thought experiment involving Mary, acolor scientist who
+has been brought up in an entirely black-and-white world. There s Something About Mary
+(Ludlowetal.,2004)collectsseveralpapersonthistopic.
+Functionalism hascomeunderattack from authors whoclaim thattheydonotaccount
+for the qualia or what it s like aspect of mental states (Nagel, 1974). Searle has focused
+instead on the alleged inability of functionalism to account for intentionality (Searle, 1980,
+1984, 1992). Churchland and Churchland (1982) rebut both these types of criticism. The
+Chinese Room has been debated endlessly (Searle, 1980, 1990; Preston and Bishop, 2002).
+We ll just mention here

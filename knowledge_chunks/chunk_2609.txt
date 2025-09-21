@@ -1,0 +1,44 @@
+h : 75 cherry 25 lime,
+2
+h : 50 cherry 50 lime,
+3
+h : 25 cherry 75 lime,
+4
+h : 100 lime .
+5
+802
+Section20.1. Statistical Learning 803
+Given a new bag of candy, the random variable H (for hypothesis) denotes the type of the
+bag, with possible values h through h . H is not directly observable, of course. As the
+1 5
+pieces of candy are opened and inspected, data are revealed D , D , ..., D , where each
+1 2 N
+D is a random variable with possible values cherry and lime. The basic task faced by the
+i
+agent is to predict the flavor of the next piece of candy.1 Despite its apparent triviality, this
+scenario serves to introduce many of the major issues. The agent really does need to infer a
+theoryofitsworld,albeitaverysimpleone.
+Bayesianlearningsimplycalculatestheprobability ofeachhypothesis,giventhedata,
+BAYESIANLEARNING
+and makes predictions on that basis. That is, the predictions are made by using all the hy-
+potheses,weightedbytheirprobabilities, ratherthanbyusingjustasingle best hypothesis.
+In this way, learning is reduced to probabilistic inference. Let D represent all the data, with
+observed valued;thentheprobability ofeachhypothesis isobtainedby Bayes rule:
+P(h d) P(d h )P(h ). (20.1)
+i i i
+Now,suppose wewanttomakeaprediction aboutanunknownquantity X. Thenwehave
+(cid:12) (cid:12)
+P(X d) P(X d,h )P(h d) P(X h )P(h d), (20.2)
+i i i i
+i i
+where we have assumed that each hypothesis determines a probability distribution over X.
+This equation shows that predictions are weighted averages overthe predictions of the indi-
+vidual hypotheses. The hypotheses themselves are essentially intermediaries between the
+rawdataandthepredictions. Thekeyquantitiesinthe Bayesianapproacharethe hypothesis
+prior,P(h ),andthelikelihoodofthedataundereachhypothesis, P(d h ).
+HYPOTHESISPRIOR i i
+For our candy example, we will assume for the time being that the prior distribution
+LIKELIHOOD
+over h ,...,h is given by (cid:16)0.1,0.2,0.4,0.2,0.1(cid:17), as advertised by the manufacturer. The
+1 5
+lik

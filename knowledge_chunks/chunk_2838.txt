@@ -1,0 +1,28 @@
+inginferencemethodsfor
+atree-structured Bayesnet(see Chapter14).
+There are two criteria for evaluating a configuration. First, an image rectangle should
+looklikeitssegment. Forthemoment,wewillremainvagueaboutpreciselywhatthatmeans,
+butweassumewehaveafunction thatscoreshowwellanimagerectanglematchesabody
+i
+segment. For each pair of related segments, we have another function that scores how
+well relations between a pair of image rectangles match those to be expected from the body
+segments. The dependencies between segments form a tree, so each segment has only one
+parent, and we could write i,pa(i) . All the functions will be larger if the match is better,
+so we can think of them as being like a log probability. The cost of a particular match that
+allocates imagerectangle m tobodysegmentiisthen
+(cid:12) i (cid:12) i (m i ) i,pa(i) (m i ,mpa(i) ).
+i segments i segments
+Dynamicprogramming canfindthebestmatch,because therelational modelisatree.
+Itisinconvenienttosearchacontinuousspace,andwewilldiscretizethespaceofimage
+rectangles. We do so by discretizing the location and orientation of rectangles of fixed size
+(the sizes may be different for different segments). Because ankles and knees are different, we need to distinguish between a rectangle and the same rectangle rotated by 180 . One
+couldvisualize theresultasasetofverylargestacks ofsmallrectangles ofimage, cutoutat
+different locations and orientations. There is one stack per segment. We must now find the
+best allocation of rectangles to segments. This will be slow, because there are many image
+rectangles and,forthemodelwehavegiven,choosing therighttorsowillbe O(M6)ifthere
+are M image rectangles. However, various speedups are available foran appropriate choice
+of , and the method is practical (Figure 24.23). Themodel is usually known asa pictorial
+PICTORIAL structuremodel.
+STRUCTUREMODEL
+Recallourassumptionthatweknowwhatweneedtoknowaboutwhatthepersonlooks
+like. If weare matching a person in a single image, the most u

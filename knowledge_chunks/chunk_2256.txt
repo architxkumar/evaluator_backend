@@ -1,0 +1,36 @@
+ar and
+t
+Pulse Rate , andstate variables, such as Blood Sugar and Stomach Contents . (Notice that
+t t t
+Blood Sugar and Measured Blood Sugar arenotthesamevariable; thisishowwedealwith
+t t
+noisymeasurements ofactualquantities.)
+Theintervalbetweentimeslicesalsodependsontheproblem. Fordiabetesmonitoring,
+asuitable interval might beanhourrather than aday. Inthis chapter weassume theinterval
+between slices is fixed, so we can label times by integers. We will assume that the state
+sequencestartsatt 0;forvariousuninterestingreasons,wewillassumethatevidencestarts
+arrivingatt 1ratherthant 0. Hence,ourumbrellaworldisrepresentedbystatevariables
+R , R , R ,... and evidence variables U , U ,.... We will use the notation a:b to denote
+0 1 2 1 2
+the sequence of integers from a to b (inclusive), and the notation X to denote the set of
+a:b
+variables from X to X . Forexample, U corresponds tothevariables U ,U ,U .
+a b 1:3 1 2 3
+1 Uncertaintyovercontinuoustimecanbemodeledbystochasticdifferentialequations(SD Es). Themodels
+studiedinthischaptercanbeviewedasdiscrete-timeapproximationsto SD Es.
+568 Chapter 15. Probabilistic Reasoning over Time
+(a) X X X X X
+t 2 t 1 t t 1 t 2
+(b) X X X X X
+t 2 t 1 t t 1 t 2
+Figure15.1 (a)Bayesiannetworkstructurecorrespondingtoafirst-order Markovprocess
+withstatedefinedbythevariables Xt. (b)Asecond-order Markovprocess.
+15.1.2 Transitionandsensormodels
+With the set of state and evidence variables for a given problem decided on, the next step is
+to specify how the world evolves (the transition model) and how the evidence variables get
+theirvalues(thesensormodel).
+Thetransitionmodelspecifiestheprobabilitydistribution overthelateststatevariables,
+given the previous values, that is, P(X t X 0:t 1 ). Now we face a problem: the set X 0:t 1 is
+MARKOV unbounded insizeastincreases. Wesolvetheproblembymakinga Markovassumption ASSUMPTION
+that thecurrent state depends ononly a finite fixed number ofprevious states. Processes sat-
+isfyingthisassumption werefirststudiedin

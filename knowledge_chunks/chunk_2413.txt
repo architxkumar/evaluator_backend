@@ -1,0 +1,27 @@
+is U 1 12.
+O,E
+Nowweknow that thetrue utility ofthe original gameliesbetween 1 12 and 1 12, that
+is, it is exactly 1 12! (The moral is that it is better to be O than E if you are playing this
+game.) Furthermore, thetrueutility isattained bythemixedstrategy 7 12:one;5 12:two ,
+MAXIMIN whichshouldbeplayedbybothplayers. Thisstrategyiscalledthemaximinequilibriumof
+EQUILIBRIUM
+the game, and is a Nash equilibrium. Note that each component strategy in an equilibrium
+mixed strategy has the same expected utility. In this case, both one and two have the same
+expectedutility, 1 12,asthemixedstrategyitself.
+Our result for two-finger Morra is an example of the general result by von Neumann:
+everytwo-playerzero-sumgamehasamaximinequilibriumwhenyouallowmixedstrategies.
+Furthermore, every Nash equilibrium in a zero-sum game is a maximin for both players. A
+player who adopts the maximin strategy has two guarantees: First, no other strategy can do
+betteragainst anopponent whoplayswell(although someotherstrategies mightbebetterat
+exploiting an opponent who makes irrational mistakes). Second, the player continues to do
+justaswellevenifthestrategyisrevealedtotheopponent.
+The general algorithm for finding maximin equilibria in zero-sum games is somewhat
+moreinvolvedthan Figures17.12(e)and(f)mightsuggest. Whentherearenpossibleactions,
+a mixed strategy is a point in n-dimensional space and the lines become hyperplanes. It s
+also possible for some pure strategies for the second player to be dominated by others, so
+that they are not optimal against any strategy for the first player. After removing all such
+strategies (which might have to be done repeatedly), the optimal choice at the root is the
+7 It is a coincidence that these equations are the same as those for p; the coincidence arises because
+UE(one,two) UE(two,one) 3.Thisalsoexplainswhytheoptimalstrategyisthesameforbothplayers.
+Section17.5. Decisionswith Multiple Agents: Game Theory 673
+highest (or lowest) intersection point of the rema

@@ -1,0 +1,28 @@
+f a
+solution tothiseasierproblem thenbecomestheheuristicfortheoriginal problem.
+By definition, there is no way to analyze an atomic state, and thus it it requires some
+ingenuity by a human analyst to define good domain-specific heuristics for search problems
+with atomic states. Planning uses a factored representation for states and action schemas.
+That makes it possible to define good domain-independent heuristics and for programs to
+automatically applyagooddomain-independent heuristic foragivenproblem.
+Think of a search problem as a graph where the nodes are states and the edges are
+actions. The problem is to find a path connecting the initial state to a goal state. There are
+two ways we can relax this problem to make it easier: by adding more edges to the graph,
+making it strictly easier to find a path, or by grouping multiple nodes together, forming an
+abstraction ofthestatespacethathasfewerstates, andthusiseasiertosearch.
+We look first at heuristics that add edges to the graph. For example, the ignore pre-
+IGNORE
+conditions heuristicdrops allpreconditions from actions. Everyaction becomes applicable
+PRECONDITIONS
+HEURISTIC
+in every state, and any single goal fluent can be achieved in one step (if there is an applica-
+ble action if not, the problem is impossible). This almost implies that the number of steps
+required to solve the relaxed problem is the number of unsatisfied goals almost but not
+quite, because (1) some action may achieve multiple goals and (2) some actions may undo
+theeffects ofothers. Formanyproblems anaccurate heuristic isobtained byconsidering (1)
+and ignoring (2). First, we relax the actions by removing all preconditions and all effects
+except those that are literals in the goal. Then, we count the minimum number of actions
+required such that the union of those actions effects satisfies the goal. This is an instance
+SET-COVER of the set-cover problem. There is one minor irritation: the set-cover problem is NP-hard.
+PROBLEM
+Fortunately a simple

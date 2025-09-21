@@ -1,0 +1,26 @@
+ted apersuasive agenda inhis1950
+article Computing Machinery and Intelligence. Therein, he introduced the Turing Test,
+machine learning, genetic algorithms, and reinforcement learning. He proposed the Child
+Programmeidea,explaining Insteadoftryingtoproduceaprogrammetosimulatetheadult
+mind,whynotrathertrytoproduce onewhichsimulated thechild s? 1.3.2 The birth ofartificialintelligence (1956)
+Princeton was home to another influential figure in AI, John Mc Carthy. After receiving his
+Ph D there in 1951 and working for two years as an instructor, Mc Carthy moved to Stan-
+fordandthento Dartmouth College,whichwastobecometheofficialbirthplace ofthefield.
+Mc Carthy convinced Minsky, Claude Shannon, and Nathaniel Rochester to help him bring
+together U.S. researchers interested in automata theory, neural nets, and the study of intel-
+ligence. They organized a two-month workshop at Dartmouth in the summer of 1956. The
+proposal states:10
+We propose that a 2 month, 10 man study of artificial intelligence be carried
+out during the summer of 1956 at Dartmouth College in Hanover, New Hamp-
+shire. The study is to proceed on the basis of the conjecture that every aspect of
+learning or any other feature of intelligence can in principle be so precisely de-
+scribedthatamachinecanbemadetosimulateit. Anattemptwillbemadetofind
+howtomakemachinesuselanguage, formabstractions andconcepts, solvekinds
+of problems now reserved for humans, and improve themselves. We think that a
+significant advance can be made in one or more of these problems if a carefully
+selectedgroupofscientists workonittogetherforasummer.
+There were 10 attendees in all, including Trenchard More from Princeton, Arthur Samuel
+from IBM,and Ray Solomonoffand Oliver Selfridgefrom MIT.
+Two researchers from Carnegie Tech,11 Allen Newell and Herbert Simon, rather stole
+the show. Although the others had ideas and in some cases programs for particular appli-
+cations such as checkers, Newell and Simon already had a reasoning program, th

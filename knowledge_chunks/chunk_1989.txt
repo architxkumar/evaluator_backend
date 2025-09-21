@@ -1,0 +1,28 @@
+ral Problem
+Solver (Newell and Simon, 1961), a state-space search system that used means ends anal-
+ysis. Bylander (1992) shows simple STRIPS planning to be PSPACE-complete. Fikes and
+Nilsson (1993) give a historical retrospective on the STRIPS project and its relationship to
+morerecentplanning efforts.
+The representation language used by STRIPS has been far more influential than its al-
+gorithmic approach; what we call the classical language is close to what STRIPS used.
+394 Chapter 10. Classical Planning
+The Action Description Language, or ADL (Pednault, 1986), relaxed some of the STRIPS
+restrictions and made it possible to encode more realistic problems. Nebel (2000) explores
+schemes for compiling ADL into STRIPS. The Problem Domain Description Language, or
+PDDL(Ghallabetal.,1998),wasintroducedasacomputer-parsable, standardizedsyntaxfor
+representing planning problems and has been used as the standard language for the Interna-
+tional Planning Competitionsince1998. Therehavebeenseveralextensions; themostrecent
+version, PDDL 3.0,includes planconstraints andpreferences (Gereviniand Long,2005).
+Plannersintheearly1970sgenerallyconsideredtotallyorderedactionsequences. Prob-
+lemdecompositionwasachievedbycomputingasubplanforeachsubgoalandthenstringing
+the subplans together in some order. This approach, called linear planning by Sacerdoti
+LINEARPLANNING
+(1975), was soon discovered to be incomplete. It cannot solve some very simple problems,
+suchasthe Sussmananomaly(see Exercise10.7), found by Allen Brownduring experimen-
+tation withthe HACKER system (Sussman, 1975). Acomplete plannermustallowfor inter-
+leavingofactionsfromdifferentsubplanswithinasinglesequence. Thenotionofserializable
+INTERLEAVING
+subgoals (Korf, 1987) corresponds exactly to the set of problems for which noninterleaved
+planners arecomplete.
+One solution to the interleaving problem was goal-regression planning, a technique in
+which steps in a totally ordered plan are reordered so as to avoid conflict betwee

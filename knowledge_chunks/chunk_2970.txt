@@ -1,0 +1,32 @@
+tate
+What the world
+How the world evolves is like now
+What it will be like
+What my actions do if I do action A
+How happy I will be
+Utility
+in such a state
+What action I
+should do now
+Actuators
+Figure27.1 Amodel-based,utility-basedagent,asfirstpresentedin Figure2.14.
+while robotic systems focused on low-level tasks in which high-level reasoning and plan-
+ning were largely absent. This was due in part to the great expense and engineering effort
+required to get real robots to work at all. The situation has changed rapidly in recent years
+with the availability of ready-made programmable robots. These, in turn, have benefited
+fromsmall,cheap,high-resolution CC Dcamerasandcompact,reliablemotordrives. MEMS
+(micro-electromechanicalsystems)technologyhassuppliedminiaturizedaccelerometers,gy-
+roscopes, and actuators for an artificial flying insect (Floreano et al., 2009). It may also be
+possible tocombinemillionsof MEM Sdevicestoproduce powerfulmacroscopic actuators.
+Thus, we see that AI systems are at the cusp of moving from primarily software-only
+systems to embedded robotic systems. The state of robotics today is roughly comparable to
+the state of personal computers in about 1980: at that time researchers and hobbyists could
+experimentwith PCs,butitwouldtakeanotherdecadebefore theybecamecommonplace.
+Keepingtrack of thestate of the world: This is one of the core capabilities required
+foran intelligent agent. It requires both perception and updating of internal representations.
+Chapter 4 showed how to keep track of atomic state representations; Chapter 7 described
+how to do it for factored (propositional) state representations; Chapter 12 extended this to
+first-orderlogic;and Chapter15described filteringalgorithms forprobabilistic reasoning in
+uncertainenvironments. Currentfilteringandperception algorithmscanbecombinedtodoa
+reasonable job of reporting low-level predicates such as the cup is on the table. Detecting
+higher-level actions, such as Dr. Russell is having a cup of t

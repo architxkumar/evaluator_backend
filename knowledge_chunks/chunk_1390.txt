@@ -1,0 +1,28 @@
+f the CPSC Bayesian network for medical diagnosis (Pradhan
+etal., 1994). Behind thechess board ispart ofa Bayesian logic model fordetecting nuclear
+explosions fromseismicsignals.
+Credits: Stan Honda Getty (Kasparaov), Library of Congress (Bayes), NASA (Mars
+rover), National Museum of Rome (Aristotle), Peter Norvig (book), Ian Parker (Berkeley
+skyline), Shutterstock (Asimo,Chesspieces), Time Life Getty(Shakey,Turing).
+Acknowledgments
+Thisbookwouldnothavebeenpossible withoutthemanycontributors whosenamesdidnot
+make it to the cover. Jitendra Malik and David Forsyth wrote Chapter 24 (computer vision)
+and Sebastian Thrun wrote Chapter 25 (robotics). Vibhu Mittal wrote part of Chapter 22
+(naturallanguage). Nick Hay,Mehran Sahami,and Ernest Daviswrotesomeoftheexercises.
+Zoran Duric (George Mason), Thomas C. Henderson (Utah), Leon Reznik (RIT), Michael
+Gourley (Central Oklahoma) and Ernest Davis (NYU) reviewed the manuscript and made
+helpfulsuggestions. Wethank Ernie Davisinparticularforhistirelessabilitytoreadmultiple
+drafts and help improve the book. Nick Hay whipped the bibliography into shape and on
+deadline stayed up to 5:30 AM writing code to make the book better. Jon Barron formatted
+and improved the diagrams in this edition, while Tim Huang, Mark Paskin, and Cynthia
+Bruyns helped with diagrams and algorithms in previous editions. Ravi Mohan and Ciaran
+O Reilly wrote and maintain the Java code examples on the Web site. John Canny wrote
+theroboticschapterforthefirsteditionand Douglas Edwardsresearchedthehistoricalnotes.
+Tracy Dunkelberger, Allison Michael,Scott Disanno, and Jane Bonnellat Pearsontriedtheir
+best to keep us on schedule and made many helpful suggestions. Most helpful of all has
+x Preface
+been Julie Sussman,P.P.A.,whoreadeverychapterandprovidedextensiveimprovements. In
+previous editionswehadproofreaders whowouldtelluswhen weleftoutacommaandsaid
+whichwhenwemeantthat; Julietold uswhenweleftoutaminussignandsaidx whenwe
+i
+meantx . Foreverytypoorconfusing expl

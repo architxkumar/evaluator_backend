@@ -1,0 +1,24 @@
+rrelationandcausation. J.
+Whorf,B.(1956).Language,Thought,and Reality. novel eventsinadaptive textcompression. IEEE Agricultural Research,20,557 585.
+MIT Press. Transactionson Information Theory,37(4),1085 Wright,S.(1931). Evolutionin Mendelianpopula-
+Widrow,B.(1962).Generalizationandinformation 1094. tions.Genetics,16,97 159.
+storageinnetworksofadaline neurons . In Self- Witten,I.H.and Frank,E.(2005). Data Mining: Wright,S.(1934).Themethodofpathcoefficients.
+Organizing Systems1962,pp.435 461. Practical Machine Learning Toolsand Techniques Annalsof Mathematical Statistics,5,161 215.
+(2ndedition).Morgan Kaufmann.
+Widrow, B. and Hoff, M. E. (1960). Adaptive Wu,D.(1993). Estimatingprobabilitydistributions
+switchingcircuits. In1960IREWESCON Conven- Witten, I.H.,Moffat, A.,and Bell, T.C.(1999). overhypotheseswithvariableunification.In IJCAI-
+tion Record,pp.96 104. Managing Gigabytes: Compressing and Indexing 93,pp.790 795.
+Documentsand Images(secondedition). Morgan
+Wiedijk, F. (2003). Comparing mathematical Kaufmann. Wu,F.and Weld,D.S.(2008).Automaticallyrefin-
+provers. In Mathematical Knowledge Management, ingthewikipediainfoboxontology. In17th World
+Wittgenstein, L. (1922). Tractatus Logico-
+pp.188 202. Wide Web Conference(WWW2008).
+Philosophicus (second edition). Routledge and
+Wiegley, J., Goldberg, K., Peshkin, M., and Kegan Paul. Reprinted1971,editedby D.F.Pears Yang,F.,Culberson,J.,Holte,R.,Zahavi,U.,and
+Brokowski,M.(1996). Acompletealgorithmfor and B.F.Mc Guinness.Thiseditionofthe English Felner,A.(2008).Ageneraltheoryofadditivestate
+designingpassivefencestoorientparts. In ICRA- translationalsocontains Wittgenstein soriginal Ger- spaceabstractions.JAIR,32,631 662.
+96. mantextonfacingpages,aswellas Bertrand Rus-
+Yang,Q.(1990). Formalizingplanningknowledge
+sell sintroductiontothe1922edition.
+Wiener,N.(1942).Theextrapolation,interpolation, for hierarchical planning. Computational Intelli-
+andsmoothingofstationarytimeseries. Osrd370, Wittgenstein, L.(1953). Philosophi

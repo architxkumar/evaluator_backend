@@ -1,0 +1,37 @@
+e variables and constraints are represented in the
+decomposition. Thethird condition seemsrathertechnical, butsimply reflectstheconstraint
+that any given variable must have the same value in every subproblem in which it appears;
+thelinksjoining subproblems inthetreeenforcethisconstraint. Forexample, SAappears in
+all four of the connected subproblems in Figure 6.13. You can verify from Figure 6.12 that
+thisdecomposition makessense.
+Wesolve eachsubproblem independently; ifanyone hasnosolution, weknow theen-
+tireproblemhasnosolution. Ifwecansolveallthesubproblems,thenweattempttoconstruct
+aglobalsolutionasfollows. First,wevieweachsubproblem asa mega-variable whosedo-
+main isthe set of all solutions forthe subproblem. Forexample, the leftmost subproblem in
+Figure6.13isamap-coloring problemwiththreevariablesandhencehassixsolutions one
+is WA red,SA blue,NT green . Then, we solve the constraints connecting the
+subproblems, using the efficient algorithm for trees given earlier. The constraints between
+subproblems simply insistthatthesubproblem solutions agreeontheirshared variables. For
+example,giventhesolution WA red,SA blue,NT green forthefirstsubproblem,
+theonlyconsistentsolutionforthenextsubproblemis SA blue,NT green,Q red .
+A given constraint graph admits many tree decompositions; in choosing a decompo-
+sition, the aim is to make the subproblems as small as possible. The tree width of a tree
+TREEWIDTH
+226 Chapter 6. Constraint Satisfaction Problems
+NT
+NT
+Q
+WA
+SA
+SA
+Q
+SA NSW
+SA NSW
+T
+V
+Figure6.13 Atreedecompositionoftheconstraintgraphin Figure6.12(a).
+decomposition of a graph is one less than the size of the largest subproblem; the tree width
+ofthegraphitselfisdefinedtobetheminimumtreewidthamongallitstreedecompositions.
+Ifagraph has treewidth w andwearegiven thecorresponding tree decomposition, then the
+problem can be solved in O(ndw 1) time. Hence, CS Ps with constraint graphs of bounded
+tree width are solvable in polynomial time. Unfortunately, finding the decompositio

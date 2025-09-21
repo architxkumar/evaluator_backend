@@ -1,0 +1,31 @@
+dstepsofanygivenstate. Ford 20,thismeansaboutatrillionnodesbutonly
+about 800 distinct states. Thus, following redundant paths can cause a tractable problem to
+becomeintractable. Thisistrueevenforalgorithms thatknowhowtoavoidinfiniteloops.
+As the saying goes, algorithms that forget their history are doomed to repeat it. The
+way to avoid exploring redundant paths is to remember where one has been. To do this, we
+EXPLOREDSET
+augment the TREE-SEARCH algorithm with a data structure called the explored set (also
+known as the closed list), which remembers every expanded node. Newly generated nodes
+CLOSEDLIST
+thatmatchpreviously generated nodes ones intheexplored setorthefrontier can bedis-
+cardedinsteadofbeingaddedtothefrontier. Thenewalgorithm, called GRAPH-SEARCH,is
+shown informally in Figure 3.7. Thespecific algorithms inthis chapter draw onthis general
+design.
+Clearly,thesearchtreeconstructedbythe GRAPH-SEARCH algorithmcontainsatmost
+onecopyofeachstate,sowecanthinkofitasgrowingatreedirectlyonthestate-spacegraph,
+as shown in Figure 3.8. The algorithm has another nice property: the frontier separates the
+SEPARATOR
+state-space graphintotheexploredregionandtheunexplored region,sothateverypathfrom
+78 Chapter 3. Solving Problemsby Searching
+Figure3.8 Asequenceofsearchtreesgeneratedbyagraphsearchonthe Romaniaprob-
+lemof Figure3.2. Ateachstage,wehaveextendedeachpathbyonestep. Noticethatatthe
+thirdstage,thenorthernmostcity(Oradea)hasbecomeadeadend:bothofitssuccessorsare
+alreadyexploredviaotherpaths.
+(a) (b) (c)
+Figure3.9 Theseparationpropertyof GRAPH-SEARCH,illustratedonarectangular-grid
+problem. Thefrontier(whitenodes)alwaysseparatestheexploredregionofthestatespace
+(black nodes) from the unexplored region (gray nodes). In (a), just the root has been ex-
+panded.In(b),oneleafnodehasbeenexpanded.In(c),theremainingsuccessorsoftheroot
+havebeenexpandedinclockwiseorder.
+the initial state to an unexplored state has to pass through a state in the frontier. (If this
+seemscompletely obvi

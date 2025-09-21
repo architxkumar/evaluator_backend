@@ -1,0 +1,36 @@
+ Displayof Keyboardentry
+diagnosissystem reducedcosts staff questions,tests, ofsymptoms,
+diagnoses, findings,patient s
+treatments, answers
+referrals
+Satelliteimage Correctimage Downlinkfrom Displayofscene Colorpixel
+analysissystem categorization orbitingsatellite categorization arrays
+Part-picking Percentageof Conveyorbelt Jointedarmand Camera,joint
+robot partsincorrect withparts;bins hand anglesensors
+bins
+Refinery Purity,yield, Refinery, Valves,pumps, Temperature,
+controller safety operators heaters,displays pressure,
+chemicalsensors
+Interactive Student sscore Setofstudents, Displayof Keyboardentry
+Englishtutor ontest testingagency exercises,
+suggestions,
+corrections
+Figure2.5 Examplesofagenttypesandtheir PEA Sdescriptions.
+welistthedimensions, thenweanalyzeseveraltaskenvironments toillustrate theideas. The
+definitionshereareinformal;laterchaptersprovidemoreprecisestatementsandexamplesof
+eachkindofenvironment.
+Fully observable vs. partially observable: If an agent s sensors give it access to the
+FULLYOBSERVABLE
+PARTIALLY complete state of the environment at each point in time, then we say that the task environ-
+OBSERVABLE
+ment is fully observable. A task environment is effectively fully observable if the sensors
+detect all aspects that are relevant tothe choice of action; relevance, inturn, depends on the
+performance measure. Fullyobservable environments areconvenient because theagentneed
+notmaintainanyinternal statetokeeptrackoftheworld. An environment mightbepartially
+observable because of noisy and inaccurate sensors or because parts of the state are simply
+missing from the sensor data for example, a vacuum agent with only a local dirt sensor
+cannottellwhetherthereisdirtinothersquares,andanautomatedtaxicannotseewhatother
+drivers are thinking. If the agent has no sensors at all then the environment is unobserv-
+able. One might think that in such cases the agent s plight is hopeless, but, as wediscuss in
+UNOBSERVABLE
+Chapter4,theagent s goalsmaystillbeachievable,

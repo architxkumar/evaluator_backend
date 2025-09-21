@@ -1,0 +1,27 @@
+esent knowledge in three
+simpledomains. Thissectiondescribesthegeneralprocessofknowledge-baseconstruction KNOWLEDGE aprocesscalledknowledgeengineering. Aknowledgeengineerissomeonewhoinvestigates
+ENGINEERING
+aparticular domain, learns whatconcepts areimportant inthatdomain, andcreates aformal
+representation of the objects and relations in the domain. We illustrate the knowledge engi-
+neering process in anelectronic circuit domain that should already befairly familiar, so that
+wecanconcentrate ontherepresentational issues involved. Theapproach wetakeissuitable
+for developing special-purpose knowledge bases whose domain is carefully circumscribed
+and whose range of queries is known in advance. General-purpose knowledge bases, which
+cover a broad range of human knowledge and are intended to support tasks such as natural
+language understanding, arediscussed in Chapter12.
+8.4.1 The knowledge-engineering process
+Knowledge engineering projects vary widely in content, scope, and difficulty, but all such
+projects includethefollowingsteps:
+1. Identify the task. The knowledge engineer must delineate the range of questions that
+the knowledge base will support and the kinds of facts that will be available for each
+specific problem instance. Forexample, does the wumpus knowledge base need to be
+able to choose actions or is it required to answer questions only about the contents
+of the environment? Will the sensor facts include the current location? The task will
+determinewhatknowledgemustberepresentedinordertoconnectprobleminstancesto
+answers. Thisstepisanalogoustothe PEA Sprocessfordesigning agentsin Chapter2.
+2. Assembletherelevant knowledge. Theknowledge engineer might already beanexpert
+in the domain, or might need to work with real experts to extract what they know a
+KNOWLEDGE process called knowledgeacquisition. Atthisstage, theknowledge isnotrepresented
+ACQUISITION
+formally. Theideaistounderstand thescope oftheknowledge base, asdetermined by
+thetask,andtounderstand howthedo

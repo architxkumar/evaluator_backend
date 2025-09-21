@@ -1,0 +1,27 @@
+tion of
+the robot, as shown in Figure 25.14(a). Figure 25.15 depicts three additional configurations,
+both in workspace and in configuration space. In configuration conf-1, the gripper encloses
+theverticalobstacle.
+Eveniftherobot sworkspaceisrepresentedbyflatpolygons,theshapeofthefreespace
+can be very complicated. In practice, therefore, one usually probes a configuration space
+instead ofconstructing it explicitly. Aplanner may generate aconfiguration and then test to
+see ifit isin free space by applying the robot kinematics and then checking forcollisions in
+workspace coordinates.
+25.4.2 Celldecompositionmethods
+CELL The first approach to path planning uses cell decomposition that is, it decomposes the
+DECOMPOSITION
+free space into a finite number of contiguous regions, called cells. These regions have the
+important property that the path-planning problem within a single region can be solved by
+simple means (e.g., movingalong astraight line). Thepath-planning problem then becomes
+adiscretegraph-searchproblem,verymuchlikethesearchproblemsintroducedin Chapter3.
+The simplest cell decomposition consists of a regularly spaced grid. Figure 25.16(a)
+shows a square grid decomposition of the space and a solution path that is optimal for this
+gridsize. Grayscale shadingindicates the valueofeachfree-space gridcell i.e.,thecostof
+theshortestpathfromthatcelltothegoal. (Thesevaluescanbecomputedbyadeterministic
+formofthe VALUE-ITERATION algorithmgivenin Figure17.4onpage653.) Figure25.16(b) showsthecorresponding workspacetrajectoryforthearm. Ofcourse,wecanalsousethe A
+algorithm tofindashortest path.
+Such a decomposition has the advantage that it is extremely simple to implement, but
+it also suffers from three limitations. First, itis workable only forlow-dimensional configu-
+rationspaces,becausethenumberofgridcellsincreasesexponentially withd,thenumberof
+dimensions. Sounds familiar? This is the curse!dimensionality of dimensionality. Second,
+thereistheproblemofwhattodowithcellstha

@@ -1,0 +1,26 @@
+thsurgery, angioplasty (expand-
+COARCTATION
+ingtheaortawithaballoonplacedinsidetheartery),ormedication. Theproblemistodecide
+whattreatmenttouseandwhentodoit: theyoungertheinfant,thegreatertherisksofcertain
+treatments,butonemustn twaittoolong. Adecision-theoreticexpertsystemforthisproblem
+can be created by a team consisting of at least one domain expert (a pediatric cardiologist)
+andoneknowledgeengineer. Theprocess canbebrokendownintothefollowingsteps:
+Create a causal model. Determine the possible symptoms, disorders, treatments, and
+outcomes. Then draw arcs between them, indicating what disorders cause what symptoms,
+andwhattreatmentsalleviatewhatdisorders. Someofthiswillbewellknowntothedomain
+expert, and some will come from the literature. Often the model will match well with the
+informalgraphical descriptions giveninmedicaltextbooks.
+Simplify to a qualitative decision model. Since we are using the model to make
+treatment decisions and not for other purposes (such as determining the joint probability of
+certain symptom disorder combinations), we can often simplify by removing variables that
+are not involved in treatment decisions. Sometimes variables will have to be split or joined
+to match the expert s intuitions. For example, the original aortic coarctation model had a
+Treatmentvariable withvalues surgery, angioplasty, andmedication, andaseparate variable
+for Timing of the treatment. But the expert had a hard time thinking of these separately, so
+theywerecombined, with Treatmenttakingonvaluessuchassurgery in1month. Thisgives
+usthemodelof Figure16.10.
+Assignprobabilities. Probabilities cancomefrompatientdatabases, literature studies,
+ortheexpert ssubjective assessments. Notethatadiagnostic system willreasonfromsymp-
+tomsandotherobservations tothedisease orothercause oftheproblems. Thus, intheearly
+years of building these systems, experts were asked for the probability of a cause given an
+effect. Ingeneraltheyfoundthisdifficulttodo,andwerebetterabletoassesstheproba

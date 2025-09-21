@@ -1,0 +1,27 @@
+es,andhavethemvoteonthebestclassification foranewexample.
+The motivation for ensemble learning is simple. Consider an ensemble of K 5 hy-
+pothesesandsupposethatwecombinetheirpredictionsusingsimplemajorityvoting. Forthe
+ensembletomisclassify anewexample,atleastthreeofthefivehypotheses havetomisclas-
+sifyit. Thehopeisthatthisismuchlesslikelythanamisclassificationbyasinglehypothesis.
+Suppose we assume that each hypothesis h in the ensemble has an error of p that is, the
+k
+probabilitythatarandomlychosenexampleismisclassifiedbyh isp. Furthermore,suppose
+k
+weassumethattheerrorsmadebyeachhypothesisareindependent. Inthatcase,ifpissmall,
+then the probability of a large number of misclassifications occurring is minuscule. For ex-
+ample,asimplecalculation(Exercise18.18)showsthatusinganensembleoffivehypotheses
+reduces an error rate of 1 in 10 down to an error rate of less than 1 in 100. Now, obviously
+the assumption of independence isunreasonable, because hypotheses arelikely tobemisled
+in the same way by any misleading aspects of the training data. But ifthe hypotheses are at
+leastalittlebitdifferent,therebyreducingthecorrelationbetweentheirerrors,thenensemble
+learning canbeveryuseful.
+Another way to think about the ensemble idea is as a generic way of enlarging the
+hypothesisspace. Thatis,thinkoftheensembleitselfasahypothesisandthenewhypothesis
+Section18.10. Ensemble Learning 749 Figure18.32 Illustrationoftheincreasedexpressivepowerobtainedby ensemblelearn-
+ing. We take three linear threshold hypotheses, each of which classifies positively on the
+unshaded side, and classify as positive any example classified positively by all three. The
+resultingtriangularregionisahypothesisnotexpressibleintheoriginalhypothesisspace.
+spaceasthesetofallpossibleensemblesconstructablefromhypothesesintheoriginalspace.
+Figure18.32showshowthiscanresultinamoreexpressivehypothesis space. Iftheoriginal
+hypothesis space allows for a simple and efficient learning algorithm, then the ensemble
+methodprovi

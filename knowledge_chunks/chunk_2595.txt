@@ -1,0 +1,38 @@
+s asbackground knowledge.
+19.5.3 Inductive learningwithinverse deduction
+The second major approach to ILP involves inverting the normal deductive proof process.
+INVERSE Inverse resolution is based on the observation that if the example Classifications follow
+RESOLUTION
+from Background Hypothesis Descriptions,thenonemustbeabletoprovethisfactby
+resolution (becauseresolutioniscomplete). Ifwecan run theproofbackward, thenwecan
+find a Hypothesis such that the proof goes through. The key, then, is to find away to invert
+theresolution process.
+Wewillshowabackwardproofprocessforinverseresolution thatconsistsofindividual
+backward steps. Recall that an ordinary resolution step takes two clauses C and C and
+1 2
+resolves them to produce the resolvent C. An inverse resolution step takes a resolvent C
+and produces two clauses C and C , such that C is the result of resolving C and C .
+1 2 1 2
+Alternatively, it may take a resolvent C and clause C and produce a clause C such that C
+1 2
+istheresultofresolving C and C .
+1 2
+The early steps in an inverse resolution process are shown in Figure 19.13, where we
+focus on the positive example Grandparent(George,Anne). Theprocess begins at the end
+of the proof (shown at the bottom of the figure). We take the resolvent C to be empty
+clause(i.e. acontradiction) and C tobe Grandparent(George,Anne),whichisthenega-
+2
+tion of the goal example. The first inverse step takes C and C and generates the clause
+2
+Grandparent(George,Anne) for C . The next step takes this clause as C and the clause
+1
+Parent(Elizabeth,Anne)as C ,andgenerates theclause
+2 Parent(Elizabeth,y) Grandparent(George,y)
+as C . Thefinalstep treats this clause as the resolvent. With Parent(George,Elizabeth)as
+1
+C ,onepossible clause C isthehypothesis
+2 1
+Parent(x,z) Parent(z,y) Grandparent(x,y).
+Nowwehavearesolutionproofthatthehypothesis,descriptions,andbackgroundknowledge
+entailtheclassification Grandparent(George,Anne).
+Clearly, inverse resolution involves a search. Each inverse res

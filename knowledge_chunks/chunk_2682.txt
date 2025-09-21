@@ -1,0 +1,28 @@
+ethepoleforoveranhourafteronly
+about30trials. Moreover,unlikemanysubsequentsystems, BOXE Swasimplementedwitha
+852 Chapter 21. Reinforcement Learning
+realcartandpole,notasimulation. Thealgorithmfirstdiscretized thefour-dimensional state
+spaceintoboxes hence thename. Itthenrantrialsuntilthe polefelloverorthecarthitthe
+endofthetrack. Negativereinforcement wasassociated withthefinalactioninthefinalbox
+and then propagated back through the sequence. It was found that the discretization caused
+some problems when the apparatus was initialized in a position different from those used in
+training, suggesting that generalization was not perfect. Improved generalization and faster
+learning canbeobtained usinganalgorithm that adaptively partitions thestatespaceaccord-
+ingtotheobservedvariationinthereward,orbyusingacontinuous-state, nonlinearfunction
+approximatorsuchasaneuralnetwork. Nowadays,balancing atripleinvertedpendulum isa
+commonexercise afeatfarbeyondthecapabilities ofmosthumans.
+Still more impressive is the application of reinforcement learning to helicopter flight
+(Figure 21.10). This work has generally used policy search (Bagnell and Schneider, 2001)
+as well as the PEGASUS algorithm with simulation based on a learned transition model (Ng
+etal.,2004). Furtherdetailsaregivenin Chapter25.
+Figure21.10 Superimposedtime-lapse imagesof an autonomoushelicopterperforming
+a very difficult nose-in circle maneuver. The helicopter is under the control of a policy
+developedbythe PEGASUS policy-searchalgorithm. A simulatormodelwas developedby
+observingtheeffectsofvariouscontrolmanipulationsontherealhelicopter;thenthealgo-
+rithmwasrunonthesimulatormodelovernight.Avarietyofcontrollersweredevelopedfor
+differentmaneuvers. In all cases, performance far exceeded that of an expert human pilot
+usingremotecontrol.(Imagecourtesyof Andrew Ng.)
+Section21.7. Summary 853
+21.7 SUMMARY
+This chapter has examined the reinforcement learning problem: how an agent can become
+proficientinanunknownenvironme

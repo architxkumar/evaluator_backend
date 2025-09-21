@@ -1,0 +1,29 @@
+esothatthequestionsthatfollowcanbeanswered. Includeinyourreportadiscussion
+of your changes, explaining why they were needed, whether they were minor or major, and
+whatkindsofquestions wouldnecessitate furtherchanges.
+a. Arethereotherpeoplein Safewaywhile Johnisthere? Yes staff! b. Is Johnavegetarian? No c. Whoownsthedeodorant in Safeway? Safeway Corporation d. Did Johnhaveanounceofgroundbeef? Yes e. Doesthe Shellstationnextdoorhaveanygas? Yes f. Dothetomatoesfitin John scartrunk? Yes 476 Chapter 12. Knowledge Representation
+12.7 Represent the following seven sentences using and extending the representations de-
+velopedinthechapter:
+a. Waterisaliquidbetween0and100degrees.
+b. Waterboilsat100degrees.
+c. Thewaterin John swaterbottleisfrozen.
+d. Perrierisakindofwater.
+e. Johnhas Perrierinhiswaterbottle.
+f. Allliquids haveafreezing point.
+g. Aliterofwaterweighsmorethanaliterofalcohol.
+12.8 Writedefinitionsforthefollowing:
+a. Exhaustive Part Decomposition
+b. Part Partition
+c. Partwise Disjoint
+Theseshould beanalogous tothedefinitions for Exhaustive Decomposition,Partition,and
+Disjoint. Is it the case that Part Partition(s,Bunch Of(s))? If so, prove it; if not, give a
+counterexample anddefinesufficientconditions underwhich itdoeshold.
+12.9 Analternative scheme forrepresenting measures involves applying the units function
+to an abstract length object. In such a scheme, one would write Inches(Length(L )) 1
+1.5. How does this scheme compare with the one in the chapter? Issues include conversion
+axioms, names for abstract quantities (such as 50 dollars ), and comparisons of abstract
+measuresindifferent units(50inchesismorethan50centimeters).
+12.10 Add sentences to extend the definition of the predicate Name(s,c) so that a string
+such as laptop computer matches the appropriate category names from a variety of stores.
+Trytomakeyourdefinitiongeneral. Testitbylookingattenonlinestores,andatthecategory
+names they give for three different categories. Forexample, for the category of la

@@ -1,0 +1,41 @@
+oesnotinfluencethedentalvariables. Therefore, thefollowingassertion seemsreasonable:
+P(cloudy toothache,catch,cavity) P(cloudy). (13.10)
+Fromthis,wecandeduce
+P(toothache,catch,cavity,cloudy) P(cloudy)P(toothache,catch,cavity).
+Asimilarequationexistsforeveryentryin P(Toothache,Catch,Cavity,Weather). Infact,
+wecanwritethegeneralequation
+P(Toothache,Catch,Cavity,Weather) P(Toothache,Catch,Cavity)P(Weather).
+Thus, the 32-element table for four variables can be constructed from one 8-element table
+andone4-elementtable. Thisdecomposition isillustrated schematically in Figure13.4(a).
+The property we used in Equation (13.10) is called independence (also marginal in-
+INDEPENDENCE
+dependenceandabsoluteindependence). Inparticular, theweatherisindependent ofone s
+dentalproblems. Independence betweenpropositions aandbcanbewrittenas
+P(a b) P(a) or P(b a) P(b) or P(a b) P(a)P(b). (13.11)
+All these forms are equivalent (Exercise 13.12). Independence between variables X and Y
+canbewrittenasfollows(again, theseareallequivalent):
+P(X Y) P(X) or P(Y X) P(Y) or P(X,Y) P(X)P(Y).
+Independence assertions are usually based on knowledge of the domain. As the toothache weather example illustrates, they can dramatically reduce the amount of information nec-
+essary to specify the full joint distribution. If the complete set of variables can be divided
+Section13.5. Bayes Ruleand Its Use 495
+Cavity Coin Coin
+1 n
+Toothache Catch
+Weather
+decomposes
+decomposes
+into
+into
+Cavity
+Toothache Catch Weather
+Coin Coin
+1 n
+(a) (b)
+Figure13.4 Twoexamplesoffactoringalargejointdistributionintosmallerdistributions,
+using absolute independence. (a) Weather and dental problems are independent. (b) Coin
+flipsareindependent.
+into independent subsets, then the full joint distribution can be factored into separate joint
+distributions on those subsets. For example, the full joint distribution on the outcome of n
+independent coin flips, P(C ,...,C ), has 2n entries, but it can be represented as the prod-
+1 n
+uct of n si

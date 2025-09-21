@@ -1,0 +1,30 @@
+
+theoriginalcolorshowingthrough.
+Intherealworld,agentsuseacombinationofapproaches. Carmanufacturerssellspare
+tires and air bags, which are physical embodiments of contingent plan branches designed
+to handle punctures or crashes. On the other hand, most car drivers never consider these
+possibilities; when a problem arises they respond as replanning agents. In general, agents
+plan only for contingencies that have important consequences and a nonnegligible chance
+of happening. Thus, a car driver contemplating a trip across the Sahara desert should make
+explicit contingency plans for breakdowns, whereas a trip to the supermarket requires less
+advanceplanning. Wenextlookateachofthethreeapproaches inmoredetail.
+11.3.1 Sensorless planning
+Section 4.4.1 (page 138) introduced the basic idea of searching in belief-state space to find
+asolution forsensorless problems. Conversion ofasensorless planning problem to abelief-
+state planning problem works muchthe samewayasit didin Section 4.4.1; the maindiffer-
+encesarethattheunderlyingphysicaltransitionmodelisrepresentedbyacollectionofaction
+schemas and the belief state can be represented by a logical formula instead of an explicitly
+enumerated set of states. Forsimplicity, weassume that the underlying planning problem is
+deterministic.
+The initial belief state for the sensorless painting problem can ignore In View fluents
+because the agent has no sensors. Furthermore, we take as given the unchanging facts
+Object(Table) Object(Chair) Can(C ) Can(C ) because these hold in every be-
+1 2
+lief state. The agent doesn t know the colors of the cans or the objects, or whether the cans
+areopenorclosed, butitdoesknowthatobjects andcanshave colors: x c Color(x,c).
+After Skolemizing, (see Section9.5),weobtaintheinitial beliefstate:
+b Color(x,C(x)).
+0
+In classical planning, where the closed-world assumption is made, we would assume that
+any fluentnot mentioned inastate is false, but in sensorless (and partially observable) plan-
+ning we have to

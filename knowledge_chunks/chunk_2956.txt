@@ -1,0 +1,25 @@
+he success of AI might mean the end of the human race. Almost any technology
+hasthepotentialtocauseharminthewronghands,butwith AIandrobotics,wehavethenew
+problemthatthewronghandsmightbelongtothetechnologyitself. Countlesssciencefiction
+stories have warned about robots or robot human cyborgs running amok. Early examples
+Section26.3. The Ethicsand Risksof Developing Artificial Intelligence 1037
+include Mary Shelley s Frankenstein, orthe Modern Prometheus(1818)5 and Karel Capek s
+play R.U.R.(1921), in which robots conquer the world. In movies, we have The Terminator
+(1984), which combines the cliches of robots-conquer-the-world with time travel, and The
+Matrix(1999), whichcombinesrobots-conquer-the-world withbrain-in-a-vat.
+Itseemsthat robots are theprotagonists ofso manyconquer-the-world stories because
+theyrepresent theunknown, justlikethewitches andghosts oftales fromearliereras, orthe
+Martians from The War of the Worlds (Wells, 1898). The question is whether an AI system
+posesabiggerriskthantraditional software. Wewilllookatthreesourcesofrisk.
+First, the AI system s state estimation may be incorrect, causing it to do the wrong
+thing. Forexample,anautonomous carmightincorrectly estimatethepositionofacarinthe
+adjacent lane, leading toan accident that might kill the occupants. Moreseriously, amissile
+defense system might erroneously detect an attack and launch a counterattack, leading to
+the death of billions. These risks are not really risks of AI systems in both cases the same
+mistakecouldjustaseasilybemadebyahumanasbyacomputer. Thecorrectwaytomitigate
+these risks is to design a system with checks and balances so that a single state-estimation
+errordoesnotpropagatethrough thesystemunchecked.
+Second, specifying the right utility function for an AI system to maximize is not so
+easy. Forexample,wemightproposeautilityfunctiondesignedtominimizehumansuffering,
+expressed as anadditive reward function overtimeasin Chapter17. Giventhewayhumans
+are, however, we ll always find

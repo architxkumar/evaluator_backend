@@ -1,0 +1,37 @@
+arsing algorithm would
+have toguess whetherthe firstwordispart of acommand oraquestion andwillnot beable
+to tell if the guess is correct until at least the eleventh word, take or taken. If the algorithm
+guesseswrong,itwillhavetobacktrackallthewaytothefirstwordandreanalyze thewhole
+sentence undertheotherinterpretation.
+Section23.2. Syntactic Analysis(Parsing) 893
+Listofitems Rule
+S
+NP VP S NP VP
+NP VP Adjective VP VP Adjective
+NP Verb Adjective VP Verb
+NP Verb dead Adjective dead
+NP isdead Verb is
+Article Noun isdead NP Article Noun
+Article wumpusisdead Noun wumpus
+thewumpusisdead Article the
+Figure23.4 Traceoftheprocessoffindingaparseforthestring Thewumpusisdead asasentence,accordingtothegrammar E . Viewedasatop-downparse,westartwiththe
+0
+listofitemsbeing S and,oneachstep,matchanitem X witharuleoftheform(X ...)
+andreplace X inthelistofitemswith(...). Viewedasabottom-upparse,westartwiththe
+listofitemsbeingthewordsofthesentence,and,oneachstep,matchastringoftokens(...)
+inthelistagainstaruleoftheform(X ...) andreplace(...) with X.
+To avoid this source of inefficiency we can use dynamic programming: every time we
+analyze a substring, store the results so we won t have to reanalyze it later. For example,
+oncewediscoverthat thestudentsinsection2of Computer Science101 isan NP,wecan
+recordthatresultinadatastructureknownasachart. Algorithmsthatdothisarecalledchart
+CHART
+parsers. Because we are dealing with context-free grammars, any phrase that was found in
+thecontextofonebranchofthesearchspacecanworkjustaswellinanyotherbranchofthe
+search space. Therearemanytypes ofchartparsers; wedescribe abottom-up version called
+the CY Kalgorithm,afteritsinventors, John Cocke,Daniel Younger, and Tadeo Kasami.
+CYKALGORITHM
+The CYK algorithm is shown in Figure 23.5. Note that it requires a grammar with all
+rulesinoneoftwoveryspecificformats: lexicalrulesofthe form X word,andsyntactic
+CHOMSKYNORMAL rules of the form X Y Z. This grammar format, called Chomsky Normal Form, may
+FORM
+seem restric

@@ -1,0 +1,22 @@
+ted either in situation calculus or in more
+expressiverepresentations suchaseventcalculus. Suchrepresentations enableanagent
+toconstruct plansbylogicalinference. Wepresentedadetailedanalysisofthe Internetshoppingdomain,exercisingthegeneral
+ontology andshowinghowthedomainknowledge canbeusedbyashopping agent. Special-purpose representation systems, such as semantic networks and description
+logics, have been devised to help in organizing a hierarchy of categories. Inheritance
+isanimportantformofinference,allowingthepropertiesofobjectstobededucedfrom
+theirmembershipincategories. The closed-world assumption, as implemented in logic programs, provides a simple
+way to avoid having to specify lots of negative information. It is best interpreted as a
+defaultthatcanbeoverriddenbyadditional information. Nonmonotoniclogics,suchascircumscriptionanddefaultlogic,areintendedtocap-
+turedefaultreasoning ingeneral. Truthmaintenancesystemshandleknowledge updatesandrevisions efficiently.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Briggs(1985) claimsthatformalknowledge representation research beganwithclassical In-
+dian theorizing about thegrammarof Shastric Sanskrit, which dates back to thefirstmillen-
+nium B.C. In the West, the use of definitions of terms in ancient Greek mathematics can be
+regardedastheearliestinstance: Aristotle s Metaphysics(literally,whatcomesafterthebook
+onphysics) isanear-synonym for Ontology. Indeed, thedevelopment oftechnical terminol-
+ogyinanyfieldcanberegardedasaformofknowledge representation.
+Early discussions of representation in AI tended to focus on problem representation ratherthan knowledgerepresentation. (See,forexample,Amarel s(1968)discussionofthe
+Missionaries and Cannibals problem.) Inthe1970s, AIemphasized thedevelopment of ex-
+pert systems (also called knowledge-based systems ) that could, if given the appropriate
+domain knowledge, matchorexceed theperformance ofhumanexperts onnarrowlydefined
+tasks. For example, the first expert system, DENDRAL (Feigenb

@@ -1,0 +1,36 @@
+ 485 and 492) to express the conditional probability
+P(z y)astheratiooftwosums,eachoverentriesinthejointdistribution P(X,Y,Z).
+b. Now use Equation (14.1) to write this expression in terms of the network parameters (X), (Y X),and (Z Y).
+c. Next,expandoutthesummationsinyourexpressionfrompart(b),writingoutexplicitly
+the terms for the true and false values of each summed variable. Assuming that all
+(cid:2)
+network parameters satisfy the constraint (x parents(X )) 1, show that the
+xi i i
+resultingexpression reducesto (x y).
+d. Generalize this derivation to show that (X Parents(X )) P(X Parents(X ))
+i i i i
+forany Bayesiannetwork.
+Exercises 559
+14.3 Theoperationofarcreversalina Bayesiannetworkallowsustochangethedirection
+ARCREVERSAL
+of an arc X Y while preserving the joint probability distribution that the network repre-
+sents (Shachter, 1986). Arc reversal may require introducing new arcs: all the parents of X
+alsobecomeparentsof Y,andallparents of Y alsobecomeparents of X.
+a. Assume that X and Y start with m and n parents, respectively, and that all variables
+havekvalues. Bycalculatingthechangeinsizeforthe CP Tsof X and Y,showthatthe
+total number of parameters in the network cannot decrease during arc reversal. (Hint:
+theparents of X and Y neednotbedisjoint.)
+b. Underwhatcircumstances canthetotalnumberremainconstant?
+c. Let the parents of X be U V and the parents of Y be V W, where U and W are
+disjoint. Theformulasforthenew CP Tsafterarcreversalareasfollows:
+(cid:12)
+P(Y U,V,W) P(Y V,W,x)P(x U,V)
+x
+P(X U,V,W,Y) P(Y X,V,W)P(X U,V) P(Y U,V,W).
+Prove that the new network expresses the same joint distribution over all variables as
+theoriginal network.
+14.4 Considerthe Bayesiannetworkin Figure14.2.
+a. Ifnoevidenceisobserved,are Burglary and Earthquake independent? Provethisfrom
+thenumerical semanticsandfromthetopological semantics.
+b. Ifweobserve Alarm true,are Burglary and Earthquake independent? Justifyyour
+answerbycalculatingwhethertheprobabilities involvedsatisfythedefin

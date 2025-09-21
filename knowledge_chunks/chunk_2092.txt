@@ -1,0 +1,26 @@
+ts
+of the original known facts and a set of conclusions from the default rules, such that no
+additionalconclusions canbedrawnfrom S andthejustificationsofeverydefaultconclusion
+in S areconsistentwith S. Asinthecaseofthepreferredmodelsincircumscription, wehave
+twopossibleextensionsforthe Nixondiamond: onewhereinheisapacifistandonewherein
+heisnot. Prioritizedschemesexistinwhichsomedefaultrulescanbegivenprecedenceover
+others, allowingsomeambiguities toberesolved.
+Since 1980, when nonmonotonic logics were first proposed, a great deal of progress
+has been made in understanding their mathematical properties. There are still unresolved
+questions, however. For example, if Cars have four wheels is false, what does it mean
+to have it in one s knowledge base? What is a good set of default rules to have? If we
+cannot decide, for each rule separately, whether it belongs in our knowledge base, then we
+haveaseriousproblem ofnonmodularity. Finally, howcanbeliefsthathavedefaultstatusbe
+used to make decisions? This is probably the hardest issue for default reasoning. Decisions
+often involve tradeoffs, and one therefore needs to compare the strengths of belief in the
+outcomes ofdifferent actions, and the costs of making awrong decision. In cases where the
+same kinds of decisions are being made repeatedly, it is possible to interpret default rules
+as threshold probability statements. For example, the default rule My brakes are always
+OK really means The probability that my brakes are OK, given no other information, is
+sufficiently high that the optimal decision is for me to drive without checking them. When
+thedecisioncontextchanges forexample,whenoneisdrivingaheavilyladentruckdowna
+steep mountain road the default rulesuddenly becomes inappropriate, eventhough thereis
+nonewevidenceoffaultybrakes. Theseconsiderationshaveledsomeresearcherstoconsider
+howtoembeddefaultreasoning withinprobability theoryor utilitytheory.
+12.6.2 Truth maintenance systems
+Wehave seen that many of the inference

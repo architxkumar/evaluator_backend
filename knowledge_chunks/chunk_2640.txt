@@ -1,0 +1,24 @@
+ork remains to be done before we can say
+thatthestructure-learning problem issolved.
+Section20.4. Summary 825
+20.4 SUMMARY
+Statistical learning methods rangefromsimple calculation ofaverages totheconstruction of
+complex models such as Bayesian networks. They have applications throughout computer
+science, engineering, computational biology, neuroscience, psychology, and physics. This
+chapter has presented some of the basic ideas and given a flavor of the mathematical under-
+pinnings. Themainpointsareasfollows: Bayesian learning methods formulate learning as a form of probabilistic inference,
+using the observations to update a prior distribution over hypotheses. This approach
+providesagoodwaytoimplement Ockham srazor,butquickly becomesintractablefor
+complexhypothesis spaces. Maximum a posteriori (MAP) learning selects a single most likely hypothesis given
+the data. Thehypothesis prior isstill used and the method is often moretractable than
+full Bayesianlearning. Maximum-likelihoodlearningsimplyselectsthehypothesisthatmaximizesthelikeli-
+hoodofthedata;itisequivalent to MA Plearningwithauniformprior. Insimplecases
+suchaslinearregressionandfullyobservable Bayesiannetworks,maximum-likelihood
+solutions can be found easily in closed form. Naive Bayes learning is a particularly
+effectivetechnique thatscaleswell. When some variables are hidden, local maximum likelihood solutions can be found
+using the EM algorithm. Applications include clustering using mixtures of Gaussians,
+learning Bayesiannetworks, andlearning hidden Markovmodels. Learning the structure of Bayesian networks is an example of model selection. This
+usually involves a discrete search in the space of structures. Some method is required
+fortrading offmodelcomplexityagainstdegreeoffit. Nonparametric models represent a distribution using the collection of data points.
+Thus,thenumberofparametersgrowswiththetrainingset. Nearest-neighborsmethods
+look at the examples nearest to the point in question, whereas kernel me

@@ -1,0 +1,33 @@
+generalized to handle multiple continuous parents by taking a
+linearcombination oftheparentvalues.
+14.4 EXACT INFERENCE IN BAYESIAN NETWORKS
+The basic task for any probabilistic inference system is to compute the posterior probability
+distribution for a set of query variables, given some observed event that is, some assign-
+EVENT
+mentofvaluestoasetofevidencevariables. Tosimplifythepresentation, wewillconsider
+onlyonequeryvariable atatime;thealgorithms caneasilybeextended toqueries withmul-
+tiple variables. We will use the notation from Chapter 13: X denotes the query variable; E
+denotesthesetofevidencevariables E ,...,E ,andeisaparticularobservedevent; Ywill
+1 m
+denotesthenonevidence, nonqueryvariables Y ,...,Y (calledthehiddenvariables). Thus,
+HIDDENVARIABLE 1 l
+the complete set of variables is X X E Y. A typical query asks for the posterior
+probability distribution P(X e).
+Section14.4. Exact Inference in Bayesian Networks 523
+In the burglary network, we might observe the event in which John Calls true and
+Mary Calls true. Wecouldthenaskfor,say,theprobability thataburglary hasoccurred:
+P(Burglary John Calls true,Mary Calls true) (cid:16)0.284,0.716(cid:17).
+In this section we discuss exact algorithms for computing posterior probabilities and will
+consider the complexity of this task. It turns out that the general case is intractable, so Sec-
+tion14.5coversmethodsforapproximate inference.
+14.4.1 Inference by enumeration
+Chapter 13 explained that any conditional probability can be computed by summing terms
+from the full joint distribution. More specifically, a query P(X e) can be answered using
+Equation(13.9),whichwerepeathereforconvenience:
+(cid:12)
+P(X e) P(X,e) P(X,e,y).
+y
+Now,a Bayesian networkgivesacompleterepresentation ofthefulljointdistribution. More
+specifically, Equation (14.2) on page 513 shows that the terms P(x,e,y) in the joint distri-
+butioncanbewrittenasproducts ofconditional probabilities fromthenetwork. Therefore, a
+query can be answered using a Bay

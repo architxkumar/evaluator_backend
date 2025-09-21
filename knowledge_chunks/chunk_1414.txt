@@ -1,0 +1,29 @@
+t. Thus Aristotlecanbe
+seenasbothanempiricistandarationalist.
+3 Inthispicture,allmeaningfulstatementscanbeverifiedorfalsifiedeitherbyexperimentationorbyanalysis
+ofthemeaningofthewords.Becausethisrulesoutmostofmetaphysics,aswastheintention,logicalpositivism
+wasunpopularinsomecircles.
+Section1.2. The Foundations of Artificial Intelligence 7
+The final element in the philosophical picture of the mind is the connection between
+knowledgeandaction. Thisquestionisvitalto AIbecauseintelligencerequiresactionaswell
+as reasoning. Moreover, only by understanding how actions are justified can we understand
+howtobuildanagentwhoseactionsarejustifiable(orrational). Aristotleargued(in De Motu
+Animalium)thatactionsarejustifiedbyalogicalconnectionbetweengoalsandknowledgeof
+theaction soutcome(thelastpartofthisextractalsoappearsonthefrontcoverofthisbook,
+intheoriginal Greek):
+Buthowdoesithappenthatthinkingissometimesaccompaniedbyactionandsometimes
+not, sometimes by motion, and sometimes not? It looks as if almost the same thing
+happensasinthecaseofreasoningandmakinginferencesaboutunchangingobjects.But
+in that case the end is a speculative proposition ... whereas here the conclusionwhich
+resultsfromthe twopremisesisan action. ...I needcovering;a cloakis a covering. I
+needacloak. What Ineed,Ihavetomake;Ineedacloak. Ihavetomakeacloak. And
+theconclusion,the Ihavetomakeacloak, isanaction.
+In the Nicomachean Ethics (Book III. 3, 1112b), Aristotle further elaborates on this topic,
+suggesting analgorithm:
+Wedeliberatenotaboutends,butaboutmeans. Foradoctordoesnotdeliberatewhether
+he shall heal, nor an orator whether he shall persuade, ... They assume the end and
+considerhowandbywhatmeansitisattained,andifitseemseasilyandbestproduced
+thereby;whileifitisachievedbyonemeansonlytheyconsiderhowitwillbeachieved
+bythisandbywhatmeansthiswillbeachieved,tilltheycometothefirstcause,...and
+whatislastintheorderofanalysisseemstobefirstintheorderofbecoming. Andifwe
+comeonanimpossibility,wegiveupthesearch,e.g.,if

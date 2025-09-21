@@ -1,0 +1,27 @@
+x returns, and
+dataentryforhand-held computers. Itisanareawhererapid progresshasbeenmade,inpart
+because ofbetterlearning algorithms andinpartbecauseof theavailability ofbettertraining
+sets. The United States National Institute of Science and Technology (NIST)has archived a
+database of 60,000 labeled digits, each 20 20 400 pixels with 8-bit grayscale values. It
+hasbecomeoneofthestandardbenchmarkproblemsforcomparingnewlearningalgorithms.
+Someexampledigitsareshownin Figure18.36.
+754 Chapter 18. Learningfrom Examples
+Figure18.36 Examplesfromthe NIS Tdatabaseofhandwrittendigits.Toprow:examples
+ofdigits0 9thatareeasytoidentify.Bottomrow:moredifficultexamplesofthesamedigits.
+Manydifferent learning approaches have been tried. Oneofthe first, and probably the
+simplest, is the 3-nearest-neighbor classifier, which also has the advantage of requiring no
+training time. As a memory-based algorithm, however, it must store all 60,000 images, and
+itsruntimeperformance isslow. Itachievedatesterrorrateof2.4 .
+A single-hidden-layer neural network was designed for this problem with 400 input
+units(oneperpixel)and10outputunits(oneperclass). Usingcross-validation, itwasfound
+thatroughly300hiddenunitsgavethebestperformance. Withfullinterconnections between
+layers, therewereatotalof123,300weights. Thisnetworkachieveda1.6 errorrate.
+Aseries of specialized neuralnetworks called Le Netwere devised totake advantage
+ofthestructure oftheproblem that theinput consists ofpixelsinatwo dimensional array,
+and that small changes in the position or slant of an image are unimportant. Each network
+hadaninputlayerof32 32units,ontowhichthe20 20pixelswerecenteredsothateach
+inputunitispresentedwithalocalneighborhood ofpixels. Thiswasfollowedbythreelayers
+of hidden units. Each layer consisted of several planes of n n arrays, where n is smaller
+thanthepreviouslayersothatthenetworkisdown-samplingtheinput,andwheretheweights
+ofeveryunitinaplaneareconstrained tobeidentical, sothattheplaneisacting asafeature
+detecto

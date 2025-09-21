@@ -1,0 +1,31 @@
+nce C ,C ,C ,C ,C ,C ,C . Alsogiveitsprobability.
+1 2 3 4 4 6 7
+23.19 We forgot to mention that the text in Exercise 23.1 is entitled Washing Clothes. Reread the text and answer the questions in Exercise 23.14. Did you do better this time?
+Bransfordand Johnson(1973)usedthistextinacontrolledexperimentandfoundthatthetitle
+helpedsignificantly. Whatdoesthistellyouabouthowlanguage andmemoryworks?
+24
+PERCEPTION
+Inwhichweconnect thecomputertotheraw,unwashedworld.
+Perceptionprovidesagentswithinformationabouttheworldtheyinhabitbyinterpreting the
+PERCEPTION
+response of sensors. A sensor measures some aspect of the environment in a form that can
+SENSOR
+beusedasinputbyanagentprogram. Thesensorcouldbeassimpleasaswitch,whichgives
+onebittellingwhetheritisonoroff,orascomplexastheeye. Avarietyofsensorymodalities
+are available to artificial agents. Those they share with humans include vision, hearing, and
+touch. Modalities that are not available to the unaided human include radio, infrared, GPS,
+andwirelesssignals. Somerobotsdoactivesensing,meaningtheysendoutasignal,suchas
+radarorultrasound, andsensethereflectionofthissignaloffoftheenvironment. Ratherthan
+tryingtocoverallofthese, thischapterwillcoveronemodalityindepth: vision.
+We saw in our description of POMD Ps (Section 17.4, page 658) that a model-based
+decision-theoretic agent in a partially observable environment has a sensor model a prob-
+ability distribution P(E S) over the evidence that its sensors provide, given a state of the
+world. Bayes rulecanthenbeusedtoupdatetheestimationofthestate.
+For vision, the sensor model can be broken into two components: An object model
+OBJECTMODEL
+describes the objects that inhabit the visual world people, buildings, trees, cars, etc. The
+objectmodelcouldincludeaprecise3Dgeometricmodeltakenfromacomputer-aideddesign
+(CAD)system,oritcouldbevagueconstraints,suchasthefactthathumaneyesareusually5
+to7cmapart. Arenderingmodeldescribesthephysical,geometric,andstatisticalprocesses
+RENDERINGMODEL
+that p

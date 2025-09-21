@@ -1,0 +1,27 @@
+Winograd and Cowan (1963) showed how a large number of elements could
+collectively represent anindividual concept, withacorresponding increaseinrobustness and
+parallelism. Hebb s learning methods were enhanced by Bernie Widrow (Widrow and Hoff,
+1960; Widrow, 1962), who called his networks adalines, and by Frank Rosenblatt (1962)
+with his perceptrons. The perceptron convergence theorem (Block et al., 1962) says that
+thelearningalgorithmcanadjusttheconnection strengths ofaperceptrontomatchanyinput
+data,providedsuchamatchexists. Thesetopicsarecovered in Chapter20.
+1.3.4 A doseofreality(1966 1973)
+From the beginning, AI researchers were not shy about making predictions of their coming
+successes. Thefollowingstatement by Herbert Simonin1957 isoftenquoted:
+Itisnotmyaimtosurpriseorshockyou butthesimplestway Icansummarizeistosay
+thattherearenowintheworldmachinesthatthink,thatlearnandthatcreate. Moreover,
+Section1.3. The Historyof Artificial Intelligence 21
+theirabilitytodothesethingsisgoingtoincreaserapidlyuntil inavisiblefuture the
+rangeofproblemstheycanhandlewillbecoextensivewiththerangetowhichthehuman
+mindhasbeenapplied.
+Terms such as visible future can be interpreted in various ways, but Simon also made
+more concrete predictions: that within 10 years a computer would be chess champion, and
+a significant mathematical theorem would be proved by machine. These predictions came
+true(orapproximately true)within40yearsratherthan10. Simon soverconfidence wasdue
+to the promising performance of early AI systems on simple examples. In almost all cases,
+however, these early systems turned out to fail miserably when tried out onwiderselections
+ofproblems andonmoredifficultproblems.
+The first kind of difficulty arose because most early programs knew nothing of their
+subject matter; they succeeded by means of simple syntactic manipulations. A typical story
+occurred inearlymachinetranslation efforts, whichweregenerously fundedbythe U.S.Na-
+tional Research Councilinanattempttospeedupth

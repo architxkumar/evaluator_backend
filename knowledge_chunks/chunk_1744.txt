@@ -1,0 +1,28 @@
+ tree decomposition, then the
+problem can be solved in O(ndw 1) time. Hence, CS Ps with constraint graphs of bounded
+tree width are solvable in polynomial time. Unfortunately, finding the decomposition with
+minimaltreewidthis NP-hard,butthereareheuristic methodsthatworkwellinpractice.
+Sofar, wehave looked atthestructure oftheconstraint graph. There canbeimportant
+structureinthevaluesofvariablesaswell. Considerthemap-coloringproblemwithncolors.
+Foreveryconsistent solution, there isactually aset of n!solutions formed bypermuting the
+colornames. Forexample,onthe Australiamapweknowthat WA,NT,and SAmustallhave
+different colors, but there are 3! 6 ways to assign the three colors to these three regions.
+This is called value symmetry. We would like to reduce the search space by a factor of
+VALUESYMMETRY
+SYMMETRY-
+n!by breaking the symmetry. Wedo this by introducing a symmetry-breaking constraint.
+BREAKING
+CONSTRAINT
+Forourexample, we might impose an arbitrary ordering constraint, NT SA WA, that
+requires the three values tobeinalphabetical order. Thisconstraint ensures that only one of
+then!solutions ispossible: NT blue,SA green,WA red .
+For map coloring, it was easy to find a constraint that eliminates the symmetry, and
+in general it is possible to find constraints that eliminate all but one symmetric solution in
+polynomial time, but it is NP-hard to eliminate all symmetry among intermediate sets of
+values during search. In practice, breaking value symmetry has proved to be important and
+effectiveonawiderangeofproblems.
+Section6.6. Summary 227
+6.6 SUMMARY Constraintsatisfaction problems(CS Ps)represent astatewithasetofvariable value
+pairsandrepresent theconditions forasolutionbyasetofconstraints onthevariables.
+Manyimportantreal-world problemscanbedescribed as CS Ps. Anumberofinferencetechniquesusetheconstraintstoinferwhichvariable valuepairs
+areconsistent andwhicharenot. Theseinclude node,arc,path,andk-consistency. Backtrackingsearch,aformofdepth-firstsearch,iscommonlyused

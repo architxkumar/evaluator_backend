@@ -1,0 +1,27 @@
+ING and
+RBDTL on randomly generated data for a target function that depends on only 5 of 16
+attributes.
+such subsets; hence the algorithm is exponential inthe size ofthe minimal determination. It
+turns out that the problem is NP-complete, so we cannot expect to do better in the general
+case. Inmostdomains, however, there willbesufficient localstructure (see Chapter14fora
+definitionoflocallystructured domains)that pwillbesmall.
+Givenanalgorithm forlearningdeterminations, alearning agenthasawaytoconstruct
+aminimalhypothesiswithinwhichtolearnthetargetpredicate. Forexample,wecancombine
+MINIMAL-CONSISTENT-DET withthe DECISION-TREE-LEARNING algorithm. Thisyields
+a relevance-based decision-tree learning algorithm RBDTL that first identifies a minimal
+set of relevant attributes and then passes this set to the decision tree algorithm for learning.
+Unlike DECISION-TREE-LEARNING, RBDTL simultaneously learns andusesrelevance in-
+formationinordertominimizeitshypothesisspace. Weexpectthat RBDT Lwilllearnfaster
+than DECISION-TREE-LEARNING,andthisisinfactthecase. Figure19.9showsthelearning
+performance for the two algorithms on randomly generated data for a function that depends
+ononly 5of16 attributes. Obviously, incases whereall the available attributes are relevant,
+RBDTL willshownoadvantage.
+Thissectionhasonlyscratched thesurfaceofthefieldof declarative bias,whichaims
+DECLARATIVEBIAS
+tounderstand how priorknowledge can beused to identify the appropriate hypothesis space
+withinwhichtosearchforthecorrecttargetdefinition. Therearemanyunansweredquestions: Howcanthealgorithms beextendedtohandlenoise? Canwehandle continuous-valued variables? Howcanotherkindsofpriorknowledgebeused,besidesdeterminations? How can the algorithms be generalized to cover any first-order theory, rather than just
+anattribute-based representation?
+Someofthesequestions areaddressed inthenextsection.
+788 Chapter 19. Knowledgein Learning
+19.5 INDUCTIVE LOGIC PROGRAMMING
+Inductivelogicprogramming(ILP)combinesinduc

@@ -1,0 +1,33 @@
+hakey robotics project at the Stanford Research Institute
+(SRI). The latter project, discussed further in Chapter 25, was the first to demonstrate the
+completeintegration oflogicalreasoning andphysicalactivity.
+Minsky supervised a series of students who chose limited problems that appeared to
+require intelligence tosolve. Theselimited domains became known asmicroworlds. James
+MICROWORLD
+Slagle s SAINT program (1963) wasable tosolveclosed-form calculus integration problems
+typical of first-year college courses. Tom Evans s ANALOGY program (1968) solved geo-
+metricanalogyproblemsthatappearin IQtests. Daniel Bobrow s STUDENT program(1967)
+solvedalgebrastoryproblems,suchasthefollowing:
+If the number of customers Tom gets is twice the square of 20 percent of the number
+of advertisementshe runs, and the numberof advertisements he runs is 45, what is the
+numberofcustomers Tomgets?
+20 Chapter 1. Introduction
+Blue
+Red
+Red Green
+Blue
+Green
+Green
+Red
+Figure1.4 Ascenefromtheblocksworld. SHRDLU(Winograd,1972)hasjustcompleted
+thecommand Findablockwhichistallerthantheoneyouareholdingandputitinthebox. The most famous microworld was the blocks world, which consists of a set of solid blocks
+placed on a tabletop (or more often, a simulation of a tabletop), as shown in Figure 1.4.
+A typical task in this world is to rearrange the blocks in a certain way, using a robot hand
+that can pick up one block at a time. The blocks world was home to the vision project of
+David Huffman (1971), the vision and constraint-propagation work of David Waltz (1975),
+the learning theory of Patrick Winston (1970), the natural-language-understanding program
+of Terry Winograd(1972), andtheplannerof Scott Fahlman(1974).
+Early work building on the neural networks of Mc Culloch and Pitts also flourished.
+The work of Winograd and Cowan (1963) showed how a large number of elements could
+collectively represent anindividual concept, withacorresponding increaseinrobustness and
+parallelism. Hebb s learning methods were

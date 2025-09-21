@@ -1,0 +1,27 @@
+ easy to agree that computer simulations of storms do not make us wet, it is not
+clear how to carry this analogy over to computer simulations of mental processes. After
+all, a Hollywood simulation of a storm using sprinklers and wind machines does make the
+actors wet, andavideo gamesimulation ofastorm does makethe simulated characters wet.
+Most people are comfortable saying that a computer simulation of addition is addition, and
+ofchessischess. Infact,wetypically speakofanimplementation ofaddition orchess,nota
+simulation. Arementalprocesses morelikestorms,ormorelikeaddition?
+Turing s answer the polite convention suggests that the issue will eventually go
+away by itself once machines reach a certain level of sophistication. This would have the
+effect ofdissolving the difference between weakand strong AI. Against this, one may insist
+that there is a factual issue at stake: humans do have real minds, and machines might or
+might not. To address this factual issue, we need to understand how it is that humans have
+real minds, not just bodies that generate neurophysiological processes. Philosophical efforts
+MIND BODY to solve this mind bodyproblem are directly relevant to the question ofwhether machines
+PROBLEM
+couldhaverealminds.
+Themind bodyproblemwasconsideredbytheancient Greekphilosophers andbyvar-
+ious schools of Hindu thought, but was first analyzed in depth by the 17th-century French
+philosopher andmathematician Rene Descartes. His Meditations on First Philosophy(1641)
+considered themind s activity ofthinking (aprocess withnospatial extent ormaterial prop-
+erties) andthephysical processes ofthebody, concluding that thetwomustexist inseparate
+realms what we would now call a dualist theory. The mind body problem faced by du-
+DUALISM
+alists is the question of how the mind can control the body if the two are really separate.
+Descartesspeculated thatthetwomightinteractthroughthepinealgland,whichsimplybegs
+thequestion ofhowthemindcontrolsthepinealgland.
+1028 Chapter 26. P

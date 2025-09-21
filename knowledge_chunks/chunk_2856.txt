@@ -1,0 +1,43 @@
+e planes are parallel to the epipolar lines the lines from the object to the
+camera. Theoptical axesofthetwocamerasare parallel. The baseline between thecameras
+is1meter.
+a. Ifthenearestdistancetobemeasuredis16meters,whatisthelargestdisparitythatwill
+occur(inpixels)?
+b. Whatisthedistance resolution at16meters,duetothepixelspacing?
+c. Whatdistance corresponds toadisparity ofonepixel?
+24.6 Whichofthefollowingaretrue,andwhicharefalse?
+a. Finding corresponding points in stereo images is the easiest phase of the stereo depth-
+findingprocess.
+b. Shape-from-texture canbedonebyprojecting agridoflight-stripes ontothescene.
+c. Lineswithequallengths inthescenealwaysprojecttoequallengths intheimage.
+d. Straightlinesintheimagenecessarily correspond tostraightlinesinthescene.
+970 Chapter 24. Perception
+D
+A
+X
+B
+C
+Y
+E
+Figure 24.27 Top view of a two-camera vision system observing a bottle with a wall
+behindit.
+24.7 (Courtesy of Pietro Perona.) Figure24.27showstwocameras at Xand Yobserving a
+scene. Draw the image seen at each camera, assuming that all named points are in the same
+horizontal plane. Whatcan beconcluded fromthese twoimages about therelative distances
+ofpoints A,B,C,D,and Efromthecamerabaseline, andonwhatbasis?
+25
+ROBOTICS
+Inwhichagentsareendowedwithphysicaleffectors withwhichtodomischief.
+25.1 INTRODUCTION
+Robotsarephysical agentsthatperformtasksbymanipulating thephysicalworld. Todoso,
+ROBOT
+they are equipped with effectors such as legs, wheels, joints, and grippers. Effectors have
+EFFECTOR
+a single purpose: to assert physical forces on the environment.1 Robots are also equipped
+with sensors, which allow them to perceive their environment. Present day robotics em-
+SENSOR
+ploys adiverse setofsensors, including camerasandlasers tomeasure theenvironment, and
+gyroscopes andaccelerometers tomeasuretherobot sownmotion.
+Mostoftoday srobotsfallintooneofthreeprimarycategories. Manipulators,orrobot
+MANIPULATOR
+arms (Figure 25.1(a)), are physically anchored to their workplace, for

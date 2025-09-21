@@ -1,0 +1,24 @@
+completely
+unknown. The set of possible models, given a fixed propositional vocabulary, is finite, so en-
+tailment can be checked by enumerating models. Efficient model-checking inference
+algorithms for propositional logic include backtracking and local search methods and
+canoftensolvelargeproblemsquickly.
+Bibliographical and Historical Notes 275 Inference rules are patterns of sound inference that can be used to find proofs. The
+resolution rule yields a complete inference algorithm for knowledge bases that are
+expressed in conjunctive normal form. Forward chaining and backward chaining
+areverynaturalreasoning algorithmsforknowledgebasesin Hornform. Local search methods such as WALKSAT can be used to find solutions. Such algo-
+rithmsaresoundbutnotcomplete. Logical state estimation involves maintaining alogical sentence that describes the set
+of possible states consistent with the observation history. Each update step requires
+inferenceusingthetransitionmodeloftheenvironment, whichisbuiltfromsuccessor-
+stateaxiomsthatspecifyhoweachfluentchanges. Decisionswithinalogical agentcanbemadeby SA Tsolving: findingpossible models
+specifying future action sequences that reach the goal. This approach works only for
+fullyobservable orsensorless environments. Propositional logic does not scale to environments of unbounded size because it lacks
+theexpressive powertodeal concisely withtime, space, and universal patterns ofrela-
+tionships amongobjects.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+John Mc Carthy s paper Programs with Common Sense (Mc Carthy, 1958, 1968) promul-
+gatedthenotionofagentsthatuselogicalreasoningtomediatebetweenperceptsandactions.
+Italsoraisedtheflagofdeclarativism,pointingoutthattellinganagentwhatitneedstoknow
+is an elegant way to build software. Allen Newell s (1982) article The Knowledge Level makesthecasethatrationalagentscanbedescribedandanalyzedatanabstractleveldefined
+bytheknowledgetheypossessratherthantheprogramstheyrun. Thedeclarativeandproce-
+dural approa

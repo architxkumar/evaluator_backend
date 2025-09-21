@@ -1,0 +1,27 @@
+ificial Intelligence 1039
+3. Arobotmustprotectitsownexistenceaslongassuchprotection doesnotconflictwith
+the Firstor Second Law.
+Theselawsseemreasonable, atleast toushumans.6 Butthetrickishowtoimplement these
+laws. In the Asimov story Roundabout a robot is sent to fetch some selenium. Later the
+robot isfound wandering inacircle around theselenium source. Everytimeitheads toward
+the source, it senses a danger, and the third law causes it to veer away. But every time it
+veers away, the danger recedes, and the power of the second law takes over, causing it to
+veer back towards the selenium. The set of points that define the balancing point between
+thetwolawsdefinesacircle. Thissuggests thatthelawsarenotlogical absolutes, butrather
+are weighed against each other, with a higher weighting for the earlier laws. Asimov was
+probably thinking of an architecture based on control theory perhaps a linear combination
+offactors while todaythemostlikelyarchitecture wouldbeaprobabilistic reasoning agent
+that reasons over probability distributions of outcomes, and maximizes utility as defined by
+the three laws. But presumably we don t want our robots to prevent a human from crossing
+the street because of the nonzero chance of harm. That means that the negative utility for
+harm to a human must be much greater than for disobeying, but that each of the utilities is
+finite,notinfinite.
+Yudkowsky(2008)goesintomoredetailabouthowtodesigna Friendly AI.Heasserts
+FRIENDLYAI
+that friendliness (adesire notto harm humans) should bedesigned infrom the start, but that
+thedesigners shouldrecognize boththattheirowndesigns maybeflawed,andthattherobot
+willlearnandevolveovertime. Thusthechallenge isoneofmechanism design to definea
+mechanism for evolving AI systems under a system of checks and balances, and to give the
+systemsutilityfunctions thatwillremainfriendly inthefaceofsuchchanges.
+Wecan tjustgiveaprogramastaticutilityfunction,becausecircumstances,andourde-
+sired responses tocircumstances, change o

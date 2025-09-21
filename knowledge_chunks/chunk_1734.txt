@@ -1,0 +1,25 @@
+ngerconsistency checking, suchas MAC.
+Despite the observations of the preceding paragraph, the idea behind backjumping re-
+mainsagoodone: tobacktrackbasedonthereasonsforfailure. Backjumpingnoticesfailure
+whenavariable sdomainbecomesempty,butinmanycasesabranchisdoomedlongbefore
+this occurs. Consider again the partial assignment WA red,NSW red (which, from
+ourearlierdiscussion, isinconsistent). Supposewetry T red nextandthenassign NT,Q,
+V,SA. Weknowthatnoassignment canworkfortheselastfourvariables, soeventually we
+runoutofvaluestotryat NT. Now,thequestionis,wheretobacktrack? Backjumpingcannot
+work, because NT does have values consistent with the preceding assigned variables NT
+doesn t have a complete conflict set of preceding variables that caused it to fail. We know,
+however,thatthefourvariables NT,Q,V,and SA,takentogether, failedbecauseofasetof
+preceding variables, which must be those variables that directly conflict with the four. This
+leads toadeepernotion oftheconflict setforavariable such as NT: itisthat setofpreced-
+ing variables that caused NT, together with any subsequent variables, to have no consistent
+solution. In this case, the set is WA and NSW, so the algorithm should backtrack to NSW
+andskipover Tasmania. Abackjumping algorithm thatusesconflictsets definedinthisway
+CONFLICT-DIRECTED iscalledconflict-directed backjumping.
+BACKJUMPING
+We must now explain how these new conflict sets are computed. The method is in
+fact quite simple. The terminal failure of a branch of the search always occurs because a
+variable s domain becomes empty; that variable has a standard conflict set. In our example,
+SA fails, and its conflict set is (say) WA,NT,Q . We backjump to Q, and Q absorbs
+220 Chapter 6. Constraint Satisfaction Problems
+the conflict set from SA (minus Q itself, of course) into its own direct conflict set, which is NT,NSW ; the new conflict set is WA,NT,NSW . That is, there is no solution from
+Q onward, given the preceding assignment to WA,NT,NSW . Therefor

@@ -1,0 +1,26 @@
+ecentsurveyof LS Handrelatedmethods.
+The ideas behind kernel machines come from Aizerman et al. (1964) (who also in-
+troduced the kernel trick), but the full development of the theory is due to Vapnik and his
+colleagues (Boser et al., 1992). SV Ms were made practical with the introduction of the
+soft-margin classifier for handling noisy data in a paper that won the 2008 ACM Theory
+and Practice Award(Cortes and Vapnik, 1995), andof the Sequential Minimal Optimization
+(SMO)algorithm forefficientlysolving SV Mproblemsusingquadratic programming (Platt,
+1999). SV Mshave proven tobevery popular and effective fortasks such astextcategoriza-
+tion(Joachims,2001),computationalgenomics(Cristianiniand Hahn,2007),andnaturallan-
+guageprocessing,suchasthehandwrittendigitrecognitionof De Costeand Scho lkopf(2002).
+As part of this process, many new kernels have been designed that work with strings, trees,
+and othernonnumerical data types. Arelated technique that also uses the kernel trick toim-
+plicitly represent an exponential feature space isthe voted perceptron (Freund and Schapire,
+1999; Collins and Duffy, 2002). Textbooks on SV Ms include Cristianini and Shawe-Taylor
+(2000)and Scho lkopf and Smola(2002). Afriendlierexposition appearsinthe AI Magazine
+article by Cristianini and Scho lkopf (2002). Bengio and Le Cun (2007) show some of the
+limitations of SV Msandotherlocal,nonparametric methods forlearning functions thathave
+aglobalstructure butdonothavelocalsmoothness.
+Ensemblelearningisanincreasingly populartechnique for improvingtheperformance
+of learning algorithms. Bagging (Breiman, 1996), the first effective method, combines hy-
+BAGGING
+potheseslearnedfrommultiple bootstrapdatasets,eachgeneratedbysubsamplingtheorig-
+inaldataset. Theboostingmethoddescribedinthischapteroriginatedwiththeoretical work
+by Schapire (1990). The ADABOOST algorithm was developed by Freund and Schapire
+Bibliographical and Historical Notes 761
+(1996) and analyzed theoretically by Schapire (2003). Fried

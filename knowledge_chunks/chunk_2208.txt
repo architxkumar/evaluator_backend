@@ -1,0 +1,37 @@
+ers 15 and 17.) Now suppose that we run
+the Markov chain for t steps, and let (x) be the probability that the system is in state x at
+t
+(cid:2) (cid:2)
+time t. Similarly, let (x) be the probability of being in state x at time t 1. Given
+t 1
+(cid:2) (x), wecan calculate (x)by summing, forallstates the system could be inat time t,
+t t 1
+(cid:2)
+theprobability ofbeinginthatstatetimestheprobability ofmakingthetransition tox:
+(cid:12) (x (cid:2) ) (x)q(x x (cid:2) ).
+t 1 t
+x
+STATIONARY We say that the chain has reached its stationary distribution if . Let us call this
+DISTRIBUTION t t 1
+stationary distribution ;itsdefiningequation istherefore
+(cid:12) (x (cid:2) ) (x)q(x x (cid:2) ) forallx (cid:2) . (14.10)
+x
+Provided the transition probability distribution q isergodic that is, every state isreachable
+ERGODIC
+fromeveryotherandtherearenostrictlyperiodiccycles there isexactlyonedistribution satisfying thisequation foranygivenq.
+Equation(14.10)canbereadassayingthattheexpected outflow fromeachstate(i.e.,
+its current population ) is equal to the expected inflow from all the states. One obvious
+way to satisfy this relationship is if the expected flowbetween any pair of states is the same
+inbothdirections; thatis, (x)q(x x (cid:2) ) (x (cid:2) )q(x (cid:2) x) forallx, x (cid:2) . (14.11)
+Whentheseequations hold,wesaythatq(x x (cid:2) )isindetailedbalancewith (x).
+DETAILEDBALANCE
+We can show that detailed balance implies stationarity simply by summing over x in
+Equation(14.11). Wehave
+(cid:12) (cid:12) (cid:12) (x)q(x x (cid:2) ) (x (cid:2) )q(x (cid:2) x) (x (cid:2) ) q(x (cid:2) x) (x (cid:2) )
+x x x
+538 Chapter 14. Probabilistic Reasoning
+(cid:2)
+wherethelaststepfollowsbecauseatransition from x isguaranteed tooccur.
+The transition probability q(x x (cid:2) ) defined by the sampling step in GIBBS-ASK is
+actually aspecial case ofthemoregeneral definition of Gibbs sampling, according towhich
+each variable is sampled conditionally on the current values of all the other variables

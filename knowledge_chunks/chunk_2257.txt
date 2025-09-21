@@ -1,0 +1,31 @@
+tincreases. Wesolvetheproblembymakinga Markovassumption ASSUMPTION
+that thecurrent state depends ononly a finite fixed number ofprevious states. Processes sat-
+isfyingthisassumption werefirststudiedindepthbythe Russianstatistician Andrei Markov
+(1856 1922)andarecalled Markovprocessesor Markovchains. Theycomeinvariousfla-
+MARKOVPROCESS
+FIRST-ORDER vors;thesimplestisthefirst-order Markovprocess,inwhichthecurrentstatedependsonly
+MARKOVPROCESS
+on the previous state and not on any earlier states. In other words, a state provides enough
+information tomakethefutureconditionally independent ofthepast,andwehave
+P(X t X 0:t 1 ) P(X t X t 1 ). (15.1)
+Hence, in a first-order Markov process, the transition model is the conditional distribution
+P(X t X t 1 ). The transition model for a second-order Markov process is the conditional
+distribution P(X t X t 2 ,X t 1 ). Figure 15.1 shows the Bayesian network structures corre-
+sponding tofirst-orderandsecond-order Markovprocesses.
+Even with the Markov assumption there is still a problem: there are infinitely many
+possible values of t. Do we need to specify a different distribution for each time step? We
+avoid this problem by assuming that changes in the world state are caused by a stationary
+STATIONARY process thatis,aprocessofchangethatisgovernedbylawsthatdonotthemselveschange
+PROCESS
+overtime. (Don t confuse stationary with static: in a static process, the state itself does not
+change.) Intheumbrellaworld,then, theconditional probability ofrain, P(R t R t 1 ),isthe
+sameforallt,andweonlyhavetospecifyoneconditional probability table.
+Now for the sensor model. The evidence variables E could depend on previous vari-
+t
+ablesaswellasthecurrent state variables, butanystatethat s worthitssaltshould sufficeto
+SENSORMARKOV generatethecurrentsensorvalues. Thus,wemakea sensor Markovassumptionasfollows:
+ASSUMPTION
+P(E t X 0:t ,E 0:t 1 ) P(E t X t ). (15.2)
+Thus,P(E X )isoursensormodel(sometimescalledtheobservation model). Figure15.2
+t t
+shows bo

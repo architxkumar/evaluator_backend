@@ -1,0 +1,23 @@
+,3 (and 3,1 bysymmetry)containsapitwithroughly31 probability. Asimilar
+calculation, which the reader might wish to perform, shows that 2,2 contains a pit with
+roughly 86 probability. The wumpus agent should definitely avoid 2,2 ! Note that our
+logicalagentfrom Chapter7didnotknowthat 2,2 wasworse thantheothersquares. Logic
+cantellusthatitisunknownwhetherthereisapitin 2,2 ,butweneedprobability totellus
+howlikelyitis.
+What this section has shown is that even seemingly complicated problems can be for-
+mulated precisely in probability theory and solved with simple algorithms. To get efficient
+solutions, independence and conditional independence relationships can be used to simplify
+the summations required. These relationships often correspond to ournatural understanding
+ofhowtheproblemshouldbedecomposed. Inthenextchapter, wedevelopformalrepresen-
+tations for such relationships as well as algorithms that operate on those representations to
+perform probabilistic inference efficiently.
+Section13.7. Summary 503
+13.7 SUMMARY
+Thischapterhassuggestedprobabilitytheoryasasuitablefoundationforuncertainreasoning
+andprovided agentleintroduction toitsuse. Uncertaintyarisesbecauseofbothlazinessandignorance. Itisinescapableincomplex,
+nondeterministic, orpartiallyobservable environments. Probabilitiesexpresstheagent sinabilitytoreachadefinitedecisionregardingthetruth
+ofasentence. Probabilities summarizetheagent sbeliefs relativetotheevidence. Decisiontheorycombinestheagent sbeliefsanddesires,definingthebestactionasthe
+onethatmaximizesexpected utility. Basicprobabilitystatementsincludepriorprobabilitiesandconditionalprobabilities
+oversimpleandcomplexpropositions. Theaxiomsofprobability constrain thepossibleassignments ofprobabilities topropo-
+sitions. Anagentthatviolates theaxiomsmustbehaveirrationally insomecases. The full joint probability distribution specifies the probability of each complete as-
+signment of values to random variables. It is usually too large to create or use in its

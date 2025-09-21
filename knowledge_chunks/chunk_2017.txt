@@ -1,0 +1,30 @@
+s Atrueandmakes C true.
+2
+The preceding discussion assumes that the effects of an HLA the reachable set for
+anygiveninitial state can bedescribed exactlybydescribing theeffect oneachvariable. It
+would be nice if this were always true, but in many cases we can only approximate the ef-
+fectsbecausean HL Amayhaveinfinitelymanyimplementationsandmayproducearbitrarily
+wiggly reachable sets rather like the wiggly-belief-state problem illustrated in Figure 7.21
+on page 271. For example, we said that Go(Home,SFO) possibly deletes Cash; it also
+possibly adds At(Car,SFO Long Term Parking); but it cannot do both in fact, it must do
+exactly one. As with belief states, we may need to write approximate descriptions. Wewill
+OPTIMISTIC usetwokindsofapproximation: anoptimisticdescription REACH (s,h)ofan HL Ahmay
+DESCRIPTION PESSIMISTIC overstate the reachable set, while a pessimistic description REACH (s,h) may understate
+DESCRIPTION
+thereachable set. Thus,wehave
+REACH (s,h) REACH(s,h) REACH (s,h).
+Forexample,anoptimisticdescriptionof Go(Home,SFO)saysthatitpossibledeletes Cash
+and possibly adds At(Car,SFO Long Term Parking). Another good example arises in the
+8-puzzle, half of whose states are unreachable from any given state (see Exercise 3.4 on
+page 113): the optimistic description of Act might well include the whole state space, since
+theexactreachable setisquitewiggly.
+With approximate descriptions, the test for whether a plan achieves the goal needs to
+be modified slightly. If the optimistic reachable set for the plan doesn t intersect the goal,
+Section11.2. Hierarchical Planning 413
+(a) (b)
+Figure 11.7 Goal achievementfor high-levelplans with approximate descriptions. The
+setofgoalstatesisshaded.Foreachplan,thepessimistic(solidlines)andoptimistic(dashed
+lines)reachablesetsareshown.(a)Theplanindicatedbytheblackarrowdefinitelyachieves
+thegoal,whiletheplanindicatedbythegrayarrowdefinitelydoesn t.(b)Aplanthatwould
+needtoberefinedfurthertodetermineifitreallydoesachievethegoal.
+then 

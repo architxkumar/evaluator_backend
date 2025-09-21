@@ -1,0 +1,23 @@
+69. Ingerman,P.Z.(1967). Panini Backusformsug-
+bleinference:Aguidetocox stheorem. IJAR,34, Huang, T., Koller, D., Malik, J., Ogasawara, G., gested.CACM,10(3),137.
+3 24.
+Rao,B.,Russell,S.J.,and Weber,J.(1994). Au- Inoue,K.(2001).Inverseentailmentforfullclausal
+Horning,J.J.(1969).Astudyofgrammaticalinfer- tomaticsymbolictrafficsceneanalysisusingbelief theories. In LICS-2001 Workshop on Logic and
+ence.Ph.D.thesis,Stanford University. networks.In AAAI-94,pp.966 972. Learning.
+Bibliography 1077
+Intille,S.and Bobick,A.(1999). Aframeworkfor Johnston,M.D.and Adorf,H.-M.(1992).Schedul- Kaelbling,L.P.and Rosenschein,S.J.(1990). Ac-
+recognizingmulti-agentactionfromvisualevidence. ingwithneuralnetworks: Thecaseofthe Hubble tionandplanninginembeddedagents.Roboticsand
+In AAAI-99,pp.518 525. space telescope. Computers and Operations Re- Autonomous Systems,6(1 2),35 48.
+search,19(3 4),209 240.
+Isard,M.and Blake,A.(1996). Contourtracking Kager,R.(1999). Optimality Theory. Cambridge
+bystochasticpropagationofconditionaldensity. In Jones,N.D.,Gomard,C.K.,and Sestoft,P.(1993). University Press.
+ECCV,pp.343 356. Partial Evaluationand Automatic Program Genera-
+tion. Iwama,K.and Tamaki,S.(2004). Improvedupper reducingsamplesizein Monte Carlocomputations.
+boundsfor3-SAT.In SODA-04. Jones,R.,Laird,J.,and Nielsen,P.E.(1998).Auto- Operations Research,1(5),263 278.
+matedintelligentpilotsforcombatflightsimulation.
+Jaakkola,T.and Jordan,M.I.(1996). Computing In AAAI-98,pp.1047 54. Kahneman,D.,Slovic,P.,and Tversky,A.(Eds.).
+upperandlowerboundsonlikelihoodsinintractable (1982).Judgmentunder Uncertainty:Heuristicsand
+networks. In UAI-96,pp.340 348.Morgan Kauf- Jones,R.,Mc Callum,A.,Nigam,K.,and Riloff,E. Biases.Cambridge University Press.
+mann. (1999). Bootstrappingfortextlearningtasks. In
+Proc.IJCAI-99Workshopon Text Mining:Founda- Kahneman,D.and Tversky,A.(1979). Prospect
+Jaakkola,T.,Singh,S.P.,and Jordan,M.I.(1995). tions,Techniques,and Applications,pp.52 63. theory:Ananalysisofdecisionunderrisk

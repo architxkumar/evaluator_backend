@@ -1,0 +1,51 @@
+thatindicate rain.
+Wecanshowthatthisalgorithmisconsistent givesthecorrectprobabilitiesas N tends
+toinfinity byconsideringwhathappensduringoneupdatecycle. Weassumethatthesample
+population starts with a correct representation of the forward message f P(X e ) at
+1:t t 1:t
+time t. Writing N(x e ) for the number of samples occupying state x after observations
+t 1:t t
+e havebeenprocessed, wetherefore have
+1:t
+N(x e ) N P(x e ) (15.23)
+t 1:t t 1:t
+forlarge N. Nowwepropagateeachsampleforwardbysamplingthestatevariablesatt 1,
+given the values for the sample at t. The number of samples reaching state x from each
+t 1
+Section15.6. Keeping Trackof Many Objects 599
+x isthetransition probability timesthepopulation of x ;hence, thetotalnumberofsamples
+t t
+reaching x is
+t 1 (cid:12)
+N(x e ) P(x x )N(x e ).
+t 1 1:t t 1 t t 1:t
+xt
+Nowweweighteachsamplebyitslikelihoodfortheevidenceatt 1. Asampleinstatex
+t 1
+receives weight P(e x ). The total weight of the samples in x after seeing e is
+t 1 t 1 t 1 t 1
+therefore
+W(x e ) P(e x )N(x e ).
+t 1 1:t 1 t 1 t 1 t 1 1:t
+Now for the resampling step. Since each sample is replicated with probability proportional
+toitsweight,thenumberofsamplesinstatex afterresampling isproportional tothetotal
+t 1
+weightinx beforeresampling:
+t 1
+N(x e ) N W(x e )
+t 1 1:t 1 t 1 1:t 1 P(e x )N(x e )
+t 1 t 1 (cid:12)t 1 1:t P(e x ) P(x x )N(x e )
+t 1 t 1 t 1 t t 1:t
+xt(cid:12) NP(e x ) P(x x )P(x e ) (by15.23)
+t 1 t 1 t 1 t t 1:t
+(cid:12)xt (cid:2) P(e x ) P(x x )P(x e )
+t 1 t 1 t 1 t t 1:t
+xt P(x e ) (by15.5).
+t 1 1:t 1
+Thereforethesamplepopulationafteroneupdatecyclecorrectlyrepresentstheforwardmes-
+sageattimet 1.
+Particlefiltering is consistent, therefore, butisit efficient? Inpractice, itseemsthatthe
+answerisyes: particle filteringseemstomaintain agoodapproximation tothetrueposterior
+usingaconstantnumberofsamples. Undercertainassumptions inparticular, thattheprob-
+abilities in the transition and sensor models are strictly greater than 0 and less than 1 it is
+possible 

@@ -1,0 +1,31 @@
+sesknowledge
+about beliefs. We then return to consider the technology for reasoning with this content:
+Section 12.5 discusses reasoning systems designed for efficient inference with categories,
+and Section 12.6 discusses reasoning with default information. Section 12.7 brings all the
+knowledgetogetherinthecontextofan Internet shopping environment.
+12.1 ONTOLOGICAL ENGINEERING
+In toy domains,thechoiceofrepresentation isnotthatimportant;manychoiceswillwork.
+Complex domains such as shopping on the Internet or driving a car in traffic require more
+general andflexiblerepresentations. Thischaptershowshowtocreatethese representations,
+concentrating on general concepts such as Events, Time, Physical Objects, and Beliefs that occur in many different domains. Representing these abstract concepts is sometimes
+ONTOLOGICAL calledontological engineering.
+ENGINEERING
+Theprospect of representing everything in the world is daunting. Ofcourse, wewon t
+actually write a complete description of everything that would be far too much for even a
+1000-page textbook but we will leave placeholders where new knowledge for any domain
+canfitin. Forexample,wewilldefinewhatitmeanstobeaphysicalobject,andthedetailsof
+differenttypesofobjects robots,televisions,books,orwhatever canbefilledinlater. This
+isanalogoustothewaythatdesignersofanobject-oriented programmingframework(suchas
+the Java Swinggraphicalframework)definegeneralconcepts like Window,expectingusersto
+437
+438 Chapter 12. Knowledge Representation
+Anything
+Abstract Objects Generalized Events
+Sets Numbers Representational Objects Interval Places Physical Objects Processes
+Categories Sentences Measurements Moments Things Stuff
+Times Weights Animals Agents Solid Liquid Gas
+Humans
+Figure 12.1 The upperontologyof the world, showingthe topics to be coveredlater in
+thechapter. Each linkindicatesthatthe lowerconceptisa specializationof the upperone.
+Specializations are not necessarily disjoint; a human is both an animal and an agent, for
+example.Wew

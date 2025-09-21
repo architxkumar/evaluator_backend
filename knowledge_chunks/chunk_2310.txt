@@ -1,0 +1,26 @@
+ Striebel smoother is still a
+standard technique today. Many early results are gathered in Gelb (1974). Bar-Shalom and
+Fortmann (1988) give amoremodern treatment witha Bayesian flavor, aswellas manyref-
+erences tothevastliterature onthesubject. Chatfield(1989) and Boxetal.(1994) coverthe
+controltheoryapproach totimeseriesanalysis.
+The hidden Markov model and associated algorithms for inference and learning, in-
+cluding the forward backward algorithm, were developed by Baum and Petrie (1966). The
+Viterbialgorithmfirstappearedin(Viterbi,1967). Similarideasalsoappearedindependently
+in the Kalman filtering community (Rauch et al., 1965). The forward backward algorithm
+was one of the main precursors of the general formulation of the EM algorithm (Dempster
+etal.,1977);seealso Chapter20. Constant-spacesmoothingappearsin Binderetal.(1997b),
+as does the divide-and-conquer algorithm developed in Exercise 15.3. Constant-time fixed-
+lag smoothing for HM Ms first appeared in Russell and Norvig (2003). HM Ms have found
+manyapplicationsinlanguageprocessing(Charniak,1993),speechrecognition(Rabinerand
+Juang,1993),machinetranslation(Ochand Ney,2003),computationalbiology(Kroghetal.,
+1994;Baldietal.,1994),financialeconomics Bharand Hamori(2004)andotherfields. There
+have been several extensions to the basic HMM model, for example the Hierarchical HMM
+(Fine et al., 1998) and Layered HMM (Oliver et al., 2004) introduce structure back into the
+model,replacing thesinglestatevariableof HM Ms.
+Dynamic Bayesian networks (DB Ns)can be viewedas asparse encoding ofa Markov
+process and were first used in AI by Dean and Kanazawa (1989b), Nicholson and Brady
+(1992), and Kjaerulff (1992). The last work extends the HUGIN Bayes net system to ac-
+commodate dynamic Bayesian networks. The book by Dean and Wellman (1991) helped
+popularize DB Nsand the probabilistic approach to planning and control within AI.Murphy
+(2002)provides athorough analysisof DB Ns.
+Dynamic Bayesian networks have become popular for 

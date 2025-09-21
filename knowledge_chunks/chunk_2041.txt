@@ -1,0 +1,34 @@
+e mere act of contemplating a game of tennis
+guaranteesrain.
+Section11.4. Multiagent Planning 427
+Actors(A,B)
+Init(At(A,Left Baseline) At(B,Right Net) Approaching(Ball,Right Baseline)) Partner(A,B) Partner(B,A)
+Goal(Returned(Ball) (At(a,Right Net) At(a,Left Net))
+Action(Hit(actor,Ball),
+PRECOND:Approaching(Ball,loc) At(actor,loc)
+EFFECT:Returned(Ball))
+Action(Go(actor,to),
+PRECOND:At(actor,loc) to (cid:7) loc,
+EFFECT:At(actor,to) At(actor,loc))
+Figure11.10 Thedoublestennisproblem. Twoactors Aand B areplayingtogetherand
+canbeinoneoffourlocations: Left Baseline,Right Baseline,Left Net,and Right Net. The
+ballcanbereturnedonlyifaplayerisintherightplace. Notethateachactionmustinclude
+theactorasanargument.
+will know what plans would work if they did agree to execute them.) For simplicity, we
+assume perfect synchronization: each action takes the same amount of time and actions at
+SYNCHRONIZATION
+eachpointinthejointplanaresimultaneous.
+We begin with the transition model; for the deterministic case, this is the function
+RESULT(s,a). In the single-agent setting, there might be b different choices for the action;
+b can be quite large, especially for first-order representations with many objects to act on,
+but action schemas provide a concise representation nonetheless. In the multiactor setting
+with n actors, the single action a is replaced by a joint action (cid:16)a ,...,a (cid:17), where a is the
+JOINTACTION 1 n i
+action taken by the ith actor. Immediately, we see two problems: first, we have to describe
+the transition model for bn different joint actions; second, we have a joint planning problem
+withabranching factorofbn.
+Having put the actors together into a multiactor system with a huge branching factor,
+the principal focus of research on multiactor planning has been to decouple the actors to
+the extent possible, so that the complexity of the problem grows linearly with n rather than
+exponentially. Iftheactorshavenointeractionwithoneanother forexample,nactorseach
+playing

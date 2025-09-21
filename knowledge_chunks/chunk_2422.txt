@@ -1,0 +1,25 @@
+stracted into three classes: better (only a pair of kings or a pair of aces), same (pair of
+queens) or worse (everything else). However, this abstraction might be too coarse. A better
+abstraction would divide worse into, say, medium pair (nines through jacks), low pair, and
+nopair. Theseexamples areabstractions ofstates; itisalso possible toabstract actions. For
+example,instead ofhavingabetactionforeachintegerfrom 1to1000,wecouldrestrict the
+bets to 100, 101, 102 and 103. Or we could cut out one of the rounds of betting altogether.
+We can also abstract over chance nodes, by considering only a subset of the possible deals.
+Thisisequivalenttotherollouttechniqueusedin Goprograms. Puttingalltheseabstractions
+together, we can reduce the 1018 states of poker to 107 states, a size that can be solved with
+currenttechniques.
+Pokerprograms basedonthisapproach caneasily defeatnoviceandsomeexperienced
+human players, but are not yet at the level of master players. Part of the problem is that
+thesolution theseprograms approximate the equilibrium solution is optimalonlyagainst
+an opponent who also plays the equilibrium strategy. Against fallible human players it is
+important to be able to exploit an opponent s deviation from the equilibrium strategy. As
+678 Chapter 17. Making Complex Decisions
+Gautam Rao(aka The Count ),theworld sleadingonlinepokerplayer,said(Billings etal.,
+2003), You have a very strong program. Once you add opponent modeling to it, it will kill
+everyone. However,goodmodelsofhumanfallability remainelusive.
+Inasense,extensivegameformistheoneofthemostcompleterepresentationswehave
+seen so far: it can handle partially observable, multiagent, stochastic, sequential, dynamic
+environments most of the hard cases from the list of environment properties on page 42.
+However,therearetwolimitationsofgametheory. First,itdoesnotdealwellwithcontinuous
+states and actions (although there have been some extensions to the continuous case; for
+COURNOT example,thetheoryof Cournotcompe

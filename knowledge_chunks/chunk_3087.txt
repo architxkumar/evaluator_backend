@@ -1,0 +1,124 @@
+andtheproblemofcom- Osherson, D. N., Stob, M., and Weinstein, S.
+plexity.IBM Journalof Researchand Development, Nilsson,N.J.(2009).The Questfor Artificial Intel- (1986). Systems That Learn: An Introduction to
+4(2),320 335. ligence:AHistoryof Ideasand Achievements.Cam- Learning Theoryfor Cognitiveand Computer Sci-
+bridge University Press. entists.MIT Press.
+Newell,A.and Simon,H.A.(1961). GPS,apro-
+gramthatsimulateshumanthought. In Billing,H. Nisan,N.,Roughgarden,T.,Tardos,E.,and Vazi- Padgham,L.and Winikoff,M.(2004). Developing
+(Ed.),Lernende Automaten,pp.109 124.R.Olden- rani,V.(Eds.).(2007). Algorithmic Game Theory. Intelligent Agent Systems:APractical Guide.Wiley.
+bourg. Cambridge University Press. Page,C.D.and Srinivasan,A.(2002).ILP:Ashort
+Newell,A.and Simon,H.A.(1972). Human Prob- Noe,A.(2009). Outof Our Heads: Why You Are lookbackandalongerlookforward. Submittedto
+lem Solving. of Consciousness.Hilland Wang. Palacios,H.and Geffner,H.(2007). Fromconfor-
+Newell, A.and Simon, H. A.(1976). Computer
+Norvig,P.(1988).Multiplesimultaneousinterpreta- mantintoclassicalplanning: Efficienttranslations
+scienceasempiricalinquiry: Symbolsandsearch.
+tionsofambiguoussentences.In COGSCI-88. thatmaybecompletetoo.In ICAPS-07.
+CACM,19,113 126.
+Norvig,P.(1992). Paradigmsof Artificial Intelli- Palay,A.J.(1985). Searchingwith Probabilities.
+Newton,I.(1664 1671).Methodusfluxionumetse-
+gence Programming:Case Studiesin Common Lisp. Pitman.
+rieruminfinitarum.Unpublishednotes.
+Ng,A.Y.(2004). Featureselection,l1vs.l2regu- M
+No
+o
+r
+r
+v
+g
+i
+a
+g
+n
+,
+K
+P.
+a
+(
+u
+2
+f
+0
+m
+0
+a
+9
+n
+).
+n.
+Naturallanguagecorpusdata.In
+P
+se
+a
+n
+l
+t
+m
+en
+e
+c
+r
+e
+,
+b
+D
+o
+.
+u
+A
+nd
+.
+a
+a
+r
+n
+y
+d
+d
+H
+is
+e
+a
+a
+m
+rs
+b
+t
+i
+,
+g
+M
+ua
+.
+ti
+A
+o
+.
+n.
+(1
+I
+9
+n
+9
+P
+4
+r
+)
+o
+.
+c
+A
+.C
+d
+o
+ap
+n
+t
+f
+i
+e
+v
+r
+e
+-
+larization,androtationalinvariance.In ICML-04. Segaran,T.and Hammerbacher,J.(Eds.),Beautiful enceon Applied Natural Language Processing,pp.
+Ng,A.Y.,Harada,D.,and Russell,S.J.(1999).Pol- Data.O Reilly. 78 83.
+icyinvarianceunderrewar

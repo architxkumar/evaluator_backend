@@ -1,0 +1,41 @@
+L Pworkappearsinthejournal Computational Linguisticsanditsconference,ACL,
+andinthe Computational Linguistics (COLING)conference.
+EXERCISES
+23.1 Read the following text once for understanding, and remember as much of it as you
+can. Therewillbeatestlater.
+Theprocedureisactuallyquitesimple. Firstyouarrangethingsintodifferentgroups. Of
+course,onepilemaybesufficientdependingonhowmuchthereistodo.Ifyouhavetogo
+somewhereelseduetolackoffacilitiesthatisthenextstep,otherwiseyouareprettywell
+set. Itisimportantnottooverdothings. Thatis,itisbettertodotoofewthingsatonce
+thantoomany.Intheshortrunthismaynotseemimportantbutcomplicationscaneasily
+arise.Amistakeisexpensiveaswell. Atfirstthewholeprocedurewillseemcomplicated.
+Soon,however,itwillbecomejustanotherfacetoflife. Itisdifficulttoforeseeanyend
+tothenecessityforthistaskintheimmediatefuture,butthenonecannevertell. Afterthe
+procedureiscompletedonearrangesthematerialintodifferentgroupsagain. Thenthey
+canbeputintotheirappropriateplaces. Eventuallytheywillbeusedoncemoreandthe
+wholecyclewillhavetoberepeated.However,thisispartoflife.
+23.2 An HM Mgrammarisessentially astandard HM Mwhosestatevariable is N (nonter-
+minal,withvaluessuchas Det,Adjective,Nounandsoon)andwhoseevidencevariableis
+W (word,withvaluessuchasis,duck,andsoon). The HM Mmodelincludesaprior P(N ),
+0
+atransitionmodel P(N N ),andasensormodel P(W N ). Showthatevery HM Mgram-
+t 1 t t t
+mar can be written as a PCFG. Hint: start by thinking about how the HMM prior can be
+represented by PCF Grules forthe sentence symbol. Youmay findit helpful to illustrate for
+theparticular HM Mwithvalues A,B for N andvaluesx,y for W. 924 Chapter 23. Natural Languagefor Communication
+23.3 Considerthefollowing PCF Gforsimpleverbphrases:
+0.1 :VP Verb
+0.2 :VP Copula Adjective
+0.5 :VP Verbthe Noun
+0.2 :VP VP Adverb
+0.5 :Verb is
+0.5 :Verb shoots
+0.8 :Copula is
+0.2 :Copula seems
+0.5 :Adjective unwell
+0.5 :Adjective well
+0.5 :Adverb well
+0.5 :Adverb badly
+0.6 :Noun duck
+0.4 :Noun well
+a. Which of the f

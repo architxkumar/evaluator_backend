@@ -1,0 +1,28 @@
+ion,suchasthe World Wide Web,recallisdifficult
+to compute, because there is no easy way to examine every page on the Web for relevance.
+Allwecandoiseitherestimaterecallbysamplingorignorerecallcompletelyandjustjudge
+precision. In the case of a Web search engine, there may be thousands of documents in the
+result set, so it makes more sense to measure precision for several different sizes, such as P 10 (precision in the top 10 results) or P 50, rather than to estimate precision in the
+entireresultset.
+It is possible to trade off precision against recall by varying the size of the result set
+returned. Intheextreme, asystem thatreturns everydocument inthedocument collection is
+guaranteed arecall of 100 , but willhave low precision. Alternately, asystem could return
+a single document and have low recall, but a decent chance at 100 precision. A summary
+ofbothmeasuresisthe F score,asinglenumberthatistheharmonicmeanofprecision and
+1
+recall, 2PR (P R).
+22.3.3 IR refinements
+There are many possible refinements to the system described here, and indeed Web search
+enginesarecontinually updatingtheiralgorithmsastheydiscovernewapproachesandasthe
+Webgrowsandchanges.
+870 Chapter 22. Natural Language Processing
+Onecommonrefinementisabettermodeloftheeffectofdocumentlengthonrelevance.
+Singhal et al. (1996) observed that simple document length normalization schemes tend to
+favor short documents too much and long documents not enough. They propose a pivoted
+document length normalization scheme; the idea is that the pivot is the document length at
+which the old-style normalization is correct; documents shorter than that get a boost and
+longeronesgetapenalty.
+The BM25 scoring function uses a word model that treats all words as completely in-
+dependent, but we know that some words are correlated: couch is closely related to both couches and sofa. Many IRsystemsattempttoaccountforthesecorrelations.
+Forexample, ifthequeryis couch , itwouldbeashametoexcludefromtheresultset
+those documents that 

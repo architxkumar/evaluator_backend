@@ -1,0 +1,26 @@
+at every Kalman filter model can be represented in a
+DBN with continuous variables and linear Gaussian conditional distributions (Figure 15.9).
+Itshouldbeclearfromthediscussion attheendofthepreceding sectionthatnotevery DBN
+canberepresented bya Kalmanfiltermodel. Ina Kalmanfilter,thecurrentstatedistribution
+isalwaysasinglemultivariate Gaussiandistribution that is,asingle bump inaparticular
+location. DB Ns, on the other hand, can model arbitrary distributions. For many real-world
+applications, this flexibility is essential. Consider, for example, the current location of my
+keys. They might be in my pocket, on the bedside table, on the kitchen counter, dangling
+from the front door, or locked in the car. A single Gaussian bump that included all these
+places would have toallocate significant probability tothe keysbeing inmid-airin thefront
+hall. Aspects of the real world such as purposive agents, obstacles, and pockets introduce nonlinearities thatrequirecombinationsofdiscreteandcontinuousvariablesinordertoget
+reasonable models.
+15.5.1 Constructing DB Ns
+Toconstruct a DBN,onemustspecify three kinds ofinformation: thepriordistribution over
+thestatevariables,P(X );thetransitionmodel P(X X );andthesensormodel P(E X ).
+0 t 1 t t t
+To specify the transition and sensor models, one must also specify the topology of the con-
+nections between successive slices and between the state and evidence variables. Because
+thetransition andsensormodelsareassumedtobestationary the sameforallt itismost
+convenient simply tospecify them forthe firstslice. Forexample, thecomplete DB Nspeci-
+ficationfortheumbrellaworldisgivenbythethree-node networkshownin Figure15.13(a).
+Fromthis specification, the complete DB Nwithanunbounded numberoftimeslices canbe
+constructed asneededbycopying thefirstslice.
+Let us now consider a more interesting example: monitoring a battery-powered robot
+moving in the X Y plane, as introduced at the end of Section 15.1. First, we need state
+variables, which will include b

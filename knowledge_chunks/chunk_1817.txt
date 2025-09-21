@@ -1,0 +1,25 @@
+s Aristotle. Agoodaccount ofthehistory of Megarianand Stoiclogic isgiven
+by Benson Mates(1953).
+Theidea of reducing logical inference toapurely mechanical process applied to afor-
+mallanguageisdueto Wilhelm Leibniz(1646 1716), althoughhehadlimitedsuccessinim-
+plementing theideas. George Boole(1847)introduced thefirstcomprehensive andworkable
+system of formal logic in his book The Mathematical Analysis of Logic. Boole s logic was
+closely modeled on the ordinary algebra of real numbers and used substitution of logically
+equivalent expressions as its primary inference method. Although Boole s system still fell
+shortoffullpropositional logic,itwascloseenoughthatothermathematicianscouldquickly
+fill in the gaps. Schro der (1877) described conjunctive normal form, while Horn form was
+introduced muchlaterby Alfred Horn(1951). Thefirstcomprehensive exposition ofmodern
+propositional logic (and first-order logic) is found in Gottlob Frege s (1879) Begriffschrift
+( Concept Writing or Conceptual Notation ).
+Thefirstmechanical devicetocarryoutlogicalinferences wasconstructed bythethird
+Earl of Stanhope (1753 1816). The Stanhope Demonstrator could handle syllogisms and
+certain inferences in the theory of probability. William Stanley Jevons, one of those who
+improved upon and extended Boole s work, constructed his logical piano in 1869 to per-
+form inferences in Boolean logic. An entertaining and instructive history of these and other
+early mechanical devices for reasoning is given by Martin Gardner (1968). The first pub-
+lished computer program for logical inference was the Logic Theorist of Newell, Shaw,
+and Simon (1957). This program was intended to model human thought processes. Mar-
+tin Davis(1957) hadactually designed aprogram thatcameup withaproof in1954, but the
+Logic Theorist sresultswerepublished slightlyearlier.
+Truthtablesasamethodoftestingvalidityorunsatisfiabilityinpropositionallogicwere
+introducedindependentlyby Emil Post(1921)and Ludwig Wittgenstein(1922). Inthe1930

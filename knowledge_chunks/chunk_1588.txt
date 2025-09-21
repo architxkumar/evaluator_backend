@@ -1,0 +1,32 @@
+t applications such as integrated-circuit de-
+sign,factory-floorlayout,job-shopscheduling,automaticprogramming,telecommunications
+networkoptimization, vehiclerouting, andportfolio management.
+120
+Section4.1. Local Search Algorithmsand Optimization Problems 121
+If the path to the goal does not matter, we might consider a different class of algo-
+rithms, ones that do not worry about paths at all. Local search algorithms operate using
+LOCALSEARCH
+a single current node (rather than multiple paths) and generally move only to neighbors
+CURRENTNODE
+of that node. Typically, the paths followed by the search are not retained. Although local
+search algorithms are not systematic, they have two key advantages: (1) they use very little
+memory usuallyaconstantamount;and(2)theycanoftenfindreasonablesolutionsinlarge
+orinfinite(continuous) statespacesforwhichsystematic algorithmsareunsuitable.
+In addition to finding goals, local search algorithms are useful for solving pure op-
+OPTIMIZATION timization problems, in which the aim is to find the best state according to an objective
+PROBLEM
+OBJECTIVE function. Many optimization problems do not fitthe standard search model introduced in
+FUNCTION
+Chapter 3. For example, nature provides an objective function reproductive fitness that
+Darwinian evolution could be seen as attempting tooptimize, but there isno goal test and
+no pathcost forthisproblem.
+STATE-SPACE Tounderstand localsearch, wefindituseful toconsiderthe state-space landscape(as
+LANDSCAPE
+in Figure4.1). Alandscapehasboth location (definedbythestate)and elevation (defined
+by the value ofthe heuristic cost function orobjective function). Ifelevation corresponds to
+cost, then the aim is to find the lowest valley a global minimum; if elevation corresponds
+GLOBALMINIMUM
+toanobjective function, thentheaim istofindthehighest peak a globalmaximum. (You
+GLOBALMAXIMUM
+can convert from one to the other just by inserting a minus sign.) Local search algorithms
+explore this landscape. A complet

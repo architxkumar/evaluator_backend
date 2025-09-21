@@ -1,0 +1,27 @@
+Kautz and Selman (1998). CPLAN, a planner based on constraint satisfaction, was
+described byvan Beekand Chen(1999).
+Mostrecently, therehasbeen interest intherepresentation ofplans asbinarydecision
+BINARYDECISION diagrams, compact data structures for Boolean expressions widely studied in the hardware
+DIAGRAM
+verificationcommunity(Clarkeand Grumberg,1987;Mc Millan,1993). Therearetechniques
+forprovingpropertiesofbinarydecisiondiagrams,includingthepropertyofbeingasolution
+396 Chapter 10. Classical Planning
+toaplanning problem. Cimattietal. (1998) present aplannerbased onthisapproach. Other
+representations have also been used; for example, Vossen et al. (2001) survey the use of
+integerprogrammingforplanning.
+The jury is still out, but there are now some interesting comparisons of the various
+approaches to planning. Helmert (2001) analyzes several classes of planning problems, and
+showsthatconstraint-basedapproachessuchas GRAPHPLA Nand SATPLA Narebestfor NP-
+hard domains, while search-based approaches do better in domains where feasible solutions
+can be found without backtracking. GRAPHPLAN and SATPLAN have trouble in domains
+with many objects because that means they must create many actions. In some cases the
+problem can bedelayed oravoided bygenerating thepropositionalized actions dynamically,
+onlyasneeded, ratherthaninstantiating themallbeforethesearchbegins.
+Readings in Planning (Allen et al., 1990) is a comprehensive anthology of early work
+in the field. Weld (1994, 1999) provides two excellent surveys of planning algorithms of
+the 1990s. It is interesting to see the change in the five years between the two surveys:
+the first concentrates on partial-order planning, and the second introduces GRAPHPLAN and
+SATPLAN. Automated Planning(Ghallabetal.,2004)isanexcellenttextbookonallaspects
+of planning. La Valle s text Planning Algorithms (2006) covers both classical and stochastic
+planning, withextensivecoverageofrobotmotionplanning.
+Planningresearchhasbeencentralto AIsince

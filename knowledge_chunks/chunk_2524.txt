@@ -1,0 +1,39 @@
+defined as the set of points x : w x b 0 . We could search the space of w and b with gradient descent to find the
+parameters thatmaximizethemarginwhilecorrectly classifying alltheexamples.
+However, it turns out there is another approach to solving this problem. We won t
+show the details, but will just say that there is an alternative representation called the dual
+746 Chapter 18. Learningfrom Examples
+representation, inwhichtheoptimalsolution isfoundbysolving
+(cid:12) (cid:12)
+1
+argmax y y (x x ) (18.13)
+j j k j k j k
+2 j j,k
+(cid:2)
+QUADRATIC subject to the constraints 0 and y 0. This is a quadratic programming
+PROGRAMMING j j j j
+optimization problem, forwhichthere aregoodsoftware packages. Oncewehave found the
+(cid:2)
+vector we can get back to w with the equation w x , or we can stay in the dual
+j j j
+representation. Therearethreeimportantpropertiesof Equation(18.13). First,theexpression
+isconvex;ithasasingleglobalmaximumthatcanbefoundefficiently. Second,thedataenter
+theexpressiononlyintheformofdotproductsofpairsofpoints. Thissecondpropertyisalso
+trueoftheequation fortheseparatoritself;oncetheoptimal havebeencalculated, itis
+j (cid:12)
+h(x) sign y (x x ) b . (18.14)
+j j j
+j
+Afinalimportant property isthattheweights associated witheachdatapointarezeroex-
+j
+ceptforthe supportvectors the points closest totheseparator. (Theyarecalled support SUPPORTVECTOR
+vectors because they hold up the separating plane.) Because there are usually manyfewer
+supportvectorsthanexamples,SV Msgainsomeoftheadvantages ofparametricmodels.
+Whatiftheexamples arenotlinearly separable? Figure18.31(a) showsaninput space
+defined by attributes x (x ,x ), with positive examples (y 1) inside a circular region
+1 2
+andnegativeexamples(y 1)outside. Clearly,thereisnolinearseparatorforthisproblem.
+Now,supposewere-expresstheinputdata i.e.,wemapeachinputvectorxtoanewvector
+offeature values, F(x). Inparticular, letususethethreefeatures f x2 , f x2 , f 2x x . (18.15)
+1 1 2 2 3 1 2
+We will see shortly where 

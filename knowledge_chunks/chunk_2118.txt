@@ -1,0 +1,18 @@
+entsandtemporalordering, among otherthings.) Wherewouldtheyfitinamoregeneralhierarchy? Whataretheconstraints andinterrelationships amongthem? Howdetailedmustyoubeabouteachofthevariousconcepts?
+To answer the questions below, your knowledge base must include background knowledge.
+You ll have to deal with what kind of things are at a supermarket, what is involved with
+purchasingthethingsoneselects,whatthepurchaseswillbeusedfor,andsoon. Trytomake
+your representation as general as possible. Togive a trivial example: don t say People buy
+foodfrom Safeway, becausethatwon thelpyouwiththosewhoshopatanothersupermarket.
+Also,don tturnthequestionsintoanswers;forexample,question(c)asks Did Johnbuyany
+meat? not Did Johnbuyapoundofgroundbeef? Sketch the chains of reasoning that would answer the questions. If possible, use a
+logicalreasoningsystemtodemonstratethesufficiencyofyourknowledgebase. Manyofthe
+things you write might be only approximately correct in reality, but don t worry too much;
+the idea is to extract the common sense that lets you answer these questions at all. A truly
+completeanswertothisquestionisextremelydifficult,probablybeyondthestateoftheartof
+current knowledge representation. But you should beable to put together aconsistent set of
+axiomsforthelimitedquestions posedhere.
+a. Is Johnachildoranadult? Adult b. Does Johnnowhaveatleasttwotomatoes? Yes c. Did Johnbuyanymeat? Yes d. If Marywasbuyingtomatoesatthesametimeas John,didheseeher? Yes e. Arethetomatoesmadeinthesupermarket? No f. Whatis Johngoingtodowiththetomatoes? Eatthem g. Does Safewayselldeodorant? Yes h. Did Johnbringsomemoneyoracreditcardtothesupermarket? Yes i. Does Johnhavelessmoneyaftergoingtothesupermarket? Yes 12.6 Make the necessary additions or changes to your knowledge base from the previous
+exercisesothatthequestionsthatfollowcanbeanswered. Includeinyourreportadiscussion
+of your changes, explaining why they were needed, whether they were minor or major, and
+whatkindsofquestions wouldnecessitate

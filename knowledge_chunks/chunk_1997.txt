@@ -1,0 +1,31 @@
+linaserialgraphisnogreaterthantheactualcostofanoptimal
+planforachievingit.
+10.11 The set-level heuristic (see page 382) uses a planning graph to estimate the cost of
+achieving a conjunctive goal from the current state. What relaxed problem is the set-level
+heuristic thesolutionto?
+10.12 Examinethedefinitionofbidirectionalsearch in Chapter3.
+a. Wouldbidirectional state-space searchbeagoodideaforplanning?
+b. Whataboutbidirectional searchinthespaceofpartial-order plans?
+c. Deviseaversionofpartial-orderplanninginwhichanactioncanbeaddedtoaplanifits
+preconditionscanbeachievedbytheeffectsofactionsalreadyintheplan. Explainhow
+todeal with conflicts and ordering constraints. Is the algorithm essentially identical to
+forwardstate-space search?
+10.13 We contrasted forward and backward state-space searchers with partial-order plan-
+ners,sayingthatthelatterisaplan-spacesearcher. Explainhowforwardandbackwardstate-
+space search can also be considered plan-space searchers, and say what the plan refinement
+operators are.
+10.14 Uptonowwehaveassumedthattheplanswecreatealwaysmakesurethatanaction s
+preconditions aresatisfied. Letusnowinvestigate whatpropositional successor-state axioms
+such as Have Arrowt 1 (Have Arrowt Shoott) have to say about actions whose
+preconditions arenotsatisfied.
+a. Showthat the axioms predict that nothing will happen when anaction isexecuted in a
+statewhereitspreconditions arenotsatisfied.
+b. Consider aplan pthat contains the actions required toachieve agoal but also includes
+illegalactions. Isitthecasethat
+initialstate successor-state axioms p goal?
+c. Withfirst-ordersuccessor-state axiomsinsituation calculus, isitpossible toprovethat
+aplancontaining illegalactionswillachievethegoal?
+10.15 Consider how to translate aset of action schemas into the successor-state axioms of
+situation calculus.
+a. Consider the schema for Fly(p,from,to). Write a logical definition for the predicate
+Poss(Fly(p,from,to),s), which is true if the preconditions for Fly(p,from,to) are

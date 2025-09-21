@@ -1,0 +1,29 @@
+nt graph, can beused tofindsolutions quickly. Mostofthe approaches herealso
+applytootherproblemsbesides CS Ps,suchasprobabilistic reasoning. Afterall,theonlyway
+wecan possibly hope todeal withthe realworld istodecompose itintomany subproblems.
+Lookingagainattheconstraintgraphfor Australia(Figure6.1(b),repeatedas Figure6.12(a)),
+onefactstandsout: Tasmaniaisnotconnectedtothemainland.3 Intuitively, itisobviousthat
+INDEPENDENT coloring Tasmania and coloring the mainland are independentsubproblems any solution
+SUBPROBLEMS
+for the mainland combined with any solution for Tasmania yields a solution for the whole
+CONNECTED map. Independence can be ascertained simply by finding connected components of the
+COMPONENT
+constraint graph. Each component corresponds to a subproblem CSP . If assignment S is
+(cid:22) (cid:22) i i
+a solution of CSP , then S is a solution of CSP . Why is this important? Consider
+i i i i i
+the following: suppose each CSP has c variables from the total of n variables, where c is
+i
+a constant. Then there are n c subproblems, each of which takes at most dc work to solve,
+3 Acarefulcartographerorpatriotic Tasmanianmightobject that Tasmaniashouldnotbecoloredthesameas
+itsnearestmainlandneighbor,toavoidtheimpressionthatitmightbepartofthatstate.
+Section6.5. The Structureof Problems 223
+where d is the size of the domain. Hence, the total work is O(dcn c), which is linear in n;
+without the decomposition, the total work is O(dn), which is exponential in n. Let s make
+thismoreconcrete: dividinga Boolean CS Pwith80variables intofoursubproblems reduces
+theworst-casesolution timefromthelifetimeoftheuniversedowntolessthanasecond.
+Completely independent subproblems are delicious, then, but rare. Fortunately, some
+other graph structures are also easy to solve. Forexample, a constraint graph isa tree when
+anytwovariablesareconnectedbyonlyonepath. Weshowthatanytree-structured CS Pcan
+besolved intimelinear inthenumberofvariables.4 Thekeyisanewnotion ofconsistency,
+DIRECTEDAR

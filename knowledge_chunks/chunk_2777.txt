@@ -1,0 +1,31 @@
+t
+words,andtheobservationsaresounds. Moreprecisely,anobservationisavectoroffeatures
+extractedfromtheaudiosignal. Asusual,themostlikelysequencecanbecomputedwiththe
+helpof Bayes ruletobe:
+argmax P(word sound ) argmax P(sound word )P(word ).
+1:t 1:t 1:t 1:t 1:t
+word1:t word1:t
+Here P(sound word ) is the acoustic model. It describes the sounds of words that
+ACOUSTICMODEL 1:t 1:t ceiling begins with a soft c and sounds the same as sealing. P(word ) is known as
+1:t
+the language model. It specifies the prior probability of each utterance for example, that
+LANGUAGEMODEL ceiling fan isabout500timesmorelikelyasawordsequence than sealingfan. NOISYCHANNEL This approach was named the noisy channel model by Claude Shannon (1948). He
+MODEL
+described asituation inwhichanoriginal message (the wordsinourexample) istransmitted
+over a noisy channel (such as a telephone line) such that a corrupted message (the sounds
+in our example) are received at the other end. Shannon showed that no matter how noisy
+the channel, it is possible to recover the original message with arbitrarily small error, if we
+encode the original message in a redundant enough way. The noisy channel approach has
+beenapplied tospeechrecognition, machinetranslation, spellingcorrection, andothertasks.
+Once we define the acoustic and language models, we can solve for the most likely
+sequence of words using the Viterbi algorithm (Section 15.2.3 on page 576). Most speech
+recognition systems usealanguage modelthatmakesthe Markovassumption that thecur-
+rentstate Word dependsonlyonafixednumbernofpreviousstates andrepresent Word
+t t
+asasinglerandom variable takingonafinitesetofvalues, whichmakesita Hidden Markov
+Model(HMM).Thus,speechrecognitionbecomesasimpleapplicationofthe HM Mmethod-
+ology,asdescribedin Section15.3 simplethatis,oncewedefinetheacousticandlanguage
+models. Wecoverthemnext.
+914 Chapter 23. Natural Languagefor Communication
+Vowels Consonants B N Consonants P Z
+Phone Example Phone Example Phone Example iy beat b b

@@ -1,0 +1,28 @@
+en to start with calculative rationality and then
+makecompromises tomeetresource constraints. Ifthe problems imposed bytheconstraints
+are minor, one would expect the final design to be similar to a BO agent design. But as the
+resource constraints become more critical for example, as the environment becomes more
+complex onewouldexpectthetwodesignstodiverge. Inthetheoryofboundedoptimality,
+theseconstraints canbehandledinaprincipled fashion.
+As yet, little is known about bounded optimality. It is possible to construct bounded
+optimal programs for very simple machines and for somewhat restricted kinds of environ-
+ments (Etzioni, 1989; Russell et al., 1993), but as yet we have no idea what BO programs
+are like for large, general-purpose computers in complex environments. If there is to be a
+constructive theory of bounded optimality, we have to hope that the design of bounded op-
+timal programs does not depend too strongly on the details of the computer being used. It
+would make scientific research very difficult if adding afew kilobytes of memory to a giga-
+byte machine made a significant difference to the design of the BO program. One way to
+make sure this cannot happen is to be slightly more relaxed about the criteria for bounded
+optimality. Byanalogy with the notion of asymptotic complexity (Appendix A), wecan de-
+ASYMPTOTIC
+fine asymptotic bounded optimality (ABO) as follows (Russell and Subramanian, 1995).
+BOUNDED
+OPTIMALITY
+Suppose a program P is bounded optimal for a machine M in a class of environments E,
+(cid:2)
+where the complexity of environments in E is unbounded. Then program P is AB Ofor M
+in E if it can outperform P by running on a machine k M that is k times faster (or larger)
+than M. Unless k were enormous, we would be happy with a program that was ABO for
+a nontrivial environment on a nontrivial architecture. There would be little point in putting
+enormous effort into finding BO rather than ABO programs, because the size and speed of
+available machinest

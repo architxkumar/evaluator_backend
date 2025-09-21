@@ -1,0 +1,30 @@
+thousands ofrelations, eventhatamount ofworkwould beonerous; we
+wouldliketohaveanextractionsystemwithnohumaninputofanykind asystemthatcould
+readonitsownandbuildupitsowndatabase. Suchasystemwouldberelation-independent;
+would work for any relation. In practice, these systems work on all relations in parallel,
+becauseofthe I Odemandsoflargecorpora. Theybehaveless likeatraditionalinformation-
+extraction system thatistargeted atafewrelations andmorelikeahumanreaderwholearns
+fromthetextitself;becauseofthisthefieldhasbeencalled machinereading.
+MACHINEREADING
+Arepresentative machine-reading systemis TEXTRUNNER (Bankoand Etzioni,2008).
+TEXTRUNNER uses cotraining toboost itsperformance, but itneeds something to bootstrap
+from. Inthecaseof Hearst(1992),specificpatterns(e.g.,suchas)providedthebootstrap,and
+for Brin (1998), itwasaset offiveauthor title pairs. For TEXTRUNNER, the original inspi-
+ration wasataxonomy ofeight verygeneral syntactic templates, asshownin Figure 22.3. It
+wasfeltthatasmallnumberoftemplateslikethiscouldcovermostofthewaysthatrelation-
+shipsareexpressedin English. Theactualbootsrappingstartsfromasetoflabelledexamples
+that are extracted from the Penn Treebank, acorpus of parsed sentences. Forexample, from
+theparseofthesentence Einstein received the Nobel Prize in1921, TEXTRUNNER isable
+882 Chapter 22. Natural Language Processing
+toextracttherelation( Einstein, received, Nobel Prize ).
+Given a set of labeled examples of this type, TEXTRUNNER trains a linear-chain CRF
+to extract further examples from unlabeled text. The features in the CRF include function
+words like to and of and the, but not nouns and verbs (and not noun phrases or verb
+phrases). Because TEXTRUNNER is domain-independent, it cannot rely on predefined lists
+ofnounsandverbs.
+Type Template Example Frequency
+Verb NP Verb NP Xestablished Y 38 1 2
+Noun Prep NP NP Prep NP Xsettlementwith Y 23 1 2
+Verb Prep NP Verb Prep NP Xmovedto Y 16 1 2
+Infinitive NP to Verb NP Xplanstoacquire Y 9 1 2
+Modifier NP

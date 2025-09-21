@@ -1,0 +1,27 @@
+-
+niques have been developed that can cope with quite large problems, reaching or exceeding
+human capabilities in many tasks as long as we are dealing with a predefined vocabulary
+of features and concepts. On the other hand, machine learning has made very little progress
+on the important problem of constructing new representations at levels of abstraction higher
+than theinput vocabulary. Incomputer vision, forexample, learning complex concepts such
+as Classroom and Cafeteria would bemadeunnecessarily difficult iftheagent wereforced
+to work from pixels as the input representation; instead, the agent needs to be able to form
+intermediate concepts first, such as Desk and Tray, without explicit human supervision.
+Similar considerations apply to learning behavior: Having ACup Of Tea is a very important
+Section27.2. Agent Architectures 1047
+high-levelstepinmanyplans,buthowdoesitgetintoanactionlibrarythatinitiallycontains
+much simpler actions such as Raise Arm and Swallow? Perhaps this will incorporate some
+DEEPBELIEF oftheideasofdeepbeliefnetworks Bayesiannetworksthathavemultiplelayersofhidden
+NETWORKS
+variables, asintheworkof Hinton etal.(2006), Hawkinsand Blakeslee (2004), and Bengio
+and Le Cun(2007).
+The vast majority of machine learning research today assumes a factored representa-
+tion, learning afunction h : Rn R for regression and h : Rn 0,1 forclassification.
+Learning researchers will need to adapt their very successful techniques for factored repre-
+sentations to structured representations, particularly hierarchical representations. The work
+oninductive logicprogramming in Chapter19isafirststepin thisdirection; thelogicalnext
+stepistocombinetheseideaswiththeprobabilistic languages of Section14.6.
+Unless weunderstand such issues, weare faced withthe daunting task ofconstructing
+large commonsense knowledge bases by hand, an approach that has not fared well to date.
+There is great promise in using the Web as a source of natural language text, images, and
+videos to s

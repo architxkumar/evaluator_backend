@@ -1,0 +1,24 @@
+ network, we
+haveintroducednodesintop-to-bottomorder.
+Even in a locally structured domain, we will get a compact Bayesian network only if
+we choose the node ordering well. What happens if we happen to choose the wrong or-
+der? Consider theburglary example again. Suppose wedecide toadd the nodes inthe order
+Mary Calls, John Calls, Alarm, Burglary, Earthquake. We then get the somewhat more
+complicated networkshownin Figure14.3(a). Theprocess goesasfollows: Adding Mary Calls: Noparents. Adding John Calls: If Mary calls, that probably means the alarm has gone off, which
+of course would make it more likely that John calls. Therefore, John Calls needs
+Mary Calls asaparent. Adding Alarm: Clearly,ifbothcall,itismorelikelythatthealarmhasgoneoffthanif
+justoneorneithercalls,soweneedboth Mary Calls and John Calls asparents. Adding Burglary: If we know the alarm state, then the call from John or Mary might
+giveusinformation aboutourphoneringing or Mary smusic, butnotaboutburglary:
+P(Burglary Alarm,John Calls,Mary Calls) P(Burglary Alarm).
+Henceweneedjust Alarm asparent. Adding Earthquake: If the alarm is on, it is more likely that there has been an earth-
+quake. (The alarm is an earthquake detector of sorts.) But if we know that there has
+beenaburglary,thenthatexplainsthealarm,andtheprobabilityofanearthquakewould
+beonlyslightly abovenormal. Hence,weneedboth Alarm and Burglary asparents.
+The resulting network has two more links than the original network in Figure 14.2 and re-
+quires three more probabilities to be specified. What s worse, some of the links represent
+tenuous relationships that require difficult and unnatural probability judgments, such as as-
+Section14.2. The Semanticsof Bayesian Networks 517
+sessing the probability of Earthquake, given Burglary and Alarm. This phenomenon is
+quite general and is related to the distinction between causal and diagnostic models intro-
+duced in Section 13.5.1 (see also Exercise 8.13). If we try to build a diagnostic model with
+links fr

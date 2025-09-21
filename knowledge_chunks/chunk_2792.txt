@@ -1,0 +1,28 @@
+peech than through typing on a keyboard. History will tell if
+heisrightthistimearound.
+Several good textbooks on speech recognition are available (Rabiner and Juang, 1993;
+Jelinek, 1997; Goldand Morgan, 2000;Huangetal.,2001). Thepresentation inthischapter
+drewonthesurveyby Kay,Gawron,and Norvig(1994)andonthe textbookby Jurafsky and
+Martin(2008). Speechrecognition researchispublishedin Computer Speechand Language,
+Speech Communications, and the IEEE Transactions on Acoustics, Speech, and Signal Pro-
+cessing and at the DARPA Workshops on Speech and Natural Language Processing and the
+Eurospeech, ICSLP,and ASR Uconferences.
+Exercises 923
+Ken Church (2004) shows that natural language research has cycled between concen-
+trating on the data (empiricism) and concentrating on theories (rationalism). The linguist
+John Firth(1957)proclaimed Youshallknowawordbythecompanyitkeeps, andlinguis-
+tics of the 1940s and early 1950s was based largely on word frequencies, although without
+the computational power we have available today. Then Noam (Chomsky, 1956) showed
+thelimitations offinite-state models, andsparked aninterest intheoretical studies ofsyntax,
+disregarding frequency counts. This approach dominated fortwenty years, until empiricism
+made a comeback based on the success of work in statistical speech recognition (Jelinek,
+1976). Today,mostworkacceptsthestatisticalframework, butthereisgreatinterestinbuild-
+ingstatistical modelsthat consider higher-level models, such assyntactic treesand semantic
+relations, notjustsequences ofwords.
+Workonapplications oflanguageprocessingispresentedatthebiennial Applied Natu-
+ral Language Processingconference(ANLP),theconference on Empirical Methodsin Natu-
+ral Language Processing(EMNLP),andthejournal Natural Language Engineering. Abroad
+rangeof NL Pworkappearsinthejournal Computational Linguisticsanditsconference,ACL,
+andinthe Computational Linguistics (COLING)conference.
+EXERCISES
+23.1 Read the following text once for understanding, and reme

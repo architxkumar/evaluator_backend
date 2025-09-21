@@ -1,0 +1,30 @@
+tive curvesontheboundary ofapedestrian aretreatedinthesameway
+as fine texture detail in clothing or in the background, and so the signal may be submerged
+innoise. Wecanrecovercontrastinformationbycountinggradientorientations withweights
+that reflect how significant a gradient is compared to other gradients in the same cell. We
+will write Ix for the gradient magnitude at point x in the image, write C for the cell
+whosehistogram wewishtocompute, and write wx,C fortheweight thatwewilluseforthe
+Section24.4. Reconstructing the3DWorld 947
+Figure 24.15 Another example of object recognition, this one using the SIFT feature
+(Scale Invariant Feature Transform),anearlierversionof the HO Gfeature. Ontheleft,im-
+agesofashoeandatelephonethatserveasobjectmodels.Inthecenter,atestimage.Onthe
+right,theshoeandthetelephonehavebeendetectedby: findingpointsintheimagewhose
+SIF Tfeaturedescriptionsmatchamodel;computinganestimateofposeofthemodel;and
+verifyingthatestimate. Astrongmatchisusuallyverifiedwithrarefalsepositives. Images
+from Lowe(1999)(cid:2)c IEEE.
+orientation atxforthiscell. Anaturalchoiceofweightis
+wx,C (cid:2)
+u C
+I x Iu .
+This compares the gradient magnitude to others in the cell, so gradients that are large com-
+pared to their neighbors get a large weight. The resulting feature is usually called a HOG
+feature(for Histogram Of Gradientorientations).
+HOGFEATURE
+This feature construction is the main way in which pedestrian detection differs from
+facedetection. Otherwise,buildingapedestrian detector isverylikebuilding afacedetector.
+The detector sweeps a window across the image, computes features for that window, then
+presents it to a classifier. Non-maximum suppression needs to be applied to the output. In
+mostapplications, thescale andorientation oftypical pedestrians isknown. Forexample, in
+driving applications in which a camera is fixedto the car, we expect to view mainly vertical
+pedestrians, and we are interested only in nearby pedestrians. Several pedestrian data sets
+ha

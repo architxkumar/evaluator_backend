@@ -1,0 +1,73 @@
+ at zero. The graph also shows that the test set performance continues to increase
+long after the training set error has reached zero. At K 20, the test performance is 0.95
+(or 0.05 error), and the performance increases to 0.98 as late as K 137, before gradually
+dropping to0.95.
+Thisfinding,whichisquiterobustacrossdatasetsandhypothesisspaces,cameasquite
+a surprise when it was first noticed. Ockham s razor tells us not to make hypotheses more
+Section18.10. Ensemble Learning 751
+function ADABOOST(examples,L,K)returnsaweighted-majorityhypothesis
+inputs:examples,setof N labeledexamples(x
+1
+,y
+1
+),...,(x N,y N)
+L,alearningalgorithm
+K,thenumberofhypothesesintheensemble
+localvariables: w,avectorof N exampleweights,initially1 N
+h,avectorof K hypotheses
+z,avectorof K hypothesisweights
+fork 1to K do
+h k L(examples,w)
+error 0
+forj 1to N do
+ifh k (xj)(cid:7) yj thenerror error w j forj 1to N do
+ifh k (xj) yj thenw j w j error (1 error)
+w NORMALIZE(w)
+z k log(1 error) error
+return WEIGHTED-MAJORITY(h,z)
+Figure18.34 The ADABOOS Tvariantoftheboostingmethodforensemblelearning.The
+algorithmgenerateshypothesesbysuccessivelyreweightingthetrainingexamples.Thefunc-
+tion WEIGHTED-MAJORITY generates a hypothesis that returns the output value with the
+highestvotefromthehypothesesinh,withvotesweightedbyz.
+1
+0.95
+0.9
+0.85
+0.8
+0.75
+0.7
+0.65
+0.6
+0.55
+0.5
+0 20 40 60 80 100
+tes
+tset
+no
+tcerroc
+noitropor P
+1
+0.95
+0.9
+0.85
+0.8
+0.75
+Boosted decision stumps
+Decision stump 0.7
+0.65
+0.6
+0 50 100 150 200
+Training set size
+ycarucca
+tset gniniar T
+Training error
+Test error
+Number of hypotheses K
+(a) (b)
+Figure18.35 (a)Graphshowingtheperformanceofboosteddecisionstumpswith K 5
+versusunboosteddecisionstumpsonthe restaurantdata. (b)Theproportioncorrectonthe
+trainingset and the test set as a functionof K, the numberof hypothesesin the ensemble.
+Noticethatthetestsetaccuracyimprovesslightlyevenafterthetrainingaccuracyreaches1,
+i.e.,aftertheensemblefitsthedataexactly.
+752 Chapter 18. Learningfrom Examples
+comple

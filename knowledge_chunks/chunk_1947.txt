@@ -1,0 +1,30 @@
+cs based on
+the logical structure of the problem. But it relies on ground (variable-free) propositional
+inference, whichmeansthatitmaybeswampedwhentherearemanyactionsandstates. For
+example,inthewumpusworld,thesimpleactionofmovingastepforwardhadtoberepeated
+forallfouragentorientations, T timesteps,andn2 currentlocations.
+366
+Section10.1. Definitionof Classical Planning 367
+In response to this, planning researchers have settled on a factored representation oneinwhichastateoftheworldisrepresentedbyacollectionofvariables. Weusealanguage
+called PDDL,the Planning Domain Definition Language, thatallowsustoexpress all 4Tn2
+PDDL
+actions with one action schema. There have been several versions of PDDL; we select a
+simple version andalter itssyntax tobeconsistent with the rest ofthe book.1 Wenowshow
+how PDD Ldescribesthefourthingsweneedtodefineasearchproblem: theinitialstate,the
+actionsthatareavailable inastate, theresultofapplying anaction, andthegoaltest.
+Eachstateisrepresentedasaconjunctionoffluentsthatareground,functionlessatoms.
+For example, Poor Unknown might represent the state of a hapless agent, and a state
+in a package delivery problem might be At(Truck ,Melbourne) At(Truck ,Sydney).
+1 2
+Databasesemanticsisused: theclosed-worldassumptionmeansthatanyfluentsthatarenot
+mentioned are false, and the unique names assumption means that Truck and Truck are
+1 2
+distinct. Thefollowingfluentsarenotallowedinastate: At(x,y)(becauseitisnon-ground), Poor (becauseitisanegation),and At(Father(Fred),Sydney)(becauseitusesafunction
+symbol). The representation of states is carefully designed so that a state can be treated
+either asaconjunction of fluents, which can be manipulated by logical inference, oras a set
+of fluents, which can be manipulated with set operations. The set semantics is sometimes
+SETSEMANTICS
+easiertodealwith.
+Actionsaredescribedbyasetofactionschemasthatimplicitlydefinethe ACTIONS(s)
+and RESULT(s,a)functionsneededtodoaproblem-solvingsearch. Wesawin Chapter7that
+anysys

@@ -1,0 +1,28 @@
+ predicate that, when combined with a term that represents a person (the person doing
+theloving), yields acomplete logical sentence. Using the -notation (see page 294), wecan
+represent loves Mary asthepredicate x Loves(x,Mary).
+Nowweneed arule thatsays an NP withsemantics obj followed by a VP withsemantics
+pred yieldsasentence whosesemanticsistheresultofapplying pred toobj: S(pred(obj)) NP(obj) VP(pred).
+Theruletellsusthatthesemanticinterpretation of Johnloves Mary is
+( x Loves(x,Mary))(John),
+whichisequivalent to Loves(John,Mary).
+The rest of the semantics follows in a straightforward way from the choices we have
+madesofar. Because VPsarerepresentedaspredicates,itisagoodideatobeconsistentand
+represent verbsaspredicates aswell. Theverb loves isrepresented as y x Loves(x,y),
+thepredicatethat,whengiventheargument Mary,returnsthepredicate x Loves(x,Mary).
+Weendupwiththegrammarshownin Figure23.10andtheparsetreeshownin Figure23.11.
+We could just as easily have added semantics to E ; we chose to work with E so that the
+2 0
+readercanfocusononetypeofaugmentation atatime.
+Adding semantic augmentations to a grammar by hand is laborious and error prone.
+Therefore, there have been several projects to learn semantic augmentations from examples.
+CHILL (Zelle and Mooney, 1996) is an inductive logic programming (ILP) program that
+learnsagrammarandaspecializedparserforthatgrammarfromexamples. Thetargetdomain
+is natural language database queries. The training examples consist of pairs of word strings
+andcorresponding semanticforms forexample;
+Whatisthecapitalofthestatewiththelargest population?
+Answer(c,Capital(s,c) Largest(p,State(s) Population(s,p)))
+CHILL staskistolearnapredicate Parse(words,semantics)thatisconsistent withtheex-
+amples and, hopefully, generalizes well to other examples. Applying ILP directly to learn
+this predicate results inpoor performance: the induced parserhas only about 20 accuracy.
+Fortunately, IL Plearners canimprovebyadding knowledge. Inthiscase, mostofthe

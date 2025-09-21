@@ -1,0 +1,43 @@
+-
+2
+cles)occurringbetween1982and1990in Asiaandthe Middle East(Kebeasyetal.,1998).
+Alsoshownisadecisionboundarybetweentheclasses. (b)Thesamedomainwithmoredata
+points.Theearthquakesandexplosionsarenolongerlinearlyseparable.
+DECISION A decision boundary is a line (or a surface, in higher dimensions) that separates the
+BOUNDARY
+two classes. In Figure 18.15(a), the decision boundary is a straight line. A linear decision
+boundaryiscalledalinearseparatoranddatathatadmitsuchaseparatorarecalled linearly
+LINEARSEPARATOR
+LINEAR separable. Thelinearseparatorinthiscaseisdefinedby
+SEPARABILITY
+x 1.7x 4.9 or 4.9 1.7x x 0.
+2 1 1 2
+Theexplosions,whichwewanttoclassifywithvalue1,aretotherightofthislinewithhigher
+values of x and lower values of x , so they are points for which 4.9 1.7x x 0,
+1 2 1 2
+while earthquakes have 4.9 1.7x x 0. Using the convention of a dummy input
+1 2
+x 1,wecanwritetheclassification hypothesis as
+0
+h (x) 1ifw x 0and0otherwise.
+w
+724 Chapter 18. Learningfrom Examples
+Alternatively, we can think of h as the result of passing the linear function w x through a
+THRESHOLD thresholdfunction:
+FUNCTION
+h (x) Threshold(w x)where Threshold(z) 1ifz 0and0otherwise.
+w
+Thethreshold function isshownin Figure18.17(a).
+Now that the hypothesis h (x) has a well-defined mathematical form, we can think
+w
+about choosing the weights w to minimize the loss. In Sections 18.6.1 and 18.6.2, we did
+this both in closed form (by setting the gradient to zero and solving for the weights) and
+by gradient descent in weight space. Here, we cannot do either of those things because the
+gradient is zero almost everywhere in weight space except at those points where w x 0,
+andatthosepointsthegradientisundefined.
+There is, however, a simple weight update rule that converges to a solution that is, a
+linearseparatorthatclassifiesthedataperfectly provided thedataarelinearlyseparable. For
+asingleexample(x,y),wehave
+w w (y h (x)) x (18.7)
+i i w i
+whichisessentiallyidenticaltothe Equation(18.6),theupdaterul

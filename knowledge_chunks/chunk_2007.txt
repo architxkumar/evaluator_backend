@@ -1,0 +1,29 @@
+atcanbeexecutedwithoutdeliberation togeneratetherequired motorcontrolsequences.
+In this example, we see that planning can occur both before and during the execution
+of the plan; for example, one would probably defer the problem of planning a route from a
+parking spot in long-term parking to the shuttle bus stop until a particular parking spot has
+been found during execution. Thus, that particular action will remain at an abstract level
+prior to the execution phase. We defer discussion of this topic until Section 11.3. Here, we
+HIERARCHICAL concentrate on the aspect of hierarchical decomposition, an idea that pervades almost all
+DECOMPOSITION
+attempts to manage complexity. Forexample, complex software is created from a hierarchy
+ofsubroutines orobjectclasses;armiesoperateasahierarchyofunits;governmentsandcor-
+porations have hierarchies of departments, subsidiaries, and branch offices. The key benefit
+of hierarchical structure is that, at each level of the hierarchy, a computational task, military
+mission,oradministrativefunctionisreducedtoasmallnumberofactivitiesatthenextlower
+level, so the computational cost of finding the correct way to arrange those activities for the
+current problem is small. Nonhierarchical methods, on the other hand, reduce a task to a
+largenumberofindividual actions; forlarge-scale problems,thisiscompletely impractical.
+11.2.1 High-levelactions
+Thebasicformalismweadopttounderstandhierarchicaldecompositioncomesfromthearea
+HIERARCHICALTASK of hierarchical task networksor HT Nplanning. Asin classical planning (Chapter 10), we
+NETWORK
+assumefullobservability anddeterminism andtheavailability ofasetofactions, nowcalled
+primitiveactions,withstandardprecondition effect schemas. Thekeyadditional conceptis
+PRIMITIVEACTION
+the high-levelaction or HLA forexample, theaction Goto San Francisco airport inthe
+HIGH-LEVELACTION
+Section11.2. Hierarchical Planning 407
+Refinement(Go(Home,SFO),
+STEPS: Drive(Home,SFO Long Term Parking),
+Shuttle(SFO Long Term Parkin

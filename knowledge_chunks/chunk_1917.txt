@@ -1,0 +1,23 @@
+Fsentences.
+6 Aclausecanalsoberepresentedasanimplicationwithaconjunctionofatomsinthepremiseandadisjunction
+ofatomsintheconclusion(Exercise7.13).Thisiscalledimplicativenormalformor Kowalskiform(especially
+whenwrittenwitharight-to-leftimplicationsymbol(Kowalski,1979))andisoftenmucheasiertoread.
+346 Chapter 9. Inference in First-Order Logic
+Theprocedureforconversionto CN Fissimilartothepropositionalcase,whichwesaw
+onpage253. Theprincipaldifferencearisesfromtheneedtoeliminateexistentialquantifiers.
+We illustrate the procedure by translating the sentence Everyone who loves all animals is
+lovedbysomeone, or x y Animal(y) Loves(x,y) y Loves(y,x) .
+Thestepsareasfollows: Eliminateimplications: x y Animal(y) Loves(x,y) y Loves(y,x) . Move inwards: Inaddition totheusual rulesfornegatedconnectives, weneedrules
+fornegatedquantifiers. Thus,wehave x p becomes x p x p becomes x p.
+Oursentencegoesthroughthefollowingtransformations: x y ( Animal(y) Loves(x,y)) y Loves(y,x) . x y Animal(y) Loves(x,y) y Loves(y,x) . x y Animal(y) Loves(x,y) y Loves(y,x) .
+Notice how a universal quantifier ( y) in the premise of the implication has become
+an existential quantifier. The sentence now reads Either there is some animal that x
+doesn t love, or (if this is not the case) someone loves x. Clearly, the meaning of the
+originalsentence hasbeenpreserved. Standardizevariables: Forsentenceslike( x P(x)) ( x Q(x))whichusethesame
+variable name twice, change the name of one of the variables. This avoids confusion
+laterwhenwedropthequantifiers. Thus,wehave x y Animal(y) Loves(x,y) z Loves(z,x) . Skolemize: Skolemization is the process of removing existential quantifiers by elimi-
+SKOLEMIZATION
+nation. Inthesimplecase,itisjustlikethe Existential Instantiation ruleof Section9.1:
+translate x P(x)into P(A),where Aisanewconstant. However,wecan tapply Ex-
+istential Instantiation tooursentence abovebecause itdoesn t matchthepattern v ;
+only parts of the sentence match the pattern. If we blindly apply the rule t

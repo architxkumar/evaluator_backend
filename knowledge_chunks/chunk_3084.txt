@@ -1,0 +1,18 @@
+withless Muggleton,S.H.(2000). Learningstochasticlogic Nalwa,V.S.(1993). AGuided Tourof Computer
+dataandlesstime.Machine Learning,13,103 130. programs.Proc.AAAI2000Workshopon Learning Vision.Addison-Wesley.
+Statistical Modelsfrom Relational Data.
+Moore,A.W.and Lee,M.S.(1997). Cachedsuf- Nash, J.(1950). Equilibriumpoints in N-person
+ficientstatisticsforefficientmachinelearningwith Muggleton,S.H.and Buntine,W.(1988).Machine games.PNAS,36,48 49.
+largedatasets.JAIR,8,67 91. inventionoffirst-orderpredicatesbyinvertingreso- Nau,D.S.(1980).Pathologyongametrees:Asum-
+lution.In ICML-88,pp.339 352.
+Moore,E.F.(1959). Theshortestpaththrougha maryofresults.In AAAI-80,pp.102 104.
+U m Th n a e i z v o e e r . y rs I i o n t f y P S P r w r o e i c t s c . s h . a i n ng I , nt P e a r r n t a I ti I o , n p a p l . S 2 y 8 m 5 p 2 o 9 si 2 u . m H o ar n va th rd e M t L iv o u e g g ic l g o l P g e i r t c o o g n p r , r a o S m g . m r H a i m . n a g m n , i d 1 n 9 g D : 2 e 0 T R , h 6 a e 2 e o 9 d r t y , 6 L 7 a . n 9 d . (19 m 9 e 4 t ) h . od In s. duc J - . N i 2 t 2 e a 1 d u , , a 2 D n 4 d 4 . . a S n .( a 1 lt 9 e 8 rn 3 a ). tiv P e a t t o ho m lo in g i y m o a n xi g n a g m .A e I t J r , e 2 es 1( r 1 e v 2 is ) - ,
+Muggleton,S.H.and Feng,C.(1990).Efficientin-
+Moore,R.C.(1980). Reasoningaboutknowledge ductionoflogicprograms. In Proc.Workshopon Nau, D.S., Kumar, V., and Kanal, L.N.(1984).
+andaction. Artificialintelligencecentertechnical Algorithmic Learning Theory,pp.368 381. Generalbranchandbound,anditsrelationto A and
+note191,SRI International. AO .AIJ,23,29 58.
+Mu ller,M.(2002). Computer Go. AIJ,134(1 2),
+Moore,R.C.(1985). Aformaltheoryofknowl- 145 179. Nayak, P.and Williams, B.(1997). Fastcontext
+edgeandaction. In Hobbs,J.R.and Moore,R.C. switchinginreal-timepropositionalreasoning. In
+(Eds.),Formal Theoriesofthe Commonsense World, Mu ller, M. (2003). Conditional combinatorial AAAI-97,pp.50 56.
+pp.319 358.Ablex. g ra a c m es es i , n a g n o d . th I e n 

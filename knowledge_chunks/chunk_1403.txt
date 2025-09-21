@@ -1,0 +1,31 @@
+ . . . . . . . . . . . . . . . . . . . . . . . . . 986
+25.5 Planning Uncertain Movements . . . . . . . . . . . . . . . . . . . . . . . 993
+25.6 Moving . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 997
+25.7 Robotic Software Architectures . . . . . . . . . . . . . . . . . . . . . . . 1003
+25.8 Application Domains . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1006
+25.9 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 1010
+VII Conclusions
+26 Philosophical Foundations 1020
+26.1 Weak AI:Can Machines Act Intelligently? . . . . . . . . . . . . . . . . . 1020
+26.2 Strong AI:Can Machines Really Think? . . . . . . . . . . . . . . . . . . 1026
+26.3 The Ethicsand Risksof Developing Artificial Intelligence . . . . . . . . . 1034
+26.4 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 1040
+27 AI:The Presentand Future 1044
+27.1 Agent Components . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1044
+27.2 Agent Architectures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1047
+27.3 Are We Goinginthe Right Direction? . . . . . . . . . . . . . . . . . . . 1049
+27.4 What If AI Does Succeed? . . . . . . . . . . . . . . . . . . . . . . . . . 1051
+A Mathematicalbackground 1053
+A.1 Complexity Analysisand O()Notation . . . . . . . . . . . . . . . . . . . 1053
+A.2 Vectors,Matrices, and Linear Algebra . . . . . . . . . . . . . . . . . . . 1055
+A.3 Probability Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . 1057
+B Noteson Languagesand Algorithms 1060
+B.1 Defining Languageswith Backus Naur Form(BNF) . . . . . . . . . . . . 1060
+B.2 Describing Algorithmswith Pseudocode . . . . . . . . . . . . . . . . . . 1061
+B.3 Online Help . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1062
+Bibliography 1063
+Index 1095
+1
+INTRODUCTION
+In which we try to explain why we consider artificial intelligence to be a subject
+mostworthyofstudy,andinwhichwetrytodecidewhatexactlyitis,thi

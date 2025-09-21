@@ -1,0 +1,33 @@
+ise 21.3.) This enables them to handle state spaces that are far too large for full ADP.
+Approximate AD Palgorithms haveanadditional advantage: intheearlystages oflearning a
+new environment, the environment model P often will be far from correct, so there is little
+pointincalculatinganexactutilityfunctiontomatchit. Anapproximationalgorithmcanuse
+aminimumadjustmentsizethatdecreasesastheenvironment modelbecomesmoreaccurate.
+This eliminates the very long value iterations that can occur early in learning due to large
+changes inthemodel.
+Section21.3. Active Reinforcement Learning 839
+21.3 ACTIVE REINFORCEMENT LEARNING
+Apassivelearningagenthasafixedpolicythatdeterminesitsbehavior. Anactiveagentmust
+decide whatactions totake. Letusbeginwiththeadaptive dynamicprogramming agent and
+considerhowitmustbemodifiedtohandlethisnewfreedom.
+First, the agent will need to learn a complete model with outcome probabilities for all
+actions, ratherthanjust themodelforthefixedpolicy. Thesimplelearning mechanism used
+by PASSIVE-ADP-AGENT will do just fine for this. Next, we need to take into account the
+fact thatthe agent hasachoice ofactions. Theutilities itneeds tolearn arethose defined by
+theoptimalpolicy;theyobeythe Bellmanequationsgivenonpage652,whichwerepeathere
+forconvenience:
+(cid:12)
+U(s) R(s) max P(s
+(cid:2) s,a)U(s (cid:2)
+). (21.4)
+a
+s(cid:3)
+These equations can be solved to obtain the utility function U using the value iteration or
+policyiterationalgorithmsfrom Chapter17. Thefinalissueiswhattodoateachstep. Having
+obtained a utility function U that is optimal for the learned model, the agent can extract an
+optimal action by one-step look-ahead to maximize the expected utility; alternatively, if it
+uses policy iteration, the optimal policy is already available, so it should simply execute the
+actiontheoptimalpolicyrecommends. Orshouldit?
+21.3.1 Exploration
+Figure 21.6 shows the results of one sequence of trials for an ADP agent that follows the
+recommendation of the optimal policy

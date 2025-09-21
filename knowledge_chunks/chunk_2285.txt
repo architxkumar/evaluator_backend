@@ -1,0 +1,42 @@
+ise15.12.)
+15.4.3 The general case
+The preceding derivation illustrates the key property of Gaussian distributions that allows
+Kalmanfiltering towork: thefact that the exponent isaquadratic form. Thisistrue not just
+fortheunivariatecase;thefullmultivariate Gaussiandistribution hastheform N( , )(x) e 2 1 (x )(cid:4) 1 (x ) .
+588 Chapter 15. Probabilistic Reasoning over Time
+Multiplying outthetermsintheexponent makesitclearthat theexponent isalsoaquadratic
+function of the values x in x. As in the univariate case, the filtering update preserves the
+i
+Gaussiannatureofthestatedistribution.
+Letusfirstdefinethegeneraltemporalmodelusedwith Kalmanfiltering. Boththetran-
+sition model and the sensor model allow for a linear transformation with additive Gaussian
+noise. Thus,wehave
+P(x x ) N(Fx , )(x )
+t 1 t t x t 1
+(15.21)
+P(z x ) N(Hx , )(z ),
+t t t z t
+where F and are matrices describing the linear transition model and transition noise co-
+x
+variance,and Hand arethecorresponding matricesforthesensormodel. Nowthe update
+z
+equations forthemeanandcovariance, intheirfull,hairyhorribleness, are F K (z HF )
+t 1 t t 1 t 1 t (15.22) (I K H)(F F (cid:12) ),
+t 1 t 1 t x
+where K (F F (cid:12) )H (cid:12) (H(F F (cid:12) )H (cid:12) ) 1 iscalledthe Kalmangain
+t 1 t x t x z
+KALMANGAIN matrix. Believeitornot, these equations make someintuitive sense. Forexample, consider
+MATRIX
+the update for the mean state estimate . The term F is the predicted state at t 1, so
+t
+HF is the predicted observation. Therefore, the term z HF represents the errorin
+t t 1 t
+the predicted observation. This is multiplied by K to correct the predicted state; hence,
+t 1
+K isameasureofhowseriously totakethenewobservation relativetotheprediction. As
+t 1
+in Equation (15.20), wealsohavetheproperty thatthevariance update isindependent ofthe
+observations. The sequence of values for and K can therefore be computed offline, and
+t t
+theactualcalculations requiredduringonlinetracking arequitemodest.
+Toillustrate these equatio

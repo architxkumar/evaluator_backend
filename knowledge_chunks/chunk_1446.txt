@@ -1,0 +1,26 @@
+ecomplementary, notcompeting. Asoccurredwith
+the separation of AI and cognitive science, modern neural network research has bifurcated
+into two fields, one concerned with creating effective network architectures and algorithms
+and understanding theirmathematical properties, the other concerned withcareful modeling
+oftheempiricalproperties ofactualneuronsandensembles ofneurons.
+1.3.8 AIadopts thescientific method (1987 present)
+Recent years have seen a revolution in both the content and the methodology of work in
+artificialintelligence.14 Itisnowmorecommontobuild onexisting theories thantopropose
+brand-new ones, to base claims on rigorous theorems or hard experimental evidence rather
+thanonintuition, andtoshowrelevance toreal-world applications ratherthantoyexamples.
+AIwasfoundedinpartasarebellionagainstthelimitationsofexistingfieldslikecontrol
+theoryandstatistics, butnowitisembracingthosefields. As David Mc Allester(1998)putit:
+In the early period of AI it seemed plausible that new forms of symbolic computation,
+e.g.,framesandsemanticnetworks,mademuchofclassicaltheoryobsolete. Thisledto
+a formof isolationism in which AI became largelyseparatedfromthe rest of computer
+science. This isolationism is currently being abandoned. There is a recognition that
+machinelearningshouldnotbeisolatedfrominformationtheory,thatuncertainreasoning
+shouldnotbeisolatedfromstochasticmodeling,thatsearchshouldnotbeisolatedfrom
+classical optimizationand control, and that automated reasoning should not be isolated
+fromformalmethodsandstaticanalysis.
+In terms of methodology, AI has finally come firmly under the scientific method. To be ac-
+cepted,hypothesesmustbesubjectedtorigorousempirical experiments,andtheresultsmust
+be analyzed statistically for their importance (Cohen, 1995). It is now possible to replicate
+experiments byusingsharedrepositories oftestdataandcode.
+The field of speech recognition illustrates the pattern. In the 1970s, a wide variety of
+different architectures and approaches

@@ -1,0 +1,27 @@
+isedby Tur-
+ingasthe argument from informality ofbehavior. Essentially, this istheclaim thathuman
+behavior is fartoo complex to be captured by any simple set of rules and that because com-
+puters candonomorethanfollowasetofrules, theycannot generate behavior asintelligent
+as that of humans. The inability to capture everything in a set of logical rules is called the
+QUALIFICATION qualificationproblemin AI.
+PROBLEM
+The principal proponent of this view has been the philosopher Hubert Dreyfus, who
+hasproduced aseriesofinfluentialcritiques ofartificialintelligence: What Computers Can t
+Do (1972), the sequel What Computers Still Can t Do (1992), and, with his brother Stuart,
+Mind Over Machine(1986).
+The position they criticize came to be called Good Old-Fashioned AI, or GOFAI, a
+term coined by philosopher John Haugeland (1985). GOFAI is supposed to claim that all
+intelligent behaviorcanbecapturedbyasystemthatreasonslogicallyfromasetoffactsand
+rules describing thedomain. Ittherefore corresponds tothe simplest logical agent described
+in Chapter7. Dreyfusiscorrectinsayingthatlogicalagentsarevulnerabletothequalification
+problem. Aswesawin Chapter13,probabilistic reasoning systemsaremoreappropriate for
+open-ended domains. The Dreyfus critique therefore isnot addressed against computers per
+se, but rather against one particular way of programming them. It is reasonable to suppose,
+however,thatabookcalled What First-Order Logical Rule-Based Systems Without Learning
+Can t Domighthavehadlessimpact.
+Under Dreyfus sview,humanexpertisedoesincludeknowledgeofsomerules,butonly
+asa holistic context or background withinwhichhumans operate. Hegivestheexample
+ofappropriate social behavior in giving and receiving gifts: Normally one simply responds
+intheappropriate circumstances bygiving anappropriate gift. Oneapparently has adirect
+sense ofhow things are done andwhattoexpect. Thesameclaim ismadeinthe context of
+chess playing: Amere chess mastermight need tofigure out whatto do, but a grandm

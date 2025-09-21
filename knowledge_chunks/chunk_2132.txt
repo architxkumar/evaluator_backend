@@ -1,0 +1,29 @@
+age. (One such language is
+described in Section 13.2.2.) Foreach proposition, the corresponding set contains just those
+possibleworldsinwhichthepropositionholds. Theprobabilityassociatedwithaproposition
+1 Fornow,weassumeadiscrete,countablesetofworlds.Thepropertreatmentofthecontinuouscasebringsin
+certaincomplicationsthatarelessrelevantformostpurposesin AI.
+Section13.2. Basic Probability Notation 485
+isdefinedtobethesumoftheprobabilities oftheworldsinwhichitholds:
+(cid:12)
+Foranyproposition , P( ) P( ). (13.2) For example, when rolling fair dice, we have P(Total 11) P((5,6)) P((6,5)) 1 36 1 36 1 18. Note that probability theory does not require complete knowledge
+of the probabilities of each possible world. For example, if we believe the dice conspire to
+producethesamenumber,wemightassertthat P(doubles) 1 4withoutknowingwhether
+thedicepreferdouble 6todouble 2. Just aswithlogical assertions, thisassertion constrains
+theunderlying probability modelwithoutfullydetermining it.
+UNCONDITIONAL Probabilitiessuchas P(Total 11)and P(doubles)arecalledunconditionalorprior
+PROBABILITY
+probabilities(andsometimesjust priors forshort);theyrefertodegreesofbeliefinpropo-
+PRIORPROBABILITY
+sitions in the absence of any other information. Most of the time, however, we have some
+information, usually called evidence, that has already been revealed. For example, the first
+EVIDENCE
+die may already be showing a 5 and we are waiting with bated breath for the other one to
+stop spinning. In that case, we are interested not in the unconditional probability of rolling
+CONDITIONAL doubles, buttheconditionalorposteriorprobability (orjust posterior forshort)ofrolling
+PROBABILITY
+POSTERIOR doublesgiventhatthefirstdieisa5. Thisprobabilityiswritten P(doubles Die 5),where
+PROBABILITY 1
+the is pronounced given. Similarly, if I am going to the dentist for a regular checkup,
+the probability P(cavity) 0.2might beofinterest; but if Igo tothe dentist because Ihave
+atoothache, it s P(cavity toothache) 0.6thatmat

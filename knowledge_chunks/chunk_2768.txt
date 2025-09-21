@@ -1,0 +1,25 @@
+erwouldread Neu Ero ffnet. 6 Thisexampleisdueto Martin Kay.
+908 Chapter 23. Natural Languagefor Communication
+The problem is that different languages categorize the world differently. Forexample,
+the French word doux covers a wide range of meanings corresponding approximately to
+the English words soft, sweet, and gentle. Similarly, the English word hard covers
+virtually all uses of the German word hart (physically recalcitrant, cruel) and some uses
+of the word schwierig (difficult). Therefore, representing the meaning of a sentence is
+moredifficultfortranslationthanitisforsingle-language understanding. An Englishparsing
+system could use predicates like Open(x), but for translation, the representation language
+wouldhavetomakemoredistinctions,perhapswith Open (x)representingthe Offen sense
+1
+and Open (x)representing the Neu Ero ffnet sense. Arepresentation language that makes
+2
+allthedistinctions necessary forasetoflanguages iscalledaninterlingua.
+INTERLINGUA
+A translator (human or machine) often needs to understand the actual situation de-
+scribed in the source, not just the individual words. For example, to translate the English
+word him, into Korean, a choice must be made between the humble and honorific form, a
+choicethatdepends onthesocialrelationship betweenthespeakerandthereferent of him. In Japanese, the honorifics are relative, so thechoice depends onthe social relationships be-
+tweenthespeaker,thereferent,andthelistener. Translators(bothmachineandhuman)some-
+timesfinditdifficult to makethis choice. Asanother example, totranslate The baseball hit
+the window. It broke. into French, we must choose the feminine elle or the masculine il for it, so wemust decide whether it refers tothe baseball orthe window. Toget the
+translation right,onemustunderstand physicsaswellaslanguage.
+Sometimes there is no choice that can yield a completely satisfactory translation. For
+example, an Italian love poem that uses the masculine ilsole (sun) and feminine laluna (moon) to symbo

@@ -1,0 +1,31 @@
+uationsastheresultsofactionsinthewumpusworld.
+involving sthatdescribes thepreconditions. Anexamplefromthewumpusworldsays
+thatitispossible toshootiftheagentisaliveandhasanarrow:
+Alive(Agent,s) Have(Agent,Arrow,s) Poss(Shoot,s) Each fluent is described with a successor-state axiom that says what happens to the
+fluent, depending on what action is taken. This is similar to the approach we took for
+propositional logic. Theaxiomhastheform
+Actionispossible (Fluentistrueinresultstate Action seffectmadeittrue Itwastruebeforeandactionleftitalone).
+Forexample, theaxiom forthe relational fluent Holding says that the agent isholding
+somegold g afterexecuting apossible action ifand only ifthe action wasa Grab ofg
+oriftheagentwasalreadyholding g andtheactionwasnotreleasing it:
+Poss(a,s) (Holding(Agent,g,Result(a,s)) a Grab(g) (Holding(Agent,g,s) a(cid:7) Release(g))).
+UNIQUEACTION We need unique action axioms so that the agent can deduce that, for example, a (cid:7) AXIOMS
+Release(g). For each distinct pair of action names A and A we have an axiom that
+i j
+saystheactionsaredifferent:
+A (x,...) (cid:7) A (y,...)
+i j
+390 Chapter 10. Classical Planning
+and for each action name A wehave an axiom that says two uses of that action name
+i
+areequalifandonlyifalltheirarguments areequal:
+A (x ,...,x ) A (y ,...,y ) x y ... x y .
+i 1 n i 1 n 1 1 n n Asolution isasituation (andhenceasequence ofactions) thatsatisfiesthegoal.
+Work in situation calculus has done a lot to define the formal semantics of planning and to
+open up new areas of investigation. But so far there have not been any practical large-scale
+planning programs based on logical deduction over the situation calculus. This is in part
+because of the difficulty of doing efficient inference in FOL, but is mainly because the field
+hasnotyetdevelopedeffectiveheuristics forplanning withsituation calculus.
+10.4.3 Planning asconstraint satisfaction
+Wehaveseenthatconstraint satisfaction hasalotincommonwith Booleansatisfiability, and
+wehavese

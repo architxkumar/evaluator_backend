@@ -1,0 +1,26 @@
+earch has a probability p of
+success, then the expected number of restarts required is 1 p. For 8-queens instances with
+nosideways movesallowed, p 0.14,soweneed roughly 7iterations tofindagoal (6fail-
+uresand1success). Theexpectednumberofstepsisthecostofonesuccessful iterationplus
+(1 p) ptimesthecostoffailure,orroughly22stepsinall. Whenweallowsidewaysmoves,
+1 0.94 1.06iterationsareneededonaverageand (1 21) (0.06 0.94) 64 25steps.
+For8-queens, then, random-restart hillclimbingisveryeffectiveindeed. Evenforthreemil-
+lionqueens, theapproach canfindsolutions inunderaminute.2
+1 Generatingarandomstatefromanimplicitlyspecifiedstatespacecanbeahardprobleminitself.
+2 Lubyetal.(1993)provethatitisbest,insomecases,torestartarandomizedsearchalgorithmafteraparticular,
+fixed amount of time and that this can be much more efficient than letting each search continue indefinitely.
+Disallowingorlimitingthenumberofsidewaysmovesisanexampleofthisidea.
+Section4.1. Local Search Algorithmsand Optimization Problems 125
+The success of hill climbing depends very much on the shape of the state-space land-
+scape: if there are few local maxima and plateaux, random-restart hill climbing will find a
+good solution very quickly. On the other hand, many real problems have a landscape that
+looksmorelikeawidelyscatteredfamilyofbaldingporcupinesonaflatfloor,withminiature
+porcupines living on the tip of each porcupine needle, ad infinitum. NP-hard problems typi-
+callyhaveanexponential numberoflocalmaximatogetstuckon. Despitethis,areasonably
+goodlocalmaximumcanoftenbefoundafterasmallnumberofrestarts.
+4.1.2 Simulated annealing
+Ahill-climbingalgorithmthatnevermakes downhill movestowardstateswithlowervalue
+(or higher cost) is guaranteed to be incomplete, because it can get stuck on a local maxi-
+mum. In contrast, a purely random walk that is, moving to a successor chosen uniformly
+at random from the set of successors is complete but extremely inefficient. Therefore, it
+seemsreasonabletotrytocombinehillclimbingw

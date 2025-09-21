@@ -1,0 +1,27 @@
+e23.6 Annotatedtree forthe sentence Hereyeswere glazedasif she didn thear
+orevensee him. fromthe Penn Treebank. Notethatinthisgrammarthereisadistinction
+betweenanobjectnounphrase(NP)andasubjectnounphrase(NP-SBJ).Notealsoagram-
+maticalphenomenonwe havenotcoveredyet: the movementof a phrasefrom onepartof
+thetreetoanother.Thistreeanalyzesthephrase hearorevenseehim asconsistingoftwo
+constituent VPs, VP hear NP -1 and VP ADVP even see NP -1 , both of which
+haveamissingobject,denoted -1,whichreferstothe NP labeledelsewhereinthetreeas NP-1him .
+costofastateistheinverse ofitsprobability asdefinedbytherulesapplied sofar, andthere
+arevarious heuristics toestimatetheremaining distance tothegoal;thebestheuristics come frommachinelearningappliedtoacorpusofsentences. Withthe A algorithmwedon thave
+to search the entire state space, and we are guaranteed that the first parse found will be the
+mostprobable.
+23.2.1 Learning probabilities for PCF Gs
+A PCFG has many rules, with a probability for each rule. This suggests that learning the
+grammarfromdatamightbebetterthanaknowledgeengineering approach. Learningiseas-
+iestifwearegivenacorpusofcorrectlyparsedsentences,commonlycalledatreebank. The
+TREEBANK
+Penn Treebank (Marcus etal., 1993) isthe best known; itconsists of3million words which
+havebeenannotated withpartofspeech andparse-tree structure, usinghumanlaborassisted
+bysomeautomated tools. Figure23.6showsanannotated tree fromthe Penn Treebank.
+Givenacorpusoftrees,wecancreatea PCF Gjustbycounting(andsmoothing). Inthe
+exampleabove,therearetwonodesoftheform S NP... VP ... . Wewouldcountthese,
+and all the other subtrees with root S in the corpus. If there are 100,000 S nodes of which
+60,000areofthisform,thenwecreatetherule:
+S NP VP 0.60 .
+What if a treebank is not available, but we have a corpus of raw unlabeled sentences? It is
+still possible to learn a grammar from such a corpus, but it is more difficult. First of all,
+weactually have twoproblems: learning the structure ofthe grammarru

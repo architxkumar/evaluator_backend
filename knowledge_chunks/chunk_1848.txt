@@ -1,0 +1,30 @@
+ut those individuals for whom the premise is false. Thus, the
+truth-table definition of turns out to be perfect for writing general rules with universal
+quantifiers.
+Acommonmistake,madefrequently evenbydiligent readers whohavereadthispara-
+graphseveraltimes,istouseconjunction instead ofimplication. Thesentence x King(x) Person(x)
+wouldbeequivalent toasserting
+Richardthe Lionheartisaking Richardthe Lionheartisaperson,
+King Johnisaking King Johnisaperson,
+Richard sleftlegisaking Richard sleftlegisaperson,
+andsoon. Obviously, thisdoesnotcapturewhatwewant.
+Section8.2. Syntaxand Semanticsof First-Order Logic 297
+Existentialquantification( )
+Universalquantificationmakesstatementsabouteveryobject. Similarly,wecanmakeastate-
+ment about some object in the universe without naming it, by using anexistential quantifier.
+Tosay,forexample,that King Johnhasacrownonhishead,wewrite x Crown(x) On Head(x,John). xispronounced Thereexistsan xsuchthat... or Forsome x... .
+Intuitively, the sentence x P says that P is true for at least one object x. More
+precisely, x P is true in a given model if P is true in at least one extended interpretation
+thatassignsxtoadomainelement. Thatis,atleastoneofthefollowingistrue:
+Richardthe Lionheartisacrown Richardthe Lionheartison John shead;
+King Johnisacrown King Johnison John shead;
+Richard sleftlegisacrown Richard sleftlegison John shead;
+John sleftlegisacrown John sleftlegison John shead;
+Thecrownisacrown thecrownison John shead.
+The fifth assertion is true in the model, so the original existentially quantified sentence is
+true in the model. Notice that, by ourdefinition, the sentence would also be true in a model
+in which King John was wearing two crowns. This is entirely consistent with the original
+sentence King Johnhasacrownonhishead. 7
+Justas appearstobethenaturalconnectivetousewith , isthenaturalconnective
+to use with . Using as the main connective with led to an overly strong statement in
+theexample inthe previous section; using with usually 

@@ -1,0 +1,25 @@
+ Aisanewconstant. However,wecan tapply Ex-
+istential Instantiation tooursentence abovebecause itdoesn t matchthepattern v ;
+only parts of the sentence match the pattern. If we blindly apply the rule to the two
+matchingpartsweget x Animal(A) Loves(x,A) Loves(B,x),
+which has the wrong meaning entirely: it says that everyone either fails to love a par-
+ticular animal Aoris loved by some particular entity B. In fact, our original sentence
+allowseachpersontofailtoloveadifferentanimalortobelovedbyadifferentperson.
+Thus,wewantthe Skolementitiestodepend onxandz: x Animal(F(x)) Loves(x,F(x)) Loves(G(z),x).
+Here F and G are Skolem functions. The general rule is that the arguments of the
+SKOLEMFUNCTION
+Skolem function are all the universally quantified variables in whose scope the exis-
+tentialquantifierappears. Aswith Existential Instantiation, the Skolemized sentence is
+satisfiableexactlywhentheoriginal sentence issatisfiable.
+Section9.5. Resolution 347 Dropuniversal quantifiers: Atthis point, all remaining variables mustbe universally
+quantified. Moreover, thesentence isequivalent tooneinwhichalltheuniversal quan-
+tifiershavebeenmovedtotheleft. Wecantherefore droptheuniversal quantifiers: Animal(F(x)) Loves(x,F(x)) Loves(G(z),x). Distribute over : Animal(F(x)) Loves(G(z),x) Loves(x,F(x)) Loves(G(z),x) .
+Thisstepmayalsorequireflatteningoutnestedconjunctions anddisjunctions.
+The sentence is now in CNF and consists of two clauses. It is quite unreadable. (It may
+help to explain that the Skolem function F(x)refers tothe animal potentially unloved by x,
+whereas G(z) refers to someone who might love x.) Fortunately, humans seldom need look
+at CN Fsentences the translation processiseasilyautomated.
+9.5.2 The resolutioninference rule
+Theresolution rule forfirst-order clauses issimply aliftedversion ofthepropositional reso-
+lution rule given on page 253. Two clauses, which are assumed to be standardized apart so
+that they share no variables, can be resolved if they contain complemen

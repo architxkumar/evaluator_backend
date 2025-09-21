@@ -1,0 +1,28 @@
+e.
+Forexample,withpolynomialswehavesize 1forlinearfunctions, size 2forquadratics,
+and so on. Fordecision trees, the size could be the number of nodes in the tree. In all cases
+wewanttofindthevalueofthesize parameterthatbestbalancesunderfitting andoverfitting
+togivethebesttestsetaccuracy.
+Analgorithm to perform model selection and optimization is shown in Figure 18.8. It
+WRAPPER
+is awrapperthat takes alearning algorithm as an argument (DECISION-TREE-LEARNING,
+forexample). Thewrapperenumerates modelsaccording toaparameter, size. Foreachsize,
+it uses cross validation on Learner to compute the average error rate on the training and
+testsets. Westartwiththesmallest, simplest models (whichprobably underfitthedata), and
+iterate, considering more complex models at each step, until the models start to overfit. In
+Figure 18.9 we see typical curves: the training set error decreases monotonically (although
+there may in general be slight random variation), while the validation set error decreases at
+first, and then increases when the model begins to overfit. The cross-validation procedure
+picksthevalueofsize withthelowestvalidationseterror;thebottomofthe U-shapedcurve.
+Wethengenerate ahypothesis ofthat size,using allthedata(without holding outanyofit).
+Finally,ofcourse,weshouldevaluatethereturned hypothesis onaseparatetestset.
+Thisapproachrequiresthatthelearningalgorithmaccepta parameter, size,anddeliver
+ahypothesisofthatsize. Aswesaid,fordecisiontreelearning,thesizecanbethenumberof
+nodes. We can modify DECISION-TREE-LEARNER so that it takes the number of nodes as
+an input, builds the tree breadth-first rather than depth-first (but at each level it still chooses
+thehighestgainattribute first),andstopswhenitreachesthedesirednumberofnodes.
+710 Chapter 18. Learningfrom Examples
+function CROSS-VALIDATION-WRAPPER(Learner,k,examples)returnsahypothesis
+localvariables: err T,anarray,indexedbysize,storingtraining-seterrorrates
+err V,anarray,indexedbysize,storingvalidation-seterrorrates
+f

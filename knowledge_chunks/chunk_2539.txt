@@ -1,0 +1,24 @@
+ion words? But the graph shows
+there is more room for improvement in the horizontal direction: instead of inventing a new
+algorithm,all Ineedtodoisgather10millionwordsoftrainingdata;eventheworstalgorithm
+at 10 million words is performing better than the best algorithm at 1 million. As we gather
+evenmoredata,thecurvescontinuetorise,dwarfingthedifferences betweenalgorithms.
+Consider another problem: the task of estimating the true value of houses that are for
+sale. In Figure 18.13 we showed a toy version of this problem, doing linear regression of
+house size to asking price. You probably noticed many limitations of this model. First, it is
+measuring the wrong thing: we want to estimate the selling price of a house, not the asking
+price. To solve this task we ll need data on actual sales. But that doesn t mean we should
+throw away the data about asking price we can use it as one of the input features. Besides
+the size of the house, we ll need more information: the number of rooms, bedrooms and
+bathrooms; whether the kitchen and bathrooms have been recently remodeled; the age of
+the house; we ll also need information about the lot, and the neighborhood. But how do
+we define neighborhood? By zip code? What if part of one zip code is on the wrong side of the highway or train tracks, and the other part is desirable? What about the school
+district? Should the name of the school district be a feature, or the average test scores? In
+additiontodecidingwhatfeaturestoinclude,wewillhavetodealwithmissingdata;different
+areas have different customs on what data are reported, and individual cases will always be
+missing some data. If the data you want are not available, perhaps you can set up a social
+networking site to encourage people to share and correct data. In the end, this process of
+Section18.12. Summary 757
+deciding whatfeatures touse,andhowtousethem,isjustasimportant aschoosing between
+linearregression, decision trees,orsomeotherformoflearning.
+That said, one does have to pi

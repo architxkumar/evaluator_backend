@@ -1,0 +1,35 @@
+This section shows
+how a special data structure called a planning graph can be used to give better heuristic
+PLANNINGGRAPH
+estimates. These heuristics can be applied to any of the search techniques we have seen so
+far. Alternatively, wecansearch forasolution overthespace formedbytheplanning graph,
+usinganalgorithm called GRAPHPLAN.
+Aplanningproblemasksifwecanreachagoalstatefromtheinitialstate. Supposewe
+aregivenatreeofallpossible actions fromtheinitial statetosuccessorstates, andtheirsuc-
+cessors, andsoon. Ifweindexedthistreeappropriately, we couldanswertheplanning ques-
+tion can wereach state G from state S immediately, just by looking it up. Ofcourse, the
+0
+tree is of exponential size, so this approach is impractical. A planning graph is polynomial-
+size approximation to this tree that can be constructed quickly. The planning graph can t
+answer definitively whether G is reachable from S , but it can estimate how many steps it
+0
+takestoreach G. Theestimateisalwayscorrectwhenitreportsthegoalisnotreachable, and
+itneveroverestimates thenumberofsteps,soitisanadmissible heuristic.
+Aplanninggraphisadirectedgraphorganizedinto levels: firstalevel S fortheinitial
+LEVEL 0
+state,consisting ofnodesrepresenting eachfluentthatholdsin S ;thenalevel A consisting
+0 0
+of nodes for each ground action that might be applicable in S ; then alternating levels S
+0 i
+followedby A ;untilwereachatermination condition (tobediscussed later).
+i
+Roughly speaking, S contains all the literals that could hold at time i, depending on
+i
+theactions executed atpreceding timesteps. Ifitispossible thateither P or P could hold,
+then both will be represented in S . Also roughly speaking, A contains all the actions that
+i i
+could have their preconditions satisfied at time i. We say roughly speaking because the
+planning graph records only a restricted subset of the possible negative interactions among
+actions; therefore, aliteral mightshow upatlevel S whenactually itcould notbetrueuntil
+j
+a later level, if a

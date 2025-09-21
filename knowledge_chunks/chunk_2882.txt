@@ -1,0 +1,28 @@
+aythroughwhichasolutionmustpass. Althoughitfocuses
+most of the computational effort on the tricky areas within the configuration space, it still
+fails to scale well to high-dimensional problems because each recursive splitting of a cell
+creates2d smallercells. Asecondwaytoobtainacompletealgorithmistoinsistonanexact
+EXACTCELL cell decomposition ofthe free space. Thismethod must allow cells tobe irregularly shaped
+DECOMPOSITION
+where they meet the boundaries of free space, but the shapes must still be simple in the
+sense that it should be easy to compute a traversal of any free cell. This technique requires
+somequiteadvanced geometricideas,soweshallnotpursueitfurtherhere.
+Examining the solution path shown in Figure 25.16(a), we can see an additional diffi-
+cultythatwillhavetoberesolved. Thepathcontainsarbitrarilysharpcorners;arobotmoving
+at any finite speed could not execute such a path. This problem is solved by storing certain
+continuous values foreach grid cell. Consider an algorithm which stores, foreach grid cell,
+Section25.4. Planningto Move 991
+the exact, continuous state that was attained with the cell was first expanded in the search.
+Assumefurther, thatwhenpropagating information tonearbygridcells,weusethiscontinu-
+ousstateasabasis,andapplythecontinuousrobotmotionmodelforjumpingtonearbycells.
+In doing so, we can now guarantee that the resulting trajectory is smooth and can indeed be
+executedbytherobot. Onealgorithm thatimplementsthisishybrid A .
+HYBRIDA 25.4.3 Modified costfunctions
+Noticethatin Figure25.16, thepathgoesveryclosetotheobstacle. Anyonewhohasdriven
+acarknowsthataparkingspacewithonemillimeterofclearanceoneithersideisnotreallya
+parking spaceatall;forthesamereason, wewouldprefersolution pathsthatarerobustwith
+respecttosmallmotionerrors.
+This problem can be solved by introducing a potential field. A potential field is a
+POTENTIALFIELD
+functiondefinedoverstatespace,whosevaluegrowswiththedistancetotheclosestobstacle.
+Figure25.17(a)showssuchapotential 

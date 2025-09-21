@@ -1,0 +1,50 @@
+QUERY
+1,2 2,2 3,2 4,2 1,2 2,2 3,2 4,2
+B
+OK
+FRONTIER
+1,1 2,1 3,1 4,1 1,1 2,1 3,1 4,1
+KNOWN
+B
+OK OK
+(a) (b)
+Figure13.5 (a)Afterfindingabreezeinboth 1,2 and 2,1 ,theagentisstuck thereis
+nosafeplacetoexplore. (b)Divisionofthesquaresinto Known,Frontier,and Other,for
+aqueryabout 1,3 . Wealso have Boolean variables B that are true iffsquare i,j is breezy; weinclude
+ij
+thesevariables onlyfortheobservedsquares in thiscase, 1,1 , 1,2 ,and 2,1 .
+Thenextstep istospecify thefulljoint distribution, P(P ,...,P ,B ,B ,B ). Ap-
+1,1 4,4 1,1 1,2 2,1
+plyingtheproductrule,wehave
+P(P ,...,P ,B ,B ,B ) 1,1 4,4 1,1 1,2 2,1
+P(B ,B ,B P ,...,P )P(P ,...,P ).
+1,1 1,2 2,1 1,1 4,4 1,1 4,4
+This decomposition makes it easy to see what the joint probability values should be. The
+first term is the conditional probability distribution of a breeze configuration, given a pit
+configuration; its values are 1 if the breezes are adjacent to the pits and 0 otherwise. The
+second term is the prior probability of a pit configuration. Each square contains a pit with
+probability 0.2,independently oftheothersquares; hence,
+(cid:25)4,4
+P(P ,...,P ) P(P ). (13.20)
+1,1 4,4 i,j
+i,j 1,1
+Foraparticularconfiguration withexactly npits,P(P ,...,P
+) 0.2n 0.816 n.
+1,1 4,4
+In the situation in Figure 13.5(a), the evidence consists of the observed breeze (or its
+absence)ineachsquarethatisvisited, combinedwiththefactthateachsuchsquarecontains
+nopit. Weabbreviatethesefactsasb b b b andknown p p p .
+1,1 1,2 2,1 1,1 1,2 2,1
+Weareinterested inanswering queries such as P(P known,b): how likely isit that 1,3 1,3
+contains apit,giventheobservations sofar?
+Toanswerthisquery, wecanfollow thestandard approach of Equation (13.9),namely,
+summing over entries from the full joint distribution. Let Unknown be the set of P vari-
+i,j
+Section13.6. The Wumpus World Revisited 501
+ables forsquares otherthan the Known squares and the query square 1,3 . Then, by Equa-
+tion(13.9),wehave
+(cid:12)
+P(P known,b) P(P ,unknown,known,b).
+1,3 1,3
+unknown
+The 

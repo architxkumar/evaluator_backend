@@ -1,0 +1,57 @@
+ log 1 e (xj 2 2 )2 N( log 2 log ) (cid:12)N (x j )2 .
+2 2 2
+j 1 j 1
+Settingthederivatives tozeroasusual,weobtain
+(cid:2) P L 1 N (x ) 0 j xj 2 j 1
+(cid:2)
+j (cid:9)NP
+(20.4) L N 1 N (x )2 0 j (xj )2 . 3 j 1 j N
+Thatis,themaximum-likelihood valueofthemeanisthesampleaverageandthemaximum-
+likelihood value of the standard deviation is the square root of the sample variance. Again,
+thesearecomforting resultsthatconfirm commonsense practice.
+810 Chapter 20. Learning Probabilistic Models
+1
+0.8
+P(y x)
+4 0.6
+3.5
+3
+2.5
+0.4
+2
+1.5
+1
+0.5 0.8 1 0.2
+0 0.6
+0 0.2 0 x .4 0.6 0.8 1 0 0.2 0.4 y 0
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+y
+x
+(a) (b)
+Figure20.4 (a)Alinear Gaussianmodeldescribedas y x plus Gaussiannoise
+1 2
+withfixedvariance.(b)Asetof50datapointsgeneratedfromthismodel.
+Nowconsideralinear Gaussianmodelwithonecontinuous parent X andacontinuous
+child Y. As explained on page 520, Y has a Gaussian distribution whose mean depends
+linearly on the value of X and whose standard deviation is fixed. To learn the conditional
+distribution P(Y X),wecanmaximizetheconditional likelihood
+P(y x) 1
+e (y ( 1
+2 x
+2 2))2
+. (20.5)
+2 Here,theparametersare , ,and . Thedataareacollectionof(x ,y )pairs,asillustrated
+1 2 j j
+in Figure20.4. Usingtheusualmethods(Exercise20.5),wecanfindthemaximum-likelihood
+values of the parameters. The point here is different. If we consider just the parameters 1
+and that define thelinear relationship between x and y, it becomes clearthat maximizing
+2
+the log likelihood with respect to these parameters is the same as minimizing the numerator
+(y ( x ))2 in the exponent of Equation (20.5). This is the L loss, the squared er-
+1 2 2
+ror between the actual value y and the prediction x . This is the quantity minimized
+1 2
+by the standard linear regression procedure described in Section 18.6. Now we can under-
+standwhy: minimizingthesumofsquarederrorsgivesthemaximum-likelihood straight-line
+model,provided thatthedataaregenerated with Gaussiannoiseoffixedvariance.
+20.2.4 Baye

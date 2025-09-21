@@ -1,0 +1,26 @@
+ut works well in practice
+for problems that are largely decomposable. It is much more accurate than the number-
+of-unsatisfied-goals heuristic from Section 10.2. For our problem, the level-sum heuristic
+estimate for the conjunctive goal Have(Cake) Eaten(Cake) will be 0 1 1, whereas
+the correct answeris 2, achieved by the plan Eat(Cake),Bake(Cake) . That doesn t seem
+so bad. A more serious error is that if Bake(Cake) were not in the set of actions, then the
+estimatewouldstillbe1,wheninfacttheconjunctive goalwouldbeimpossible.
+Finally, the set-level heuristic findsthe level at which all the literals inthe conjunctive
+SET-LEVEL
+goal appear in the planning graph without any pair of them being mutually exclusive. This
+heuristic gives the correct values of 2 for our original problem and infinity for the problem
+without Bake(Cake). It is admissible, it dominates the max-level heuristic, and it works
+extremelywellontasksinwhichthereisagooddealofinteraction amongsubplans. Itisnot
+perfect, ofcourse; forexample,itignoresinteractions amongthreeormoreliterals.
+Asatoolforgeneratingaccurateheuristics,wecanviewtheplanninggraphasarelaxed
+problem that is efficiently solvable. To understand the nature of the relaxed problem, we
+need to understand exactly what it means for a literal g to appear at level S in the planning
+i
+graph. Ideally, wewould like itto beaguarantee that there exists aplan with iaction levels
+that achieves g, and also that if g does not appear, there is no such plan. Unfortunately,
+makingthatguaranteeisasdifficultassolvingtheoriginalplanningproblem. Sotheplanning
+graph makes the second half of the guarantee (if g does not appear, there is no plan), but
+if g does appear, then all the planning graph promises is that there is a plan that possibly
+achieves g and has no obvious flaws. An obvious flaw is defined as a flaw that can be
+detected by considering two actions or two literals at a time in other words, by looking at
+themutexrelations. Therecould bemoresubtle flaws

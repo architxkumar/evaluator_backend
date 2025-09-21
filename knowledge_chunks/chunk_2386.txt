@@ -1,0 +1,37 @@
+two, their difference is halved.
+Noticethatthe dividebytwo function hasafixedpoint, namelyzero,thatisunchanged by
+the application ofthe function. Fromthis example, wecan discern twoimportant properties
+ofcontractions: A contraction has only one fixed point; if there were two fixed points they would not
+getclosertogetherwhenthefunction wasapplied, soitwouldnotbeacontraction. When the function is applied to any argument, the value must get closer to the fixed
+point (because the fixedpoint does not move), so repeated application of acontraction
+alwaysreachesthefixedpointinthelimit.
+Now,supposeweviewthe Bellmanupdate(Equation(17.6))asanoperator B thatisapplied
+simultaneously toupdate theutilityofeverystate. Let U denotethevectorofutilities forall
+i
+thestatesattheithiteration. Thenthe Bellmanupdateequationcanbewrittenas
+U BU .
+i 1 i
+Next,weneedawaytomeasuredistancesbetweenutilityvectors. Wewillusethemaxnorm,
+MAXNORM
+whichmeasuresthe length ofavectorbytheabsolute value ofitsbiggest component: U max U(s) .
+s
+With this definition, the distance between two vectors, U U (cid:2) , is the maximum dif-
+ference between any two corresponding elements. The main result of this section is the
+(cid:2)
+following: Let U and U beanytwoutilityvectors. Thenwehave
+i i BU BU (cid:2) U U (cid:2) . (17.7)
+i i i i
+That is, the Bellman update is a contraction by a factor of on the space of utility vectors.
+(Exercise17.6providessomeguidanceonprovingthisclaim.) Hence,fromthepropertiesof
+contractions in general, it follows that value iteration always converges to a unique solution
+ofthe Bellmanequations whenever 1.
+Section17.2. Value Iteration 655
+We can also use the contraction property to analyze the rate of convergence to a solu-
+(cid:2)
+tion. In particular, we can replace U in Equation (17.7) with the true utilities U, for which
+i
+BU U. Thenweobtaintheinequality BU U U U .
+i i
+So,ifweview U U astheerrorintheestimate U ,weseethattheerrorisreducedbya
+i i
+factorofatleast oneachiteration. Thismeans

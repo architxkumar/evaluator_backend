@@ -1,0 +1,27 @@
+tion: solvingtheplanninggraph models.Int.J.Intelligent Systems,9(1),61 100. tionto Logic.Academic Press.
+bycompilingitinto CSP.AIJ,132(2),151 182.
+Duda,R.O.,Gaschnig,J.,and Hart,P.E.(1979). Epstein, R., Roberts, G., and Beber, G. (Eds.).
+Doctorow,C.(2001).Metacrap:Puttingthetorchto Modeldesigninthe Prospectorconsultantsystem (2008).Parsingthe Turing Test.Springer.
+sevenstraw-menofthemeta-utopia. www.well. formineralexploration. In Michie, D.(Ed.), Ex-
+com doctorow metacrap.htm. pert Systemsinthe Microelectronic Age,pp.153 Erdmann,M.A.and Mason,M.(1988).Anexplo-
+Domingos,P.and Pazzani,M.(1997). Ontheopti- 167.Edinburgh University Press. rationofsensorlessmanipulation. IEEE Journalof
+Roboticsand Automation,4(4),369 379.
+malityofthesimple Bayesianclassifierunderzero Duda,R.O.and Hart,P.E.(1973).Patternclassifi-
+oneloss.Machine Learning,29,103 30. Ernst,H.A.(1961). MH-1,a Computer-Operated
+cationandsceneanalysis.Wiley.
+Mechanical Hand. Ph.D.thesis,Massachusetts In-
+Domingos,P.and Richardson,M.(2004). Markov
+Duda,R.O.,Hart,P.E.,and Stork,D.G.(2001). stituteof Technology.
+logic:Aunifyingframeworkforstatisticalrelational
+Pattern Classification(2ndedition).Wiley.
+learning.In Proc.ICML-04Workshopon Statistical Ernst,M.,Millstein,T.,and Weld,D.S.(1997).Au-
+Relational Learning. Dudek,G.and Jenkin,M.(2000). Computational tomatic SAT-compilationofplanningproblems. In
+Principlesof Mobile Robotics. Cambridge Univer- IJCAI-97,pp.1169 1176.
+Donninger,C.and Lorenz,U.(2004). Thechess
+sity Press.
+monsterhydra. In Proc.14th International Con- Erol,K.,Hendler,J.,and Nau,D.S.(1994). HTN
+ferenceon Field-Programmable Logicand Applica- Duffy,D.(1991).Principlesof Automated Theorem planning:Complexityandexpressivity.In AAAI-94,
+tions,pp.927 932. Proving.John Wiley Sons. pp.1123 1128.
+1072 Bibliography
+Erol,K.,Hendler,J.,and Nau,D.S.(1996). Com- Felzenszwalb,P.and Huttenlocher,D.(2000).Effi- Forgy,C.(1981). OPS5user smanual. Technical
+plexityresultsfor HT Nplanning.AIJ,18(1),69 93. cientmatchi

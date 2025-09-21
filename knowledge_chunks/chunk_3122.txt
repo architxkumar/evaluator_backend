@@ -1,0 +1,23 @@
+derstandingsentences.Mouton. 27(3),360 362.
+Vauquois,B.(1968).Asurveyofformalgrammars
+andalgorithmsforrecognitionandtransformationin Warren,D.H.D.(1974). WARPLAN:ASystem Wellman, M. P., Breese, J.S., and Goldman, R.
+mechanicaltranslation.In Proc.IFIP Congress,pp. for Generating Plans.Departmentof Computational (1992). Fromknowledgebasestodecisionmodels.
+1114 1122. Logic Memo76,Universityof Edinburgh. Knowledge Engineering Review,7(1),35 53.
+1092 Bibliography
+Wellman,M.P.and Doyle,J.(1992).Modularutil- Williams, R.J.and Baird,L.C.I.(1993). Tight Wos,L.,Carson,D.,and Robinson,G.(1965).Effi-
+ityrepresentationfordecision-theoreticplanning.In performanceboundsongreedypoliciesbasedonim- ciencyandcompletenessoftheset-of-supportstrat-
+ICAPS-92,pp.236 242. perfectvaluefunctions. Tech.rep.NU-CCS-93-14, egyintheoremproving.JACM,12,536 541.
+Collegeof Computer Science,Northeastern Univer-
+Wellman, M. P., Wurman, P., O Malley, K., sity. Wos, L., Overbeek, R., Lusk, E., and Boyle, J.
+Bangera, R., Lin, S., Reeves, D., and Walsh, W. (1992).Automated Reasoning:Introductionand Ap-
+(2001). Atradingagentcompetition. IEEE Inter- Wilson, R. A. and Keil, F. C. (Eds.). (1999). plications(secondedition).Mc Graw-Hill.
+net Computing. The MIT Encyclopediaofthe Cognitive Sciences. Wos,L.and Robinson,G.(1968). Paramodulation
+MIT Press.
+Wells,H.G.(1898).The Warofthe Worlds.William andsetofsupport.In Proc.IRIA Symposiumon Au-
+Heinemann. Wilson,R.(2004). Four Colors Suffice. Princeton tomatic Demonstration,pp.276 310.
+University Press.
+Werbos,P.(1974). Beyond Regression:New Tools Wos,L.,Robinson,G.,Carson,D.,and Shalla,L.
+for Predictionand Analysisinthe Behavioral Sci- Winograd, S.and Cowan,J.D.(1963). Reliable (1967). Theconceptofdemodulationintheorem
+ences.Ph.D.thesis,Harvard University. Computationinthe Presenceof Noise.MIT Press. proving.JACM,14,698 704.
+Winograd, T.(1972). Understandingnaturallan- Wos, L.and Winker, S. (1983). Openquestions
+Werbos,P.(1977). Advancedforecastingmethods guage.Cogn

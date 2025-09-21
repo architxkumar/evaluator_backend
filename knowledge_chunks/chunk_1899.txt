@@ -1,0 +1,33 @@
+sile. If the knowledge base contains manyobjects
+ownedby Nonoandveryfewmissiles,however,itwouldbebettertofindallthemissilesfirst
+CONJUNCT and then check whether they are owned by Nono. This is the conjunct ordering problem:
+ORDERING
+findanorderingtosolvetheconjuncts oftherulepremisesothatthetotalcostisminimized.
+It turns out that finding the optimal ordering is NP-hard, but good heuristics are available.
+Forexample, the minimum-remaining-values (MRV)heuristic used for CS Psin Chapter6
+would suggest ordering the conjuncts to look formissiles first if fewer missiles than objects
+areownedby Nono.
+334 Chapter 9. Inference in First-Order Logic
+NT Diff(wa,nt) Diff(wa,sa) Q
+Diff(nt,q) Diff(nt,sa) WA
+Diff(q,nsw) Diff(q,sa) Diff(nsw,v) Diff(nsw,sa) SA NSW
+Diff(v,sa) Colorable()
+V Diff(Red,Blue) Diff(Red,Green)
+Diff(Green,Red)Diff(Green,Blue)
+Diff(Blue,Red) Diff(Blue,Green)
+T
+(a) (b)
+Figure9.5 (a)Constraintgraphforcoloringthemapof Australia. (b)Themap-coloring
+CS Pexpressedasasingledefiniteclause.Eachmapregionisrepresentedasavariablewhose
+valuecanbeoneoftheconstants Red,Green or Blue.
+The connection between pattern matching and constraint satisfaction is actually very
+close. We can view each conjunct as a constraint on the variables that it contains for ex-
+ample, Missile(x) is a unary constraint on x. Extending this idea, we can express every
+finite-domain CSP as a single definite clause together with some associated ground facts.
+Considerthemap-coloringproblemfrom Figure6.1,shownagainin Figure9.5(a). Anequiv-
+alentformulation asasingledefiniteclauseisgivenin Figure9.5(b). Clearly, theconclusion
+Colorable()canbeinferred onlyifthe CS Phasasolution. Because CS Psingeneralinclude
+3-SAT problems as special cases, wecan conclude that matching a definite clause against a
+setoffactsis NP-hard.
+Itmightseemratherdepressingthatforwardchaininghasan NP-hardmatchingproblem
+initsinnerloop. Therearethreewaystocheerourselvesup: We can remind ourselves that most rules in real-world knowledge

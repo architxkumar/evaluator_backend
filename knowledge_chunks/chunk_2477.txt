@@ -1,0 +1,29 @@
+s are
+drawn from the same true function f, and those hypotheses will make different predictions
+on new examples. Thehigher the variance among the predictions, the higher the probability
+ofsignificant error. Notethat evenwhentheproblem isrealizable, therewillstill berandom
+variance, but that variance decreases towards zero as the number of training examples in-
+creases. Third, f may benondeterministic or noisy it mayreturn different values for f(x)
+NOISE
+eachtimexoccurs. Bydefinition, noisecannotbepredicted; inmanycases,itarisesbecause
+theobservedlabelsyaretheresultofattributesoftheenvironmentnotlistedinx. Andfinally,
+when Hiscomplex, itcanbecomputationally intractable tosystematically searchthewhole
+hypothesis space. The best we can do is a local search (hill climbing or greedy search) that
+exploresonlypartofthespace. Thatgivesusanapproximationerror. Combiningthesources
+oferror, we releftwithanestimationofanapproximation ofthetruefunction f.
+Traditional methods in statistics and the early years of machine learning concentrated
+SMALL-SCALE on small-scale learning, where the number of training examples ranged from dozens to the
+LEARNING
+low thousands. Here the generalization error mostly comes from the approximation error of
+nothavingthetruef inthehypothesisspace,andfromestimationerrorofnothavingenough
+training examples to limit variance. In recent years there has been more emphasis on large-
+LARGE-SCALE scale learning, often with millions of examples. Here the generalization error is dominated
+LEARNING
+bylimitsofcomputation: thereisenoughdataandarichenoughmodelthatwecouldfindan
+h that is very close to the true f, but the computation to find it is too complex, so we settle
+forasub-optimal approximation.
+18.4.3 Regularization
+In Section18.4.1,wesawhowtodomodelselectionwithcross-validation onmodelsize. An
+alternativeapproachistosearchforahypothesisthatdirectlyminimizestheweightedsumof
+Section18.5. The Theoryof Learning 713
+empiricallossandthecomplexity ofthehypothesis, 

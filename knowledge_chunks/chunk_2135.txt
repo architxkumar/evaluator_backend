@@ -1,0 +1,34 @@
+llowed,suchas Number Of Atoms In Universe 1070.
+Finally, we can combine these sorts of elementary propositions (including the abbre-
+viated forms for Boolean variables) by using the connectives of propositional logic. For
+example, we can express The probability that the patient has a cavity, given that she is a
+teenagerwithnotoothache, is0.1 asfollows:
+P(cavity toothache teen) 0.1.
+Sometimeswewillwanttotalkabouttheprobabilities ofallthepossible valuesofarandom
+variable. Wecouldwrite:
+P(Weather sunny) 0.6
+P(Weather rain) 0.1
+P(Weather cloudy) 0.29
+P(Weather snow) 0.01,
+butasanabbreviation wewillallow
+P(Weather) (cid:16)0.6,0.1,0.29,0.01(cid:17),
+Section13.2. Basic Probability Notation 487
+wherethebold Pindicatesthattheresultisavectorofnumbers,andwherewe assumeapre-
+defined ordering (cid:16)sunny,rain,cloudy,snow(cid:17) on the domain of Weather. We say that the
+PROBABILITY Pstatementdefinesaprobabilitydistributionfortherandomvariable Weather. The Pnota-
+DISTRIBUTION
+tionisalsousedforconditionaldistributions: P(X Y)givesthevaluesof P(X x Y y )
+i j
+foreachpossible i,j pair.
+Forcontinuousvariables,itisnotpossibletowriteouttheentiredistributionasavector,
+becausethereareinfinitelymanyvalues. Instead,wecandefinetheprobabilitythatarandom
+variabletakesonsomevalue xasaparameterized function of x. Forexample,thesentence
+P(Noon Temp x) Uniform (x) 18C,26C expresses thebelief that the temperature at noon isdistributed uniformly between 18and 26
+PROBABILITY degrees Celsius. Wecallthisaprobabilitydensityfunction.
+DENSITYFUNCTION
+Probability density functions (sometimes called pdfs) differ in meaning from discrete
+distributions. Saying that the probability density is uniform from 18C to 26C means that
+there is a 100 chance that the temperature will fall somewhere in that 8C-wide region
+anda50 chancethatitwillfallinany4C-wideregion,andsoon. Wewritetheprobability
+densityforacontinuousrandomvariable X atvaluexas P(X x)orjust P(x);theintuitive
+definition of P(x)istheprobability that X 

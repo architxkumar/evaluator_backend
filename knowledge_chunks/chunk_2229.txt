@@ -1,0 +1,30 @@
+n for Bias. Ifthecoincamefrom abank, then
+seeing itcomeupheads threetimesrunning wouldhavealmost noeffectonourstrong prior
+belief in its fairness; but if the coin comes from the magician s pocket, the same evidence
+willleadtoastrongerposterior beliefthatthecoinisbiased towardheads. Thus,a Bayesian
+approach expresses our ignorance in termsofhow ourbeliefs would change in theface of
+futureinformation gathering.
+14.7.3 Representing vagueness: Fuzzy sets andfuzzy logic
+Fuzzy set theory is a means of specifying how well an object satisfies a vague description.
+FUZZYSETTHEORY
+(cid:2) (cid:2)(cid:2)
+For example, consider the proposition Nate is tall. Is this true if Nate is 5 10 ? Most
+people would hesitate to answer true or false, preferring to say, sort of. Note that this
+isnot a question of uncertainty about theexternal world we aresure of Nate s height. The
+issueisthatthelinguisticterm tall doesnotrefertoasharpdemarcationofobjectsintotwo
+classes there are degrees of tallness. For this reason, fuzzy set theory is not a method for
+uncertain reasoning atall. Rather, fuzzy settheory treats Tall asafuzzy predicate andsays
+that the truth value of Tall(Nate) is a number between 0 and 1, rather than being just true
+or false. The name fuzzy set derives from the interpretation of the predicate as implicitly
+definingasetofitsmembers asetthatdoesnothavesharpboundaries.
+Fuzzylogicisamethodforreasoning withlogicalexpressions describing membership
+FUZZYLOGIC
+in fuzzy sets. For example, the complex sentence Tall(Nate) Heavy(Nate) has a fuzzy
+truth value that is a function of the truth values of its components. The standard rules for
+evaluating thefuzzytruth, T,ofacomplexsentenceare
+T(A B) min(T(A),T(B))
+T(A B) max(T(A),T(B))
+T( A) 1 T(A).
+Fuzzy logic is therefore a truth-functional system a fact that causes serious difficulties.
+Forexample, suppose that T(Tall(Nate)) 0.6and T(Heavy(Nate)) 0.4. Thenwehave
+T(Tall(Nate) Heavy(Nate)) 0.4, which seems reasonable, but we also get the result

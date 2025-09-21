@@ -1,0 +1,42 @@
+ N( , ),filteringwithalinear Gaussianmodel
+1:0 0 0 0
+produces a Gaussianstatedistribution foralltime.
+This seems to be a nice, elegant result, but why is it so important? The reason is that,
+except for a few special cases such as this, filtering with continuous or hybrid (discrete and
+continuous)networksgeneratesstatedistributionswhoserepresentationgrowswithoutbound
+over time. This statement is not easy to prove in general, but Exercise 15.10 shows what
+happens forasimpleexample.
+15.4.2 A simpleone-dimensional example
+We have said that the FORWARD operator for the Kalman filtermaps a Gaussian into a new
+Gaussian. Thistranslates into computing anew meanand covariance matrixfrom theprevi-
+ous mean and covariance matrix. Deriving the update rule in the general (multivariate) case
+requiresratheralotoflinearalgebra,sowewillsticktoaverysimpleunivariatecasefornow;
+and later give the results for the general case. Even for the univariate case, the calculations
+are somewhat tedious, but we feel that they are worth seeing because the usefulness of the
+Kalmanfilteristiedsointimatelytothemathematicalproperties of Gaussiandistributions.
+Thetemporalmodelweconsiderdescribesarandomwalkofasinglecontinuousstate
+variable X withanoisyobservation Z . Anexamplemightbethe consumerconfidence in-
+t t
+dex,whichcanbemodeledasundergoing arandom Gaussian-distributed changeeachmonth
+andismeasuredbyarandomconsumersurveythatalsointroduces Gaussiansamplingnoise.
+586 Chapter 15. Probabilistic Reasoning over Time
+Thepriordistribution isassumedtobe Gaussianwithvariance 2:
+0 1
+(x0 0)2
+P(x
+0
+) e 2 0 2 .
+(Forsimplicity, weusethesamesymbol forallnormalizing constants inthissection.) The
+transition modeladdsa Gaussianperturbation ofconstant variance 2 tothecurrentstate:
+x 1
+(xt 1 xt)2
+P(x x ) e 2 x 2 .
+t 1 t
+Thesensormodelassumes Gaussiannoisewithvariance 2:
+z 1
+(zt xt)2
+P(z x ) e 2 z 2 .
+t t
+Now,giventheprior P(X ),theone-steppredicteddistributioncomesfrom Equation(15.17):
+0
+(cid:26) (cid:26) 1 (x1 x0)2 1 

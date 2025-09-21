@@ -1,0 +1,25 @@
+m,J.H.(1983). CONVINCE:AConversational Knuth, D. E.and Bendix, P. B.(1970). Simple
+52.
+Inference Consolidation Engine. Ph.D.thesis,De- wordproblemsinuniversalalgebras. In Leech,J.
+partmentof Computer Science,Universityof Cali- (Ed.),Computational Problemsin Abstract Algebra, Konolige,K.(2004). Large-scalemap-making. In
+forniaat Los Angeles. pp.263 267.Pergamon. AAAI-04,pp.457 463.
+Bibliography 1079
+Konolige, K.(1982). A first orderformalization Koza,J.R.(1994). Genetic Programming II:Auto- Kyburg,H.E.and Teng,C.-M.(2006). Nonmono-
+ofknowledgeandactionforamulti-agentplanning maticdiscoveryofreusableprograms.MIT Press. toniclogicandstatisticalinference. Computational
+system. In Hayes,J.E.,Michie,D.,and Pao,Y.-H. Intelligence,22(1),26 51.
+Koza,J.R.,Bennett,F.H.,Andre,D.,and Keane,
+(Eds.),Machine Intelligence10.Ellis Horwood.
+M.A.(1999).Genetic Programming III:Darwinian Kyburg,H.E.(1977). Randomnessandtheright
+Konolige,K.(1994).Easytobehard:Difficultprob- inventionandproblemsolving.Morgan Kaufmann. referenceclass.J.Philosophy,74(9),501 521.
+lemsforgreedyalgorithms.In KR-94,pp.374 378.
+Kraus, S., Ephrati, E., and Lehmann, D.(1991). Kyburg,H.E.(1983). Thereferenceclass. Philos-
+Koo,T.,Carreras,X.,and Collins,M.(2008). Sim- Negotiationinanon-cooperativeenvironment. AIJ, ophyof Science,50,374 397.
+plesemi-superviseddependencyparsing.In ACL-08. 3(4),255 281.
+La Mettrie, J. O. (1748). L homme machine.
+Koopmans,T.C.(1972). Representationofpref- Krause,A.and Guestrin,C.(2009). Optimalvalue E.Luzac,Leyde,France.
+erence orderings over time. In Mc Guire, C. B. ofinformationingraphicalmodels. JAIR,35,557 La Mura,P.and Shoham,Y.(1999).Expectedutil-
+and Radner,R.(Eds.),Decisionand Organization. 591. itynetworks.In UAI-99,pp.366 373.
+Elsevier North-Holland.
+Krause,A.,Mc Mahan,B.,Guestrin,C.,and Gupta, Laborie,P.(2003). Algorithmsforpropagatingre-
+Korb,K.B.and Nicholson,A.(2003). Bayesian A.(2008).Robustsubmodularobservationselection. sourceconstraints in AIplanning andscheduling.
+Arti

@@ -1,0 +1,29 @@
+) ,a (cid:2) ) Q (s,a) (21.13)
+i i a(cid:3) i
+for Q-values. Forpassive TDlearning,theupdaterulecanbeshowntoconvergetotheclosest
+possible4 approximation tothetruefunction whenthefunction approximator is linear inthe
+parameters. With active learning and nonlinear functions such as neural networks, all bets
+are off: There are some very simple cases in which the parameters can go off to infinity
+even though there are good solutions in the hypothesis space. There are more sophisticated
+algorithms thatcan avoid these problems, but atpresent reinforcement learning withgeneral
+function approximators remainsadelicate art.
+Function approximation can also be very helpful for learning a model of the environ-
+ment. Rememberthatlearning amodelforan observable environment isasupervised learn-
+ingproblem,becausethenextperceptgivestheoutcomestate. Anyofthesupervisedlearning
+methodsin Chapter18canbeused,withsuitableadjustmentsforthefactthatweneedtopre-
+dictacompletestatedescriptionratherthanjusta Booleanclassificationorasinglerealvalue.
+For a partially observable environment, the learning problem is much more difficult. If we
+knowwhatthehiddenvariablesareandhowtheyarecausallyrelatedtoeachotherandtothe
+4 Thedefinitionofdistancebetweenutilityfunctionsisrathertechnical;see Tsitsiklisand Van Roy(1997).
+848 Chapter 21. Reinforcement Learning
+observablevariables,thenwecanfixthestructureofadynamic Bayesiannetworkandusethe
+EMalgorithm tolearn the parameters, as wasdescribed in Chapter20. Inventing thehidden
+variables and learning the model structure are still open problems. Somepractical examples
+aredescribed in Section21.6.
+21.5 POLICY SEARCH
+The final approach we will consider for reinforcement learning problems is called policy
+search. In some ways, policy search is the simplest of all the methods in this chapter: the
+POLICYSEARCH
+ideaistokeeptwiddling thepolicyaslongasitsperformance improves,thenstop.
+Letus begin withthe policies themselves. Rememberthat apolicy isafunction that
+mapsstat

@@ -1,0 +1,36 @@
+hreturnsalistofactions allowedinstate s; The step-cost function c(s,a,s (cid:2) ) note that this cannot be used until the agent knows
+(cid:2)
+thats istheoutcome; and GOAL-TEST(s).
+Note in particular that the agent cannot determine RESULT(s,a) except by actually being
+in s and doing a. For example, in the maze problem shown in Figure 4.19, the agent does
+not know that going Up from (1,1) leads to (1,2); nor, having done that, does it know that
+going Down will take it back to (1,1). This degree of ignorance can be reduced in some
+applications for example,arobotexplorermightknowhowitsmovementactionsworkand
+beignorantonlyofthelocations ofobstacles.
+13 Theterm online iscommonlyusedincomputersciencetorefertoalgorithmsthatmustprocessinputdata
+astheyarereceivedratherthanwaitingfortheentireinputdatasettobecomeavailable.
+148 Chapter 4. Beyond Classical Search
+3 G
+2
+1 S
+1 2 3
+Figure4.19 Asimplemazeproblem. Theagentstartsat S andmustreach Gbutknows
+nothingoftheenvironment.
+G
+S A
+S G
+S A
+G
+(a) (b)
+Figure4.20 (a)Twostatespacesthatmightleadanonlinesearchagentintoadeadend.
+Anygivenagentwillfailinatleastoneofthesespaces. (b)Atwo-dimensionalenvironment
+that can cause an online search agent to follow an arbitrarily inefficient route to the goal.
+Whicheverchoice the agentmakes, the adversaryblocksthat route with anotherlong, thin
+wall,sothatthepathfollowedismuchlongerthanthebestpossiblepath.
+Finally, the agent might have access to an admissible heuristic function h(s) that es-
+timates the distance from the current state to a goal state. For example, in Figure 4.19, the
+agentmightknowthelocationofthegoalandbeabletousethe Manhattan-distanceheuristic.
+Typically,theagent sobjectiveistoreachagoalstatewhileminimizingcost. (Another
+possibleobjectiveissimplytoexploretheentireenvironment.) Thecostisthetotalpathcost
+of the path that the agent actually travels. It is common to compare this cost with the path
+cost of the path the agent would follow if it knew the search space in advance that is, t

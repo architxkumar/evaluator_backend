@@ -1,0 +1,30 @@
+ck and on a rod that runs along the x-axis
+from x 10 to x 10. Manipulator B is a square block of side 2 which can slide back and
+on a rod that runs along the y-axis from y 10 to y 10. The rods lie outside the plane of
+1016 Chapter 25. Robotics
+manipulation, sothe rodsdo notinterfere withthe movement oftheblocks. Aconfiguration
+isthenapair(cid:16)x,y(cid:17)wherexisthex-coordinateofthecenterofmanipulator Aandwhere yis
+they-coordinate ofthecenterofmanipulator B.Drawtheconfiguration space forthisrobot,
+indicating thepermittedandexcluded zones.
+25.4 Suppose that you are working with the robot in Exercise 25.3 and you are given the
+problem of finding a path from the starting configuration of figure 25.31 to the ending con-
+figuration. Considerapotentialfunction
+1
+D(A,Goal)2 D(B,Goal)2 D(A,B)2
+where D(A,B)isthedistance betweentheclosest pointsof Aand B.
+a. Showthathillclimbinginthispotential fieldwillgetstuckinalocalminimum.
+b. Describe a potential field where hill climbing will solve this particular problem. You
+neednotworkouttheexact numerical coefficients needed, justthegeneral formofthe
+solution. (Hint: Add a term that rewards the hill climber for moving A out of B s
+way,eveninacaselikethiswherethisdoesnotreducethedistance from Ato Binthe
+abovesense.)
+25.5 Consider the robot arm shown in Figure 25.14. Assume that the robot s base element
+is60cmlongandthatitsupperarmandforearmareeach40cmlong. Asarguedonpage987,
+theinversekinematicsofarobotisoftennotunique. Stateanexplicitclosed-formsolutionof
+theinversekinematicsforthisarm. Underwhatexactconditionsisthesolutionunique?
+25.6 Implement an algorithm for calculating the Voronoi diagram of an arbitrary 2D en-
+vironment, described by an n n Boolean array. Illustrate your algorithm by plotting the
+Voronoidiagram for10interesting maps. Whatisthecomplexity ofyouralgorithm?
+25.7 This exercise explores the relationship between workspace and configuration space
+usingtheexamplesshownin Figure25.32.
+a. Consider the robot configuratio

@@ -1,0 +1,32 @@
+een,Q blue as a no-good because we are going to run into the
+sameproblemagainforeachpossible setofassignments to V and T.
+No-goods can be effectively used by forward checking orby backjumping. Constraint
+learning is one of the most important techniques used by modern CSP solvers to achieve
+efficiencyoncomplexproblems.
+6.4 LOCAL SEARCH FOR CSPS
+Localsearchalgorithms(see Section4.1)turnouttobeeffectiveinsolvingmany CS Ps. They
+use a complete-state formulation: the initial state assigns a value to every variable, and the
+searchchangesthevalueofonevariableatatime. Forexample,inthe8-queensproblem(see
+Figure 4.3), the initial state might be a random configuration of 8 queens in 8 columns, and
+each step moves a single queen to a new position in its column. Typically, the initial guess
+violatesseveralconstraints. Thepointoflocalsearchistoeliminatetheviolatedconstraints.2
+Inchoosing anewvalueforavariable, themostobvious heuristic istoselect thevalue
+that results in the minimum number of conflicts with other variables the min-conflicts
+MIN-CONFLICTS
+2 Localsearchcaneasilybeextendedtoconstraintoptimizationproblems(CO Ps).Inthatcase,allthetechniques
+forhillclimbingandsimulatedannealingcanbeappliedtooptimizetheobjectivefunction.
+Section6.4. Local Searchfor CS Ps 221
+function MIN-CONFLICTS(csp,max steps)returnsasolutionorfailure
+inputs:csp,aconstraintsatisfactionproblem
+max steps,thenumberofstepsallowedbeforegivingup
+current aninitialcompleteassignmentforcsp
+fori 1tomax steps do
+ifcurrent isasolutionforcsp thenreturncurrent
+var arandomlychosenconflictedvariablefromcsp.VARIABLES
+value thevaluev forvar thatminimizes CONFLICTS(var,v,current,csp)
+setvar value incurrent
+returnfailure
+Figure6.8 The MIN-CONFLICT Salgorithmforsolving CS Psbylocalsearch. Theinitial
+state may be chosen randomlyor by a greedy assignmentprocess that choosesa minimal-
+conflict value for each variable in turn. The CONFLICTS function counts the number of
+constraintsviolatedbyaparticularvalue,giventherestofthecu

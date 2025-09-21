@@ -1,0 +1,63 @@
+ausethe max operator is not a linear operator. Whereas systems of linear equations can be solved
+quicklyusinglinearalgebratechniques,systemsofnonlinearequationsaremoreproblematic.
+Onethingtotryisaniterativeapproach. Westartwitharbitraryinitialvaluesfortheutilities,
+calculate the right-hand side of the equation, and plug it into the left-hand side thereby
+updating the utility of each state from the utilities of its neighbors. We repeat this until we
+reachanequilibrium. Let U (s)betheutilityvalueforstatesattheithiteration. Theiteration
+i
+step,calleda Bellmanupdate,lookslikethis:
+BELLMANUPDATE
+(cid:12)
+U (s) R(s) max P(s (cid:2) s,a)U (s (cid:2) ), (17.6)
+i 1 i
+a A(s)
+s(cid:3)
+Section17.2. Value Iteration 653
+function VALUE-ITERATION(mdp,(cid:2))returnsautilityfunction
+inputs:mdp,an MD Pwithstates S,actions A(s),transitionmodel P(s(cid:5) s,a),
+rewards R(s),discount (cid:2),themaximumerrorallowedintheutilityofanystate
+localvariables: U,U(cid:5),vectorsofutilitiesforstatesin S,initiallyzero ,themaximumchangeintheutilityofanystateinaniteration
+repeat
+U U(cid:5); 0
+foreachstates in S do (cid:12)
+U(cid:5) s R(s) max P(s(cid:5) s,a)U s(cid:5) a A(s)
+s(cid:3)
+if U(cid:5) s U s then U(cid:5) s U s until (cid:2)(1 ) return U
+Figure17.4 Thevalueiterationalgorithmforcalculatingutilitiesof states. Thetermina-
+tionconditionisfrom Equation(17.8).
+1
+0.8
+0.6
+0.4
+0.2
+0
+-0.2
+0 5 10 15 20 25 30
+setamitse
+ytilit U
+1e 07
+(4,3)
+(3,3) 1e 06
+(1,1) 100000
+(3,1)
+10000
+(4,1)
+1000
+100
+10
+1
+0.50.550.60.650.70.750.80.850.90.95 1
+Number of iterations
+deriuqer
+snoitaret I
+c 0.0001
+c 0.001
+c 0.01
+c 0.1
+Discount factor (a) (b)
+Figure17.5 (a)Graphshowingtheevolutionoftheutilitiesofselectedstatesusingvalue
+iteration. (b) The number of value iterations k required to guarantee an error of at most
+(cid:2) c R ,fordifferentvaluesofc,asafunctionofthediscountfactor .
+max
+where the update is assumed to be applied simultaneously to all the states at each iteration.
+If we apply the Bellman update infinitely ofte

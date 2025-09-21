@@ -1,0 +1,42 @@
+em, it is
+ofteneasiertosolveaproblemusingitthantodesignacustomsolutionusinganothersearch
+technique. Inaddition, CS Psolverscanbefasterthanstate-space searchers because the CSP
+solver canquickly eliminate large swatches ofthe search space. Forexample, once wehave
+chosen SA blue inthe Australiaproblem,wecanconcludethatnoneofthefiveneighbor-
+ingvariablescantakeonthevalueblue. Withouttakingadvantageofconstraintpropagation,
+a search procedure would have to consider 35 243 assignments for the five neighboring
+variables; withconstraint propagation weneverhavetoconsider blue asavalue, sowehave
+only25 32assignments tolookat,areduction of87 .
+In regular state-space search we can only ask: is this specific state a goal? No? What
+aboutthisone? With CS Ps,oncewefindoutthatapartialassignmentisnotasolution,wecan
+204 Chapter 6. Constraint Satisfaction Problems
+NT
+Q
+WA
+Northern
+Territory
+Queensland
+Western SA NSW
+Australia
+South
+Australia New
+South V
+Wales
+Victoria
+T
+Tasmania
+(a) (b)
+Figure 6.1 (a) The principal states and territories of Australia. Coloring this map can
+be viewed as a constraint satisfaction problem (CSP). The goal is to assign colors to each
+regionso that no neighboringregionshave the same color. (b) The map-coloringproblem
+representedasaconstraintgraph.
+immediately discard further refinements of the partial assignment. Furthermore, we can see
+whytheassignmentisnotasolution weseewhichvariablesviolateaconstraint sowecan
+focus attention on the variables that matter. As a result, many problems that are intractable
+forregularstate-space searchcanbesolvedquickly whenformulated asa CSP.
+6.1.2 Exampleproblem: Job-shopscheduling
+Factorieshavetheproblemofschedulingaday sworthofjobs,subjecttovariousconstraints.
+Inpractice,manyoftheseproblemsaresolvedwith CS Ptechniques. Considertheproblemof
+schedulingtheassemblyofacar. Thewholejobiscomposedoftasks,andwecanmodeleach
+task as avariable, where the value of each variable isthe time that the task starts, expressed
+as an integer nu

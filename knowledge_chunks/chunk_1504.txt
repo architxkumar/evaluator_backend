@@ -1,0 +1,29 @@
+gentisrational.
+g. Itispossibleforagivenagenttobeperfectlyrationalintwodistincttaskenvironments.
+h. Everyagentisrationalinanunobservable environment.
+i. Aperfectly rationalpoker-playing agentneverloses.
+2.4 For each of the following activities, give a PEAS description of the task environment
+andcharacterize itintermsoftheproperties listedin Section2.3.2. Playingsoccer. Exploringthesubsurface oceansof Titan. Shoppingforused AIbooksonthe Internet. Playingatennismatch. Practicingtennisagainstawall. Performingahighjump. Knittingasweater. Biddingonanitematanauction.
+2.5 Define in your own words the following terms: agent, agent function, agent program,
+rationality, autonomy,reflexagent,model-based agent,goal-based agent,utility-based agent,
+learning agent.
+2.6 Thisexerciseexploresthedifferences betweenagentfunctions andagentprograms.
+a. Can there be more than one agent program that implements a given agent function?
+Giveanexample,orshowwhyoneisnotpossible.
+b. Arethereagentfunctions thatcannotbeimplemented byanyagentprogram?
+c. Given a fixed machine architecture, does each agent program implement exactly one
+agentfunction?
+d. Given an architecture with n bits of storage, how many different possible agent pro-
+gramsarethere?
+e. Supposewekeeptheagentprogram fixedbutspeedupthemachinebyafactoroftwo.
+Doesthatchangetheagentfunction?
+2.7 Writepseudocode agentprogramsforthegoal-based andutility-based agents.
+The following exercises all concern the implementation of environments and agents for the
+vacuum-cleaner world.
+Exercises 63
+2.8 Implement a performance-measuring environment simulator for the vacuum-cleaner
+worlddepictedin Figure2.2andspecifiedonpage38. Yourimplementationshouldbemodu-
+larsothatthesensors,actuators,andenvironmentcharacteristics(size,shape,dirtplacement,
+etc.) canbechangedeasily. (Note: forsomechoicesofprogramminglanguageandoperating
+systemtherearealready implementations intheonlinecode repository.)
+2.9 Implement a simple reflex agent for the vacuum environmen

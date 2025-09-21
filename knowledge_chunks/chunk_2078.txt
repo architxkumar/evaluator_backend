@@ -1,0 +1,31 @@
+on12.4. Mental Eventsand Mental Objects 451
+REFERENTIAL that 2 2 5. This property is called referential transparency it doesn t matter what
+TRANSPARENCY
+termalogicusestorefertoanobject,whatmattersistheobjectthatthetermnames. Butfor
+propositionalattitudeslikebelievesandknows,wewouldliketohavereferentialopacity the
+termsuseddomatter,becausenotallagentsknowwhichtermsareco-referential.
+Modallogicisdesignedtoaddressthisproblem. Regularlogicisconcernedwithasin-
+MODALLOGIC
+gle modality, the modality of truth, allowing us to express P is true. Modal logic includes
+special modal operators that take sentences (rather than terms) as arguments. For example, Aknows P isrepresentedwiththenotation K P,where Kisthemodaloperatorforknowl-
+A
+edge. Ittakes twoarguments, anagent (written asthe subscript) and asentence. The syntax
+ofmodallogicisthesameasfirst-orderlogic, except thatsentences canalsobeformedwith
+modaloperators.
+The semantics of modal logic is more complicated. In first-order logic a model con-
+tains a set of objects and an interpretation that maps each name to the appropriate object,
+relation, orfunction. In modal logic wewant to be able to consider both the possibility that
+Superman s secret identity is Clark and that it isn t. Therefore, we will need a more com-
+plicated model, one that consists of a collection of possible worlds rather than just one true
+POSSIBLEWORLD
+ACCESSIBILITY world. Theworlds areconnected inagraph by accessibility relations, one relation foreach
+RELATIONS
+modaloperator. Wesaythatworld w isaccessible fromworld w withrespect tothemodal
+1 0
+operator K if everything in w is consistent with what A knows in w , and we write this
+A 1 0
+as Acc(K ,w ,w ). Indiagrams such as Figure 12.4 weshow accessibility asan arrow be-
+A 0 1
+tweenpossibleworlds. Asanexample,intherealworld,Bucharestisthecapitalof Romania,
+but for an agent that did not know that, other possible worlds are accessible, including ones
+wherethecapital of Romaniais Sibiuor Sofia. Presumably aw

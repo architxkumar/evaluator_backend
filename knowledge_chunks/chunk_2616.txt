@@ -1,0 +1,34 @@
+Various tricks are used to avoid this
+problem,suchasinitializing thecountsforeacheventto1insteadof0.
+Letus look atanother example. Suppose this new candy manufacturer wants togive a
+littlehinttotheconsumerandusescandywrapperscoloredredandgreen. The Wrapper for
+eachcandyisselectedprobabilistically, accordingtosomeunknownconditionaldistribution,
+depending on the flavor. The corresponding probability model is shown in Figure 20.2(b).
+Notice that it has three parameters: , , and . With these parameters, the likelihood of
+1 2
+seeing, say, a cherry candy in a green wrapper can be obtained from the standard semantics
+for Bayesiannetworks(page513):
+P(Flavor cherry,Wrapper green h ) , 1, 2 P(Flavor cherry h )P(Wrapper green Flavor cherry,h ) , 1, 2 , 1, 2 (1 ).
+1
+Nowweunwrap N candies, ofwhichcarecherries and (cid:3)arelimes. Thewrappercounts are
+asfollows: r ofthecherrieshaveredwrappersand g havegreen,whiler ofthelimeshave
+c c (cid:3)
+redandg havegreen. Thelikelihood ofthedataisgivenby
+(cid:3)
+P(d h ) c(1 )(cid:3) rc(1 )gc r(cid:3)(1 )g(cid:3) . , 1, 2 1 1 2 2
+808 Chapter 20. Learning Probabilistic Models
+Thislooksprettyhorrible, buttakinglogarithmshelps:
+L clog (cid:3)log(1 ) rclog 1 gclog(1 1
+) r(cid:3)log 2 g(cid:3)log(1 2
+) .
+Thebenefitoftakinglogsisclear: theloglikelihoodisthesumofthreeterms,eachofwhich
+containsasingleparameter. Whenwetakederivativeswithrespecttoeachparameterandset
+themtozero,wegetthreeindependent equations, eachcontaining justoneparameter: L c (cid:3) 0 c 1 c (cid:3) L rc gc 0 rc 1 1 1 1 1 rc gc L r(cid:3) g(cid:3) 0 r(cid:3) . 2 2 1 2 2 r(cid:3) g(cid:3)
+The solution for is the same as before. The solution for , the probability that a cherry
+1
+candy has a red wrapper, is the observed fraction of cherry candies with red wrappers, and
+similarlyfor .
+2
+Theseresultsareverycomforting, anditiseasytoseethattheycanbeextended toany
+Bayesiannetworkwhoseconditionalprobabilitiesarerepresentedastables. Themostimpor-
+tant point is that, with complete data, the max

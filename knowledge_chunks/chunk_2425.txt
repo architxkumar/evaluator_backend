@@ -1,0 +1,31 @@
+rack. Forcollections
+ofagents,mechanismdesignallowsustoconstructsmartsystemsoutofacollectionofmore
+limitedsystems evenuncooperative systems inmuchthesamewaythatteamsofhumans
+canachievegoalsbeyondthereachofanyindividual.
+Examples of mechanism design include auctioning off cheap airline tickets, routing
+TC Ppacketsbetweencomputers, decidinghowmedicalinternswillbeassignedtohospitals,
+and deciding how robotic soccer players will cooperate with their teammates. Mechanism
+design becamemorethananacademic subject inthe1990swhen severalnations, facedwith
+theproblemofauctioning offlicensestobroadcastinvariousfrequencybands,losthundreds
+of millions of dollars in potential revenue as a result of poor mechanism design. Formally,
+a mechanism consists of (1) a language for describing the set of allowable strategies that
+MECHANISM
+agentsmayadopt,(2)adistinguishedagent,calledthecenter,thatcollectsreportsofstrategy
+CENTER
+choices from the agents in the game, and (3) an outcome rule, known to all agents, that the
+centerusestodeterminethepayoffstoeachagent, giventheirstrategychoices.
+17.6.1 Auctions
+Let sconsider auctionsfirst. Anauction isamechanism forselling somegoods tomembers
+AUCTION
+of a pool of bidders. For simplicity, we concentrate on auctions with a single item for sale.
+Each bidder i has a utility value v for having the item. In some cases, each bidder has a
+i
+private value for the item. For example, the first item sold on e Bay was a broken laser
+pointer, whichsoldfor 14.83toacollectorofbrokenlaser pointers. Thus,weknowthatthe
+collector has v 14.83, but most other people would have v 14.83. In other cases,
+i j
+such as auctioning drilling rights for an oil tract, the item has a common value the tract
+willproduce someamount ofmoney, X, and all bidders value adollarequally but there is
+uncertainty astowhattheactual valueof X is. Different bidders havedifferent information,
+andhencedifferentestimatesoftheitem struevalue. Ineithercase,biddersendupwiththeir
+own v . Given v , each

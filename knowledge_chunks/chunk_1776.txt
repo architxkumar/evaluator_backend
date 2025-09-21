@@ -1,0 +1,38 @@
+. . . . . . . . . . . . .
+. . . . . . . . . . . . .
+false true false false false false false true true false true true false
+false true false false false false true true true true true true true
+false true false false false true false true true true true true true
+false true false false false true true true true true true true true
+false true false false true false false true false false true true false
+. . . . . . . . . . . . .
+. . . . . . . . . . . . .
+. . . . . . . . . . . . .
+true true true true true true true false true true false true false
+Figure7.9 Atruthtableconstructedfortheknowledgebasegiveninthetext. KBistrue
+if R through R aretrue,whichoccursinjust3ofthe128rows(theonesunderlinedinthe
+1 5
+right-handcolumn).Inall3rows,P 1,2 isfalse,sothereisnopitin 1,2 .Ontheotherhand,
+theremight(ormightnot)beapitin 2,2 .
+function TT-ENTAILS?(KB, )returnstrue orfalse
+inputs:KB,theknowledgebase,asentenceinpropositionallogic ,thequery,asentenceinpropositionallogic
+symbols alistofthepropositionsymbolsin KB and return TT-CHECK-ALL(KB, ,symbols, )
+function TT-CHECK-ALL(KB, ,symbols,model)returnstrue orfalse
+if EMPTY?(symbols)then
+if PL-TRUE?(KB,model)thenreturn PL-TRUE?( ,model)
+elsereturntrue when KBisfalse,alwaysreturntrue
+elsedo
+P FIRST(symbols)
+rest REST(symbols)
+return(TT-CHECK-ALL(KB, ,rest,model P true )
+and
+TT-CHECK-ALL(KB, ,rest,model P false ))
+Figure 7.10 A truth-table enumeration algorithm for deciding propositionalentailment.
+(TTstandsfortruthtable.) PL-TRUE? returnstrueifasentenceholdswithinamodel. The
+variablemodelrepresentsapartialmodel anassignmenttosomeofthesymbols. Thekey-
+word and isusedhereasalogicaloperationonitstwoarguments,returningtrue orfalse.
+Section7.5. Propositional Theorem Proving 249
+( ) ( ) commutativity of ( ) ( ) commutativity of (( ) ) ( ( )) associativity of (( ) ) ( ( )) associativity of ( ) double-negation elimination
+( ) ( ) contraposition
+( ) ( ) implication elimination
+( ) (( ) ( )) biconditional elimination ( ) ( ) De Morgan ( ) ( ) De

@@ -1,0 +1,32 @@
+ 5.
+b. Howmanysolutions arethereforthisgeneral SA Tproblem as afunction ofn?
+c. Supposeweapply BACKTRACKING-SEARCH (page215)tofindallsolutions toa SAT
+CSP of the type given in (a). (To find all solutions to a CSP, we simply modify the
+basic algorithm so it continues searching after each solution is found.) Assume that
+variables are ordered X ,...,X and false is ordered before true. How much time
+1 n
+willthealgorithm taketoterminate? (Writean O( )expression asafunction ofn.)
+d. We know that SAT problems in Horn form can be solved in linear time by forward
+chaining (unit propagation). We also know that every tree-structured binary CSP with
+discrete, finite domains can be solved in time linear in the number of variables (Sec-
+tion6.5). Arethesetwofactsconnected? Discuss.
+7.16 Explain why every nonempty propositional clause, by itself, is satisfiable. Prove rig-
+orouslythateverysetoffive3-SA Tclausesissatisfiable, provided thateachclausementions
+exactly three distinct variables. Whatisthesmallest setofsuch clauses thatisunsatisfiable?
+Constructsuchaset.
+7.17 Apropositional 2-CN Fexpressionisaconjunction ofclauses,eachcontaining exactly
+2literals, e.g.,
+(A B) ( A C) ( B D) ( C G) ( D G).
+a. Proveusingresolution thattheabovesentenceentails G.
+Exercises 283
+b. Two clauses are semantically distinct if they are not logically equivalent. How many
+semantically distinct2-CN Fclausescanbeconstructed fromnproposition symbols?
+c. Usingyouranswerto(b),provethatpropositional resolution alwaysterminatesintime
+polynomialinngivena2-CN Fsentencecontaining nomorethanndistinctsymbols.
+d. Explainwhyyourargument in(c)doesnotapplyto3-CNF.
+7.18 Considerthefollowingsentence: (Food Party) (Drinks Party) (Food Drinks) Party .
+a. Determine,usingenumeration,whetherthissentenceisvalid,satisfiable(butnotvalid),
+orunsatisfiable.
+b. Convert the left-hand and right-hand sides of the main implication into CNF, showing
+eachstep,andexplainhowtheresultsconfirmyouranswerto(a).
+c. Proveyouranswerto(a)usingre

@@ -1,0 +1,19 @@
+nce.In ICML-04. Segaran,T.and Hammerbacher,J.(Eds.),Beautiful enceon Applied Natural Language Processing,pp.
+Ng,A.Y.,Harada,D.,and Russell,S.J.(1999).Pol- Data.O Reilly. 78 83.
+icyinvarianceunderrewardtransformations:Theory Nowick, S. M., Dean, M. E., Dill, D. L., and Palmer,S.(1999).Vision Science:Photonsto Phe-
+andapplicationtorewardshaping.In ICML-99. Horowitz, M. (1993). The design of a high- nomenology.MIT Press.
+Ng,A.Y.and Jordan,M.I.(2000). PEGASUS:A performancecachecontroller:Acasestudyinasyn- Papadimitriou,C.H.(1994).Computational Com-
+policysearchmethodforlarge MD Psand POMD Ps. chronoussynthesis. Integration:The VLSI Journal, plexity.Addison Wesley.
+In UAI-00,pp.406 415. 15(3),241 262.
+Papadimitriou, C.H., Tamaki, H., Raghavan, P.,
+Ng,A.Y.,Kim,H.J.,Jordan,M.I.,and Sastry,S. Nunberg,G.(1979).Thenon-uniquenessofseman- and Vempala,S.(1998). Latentsemanticindexing:
+(2004). Autonomoushelicopterflightviareinforce- ticsolutions:Polysemy. Languageand Philosophy, Aprobabilisticanalysis.In PODS-98,pp.159 168.
+mentlearning.In NIPS16. 3(2),143 184.
+Papadimitriou,C.H.and Tsitsiklis,J.N.(1987).
+Nguyen,X.and Kambhampati,S.(2001).Reviving Nussbaum,M.C.(1978).Aristotle s De Motu Ani- The complexity of Markov decision processes.
+partialorderplanning.In IJCAI-01,pp.459 466. malium.Princeton University Press. Mathematicsof Operations Research,12(3), 441 Nguyen,X.,Kambhampati,S.,and Nigenda,R.S. Oaksford,M.and Chater,N.(Eds.).(1998). Ra- 450.
+(2001). Planning graph as the basis for deriving tionalmodelsofcognition.Oxford University Press. Papadimitriou,C.H.and Yannakakis,M.(1991).
+heuristicsforplansynthesisbystatespaceand CSP Och,F.J.and Ney,H.(2003).Asystematiccompar- Shortestpathswithoutamap.Theoretical Computer
+search.Tech.rep.,Computer Scienceand Engineer- isonofvariousstatisticalalignmentmodel.Compu- Science,84(1),127 150.
+ing Department,Arizona State University. tational Linguistics,29(1),19 51. Papavassiliou,V.and Russell,S.J.(1999).Conver-
+Nicholson,A.and Brady,J.M.(1

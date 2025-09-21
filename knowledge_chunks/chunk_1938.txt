@@ -1,0 +1,26 @@
+echnology Theorem Prover(PTTP),
+whichcombinestheadvantagesof Prologcompilationwiththecompletenessofmodelelimi-
+nation. SETHEO(Letzetal.,1992)isanotherwidelyusedtheoremproverbasedonthisap-
+proach. LEANTAP (Beckert and Posegga, 1995) isanefficient theorem proverimplemented
+inonly25linesof Prolog. Weidenbach (2001) describes SPASS,oneofthestrongest current
+theoremprovers. Themostsuccessfultheoremproverinrecentannualcompetitionshasbeen
+VAMPIRE (Riazanov and Voronkov, 2002). The COQ system (Bertot et al., 2004) and the E
+360 Chapter 9. Inference in First-Order Logic
+equational solver (Schulz, 2004) have also proven to be valuable tools for proving correct-
+ness. Theorem provers have been used to automatically synthesize and verify software for
+controlling spacecraft (Denney et al., 2006), including NASA s new Orion capsule (Lowry,
+2008). Thedesign ofthe FM9001 32-bit microprocessor wasproved correct bythe NQTHM
+system (Hunt and Brock, 1992). The Conference on Automated Deduction (CADE)runs an
+annualcontestforautomatedtheoremprovers. From2002through2008,themostsuccessful
+system has been VAMPIRE (Riazanov and Voronkov, 2002). Wiedijk (2003) compares the
+strength of 15 mathematical provers. TPTP (Thousands of Problems for Theorem Provers)
+is a library of theorem-proving problems, useful for comparing the performance of systems
+(Sutcliffeand Suttner,1998;Sutcliffe etal.,2006).
+Theorem provers have come up with novel mathematical results that eluded human
+mathematicians for decades, as detailed in the book Automated Reasoning and the Discov-
+ery of Missing Elegant Proofs (Wos and Pieper, 2003). The SAM (Semi-Automated Math-
+ematics) program was the first, proving a lemma in lattice theory (Guard et al., 1969). The
+AURA program has also answered open questions in several areas of mathematics (Wos and
+Winker, 1983). The Boyer Moore theorem prover (Boyer and Moore, 1979) was used by
+Natarajan Shankar to give the first fully rigorous formal proof of Go del s Incompleteness
+Theore

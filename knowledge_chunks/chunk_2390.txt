@@ -1,0 +1,53 @@
+s(under )totheutilitiesofitsneighbors:
+i
+(cid:12)
+U (s) R(s) P(s
+(cid:2) s, (s))U (s
+(cid:2)
+). (17.10)
+i i i
+s(cid:3)
+Forexample,suppose isthepolicyshownin Figure17.2(a). Thenwehave (1,1) Up,
+i i (1,2) Up,andsoon,andthesimplified Bellmanequations are
+i
+U (1,1) 0.04 0.8U (1,2) 0.1U (1,1) 0.1U (2,1),
+i i i i
+U (1,2) 0.04 0.8U (1,3) 0.2U (1,2),
+i i i
+.
+.
+.
+The important point is that these equations are linear, because the max operator has been
+removed. For n states, we have n linear equations with n unknowns, which can be solved
+exactlyintime O(n3)bystandardlinearalgebramethods.
+Forsmallstatespaces,policyevaluationusingexactsolutionmethodsisoftenthemost
+efficient approach. For large state spaces, O(n3) time might be prohibitive. Fortunately, it
+is not necessary to do exact policy evaluation. Instead, we can perform some number of
+simplified value iteration steps (simplified because the policy is fixed) to give a reasonably
+goodapproximation oftheutilities. Thesimplified Bellmanupdateforthisprocessis
+(cid:12)
+U (s) R(s) P(s (cid:2) s, (s))U (s (cid:2) ),
+i 1 i i
+s(cid:3)
+and this is repeated k times to produce the next utility estimate. The resulting algorithm is
+MODIFIEDPOLICY calledmodifiedpolicyiteration. Itisoftenmuchmoreefficientthanstandardpolicyiteration
+ITERATION
+orvalueiteration.
+function POLICY-ITERATION(mdp)returnsapolicy
+inputs:mdp,an MD Pwithstates S,actions A(s),transitionmodel P(s(cid:5) s,a)
+localvariables: U,avectorofutilitiesforstatesin S,initiallyzero ,apolicyvectorindexedbystate,initiallyrandom
+repeat
+U POLICY-EVALUATION( ,U,mdp)
+unchanged? true
+foreachstates(cid:12)in S do (cid:12)
+if max P(s
+(cid:5) s,a)U s (cid:5) P(s
+(cid:5) s, s )U s (cid:5) thendo
+a A(s)
+s(cid:3) (cid:12) s(cid:3) s argmax P(s (cid:5) s,a)U s (cid:5) a A(s)
+s(cid:3)
+unchanged? false
+untilunchanged?
+return Figure17.7 Thepolicyiterationalgorithmforcalculatinganoptimalpolicy.
+658 Chapter 17. Making Complex Decisions
+The algorithms we have described so far require updating the ut

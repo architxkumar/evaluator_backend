@@ -1,0 +1,26 @@
+tsystemresearchconcentrated onansweringquestions, ratherthanonmak-
+ing decisions. Those systems that did recommend actions rather than providing opinions on
+matters of fact generally did so using condition-action rules, rather than with explicit rep-
+resentations of outcomes and preferences. The emergence of Bayesian networks in the late
+1980s made it possible to build large-scale systems that generated sound probabilistic infer-
+ences from evidence. The addition of decision networks means that expert systems can be
+developed that recommend optimal decisions, reflecting the preferences of the agent aswell
+astheavailable evidence.
+A system that incorporates utilities can avoid one of the most common pitfalls associ-
+atedwiththeconsultationprocess: confusinglikelihoodandimportance. Acommonstrategy
+inearlymedicalexpertsystems,forexample,wastorankpossiblediagnosesinorderoflike-
+lihood and report the most likely. Unfortunately, this can be disastrous! Forthe majority of
+patientsingeneralpractice,thetwomostlikelydiagnosesareusually There snothingwrong
+withyou and Youhaveabadcold, butifthethirdmostlikelydiagnosisforagivenpatient
+is lung cancer, that s a serious matter. Obviously, a testing or treatment plan should depend
+both on probabilities and utilities. Current medical expert systems can take into account the
+valueofinformation torecommendtests,andthendescribea differential diagnosis.
+634 Chapter 16. Making Simple Decisions
+Wenowdescribe theknowledge engineering process fordecision-theoretic expert sys-
+tems. Asanexample weconsider theproblem ofselecting amedical treatment forakind of
+congenital heartdiseaseinchildren(see Lucas,1996).
+About0.8 ofchildren are born withaheart anomaly, the most commonbeing aortic
+AORTIC coarctation (aconstriction oftheaorta). Itcanbetreatedwithsurgery, angioplasty (expand-
+COARCTATION
+ingtheaortawithaballoonplacedinsidetheartery),ormedication. Theproblemistodecide
+whattreatmenttouseandwhentodoit: theyoungertheinfant,thegreatertherisksofce

@@ -1,0 +1,37 @@
+iedbythevariablesandtermsinvolved.
+Exercises 361
+9.3 Suppose a knowledge base contains just one sentence, x As High As(x,Everest).
+Whichofthefollowingarelegitimateresultsofapplying Existential Instantiation?
+a. As High As(Everest,Everest).
+b. As High As(Kilimanjaro,Everest).
+c. As High As(Kilimanjaro,Everest) As High As(Ben Nevis,Everest)
+(aftertwoapplications).
+9.4 Foreachpairofatomicsentences, givethemostgeneralunifierifitexists:
+a. P(A,B,B),P(x,y,z).
+b. Q(y,G(A,B)),Q(G(x,x),y).
+c. Older(Father(y),y),Older(Father(x),John).
+d. Knows(Father(y),y),Knows(x,x).
+9.5 Considerthesubsumption latticesshownin Figure9.2(page 329).
+a. Constructthelatticeforthesentence Employs(Mother(John),Father(Richard)).
+b. Construct thelattice forthesentence Employs(IBM,y)( Everyone worksfor IBM ).
+Remembertoincludeeverykindofquerythatunifieswiththesentence.
+c. Assumethat STORE indexeseachsentenceundereverynodeinitssubsumption lattice.
+Explain how FETCH should workwhensomeofthesesentences contain variables; use
+asexamplesthesentences in(a)and(b)andthequery Employs(x,Father(x)).
+9.6 Write down logical representations for the following sentences, suitable for use with
+Generalized Modus Ponens:
+a. Horses,cows,andpigsaremammals.
+b. Anoffspring ofahorseisahorse.
+c. Bluebeardisahorse.
+d. Bluebeardis Charlie sparent.
+e. Offspringandparentareinverserelations.
+f. Everymammalhasaparent.
+9.7 Thesequestions concernconcernissueswithsubstitution and Skolemization.
+a. Giventhe premise x y P(x,y), it is not valid to conclude that q P(q,q). Give
+anexampleofapredicate P wherethefirstistruebutthesecondisfalse.
+b. Suppose that an inference engine is incorrectly written with the occurs check omitted,
+so that it allows a literal like P(x,F(x)) to be unified with P(q,q). (As mentioned,
+most standard implementations of Prolog actually do allow this.) Show that such an
+inference enginewillallowtheconclusion y P(q,q)tobeinferred fromthepremise x y P(x,y).
+362 Chapter 9. Inference in First-Order Logic
+c. Suppose that

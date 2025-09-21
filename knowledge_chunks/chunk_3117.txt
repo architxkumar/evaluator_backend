@@ -1,0 +1,28 @@
+onomic Life.Princeton Univer- ligence.Mind,59,433 460.
+Relationalreinforcementlearning:Anoverview. In sity Press.
+Turing,A.,Strachey,C.,Bates,M.A.,and Bowden,
+ICML-04.
+Thaler,R.and Sunstein,C.(2009).Nudge:Improv- B.V.(1953).Digitalcomputersappliedtogames.In
+Tait,P.G.(1880). Noteonthetheoryofthe 15 ing Decisions About Health,Wealth,and Happiness. Bowden,B.V.(Ed.),Fasterthan Thought,pp.286 puzzle .Proc.Royal Societyof Edinburgh,10,664 Penguin. 310.Pitman.
+665.
+Theocharous,G.,Murphy,K.,and Kaelbling,L.P. Tversky, A. and Kahneman, D. (1982). Causal
+Tamaki,H.and Sato,T.(1986). OL Dresolution (2004). Representing hierarchical POMD Ps as schematainjudgementsunderuncertainty. In Kah-
+withtabulation.In ICLP-86,pp.84 98. DB Nsformulti-scalerobotlocalization. In ICRA- neman,D.,Slovic,P.,and Tversky,A.(Eds.),Judge-
+Tarjan,R.E.(1983). Data Structuresand Network 04. ment Under Uncertainty: Heuristics and Biases.
+Cambridge University Press.
+Algorithms. CBMS-NSF Regional Conference Se-
+Thiele, T. (1880). Om anvendelse af mindste
+riesin Applied Mathematics.SIAM(Societyfor In- Ullman, J.D.(1985). Implementation oflogical
+kvadratersmethodeinogletilf lde,hvorenkom-
+dustrialand Applied Mathematics). querylanguagesfordatabases. ACM Transactions
+plikationafvisseslagsuensartedetilf ldigefejlk-
+on Database Systems,10(3),289 321.
+Tarski,A.(1935). Die Wahrheitsbegriffindenfor- ildergiverfejleneen systematisk karakter.Vidensk.
+malisierten Sprachen. Studia Philosophica,1,261 Selsk.Skr.5.Rk.,naturvid.ogmat.Afd.,12,381 Ullman,S.(1979).The Interpretationof Visual Mo-
+405. 408. tion.MIT Press.
+Bibliography 1091
+Urmson,C.and Whittaker,W.(2008). Self-driving Veloso,M.and Carbonell,J.G.(1993).Derivational Warren,D.H.D.(1983). Anabstract Prologin-
+carsandthe Urban Challenge.IEEE Intelligent Sys- analogyin PRODIGY: Automatingcaseacquisition, structionset.Technicalnote309,SRI International.
+tems,23(2),66 68. storage,andutilization.Machine Learning,10,249 Warren,D.H.D.,Pereira,L.M.,and Pereira,F.
+278.
+Val

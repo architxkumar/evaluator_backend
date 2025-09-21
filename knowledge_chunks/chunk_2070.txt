@@ -1,0 +1,32 @@
+ision intodistinctobjects. Wegivethisportionthegenericname
+INDIVIDUATION
+stuff. For example, suppose I have some butter and an aardvark in front of me. I can say
+STUFF
+thereisoneaardvark, butthereisnoobviousnumberof butter-objects, becauseanypartof
+abutter-object isalso abutter-object, atleast until wegettovery smallparts indeed. Thisis
+the major distinction between stuff and things. If we cut an aardvark in half, we do not get
+twoaardvarks (unfortunately).
+The English language distinguishes clearly between stuff andthings. Wesay anaard-
+vark, but, except in pretentious California restaurants, one cannot say a butter. Linguists
+distinguish between countnouns,such asaardvarks, holes, and theorems, and mass nouns,
+COUNTNOUNS
+such as butter, water, and energy. Several competing ontologies claim tohandle this distinc-
+MASSNOUN
+tion. Herewedescribe justone;theothersarecoveredinthe historical notessection.
+To represent stuff properly, we begin with the obvious. We need to have as objects in
+our ontology at least the gross lumps of stuff we interact with. For example, we might
+recognize a lump of butter as the one left on the table the night before; wemight pick it up,
+weigh it, sell it, or whatever. In these senses, it is an object just like the aardvark. Let us
+callit Butter . Wealsodefinethecategory Butter. Informally,itselementswillbeallthose
+3
+thingsofwhichonemightsay It sbutter, including Butter . Withsomecaveatsaboutvery
+3
+smallpartsthatwewomitfornow,anypartofabutter-object isalsoabutter-object:
+b Butter Part Of(p,b) p Butter .
+Wecannowsaythatbuttermeltsataround30degreescentigrade:
+b Butter Melting Point(b,Centigrade(30)).
+Wecould goontosaythatbutterisyellow,islessdensethanwater, issoftatroomtempera-
+ture,hasahighfatcontent,andsoon. Ontheotherhand,butterhasnoparticularsize,shape,
+or weight. We can define more specialized categories of butter such as Unsalted Butter,
+which is also a kind of stuff. Note that the category Pound Of Butter, which includes as
+members all 

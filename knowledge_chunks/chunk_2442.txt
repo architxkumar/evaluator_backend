@@ -1,0 +1,31 @@
+I.Relatedworkondistributed AIalso
+goesunderothernames,includingcollectiveintelligence(Tumerand Wolpert,2000;Segaran,
+2007) and market-based control (Clearwater, 1996). Since 2001 there has been an annual
+Trading Agents Competition (TAC), in which agents try to make the best profit on a series
+ofauctions (Wellmanetal.,2001; Arunachalam and Sadeh, 2005). Papersoncomputational
+issuesinauctions oftenappearinthe ACM Conferences on Electronic Commerce.
+EXERCISES
+17.1 For the 4 3 world shown in Figure 17.1, calculate which squares can be reached
+from(1,1)bytheactionsequence Up,Up,Right,Right,Right andwithwhatprobabilities.
+Explainhowthiscomputationisrelatedtothepredictiontask(see Section15.2.1)forahidden
+Markovmodel.
+17.2 Selectaspecificmemberofthesetofpoliciesthatareoptimalfor R(s) 0asshown
+in Figure17.2(b),andcalculatethefractionoftimetheagentspendsineachstate,inthelimit,
+if the policy is executed forever. (Hint: Construct the state-to-state transition probability
+matrixcorresponding tothepolicyandsee Exercise15.2.)
+17.3 Suppose that we define the utility of a state sequence to be the maximum reward ob-
+tainedinanystateinthesequence. Showthatthisutilityfunctiondoesnotresultinstationary
+preferences between state sequences. Is it still possible to define a utility function on states
+suchthat ME Udecision makinggivesoptimalbehavior?
+17.4 Sometimes MD Psare formulated with a reward function R(s,a) that depends on the
+(cid:2)
+actiontakenorwitharewardfunction R(s,a,s)thatalsodepends ontheoutcomestate.
+a. Writethe Bellmanequations fortheseformulations.
+Exercises 689
+(cid:2)
+b. Showhowan MD Pwithrewardfunction R(s,a,s)canbetransformedintoadifferent
+MDP with reward function R(s,a), such that optimal policies in the new MDP corre-
+spondexactlytooptimalpolicies intheoriginal MDP.
+c. Nowdothesametoconvert MD Pswith R(s,a)into MD Pswith R(s).
+17.5 Fortheenvironment shownin Figure17.1, findallthethreshold values for R(s)such
+thattheoptimalpolicychanges whenthethreshold iscrossed. Youw

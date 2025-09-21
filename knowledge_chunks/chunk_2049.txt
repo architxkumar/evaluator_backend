@@ -1,0 +1,26 @@
+rjob shop scheduling at Westinghouse, GARI (De-
+scotte and Latombe, 1985) planned the machining and construction of mechanical parts,
+FORBIN was used for factory control, and NONLIN was used for naval logistics planning.
+Wechosetopresentplanningandschedulingastwoseparateproblems;(Cushingetal.,2007)
+show that this can lead to incompleteness on certain problems. There is a long history of
+scheduling inaerospace. T-SCHED (Drabble, 1990)wasusedtoschedule mission-command
+sequencesforthe UOSAT-II satellite. OPTIMUM-AIV (Aarupetal.,1994)and PLAN-ERS1
+(Fuchs et al., 1990), both based on O-PLAN, were used for spacecraft assembly and obser-
+vation planning, respectively, at the European Space Agency. SPIKE (Johnston and Adorf,
+1992) was used for observation planning at NASA for the Hubble Space Telescope, while
+the Space Shuttle Ground Processing Scheduling System (Deale et al., 1994) does job-shop
+scheduling of up to 16,000 worker-shifts. Remote Agent (Muscettola et al., 1998) became
+thefirstautonomousplanner scheduler tocontrolaspacecraftwhenitflewonboardthe Deep
+Space Oneprobein1999. Spaceapplications havedriventhedevelopment ofalgorithms for
+resourceallocations; see Laborie(2003)and Muscettola(2002). Theliteratureonscheduling
+is presented in a classic survey article (Lawler et al., 1993), a recent book (Pinedo, 2008),
+andaneditedhandbook (Blazewiczetal.,2007).
+MACROPS
+Thefacility inthe STRIPS program forlearning macrops macro-operators consist-
+ingofasequence ofprimitive steps could beconsidered the firstmechanism forhierarchi-
+cal planning (Fikes et al., 1972). Hierarchy was also used in the LAWALY system (Siklossy
+and Dreussi, 1973). The ABSTRIPS system (Sacerdoti, 1974) introduced the idea of an ab-
+ABSTRACTION straction hierarchy, whereby planning at higher levels was permitted to ignore lower-level
+HIERARCHY
+preconditions of actions in order to derive the general structure of a working plan. Austin
+Tate s Ph.D. thesis (1975b) and work by Earl Sacerdoti (1977) develop

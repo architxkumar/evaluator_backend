@@ -1,0 +1,37 @@
+ X .
+i k i
+Supposethat,foreveryarc(X ,X ),wekeeptrackofthenumberofremainingvaluesof X
+k i i
+that are consistent with each value of X . Explain how to update these numbers efficiently
+k
+andhenceshowthatarcconsistency canbeenforced intotaltime O(n2d2).
+Exercises 233
+6.14 The TREE-CSP-SOLVER (Figure6.10)makesarcsconsistentstartingattheleavesand
+working backwards towards the root. Whydoes itdothat? What would happen ifitwentin
+theopposite direction?
+6.15 We introduced Sudoku as a CSP to be solved by search over partial assignments be-
+causethatisthewaypeoplegenerallyundertakesolving Sudokuproblems. Itisalsopossible,
+of course, to attack these problems with local search over complete assignments. How well
+wouldalocalsolverusingthemin-conflictsheuristic doon Sudokuproblems?
+6.16 Define in your own words the terms constraint, backtracking search, arc consistency,
+backjumping, min-conflicts, andcyclecutset.
+6.17 Supposethatagraphisknowntohaveacyclecutsetofnomorethanknodes. Describe
+asimple algorithm forfinding aminimalcyclecutset whoserun timeisnotmuchmorethan
+O(nk)fora CS Pwithnvariables. Searchtheliteratureformethodsforfindingapproximately
+minimal cycle cutsets intimethat ispolynomial inthe size ofthe cutset. Doesthe existence
+ofsuchalgorithmsmakethecyclecutsetmethodpractical?
+7
+LOGICAL AGENTS
+Inwhichwedesignagentsthatcanformrepresentationsofacomplexworld,usea
+processofinference toderivenewrepresentations abouttheworld,andusethese
+newrepresentations todeduce whattodo.
+Humans, it seems, know things; and what they know helps them do things. These are
+not empty statements. They make strong claims about how the intelligence of humans is
+achieved not by purely reflex mechanisms but by processes of reasoning that operate on
+REASONING
+internal representations of knowledge. In AI, this approach to intelligence is embodied in
+REPRESENTATION
+KNOWLEDGE-BASED knowledge-basedagents.
+AGENTS
+Theproblem-solvingagentsof Chapters3and4knowthings,butonlyinaverylimited,
+inflexiblesense. Forex

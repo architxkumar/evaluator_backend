@@ -1,0 +1,25 @@
+hus,Grove,Halpern,and Koller(1992)extends Carnap smethods
+to first-order theories, thereby avoiding many of the difficulties associated with the straight-
+forward reference-class method. Kyburg and Teng (2006) contrast probabilistic inference
+withnonmonotonic logic.
+Bayesian probabilistic reasoning has been used in AI since the 1960s, especially in
+medicaldiagnosis. Itwasusednotonlytomakeadiagnosisfromavailableevidence,butalso
+to select further questions and tests by using the theory of information value (Section 16.6)
+when available evidence was inconclusive (Gorry, 1968; Gorry et al., 1973). One system
+outperformed humanexpertsinthediagnosisofacuteabdominalillnesses(de Dombaletal.,
+1974). Lucas etal.(2004) givesanoverview. Theseearly Bayesian systems suffered from a
+number of problems, however. Because they lacked any theoretical model of the conditions
+they were diagnosing, they were vulnerable to unrepresentative data occurring in situations
+forwhichonlyasmallsamplewasavailable(de Dombaletal.,1981). Evenmorefundamen-
+tally,becausetheylackedaconciseformalism(suchastheonetobedescribedin Chapter14)
+for representing and using conditional independence information, they depended on the ac-
+quisition, storage, and processing ofenormous tables ofprobabilistic data. Because ofthese
+difficulties, probabilistic methodsforcopingwithuncertainty felloutoffavorin AIfromthe
+1970stothemid-1980s. Developmentssincethelate1980saredescribedinthenextchapter.
+The naive Bayes model for joint distributions has been studied extensively in the pat-
+ternrecognitionliteraturesincethe1950s(Dudaand Hart, 1973). Ithasalsobeenused,often
+unwittingly, in information retrieval, beginning with the work of Maron (1961). The proba-
+bilisticfoundations ofthistechnique, describedfurther in Exercise13.22,wereelucidatedby
+Robertson and Sparck Jones (1976). Domingos and Pazzani (1997) provide an explanation
+506 Chapter 13. Quantifying Uncertainty
+for the surprising success of naive Bayesian reasoning even

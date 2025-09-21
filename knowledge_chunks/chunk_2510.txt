@@ -1,0 +1,27 @@
+
+duringtheweight-updatingprocess. Thisdemonstratesthatthenetworkdoesindeedconverge
+to a perfect fit to the training data. The second curve is the standard learning curve for the
+restaurant data. The neural network does learn well, although not quite as fast as decision-
+tree learning; this is perhaps not surprising, because the data were generated from a simple
+decision treeinthefirstplace.
+Neural networks are capable of farmore complex learning tasks of course, although it
+must be said that a certain amount of twiddling is needed to get the network structure right
+andtoachieveconvergence tosomethingclosetotheglobaloptimuminweightspace. There
+are literally tens of thousands of published applications of neural networks. Section 18.11.1
+looksatonesuchapplication inmoredepth.
+18.7.5 Learning neural network structures
+Sofar,wehaveconsidered theproblem oflearning weights, givenafixednetwork structure;
+just as with Bayesian networks, we also need to understand how to find the best network
+structure. Ifwechooseanetworkthatistoobig,itwillbeabletomemorizealltheexamples
+by forming a large lookup table, but will not necessarily generalize well to inputs that have
+notbeenseenbefore.10 Inotherwords,likeallstatisticalmodels,neuralnetworksaresubject
+tooverfitting whenthere aretoo manyparameters inthe model. Wesawthis in Figure 18.1
+(page 696), where the high-parameter models in (b) and (c) fit all the data, but might not
+generalize aswellasthelow-parametermodelsin(a)and(d).
+Ifwesticktofullyconnectednetworks,theonlychoicestobemadeconcernthenumber
+10 Ithasbeenobservedthatverylargenetworks dogeneralizewellaslongastheweightsarekeptsmall. This
+restrictionkeepstheactivationvaluesinthelinearregionofthesigmoidfunctiong(x)wherexisclosetozero.
+This,inturn,meansthatthenetworkbehaveslikealinearfunction(Exercise18.22)withfarfewerparameters.
+Section18.8. Nonparametric Models 737
+of hidden layers and their sizes. The usual approach is to try several and keep the best. The
+cross-validation techni

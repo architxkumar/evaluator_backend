@@ -1,0 +1,24 @@
+ In fact, almost everything that humans express in natural language
+concerns objectsandtheirrelationships.
+As we mentioned earlier, the axis along which atomic, factored, and structured repre-
+sentations lieistheaxis ofincreasing expressiveness. Roughly speaking, amoreexpressive
+EXPRESSIVENESS
+representation cancapture,atleastasconcisely, everythingalessexpressiveonecancapture,
+plussomemore. Often,themoreexpressivelanguageismuchmoreconcise;forexample,the
+rules of chess can be written in a page or two of a structured-representation language such
+as first-order logic but require thousands of pages when written in a factored-representation
+language such as propositional logic. On the other hand, reasoning and learning become
+more complex as the expressive power of the representation increases. To gain the benefits
+ofexpressive representations whileavoiding theirdrawbacks, intelligent systems forthereal
+worldmayneedtooperateatallpointsalongtheaxissimultaneously.
+Section2.5. Summary 59
+2.5 SUMMARY
+This chapter has been something of a whirlwind tour of AI, which we have conceived of as
+thescienceofagentdesign. Themajorpointstorecallareas follows: Anagent issomething that perceives and acts in anenvironment. The agent function
+foranagentspecifiestheactiontakenbytheagentinresponsetoanyperceptsequence. The performance measure evaluates the behavior of the agent in an environment. A
+rational agentactssoastomaximize theexpected valueoftheperformance measure,
+giventhepercept sequence ithasseensofar. A task environment specification includes the performance measure, the external en-
+vironment, the actuators, and the sensors. In designing an agent, the first step must
+alwaysbetospecifythetaskenvironment asfullyaspossible. Task environments vary along several significant dimensions. They can be fully or
+partiallyobservable, single-agent ormultiagent, deterministic orstochastic, episodicor
+sequential, staticordynamic,discrete orcontinuous, and knownorunknown. The agent program impl

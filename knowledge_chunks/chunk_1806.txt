@@ -1,0 +1,29 @@
+dly withcondition action rulesandwithproblem-solving algorithms from Chapters3
+and4toproduceahybridagentforthewumpusworld. Figure7.20showsonepossibleway
+HYBRIDAGENT
+to do this. The agent program maintains and updates a knowledge base as well as a current
+plan. The initial knowledge base contains the atemporal axioms those that don t depend
+on t, such as the axiom relating the breeziness of squares to the presence of pits. At each
+timestep,thenewperceptsentenceisaddedalongwithalltheaxiomsthatdependont,such
+Section7.7. Agents Basedon Propositional Logic 269
+asthesuccessor-state axioms. (Thenextsectionexplainswhytheagentdoesn t needaxioms
+for future time steps.) Then, the agent uses logical inference, by AS King questions of the
+knowledgebase,toworkoutwhichsquares aresafeandwhichhaveyettobevisited.
+Themainbodyoftheagentprogramconstructsaplanbasedonadecreasingpriorityof
+goals. First,ifthereisaglitter, theprogram constructs a plantograbthegold,followaroute
+back tothe initial location, and climb out of the cave. Otherwise, ifthere isno current plan,
+the program plans a route to the closest safe square that it has not visited yet, making sure the route goes through only safe squares. Route planning is done with A search, not with
+ASK. Iftherearenosafesquarestoexplore,thenextstep ifthe agentstillhasanarrow is
+totry to makea safe square byshooting at one ofthe possible wumpus locations. These are
+determined by asking where ASK(KB, W
+x,y
+) is false that is, where it is not known that
+there is not awumpus. The function PLAN-SHOT (not shown) uses PLAN-ROUTE to plan a
+sequence ofactions thatwillline upthis shot. Ifthis fails, the program looks forasquare to
+explore that isnot provably unsafe that is, asquare forwhich ASK(KB, OKt
+x,y
+)returns
+false. Ifthereisnosuchsquare, thenthemissionisimpossibleandtheagentretreatsto 1,1 andclimbsoutofthecave.
+7.7.3 Logicalstateestimation
+The agent program in Figure 7.20 works quite well, but it has one major weakness: as time
+goesby,thecomputa

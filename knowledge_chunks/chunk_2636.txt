@@ -1,0 +1,35 @@
+ 20.14.
+Each data point consists of an observation sequence of finite length, so the problem is to
+learn the transition probabilities from a set of observation sequences (or from just one long
+sequence).
+We have already worked out how to learn Bayes nets, but there is one complication:
+in Bayes nets, each parameter is distinct; in a hidden Markov model, on the other hand, the
+individualtransitionprobabilitiesfromstateitostatejattimet, P(X j X i),
+ijt t 1 t
+are repeated across time that is, for all t. To estimate the transition probability
+ijt ij
+from state i to state j, we simply calculate the expected proportion of times that the system
+undergoes atransition tostate j wheninstatei:
+(cid:12) (cid:12) N (X j,X i) N (X i).
+ij t 1 t t
+t t
+Theexpectedcountsarecomputedbyan HM Minferencealgorithm. Theforward backward
+algorithm shown in Figure 15.4 can be modified very easily to compute the necessary prob-
+abilities. One important point is that the probabilities required are obtained by smoothing
+Section20.3. Learningwith Hidden Variables: The EM Algorithm 823
+P(R 0) R t 0 P 0 (R .7 1 ) P(R 0) R t 0 P 0 (R .7 1) R t 1 P 0 (R .7 2) R t 2 P 0 (R .7 3 ) R t 3 P 0 (R .7 4 )
+0.7 f 0.3 0.7 f 0.3 f 0.3 f 0.3 f 0.3
+Rain Rain Rain Rain Rain Rain Rain
+0 1 0 1 2 3 4
+Umbrella 1 Umbrella 1 Umbrella 2 Umbrella 3 Umbrella 4
+R 1 P(U 1 ) R 1 P(U 1 ) R 2 P(U 2 ) R 3 P(U 3 ) R 4 P(U 4 )
+t 0.9 t 0.9 t 0.9 t 0.9 t 0.9
+f 0.2 f 0.2 f 0.2 f 0.2 f 0.2
+Figure 20.14 An unrolled dynamic Bayesian network that represents a hidden Markov
+model(repeatof Figure15.16).
+rather than filtering; that is, we need to pay attention to subsequent evidence in estimating
+theprobability thataparticulartransition occurred. The evidence inamurdercaseisusually
+obtained afterthecrime(i.e.,thetransition fromstate itostatej)hastakenplace.
+20.3.4 The general form ofthe EM algorithm
+We have seen several instances of the EM algorithm. Each involves computing expected
+values ofhidden variables foreach example and then recomput

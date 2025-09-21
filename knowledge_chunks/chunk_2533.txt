@@ -1,0 +1,36 @@
+therthestock marketwillgo
+upordown, and ourtask istopool those predictions and makeourown. Onewaytodo this
+is to keep track of how welleach expert performs, and choose to believe them in proportion
+RANDOMIZED
+WEIGHTED totheirpastperformance. Thisiscalledthe randomizedweightedmajorityalgorithm. We
+MAJORITY
+ALGORITHM candescribed itmoreformally:
+1. Initializeasetofweights w ,...,w allto1.
+1 K
+2. Receivethepredictions y ,...,y fromtheexperts.
+1 K (cid:2) 3. Randomlychooseanexpertk ,inproportion toitsweight: P(k) w
+k (
+k(cid:3)
+w k(cid:3)).
+4. Predicty k .
+5. Receivethecorrectanswer y.
+6. Foreachexpert k suchthaty (cid:7) y,updatew w
+k k k
+Here isanumber, 0 1,thattellshowmuchtopenalizeanexpertforeachmistake.
+We measure the success of this algorithm in terms of regret, which is defined as the
+REGRET
+number of additional mistakes we make compared to the expert who, in hindsight, had the bestprediction record. Let M bethenumberofmistakesmadebythebestexpert. Thenthe
+numberofmistakes, M,madebytherandom weightedmajorityalgorithm, isbounded by15 M ln(1 ) ln K
+M .
+1 15 See(Blum,1996)fortheproof.
+Section18.11. Practical Machine Learning 753
+This bound holds for any sequence of examples, even ones chosen by adversaries trying to
+do their worst. To be specific, when there are K 10 experts, if we choose 1 2 then our number of mistakes is bounded by 1.39M 4.6, and if 3 4 by 1.15M 9.2. In
+general,if iscloseto1thenweareresponsivetochangeoverthelongrun;ifthebestexpert
+changes, wewillpick up onitbefore too long. However, wepay apenalty atthe beginning,
+when we start with all experts trusted equally; we may accept the advice of the bad experts
+fortoolong. When iscloserto0,thesetwofactorsarereversed. Notethatwecanchoose NO-REGRET togetasymptotically closeto M inthelongrun; thisiscalled no-regret learning(because
+LEARNING
+theaverageamountofregretpertrialtendsto0asthenumber oftrialsincreases).
+Online learning is helpful when the data may be changing rapidly over time. It is also
+useful fora

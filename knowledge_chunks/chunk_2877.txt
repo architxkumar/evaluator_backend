@@ -1,0 +1,37 @@
+er workspace coordinates faces
+the challenge of generating paths that adhere to these constraints. This is particularly tricky
+Section25.4. Planningto Move 987
+table
+eelb
+table
+sshou
+ee vertical
+obstacle
+left wall
+ss
+(a) (b)
+Figure25.14 (a)Workspacerepresentationofarobotarmwith2DO Fs. Theworkspace
+is a box with a flat obstacle hangingfromthe ceiling. (b)Configurationspace of the same
+robot. Onlywhiteregionsinthespaceareconfigurationsthatarefreeofcollisions. Thedot
+inthisdiagramcorrespondstotheconfigurationoftherobotshownontheleft.
+because thestatespaceiscontinuous andtheconstraints arenonlinear. Itturnsouttobeeas-
+CONFIGURATION iertoplanwithaconfigurationspacerepresentation. Insteadofrepresenting thestateofthe
+SPACE
+robot by the Cartesian coordinates of its elements, we represent the state by a configuration
+of the robot s joints. Our example robot possesses two joints. Hence, we can represent its
+state with the two angles and for the shoulder joint and elbow joint, respectively. In
+s e
+theabsenceofanyobstacles,arobotcouldfreelytakeonanyvalueinconfigurationspace. In
+particular, whenplanning apath one could simply connect the present configuration and the
+target configuration by a straight line. In following this path, the robot would then move its
+jointsataconstant velocity, untilatargetlocationisreached.
+Unfortunately,configurationspaceshavetheirownproblems. Thetaskofarobotisusu-
+ally expressed in workspace coordinates, not in configuration space coordinates. This raises
+the question of how tomapbetween workspace coordinates and configuration space. Trans-
+forming configuration space coordinates into workspace coordinates is simple: it involves
+a series of straightforward coordinate transformations. These transformations are linear for
+prismaticjointsandtrigonometricforrevolutejoints. Thischainofcoordinatetransformation
+isknownaskinematics.
+KINEMATICS
+Theinverseproblem ofcalculating theconfiguration ofarobotwhoseeffectorlocation
+INVERSE isspecifiedinworkspacecoordi

@@ -1,0 +1,40 @@
+ven M, But this course has an open-
+bookfinal sohavingthebookhelps.
+a. Drawthedecisionnetworkforthisproblem.
+b. Computetheexpected utilityofbuying thebookandofnotbuyingit.
+c. Whatshould Samdo?
+16.16 Thisexercisecompletestheanalysisoftheairport-siting problem in Figure16.6.
+a. Providereasonablevariabledomains,probabilities,andutilitiesforthenetwork,assum-
+ingthattherearethreepossible sites.
+b. Solvethedecision problem.
+c. Whathappensifchangesintechnologymeanthateachaircraftgenerateshalfthenoise?
+d. Whatifnoiseavoidance becomesthreetimesmoreimportant?
+e. Calculatethe VP Ifor Air Traffic,Litigation,and Construction inyourmodel.
+644 Chapter 16. Making Simple Decisions
+16.17 (Adapted from Pearl(1988).) Aused-car buyer can decide to carry out various tests
+withvariouscosts(e.g.,kickthetires,takethecartoaqualifiedmechanic)andthen,depend-
+ing on the outcome of the tests, decide which car to buy. We will assume that the buyer is
+deciding whether to buy car c , that there is time tocarry out at most one test, and that t is
+1 1
+thetestofc andcosts 50.
+1
+Acarcan be in good shape (quality q ) orbad shape (quality q ), and the tests might
+helpindicatewhatshapethecarisin. Carc costs 1,500,anditsmarketvalueis 2,000ifit
+1
+isingoodshape;ifnot, 700inrepairswillbeneededtomakeitingoodshape. Thebuyer s
+estimateisthatc hasa70 chanceofbeingingoodshape.
+1
+a. Drawthedecisionnetworkthatrepresents thisproblem.
+b. Calculatetheexpected netgainfrombuying c ,givennotest.
+1
+c. Testscanbedescribed bytheprobability thatthecarwillpassorfailthetestgiventhat
+thecarisingoodorbadshape. Wehavethefollowinginformation:
+P(pass(c ,t ) q (c )) 0.8
+1 1 1
+P(pass(c ,t ) q (c )) 0.35
+1 1 1
+Use Bayes theoremtocalculatetheprobabilitythatthecarwillpass(orfail)itstestand
+hencetheprobability thatitisingood(orbad)shapegiveneachpossibletestoutcome.
+d. Calculatetheoptimaldecisions giveneitherapassorafail,andtheirexpectedutilities.
+e. Calculate the value of information of the test, and derive an optimal conditional plan
+for

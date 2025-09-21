@@ -1,0 +1,26 @@
+: couch is closely related to both couches and sofa. Many IRsystemsattempttoaccountforthesecorrelations.
+Forexample, ifthequeryis couch , itwouldbeashametoexcludefromtheresultset
+those documents that mention COUCH or couches but not couch. Most IR systems
+do case folding of COUCH to couch, and some use a stemming algorithm to reduce
+CASEFOLDING couches to the stem form couch, both in the query and the documents. This typically
+STEMMING
+yields a small increase in recall (on the order of 2 for English). However, it can harm
+precision. For example, stemming stocking to stock will tend to decrease precision for
+queries about eitherfootcoverings orfinancial instruments, although itcould improverecall
+for queries about warehousing. Stemming algorithms based on rules (e.g., remove -ing )
+cannot avoid this problem, but algorithms based on dictionaries (don t remove -ing if the
+word is already listed in the dictionary) can. While stemming has a small effect in English,
+it is more important in other languages. In German, for example, it is not uncommon to
+see words like Lebensversicherungsgesellschaftsangestellter (life insurance company em-
+ployee). Languages suchas Finnish, Turkish, Inuit, and Yupikhaverecursive morphological
+rulesthatinprinciple generate wordsofunbounded length.
+Thenextstepistorecognizesynonyms,suchas sofa for couch. Aswithstemming,
+SYNONYM
+this has the potential for small gains in recall, but can hurt precision. A user who gives the
+query Tim Couch wants to see results about the football player, not sofas. The problem is
+that languagesabhorabsolutesynonymsjustasnatureabhorsavacuum (Cruse,1986). That
+is, anytime there aretwowords thatmean thesamething, speakers ofthelanguage conspire
+to evolve the meanings to remove the confusion. Related words that are not synonyms also
+play an important role in ranking terms like leather , wooden, or modern can serve
+to confirm that the document really is about couch. Synonyms and related words can be
+found in dictionari

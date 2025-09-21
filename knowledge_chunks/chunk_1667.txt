@@ -1,0 +1,28 @@
+e-playing programs use table lookup
+ratherthansearchfortheopening andendingofgames.
+Forthe openings, thecomputer ismostly relying onthe expertise ofhumans. Thebest
+advice ofhumanexpertsonhowtoplayeachopening iscopied frombooks andentered into
+tables forthecomputer s use. However, computers canalso gatherstatistics from adatabase
+of previously played games to see which opening sequences most often lead to a win. In
+theearly movestherearefewchoices, andthusmuchexpert commentaryandpastgameson
+whichtodraw. Usuallyaftertenmovesweendupinararelyseenposition, andtheprogram
+mustswitchfromtablelookuptosearch.
+Neartheendofthegamethereareagainfewerpossiblepositions,andthusmorechance
+to do lookup. But here it is the computer that has the expertise: computer analysis of
+endgames goes far beyond anything achieved by humans. A human can tell you the gen-
+eral strategy forplaying aking-and-rook-versus-king (KRK)endgame: reduce the opposing
+king s mobility bysqueezing ittowardone edgeoftheboard, using yourking toprevent the
+opponent fromescaping thesqueeze. Otherendings, such asking, bishop, andknight versus
+king (KBNK),aredifficult tomasterandhave nosuccinct strategy description. Acomputer,
+ontheotherhand,cancompletely solvetheendgamebyproducing apolicy,whichisamap-
+POLICY
+pingfromeverypossiblestatetothebestmoveinthatstate. Thenwecanjustlookupthebest
+move rather than recompute it anew. How big will the KBNK lookup table be? It turns out
+there are 462 ways that two kings can be placed on the board without being adjacent. After
+the kings are placed, there are 62 empty squares for the bishop, 61 for the knight, and two
+possible players to move next, so there are just 462 62 61 2 3,494,568 possible
+positions. Someofthesearecheckmates;markthemassuchinatable. Thendoaretrograde
+RETROGRADE
+minimax search: reverse the rules of chess to do unmoves rather than moves. Any move by
+Whitethat,nomatterwhatmove Blackrespondswith,endsupinapositionmarkedasawin,
+must also be a win. Continue this search

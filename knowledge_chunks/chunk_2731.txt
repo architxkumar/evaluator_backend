@@ -1,0 +1,29 @@
+requency
+Verb NP Verb NP Xestablished Y 38 1 2
+Noun Prep NP NP Prep NP Xsettlementwith Y 23 1 2
+Verb Prep NP Verb Prep NP Xmovedto Y 16 1 2
+Infinitive NP to Verb NP Xplanstoacquire Y 9 1 2
+Modifier NP Verb NP Noun Xis Ywinner 5 1 2
+Noun-Coordinate NP (, and - :)NP NP X-Ydeal 2 1 2
+Verb-Coordinate NP (, and)NP Verb X,Ymerge 1 1 2
+Appositive NP NP (: ,)? NP Xhometown: Y 1 1 2
+Figure22.3 Eightgeneraltemplatesthatcoverabout95 ofthewaysthat relationsare
+expressedin English.
+TEXTRUNNER achieves a precision of 88 and recall of 45 (F
+1
+of 60 ) on a large
+Web corpus. TEXTRUNNER has extracted hundreds of millions of facts from a corpus of a
+half-billion Web pages. Forexample, even though it has no predefined medical knowledge,
+ithasextracted over2000answerstothequery whatkillsbacteria ; correct answersinclude
+antibiotics, ozone, chlorine, Cipro, andbroccoli sprouts. Questionable answersinclude wa-
+ter, whichcamefrom thesentence Boiling waterforatleast 10minutes willkillbacteria. Itwouldbebettertoattribute thisto boilingwater ratherthanjust water. Withthetechniques outlined inthischapterandcontinual newinventions, wearestart-
+ingtogetclosertothegoalofmachinereading.
+22.5 SUMMARY
+Themainpointsofthischapterareasfollows: Probabilistic language models based on n-grams recover a surprising amount of infor-
+mation about a language. They can perform well on such diverse tasks as language
+identification, spellingcorrection, genreclassification, andnamed-entity recognition. These language models can have millions of features, so feature selection and prepro-
+cessingofthedatatoreducenoiseisimportant. Text classification can be done with naive Bayes n-gram models or with any of the
+classification algorithms wehave previously discussed. Classification canalso beseen
+asaproblem indatacompression.
+Bibliographical and Historical Notes 883 Information retrieval systems use a very simple language model based on bags of
+words, yet still manage to perform well in terms of recall and precision on

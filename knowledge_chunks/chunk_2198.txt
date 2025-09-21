@@ -1,0 +1,27 @@
+ted networks, itis essen-
+tialtoconsiderapproximate inferencemethods. Thissectiondescribesrandomized sampling
+algorithms, also called Monte Carlo algorithms, that provide approximate answers whose
+MONTECARLO
+accuracy depends on the number of samples generated. Monte Carlo algorithms, of which
+simulated annealing (page 126) is an example, are used in many branches of science to es-
+timate quantities that are difficult to calculate exactly. In this section, we are interested in
+sampling applied to the computation of posterior probabilities. We describe two families of
+algorithms: directsamplingand Markovchainsampling. Twootherapproaches variational
+methodsandloopypropagation are mentioned inthenotesattheendofthechapter.
+14.5.1 Directsampling methods
+Theprimitive elementinanysampling algorithm isthegeneration ofsamples from aknown
+probabilitydistribution. Forexample,anunbiasedcoincanbethoughtofasarandomvariable
+Coin with values (cid:16)heads,tails(cid:17) and a prior distribution P(Coin) (cid:16)0.5,0.5(cid:17). Sampling
+fromthisdistributionisexactlylikeflippingthecoin: withprobability0.5itwillreturnheads,
+and with probability 0.5 it will return tails. Given a source of random numbers uniformly
+distributed in the range 0,1 , it is a simple matter to sample any distribution on a single
+variable, whetherdiscreteorcontinuous. (See Exercise14.17.)
+Thesimplestkindofrandomsamplingprocess for Bayesiannetworksgenerates events
+from a network that has no evidence associated with it. The idea is to sample each variable
+inturn, intopological order. Theprobability distribution from which thevalue issampled is
+conditioned onthevaluesalreadyassignedtothevariable sparents. Thisalgorithm isshown
+in Figure 14.13. Wecan illustrate its operation on the network in Figure 14.12(a), assuming
+anordering Cloudy,Sprinkler,Rain,Wet Grass :
+1. Samplefrom P(Cloudy) (cid:16)0.5,0.5(cid:17),valueistrue.
+2. Samplefrom P(Sprinkler Cloudy true) (cid:16)0.1,0.9(cid:17),valueisfalse.
+3. Samplefrom P(Rain

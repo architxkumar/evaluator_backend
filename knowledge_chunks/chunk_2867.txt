@@ -1,0 +1,36 @@
+sreceived.
+t
+Section25.3. Robotic Perception 979
+A t 2 A t 1 A t
+X t 1 X t X t 1
+Z t 1 Z t Z t 1
+Figure 25.7 Robot perception can be viewed as temporal inference from sequences of
+actionsandmeasurements,asillustratedbythisdynamic Bayesnetwork.
+Wewould liketocompute thenew belief state, P(X z ,a ), fromthecurrent
+t 1 1:t 1 1:t
+belief state P(X t z 1:t ,a 1:t 1 ) and the new observation z t 1 . We did this in Section 15.2,
+but here there are two differences: we condition explicitly on the actions as well as the ob-
+servations, and wedeal with continuous rather than discrete variables. Thus, we modify the
+recursivefilteringequation (15.5onpage572)touseintegration ratherthansummation:
+P(X z ,a )
+t 1 1:t 1 1:t (cid:26) P(z t 1 X t 1 ) P(X t 1 x t ,a t ) P(x t z 1:t ,a 1:t 1 ) dx t . (25.1)
+This equation states that the posterior over the state variables X at time t 1 is calculated
+recursively from the corresponding estimate one time step earlier. This calculation involves
+the previous action a and the current sensor measurement z . For example, if our goal
+t t 1
+is to develop a soccer-playing robot, X might be the location of the soccer ball relative
+t 1
+to the robot. The posterior P(X t z 1:t ,a 1:t 1 ) isa probability distribution overall states that
+captureswhatweknowfrompastsensormeasurementsandcontrols. Equation(25.1)tellsus
+how to recursively estimate this location, by incrementally folding in sensor measurements
+(e.g.,cameraimages)androbotmotioncommands. Theprobability P(X x ,a )iscalled
+t 1 t t
+thetransitionmodelormotionmodel,and P(z X )isthesensormodel.
+MOTIONMODEL t 1 t 1
+25.3.1 Localizationand mapping
+Localization is the problem of finding out where things are including the robot itself.
+LOCALIZATION
+Knowledge about where things are is at the core of any successful physical interaction with
+the environment. For example, robot manipulators must know the location of objects they
+seektomanipulate; navigating robotsmustknowwheretheyaretofindtheirwayaround.
+To keep

@@ -1,0 +1,30 @@
+eringstudyofactualutilityfunctions,Grayson(1960)foundthattheutilityof
+money was almost exactly proportional to the logarithm of the amount. (This idea was first
+suggested by Bernoulli (1738); see Exercise 16.3.) Oneparticular utility curve, foracertain
+Mr. Beard, is shown in Figure 16.2(a). The data obtained for Mr. Beard s preferences are
+consistent withautilityfunction
+U(S ) 263.31 22.09log(n 150,000)
+k n
+fortherangebetween n 150,000andn 800,000.
+Weshould notassume thatthisisthedefinitive utility function formonetary value, but
+itislikely thatmostpeople haveautility function thatisconcave forpositive wealth. Going
+into debt is bad, but preferences between different levels of debt can display a reversal of
+theconcavity associatedwithpositivewealth. Forexample,someonealready 10,000,000in
+debt might well accept a gamble on a fair coin with a gain of 10,000,000 for heads and a
+lossof 20,000,000 fortails.5 Thisyieldsthe S-shapedcurveshownin Figure16.2(b).
+Ifwerestrictourattention tothepositivepartofthecurves,wheretheslopeisdecreas-
+ing,thenforanylottery L,theutilityofbeingfacedwiththatlotteryislessthantheutilityof
+beinghandedtheexpectedmonetaryvalueofthelotteryasasurething:
+U(L) U(S ).
+EMV(L)
+That is, agents with curves of this shape are risk-averse: they prefer a sure thing with a
+RISK-AVERSE
+payoff that is less than the expected monetary value of a gamble. On the other hand, in the desperate region at large negative wealth in Figure 16.2(b), the behavior is risk-seeking.
+RISK-SEEKING
+5 Suchbehaviormightbecalleddesperate,butitisrationalifoneisalreadyinadesperatesituation.
+618 Chapter 16. Making Simple Decisions
+CERTAINTY The value an agent will accept in lieu of a lottery is called the certainty equivalent of the
+EQUIVALENT
+lottery. Studies have shownthat most people willaccept about 400 inlieu ofagamble that
+gives 1000halfthetimeand 0theotherhalf thatis,thecertaintyequivalentofthelottery
+is 400,whilethe EM Vis 500. Thedifferencebetweenthe EM Vofalotteryanditscertaint

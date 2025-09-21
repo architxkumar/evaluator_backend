@@ -1,0 +1,24 @@
+e,alaterstepmighthypothesizethat Mother(x,y) P(x,y). Thus,
+thenewpredicate P hasitsmeaningconstrainedbythegenerationofhypotheses thatinvolve
+it. Another example might lead to the constraint Father(x,y) P(x,y). In other words,
+the predicate P is what we usually think of as the Parent relationship. As we mentioned
+earlier, the invention of new predicates can significantly reduce the size of the definition of
+thegoalpredicate. Hence,byincludingtheabilitytoinventnewpredicates,inverseresolution
+systemscanoftensolvelearning problemsthatareinfeasible withothertechniques.
+Someof the deepest revolutions in science come from the invention of new predicates
+and functions for example, Galileo s invention of acceleration or Joule s invention of ther-
+mal energy. Once these terms are available, the discovery of new laws becomes (relatively)
+easy. The difficult part lies in realizing that some new entity, with a specific relationship
+to existing entities, will allow an entire body of observations to be explained with a much
+Section19.6. Summary 797
+Father(x,y) P(x,y) x George Father(George,y) Ancestor(George,y) P(George,y) Ancestor(George,y) Figure19.14 Aninverseresolutionstepthatgeneratesanewpredicate P.
+simplerandmoreeleganttheorythanpreviously existed.
+Asyet,IL Psystemshavenotmadediscoveriesonthelevelof Galileoor Joule,buttheir
+discoveries have been deemed publishable in the scientific literature. For example, in the
+Journalof Molecular Biology,Turcotteetal.(2001)describetheautomateddiscoveryofrules
+forprotein folding by the ILP program PROGOL. Many of the rules discovered by PROGOL
+could havebeenderivedfrom knownprinciples, butmosthadnotbeenpreviously published
+as part of a standard biological database. (See Figure 19.10 for an example.). In related
+work, Srinivasan et al. (1994) dealt with the problem of discovering molecular-structure-
+basedrulesforthemutagenicityofnitroaromaticcompounds. Thesecompoundsarefoundin
+automobileexhaustfumes. For80 ofthecompoundsinastandarddatabas

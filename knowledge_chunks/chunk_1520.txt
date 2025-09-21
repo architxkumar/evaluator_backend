@@ -1,0 +1,26 @@
+: The state resulting from taking a flight will have the flight s desti-
+nationasthecurrentlocation andtheflight sarrivaltimeasthecurrenttime. Goaltest: Areweatthefinaldestination specifiedbytheuser? Path cost: This depends on monetary cost, waiting time, flight time, customs and im-
+migrationprocedures, seatquality, timeofday,typeofairplane, frequent-flyer mileage
+awards,andsoon.
+74 Chapter 3. Solving Problemsby Searching
+Commercial travel advice systems use a problem formulation of this kind, with many addi-
+tional complications to handle the byzantine fare structures that airlines impose. Any sea-
+soned traveler knows, however, that not all air travel goes according to plan. A really good
+systemshouldincludecontingencyplans suchasbackupreservationsonalternateflights totheextentthatthesearejustifiedbythecostandlikelihood offailureoftheoriginalplan.
+Touring problems are closely related to route-finding problems, but with an impor-
+TOURINGPROBLEM
+tant difference. Consider, for example, the problem Visit every city in Figure 3.2 at least
+once, starting and ending in Bucharest. As with route finding, the actions correspond
+to trips between adjacent cities. The state space, however, is quite different. Each state
+must include not just the current location but also the set of cities the agent has visited.
+So the initial state would be In(Bucharest),Visited( Bucharest ), a typical intermedi-
+ate state would be In(Vaslui),Visited( Bucharest,Urziceni,Vaslui ), and the goal test
+wouldcheckwhethertheagentisin Bucharestandall20citieshavebeenvisited.
+TRAVELING
+The traveling salesperson problem (TSP) is a touring problem in which each city
+SALESPERSON
+PROBLEM
+must be visited exactly once. The aim is to find the shortest tour. The problem is known to
+be NP-hard,butanenormousamountofefforthasbeenexpendedtoimprovethecapabilities
+of TSP algorithms. In addition to planning trips for traveling salespersons, these algorithms
+havebeenusedfortaskssuchasplanningmovementsofautomaticcircui

@@ -1,0 +1,48 @@
+ut just how happy should we
+be? Ingeneralsmallerrors arebetterthanlargeones;twofunctions thatimplementthatidea
+are the absolute value of the difference (called the L loss), and the square of the difference
+1
+(called the L loss). If we are content with the idea of minimizing error rate, we can use
+2
+the L loss function, which has a loss of 1 for an incorrect answer and is appropriate for
+0 1
+discrete-valued outputs:
+Absolutevalueloss: L (y,y ) y y 1
+Squarederrorloss: L (y,y ) (y y )2
+2
+0 1loss: L (y,y ) 0ify y , else1
+0 1
+The learning agent can theoretically maximize its expected utility by choosing the hypoth-
+esis that minimizes expected loss over all input output pairs it will see. It is meaningless
+to talk about this expectation without defining aprior probability distribution, P(X,Y)over
+examples. Let E bethe set of all possible input output examples. Thenthe expected gener-
+GENERALIZATION alization lossforahypothesis h(withrespecttolossfunction L)is
+LOSS
+712 Chapter 18. Learningfrom Examples
+(cid:12)
+Gen Loss (h) L(y,h(x))P(x,y) ,
+L
+(x,y) E andthebesthypothesis, h ,istheonewiththeminimumexpectedgeneralization loss: h argmin Gen Loss (h).
+L
+h H
+Because P(x,y)is notknown, thelearning agent canonly estimate generalization loss with
+empiricallossonasetofexamples, E:
+EMPIRICALLOSS
+(cid:12)
+1
+Emp Loss (h) L(y,h(x)).
+L,E N
+(x,y) E
+Theestimatedbesthypothesis
+h isthentheonewithminimumempiricalloss:
+h argmin Emp Loss (h).
+L,E
+h H
+Therearefourreasonswhy
+h maydifferfromthetruefunction, f: unrealizability, variance,
+noise, and computational complexity. First, f may not be realizable may not be in H or
+may be present in such a way that other hypotheses are preferred. Second, a learning algo-
+rithm will return different hypotheses for different sets of examples, even if those sets are
+drawn from the same true function f, and those hypotheses will make different predictions
+on new examples. Thehigher the variance among the predictions, the higher the probability
+ofsignificant 

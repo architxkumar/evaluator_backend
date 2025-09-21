@@ -1,0 +1,35 @@
+substituting the mostgeneral unifierinto the
+(standardized) actionschema.
+As another example, consider the goal Own(0136042597), given an initial state with
+10billion A Action(Buy(i),PRECOND: As we mentioned before, forward search without a heuristic would have to start enumer-
+ating the 10 billion ground Buy actions. But with backward search, we would unify the
+(cid:2)
+goal Own(0136042597) with the (standardized) effect Own(i), yielding the substitution i (cid:2) 0136042597 . Then we would regress over the action Subst( ,A (cid:2) ) to yield the
+predecessor state description initialstate,sowearedone.
+376 Chapter 10. Classical Planning
+We can make this more formal. Assume a goal description g which contains a goal
+(cid:2) (cid:2)
+literalg andanactionschema Athatisstandardized toproduce A. If A hasaneffectliteral
+i
+(cid:2) (cid:2) (cid:2) (cid:2)
+e
+j
+where Unify(g
+i
+,e
+j
+) and wherewedefine a SUBST( ,A)andif there isnoeffect
+(cid:2) (cid:2)
+ina thatisthenegationofaliteraling,thena isarelevantactiontowards g.
+Backwardsearch keepsthebranching factorlowerthan forwardsearch, formostprob-
+lem domains. However, the fact that backward search uses state sets rather than individual
+states makes it harder to come up with good heuristics. That is the main reason why the
+majorityofcurrentsystemsfavorforwardsearch.
+10.2.3 Heuristicsforplanning
+Neither forward nor backward search is efficient without a good heuristic function. Recall
+from Chapter 3 that a heuristic function h(s) estimates the distance from a state s to the
+goal and that if we can derive an admissible heuristic for this distance one that does not overestimate then we can use A search to find optimal solutions. An admissible heuristic
+can be derived by defining a relaxed problem that is easier to solve. The exact cost of a
+solution tothiseasierproblem thenbecomestheheuristicfortheoriginal problem.
+By definition, there is no way to analyze an atomic state, and thus it it requires some
+ingenuity by a human analyst to 

@@ -1,0 +1,26 @@
+gure 25.24 (a) Genghis, a hexapod robot. (b) An augmented finite state machine
+(AFSM) for the control of a single leg. Notice that this AFSM reacts to sensor feedback:
+ifalegisstuckduringtheforwardswingingphase,itwillbeliftedincreasinglyhigher.
+25.6.3 Reactivecontrol
+Sofarwehave considered control decisions that require some modelof theenvironment for
+constructing either areference path orapotential field. There are some difficulties with this
+approach. First, models that are sufficiently accurate are often difficult to obtain, especially
+in complex or remote environments, such as the surface of Mars, or for robots that have
+few sensors. Second, even in cases where we can devise a model with sufficient accuracy,
+computational difficulties and localization error might render these techniques impractical.
+Insomecases,areflexagentarchitecture using reactive controlismoreappropriate.
+REACTIVECONTROL
+Forexample,picturealeggedrobotthatattemptstoliftalegoveranobstacle. Wecould
+givethisrobotarulethatsaysliftthelegasmallheight handmoveitforward,andiftheleg
+encounters anobstacle, moveitbackandstart againatahigher height. Youcould saythat h
+ismodeling anaspect oftheworld, butwecan alsothink of hasanauxiliary variable ofthe
+robotcontroller, devoidofdirectphysicalmeaning.
+One such example is the six-legged (hexapod) robot, shown in Figure 25.24(a), de-
+signed forwalking through rough terrain. Therobot s sensors areinadequate toobtain mod-
+elsoftheterrainforpathplanning. Moreover,evenifweaddedsufficientlyaccuratesensors,
+the twelve degrees of freedom (two for each leg) would render the resulting path planning
+problem computationally intractable.
+It is possible, nonetheless, to specify a controller directly without an explicit environ-
+mental model. (We have already seen this with the PD controller, which was able to keep a
+complexrobotarmontarget withoutanexplicitmodeloftherobotdynamics;itdid,however,
+require a reference path generated from a kinematic model.) Forthe hexapod robo

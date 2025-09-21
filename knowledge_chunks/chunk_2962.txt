@@ -1,0 +1,22 @@
+counterwiththesirens,
+whose song was so alluring it compelled sailors to cast themselves into the sea. Knowing it
+would have that effect on him, Ulysses ordered his crew to bind him to the mast so that he
+could not perform the self-destructive act. It is interesting to think how similar safeguards
+couldbebuiltinto AIsystems.
+Finally, let us consider the robot s point of view. If robots become conscious, then to
+treat them as mere machines (e.g., to take them apart) might be immoral. Science fiction
+writershaveaddressed theissueofrobotrights. Themovie A.I.(Spielberg, 2001) wasbased
+on a story by Brian Aldiss about an intelligent robot who was programmed to believe that
+he was human and fails to understand his eventual abandonment by his owner mother. The
+story(andthemovie)arguefortheneedforacivilrightsmovementforrobots.
+26.4 SUMMARY
+Thischapterhasaddressed thefollowingissues: Philosophers use the term weak AI for the hypothesis that machines could possibly
+behave intelligently, andstrong AIforthehypothesis thatsuch machines would count
+ashavingactualminds(asopposed tosimulatedminds). Alan Turing rejected the question Can machines think? and replaced it with a be-
+havioral test. He anticipated many objections to the possibility of thinking machines.
+Few AI researchers pay attention to the Turing Test, preferring to concentrate on their
+systems performance onpractical tasks,ratherthantheabilitytoimitatehumans. Thereisgeneralagreementinmoderntimesthatmentalstatesarebrainstates. Argumentsforandagainststrong AIareinconclusive. Fewmainstream AIresearchers
+believethatanything significanthingesontheoutcomeofthedebate. Consciousness remainsamystery. We identified six potential threats to society posed by AI and related technology. We
+concluded that someofthethreats areeitherunlikely ordifferlittle from threats posed
+by unintelligent technologies. One threat in particular is worthy of further consider-
+ation: that ultraintelligent machines might lead to a future that is very d

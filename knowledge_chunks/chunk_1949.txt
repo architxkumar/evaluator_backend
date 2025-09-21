@@ -1,0 +1,42 @@
+bstituting valuesforallthevariables:
+Action(Fly(P ,SFO,JFK),
+1
+PRECOND:At(P
+1
+,SFO) Plane(P
+1
+) Airport(SFO) Airport(JFK)
+EFFECT: At(P
+1
+,SFO) At(P
+1
+,JFK))
+Theprecondition andeffectofanactionareeachconjunctions ofliterals(positiveornegated
+atomic sentences). The precondition defines the states in which the action can be executed,
+andtheeffect definestheresult ofexecuting theaction. Anaction acan beexecuted instate
+sifsentails theprecondition of a. Entailment can also beexpressed withthe setsemantics:
+s q iff every positive literal in q is in s and every negated literal in q is not. In formal
+notation wesay
+(a ACTIONS(s)) s PRECOND(a),
+whereanyvariables in aareuniversally quantified. Forexample, p,from,to (Fly(p,from,to) ACTIONS(s)) s (At(p,from) Plane(p) Airport(from) Airport(to))
+We say that action a is applicable in state s if the preconditions are satisfied by s. When
+APPLICABLE
+an action schema a contains variables, it may have multiple applicable instantiations. For
+example, with the initial state defined in Figure 10.1, the Fly action can be instantiated as
+Fly(P ,SFO,JFK) or as Fly(P ,JFK,SFO), both of which are applicable in the initial
+1 2
+state. Ifanactionahasvvariables,then,inadomainwithkuniquenamesofobjects,ittakes
+O(vk)timeintheworstcasetofindtheapplicable groundactions.
+Sometimeswewanttopropositionalizea PDD Lproblem replaceeachactionschema
+PROPOSITIONALIZE
+with a set of ground actions and then use apropositional solver such as SATPLAN to find a
+solution. However,thisisimpractical whenv andk arelarge.
+(cid:2)
+The result of executing action a in state s is defined as a state s which is represented
+by the set of fluents formed by starting with s, removing the fluents that appear as negative
+DELETELIST
+literalsintheaction s effects(whatwecallthedeletelistor DEL(a)),andaddingthefluents
+ADDLIST
+thatarepositiveliteralsintheaction s effects(whatwecalltheaddlistor ADD(a)):
+RESULT(s,a) (s DEL(a)) ADD(a). (10.1)
+Forexample, withtheaction Fly(P ,SFO,JFK),wewould

@@ -1,0 +1,25 @@
+gray. Explorednodeswithnodescendantsinthefrontierare removedfrommemory. Nodes
+atdepth3havenosuccessorsand M istheonlygoalnode.
+The properties of depth-first search depend strongly on whether the graph-search or
+tree-search version is used. The graph-search version, which avoids repeated states and re-
+dundantpaths,iscompleteinfinitestatespacesbecauseitwilleventuallyexpandeverynode.
+The tree-search version, on the other hand, is not complete for example, in Figure 3.6 the
+algorithmwillfollowthe Arad Sibiu Arad Sibiuloopforever. Depth-firsttreesearchcanbe
+modifiedatnoextra memorycostsothatitchecks newstates against those onthepathfrom
+theroottothecurrent node;thisavoids infiniteloopsinfinitestatespaces butdoesnotavoid
+the proliferation of redundant paths. In infinite state spaces, both versions fail if an infinite
+non-goal path is encountered. For example, in Knuth s 4 problem, depth-first search would
+keepapplying thefactorial operatorforever.
+Forsimilarreasons, both versions arenonoptimal. Forexample, in Figure3.16, depth-
+firstsearch willexplore theentire left subtree evenifnode C isagoal node. Ifnode J were
+also a goal node, then depth-first search would return it as a solution instead of C, which
+wouldbeabettersolution; hence, depth-firstsearchisnotoptimal.
+Section3.4. Uninformed Search Strategies 87
+Thetimecomplexityofdepth-firstgraphsearchisboundedbythesizeofthestatespace
+(whichmaybeinfinite,ofcourse). Adepth-firsttreesearch, ontheotherhand,maygenerate
+all of the O(bm) nodes in the search tree, where m is the maximum depth of any node; this
+can be much greater than the size of the state space. Note that m itself can be much larger
+thand(thedepthoftheshallowest solution) andisinfiniteifthetreeisunbounded.
+So far, depth-first search seems to have no clear advantage over breadth-first search,
+so why do we include it? The reason is the space complexity. For a graph search, there is
+no advantage, but a depth-first tree search needs to store only a single path from t

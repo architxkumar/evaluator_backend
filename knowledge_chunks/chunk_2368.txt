@@ -1,0 +1,33 @@
+ shape;
+as it moves along the production line, a machine randomly selects a certain percentage to
+be trimmed into a square; then, each piece is wrapped in a wrapper whose color is chosen
+randomly to be red or brown. 80 of the strawberry candies are round and 80 have a red
+wrapper, while 90 of the anchovy candies are square and 90 have a brown wrapper. All
+candiesaresoldindividually insealed,identical, blackboxes.
+Nowyou, the customer, have justbought a Surprise candy atthestore buthave notyet
+openedthebox. Considerthethree Bayesnetsin Figure16.11.
+Wrapper Shape Wrapper Shape Flavor
+Flavor Flavor Wrapper Shape
+(i) (ii) (iii)
+Figure16.11 Threeproposed Bayesnetsforthe Surprise Candyproblem,Exercise16.5.
+a. Whichnetwork(s)cancorrectly represent P(Flavor,Wrapper,Shape)?
+b. Whichnetworkisthebestrepresentation forthisproblem?
+642 Chapter 16. Making Simple Decisions
+c. Doesnetwork(i)assertthat P(Wrapper Shape) P(Wrapper)?
+d. Whatistheprobability thatyourcandyhasaredwrapper?
+e. Intheboxisaroundcandywitharedwrapper. Whatistheprobability thatitsflavoris
+strawberry?
+f. A unwrapped strawberry candy is worth s on the open market and an unwrapped an-
+chovycandyiswortha. Writeanexpression forthevalueofanunopened candybox.
+g. Anewlawprohibits trading ofunwrapped candies, butitisstill legaltotradewrapped
+candies (out ofthe box). Isanunopened candy box now worth more than less than, or
+thesameasbefore?
+16.6 Provethatthejudgments B Aand C D inthe Allaisparadox (page 620)violate
+theaxiomofsubstitutability.
+16.7 Consider the Allais paradox described on page 620: an agent who prefers B over
+A (taking the sure thing), and C over D (taking the higher EMV) is not acting rationally,
+accordingtoutilitytheory. Doyouthinkthisindicatesaproblemfortheagent,aproblemfor
+thetheory, ornoproblematall? Explain.
+16.8 Ticketstoalotterycost 1. Therearetwopossibleprizes: a 10payoffwithprobabil-
+ity 1 50, and a 1,000,000 payoff withprobability 1 2,000,000. Whatis theexpected mone-
+taryvalueofalotteryticket? W

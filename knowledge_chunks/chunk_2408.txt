@@ -1,0 +1,27 @@
+ery otherplayer sticks withthesame
+EQUILIBRIUM
+5 Paretooptimalityisnamedaftertheeconomist Vilfredo Pareto(1848 1923).
+Section17.5. Decisionswith Multiple Agents: Game Theory 669
+strategy. Anequilibrium isessentially a local optimumin thespace of policies; itisthe top
+ofapeak thatslopes downward along every dimension, wherea dimension corresponds toa
+player s strategychoices.
+The mathematician John Nash (1928 ) proved that every game has at least one equi-
+librium. The general concept of equilibrium is now called Nash equilibrium in his honor.
+Clearly, a dominant strategy equilibrium is a Nash equilibrium (Exercise 17.16), but some
+NASHEQUILIBRIUM
+gameshave Nashequilibria butnodominantstrategies.
+The dilemma in the prisoner s dilemma is that the equilibrium outcome is worse for
+both players than the outcome they would get if they both refused totestify. Inother words,
+(testify,testify)is Paretodominatedbythe(-1,-1)outcomeof(refuse,refuse). Isthereany
+way for Alice and Bob to arrive at the (-1, -1) outcome? It is certainly an allowable option
+for both of them to refuse to testify, but is is hard to see how rational agents can get there,
+giventhedefinitionofthegame. Eitherplayercontemplating playing refuse willrealizethat
+he or she would do better by playing testify. That is the attractive power of an equilibrium
+point. Gametheorists agree thatbeinga Nashequilibrium is anecessary condition forbeing
+asolution although theydisagreewhetheritisasufficient condition.
+It is easy enough to get to the (refuse,refuse) solution if we modify the game. For
+example,wecouldchangetoarepeatedgameinwhichtheplayersknowthattheywillmeet
+again. Ortheagents might havemoral beliefs that encourage cooperation andfairness. That
+means they have a different utility function, necessitating a different payoff matrix, making
+it a different game. We will see later that agents with limited computational powers, rather
+thantheabilitytoreasonabsolutelyrationally,canreachnon-equilibriumoutcomes,ascanan

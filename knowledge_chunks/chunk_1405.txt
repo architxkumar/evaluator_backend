@@ -1,0 +1,29 @@
+an performance, whereas
+the ones on the right measure against an ideal performance measure, called rationality. A
+RATIONALITY
+systemisrationalifitdoesthe rightthing, givenwhatitknows.
+Historically, all four approaches to AI have been followed, each by different people
+withdifferentmethods. Ahuman-centered approachmustbeinpartanempiricalscience,in-
+1
+2 Chapter 1. Introduction
+Thinking Humanly Thinking Rationally Theexcitingnewefforttomakecomput- Thestudyofmentalfacultiesthroughthe
+ers think ... machines with minds, in the useofcomputational models. fullandliteralsense. (Haugeland, 1985) (Charniak and Mc Dermott,1985) The automation of activities that we Thestudyofthecomputationsthatmake
+associate with human thinking, activities itpossibletoperceive, reason,andact. such as decision-making, problem solv- (Winston, 1992)
+ing,learning ... (Bellman,1978)
+Acting Humanly Acting Rationally The art of creating machines that per- Computational Intelligence is the study
+form functions that require intelligence ofthedesignofintelligentagents. (Poole
+when performed by people. (Kurzweil, etal.,1998)
+1990) Thestudy ofhowtomakecomputers do AI ...is concerned with intelligent be-
+thingsatwhich,atthemoment,peopleare haviorinartifacts. (Nilsson,1998)
+better. (Richand Knight,1991)
+Figure1.1 Somedefinitionsofartificialintelligence,organizedintofourcategories.
+volvingobservationsandhypothesesabouthumanbehavior. Arationalist1 approachinvolves
+acombination ofmathematicsandengineering. Thevariousgrouphavebothdisparaged and
+helpedeachother. Letuslookatthefourapproaches inmoredetail.
+1.1.1 Acting humanly: The Turing Test approach
+The Turing Test, proposed by Alan Turing (1950), was designed to provide a satisfactory
+TURINGTEST
+operationaldefinitionofintelligence. Acomputerpassesthetestifahumaninterrogator,after
+posingsomewrittenquestions, cannottellwhetherthewrittenresponsescomefromaperson
+orfromacomputer. Chapter26discussesthedetailsofthetestandwhetheracomputerwould
+really be intelligent if i

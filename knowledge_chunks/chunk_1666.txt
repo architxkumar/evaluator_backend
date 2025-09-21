@@ -1,0 +1,27 @@
+ow search to compute the backed-up
+valuev ofanodeandthenusing pastexperience toestimatehowlikely itisthatascoreof v
+atdepthdinthetreewouldbeoutside ( , ). Buroappliedthistechniquetohis Othellopro-
+gram,LOGISTELLO,andfoundthataversionofhisprogramwith PROBCU Tbeattheregular
+version64 ofthetime,evenwhentheregularversionwasgiventwiceasmuchtime.
+Combining all the techniques described here results in a program that can play cred-
+itablechess(orothergames). Letusassumewehaveimplementedanevaluationfunctionfor
+chess, a reasonable cutoff test with a quiescence search, and a large transposition table. Let
+usalsoassumethat,aftermonthsoftediousbit-bashing,wecangenerateandevaluatearound
+amillionnodespersecondonthelatest PC,allowingustosearchroughly 200millionnodes
+per move under standard time controls (three minutes per move). The branching factor for
+chess is about 35, on average, and 355 is about 50 million, so if we used minimax search,
+we could look ahead only about fiveplies. Though not incompetent, such a program can be
+fooledeasilybyanaverage humanchessplayer, whocanoccasionally plansixoreightplies
+ahead. With alpha beta search we get to about 10 plies, which results in an expert level of
+play. Section5.8describes additional pruningtechniques thatcanextendtheeffectivesearch
+depth to roughly 14 plies. To reach grandmaster status we would need an extensively tuned
+evaluation function andalargedatabaseofoptimalopening andendgamemoves.
+176 Chapter 5. Adversarial Search
+5.4.4 Search versus lookup
+Somehowitseemslikeoverkillforachessprogramtostartagamebyconsidering atreeofa
+billiongamestates,onlytoconclude thatitwillmoveitspawntoe4. Booksdescribing good
+playintheopeningandendgameinchesshavebeenavailableforaboutacentury(Tattersall,
+1911). It is not surprising, therefore, that many game-playing programs use table lookup
+ratherthansearchfortheopening andendingofgames.
+Forthe openings, thecomputer ismostly relying onthe expertise ofhumans. Thebest
+advice ofhumanexpertsonhowtoplayeach

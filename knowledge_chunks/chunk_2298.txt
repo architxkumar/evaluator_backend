@@ -1,0 +1,27 @@
+ortheumbrellanetwork.
+Somuch for the good news; now forthe bad news: It turns out that the constant for
+theper-updatetimeandspacecomplexityis,inalmostallcases,exponentialinthenumberof
+state variables. What happens is that, as the variable elimination proceeds, the factors grow
+toincludeallthestatevariables(or,moreprecisely, allthosestatevariablesthathaveparents
+intheprevioustimeslice). Themaximumfactorsizeis O(dn k)andthetotalupdatecostper
+stepis O(ndn k),wheredisthedomainsizeofthevariablesandk isthemaximumnumber
+ofparents ofanystatevariable.
+Of course, this is much less than the cost of HMM updating, which is O(d2n), but it
+is still infeasible for large numbers of variables. This grim fact is somewhat hard to accept.
+What it means is that even though we can use DB Ns to represent very complex temporal
+processes with many sparsely connected variables, we cannot reason efficiently and exactly
+about those processes. The DBN model itself, which represents the prior joint distribution
+overall the variables, is factorable into its constituent CP Ts, but the posterior joint distribu-
+tionconditioned onanobservation sequence that is,theforwardmessage isgenerally not
+factorable. So far, no one has found a way around this problem, despite the fact that many
+importantareasofscienceandengineeringwouldbenefitenormouslyfromitssolution. Thus,
+wemustfallbackonapproximate methods.
+15.5.3 Approximateinference in DB Ns
+Section 14.5 described two approximation algorithms: likelihood weighting (Figure 14.15)
+and Markovchain Monte Carlo(MCMC,Figure14.16). Ofthetwo,theformerismosteasily
+adapted tothe DB Ncontext. (An MCM Cfiltering algorithm isdescribed brieflyinthenotes
+attheendofthechapter.) Wewillsee,however,thatseveral improvementsarerequired over
+thestandard likelihood weightingalgorithm beforeapracticalmethodemerges.
+Recall that likelihood weighting works by sampling the nonevidence nodes of the net-
+workintopologicalorder,weightingeachsamplebythelikelihooditaccordstotheobserved
+ev

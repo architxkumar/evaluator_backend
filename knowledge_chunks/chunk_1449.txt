@@ -1,0 +1,26 @@
+area.
+Similar gentle revolutions have occurred in robotics, computer vision, and knowledge
+representation. Abetterunderstanding oftheproblemsand theircomplexityproperties,com-
+bined withincreased mathematical sophistication, has led to workable research agendas and
+robustmethods. Althoughincreasedformalizationandspecializationledfieldssuchasvision
+androboticstobecomesomewhatisolatedfrom mainstream AIinthe1990s,thistrendhas
+reversedinrecentyearsastoolsfrommachinelearninginparticularhaveprovedeffectivefor
+manyproblems. Theprocessofreintegration isalreadyyielding significantbenefits
+1.3.9 The emergence ofintelligentagents (1995 present)
+Perhaps encouraged bytheprogress insolving thesubproblems of AI,researchers havealso
+started to look at the whole agent problem again. The work of Allen Newell, John Laird,
+and Paul Rosenbloomon SOAR(Newell,1990;Lairdetal.,1987)isthebest-knownexample
+of a complete agent architecture. One of the most important environments for intelligent
+agents is the Internet. AI systems have become so common in Web-based applications that
+the -bot suffix has entered everyday language. Moreover, AI technologies underlie many
+Section1.3. The Historyof Artificial Intelligence 27
+Internettools, suchassearchengines, recommendersystems, and Websiteaggregators.
+Oneconsequenceoftryingtobuildcompleteagentsistherealizationthatthepreviously
+isolated subfields of AI might need to be reorganized somewhat when their results are to be
+tied together. In particular, it is now widely appreciated that sensory systems (vision, sonar,
+speechrecognition, etc.) cannotdeliverperfectlyreliableinformationabouttheenvironment.
+Hence, reasoning and planning systems must be able to handle uncertainty. Asecond major
+consequence of the agent perspective is that AI has been drawn into much closer contact
+with other fields, such as control theory and economics, that also deal with agents. Recent
+progressinthecontrolofroboticcarshasderivedfromamixtureofapproachesrangingfrom
+better sens

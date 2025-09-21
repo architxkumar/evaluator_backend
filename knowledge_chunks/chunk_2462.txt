@@ -1,0 +1,48 @@
+ples,breakingtiesrandomly.
+Patrons?
+None Some Full
+No Yes Hungry?
+No Yes
+No Type?
+French Italian Thai Burger
+Yes No Fri Sat? Yes
+No Yes
+No Yes
+Figure18.6 Thedecisiontreeinducedfromthe12-exampletrainingset.
+In that case it says not to wait when Hungry is false, but I (SR)would certainly wait. With
+moretrainingexamplesthelearningprogram couldcorrectthismistake.
+Wenotethereisadangerofover-interpreting thetreethatthealgorithm selects. When
+thereareseveralvariables ofsimilarimportance, thechoice betweenthemissomewhatarbi-
+trary: withslightly different input examples, adifferent variable wouldbechosen tosplit on
+first,andthewholetreewouldlookcompletely different. Thefunction computed bythetree
+wouldstillbesimilar,butthestructure ofthetreecanvary widely.
+Wecanevaluate the accuracy ofalearning algorithm witha learningcurve, asshown
+LEARNINGCURVE
+in Figure 18.7. Wehave 100 examples atourdisposal, which we split into atraining set and
+Section18.3. Learning Decision Trees 703
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0 20 40 60 80 100
+tes
+tset
+no
+tcerroc
+noitropor P
+Training set size
+Figure 18.7 A learning curve for the decision tree learning algorithm on 100 randomly
+generatedexamplesintherestaurantdomain.Eachdatapointistheaverageof20trials.
+atestset. Welearnahypothesis hwiththetrainingsetandmeasureitsaccuracywiththetest
+set. We do this starting with a training set of size 1 and increasing one at a time up to size
+99. Foreach size weactually repeat the process ofrandomly splitting 20times, andaverage
+the results of the 20 trials. The curve shows that as the training set size grows, the accuracy
+increases. (Forthis reason, learning curves are also called happygraphs.) Inthis graph we
+reach95 accuracy, anditlookslikethecurvemightcontinue toincreasewithmoredata.
+18.3.4 Choosingattribute tests
+The greedy search used in decision tree learning is designed to approximately minimize the
+depth of the final tree. The idea is to pick the attribute that goes as far as possible toward
+providing an exact 

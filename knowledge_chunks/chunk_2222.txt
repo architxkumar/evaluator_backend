@@ -1,0 +1,23 @@
+hen the size of those worlds is unbounded; instead, it samples finite, partial worlds, rely-
+ing on the fact that only finitely many objects can be relevant to the query in distinct ways.
+Moreover, transitions must allow formerging two objects into one orsplitting one into two.
+(Details are given in the references at the end of the chapter.) Despite these complications,
+thebasicprincipleestablished in Equation(14.13)stillholds: theprobability ofanysentence
+iswelldefinedandcanbecalculated.
+Researchinthisareaisstillatanearlystage, butalready itisbecoming clearthatfirst-
+orderprobabilistic reasoning yieldsatremendous increase intheeffectiveness of AIsystems
+at handling uncertain information. Potential applications include those mentioned above computer vision, text understanding, and intelligence analysis as well asmanyother kinds
+ofsensorinterpretation.
+14.7 OTHER APPROACHES TO UNCERTAIN REASONING
+Other sciences (e.g., physics, genetics, and economics) have long favored probability as a
+model foruncertainty. In 1819, Pierre Laplace said, Probability theory is nothing but com-
+mon sense reduced to calculation. In 1850, James Maxwell said, The true logic for this
+world isthe calculus of Probabilities, which takes account ofthe magnitude ofthe probabil-
+itywhichis,oroughttobe,inareasonable man smind. Given this long tradition, it is perhaps surprising that AI has considered many alterna-
+tives to probability. The earliest expert systems of the 1970s ignored uncertainty and used
+strictlogicalreasoning,butitsoonbecameclearthatthis wasimpracticalformostreal-world
+domains. The next generation ofexpert systems (especially in medical domains) used prob-
+abilistic techniques. Initial results were promising, but they did not scale up because of the
+exponentialnumberofprobabilities requiredinthefulljointdistribution. (Efficient Bayesian
+network algorithms were unknown then.) As a result, probabilistic approaches fell out of
+favor from roughly 1975 to1988, and avariety ofalternati

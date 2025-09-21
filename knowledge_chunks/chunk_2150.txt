@@ -1,0 +1,28 @@
+whichonecanavoidassessingthepriorprobability
+of the evidence (here, P(s)) by instead computing a posterior probability for each value of
+Section13.5. Bayes Ruleand Its Use 497
+thequeryvariable(here, mand m)andthennormalizingtheresults. Thesameprocesscan
+beappliedwhenusing Bayes rule. Wehave
+P(M s) (cid:16)P(s m)P(m),P(s m)P( m)(cid:17).
+Thus, to use this approach we need to estimate P(s m) instead of P(s). There is no free
+lunch sometimesthisiseasier,sometimesitisharder. Thegeneralformof Bayes rulewith
+normalization is
+P(Y X) P(X Y)P(Y), (13.15)
+where isthenormalization constant neededtomaketheentriesin P(Y X)sumto1.
+One obvious question to ask about Bayes rule is why one might have available the
+conditional probability inonedirection, butnottheother. Inthemeningitis domain, perhaps
+thedoctorknowsthatastiffneckimpliesmeningitisin1outof5000cases;thatis,thedoctor
+has quantitative information in the diagnostic direction from symptoms to causes. Such a
+doctor has no need to use Bayes rule. Unfortunately, diagnostic knowledge is often more
+fragilethancausalknowledge. Ifthereisasuddenepidemicofmeningitis, theunconditional
+probability of meningitis, P(m), will go up. The doctor who derived the diagnostic proba-
+bility P(m s)directly from statistical observation ofpatients before theepidemic willhave
+noidea howto update the value, butthe doctorwhocomputes P(m s)from theotherthree
+values will see that P(m s) should go up proportionately with P(m). Most important, the
+causalinformation P(s m)isunaffected bytheepidemic,becauseitsimplyreflectstheway
+meningitis works. The use of this kind of direct causal ormodel-based knowledge provides
+thecrucialrobustness neededtomakeprobabilistic systemsfeasibleintherealworld.
+13.5.2 Using Bayes rule: Combining evidence
+Wehave seen that Bayes rule can be useful for answering probabilistic queries conditioned
+on one piece of evidence for example, the stiff neck. In particular, we have argued that
+probabilisticinformationisoftenavailableinthef

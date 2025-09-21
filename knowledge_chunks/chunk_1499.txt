@@ -1,0 +1,24 @@
+hey can be fully or
+partiallyobservable, single-agent ormultiagent, deterministic orstochastic, episodicor
+sequential, staticordynamic,discrete orcontinuous, and knownorunknown. The agent program implements the agent function. There exists a variety of basic
+agent-program designs reflecting thekindofinformation madeexplicit andusedinthe
+decision process. The designs vary in efficiency, compactness, and flexibility. The
+appropriate designoftheagentprogram depends onthenatureoftheenvironment. Simplereflexagentsresponddirectlytopercepts, whereas model-basedreflexagents
+maintain internal state to track aspects of the world that are not evident in the current
+percept. Goal-based agents act to achieve their goals, and utility-based agents try to
+maximizetheirownexpected happiness. Allagentscanimprovetheirperformance through learning.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+The central role of action in intelligence the notion of practical reasoning goes back at
+least as far as Aristotle s Nicomachean Ethics. Practical reasoning was also the subject of
+Mc Carthy s(1958)influential paper Programswith Common Sense. Thefieldsofrobotics
+andcontrol theory are, bytheirverynature, concerned principally withphysical agents. The
+concept of a controller in control theory is identical to that of an agent in AI. Perhaps sur-
+CONTROLLER
+prisingly, AI has concentrated for most of its history on isolated components of agents question-answering systems, theorem-provers, vision systems, and so on rather than on
+wholeagents. Thediscussion ofagents inthetextby Genesereth and Nilsson(1987) wasan
+influentialexception. Thewhole-agentviewisnowwidelyacceptedandisacentralthemein
+recenttexts(Pooleetal.,1998;Nilsson,1998;Padghamand Winikoff, 2004;Jones,2007).
+Chapter1tracedtherootsoftheconceptofrationalityinphilosophyandeconomics. In
+AI,theconceptwasofperipheralinterestuntilthemid-1980s,whenitbegantosuffusemany
+60 Chapter 2. Intelligent Agents
+discussions aboutthepropertechnical foundations ofthefield.

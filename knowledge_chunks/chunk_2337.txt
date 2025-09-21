@@ -1,0 +1,27 @@
+GY
+did not evolve to solve word problems with probabilities and prizes stated as decimal num-
+bers. Let us grant, for the sake of argument, that the brain has built-in neural mechanism
+forcomputingwithprobabilities andutilities, orsomethingfunctionally equivalent; ifso,the
+requiredinputswouldbeobtainedthroughaccumulatedexperienceofoutcomesandrewards
+ratherthanthroughlinguisticpresentationsofnumerical values. Itisfarfromobviousthatwe
+candirectlyaccessthebrain sbuilt-inneuralmechanisms bypresentingdecisionproblemsin
+linguistic numerical form. The very fact that different wordings of the same decision prob-
+lem elicit different choices suggests that the decision problem itself is not getting through.
+Spurred by this observation, psychologists have tried presenting problems in uncertain rea-
+soning and decision making in evolutionarily appropriate forms; for example, instead of
+saying 90 survival rate, the experimenter might show 100 stick-figure animations of the
+operation, wherethepatient diesin10ofthemandsurvives in90. (Boredom isacomplicat-
+ing factor in these experiments!) With decision problems posed in this way, people seem to
+bemuchclosertorationalbehaviorthanpreviously suspected.
+622 Chapter 16. Making Simple Decisions
+16.4 MULTIATTRIBUTE UTILITY FUNCTIONS
+Decision making in the field of public policy involves high stakes, in both money and lives.
+Forexample, indeciding whatlevelsofharmfulemissions to allow fromapowerplant, pol-
+icymakersmustweighthepreventionofdeathanddisability againstthebenefitofthepower
+and the economic burden of mitigating the emissions. Siting a new airport requires consid-
+eration of the disruption caused by construction; the cost of land; the distance from centers
+ofpopulation; the noise offlight operations; safety issues arising from local topography and
+weatherconditions; and so on. Problems like these, inwhich outcomes are characterized by
+MULTIATTRIBUTE twoormoreattributes, arehandledby multiattributeutilitytheory.
+UTILITYTHEORY
+We 

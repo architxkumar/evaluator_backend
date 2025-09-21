@@ -1,0 +1,21 @@
+000). Exploring unknown environ-
+K.-R.(Eds.),NIPS12.MIT Press. Wells,M.(1957). Experimentsinchess. JACM,4, mentswithreal-timesearchorreinforcementlearn-
+Kearns,M.and Singh,S.P.(1998). Near-optimal 174 177. ing. In Solla,S.A.,Leen,T.K.,and Mu ller,K.-R.
+reinforcement learning in polynomial time. In (Eds.),NIPS12.MIT Press.
+Kisynski,J.and Poole,D.(2009). Liftedaggrega-
+ICML-98,pp.260 268. tionindirectedfirst-orderprobabilisticmodels. In Koenig,S.(2001). Agent-centeredsearch. AI Mag,
+Kearns,M.and Vazirani,U.(1994).An Introduction IJCAI-09. 22(4),109 131.
+to Computational Learning Theory.MIT Press. Kitano,H.,Asada,M.,Kuniyoshi,Y.,Noda,I.,and Koller, D., Meggido, N., and von Stengel, B.
+Kearns,M.and Mansour,Y.(1998).Afast,bottom- Osawa,E.(1997a). Robo Cup:Therobotworldcup (1996). Efficientcomputationofequilibriaforex-
+updecisiontreepruningalgorithmwithnear-optimal initiative.In Proc.First International Conferenceon tensivetwo-persongames. Gamesand Economic
+generalization.In ICML-98,pp.269 277. Autonomous Agents,pp.340 347. Behaviour,14(2),247 259.
+Kebeasy, R.M., Hussein, A.I., and Dahy, S.A. Kitano,H.,Asada,M.,Kuniyoshi,Y.,Noda,I.,Os- Koller,D.and Pfeffer,A.(1997). Representations
+(1998).Discriminationbetweennaturalearthquakes awa,E.,and Matsubara,H.(1997b). Robo Cup: A and solutions for game-theoretic problems. AIJ,
+and nuclear explosions using the Aswan Seismic challengeproblemfor AI.AI Mag,18(1),73 85. 94(1 2),167 215.
+Network.Annalidi Geofisica,41(2),127 140.
+Kjaerulff,U.(1992). Acomputationalschemefor Koller, D. and Pfeffer, A. (1998). Probabilistic
+Keeney,R.L.(1974). Multiplicativeutilityfunc- reasoning in dynamic probabilistic networks. In frame-basedsystems.In AAAI-98,pp.580 587.
+tions.Operations Research,22,22 34. UAI-92,pp.121 129.
+Koller, D.and Friedman, N.(2009). Probabilis-
+Keeney,R.L.and Raiffa,H.(1976).Decisionswith Klein,D.and Manning,C.(2001).Parsingwithtree- tic Graphical Models: Principlesand Techniques.
+Multiple Objectives: Preferencesand Value Trade-

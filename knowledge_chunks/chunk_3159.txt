@@ -1,0 +1,43 @@
+195 Kasami,T.,920,1077
+Juang,B.-H.,604,922,1086
+Jackel,L.,762,967,1080 Kasif,S.,553,1093
+Judd,J.S.,762,1077
+Jackson,F.,1042,1077 Kasparov,G.,29,192,193,1077
+Juels,A.,155,1077
+Jacobi,C.G.,606 Kassirer,J.P.,505,1074
+Junker,U.,359,1077
+Jacquard,J.,14 Katriel,I.,212,228,1091
+Jurafsky,D.,885,886,920,922,1077
+Jacquardloom,14 Katz,S.,230,1069
+Just,M.A.,288,1082
+Jaffar,J.,359,1077 Kaufmann,M.,360,1077
+justification(ina JTMS),461
+Jaguar,431 Kautz,D.,432,1070
+Jain,A.,885,1085 Kautz,H.,154,229,277,279,395,
+K
+James,W.,13 1074,1077,1078,1088
+janitorialscience,37 k-consistency,211 Kavraki,L.,1013,1014,1068,1078
+Japan,24 k-DL(decisionlist),716 Kay,A.R.,11,1084
+Jasra,A.,605,1070 k-DT(decisiontree),716 Kay,M.,884,907,922,1066,1078
+Jaumard,B.,277,1075 k-dtree,739 KB,235,274,315
+Jaynes,E.T.,490,504,505,1077 k-foldcross-validation,708 KB-AGENT,236
+Jeavons,P.,230,1085 Kadane,J.B.,639,687,1077 Keane,M.A.,156,1079
+Jefferson,G.,1026,1077 Kaelbling,L.P.,278,556,605,686, Kearns,M.,686,759,763,764,855,
+Jeffrey,R.C.,504,637,1077 857,1012,1068,1070,1077, 1078
+Jeffreys,H.,883,1077 1082,1088,1090 Kebeasy,R.M.,723,724,1078
+Jelinek,F.,883,922,923,1067,1077 Kager,R.,921,1077 Kedar-Cabelli,S.,799,1082
+Jenkin,M.,1014,1071 Kahn,H.,855,1077 Keene,R.,29,1074
+Jenkins,G.,604,1066 Kahneman,D.,2,517,620,638,1077, Keeney,R.L.,621,625,626,638,1078
+Jennings,H.S.,12,1077 1090 Keil,F.C.,3,1042,1092
+Jenniskens,P.,422,1077 Kaindl,H.,112,1077 Keim,G.A.,231,1080
+Jensen,F.,552,553,1064 Kalman,R.,584,604,1077 Keller,R.,799,1082
+Jensen,F.V.,552,553,558,1064,1077 Kalmanfilter,566,584,584 591,603, Kelly,J.,826,1068
+Jevons,W.S.,276,799,1077 604,981 Kemp,M.,966,1078
+Ji,S.,686,1077 switching,589,608 Kempe,A.B.,1023
+Jimenez,P.,156,433,1077 Kalmangainmatrix,588 Kenley,C.R.,553,1088
+Jitnah,N.,687,1079 Kambhampati,S.,157,390,394,395, Kephart,J.O.,60,1078
+Joachims,T.,760,884,1077 431 433,1067,1069,1071, Kepler,J.,966
+job,402 1077,1084 kernel,743
+job-shopschedulingproblem,402 Kameya,Y.,556,1087 kernelfunction,747,816
+1112 Index
+po

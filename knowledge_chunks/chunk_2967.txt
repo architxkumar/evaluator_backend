@@ -1,0 +1,27 @@
+, 1985; Copeland, 1993; Mc Corduck, 2004; Minsky, 2007). The Behavioral and
+Brain Sciences, abbreviated BBS, is a major journal devoted to philosophical and scientific
+debates about AI and neuroscience. Topics of ethics and responsibility in AI are covered in
+thejournals AIand Society and Journal of Artificial Intelligence and Law.
+Exercises 1043
+EXERCISES
+26.1 Gothrough Turing s listofalleged disabilities ofmachines, identifying whichhave
+been achieved, which are achievable in principle by aprogram, andwhich are still problem-
+aticbecausetheyrequire conscious mentalstates.
+26.2 Findandanalyze anaccount inthepopular mediaofoneormore ofthearguments to
+theeffectthat AIisimpossible.
+26.3 In the brain replacement argument, it is important to be able to restore the subject s
+brain to normal, such that its external behavior is as it would have been if the operation had
+not taken place. Can the skeptic reasonably object that this would require updating those
+neurophysiological properties of the neurons relating to conscious experience, as distinct
+fromthoseinvolved inthefunctional behavioroftheneurons?
+26.4 Suppose that a Prolog program containing many clauses about the rules of British
+citizenship is compiled and run on an ordinary computer. Analyze the brain states of the
+computerunderwideandnarrowcontent.
+26.5 Alan Perlis(1982)wrote, Ayearspentinartificialintelligenceisenoughtomakeone
+believe in God . Healso wrote, in a letter to Philip Davis, that one of the central dreams of
+computer science is that through theperformance of computers and their programs wewill
+remove all doubt that there is only a chemical distinction between the living and nonliving
+world. To what extent does the progress made so far in artificial intelligence shed light on
+theseissues? Supposethatatsomefuturedate,the AIendeavorhasbeencompletelysuccess-
+ful;thatis,wehavebuildintelligent agentscapableofcarryingoutanyhumancognitivetask
+athumanlevelsofability. Towhatextentwouldthatshedlightontheseissues

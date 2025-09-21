@@ -1,0 +1,25 @@
+etation 897
+a banana is more probable. We can combine a PCFG and Markov model to get the best of
+both. The simplest approach is to estimate the probability of a sentence with the geometric
+meanoftheprobabilitiescomputedbybothmodels. Thenwewouldknowthat eatabanana isprobable fromboththegrammaticalandlexicalpointofview. Butitstillwouldn tpickup
+the relation between eat and banana in eat a slightly aging but still palatable banana because here the relation is more than two words away. Increasing the order of the Markov
+model won t get at the relation precisely; to do that we can use a lexicalized PCFG, as
+described inthenextsection.
+Anotherproblemwith PCF Gsisthattheytendtohavetoostrongapreferenceforshorter
+sentences. In a corpus such as the Wall Street Journal, the average length of a sentence
+is about 25 words. But a PCFG will usually assign fairly high probability to many short
+sentences, suchas Heslept, whereasinthe Journalwe remorelikelytoseesomethinglike Ithasbeenreportedbyareliablesourcethattheallegationthathesleptiscredible. Itseems
+thatthephrases inthe Journal really arenotcontext-free; instead thewriters haveanideaof
+theexpectedsentencelengthandusethatlengthasasoftglobalconstraintontheirsentences.
+Thisishardtoreflectina PCFG.
+23.3 AUGMENTED GRAMMARS AND SEMANTIC INTERPRETATION
+In this section we see how to extend context-free grammars to say that, for example, not
+every NP isindependent ofcontext, butrather, certain NPsaremorelikely toappearinone
+context, andothersinanothercontext.
+23.3.1 Lexicalized PCF Gs
+Togetattherelationship betweentheverb eat andthenouns banana versus bandanna, wecanusealexicalized PCFG,inwhichtheprobabilities foraruledepend ontherelation-
+LEXICALIZEDPCFG
+ship between words in the parse tree, not just on the adjacency of words in a sentence. Of
+course, we can t have the probability depend on every word in the tree, because we won t
+have enough training data to estimate all those probabilities. Itisuseful tointroduce the no-
+tion of the 

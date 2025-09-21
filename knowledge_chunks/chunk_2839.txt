@@ -1,0 +1,29 @@
+usually known asa pictorial
+PICTORIAL structuremodel.
+STRUCTUREMODEL
+Recallourassumptionthatweknowwhatweneedtoknowaboutwhatthepersonlooks
+like. If weare matching a person in a single image, the most useful feature forscoring seg-
+ment matches turns out tobe color. Texture features don t work wellin mostcases, because
+foldsonlooseclothingproducestrongshadingpatternsthatoverlaytheimagetexture. These
+Section24.5. Object Recognition from Structural Information 959
+Figure24.23 Apictorialstructuremodelevaluatesamatchbetweenasetofimagerect-
+angles and a cardboard person (shown on the left) by scoring the similarity in appearance
+betweenbodysegmentsandimagesegmentsandthespatialrelationsbetweentheimageseg-
+ments.Generally,amatchisbetteriftheimagesegmentshaveabouttherightappearanceand
+areinabouttherightplacewithrespecttooneanother. Theappearancemodelusesaverage
+colors forhair, head, torso, and upperand lower arms and legs. The relevantrelations are
+shownasarrows.Ontheright,thebestmatchforaparticularimage,obtainedusingdynamic
+programming. The match is a fair estimate of the configuration of the body. Figure from
+Felzenszwalband Huttenlocher(2000)(cid:2)c IEEE.
+patternsarestrongenoughtodisruptthetruetextureofthe cloth. Incurrentwork, typically
+reflects the need for the ends of the segments to be reasonably close together, but there are
+usually no constraints on the angles. Generally, we don t know what a person looks like,
+and must build a model of segment appearances. We call the description of what a person
+APPEARANCE looksliketheappearancemodel. Ifwemustreporttheconfiguration ofapersoninasingle
+MODEL
+image, wecan start with apoorly tuned appearance model, estimate configuration with this,
+then re-estimate appearance, and so on. In video, wehave many frames of the same person,
+andthiswillrevealtheirappearance.
+24.5.2 Coherent appearance: Tracking people invideo
+Tracking people in video is an important practical problem. If we could reliably report the
+location of arms, legs, 

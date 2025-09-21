@@ -1,0 +1,31 @@
+s three-dimensional:
+onanopenflatsurface, onecaneasily maneuveracartoany (x,y)point, inanyorientation.
+(See Figure 25.4(b).) Thus, the carhasthree effective degrees of freedom but twocontrol-
+EFFECTIVEDOF
+lable degrees of freedom. We say a robot is nonholonomic if it has more effective DO Fs
+CONTROLLABLEDOF
+than controllable DO Fsand holonomic if the two numbers are the same. Holonomic robots
+NONHOLONOMIC
+areeasiertocontrol itwouldbemucheasiertoparkacarthatcouldmovesidewaysaswell
+asforwardandbackward but holonomicrobotsarealsomechanically morecomplex. Most
+robotarmsareholonomic, andmostmobilerobotsarenonholonomic.
+Mobile robots have a range of mechanisms for locomotion, including wheels, tracks,
+and legs. Differential drive robots possess two independently actuated wheels (or tracks),
+DIFFERENTIALDRIVE
+one on each side, as on a military tank. If both wheels move at the same velocity, the robot
+movesonastraight line. Iftheymoveinopposite directions, therobot turnsonthespot. An
+alternativeisthesynchrodrive,inwhicheachwheelcanmoveandturnarounditsownaxis.
+SYNCHRODRIVE
+To avoid chaos, the wheels are tightly coordinated. When moving straight, for example, all
+wheelspointinthesamedirectionandmoveatthesamespeed. Bothdifferentialandsynchro
+drives are nonholonomic. Some more expensive robots use holonomic drives, which have
+threeormorewheelsthatcanbeoriented andmovedindependently.
+Some mobile robots possess arms. Figure 25.5(a) displays a two-armed robot. This
+robot s arms use springs to compensate for gravity, and they provide minimal resistance to
+Section25.2. Robot Hardware 977
+(a) (b)
+Figure 25.5 (a) Mobile manipulatorpluggingits charge cable into a wall outlet. Image
+courtesyof Willow Garage,(cid:2)c 2009.(b)Oneof Marc Raibert sleggedrobotsinmotion.
+external forces. Such a design minimizes the physical danger to people who might stumble
+intosucharobot. Thisisakeyconsideration indeploying robotsindomesticenvironments.
+Legs, unlike wheels, can handle rough terrain. However

@@ -1,0 +1,23 @@
+,Stanford University. Oxford University Press.
+1086 Bibliography
+Popper,K.R.(1959). The Logicof Scientific Dis- Pylyshyn,Z.W.(1984). Computationand Cogni- Ratner, D. and Warmuth, M.(1986). Finding a
+covery.Basic Books. tion: Towarda Foundationfor Cognitive Science. shortestsolutionforthen nextensionofthe
+MIT Press. 15-puzzleisintractable.In AAAI-86,Vol.1,pp.168 Popper,K.R.(1962).Conjecturesand Refutations:
+172.
+The Growthof Scientific Knowledge.Basic Books. Quillian,M.R.(1961).Adesignforanunderstand-
+Portner,P.and Partee,B.H.(2002).Formal Seman- ingmachine. Paperpresentedatacolloquium: Se- Rauch,H.E.,Tung,F.,and Striebel,C.T.(1965).
+tics:The Essential Readings.Wiley-Blackwell. mantic Problemsin Natural Language,King s Col- Maximum likelihood estimates of linear dynamic
+lege,Cambridge,England. systems.AIAA Journal,3(8),1445 1450.
+Post,E.L.(1921). Introductiontoageneralthe-
+oryofelementarypropositions. American Journal Quine,W.V.(1953). Twodogmasofempiricism. Rayward-Smith, V., Osman, I., Reeves, C., and
+of Mathematics,43,163 185. In Froma Logical Pointof View,pp.20 46.Harper Smith,G.(Eds.).(1996). Modern Heuristic Search
+and Row. Methods.Wiley.
+Poundstone,W.(1993). Prisoner s Dilemma. An-
+chor. Quine,W.V.(1960).Wordand Object.MIT Press. Rechenberg,I.(1965). Cyberneticsolutionpathof
+anexperimentalproblem. Librarytranslation1122,
+Pourret, O., Na m, P., and Marcot, B. (2008). Quine,W.V.(1982). Methodsof Logic(fourthedi- Royal Aircraft Establishment.
+Bayesian Networks: Apracticalguidetoapplica- tion).Harvard University Press.
+tions.Wiley. Reeson, C.G., Huang, K.-C., Bayer, K.M., and
+Quinlan,J.R.(1979).Discoveringrulesfromlarge Choueiry,B.Y.(2007). Aninteractiveconstraint-
+Prades,J.L.P.,Loomes,G.,and Brey,R.(2008). collectionsofexamples: Acasestudy. In Michie, basedapproachtosudoku. In AAAI-07,pp.1976 Tryingtoestmateamonetaryvalueforthe QALY. D.(Ed.),Expert Systemsinthe Microelectronic Age. 1977.
+Tech.rep.WP Econ08.09,Univ.Pablo Olavide. Edinburgh University Press. Regin,

@@ -1,0 +1,32 @@
+, including monitoring, filtering and state estima-
+MONITORING
+tion. Equation (4.6) iscalled arecursive state estimator because it computes the new belief
+FILTERING
+statefromthepreviousoneratherthanbyexaminingtheentireperceptsequence. Iftheagent
+STATEESTIMATION
+is not to fall behind, the computation has to happen as fast as percepts are coming in. As
+RECURSIVE
+the environment becomes more complex, the exact update computation becomes infeasible
+and the agent willhave to compute an approximate belief state, perhaps focusing on the im-
+plications ofthe percept fortheaspects ofthe environment that are ofcurrent interest. Most
+work on this problem has been done for stochastic, continuous-state environments with the
+tools of probability theory, as explained in Chapter 15. Here we will show an example in a
+discreteenvironment withdetrministic sensorsandnondeterministic actions.
+The example concerns a robot with the task of localization: working out where it is,
+LOCALIZATION
+given amap of the world and a sequence of percepts and actions. Ourrobot is placed in the
+maze-like environment of Figure 4.18. The robot is equipped with four sonar sensors that
+tell whether there is an obstacle the outer wall or a black square in the figure in each of
+thefourcompassdirections. Weassumethatthesensors give perfectly correct data, andthat
+the robot has a correct map of the enviornment. But unfortunately the robot s navigational
+systemisbroken,sowhenitexecutesa Moveaction,itmovesrandomlytooneoftheadjacent
+squares. Therobot staskistodetermineitscurrentlocation.
+Suppose the robot has just been switched on, so it does not know where it is. Thus its
+initial belief state b consists of the set of all locations. The the robot receives the percept
+12 Theusualapologiestothosewhoareunfamiliarwiththeeffectofsmallchildrenontheenvironment.
+146 Chapter 4. Beyond Classical Search
+(a)Possiblelocations ofrobotafter E NSW
+1
+(b)Possiblelocations ofrobot After E NSW,E NS
+1 2
+Figure4.18 Possiblepositionsofth

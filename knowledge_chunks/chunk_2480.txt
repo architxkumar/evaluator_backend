@@ -1,0 +1,32 @@
+regen-
+eralprinciples governing thenumberofexamples needed ingeneral? Questions likethis are
+COMPUTATIONAL addressed bycomputationallearningtheory, whichliesattheintersection of AI,statistics,
+LEARNINGTHEORY
+andtheoreticalcomputerscience. Theunderlyingprincipleisthatanyhypothesisthatisseri-
+ouslywrongwillalmostcertainly be foundout withhighprobability afterasmallnumber
+ofexamples,becauseitwillmakeanincorrectprediction. Thus,anyhypothesisthatisconsis-
+tentwithasufficientlylargesetoftrainingexamplesisunlikelytobeseriouslywrong: thatis,
+PROBABLY
+it must be probably approximately correct. Any learning algorithm that returns hypotheses
+APPROXIMATELY
+CORRECT
+that areprobably approximately correct iscalled a PA Clearningalgorithm; wecanuse this
+PACLEARNING
+approach toprovidebounds ontheperformance ofvariouslearning algorithms.
+PAC-learning theorems, like all theorems, are logical consequences of axioms. When
+a theorem (as opposed to, say, a political pundit) states something about the future based on
+the past, the axioms have to provide the juice to make that connection. For PA Clearning,
+the juice isprovided bythe stationarity assumption introduced onpage 708, whichsays that
+future examples are going to be drawn from the same fixed distribution P(E) P(X,Y)
+as past examples. (Note that we do not have to know what distribution that is, just that it
+doesn t change.) In addition, to keep things simple, we will assume that the true function f
+isdeterministic andisamemberofthehypothesis class Hthatisbeingconsidered.
+The simplest PAC theorems deal with Boolean functions, for which the 0 1 loss is ap-
+propriate. The error rate of a hypothesis h, defined informally earlier, is defined formally
+hereastheexpectedgeneralization errorforexamplesdrawnfromthestationarydistribution:
+(cid:12)
+error(h) Gen Loss (h) L (y,h(x))P(x,y) .
+L0 1 0 1
+x,y
+In other words, error(h) is the probability that h misclassifies a new example. This is the
+samequantitybeingmeasuredexperimentally bythelearning

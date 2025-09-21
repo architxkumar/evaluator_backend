@@ -1,0 +1,27 @@
+ derivable. There have been
+attempts to define a form of limited rationality for agents; to say that agents believe those
+assertions that can be derived with the application of no more than k reasoning steps, or no
+morethansseconds ofcomputation. Theseattemptshavebeengenerally unsatisfactory.
+12.5 REASONING SYSTEMS FOR CATEGORIES
+Categoriesaretheprimarybuilding blocksoflarge-scale knowledgerepresentation schemes.
+This section describes systems specially designed for organizing and reasoning with cate-
+gories. Therearetwocloselyrelatedfamiliesofsystems: semanticnetworksprovidegraph-
+ical aids for visualizing a knowledge base and efficient algorithms for inferring properties
+454 Chapter 12. Knowledge Representation
+of an object on the basis of its category membership; and description logics provide a for-
+mal language for constructing and combining category definitions and efficient algorithms
+fordeciding subsetandsupersetrelationships betweencategories.
+12.5.1 Semantic networks
+In1909,Charles S.Peirceproposedagraphicalnotationofnodesandedgescalledexistential
+EXISTENTIAL graphs that he called the logic of the future. Thus began a long-running debate between
+GRAPHS
+advocates of logic and advocates of semantic networks. Unfortunately, the debate ob-
+scured the fact that semantics networks at least those with well-defined semantics are a
+form of logic. The notation that semantic networks provide for certain kinds of sentences
+is often more convenient, but if we strip away the human interface issues, the underlying
+concepts objects, relations, quantification, andsoon arethesame.
+There are many variants of semantic networks, but all are capable of representing in-
+dividual objects, categories of objects, and relations among objects. A typical graphical no-
+tation displays object or category names in ovals or boxes, and connects them with labeled
+links. Forexample, Figure 12.5 hasa Member Of link between Mary and Female Persons,
+corresponding tothelogical assertion Mary Fem

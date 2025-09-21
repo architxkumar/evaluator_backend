@@ -1,0 +1,26 @@
+rctation(courtesyof Peter Lucas).
+and asking them for their diagnosis and recommended treatment plan. We then see how
+wellthe system matches theirrecommendations. Ifitdoes poorly, wetryto isolate theparts
+that are going wrong and fix them. It can be useful to run the system backward. Instead
+of presenting the system with symptoms and asking for a diagnosis, we can present it with
+a diagnosis such as heart failure, examine the predicted probability of symptoms such as
+tachycardia, andcomparewiththemedicalliterature.
+SENSITIVITY Perform sensitivity analysis. This important step checks whether the best decision is
+ANALYSIS
+sensitivetosmallchangesintheassignedprobabilities andutilitiesbysystematicallyvarying
+those parameters and running the evaluation again. If small changes lead to significantly
+different decisions, then it could be worthwhile to spend more resources to collect better
+data. Ifallvariationsleadtothesamedecision, thentheagentwillhavemoreconfidencethat
+itistherightdecision. Sensitivityanalysis isparticularly important, becauseoneofthemain
+636 Chapter 16. Making Simple Decisions
+criticisms ofprobabilistic approaches toexpert systems is that it istoo difficult to assess the
+numerical probabilities required. Sensitivity analysis oftenrevealsthatmanyofthenumbers
+need be specified only very approximately. For example, we might be uncertain about the
+conditional probability P(tachycardia dyspnea), but if the optimal decision is reasonably
+robusttosmallvariations intheprobability, thenourignorance islessofaconcern.
+16.8 SUMMARY
+Thischaptershowshowtocombineutilitytheorywithprobabilitytoenableanagenttoselect
+actionsthatwillmaximizeitsexpected performance. Probability theory describes what an agent should believe on the basis of evidence,
+utilitytheorydescribeswhatanagentwants,anddecisiontheoryputsthetwotogether
+todescribe whatanagentshoulddo. We can use decision theory to build a system that makes decisions by considering all
+possible actions and choosing the one 

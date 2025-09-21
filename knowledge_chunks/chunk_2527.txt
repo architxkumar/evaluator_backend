@@ -1,0 +1,29 @@
+his then is the clever kernel trick: Plugging these kernels into Equation (18.13),
+KERNELTRICK
+optimal linear separators can be found efficiently in feature spaces with billions of (or, in
+somecases, infinitely many)dimensions. Theresulting linearseparators, whenmappedback
+to the original input space, can correspond to arbitrarily wiggly, nonlinear decision bound-
+ariesbetweenthepositiveandnegativeexamples.
+In the case of inherently noisy data, we may not want a linear separator in some high-
+dimensional space. Rather, we d like a decision surface in a lower-dimensional space that
+does not cleanly separate the classes, but reflects the reality of the noisy data. That is pos-
+sible withthe soft margin classifier, which allows examples to fall on the wrong side of the
+SOFTMARGIN
+decision boundary, but assigns them a penalty proportional to the distance required to move
+thembackonthecorrectside.
+The kernel method can be applied not only with learning algorithms that find optimal
+linear separators, but also with any other algorithm that can be reformulated to work only
+with dot products of pairs of data points, as in Equations 18.13 and 18.14. Once this is
+done, the dot product is replaced by a kernel function and we have a kernelized version
+KERNELIZATION
+of the algorithm. This can be done easily for k-nearest-neighbors and perceptron learning
+(Section18.7.2),amongothers.
+18.10 ENSEMBLE LEARNING
+So far we have looked at learning methods in which a single hypothesis, chosen from a
+ENSEMBLE hypothesis space, is used to make predictions. The idea of ensemble learning methods is
+LEARNING
+to select a collection, or ensemble, of hypotheses from the hypothesis space and combine
+their predictions. For example, during cross-validation we might generate twenty different
+decision trees,andhavethemvoteonthebestclassification foranewexample.
+The motivation for ensemble learning is simple. Consider an ensemble of K 5 hy-
+pothesesandsupposethatwecombinetheirpredictionsusingsimplemajo

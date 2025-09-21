@@ -1,0 +1,59 @@
+riousconditional probabilities inthenetwork.
+562 Chapter 14. Probabilistic Reasoning
+F F F N F M M
+1 2 1 2 1 2
+M M N
+1 2
+M M
+1 2
+N F F
+1 2
+(i) (ii) (iii)
+Figure14.22 Threepossiblenetworksforthetelescopeproblem.
+14.12 Two astronomers in different parts of the world make measurements M and M of
+1 2
+thenumberofstars N insomesmallregionofthesky,usingtheirtelescopes. Normally,there
+is a small possibility e of error by up to one star in each direction. Each telescope can also
+(withamuch smallerprobability f)bebadly outoffocus (events F and F ), inwhichcase
+1 2
+the scientist will undercount by three or more stars (or if N is less than 3, fail to detect any
+starsatall). Considerthethreenetworksshownin Figure14.22.
+a. Which of these Bayesian networks are correct (but not necessarily efficient) represen-
+tationsofthepreceding information?
+b. Whichisthebestnetwork? Explain.
+c. Writeoutaconditionaldistributionfor P(M N),forthecasewhere N 1,2,3 and
+1
+M 0,1,2,3,4 . Eachentryintheconditional distribution should beexpressed asa
+1
+functionoftheparameters eand orf.
+d. Suppose M 1and M 3. Whatarethepossible numbersofstarsifyouassumeno
+1 2
+priorconstraint onthevaluesof N?
+e. What is the most likely number of stars, given these observations? Explain how to
+computethis, orifitisnotpossible tocompute, explain whatadditional information is
+neededandhowitwouldaffecttheresult.
+14.13 Consider the network shown in Figure 14.22(ii), and assume that the twotelescopes
+work identically. N 1,2,3 and M ,M 0,1,2,3,4 , with the symbolic CP Ts as de-
+1 2
+scribed in Exercise 14.12. Using the enumeration algorithm (Figure 14.9 on page 525), cal-
+culatetheprobability distribution P(N M 2,M 2).
+1 2
+14.14 Considerthe Bayesnetshownin Figure14.23.
+a. Whichofthefollowingareassertedbythenetwork structure?
+(i) P(B,I,M) P(B)P(I)P(M).
+(ii) P(J G) P(J G,I).
+(iii) P(M G,B,I) P(M G,B,I,J).
+Exercises 563
+B M P(I)
+t t .9
+t f .5
+f t .5
+P(B) f f .1 P(M)
+.9 .1
+B I M
+B I M P(G)
+G
+t t t .9
+t t f .8
+t f t .0
+t f f .0 G P(J)

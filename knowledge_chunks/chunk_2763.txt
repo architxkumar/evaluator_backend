@@ -1,0 +1,31 @@
+rongplaces. Forexample,youcan thaveagapinonebranch
+of an NP conjunction: What did he play NP Dungeons and ? is ungrammatical. But
+youcanhave thesamegapinboth branches ofa VP conjunction: Whatdidyou VP VP
+smell and VP shootanarrowat ? Ambiguity: Insomecases,hearersareconsciously awareofambiguityinanutterance.
+AMBIGUITY
+Herearesomeexamplestakenfromnewspaperheadlines:
+5 Ifthisinterpretationseemsunlikely,consider Every Protestantbelievesinajust God. Section23.3. Augmented Grammarsand Semantic Interpretation 905
+Squadhelpsdogbitevictim.
+Policebegincampaigntorundownjaywalkers.
+Helicopterpoweredbyhumanflies.
+Once-sagging clothdiaperindustrysavedbyfulldumps.
+Portabletoiletbombed;policehavenothingtogoon.
+Teacherstrikesidlekids.
+Includeyourchildren whenbakingcookies.
+Hospitalsaresuedby7footdoctors.
+Milkdrinkers areturningtopowder.
+Safetyexpertssayschoolbuspassengers shouldbebelted.
+Butmostofthetimethelanguage wehearseemsunambiguous. Thus,whenresearchers first
+began to use computers to analyze language in the 1960s, they were quite surprised to learn
+that almost every utterance is highly ambiguous, even though the alternative interpretations
+mightnotbeapparenttoanativespeaker. Asystemwithalargegrammarandlexiconmight
+find thousands of interpretations for a perfectly ordinary sentence. Lexical ambiguity, in
+LEXICALAMBIGUITY
+which a word has more than one meaning, is quite common; back can be an adverb (go
+back), anadjective (backdoor), anoun(thebackoftheroom) oraverb(back upyourfiles). Jack canbeaname,anoun(aplayingcard,asix-pointedmetalgamepiece,anauticalflag,
+afish,asocket,oradeviceforraisingheavyobjects), oraverb(tojackupacar,tohuntwith
+SYNTACTIC a light, or to hit a baseball hard). Syntactic ambiguity refers to a phrase that has multiple
+AMBIGUITY
+parses: I smelled awumpus in 2,2 has twoparses: one where the prepositional phrase in
+2,2 modifiesthenounandonewhereitmodifiestheverb. Thesyntacticambiguityleadstoa
+SEMANTIC semanticambiguity,becauseoneparsemeansthatthewumpusisin2,

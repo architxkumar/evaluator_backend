@@ -1,0 +1,26 @@
+lman (1991) helped
+popularize DB Nsand the probabilistic approach to planning and control within AI.Murphy
+(2002)provides athorough analysisof DB Ns.
+Dynamic Bayesian networks have become popular for modeling a variety of com-
+plex motion processes in computer vision (Huang et al., 1994; Intille and Bobick, 1999).
+Like HM Ms, they have found applications in speech recognition (Zweig and Russell, 1998;
+Richardsonetal.,2000;Stephensonetal.,2000;Nefianetal.,2002;Livescuetal.,2003),ge-
+Bibliographical and Historical Notes 605
+nomics(Murphyand Mian,1999;Perrinetal.,2003;Husmeier,2003)androbotlocalization
+(Theocharous et al., 2004). Thelink between HM Msand DB Ns, and between the forward backward algorithm and Bayesian network propagation, was made explicitly by Smyth et
+al.(1997). Afurtherunification with Kalmanfilters(andotherstatistical models) appears in
+Roweisand Ghahramani (1999). Procedures exist forlearning theparameters (Binder etal.,
+1997a;Ghahramani, 1998)andstructures (Friedman etal.,1998)of DB Ns.
+The particle filtering algorithm described in Section 15.5 has a particularly interesting
+history. Thefirstsamplingalgorithmsforparticlefiltering(alsocalledsequential Monte Carlo
+methods)weredeveloped inthecontroltheorycommunityby Handschinand Mayne(1969),
+and the resampling idea that is the core of particle filtering appeared in a Russian control
+journal(Zaritskii etal.,1975). Itwaslaterreinvented instatisticsassequentialimportance-
+samplingresampling,or SIR(Rubin,1988;Liuand Chen,1998),incontroltheoryasparti-
+clefiltering (Gordon etal., 1993; Gordon, 1994), in AI as survival of thefittest(Kanazawa
+etal.,1995),andincomputervisionascondensation(Isardand Blake,1996). Thepaperby
+EVIDENCE Kanazawaetal.(1995)includes animprovementcalled evidencereversalwherebythestate
+REVERSAL
+attimet 1issampledconditional onboththestateattimetandtheevidenceattimet 1.
+This allows the evidence to influence sample generation directly and was proved by Doucet
+(1997)and Liuand Chen(1998)tor

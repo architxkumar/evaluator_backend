@@ -1,0 +1,31 @@
+ult to
+achieve, because solutions for the whole conjunction require consistent bindings for all the
+variables. Each conjunctive branch must communicate with the other branches to ensure a
+globalsolution.
+9.4.4 Redundant inference andinfinite loops
+We now turn to the Achilles heel of Prolog: the mismatch between depth-first search and
+search trees thatinclude repeated states andinfinite paths. Considerthefollowing logicpro-
+gramthatdecidesifapathexistsbetweentwopointsonadirectedgraph:
+path(X,Z) :- link(X,Z).
+path(X,Z) :- path(X,Y), link(Y,Z).
+Asimple three-node graph, described bythefacts link(a,b)and link(b,c),isshown
+in Figure 9.9(a). With this program, the query path(a,c)generates the proof tree shown
+in Figure9.10(a). Ontheotherhand,ifweputthetwoclauses intheorder
+path(X,Z) :- path(X,Y), link(Y,Z).
+path(X,Z) :- link(X,Z).
+then Prologfollowstheinfinitepathshownin Figure9.10(b). Prologistherefore incomplete
+asatheoremproverfordefiniteclauses evenfor Datalogprograms,asthisexampleshows because, for some knowledge bases, it fails to prove sentences that are entailed. Notice that
+forward chaining does not suffer from this problem: once path(a,b),path(b,c),and
+path(a,c)areinferred, forwardchaining halts.
+Depth-first backward chaining also has problems with redundant computations. For
+example,whenfindingapathfrom A to J in Figure9.9(b),Prologperforms877inferences,
+1 4
+mostofwhichinvolvefindingallpossiblepathstonodesfromwhichthegoalisunreachable.
+This is similar to the repeated-state problem discussed in Chapter 3. The total amount of
+inference can be exponential in the number of ground facts that are generated. If we apply
+forward chaining instead, at most n2 path(X,Y)facts can be generated linking n nodes.
+Fortheproblem in Figure9.9(b),only62inferences areneeded.
+DYNAMIC Forwardchainingongraphsearchproblemsisanexampleof dynamicprogramming,
+PROGRAMMING
+in which the solutions to subproblems are constructed incrementally from those of smaller
+Section9.4. Backward Chaining 

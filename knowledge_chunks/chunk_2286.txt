@@ -1,0 +1,39 @@
+ndependent ofthe
+observations. The sequence of values for and K can therefore be computed offline, and
+t t
+theactualcalculations requiredduringonlinetracking arequitemodest.
+Toillustrate these equations at work, we have applied them to the problem of tracking
+anobject moving on the X Y plane. Thestate variables are X (X,Y,X ,Y ) (cid:12) , so F, ,
+x
+H, and are 4 4 matrices. Figure 15.11(a) shows the true trajectory, a series of noisy
+z
+observations, and the trajectory estimated by Kalman filtering, along with the covariances
+indicated by the one-standard-deviation contours. The filtering process does a good job of
+tracking theactualmotion,and,asexpected, thevariancequicklyreaches afixedpoint.
+We can also derive equations for smoothing as well as filtering with linear Gaussian
+models. Thesmoothing resultsareshownin Figure15.11(b). Noticehowthevariance inthe
+position estimate issharply reduced, except attheends ofthetrajectory (why?),and thatthe
+estimatedtrajectory ismuchsmoother.
+15.4.4 Applicabilityof Kalmanfiltering
+The Kalmanfilteranditselaborationsareusedinavastarrayofapplications. The classical application isinradartracking ofaircraftandmissiles. Relatedapplications includeacoustic
+tracking of submarines and ground vehicles and visual tracking of vehicles and people. In a
+slightly more esoteric vein, Kalman filters are used to reconstruct particle trajectories from
+bubble-chamber photographs and ocean currents from satellite surface measurements. The
+rangeofapplicationismuchlargerthanjustthetrackingofmotion: anysystemcharacterized
+by continuous state variables and noisy measurements will do. Such systems include pulp
+mills,chemicalplants, nuclearreactors, plantecosystems, andnational economies.
+Section15.4. Kalman Filters 589
+2D filtering 2D smoothing
+12 12
+true true
+observed observed
+smoothed smoothed
+11 11
+10 10
+Y 9 Y 9
+8 8
+7 7
+6 6
+8 10 12 14 16 X18 20 22 24 26 8 10 12 14 16 X18 20 22 24 26
+(a) (b)
+Figure 15.11 (a) Results of Kalman filtering for an object mov

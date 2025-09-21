@@ -1,0 +1,27 @@
+fwhere auctions can come into play within AI is whenacollection
+of agents are deciding whether to cooperate on a joint plan. Hunsberger and Grosz (2000)
+show that this can be accomplished efficiently with an auction in which the agents bid for
+rolesinthejointplan.
+Section17.6. Mechanism Design 683
+17.6.2 Commongoods
+Now let s consider another type of game, in which countries set their policy for controlling
+airpollution. Eachcountry hasachoice: theycanreduce pollution atacostof-10points for
+implementing thenecessary changes, ortheycancontinue topollute, whichgivesthemanet
+utility of-5(inadded health costs, etc.) andalsocontributes -1points toeveryothercountry
+(because the air is shared across countries). Clearly, the dominant strategy for each country
+is continue topollute, butifthereare100countries andeachfollowsthispolicy, theneach
+country gets a total utility of -104, whereas if every country reduced pollution, they would
+TRAGEDYOFTHE each have a utility of -10. This situation is called the tragedy of the commons: if nobody
+COMMONS
+has to pay for using a common resource, then it tends to be exploited in a way that leads to
+a lower total utility for all agents. It is similar to the prisoner s dilemma: there is another
+solution to the game that is better for all parties, but there appears to be no way for rational
+agentstoarriveatthatsolution.
+The standard approach for dealing with the tragedy of the commons is to change the
+mechanism toone that charges each agent forusing the commons. More generally, weneed
+to ensure that all externalities effects on global utility that are not recognized in the in-
+EXTERNALITIES
+dividual agents transactions are made explicit. Setting the prices correctly is the difficult
+part. In the limit, this approach amounts to creating a mechanism in which each agent is
+effectively requiredtomaximizeglobalutility, butcando sobymakingalocaldecision. For
+this example, a carbon tax would be an example of a mechanism that charges for use of the

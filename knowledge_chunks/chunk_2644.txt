@@ -1,0 +1,27 @@
+press causes and the effects
+CAUSALNETWORK
+ofintervention aswellasordinary conditional probabilities.
+Nonparametric densityestimation, alsocalled Parzenwindowdensity estimation, was
+investigated initially by Rosenblatt (1956) and Parzen (1962). Since thattime, ahuge litera-
+turehasdevelopedinvestigating theproperties ofvarious estimators. Devroye(1987)givesa
+thorough introduction. There isalsoarapidly growing literature onnonparametric Bayesian
+methods, originating with the seminal work of Ferguson (1973) on the Dirichlet process,
+DIRICHLETPROCESS
+whichcanbethoughtofasadistribution over Dirichletdistributions. Thesemethodsarepar-
+ticularlyusefulformixtureswithunknownnumbersofcomponents. Ghahramani(2005)and
+Jordan (2005) provide useful tutorials on the many applications of these ideas to statistical
+learning. The text by Rasmussen and Williams (2006) covers the Gaussian process, which
+GAUSSIANPROCESS
+givesawayofdefiningpriordistributions overthespaceofcontinuous functions.
+Thematerialinthischapterbringstogetherworkfromthefieldsofstatisticsandpattern
+recognition, so the story has been told many times in many ways. Good texts on Bayesian
+statistics include thoseby De Groot(1970), Berger(1985), and Gelmanetal.(1995). Bishop
+(2007)and Hastieetal.(2009)provideanexcellentintroduction tostatistical machinelearn-
+ing. Forpatternclassification, theclassictextformanyyearshasbeen Dudaand Hart(1973),
+now updated (Duda etal., 2001). Theannual NIPS(Neural Information Processing Confer-
+ence)conference,whoseproceedingsarepublishedastheseries Advancesin Neural Informa-
+tion Processing Systems,isnowdominatedby Bayesianpapers. Papersonlearning Bayesian
+networksalsoappearinthe Uncertaintyin AIand Machine Learningconferences andinsev-
+eralstatistics conferences. Journalsspecifictoneuralnetworksinclude Neural Computation,
+Neural Networks, and the IEEE Transactions on Neural Networks. Specifically Bayesian
+venues include the Valencia International Meetings on Bayesian Statistics and the j

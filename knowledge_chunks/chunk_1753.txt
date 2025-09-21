@@ -1,0 +1,35 @@
+ has a set of
+classesthatheorshecanteach.
+c. Hamiltoniantour: givenanetworkofcitiesconnectedbyroads,chooseanordertovisit
+allcitiesinacountry withoutrepeating any.
+6.5 Solve the cryptarithmetic problem in Figure 6.2 by hand, using the strategy of back-
+tracking withforwardcheckingandthe MR Vandleast-constraining-value heuristics.
+6.6 Show how a single ternary constraint such as A B C can be turned into three
+binary constraints by using an auxiliary variable. You may assume finite domains. (Hint:
+Consider a new variable that takes on values that are pairs of other values, and consider
+constraints such as X is the first element of the pair Y. ) Next, show how constraints with
+morethanthreevariablescanbetreatedsimilarly. Finally,showhowunaryconstraintscanbe
+eliminated by altering the domains of variables. This completes the demonstration that any
+CS Pcanbetransformed intoa CS Pwithonlybinaryconstraints.
+6.7 Considerthefollowinglogicpuzzle: Infivehouses,eachwithadifferentcolor,livefive
+personsofdifferentnationalities, eachofwhomprefersadifferentbrandofcandy,adifferent
+drink,andadifferentpet. Giventhefollowingfacts,thequestionstoanswerare Wheredoes
+thezebralive,andinwhichhousedotheydrinkwater? 5 Ginsbergetal.(1990)discussseveralmethodsforconstructingcrosswordpuzzles.Littmanetal.(1999)tackle
+theharderproblemofsolvingthem.
+232 Chapter 6. Constraint Satisfaction Problems
+The Englishmanlivesintheredhouse.
+The Spaniardownsthedog.
+The Norwegianlivesinthefirsthouseontheleft.
+Thegreenhouseisimmediately totherightoftheivoryhouse.
+Themanwhoeats Hersheybarslivesinthehousenexttothemanwiththefox.
+Kit Katsareeatenintheyellowhouse.
+The Norwegianlivesnexttothebluehouse.
+The Smartieseaterownssnails.
+The Snickerseaterdrinksorangejuice.
+The Ukrainiandrinkstea.
+The Japaneseeats Milky Ways.
+Kit Katsareeateninahousenexttothehousewherethehorseiskept.
+Coffeeisdrunkinthegreenhouse.
+Milkisdrunkinthemiddlehouse.
+Discussdifferent representations ofthisproblem asa CSP. Whywouldonepreferonerepre-
+sent

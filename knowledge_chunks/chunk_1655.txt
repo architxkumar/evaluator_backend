@@ -1,0 +1,31 @@
+lculation
+of the optimal decision once more, this time paying careful attention to what we know at
+eachpoint intheprocess. Thestepsareexplained in Figure5.5. Theoutcome isthatwecan
+identify theminimaxdecision withouteverevaluating twooftheleafnodes.
+Anotherwaytolookatthisisasasimplification oftheformula for MINIMAX. Letthe
+two unevaluated successors of node C in Figure 5.5 have values x and y. Then the value of
+therootnodeisgivenby
+MINIMAX(root) max(min(3,12,8),min(2,x,y),min(14,5,2)) max(3,min(2,x,y),2) max(3,z,2) wherez min(2,x,y) 2 3.
+In otherwords, thevalue ofthe root and hence the minimax decision are independent of the
+valuesoftheprunedleaves xandy.
+Alpha beta pruning can be applied to trees of any depth, and it is often possible to
+prune entire subtrees ratherthanjust leaves. Thegeneral principle isthis: consider anode n
+168 Chapter 5. Adversarial Search
+(a) , A (b) , A , 3 B , 3 B
+3 3 12
+(c) 3, A (d) 3, A 3, 3 B 3, 3 B , 2 C
+3 12 8 3 12 8 2
+(e) 3, 14 A (f) 3, 3 A 3, 3 B , 2 C , 14 D 3, 3 B , 2 C 2, 2 D
+3 12 8 2 14 3 12 8 2 14 5 2
+Figure5.5 Stagesinthecalculationoftheoptimaldecisionforthegametreein Figure5.2.
+Ateachpoint,weshowtherangeofpossiblevaluesforeachnode.(a)Thefirstleafbelow B
+hasthevalue3. Hence,B,whichisa MI Nnode,hasavalueofatmost3.(b)Thesecondleaf
+below B hasavalueof12; MIN wouldavoidthismove,sothevalueof B isstillatmost3.
+(c) The third leaf below B has a value of 8; we have seen all B s successor states, so the
+value of B is exactly 3. Now, we can inferthat the value of the rootis at least 3, because
+MAX has a choice worth 3 at the root. (d) The first leaf below C has the value 2. Hence,
+C, whichisa MIN node,hasavalueofatmost2. Butweknowthat B isworth3,so MAX
+wouldneverchoose C. Therefore,thereisnopointinlookingattheothersuccessorstates
+of C. Thisisanexampleofalpha betapruning. (e)Thefirstleafbelow Dhasthevalue14,
+so Disworthatmost14. Thisisstillhigherthan MAX sbestalternative(i.e.,3),soweneed
+to keep exploring D s successorstates. Notice also th

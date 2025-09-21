@@ -1,0 +1,35 @@
+w regression works.) Fig-
+ure 11.6(b) illustrates the basic idea: the right-hand circled state is the guaranteed-reachable
+goal state, and the left-hand circled state is the intermediate goal obtained by regressing the
+414 Chapter 11. Planningand Actinginthe Real World
+function ANGELIC-SEARCH(problem,hierarchy,initial Plan)returnssolutionorfail
+frontier a FIF Oqueuewithinitial Plan astheonlyelement
+loopdo
+if EMPTY?(frontier)thenreturnfail
+plan POP(frontier) choosestheshallowestnodeinfrontier if REACH (problem.INITIAL-STATE,plan)intersectsproblem.GOA Lthen
+ifplan isprimitivethenreturnplan REACH isexactforprimitiveplans guaranteed REACH (problem.INITIAL-STATE,plan) problem.GOAL
+ifguaranteed(cid:7) and MAKING-PROGRESS(plan,initial Plan)then
+final State anyelementofguaranteed
+return DECOMPOSE(hierarchy,problem.INITIAL-STATE,plan,final State)
+hla some HL Ainplan
+prefix,suffix theactionsubsequencesbeforeandafterhla inplan
+foreachsequence in REFINEMENTS(hla,outcome,hierarchy)do
+frontier INSERT(APPEND(prefix,sequence,suffix),frontier)
+function DECOMPOSE(hierarchy,s0,plan,sf)returnsasolution
+solution anemptyplan
+whileplan isnotemptydo
+action REMOVE-LAST(plan)
+si astatein REACH (s0,plan)suchthatsf REACH (si,action)
+problem aproblemwith INITIAL-STATE si and GOAL sf
+solution APPEND(ANGELIC-SEARCH(problem,hierarchy,action),solution)
+sf si
+returnsolution
+Figure11.8 Ahierarchicalplanningalgorithmthatusesangelicsemanticstoidentifyand
+committohigh-levelplansthatworkwhileavoidinghigh-levelplansthatdon t. Thepredi-
+cate MAKING-PROGRESS checkstomakesurethatwearen tstuckinaninfiniteregression
+ofrefinements.Attoplevel,call ANGELIC-SEARC Hwith Act astheinitial Plan.
+goalthrough thefinalaction.
+The ability to commit to or reject high-level plans can give ANGELIC-SEARCH a sig-
+nificant computational advantage over HIERARCHICAL-SEARCH, which in turn may have
+a large advantage over plain old BREADTH-FIRST-SEARCH. Consider, for example, clean-
+ing up a large vacuum world consisting of rectangu

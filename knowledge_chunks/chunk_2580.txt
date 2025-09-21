@@ -1,0 +1,32 @@
+ose left-hand side consists of the leaves of the proof tree and
+whose right-hand side is the variabilized goal (after applying the necessary bindings
+fromthegeneralized proof).
+4. Dropanyconditions fromtheleft-hand sidethataretrueregardlessofthevaluesofthe
+variablesinthegoal.
+19.3.2 Improving efficiency
+Thegeneralized prooftreein Figure19.7actuallyyieldsmorethanonegeneralized rule. For
+example, if we terminate, or prune, the growth of the right-hand branch in the proof tree
+whenitreachesthe Primitive step,wegettherule
+Primitive(z) Simplify(1 (0 z),z).
+Thisruleisasvalidas, but moregeneral than, therule using Arithmetic Unknown,because
+itcoverscaseswhere z isanumber. Wecanextractastillmoregeneralrulebypruningafter
+thestep Simplify(y z,w),yielding therule
+Simplify(y z,w) Simplify(1 (y z),w).
+Ingeneral,arulecanbeextractedfromanypartialsubtreeofthegeneralizedprooftree. Now
+wehaveaproblem: whichoftheserulesdowechoose?
+The choice of which rule to generate comes down to the question of efficiency. There
+arethreefactorsinvolved intheanalysisofefficiencygainsfrom EBL:
+1. Adding large numbers of rules can slow down the reasoning process, because the in-
+ferencemechanism muststillcheckthoserulesevenincases wheretheydonotyielda
+solution. Inotherwords,itincreases the branchingfactorinthesearchspace.
+2. Tocompensate for the slowdown in reasoning, the derived rules must offer significant
+increases inspeedforthecasesthattheydocover. Theseincreases comeaboutmainly
+because the derived rules avoid dead ends that would otherwise be taken, but also be-
+causetheyshortentheproofitself.
+3. Derivedrulesshouldbeasgeneralaspossible, sothattheyapplytothelargestpossible
+setofcases.
+Acommonapproachtoensuringthatderivedrulesareefficientistoinsistontheoperational-
+ityofeachsubgoal intherule. Asubgoal isoperational ifitis easy tosolve. Forexample,
+OPERATIONALITY
+the subgoal Primitive(z) is easy to solve, requiring at most two steps, whereas the subgoal
+Simplify(y z,w) could lead to an arbitrary amou

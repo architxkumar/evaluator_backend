@@ -1,0 +1,29 @@
+thatexist. Wewillcallmodelsdefined
+RELATIONAL in this way relational probability models, or RP Ms.7 The most significant difference be-
+PROBABILITYMODEL
+tween the semantics of RP Msand the database semantics introduced in Section 8.2.8 is that
+RP Msdo not make the closed-world assumption obviously, assuming that every unknown
+factisfalsedoesn t makesenseinaprobabilistic reasoning system!
+Whentheunderlyingassumptionsofdatabasesemanticsfailtohold,RP Mswon twork
+well. Forexample,abookretailermightusean as a constant symbol to name each book, even though a given logical book (e.g., Gone
+With the Wind ) may have several tions across multiple thesamebook. (Notethatwearenotreifying theindividual copiesofthebook,whichmight
+be necessary for used-book sales, car sales, and so on.) Worse still, each customer is iden-
+tified by a login ID, but a dishonest customer may have thousands of IDs! In the computer
+securityfield,thesemultiple IDsarecalledsibylsandtheirusetoconfound areputation sys-
+SIBYL
+tem is called a sibyl attack. Thus, even a simple application in a relatively well-defined,
+SIBYLATTACK
+EXISTENCE online domain involves both existence uncertainty (what are the real books and customers
+UNCERTAINTY
+IDENTITY underlying the observed data) and identity uncertainty (which symbol really refer to the
+UNCERTAINTY
+sameobject). Weneedtobitethebullet anddefineprobability modelsbasedonthestandard
+semantics of first-order logic, for which the possible worlds vary in the objects they contain
+andinthemappings fromsymbolstoobjects. Section14.6.3showshowtodothis.
+7 Thenamerelationalprobabilitymodelwasgivenby Pfeffer(2000)toaslightlydifferentrepresentation,but
+theunderlyingideasarethesame.
+542 Chapter 14. Probabilistic Reasoning
+14.6.2 Relationalprobability models
+Like first-order logic, RP Mshave constant, function, and predicate symbols. (It turns out to
+be easier to view predicates as functions that return true or false.) We will also assume a
+typesignatureforeachfunction,thatis,aspe

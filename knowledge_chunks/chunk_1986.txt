@@ -1,0 +1,24 @@
+s led both to improvements in performance amounting to several orders of magnitude in
+the last decade and toan increased use of planners in industrial applications. Unfortunately,
+we do not yet have a clear understanding of which techniques work best on which kinds of
+problems. Quitepossibly, newtechniques willemergethatdominateexistingmethods.
+Planning is foremost an exercise in controlling combinatorial explosion. If there are n
+propositions in a domain, then there are 2n states. As we have seen, planning is PSPACE-
+hard. Against such pessimism, the identification of independent subproblems can be apow-
+erfulweapon. Inthebestcase fulldecomposability oftheproblem wegetanexponential
+speedup. Decomposability is destroyed, however, by negative interactions between actions.
+GRAPHPLA Nrecordsmutexestopointoutwherethedifficultinteractionsare. SATPLA Nrep-
+resents asimilarrange ofmutexrelations, but does sobyusing thegeneral CN Fform rather
+than a specific data structure. Forward search addresses the problem heuristically by trying
+tofind patterns (subsets ofpropositions) that covertheindependent subproblems. Since this
+approachisheuristic,itcanworkevenwhenthesubproblems arenotcompletelyindependent.
+Sometimes it is possible to solve a problem efficiently by recognizing that negative
+SERIALIZABLE interactions canberuledout. Wesaythataproblem has serializable subgoalsifthereexists
+SUBGOAL
+an order of subgoals such that the planner can achieve them in that order without having to
+undo any of the previously achieved subgoals. Forexample, in the blocks world, if the goal
+is to build a tower(e.g., Aon B, which in turn is on C, which in turn is on the Table, as in
+Figure10.4onpage371),thenthesubgoalsareserializable bottomtotop: ifwefirstachieve
+C on Table, we will never have to undo it while we are achieving the other subgoals. A
+planner that uses the bottom-to-top trick can solve any problem in the blocks world without
+backtracking (although itmightnotalwaysfindtheshortest plan

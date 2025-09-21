@@ -1,0 +1,26 @@
+,Bel(A)and Bel( A)sumtoatmost1,andthegap theintervalbetween Bel(A)
+and1 Bel( A) isofteninterpreted asbounding theprobability of A.
+Aswithdefaultreasoning,thereisaprobleminconnectingbeliefstoactions. Whenever
+there is a gap in the beliefs, then a decision problem can be defined such that a Dempster Shafer system is unable to make a decision. In fact, the notion of utility in the Dempster Shafer model is not yet well understood because the meanings of masses and beliefs them-
+selves have yet tobeunderstood. Pearl(1988) hasargued that Bel(A)should beinterpreted
+not as adegree of belief in Abut as the probability assigned to all the possible worlds (now
+interpreted as logical theories) in which A is provable. While there are cases in which this
+quantity mightbeofinterest, itisnotthesameastheprobability that Aistrue.
+ABayesiananalysisofthecoin-flippingexamplewouldsuggestthatnonewformalism
+isnecessary tohandlesuchcases. Themodelwouldhavetwovariables: the Bias ofthecoin
+(anumberbetween0and1,where0isacointhatalwaysshowstailsand1acointhatalways
+shows heads) and the outcome of the next Flip. The prior probability distribution for Bias
+550 Chapter 14. Probabilistic Reasoning
+wouldreflectourbeliefsbasedonthesourceofthecoin(themagician spocket): somesmall
+probability that it is fair and some probability that it is heavily biased toward heads or tails.
+Theconditional distribution P(Flip Bias)simplydefineshowthebiasoperates. If P(Bias)
+issymmetricabout0.5,thenourpriorprobability fortheflipis
+(cid:26)
+1
+P(Flip heads) P(Bias x)P(Flip heads Bias x)dx 0.5.
+0
+This is the same prediction as if we believe strongly that the coin is fair, but that does not
+mean that probability theory treats the two situations identically. The difference arises after
+theflipsincomputing theposteriordistribution for Bias. Ifthecoincamefrom abank, then
+seeing itcomeupheads threetimesrunning wouldhavealmost noeffectonourstrong prior
+belief in its fairness; but if the coin comes from the magician s pocket, the

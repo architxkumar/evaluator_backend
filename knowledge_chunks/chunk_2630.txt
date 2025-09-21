@@ -1,0 +1,31 @@
+ght)are0.2,0.3,and0.5.(b)500datapointssampledfromthemodelin(a).(c)Themodel
+reconstructedby EMfromthedatain(b).
+w P(C i) (the weight of each component), (the mean of each component), and i i i
+(the covariance of each component). Figure 20.11(a) shows a mixture of three Gaussians;
+this mixture is in fact the source of the data in (b) as well as being the model shown in
+Figure20.7(a)onpage815.
+The unsupervised clustering problem, then, is to recover a mixture model like the one
+in Figure20.11(a)fromrawdatalikethatin Figure20.11(b). Clearly,ifweknewwhichcom-
+ponentgenerated eachdatapoint,thenitwouldbeeasytorecoverthecomponent Gaussians:
+wecouldjustselectallthedatapointsfromagivencomponentandthenapply(amultivariate
+versionof)Equation(20.4)(page809)forfittingtheparametersofa Gaussiantoasetofdata.
+On the other hand, if we knew the parameters of each component, then we could, at least in
+a probabilistic sense, assign each data point to a component. The problem is that we know
+neithertheassignments northeparameters.
+The basic idea of EM in this context is to pretend that we know the parameters of the
+modelandthentoinfertheprobabilitythateachdatapointbelongstoeachcomponent. After
+that,werefitthecomponentstothedata,whereeachcomponentisfittedtotheentiredataset
+with each point weighted by the probability that it belongs to that component. The process
+iterates until convergence. Essentially, weare completing thedata byinferring probability
+distributionsoverthehiddenvariables whichcomponenteachdatapointbelongsto based
+onthecurrentmodel. Forthemixtureof Gaussians, weinitialize themixture-model parame-
+tersarbitrarily andtheniteratethefollowingtwosteps:
+1. E-step: Compute the probabilities p P(C i x ), the probability that datum x
+ij j j
+wasgeneratedbycomponenti. By Bayes rule,wehavep P(x C i)P(C i).
+ij j
+The term P(x C i) is just the probability at x of the ith Gaussian, and the term
+j j (cid:2)
+P(C i) is just the weight parameter for the ith Gaussian. Define n p , the
+i j ij
+effec

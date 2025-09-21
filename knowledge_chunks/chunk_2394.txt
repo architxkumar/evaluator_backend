@@ -1,0 +1,48 @@
+ility dis-
+tribution. For example, a belief state for the 4 3 world is a point in an 11-dimensional
+continuous space. An action changes the belief state, not just the physical state. Hence, the
+action isevaluated atleastinpartaccording totheinformation theagentacquires asaresult.
+POMD Pstherefore include the value of information (Section 16.6) as one component of the
+decision problem.
+Let s look more carefully at the outcome of actions. In particular, let s calculate the
+(cid:2)
+probability thatanagentinbeliefstatebreachesbeliefstateb afterexecutingactiona. Now,
+if we knew the action and the subsequent percept, then Equation (17.11) would provide a
+(cid:2)
+deterministic update to the belief state: b FORWARD(b,a,e). Of course, the subsequent
+(cid:2)
+percept isnot yetknown, sotheagent mightarrive inoneofseveral possible belief states b,
+depending on the percept that is received. The probability of perceiving e, given that a was
+660 Chapter 17. Making Complex Decisions
+(cid:2)
+performed starting inbelief state b, is given by summing overall the actual states s that the
+agentmightreach:
+(cid:12)
+P(e a,b) P(e a,s (cid:2) ,b)P(s (cid:2) a,b)
+(cid:12)s(cid:3) P(e s (cid:2) )P(s (cid:2) a,b)
+(cid:12)s(cid:3)
+(cid:12) P(e s (cid:2) ) P(s (cid:2) s,a)b(s).
+s(cid:3) s
+Let us write the probability of reaching b
+(cid:2)
+from b, given action a, as P(b
+(cid:2) b,a)).
+Then that
+givesus
+(cid:12)
+P(b
+(cid:2) b,a) P(b
+(cid:2) a,b) P(b
+(cid:2) e,a,b)P(e a,b)
+(cid:12) e (cid:12) (cid:12) P(b (cid:2) e,a,b) P(e s (cid:2) ) P(s (cid:2) s,a)b(s), (17.12)
+e s(cid:3) s
+where P(b
+(cid:2) e,a,b)is1ifb (cid:2) FORWARD(b,a,e)and0otherwise.
+Equation(17.12)canbeviewedasdefiningatransitionmodelforthebelief-statespace.
+Wecanalsodefinearewardfunction forbeliefstates(i.e.,theexpectedrewardfortheactual
+statestheagentmightbein):
+(cid:12) (b) b(s)R(s).
+s
+Together, P(b
+(cid:2) b,a)
+and (b) define an observable MDP on the space of belief states. Fur- thermore,itcanbeshownthatanoptimalpolicyforthis MDP, (b)

@@ -1,0 +1,23 @@
+temforrobot Frank,I.,Basin,D.A.,and Matsubara,H.(1998).
+constructiontasks.AIJ,5(1),1 49. Firth,J.(1957).Papersin Linguistics.Oxford Uni- Findingoptimalstrategiesforimperfectinformation
+versity Press. games.In AAAI-98,pp.500 507.
+Faugeras,O.(1993).Three-Dimensional Computer
+Vision:AGeometric Viewpoint.MIT Press. Fisher,R.A.(1922). Onthemathematicalfounda- Frank,R.H.and Cook,P.J.(1996). The Winner-
+tionsoftheoreticalstatistics.Philosophical Transac- Take-All Society.Penguin.
+Faugeras,O.,Luong, Q.-T.,and Papadopoulo, T. tionsofthe Royal Societyof London,Series A222,
+(2001). The Geometryof Multiple Images. MIT 309 368. Franz,A.(1996). Automatic Ambiguityresolution
+Press. in Natural Language Processing:An Empirical Ap-
+Fix, E. and Hodges, J. L. (1951). Discrimina- proach.Springer.
+Fearing,R.S.and Hollerbach,J.M.(1985). Basic toryanalysis Nonparametricdiscrimination:Con-
+solidmechanicsfortactilesensing. Int.J.Robotics sistencyproperties. Tech.rep. 21-49-004, USAF Franz,A.and Brants,T.(2006).Allourn-gramare
+Research,4(3),40 54. Schoolof Aviation Medicine. belongtoyou.Blogposting.
+Featherstone, R.(1987). Robot Dynamics Algo- Floreano,D.,Zufferey,J.C.,Srinivasan,M.V.,and Frege, G.(1879). Begriffsschrift, eineder arith-
+rithms.Kluwer Academic Publishers. Ellington, C.(2009). Flying Insectsand Robots. metischennachgebildete Formelsprachedesreinen
+Denkens.Halle,Berlin. Englishtranslationappears
+Feigenbaum,E.A.(1961). Thesimulationofver- Springer. invan Heijenoort(1967).
+ballearningbehavior.Proc.Western Joint Computer Fogel, D. B.(2000). Evolutionary Computation:
+Conference,19,121 131. Towarda New Philosophyof Machine Intelligence. Freitag,D.and Mc Callum,A.(2000). Information
+extractionwithhmmstructureslearnedbystochastic
+Feigenbaum,E.A.,Buchanan,B.G.,and Leder- IEEE Press. optimization.In AAAI-00.
+berg, J.(1971). Ongeneralityandproblemsolv- Fogel,L.J.,Owens,A.J.,and Walsh,M.J.(1966).
+ing: Acasestudyusingthe DENDRA Lprogram. Artificial Intelligencethrough Simulated Evolution. F

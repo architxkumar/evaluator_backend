@@ -1,0 +1,27 @@
+.(1992). Automateddiscoveryofnew ingsystem AQ15anditstestingapplicationtothree Minton, S., Johnston, M.D., Philips, A.B., and
+axiomatizationsoftheleftgroupandrightgroupcal- medicaldomains.In AAAI-86,pp.1041 1045. Laird,P.(1992). Minimizingconflicts: Aheuris-
+culi.JAR,9(1),1 24. tic repair method for constraint satisfaction and
+Mc Cune,W.(1997).Solutionofthe Robbinsprob- Michie, D. (1966). Game-playing and game- schedulingproblems.AIJ,58(1 3),161 205.
+learningautomata. In Fox, L.(Ed.), Advancesin
+lem.JAR,19(3),263 276. Programmingand Non-Numerical Computation,pp. Misak,C.(2004). The Cambridge Companionto
+Mc Dermott,D.(1976).Artificialintelligencemeets 183 200.Pergamon. Peirce.Cambridge University Press.
+naturalstupidity.SIGART Newsletter,57,4 9. Mitchell,M.(1996).An Introductionto Genetic Al-
+Michie,D.(1972). Machineintelligenceat Edin-
+gorithms.MIT Press.
+Mc Dermott,D.(1978a).Planningandacting.Cog- burgh.Management Informatics,2(1),7 12.
+nitive Science,2(2),71 109. Mitchell,M.,Holland,J.H.,and Forrest,S.(1996).
+Michie,D.(1974). Machineintelligenceat Edin-
+When will a genetic algorithm outperform hill
+Mc Dermott, D.(1978b). Tarskiansemantics, or, burgh. In On Intelligence,pp.143 155.Edinburgh
+climbing? In Cowan,J.,Tesauro,G.,and Alspec-
+nonotationwithoutdenotation! Cognitive Science, University Press.
+tor,J.(Eds.),NIPS6.MIT Press.
+2(3).
+Michie,D.and Chambers,R.A.(1968). BOXES: Mitchell,T.M.(1977).Versionspaces:Acandidate
+Mc Dermott,D.(1985). Reasoningaboutplans. In Anexperimentinadaptivecontrol. In Dale,E.and eliminationapproachtorulelearning. In IJCAI-77,
+Hobbs,J.and Moore,R.(Eds.),Formaltheoriesof Michie,D.(Eds.),Machine Intelligence2,pp.125 pp.305 310.
+thecommonsenseworld.Intellect Books. 133.Elsevier North-Holland.
+Mitchell,T.M.(1982). Generalizationassearch.
+Mc Dermott,D.(1987). Acritiqueofpurereason. Michie, D., Spiegelhalter, D. J., and Taylor, C. AIJ,18(2),203 226.
+Computational Intelligence,3(3),151 237. (Eds.).(1994). Machine Learning,Neuraland Sta-
+tistica

@@ -1,0 +1,25 @@
+probability theory.
+The resurgence of probability depended mainly on Pearl s development of Bayesian
+networksasamethodforrepresentingandusingconditional independence information. This
+resurgence did not comewithout afight; Peter Cheeseman s (1985) pugnacious In Defense
+of Probability andhislaterarticle An Inquiry into Computer Understanding (Cheeseman,
+1988, with commentaries) give something of the flavor of the debate. Eugene Charniak
+helped present the ideas to AI researchers with a popular article, Bayesian networks with-
+out tears 11 (1991), and book (1993). The book by Dean and Wellman (1991) also helped
+introduce Bayesiannetworksto AIresearchers. Oneoftheprincipalphilosophicalobjections
+ofthelogicists wasthat thenumerical calculations thatprobability theory wasthought tore-
+quirewerenotapparenttointrospection andpresumedanunrealistic levelofprecisioninour
+uncertain knowledge. The development of qualitative probabilistic networks (Wellman,
+1990a) provided a purely qualitative abstraction of Bayesian networks, using the notion of
+positive and negative influences between variables. Wellman shows that in manycases such
+information is sufficient for optimal decision making without the need for the precise spec-
+ification of probability values. Goldszmidt and Pearl (1996) take a similar approach. Work
+by Adnan Darwiche and Matt Ginsberg (1992) extracts the basic properties of conditioning
+andevidencecombinationfromprobability theoryandshows thattheycanalsobeappliedin
+logicalanddefaultreasoning. Often,programsspeaklouderthanwords,andthereadyavail-
+11 Thetitleoftheoriginalversionofthearticlewas Pearlforswine. 558 Chapter 14. Probabilistic Reasoning
+abilityofhigh-quality softwaresuchasthe Bayes Nettoolkit(Murphy,2001)accelerated the
+adoption ofthetechnology.
+Themostimportantsinglepublicationinthegrowthof Bayesiannetworkswasundoubt-
+edly the text Probabilistic Reasoning in Intelligent Systems (Pearl, 1988). Several excellent
+texts (Lauritzen, 1996; Jensen, 2001; Korb an

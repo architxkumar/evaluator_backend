@@ -1,0 +1,29 @@
+e,various
+different criteria for choosing the next attribute in decision tree learning. The researcher
+generateshypotheses forvariousdifferentsettingsofthe knobs,measurestheirerrorrateson
+thetestset,andreportstheerrorrateofthebesthypothesis. Alas,peekinghasoccurred! The
+Section18.4. Evaluatingand Choosing the Best Hypothesis 709
+reasonisthatthehypothesiswasselectedonthebasisofitstestseterrorrate,soinformation
+aboutthetestsethasleakedintothelearning algorithm.
+Peekingisaconsequenceofusingtest-setperformancetobothchooseahypothesisand
+evaluate it. The way to avoid this is to really hold the test set out lock it away until you
+are completely done with learning and simply wish to obtain an independent evaluation of
+the finalhypothesis. (And then, if you don t like the results ... you have toobtain, and lock
+away, a completely new test set if you want to go back and find a better hypothesis.) If the
+testsetislockedaway,butyoustillwanttomeasureperformanceonunseendataasawayof
+selectingagoodhypothesis,thendividetheavailabledata(withoutthetestset)intoatraining
+set and a validation set. The next section shows how to use validation sets to find a good
+VALIDATIONSET
+tradeoffbetweenhypothesis complexityandgoodness offit.
+18.4.1 Model selection: Complexity versus goodnessoffit
+In Figure18.1(page696)weshowedthathigher-degree polynomialscanfitthetrainingdata
+better,butwhenthedegreeistoohightheywilloverfit,andperformpoorlyonvalidationdata.
+Choosingthedegreeofthepolynomialisaninstanceoftheproblemofmodelselection. You
+MODELSELECTION
+can think ofthe task offinding the best hypothesis astwotasks: model selection defines the
+hypothesis spaceandthenoptimization findsthebesthypothesis withinthatspace.
+OPTIMIZATION
+Inthis section weexplain how to select among models that are parameterized by size.
+Forexample,withpolynomialswehavesize 1forlinearfunctions, size 2forquadratics,
+and so on. Fordecision trees, the size could be the number of nodes in the tree. In all cases
+wewanttofindthevalueofth

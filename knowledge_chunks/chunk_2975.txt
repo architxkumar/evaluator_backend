@@ -1,0 +1,34 @@
+ble computations. For example, a taxi-driving agent
+that sees an accident ahead must decide in a split second either to brake or to take evasive
+action. It should also spend that split second thinking about the most important questions,
+such as whether the lanes to the left and right are clear and whether there is a large truck
+close behind, rather than worrying about wear and tear on the tires or where to pick up the
+next passenger. These issues are usually studied under the heading of real-time AI. As AI
+REAL-TIMEAI
+1048 Chapter 27. AI:The Presentand Future
+Percepts
+Compilation
+Knowledge-based
+deliberation
+Reflex system Actions
+Figure 27.2 Compilation serves to convertdeliberative decision making into more effi-
+cient,reflexivemechanisms.
+systems move into more complex domains, all problems will become real-time, because the
+agentwillneverhavelongenough tosolvethedecision problem exactly.
+Clearly, thereisapressing needfor general methodsofcontrolling deliberation, rather
+than specific recipes forwhattothink about ineach situation. The firstuseful idea isto em-
+ANYTIME ploy anytimealgorithms (Deanand Boddy, 1988; Horvitz, 1987). Ananytimealgorithm is
+ALGORITHM
+an algorithm whose output quality improves gradually over time, so that it has a reasonable
+decision readywheneveritisinterrupted. Suchalgorithms arecontrolled bya metalevel de-
+cisionprocedurethatassesseswhetherfurthercomputationisworthwhile. (See Section3.5.4
+for a brief description of metalevel decision making.) Example of an anytime algorithms
+includeiterativedeepening ingame-treesearchand MCM Cin Bayesiannetworks.
+DECISION-
+Thesecondtechniqueforcontrollingdeliberationisdecision-theoreticmetareasoning
+THEORETIC
+METAREASONING
+(Russell and Wefald, 1989, 1991; Horvitz, 1989; Horvitz and Breese, 1996). This method
+applies the theory of information value (Chapter 16) to the selection of individual computa-
+tions. Thevalue ofacomputation depends onboth its cost (interms ofdelaying action) and
+itsbenefits(interm

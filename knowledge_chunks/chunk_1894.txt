@@ -1,0 +1,29 @@
+echnology development..
+330 Chapter 9. Inference in First-Order Logic
+9.3 FORWARD CHAINING
+A forward-chaining algorithm for propositional definite clauses was given in Section 7.5.
+The idea is simple: start with the atomic sentences in the knowledge base and apply Modus
+Ponens in the forward direction, adding new atomic sentences, until no further inferences
+can be made. Here, we explain how the algorithm is applied to first-order definite clauses.
+Definiteclausessuchas Situation Response areespeciallyusefulforsystemsthatmake
+inferences in response to newlyarrived information. Manysystems can bedefined this way,
+andforwardchainingcanbeimplementedveryefficiently.
+9.3.1 First-order definite clauses
+First-order definite clauses closely resemble propositional definite clauses (page 256): they
+aredisjunctions ofliterals ofwhich exactly oneispositive. Adefiniteclause eitherisatomic
+or is an implication whose antecedent is a conjunction of positive literals and whose conse-
+quentisasinglepositiveliteral. Thefollowingarefirst-orderdefiniteclauses:
+King(x) Greedy(x) Evil(x).
+King(John).
+Greedy(y).
+Unlike propositional literals, first-order literals can include variables, in which case those
+variables are assumed to be universally quantified. (Typically, we omit universal quantifiers
+when writing definite clauses.) Not every knowledge base can be converted into a set of
+definite clauses because of the single-positive-literal restriction, but many can. Consider the
+followingproblem:
+The law says thatit is a crime foran American to sell weaponsto hostile nations. The
+country Nono,anenemyof America,hassomemissiles,andallofitsmissilesweresold
+toitby Colonel West,whois American.
+Wewillprovethat Westisacriminal. First,wewillrepresentthesefactsasfirst-orderdefinite
+clauses. Thenextsection showshowtheforward-chaining algorithm solvestheproblem. ...itisacrimeforan Americantosellweaponstohostilenations :
+American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x). (9.3) Nono...hassomemis

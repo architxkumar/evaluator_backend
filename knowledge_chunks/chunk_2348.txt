@@ -1,0 +1,27 @@
+ificantly bettertreatmentplan,andhowlikelythevarioustestresultsare.
+INFORMATIONVALUE This section describes information value theory, which enables an agent to choose
+THEORY
+what information to acquire. We assume that, prior to selecting a real action represented
+by the decision node, the agent can acquire the value of any of the potentially observable
+chance variables in the model. Thus, information value theory involves a simplified form
+of sequential decision making simplified because the observation actions affect only the
+agent s belief state, not the external physical state. The value of any particular observation
+mustderivefromthepotentialtoaffecttheagent seventualphysicalaction;andthispotential
+canbeestimated directlyfromthedecision modelitself.
+16.6.1 A simpleexample
+Supposeanoilcompanyishopingtobuyoneofnindistinguishable blocksofocean-drilling
+rights. Letusassumefurtherthatexactlyoneoftheblockscontainsoilworth C dollars,while
+the others are worthless. The asking price of each block is C n dollars. If the company is
+risk-neutral, thenitwillbeindifferent betweenbuyingablockandnotbuyingone.
+Now suppose that a seismologist offers the company the results of a survey of block
+number 3, which indicates definitively whether the block contains oil. How much should
+the company be willing to pay for the information? The way to answer this question is to
+examinewhatthecompanywoulddoifithadtheinformation: Withprobability 1 n,thesurveywillindicate oilinblock 3. Inthis case, thecompany
+willbuyblock3for C ndollarsandmakeaprofitof C C n (n 1)C ndollars. Withprobability(n 1) n,thesurveywillshowthattheblockcontainsnooil,inwhich
+case the company will buy a different block. Now the probability of finding oil in one
+oftheotherblockschangesfrom1 nto1 (n 1),sothecompanymakesanexpected
+profitof C (n 1) C n C n(n 1)dollars.
+Nowwecancalculate theexpected profit,giventhesurveyinformation:
+1 (n 1)C n 1 C C n.
+n n n n(n 1)
+Therefore, the company should be willing to pay the seismologis

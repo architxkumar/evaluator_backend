@@ -1,0 +1,39 @@
+istributions on those subsets. For example, the full joint distribution on the outcome of n
+independent coin flips, P(C ,...,C ), has 2n entries, but it can be represented as the prod-
+1 n
+uct of n single-variable distributions P(C ). In a more practical vein, the independence of
+i
+dentistry andmeteorology isagood thing, because otherwise the practice ofdentistry might
+requireintimateknowledgeofmeteorology, andviceversa.
+Whentheyareavailable, then,independence assertions can helpinreducingthesizeof
+thedomainrepresentation andthecomplexityoftheinference problem. Unfortunately, clean
+separation of entire sets of variables by independence is quite rare. Whenever a connection,
+however indirect, exists between two variables, independence will fail to hold. Moreover,
+evenindependent subsetscanbequitelarge forexample,dentistrymightinvolve dozensof
+diseases and hundreds ofsymptoms, allof which areinterrelated. Tohandle such problems,
+weneedmoresubtlemethodsthanthestraightforward conceptofindependence.
+13.5 BAYES RULE AND ITS USE
+Onpage486,wedefinedtheproductrule. Itcanactuallybewrittenintwoforms:
+P(a b) P(a b)P(b) and P(a b) P(b a)P(a).
+Equatingthetworight-hand sidesanddividing by P(a),weget
+P(a b)P(b)
+P(b a) . (13.12)
+P(a)
+This equation is known as Bayes rule (also Bayes law or Bayes theorem). This simple
+BAYES RULE
+equation underlies mostmodern AIsystemsforprobabilistic inference.
+496 Chapter 13. Quantifying Uncertainty
+Themore general case of Bayes rule formultivalued variables can bewritten in the P
+notation asfollows:
+P(X Y)P(Y)
+P(Y X) ,
+P(X)
+Asbefore,thisistobetakenasrepresentingasetofequations,eachdealingwithspecificval-
+uesofthevariables. Wewillalsohaveoccasiontouseamoregeneralversionconditionalized
+onsomebackground evidence e:
+P(X Y,e)P(Y e)
+P(Y X,e) . (13.13)
+P(X e)
+13.5.1 Applying Bayes rule: The simplecase
+On the surface, Bayes rule does not seem very useful. It allows us to compute the single
+term P(b a) in terms of three terms: P(a b), P(b), and P(a). That see

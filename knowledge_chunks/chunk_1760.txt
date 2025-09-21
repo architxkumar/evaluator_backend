@@ -1,0 +1,25 @@
+s. Alearning agentcanbefullyautonomous.
+7.2 THE WUMPUS WORLD
+Inthissection wedescribe anenvironment inwhichknowledge-based agents canshowtheir
+worth. Thewumpusworldisacaveconsistingofroomsconnectedbypassageways. Lurking
+WUMPUSWORLD
+somewhere in the cave isthe terrible wumpus, a beast that eats anyone who enters its room.
+Thewumpuscanbeshotbyanagent,buttheagenthasonlyonearrow. Someroomscontain
+Section7.2. The Wumpus World 237
+bottomless pitsthatwilltrapanyone whowanders intothese rooms(except forthewumpus,
+which is too big to fall in). The only mitigating feature of this bleak environment is the
+possibility of finding a heap of gold. Although the wumpus world is rather tame by modern
+computergamestandards, itillustrates someimportant pointsaboutintelligence.
+A sample wumpus world is shown in Figure 7.2. The precise definition of the task
+environment isgiven,assuggested in Section2.3,bythe PEA Sdescription: Performance measure: 1000 for climbing out of the cave with the gold, 1000 for
+falling into a pit or being eaten by the wumpus, 1 for each action taken and 10 for
+usingupthearrow. Thegameendseitherwhentheagentdiesorwhentheagentclimbs
+outofthecave. Environment: A 4 4 grid of rooms. The agent always starts in the square labeled 1,1 , facing to the right. The locations of the gold and the wumpus are chosen ran-
+domly, with a uniform distribution, from the squares other than the start square. In
+addition, eachsquareotherthanthestartcanbeapit,withprobability 0.2. Actuators: The agent can move Forward, Turn Left by 90 , or Turn Right by 90 . The
+agent dies a miserable death if it enters a square containing apit ora live wumpus. (It
+issafe, albeit smelly, toenter asquare with adead wumpus.) Ifan agent tries to move
+forward and bumps into awall, then the agent does notmove. Theaction Grabcan be
+used to pick up the gold if it is in the same square as the agent. The action Shoot can
+beusedtofireanarrowinastraight lineinthedirection theagentisfacing. Thearrow
+continues untili

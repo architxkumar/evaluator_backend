@@ -1,0 +1,26 @@
+he problem from scratch. Explanation-based
+learning takes this a good deal further, by creating general rules that cover an entire class
+of cases. In the case of differentiation, memoization would remember that the derivative of
+X2 withrespect to X is2X,butwouldleavetheagenttocalculate thederivativeof Z2 with
+respect to Z from scratch. We would like to be able to extract the general rule that for any
+arithmetic unknown u, the derivative of u2 with respect to u is 2u. (An even more general
+rule for un can also be produced, but the current example suffices to make the point.) In
+logicalterms,thisisexpressed bytherule
+Arithmetic Unknown(u) Derivative(u2,u) 2u.
+Section19.3. Explanation-Based Learning 781
+Ifthe knowledge base contains such arule, then anynew case that isaninstance ofthis rule
+canbesolvedimmediately.
+Thisis,ofcourse,merelyatrivialexampleofaverygeneral phenomenon. Oncesome-
+thing is understood, it can be generalized and reused in other circumstances. It becomes an obvious stepandcanthenbeusedasabuilding blockinsolving problems still morecom-
+plex. Alfred North Whitehead (1911), co-author with Bertrand Russell of Principia Mathe-
+matica, wrote Civilization advances by extending the number of important operations that
+wecandowithoutthinking aboutthem, perhapshimselfapplying EB Ltohisunderstanding
+of events such as Zog s discovery. If you have understood the basic idea of the differenti-
+ation example, then your brain is already busily trying to extract the general principles of
+explanation-based learning fromit. Noticethatyouhadn t already invented EB Lbefore you
+saw the example. Like the cavemen watching Zog, you (and we) needed an example before
+we could generate the basic principles. This is because explaining why something is a good
+ideaismucheasierthancomingupwiththeideainthefirstplace.
+19.3.1 Extracting general rules from examples
+Thebasic idea behind EB Lisfirst toconstruct anexplanation ofthe observation using prior
+knowledge, and then to establish a

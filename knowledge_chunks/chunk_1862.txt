@@ -1,0 +1,27 @@
+ Breezy(s).
+Itisusefultoknowthatasquareisbreezybecauseweknowthatthepitscannotmoveabout.
+Noticethat Breezy hasnotimeargument.
+Havingdiscovered whichplacesarebreezy(orsmelly)and,veryimportant, notbreezy
+(ornotsmelly),theagentcandeducewherethepitsare(andwherethewumpusis). Whereas
+propositionallogicnecessitatesaseparateaxiomforeachsquare(see R and R onpage247)
+2 3
+andwouldneedadifferentsetofaxiomsforeachgeographicallayoutoftheworld,first-order
+logicjustneedsoneaxiom: s Breezy(s) r Adjacent(r,s) Pit(r). (8.4)
+Similarly, in first-order logic wecan quantify overtime, so weneed just one successor-state
+axiom for each predicate, rather than a different copy for each time step. For example, the
+axiomforthearrow(Equation(7.2)onpage267)becomes t Have Arrow(t 1) (Have Arrow(t) Action(Shoot,t)).
+From these two example sentences, we can see that the first-order logic formulation is no
+less concise than the original English-language description given in Chapter 7. The reader
+10 Similarly,mostofusdonotnameeachbirdthatfliesoverheadasitmigratestowarmerregionsinwinter. An
+ornithologistwishingtostudymigrationpatterns,survivalrates,andsoondoesnameeachbird,bymeansofa
+ringonitsleg,becauseindividualbirdsmustbetracked.
+Section8.4. Knowledge Engineering in First-Order Logic 307
+is invited to construct analogous axioms for the agent s location and orientation; in these
+cases, the axioms quantify over both space and time. As in the case of propositional state
+estimation,anagentcanuselogicalinferencewithaxiomsofthiskindtokeeptrackofaspects
+oftheworldthatarenotdirectlyobserved. Chapter10goesintomoredepthonthesubjectof
+first-ordersuccessor-state axiomsandtheirusesforconstructing plans.
+8.4 KNOWLEDGE ENGINEERING IN FIRST-ORDER LOGIC
+The preceding section illustrated the use of first-order logic to represent knowledge in three
+simpledomains. Thissectiondescribesthegeneralprocessofknowledge-baseconstruction KNOWLEDGE aprocesscalledknowledgeengineering. Aknowledgeengineerissomeonewhoinvestigates
+ENGIN

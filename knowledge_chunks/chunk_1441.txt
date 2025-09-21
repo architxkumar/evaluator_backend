@@ -1,0 +1,28 @@
+e complex, multilayer networks, research funding for neural-net
+research soon dwindled to almost nothing. Ironically, the newback-propagation learning al-
+gorithms for multilayer networks that were to cause an enormous resurgence in neural-net
+research inthelate1980swereactually discoveredfirstin1969(Brysonand Ho,1969).
+1.3.5 Knowledge-based systems: The key to power? (1969 1979)
+The picture of problem solving that had arisen during the first decade of AI research was of
+a general-purpose search mechanism trying to string together elementary reasoning steps to
+findcompletesolutions. Suchapproacheshavebeencalledweakmethodsbecause,although
+WEAKMETHOD
+general, they do not scale up tolarge ordifficult problem instances. Thealternative to weak
+methods is to use more powerful, domain-specific knowledge that allows larger reasoning
+stepsandcanmoreeasilyhandle typically occurring casesinnarrowareas ofexpertise. One
+mightsaythattosolveahardproblem,youhavetoalmostknow theansweralready.
+The DENDRA Lprogram(Buchananetal.,1969)wasanearlyexampleofthisapproach.
+It was developed at Stanford, where Ed Feigenbaum (a former student of Herbert Simon),
+Bruce Buchanan (a philosopher turned computer scientist), and Joshua Lederberg (a Nobel
+laureate geneticist) teameduptosolvetheproblem ofinferring molecularstructure from the
+information provided by a mass spectrometer. The input to the program consists of the ele-
+mentaryformulaofthemolecule(e.g.,C H NO )andthemassspectrumgivingthemasses
+6 13 2
+ofthevariousfragmentsofthemoleculegeneratedwhenitisbombardedbyanelectronbeam.
+Forexample, themassspectrum mightcontain apeakat m 15,corresponding tothemass
+ofamethyl(CH )fragment.
+3
+The naive version of the program generated all possible structures consistent with the
+formula,andthenpredictedwhatmassspectrumwouldbeobservedforeach,comparingthis
+with the actual spectrum. As one might expect, this is intractable for even moderate-sized
+molecules. The DENDRAL researchers consulted analytical chemists 

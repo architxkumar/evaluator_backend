@@ -1,0 +1,29 @@
+t symbols and one object, then both symbols must refer
+to the same object; but this can still happen even with more objects. When there are more
+objects thanconstant symbols, someoftheobjects willhavenonames. Becausethenumber
+of possible models is unbounded, checking entailment by the enumeration of all possible
+modelsisnotfeasibleforfirst-orderlogic(unlikepropositional logic). Evenifthenumberof
+objects is restricted, the number of combinations can be very large. (See Exercise 8.5.) For
+theexamplein Figure8.4,thereare137,506,194,466 models withsixorfewerobjects.
+8.2.3 Terms
+Atermisalogicalexpression thatreferstoanobject. Constantsymbolsarethereforeterms,
+TERM
+but itisnotalways convenient tohave adistinct symbol tonameevery object. Forexample,
+in English we might use the expression King John s left leg rather than giving a name
+to his leg. This is what function symbols are for: instead of using a constant symbol, we
+use Left Leg(John). In the general case, a complex term is formed by a function symbol
+followedbyaparenthesized listoftermsasargumentstothe functionsymbol. Itisimportant
+to remember that acomplex term is just a complicated kind of name. It is not a subroutine
+call that returns a value. There is no Left Leg subroutine that takes a person as input and
+returnsaleg. Wecanreasonaboutleftlegs(e.g.,statingthegeneralrulethateveryonehasone
+and then deducing that John must have one) without ever providing a definition of Left Leg.
+Thisissomethingthatcannotbedonewithsubroutines inprogramming languages.5
+The formal semantics of terms is straightforward. Consider a term f(t ,...,t ). The
+1 n
+function symbol f refers to somefunction inthe model(call it F); theargument termsrefer
+to objects in the domain (call them d ,...,d ); and the term as a whole refers to the object
+1 n
+that is the value of the function F applied to d ,...,d . Forexample, suppose the Left Leg
+1 n
+functionsymbolreferstothefunctionshownin Equation(8.2)and John refersto King John,
+then Left Leg(John) 

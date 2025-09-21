@@ -1,0 +1,35 @@
+ is the problem ofspurious actions such as Fly(P ,JFK,JFK), which should
+1
+beano-op, butwhich hascontradictory effects (according tothedefinition, theeffect would
+include At(P ,JFK) At(P ,JFK)). It is common to ignore such problems, because
+1 1
+they seldom cause incorrect plans to beproduced. Thecorrect approach isto add inequality
+preconditions saying thatthe from andto airports mustbedifferent; seeanother exampleof
+thisin Figure10.3.
+10.1.2 Example: The spare tireproblem
+Consider the problem of changing a flat tire (Figure 10.2). The goal is to have a good spare
+tireproperlymountedontothecar saxle,wheretheinitial statehasaflattireontheaxleand
+a good spare tire in the trunk. To keep it simple, our version of the problem is an abstract
+one,withnostickylugnutsorothercomplications. Therearejustfouractions: removingthe
+spare from the trunk, removing the flat tire from the axle, putting the spare on the axle, and
+leaving the car unattended overnight. We assume that the car is parked in a particularly bad
+neighborhood, sothat the effect ofleaving itovernight isthat the tires disappear. Asolution
+totheproblem is Remove(Flat,Axle),Remove(Spare,Trunk),Put On(Spare,Axle) .
+Init(Tire(Flat) Tire(Spare) At(Flat,Axle) At(Spare,Trunk))
+Goal(At(Spare,Axle))
+Action(Remove(obj,loc),
+PRECOND:At(obj,loc)
+EFFECT: At(obj,loc) At(obj,Ground))
+Action(Put On(t, Axle),
+PRECOND:Tire(t) At(t,Ground) At(Flat,Axle)
+EFFECT: At(t,Ground) At(t,Axle))
+Action(Leave Overnight,
+PRECOND:
+EFFECT: At(Spare,Ground) At(Spare,Axle) At(Spare,Trunk) At(Flat,Ground) At(Flat,Axle) At(Flat, Trunk))
+Figure10.2 Thesimplesparetireproblem.
+10.1.3 Example: The blocks world
+One of the most famous planning domains is known as the blocks world. This domain
+BLOCKSWORLD
+consists of a set of cube-shaped blocks sitting on a table.2 The blocks can be stacked, but
+only one block can fitdirectly ontop ofanother. Arobot arm canpick up ablock and move
+it to another position, either on the table or on top of another block. The ar

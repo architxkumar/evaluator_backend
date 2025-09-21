@@ -1,0 +1,26 @@
+ked with the STRIPS planner to control the robot Shakey. The NASL planner
+(Mc Dermott, 1978a) treated a planning problem simply as a specification for carrying out a
+complex action, so that execution and planning were completely unified. SIPE (System for
+Interactive Planning and Execution monitoring) (Wilkins, 1988, 1990) was the first planner
+to deal systematically with the problem of replanning. It has been used in demonstration
+projects in several domains, including planning operations on the flight deck of an aircraft
+carrier, job-shop scheduling foran Australian beerfactory, and planning the construction of
+multistory buildings (Kartamand Levitt,1990).
+In the mid-1980s, pessimism about the slow run times of planning systems led to the
+proposal of reflex agents called reactive planning systems (Brooks, 1986; Agre and Chap-
+REACTIVEPLANNING
+man, 1987). PENGI (Agre and Chapman, 1987) could play a (fully observable) video game
+by using Boolean circuits combined with a visual representation of current goals and the
+agent sinternalstate. Universalplans (Schoppers,1987,1989)weredevelopedasalookup-
+table method forreactive planning, but turned out to be arediscovery ofthe idea of policies
+POLICY
+thathadlongbeenusedin Markovdecision processes (see Chapter17). Auniversal plan(or
+a policy) contains a mapping from any state to the action that should be taken in that state.
+Koenig(2001)surveysonlineplanning techniques, underthename Agent-Centered Search.
+Multiagent planning has leaped in popularity in recent years, although it does have
+a long history. Konolige (1982) formalizes multiagent planning in first-order logic, while
+Pednault (1986) givesa STRIPS-style description. Thenotion ofjoint intention, whichis es-
+sentialifagentsaretoexecuteajointplan, comesfromwork oncommunicative acts(Cohen
+and Levesque, 1990; Cohen et al., 1990). Boutilier and Brafman (2001) show how to adapt
+partial-order planning to a multiactor setting. Brafman and Domshlak (2008) devise a mul-
+tiacto

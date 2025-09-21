@@ -1,0 +1,33 @@
+ust be
+LANGUAGE
+used that understands constraints such as T d T directly, without enumerating the
+1 1 2
+set of pairs of allowable values for (T ,T ). Special solution algorithms (which we do not
+1 2
+LINEAR discuss here) exist for linear constraints on integer variables that is, constraints, such as
+CONSTRAINTS
+the one just given, in which each variable appears only in linear form. It can be shown that
+NONLINEAR noalgorithm existsforsolving general nonlinearconstraintsonintegervariables.
+CONSTRAINTS
+206 Chapter 6. Constraint Satisfaction Problems
+CONTINUOUS Constraint satisfaction problems with continuous domains are common in the real
+DOMAINS
+worldandarewidelystudiedinthefieldofoperations research. Forexample,thescheduling
+ofexperiments on the Hubble Space Telescope requires very precise timingofobservations;
+the start and finish of each observation and maneuver are continuous-valued variables that
+must obey a variety of astronomical, precedence, and power constraints. The best-known
+category of continuous-domain CS Ps is that of linear programming problems, where con-
+straintsmustbelinearequalitiesorinequalities. Linearprogrammingproblemscanbesolved
+in time polynomial in the number of variables. Problems with different types of constraints
+andobjectivefunctions havealsobeenstudied quadratic programming, second-order conic
+programming, andsoon.
+In addition to examining the types of variables that can appear in CS Ps, it is useful to
+look at the types of constraints. The simplest type is the unary constraint, which restricts
+UNARYCONSTRAINT
+thevalueofasinglevariable. Forexample,inthemap-coloring problem itcouldbethecase
+that South Australians won t tolerate the color green; we can express that with the unary
+constraint (cid:16)(SA),SA (cid:7) green(cid:17)
+A binary constraint relates two variables. For example, SA (cid:7) NSW is a binary
+BINARYCONSTRAINT
+constraint. A binary CSP is one with only binary constraints; it can be represented as a
+constraint graph, asin Fi

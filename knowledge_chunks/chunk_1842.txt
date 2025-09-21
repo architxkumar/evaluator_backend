@@ -1,0 +1,26 @@
+ymbol
+Left Leg. As with proposition symbols, the choice of names is entirely up to the user. Each
+predicate andfunction symbolcomeswithanaritythatfixesthenumberofarguments.
+ARITY
+Asin propositional logic, every model must provide the information required to deter-
+mine if any given sentence is true or false. Thus, in addition to its objects, relations, and
+functions, each model includes an interpretation that specifies exactly which objects, rela-
+INTERPRETATION
+tions and functions are referred to by the constant, predicate, and function symbols. One
+possibleinterpretation forourexample whichalogicianwouldcalltheintendedinterpre-
+INTENDED tation isasfollows:
+INTERPRETATION Richard refersto Richardthe Lionheartand John referstotheevil King John. Brother refers to the brotherhood relation, that is, the set of tuples of objects given in
+Equation (8.1); On Head refers to the on head relation that holds between the crown
+and King John;Person,King,and Crown refertothesetsofobjects thatarepersons,
+kings,andcrowns. Left Leg referstothe leftleg function, thatis,themappinggiven in Equation(8.2).
+There are many other possible interpretations, of course. For example, one interpretation
+maps Richard to the crown and John to King John s left leg. There are five objects in
+the model, so there are 25 possible interpretations just for the constant symbols Richard
+and John. Notice that not all the objects need have a name for example, the intended
+interpretation does not name the crown or the legs. It is also possible for an object to have
+several names; there is an interpretation under which both Richard and John refer to the
+crown.4 If you find this possibility confusing, remember that, in propositional logic, it is
+perfectly possible tohaveamodelinwhich Cloudy and Sunny arebothtrue; itisthejobof
+theknowledgebasetoruleoutmodelsthatareinconsistent withourknowledge.
+4 Later,in Section8.2.8,weexamineasemanticsinwhicheveryobjecthasexactlyonename.
+Section8.2. Syntaxand Semanticsof First

@@ -1,0 +1,29 @@
+pposethattheexternaltemperatureaffectsthebattery sensorinsuchawaythattran-
+sient failures become more likely as temperature increases. Show how to augment the
+DB Nstructure in Figure15.15(a),andexplainanyrequired changestothe CP Ts.
+c. Giventhenewnetwork structure, canbattery readings beusedbytherobottoinferthe
+currenttemperature?
+15.17 Consider applying the variable elimination algorithm to the umbrella DB Nunrolled
+forthree slices, where the query is P(R u ,u ,u ). Show that the space complexity of the
+3 1 2 3
+algorithm thesizeofthelargestfactor isthesame,regardlessofwhethertherainvariables
+areeliminatedinforwardorbackwardorder.
+16
+MAKING SIMPLE
+DECISIONS
+Inwhichweseehowanagentshouldmakedecisionssothatitgetswhatitwants onaverage, atleast.
+Inthischapter, wefillinthedetailsofhowutilitytheorycombineswithprobability theoryto
+yield adecision-theoretic agent an agent that can make rational decisions based on whatit
+believesandwhatitwants. Suchanagentcanmakedecisionsincontextsinwhichuncertainty
+and conflicting goals leave a logical agent with no way to decide: a goal-based agent has a
+binary distinction between good (goal) and bad (non-goal) states, while a decision-theoretic
+agenthasacontinuous measureofoutcomequality.
+Section 16.1 introduces the basic principle of decision theory: the maximization of
+expected utility. Section 16.2 shows that the behavior of any rational agent can be captured
+bysupposing autility function thatisbeingmaximized. Section 16.3discusses thenatureof
+utilityfunctionsinmoredetail,andinparticulartheirrelationtoindividualquantitiessuchas
+money. Section16.4showshowtohandleutilityfunctions thatdependonseveralquantities.
+In Section 16.5, we describe the implementation of decision-making systems. In particular,
+weintroduce aformalism called a decision network (also known asaninfluencediagram)
+that extends Bayesian networks by incorporating actions and utilities. The remainder of the
+chapterdiscusses issuesthatariseinapplications ofdecisiontheorytoexp

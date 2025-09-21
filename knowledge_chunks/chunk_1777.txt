@@ -1,0 +1,30 @@
+ociativity of (( ) ) ( ( )) associativity of ( ) double-negation elimination
+( ) ( ) contraposition
+( ) ( ) implication elimination
+( ) (( ) ( )) biconditional elimination ( ) ( ) De Morgan ( ) ( ) De Morgan
+( ( )) (( ) ( )) distributivity of over ( ( )) (( ) ( )) distributivity of over Figure7.11 Standardlogicalequivalences. Thesymbols , , and standforarbitrary
+sentencesofpropositionallogic.
+7.5 PROPOSITIONAL THEOREM PROVING
+Sofar,wehaveshownhowtodetermineentailmentbymodelchecking: enumeratingmodels
+and showing that the sentence must hold in all models. In this section, weshow how entail-
+mentcanbedonebytheoremproving applying rulesofinferencedirectlytothesentences
+THEOREMPROVING
+inourknowledgebasetoconstructaproofofthedesiredsentencewithoutconsultingmodels.
+Ifthenumberofmodelsislargebutthelengthoftheproofisshort,thentheoremprovingcan
+bemoreefficientthanmodelchecking.
+Before we plunge into the details of theorem-proving algorithms, we will need some
+LOGICAL additional concepts related toentailment. Thefirstconcept islogical equivalence: twosen-
+EQUIVALENCE
+tences and are logically equivalent if they are true in the same set of models. We write
+this as . Forexample, wecan easily show (using truth tables) that P Q and Q P
+are logically equivalent; other equivalences are shown in Figure 7.11. These equivalences
+play much the same role in logic as arithmetic identities do in ordinary mathematics. An
+alternative definition of equivalence is asfollows: any two sentences and are equivalent
+onlyifeachofthementailstheother: ifandonlyif and .
+Thesecondconceptwewillneedisvalidity. Asentenceisvalidifitistrueinallmodels. For
+VALIDITY
+example,thesentence P P isvalid. Validsentencesarealsoknownastautologies they
+TAUTOLOGY
+are necessarily true. Because the sentence True is true in all models, every valid sentence
+is logically equivalent to True. What good are valid sentences? From our definition of
+DEDUCTION entailment, wecanderivethedeductiontheorem,whichwasknowntotheancient Gree

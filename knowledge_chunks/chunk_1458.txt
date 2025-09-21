@@ -1,0 +1,28 @@
+e time foran Aplysia neuron is roughly the same
+as fora human neuron, how does the computational power, in terms of memory updates per
+second, comparewiththehigh-end computerdescribed in Figure1.3?
+32 Chapter 1. Introduction
+1.6 How could introspection reporting on one s inner thoughts be inaccurate? Could I
+bewrongaboutwhat I mthinking? Discuss.
+1.7 Towhatextentarethefollowingcomputersystemsinstances ofartificialintelligence: Supermarketbarcodescanners. Websearchengines. Voice-activated telephone menus. Internetroutingalgorithms thatrespond dynamically tothestateofthenetwork.
+1.8 Many of the computational models of cognitive activities that have been proposed in-
+volve quite complex mathematical operations, such asconvolving animage witha Gaussian
+orfindingaminimumoftheentropyfunction. Mosthumans(andcertainlyallanimals)never
+learn this kind of mathematics at all, almost no one learns it before college, and almost no
+one can compute the convolution of a function with a Gaussian in their head. What sense
+does it make to say that the vision system is doing this kind of mathematics, whereas the
+actualpersonhasnoideahowtodoit?
+1.9 Whywouldevolution tendtoresultinsystemsthatactrationally? Whatgoalsaresuch
+systemsdesigned toachieve?
+1.10 Is AIascience, orisitengineering? Orneitherorboth? Explain.
+1.11 Surely computers cannot be intelligent they can do only what their programmers
+tellthem. Isthelatterstatement true,anddoesitimplytheformer?
+1.12 Surely animals cannot be intelligent they can do only what their genes tell them. Isthelatterstatementtrue,anddoesitimplytheformer?
+1.13 Surelyanimals,humans,andcomputerscannotbeintelligent theycandoonlywhat
+theirconstituent atomsaretoldtodobythelawsofphysics. Isthelatterstatementtrue,and
+doesitimplytheformer?
+1.14 Examine the AI literature to discover whether the following tasks can currently be
+solvedbycomputers:
+a. Playingadecentgameoftabletennis(Ping-Pong).
+b. Drivinginthecenterof Cairo,Egypt.
+c. Drivingin Victorville, Californi

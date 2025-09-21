@@ -1,0 +1,29 @@
+facewithcomputergraphicsoften
+appearsatthe ACMSIGGRAPH(Special Interest Groupin Graphics) conference.
+Exercises 969
+EXERCISES
+24.1 In the shadow of a tree with a dense, leafy canopy, one sees a number of light spots.
+Surprisingly, they all appear to be circular. Why? After all, the gaps between the leaves
+through whichthesunshinesarenotlikelytobecircular.
+24.2 Consider a picture of a white sphere floating in front of a black backdrop. The im-
+age curve separating white pixels from black pixels is sometimes called the outline of the
+sphere. Showthat the outline ofasphere, viewed inaperspective camera, canbe anellipse.
+Whydospheresnotlooklikeellipses toyou?
+24.3 Consideraninfinitelylongcylinderofradius r oriented withitsaxisalongthey-axis.
+The cylinder has a Lambertian surface and is viewed by a camera along the positive z-axis.
+What will you expect to see in the image if the cylinder is illuminated by a point source
+at infinity located on the positive x-axis? Draw the contours of constant brightness in the
+projected image. Arethecontours ofequalbrightness uniformly spaced?
+24.4 Edges in an image can correspond to a variety of events in a scene. Consider Fig-
+ure24.4(page933),andassumethatitisapictureofarealthree-dimensional scene. Identify
+ten different brightness edges in the image, and for each, state whether it corresponds to a
+discontinuity in(a)depth,(b)surfaceorientation, (c)reflectance, or(d)illumination.
+24.5 Astereoscopicsystemisbeingcontemplatedforterrainmapping. Itwillconsistoftwo
+CC Dcameras, each having 512 512pixels ona10cm 10cmsquare sensor. Thelenses
+to be used have a focal length of 16 cm, with the focus fixed at infinity. For corresponding
+points (u ,v ) in the left image and (u ,v ) in the right image, v v because the x-axes
+1 1 2 2 1 2
+in the two image planes are parallel to the epipolar lines the lines from the object to the
+camera. Theoptical axesofthetwocamerasare parallel. The baseline between thecameras
+is1meter.
+a. Ifthenearestdistancetobeme

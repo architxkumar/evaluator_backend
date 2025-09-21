@@ -1,0 +1,28 @@
+nical,algorithmic)predictionproce-
+Glover, F. and Laguna, M.(Eds.).(1997). Tabu
+search.Kluwer. Goodman,N.(1977).The Structureof Appearance dures:Theclinicalstatisticalcontroversy. Psychol-
+(3rdedition).D.Reidel. ogy,Public Policy,and Law,2,293 323.
+Go del, K. (1930). U ber die Vollsta ndigkeit des
+Logikkalku ls.Ph.D.thesis,Universityof Vienna. Gopnik,A.and Glymour,C.(2002). Causalmaps Gruber,T.(2004). Interviewof Tom Gruber. AIS
+andbayesnets: Acognitiveandcomputationalac- SIGSEMIS Bulletin,1(3).
+Go del, K. (1931). U ber formal unentscheidbare countoftheory-formation. In Caruthers,P.,Stich, Gu,J.(1989).Parallel Algorithmsand Architectures
+Sa tze der Principia mathematica und verwandter S.,and Siegal,M.(Eds.),The Cognitive Basisof Sci- for Very Fast AI Search. Ph.D.thesis,Universityof
+Systeme I.Monatsheftefu r Mathematikund Physik, ence.Cambridge University Press. Utah.
+38,173 198.
+Gordon,D.M.(2000).Antsat Work.Norton. Guard,J.,Oglesby,F.,Bennett,J.,and Settle,L.
+Goebel,J.,Volk,K.,Walker,H.,and Gerbault,F.
+(1989).Automaticclassificationofspectrafromthe Gordon,D.M.(2007). Controlwithouthierarchy. (1969). Semi-automatedmathematics. JACM,16,
+infraredastronomicalsatellite(IRAS). Astronomy Nature,446(8),143. 49 62.
+and Astrophysics,222,L5 L8. Gordon,M.J.,Milner,A.J.,and Wadsworth,C.P. Guestrin,C.,Koller,D.,Gearhart,C.,and Kanodia,
+Goertzel,B.and Pennachin,C.(2007). Artificial
+(1979).Edinburgh LCF.Springer-Verlag. N.(2003a).Generalizingplanstonewenvironments
+inrelational MD Ps.In IJCAI-03.
+General Intelligence.Springer. Gordon,N.(1994).Bayesianmethodsfortracking.
+Ph.D.thesis,Imperial College. Guestrin,C.,Koller,D.,Parr,R.,and Venkatara-
+Gold,B.and Morgan,N.(2000).Speechand Audio
+man,S.(2003b). Efficientsolutionalgorithmsfor
+Signal Processing.Wiley. Gordon,N.,Salmond,D.J.,and Smith,A.F.M.
+factored MD Ps.JAIR,19,399 468.
+(1993). Novelapproachtononlinear non-Gaussian
+Gold,E.M.(1967). Languageidentificationinthe
+Bayesian state estimation. IEE Proceedings F Guestrin, C., Lagouda

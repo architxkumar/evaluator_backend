@@ -1,0 +1,30 @@
+is approach to intelligence is embodied in
+REPRESENTATION
+KNOWLEDGE-BASED knowledge-basedagents.
+AGENTS
+Theproblem-solvingagentsof Chapters3and4knowthings,butonlyinaverylimited,
+inflexiblesense. Forexample, thetransition modelforthe8-puzzle knowledge ofwhatthe
+actions do is hidden inside the domain-specific code of the RESULT function. It can be
+used to predict the outcome of actions but not to deduce that two tiles cannot occupy the
+samespaceorthatstateswithoddparitycannotbereachedfromstateswithevenparity. The
+atomic representations used by problem-solving agents are also very limiting. In a partially
+observable environment, an agent s only choice for representing what it knows about the
+currentstateistolistallpossibleconcretestates ahopelessprospectinlargeenvironments.
+Chapter 6 introduced the idea of representing states as assignments of values to vari-
+ables; this is a step in the right direction, enabling some parts of the agent to work in a
+domain-independent way and allowing for more efficient algorithms. In this chapter and
+those that follow, we take this step to its logical conclusion, so to speak we develop logic
+LOGIC
+as a general class of representations to support knowledge-based agents. Such agents can
+combineandrecombineinformationtosuitmyriadpurposes. Often,thisprocesscanbequite
+far removed from the needs of the moment as when a mathematician proves a theorem or
+anastronomercalculatestheearth slifeexpectancy. Knowledge-basedagentscanacceptnew
+tasksintheformofexplicitlydescribedgoals;theycanachievecompetencequicklybybeing
+toldorlearning newknowledge about theenvironment; andtheycanadapttochanges inthe
+environment byupdating therelevantknowledge.
+We begin in Section 7.1 with the overall agent design. Section 7.2 introduces a sim-
+plenewenvironment, thewumpusworld, andillustrates theoperation ofaknowledge-based
+agentwithoutgoingintoanytechnicaldetail. Thenweexplainthegeneralprinciplesoflogic
+234
+Section7.1. Knowledge-Based Agents 235
+in Section 7.3 and 

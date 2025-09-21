@@ -1,0 +1,32 @@
+ this case? What is
+thegeneralformula? (Fermatand Pascalmadeseveralerrors beforesolvingtheproblem, but
+youshouldbeabletogetitrightthefirsttime.)
+13.10 Deciding to put probability theory to good use, we encounter a slot machine with
+three independent wheels, each producing one of the four symbols BAR, BELL, LEMON, or
+CHERRY withequal probability. Theslotmachinehasthefollowingpayout schemeforabet
+of1coin(where ? denotes thatwedon tcarewhatcomesupforthatwheel):
+BAR BAR BA Rpays20coins
+BELL BELL BELL pays15coins
+LEMON LEMON LEMON pays5coins
+CHERRY CHERRY CHERRY pays3coins
+CHERRY CHERRY ? pays2coins
+CHERRY ? ? pays1coin
+a. Compute the expected payback percentage of the machine. In other words, foreach
+coinplayed, whatistheexpected coinreturn?
+b. Computetheprobability thatplaying theslotmachineonce willresultinawin.
+c. Estimate the mean and median number of plays you can expect to make until you go
+broke, ifyou start with10coins. Youcanrun asimulation toestimate this, ratherthan
+tryingtocomputeanexactanswer.
+13.11 Wewishtotransmitann-bitmessagetoareceivingagent. Thebitsinthemessageare
+independently corrupted (flipped)during transmission with(cid:2)probability each. Withanextra
+paritybitsentalongwiththeoriginalinformation,amessagecanbecorrectedbythereceiver
+508 Chapter 13. Quantifying Uncertainty
+ifatmostonebitintheentiremessage(includingtheparity bit)hasbeencorrupted. Suppose
+wewanttoensurethatthecorrectmessageisreceivedwithprobabilityatleast1 . Whatis
+themaximumfeasiblevalueofn? Calculatethisvalueforthecase(cid:2) 0.001, 0.01.
+13.12 Showthatthethreeformsofindependence in Equation(13.11)areequivalent.
+13.13 Consider two medical tests, A and B, for a virus. Test A is 95 effective at recog-
+nizing theviruswhenitispresent, buthasa10 falsepositiverate(indicating thatthevirus
+ispresent,whenitisnot). Test Bis90 effectiveatrecognizing thevirus,buthasa5 false
+positive rate. The two tests use independent methods of identifying the virus. The virus is
+carriedby1 ofallpeople. Saytha

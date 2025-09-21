@@ -1,0 +1,25 @@
+iththeoretical work
+by Schapire (1990). The ADABOOST algorithm was developed by Freund and Schapire
+Bibliographical and Historical Notes 761
+(1996) and analyzed theoretically by Schapire (2003). Friedman etal. (2000) explain boost-
+ing from a statistician s viewpoint. Online learning is covered in a survey by Blum (1996)
+and a book by Cesa-Bianchi and Lugosi (2006). Dredze et al. (2008) introduce the idea of
+confidence-weighted online learning for classification: in addition to keeping a weight for
+eachparameter, theyalsomaintain ameasureofconfidence, sothatanewexamplecanhave
+a large effect on features that were rarely seen before (and thus had low confidence) and a
+smalleffectoncommonfeaturesthathavealready beenwell-estimated.
+The literature on neural networks is rather too large (approximately 150,000 papers to
+date)tocoverindetail. Cowanand Sharp(1988b, 1988a)surveytheearlyhistory, beginning
+with the work of Mc Culloch and Pitts (1943). (As mentioned in Chapter 1, John Mc Carthy
+haspointedtotheworkof Nicolas Rashevsky(1936,1938)astheearliestmathematicalmodel
+of neural learning.) Norbert Wiener, a pioneer of cybernetics and control theory (Wiener,
+1948), worked with Mc Culloch and Pitts and influenced a number of young researchers in-
+cluding Marvin Minsky,whomayhavebeenthefirsttodevelopaworkingneuralnetworkin
+hardware in 1951 (see Minsky and Papert, 1988, pp. ix x). Turing (1948) wrote a research
+report titled Intelligent Machinery thatbegins withthesentence Ipropose toinvestigate the
+questionastowhetheritispossibleformachinerytoshowintelligentbehaviour andgoeson
+todescribe arecurrent neuralnetworkarchitecture hecalled B-typeunorganized machines andanapproachtotrainingthem. Unfortunately, thereport wentunpublisheduntil1969,and
+wasallbutignoreduntilrecently.
+Frank Rosenblatt (1957) invented the modern perceptron and proved the percep-
+tron convergence theorem (1960), although it had been foreshadowed by purely mathemat-
+ical work outside the context of neural netw

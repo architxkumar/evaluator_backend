@@ -1,0 +1,28 @@
+ethirdinputisacarrybit. Thefirstoutputisthesum,and
+thesecondoutputisacarrybitforthenextadder. Thecircuitcontainstwo XO Rgates,two
+AN Dgates,andone ORgate.
+310 Chapter 8. First-Order Logic
+signal on theoutput terminal thatflowsalong another wire. Todetermine whatthese signals
+will be, we need to know how the gates transform their input signals. There are four types
+ofgates: AND,OR,and XO Rgateshave twoinput terminals, and NO Tgates have one. All
+gateshaveoneoutputterminal. Circuits, likegates,haveinputandoutput terminals.
+Toreason about functionality and connectivity, we do not need to talk about the wires
+themselves, the paths they take, or the junctions where they come together. All that matters
+is the connections between terminals we can say that one output terminal is connected to
+anotherinputterminalwithouthavingtosaywhatactuallyconnectsthem. Otherfactorssuch
+asthesize,shape, color,orcostofthevariouscomponents areirrelevant toouranalysis.
+Ifourpurpose weresomething otherthan verifying designs atthegatelevel, theontol-
+ogywouldbedifferent. Forexample,ifwewereinterested in debugging faultycircuits, then
+it would probably be a good idea to include the wires in the ontology, because a faulty wire
+cancorruptthesignalflowingalongit. Forresolvingtiming faults,wewouldneedtoinclude
+gate delays. If we were interested in designing a product that would be profitable, then the
+costofthecircuitanditsspeedrelativetootherproductsonthemarketwouldbeimportant.
+Decideonavocabulary
+Wenowknowthatwewanttotalkaboutcircuits,terminals,signals,andgates. Thenextstep
+istochoose functions, predicates, and constants torepresent them. First, weneed tobeable
+to distinguish gates from each other and from other objects. Each gate is represented as an
+objectnamedbyaconstant, aboutwhichweassertthatitisagatewith,say,Gate(X ). The
+1
+behavior of each gate is determined by its type: one of the constants AND,OR, XOR, or
+NOT. Because a gate has exactly one type, a function is appropriate: Type(X ) XOR.
+1

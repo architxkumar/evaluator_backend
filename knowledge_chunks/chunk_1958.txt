@@ -1,0 +1,41 @@
+ there are n ground fluents in a
+domain,thenthereare 2n groundstates(eachfluentcanbetrueorfalse), but 3n descriptions
+ofsetsofgoalstates(eachfluentcanbepositive, negative,ornotmentioned).
+In general, backward search works only when we know how to regress from a state
+description to the predecessor state description. Forexample, it is hard to search backwards
+forasolutiontothen-queensproblembecausethereisnoeasywaytodescribethestatesthat
+areonemoveawayfromthe goal. Happily, the PDDL representation wasdesigned tomake
+iteasytoregressactions ifadomaincanbeexpressedin PDDL,thenwecandoregression
+search onit. Givenaground goal description g and aground action a,theregression from g
+(cid:2)
+overagivesusastatedescription g definedby
+g (cid:2) (g ADD(a)) Precond(a).
+That is, the effects that were added by the action need not have been true before, and also
+the preconditions must have held before, or else the action could not have been executed.
+Note that DEL(a) does not appear in the formula; that s because while we know the fluents
+in DEL(a) are no longer true after the action, we don t know whether or not they were true
+before, sothere snothing tobesaidaboutthem.
+Section10.2. Algorithmsfor Planningas State-Space Search 375
+Togetthefulladvantage ofbackwardsearch,weneedtodealwithpartiallyuninstanti-
+atedactionsandstates,notjustgroundones. Forexample,supposethegoalistodeliveraspe-
+(cid:2)
+cificpieceofcargoto SFO:At(C ,SFO). Thatsuggeststheaction Unload(C ,p,SFO):
+2 2
+(cid:2)
+Action(Unload(C ,p,SFO),
+2
+PRECOND:In(C
+2
+,p (cid:2) ) At(p (cid:2) ,SFO) Cargo(C
+2
+) Plane(p (cid:2) ) Airport(SFO)
+EFFECT:At(C
+2
+,SFO) In(C
+2
+,p (cid:2) ).
+(cid:2)
+(Notethatwehave standardized variable names(changing ptop inthiscase) sothatthere
+will be no confusion between variable names if we happen to use the same action schema
+twice in a plan. The same approach was used in Chapter 9 for first-order logical inference.)
+This represents unloading the package from an unspecified plane at SFO;any plane wil

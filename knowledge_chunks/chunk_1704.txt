@@ -1,0 +1,35 @@
+on to show that in orderto affect n , n must not exceed
+1 j
+acertainboundderivedfromthe l values.
+i
+d. Repeattheprocessforthecasewhere n isamin-node.
+j
+5.14 Provethatalpha betapruningtakestime O(2m 2)withoptimalmoveordering,where
+misthemaximumdepthofthegametree.
+5.15 Suppose you have a chess program that can evaluate 10 million nodes per second.
+Decideonacompactrepresentationofagamestateforstorageinatranspositiontable. About
+how many entries can you fit in a 2-gigabyte in-memory table? Will that be enough for the
+200 Chapter 5. Adversarial Search
+0.5 0.5 0.5 0.5
+2 2 1 2 0 2 -1 0
+Figure5.19 Thecompletegametreeforatrivialgamewithchancenodes.
+three minutes of search allocated forone move? Howmany table lookups can you do in the
+time it would take to do one evaluation? Now suppose the transposition table is stored on
+disk. Abouthowmanyevaluations couldyoudointhetimeittakes todoonediskseekwith
+standard diskhardware?
+5.16 This question considers pruning in games with chance nodes. Figure 5.19 shows the
+completegametreeforatrivialgame. Assumethattheleafnodesaretobeevaluated inleft-
+to-rightorder,andthatbeforealeafnodeisevaluated, weknownothingaboutitsvalue the
+rangeofpossible valuesis to .
+a. Copythe figure, mark thevalue ofall theinternal nodes, and indicate the best moveat
+therootwithanarrow.
+b. Given the values of the first six leaves, do we need to evaluate the seventh and eighth
+leaves? Given the values of the first seven leaves, do we need to evaluate the eighth
+leaf? Explainyouranswers.
+c. Suppose the leaf node values are known to lie between 2 and 2 inclusive. After the
+firsttwoleavesareevaluated, whatisthevaluerangeforthe left-hand chancenode?
+d. Circlealltheleavesthatneednotbeevaluatedundertheassumption in(c).
+5.17 Implement the expectiminimax algorithm and the -alpha beta algorithm, which is
+described by Ballard(1983), forpruning gametreeswithchance nodes. Trythemonagame
+suchasbackgammonandmeasurethepruning effectiveness of -alpha beta.
+5.18 Prove that with a po

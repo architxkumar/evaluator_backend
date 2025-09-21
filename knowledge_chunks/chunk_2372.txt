@@ -1,0 +1,33 @@
+achpossibletestoutcome.
+d. Calculatetheoptimaldecisions giveneitherapassorafail,andtheirexpectedutilities.
+e. Calculate the value of information of the test, and derive an optimal conditional plan
+forthebuyer.
+16.18 Recallthedefinition ofvalueofinformation in Section16.6.
+a. Provethatthevalueofinformation isnonnegativeandorderindependent.
+b. Explain why it is that some people would prefer not to get some information for ex-
+ample,notwantingtoknowthesexoftheirbabywhenanultrasound isdone.
+c. A function f on sets is submodular if, for any element x and any sets A and B such
+SUBMODULARITY
+that A B,addingxto Agivesagreaterincrease in f thanaddingxto B:
+A B (f(A x ) f(A)) (f(B x ) f(B)).
+Submodularity captures the intuitive notion of diminishing returns. Is the value of in-
+formation, viewedasafunction f onsetsofpossible observations, submodular? Prove
+thisorfindacounterexample.
+Theanswersto Exercise16.1(where Mstandsformillion): Firstset: 3M,1.6M,1541,41M,
+4768, 221, 649M, 295M, 132, 25,546. Second set: 1917, 155M, 4,500M, 11M, 120,000,
+1.1M,1636,19,340, 1,595,41,710.
+17
+MAKING COMPLEX
+DECISIONS
+In which we examine methods for deciding what to do today, given that we may
+decideagaintomorrow.
+Inthischapter,weaddressthecomputationalissuesinvolvedinmakingdecisionsinastochas-
+tic environment. Whereas Chapter 16 was concerned with one-shot or episodic decision
+problems, in which the utility of each action s outcome was well known, we are concerned
+SEQUENTIAL here withsequential decision problems, inwhich theagent s utility depends onasequence
+DECISIONPROBLEM
+of decisions. Sequential decision problems incorporate utilities, uncertainty, and sensing,
+and include search and planning problems as special cases. Section 17.1 explains how se-
+quential decision problems are defined, and Sections 17.2 and 17.3 explain how they can
+be solved to produce optimal behavior that balances the risks and rewards of acting in an
+uncertain environment. Section 17.4 extends these ideas to the cas

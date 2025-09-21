@@ -1,0 +1,22 @@
+g tio o n f
+Roche,E.and Schabes,Y.(1997).Finite-State Lan- rep.CUED F-INFENG TR166,Cambridge Univer- within Broca sarea.Science,326(5291),445 449.
+guage Processing(Language,Speechand Commu- sity Engineering Department.
+nication).Bradford Books. Sakuta, M. and Iida, H. (2002). AND OR-tree
+Ruspini, E.H.,Lowrance,J.D.,and Strat,T.M. searchforsolvingproblemswithuncertainty:Acase
+Rock,I.(1984).Perception.W.H.Freeman. (1992). Understandingevidentialreasoning. IJAR, studyusingscreen-shogiproblems. IPSJ Journal,
+Rosenblatt,F.(1957). Theperceptron: Aperceiv- 6(3),401 424. 43(01).
+ingandrecognizingautomaton. Report85-460-1, Russell,J.G.B.(1990). Isscreeningforabdom- Salomaa, A. (1969). Probabilistic and weighted
+Project PARA,Cornell Aeronautical Laboratory. inalaorticaneurysmworthwhile? Clinical Radiol- grammars.Informationand Control,15,529 544.
+ogy,41,182 184.
+Rosenblatt,F.(1960). Ontheconvergenceofrein- Salton,G.,Wong,A.,and Yang,C.S.(1975). A
+forcementproceduresinsimpleperceptrons.Report Russell,S.J.(1985). Thecompleatguideto MRS. vectorspacemodelforautomaticindexing. CACM,
+VG-1196-G-4,Cornell Aeronautical Laboratory. Report STAN-CS-85-1080,Computer Science De- 18(11),613 620.
+partment,Stanford University.
+Rosenblatt,F.(1962). Principlesof Neurodynam- Samuel, A.L.(1959). Some studiesinmachine
+ics: Perceptronsandthe Theoryof Brain Mecha- Russell,S.J.(1986).Aquantitativeanalysisofanal- learningusingthegameofcheckers. IBM Journal
+nisms.Spartan. ogybysimilarity.In AAAI-86,pp.284 288. of Researchand Development,3(3),210 229.
+Rosenblatt,M.(1956).Remarksonsomenonpara- Russell,S.J.(1988).Tree-structuredbias.In AAAI- Samuel, A.L.(1967). Some studiesinmachine
+metricestimatesofadensityfunction. Annalsof 88,Vol.2,pp.641 645. learning using the game of checkers II Recent
+Mathematical Statistics,27,832 837. progress. IBM Journalof Researchand Develop-
+Russell, S. J.(1992). Efficientmemory-bounded ment,11(6),601 617.
+Rosenblueth, A., Wiener, N., and Bigelow, J. searchmethods.In ECAI-92,

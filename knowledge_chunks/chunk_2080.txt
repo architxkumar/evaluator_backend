@@ -1,0 +1,34 @@
+2 3
+w: I, R w: I, R
+6 7
+(c)
+Figure 12.4 Possible worlds with accessibility relations KSuperman (solid arrows) and
+KLois (dottedarrows). Theproposition Rmeans theweatherreportfortomorrowisrain and I means Superman ssecretidentityis Clark Kent. Allworldsareaccessibletothem-
+selves;thearrowsfromaworldtoitselfarenotshown.
+Superman does not know the report, but he knows that Lois knows, because in every world
+thatisaccessible tohim,eithersheknows Rorsheknows R.
+Inthe BOTTOM diagram werepresent thescenario whereitiscommonknowledge that
+Supermanknowshisidentity, and Loismightormightnothave seentheweatherreport. We
+representthisbycombiningthetwotopscenarios, andaddingarrowstoshowthat Superman
+does not know which scenario actually holds. Lois does know, so we don t need to add any
+arrowsforher. In w Superman still knows I but not R,and nowhedoes notknow whether
+0
+Lois knows R. From what Superman knows, he might be in w or w , in which case Lois
+0 2
+doesnotknowwhether Ristrue,orhecouldbeinw ,inwhichcasesheknows R,orw ,in
+4 6
+whichcasesheknows R.
+Thereareaninfinitenumberofpossibleworlds,sothetrickistointroducejusttheones
+you need to represent what you are trying to model. A new possible world is needed to talk
+about different possible facts (e.g., rain is predicted or not), or to talk about different states
+ofknowledge (e.g., does Loisknow that rain ispredicted). Thatmeanstwopossible worlds,
+suchasw andw in Figure12.4,mighthavethesamebasefactsabout theworld, butdiffer
+4 0
+intheiraccessibility relations, andthereforeinfactsaboutknowledge.
+Modallogic solvessometricky issues withtheinterplay ofquantifiers and knowledge.
+The Englishsentence Bondknowsthatsomeoneisaspy isambiguous. Thefirstreadingis
+Section12.5. Reasoning Systemsfor Categories 453
+thatthereisaparticularsomeonewho Bondknowsisaspy;wecanwritethisas x K Spy(x),
+Bond
+which in modal logic means that there is an x that, in all accessible worlds, Bond knows to
+beaspy. Thesecondreading isthat Bondjustknowsthatthere isatleast

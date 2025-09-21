@@ -1,0 +1,18 @@
+ (h h) h .
+The complexity results depend very strongly on the assumptions made about the state
+space. The simplest model studied is a state space that has a single goal and is essentially a
+tree with reversible actions. (The 8-puzzle satisfies the first and third of these assumptions.) Inthiscase, thetimecomplexity of A isexponential inthemaximum absolute error, that is,
+O(b ). For constant step costs, we can write this as O(b(cid:2)d), where d is the solution depth.
+Foralmostallheuristics inpracticaluse,theabsoluteerrorisatleastproportional tothepath cost h , so (cid:2) is constant or growing and the time complexity is exponential in d. We can
+alsoseetheeffectofamoreaccurateheuristic: O(b(cid:2)d) O((b(cid:2))d),sotheeffectivebranching
+factor(definedmoreformallyinthenextsection) is b(cid:2).
+Whenthestate spacehasmanygoalstates particularly near-optimal goalstates the
+searchprocesscanbeledastrayfromtheoptimalpathandthereisanextracostproportional
+to the number of goals whose cost is within a factor (cid:2) of the optimal cost. Finally, in the
+general case ofa graph, the situation is even worse. There can be exponentially many states with f(n) C even if the absolute error is bounded by a constant. Forexample, consider
+aversionofthevacuum worldwheretheagentcanclean upanysquare forunitcostwithout
+evenhavingtovisitit: inthatcase,squarescanbecleanedinanyorder. With N initiallydirty
+squares, there are 2N states where some subset has been cleaned and all of them are on an optimalsolutionpath andhencesatisfyf(n) C eveniftheheuristichasanerrorof1. Thecomplexityof A oftenmakesitimpracticaltoinsistonfindinganoptimalsolution. One can use variants of A that find suboptimal solutions quickly, or one can sometimes
+design heuristics that are more accurate but not strictly admissible. In any case, the use of a
+goodheuristic stillprovidesenormoussavingscomparedto theuseofanuninformed search.
+In Section3.6,welookatthequestion ofdesigning goodheuristics. Computation timeisnot, however,A

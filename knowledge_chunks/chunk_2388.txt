@@ -1,0 +1,35 @@
+ofar, wehaveanalyzed theerrorintheutility function returned bythevalueiteration
+algorithm. What the agent really cares about, however, is how well it will do if it makes its
+decisionsonthebasisofthisutilityfunction. Supposethatafteriiterationsofvalueiteration,
+the agent has an estimate U of the true utility U and obtains the MEU policy based on
+i i
+one-step look-ahead using U (as in Equation (17.4)). Will the resulting behavior be nearly
+i
+asgoodastheoptimalbehavior? Thisisacrucialquestionforanyrealagent,anditturnsout
+that the answer is yes. U i(s) is the utility obtained if is executed starting in s, and the
+i
+policy loss U i U isthe mosttheagent canlose byexecuting instead oftheoptimal
+POLICYLOSS i policy . Thepolicylossof isconnected totheerrorin U bythefollowinginequality:
+i i
+if U U (cid:2) then U i U 2(cid:2) (1 ). (17.9)
+i
+Inpractice,itoftenoccursthat becomesoptimallongbefore U hasconverged. Figure17.6
+i i
+showshowthe maximumerrorin U and thepolicy lossapproach zeroasthevalue iteration
+i
+processproceedsforthe4 3environmentwith 0.9. Thepolicy isoptimalwheni 4,
+i
+eventhoughthemaximumerrorin U isstill0.46.
+i
+Now we have everything we need to use value iteration in practice. We know that
+it converges to the correct utilities, we can bound the error in the utility estimates if we
+656 Chapter 17. Making Complex Decisions
+stop after a finite number of iterations, and we can bound the policy loss that results from
+executing the corresponding MEU policy. As a final note, all of the results in this section
+depend on discounting with 1. If 1 and the environment contains terminal states,
+then a similar set of convergence results and error bounds can be derived whenever certain
+technical conditions aresatisfied.
+17.3 POLICY ITERATION
+In the previous section, we observed that it is possible to get an optimal policy even when
+the utility function estimate is inaccurate. If one action is clearly better than all others, then
+the exact magnitude of the utilities on the states 

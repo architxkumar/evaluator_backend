@@ -1,0 +1,28 @@
+influential conferences that explored the new
+mathematicalandcomputational modelsofcognition. Wiener sbook Cybernetics(1948)be-
+CYBERNETICS
+came a bestseller and awoke the public to the possibility of artificially intelligent machines.
+Meanwhile, in Britain, W. Ross Ashby (Ashby, 1940) pioneered similar ideas. Ashby, Alan
+Turing, Grey Walter, and others formed the Ratio Club for those who had Wiener s ideas
+before Wiener s bookappeared. Ashby s Designfora Brain(1948, 1952)elaborated onhis
+idea that intelligence could be created by the use of homeostatic devices containing appro-
+HOMEOSTATIC
+priatefeedback loopstoachievestableadaptivebehavior.
+Modern control theory, especially the branch known as stochastic optimal control, has
+OBJECTIVE asitsgoalthedesignofsystemsthatmaximizeanobjectivefunctionovertime. Thisroughly
+FUNCTION
+matches our view of AI: designing systems that behave optimally. Why, then, are AI and
+control theory twodifferent fields, despite the close connections among theirfounders? The
+answer lies in the close coupling between the mathematical techniques that were familiar to
+theparticipantsandthecorresponding setsofproblemsthatwereencompassedineachworld
+view. Calculusandmatrixalgebra,thetoolsofcontroltheory,lendthemselvestosystemsthat
+aredescribablebyfixedsetsofcontinuousvariables,whereas AIwasfoundedinpartasaway
+toescapefromthetheseperceivedlimitations. Thetoolsoflogicalinferenceandcomputation
+allowed AIresearchers toconsider problems suchaslanguage, vision, andplanning that fell
+completely outsidethecontroltheorist s purview.
+1.2.8 Linguistics Howdoeslanguage relatetothought?
+In 1957, B. F. Skinner published Verbal Behavior. This was a comprehensive, detailed ac-
+count of the behaviorist approach to language learning, written by the foremost expert in
+16 Chapter 1. Introduction
+the field. But curiously, a review of the book became as well known as the book itself, and
+served to almost kill off interest in behaviorism. The author of the review was the

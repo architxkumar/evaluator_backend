@@ -1,0 +1,29 @@
+umbers with log (22n ) 2n bits to label the
+2
+currentbeliefstate. Thatis,exactstateestimationmayrequirelogicalformulaswhosesizeis
+exponential inthenumberofsymbols.
+Onevery common and natural scheme for approximate state estimation is to represent
+beliefstatesasconjunctionsofliterals,thatis,1-CN Fformulas. Todothis,theagentprogram
+simply tries to prove Xt and Xt for each symbol Xt (as well as each atemporal symbol
+whose truth value is not yet known), given the belief state at t 1. The conjunction of
+Section7.7. Agents Basedon Propositional Logic 271
+Figure 7.21 Depiction of a 1-CNF belief state (bold outline) as a simply representable,
+conservative approximation to the exact (wiggly) belief state (shaded region with dashed
+outline).Eachpossibleworldisshownasacircle;theshadedonesareconsistentwithallthe
+percepts.
+provableliteralsbecomesthenewbeliefstate,andthepreviousbeliefstateisdiscarded.
+Itis important to understand that this scheme maylose some information as timegoes
+along. Forexample, if the sentence in Equation (7.4) were the true belief state, then neither
+P nor P would be provable individually and neither would appear in the 1-CNF belief
+3,1 2,2
+state. (Exercise 7.27 explores one possible solution to this problem.) On the other hand,
+because every literal in the 1-CNF belief state is proved from the previous belief state, and
+the initial belief state is a true assertion, we know that entire 1-CNF belief state must be
+true. Thus, thesetofpossible statesrepresented bythe1-CN Fbeliefstateincludes allstates
+that are in fact possible given the full percept history. As illustrated in Figure 7.21, the 1-
+CONSERVATIVE CN Fbeliefstateactsasasimpleouterenvelope,orconservativeapproximation,aroundthe
+APPROXIMATION
+exact belief state. We see this idea of conservative approximations to complicated sets as a
+recurring themeinmanyareasof AI.
+7.7.4 Making plans by propositional inference
+Theagentin Figure7.20useslogicalinference todetermine whichsquaresaresafe,butuses A search

@@ -1,0 +1,27 @@
+in Figure 14.8. Using the numbers from
+Figure 14.2, we obtain P(b j,m) 0.00059224. The corresponding computation for byields 0.0014919;hence,
+P(B j,m) (cid:16)0.00059224,0.0014919(cid:17) (cid:16)0.284,0.716(cid:17).
+Thatis,thechanceofaburglary, givencallsfrombothneighbors, isabout28 .
+Theevaluation processfortheexpression in Equation(14.4)isshownasanexpression
+tree in Figure 14.8. The ENUMERATION-ASK algorithm in Figure 14.9 evaluates such trees
+using depth-first recursion. Thealgorithm is verysimilar instructure tothe backtracking al-
+gorithmforsolving CS Ps(Figure6.5)andthe DPL Lalgorithmforsatisfiability(Figure7.17).
+Thespacecomplexityof ENUMERATION-ASK isonlylinearinthenumberofvariables:
+thealgorithm sumsoverthefulljointdistribution without everconstructing itexplicitly. Un-
+fortunately, its time complexity for a network with n Boolean variables is always O(2n) betterthanthe O(n2n)forthesimpleapproach described earlier, butstillrather grim.
+Note that the tree in Figure 14.8 makes explicit the repeated subexpressions evalu-
+atedbythealgorithm. Theproducts P(j a)P(m a)and P(j a)P(m a)arecomputed
+twice,onceforeachvalueofe. Thenextsectiondescribesageneralmethodthatavoidssuch
+wastedcomputations.
+14.4.2 The variableeliminationalgorithm
+The enumeration algorithm can be improved substantially by eliminating repeated calcula-
+tions of the kind illustrated in Figure 14.8. The idea is simple: do the calculation once and
+savetheresultsforlateruse. Thisisaformofdynamicprogramming. Thereareseveralver-
+VARIABLE sionsofthisapproach;wepresentthevariableeliminationalgorithm,whichisthesimplest.
+ELIMINATION
+Variableelimination worksbyevaluating expressions such as Equation(14.4)inright-to-left
+order(thatis,bottomupin Figure14.8). Intermediateresultsarestored,andsummationsover
+eachvariable aredoneonlyforthoseportions oftheexpression thatdependonthevariable.
+Letusillustrate thisprocessfortheburglary network. Weevaluatetheexpression
+(cid:12) (cid:12)
+P(B j,m) P(B) P(e) P(a B,e)P(j a)

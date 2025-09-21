@@ -1,0 +1,24 @@
+ learn both the transition probabilities P(X t X t 1 ) be-
+tween states and the observation model, P(E X ), which says how likely each word is in
+t t
+each state. For example, the word Friday would have high probability in one or more of
+thetargetstatesofthedate HMM,andlowerprobability elsewhere.
+Withsufficienttrainingdata,the HM Mautomaticallylearnsastructureofdatesthatwe
+findintuitive: thedate HM Mmighthaveonetargetstateinwhichthehigh-probability words
+are Monday, Tuesday, etc., and which has a high-probability transition to a target state
+with words Jan , January, Feb, etc. Figure 22.2 shows the HMM for the speaker of a
+talk announcement, as learned from data. The prefix covers expressions such as Speaker: and seminar by, and the target has one state that covers titles and first names and another
+statethatcoversinitialsandlastnames.
+Once the HM Ms have been learned, we can apply them to a text, using the Viterbi
+algorithm to find the most likely path through the HMM states. One approach is to apply
+each attribute HMM separately; in this case you would expect most of the HM Ms to spend
+most of their time in background states. This is appropriate when the extraction is sparse whenthenumberofextracted wordsissmallcomparedtothelengthofthetext.
+878 Chapter 22. Natural Language Processing
+Theotherapproachistocombinealltheindividualattributesintoonebig HMM,which
+wouldthenfindapaththatwandersthrough different target attributes, firstfindingaspeaker
+target, then a date target, etc. Separate HM Ms are better when we expect just one of each
+attribute in a text and one big HMM is better when the texts are more free-form and dense
+with attributes. With either approach, in the end we have a collection of target attribute
+observations, and have to decide what to do with them. If every expected attribute has one
+target filler then the decision is easy: we have an instance of the desired relation. If there
+aremultiple fillers,weneedtodecide whichtochoose, aswediscussed withtemplat

@@ -1,0 +1,27 @@
+ u 1 r ) v . ey V s L , S 2 I 3( c 2 e ) l , l S ti i c m ro m b o o n t s n , av R i . ga a t n io d n K in oe p n a i r g t , ia S ll . y ( o 1 b 9 s 9 e 5 r ) v . abl P e ro e b n a v b ir i o li n s - -
+tionfilters.Int.J.Robotics Research,22(2),99 116. 143 220. ments.In IJCAI-95,pp.1080 1087.IJCAI,Inc.
+Schulz,S.(2004). System Description:E0.81. In Shanahan,M.(1997). Solvingthe Frame Problem.
+Simon, D. (2006). Optimal State Estimation:
+Proc.International Joint Conferenceon Automated MIT Press.
+Kalman,HInfinity,and Nonlinear Approaches.Wi-
+Reasoning,Vol.3097of LNAI,pp.223 228. Shanahan,M.(1999).Theeventcalculusexplained. ley.
+Schu tze,H.(1995). Ambiguityin Language Learn- In Wooldridge, M. J. and Veloso, M. (Eds.), Ar-
+Simon, H. A. (1947). Administrative behavior.
+ing: Computationaland Cognitive Models. Ph.D. tificial Intelligence Today, pp.409 430. Springer-
+Macmillan.
+thesis,Stanford University.Alsopublishedby CSLI Verlag.
+Press,1997. Simon,H.A.(1957). Modelsof Man: Socialand
+Shankar, N.(1986). Proof-Checking Metamathe-
+Rational.John Wiley.
+Schwartz,J.T.,Scharir,M.,and Hopcroft,J.(1987). matics.Ph.D.thesis,Computer Science Department,
+Planning,Geometryand Complexityof Robot Mo- Universityof Texasat Austin. Simon,H.A.(1963). Experimentswithaheuristic
+tion.Ablex Publishing Corporation. compiler.JACM,10,493 506.
+Shannon,C.E.and Weaver,W.(1949). The Math-
+Schwartz,S.P.(Ed.).(1977). Naming,Necessity, ematical Theoryof Communication. Universityof Simon,H.A.(1981). The Sciencesofthe Artificial
+and Natural Kinds.Cornell University Press. Illinois Press. (secondedition).MIT Press.
+Bibliography 1089
+Simon,H.A.(1982).Modelsof Bounded Rational- Smith,D.E.and Weld,D.S.(1998). Conformant Srivas,M.and Bickford,M.(1990). Formalveri-
+ity,Volume1.The MIT Press. Graphplan.In AAAI-98,pp.889 896. ficationofapipelinedmicroprocessor. IEEE Soft-
+ware,7(5),52 64.
+Simon, H. A. and Newell, A. (1958). Heuristic Smith,J.Q.(1988). Decision Analysis. Chapman
+problemsolving:Thenextadvanceinope

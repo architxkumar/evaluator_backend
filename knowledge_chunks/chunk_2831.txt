@@ -1,0 +1,26 @@
+urfaces are illuminated not only by the light
+sources, but also by the light reflected from other surfaces in the scene that effectively serve
+assecondary light sources. These mutual illumination effects are quite significant and make
+itquitedifficulttopredicttherelationshipbetweenthenormalandtheimagebrightness. Two
+surface patches with the same normal might have quite different brightnesses, because one
+receives light reflected from a large white wall and the other faces only a dark bookcase.
+Despite these difficulties, the problem is important. Humans seem to be able to ignore the
+effects of interreflections and get a useful perception of shape from shading, but we know
+frustratingly littleaboutalgorithms todothis.
+24.4.6 Contour
+When we look at a line drawing, such as Figure 24.21, we get a vivid perception of three-
+dimensional shapeandlayout. How? Itisacombination ofrecognition offamiliarobjectsin
+thesceneandtheapplication ofgeneric constraints suchasthefollowing: Occluding contours, such as the outlines of the hills. Oneside ofthe contour is nearer
+totheviewer, theotherside isfarther away. Features suchaslocal convexity andsym-
+954 Chapter 24. Perception
+Figure24.21 Anevocativelinedrawing.(Courtesyof Isha Malik.)
+metryprovidecuestosolvingthefigure-groundproblem assigning whichsideofthe
+FIGURE-GROUND
+contour is figure (nearer), and which is ground (farther). At an occluding contour, the
+lineofsightistangential tothesurfaceinthescene. T-junctions. When one object occludes another, the contour of the farther object is
+interrupted,assumingthatthenearerobjectisopaque. AT-junctionresultsintheimage. Position on the ground plane. Humans, like many other terrestrial animals, are very
+ofteninascenethatcontainsagroundplane,withvariousobjectsatdifferentlocations
+GROUNDPLANE
+onthis plane. Because ofgravity, typical objects don t floatinairbut aresupported by
+thisgroundplane,andwecanexploittheveryspecialgeometryofthisviewingscenario.
+Let us work out the projection of object

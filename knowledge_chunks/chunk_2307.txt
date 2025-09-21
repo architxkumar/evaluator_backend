@@ -1,0 +1,28 @@
+on tothetrueposteriordistributions.
+The scenario described so far involved n known objects generating n observations at
+each time step. Real application of data association are typically much more complicated.
+Often,thereported observations include falsealarms(alsoknownasclutter),whicharenot
+FALSEALARM
+causedbyrealobjects. Detectionfailurescanoccur,meaningthatnoobservationisreported
+CLUTTER
+forarealobject. Finally,newobjectsarriveandoldonesdisappear. Thesephenomena,which
+DETECTIONFAILURE
+createevenmorepossible worldstoworryabout, areillustrated in Figure15.19(d).
+Figure15.20showstwoimagesfromwidelyseparatedcamerasona Californiafreeway.
+Inthis application, weareinterested intwogoals: estimating thetimeittakes, undercurrent
+traffic conditions, to go from one place to another in the freeway system; and measuring
+demand, i.e., how many vehicles travel between any two points in the system at particular
+times of the day and on particular days of the week. Both goals require solving the data
+association problem over a wide area with many cameras and tens of thousands of vehicles
+per hour. With visual surveillance, false alarms are caused by moving shadows, articulated
+vehicles,reflectionsinpuddles,etc.;detectionfailuresarecausedbyocclusion,fog,darkness,
+and lack of visual contrast; and vehicles are constantly entering and leaving the freeway
+system. Furthermore, the appearance of any given vehicle can change dramatically between
+cameras depending on lighting conditions and vehicle pose in the image, and the transition
+modelchangesastrafficjamscomeandgo. Despitetheseproblems,moderndataassociation
+algorithms havebeensuccessful inestimating trafficparameters inreal-world settings.
+Section15.7. Summary 603
+Data association is an essential foundation for keeping track of a complex world, be-
+causewithoutitthereisnowaytocombinemultipleobservations ofanygivenobject. When
+objects in the world interact with each other in complex activities, understanding the world
+requirescombining

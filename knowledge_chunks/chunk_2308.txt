@@ -1,0 +1,24 @@
+world, be-
+causewithoutitthereisnowaytocombinemultipleobservations ofanygivenobject. When
+objects in the world interact with each other in complex activities, understanding the world
+requirescombiningdataassociationwiththerelationalandopen-universeprobabilitymodels
+of Section14.6.3. Thisiscurrently anactiveareaofresearch.
+15.7 SUMMARY
+This chapter has addressed the general problem of representing and reasoning about proba-
+bilistictemporalprocesses. Themainpointsareasfollows: Thechanging stateoftheworldishandled byusingasetofrandom variables torepre-
+sentthestateateachpointintime. Representations can be designed to satisfy the Markov property, so that the future
+is independent of the past given the present. Combined with the assumption that the
+process is stationary that is, the dynamics do not change over time this greatly
+simplifiestherepresentation. A temporal probability model can be thought of as containing a transition model de-
+scribingthestateevolution andasensormodeldescribing theobservation process. The principal inference tasks in temporal models are filtering, prediction, smooth-
+ing, and computing the most likely explanation. Each of these can be achieved using
+simple,recursive algorithmswhoseruntimeislinearinthe lengthofthesequence. Threefamilies oftemporalmodels werestudied inmoredepth: hidden Markovmod-
+els,Kalmanfilters,anddynamic Bayesiannetworks(whichinclude theothertwoas
+specialcases). Unless special assumptions are made, as in Kalman filters, exact inference with many
+statevariablesisintractable. Inpractice,theparticlefilteringalgorithmseemstobean
+effectiveapproximation algorithm. Whentryingtokeeptrackofmanyobjects, uncertainty arisesastowhichobservations
+belong to which objects the data association problem. The number of association
+hypotheses is typically intractably large, but MCMC and particle filtering algorithms
+fordataassociation workwellinpractice.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Manyofthebasic ideasforestimating thestateofdynamical

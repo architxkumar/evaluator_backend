@@ -1,0 +1,28 @@
+ded as definite clauses. Standard Prolog solves such problems
+inexactlythesamewayasthebacktracking algorithm givenin Figure6.5.
+Becausebacktracking enumeratesthedomainsofthevariables,itworksonlyforfinite-
+domain CS Ps. In Prolog terms, there must be a finite number of solutions for any goal
+withunbound variables. (Forexample, thegoal diff(Q,SA),whichsaysthat Queensland
+and South Australia must be different colors, has six solutions if three colors are allowed.)
+Infinite-domain CS Ps forexample,withintegerorreal-valuedvariables require quitedif-
+ferentalgorithms, suchasboundspropagation orlinearprogramming.
+Consider the following example. We define triangle(X,Y,Z)as a predicate that
+holdsifthethreearguments arenumbersthatsatisfythetriangleinequality:
+triangle(X,Y,Z) :-
+X 0, Y 0, Z 0, X Y Z, Y Z X, X Z Y.
+If we ask Prolog the query triangle(3,4,5), it succeeds. On the other hand, if we
+ask triangle(3,4,Z),no solution will be found, because the subgoal Z 0 cannot be
+handled by Prolog;wecan tcompareanunbound valueto0.
+Section9.5. Resolution 345
+CONSTRAINTLOGIC Constraint logic programming (CLP) allows variables to be constrained rather than
+PROGRAMMING
+bound. ACL Psolution isthemostspecific setofconstraints onthe query variables that can
+bederivedfromtheknowledge base. Forexample,thesolution tothetriangle(3,4,Z)
+query is the constraint 7 Z 1. Standard logic programs are just a special case of
+CL Pinwhichthesolutionconstraints mustbeequality constraints that is,bindings.
+CLP systems incorporate various constraint-solving algorithms for the constraints al-
+lowed in the language. For example, a system that allows linear inequalities on real-valued
+variables might include a linear programming algorithm for solving those constraints. CLP
+systems also adopt a much more flexible approach to solving standard logic programming
+queries. Forexample, instead ofdepth-first, left-to-right backtracking, theymightuseanyof
+the more efficient algorithms discussed in Chapter 6, including 

@@ -1,0 +1,29 @@
+orithm. Notice that these routinesare the same as
+the MINIMAX functionsin Figure5.3,exceptforthetwolinesineachof MIN-VALUE and
+MAX-VALU Ethatmaintain and (andthebookkeepingtopasstheseparametersalong).
+Addingdynamicmove-orderingschemes,suchastryingfirstthemovesthatwerefound
+to be best in the past, brings us quite close to the theoretical limit. The past could be the
+previous move often thesame threats remain or itcould come from previous exploration
+of the current move. One way to gain information from the current move is with iterative
+deepening search. First, search 1 ply deep and record the best path of moves. Then search
+1 ply deeper, but use the recorded path to inform move ordering. As we saw in Chapter 3,
+iterative deepening on an exponential game tree adds only a constant fraction to the total
+searchtime,whichcanbemorethanmadeupfrombettermoveordering. Thebestmovesare
+oftencalledkillermovesandtotrythemfirstiscalledthekillermoveheuristic.
+KILLERMOVES
+In Chapter 3, we noted that repeated states in the search tree can cause an exponential
+increaseinsearchcost. Inmanygames,repeatedstatesoccurfrequentlybecauseoftranspo-
+sitions different permutations of the move sequence that end up in the same position. For
+TRANSPOSITION
+example, if White has one move, a , that can be answered by Black with b and an unre-
+1 1
+lated movea on the other side of the board that can be answered by b , then the sequences
+2 2 a ,b ,a ,b and a ,b ,a ,b both end up in the same position. It is worthwhile to store
+1 1 2 2 2 2 1 1
+the evaluation of the resulting position in a hash table the first time it is encountered so that
+wedon t havetorecompute itonsubsequent occurrences. The hashtableofpreviously seen
+TRANSPOSITION positionsistraditionallycalledatranspositiontable;itisessentiallyidenticaltotheexplored
+TABLE
+Section5.4. Imperfect Real-Time Decisions 171
+listin GRAPH-SEARCH (Section3.3). Usingatransposition tablecanhaveadramaticeffect,
+sometimesasmuchasdoublingthereachablesearchdepthinche

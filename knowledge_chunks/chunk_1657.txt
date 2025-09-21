@@ -1,0 +1,34 @@
+iveness ofalpha beta pruning ishighly dependent ontheorderinwhich thestates
+areexamined. Forexample,in Figure5.5(e)and(f),wecould notpruneanysuccessors of D
+at all because the worst successors (from the point of view of MIN) were generated first. If
+thethirdsuccessorof Dhadbeengeneratedfirst,wewouldhavebeenabletoprunetheother
+two. Thissuggests that it might beworthwhile to try toexamine firstthe successors that are
+likelytobebest.
+If this can be done,2 then it turns out that alpha beta needs to examine only O(bm 2)
+nodes to pick the best mov e, instead of O(bm) for minimax. This means that the effective
+branching factor becomes b instead of b for chess, about 6 instead of 35. Put another
+way, alpha beta can solve a tree roughly twice as deep as minimax in the same amount of
+time. If successors are examined in random order rather than best-first, the total number of
+nodesexaminedwillberoughly O(b3m 4)formoderateb. Forchess,afairlysimpleordering
+function (such as trying captures first, then threats, then forward moves, and then backward
+moves)getsyoutowithinaboutafactorof2ofthebest-case O(bm 2)result.
+2 Obviously,itcannotbedoneperfectly;otherwise,theorderingfunctioncouldbeusedtoplayaperfectgame!
+170 Chapter 5. Adversarial Search
+function ALPHA-BETA-SEARCH(state)returnsanaction
+v MAX-VALUE(state, , )
+returntheaction in ACTIONS(state)withvaluev
+function MAX-VALUE(state, , )returnsa utility value
+if TERMINAL-TEST(state)thenreturn UTILITY(state)
+v foreacha in ACTIONS(state)do
+v MAX(v,MIN-VALUE(RESULT(s,a), , ))
+ifv thenreturnv MAX( ,v)
+returnv
+function MIN-VALUE(state, , )returnsa utility value
+if TERMINAL-TEST(state)thenreturn UTILITY(state)
+v foreacha in ACTIONS(state)do
+v MIN(v,MAX-VALUE(RESULT(s,a), , ))
+ifv thenreturnv MIN( ,v)
+returnv
+Figure 5.7 The alpha betasearch algorithm. Notice that these routinesare the same as
+the MINIMAX functionsin Figure5.3,exceptforthetwolinesineachof MIN-VALUE and
+MAX-VALU Ethatmaintain and (andthebookkeepingtopasstheseparametersalong).

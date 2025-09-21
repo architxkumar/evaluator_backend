@@ -1,0 +1,35 @@
+level operations good candidates for implementation in parallel
+hardware either in a graphics processor unit (GPU) or an eye. We will then look at one
+mid-leveloperation: segmenting theimageintoregions.
+936 Chapter 24. Perception
+A
+B
+1
+2 2
+1
+1
+3
+4
+Figure 24.6 Different kinds of edges: (1) depth discontinuities; (2) surface orientation
+discontinuities;(3)reflectancediscontinuities;(4)illuminationdiscontinuities(shadows).
+24.2.1 Edgedetection
+Edges are straight lines or curves in the image plane across which there is a significant EDGE
+change in image brightness. The goal of edge detection is to abstract away from the messy,
+multimegabyte imageandtowardamorecompact, abstract representation, asin Figure24.6.
+The motivation is that edge contours in the image correspond to important scene contours.
+In the figure we have three examples of depth discontinuity, labeled 1; two surface-normal
+discontinuities, labeled 2; a reflectance discontinuity, labeled 3; and an illumination discon-
+tinuity (shadow), labeled 4. Edgedetection isconcerned only withthe image, and thus does
+notdistinguish betweenthesedifferenttypesofscenediscontinuities; laterprocessing will.
+Figure 24.7(a) shows an image of a scene containing a stapler resting on a desk, and
+(b) shows the output of an edge-detection algorithm on this image. As you can see, there
+is a difference between the output and an ideal line drawing. There are gaps where no edge
+appears, andthereare noise edgesthatdonotcorrespond toanythingofsignificance inthe
+scene. Laterstagesofprocessing willhavetocorrectfortheseerrors.
+Howdowedetect edgesinanimage? Considertheprofileofimagebrightness along a
+one-dimensional cross-section perpendicular to an edge for example, the one between the
+leftedgeofthedeskandthewall. Itlookssomethinglikewhatisshownin Figure24.8(top).
+Edgescorrespondtolocationsinimageswherethebrightnessundergoesasharpchange,
+so anaive idea would be todifferentiate the image and look forplaces where the magnitude
+(cid:2)
+ofthed

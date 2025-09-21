@@ -1,0 +1,33 @@
+ace we say these plans are dominated, and they need not be considered further. There
+DOMINATEDPLAN
+are four undominated plans, each of which is optimal in a specific region, as shown in Fig-
+ure17.8(c). Theregionspartition thebelief-state space.
+Werepeat theprocess fordepth 3,andsoon. Ingeneral, let pbeadepth-d conditional
+planwhoseinitialactionisaandwhosedepth-d 1subplan forpercept eisp.e;then
+(cid:31)
+(cid:12) (cid:12) (s) R(s) P(s (cid:2) s,a) P(e s (cid:2) ) (s (cid:2) ) . (17.13)
+p p.e
+s(cid:3) e
+Thisrecursionnaturallygivesusavalueiterationalgorithm,whichissketchedin Figure17.9.
+Thestructureofthealgorithmanditserroranalysisaresimilartothoseofthebasicvalueiter-
+ation algorithm in Figure 17.4onpage653; themaindifference isthat instead ofcomputing
+one utility number for each state, POMDP-VALUE-ITERATION maintains a collection of
+Section17.4. Partially Observable MD Ps 663
+function POMDP-VALUE-ITERATION(pomdp,(cid:2))returnsautilityfunction
+inputs:pomdp,a POMD Pwithstates S,actions A(s),transitionmodel P(s(cid:5) s,a),
+sensormodel P(e s),rewards R(s),discount (cid:2),themaximumerrorallowedintheutilityofanystate
+localvariables: U,U(cid:5),setsofplanspwithassociatedutilityvectors p
+U(cid:5) asetcontainingjusttheemptyplan ,with (s) R(s) repeat
+U U(cid:5)
+U(cid:5) thesetofallplansconsistingofanactionand,foreachpossiblenextpercept,
+aplanin U withutilityvectorscomputedaccordingto Equation(17.13)
+U(cid:5) REMOVE-DOMINATED-PLANS(U(cid:5))
+until MAX-DIFFERENCE(U,U(cid:5)) (cid:2)(1 ) return U
+Figure 17.9 A high-level sketch of the value iteration algorithm for POMD Ps. The
+REMOVE-DOMINATED-PLAN Sstepand MAX-DIFFERENC Etestaretypicallyimplemented
+aslinearprograms.
+undominated plans with their utility hyperplanes. The algorithm s complexity depends pri-
+marilyonhowmanyplansgetgenerated. Given A actions and E possibleobservations, it
+iseasytoshowthatthereare A O( E d 1)distinctdepth-dplans.
+Evenforthelowlytwo-state
+world with d 8, the exact number is 2255. The elimination of d

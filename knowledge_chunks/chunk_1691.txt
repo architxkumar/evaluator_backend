@@ -1,0 +1,16 @@
+ok, 1962). Knuth and Moore (1975)
+proved the correctness ofalpha beta and analysed its timecomplexity. Pearl(1982b) shows
+alpha beta tobeasymptotically optimalamongallfixed-depthgame-treesearchalgorithms.
+Several attempts have been made to overcome the problems with the standard ap-
+proach thatwereoutlined in Section5.8. Thefirstnonexhaustive heuristic searchalgorithm withsome theoretical grounding wasprobably B (Berliner, 1979), which attempts tomain-
+tain interval bounds on the possible value of a node in the game tree rather than giving it
+a single point-valued estimate. Leaf nodes are selected for expansion in an attempt to re- fine the top-level bounds until one move is clearly best. Palay (1985) extends the B idea
+using probability distributions on values in place of intervals. David Mc Allester s (1988)
+conspiracy number search expands leaf nodes that, by changing their values, could cause the program to prefer a new move at the root. MGSS (Russell and Wefald, 1989) uses the
+decision-theoretic techniques of Chapter 16 to estimate the value of expanding each leaf in
+terms of the expected improvement in decision quality at the root. It outplayed an alpha betaalgorithm at Othellodespite searching anorderofmagnitude fewernodes. The MGSS
+approach is,inprinciple, applicable tothecontrolofanyformofdeliberation.
+Alpha beta search is in many ways the two-player analog of depth-first branch-and- bound, which is dominated by A in the single-agent case. The SSS algorithm (Stockman, 1979) can be viewed as a two-player A and never expands more nodes than alpha beta to
+reachthesamedecision. Thememoryrequirementsandcomputationaloverheadofthequeue make SSS in its original form impractical, but a linear-space version has been developed
+from the RBF Salgorithm (Korf and Chickering, 1996). Plaat et al. (1996) developed a new viewof SSS asacombination ofalpha beta andtransposition tables, showinghowtoover-
+come the drawbacks of the original algorithm and developing a new variant 

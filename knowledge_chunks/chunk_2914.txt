@@ -1,0 +1,29 @@
+NCYGRID
+mapping, which specifies the probability that each (x,y) location is occupied by an obsta-
+cle (Moravec and Elfes, 1985). Kuipers and Levitt (1988) were among the first to propose
+topological rather than metric mapping, motivated by models ofhuman spatial cognition. A
+seminal paperby Luand Milios(1997) recognized thesparseness ofthesimultaneous local-
+ization and mapping problem, which gave rise tothedevelopment ofnonlinear optimization
+techniques by Konolige (2004) and Montemerlo and Thrun (2004), as well as hierarchical
+methodsby Bosseetal.(2004). Shatkayand Kaelbling(1997)and Thrunetal.(1998)intro-
+duced the EMalgorithm into thefieldof robotic mapping fordata association. Anoverview
+ofprobabilistic mappingmethodscanbefoundin(Thrun etal.,2005).
+Early mobile robot localization techniques are surveyed by Borenstein et al. (1996).
+Although Kalman filtering was well known as a localization method in control theory for
+decades, the general probabilistic formulation of the localization problem did not appear
+in the AI literature until much later, through the work of Tom Dean and colleagues (Dean
+etal., 1990, 1990) andof Simmonsand Koenig (1995). Thelatterwork introduced theterm
+MARKOV Markovlocalization. Thefirstreal-worldapplicationofthistechniquewasby Burgardetal.
+LOCALIZATION
+(1999), through a series of robots that were deployed in museums. Monte Carlo localiza-
+tion based on particle filters was developed by Fox et al. (1999) and is now widely used.
+RAO-
+The Rao-Blackwellized particlefiltercombinesparticlefilteringforrobotlocalization with
+BLACKWELLIZED
+PARTICLEFILTER
+exactfilteringformapbuilding (Murphyand Russell,2001;Montemerlo etal.,2002).
+HAND EYE The study of manipulator robots, originally called hand eye machines, has evolved
+MACHINES
+along quite different lines. The first major effort at creating a hand eye machine was Hein-
+rich Ernst s MH-1,describedinhis MIT Ph.D.thesis(Ernst,1961). The Machine Intelligence
+project at Edinburgh also demonstrated a

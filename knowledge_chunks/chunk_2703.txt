@@ -1,0 +1,26 @@
+y Viagra Fr 1.85All Medicationsatunbeatableprices! ...
+Spam:WECANTREATANYTHINGYOUSUFFERFROMJUSTTRUSTUS...
+Spam:Sta.rtearn ingthesalaryyo,ud-eservebyo btainingtheprope,rcrede ntials!
+Ham:Thepracticalsignificanceofhypertreewidthinidentifyingmore...
+Ham:Abstract:Wewillmotivatetheproblemofsocialidentityclustering:...
+Ham:Goodtoseeyoumyfriend.Hey Peter,Itwasgoodtohearfromyou....
+Ham:PD Simpliesconvexityoftheresultingoptimizationproblem(Kernel Ridge...
+From this excerpt we can start to get an idea of what might be good features to include in
+the supervised learning model. Word n-grams such as forcheap and You can buy seem
+to be indicators of spam (although they would have a nonzero probability in ham as well).
+Character-level features also seem important: spam ismore likely tobe alluppercase and to
+havepunctuationembeddedinwords. Apparentlythespammersthoughtthatthewordbigram you deserve would be too indicative of spam, and thus wrote yo,u d-eserve instead. A
+character model should detect this. We could either create a full character n-gram model
+of spam and ham, or we could handcraft features such as number of punctuation marks
+embeddedinwords. Note that we have two complementary ways of talking about classification. In the
+language-modeling approach, wedefineonen-gramlanguagemodelfor P(Message spam)
+bytrainingonthespamfolder,andonemodelfor P(Message ham)bytrainingontheinbox.
+Thenwecanclassify anewmessagewithanapplication of Bayes rule:
+argmax P(c message) argmax P(message c)P(c).
+c spam,ham c spam,ham where P(c)isestimated justby counting thetotal numberofspam and ham messages. This
+approach workswellforspamdetection, justasitdidforlanguage identification.
+866 Chapter 22. Natural Language Processing
+In the machine-learning approach we represent the message as a set of feature value
+pairs and apply a classification algorithm h to the feature vector X. We can make the
+language-modeling andmachine-learning approachescompatiblebythinkingofthen-grams
+as features. This is easi

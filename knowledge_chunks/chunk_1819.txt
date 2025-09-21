@@ -1,0 +1,25 @@
+om-
+plexity for certain natural distributions of problems. This potentially exciting fact became
+less exciting when Franco and Paull (1983) showed that the same problems could be solved
+in constant time simply by guessing random assignments. The random-generation method
+describedinthechapterproducesmuchharderproblems. Motivatedbytheempiricalsuccess
+oflocalsearchontheseproblems,Koutsoupias and Papadimitriou (1992)showedthatasim-
+plehill-climbing algorithmcansolvealmostallsatisfiabilityprobleminstancesveryquickly,
+suggesting that hard problems are rare. Moreover, Scho ning (1999) exhibited a randomized
+hill-climbingalgorithm whoseworst-caseexpectedruntimeon3-SA Tproblems(thatis,sat-
+isfiability of 3-CNF sentences) is O(1.333n) still exponential, but substantially faster than
+previous worst-case bounds. The current record is O(1.324n) (Iwama and Tamaki, 2004).
+Achlioptas et al. (2004) and Alekhnovich et al. (2005) exhibit families of 3-SAT instances
+forwhichallknown DPLL-likealgorithms requireexponential running time.
+Onthepracticalside,efficiencygainsinpropositionalsolvershavebeenmarked. Given
+tenminutesofcomputingtime,theoriginal DPLL algorithm in1962couldonlysolveprob-
+lems with no more than 10 or 15 variables. By 1995 the SATZ solver (Li and Anbulagan,
+1997) could handle 1,000 variables, thanks to optimized data structures for indexing vari-
+ables. Twocrucial contributions were the watched literal indexing technique of Zhang and
+Stickel (1996), which makes unit propagation very efficient, and the introduction of clause
+(i.e.,constraint)learningtechniquesfromthe CS Pcommunityby Bayardoand Schrag(1997).
+Using these ideas, andspurred by theprospect ofsolving industrial-scale circuit verification
+problems, Moskewicz et al. (2001) developed the CHAFF solver, which could handle prob-
+lems with millions of variables. Beginning in 2002, SAT competitions have been held reg-
+ularly; most of the winning entries have either been descendants of CHAFF orhave used the
+samegeneral

@@ -1,0 +1,29 @@
+onsfortheiroperation. Themost
+common modifications are localization aids such as inductive loops in the floor, active bea-
+cons, or barcode tags. An open challenge in robotics is the design of robots that can use
+naturalcues,insteadofartificialdevices,tonavigate,particularlyinenvironmentssuchasthe
+deepoceanwhere GP Sisunavailable.
+Robotic cars. Most of use cars every day. Many of us make cell phone calls while
+driving. Some of us even text. The sad result: more than a million people die every year in
+trafficaccidents. Robotic carslike BOSS and STANLEY offerhope: Notonlywilltheymake
+drivingmuchsafer,buttheywillalsofreeusfromtheneedtopayattentiontotheroadduring
+ourdailycommute.
+Progress in robotic cars was stimulated by the DARPA Grand Challenge, a race over
+100milesofunrehearseddesertterrain,whichrepresented amuchmorechallengingtaskthan
+1008 Chapter 25. Robotics
+(a) (b)
+Figure25.29 (a) A robotmappingan abandonedcoalmine. (b) A 3D mapof the mine
+acquiredbytherobot.
+hadeverbeenaccomplishedbefore. Stanford s STANLE Yvehiclecompletedthecourseinless
+thansevenhours in2005, winninga 2million prizeandaplaceinthe National Museum of
+American History. Figure 25.28(a) depicts BOSS, which in 2007 won the DARPA Urban
+Challenge,acomplicatedroadraceoncitystreetswhererobotsfacedotherrobotsandhadto
+obeytrafficrules.
+Healthcare. Robotsareincreasinglyusedtoassistsurgeonswithinstrumentplacement
+whenoperatingonorgansasintricateasbrains,eyes,andhearts. Figure25.28(b)showssuch
+asystem. Robotshavebecomeindispensable toolsinarangeofsurgical procedures, suchas
+hip replacements, thanks to their high precision. In pilot studies, robotic devices have been
+found to reduce the danger of lesions when performing colonoscopy. Outside the operating
+room, researchers have begun to develop robotic aides for elderly and handicapped people,
+suchasintelligentroboticwalkersandintelligenttoysthatprovidereminderstotakemedica-
+tion andprovide comfort. Researchers arealso working onrobotic devices forrehabilitat

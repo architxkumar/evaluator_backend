@@ -1,0 +1,30 @@
+menvironmentsintheprecedingexerciseshaveallbeendeterministic. Dis-
+cusspossible agentprogramsforeachofthefollowingstochastic versions:
+a. Murphy slaw: twenty-fivepercentofthetime,the Suck actionfailstocleanthefloorif
+itisdirtyanddepositsdirtontothefloorifthefloorisclean. Howisyouragentprogram
+affectedifthedirtsensorgivesthewronganswer10 ofthetime?
+b. Small children: At each time step, each clean square has a 10 chance of becoming
+dirty. Canyoucomeupwitharational agentdesignforthiscase?
+3
+SOLVING PROBLEMS BY
+SEARCHING
+In which we see how an agent can find a sequence of actions that achieves its
+goalswhennosingleactionwilldo.
+Thesimplestagentsdiscussedin Chapter2werethereflexagents,whichbasetheiractionson
+adirectmappingfromstatestoactions. Suchagentscannotoperate wellinenvironments for
+whichthismappingwouldbetoolargetostoreandwouldtaketoolongtolearn. Goal-based
+agents, ontheotherhand,considerfutureactions andthedesirability oftheiroutcomes.
+PROBLEM-SOLVING This chapter describes one kind of goal-based agent called a problem-solving agent.
+AGENT
+Problem-solving agents use atomic representations, as described in Section 2.4.7 that is,
+statesoftheworldareconsideredaswholes,withnointernalstructurevisibletotheproblem-
+solving algorithms. Goal-based agents that use more advanced factored or structured rep-
+resentations areusuallycalled planningagentsandarediscussed in Chapters7and10.
+Ourdiscussionofproblemsolvingbeginswithprecisedefinitionsofproblemsandtheir
+solutions and give several examples to illustrate these definitions. We then describe several
+general-purpose search algorithms that can be used to solve these problems. We will see
+several uninformed search algorithms algorithms that are given no information about the
+problem otherthan itsdefinition. Although some ofthese algorithms can solve anysolvable
+problem, noneofthemcandosoefficiently. Informedsearchalgorithms, ontheotherhand,
+candoquitewellgivensomeguidance onwheretolookforsolutions.
+In this chapter, we limit o

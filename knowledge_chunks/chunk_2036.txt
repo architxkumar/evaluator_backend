@@ -1,0 +1,27 @@
+oget there. Theagent notices thatthe current state isidentical
+to the precondition before the Paint(Chair,Can ) action, so the agent chooses the empty
+1
+sequence for repair and makes its plan be thesame Paint sequence that it just attempted.
+With this new plan in place, execution monitoring resumes, and the Paint action is retried.
+Thisbehavior willloop until thechairisperceived tobecompletely painted. Butnotice that
+the loop is created by a process of plan execute replan, rather than by an explicit loop in a
+plan. Notealso that the original plan need notcoverevery contingency. Ifthe agent reaches
+thestepmarked REPLAN,itcanthengenerate anewplan(perhaps involving Can
+2
+).
+Action monitoring is a simple method of execution monitoring, but it can sometimes
+lead to less than intelligent behavior. Forexample, suppose there is no black orwhite paint,
+and the agent constructs a plan to solve the painting problem by painting both the chair and
+table red. Suppose that there isonly enough red paint forthe chair. With action monitoring,
+theagentwouldgoaheadandpaintthechairred,thennoticethatitisoutofpaintandcannot
+paintthetable,atwhichpointitwouldreplanarepair perhaps paintingbothchairandtable
+green. Aplan-monitoring agent candetect failure whenever the current state issuch that the
+remaining plan no longer works. Thus, it would not waste time painting the chair red. Plan
+monitoring achieves this by checking the preconditions for success of the entire remaining
+plan that is, the preconditions of each step in the plan, except those preconditions that are
+achieved by another step in the remaining plan. Plan monitoring cuts off execution of a
+doomed plan as soon as possible, rather than continuing until the failure actually occurs.4
+Plan monitoring also allows for serendipity accidental success. If someone comes along
+andpaintsthetableredatthesametimethattheagentispaintingthechairred,thenthefinal
+planpreconditionsaresatisfied(thegoalhasbeenachieved),andtheagentcangohomeearly.
+It is

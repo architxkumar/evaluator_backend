@@ -1,0 +1,27 @@
+ not new when Shannon proposed it. For centuries,
+chess players (and aficionados of othergames) have developed ways ofjudging the value of
+a position because humans are even more limited in the amount of search they can do than
+are computer programs. It should be clear that the performance of a game-playing program
+depends strongly onthequality ofitsevaluation function. Aninaccurate evaluation function
+willguideanagenttowardpositions thatturnouttobelost. Howexactlydowedesigngood
+evaluation functions?
+First, the evaluation function should order the terminal states in the same way as the
+trueutility function: states thatarewinsmustevaluate betterthan draws,whichinturnmust
+be better than losses. Otherwise, an agent using the evaluation function might err even if it
+can see ahead all the way to the end of the game. Second, the computation must not take
+too long! (The whole point is to search faster.) Third, for nonterminal states, the evaluation
+function shouldbestrongly correlated withtheactualchances ofwinning.
+172 Chapter 5. Adversarial Search
+Onemightwellwonderaboutthephrase chancesofwinning. Afterall,chessisnota
+gameofchance: weknowthecurrentstatewithcertainty,andnodiceareinvolved. Butifthe
+searchmustbecutoffatnonterminal states, thenthealgorithm willnecessarily beuncertain
+aboutthefinaloutcomesofthosestates. Thistypeofuncertaintyisinducedbycomputational,
+rather than informational, limitations. Given the limited amount of computation that the
+evaluationfunctionisallowedtodoforagivenstate,thebestitcandoismakeaguessabout
+thefinaloutcome.
+Let us make this idea more concrete. Most evaluation functions work by calculating
+various features ofthestate for example, inchess, wewouldhave features forthenumber
+of white pawns, black pawns, white queens, black queens, and so on. The features, taken
+together,definevariouscategoriesorequivalenceclassesofstates: thestatesineachcategory
+have the same values for all the features. For example, one category contains all two-pawn
+vs. o

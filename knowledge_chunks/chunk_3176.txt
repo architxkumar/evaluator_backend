@@ -1,0 +1,34 @@
+1085 persistencearc,594 Pitts,W.,15,16,20,278,727,731,761,
+Pearson,J.,230,1085 persistent(variable),1061 963,1080,1082
+PEA Sdescription,40,42 persistentfailuremodel,593 pixel,930
+Pease,A.,469,1084,1085 Person,C.,854,1083 PL-FC-ENTAILS?,258
+Pecheur,C.,356,1075 perspective,966 PL-RESOLUTION,255
+Pednault,E.P.D.,394,434,1085 perspectiveprojection,930 Plaat,A.,191,1085
+peeking,708,737 Pesch,E.,432,1066 Place,U.T.,1041,1085
+PEGASUS,850,852,859 Peshkin,M.,156,1092 PLAN-ERS1,432
+Peirce,C.S.,228,313,454,471,920, pessimisticdescription(ofanaction), PLAN-ROUTE,270
+1085 412 planetaryrover,971
+Pelikan,M.,155,1085 Peters,S.,920,1071 PLANEX,434
+Pell,B.,60,432,1083 Peterson,C.,555,1085 Plankalku l,14
+Pemberton,J.C.,157,1085 Petrie,K.,230,1073 planmonitoring,423
+penalty,56 Petrie,T.,604,826,1065 PLANNER,24,358
+Penberthy,J.S.,394,1085 Petrik,M.,434,1085 planning,52,366 436
+Peng,J.,855,1085 Petrov,S.,896,900,920,1085 andacting,415 417
+PENGI,434 Pfeffer,A.,191,541,556,687,1078, asconstraintsatisfaction,390
+penguin,435 1085 asdeduction,388
+Penix,J.,356,1075 Pfeifer,G.,472,1071 asrefinement,390
+Pennachin,C.,27,1074 Pfeifer,R.,1041,1085 assatisfiability,387
+Pennsylvania,Univ.of,14 phasetransition,277 blocksworld,20
+Penn Treebank,881,895 phenomenology,1026 case-based,432
+Penrose,R.,1023,1085 Philips,A.B.,154,229,1082 conformant,415,417 421,431,433,
+Pentagon Papers,638 Philoof Megara,275 994
+Peot,M.,433,554,1085,1088 philosophy,5 7,59,1020 1043 contingency,133,415,421 422,431
+percept,34 phone(speechsound),914 decentralized,426
+perception,34,305,928,928 965 phoneme,915 fine-motion,994
+perceptionlayer,1005 phonemodel,915 graph,379,379 386,393
+perceptron,20,729,729 731,761 phoneticalphabet,914 serial,382
+convergencetheorem,20 photometry,932 hierarchical,406 415,431
+learningrule,724 photosensitivespot,963 hierarchicaltasknetwork,406
+network,729 phrasestructure,888,919 historyof,393
+representationalpower,22 physicalism,1028,1041 linear,394
+sigmoid,729 physicalsymbolsystem,18 multibody,425,426 42

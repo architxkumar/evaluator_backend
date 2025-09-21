@@ -1,0 +1,28 @@
+lbumthatcontains everysongthat Joehas written.
+j. Joeownsacopyofanalbum thathas Billie Holidaysinging The Man ILove. k. Joe owns a copy of every album that has a song sung by Mc Cartney. (Of course, each
+differentalbumisinstantiated inadifferentphysical CD.)
+l. Joeownsacopyofeveryalbumonwhichallthesongsaresungby Billie Holiday.
+9
+INFERENCE IN
+FIRST-ORDER LOGIC
+In which we define effective procedures for answering questions posed in first-
+orderlogic.
+Chapter7showedhowsoundandcompleteinferencecanbeachievedforpropositionallogic.
+In this chapter, we extend those results to obtain algorithms that can answer any answer-
+ablequestion statedinfirst-orderlogic. Section9.1introduces inference rulesforquantifiers
+andshowshowtoreducefirst-orderinference topropositional inference, albeitatpotentially
+great expense. Section 9.2 describes the idea of unification, showing how it can be used
+to construct inference rules that work directly with first-order sentences. We then discuss
+three major families of first-order inference algorithms. Forward chaining and its applica-
+tionstodeductivedatabasesandproductionsystemsarecoveredin Section9.3;backward
+chainingandlogic programmingsystems aredeveloped in Section 9.4. Forwardandback-
+ward chaining can be very efficient, but are applicable only to knowledge bases that can
+be expressed as sets of Horn clauses. General first-order sentences require resolution-based
+theoremproving,whichisdescribed in Section9.5.
+9.1 PROPOSITIONAL VS. FIRST-ORDER INFERENCE
+This section and the next introduce the ideas underlying modern logical inference systems.
+Webegin with some simple inference rules that can be applied to sentences with quantifiers
+toobtain sentences without quantifiers. These rules lead naturally tothe idea that first-order
+inference can be done by converting the knowledge base to propositional logic and using
+propositional inference, which we already know how to do. The next section points out an
+obviousshortcut, leadingtoinference metho

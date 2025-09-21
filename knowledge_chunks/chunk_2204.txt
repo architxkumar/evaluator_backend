@@ -1,0 +1,44 @@
+edistribution S payssomeattentiontotheevidence: the
+WS
+sampled values foreach Z willbeinfluenced byevidence among Z sancestors. Forexam-
+i i
+ple,whensampling Sprinkler thealgorithmpaysattentiontotheevidence Cloudy true in
+itsparent variable. Ontheotherhand, S pays lessattention tothe evidence than does the
+WS
+true posterior distribution P(z e), because the sampled values for each Z ignore evidence
+i
+among Z snon-ancestors.5 Forexample,whensampling Sprinkler and Rain thealgorithm
+i
+ignorestheevidenceinthechildvariable Wet Grass true;thismeansitwillgeneratemany
+samples with Sprinkler false and Rain false despite the fact that the evidence actually
+rulesoutthiscase.
+5 Ideally,wewouldliketouseasamplingdistributionequaltothetrueposterior P(z e),totakealltheevidence
+into account. This cannot be done efficiently, however. If it could, then we could approximate the desired
+probabilitytoarbitraryaccuracywithapolynomialnumberofsamples.Itcanbeshownthatnosuchpolynomial-
+timeapproximationschemecanexist.
+Section14.5. Approximate Inferencein Bayesian Networks 535
+The likelihood weight w makes up for the difference between the actual and desired
+sampling distributions. The weight for a given sample x, composed from z and e, is the
+product of the likelihoods for each evidence variable given its parents (some orall of which
+maybeamongthe Z s):
+i
+(cid:25)m
+w(z,e) P(e parents(E )). (14.8)
+i i
+i 1
+Multiplying Equations(14.7)and(14.8),weseethattheweightedprobabilityofasamplehas
+theparticularly convenient form
+(cid:25)l (cid:25)m
+S (z,e)w(z,e) P(z parents(Z )) P(e parents(E ))
+WS i i i i
+i 1 i 1 P(z,e) (14.9)
+because the two products cover all the variables in the network, allowing us to use Equa-
+tion(14.2)forthejointprobability.
+Now it is easy to show that likelihood weighting estimates are consistent. For any
+particularvalue xof X,theestimatedposteriorprobability canbecalculated asfollows:
+(cid:12)
+P (x e) N
+WS
+(x,y,e)w(x,y,e) from LIKELIHOOD-WEIGHTING
+y
+(cid:12) (cid:2) S (x,y,e)w(x,y

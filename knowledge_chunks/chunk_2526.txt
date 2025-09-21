@@ -1,0 +1,37 @@
+ecision boundary, x2 x2 1,
+1 2
+is also s hown. (b) The same data after mapping into a three-dimensional input space
+(x2,x2, 2x x ). Thecirculardecisionboundaryin(a)becomesalineardecisionboundary
+1 2 1 2
+inthreedimensions.Figure18.30(b)givesacloseupoftheseparatorin(b).
+foreachpoint. Inourthree-dimensional featurespacedefinedby Equation(18.15),alittlebit
+ofalgebra showsthat
+F(x ) F(x ) (x x )2 .
+j k j k (That s why the 2 is in f .) The expression (x x )2 is called a kernel function,12 and
+KERNELFUNCTION 3 j k
+is usually written as K(x ,x ). The kernel function can be applied to pairs of input data to
+j k
+evaluate dotproducts insomecorresponding featurespace. So,wecanfindlinearseparators
+inthehigher-dimensional featurespace F(x)simplybyreplacing x x in Equation(18.13)
+j k
+withakernelfunction K(x ,x ). Thus,wecanlearninthehigher-dimensional space,butwe
+j k
+computeonlykernelfunctions ratherthanthefulllistoffeatures foreachdatapoint.
+Thenextstepistoseethatthere snothingspecialaboutthekernel K(x ,x ) (x x )2.
+j k j k
+It corresponds to a particular higher-dimensional feature space, but other kernel functions
+correspond to other feature spaces. A venerable result in mathematics, Mercer s theo-
+rem (1909), tells us that any reasonable 13 kernel function corresponds to some feature
+MERCER STHEOREM
+space. These feature spaces can be very large, even for innocuous-looking kernels. For ex-
+POLYNOMIAL ample, the polynomial kernel, K(x ,x ) (1 x x )d, corresponds to a feature space
+KERNEL j k j k
+whosedimension isexponential ind.
+12 Thisusage of kernel function isslightly different fromthe kernels in locally weighted regression. Some
+SV Mkernelsaredistancemetrics,butnotallare.
+13 Here, reasonable meansthatthematrix Kjk K(xj,xk)ispositivedefinite.
+748 Chapter 18. Learningfrom Examples
+This then is the clever kernel trick: Plugging these kernels into Equation (18.13),
+KERNELTRICK
+optimal linear separators can be found efficiently in feature spaces with billions of (or, in
+somecases, 

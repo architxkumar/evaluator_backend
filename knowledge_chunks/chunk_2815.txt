@@ -1,0 +1,29 @@
+forthistowork,thereneedstobesometextureorvariationinthescene. Ifoneislooking
+at a uniform white wall, then the SSD is going to be nearly the same for the different can-
+Section24.2. Early Image-Processing Operations 941
+Figure24.10 Twoframesofavideosequence. Ontherightistheopticalflowfieldcor-
+responding to the displacement from one frame to the other. Note how the movement of
+thetennisracketandthe frontleg iscapturedbythe directionsof thearrows. (Courtesyof
+Thomas Brox.)
+didate matches, and the algorithm is reduced to making a blind guess. The best-performing
+algorithms for measuring optical flow rely on a variety of additional constraints when the
+sceneisonlypartially textured.
+24.2.4 Segmentation ofimages
+Segmentationistheprocessofbreakinganimageintoregionsofsimilarpixels. Eachimage
+SEGMENTATION
+pixel can be associated with certain visual properties, such as brightness, color, and texture.
+REGIONS
+Within an object, or a single part of an object, these attributes vary relatively little, whereas
+across an inter-object boundary there is typically a large change in one or more of these at-
+tributes. Therearetwoapproachestosegmentation,onefocusingondetectingtheboundaries
+oftheseregions, andtheotherondetecting theregionsthemselves(Figure24.11).
+Aboundary curvepassing throughapixel (x,y)willhaveanorientation ,sooneway
+toformalizetheproblem ofdetecting boundarycurvesisasa machinelearningclassification
+problem. Based on features from a local neighborhood, wewant to compute the probability
+P (x,y, )thatindeedthereisaboundarycurveatthatpixelalongthatorientation. Consider
+b
+a circular disk centered at (x,y), subdivided into two half disks by adiameter oriented at .
+If there isa boundary at (x,y, ) the two half disks might be expected to differsignificantly
+intheirbrightness,color,andtexture. Martin,Fowlkes,and Malik(2004)usedfeaturesbased
+on differences in histograms of brightness, color, and texture values measured in these two
+halfdisks, andthen trained aclassifier. Forthi

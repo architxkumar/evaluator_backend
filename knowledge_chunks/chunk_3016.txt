@@ -1,0 +1,22 @@
+47,730 743. Charniak, E.(1991). Bayesiannetworkswithout oftheenhanced Good Turinganddeletedestima-
+tionmethodsforestimatingprobabilitiesof English
+Carbonell,J.G.(1983). Derivationalanalogyand tears.AI Mag,12(4),50 63. bigrams.Computer Speechand Language,5,19 54.
+itsroleinproblemsolving.In AAAI-83,pp.64 69. Charniak, E. and Johnson, M. (2005). Coarse-
+Churchland, P.M.and Churchland, P.S.(1982).
+Carbonell,J.G.,Knoblock,C.A.,and Minton,S. to-fine n-best parsing and maxent discriminative Functionalism,qualia,andintentionality. In Biro,
+reranking.In ACL-05.
+(1989). PRODIGY:Anintegratedarchitecturefor J. I. and Shahan, R. W. (Eds.), Mind, Brain and
+planningandlearning. Technicalreport CMU-CS- Chater,N.and Oaksford,M.(Eds.).(2008). The Function: Essaysin the Philosophy of Mind, pp.
+89-189, Computer Science Department, Carnegie- probabilisticmind:Prospectsfor Bayesiancognitive 121 145.Universityof Oklahoma Press.
+Mellon University. science.Oxford University Press.
+Churchland, P. S. (1986). Neurophilosophy:
+Carbonell,J.R.and Collins,A.M.(1973).Natural Chatfield,C.(1989). The Analysisof Time Series: Toward a Unified Science of the Mind Brain.
+semanticsinartificialintelligence. In IJCAI-73,pp. An Introduction(4thedition).Chapmanand Hall. MIT Press.
+344 351. Cheeseman,P.(1985).Indefenseofprobability.In Ciancarini,P.and Wooldridge,M.(2001). Agent-
+Cardano,G.(1663).Liberdeludoaleae.Lyons. IJCAI-85,pp.1002 1009. Oriented Software Engineering.Springer-Verlag.
+Carnap,R.(1928). Derlogische Aufbauder Welt. Cheeseman,P.(1988).Aninquiryintocomputerun- Cimatti, A., Roveri, M., and Traverso, P.(1998).
+Weltkreis-verlag. Translatedinto Englishas(Car- derstanding. Computational Intelligence,4(1),58 Automatic OBDD-based generation of universal
+nap,1967). 66. plansinnon-deterministicdomains.In AAAI-98,pp.
+875 881.
+Carnap,R.(1948). Ontheapplicationofinductive Cheeseman, P., Kanefsky, B., and Taylor, W.
+logic.Philosophyand Phenomenological Research, (1991). Wherethe really hardproblems are. In C

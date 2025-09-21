@@ -1,0 +1,34 @@
+t aprobability modelis
+completelydeterminedbythejointdistributionforalloftherandomvariables theso-called
+FULLJOINT full joint probability distribution. For example, if the variables are Cavity, Toothache,
+PROBABILITY
+DISTRIBUTION
+and Weather, then the full joint distribution is given by P(Cavity,Toothache,Weather).
+Thisjoint distribution canberepresented asa 2 2 4tablewith16entries. Because every
+proposition s probability is a sum over possible worlds, a full joint distribution suffices, in
+principle, forcalculating theprobability ofanyproposition.
+13.2.3 Probabilityaxiomsand theirreasonableness
+The basic axioms of probability (Equations (13.1) and (13.2)) imply certain relationships
+amongthedegreesofbeliefthatcanbeaccordedtologically relatedpropositions. Forexam-
+ple, wecan derive the familiar relationship between the probability of a proposition and the
+probability ofitsnegation:
+(cid:2)
+P( a) P( ) by Equation(13.2)
+(cid:2) a (cid:2) (cid:2) P( ) P( ) P( )
+(cid:2) a (cid:2) a a P( ) P( ) grouping thefirsttwoterms a 1 P(a) by(13.1)and(13.2).
+Section13.2. Basic Probability Notation 489
+We can also derive the well-known formula for the probability of a disjunction, sometimes
+INCLUSION calledtheinclusion exclusion principle:
+EXCLUSION
+PRINCIPLE
+P(a b) P(a) P(b) P(a b). (13.4)
+Thisruleiseasilyrememberedbynotingthatthecaseswhereaholds,togetherwiththecases
+where b holds, certainly cover all the cases where a b holds; but summing the two sets of
+casescountstheirintersection twice,soweneedtosubtract P(a b). Theproofisleftasan
+exercise(Exercise13.6).
+KOLMOGOROV S Equations(13.1)and(13.4)areoftencalled Kolmogorov saxiomsinhonorofthe Rus-
+AXIOMS
+sianmathematician Andrei Kolmogorov, whoshowedhowtobuilduptherestofprobability
+theory from this simple foundation and how to handle the difficulties caused by continuous
+variables.2 While Equation (13.2) has a definitional flavor, Equation (13.4) reveals that the
+axioms really do constrain the degrees of belief an agent can have conce

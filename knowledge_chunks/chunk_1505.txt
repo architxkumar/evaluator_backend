@@ -1,0 +1,28 @@
+bechangedeasily. (Note: forsomechoicesofprogramminglanguageandoperating
+systemtherearealready implementations intheonlinecode repository.)
+2.9 Implement a simple reflex agent for the vacuum environment in Exercise 2.8. Run the
+environment with this agent for all possible initial dirt configurations and agent locations.
+Recordtheperformance scoreforeachconfiguration andtheoverallaveragescore.
+2.10 Consideramodifiedversionofthevacuum environment in Exercise 2.8,inwhichthe
+agentispenalized onepointforeachmovement.
+a. Canasimplereflexagentbeperfectlyrational forthisenvironment? Explain.
+b. Whataboutareflexagentwithstate? Designsuchanagent.
+c. How do your answers to a and b change if the agent s percepts give it the clean dirty
+statusofeverysquareintheenvironment?
+2.11 Consideramodifiedversionofthevacuum environment in Exercise 2.8,inwhichthe
+geography of the environment its extent, boundaries, and obstacles is unknown, asis the
+initialdirtconfiguration. (Theagentcango Up and Down aswellas Left and Right.)
+a. Canasimplereflexagentbeperfectlyrational forthisenvironment? Explain.
+b. Canasimplereflexagentwitharandomizedagentfunction outperform asimplereflex
+agent? Designsuchanagentandmeasureitsperformance onseveralenvironments.
+c. Canyou design an environment in which yourrandomized agent willperform poorly?
+Showyourresults.
+d. Can a reflex agent with state outperform a simple reflex agent? Design such an agent
+andmeasureitsperformance onseveralenvironments. Canyoudesignarational agent
+ofthistype?
+2.12 Repeat Exercise 2.11 for the case in which the location sensor is replaced with a bump sensor that detects the agent s attempts to move into an obstacle or to cross the
+boundaries of the environment. Suppose the bump sensor stops working; how should the
+agentbehave?
+2.13 Thevacuumenvironmentsintheprecedingexerciseshaveallbeendeterministic. Dis-
+cusspossible agentprogramsforeachofthefollowingstochastic versions:
+a. Murphy slaw: twenty-fivepercentofthetime,the Suck actionfailst

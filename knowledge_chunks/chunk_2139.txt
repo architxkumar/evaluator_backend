@@ -1,0 +1,28 @@
+difficulties caused by continuous
+variables.2 While Equation (13.2) has a definitional flavor, Equation (13.4) reveals that the
+axioms really do constrain the degrees of belief an agent can have concerning logically re-
+lated propositions. This is analogous to the fact that a logical agent cannot simultaneously
+believe A, B, and (A B), because there is no possible world in which all three are true.
+Withprobabilities, however,statementsrefernottotheworlddirectly, buttotheagent s own
+stateofknowledge. Why,then,cananagentnotholdthefollowingsetofbeliefs(eventhough
+theyviolate Kolmogorov s axioms)?
+P(a) 0.4 P(a b) 0.0
+(13.5)
+P(b) 0.3 P(a b) 0.8.
+This kind of question has been the subject of decades of intense debate between those who
+advocate the use of probabilities as the only legitimate form for degrees of belief and those
+whoadvocate alternative approaches.
+One argument for the axioms of probability, first stated in 1931 by Bruno de Finetti
+(andtranslatedinto Englishinde Finetti(1993)),isasfollows: Ifanagenthassomedegreeof
+belief inaproposition a,then theagentshould beable tostate oddsatwhichitisindifferent
+to a bet for or against a.3 Think of it as a game between two agents: Agent 1 states, my
+degree of belief in event a is 0.4. Agent 2 is then free to choose whether to wager for or
+against aatstakes thatareconsistent withthestated degreeofbelief. Thatis, Agent2could
+choose toaccept Agent 1 sbet that awilloccur, offering 6against Agent 1 s 4. Or Agent
+2 could accept Agent 1 s bet that a will occur, offering 4 against Agent 1 s 6. Then we
+observe the outcome of a, and whoever is right collects the money. If an agent s degrees of
+belief do not accurately reflect the world, then you would expect that it would tend to lose
+moneyoverthelongruntoanopposing agentwhosebeliefsmoreaccurately reflectthestate
+oftheworld.
+But de Finetti proved something much stronger: If Agent 1 expresses a set of degrees
+of belief that violate the axioms of probability theory then there is a co

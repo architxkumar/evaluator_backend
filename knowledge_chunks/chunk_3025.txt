@@ -1,0 +1,21 @@
+g 9 en . tplans. J. Deale, M.,Yvanovich, M.,Schnitzius,D.,Kautz, D se e a c rc h h te s r p , a R ce . s a f n o d rg M ra a p te h e ic s a c l u, m R o . de ( l 2 s 0 . 0 A 7) I . J,1 A 7 N 1( D 2 O 3 R ),
+D.,Carpenter,M.,Zweben,M.,Davis,G.,and Daun,
+Davis,K.H.,Biddulph,R.,and Balashek,S.(1952). B. (1994). The space shuttle ground processing 73 106.
+Automaticrecognitionofspokendigits. J.Acousti- scheduling system. In Zweben, M. and Fox, M. De Coste,D.and Scho lkopf,B.(2002).Trainingin-
+cal Societyof America,24(6),637 642. (Eds.),Intelligent Scheduling,pp.423 449.Morgan variantsupportvectormachines.Machine Learning,
+Davis,M.(1957). Acomputerprogramfor Pres- Kaufmann. 46(1),161 190.
+burger salgorithm. In Proving Theorems(as Done Dean, T.,Basye,K., Chekaluk, R.,and Hyun, S. Dedekind,R.(1888). Wassindundwassollendie
+by Man,Logician,or Machine),pp.215 233.Proc. (1990).Copingwithuncertaintyinacontrolsystem Zahlen.Braunschweig,Germany.
+Summer Institutefor Symbolic Logic.Secondedi- fornavigationandexploration. In AAAI-90,Vol.2, Deerwester,S.C.,Dumais,S.T.,Landauer,T.K.,
+tion;publicationdateis1960. pp.1010 1015. Furnas,G.W.,and Harshman,R.A.(1990). Index-
+Davis,M.,Logemann,G.,and Loveland,D.(1962). Dean,T.and Boddy,M.(1988).Ananalysisoftime- ingbylatentsemanticanalysis.J.American Society
+Amachineprogramfortheorem-proving.CACM,5, dependentplanning.In AAAI-88,pp.49 54. for Information Science,41(6),391 407.
+394 397.
+De Groot,M.H.(1970). Optimal Statistical Deci-
+Dean,T.,Firby,R.J.,and Miller,D.(1990).Hierar-
+Davis,M.and Putnam,H.(1960).Acomputingpro- sions.Mc Graw-Hill.
+chicalplanninginvolvingdeadlines,traveltime,and
+cedureforquantificationtheory. JACM,7(3),201 resources. Computational Intelligence,6(1),381 De Groot,M.H.and Schervish,M.J.(2001).Prob-
+215.
+398. abilityand Statistics(3rdedition).Addison Wesley.
+D B H a a il s v l e . i d s, S R ys . te a m nd si L n en A a r t t , ifi D ci . al B I . nt ( e 1 l 9 li 8 g 2 e ) n . ce K . n M ow c G le r d a g w e - - D so e n a

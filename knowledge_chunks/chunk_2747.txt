@@ -1,0 +1,33 @@
+ar with all
+rulesinoneoftwoveryspecificformats: lexicalrulesofthe form X word,andsyntactic
+CHOMSKYNORMAL rules of the form X Y Z. This grammar format, called Chomsky Normal Form, may
+FORM
+seem restrictive, but it is not: any context-free grammar can be automatically transformed
+into Chomsky Normal Form. Exercise23.8leadsyouthroughtheprocess.
+The CYK algorithm uses space of O(n2m) for the P table, where n is the number of
+wordsinthesentence,andmisthenumberofnonterminalsymbolsinthegrammar,andtakes
+time O(n3m). (Sincemisconstant foraparticular grammar, this iscommonly described as
+O(n3).) No algorithm can do better for general context-free grammars, although there are
+fasteralgorithms onmorerestricted grammars. Infact, itisquite atrick forthealgorithm to
+completein O(n3)time,giventhatitispossibleforasentencetohaveanexponentialnumber
+ofparsetrees. Considerthesentence
+Fallleavesfallandspringleavesspring.
+It is ambiguous because each word (except and ) can be either a noun ora verb, and fall and spring can be adjectives as well. (For example, one meaning of Fall leaves fall is
+894 Chapter 23. Natural Languagefor Communication
+function CYK-PARSE(words,grammar)returns P,atableofprobabilities
+N LENGTH(words)
+M thenumberofnonterminalsymbolsingrammar
+P anarrayofsize M,N,N ,initiallyall0 Insertlexicalrulesforeachword fori 1to N do
+foreachruleofform(X wordsi p )do
+P X,i,1 p Combinefirstandsecondpartsofright-handsidesofrules,fromshorttolong forlength 2to N do
+forstart 1to N length 1 do
+forlen1 1to N 1do
+len2 length len1
+foreachruleoftheform(X Y Z p )do
+P X,start,length MAX(P X, start, length ,
+P Y, start, len1 P Z, start len1, len2 p)
+return P
+Figure 23.5 The CYK algorithm for parsing. Given a sequence of words, it finds the
+most probable derivation for the whole sequence and for each subsequence. It returns the
+wholetable, P, in whichan entry P X, start, len is the probabilityofthe mostprobable
+X of lengthlen starting atposition start. If thereis no X of thatsize atthatlocation,

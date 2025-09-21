@@ -1,0 +1,25 @@
+erthantheclockspeed. Currentexpectations arethatfutureincreasesinpower
+willcomefrommassiveparallelism a curious convergence withtheproperties ofthebrain.
+Of course, there were calculating devices before the electronic computer. The earliest
+automated machines, dating from the 17th century, were discussed on page 6. The first pro-
+grammable machine was a loom, devised in 1805 by Joseph Marie Jacquard (1752 1834),
+that used punched cards to store instructions for the pattern to be woven. In the mid-19th
+century, Charles Babbage (1792 1871) designed two machines, neither of which he com-
+pleted. The Difference Enginewasintended tocomputemathematical tables forengineering
+andscientificprojects. Itwasfinallybuiltandshowntoworkin1991atthe Science Museum
+in London(Swade,2000). Babbage s Analytical Enginewasfarmoreambitious: itincluded
+addressable memory, stored programs, andconditional jumpsand wasthefirstartifact capa-
+ble ofuniversal computation. Babbage s colleague Ada Lovelace, daughter ofthepoet Lord
+Byron,wasperhapstheworld sfirstprogrammer. (Theprogramminglanguage Adaisnamed
+afterher.) Shewroteprogramsfortheunfinished Analytical Engineandevenspeculated that
+themachinecouldplaychessorcomposemusic.
+AI also owes a debt to the software side of computer science, which has supplied the
+operatingsystems,programminglanguages, andtoolsneededtowritemodernprograms(and
+papers aboutthem). Butthisisoneareawherethedebthasbeenrepaid: workin AIhaspio-
+neeredmanyideasthathavemadetheirwaybacktomainstream computerscience,including
+time sharing, interactive interpreters, personal computers with windows and mice, rapid de-
+velopment environments, the linked list data type, automatic storage management, and key
+concepts ofsymbolic, functional, declarative, andobject-oriented programming.
+8 Heath Robinsonwasacartoonistfamousforhisdepictionsofwhimsicalandabsurdlycomplicatedcontrap-
+tionsforeverydaytaskssuchasbutteringtoast.
+9 Inthepostwarperiod, Turingwantedtousethesecomputers for AIresearc

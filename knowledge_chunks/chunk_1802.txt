@@ -1,0 +1,32 @@
+y x,y
+Now, of course, we need axioms that allow the agent to keep track of fluents such as Lt .
+x,y
+These fluents change as the result of actions taken by the agent, so, in the terminology of
+Chapter 3, we need to write down the transition model of the wumpus world as a set of
+logicalsentences.
+First, we need proposition symbols for the occurrences of actions. As with percepts,
+thesesymbolsareindexedbytime;thus,Forward0meansthattheagentexecutesthe Forward
+action at time 0. Byconvention, the percept fora given time step happens first, followed by
+theactionforthattimestep,followedbyatransition tothe nexttimestep.
+To describe how the world changes, we can try writing effect axioms that specify the
+EFFECTAXIOM
+outcomeofanactionatthenexttimestep. Forexample,iftheagentisatlocation 1,1 facing
+east at time0 and goes Forward, the result isthat the agent is in square 2,1 and no longer
+isin 1,1 :
+L0 Facing East0 Forward0 (L1 L1 ). (7.1)
+1,1 2,1 1,1
+We would need one such sentence for each possible time step, for each of the 16 squares,
+andeachofthefourorientations. Wewouldalsoneedsimilarsentencesfortheotheractions:
+Grab,Shoot,Climb,Turn Left,and Turn Right.
+Let us suppose that the agent does decide to move Forward at time 0 and asserts this
+fact into its knowledge base. Given the effect axiom in Equation (7.1), combined with the
+initial assertions about the state at time 0, the agent can now deduce that it is in 2,1 . That
+is, ASK(KB,L1 ) true. Sofar, so good. Unfortunately, the news elsewhere isless good:
+2,1
+if we ASK(KB,Have Arrow1), the answer is false, that is, the agent cannot prove it still
+has the arrow; norcan it prove it doesn t have it! Theinformation has been lost because the
+effectaxiom fails tostatewhatremains unchanged astheresultofanaction. Theneed todo
+this gives rise to the frame problem.11 One possible solution to the frame problem would
+FRAMEPROBLEM
+10 Section7.4.3convenientlyglossedoverthisrequirement.
+11 Thename frameproblem comesfrom frameofreference inp

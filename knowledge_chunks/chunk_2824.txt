@@ -1,0 +1,33 @@
+rexample, in
+driving applications in which a camera is fixedto the car, we expect to view mainly vertical
+pedestrians, and we are interested only in nearby pedestrians. Several pedestrian data sets
+havebeenpublished, andthesecanbeusedfortrainingtheclassifier.
+Pedestrians are not the only type of object we can detect. In Figure 24.15 we see that
+similartechniques canbeusedtofindavarietyofobjectsindifferent contexts.
+24.4 RECONSTRUCTING THE 3D WORLD
+In this section we show how to go from the two-dimensional image to a three-dimensional
+representation of the scene. The fundamental question is this: Given that all points in the
+scenethatfallalongaraytothepinholeareprojected tothe samepointintheimage,howdo
+werecoverthree-dimensional information? Twoideascometoourrescue:
+948 Chapter 24. Perception Ifwehavetwo(ormore)imagesfrom different camerapositions, thenwecantriangu-
+latetofindtheposition ofapointinthescene. We can exploit background knowledge about the physical scene that gave rise to the
+image. Givenanobject model P(Scene)andarendering model P(Image Scene),we
+cancomputeaposteriordistribution P(Scene Image).
+Thereisasyetnosingle unifiedtheoryforscene reconstruction. Wesurveyeightcommonly
+usedvisualcues: motion,binocularstereopsis, multipleviews,texture,shading,contour,
+andfamiliarobjects.
+24.4.1 Motionparallax
+Ifthecameramovesrelativetothethree-dimensional scene, theresulting apparent motionin
+theimage, optical flow,canbeasource ofinformation forboth themovementofthecamera
+and depth in the scene. To understand this, we state (without proof) an equation that relates
+theopticalflowtotheviewer stranslational velocity Tandthedepthinthescene.
+Thecomponents oftheopticalflowfieldare T x T T y T
+x z y z
+v (x,y) , v (x,y) ,
+x y
+Z(x,y) Z(x,y)
+where Z(x,y) is the z-coordinate of the point in the scene corresponding to the point in the
+imageat(x,y).
+Note that both components of the optical flow, v (x,y) and v (x,y), are zero at the
+x y
+FOCUSOF point x T T ,y T T . This point is 

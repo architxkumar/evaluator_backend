@@ -1,0 +1,25 @@
+traints.
+Notice that there is no time at which both inspectors are required, so we can immediately
+moveoneofourtwoinspectors toamoreproductive position.
+The complexity of scheduling with resource constraints is often seen in practice as
+well as in theory. A challenge problem posed in 1963 to find the optimal schedule for a
+problem involving just 10 machines and 10 jobs of 100 actions each went unsolved for
+23 years (Lawler et al., 1993). Many approaches have been tried, including branch-and-
+bound, simulated annealing, tabu search, constraint satisfaction, and other techniques from
+Chapters 3 and 4. One simple but popular heuristic is the minimum slack algorithm: on
+MINIMUMSLACK
+each iteration, schedule for the earliest possible start whichever unscheduled action has all
+itspredecessors scheduled andhastheleastslack;thenupdatethe ES and LS timesforeach
+affected action and repeat. The heuristic resembles the minimum-remaining-values (MRV)
+heuristic in constraint satisfaction. It often works well in practice, but for our assembly
+problem ityieldsa130 minute solution, notthe115 minute solution of Figure11.3.
+Up to this point, we have assumed that the set of actions and ordering constraints is
+fixed. Undertheseassumptions,everyschedulingproblemcanbesolvedbyanonoverlapping
+sequence that avoids all resource conflicts, provided that each action is feasible by itself. If
+a scheduling problem is proving very difficult, however, it may not be a good idea to solve
+itthis way itmaybebetter toreconsider theactions and constraints, in casethat leads to a
+much easier scheduling problem. Thus, it makes sense to integrate planning and scheduling
+bytakingintoaccount durations andoverlapsduring theconstruction ofapartial-order plan.
+Severaloftheplanningalgorithmsin Chapter10canbeaugmentedtohandlethisinformation.
+For example, partial-order planners can detect resource constraint violations in much the
+same way they detect conflicts with causal links. Heuristics can be devised to estima

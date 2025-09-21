@@ -1,0 +1,29 @@
+deterministic algorithms for decision making, such as the
+path-planning algorithms of the previous section. To do so, it is common practice to extract
+the most likely state from the probability distribution produced by the state estimation al-
+MOSTLIKELYSTATE
+gorithm. The advantage of this approach is purely computational. Planning paths through
+configuration space is already a challenging problem; it would be worse if we had to work
+with a full probability distribution overstates. Ignoring uncertainty in this way works when
+theuncertainty issmall. Infact,whentheenvironment modelchangesovertimeastheresult
+ofincorporating sensormeasurements, manyrobotsplanpathsonlineduring planexecution.
+Thisistheonlinereplanningtechnique of Section11.3.3.
+ONLINEREPLANNING
+994 Chapter 25. Robotics
+Unfortunately, ignoring the uncertainty does not always work. In some problems the
+robot s uncertainty is simply too massive: How can we use a deterministic path planner to
+control amobile robot that has no clue where itis? Ingeneral, if the robot s true state is not
+the one identified by the maximum likelihood rule, the resulting control will be suboptimal.
+Depending on the magnitude of the error this can lead to all sorts of unwanted effects, such
+ascollisions withobstacles.
+Thefieldofroboticshasadoptedarangeoftechniquesforaccommodatinguncertainty.
+Somearederived from thealgorithms given in Chapter17fordecision making underuncer-
+tainty. Iftherobotfacesuncertaintyonlyinitsstatetransition,butitsstateisfullyobservable,
+theproblemisbestmodeledasa Markovdecisionprocess(MDP).Thesolutionofan MD Pis
+anoptimalpolicy,whichtellstherobotwhattodoineverypossible state. Inthisway,itcan
+handleallsortsofmotionerrors,whereasasingle-path solution fromadeterministic planner
+NAVIGATION would be muchless robust. Inrobotics, policies arecalled navigation functions. Thevalue
+FUNCTION
+function shown in Figure 25.16(a) can be converted into such a navigation function simply
+byfollowingthegradient.
+Justasin Chapte

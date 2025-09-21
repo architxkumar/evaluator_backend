@@ -1,0 +1,36 @@
+n,FITNESS-FN)returnsanindividual
+inputs:population,asetofindividuals
+FITNESS-FN,afunctionthatmeasuresthefitnessofanindividual
+repeat
+new population emptyset
+fori 1to SIZE(population)do
+x RANDOM-SELECTION(population,FITNESS-FN)
+y RANDOM-SELECTION(population,FITNESS-FN)
+child REPRODUCE(x,y)
+if(smallrandomprobability)thenchild MUTATE(child)
+addchild tonew population
+population new population
+untilsomeindividualisfitenough,orenoughtimehaselapsed
+returnthebestindividualinpopulation,accordingto FITNESS-FN
+function REPRODUCE(x,y)returnsanindividual
+inputs:x,y,parentindividuals
+n LENGTH(x);c randomnumberfrom1ton
+return APPEND(SUBSTRING(x,1,c),SUBSTRING(y,c 1,n))
+Figure 4.8 A genetic algorithm. The algorithm is the same as the one diagrammed in
+Figure 4.6, with one variation: in this more popular version, each mating of two parents
+producesonlyoneoffspring,nottwo.
+componentislikelytobegoodinavarietyofdifferentdesigns. Thissuggeststhatsuccessful
+useofgenetic algorithmsrequires carefulengineering oftherepresentation.
+Inpractice,geneticalgorithmshavehadawidespreadimpactonoptimizationproblems,
+such ascircuit layout and job-shop scheduling. Atpresent, itisnot clearwhetherthe appeal
+ofgeneticalgorithmsarisesfromtheirperformanceorfrom their stheticallypleasingorigins
+in the theory of evolution. Much work remains to be done to identify the conditions under
+whichgeneticalgorithms performwell.
+4.2 LOCAL SEARCH IN CONTINUOUS SPACES
+In Chapter 2, we explained the distinction between discrete and continuous environments,
+pointing out that most real-world environments are continuous. Yet none of the algorithms
+wehavedescribed (exceptforfirst-choice hillclimbingand simulated annealing) canhandle
+continuous stateandactionspaces,becausetheyhaveinfinitebranchingfactors. Thissection
+provides a very brief introduction to some local search techniques for finding optimal solu-
+tions in continuous spaces. Theliterature on this topic is vast; many of the basic techniques
+130 Chapter 4. Beyond Class

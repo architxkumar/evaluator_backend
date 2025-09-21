@@ -1,0 +1,23 @@
+randomness turns out to beamore
+effective approach. The basic idea is to store a current best estimate H(s) of the cost to
+reach the goal from each state that has been visited. H(s) starts out being just the heuristic
+estimate h(s) and is updated as the agent gains experience in the state space. Figure 4.23
+shows a simple example in a one-dimensional state space. In (a), the agent seems to be
+stuck in a flat local minimum at the shaded state. Rather than staying where it is, the agent
+should follow what seems to bethe best path tothe goal given the current cost estimates for
+(cid:2)
+its neighbors. The estimated cost to reach the goal through a neighbor s is the cost to get
+(cid:2) (cid:2) (cid:2)
+to s plus the estimated cost to get to a goal from there that is, c(s,a,s) H(s). In the
+example,therearetwoactions,withestimatedcosts1 9and1 2,soitseemsbesttomove
+right. Now, it is clear that the cost estimate of 2 for the shaded state was overly optimistic.
+Since the best move cost 1 and led to a state that is at least 2 steps from a goal, the shaded
+state must be at least 3 steps from agoal, so its H should be updated accordingly, as shown
+in Figure 4.23(b). Continuing this process, the agent will move back and forth twice more,
+updating H eachtimeand flattening out thelocalminimumuntilitescapes totheright. Anagent implementing this scheme, whichiscalled learning real-time A (LRTA), is
+LRTA shown in Figure 4.24. Like ONLINE-DFS-AGENT, it builds a map of the environment in
+theresult table. Itupdates thecostestimate forthestate ithas justleft andthen chooses the apparently best move according to its current cost estimates. One important detail is that
+actionsthathavenotyetbeentriedinastatesarealwaysassumedtoleadimmediatelytothe
+OPTIMISMUNDER goalwiththeleastpossiblecost,namelyh(s). Thisoptimismunderuncertaintyencourages
+UNCERTAINTY
+theagenttoexplorenew,possiblypromising paths. An LRTA agentisguaranteedtofindagoalinanyfinite,safelyexplorableenvironment. Unlike A,however,itis

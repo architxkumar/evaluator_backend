@@ -1,0 +1,21 @@
+K. I. Richter,S.and Westphal,M.(2008). The LAMA
+edge: Minnesota Studiesinthe Philosophyof Sci- (2006). Gaussian Processesfor Machine Learning. planner. In Proc.International Planning Competi-
+ence.Universityof Minnesota Press. MIT Press. tionat ICAPS.
+Ridley,M.(2004).Evolution.Oxford Reader.
+Pylyshyn,Z.W.(1974). Minds,machinesandphe- Rassenti,S.,Smith,V.,and Bulfin,R.(1982). A
+nomenology: Somereflectionson Dreyfus What combinatorial auction mechanismfor airport time Rieger,C.(1976).Anorganizationofknowledgefor
+Computers Can t Do .Int.J.Cognitive Psychology, slotallocation.Bell Journalof Economics,13,402 problemsolvingandlanguagecomprehension. AIJ,
+3(1),57 77. 417. 7,89 127.
+Bibliography 1087
+Riley,J.and Samuelson,W.(1981). Optimalauc- Rossi,F.,van Beek,P.,and Walsh,T.(2006).Hand- Russell,S.J.and Subramanian,D.(1995).Provably
+tions.American Economic Review,71,381 392. bookof Constraint Processing.Elsevier. bounded-optimalagents.JAIR,3,575 609.
+Riloff,E.(1993).Automaticallyconstructingadic- Roussel,P.(1975). Prolog:Manualdereferenceet Russell,S.J.,Subramanian,D.,and Parr,R.(1993).
+tionaryforinformationextractiontasks.In AAAI-93, d utilization.Tech.rep.,Grouped Intelligence Arti- Provablyboundedoptimalagents. In IJCAI-93,pp.
+pp.811 816. ficielle,Universite d Aix-Marseille. 338 345.
+Rintanen,J.(1999). Improvementstotheevalua- Rouveirol,C.and Puget,J.-F.(1989).Asimpleand Russell,S.J.and Wefald,E.H.(1989). Onoptimal
+tionofquantified Booleanformulae. In IJCAI-99, generalsolutionforinvertingresolution. In Proc. game-treesearchusingrationalmeta-reasoning. In
+pp.1192 1197. European Working Sessionon Learning, pp.201 IJCAI-89,pp.334 340.
+Rintanen,J.(2007).Asymptoticallyoptimalencod- 210. Russell,S.J.and Wefald,E.H.(1991).Dothe Right
+ingsofconformantplanningin QBF. In AAAI-07, Rowat,P.F.(1979). Representingthe Spatial Ex- Thing:Studiesin Limited Rationality.MIT Press.
+pp.1045 1050. perienceand Solving Spatialproblemsina Simu- Russell, S. J. and Wolfe, J. (2005). Efficient
+Riple

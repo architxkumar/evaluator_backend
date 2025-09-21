@@ -1,0 +1,30 @@
+cisiontreeusuallyusedbyoneofus(SR)forthisdomainisshownin Figure18.2.
+Noticethatthetreeignoresthe Price and Type attributes. Examplesareprocessedbythetree
+starting attherootandfollowing theappropriate branch untilaleafisreached. Forinstance,
+an example with Patrons Full and Wait Estimate 0 10 will be classified as positive
+(i.e.,yes,wewillwaitforatable).
+18.3.2 Expressiveness ofdecisiontrees
+A Boolean decision tree is logically equivalent to the assertion that the goal attribute is true
+if and only if the input attributes satisfy one of the paths leading to a leaf with value true.
+Writingthisoutinpropositional logic,wehave
+Goal (Path Path ),
+1 2
+where each Path is aconjunction of attribute-value tests required to follow that path. Thus,
+the whole expression is equivalent to disjunctive normal form (see page 283), which means
+Section18.3. Learning Decision Trees 699
+that any function in propositional logic can be expressed as a decision tree. As an example,
+therightmostpathin Figure18.2is
+Path (Patrons Full Wait Estimate 0 10).
+For a wide variety of problems, the decision tree format yields a nice, concise result. But
+some functions cannot be represented concisely. Forexample, the majority function, which
+returns true if and only if more than half of the inputs are true, requires an exponentially
+large decision tree. In other words, decision trees are good for some kinds of functions and
+bad forothers. Is there any kind ofrepresentation that is efficient for all kinds offunctions?
+Unfortunately, the answer is no. We can show this in a general way. Consider the set of all
+Boolean functions onnattributes. Howmany different functions are inthis set? Thisis just
+the number of different truth tables that we can write down, because the function is defined
+by its truth table. A truth table over n attributes has 2n rows, one for each combination of
+valuesoftheattributes. Wecanconsiderthe answer columnofthetableasa2n-bitnumber
+thatdefinesthefunction.
+Thatmeansthereare22n
+diffe

@@ -1,0 +1,34 @@
+ deals with the properties of possible worlds, defined on page 488 as
+assignments to all random variables. We will work with propositions that correspond to
+exactly one possible world because they pin down the assignments of all the variables. In
+probability theory, such propositions are called atomic events. For example, with Boolean
+ATOMICEVENT
+variables X ,X ,X ,theproposition x x x fixestheassignment ofthevariables;
+1 2 3 1 2 3
+inthelanguage ofpropositional logic,wewouldsayithasexactlyonemodel.
+a. Prove, for the case of n Boolean variables, that any two distinct atomic events are
+mutuallyexclusive;thatis,theirconjunction isequivalent tofalse.
+b. Provethatthedisjunction ofallpossible atomiceventsislogically equivalent totrue.
+c. Provethatanypropositionislogicallyequivalenttothedisjunctionoftheatomicevents
+thatentailitstruth.
+Exercises 507
+13.6 Prove Equation(13.4)from Equations(13.1)and(13.2).
+13.7 Considerthesetofallpossiblefive-cardpokerhandsdealtfairlyfromastandarddeck
+offifty-twocards.
+a. Howmany atomic events are there in the joint probability distribution (i.e., how many
+five-cardhandsarethere)?
+b. Whatistheprobability ofeachatomicevent?
+c. Whatistheprobability ofbeingdealtaroyalstraight flush? Fourofakind?
+13.8 Giventhefulljointdistribution shownin Figure13.3,calculatethefollowing:
+a. P(toothache).
+b. P(Cavity).
+c. P(Toothache cavity).
+d. P(Cavity toothache catch).
+13.9 Inhisletterof August24,1654,Pascalwastryingtoshowhowapotofmoneyshould
+beallocated whenagamblinggamemustendprematurely. Imagine agamewhereeachturn
+consists of the roll of a die, player E gets a point when the die is even, and player O gets a
+point when thedie isodd. Thefirstplayer toget 7points winsthe pot. Suppose thegameis
+interrupted with E leading 4 2. How should the money be fairly split in this case? What is
+thegeneralformula? (Fermatand Pascalmadeseveralerrors beforesolvingtheproblem, but
+youshouldbeabletogetitrightthefirsttime.)
+13.10 Deciding to put probability theory to good use, w

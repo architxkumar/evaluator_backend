@@ -1,0 +1,29 @@
+ well. Aprofessor knowsthatanexamwillnotaccurately evaluate students
+if they have already seen the exam questions. Similarly, to get an accurate evaluation of a
+hypothesis,weneedtotestitonasetofexamplesithasnotseenyet. Thesimplestapproachis
+theonewehaveseenalready: randomlysplittheavailabledataintoatrainingsetfromwhich
+thelearningalgorithmproduces handatestsetonwhichtheaccuracyofhisevaluated. This
+HOLDOUT method, sometimes called holdoutcross-validation, hasthedisadvantage thatitfails touse
+CROSS-VALIDATION
+alltheavailable data;ifweusehalfthedataforthetestset,thenweareonlytraining onhalf
+the data, and we may get a poor hypothesis. On the other hand, if we reserve only 10 of
+the data for the test set, then we may, by statistical chance, get a poor estimate of the actual
+accuracy.
+Wecansqueezemoreoutofthedataandstillgetanaccurateestimateusingatechnique
+K-FOLD calledk-foldcross-validation. Theideaisthateachexampleservesdoubleduty astraining
+CROSS-VALIDATION
+data and test data. First wesplit the data into k equal subsets. Wethen perform k rounds of
+learning; on each round 1 k of the data is held out as a test set and the remaining examples
+are used as training data. The average test set score of the k rounds should then be a better
+estimate than a single score. Popular values for k are 5 and 10 enough to give an estimate
+that is statistically likely to be accurate, at a cost of 5 to 10 times longer computation time.
+LEAVE-ONE-OUT Theextremeisk n,alsoknownasleave-one-outcross-validation or LOOCV.
+CROSS-VALIDATION
+Despite the best efforts of statistical methodologists, users frequently invalidate their
+LOOCV
+results by inadvertently peeking at the test data. Peeking can happen like this: A learning
+PEEKING
+algorithmhasvarious knobs thatcanbetwiddledtotuneitsbehavior forexample,various
+different criteria for choosing the next attribute in decision tree learning. The researcher
+generateshypotheses forvariousdifferentsettingsofthe knobs,measurestheirerrorrateson
+thetestset,a

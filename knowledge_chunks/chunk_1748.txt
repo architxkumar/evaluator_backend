@@ -1,0 +1,29 @@
+of the strategies and show that Sudoku
+on an n2 n2 board is in the class of NP-hard problems. Reeson et al. (2007) show an
+interactive solverbasedon CS Ptechniques.
+The idea of backtracking search goes back to Golomb and Baumert (1965), and its
+applicationtoconstraintsatisfactionisdueto Bitnerand Reingold(1975),althoughtheytrace
+the basic algorithm back to the 19th century. Bitner and Reingold also introduced the MRV
+heuristic, which they called the most-constrained-variable heuristic. Brelaz (1979) used the
+degree heuristic as a tiebreaker after applying the MRV heuristic. The resulting algorithm,
+despite its simplicity, is still the best method for k-coloring arbitrary graphs. Haralick and
+Elliot(1980)proposed theleast-constraining-value heuristic.
+Bibliographical and Historical Notes 229
+The basic backjumping method is due to John Gaschnig (1977, 1979). Kondrak and
+van Beek (1997) showed that this algorithm is essentially subsumed by forward checking.
+Conflict-directed backjumping was devised by Prosser (1993). The most general and pow-
+erful form of intelligent backtracking was actually developed very early on by Stallman and
+DEPENDENCY-
+Sussman(1977). Theirtechniqueofdependency-directedbacktrackingledtothedevelop-
+DIRECTED
+BACKTRACKING
+mentoftruthmaintenancesystems(Doyle,1979),whichwediscussin Section12.6.2. The
+connection betweenthetwoareasisanalyzed byde Kleer(1989).
+The work of Stallman and Sussman also introduced the idea of constraint learning,
+in which partial results obtained by search can be saved and reused later in the search. The
+ideawasformalized Dechter(1990a). Backmarking(Gaschnig, 1979) isaparticularly sim-
+BACKMARKING
+ple method in which consistent and inconsistent pairwise assignments are saved and used
+to avoid rechecking constraints. Backmarking can be combined with conflict-directed back-
+jumping; Kondrak and van Beek (1997) present a hybrid algorithm that provably subsumes
+DYNAMIC eithermethodtaken separately. Themethodof dynamicbacktrackin

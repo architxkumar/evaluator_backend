@@ -1,0 +1,24 @@
+of
+Section18.12. Summary 757
+deciding whatfeatures touse,andhowtousethem,isjustasimportant aschoosing between
+linearregression, decision trees,orsomeotherformoflearning.
+That said, one does have to pick a method (or methods) for a problem. There is no
+guaranteed way to pick the best method, but there are some rough guidelines. Decision
+trees are good when there are a lot of discrete features and you believe that many of them
+maybeirrelevant. Nonparametricmethodsaregoodwhenyouhavealotofdataandnoprior
+knowledge,andwhenyoudon twanttoworrytoomuchaboutchoosingjusttherightfeatures
+(aslongastherearefewerthan20orso). However,nonparametric methodsusuallygiveyou
+afunction hthatismoreexpensive torun. Supportvectormachines areoftenconsidered the
+bestmethodtotryfirst,providedthedatasetisnottoolarge.
+18.12 SUMMARY
+This chapter has concentrated on inductive learning of functions from examples. The main
+pointswereasfollows: Learningtakesmanyforms,depending onthenatureoftheagent, thecomponent tobe
+improved,andtheavailablefeedback. Iftheavailablefeedbackprovidesthecorrectanswerforexampleinputs,thenthelearn-
+ing problem is called supervised learning. The task is to learn a function y h(x).
+Learningadiscrete-valued functioniscalledclassification;learningacontinuousfunc-
+tioniscalledregression. Inductive learning involves finding a hypothesis that agrees well with the examples.
+Ockham s razor suggests choosing the simplest consistent hypothesis. The difficulty
+ofthistaskdepends onthechosen representation. Decision trees can represent all Boolean functions. The information-gain heuristic
+providesanefficientmethodforfindingasimple,consistent decision tree. The performance of a learning algorithm is measured by the learning curve, which
+showstheprediction accuracy onthe testsetasafunctionofthetraining-setsize. Whentherearemultiplemodelstochoosefrom, cross-validation canbeusedtoselect
+amodelthatwillgeneralize well. Sometimes not all errors are equal. A loss function tells us how bad each er

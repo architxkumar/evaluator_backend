@@ -1,0 +1,26 @@
+lueconsistent with X 1 ,...,X i 1 . Weareguaranteed tofind
+a solution in time O(n2d). Ofcourse, there is no free lunch: any algorithm for establishing
+n-consistency must take time exponential in n in the worst case. Worse, n-consistency also
+requires space thatisexponential in n. Thememoryissue isevenmoreseverethanthetime.
+Inpractice, determining theappropriate levelofconsistency checking ismostlyanempirical
+science. It can be said practitioners commonly compute 2-consistency and less commonly
+3-consistency.
+6.2.5 Globalconstraints
+Rememberthataglobalconstraintisoneinvolvinganarbitrarynumberofvariables(butnot
+necessarily all variables). Global constraints occur frequently in real problems and can be
+handledbyspecial-purpose algorithmsthataremoreefficientthanthegeneral-purpose meth-
+ods described so far. Forexample, the Alldiff constraint says that all the variables involved
+must have distinct values (as in the cryptarithmetic problem above and Sudoku puzzles be-
+low). One simple form of inconsistency detection for Alldiff constraints works as follows:
+ifmvariables areinvolved inthe constraint, and iftheyhave npossible distinct values alto-
+gether, andm n,thentheconstraint cannotbesatisfied.
+This leads to the following simple algorithm: First, remove any variable in the con-
+straint that has a singleton domain, and delete that variable s value from the domains of the
+remainingvariables. Repeataslongastherearesingleton variables. Ifatanypointanempty
+domainisproducedortherearemorevariablesthandomainvaluesleft,thenaninconsistency
+hasbeendetected.
+Thismethodcandetect theinconsistency intheassignment WA red,NSW red for Figure 6.1. Notice that the variables SA, NT, and Q are effectively connected by an
+Alldiff constraint because each pair must have two different colors. After applying AC-3
+with the partial assignment, the domain of each variable is reduced to green,blue . That
+is, we have three variables and only two colors, so the Alldiff constraint is violated. Thus,
+a s

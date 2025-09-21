@@ -1,0 +1,25 @@
+ and Herbert Simon, rather stole
+the show. Although the others had ideas and in some cases programs for particular appli-
+cations such as checkers, Newell and Simon already had a reasoning program, the Logic
+Theorist (LT), about which Simonclaimed, Wehave invented acomputerprogram capable
+ofthinking non-numerically, andtherebysolvedthevenerable mind body problem. 12 Soon
+aftertheworkshop,theprogramwasabletoprovemostofthetheoremsin Chapter2of Rus-
+10 Thiswasthefirstofficialusageof Mc Carthy stermartificialintelligence.Perhaps computationalrationality wouldhavebeenmorepreciseandlessthreatening,but AI hasstuck.Atthe50thanniversaryofthe Dartmouth
+conference, Mc Carthystatedthatheresistedtheterms computer or computational indeferenceto Norbert
+Weiner,whowaspromotinganalogcyberneticdevicesratherthandigitalcomputers.
+11 Now Carnegie Mellon University(CMU).
+12 Newell and Simon also invented a list-processing language, IPL, to write LT. They had no compiler and
+translateditintomachinecodebyhand. Toavoiderrors,theyworkedinparallel,callingoutbinarynumbersto
+eachotherastheywroteeachinstructiontomakesuretheyagreed.
+18 Chapter 1. Introduction
+sell and Whitehead s Principia Mathematica. Russell wasreportedly delighted when Simon
+showedhimthattheprogramhadcomeupwithaproofforonetheoremthatwasshorterthan
+theonein Principia. Theeditors ofthe Journal of Symbolic Logicwerelessimpressed; they
+rejectedapapercoauthored by Newell,Simon,and Logic Theorist.
+The Dartmouth workshop did not lead to any new breakthroughs, but it did introduce
+all the major figures to each other. For the next 20 years, the field would be dominated by
+thesepeopleandtheirstudents andcolleagues at MIT,CMU,Stanford, and IBM.
+Looking at the proposal for the Dartmouth workshop (Mc Carthy et al., 1955), we can
+see whyitwasnecessary for AIto become aseparate field. Whycouldn t all the workdone
+in AI have taken place under the name of control theory or operations research or decision
+theory, which, after all, have objectiv

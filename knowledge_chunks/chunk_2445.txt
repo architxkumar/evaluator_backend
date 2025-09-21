@@ -1,0 +1,33 @@
+rthefollowingquestions:
+a. Whatcanbedetermined qualitatively abouttheoptimalpolicyinstates1and2?
+b. Apply policy iteration, showing each step in full, to determine the optimal policy and
+thevaluesofstates1and2. Assumethattheinitialpolicyhasactionbinbothstates.
+c. What happens to policy iteration if the initial policy has action a in both states? Does
+discounting help? Doestheoptimalpolicydependonthediscount factor?
+17.11 Considerthe4 3worldshownin Figure17.1.
+a. Implementanenvironment simulator forthisenvironment, such thatthespecific geog-
+raphy of the environment is easily altered. Some code for doing this is already in the
+onlinecoderepository.
+Exercises 691
+b. Create an agent that uses policy iteration, and measure its performance in the environ-
+ment simulator from various starting states. Perform several experiments from each
+starting state, and compare the average total reward received perrun withtheutility of
+thestate,asdetermined byyouralgorithm.
+c. Experiment with increasing the size of the environment. How does the run time for
+policyiteration varywiththesizeoftheenvironment?
+17.12 How can the value determination algorithm be used to calculate the expected loss
+experienced by an agent using a given set of utility estimates U and an estimated model P,
+comparedwithanagentusingcorrect values?
+17.13 Let the initial belief state b for the 4 3 POMDP on page 658 be the uniform dis-
+0
+tribution over the nonterminal states, i.e., (cid:16)1, 1,1,1, 1,1, 1,1,1,0,0(cid:17). Calculate the exact
+9 9 9 9 9 9 9 9 9
+beliefstateb aftertheagentmoves Leftanditssensorreports1adjacentwall. Alsocalculate
+1
+b assumingthatthesamethinghappens again.
+2
+17.14 What is the time complexity of d steps of POMDP value iteration for a sensorless
+environment?
+17.15 Consider a version of the two-state POMDP on page 661 in which the sensor is
+90 reliable in state 0 but provides no information in state 1 (that is, it reports 0 or 1 with
+equal probability). Analyze, eitherqualitatively orquanti

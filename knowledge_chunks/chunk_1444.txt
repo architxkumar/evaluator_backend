@@ -1,0 +1,28 @@
+g withtheknowledgerequiredforlanguageunder-
+standing. The problems included representing stereotypical situations (Cullingford, 1981),
+24 Chapter 1. Introduction
+describing human memory organization (Rieger, 1976; Kolodner, 1983), and understanding
+plansandgoals(Wilensky, 1983).
+Thewidespread growthof applications toreal-world problems caused aconcurrent in-
+crease in the demands for workable knowledge representation schemes. A large number
+of different representation and reasoning languages were developed. Some were based on
+logic forexample,the Prologlanguage becamepopularin Europe,andthe PLANNER fam-
+ily in the United States. Others, following Minsky s idea of frames (1975), adopted a more
+FRAMES
+structured approach, assembling facts about particular object and event types and arranging
+thetypesintoalargetaxonomichierarchy analogous toabiological taxonomy.
+1.3.6 AIbecomes anindustry (1980 present)
+Thefirstsuccessfulcommercialexpertsystem, R1,beganoperationatthe Digital Equipment
+Corporation (Mc Dermott, 1982). The program helped configure orders for new computer
+systems; by 1986, it was saving the company an estimated 40 million a year. By 1988,
+DEC s AIgroup had40expert systems deployed, withmoreontheway. Du Ponthad100in
+useand500indevelopment,savinganestimated 10millionayear. Nearlyeverymajor U.S.
+corporation haditsown AIgroupandwaseitherusingorinvestigating expertsystems.
+In1981,the Japaneseannouncedthe Fifth Generation project,a10-yearplantobuild
+intelligent computers running Prolog. In response, the United States formed the Microelec-
+tronics and Computer Technology Corporation (MCC)as aresearch consortium designed to
+assure national competitiveness. In both cases, AI was part of a broad effort, including chip
+design andhuman-interface research. In Britain, the Alvey report reinstated thefunding that
+wascutbythe Lighthillreport.13 Inallthreecountries, however,theprojectsnevermettheir
+ambitiousgoals.
+Overall,the AIindustryboomedfromafewmilliondollarsin1980tob

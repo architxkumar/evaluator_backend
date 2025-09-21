@@ -1,0 +1,28 @@
+s it
+expects towin. Since players bid based on the cards they hold, the other players learn more
+abouttheprobability ofeachdeal. Takingthisintoaccount indeciding howtoplaythehand
+istricky, forthereasons mentioned inourdescription of Kriegspiel: players maybidinsuch
+awayastominimize theinformation conveyed totheiropponents. Evenso, the approach is
+quiteeffectiveforbridge, asweshowin Section5.7.
+The strategy described in Equations 5.1 and 5.2 is sometimes called averaging over
+clairvoyance because it assumes that the game will become observable to both players im-
+mediately after the first move. Despite its intuitive appeal, the strategy can lead one astray.
+Considerthefollowingstory:
+Day 1: Road A leads to a heap of gold; Road B leads to a fork. Take the left fork and
+you llfindabiggerheapofgold,buttaketherightforkandyou llberunoverbyabus.
+Day2: Road A leadsto aheapofgold; Road Bleadstoa fork. Takethe rightforkand
+you llfindabiggerheapofgold,buttaketheleftforkandyou llberunoverbyabus.
+Day 3: Road A leads to a heap of gold; Road B leads to a fork. One branch of the
+forkleads to a biggerheap of gold, but take the wrong forkand you llbe hit by a bus.
+Unfortunatelyyoudon tknowwhichforkiswhich.
+Averagingoverclairvoyanceleadstothefollowingreasoning: on Day1,Bistherightchoice;
+on Day2,Bistheright choice; on Day3,thesituation isthesameaseither Day1or Day2,
+so Bmuststillbetherightchoice.
+Now we can see how averaging overclairvoyance fails: it does not consider the belief
+statethattheagentwillbeinafteracting. Abeliefstateoftotalignoranceisnotdesirable,es-
+pecially whenonepossibility iscertain death. Becauseitassumesthateveryfuturestatewill
+automatically beoneofperfectknowledge, theapproach neverselectsactionsthatgatherin-
+formation(likethefirstmovein Figure5.13);norwillitchooseactionsthathideinformation
+from the opponent or provide information to a partner because it assumes that they already
+knowtheinformation; anditwillneverbluffinpoker,4 because itassumestheopponent can
+BLU

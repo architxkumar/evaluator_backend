@@ -1,0 +1,40 @@
+ the original problem; in this
+case they are easy enough that they can be carried out without further search orplanning by
+an average driving agent. The choice of a good abstraction thus involves removing as much
+detail as possible while retaining validity and ensuring that the abstract actions are easy to
+carryout. Wereitnotfortheabilitytoconstruct usefulabstractions, intelligent agentswould
+becompletelyswampedbytherealworld.
+3.2 EXAMPLE PROBLEMS
+The problem-solving approach has been applied to a vast array of task environments. We
+list some of the best known here, distinguishing between toy and real-world problems. A
+toyproblem isintended toillustrate orexercise various problem-solving methods. Itcanbe
+TOYPROBLEM
+givenaconcise,exactdescriptionandhenceisusablebydifferentresearcherstocomparethe
+REAL-WORLD performance of algorithms. A real-world problem is one whose solutions people actually
+PROBLEM
+careabout. Suchproblemstendnottohaveasingleagreed-upondescription, butwecangive
+thegeneralflavoroftheirformulations.
+5 See Section11.2foramorecompletesetofdefinitionsandalgorithms.
+70 Chapter 3. Solving Problemsby Searching
+R
+L R
+L
+S S
+R R
+L R L R
+L L
+S S
+S S
+R
+L R
+L
+S S
+Figure 3.3 The state space for the vacuum world. Links denote actions: L Left, R Right,S Suck.
+3.2.1 Toy problems
+The first example we examine is the vacuum world first introduced in Chapter 2. (See
+Figure2.2.) Thiscanbeformulatedasaproblem asfollows: States: The state is determined by both the agent location and the dirt locations. The
+agent is in one of two locations, each of which might or might not contain dirt. Thus,
+there are 2 22 8 possible world states. A larger environment with n locations has
+n 2n states. Initialstate: Anystatecanbedesignated astheinitialstate. Actions: In this simple environment, each state has just three actions: Left, Right, and
+Suck. Largerenvironments mightalsoinclude Upand Down. Transition model: Theactions have their expected effects, except that moving Left in
+theleftmos

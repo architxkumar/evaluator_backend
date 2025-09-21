@@ -1,0 +1,39 @@
+totypes,896 quasi-logicalform,904 Rao,A.,61,1092
+Proust,M.,910 Qubic,194 Rao,B.,604,1076
+Provan,G.M.,519,552,1086 query(logical),301 Rao,G.,678
+pruning,98,162,167,705 querylanguage,867 Raphael,B.,110,191,358,1074,1075
+forward,174 queryvariable,522 Raphson,J.,154,760,1086
+futility,185 questionanswering,872,883 rapidprototyping,339
+incontingencyproblems,179 queue,79 Raschke,U.,1013,1069
+in EBL,783 FIFO,80,81 Rashevsky,N.,10,761,1086
+pseudocode,1061 LIFO,80,85 Rasmussen,C.E.,827,1086
+pseudoexperience,837 priority,80,858 Rassenti,S.,688,1086
+pseudoreward,856 Quevedo,T.,190 Ratio Club,15
+PSPACE,372,1055 quiescence,174 rationalagent,4,4 5,34,36 38,59,60,
+PSPACE-complete,385,393 Quillian,M.R.,471,1086 636,1044
+psychologicalreasoning,473 Quine,W.V.,314,443,469,470,1086 rationalism,6,923
+psychology,12 13 Quinlan,J.R.,758,764,791,793,800, rationality,1,36 38
+experimental,3,12 1086 calculative,1049
+psychophysics,968 Quirk,R.,920,1086 limited,5
+publickeyencryption,356 QXTRACT,885 perfect,5,1049
+Puget,J.-F.,230,800,1073,1087 rationalthought,4
+Pullum,G.K.,889,920,921,1076, R Ratner,D.,109,1086
+1086 rats,13
+PUMA,1011 R1,24,336,358 Rauch,H.E.,604,1086
+Purdom,P.,230,1067 Rabani,Y.,155,1086 Rayner,M.,784,1087
+purestrategy,667 Rabenau,E.,28,1068 Rayson,P.,921,1080
+puresymbol,260 Rabideau,G.,431,1073 Rayward-Smith,V.,112,1086
+Index 1123
+RBFS,99 101,109 REINFORCE,849,859 resourceconstraints,401
+RBL,779,784 787,798 reinforcement,830 resources,401 405,430
+RDF,469 reinforcementlearning,685,695, response,13
+reachableset,411 830 859,1025 restauranthygieneinspector,183
+reactivecontrol,1001 active,839 845 result,368
+reactivelayer,1004 Bayesian,835 resultset,867
+reactiveplanning,434 distributed,856 rete,335,358
+real-worldproblem,69 generalizationin,845 848 retrograde,176
+realizability,697 hierarchical,856,1046 reusableresource,402
+reasoning,4,19,234 multiagent,856 revelationprinciple,680
+default,458 460,547 off-policy,844 revenueequivalencetheorem,682
+intercausal,548 on-policy,844 Reversi,186
+l

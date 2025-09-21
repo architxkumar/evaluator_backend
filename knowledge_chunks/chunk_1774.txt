@@ -1,0 +1,46 @@
+nyoftherulesofthewumpusworld
+are best written using . Forexample, a square is breezy if a neighboring square has a pit,
+andasquareisbreezy onlyifaneighboring squarehasapit. Soweneedabiconditional,
+B (P P ),
+1,1 1,2 2,1
+where B meansthatthereisabreezein 1,1 .
+1,1
+7.4.3 A simpleknowledge base
+Nowthatwehavedefinedthesemanticsforpropositionallogic,wecanconstructaknowledge
+base for the wumpus world. We focus first on the immutable aspects of the wumpus world,
+leaving the mutable aspects for a later section. Fornow, weneed the following symbols for
+each x,y location:
+7 Latinhasaseparateword,aut,forexclusiveor.
+Section7.4. Propositional Logic: AVery Simple Logic 247
+P istrueifthereisapitin x,y .
+x,y
+W istrueifthereisawumpusin x,y ,deadoralive.
+x,y
+B istrueiftheagentperceives abreezein x,y .
+x,y
+S istrueiftheagentperceivesastenchin x,y .
+x,y
+The sentences we write will suffice to derive P (there is no pit in 1,2 ), as was done
+1,2
+informally in Section7.3. Welabeleachsentence R sothatwecanrefertothem:
+i Thereisnopitin 1,1 :
+R : P .
+1 1,1 A square is breezy if and only if there is a pit in a neighboring square. This has to be
+statedforeachsquare; fornow,weincludejusttherelevant squares:
+R : B (P P ).
+2 1,1 1,2 2,1
+R : B (P P P ).
+3 2,1 1,1 2,2 3,1 The preceding sentences are true in all wumpus worlds. Now we include the breeze
+perceptsforthefirsttwosquaresvisitedinthespecificworldtheagentisin,leadingup
+tothesituation in Figure7.3(b).
+R : B .
+4 1,1
+R : B .
+5 2,1
+7.4.4 A simpleinference procedure
+Our goal now is to decide whether KB for some sentence . For example, is P
+1,2
+entailedbyour KB? Ourfirstalgorithm forinference isamodel-checking approachthatisa
+direct implementation of the definition of entailment: enumerate the models, and check that is true in every model in which KB is true. Models are assignments of true or false to
+every proposition symbol. Returning to our wumpus-world example, the relevant proposi-
+tion symbols are B , B , P , P , P , P , and P . With seven s

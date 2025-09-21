@@ -1,0 +1,26 @@
+ability models, iscalled unrolling. (Technically, the DB Nis
+equivalent to the semi-infinite network obtained by unrolling forever. Slices added beyond
+the last observation have no effect on inferences within the observation period and can be
+omitted.) Once the DBN is unrolled, one can use any of the inference algorithms variable
+elimination, clustering methods,andsoon described in Chapter14.
+Unfortunately, a naive application of unrolling would not be particularly efficient. If
+we want to perform filtering or smoothing with a long sequence of observations e , the
+1:t
+596 Chapter 15. Probabilistic Reasoning over Time
+unrolled network would require O(t) space and would thus grow without bound as more
+observations were added. Moreover, if we simply run the inference algorithm anew each
+timeanobservation isadded,theinference timeperupdatewillalsoincreaseas O(t).
+Lookingbackto Section15.2.1,weseethatconstanttimeandspaceperfilteringupdate
+can be achieved if the computation can be done recursively. Essentially, the filtering update
+in Equation (15.5) works by summing out the state variables ofthe previous time step to get
+the distribution for the new time step. Summing out variables is exactly what the variable
+elimination (Figure14.11)algorithm does,anditturnsoutthatrunning variable elimination
+with the variables in temporal order exactly mimics the operation of the recursive filtering
+update in Equation (15.5). The modified algorithm keeps at most two slices in memory at
+anyonetime: startingwithslice0,weaddslice1,thensumoutslice0,thenaddslice2,then
+sum out slice 1, and soon. In this way, wecan achieve constant space and timeperfiltering
+update. (The same performance can be achieved by suitable modifications to the clustering
+algorithm.) Exercise15.17asksyoutoverifythisfactfortheumbrellanetwork.
+Somuch for the good news; now forthe bad news: It turns out that the constant for
+theper-updatetimeandspacecomplexityis,inalmostallcases,exponentialinthenumberof
+state variables.

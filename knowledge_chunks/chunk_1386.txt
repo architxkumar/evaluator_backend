@@ -1,0 +1,23 @@
+ logic, probability, andcontinuous mathematics;
+perception, reasoning, learning, and action; and everything from microelectronic devices to
+roboticplanetary explorers. Thebookisalsobigbecause we gointosomedepth.
+Thesubtitleofthisbookis AModern Approach. Theintendedmeaningofthisrather
+empty phrase is that we have tried to synthesize what is now known into a common frame-
+work, rather than trying to explain each subfield of AI in its own historical context. We
+apologize tothosewhosesubfieldsare,asaresult, lessrecognizable.
+New to this edition
+This edition captures the changes in AI that have taken place since the last edition in 2003.
+There have been important applications of AI technology, such as the widespread deploy-
+ment of practical speech recognition, machine translation, autonomous vehicles, and house-
+hold robotics. There have been algorithmic landmarks, such as the solution of the game of
+checkers. And there has been a great deal of theoretical progress, particularly in areas such
+asprobabilistic reasoning, machine learning, andcomputervision. Mostimportant from our
+point of view is the continued evolution in how we think about the field, and thus how we
+organize thebook. Themajorchanges areasfollows: We place more emphasis on partially observable and nondeterministic environments,
+especially in the nonprobabilistic settings of search and planning. The concepts of
+beliefstate(asetofpossible worlds)andstateestimation (maintaining thebeliefstate)
+areintroduced inthesesettings; laterinthebook,weaddprobabilities. Inaddition to discussing the types of environments and types of agents, wenow cover
+inmoredepththetypesofrepresentations thatanagentcanuse. Wedistinguishamong
+atomic representations (in which each state of the world is treated as a black box),
+factoredrepresentations(inwhichastateisasetofattribute valuepairs),andstructured
+representations (inwhichtheworldconsists ofobjectsand relations betweenthem). Our coverage of planning goes into more depth on conti

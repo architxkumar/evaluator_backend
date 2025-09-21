@@ -1,0 +1,38 @@
+ntake, exercise, andmetabolism determine weightgainandloss.
+d. Baldnessisdetermined bythebaldness (orlackthereof)of one smaternalgrandfather.
+19.3 Wouldaprobabilistic versionofdeterminations beuseful? Suggestadefinition.
+19.4 Fill in the missing values for the clauses C or C (or both) in the following sets of
+1 2
+clauses, giventhat C istheresolventof C and C :
+1 2
+a. C True P(A,B),C P(x,y) Q(x,y),C ??.
+1 2
+b. C True P(A,B),C ??,C ??.
+1 2
+c. C P(x,y) P(x,f(y)),C ??,C ??.
+1 2
+Ifthereismorethanonepossiblesolution,provideoneexampleofeachdifferentkind.
+19.5 Suppose one writes a logic program that carries out a resolution inference step. That
+is, let Resolve(c ,c ,c) succeed if c is the result of resolving c and c . Normally, Resolve
+1 2 1 2
+would be used as part of a theorem prover by calling it with c and c instantiated to par-
+1 2
+ticular clauses, thereby generating the resolvent c. Now suppose instead that we call it with
+c instantiated and c and c uninstantiated. Will this succeed in generating the appropriate
+1 2
+results of an inverse resolution step? Would you need any special modifications to the logic
+programming systemforthistowork?
+19.6 Suppose that FOIL is considering adding a literal to a clause using a binary predicate
+P andthatpreviousliterals(including theheadoftheclause)containfivedifferentvariables.
+a. Howmanyfunctionallydifferentliteralscanbegenerated? Twoliteralsarefunctionally
+identicaliftheydifferonlyinthenamesofthenewvariablesthattheycontain.
+b. Can you find a general formula for the number of different literals with a predicate of
+arityrwhenthereare nvariables previously used?
+c. Whydoes FOIL notallowliteralsthatcontainnopreviously usedvariables?
+19.7 Usingthedatafromthefamilytreein Figure19.11,orasubsetthereof,applythe FOIL
+algorithm tolearnadefinition forthe Ancestor predicate.
+20
+LEARNING
+PROBABILISTIC MODELS
+Inwhichweviewlearning asaformofuncertain reasoning fromobservations.
+Chapter13pointedouttheprevalenceofuncertaintyinrealenvironments. Agen

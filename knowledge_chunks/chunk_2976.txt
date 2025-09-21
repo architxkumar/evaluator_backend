@@ -1,0 +1,26 @@
+d
+applies the theory of information value (Chapter 16) to the selection of individual computa-
+tions. Thevalue ofacomputation depends onboth its cost (interms ofdelaying action) and
+itsbenefits(intermsofimproveddecisionquality). Metareasoning techniquescanbeusedto
+design better search algorithms and to guarantee that the algorithms have the anytime prop-
+erty. Metareasoning isexpensive, ofcourse, andcompilation methods can beapplied sothat
+theoverhead issmallcompared tothecostsofthecomputations being controlled. Metalevel
+reinforcement learning mayprovide anotherwaytoacquire effective policies forcontrolling
+deliberation: inessence,computationsthatleadtobetterdecisionsarereinforced,whilethose
+that turn out to have no effect are penalized. This approach avoids the myopia problems of
+thesimplevalue-of-information calculation.
+REFLECTIVE Metareasoning is one specific example of a reflective architecture that is, an archi-
+ARCHITECTURE
+tecturethatenablesdeliberationaboutthecomputationalentitiesandactionsoccurringwithin
+the architecture itself. A theoretical foundation for reflective architectures can be built by
+definingajointstatespacecomposedfromtheenvironment stateandthecomputational state
+of the agent itself. Decision-making and learning algorithms can be designed that operate
+over this joint state space and thereby serve to implement and improve the agent s compu-
+tational activities. Eventually, we expect task-specific algorithms such as alpha beta search
+andbackwardchainingtodisappearfrom AIsystems,tobereplacedbygeneralmethodsthat
+directtheagent scomputations towardtheefficientgeneration ofhigh-quality decisions.
+Section27.3. Are We Goinginthe Right Direction? 1049
+27.3 ARE WE GOING IN THE RIGHT DIRECTION?
+Theprecedingsectionlistedmanyadvancesandmanyopportunitiesforfurtherprogress. But
+where is this all leading? Dreyfus (1992) gives the analogy of trying to get to the moon by
+climbing a tree; one can report steady progress, all the way to the top of the tree. In 

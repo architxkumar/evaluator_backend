@@ -1,0 +1,38 @@
+ 1,b ( ).
+Thus, after seeing acherry candy, wesimply increment the aparameter toget the posterior;
+similarly, after seeing a lime candy, weincrement the b parameter. Thus, we can view the a
+and bhyperparameters as virtual counts, inthesense thataprior beta a,b behaves exactly
+VIRTUALCOUNTS
+asifwehad started outwithauniform prior beta 1,1 andseen a 1actual cherry candies
+andb 1actuallimecandies.
+Byexaminingasequenceofbetadistributions forincreasingvaluesofaandb,keeping
+the proportions fixed, we can see vividly how the posterior distribution over the parameter changes as data arrive. Forexample, suppose the actual bag ofcandy is75 cherry. Fig-
+ure 20.5(b) shows the sequence beta 3,1 , beta 6,2 , beta 30,10 . Clearly, the distribution
+isconvergingtoanarrowpeakaroundthetruevalueof . Forlargedatasets,then,Bayesian
+learning(atleastinthiscase)convergestothesameanswerasmaximum-likelihoodlearning.
+Nowletusconsideramorecomplicated case. Thenetwork in Figure 20.2(b)hasthree
+parameters, , ,and ,where istheprobability ofaredwrapperonacherrycandy and
+1 2 1 is the probability of a red wrapper on a lime candy. The Bayesian hypothesis prior must
+2
+cover all three parameters that is, we need to specify P( , , ). Usually, we assume
+1 2
+PARAMETER parameterindependence:
+INDEPENDENCE
+P( , , ) P( )P( )P( ).
+1 2 1 2
+Section20.2. Learningwith Complete Data 813
+With this assumption, each parameter can have its ownbeta distribution that is updated sep-
+arately as data arrive. Figure 20.6 shows how we can incorporate the hypothesis prior and
+any data into one Bayesian network. The nodes , , have no parents. But each time
+1 2
+wemakeanobservation ofawrapperandcorresponding flavorofapieceofcandy, weadda
+node Flavor ,whichisdependent ontheflavorparameter :
+i
+P(Flavor cherry ) .
+i
+Wealsoaddanode Wrapper ,whichisdependent on and :
+i 1 2
+P(Wrapper red Flavor cherry, ) i i 1 1 1
+P(Wrapper red Flavor lime, ) .
+i i 2 2 2
+Now, the entire Bayesian learning process can be formulated as an inference problem

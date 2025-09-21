@@ -1,0 +1,26 @@
+7.17 does not show are the tricks that enable SAT solvers to scale up to
+large problems. It is interesting that most of these tricks are in fact rather general, and we
+haveseenthembeforeinotherguises:
+1. Componentanalysis (asseenwith Tasmaniain CS Ps): As DPLL assigns truthvalues
+tovariables, thesetofclauses maybecomeseparated intodisjoint subsets, calledcom-
+ponents,thatsharenounassigned variables. Givenanefficientwaytodetectwhenthis
+occurs,asolvercangainconsiderablespeedbyworkingoneachcomponentseparately.
+2. Variable and value ordering (as seen in Section 6.3.1 for CS Ps): Our simple imple-
+mentation of DPLL uses an arbitrary variable ordering and always tries the value true
+before false. The degree heuristic (see page 216) suggests choosing the variable that
+appearsmostfrequently overallremainingclauses.
+262 Chapter 7. Logical Agents
+3. Intelligent backtracking (as seen in Section 6.3 for CS Ps): Many problems that can-
+not be solved in hours of run time with chronological backtracking can be solved in
+seconds with intelligent backtracking that backs up all the way to the relevant point of
+conflict. All SAT solvers that do intelligent backtracking use some form of conflict
+clause learning to record conflicts so that they won t be repeated later in the search.
+Usuallyalimited-size setofconflictsiskept,andrarelyusedonesaredropped.
+4. Randomrestarts(asseenonpage124forhill-climbing): Sometimesarunappearsnot
+to be making progress. In this case, we can start over from the top of the search tree,
+rather than trying to continue. After restarting, different random choices (in variable
+andvalueselection) aremade. Clausesthatarelearnedinthefirstrunareretainedafter
+the restart and can help prune the search space. Restarting does not guarantee that a
+solutionwillbefoundfaster, butitdoesreducethevariance onthetimetosolution.
+5. Clever indexing (as seen in many algorithms): The speedup methods used in DPLL
+itself, aswell asthe tricks used in modern solvers, require fast indexin

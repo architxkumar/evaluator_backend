@@ -1,0 +1,28 @@
+algorithms can solve anysolvable
+problem, noneofthemcandosoefficiently. Informedsearchalgorithms, ontheotherhand,
+candoquitewellgivensomeguidance onwheretolookforsolutions.
+In this chapter, we limit ourselves to the simplest kind of task environment, for which
+thesolutiontoaproblemisalwaysafixedsequenceofactions. Themoregeneralcase where
+theagent sfutureactionsmayvarydepending onfuturepercepts is handledin Chapter4.
+This chapter uses the concepts of asymptotic complexity (that is, O() notation) and
+NP-completeness. Readersunfamiliarwiththeseconcepts shouldconsult Appendix A.
+3.1 PROBLEM-SOLVING AGENTS
+Intelligent agents are supposed to maximize their performance measure. As we mentioned
+in Chapter2, achieving this issometimes simplified iftheagent canadopt agoal andaim at
+satisfying it. Letusfirstlookatwhyandhowanagentmightdothis.
+64
+Section3.1. Problem-Solving Agents 65
+Imagineanagentinthecityof Arad,Romania,enjoying atouringholiday. Theagent s
+performance measure contains manyfactors: itwants toimprove itssuntan, improve its Ro-
+manian,takeinthesights,enjoythenightlife (suchasitis),avoidhangovers, andsoon. The
+decision problem is a complex one involving many tradeoffs and careful reading of guide-
+books. Now,suppose theagenthasanonrefundable tickettoflyoutof Bucharest thefollow-
+ing day. In that case, it makes sense for the agent to adopt the goal of getting to Bucharest.
+Courses of action that don t reach Bucharest on timecan berejected without further consid-
+eration and the agent s decision problem is greatly simplified. Goals help organize behavior
+by limiting the objectives that the agent is trying to achieve and hence the actions it needs
+to consider. Goal formulation, based on the current situation and the agent s performance
+GOALFORMULATION
+measure,isthefirststepinproblem solving.
+We will consider a goal to be a set of world states exactly those states in which the
+goal is satisfied. The agent s task is to find out how to act, now and in the future, so tha

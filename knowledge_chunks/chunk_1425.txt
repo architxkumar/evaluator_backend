@@ -1,0 +1,25 @@
+ation, by Bartlett s student and successor Kenneth
+Craik (1943), forcefully reestablished the legitimacy of such mental terms as beliefs and
+goals, arguing that they are just as scientific as, say, using pressure and temperature to talk
+about gases, despite their being made of molecules that have neither. Craik specified the
+threekeystepsofaknowledge-based agent: (1)thestimulusmustbetranslatedintoaninter-
+nalrepresentation, (2)therepresentation ismanipulated bycognitiveprocessestoderivenew
+internal representations, and (3) these are in turn retranslated back into action. He clearly
+explained whythiswasagooddesignforanagent:
+Iftheorganismcarriesa small-scalemodel ofexternalrealityandofits ownpossible
+actionswithinitshead,itisabletotryoutvariousalternatives,concludewhichisthebest
+ofthem,reacttofuturesituationsbeforetheyarise,utilizetheknowledgeofpastevents
+indealingwith thepresentandfuture,andin everywaytoreactin amuchfuller,safer,
+andmorecompetentmannertotheemergencieswhichfaceit. (Craik,1943)
+After Craik s death inabicycle accident in1945, hisworkwascontinued by Donald Broad-
+bent,whosebook Perceptionand Communication(1958)wasoneofthefirstworkstomodel
+psychological phenomena as information processing. Meanwhile, in the United States, the
+development ofcomputermodeling ledtothecreation ofthefieldofcognitive science. The
+fieldcanbe saidtohave started ataworkshop in September 1956 at MIT.(Weshall see that
+thisisjusttwomonthsaftertheconference atwhich AIitselfwas born. ) Attheworkshop,
+George Millerpresented The Magic Number Seven,Noam Chomskypresented Three Models
+of Language, and Allen Newell and Herbert Simon presented The Logic Theory Machine.
+These three influential papers showed how computer models could be used to address the
+psychology of memory, language, and logical thinking, respectively. It is now a common
+(although far from universal) view among psychologists that a cognitive theory should be
+likeacomputerprogram (Anderson,1980);thatis,itshoulddescribeadeta

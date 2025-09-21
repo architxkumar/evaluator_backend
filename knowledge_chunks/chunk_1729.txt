@@ -1,0 +1,30 @@
+random or static
+ordering,sometimesbyafactorof1,000ormore,althoughtheresultsvarywidelydepending
+ontheproblem.
+The MR Vheuristic doesn t help atallinchoosing thefirstregion tocolorin Australia,
+becauseinitiallyeveryregionhasthreelegalcolors. Inthiscase,thedegreeheuristiccomes
+DEGREEHEURISTIC
+in handy. It attempts to reduce the branching factor on future choices by selecting the vari-
+able that is involved in the largest number of constraints on other unassigned variables. In
+Figure 6.1, SAis the variable with highest degree, 5; the other variables have degree 2 or3,
+except for T, which has degree 0. In fact, once SA is chosen, applying the degree heuris-
+tic solves the problem without any false steps you can choose any consistent color at each
+choice point and still arrive at a solution with no backtracking. The minimum-remaining-
+Section6.3. Backtracking Searchfor CS Ps 217
+values heuristic isusually amorepowerful guide, but the degree heuristic canbe useful as a
+tie-breaker.
+Once a variable has been selected, the algorithm must decide on the order in which to
+LEAST-
+examine itsvalues. Forthis, the least-constraining-value heuristic can beeffective insome
+CONSTRAINING-
+VALUE
+cases. It prefers the value that rules out the fewest choices for the neighboring variables in
+the constraint graph. For example, suppose that in Figure 6.1 we have generated the partial
+assignment with WA red and NT green and that our next choice is for Q. Blue would
+be a bad choice because it eliminates the last legal value left for Q s neighbor, SA. The
+least-constraining-value heuristic therefore prefers red to blue. In general, the heuristic is
+tryingtoleavethemaximumflexibilityforsubsequentvariableassignments. Ofcourse,ifwe
+are trying to find all the solutions to a problem, not just the first one, then the ordering does
+not matter because we have to consider every value anyway. The same holds if there are no
+solutions totheproblem.
+Whyshould variable selection be fail-first, but value sele

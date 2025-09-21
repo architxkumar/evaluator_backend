@@ -1,0 +1,35 @@
+onstraint graph isa tree when
+anytwovariablesareconnectedbyonlyonepath. Weshowthatanytree-structured CS Pcan
+besolved intimelinear inthenumberofvariables.4 Thekeyisanewnotion ofconsistency,
+DIRECTEDARC calleddirectedarcconsistencyor DAC.ACS Pisdefinedtobedirectedarc-consistentunder
+CONSISTENCY
+an ordering of variables X ,X ,...,X if and only if every X is arc-consistent with each
+1 2 n i
+X forj i.
+j
+To solve a tree-structured CSP, first pick any variable to be the root of the tree, and
+chooseanorderingofthevariablessuchthateachvariableappearsafteritsparentinthetree.
+Such an ordering is called a topological sort. Figure 6.10(a) shows a sample tree and (b)
+TOPOLOGICALSORT
+showsonepossibleordering. Anytreewithnnodeshasn 1arcs,sowecanmakethisgraph
+directed arc-consistent in O(n) steps, each of which must compare up to d possible domain
+values fortwo variables, foratotal time of O(nd2). Once we have a directed arc-consistent
+graph, we can just march down the list of variables and choose any remaining value. Since
+eachlinkfromaparenttoitschildisarcconsistent,weknowthatforanyvaluewechoosefor
+theparent, there willbeavalidvalue lefttochoose forthechild. Thatmeanswewon thave
+to backtrack; we can move linearly through the variables. Thecomplete algorithm is shown
+in Figure6.11.
+A E
+B D A B C D E F
+C F
+(a) (b)
+Figure6.10 (a)Theconstraintgraphofatree-structured CSP.(b)Alinearorderingofthe
+variablesconsistentwiththetreewith Aastheroot. Thisisknownasatopologicalsortof
+thevariables.
+Nowthatwehaveanefficientalgorithmfortrees,wecanconsiderwhethermoregeneral
+constraint graphs can be reduced to trees somehow. There are two primary ways to do this,
+onebasedonremovingnodesandonebasedoncollapsing nodes together.
+The first approach involves assigning values to some variables so that the remaining
+variables form a tree. Consider the constraint graph for Australia, shown again in Fig-
+ure 6.12(a). If we could delete South Australia, the graph would become a tree, as in (b).
+Fortunately, we c

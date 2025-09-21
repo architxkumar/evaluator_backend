@@ -1,0 +1,25 @@
+e,
+even with a partially completed model. A clause is true if any literal is true, even if
+the other literals do not yet have truth values; hence, the sentence as a whole could be
+judged true even before the model is complete. For example, the sentence (A B) (A C)istrue if Aistrue, regardless of thevalues of B and C. Similarly, asentence
+isfalseifanyclauseisfalse,whichoccurswheneachofitsliteralsisfalse. Again,this
+can occurlong before the model iscomplete. Early termination avoids examination of
+entiresubtrees inthesearchspace. Pure symbol heuristic: A puresymbol is a symbol that always appears with the same
+PURESYMBOL sign in all clauses. For example, in the three clauses (A B), ( B C), and
+(C A), the symbol A is pure because only the positive literal appears, B is pure
+because only the negative literal appears, and C is impure. It is easy to see that if
+a sentence has a model, then it has a model with the pure symbols assigned so as to
+make their literals true, because doing so can never make a clause false. Note that, in
+determining the purity of a symbol, the algorithm can ignore clauses that are already
+known to be true in the model constructed so far. For example, if the model contains
+B false, then the clause ( B C)is already true, and in the remaining clauses C
+appearsonlyasapositiveliteral;therefore C becomespure. Unit clause heuristic: A unit clause was defined earlier as a clause with just one lit-
+eral. In the context of DPLL, it also means clauses in which all literals but one are
+already assigned false by the model. For example, if the model contains B true,
+then ( B C) simplifies to C, which is a unit clause. Obviously, for this clause
+to be true, C must be set to false. The unit clause heuristic assigns all such symbols
+before branching on the remainder. Oneimportant consequence ofthe heuristic is that
+Section7.6. Effective Propositional Model Checking 261
+function DPLL-SATISFIABLE?(s)returnstrue orfalse
+inputs:s,asentenceinpropositionallogic
+clauses

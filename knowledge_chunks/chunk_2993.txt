@@ -1,0 +1,30 @@
+,
+andforprogramming languages itis Program. A set of rewrite rules, of the form LHS RHS, where LHS is a nonterminal
+symboland RHS isasequence ofzero ormoresymbols. These canbeeitherterminal
+ornonterminal symbols, orthesymbol (cid:2),whichisusedtodenotetheemptystring.
+Arewriteruleoftheform
+Sentence Noun Phrase Verb Phrase
+means that whenever wehave twostrings categorized asa Noun Phrase and a Verb Phrase,
+we can append them together and categorize the result as a Sentence. As an abbreviation,
+thetworules(S A)and(S B)canbewritten(S A B).
+1060
+Section B.2. Describing Algorithmswith Pseudocode 1061
+Hereisa BN Fgrammarforsimplearithmetic expressions:
+Expr Expr Operator Expr ( Expr ) Number
+Number Digit Number Digit
+Digit 0 1 2 3 4 5 6 7 8 9
+Operator We cover languages and grammars in more detail in Chapter 22. Be aware that other books
+useslightlydifferentnotationsfor BNF;forexample,youmightsee(cid:16)Digit(cid:17)insteadof Digit
+foranonterminal, word insteadof wordforaterminal, or:: instead of inarule.
+B.2 DESCRIBING ALGORITHMS WITH PSEUDOCODE
+Thealgorithms inthisbookaredescribed inpseudocode. Mostofthepseudocode should be
+familiar to users of languages like Java, C , or Lisp. In some places we use mathematical
+formulasorordinary Englishtodescribepartsthatwouldotherwisebemorecumbersome. A
+fewidiosyncrasies shouldbenoted. Persistent variables: Weuse thekeyword persistent tosaythat avariable isgiven an
+initialvaluethefirsttimeafunctioniscalledandretainsthatvalue(orthevaluegivento
+itbyasubsequent assignment statement) onallsubsequent calls tothe function. Thus,
+persistent variables are like global variables in that they outlive a single call to their
+function, but they are accessible only within the function. The agent programs in the
+book use persistent variables for memory. Programs with persistent variables can be
+implemented as objects in object-oriented languages such as C , Java, Python, and
+Smalltalk. In functional languages, they can be implemented by functional cl

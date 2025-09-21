@@ -1,0 +1,26 @@
+ strategy provides
+the opponent with information. Hence, optimal play in partially observable games requires
+a willingness to play somewhat randomly. (This is why restaurant hygiene inspectors do
+randominspection visits.) Thismeansoccasionally selecting movesthatmayseem intrinsi-
+cally weak buttheygainstrengthfromtheirveryunpredictability, becausetheopponentis
+unlikely tohaveprepared anydefenseagainstthem.
+From these considerations, it seems that the probabilities associated with the board
+states in the current belief state can only be calculated given an optimal randomized strat-
+egy; in turn, computing that strategy seems to require knowing the probabilities of the var-
+ious states the board might be in. This conundrum can be resolved by adopting the game-
+theoretic notion of an equilibrium solution, which we pursue further in Chapter 17. An
+equilibrium specifies an optimal randomized strategy for each player. Computing equilib-
+ria is prohibitively expensive, however, even for small games, and is out of the question for
+Kriegspiel. At present, the design of effective algorithms for general Kriegspiel play is an
+open research topic. Most systems perform bounded-depth lookahead in their own belief-
+statespace, ignoring theopponent s beliefstate. Evaluation functions resemble those forthe
+observable gamebutincludeacomponent forthesizeofthebeliefstate smallerisbetter!
+5.6.2 Cardgames
+Card games provide many examples of stochastic partial observability, where the missing
+informationisgeneratedrandomly. Forexample,inmanygames,cardsaredealtrandomlyat
+the beginning of the game, with each player receiving a hand that is not visible to the other
+players. Suchgamesincludebridge, whist,hearts, andsome formsofpoker.
+Atfirstsight,itmightseemthatthesecardgamesarejustlikedicegames: thecardsare
+dealtrandomlyanddeterminethemovesavailabletoeachplayer,butallthe dice arerolled
+atthe beginning! Even though this analogy turns out tobe incorrect, itsuggests an effective
+algorithm: consi

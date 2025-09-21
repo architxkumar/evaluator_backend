@@ -1,0 +1,25 @@
+t the camera, because at low resolution
+and underreasonable lighting, allsuch faces look quite similar. Theface isround, and quite
+brightcomparedtotheeyesockets;thesearedark,becausetheyaresunken,andthemouthis
+adarkslash,asaretheeyebrows. Majorchangesofilluminationcancausesomevariationsin
+this pattern, but the range of variation is quite manageable. That makes it possible to detect
+face positions in an image that contains faces. Once a computational challenge, this feature
+isnowcommonplace ineveninexpensive digitalcameras.
+Forthe moment, we will consider only faces where the nose is oriented vertically; we
+will deal with rotated faces below. We sweep a round window of fixed size over the image,
+compute features for it, and present the features to a classifier. This strategy is sometimes
+calledtheslidingwindow. Featuresneedtoberobusttoshadowsandtochangesinbrightness
+SLIDINGWINDOW
+causedbyilluminationchanges. Onestrategyistobuildfeaturesoutofgradientorientations.
+Another is to estimate and correct the illumination in each image window. To find faces of
+different sizes, repeat the sweep over larger or smaller versions of the image. Finally, we
+postprocess theresponses acrossscalesandlocations toproduce thefinalsetofdetections.
+Postprocessing is important, because it is unlikely that we have chosen a window size
+that is exactly the right size for a face (even if we use multiple sizes). Thus, we will likely
+have several overlapping windows that each report a match for a face. However, if we use
+aclassifierthat can report strength ofresponse (forexample, logistic regression orasupport
+vector machine) we can combine these partial overlapping matches at nearby locations to
+yieldasinglehigh-quality match. Thatgivesusafacedetectorthatcansearchoverlocations
+and scales. To search rotations as well, we use two steps. We train a regression procedure
+to estimate the best orientation of any face present in a window. Now, for each window, we
+estimatetheorientation, reorientthewindow,

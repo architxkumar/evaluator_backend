@@ -1,0 +1,31 @@
+ and asetofunsat-
+isfiedgoals. Wedefinethissearchproblem asfollows: The initial state is the last level of the planning graph, S , along with the set of goals
+n
+fromtheplanning problem. The actions available in a state at level S are to select any conflict-free subset of the
+i
+actions in A i 1 whose effects coverthe goals in thestate. Theresulting state has level
+S i 1 and has as its set of goals the preconditions for the selected set of actions. By conflictfree, wemeanasetofactionssuchthatnotwoofthemaremutexandnotwo
+oftheirpreconditions aremutex.
+Section10.3. Planning Graphs 385 Thegoalistoreachastateatlevel S suchthatallthegoalsaresatisfied.
+0 Thecostofeachactionis1.
+Forthisparticularproblem,westartat S withthegoal At(Spare,Axle). Theonlychoicewe
+2
+haveforachievingthegoalsetis Put On(Spare,Axle). Thatbringsustoasearchstateat S
+1
+with goals At(Spare,Ground) and At(Flat,Axle). The former can be achieved only by
+Remove(Spare,Trunk), and the latter by either Remove(Flat,Axle) or Leave Overnight.
+But Leave Overnight ismutexwith Remove(Spare,Trunk),sotheonlysolutionistochoose
+Remove(Spare,Trunk)and Remove(Flat,Axle). Thatbringsustoasearchstateat S with
+0
+the goals At(Spare,Trunk) and At(Flat,Axle). Both of these are present in the state, so
+we have a solution: the actions Remove(Spare, Trunk) and Remove(Flat, Axle) in level
+A ,followedby Put On(Spare,Axle)in A .
+0 1
+In the case where EXTRACT-SOLUTION fails to find a solution for a set of goals at
+a given level, we record the (level,goals) pair as a no-good, just as we did in constraint
+learningfor CS Ps(page220). Whenever EXTRACT-SOLUTION iscalledagainwiththesame
+levelandgoals, wecanfindtherecorded no-good andimmediately returnfailure ratherthan
+searching again. Weseeshortlythatno-goods arealsousedinthetermination test.
+Weknow that planning is PSPACE-complete and that constructing the planning graph
+takespolynomialtime,soitmustbethecasethatsolutionextractionisintractableintheworst
+case. Therefore,wewillneedsomeheuristic

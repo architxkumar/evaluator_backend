@@ -1,0 +1,29 @@
+2 has twoparses: one where the prepositional phrase in
+2,2 modifiesthenounandonewhereitmodifiestheverb. Thesyntacticambiguityleadstoa
+SEMANTIC semanticambiguity,becauseoneparsemeansthatthewumpusisin2,2andtheothermeans
+AMBIGUITY
+thatastenchisin2,2. Inthiscase,gettingthewronginterpretation couldbeadeadlymistake
+fortheagent.
+Finally, there can be ambiguity between literal and figurative meanings. Figures of
+speech are important in poetry, but are surprisingly common in everyday speech as well. A
+metonymy is a figure of speech in which one object is used to stand for another. When
+METONYMY
+we hear Chrysler announced a new model, we do not interpret it as saying that compa-
+nies can talk; rather we understand that a spokesperson representing the company made the
+announcement. Metonymyiscommonandisofteninterpretedunconsciouslybyhumanhear-
+ers. Unfortunately, our grammar as it is written is not so facile. To handle the semantics of
+metonymyproperly,weneedtointroduceawholenewlevelofambiguity. Wedothisbypro-
+vidingtwoobjectsforthesemanticinterpretation ofeveryphraseinthesentence: oneforthe
+object that the phrase literally refers to (Chrysler) and one for the metonymic reference (the
+spokesperson). We then have to say that there is a relation between the two. In our current
+grammar, Chryslerannounced getsinterpreted as
+x Chrysler e Announce(x) After(Now,Extent(e)).
+Weneedtochange thatto
+x Chrysler e Announce(m) After(Now,Extent(e)) Metonymy(m,x).
+906 Chapter 23. Natural Languagefor Communication
+This says that there is one entity x that is equal to Chrysler, and another entity m that did
+theannouncing, andthatthetwoareinametonymyrelation. Thenextstep istodefinewhat
+kinds of metonymy relations can occur. The simplest case is when there is no metonymy at
+all theliteralobject xandthemetonymicobjectmareidentical: m,x (m x) Metonymy(m,x).
+Forthe Chrysler example, a reasonable generalization is that an organization can be used to
+standforaspokesperson ofthatorganization: m,x x Orga

@@ -1,0 +1,32 @@
+4 bits RAM 1011 bits RAM 1011 neurons
+1015 bitsdisk 1013 bitsdisk 1014 synapses
+Cycletime 10 9
+sec 10 9
+sec 10 3
+sec
+Operations sec 1015 1010 1017
+Memoryupdates sec 1014 1010 1014
+Figure1.3 Acrudecomparisonoftherawcomputationalresourcesavailabletothe IBM
+BLUE GEN Esupercomputer,atypicalpersonalcomputerof2008,andthehumanbrain.The
+brain s numbersare essentially fixed, whereas the supercomputer snumbers have been in-
+creasing by a factorof 10 every 5 years or so, allowing it to achieveroughparity with the
+brain.Thepersonalcomputerlagsbehindonallmetricsexceptcycletime.
+Theonlyrealalternative theoryismysticism: thatmindsoperateinsomemysticalrealmthat
+isbeyondphysical science.
+Brainsanddigitalcomputershavesomewhatdifferentproperties. Figure1.3showsthat
+computers have a cycle time that is a million times faster than a brain. The brain makes up
+for that with far more storage and interconnection than even a high-end personal computer,
+although the largest supercomputers have a capacity that is similar to the brain s. (It should
+be noted, however, that the brain does not seem to use all of its neurons simultaneously.)
+Futurists make much of these numbers, pointing to an approaching singularity at which
+SINGULARITY
+computers reach asuperhuman level ofperformance (Vinge, 1993; Kurzweil, 2005), but the
+rawcomparisons arenotespecially informative. Evenwitha computerofvirtuallyunlimited
+capacity, westillwouldnotknowhowtoachievethebrain slevelofintelligence.
+1.2.5 Psychology Howdohumansandanimalsthinkandact?
+The origins of scientific psychology are usually traced to the work of the German physi-
+cist Hermann von Helmholtz (1821 1894) and his student Wilhelm Wundt (1832 1920).
+Helmholtz applied the scientific method to the study of human vision, and his Handbook
+of Physiological Optics is even now described as the single most important treatise on the
+physics and physiology of human vision (Nalwa, 1993, p.15). In 1879, Wundt opened the
+first laboratory of experimental psychology, at

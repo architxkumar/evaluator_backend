@@ -1,0 +1,25 @@
+earning agent is responsible for selecting actions while it learns, it must
+trade off the estimated value of those actions against the potential for learning useful
+new information. Anexact solution of the exploration problem is infeasible, but some
+simpleheuristics doareasonable job. Inlargestatespaces, reinforcement learning algorithmsmustuseanapproximate func-
+tional representation in order to generalize over states. The temporal-difference signal
+canbeuseddirectly toupdateparameters inrepresentations suchasneuralnetworks. Policy-search methods operate directly on a representation of the policy, attempting
+to improve it based on observed performance. The variation in the performance in a
+stochasticdomainisaseriousproblem;forsimulateddomainsthiscanbeovercomeby
+fixingtherandomness inadvance.
+Becauseofitspotentialforeliminatinghandcodingofcontrolstrategies,reinforcementlearn-
+ing continues to be one of the most active areas of machine learning research. Applications
+in robotics promise tobe particularly valuable; these will require methods forhandling con-
+854 Chapter 21. Reinforcement Learning
+tinuous, high-dimensional, partially observable environments in which successful behaviors
+mayconsist ofthousands orevenmillionsofprimitiveactions.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Turing(1948,1950)proposedthereinforcement-learning approach,althoughhewasnotcon-
+vincedofitseffectiveness, writing, theuseofpunishments andrewardscanatbestbeapart
+of the teaching process. Arthur Samuel s work (1959) was probably the earliest successful
+machine learning research. Although this work was informal and had a number of flaws,
+it contained most of the modern ideas in reinforcement learning, including temporal differ-
+encing and function approximation. Around the same time, researchers in adaptive control
+theory(Widrowand Hoff,1960),buildingonworkby Hebb(1949),weretrainingsimplenet-
+worksusingthedeltarule. (Thisearlyconnectionbetweenneuralnetworksandreinforcement
+learning may have led 

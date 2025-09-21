@@ -1,0 +1,30 @@
+setofliterals. Wecan
+also use inadmissible heuristics such as the ignore-delete-lists heuristic (page 377), which
+seemstoworkquitewellinpractice.
+11.3.2 Contingent planning
+We saw in Chapter 4 that contingent planning the generation of plans with conditional
+branchingbasedonpercepts isappropriateforenvironmentswithpartialobservability,non-
+determinism, orboth. Forthepartially observable painting problem withthepercept axioms
+givenearlier, onepossible contingent solution isasfollows: Look At(Table),Look At(Chair),
+if Color(Table,c) Color(Chair,c)then No Op
+else Remove Lid(Can ),Look At(Can ),Remove Lid(Can ),Look At(Can ),
+1 1 2 2
+if Color(Table,c) Color(can,c)then Paint(Chair,can)
+elseif Color(Chair,c) Color(can,c)then Paint(Table,can)
+else Paint(Chair,Can ),Paint(Table,Can ) 1 1
+Variables in this plan should be considered existentially quantified; the second line says
+that if there exists some color c that is the color of the table and the chair, then the agent
+need not do anything to achieve the goal. When executing this plan, a contingent-planning
+agent can maintain its belief state as a logical formula and evaluate each branch condition
+by determining if the belief state entails the condition formula or its negation. (It is up to
+the contingent-planning algorithm to make sure that the agent will never end up in a be-
+lief state where the condition formula s truth value is unknown.) Note that with first-order
+conditions, the formula may be satisfied in more than one way; for example, the condition
+Color(Table,c) Color(can,c)mightbesatisfiedby can Can andby can Can if
+1 2
+both cans are the same color as the table. In that case, the agent can choose any satisfying
+substitution toapplytotherestoftheplan.
+As shown in Section 4.4.2, calculating the new belief state after an action and subse-
+quentperceptisdoneintwostages. Thefirststagecalculates thebeliefstateaftertheaction,
+justasforthesensorless agent: b (b DEL(a)) ADD(a)
+where,asbefore,wehaveassumedabeliefstaterepr

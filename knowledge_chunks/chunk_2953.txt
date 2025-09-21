@@ -1,0 +1,25 @@
+principalargumentsisthat AIresearch
+makespossibletheideathathumansareautomata anideathatresultsinalossofautonomy
+orevenofhumanity. Wenotethattheideahasbeenaroundmuchlongerthan AI,goingback
+at least to L Homme Machine (La Mettrie, 1748). Humanity has survived other setbacks to
+our sense of uniqueness: De Revolutionibus Orbium Coelestium (Copernicus, 1543) moved
+the Earth away from the center of the solar system, and Descent of Man (Darwin, 1871) put
+Homosapiens atthesamelevelasotherspecies. AI,ifwidelysuccessful, maybeatleast as
+threatening tothemoralassumptions of21st-century societyas Darwin stheoryofevolution
+wastothoseofthe19thcentury.
+AI systems might be used toward undesirable ends. Advanced technologies have
+oftenbeenusedbythepowerfultosuppress theirrivals. Asthenumbertheorist G.H.Hardy
+wrote(Hardy,1940), Ascienceissaidtobeusefulifitsdevelopmenttendstoaccentuatethe
+existing inequalities in the distribution of wealth, or more directly promotes the destruction
+of human life. Thisholds forall sciences, AIbeing no exception. Autonomous AI systems
+are now commonplace onthe battlefield; the U.S.military deployed over5,000 autonomous
+aircraft and 12,000 autonomous ground vehicles in Iraq (Singer, 2009). One moral theory
+holds thatmilitary robots arelikemedieval armortaken toitslogical extreme: noonewould
+have moral objections to a soldier wanting to wear a helmet when being attacked by large,
+angry, axe-wielding enemies, and a teleoperated robot is like a very safe form of armor. On
+the other hand, robotic weapons pose additional risks. To the extent that human decision
+making is taken out of the firing loop, robots may end up making decisions that lead to the
+killing of innocent civilians. At a larger scale, the possession of powerful robots (like the
+possession ofsturdyhelmets)maygiveanationoverconfidence, causingittogotowarmore
+recklessly than necessary. In most wars, at least one party is overconfident in its military
+abilities otherwise theconflictwouldhavebeenr

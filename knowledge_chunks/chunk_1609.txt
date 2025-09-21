@@ -1,0 +1,52 @@
+ck. In anondeterministic environment, branching
+is also introduced by the environment s choice of outcome for each action. We call these
+ANDNODE nodes AND nodes. For example, the Suck action in state 1 leads to a state in the set 5,7 ,
+so the agent would need to find a plan for state 5 and for state 7. These two kinds of nodes
+AND ORTREE
+alternate, leading toan AND OR treeasillustrated in Figure4.10.
+Asolution foran AND OR searchproblemisasubtreethat(1)hasagoalnodeatevery
+leaf, (2) specifies one action ateach of its OR nodes, and (3) includes every outcome branch
+at each of its AND nodes. The solution is shown in bold lines in the figure; it corresponds
+to the plan given in Equation (4.3). (The plan uses if then else notation to handle the AND
+branches,butwhentherearemorethantwobranchesatanode, itmightbebettertouseacase
+1
+Suck Right
+7 5 2
+GOAL
+Suck Right Left Suck
+5 1 6 1 8 4
+Suck Left
+LOOP LOOP LOOP GOAL
+8 5
+GOAL LOOP
+Figure 4.10 The first two levels of the search tree for the erratic vacuum world. State
+nodesare ORnodeswheresomeactionmustbechosen.Atthe AN Dnodes,shownascircles,
+everyoutcomemustbehandled,asindicatedbythearclinkingtheoutgoingbranches. The
+solutionfoundisshowninboldlines.
+136 Chapter 4. Beyond Classical Search
+function AND-OR-GRAPH-SEARCH(problem)returnsa conditional plan, or failure
+OR-SEARCH(problem.INITIAL-STATE,problem, )
+function OR-SEARCH(state,problem,path)returnsa conditional plan, or failure
+ifproblem.GOAL-TEST(state)thenreturntheemptyplan
+ifstate isonpath thenreturnfailure
+foreachaction inproblem.ACTIONS(state)do
+plan AND-SEARCH(RESULTS(state,action),problem, state path )
+ifplan (cid:7) failure thenreturn action plan returnfailure
+function AND-SEARCH(states,problem,path)returnsa conditional plan, or failure
+foreachsiinstates do
+plan
+i OR-SEARCH(si,problem,path)
+ifplan failure thenreturnfailure
+i
+return ifs
+1
+thenplan
+1
+elseifs
+2
+thenplan
+2
+else ...ifsn 1 thenplan
+n 1
+elseplan
+n Figure 4.11 An algorithmforsearching AND OR graphsgeneratedby n

@@ -1,0 +1,27 @@
+me. But there could be more than one such uni-
+fier. For example, UNIFY(Knows(John,x),Knows(y,z)) could return y John,x z or y John,x John,z John . The first unifier gives Knows(John,z) as the result of unifi-
+cation, whereas thesecond gives Knows(John,John). Thesecond result could beobtained
+from the first by an additional substitution z John ; we say that the first unifier is more
+generalthanthesecond, because itplaces fewerrestrictions onthe valuesofthevariables. It
+MOSTGENERAL turnsoutthat,foreveryunifiablepairofexpressions,thereisasinglemostgeneralunifier(or
+UNIFIER
+MGU)thatisunique uptorenaming andsubstitution ofvariables. (Forexample, x John and y John areconsideredequivalent,asare x John,y John and x John,y x .) In
+thiscaseitis y John,x z .
+Analgorithm forcomputing mostgeneral unifiers isshownin Figure 9.1. Theprocess
+issimple: recursivelyexplorethetwoexpressions simultaneously sidebyside, building up
+aunifieralongtheway,butfailingiftwocorresponding pointsinthestructuresdonotmatch.
+There is one expensive step: when matching a variable against a complex term, one must
+checkwhetherthevariableitselfoccursinsidetheterm;if itdoes,thematchfailsbecauseno
+consistent unifiercanbeconstructed. Forexample, S(x)can t unify with S(S(x)). Thisso-
+called occur checkmakes thecomplexity oftheentire algorithm quadratic inthesize ofthe
+OCCURCHECK
+expressions being unified. Some systems, including all logic programming systems, simply
+omittheoccurcheck andsometimes makeunsound inferences asaresult; othersystems use
+morecomplexalgorithms withlinear-time complexity.
+9.2.3 Storageand retrieval
+Underlying the TELL and ASK functions used to inform and interrogate a knowledge base
+are the more primitive STORE and FETCH functions. STORE(s) stores a sentence s into the
+knowledge base and FETCH(q) returns all unifiers such that the query q unifies with some
+328 Chapter 9. Inference in First-Order Logic
+function UNIFY(x,y, )returnsasubstitutiontomakex andy identical
+inputs:x,avariable,con

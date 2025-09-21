@@ -1,0 +1,31 @@
+le
+outputs,eachwithitsownprobability.The MFC Cfeaturelabels C through C arearbitrary,
+1 7
+standingforsomecombinationoffeaturevalues.
+(a) Word model with dialect variation:
+0.5 ey 1.0
+1.0 1.0 1.0 t ow m t ow 0.5 1.0 aa (b) Word model with coarticulation and dialect var:iations
+0.2 ow 1.0 0.5 ey 1.0
+1.0 t m t ow 0.8 1.0 0.5 1.0 ah aa Figure23.17 Twopronunciationmodelsoftheword tomato. Eachmodelis shownas
+atransitiondiagramwithstatesascirclesandarrowsshowingallowedtransitionswiththeir
+associatedprobabilities. (a)Amodelallowingfordialect differences. The0.5numbersare
+estimatesbasedonthetwoauthors preferredpronunciations.(b)Amodelwithacoarticula-
+tioneffectonthefirstvowel,allowingeitherthe ow orthe ah phone.
+Section23.5. Speech Recognition 917
+a phone as three states, the onset, middle, and end. For example, the t phone has a silent
+beginning, asmallexplosive burst ofsound inthemiddle, and(usually) ahissing attheend.
+Figure 23.16 shows an example for the phone m . Note that in normal speech, an average
+phone has a duration of 50 100 milliseconds, or 5 10 frames. The self-loops in each state
+allowsforvariation inthis duration. Bytaking manyself-loops (especially inthe midstate),
+we can represent a long mmmmmmmmmmm sound. Bypassing the self-loops yields a
+short m sound.
+PRONUNCIATION In Figure 23.17 the phone models are strung together to form a pronunciation model
+MODEL
+fora word. According to Gershwin (1937), you say t ow m ey t ow and I say t ow m aa t
+ow . Figure 23.17(a) shows a transition model that provides for this dialect variation. Each
+ofthecirclesinthisdiagramrepresents aphonemodelliketheonein Figure23.16.
+Inaddition todialect variation, wordscan have coarticulation variation. Forexample,
+the t phone is produced with the tongue at the top of the mouth, whereas the ow has the
+tongue near the bottom. When speaking quickly, the tongue doesn t have time to get into
+position for the ow , and we end up with t ah rather than t ow . Figure 23.17(b) gives
+a model for to

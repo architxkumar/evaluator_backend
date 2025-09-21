@@ -1,0 +1,31 @@
+oftheterminalnodes.
+b. Next to each internal node, write the strongest fact you can infer about its value (a
+number,oneormoreinequalities suchas 14 ,ora ? ).
+c. Beneatheachquestion mark,writethenameofthenodereached bythatbranch.
+d. Explainhowaboundonthevalueofthenodesin(c)canbederivedfromconsideration
+ofshortest-pathlengthsonthemap,andderivesuchboundsforthesenodes. Remember
+thecosttogettoeachleafaswellasthecosttosolveit.
+e. Nowsupposethatthetreeasgiven,withtheleafboundsfrom(d),isevaluatedfromleft
+to right. Circle those ? nodes that would not need to be expanded further, given the
+boundsfrompart(d),andcrossoutthosethatneednotbeconsidered atall.
+f. Canyouproveanythingingeneralaboutwhowinsthegameonamapthatisatree?
+Exercises 197
+5.4 Describeandimplementstatedescriptions,movegenerators,terminaltests,utilityfunc-
+tions,andevaluationfunctionsforoneormoreofthefollowingstochasticgames: Monopoly,
+Scrabble, bridgeplaywithagivencontract, or Texashold em poker.
+5.5 Describe and implement a real-time, multiplayer game-playing environment, where
+timeispartoftheenvironment stateandplayersaregivenfixedtimeallocations.
+5.6 Discusshowwellthestandardapproachtogameplayingwouldapplytogamessuchas
+tennis, pool,andcroquet, whichtakeplaceinacontinuous physicalstatespace.
+5.7 Prove the following assertion: Forevery game tree, the utility obtained by MAX using
+minimaxdecisions against asuboptimal MIN willbeneverbelowerthan theutility obtained
+playing against an optimal MIN. Can you come up with a game tree in which MAX can do
+stillbetterusingasuboptimal strategyagainstasuboptimal MIN?
+A B
+1 2 3 4
+Figure5.17 Thestartingpositionofasimplegame.Player Amovesfirst.Thetwoplayers
+taketurnsmoving,andeachplayermustmovehistokentoanopenadjacentspaceineither
+direction. If the opponent occupies an adjacent space, then a player may jump over the
+opponenttothenextopenspaceifany.(Forexample,if Aison3and Bison2,then Amay
+movebackto1.) Thegameendswhenoneplayerreachestheoppositeendoftheboard. If
+player A reaches 

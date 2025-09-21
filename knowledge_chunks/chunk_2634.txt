@@ -1,0 +1,42 @@
+al simplicity, wearbitrarily choose5 (0) 0.6, (0) (0) (0) 0.6, (0) (0) (0) 0.4. (20.8)
+F1 W1 H1 F2 W2 H2
+First, let us work on the parameter. In the fully observable case, we would estimate this
+directly fromthe observed counts ofcandies frombags1and2. Because thebagisahidden
+variable, we calculate the expected counts instead. The expected count N (Bag 1) is the
+sum,overallcandies, oftheprobability thatthecandycame frombag1:
+(cid:12)N (1) N (Bag 1) N P(Bag 1 flavor ,wrapper ,holes ) N .
+j j j
+j 1
+Theseprobabilities canbecomputed byanyinference algorithm for Bayesian networks. For
+a naive Bayes model such as the one in our example, we can do the inference by hand, using Bayes ruleandapplying conditional independence:
+(cid:12)N (1) 1
+(cid:2)
+P(flavorj Bag 1)P(wrapperj Bag 1)P(holesj Bag 1)P(Bag 1)
+.
+N
+j 1 i
+P(flavorj Bag i)P(wrapperj Bag i)P(holesj Bag i)P(Bag i)
+Applying thisformula to, say, the273 red-wrapped cherry candies withholes, weget acon-
+tribution of
+273 (0) (0) (0) (0) F1 W1 H1 0.22797.
+1000 (0) (0) (0) (0) (0) (0) (0) (1 (0))
+F1 W1 H1 F2 W2 H2
+Continuingwiththeothersevenkindsofcandyinthetableofcounts,weobtain (1) 0.6124.
+Nowletusconsidertheotherparameters, suchas . Inthefullyobservable case,we
+F1
+wouldestimatethisdirectlyfromtheobservedcountsofcherryandlimecandiesfrombag1.
+Theexpected countofcherrycandiesfrombag1isgivenby
+(cid:12)
+P(Bag 1 Flavor cherry,wrapper ,holes ).
+j j j
+j:Flavorj cherry
+5 Itisbetterinpracticetochoosethemrandomly,toavoidlocalmaximaduetosymmetry.
+822 Chapter 20. Learning Probabilistic Models
+Again, these probabilities can be calculated by any Bayes net algorithm. Completing this
+process, weobtainthenewvaluesofalltheparameters: (1) 0.6124, (1) 0.6684, (1) 0.6483, (1) 0.6558,
+F1 W1 H1 (20.9)
+(1) (1) (1) 0.3887, 0.3817, 0.3827.
+F2 W2 H2
+The log likelihood of the data increases from about 2044 initially to about 2021 after
+the first iteration, as shown in Figure 20.12(b). That is, the update improves the likelihood
+itself by a factor of a

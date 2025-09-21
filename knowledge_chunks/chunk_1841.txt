@@ -1,0 +1,38 @@
+(cid:16)Richardthe Lionheart(cid:17) Richard sleftleg
+(8.2)
+(cid:16)King John(cid:17) John sleftleg.
+Strictly speaking, models in first-order logic require total functions, that is, there must be a
+TOTALFUNCTIONS
+valueforeveryinputtuple. Thus, thecrownmusthavealeftlegandsomusteachoftheleft
+legs. Thereisatechnicalsolutiontothisawkwardprobleminvolvinganadditional invisible crown
+on head
+brother
+person person
+king
+brother
+R J left leg left leg
+Figure 8.2 A model containing five objects, two binary relations, three unary relations
+(indicatedbylabelsontheobjects),andoneunaryfunction,left-leg.
+292 Chapter 8. First-Order Logic
+object that is the left leg of everything that has no left leg, including itself. Fortunately, as
+long as one makes no assertions about the left legs of things that have no left legs, these
+technicalities areofnoimport.
+So far, we have described the elements that populate models for first-order logic. The
+other essential part of a model is the link between those elements and the vocabulary of the
+logicalsentences, whichweexplainnext.
+8.2.2 Symbols andinterpretations
+We turn now to the syntax of first-order logic. The impatient reader can obtain a complete
+description fromtheformalgrammarin Figure8.3.
+Thebasic syntactic elements of first-order logic are the symbols that stand forobjects,
+relations, and functions. The symbols, therefore, come in three kinds: constant symbols,
+CONSTANTSYMBOL
+which stand for objects; predicate symbols, which stand for relations; and function sym-
+PREDICATESYMBOL
+bols, whichstand forfunctions. Weadopt theconvention thatthese symbols willbeginwith
+FUNCTIONSYMBOL
+uppercase letters. For example, we might use the constant symbols Richard and John; the
+predicate symbols Brother, On Head, Person, King, and Crown; and the function symbol
+Left Leg. As with proposition symbols, the choice of names is entirely up to the user. Each
+predicate andfunction symbolcomeswithanaritythatfixesthenumberofarguments.
+ARITY
+Asin propositional lo

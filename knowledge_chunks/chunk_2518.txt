@@ -1,0 +1,31 @@
+ntoasetof Booleanfeatures.)
+The intuition we rely on is that if two points are close together in an n-dimensional
+space,thentheywillnecessarilybeclosewhenprojecteddownontoaone-dimensionalspace
+(aline). Infact, wecandiscretize thelineinto bins hash buckets so that, withhigh prob-
+ability, nearpoints project downto exactly the same bin. Points that are faraway from each
+otherwilltendtoproject downinto different binsformostprojections, but therewillalways
+be a few projections that coincidentally project far-apart points into the same bin. Thus, the
+bin forpoint x contains many(but not all)points thatare nearto x ,as wellassome points
+q q
+thatarefaraway.
+Thetrickof LS Histocreatemultiplerandomprojectionsandcombinethem. Arandom
+projection is just a random subset of the bit-string representation. We choose (cid:3) different
+randomprojectionsandcreate (cid:3)hashtables,g (x),...,g (x). Wethenenteralltheexamples
+1 (cid:3)
+intoeachhashtable. Thenwhengivenaquerypointx ,wefetchthesetofpointsinbing (q)
+q k
+foreach k,andunion these setstogether intoasetofcandidate points, C. Thenwecompute
+theactualdistancetox foreachofthepointsin C andreturnthekclosestpoints. Withhigh
+q
+probability, eachofthepointsthatarenearto x willshowupinatleastoneofthebins, and
+q
+although some far-away points will show up as well, we can ignore those. With large real-
+world problems, such as finding the near neighbors in a data set of 13 million Web images
+using512dimensions(Torralbaetal.,2008),locality-sensitivehashingneedstoexamineonly
+a few thousand images out of 13 million to find nearest neighbors; a thousand-fold speedup
+overexhaustiveork-dtreeapproaches.
+18.8.4 Nonparametric regression
+Now we ll look at nonparametric approaches to regression rather than classification. Fig-
+ure 18.28 shows an example of some different models. In (a), wehave perhaps the simplest
+method of all, known informally as connect-the-dots, and superciliously as piecewise-
+linear nonparametric regression. This model creates a f

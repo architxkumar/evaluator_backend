@@ -1,0 +1,28 @@
+Arecursiveimplementationofdepth-limitedtreesearch.
+mapcarefully, wewoulddiscoverthatanycitycanbereached fromanyothercityinatmost
+9steps. Thisnumber, knownasthediameterofthestatespace,givesusabetterdepthlimit,
+DIAMETER
+which leads to a more efficient depth-limited search. For most problems, however, we will
+notknowagooddepthlimituntilwehavesolvedtheproblem.
+Depth-limited search can beimplemented asasimple modification to thegeneral tree-
+or graph-search algorithm. Alternatively, it can be implemented as a simple recursive al-
+gorithm as shown in Figure 3.17. Notice that depth-limited search can terminate with two
+kinds of failure: the standard failure value indicates no solution; the cutoff value indicates
+nosolutionwithinthedepthlimit.
+3.4.5 Iterativedeepening depth-first search
+ITERATIVE Iterative deepening search (or iterative deepening depth-first search) is a general strategy,
+DEEPENINGSEARCH
+often used incombination withdepth-first tree search, that findsthe bestdepth limit. Itdoes
+thisbygraduallyincreasingthelimit first0,then1,then2,andsoon untilagoalisfound.
+This will occur when the depth limit reaches d, the depth of the shallowest goal node. The
+algorithm is shown in Figure 3.18. Iterative deepening combines the benefits of depth-first
+andbreadth-firstsearch. Likedepth-firstsearch,itsmemoryrequirementsaremodest: O(bd)
+tobeprecise. Likebreadth-first search, itiscomplete when thebranching factorisfiniteand
+optimalwhenthepathcostisanondecreasing function ofthedepthofthenode. Figure3.19
+showsfouriterationsof ITERATIVE-DEEPENING-SEARCH onabinarysearchtree,wherethe
+solution isfoundonthefourthiteration.
+Iterative deepening search may seem wasteful because states are generated multiple
+times. Itturns out this isnot too costly. Thereason is that inasearch tree with thesame (or
+nearly the same) branching factor at each level, most of the nodes are in the bottom level,
+so it does not mattermuch that the upper levels are generated multiple times. In an iterative
+deepen

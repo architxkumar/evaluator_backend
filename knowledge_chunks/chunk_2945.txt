@@ -1,0 +1,26 @@
+m
+A strong challenge to functionalism has been mounted by John Searle s (1980) biological
+BIOLOGICAL naturalism,accordingtowhichmentalstatesarehigh-levelemergentfeaturesthatarecaused
+NATURALISM
+by low-level physical processes in the neurons, and it is the (unspecified) properties of the
+neurons that matter. Thus, mental states cannot be duplicated just on the basis of some pro-
+gram having the same functional structure with the same input output behavior; we would
+requirethattheprogramberunningonanarchitecturewiththesamecausalpowerasneurons.
+Tosupporthisview,Searledescribes ahypothetical system thatisclearlyrunning aprogram
+andpassesthe Turing Test,butthatequallyclearly(according to Searle)doesnotunderstand
+anything of its inputs and outputs. His conclusion is that running the appropriate program
+(i.e.,havingtherightoutputs) isnotasufficient condition forbeingamind.
+The system consists of a human, who understands only English, equipped with a rule
+book, writtenin English, and various stacks ofpaper, someblank, somewithindecipherable
+inscriptions. (The human therefore plays the role of the CPU, the rule book is the program,
+and the stacks of paper are the storage device.) The system is inside a room with a small
+opening totheoutside. Through theopening appear slips ofpaperwithindecipherable sym-
+bols. Thehuman findsmatching symbols intherule book, andfollows theinstructions. The
+instructionsmayincludewritingsymbolsonnewslipsofpaper,findingsymbolsinthestacks,
+rearrangingthestacks,andsoon. Eventually,theinstructionswillcauseoneormoresymbols
+tobetranscribed ontoapieceofpaperthatispassedbacktotheoutsideworld.
+Sofar, so good. But from the outside, wesee a system that is taking input in the form
+of Chinese sentences and generating answers in Chinese that are as intelligent as those
+in the conversation imagined by Turing.4 Searle then argues: the person in the room does
+not understand Chinese (given). The rule book and the stacks of paper, being just pieces of
+paper, do not

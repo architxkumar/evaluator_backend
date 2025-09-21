@@ -1,0 +1,38 @@
+onclusions from incoming percepts, often without a specific query in
+mind. Forexample, thewumpusagent might TELL itspercepts totheknowledge baseusing
+Section7.6. Effective Propositional Model Checking 259
+Q
+P Q
+L M P P
+B L M
+A P L M
+A B L
+L
+A
+B
+A B
+(a) (b)
+Figure7.16 (a)Asetof Hornclauses. (b)Thecorresponding AND ORgraph.
+anincremental forward-chaining algorithm inwhichnewfactscanbeaddedtotheagendato
+initiate newinferences. Inhumans, acertain amount ofdata-driven reasoning occurs asnew
+information arrives. Forexample,if Iamindoorsandhearrainstartingtofall,itmightoccur
+tomethatthepicnicwillbecanceled. Yetitwillprobablynotoccurtomethattheseventeenth
+petalonthelargestroseinmyneighbor sgardenwillgetwet;humanskeepforwardchaining
+undercarefulcontrol, lesttheybeswampedwithirrelevant consequences.
+The backward-chaining algorithm, as its name suggests, works backward from the
+query. Ifthe query q is known to be true, then no work is needed. Otherwise, the algorithm
+finds those implications inthe knowledge base whose conclusion is q. If all the premises of
+one of those implications can be proved true (by backward chaining), then q is true. When
+applied to the query Q in Figure 7.16, it works back downthe graph until it reaches a set of
+knownfacts,Aand B,thatformsthebasisforaproof. Thealgorithm isessentially identical
+to the AND-OR-GRAPH-SEARCH algorithm in Figure 4.11. As with forward chaining, an
+efficientimplementation runsinlineartime.
+GOAL-DIRECTED Backward chaining is a form of goal-directed reasoning. It is useful for answering
+REASONING
+specificquestionssuchas Whatshall Idonow? and Wherearemykeys? Often,thecost
+ofbackward chaining is muchlessthanlinearinthesizeoftheknowledge base, because the
+processtouches onlyrelevantfacts.
+7.6 EFFECTIVE PROPOSITIONAL MODEL CHECKING
+In this section, we describe two families of efficient algorithms for general propositional
+inference based on model checking: One approach based on backtracking search, and one
+onlocalhill-climbing searc

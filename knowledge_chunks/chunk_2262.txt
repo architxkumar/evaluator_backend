@@ -1,0 +1,35 @@
+ansitions
+actually occurred andofwhatstatesgenerated thesensorreadings, andthese estimates
+canbeused toupdate themodels. Theupdated models provide newestimates, and the
+process iterates to convergence. The overall process is an instance of the expectation-
+maximizationor EMalgorithm. (See Section20.3.)
+Notethatlearning requiressmoothing, ratherthanfiltering, becausesmoothing provides bet-
+terestimatesofthestatesoftheprocess. Learningwithfilteringcanfailtoconvergecorrectly;
+consider, for example, the problem of learning to solve murders: unless you are an eyewit-
+ness, smoothing is always required to infer what happened at the murder scene from the
+observable variables.
+Theremainderofthissection describes generic algorithms forthefourinference tasks,
+independent oftheparticularkindofmodelemployed. Improvementsspecifictoeachmodel
+aredescribed insubsequent sections.
+15.2.1 Filteringand prediction
+As we pointed out in Section 7.7.3, a useful filtering algorithm needs to maintain a current
+stateestimateandupdateit,ratherthangoingbackovertheentirehistoryofperceptsforeach
+update. (Otherwise, thecostofeachupdateincreases astimegoesby.) Inotherwords,given
+the result of filtering up to time t, the agent needs to compute the result for t 1 from the
+newevidencee ,
+t 1
+P(X e ) f(e ,P(X e )),
+t 1 1:t 1 t 1 t 1:t
+RECURSIVE forsomefunctionf. Thisprocessiscalledrecursiveestimation. Wecanviewthecalculation
+ESTIMATION
+3 Inparticular,whentrackingamovingobjectwithinaccuratepositionobservations,smoothinggivesasmoother
+estimatedtrajectorythanfiltering hencethename.
+572 Chapter 15. Probabilistic Reasoning over Time
+asbeingcomposedoftwoparts: first,thecurrent statedistribution isprojected forwardfrom
+ttot 1;thenitisupdatedusingthenewevidencee . Thistwo-partprocessemergesquite
+t 1
+simplywhentheformulaisrearranged:
+P(X e ) P(X e ,e ) (dividing uptheevidence)
+t 1 1:t 1 t 1 1:t t 1 P(e X ,e )P(X e ) (using Bayes rule)
+t 1 t 1 1:t t 1 1:t P(e X )P(X e ) (bythesensor Markovassumption). (15.4)
+t 1

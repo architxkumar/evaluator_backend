@@ -1,0 +1,32 @@
+A.,639,1079 model,860,909,913
+fordecision-theoreticsystems,634 Krauss,P.,555,1088 indisambiguation,906
+level,236,275 Kriegspiel,180 natural,4,286,861
+Index 1113
+processing,16,860 computationaltheory,713 Lederberg,J.,23,468,1072,1080
+translation,21,784,907 912 decisionlists,715 717 Lee,C.-H.,1022,1078
+understanding,20,23 decisiontrees,697 703 Lee,K.-H.,1022,1078
+languagegeneration,899 determinations,785 Lee,M.S.,826,1083
+languageidentification,862 element,55 Lee,R.C.-T.,360,1068
+Laplace,P.,9,491,504,546,883,1079 ensemble,748,748 752 Lee,T.-M.,11,1084
+Laplacesmoothing,863 explanation-based,780 784 Leech,G.,920,921,1080,1086
+Laptev,I.,961,1080 gameplaying,850 851 legalreasoning,32
+large-scalelearning,712 grammar,921 Legendre,A.M.,759,1080
+Lari,K.,896,920,1080 heuristics,107 Lehmann,D.,434,1079
+Larkey,P.D.,687,1077 hidden Markovmodel,822 823 Lehmann,J.,439,469,1066
+Larran aga,P.,158,1080 hiddenvariables,820 Lehrer,J.,638,1080
+Larsen,B.,553,1080 hiddenvariables,822 Leibniz,G.W.,6,131,276,504,687
+Larson,G.,778 incremental,773,777 Leimer,H.,553,1080
+Larson,S.C.,759,1080 inductive,694,695 697 Leipzig,12
+Laruelle,H.,395,431,1073 knowledge-based,779,788,798 Leiserson,C.E.,1059,1069
+Laskey,K.B.,556,1080 instance-based,737,737 739,855 Lempel-Ziv-Welchcompression(LZW),
+Lassez,J.-L.,359,1077 knowledgein,777 780 867
+Lassila,O.,469,1065 linearlyseparablefunctions,731 Lenat,D.B.,27,439,469,474,800,
+latent Dirichletallocation,883 logical,768 776 1070,1075,1080
+latentsemanticindexing,883 MAP,804 805 lenssystem,931
+latentvariable,816 maximumlikelihood,806 810 Lenstra,J.K.,110,405,432,1080
+Latham,D.,856,1081 metalevel,102 Lenzerini,M.,471,1067
+Latombe,J.-C.,432,1012,1013,1071, mixturesof Gaussians,817 820 Leonard,H.S.,470,1080
+1078,1080,1093 naive Bayes,808 809 Leonard,J.,1012,1066,1080
+latticetheory,360 neuralnetwork,16,736 737 Leone,N.,230,472,1071,1074
+Laugherty,K.,920,1074 newpredicates,790,796 Lesh,N.,433,1072
+Lauritzen,S.,553,558,639,826,1069, noise,705 706 Les niewski,S.,470,1080

@@ -1,0 +1,26 @@
+ork(Newell,1990).
+Goals, furtheranalyzed as desires (general) and intentions (currently pursued), arecentral to
+the theory of agents developed by Bratman (1987). This theory has been influential both in
+Exercises 61
+naturallanguage understanding andmultiagent systems.
+Horvitz et al. (1988) specifically suggest the use of rationality conceived as the maxi-
+mization of expected utility as a basis for AI. Thetext by Pearl (1988) was the first in AI to
+coverprobabilityandutilitytheoryindepth;itsexpositionofpracticalmethodsforreasoning
+and decision making under uncertainty was probably the single biggest factor in the rapid
+shifttowardsutility-based agentsinthe1990s(see Part IV).
+Thegeneraldesignforlearningagentsportrayedin Figure2.15isclassicinthemachine
+learning literature (Buchanan et al., 1978; Mitchell, 1997). Examples of the design, as em-
+bodiedinprograms,gobackatleastasfaras Arthur Samuel s (1959,1967)learningprogram
+forplayingcheckers. Learningagentsarediscussed indepthin Part V.
+Interestinagentsandinagentdesignhasrisenrapidlyinrecentyears,partlybecauseof
+thegrowth ofthe Internet and theperceived needforautomated and mobilesoftbot (Etzioni
+and Weld, 1994). Relevant papers are collected in Readings in Agents (Huhns and Singh,
+1998)and Foundationsof Rational Agency(Wooldridgeand Rao,1999). Textsonmultiagent
+systems usually provide agoodintroduction tomanyaspects ofagent design (Weiss, 2000a;
+Wooldridge,2002). Severalconferenceseriesdevotedtoagentsbeganinthe1990s,including
+the International Workshop on Agent Theories, Architectures, and Languages (ATAL), the
+International Conference on Autonomous Agents (AGENTS), and the International Confer-
+enceon Multi-Agent Systems(ICMAS).In2002,thesethreemergedtoformthe International
+Joint Conference on Autonomous Agents and Multi-Agent Systems (AAMAS).Thejournal
+Autonomous Agents and Multi-Agent Systems was founded in 1998. Finally, Dung Beetle
+Ecology (Hanski and Cambefort, 1991) provides a wealth of interesting information 

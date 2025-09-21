@@ -1,0 +1,50 @@
+al state through the space
+of states, looking for a goal. One of the nice advantages of the declarative representation of
+actionschemasisthatwecanalsosearchbackwardfromthegoal,lookingfortheinitialstate.
+Figure10.5comparesforwardandbackwardsearches.
+10.2.1 Forward(progression) state-space search
+Nowthatwehaveshownhowaplanning problem mapsintoasearch problem, wecansolve
+planning problems with any of the heuristic search algorithms from Chapter 3 or a local
+search algorithm from Chapter 4 (provided we keep track of the actions used to reach the
+goal). From the earliest days of planning research (around 1961) until around 1998 it was
+assumed that forward state-space search was too inefficient to be practical. It is not hard to
+comeupwithreasonswhy.
+First, forward search is prone to exploring irrelevant actions. Consider the noble task
+of buying acopy of AI:A Modern Approach from an online bookseller. Suppose there is an
+At(P , B)
+1
+At(P , A)
+Fly(P 1 , A, B) 2
+At(P , A)
+1
+(a)
+At(P , A)
+2
+Fly(P, A, B) At(P , A)
+2 1
+At(P , B)
+2
+At(P , A)
+1
+At(P , B) Fly(P, A, B)
+2 1
+At(P , B)
+(b) 1
+At(P , B)
+2
+At(P , B) Fly(P, A, B)
+1 2
+At(P , A)
+2
+Figure 10.5 Two approaches to searching for a plan. (a) Forward (progression) search
+through the space of states, starting in the initial state and using the problem s actions to
+search forward for a member of the set of goal states. (b) Backward (regression) search
+throughsetsofrelevantstates,startingatthesetofstatesrepresentingthegoalandusingthe
+inverseoftheactionstosearchbackwardfortheinitialstate.
+374 Chapter 10. Classical Planning
+actionschema Buy( represents 10 billion ground actions. An uninformed forward-search algorithm would have
+tostartenumerating these10billionactions tofindonethat leadstothegoal.
+Second,planningproblemsoftenhavelargestatespaces. Consideranaircargoproblem
+with10airports, whereeachairporthas5planesand20piecesofcargo. Thegoalistomove
+allthecargo atairport Atoairport B. Thereisasimplesolution totheproblem: loadthe20
+pie

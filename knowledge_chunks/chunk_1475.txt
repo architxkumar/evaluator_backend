@@ -1,0 +1,32 @@
+e outcomesofitsactions.
+Episodic vs. sequential: In an episodic task environment, the agent s experience is
+EPISODIC
+dividedintoatomicepisodes. Ineachepisodetheagentreceivesaperceptandthenperforms
+SEQUENTIAL
+asingle action. Crucially, the next episode does not depend on theactions taken inprevious
+episodes. Many classification tasks are episodic. For example, an agent that has to spot
+defective parts on an assembly line bases each decision on the current part, regardless of
+previous decisions; moreover, the current decision doesn t affect whether the next part is
+44 Chapter 2. Intelligent Agents
+defective. In sequential environments, on the other hand, the current decision could affect
+allfuture decisions.3 Chessand taxidriving aresequential: inboth cases, short-term actions
+can have long-term consequences. Episodic environments are much simpler than sequential
+environments becausetheagentdoesnotneedtothinkahead.
+Staticvs.dynamic: Iftheenvironment canchangewhileanagentisdeliberating, then
+STATIC
+wesaytheenvironment isdynamic forthatagent;otherwise, itisstatic. Staticenvironments
+DYNAMIC
+areeasytodealwithbecausetheagentneednotkeeplookingattheworldwhileitisdeciding
+on an action, nor need it worry about the passage of time. Dynamic environments, on the
+other hand, are continuously asking the agent what it wants to do; if it hasn t decided yet,
+that counts as deciding to do nothing. If the environment itself does not change with the
+passage of time but the agent s performance score does, then we say the environment is
+semidynamic. Taxidrivingisclearlydynamic: theothercarsandthetaxi itselfkeepmoving
+SEMIDYNAMIC
+whilethe driving algorithm dithers about whattodonext. Chess, whenplayed withaclock,
+issemidynamic. Crosswordpuzzlesarestatic.
+Discretevs.continuous: Thediscrete continuous distinction applies tothestateofthe
+DISCRETE
+environment, to the way time is handled, and to the percepts and actions of the agent. For
+CONTINUOUS
+example, the chess environment has a finite nu

@@ -1,0 +1,35 @@
+4 Index
+Liang,G.,553,1068 Liu,J.S.,605,1080 logicalreasoning,249 264,284
+Liang,L.,604,1083 Liu,W.,826,1068 logicism,4
+Liao,X.,686,1077 Liu,X.,604,1083 logicprogramming,257,314,337,
+Liberatore,P.,279,1080 Livescu,K.,604,1080 339 345
+Lifchits,A.,885,1085 Livnat,A.,434,1080 constraint,344 345,359
+lifeinsurance,621 lizardtoasting,778 inductive(ILP),779,788 794,798
+Lifschitz,V.,472,473,1073,1080, localbeamsearch,125,126 tabled,343
+1091 localconsistency,208 Logic Theorist,17,276
+lifting,326,325 329,367 locality,267,547 LOGISTELLO,175,186
+inprobabilisticinference,544 locality-sensitivehash(LSH),740 logisticfunction,522,760
+liftinglemma,350,353 localization,145,581,979 logisticregression,726
+light,932 Markov,1012 logitdistribution,522
+Lighthill,J.,22,1080 locallystructuredsystem,515 loglikelihood,806
+Lighthillreport,22,24 locallyweightedregression,742 Lohn,J.D.,155,1080
+likelihood,803 localoptimum,669 London,14
+LIKELIHOOD-WEIGHTING,534 localsearch,120 129,154,229, Long,D.,394,395,1072,1073
+likelihoodweighting,532,552,596 262 263,275,277 long-distancedependencies,904
+Lim,G.,439,1089 locationsensors,974 long-termmemory,336
+limitedrationality,5 Locke,J.,6,1042,1080 Longley,N.,692,1080
+Lin,D.,885,1085 Lodge,D.,1051,1080 Longuet-Higgins,H.C.,1080
+Lin,J.,872,885,1065 Loebner Prize,1021 Loo,B.T.,275,1080
+Lin,S.,110,688,1080,1092 Loftus,E.,287,1080 LOOCV,708
+Lin,T.,439,1089 Logemann,G.,260,276,1070 Lookma,nohands,18
+Lincoln,A.,872 logic,4,7,240 243 lookuptable,736
+Lindley,D.V.,639,1080 atoms,294 295 Loomes,G.,637,1086
+Lindsay,R.K.,468,1080 default,459,468,471 looselycoupledsystem,427
+linear-chainconditionalrandomfield, equalityin,299 Lorenz,U.,193,1071
+878 first-order,285,285 321 lossfunction,710
+linearalgebra,1055 1057 inference,322 325 Lotem,A.,396,1091
+linearconstraint,205 semantics,290 lottery,612,642
+linearfunction,717 syntax,290 standard,615
+linear Gaussian,520,553,584,809 fuzzy,240,289,547,550,557 love,1021
+linearization,981 higher-order,289 Love,N.,195,1080
+linearprogrammin

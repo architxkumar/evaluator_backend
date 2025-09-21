@@ -1,0 +1,31 @@
+ether it is possible for information to be deleterious: can it actually have
+negative expected value? Intuitively, one should expect this to be impossible. After all, one
+couldintheworstcasejustignoretheinformationandpretendthatonehasneverreceivedit.
+Thisisconfirmedbythefollowingtheorem,whichappliestoanydecision-theoretic agent:
+Theexpected valueofinformation isnonnegative: e,E VPI (E ) 0.
+j e j
+Thetheoremfollowsdirectlyfromthedefinitionof VPI,andweleavetheproofasanexercise
+(Exercise16.18). Itis,ofcourse,atheoremaboutexpectedvalue,notactualvalue. Additional
+information can easily lead to a plan that turns out to be worse than the original plan if the
+information happens tobemisleading. Forexample, amedical testthatgivesafalsepositive
+resultmayleadtounnecessarysurgery;butthatdoesnotmeanthatthetestshouldn tbedone.
+632 Chapter 16. Making Simple Decisions
+Itisimportanttorememberthat VP Idependsonthecurrentstateofinformation, which
+is why it is subscripted. It can change as more information is acquired. Forany given piece
+of evidence E , the value of acquiring it can go down (e.g., if another variable strongly
+j
+constrains the posterior for E ) or up (e.g., if another variable provides a clue on which E
+j j
+builds, enabling anewandbetterplantobedevised). Thus,VP Iisnotadditive. Thatis,
+VPI (E ,E )(cid:7) VPI (E ) VPI (E ) (ingeneral) .
+e j k e j e k
+VP Iis,however,orderindependent. Thatis,
+VPI (E ,E ) VPI (E ) VPI (E ) VPI (E ) VPI (E ).
+e j k e j e,ej k e k e,ek j
+Order independence distinguishes sensing actions from ordinary actions and simplifies the
+problem ofcalculating thevalueofasequenceofsensingactions.
+16.6.4 Implementationofaninformation-gathering agent
+A sensible agent should ask questions in a reasonable order, should avoid asking questions
+that are irrelevant, should take into account the importance of each piece of information in
+relation to its cost, and should stop asking questions when that is appropriate. All of these
+capabilities canbeachievedbyusingth

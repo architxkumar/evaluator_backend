@@ -1,0 +1,22 @@
+ any of the search algorithms of Chapter 3. In fact, we can do a little bit more
+than that. In ordinary graph search, newly generated states are tested to see if they are
+identical toexisting states. Thisworksforbelief states, too; forexample, in Figure 4.14, the
+action sequence Suck,Left,Suck starting at the initial state reaches the same belief state as Right,Left,Suck , namely, 5,7 . Now, consider the belief state reached by Left , namely, 1,3,5,7 . Obviously, this is not identical to 5,7 , but it is a superset. It is easy to prove
+(Exercise4.8)thatifanactionsequenceisasolutionforabeliefstateb,itisalsoasolutionfor
+anysubset ofb. Hence, wecandiscardapathreaching 1,3,5,7 if 5,7 hasalready been
+generated. Conversely, if 1,3,5,7 has already been generated and found to be solvable,
+thenanysubset, suchas 5,7 , isguaranteed tobesolvable. Thisextralevelofpruningmay
+dramatically improvetheefficiencyofsensorless problem solving.
+Evenwiththisimprovement,however,sensorlessproblem-solvingaswehavedescribed
+itisseldom feasible inpractice. Thedifficulty isnotsomuchthevastness ofthebelief-state
+space even though it is exponentially larger than the underlying physical state space; in
+most cases the branching factor and solution length in the belief-state space and physical
+state space are not so different. The real difficulty lies with the size of each belief state. For
+example, the initial belief state forthe 10 10 vacuum worldcontains 100 2100 oraround
+1032 physical states far too many if we use the atomic representation, which is an explicit
+listofstates.
+One solution is to represent the belief state by some more compact description. In
+English, we could say the agent knows Nothing in the initial state; after moving Left, we
+could say, Not in the rightmost column, and so on. Chapter 7 explains how to do this in a
+formal representation scheme. Another approach is to avoid the standard search algorithms,
+whichtreatbeliefstatesasblackboxesjustlikeanyotherproblemstate. Instead,weca

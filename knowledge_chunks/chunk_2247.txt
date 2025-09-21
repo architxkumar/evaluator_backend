@@ -1,0 +1,41 @@
+work(a),intermsof sandm.
+child
+e. Suppose that P(G l) P(G l) q. In network (a), derive an expres-
+father mother
+sionfor P(G l)intermsofmandq only,byconditioning onitsparentnodes.
+child
+f. Under conditions of genetic equilibrium, we expect the distribution of genes to be the
+sameacrossgenerations. Usethistocalculatethevalueofq,and,givenwhatyouknow
+abouthandedness inhumans, explainwhythehypothesis described atthebeginning of
+thisquestionmustbewrong.
+14.7 The Markov blanket of a variable is defined on page 517. Prove that a variable
+is independent of all other variables in the network, given its Markov blanket and derive
+Equation(14.12)(page538).
+Battery
+Radio Ignition Gas
+Starts
+Moves
+Figure 14.21 A Bayesian network describing some features of a car s electrical system
+and engine. Each variable is Boolean, and the true value indicates that the corresponding
+aspectofthevehicleisinworkingorder.
+Exercises 561
+14.8 Considerthenetworkforcardiagnosis shownin Figure14.21.
+a. Extendthenetworkwiththe Booleanvariables Icy Weather and Starter Motor.
+b. Givereasonable conditional probability tablesforallthenodes.
+c. How many independent values are contained in the joint probability distribution for
+eight Boolean nodes, assuming that no conditional independence relations are known
+toholdamongthem?
+d. Howmanyindependent probability valuesdoyournetworktablescontain?
+e. Theconditionaldistributionfor Starts couldbedescribedasanoisy-AN Ddistribution.
+Definethisfamilyingeneral andrelateittothenoisy-ORdistribution.
+14.9 Considerthefamilyoflinear Gaussiannetworks, asdefinedonpage520.
+a. In a two-variable network, let X be the parent of X , let X have a Gaussian prior,
+1 2 1
+and let P(X X ) be a linear Gaussian distribution. Show that the joint distribution
+2 1
+P(X ,X )isamultivariate Gaussian, andcalculateitscovariance matrix.
+1 2
+b. Prove by induction that the joint distribution for a general linear Gaussian network on
+X ,...,X isalsoamultivariate Gaussian.
+1 n
+14.10 Theprobit distributi

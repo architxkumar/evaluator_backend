@@ -1,0 +1,36 @@
+nown facts. For example, if L
+1,1
+and Breeze areknownand (L Breeze) B isintheknowledge base, then B can
+1,1 1,1 1,1
+beadded. Thisprocesscontinues untilthequery q isaddedoruntilnofurtherinferences can
+bemade. Thedetailedalgorithm isshownin Figure7.15;themainpointtorememberisthat
+itrunsinlineartime.
+The best way to understand the algorithm is through an example and a picture. Fig-
+ure 7.16(a) shows a simple knowledge base of Horn clauses with A and B as known facts.
+Figure 7.16(b) shows the same knowledge base drawn as an AND OR graph (see Chap-
+ter 4). In AND OR graphs, multiple links joined by an arc indicate a conjunction every
+link must be proved while multiple links without an arc indicate a disjunction any link
+canbeproved. Itiseasytoseehowforwardchaining worksinthegraph. Theknownleaves
+(here, A and B) are set, and inference propagates up the graph as far as possible. Wher-
+ever a conjunction appears, the propagation waits until all the conjuncts are known before
+proceeding. Thereaderisencouraged toworkthroughtheexampleindetail.
+258 Chapter 7. Logical Agents
+function PL-FC-ENTAILS?(KB,q)returnstrue orfalse
+inputs:KB,theknowledgebase,asetofpropositionaldefiniteclauses
+q,thequery,apropositionsymbol
+count atable,wherecount c isthenumberofsymbolsinc spremise
+inferred atable,whereinferred s isinitiallyfalse forallsymbols
+agenda aqueueofsymbols,initiallysymbolsknowntobetruein KB
+whileagenda isnotemptydo
+p POP(agenda)
+ifp q thenreturntrue
+ifinferred p false then
+inferred p true
+foreachclausec in KB wherep isinc.PREMIS Edo
+decrementcount c ifcount c 0thenaddc.CONCLUSIO Ntoagenda
+returnfalse
+Figure7.15 Theforward-chainingalgorithmforpropositionallogic. Theagenda keeps
+trackofsymbolsknownto betruebutnotyet processed. The count tablekeepstrackof
+howmanypremisesofeachimplicationareasyetunknown.Wheneveranewsymbolpfrom
+theagendaisprocessed,thecountisreducedbyoneforeachimplicationinwhosepremise
+p appears(easily identified in constanttime with appropriateindexing.) If a countre

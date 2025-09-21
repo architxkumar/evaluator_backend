@@ -1,0 +1,44 @@
+ic form of linear Gaussian model; the general
+formwillbedescribed laterinthissectionandcoversavast arrayofapplications beyondthe
+simplemotionexamplesofthefirstparagraph. Thereadermightwishtoconsult Appendix A
+for some of the mathematical properties of Gaussian distributions; for our immediate pur-
+MULTIVARIATE poses, the most important is that a multivariate Gaussian distribution for d variables is
+GAUSSIAN
+specifiedbyad-elementmean andad dcovariance matrix .
+15.4.1 Updating Gaussiandistributions
+In Chapter14onpage521,wealludedtoakeypropertyofthelinear Gaussianfamilyofdis-
+tributions: itremainsclosedunderthestandard Bayesiannetworkoperations. Here,wemake
+this claim precise in the context of filtering in a temporal probability model. The required
+properties correspond tothetwo-stepfilteringcalculation in Equation(15.5):
+1. Ifthecurrent distribution P(X e )is Gaussian andthetransition model P(X x )
+t 1:t t 1 t
+islinear Gaussian,thentheone-step predicted distribution givenby
+(cid:26)
+P(X e ) P(X x )P(x e )dx (15.17)
+t 1 1:t t 1 t t 1:t t
+xt
+isalsoa Gaussiandistribution.
+Section15.4. Kalman Filters 585
+X t X t 1
+X t X t 1
+Z t Z t 1
+Figure15.9 Bayesiannetworkstructureforalineardynamicalsystemwithposition Xt,
+velocity X t,andpositionmeasurement Zt.
+2. Iftheprediction P(X e )is Gaussianandthesensormodel P(e X )islinear
+t 1 1:t t 1 t 1
+Gaussian,then,afterconditioning onthenewevidence, theupdated distribution
+P(X e ) P(e X )P(X e ) (15.18)
+t 1 1:t 1 t 1 t 1 t 1 1:t
+isalsoa Gaussiandistribution.
+Thus, the FORWARD operator for Kalman filtering takes a Gaussian forward message f
+1:t
+,
+specifiedbyamean andcovariance matrix ,andproducesanewmultivariate Gaussian
+t t
+forward message f , specified by a mean and covariance matrix . So, if we
+1:t 1 t 1 t 1
+startwitha Gaussianprior f P(X ) N( , ),filteringwithalinear Gaussianmodel
+1:0 0 0 0
+produces a Gaussianstatedistribution foralltime.
+This seems to be a nice, elegant result, but why is it so important? The reason is that,
+except fo

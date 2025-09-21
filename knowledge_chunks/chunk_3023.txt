@@ -1,0 +1,27 @@
+1971). Thecomplexityoftheorem- to Computational Genomics: A Case Studies Ap- Dasgupta,P.,Chakrabarti,P.P.,andde Sarkar,S.C.
+provingprocedures.In STOC-71,pp.151 158. proach.Cambridge University Press. (1994).Agentsearchinginatreeandtheoptimality
+ofiterativedeepening.AIJ,71,195 208.
+Cook,S.A.and Mitchell,D.(1997). Findinghard Cristianini,N.and Scho lkopf,B.(2002). Support
+instancesofthesatisfiabilityproblem:Asurvey. In vectormachinesandkernelmethods:Thenewgen-
+Davidson,D.(1980).Essayson Actionsand Events.
+Oxford University Press.
+Du,D.,Gu,J.,and Pardalos,P.(Eds.),Satisfiabil- erationoflearningmachines.AI Mag,23(3),31 41.
+ity problems: Theory andapplications. American Davies,T.R.(1985). Analogy. Informalnote IN-
+Cristianini, N. and Shawe-Taylor, J.(2000). An
+Mathematical Society. CSLI-85-4,Centerforthe Studyof Languageand
+introductiontosupportvectormachinesandother
+Information(CSLI).
+Cooper,G.(1990). Thecomputationalcomplexity kernel-basedlearningmethods.Cambridge Univer-
+ofprobabilisticinferenceusing Bayesianbeliefnet- sity Press. Davies,T.R.and Russell,S.J.(1987).Alogicalap-
+works.AIJ,42,393 405. proachtoreasoningbyanalogy.In IJCAI-87,Vol.1,
+Crockett,L.(1994).The Turing Testandthe Frame
+pp.264 270.
+Cooper,G.and Herskovits,E.(1992). ABayesian Problem: AI s Mistaken Understandingof Intelli-
+methodfortheinductionofprobabilisticnetworks gence.Ablex. Davis,E.(1986).Representingand Acquiring Geo-
+fromdata.Machine Learning,9,309 347. graphic Knowledge.Pitmanand Morgan Kaufmann.
+Croft, B., Metzler, D., and Stroham, T. (2009).
+Copeland, J. (1993). Artificial Intelligence: Search Engines: Informationretrievalin Practice. Davis,E.(1990). Representationsof Commonsense
+APhilosophical Introduction.Blackwell. Addison Wesley. Knowledge.Morgan Kaufmann.
+1070 Bibliography
+Davis,E.(2005). Knowledgeandcommunication: de Marcken, C.(1996). Unsupervised Language Dechter,R.(1999).Bucketelimination:Aunifying
+Afirst-ordertheory. AIJ,166,81 140. Acquisition.Ph.D.thesis,MIT. frameworkforreasoni

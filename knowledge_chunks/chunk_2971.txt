@@ -1,0 +1,24 @@
+ingandperception algorithmscanbecombinedtodoa
+reasonable job of reporting low-level predicates such as the cup is on the table. Detecting
+higher-level actions, such as Dr. Russell is having a cup of tea with Dr. Norvig while dis-
+cussingplansfornextweek, ismoredifficult. Currentlyit canbedone(see Figure24.25on
+page961)onlywiththehelpofannotated examples.
+Anotherproblemisthat,althoughtheapproximatefiltering algorithmsfrom Chapter15
+can handle quite large environments, they are still dealing with a factored representation theyhaverandomvariables,butdonotrepresentobjectsand relationsexplicitly. Section14.6
+explained how probability and first-order logic can be combined to solve this problem, and
+1046 Chapter 27. AI:The Presentand Future
+Section14.6.3showedhowwecanhandleuncertaintyabouttheidentityofobjects. Weexpect
+thattheapplicationoftheseideasfortrackingcomplexenvironmentswillyieldhugebenefits.
+However, weare still faced withadaunting task ofdefining general, reusable representation
+schemesforcomplexdomains. Asdiscussedin Chapter12,wedon tyetknowhowtodothat
+ingeneral; only forisolated, simple domains. Itispossible that anewfocus onprobabilistic
+ratherthanlogicalrepresentationcoupledwithaggressivemachinelearning(ratherthanhand-
+encoding ofknowledge) willallowforprogress.
+Projecting,evaluating,andselectingfuturecoursesofaction: Thebasicknowledge-
+representation requirements hereare thesameasforkeeping track ofthe world; theprimary
+difficulty is coping with courses of action such as having a conversation or a cup of tea that consist eventually of thousands ormillions of primitive steps fora real agent. It is only
+by imposing hierarchical structure on behavior that we humans cope at all. We saw in
+Section 11.2 how to use hierarchical representations to handle problems of this scale; fur-
+thermore, work in hierarchical reinforcement learning has succeeded in combining some
+ofthese ideas withthe techniques fordecision making under uncertainty described in Chap-
+ter 17. As 

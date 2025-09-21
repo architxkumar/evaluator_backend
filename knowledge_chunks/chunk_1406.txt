@@ -1,0 +1,30 @@
+rrogator,after
+posingsomewrittenquestions, cannottellwhetherthewrittenresponsescomefromaperson
+orfromacomputer. Chapter26discussesthedetailsofthetestandwhetheracomputerwould
+really be intelligent if it passed. For now, we note that programming a computer to pass a
+rigorously applied test provides plenty towork on. Thecomputerwould need to possess the
+followingcapabilities:
+NATURALLANGUAGE naturallanguageprocessing toenableittocommunicatesuccessfully in English;
+PROCESSING
+KNOWLEDGE knowledgerepresentation tostorewhatitknowsorhears;
+REPRESENTATION
+AUTOMATED automated reasoning to use the stored information to answer questions and to draw
+REASONING
+newconclusions; machinelearningtoadapttonewcircumstancesandtodetectandextrapolatepatterns.
+MACHINELEARNING
+1 Bydistinguishingbetweenhumanandrationalbehavior, wearenotsuggestingthathumansarenecessarily irrational inthesenseof emotionallyunstable or insane. Onemerelyneednotethat wearenot perfect:
+notallchessplayersaregrandmasters;and,unfortunately,noteveryonegetsan Aontheexam.Somesystematic
+errorsinhumanreasoningarecatalogedby Kahnemanetal.(1982).
+Section1.1. What Is AI? 3
+Turing stestdeliberately avoideddirectphysicalinteraction betweentheinterrogatorandthe
+computer, because physical simulation ofaperson isunnecessary forintelligence. However,
+the so-called total Turing Test includes a video signal so that the interrogator can test the
+TOTALTURINGTEST
+subject s perceptual abilities, as well as the opportunity for the interrogator to pass physical
+objects through thehatch. Topassthetotal Turing Test,thecomputerwillneed computervisiontoperceiveobjects, and
+COMPUTERVISION roboticstomanipulate objectsandmoveabout.
+ROBOTICS
+These six disciplines compose most of AI, and Turing deserves credit for designing a test
+that remains relevant 60 years later. Yet AI researchers have devoted little effort to passing
+the Turing Test, believing that it is more important to study the underlying principles of in-
+telligence thantoduplicate anex

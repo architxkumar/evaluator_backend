@@ -1,0 +1,28 @@
+cantly. Because
+Q-learning usesthebest Q-value, itpaysnoattention tothe actual policybeing followed it
+isanoff-policylearningalgorithm,whereas SARS Aisanon-policyalgorithm. Q-learningis
+OFF-POLICY
+moreflexiblethan SARSA,inthesensethata Q-learningagentcanlearnhowtobehavewell
+ON-POLICY
+evenwhenguidedbyarandomoradversarial exploration policy. Ontheotherhand,SARSA
+ismorerealistic: forexample,iftheoverallpolicyisevenpartlycontrolledbyotheragents,it
+isbettertolearna Q-functionforwhatwillactuallyhappen ratherthanwhattheagentwould
+liketohappen.
+Section21.4. Generalization in Reinforcement Learning 845
+Both Q-learning and SARSA learn the optimal policy for the 4 3 world, but do so
+at a much slower rate than the ADP agent. This is because the local updates do not enforce
+consistencyamongallthe Q-valuesviathemodel. Thecomparisonraisesageneralquestion:
+is it better to learn a model and a utility function or to learn an action-utility function with
+no model? In other words, what is the best way to represent the agent function? This is
+an issue at the foundations of artificial intelligence. As we stated in Chapter 1, one of the
+key historical characteristics of much of AI research is its (often unstated) adherence to the
+knowledge-based approach. This amounts to an assumption that the best way to represent
+the agent function is to build a representation of some aspects of the environment in which
+theagentissituated.
+Some researchers, both inside and outside AI, have claimed that the availability of
+model-free methods such as Q-learning means thatthe knowledge-based approach isunnec-
+essary. Thereis,however,littletogoonbutintuition. Ourintuition,forwhatit sworth,isthat
+as the environment becomes more complex, the advantages of a knowledge-based approach
+become more apparent. This is borne out even in games such as chess, checkers (draughts),
+and backgammon (see next section), where efforts to learn an evaluation function by means
+ofamodelhavemetwithmoresuccessthan Q-learning metho

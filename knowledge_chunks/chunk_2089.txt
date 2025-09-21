@@ -1,0 +1,28 @@
+insemantic networks
+implements the overriding of defaults in a simple and natural way. In this section, we study
+defaults more generally, with a view toward understanding the semantics of defaults rather
+thanjustproviding aprocedural mechanism.
+12.6.1 Circumscription anddefault logic
+Wehaveseentwoexamplesofreasoningprocessesthatviolatethemonotonicitypropertyof
+logic that was proved in Chapter 7.8 In this chapter we saw that a property inherited by all
+membersofacategory inasemanticnetworkcouldbeoverridden bymorespecificinforma-
+tionforasubcategory. In Section 9.4.5,wesawthat undertheclosed-world assumption, ifa
+proposition isnotmentioned in KB then KB ,but KB .
+Simple introspection suggests that these failures of monotonicity are widespread in
+commonsense reasoning. It seems that humans often jump to conclusions. For example,
+when one sees a car parked on the street, one is normally willing to believe that it has four
+wheels even though only three are visible. Now, probability theory can certainly provide a
+conclusion thatthefourth wheelexists withhighprobability, yet,formostpeople, thepossi-
+bility of the car s not having four wheels does not arise unless some new evidence presents
+itself. Thus, it seems that the four-wheel conclusion is reached by default, in the absence of
+anyreason todoubt it. Ifnewevidence arrives forexample, ifonesees theownercarrying
+awheelandnoticesthatthecarisjackedup thentheconclusioncanberetracted. Thiskind
+of reasoning is said to exhibit nonmonotonicity, because the set of beliefs does not grow
+NONMONOTONICITY
+NONMONOTONIC monotonically over time as new evidence arrives. Nonmonotonic logics have been devised
+LOGIC
+withmodifiednotionsoftruthandentailmentinordertocapturesuchbehavior. Wewilllook
+attwosuchlogicsthathavebeenstudied extensively: circumscription anddefaultlogic.
+8 Recallthatmonotonicityrequiresallentailedsentencestoremainentailedafternewsentencesareaddedtothe
+KB.Thatis,if KB then KB .
+Section12.6. Reasoning with Default Informa

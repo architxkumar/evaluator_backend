@@ -1,0 +1,37 @@
+probability of seeing this
+particularsequence ofexamples,givenafixedvalueof )intermsof ,p,andn.
+b. Bydifferentiatingtheloglikelihood L,findthevalueof thatmaximizesthelikelihood.
+c. Nowsuppose weaddink Booleanrandomvariables X ,X ,...,X (the attributes )
+1 2 k
+that describe each sample, and suppose weassume that the attributes are conditionally
+independent ofeach other given the goal Y. Draw the Bayes net corresponding to this
+assumption.
+d. Write down the likelihood for the data including the attributes, using the following
+additional notation: is P(X true Y true).
+i i is P(X true Y false).
+i i p isthecountofsamplesforwhich X trueand Y true.
+i i n isthecountofsamplesforwhich X falseand Y true.
+i i p isthecountofsamplesforwhich X trueand Y false.
+i i n isthecountofsamplesforwhich X falseand Y false.
+i i Hint: considerfirsttheprobability ofseeingasingleexamplewithspecifiedvaluesfor
+X ,X ,...,X and Y. 1 2 k
+e. Bydifferentiating theloglikelihood L,findthevaluesof and (intermsofthevar-
+i i
+iouscounts)thatmaximizethelikelihoodandsayinwordswhatthesevaluesrepresent.
+f. Letk 2,andconsideradatasetwith4allfourpossibleexamplesofthe XO Rfunction.
+Computethemaximumlikelihood estimates of , , , ,and .
+1 2 1 2
+g. Given these estimates of , , , , and , what are the posterior probabilities
+1 2 1 2
+P(Y true x ,x )foreachexample?
+1 2
+20.10 Consider the application of EM to learn the parameters for the network in Fig-
+ure20.13(a), giventhetrueparametersin Equation(20.7).
+a. Explain why the EM algorithm would not work if there were just two attributes in the
+modelratherthanthree.
+b. Showthecalculations forthefirstiterationof EMstarting from Equation(20.8).
+c. What happens if we start with all the parameters set to the same value p? (Hint: you
+mayfindithelpful toinvestigate thisempirically beforederivingthegeneral result.)
+d. Writeoutanexpressionfortheloglikelihoodofthetabulatedcandydataonpage821in
+termsoftheparameters,calculatethepartialderivatives withrespecttoeachparameter,
+andinvestig

@@ -1,0 +1,31 @@
+rsretrieved.
+She wants to be sure that she has seen everything in the document collection that is
+Exercises 887
+relevant to her query. (E.g., a lawyer wants to be sure that she has found all relevant
+precedents, andiswillingtospendconsiderable resources onthat.)
+d. The searcher needs just one document relevant to the query, and can afford to pay a
+researchassistantforanhour sworklookingthroughtheresults. Theassistantcanlook
+through 100 retrieved documents inan hour. Theassistant will charge the searcher for
+thefullhourregardlessofwhetherhefindsitimmediatelyor attheendofthehour.
+e. The searcher will look through all the answers. Examining a document has cost A;
+finding arelevant document has value B; failing to finda relevant document has cost C foreachrelevantdocumentnotfound.
+f. Thesearcherwantstocollectasmanyrelevantdocumentsaspossible, butneedssteady
+encouragement. She looks through the documents in order. If the documents she has
+lookedatsofararemostlygood, shewillcontinue; otherwise, shewillstop.
+23
+NATURAL LANGUAGE
+FOR COMMUNICATION
+Inwhichweseehowhumanscommunicatewithoneanotherinnaturallanguage,
+andhowcomputeragentsmightjoinintheconversation.
+Communicationistheintentional exchange ofinformation broughtaboutby theproduction
+COMMUNICATION
+andperceptionofsignsdrawnfromasharedsystemofconventional signs. Mostanimalsuse
+SIGN
+signs torepresent important messages: foodhere, predator nearby, approach, withdraw, let s
+mate. Inapartially observable world, communication canhelpagents besuccessful because
+theycanlearninformationthatisobservedorinferredbyothers. Humansarethemostchatty
+of all species, and if computer agents are to be helpful, they ll need to learn to speak the
+language. In this chapter we look at language models for communication. Models aimed at
+deep understanding of a conversation necessarily need to be more complex than the simple
+models aimed at, say, spam classification. We start with grammatical models of the phrase
+structure of sentences, add semanti

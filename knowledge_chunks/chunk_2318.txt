@@ -1,0 +1,32 @@
+w if students are getting enough sleep. Each day, the pro-
+fessor observes whether the students sleep in class, and whether they have red eyes. The
+professorhasthefollowingdomaintheory: Thepriorprobability ofgetting enoughsleep,withnoobservations, is0.7. The probability of getting enough sleep on night t is 0.8 given that the student got
+enoughsleeptheprevious night,and0.3ifnot. Theprobability ofhaving redeyesis0.2ifthestudent gotenough sleep,and0.7ifnot. Theprobabilityofsleepinginclassis0.1ifthestudentgotenoughsleep,and0.3ifnot.
+Formulate this information as a dynamic Bayesian network that the professor could use to
+filter or predict from a sequence of observations. Then reformulate it as a hidden Markov
+model that has only a single observation variable. Give the complete probability tables for
+themodel.
+15.14 Forthe DB Nspecifiedin Exercise15.13andfortheevidence values
+e notredeyes,notsleepinginclass
+1
+e redeyes,notsleepinginclass
+2
+e redeyes,sleepinginclass
+3
+perform thefollowingcomputations:
+a. Stateestimation: Compute P(Enough Sleep e )foreachoft 1,2,3.
+t 1:t
+b. Smoothing: Compute P(Enough Sleep e )foreachoft 1,2,3.
+t 1:3
+c. Comparethefilteredandsmoothedprobabilities for t 1andt 2.
+15.15 Supposethataparticularstudentshowsupwithredeyesandsleepsinclasseveryday.
+Giventhemodeldescribedin Exercise15.13,explainwhytheprobabilitythatthestudenthad
+enough sleeptheprevious nightconverges toafixedpointratherthancontinuing togodown
+as wegather more days of evidence. What is the fixed point? Answerthis both numerically
+(bycomputation) andanalytically.
+15.16 Thisexerciseanalyzesinmoredetailthepersistent-failure modelforthebatterysen-
+sorin Figure15.15(a) (page594).
+a. Figure 15.15(b) stops at t 32. Describe qualitatively what should happen as t ifthesensorcontinues toread0.
+b. Supposethattheexternaltemperatureaffectsthebattery sensorinsuchawaythattran-
+sient failures become more likely as temperature increases. Show how to augment the
+DB Nstructure in Figure15.15(a),andexplai

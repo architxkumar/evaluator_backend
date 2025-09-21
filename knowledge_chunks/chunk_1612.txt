@@ -1,0 +1,29 @@
+lutionwilleventu-
+allyreachthegoalprovidedthateachoutcomeofanondeterministicactioneventuallyoccurs.
+Is this condition reasonable? It depends on the reason forthe nondeterminism. If the action
+rollsadie,then it sreasonable tosuppose thateventually asixwillberolled. Iftheaction is
+toinsertahotelcardkeyintothedoorlock,butitdoesn t workthefirsttime,thenperhaps it
+willeventuallywork,orperhapsonehasthewrongkey(orthe wrongroom!). Aftersevenor
+138 Chapter 4. Beyond Classical Search
+eighttries,mostpeoplewillassumetheproblem iswiththekeyandwillgobacktothefront
+desk to getanew one. Onewayto understand this decision isto saythat the initial problem
+formulation (observable, nondeterministic) is abandoned in favor of a different formulation
+(partially observable, deterministic) where the failure is attributed to an unobservable prop-
+ertyofthekey. Wehavemoretosayonthisissuein Chapter13.
+4.4 SEARCHING WITH PARTIAL OBSERVATIONS
+We now turn to the problem of partial observability, where the agent s percepts do not suf-
+fice to pin down the exact state. As noted at the beginning of the previous section, if the
+agent is in one of several possible states, then an action may lead to one of several possible
+outcomes even if the environment is deterministic. The key concept required for solving
+partiallyobservableproblemsisthe beliefstate,representing theagent scurrentbeliefabout
+BELIEFSTATE
+the possible physical states it might be in, given the sequence of actions and percepts up to
+that point. Webegin withthe simplest scenario forstudying belief states, which iswhen the
+agenthasnosensorsatall;thenweaddinpartialsensingaswellasnondeterministic actions.
+4.4.1 Searching withno observation
+When the agent s percepts provide no information at all, we have what is called a sensor-
+less problem or sometimes a conformant problem. At first, one might think the sensorless
+SENSORLESS
+agent has no hope ofsolving aproblem if ithas no idea whatstate it s in; in fact, sensorless
+CONFORMANT
+problems are 

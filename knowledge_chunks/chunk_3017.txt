@@ -1,0 +1,24 @@
+I-98,pp.
+875 881.
+Carnap,R.(1948). Ontheapplicationofinductive Cheeseman, P., Kanefsky, B., and Taylor, W.
+logic.Philosophyand Phenomenological Research, (1991). Wherethe really hardproblems are. In Clark,A.(1998).Being There:Putting Brain,Body,
+8,133 148. IJCAI-91,pp.331 337. and World Together Again.MIT Press.
+Carnap,R.(1950). Logical Foundationsof Proba- Cheeseman, P., Self, M., Kelly, J., and Stutz, J. Clark,A.(2008). Supersizingthe Mind: Embodi-
+bility.Universityof Chicago Press. (1988).Bayesianclassification.In AAAI-88,Vol.2, ment,Action,and Cognitive Extension.Oxford Uni-
+pp.607 611. versity Press.
+Carroll,S.(2007). The Makingofthe Fittest:DNA
+andthe Ultimate Forensic Recordof Evolution.Nor- Cheeseman, P. and Stutz, J. (1996). Bayesian Clark,K.L.(1978).Negationasfailure.In Gallaire,
+ton. classification(Auto Class): Theoryandresults. In H.and Minker,J.(Eds.),Logicand Data Bases,pp.
+Fayyad, U., Piatesky-Shapiro, G., Smyth, P., and 293 322.Plenum.
+Casati,R.and Varzi,A.(1999). Partsandplaces: Uthurusamy,R.(Eds.),Advancesin Knowledge Dis- Clark,P.and Niblett,T.(1989).The CN2induction
+thestructuresofspatialrepresentation.MIT Press. coveryand Data Mining.AAAI Press MIT Press. algorithm.Machine Learning,3,261 283.
+Cassandra, A.R., Kaelbling, L.P., and Littman, Chen,S.F.and Goodman,J.(1996). Anempirical Clark,S.and Curran,J.R.(2004).Parsingthe WSJ
+M.L.(1994). Actingoptimallyinpartiallyobserv- studyofsmoothingtechniquesforlanguagemodel- using CC Gandlog-linearmodels. In ACL-04,pp.
+able stochastic domains. In AAAI-94, pp. 1023 ing.In ACL-96,pp.310 318. 104 111.
+1028.
+Cheng,J.and Druzdzel,M.J.(2000). AIS-BN:An Clarke, A.C.(1968a). 2001: ASpace Odyssey.
+Cassandras,C.G.and Lygeros,J.(2006).Stochas- adaptiveimportancesamplingalgorithmforeviden- Signet.
+tic Hybrid Systems.CRC Press. tialreasoninginlarge Bayesiannetworks.JAIR,13,
+155 188. Clarke,A.C.(1968b).Theworldof2001.Vogue.
+Castro,R.,Coates,M.,Liang,G.,Nowak,R.,and
+Yu,B.(2004). Networktomography:Recentdevel- Cheng,J.,Gre

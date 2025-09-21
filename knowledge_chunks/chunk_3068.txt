@@ -1,0 +1,27 @@
+002).
+Fragment-basedconformantplanning.In AIPS-02. Langley, P., Simon, H.A., Bradshaw, G.L.,and
+Kowalski,R.(1988). Theearlyyearsoflogicpro- Zytkow,J.M.(1987). Scientific Discovery: Com-
+gramming.CACM,31,38 43. Kurzweil, R.(1990). The Ageof Intelligent Ma- putational Explorationsofthe Creative Processes.
+chines.MIT Press. MIT Press.
+Kowalski,R.and Sergot,M.(1986). Alogic-based
+calculus of events. New Generation Computing, Kurzweil, R. (2005). The Singularity is Near. Langton, C. (Ed.). (1995). Artificial Life.
+4(1),67 95. Viking. MIT Press.
+Koza,J.R.(1992). Genetic Programming:Onthe Kwok,C.,Etzioni,O.,and Weld,D.S.(2001).Scal- Laplace, P. (1816). Essai philosophique sur les
+Programmingof Computersby Meansof Natural Se- ingquestionansweringtotheweb. In Proc.10th probabilite s (3rd edition). Courcier Imprimeur,
+lection.MIT Press. International Conferenceonthe World Wide Web. Paris.
+1080 Bibliography
+Laptev,I.and Perez,P.(2007). Retrievingactions Legendre,A.M.(1805). Nouvellesme thodespour Lighthill,J.(1973). Artificialintelligence: Agen-
+inmovies.In ICCV,pp.1 8. lade terminationdesorbitesdescome tes.. eralsurvey.In Lighthill,J.,Sutherland,N.S.,Need-
+ham,R.M.,Longuet-Higgins,H.C.,and Michie,D.
+Lari,K.and Young,S.J.(1990). Theestimation Lehrer,J.(2009).How We Decide.Houghton Mif-
+(Eds.),Artificial Intelligence: APaper Symposium.
+ofstochasticcontext-freegrammarsusingtheinside- flin.
+Science Research Councilof Great Britain.
+outsidealgorithm.Computer Speechand Language,
+4,35 56. Lenat,D.B.(1983). EURISKO:Aprogramthat Lin,S.(1965).Computersolutionsofthetravelling
+learnsnewheuristicsanddomainconcepts:Thena-
+salesmanproblem. Bell Systems Technical Journal,
+Larran aga,P.,Kuijpers,C.,Murga,R.,Inza,I.,and tureofheuristics, III:Programdesignandresults. 44(10),2245 2269.
+Dizdarevic,S.(1999). Geneticalgorithmsforthe AIJ,21(1 2),61 98.
+travellingsalesmanproblem:Areviewofrepresen- Lin,S.and Kernighan,B.W.(1973). Aneffective
+tationsandoperators.Artificial Intelligence Review, Lenat,D.

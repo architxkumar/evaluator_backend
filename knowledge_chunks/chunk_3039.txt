@@ -1,0 +1,28 @@
+168 197.
+Fruhwirth,T.and Abdennadher,S.(2003). Essen- 20(5),507 534. Ghahramani,Z.(2005).Tutorialonnonparametric
+tialsofconstraintprogramming.Cambridge Univer-
+Bayesianmethods. Tutorialpresentationatthe UAI
+sity Press. Geisel, T. (1955). On Beyond Zebra. Random
+Conference.
+House.
+Fuchs,J.J.,Gasquet,A.,Olalainty,B.,and Currie,
+Ghallab,M.,Howe,A.,Knoblock,C.A.,and Mc-
+K.W.(1990). Plan ERS-1:Anexpertplanningsys- Gelb, A. (1974). Applied Optimal Estimation. Dermott,D.(1998). PDDL Theplanningdomain
+temforgeneratingspacecraftmissionplans.In First MIT Press. definitionlanguage. Tech.rep.DCSTR-1165,Yale
+International Conferenceon Expert Planning Sys-
+tems,pp.70 75.Instituteof Electrical Engineers. Gelernter,H.(1959). Realizationofageometry- Centerfor Computational Visionand Control.
+theorem proving machine. In Proc. an Interna- Ghallab,M.and Laruelle,H.(1994). Representa-
+Fudenberg,D.and Tirole,J.(1991). Gametheory. tional Conference on Information Processing, pp. tionandcontrolin Ix Te T,atemporalplanner. In
+MIT Press. 273 282.UNESCO House. AIPS-94,pp.61 67.
+Fukunaga,A.S.,Rabideau,G.,Chien,S.,and Yan, Gelfond,M.and Lifschitz,V.(1988).Compilingcir- Ghallab,M.,Nau,D.S.,and Traverso,P.(2004).
+D. (1997). ASPEN: A framework for automated cumscriptivetheoriesintologicprograms. In Non- Automated Planning:Theoryandpractice.Morgan
+planningandschedulingofspacecraftcontroland Monotonic Reasoning:2nd International Workshop Kaufmann.
+operations.In Proc.International Symposiumon AI, Proceedings,pp.74 99.
+Roboticsand Automationin Space,pp.181 187. Gibbs,R.W.(2006).Metaphorinterpretationasem-
+Gelfond,M.(2008).Answersets.Invan Harmelan, bodiedsimulation.Mind,21(3),434 458.
+Fung, R. and Chang, K. C. (1989). Weighting
+F.,Lifschitz,V.,and Porter,B.(Eds.),Handbookof
+andintegratingevidenceforstochasticsimulationin Gibson,J.J.(1950). The Perceptionofthe Visual
+Knowledge Representation,pp.285 316.Elsevier.
+Bayesiannetworks.In UAI-98,pp.209 220. World.Houghton Mifflin.
+Gaddum,J.H.(1933). Reportson

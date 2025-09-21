@@ -1,0 +1,23 @@
+panded node first. It is neither com-
+plete nor optimal, but has linear space complexity. Depth-limited search adds a
+depthbound. Iterative deepening search calls depth-first search with increasing depth limits
+untilagoalisfound. Itiscomplete,optimalforunitstepcosts,hastimecomplexity
+comparable tobreadth-first search,andhaslinearspacecomplexity. Bidirectionalsearchcanenormously reducetimecomplexity,butitisnotalways
+applicable andmayrequiretoomuchspace. Informedsearchmethodsmayhaveaccesstoaheuristicfunctionh(n)thatestimates
+thecostofasolution fromn. Thegeneric best-firstsearch algorithm selectsanodeforexpansion according to
+anevaluationfunction. Greedybest-first search expands nodes withminimalh(n). Itisnot optimal but
+isoftenefficient.
+Bibliographical and Historical Notes 109 A search expands nodes withminimal f(n) g(n) h(n). A iscomplete and
+optimal, provided that h(n) is admissible (for TREE-SEARCH) or consistent (for GRAPH-SEARCH). Thespacecomplexityof A isstillprohibitive. RBFS (recursive best-first search) and SMA (simplified memory-bounded A )
+are robust, optimal search algorithms that use limited amounts of memory; given enough time, they can solve problems that A cannot solve because it runs out of
+memory. Theperformance ofheuristic search algorithms depends on the quality ofthe heuristic
+function. One can sometimes construct good heuristics by relaxing the problem defi-
+nition, bystoring precomputed solution costs forsubproblems inapattern database, or
+bylearning fromexperience withtheproblemclass.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Thetopicofstate-spacesearchoriginatedinmoreorlessitscurrentformintheearlyyearsof
+AI.Newelland Simon sworkonthe Logic Theorist(1957)and GPS(1961)ledtotheestab-
+lishmentofsearchalgorithms astheprimaryweaponsinthearmoryof1960s AIresearchers
+and to the establishment of problem solving as the canonical AI task. Work in operations
+research by Richard Bellman (1957) showed the importance of additive path costs in sim-
+plifying optimi

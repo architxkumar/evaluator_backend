@@ -1,0 +1,31 @@
+cross-validation onmodelsize. An
+alternativeapproachistosearchforahypothesisthatdirectlyminimizestheweightedsumof
+Section18.5. The Theoryof Learning 713
+empiricallossandthecomplexity ofthehypothesis, whichwewillcallthetotalcost:
+Cost(h) Emp Loss(h) Complexity(h)
+h argmin Cost(h).
+h H
+Here is a parameter, a positive number that serves as a conversion rate between loss and
+hypothesis complexity (which after all are not measured on the same scale). This approach
+combines loss and complexity into one metric, allowing us to find the best hypothesis all at
+once. Unfortunately we still need to do a cross-validation search to find the hypothesis that
+generalizes best, but this time it is with different values of rather than size. We select the
+valueof thatgivesusthebestvalidation setscore.
+Thisprocess ofexplicitly penalizing complex hypotheses iscalled regularization (be-
+REGULARIZATION
+causeitlooksforafunctionthatismoreregular,orlesscomplex). Notethatthecostfunction
+requires us to make two choices: the loss function and the complexity measure, which is
+called a regularization function. The choice of regularization function depends on the hy-
+pothesis space. For example, a good regularization function for polynomials is the sum of
+thesquaresofthecoefficients keeping thesumsmallwouldguideusawayfromthewiggly
+polynomialsin Figure18.1(b)and(c). Wewillshowanexampleofthistypeofregularization
+in Section18.6.
+Anotherwaytosimplifymodelsistoreducethedimensionsthatthemodelsworkwith.
+Aprocess of feature selection can beperformed todiscard attributes thatappear tobeirrel-
+FEATURESELECTION
+evant. 2 pruning isakindoffeatureselection.
+It is in fact possible to have the empirical loss and the complexity measured on the
+samescale, without theconversion factor : theycan bothbemeasured inbits. Firstencode
+the hypothesis as a Turing machine program, and count the number of bits. Then count
+the number of bits required to encode the data, where a correctly predicted example costs
+zero bits and th

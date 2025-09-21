@@ -1,0 +1,26 @@
+cussed by Howard (1989). A 1994 survey by the Economist set the value of a life at
+between 750,000 and 2.6 million. However, Richard Thaler (1992) found irrational fram-
+ing effects on the price one is willing to pay to avoid a risk of death versus the price one is
+willing to be paid to accept a risk. For a 1 1000 chance, a respondent wouldn t pay more
+than 200toremovetherisk,butwouldn taccept 50,000totakeontherisk. Howmuchare
+people willing topay fora QALY?When itcomes downtoaspecific case ofsaving oneself
+or a family member, the number is approximately whatever I ve got. But we can ask at a
+societallevel: supposethereisavaccinethatwouldyield X QAL Ysbutcosts Y dollars;isit
+worthit? Inthiscasepeople reportawiderangeofvaluesfromaround 10,000 to 150,000
+per QALY (Prades et al., 2008). QAL Ys are much more widely used in medical and social
+policy decision making thanare micromorts; see (Russell, 1990) foratypical example ofan
+argument foramajorchangeinpublichealthpolicyongrounds ofincreased expected utility
+measuredin QAL Ys.
+The optimizer s curse was brought to the attention of decision analysts in a forceful
+way by Smith and Winkler (2006), who pointed out that the financial benefits to the client
+projected by analysts for their proposed course of action almost never materialized. They
+tracethisdirectly tothebiasintroduced byselecting anoptimal action andshowthatamore
+complete Bayesian analysis eliminates the problem. The same underlying concept has been
+POST-DECISION called post-decision disappointment by Harrison and March (1984) and was noted in the
+DISAPPOINTMENT
+context of analyzing capital investment projects by Brown (1974). The optimizer s curse is
+also closely related to the winner s curse (Capen et al., 1971; Thaler, 1992), which applies
+WINNER SCURSE
+to competitive bidding in auctions: whoever wins the auction is very likely to have overes-
+timated the value of the object in question. Capen et al. quote a petroleum engineer on the
+638 Chapter 16. Making S

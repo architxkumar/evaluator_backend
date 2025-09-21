@@ -1,0 +1,25 @@
+ 3.16 considers the problem of building railway tracks under the assumption
+that pieces fit exactly with no slack. Now consider the real problem, in which pieces don t
+fitexactly butallow forupto10degrees ofrotation toeither sideofthe proper alignment.
+Explainhowtoformulatetheproblem soitcouldbesolvedbysimulatedannealing.
+4.3 In this exercise, we explore the use of local search methods to solve TS Ps of the type
+definedin Exercise3.30.
+a. Implementandtestahill-climbingmethodtosolve TS Ps. Comparetheresultswithop- timalsolutions obtained fromthe A algorithm withthe MS Theuristic(Exercise3.30).
+b. Repeat part (a) using a genetic algorithm instead of hill climbing. You may want to
+consult Larran aga etal.(1999)forsomesuggestions forrepresentations.
+4.4 Generatealargenumberof8-puzzleand8-queensinstancesandsolvethem(wherepos-
+sible) by hill climbing (steepest-ascent and first-choice variants), hill climbing with random
+restart, andsimulated annealing. Measurethesearchcostandpercentage ofsolvedproblems
+andgraphtheseagainsttheoptimalsolution cost. Commentonyourresults.
+4.5 The AND-OR-GRAPH-SEARCH algorithm in Figure 4.11 checks for repeated states
+only on the path from the root to the current state. Suppose that, in addition, the algorithm
+weretostore every visited state and check against that list. (See BREADTH-FIRST-SEARCH
+in Figure3.11foranexample.) Determinetheinformation thatshouldbestoredandhowthe
+algorithmshouldusethatinformationwhenarepeatedstate isfound. (Hint: Youwillneedto
+distinguish atleastbetweenstatesforwhichasuccessfulsubplanwasconstructed previously
+and states for which no subplan could be found.) Explain how to use labels, as defined in
+Section4.3.3,toavoidhaving multiplecopiesofsubplans.
+4.6 Explainpreciselyhowtomodifythe AND-OR-GRAPH-SEARCH algorithm togenerate
+acyclicplanifnoacyclicplanexists. Youwillneedtodealwiththreeissues: labelingtheplan
+stepssothatacyclicplancanpointbacktoanearlierpartoftheplan,modifying OR-SEARCH
+so that it continues to look for

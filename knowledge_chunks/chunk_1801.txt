@@ -1,0 +1,37 @@
+umpus. Thisisexpressed intwoparts. First,
+wehavetosaythatthereisatleastonewumpus:
+W W W W .
+1,1 1,2 4,3 4,4
+Then, wehave tosaythat there is atmostonewumpus. Foreach pairoflocations, weadd a
+sentence sayingthatatleastoneofthemmustbewumpus-free: W W
+1,1 1,2 W W
+1,1 1,3 W W .
+4,3 4,4
+So far, so good. Now let s consider the agent s percepts. If there is currently a stench, one
+mightsuppose thataproposition Stench shouldbeaddedtotheknowledgebase. Thisisnot
+quiteright,however: iftherewasnostenchattheprevioustimestep,then Stench wouldal-
+readybeasserted,andthenewassertionwouldsimplyresult inacontradiction. Theproblem
+issolvedwhenwerealizethataperceptassertssomething onlyaboutthecurrenttime. Thus,
+ifthetimestep(assupplied to MAKE-PERCEPT-SENTENCE in Figure7.1)is4,thenweadd
+266 Chapter 7. Logical Agents
+Stench4 totheknowledge base, ratherthan Stench neatlyavoiding anycontradiction with Stench3. Thesamegoesforthebreeze, bump,glitter, andscream percepts.
+Theideaofassociating propositions withtimesteps extends toanyaspect oftheworld
+thatchangesovertime. Forexample,theinitialknowledgebaseincludes L0 theagentisin
+1,1
+square 1,1 attime0 aswellas Facing East0,Have Arrow0,and Wumpus Alive0. Weuse
+theword fluent(from the Latin fluens, flowing) toreferanaspect of theworld thatchanges.
+FLUENT Fluent isasynonymfor statevariable, inthesensedescribedinthediscussionoffactored
+representations in Section 2.4.7 on page 57. Symbols associated with permanent aspects of
+ATEMPORAL theworlddonotneedatimesuperscript andaresometimescalled atemporalvariables.
+VARIABLE
+We can connect stench and breeze percepts directly to the properties of the squares
+where they areexperienced through the location fluentas follows.10 Forany timestep t and
+anysquare x,y ,weassert
+Lt (Breezet B )
+x,y x,y
+Lt (Stencht S ).
+x,y x,y
+Now, of course, we need axioms that allow the agent to keep track of fluents such as Lt .
+x,y
+These fluents change as the result of actions taken by the agent, so, in the terminology of
+Chapter 

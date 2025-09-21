@@ -1,0 +1,29 @@
+Otherstrongphilosophicalargumentshavebeenputforwardfortheuseofprobabilities,
+mostnotably those of Cox(1946), Carnap (1950), and Jaynes (2003). Theyeach construct a
+set of axioms for reasoning with degrees of beliefs: no contradictions, correspondence with
+ordinary logic (forexample, ifbelief in Agoes up, thenbelief in Amustgodown), andso
+on. The only controversial axiom is that degrees of belief must be numbers, or at least act
+likenumbersinthattheymustbetransitive(ifbeliefin Aisgreaterthanbeliefin B,whichis
+greaterthan beliefin C,then belief in Amustbegreater than C)andcomparable (thebelief
+in Amustbeoneofequalto,greaterthan,orlessthanbeliefin B). Itcanthenbeprovedthat
+probability istheonlyapproach thatsatisfiestheseaxioms.
+The world being the way it is, however, practical demonstrations sometimes speak
+louder than proofs. The success of reasoning systems based on probability theory has been
+muchmoreeffectiveinmakingconverts. Wenowlookathowtheaxiomscanbedeployedto
+makeinferences.
+13.3 INFERENCE USING FULL JOINT DISTRIBUTIONS
+PROBABILISTIC Inthissectionwedescribeasimplemethodforprobabilisticinference that is,thecompu-
+INFERENCE
+tation of posterior probabilities for query propositions given observed evidence. We use the
+fulljointdistributionasthe knowledgebase fromwhichanswerstoallquestionsmaybede-
+rived. Alongthewaywealsointroduce severalusefultechniques formanipulating equations
+involving probabilities.
+Section13.3. Inference Using Full Joint Distributions 491
+WHERE DO PROBABILITIES COME FROM?
+There has been endless debate over the source and status of probability numbers.
+The frequentist position is that the numbers can come only from experiments: if
+we test 100 people and find that 10 of them have a cavity, then we can say that
+the probability of a cavity is approximately 0.1. In this view, the assertion the
+probability ofacavityis0.1 meansthat0.1isthefraction thatwouldbeobserved
+in the limit of infinitely many samples. From any finite sample, we can estimate
+the

@@ -1,0 +1,22 @@
+ac Formulae,Ge-
+aideddiagnosisofabdominalpain: Furtherreport Dean,T.and Wellman,M.P.(1991). Planningand nealogicaland Interacting Particle Systemswith Ap-
+withemphasisonperformanceofclinicians.British Control.Morgan Kaufmann. plications.Springer-Verlag.
+Medical Journal,1,376 380.
+Dearden,R.,Friedman,N.,and Andre,D.(1999). Delgrande,J.and Schaub,T.(2003).Ontherelation
+de Dombal,F.T.,Staniland,J.R.,and Clamp,S.E. Model-based Bayesianexploration.In UAI-99. between Reiter sdefaultlogicandits(major)vari-
+(1981). Geographicalvariationindiseasepresenta- ants. In Seventh European Conferenceon Symbolic
+tion.Medical Decision Making,1,59 69. Dearden, R., Friedman, N., and Russell, S. J. and Quantitative Approachesto Reasoningwith Un-
+de Finetti, B. (1937). Le pre vision: ses lois
+(1998).Bayesianq-learning.In AAAI-98.
+certainty,pp.452 463.
+logiques, ses sources subjectives. Ann. Inst. Debevec,P.,Taylor,C.,and Malik,J.(1996). Mod- Dempster, A. P. (1968). A generalization of
+Poincare ,7,1 68. elingandrenderingarchitecturefromphotographs: Bayesian inference. J. Royal Statistical Society,
+de Finetti,B.(1993). Onthesubjectivemeaning Ahybridgeometry-andimage-basedapproach. In 30(Series B),205 247.
+Proc.23rd Annual Conferenceon Computer Graph-
+ofprobability. In Monari,P.and Cocchi,D.(Eds.), ics(SIGGRAPH),pp.11 20. Dempster,A.P.,Laird,N.,and Rubin,D.(1977).
+Probabilitae Induzione,pp.291 321.Clueb. Maximumlikelihoodfromincompletedataviathe
+de Freitas,J.F.G.,Niranjan,M.,and Gee,A.H. Debreu,G.(1960).Topologicalmethodsincardinal EMalgorithm. J.Royal Statistical Society,39(Se-
+(2000). Sequential Monte Carlomethodstotrain utilitytheory. In Arrow,K.J.,Karlin,S.,and Sup- ries B),1 38.
+neuralnetworkmodels.Neural Computation,12(4), pes,P.(Eds.),Mathematical Methodsinthe Social Deng,X.and Papadimitriou,C.H.(1990). Explor-
+933 953. Sciences,1959.Stanford University Press. inganunknowngraph.In FOCS-90,pp.355 361.
+de Kleer, J. (1975). Qualitative andquantitative Dechter,R.(1990a).Enhancementschemesf

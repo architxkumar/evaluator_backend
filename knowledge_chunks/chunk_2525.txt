@@ -1,0 +1,53 @@
+sewere-expresstheinputdata i.e.,wemapeachinputvectorxtoanewvector
+offeature values, F(x). Inparticular, letususethethreefeatures f x2 , f x2 , f 2x x . (18.15)
+1 1 2 2 3 1 2
+We will see shortly where these came from, but for now, just look at what happens. Fig-
+ure18.31(b)showsthedatainthenew,three-dimensionalspacedefinedbythethreefeatures;
+the data are linearly separable in this space! This phenomenon is actually fairly general: if
+dataaremappedintoaspace ofsufficiently high dimension, thentheywillalmostalwaysbe
+linearlyseparable ifyoulookatasetofpointsfromenough directions, you llfindawayto
+makethemlineup. Here,weusedonlythreedimensions;11 Exercise18.16asksyoutoshow
+thatfourdimensions sufficeforlinearly separating acircle anywhereintheplane(notjustat
+theorigin),andfivedimensionssufficetolinearlyseparate anyellipse. Ingeneral(withsome
+specialcasesexcepted)ifwehave N datapointsthentheywillalwaysbeseparableinspaces
+of N 1dimensions ormore(Exercise18.25).
+Now, we would not usually expect to find a linear separator in the input space x, but
+wecanfindlinearseparatorsinthehigh-dimensional featurespace F(x)simplybyreplacing
+x x in Equation(18.13)with F(x ) F(x ). Thisbyitselfisnotremarkable replacing xby
+j k j k
+F(x)inanylearningalgorithmhastherequiredeffect butthedotproducthassomespecial
+properties. It turns out that F(x ) F(x )can often becomputed without firstcomputing F
+j k
+11 Thereadermaynoticethatwecouldhaveusedjustf1andf2,butthe3Dmappingillustratestheideabetter.
+Section18.9. Support Vector Machines 747
+1.5
+1
+0.5
+0
+-0.5
+-1
+-1.5
+-1.5 -1 -0.5 0 0.5 1 1.5
+x 2 2xx
+1 2
+3
+2
+1
+0
+-1
+-2 2.5
+-3 2
+0
+1.5 0.5
+1 1 x2
+2
+x2 1.5 0.5 1 2
+x
+1
+(a) (b)
+Figure 18.31 (a) A two-dimensional training set with positive examples as black cir-
+cles and negative examples as white circles. The true decision boundary, x2 x2 1,
+1 2
+is also s hown. (b) The same data after mapping into a three-dimensional input space
+(x2,x2, 2x x ). Thecirculardecisionboundaryin(a)becomesalineardecisionboundary
+1 2 1

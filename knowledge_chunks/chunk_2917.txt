@@ -1,0 +1,27 @@
+edby Gat(1998). Thesubsumptionarchitectureisdueto Brooks(1986),
+although similar ideas were developed independently by Braitenberg (1984), whose book,
+Vehicles, describes a series of simple robots based on the behavioral approach. The suc-
+cess of Brooks s six-legged walking robot was followed by many other projects. Connell,
+in his Ph.D. thesis (1989), developed a mobile robot capable of retrieving objects that was
+entirely reactive. Extensions of the behavior-based paradigm to multirobot systems can be
+found in (Mataric, 1997) and (Parker, 1996). GRL (Horswill, 2000) and COLBERT (Kono-
+lige,1997)abstracttheideasofconcurrentbehavior-based roboticsintogeneralrobotcontrol
+languages. Arkin(1998)surveyssomeofthemostpopularapproaches inthisfield.
+Researchonmobileroboticshasbeenstimulatedoverthelastdecadebyseveralimpor-
+tantcompetitions. Theearliestcompetition, AAAI sannualmobilerobotcompetition, began
+in 1992. The first competition winner was CARMEL (Congdon et al., 1992). Progress has
+1014 Chapter 25. Robotics
+beensteadyandimpressive: inmorerecentcompetitions robotsenteredtheconference com-
+plex, found theirwayto the registration desk, registered forthe conference, and even gave a
+short talk. The Robocup competition, launched in 1995 by Kitano and colleagues (1997a),
+ROBOCUP
+aims to develop a team of fully autonomous humanoid robots that can win against the hu-
+man world champion team in soccer by 2050. Play occurs in leagues for simulated robots,
+wheeled robots of different sizes, and humanoid robots. In 2009 teams from 43 countries
+participated and theeventwasbroadcast tomillions ofviewers. Visserand Burkhard (2007)
+tracktheimprovements thathavebeenmadeinperception, teamcoordination, andlow-level
+skillsoverthepastdecade.
+DARPAGRAND The DARPA Grand Challenge, organized by DARPA in 2004 and 2005, required
+CHALLENGE
+autonomous robots to travel more than 100 miles through unrehearsed desert terrain in less
+than 10 hours (Buehler et al., 2006). In the original event in 20

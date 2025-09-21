@@ -1,0 +1,26 @@
+, wewrite y x Loves(x,y).
+Theorderofquantification isthereforeveryimportant. Itbecomesclearerifweinsertparen-
+theses. x( y Loves(x,y)) says that everyone has a particular property, namely, the prop-
+erty that they love someone. On the other hand, y ( x Loves(x,y)) says that someone in
+theworldhasaparticularproperty, namelythepropertyofbeinglovedbyeverybody.
+Someconfusion can arise when two quantifiers are used with the same variable name.
+Considerthesentence x (Crown(x) ( x Brother(Richard,x))).
+Here the x in Brother(Richard,x) is existentially quantified. The rule is that the variable
+belongs to the innermost quantifier that mentions it; then it will not be subject to any other
+quantification. Another way to think of it is this: x Brother(Richard,x) is a sentence
+about Richard(thathehasabrother), notabout x;soputtinga xoutsideithasnoeffect. It
+couldequallywellhavebeenwritten z Brother(Richard,z). Becausethiscanbeasource
+ofconfusion, wewillalwaysusedifferentvariablenameswithnestedquantifiers.
+Connectionsbetween and Thetwoquantifiers areactually intimately connected witheachother, through negation. As-
+serting that everyone dislikes parsnips is the same as asserting there does not exist someone
+wholikesthem,andviceversa: x Likes(x,Parsnips) isequivalent to x Likes(x,Parsnips).
+Wecangoonestepfurther: Everyonelikesicecream meansthatthereisnoonewhodoes
+notlikeicecream: x Likes(x,Ice Cream) isequivalent to x Likes(x,Ice Cream).
+Because isreallyaconjunctionovertheuniverseofobjectsand isadisjunction, itshould
+notbesurprising that theyobey De Morgan s rules. The De Morgan rules forquantified and
+unquantified sentences areasfollows: x P x P (P Q) P Q x P x P (P Q) P Q x P x P P Q ( P Q) x P x P P Q ( P Q).
+Thus, we do not really need both and , just as wedo not really need both and . Still,
+readability ismoreimportant thanparsimony, sowewillkeepbothofthequantifiers.
+Section8.2. Syntaxand Semanticsof First-Order Logic 299
+8.2.7 Equality
+First-order logic includes onemorewayto

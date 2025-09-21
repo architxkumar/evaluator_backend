@@ -1,0 +1,26 @@
+eastovariousproblemsinknowledgerepresentation. While
+some aspects of the mereological approach are awkward for example, the need for asepa-
+rateinheritance mechanism based onpart whole relations the approach gainedthesupport
+of Quine (1960). Harry Bunt (1985) has provided an extensive analysis of its use in knowl-
+edgerepresentation. Casatiand Varzi(1999)coverparts,wholes,andthespatiallocations.
+Mental objects have been the subject of intensive study in philosophy and AI. There
+arethreemainapproaches. Theonetaken inthis chapter, based onmodallogic andpossible
+worlds, is the classical approach from philosophy (Hintikka, 1962; Kripke, 1963; Hughes
+and Cresswell, 1996). Thebook Reasoning about Knowledge(Faginetal.,1995)provides a
+thorough introduction. The second approach is a first-order theory in which mental objects
+arefluents. Davis(2005) and Davisand Morgenstern (2005)describe thisapproach. Itrelies
+on the possible-worlds formalism, and builds on work by Robert Moore (1980, 1985). The
+third approach is a syntactic theory, in which mental objects are represented by character
+SYNTACTICTHEORY
+Bibliographical and Historical Notes 471
+strings. A string is just a complex term denoting a list of symbols, so Can Fly(Clark) can
+be represented by the list of symbols C,a,n,F,l,y,(,C,l,a,r,k,) . The syntactic theory
+of mental objects was first studied in depth by Kaplan and Montague (1960), who showed
+that it led to paradoxes if not handled carefully. Ernie Davis (1990) provides an excellent
+comparison ofthesyntactic andmodaltheories ofknowledge.
+The Greek philosopher Porphyry (c. 234 305 A.D.), commenting on Aristotle s Cat-
+egories, drew what might qualify as the first semantic network. Charles S. Peirce (1909)
+developed existential graphs as the first semantic network formalism using modern logic.
+Ross Quillian (1961), driven by an interest in human memory and language processing, ini-
+tiated workon semantic networks within AI.Aninfluential paperby Marvin Minsky (1975)
+pre

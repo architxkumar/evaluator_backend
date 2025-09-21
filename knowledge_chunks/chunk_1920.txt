@@ -1,0 +1,31 @@
+s(West,y,z) Hostile(z)
+Missile(M1) Missile(y) Sells(West,y,z) Hostile(z) Missile(x) Owns(Nono,x) Sells(West,x,Nono) Sells(West,M1,z) Hostile(z)
+Missile(M1) Missile(M1) Owns(Nono,M1) Hostile(Nono)
+Owns(Nono,M1) Owns(Nono,M1) Hostile(Nono) Enemy(x,America) Hostile(x) Hostile(Nono)
+Enemy(Nono,America) Enemy(Nono,America)
+Figure9.11 Aresolutionproofthat Westisacriminal.Ateachstep,theliteralsthatunify
+areinbold.
+Figure 7.12, soweneed notrepeat ithere. Instead, wegive twoexample proofs. Thefirstis
+thecrimeexamplefrom Section9.3. Thesentences in CN Fare American(x) Weapon(y) Sells(x,y,z) Hostile(z) Criminal(x) Missile(x) Owns(Nono,x) Sells(West,x,Nono) Enemy(x,America) Hostile(x) Missile(x) Weapon(x)
+Owns(Nono,M ) Missile(M )
+1 1
+American(West) Enemy(Nono,America).
+Wealso include the negated goal Criminal(West). Theresolution proof is shown in Fig-
+ure9.11. Noticethestructure: single spine beginningwiththegoalclause,resolvingagainst
+clauses from the knowledge base until the empty clause is generated. This is characteristic
+of resolution on Horn clause knowledge bases. In fact, the clauses along the main spine
+correspond exactly to the consecutive values of the goals variable in the backward-chaining
+algorithm of Figure 9.6. This is because we always choose to resolve with a clause whose
+positive literal unified with the leftmost literal of the current clause on the spine; this is
+exactly what happens in backward chaining. Thus, backward chaining is just a special case
+ofresolution withaparticularcontrol strategytodecidewhichresolution toperform next.
+Oursecond examplemakesuseof Skolemization andinvolves clauses thatarenotdef-
+inite clauses. This results in a somewhat more complex proof structure. In English, the
+problem isasfollows:
+Everyonewholovesallanimalsislovedbysomeone.
+Anyonewhokillsananimalislovedbynoone.
+Jacklovesallanimals.
+Either Jackor Curiositykilledthecat,whoisnamed Tuna.
+Did Curiositykillthecat?
+Section9.5. Resolution 349
+First, we express the original sente

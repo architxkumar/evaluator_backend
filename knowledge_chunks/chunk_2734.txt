@@ -1,0 +1,25 @@
+ion of naive Bayes techniques to text classification and retrieval. Schapire
+and Singer (2000) show that simple linear classifiers can often achieve accuracy almost as
+good as more complex models and are more efficient to evaluate. Nigamet al. (2000) show
+how to use the EM algorithm to label unlabeled documents, thus learning a better classifi-
+cation model. Witten et al. (1999) describe compression algorithms for classification, and
+show the deep connection between the LZW compression algorithm and maximum-entropy
+language models.
+Many of the n-gram model techniques are also used in bioinformatics problems. Bio-
+statisticsandprobabilistic NL Parecomingclosertogether,aseachdealswithlong,structured
+sequences chosenfromanalphabet ofconstituents.
+The field of information retrieval is experiencing a regrowth in interest, sparked by
+the wide usage of Internet searching. Robertson (1977) gives an early overview and intro-
+duces the probability ranking principle. Croft et al. (2009) and Manning et al. (2008) are
+the firsttextbooks to cover Web-based search as wellas traditional IR.Hearst (2009) covers
+user interfaces for Web search. The TREC conference, organized by the U.S. government s
+National Institute of Standards and Technology (NIST), hosts an annual competition for IR
+systems and publishes proceedings with results. In the first seven years of the competition,
+performance roughly doubled.
+Themostpopularmodelfor IRisthevectorspacemodel(Saltonetal.,1975). Salton s
+work dominated the early years of the field. There are two alternative probabilistic models,
+one due to Ponte and Croft (1998) and one by Maron and Kuhns (1960) and Robertson and
+Sparck Jones (1976). Lafferty and Zhai (2001) show that the models are based on the same
+joint probability distribution, but that the choice of model has implications for training the
+parameters. Craswelletal.(2005)describethe BM25scoringfunctionand Svoreand Burges
+(2009)describehow BM25canbeimprovedwithamachinelearning approachthat

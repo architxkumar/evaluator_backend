@@ -1,0 +1,27 @@
+t,P.F.(1979). Representingthe Spatial Ex- Thing:Studiesin Limited Rationality.MIT Press.
+pp.1045 1050. perienceand Solving Spatialproblemsina Simu- Russell, S. J. and Wolfe, J. (2005). Efficient
+Ripley,B.D.(1996).Pattern Recognitionand Neu- lated Robot Environment. Ph.D.thesis,University belief-state AND-OR search, with applications to
+ral Networks.Cambridge University Press. of British Columbia. Kriegspiel.In IJCAI-05,pp.278 285.
+Roweis,S.T.and Ghahramani,Z.(1999). Aunify- Russell, S. J. and Zimdars, A. (2003). Q-
+Rissanen,J.(1984).Universalcoding,information,
+ingreviewof Linear Gaussian Models.Neural Com- decompositionofreinforcementlearningagents. In
+prediction, andestimation. IEEE Transactionson
+putation,11(2),305 345. ICML-03.
+Information Theory,IT-30(4),629 636.
+Rowley,H.,Baluja,S.,and Kanade,T.(1996).Neu- Rustagi,J.S.(1976).Variational Methodsin Statis-
+Rissanen,J.(2007).Informationand Complexityin
+ralnetwork-basedfacedetection.In CVPR,pp.203 tics.Academic Press.
+Statistical Modeling.Springer.
+208.
+Sabin,D.and Freuder,E.C.(1994). Contradicting
+Ritchie,G.D.and Hanna,F.K.(1984).AM:Acase
+Roy,N.,Gordon,G.,and Thrun,S.(2005).Finding conventionalwisdominconstraintsatisfaction. In
+studyin AImethodology.AIJ,23(3),249 268. approximate POMD Psolutionsthroughbeliefcom- ECAI-94,pp.125 129.
+Rivest,R.(1987).Learningdecisionlists.Machine pression.JAIR,23,1 40. Sacerdoti,E.D.(1974). Planninginahierarchyof
+Learning,2(3),229 246. Rubin,D.(1988). Usingthe SI Ralgorithmtosim- abstractionspaces.AIJ,5(2),115 135.
+Roberts,L.G.(1963).Machineperceptionofthree- ulate posterior distributions. In Bernardo, J. M., Sacerdoti,E.D.(1975). Thenonlinearnatureof
+dimensionalsolids. Technicalreport315,MIT Lin- de Groot,M.H.,Lindley,D.V.,and Smith,A.F.M. plans.In IJCAI-75,pp.206 214.
+coln Laboratory. (Eds.),Bayesian Statistics3,pp.395 402.Oxford
+University Press. Sacerdoti,E.D.(1977). AStructurefor Plansand
+Robertson,N.and Seymour,P.D.(1986). Graph Behavior.Elsevier North-Holland.
+minors.II.Algor

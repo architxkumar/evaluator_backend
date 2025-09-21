@@ -1,0 +1,23 @@
+,I.and Hingorani,S.L.(1994).Anefficientim-
+Collins,M.and Duffy,K.(2002).Newrankingalgo- plementationandevaluationof Reid smultiplehy- Cybenko,G.(1988).Continuousvaluedneuralnet-
+rithmsforparsingandtagging:Kernelsoverdiscrete pothesistrackingalgorithmforvisualtracking. In workswithtwohiddenlayersaresufficient.Techni-
+structures,andthevotedperceptron.In ACL-02. ICPR-94,Vol.1,pp.437 442. calreport,Departmentof Computer Science,Tufts
+University.
+Colmerauer,A.and Roussel,P.(1993). Thebirth Cox, I. and Wilfong, G. T. (Eds.). (1990). Au-
+of Prolog.SIGPLAN Notices,28(3),37 52. tonomous Robot Vehicles.Springer Verlag. Cybenko,G.(1989). Approximationbysuperposi-
+tionsofasigmoidalfunction. Mathematicsof Con-
+Colmerauer,A.(1975). Lesgrammairesdemeta- Cox,R.T.(1946). Probability,frequency,andrea- trols,Signals,and Systems,2,303 314.
+morphose. Tech.rep.,Grouped Intelligence Artifi- sonableexpectation. American Journalof Physics,
+cielle,Universite de Marseille-Luminy. 14(1),1 13. Daganzo,C.(1979).Multinomialprobit:Thetheory
+anditsapplicationtodemandforecasting.Academic
+Colmerauer, A., Kanoui, H., Pasero, R., and Craig,J.(1989).Introductionto Robotics:Mechan- Press.
+Roussel, P. (1973). Un syste me de communi- icsand Control(2ndedition).Addison-Wesley Pub-
+cation homme machine en Franc ais. Rapport, lishing,Inc. Dagum, P.and Luby, M.(1993). Approximating
+probabilisticinferencein Bayesianbeliefnetworks
+Grouped Intelligence Artificielle,Universite d Aix- Craik, K.J.(1943). The Natureof Explanation. is NP-hard.AIJ,60(1),141 153.
+Marseille II. Cambridge University Press.
+Dalal,N.and Triggs,B.(2005). Histogramsofori-
+Condon, J.H. and Thompson, K. (1982). Belle Craswell, N.,Zaragoza,H.,and Robertson, S.E. entedgradientsforhumandetection. In CVPR,pp.
+chesshardware.In Clarke,M.R.B.(Ed.),Advances (2005). Microsoftcambridgeattrec-14:Enterprise 886 893.
+in Computer Chess3,pp.45 54.Pergamon. track. In Proc.Fourteenth Text REtrieval Confer-
+Congdon,C.B.,Huber,M.,Kortenkamp,D.,Bid- ence. Dantzig,

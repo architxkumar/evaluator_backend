@@ -1,0 +1,35 @@
+Anyonewhokillsananimalislovedbynoone.
+Jacklovesallanimals.
+Either Jackor Curiositykilledthecat,whoisnamed Tuna.
+Did Curiositykillthecat?
+Section9.5. Resolution 349
+First, we express the original sentences, some background knowledge, and the negated goal
+Ginfirst-orderlogic:
+A. x y Animal(y) Loves(x,y) y Loves(y,x) B. x z Animal(z) Kills(x,z) y Loves(y,x) C. x Animal(x) Loves(Jack,x)
+D. Kills(Jack,Tuna) Kills(Curiosity,Tuna)
+E. Cat(Tuna)
+F. x Cat(x) Animal(x) G. Kills(Curiosity,Tuna)
+Nowweapplytheconversion procedure toconverteachsentence to CNF:
+A1. Animal(F(x)) Loves(G(x),x)
+A2. Loves(x,F(x)) Loves(G(x),x)
+B. Loves(y,x) Animal(z) Kills(x,z)
+C. Animal(x) Loves(Jack,x)
+D. Kills(Jack,Tuna) Kills(Curiosity,Tuna)
+E. Cat(Tuna)
+F. Cat(x) Animal(x) G. Kills(Curiosity,Tuna)
+Theresolutionproofthat Curiositykilledthecatisgivenin Figure9.12. In English,theproof
+couldbeparaphrased asfollows:
+Suppose Curiosity did not kill Tuna. We know that either Jack or Curiosity did; thus
+Jackmusthave. Now,Tunaisacatandcatsareanimals,so Tunaisananimal. Because
+anyonewhokillsananimalislovedbynoone,weknowthatnooneloves Jack. Onthe
+other hand, Jack loves all animals, so someone loves him; so we have a contradiction.
+Therefore,Curiositykilledthecat.
+Cat(Tuna) Cat(x) Animal(x) Kills(Jack, Tuna) Kills(Curiosity, Tuna) Kills(Curiosity, Tuna)
+Animal(Tuna) Loves(y, x) Animal(z) Kills(x, z) Kills(Jack, Tuna) Loves(x,F(x)) Loves(G(x), x) Animal(x) Loves(Jack, x) Loves(y, x) Kills(x, Tuna) Animal(F(Jack)) Loves(G(Jack), Jack) Animal(F(x)) Loves(G(x), x) Loves(y, Jack) Loves(G(Jack),Jack)
+Figure9.12 A resolutionproofthat Curiositykilled the cat. Notice the use of factoring
+in the derivation of the clause Loves(G(Jack),Jack). Notice also in the upper right, the
+unificationof Loves(x,F(x))and Loves(Jack,x)canonlysucceedafterthevariableshave
+beenstandardizedapart.
+350 Chapter 9. Inference in First-Order Logic
+Theproofanswersthequestion Did Curiosity killthecat? butoftenwewanttoposemore
+general questions, su

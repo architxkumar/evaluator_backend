@@ -1,0 +1,33 @@
+ptatthe Move schemais
+Action(Move(b,x,y),
+PRECOND:On(b,x) Clear(b) Clear(y),
+EFFECT:On(b,y) Clear(x) On(b,x) Clear(y)).
+Unfortunately, thisdoesnotmaintain Clear properly when xory isthetable. Whenxisthe
+Table, this action has the effect Clear(Table), but the table should not become clear; and
+wheny Table,ithastheprecondition Clear(Table),butthetabledoesnothavetobeclear
+372 Chapter 10. Classical Planning
+for us to move a block onto it. To fix this, we do two things. First, we introduce another
+actiontomoveablockbfromxtothetable:
+Action(Move To Table(b,x),
+PRECOND:On(b,x) Clear(b),
+EFFECT:On(b,Table) Clear(x) On(b,x)).
+Second, we take the interpretation of Clear(x) to be there is a clear space on x to hold a
+block. Underthisinterpretation, Clear(Table)willalwaysbetrue. Theonlyproblemisthat
+nothing prevents the planner from using Move(b,x,Table) instead of Move To Table(b,x).
+Wecouldlivewiththisproblem itwillleadtoalarger-than-necessary searchspace,butwill
+notleadtoincorrectanswers orwecouldintroducethepredicate Block andadd Block(b) Block(y)totheprecondition of Move.
+10.1.4 The complexityofclassicalplanning
+In this subsection we consider the theoretical complexity of planning and distinguish two
+decision problems. Plan SAT is the question of whether there exists any plan that solves a
+PLANSAT
+planning problem. Bounded Plan SAT asks whether there is a solution of length k or less;
+BOUNDEDPLANSAT
+thiscanbeusedtofindanoptimalplan.
+Thefirstresult isthat bothdecision problems aredecidable forclassical planning. The
+prooffollowsfromthefactthatthenumberofstatesisfinite. Butifweaddfunctionsymbols
+to the language, then the number of states becomes infinite, and Plan SAT becomes only
+semidecidable: analgorithmexiststhatwillterminatewiththecorrectanswerforanysolvable
+problem, but may not terminate on unsolvable problems. The Bounded Plan SAT problem
+remains decidable even in the presence of function symbols. For proofs of the assertions in
+thissection, see Ghallabetal.(2004).
+Bo

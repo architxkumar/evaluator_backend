@@ -1,0 +1,27 @@
+ (Boyan and Moore, 1998). Theidea is touse the local
+maximafoundbyrandom-restart hillclimbingtogetanideaoftheoverallshapeoftheland-
+scape. Thealgorithm fitsasmoothsurface tothesetoflocalmaximaandthencalculates the
+global maximum of that surface analytically. This becomes the new restart point. The algo-
+rithmhasbeenshowntoworkinpracticeonhardproblems. Gomesetal.(1998)showedthat
+HEAVY-TAILED the runtimes ofsystematic backtracking algorithms often have aheavy-tailed distribution,
+DISTRIBUTION
+which means that the probability of a very long run time is more than would be predicted if
+theruntimes wereexponentially distributed. Whentherun timedistribution isheavy-tailed,
+randomrestarts findasolution faster, onaverage, thanasingleruntocompletion.
+Bibliographical and Historical Notes 155
+Simulated annealing was first described by Kirkpatrick et al. (1983), who borrowed
+directly from the Metropolis algorithm (which is used to simulate complex systems in
+physics(Metropolisetal.,1953)andwassupposedlyinventedata Los Alamosdinnerparty).
+Simulatedannealing isnowafieldinitself,withhundreds ofpaperspublished everyyear.
+Finding optimal solutions in continuous spaces is the subject matter of several fields,
+includingoptimizationtheory,optimalcontroltheory,andthecalculusofvariations. The
+basictechniques areexplained wellby Bishop(1995);Pressetal.(2007)coverawiderange
+ofalgorithms andprovideworkingsoftware.
+As Andrew Moore points out, researchers have taken inspiration for search and opti-
+mizationalgorithmsfromawidevarietyoffieldsofstudy: metallurgy(simulatedannealing),
+biology (geneticalgorithms), economics(market-based algorithms), entomology (antcolony
+optimization),neurology(neuralnetworks),animalbehavior(reinforcementlearning),moun-
+taineering (hillclimbing), andothers.
+Linearprogramming(LP)wasfirststudiedsystematically bythe Russianmathemati-
+cian Leonid Kantorovich (1939). It was one of the first applications of computers; the sim-
+plexalgorithm(Dantzig,1949)isstilluseddespite

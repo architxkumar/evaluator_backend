@@ -1,0 +1,25 @@
+ for our query? Not quite! The missing element
+is the Contents(url) function, which refers to the HTML page at a given URL. The agent
+doesn t havethepagecontents ofevery UR Linitsknowledge base;nordoesithaveexplicit
+rulesfordeducing whatthosecontents mightbe. Instead, wecanarrange fortheright HTTP
+procedure to be executed whenever a subgoal involves the Contents function. In this way, it
+appears tothe inference engine as ifthe entire Webis inside the knowledge base. This isan
+PROCEDURAL exampleofageneraltechniquecalledproceduralattachment,wherebyparticularpredicates
+ATTACHMENT
+andfunctions canbehandledbyspecial-purpose methods.
+12.7.2 Comparing offers
+Let us assume that the reasoning processes of the preceding section have produced a set of
+offerpagesforour laptops query. Tocomparethoseoffers, theagentmustextracttherele-
+vantinformation price, speed,disksize,weight,andsoon fromtheofferpages. Thiscan
+beadifficult taskwithreal Webpages, forallthereasons mentioned previously. Acommon
+wayof dealing withthis problem is touse programs called wrappersto extract information
+WRAPPER
+from a page. The technology of information extraction is discussed in Section 22.4. For
+now weassume that wrappers exist, and when given apage and a knowledge base, they add
+assertions to the knowledge base. Typically, a hierarchy of wrappers would be applied to a
+page: a very general one to extract dates and prices, a morespecific one to extract attributes
+forcomputer-related products, andifnecessary asite-specific onethatknowstheformatofa
+particularstore. Givenapageontheexample.com sitewiththetext
+IBM Think Book 970. Our price: 399.00
+followed byvarious technical specifications, wewouldlike awrapper toextract information
+suchasthefollowing: c,offer c Laptop Computers offer Product Offers Manufacturer(c,IBM) Model(c,Think Book970) Screen Size(c,Inches(14)) Screen Type(c,Color LCD) Memory Size(c,Gigabytes(2)) CPU Speed(c,GHz(1.2)) Offered Product(offer,c) Store(offer,Gen Store) URL(offer, example

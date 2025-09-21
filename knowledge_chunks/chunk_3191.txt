@@ -1,0 +1,34 @@
+230,1085 TETRAD,826
+Suttner,C.,360,1090 Tank,D.W.,11,1084 Teukolsky,S.A.,155,1086
+Sutton,C.,885,1090 Tardos,E.,688,1084 texel,951
+Sutton,R.S.,685,854 857,1065,1090 Tarjan,R.E.,1059,1090 textclassification,865,882
+Svartvik,J.,920,1086 Tarski,A.,8,314,920,1090 TEXTRUNNER,439,881,882,885
+Svestka,P.,1013,1078 Tash,J.K.,686,1090 texture,939,948,951
+Svetnik,V.B.,605,1093 Taskar,B.,556,1073,1090 texturegradient,967
+Svore,K.,884,1090 taskenvironment,40,59 Teyssier,M.,826,1090
+Swade,D.,14,1090 tasknetwork,394 Thaler,R.,637,638,1090
+Swartz,R.,1022,1067 Tasmania,222 theeandthou,890
+Swedish,32 Tate,A.,394,396,408,431,432,1064, THEO,1047
+Swerling,P.,604,1090 1065,1090 Theocharous,G.,605,1090
+Swift,T.,359,1090 Tatman,J.A.,687,1090 theorem,302
+switching Kalmanfilter,589,608 Tattersall,C.,176,1090 incompleteness,8,352,1022
+syllogism,4,275 taxi,40,694 theoremprover,2,356
+symbolicdifferentiation,364 in Athens,509 theoremproving,249,393
+symbolicintegration,776 automated,56,236,480,695,1047 mathematical,21,32
+symmetrybreaking(in CS Ps),226 taxonomichierarchy,24,440 Theseus,758
+synapse,11 taxonomy,440,465,469 Thiele,T.,604,1090
+synchrodrive,976 Taylor,C.,763,968,1070,1082 Thielscher,M.,279,470,1090
+synchronization,427 Taylor,G.,358,1090 thingification,440
+synonymy,465,870 Taylor,M.,469,1089 thinkinghumanly,3
+syntacticambiguity,905,920 Taylor,R.,1013,1081 thinkingrationally,4
+syntacticcategories,888 Taylor,W.,9,229,277,1068 Thitimajshima,P.,555,1065
+syntacticsugar,304 Taylorexpansion,982 Thomas,A.,554,555,826,1073
+syntactictheory(ofknowledge),470 TD-GAMMON,186,194,850,851 Thomas,J.,763,1069
+syntax,23,240,244 Teh,Y.W.,1047,1075 Thompson,H.,884,1066
+oflogic,274 telescope,562 Thompson,K.,176,192,1069,1090
+ofnaturallanguage,888 television,860 thought,4,19,234
+ofprobability,488 Teller,A.,155,554,1082 lawsof,4
+synthesis,356 Teller,E.,155,554,1082 thrashing,102
+deductive,356 Teller,S.,1012,1066 3-SAT,277,334,362
+synthesisofalgorithms,356 Temperley,D.,920,1089 thresholdfunction,724
+Syrja nen,T.,

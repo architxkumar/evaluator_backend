@@ -1,0 +1,35 @@
+CKING-SEARCH,215 Bayesian,491
+695,1047 backtrackingsearch,87,215,218 220, Bayesianclassifier,499
+automobileinsurance,621 222,227 Bayesianlearning,752,803,803 804,
+Auton,L.D.,277,1069 Backus,J.W.,919,1065 825
+autonomiccomputing,60 Backus Naurform(BNF),1060 Bayesiannetwork,26,510,510 517,
+autonomousunderwatervehicle(AUV), backwardchaining,257,259,275, 551,565,827
+972 337 345,358 dynamic,590,590 599
+autonomy,39 backwardsearchforplanning,374 376 hybrid,520,552
+averagereward,650 Bacon,F.,6 inferencein,522 530
+Axelrod,R.,687,1064 bagging,760 learninghiddenvariablesin,824
+axiom,235,302 Bagnell,J.A.,852,1013,1065 learningin,813 814
+actionexclusion,273,428 bagofwords,866,883 multi-entity,556
+of Chineseroom,1032 Baird,L.C.I.,685,1092 Bayes Nettoolkit,558
+decomposability,614 Baker,J.,920,922,1065 Beal,D.F.,191,1065
+domain-specific,439 Balashek,S.,922,1070 Beal,J.,27,1065
+effectaxiom,266 Baldi,P.,604,1065 Beame,P.,277,1064
+frameaxiom,267 Baldwin,J.M.,130,1065 beamsearch,125,174
+Kolmogorov s,489 Ball,M.,396,1091 Bear,J.,884,1075
+ofnumbertheory,303 Ballard,B.W.,191,200,1065 Beber,G.,30,1071
+ofprobability,489 Baluja,S.,155,968,1065,1087 Beckert,B.,359,1065
+Peano,303,313,333 Bancilhon,F.,358,1065 beerfactoryscheduling,434
+precondition,273 banditproblem,840,855 Beeri,C.,229,1065
+ofprobability,488 490,1057 Banerji,R.,776,799,1082 beetle,dung,39,61,424,1004
+ofsettheory,304 bang-bangcontrol,851 behaviorism,12,15,60
+successor-state,267,279,389 Bangera,R.,688,1092 Bekey,G.,1014,1065
+ofutilitytheory,613 Banko,M.,28,439,469,756,759,872, belief,450,453
+wumpusworld,305 881,885,1065,1072 degreeof,482,489
+axon,11 Bar-Hillel,Y.,920,922,1065 desiresand,610 611
+Bar-Shalom,Y.,604,606,1065 belieffunction,549
+B Barifaijo,E.,422,1077 beliefnetwork,see Bayesiannetwork
+Barry,M.,553,1076 beliefpropagation,555
+b (branchingfactor),103 Bartak,R.,230,1065 beliefrevision,460
+B search,191 Bartlett,F.,13 beliefstate,138,269,415,480
+Baader,F.,359,471,1064 Bartlett,P.,762,855,1064,1065 ingametheory,675
+Babbage,C

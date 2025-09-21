@@ -1,0 +1,31 @@
+nismsarethoughttoformthebasisforlearninginthebrain. Most
+informationprocessinggoesoninthecerebralcortex,theouterlayerofthebrain. Thebasic
+organizationalunit appears to be a column of tissue about0.5 mm in diameter, containing
+about20,000neuronsandextendingthefulldepthofthecortexabout4mminhumans).
+Wenowhavesomedataonthemappingbetweenareasofthebrain andthepartsofthe
+body that they control orfrom which they receive sensory input. Such mappings are able to
+change radically over the course of a few weeks, and some animals seem to have multiple
+maps. Moreover, we do not fully understand how other areas can take over functions when
+oneareaisdamaged. Thereisalmostnotheoryonhowanindividual memoryisstored.
+The measurement of intact brain activity began in 1929 with the invention by Hans
+Bergerofthe electroencephalograph (EEG).Therecent development offunctional magnetic
+resonance imaging (f MRI) (Ogawa et al., 1990; Cabeza and Nyberg, 2001) is giving neu-
+roscientists unprecedentedly detailed images of brain activity, enabling measurements that
+correspond in interesting ways to ongoing cognitive processes. These are augmented by
+advances in single-cell recording of neuron activity. Individual neurons can be stimulated
+electrically, chemically, orevenoptically(Hanand Boyden,2007),allowingneuronal input output relationships to be mapped. Despite these advances, we are still a long way from
+understanding howcognitiveprocesses actually work.
+The truly amazing conclusion is that a collection of simple cells can lead to thought,
+action, and consciousness or, in the pithy words of John Searle (1992), brains cause minds.
+12 Chapter 1. Introduction
+Supercomputer Personal Computer Human Brain
+Computational units 104 CP Us,1012 transistors 4CP Us,109 transistors 1011 neurons
+Storageunits 1014 bits RAM 1011 bits RAM 1011 neurons
+1015 bitsdisk 1013 bitsdisk 1014 synapses
+Cycletime 10 9
+sec 10 9
+sec 10 3
+sec
+Operations sec 1015 1010 1017
+Memoryupdates sec 1014 1010 1014
+Figure1.3 Acrudecomp

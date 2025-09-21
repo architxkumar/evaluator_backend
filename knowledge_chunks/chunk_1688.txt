@@ -1,0 +1,23 @@
+sion quality.
+Alpha beta incorporates thesimplest kindofmetareasoning, namely, atheorem totheeffect
+thatcertainbranches ofthetreecanbeignored withoutloss. Itispossible todomuchbetter.
+In Chapter16,weseehowtheseideascanbemadepreciseandimplementable.
+Finally, let us reexamine the nature of search itself. Algorithms for heuristic search
+and for game playing generate sequences of concrete states, starting from the initial state
+and then applying an evaluation function. Clearly, this is not how humans play games. In
+chess,oneoftenhasaparticulargoalinmind forexample,trappingtheopponent squeen and can use this goal to selectively generate plausible plans for achieving it. This kind of
+goal-directed reasoning or planning sometimes eliminates combinatorial search altogether.
+David Wilkins (1980) PARADISE is the only program to have used goal-directed reasoning
+successfully in chess: it was capable of solving some chess problems requiring an 18-move
+combination. As yet there is no good understanding of how to combine the two kinds of
+algorithms into a robust and efficient system, although Bridge Baron might be a step in the
+right direction. A fully integrated system would be a significant achievement not just for
+game-playing research but also for AI research in general, because it would be a good basis
+forageneralintelligent agent.
+5.9 SUMMARY
+We have looked at a variety of games to understand what optimal play means and to under-
+standhowtoplaywellinpractice. Themostimportant ideasareasfollows: A game can be defined by the initial state (how the board is set up), the legal actions
+in each state, the result of each action, a terminal test (which says when the game is
+over),andautilityfunctionthatapplies toterminalstates. In two-player zero-sum games with perfect information, the minimax algorithm can
+selectoptimalmovesbyadepth-firstenumeration ofthegametree. The alpha beta search algorithm computes the same optimal move as minimax, but
+achievesmuchgreaterefficiencybyeliminat

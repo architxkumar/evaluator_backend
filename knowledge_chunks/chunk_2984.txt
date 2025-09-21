@@ -1,0 +1,30 @@
+st we can usually do is compute the worst case T (n) or the average case T (n).
+worst avg
+Computinganaverage meansthattheanalystmustassumesomedistribution ofinputs.
+The second problem is that algorithms tend to resist exact analysis. In that case, it is
+necessarytofallbackonanapproximation. Wesaythatthe SUMMATION algorithmis O(n),
+meaning that its measure is at most a constant times n, with the possible exception of a few
+smallvaluesofn. Moreformally,
+T(n)is O(f(n))if T(n) kf(n)forsomek, foralln n .
+0
+ASYMPTOTIC The O()notation gives uswhatis called an asymptotic analysis. Wecan say without ques-
+ANALYSIS
+tionthat, asnasymptotically approaches infinity, an O(n)algorithm isbetterthanan O(n2)
+algorithm. Asinglebenchmarkfigurecouldnotsubstantiate suchaclaim.
+The O()notation abstracts overconstant factors, whichmakes it easierto use, but less
+precise, than the T() notation. Forexample, an O(n2) algorithm will always be worse than
+an O(n)inthelong run, butifthetwoalgorithms are T(n2 1)and T(100n 1000),then
+the O(n2)algorithm isactuallybetterfor n 110.
+Despite this drawback, asymptotic analysis is the most widely used tool for analyzing
+algorithms. Itisprecisely because theanalysis abstracts overboththeexactnumberofoper-
+ations (by ignoring the constant factor k) and the exact content of the input (by considering
+onlyitssizen)thattheanalysisbecomesmathematicallyfeasible. The O()notationisagood
+compromisebetweenprecision andeaseofanalysis.
+A.1.2 NP andinherently hardproblems
+The analysis of algorithms and the O() notation allow us to talk about the efficiency of a
+particularalgorithm. However,theyhavenothingtosayaboutwhethertherecouldbeabetter
+COMPLEXITY algorithmfortheproblemathand. Thefieldofcomplexityanalysisanalyzesproblemsrather
+ANALYSIS
+thanalgorithms. Thefirstgrossdivisionisbetweenproblemsthatcanbesolvedinpolynomial
+time and problems that cannot be solved in polynomial time, no matter what algorithm is
+used. Theclassofpolynomialproblems those whichcanbesolvedintime 

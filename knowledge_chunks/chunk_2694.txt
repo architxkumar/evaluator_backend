@@ -1,0 +1,33 @@
+9
+21.8 Compute the true utility function and the best linear approximation in x and y (as in
+Equation(21.10))forthefollowingenvironments:
+a. A10 10worldwithasingle 1terminalstateat(10,10).
+b. Asin(a),butadda 1terminalstateat(10,1).
+c. Asin(b),butaddobstacles in10randomly selectedsquares.
+d. Asin(b),butplaceawallstretching from(5,2)to(5,9).
+e. Asin(a),butwiththeterminalstateat(5,5).
+Theactions aredeterministic movesinthefourdirections. Ineach case, compare the results
+using three-dimensional plots. Foreach environment, propose additional features (besides x
+andy)thatwouldimprovetheapproximation andshowtheresults.
+21.9 Implement the REINFORCE and PEGASUS algorithms and apply them to the 4 3
+world,usingapolicyfamilyofyourownchoosing. Commentontheresults.
+21.10 Isreinforcementlearninganappropriateabstractmodelforevolution? Whatconnec-
+tionexists,ifany,betweenhardwiredrewardsignalsandevolutionary fitness?
+22
+NATURAL LANGUAGE
+PROCESSING
+In which we see how to make use of the copious knowledge that is expressed in
+naturallanguage.
+Homosapiensissetapartfromotherspeciesbythecapacityforlanguage. Somewherearound
+100,000yearsago,humanslearnedhowtospeak,andabout7,000yearsagolearnedtowrite.
+Althoughchimpanzees, dolphins, andotheranimalshaveshownvocabularies ofhundreds of
+signs,onlyhumanscanreliablycommunicateanunboundednumberofqualitativelydifferent
+messagesonanytopicusingdiscretesigns.
+Of course, there are other attributes that are uniquely human: no other species wears
+clothes, creates representational art, or watches three hours of television a day. But when
+Alan Turing proposed his Test (see Section 1.1.1), he based it on language, not art or TV.
+There are two main reasons why we want our computer agents to be able to process natural
+languages: first,tocommunicatewithhumans,atopicwetakeupin Chapter23,andsecond,
+toacquire information fromwrittenlanguage, thefocusofthischapter.
+There are over a trillion pages of information on the Web, almost all of it in natural
+KNOWLEDGE lang

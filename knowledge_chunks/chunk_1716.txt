@@ -1,0 +1,33 @@
+de in a graph (see
+CONSISTENCY
+Figure 6.1(b)) and each binary constraint as an arc, then the process of enforcing local con-
+sistency ineach part of the graph causes inconsistent values tobe eliminated throughout the
+graph. Therearedifferent typesoflocalconsistency, whichwenowcoverinturn.
+6.2.1 Nodeconsistency
+A single variable (corresponding to a node in the CSP network) is node-consistent if all
+NODECONSISTENCY
+the values in the variable s domain satisfy the variable s unary constraints. For example,
+in the variant of the Australia map-coloring problem (Figure 6.1) where South Australians
+dislike green, the variable SA starts with domain red,green,blue , and we can make it
+node consistent byeliminating green,leaving SAwiththe reduced domain red,blue . We
+saythatanetworkisnode-consistent ifeveryvariableinthenetworkisnode-consistent.
+It is always possible to eliminate all the unary constraints in a CSP by running node
+consistency. It is also possible to transform all n-ary constraints into binary ones (see Ex-
+ercise 6.6). Because of this, it is common to define CSP solvers that work with only binary
+constraints; wemakethatassumption fortherestofthischapter, exceptwherenoted.
+6.2.2 Arcconsistency
+A variable in a CSP is arc-consistent if every value in its domain satisfies the variable s
+ARCCONSISTENCY
+binaryconstraints. Moreformally, X isarc-consistent withrespecttoanothervariable X if
+i j
+forevery value in the current domain D there is some value in the domain D that satisfies
+i j
+thebinary constraint onthearc (X ,X ). Anetworkisarc-consistent ifeveryvariable isarc
+i j
+consistentwitheveryothervariable. Forexample,considertheconstraint Y X2 wherethe
+domainofboth X and Y isthesetofdigits. Wecanwritethisconstraint explicitly as
+(cid:16)(X,Y), (0,0),(1,1),(2,4),(3,9)) (cid:17) .
+To make X arc-consistent with respect to Y, we reduce X s domain to 0,1,2,3 . If we
+alsomake Y arc-consistent withrespect to X,then Y sdomainbecomes 0,1,4,9 andthe
+whole CS Pisarc-consistent.
+O

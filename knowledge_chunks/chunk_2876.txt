@@ -1,0 +1,35 @@
+ersionsofthepath-planningprob-
+lem throughout this book; the complication added by robotics is that path planning involves
+continuousspaces. Therearetwomainapproaches: celldecompositionandskeletonization.
+Each reduces the continuous path-planning problem to a discrete graph-search problem. In
+thissection,weassumethatmotionisdeterministicandthatlocalizationoftherobotisexact.
+Subsequent sections willrelaxtheseassumptions.
+25.4.1 Configurationspace
+We will start with a simple representation for a simple robot motion problem. Consider the
+robot arm shown in Figure 25.14(a). It has two joints that move independently. Moving
+the joints alters the (x,y) coordinates of the elbow and the gripper. (The arm cannot move
+in the z direction.) This suggests that the robot s configuration can be described by a four-
+dimensionalcoordinate: (x ,y )forthelocationoftheelbowrelativetotheenvironmentand
+e e
+(x ,y ) for the location of the gripper. Clearly, these four coordinates characterize the full
+g g
+WORKSPACE state of the robot. They constitute what is known as workspace representation, since the
+REPRESENTATION
+coordinates oftherobotarespecifiedinthesamecoordinate system astheobjects itseeksto
+manipulate (or to avoid). Workspace representations are well-suited for collision checking,
+especially iftherobotandallobjectsarerepresented bysimplepolygonal models.
+The problem with the workspace representation is that not all workspace coordinates
+areactually attainable, eveninthe absence ofobstacles. Thisisbecause ofthe linkagecon-
+LINKAGE straints on the space of attainable workspace coordinates. Forexample, the elbow position
+CONSTRAINTS
+(x ,y ) and the gripper position (x ,y ) are always a fixed distance apart, because they are
+e e g g
+joined byarigid forearm. Arobot motion plannerdefined over workspace coordinates faces
+the challenge of generating paths that adhere to these constraints. This is particularly tricky
+Section25.4. Planningto Move 987
+table
+eelb
+table
+sshou
+ee vertical
+obsta

@@ -1,0 +1,29 @@
+log likelihood of the data increases from about 2044 initially to about 2021 after
+the first iteration, as shown in Figure 20.12(b). That is, the update improves the likelihood
+itself by a factor of about e23 1010. By the tenth iteration, the learned model is a better
+fitthantheoriginal model(L 1982.214). Thereafter, progress becomes veryslow. This
+is not uncommon with EM, and many practical systems combine EM with a gradient-based
+algorithm suchas Newton Raphson (see Chapter4)forthelastphaseoflearning.
+The general lesson from this example is that the parameter updates for Bayesian net-
+work learning with hidden variables are directly available from the results of inference on
+each example. Moreover, only local posterior probabilities are needed for each parame-
+ter. Here, local means that the CPT for each variable X can be learned from posterior
+i
+probabilities involving just X and its parents U . Defining to be the CPT parameter
+i i ijk
+P(X x U u ),theupdateisgivenbythenormalizedexpected countsasfollows:
+i ij i ik N (X x ,U u ) N (U u ).
+ijk i ij i ik i ik
+Theexpectedcountsareobtainedbysummingovertheexamples,computingtheprobabilities
+P(X x ,U u ) for each by using any Bayes net inference algorithm. For the exact
+i ij i ik
+algorithms including variableelimination alltheseprobabilities areobtainabledirectlyas
+aby-product ofstandard inference, withnoneed forextracomputations specific tolearning.
+Moreover, theinformation needed forlearning isavailable locallyforeachparameter.
+20.3.3 Learning hidden Markovmodels
+Our final application of EM involves learning the transition probabilities in hidden Markov
+models (HM Ms). Recall from Section 15.3 that a hidden Markov model can be represented
+by a dynamic Bayes net with a single discrete state variable, as illustrated in Figure 20.14.
+Each data point consists of an observation sequence of finite length, so the problem is to
+learn the transition probabilities from a set of observation sequences (or from just one long
+sequenc

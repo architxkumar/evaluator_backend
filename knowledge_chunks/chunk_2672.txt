@@ -1,0 +1,24 @@
+roximator is characterized by, say, n 20 parameters an enormous compression. Although no one knows the true utility function for chess, no
+one believes that it can be represented exactly in 20 numbers. If the approximation is good
+846 Chapter 21. Reinforcement Learning
+enough, however, theagentmightstillplayexcellent chess.3 Function approximation makes
+itpracticaltorepresentutilityfunctionsforverylargestatespaces,butthatisnotitsprincipal
+benefit. The compression achieved by a function approximator allows the learning agent to
+generalize from states it has visited to states it has not visited. That is, the most important
+aspectoffunctionapproximationisnotthatitrequireslessspace,butthatitallowsforinduc-
+tive generalization over input states. To give you some idea of the power of this effect: by
+examiningonlyoneinevery1012 ofthepossiblebackgammonstates,itispossibletolearna
+utilityfunction thatallowsaprogramtoplayaswellasanyhuman(Tesauro,1992).
+Ontheflip side, of course, there isthe problem that there could fail tobe any function
+in the chosen hypothesis space that approximates the true utility function sufficiently well.
+As in all inductive learning, there is a tradeoff between the size of the hypothesis space and
+thetimeittakestolearnthefunction. Alargerhypothesis spaceincreases thelikelihood that
+agoodapproximation canbefound, butalsomeansthatconvergence islikelytobedelayed.
+Letusbeginwiththesimplestcase,whichisdirectutilityestimation. (See Section21.2.)
+With function approximation, this is an instance of supervised learning. Forexample, sup-
+posewerepresenttheutilitiesforthe4 3worldusingasimplelinearfunction. Thefeatures
+ofthesquares arejusttheir xandy coordinates, sowehave
+U (x,y) x y . (21.10) 0 1 2
+Thus,if( , , ) (0.5,0.2,0.1),then U (1,1) 0.8. Givenacollection oftrials, weob-
+0 1 2 tainasetofsamplevaluesof U (x,y),andwecanfindthebestfit,inthesenseofminimizing thesquarederror, usingstandard linearregression. (See Chapter18.)
+For reinforcement learning, it makes 

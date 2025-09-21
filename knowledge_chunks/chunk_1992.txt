@@ -1,0 +1,26 @@
+ Chapter3,Felneretal.(2004)showencouragingresultsusingpatterndatabases
+forslidingblockspuzzles,whichcanbethoughtofasaplanningdomain,but Hoffmannetal.
+(2006)showsomelimitations ofabstraction forclassicalplanning problems.
+Avrim Blumand Merrick Furst(1995, 1997)revitalized thefieldofplanningwiththeir
+GRAPHPLA Nsystem,whichwasordersofmagnitudefasterthanthepartial-orderplannersof
+the time. Othergraph-planning systems, such as IPP (Koehler etal., 1997), STAN (Fox and
+Long,1998),and SGP(Weldetal.,1998),soonfollowed. Adatastructurecloselyresembling
+theplanninggraphhadbeendevelopedslightlyearlierby Ghallaband Laruelle(1994),whose
+IXTET partial-order planner used it to derive accurate heuristics to guide searches. Nguyen
+et al. (2001) thoroughly analyze heuristics derived from planning graphs. Ourdiscussion of
+planning graphs is based partly on this work and on lecture notes and articles by Subbarao
+Kambhampati (Bryce and Kambhampati, 2007). As mentioned in the chapter, a planning
+graph can be used in many different ways to guide the search for a solution. The winner
+of the 2002 AIPS planning competition, LPG (Gerevini and Serina, 2002, 2003), searched
+planning graphsusingalocalsearchtechnique inspired by WALKSAT.
+Thesituation calculus approach toplanning wasintroduced by John Mc Carthy(1963).
+Theversionweshowherewasproposed by Ray Reiter(1991, 2001).
+Kautzet al. (1996) investigated various ways to propositionalize action schemas, find-
+ing that the most compact forms did not necessarily lead to the fastest solution times. A
+systematic analysis was carried out by Ernst et al. (1997), who also developed an auto-
+matic compiler for generating propositional representations from PDDL problems. The
+BLACKBOX planner, which combines ideas from GRAPHPLAN and SATPLAN, was devel-
+oped by Kautz and Selman (1998). CPLAN, a planner based on constraint satisfaction, was
+described byvan Beekand Chen(1999).
+Mostrecently, therehasbeen interest intherepresentation ofplans asbinarydecision
+BIN

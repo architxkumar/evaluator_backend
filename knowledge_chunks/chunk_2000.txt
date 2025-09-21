@@ -1,0 +1,37 @@
+ter 11. Planningand Actinginthe Real World
+Jobs( Add Engine1 Add Wheels1 Inspect1 , Add Engine2 Add Wheels2 Inspect2 )
+Resources(Engine Hoists(1),Wheel Stations(1),Inspectors(2),Lug Nuts(500))
+Action(Add Engine1,DURATION:30,
+USE:Engine Hoists(1))
+Action(Add Engine2,DURATION:60,
+USE:Engine Hoists(1))
+Action(Add Wheels1,DURATION:30,
+CONSUME:Lug Nuts(20),USE:Wheel Stations(1))
+Action(Add Wheels2,DURATION:15,
+CONSUME:Lug Nuts(20),USE:Wheel Stations(1))
+Action(Inspect
+i
+,DURATION:10,
+USE:Inspectors(1))
+Figure11.1 Ajob-shopschedulingproblemforassemblingtwocars,with resourcecon-
+straints. Thenotation A Bmeansthataction Amustprecedeaction B.
+Thisapproachiscommoninreal-worldmanufacturingandlogisticalsettings,wheretheplan-
+ningphase isoftenperformed byhumanexperts. Theautomated methods of Chapter10can
+also be used for the planning phase, provided that they produce plans with just the minimal
+ordering constraints required forcorrectness. GRAPHPLAN (Section 10.3), SATPLAN (Sec-
+tion 10.4.1), and partial-order planners (Section 10.4.4) can do this; search-based methods
+(Section 10.2) produce totally ordered plans, but these can easily be converted to plans with
+minimalordering constraints.
+11.1.1 Representing temporal andresource constraints
+A typical job-shop scheduling problem, as first introduced in Section 6.1.2, consists of a
+set of jobs, each of which consists a collection of actions with ordering constraints among
+JOB
+them. Each action has a duration and a set of resource constraints required by the action.
+DURATION
+Each constraint specifies a type of resource (e.g., bolts, wrenches, or pilots), the number
+of that resource required, and whether that resource is consumable (e.g., the bolts are no
+CONSUMABLE
+longer available foruse) or reusable (e.g., apilot is occupied during a flight but is available
+REUSABLE
+againwhentheflightisover). Resources canalsobe produced byactionswithnegativecon-
+sumption, including manufacturing, growing, andresupply actions. Asolution toajob-s

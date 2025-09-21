@@ -1,0 +1,31 @@
+ntage comes from the
+abilityofcrossovertocombinelargeblocksoflettersthat haveevolvedindependently toper-
+form useful functions, thus raising the level of granularity at which the search operates. For
+example,itcouldbethatputtingthefirstthreequeensinpositions 2,4,and6(wheretheydo
+not attack each other) constitutes a useful block that can be combined with other blocks to
+construct asolution.
+The theory of genetic algorithms explains how this works using the idea of a schema,
+SCHEMA
+which is a substring in which some of the positions can be left unspecified. For example,
+the schema 246 describes all 8-queens states in which the first three queens are in
+positions 2, 4, and 6, respectively. Strings that match the schema (such as 24613578) are
+calledinstancesoftheschema. Itcanbeshownthatiftheaveragefitnessoftheinstances of
+INSTANCE
+aschemaisabovethemean,thenthenumberofinstancesoftheschemawithinthepopulation
+willgrowovertime. Clearly,thiseffectisunlikelytobesignificantifadjacentbitsaretotally
+unrelated to each other, because then there will be few contiguous blocks that provide a
+consistent benefit. Genetic algorithms work best when schemata correspond to meaningful
+componentsofasolution. Forexample,ifthestringisarepresentationofanantenna,thenthe
+schematamayrepresentcomponentsoftheantenna,suchasreflectorsanddeflectors. Agood
+4 Therearemanyvariantsofthisselectionrule. Themethodofculling,inwhichallindividualsbelowagiven
+thresholdarediscarded,canbeshowntoconvergefasterthantherandomversion(Baumetal.,1995).
+5 Itisherethattheencodingmatters. Ifa24-bitencodingisusedinsteadof8digits,thenthecrossoverpoint
+hasa2 3chanceofbeinginthemiddleofadigit,whichresultsinanessentiallyarbitrarymutationofthatdigit.
+Section4.2. Local Searchin Continuous Spaces 129
+function GENETIC-ALGORITHM(population,FITNESS-FN)returnsanindividual
+inputs:population,asetofindividuals
+FITNESS-FN,afunctionthatmeasuresthefitnessofanindividual
+repeat
+new population emptyset
+fori 1to SIZE(population)do
+x RANDOM-SELECT

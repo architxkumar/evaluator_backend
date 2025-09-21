@@ -1,0 +1,42 @@
+s0ifandonlyifanyofitsinputsis0: g Gate(g) Type(g) AND Signal(Out(1,g)) 0 n Signal(In(n,g)) 0.
+6. An ORgate soutputis1ifandonlyifanyofitsinputsis1: g Gate(g) Type(g) OR Signal(Out(1,g)) 1 n Signal(In(n,g)) 1.
+7. An XO Rgate soutputis1ifandonlyifitsinputsaredifferent: g Gate(g) Type(g) XOR Signal(Out(1,g)) 1 Signal(In(1,g)) (cid:7) Signal(In(2,g)).
+8. ANO Tgate soutputisdifferentfromitsinput: g Gate(g) (Type(g) NOT) Signal(Out(1,g)) (cid:7) Signal(In(1,g)) .
+9. Thegates(exceptfor NOT)havetwoinputsandoneoutput. g Gate(g) Type(g) NOT Arity(g,1,1) . g Gate(g) k Type(g) (k AND k OR k XOR) Arity(g,2,1)
+10. Acircuithasterminals, uptoitsinputandoutputarity, andnothing beyonditsarity: c,i,j Circuit(c) Arity(c,i,j) n (n i Terminal(In(c,n))) (n i In(c,n) Nothing) n (n j Terminal(Out(c,n))) (n j Out(c,n) Nothing)
+11. Gates,terminals, signals, gatetypes,and Nothing arealldistinct. g,t Gate(g) Terminal(t) g (cid:7) t (cid:7) 1 (cid:7) 0 (cid:7) OR (cid:7) AND (cid:7) XOR (cid:7) NOT (cid:7) Nothing .
+12. Gatesarecircuits. g Gate(g) Circuit(g)
+Encodethespecificprobleminstance
+Thecircuitshownin Figure8.6isencodedascircuit C withthefollowingdescription. First,
+1
+wecategorize thecircuitanditscomponent gates:
+Circuit(C ) Arity(C ,3,2)
+1 1
+Gate(X ) Type(X ) XOR
+1 1
+Gate(X ) Type(X ) XOR
+2 2
+Gate(A ) Type(A ) AND
+1 1
+Gate(A ) Type(A ) AND
+2 2
+Gate(O ) Type(O ) OR .
+1 1
+312 Chapter 8. First-Order Logic
+Then,weshowtheconnections betweenthem:
+Connected(Out(1,X ),In(1,X )) Connected(In(1,C ),In(1,X ))
+1 2 1 1
+Connected(Out(1,X ),In(2,A )) Connected(In(1,C ),In(1,A ))
+1 2 1 1
+Connected(Out(1,A ),In(1,O )) Connected(In(2,C ),In(2,X ))
+2 1 1 1
+Connected(Out(1,A ),In(2,O )) Connected(In(2,C ),In(2,A ))
+1 1 1 1
+Connected(Out(1,X ),Out(1,C )) Connected(In(3,C ),In(2,X ))
+2 1 1 2
+Connected(Out(1,O ),Out(2,C )) Connected(In(3,C ),In(1,A )).
+1 1 1 2
+Posequeriestotheinferenceprocedure
+Whatcombinations ofinputs wouldcause thefirstoutput of C (thesumbit)tobe0andthe
+1
+secondoutputof C (thecarrybit)tobe1?

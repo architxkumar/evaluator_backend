@@ -1,0 +1,26 @@
+cktracking. Montanari (1974) introduced
+the notion of constraint networks and propagation by path consistency. Alan Mackworth
+(1977)proposedthe AC-3algorithmforenforcingarcconsistencyaswellasthegeneralidea
+of combining backtracking with some degree of consistency enforcement. AC-4, a more
+efficientarc-consistency algorithm,wasdevelopedby Mohrand Henderson(1986). Soonaf-
+ter Mackworth s paperappeared, researchers beganexperimenting withthetradeoffbetween
+the cost of consistency enforcement and the benefits in terms of search reduction. Haralick
+and Elliot (1980) favored the minimal forward-checking algorithm described by Mc Gregor
+(1979), whereas Gaschnig (1979) suggested full arc-consistency checking after each vari-
+able assignment an algorithm later called MAC by Sabin and Freuder (1994). The latter
+paper provides somewhat convincing evidence that, on harder CS Ps, full arc-consistency
+checking pays off. Freuder (1978, 1982) investigated the notion of k-consistency and its
+relationship to the complexity of solving CS Ps. Apt (1999) describes a generic algorithmic
+framework within which consistency propagation algorithms can be analyzed, and Bessie re
+(2006)presents acurrentsurvey.
+Special methods for handling higher-order or global constraints were developed first
+within the context of constraint logic programming. Marriott and Stuckey (1998) provide
+excellent coverage of research in this area. The Alldiff constraint was studied by Regin
+(1994),Stergiouand Walsh(1999),andvan Hoeve(2001). Boundsconstraintswereincorpo-
+ratedintoconstraint logicprogrammingby Van Hentenryck etal.(1998). Asurveyofglobal
+constraints isprovided byvan Hoeveand Katriel(2006).
+Sudokuhasbecomethemostwidelyknown CS Pandwasdescribedassuchby Simonis
+(2005). Agerbeck and Hansen (2008) describe some of the strategies and show that Sudoku
+on an n2 n2 board is in the class of NP-hard problems. Reeson et al. (2007) show an
+interactive solverbasedon CS Ptechniques.
+The idea of backtracking search goe

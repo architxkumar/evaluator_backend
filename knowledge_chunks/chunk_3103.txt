@@ -1,0 +1,23 @@
+istics,27,832 837. progress. IBM Journalof Researchand Develop-
+Russell, S. J.(1992). Efficientmemory-bounded ment,11(6),601 617.
+Rosenblueth, A., Wiener, N., and Bigelow, J. searchmethods.In ECAI-92,pp.1 5.
+(1943). Behavior,purpose,andteleology. Philos- Samuelsson,C.and Rayner,M.(1991). Quantita-
+ophyof Science,10,18 24. Russell,S.J.(1998). Learningagentsforuncertain tiveevaluationofexplanation-basedlearningasan
+environments(extendedabstract). In COLT-98,pp. optimizationtoolforalarge-scalenaturallanguage
+Rosenschein,J.S.and Zlotkin,G.(1994). Rulesof 101 103. system.In IJCAI-91,pp.609 615.
+Encounter.MIT Press.
+Russell,S.J.,Binder,J.,Koller,D.,and Kanazawa, Sarawagi,S.(2007).Informationextraction.Foun-
+Rosenschein, S. J. (1985). Formal theories of K.(1995). Locallearninginprobabilisticnetworks dationsand Trendsin Databases,1(3),261 377.
+knowledge in AI and robotics. New Generation withhiddenvariables.In IJCAI-95,pp.1146 52.
+Computing,3(4),345 357. Satia, J. K. and Lave, R. E. (1973). Markovian
+Russell,S.J.and Grosof,B.(1987). Adeclarative decisionprocesseswithprobabilisticobservationof
+Ross,P.E.(2004). Psychingoutcomputerchess approachtobiasinconceptlearning.In AAAI-87. states.Management Science,20(1),1 13.
+players.IEEE Spectrum,41(2),14 15.
+Russell,S.J.and Norvig,P.(2003).Artificial Intelli- Sato, T. and Kameya, Y. (1997). PRISM: A
+Ross,S.M.(1988). AFirst Coursein Probability gence:AModern Approach(2ndedition). (thirdedition).Macmillan. Hall. 97,pp.1330 1335.
+1088 Bibliography
+Saul,L.K.,Jaakkola,T.,and Jordan,M.I.(1996). Scott,D.and Krauss,P.(1966).Assigningprobabil- Shannon,C.E.(1948). Amathematicaltheoryof
+Meanfieldtheoryforsigmoidbeliefnetworks.JAIR, itiestologicalformulas.In Hintikka,J.and Suppes, communication.Bell Systems Technical Journal,27,
+4,61 76. P.(Eds.),Aspectsof Inductive Logic.North-Holland. 379 423,623 656.
+Savage,L.J.(1954). The Foundationsof Statistics. Searle,J.R.(1980). Minds,brains,andprograms. Shannon,C.E.(1950). Programmingacomputer
+Wiley. BB

@@ -1,0 +1,28 @@
+therintoatreestructure. Thesepointersalsoallowthesolutionpathtobe
+extracted when agoal node is found; weuse the SOLUTION function to return the sequence
+ofactions obtained byfollowingparentpointers backtotheroot.
+Uptonow,wehavenotbeenverycarefultodistinguishbetweennodesandstates,butin
+writing detailed algorithms it s important to make that distinction. A node isa bookkeeping
+data structure usedtorepresent the search tree. Astate corresponds toaconfiguration ofthe
+world. Thus, nodes are on particular paths, as defined by PARENT pointers, whereas states
+are not. Furthermore, two different nodes can contain the same world state if that state is
+generated viatwodifferent searchpaths.
+Now that we have nodes, we need somewhere to put them. The frontier needs to be
+stored in such a way that the search algorithm can easily choose the next node to expand
+according to its preferred strategy. The appropriate data structure for this is a queue. The
+QUEUE
+operations onaqueueareasfollows: EMPTY?(queue)returnstrueonlyiftherearenomoreelementsinthequeue. POP(queue)removesthefirstelementofthequeueandreturnsit. INSERT(element,queue)insertsanelementandreturns theresulting queue.
+80 Chapter 3. Solving Problemsby Searching
+Queuesarecharacterized bythe orderinwhichtheystoretheinsertednodes. Threecommon
+variantsarethefirst-in,first-outor FIF Oqueue,whichpopstheoldestelementofthequeue;
+FIFOQUEUE
+thelast-in, first-outor LIF Oqueue(also knownasastack), whichpops thenewestelement
+LIFOQUEUE
+of the queue; and the priority queue,which pops the element of the queue with the highest
+PRIORITYQUEUE
+priorityaccording tosomeorderingfunction.
+The explored set can be implemented with a hash table to allow efficient checking for
+repeated states. With a good implementation, insertion and lookup can be done in roughly
+constant time no matter how many states are stored. One must take care to implement the
+hash table with the right notion of equality between states. For example, in the traveling
+salesperson p

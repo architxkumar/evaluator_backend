@@ -1,0 +1,42 @@
+olution but a sensorless agent that insists on 1-CNF belief
+stateswillnotfindit.
+Perhaps a better solution is to look for action sequences that keep the belief state
+as simple as possible. For example, in the sensorless vacuum world, the action sequence Right,Suck,Left,Suck generates thefollowingsequence ofbeliefstates:
+b True
+0
+b At R
+1
+b At R Clean R
+2
+b At L Clean R
+3
+b At L Clean R Clean L
+4
+That is, the agent can solve the problem while retaining a 1-CNF belief state, even though
+some sequences (e.g., those beginning with Suck) go outside 1-CNF. The general lesson is
+not lost on humans: we are always performing little actions (checking the time, patting our
+pocketstomakesurewehavethecarkeys,readingstreetsignsaswenavigatethroughacity)
+toeliminate uncertainty andkeepourbeliefstatemanageable.
+There is another, quite different approach to the problem of unmanageably wiggly be-
+lief states: don t bother computing them at all. Suppose the initial belief state is b and we
+0
+would like to know the belief state resulting from the action sequence a ,...,a . Instead
+1 m
+of computing it explicitly, just represent it as b then a ,...,a . This is a lazy but un-
+0 1 m
+ambiguous representation of the belief state, and it s quite concise O(n m) where n is
+the size of the initial belief state (assumed to be in 1-CNF) and m is the maximum length
+of an action sequence. As a belief-state representation, it suffers from one drawback, how-
+ever: determining whether the goal is satisfied, or an action is applicable, may require a lot
+ofcomputation.
+Thecomputationcanbeimplementedasanentailmenttest: if A representsthecollec-
+m
+tion of successor-state axioms required to define occurrences of the actions a ,...,a as
+1 m
+explainedfor SATPLA Nin Section10.4.1 and G
+m
+assertsthatthegoalistrueaftermsteps,
+thentheplanachievesthegoalifb A G ,thatis,ifb A G isunsatisfiable.
+0 m m 0 m m
+Givenamodern SA Tsolver,itmaybepossibletodothismuchmorequicklythancomputing
+thefull belief state. Forexample, i

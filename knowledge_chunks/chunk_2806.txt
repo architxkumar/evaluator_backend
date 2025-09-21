@@ -1,0 +1,33 @@
+ULAR specularreflection. Somesurfaces such asbrushed metal, plastic, orawetfloor display
+REFLECTION
+smallpatcheswherespecularreflection hasoccurred, calledspecularities. Theseareeasyto
+SPECULARITIES
+identify,becausetheyaresmallandbright(Figure24.4). Foralmostallpurposes,itisenough
+tomodelallsurfaces asbeingdiffusewithspecularities.
+934 Chapter 24. Perception A B
+Figure24.5 Twosurfacepatchesareilluminatedbyadistantpointsource,whoseraysare
+shown as gray arrowheads. Patch A is tilted away from the source ( is close to 900) and
+collectslessenergy,becauseitcutsfewerlightraysperunitsurfacearea. Patch B,facingthe
+source( iscloseto00),collectsmoreenergy.
+Themainsourceofillumination outsideisthesun,whoseraysalltravelparalleltoone
+DISTANTPOINT another. Wemodel this behavior asa distantpointlight source. Thisisthemostimportant
+LIGHTSOURCE
+model of lighting, and is quite effective for indoor scenes as well as outdoor scenes. The
+amountoflightcollectedbyasurfacepatchinthismodeldependsontheangle betweenthe
+illumination direction andthenormaltothesurface.
+A diffuse surface patch illuminated by a distant point light source will reflect some
+fraction of the light it collects; this fraction is called the diffuse albedo. White paper and
+DIFFUSEALBEDO
+snowhaveahighalbedo,about0.90,whereasflatblackvelvetandcharcoalhavealowalbedo
+of about 0.05 (which means that 95 of the incoming light is absorbed within the fibers of
+LAMBERT SCOSINE thevelvetortheporesofthecharcoal). Lambert scosinelawstatesthatthebrightness ofa
+LAW
+diffusepatchisgivenby
+I I cos ,
+0
+where isthediffusealbedo,I istheintensityofthelightsourceand istheanglebetween
+0
+the light source direction and the surface normal (see Figure 24.5). Lampert s law predicts
+bright image pixels come from surface patches that face the light directly and dark pixels
+come from patches that see the light only tangentially, so that the shading on a surface pro-
+vides some shape information. We explore this cue in Section 24.4.5. If the surface is 

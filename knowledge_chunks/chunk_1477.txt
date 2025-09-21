@@ -1,0 +1,29 @@
+thesesenses,except
+thatforthemostpartthedriver senvironmentisknown. Drivingarentedcarinanewcountry
+withunfamiliargeography andtrafficlawsisalotmoreexciting.
+Figure 2.6 lists the properties of a number of familiar environments. Note that the
+answers are not always cut and dried. For example, we describe the part-picking robot as
+episodic, because itnormally considers each part in isolation. Butif oneday there isalarge
+3 Theword sequential isalsousedincomputerscienceastheantonymof parallel. Thetwomeaningsare
+largelyunrelated.
+Section2.3. The Natureof Environments 45
+Task Environment Observable Agents Deterministic Episodic Static Discrete
+Crosswordpuzzle Fully Single Deterministic Sequential Static Discrete
+Chesswithaclock Fully Multi Deterministic Sequential Semi Discrete
+Poker Partially Multi Stochastic Sequential Static Discrete
+Backgammon Fully Multi Stochastic Sequential Static Discrete
+Taxidriving Partially Multi Stochastic Sequential Dynamic Continuous
+Medicaldiagnosis Partially Single Stochastic Sequential Dynamic Continuous
+Imageanalysis Fully Single Deterministic Episodic Semi Continuous
+Part-pickingrobot Partially Single Stochastic Episodic Dynamic Continuous
+Refinerycontroller Partially Single Stochastic Sequential Dynamic Continuous
+Interactive Englishtutor Partially Multi Stochastic Sequential Dynamic Discrete
+Figure2.6 Examplesoftaskenvironmentsandtheircharacteristics.
+batchofdefectiveparts,therobotshouldlearnfromseveralobservations thatthedistribution
+of defects has changed, and should modify its behavior for subsequent parts. We have not
+includeda known unknown columnbecause,asexplainedearlier,thisisnotstrictlyaprop-
+erty of the environment. Forsome environments, such aschess and poker, it isquite easy to
+supplytheagentwithfullknowledgeoftherules,butitisnonetheless interesting toconsider
+howanagentmightlearntoplaythesegameswithoutsuchknowledge.
+Severaloftheanswersinthetabledepend onhowthetaskenvironment isdefined. We
+havelistedthemedical-diagnosis tas

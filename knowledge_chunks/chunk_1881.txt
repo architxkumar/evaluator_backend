@@ -1,0 +1,31 @@
+hepeopleallofthetime,andtheycanfoolallofthepeople
+someofthetime,buttheycan tfoolallofthepeople allofthetime.
+l. All Greeks speak the same language. (Use Speaks(x,l) to mean that person x speaks
+languagel.)
+8.25 Write a general set of facts and axioms to represent the assertion Wellington heard
+about Napoleon s death and to correctly answer the question Did Napoleon hear about
+Wellington s death? 8.26 Extend the vocabulary from Section 8.4 to define addition for n-bit binary numbers.
+Thenencode the description ofthefour-bit adderin Figure8.8, and pose thequeries needed
+toverifythatitisinfactcorrect.
+8.27 Obtain a passport application for your country, identify the rules determining eligi-
+bility for a passport, and translate them into first-order logic, following the steps outlined in
+Section8.4.
+8.28 Considerafirst-orderlogicalknowledgebasethatdescribesworldscontainingpeople,
+songs,albums(e.g., Meetthe Beatles )anddisks(i.e.,particularphysicalinstancesof CDs).
+Thevocabulary contains thefollowingsymbols:
+Copy Of(d,a): Predicate. Diskdisacopyofalbuma.
+Owns(p,d): Predicate. Personpownsdiskd.
+Sings(p,s,a): Albumaincludesarecording ofsong ssungbyperson p.
+Wrote(p,s): Personpwrotesongs.
+Mc Cartney,Gershwin,BHoliday,Joe,Eleanor Rigby,The Man ILove,Revolver:
+Constantswiththeobviousmeanings.
+Exercises 321
+Expressthefollowingstatements infirst-orderlogic:
+a. Gershwinwrote The Man ILove. b. Gershwindidnotwrite Eleanor Rigby. c. Either Gershwinor Mc Cartneywrote The Man ILove. d. Joehaswrittenatleastonesong.
+e. Joeownsacopyof Revolver.
+f. Everysongthat Mc Cartneysingson Revolverwaswrittenby Mc Cartney.
+g. Gershwindidnotwriteanyofthesongson Revolver.
+h. Everysongthat Gershwinwrotehasbeenrecorded onsomealbum. (Possiblydifferent
+songsarerecorded ondifferent albums.)
+i. Thereisasinglealbumthatcontains everysongthat Joehas written.
+j. Joeownsacopyofanalbum thathas Billie Holidaysinging The Man ILove. k. Joe owns a copy of every album that has a song sung by Mc Cartney. (Of course, e

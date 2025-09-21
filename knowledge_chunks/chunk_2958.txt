@@ -1,0 +1,27 @@
+sthelastinvention
+that man need evermake, providedthat the machine is docile enoughto tell us how to
+keepitundercontrol.
+5 Asayoungman,Charles Babbagewasinfluencedbyreading Frankenstein.
+1038 Chapter 26. Philosophical Foundations
+TECHNOLOGICAL The intelligence explosion has also been called the technological singularity by mathe-
+SINGULARITY
+matics professor and science fiction author Vernor Vinge, who writes (1993), Within thirty
+years,wewillhavethetechnological meanstocreatesuperhuman intelligence. Shortlyafter,
+thehumanerawillbeended. Goodand Vinge(andmanyothers)correctlynotethatthecurve
+of technological progress (on many measures) is growing exponentially at present (consider
+Moore s Law). However,itisaleaptoextrapolatethatthecurvewillcontinuetoasingularity
+ofnear-infinitegrowth. Sofar,everyothertechnologyhasfollowedan S-shapedcurve,where
+the exponential growth eventually tapers off. Sometimes new technologies step in when the
+old ones plateau; sometimes wehit hard limits. With less than acentury ofhigh-technology
+historytogoon,itisdifficulttoextrapolate hundreds ofyearsahead.
+Note that the concept of ultraintelligent machines assumes that intelligence is an es-
+pecially important attribute, and if you have enough of it, all problems can be solved. But
+we know there are limits on computability and computational complexity. If the problem
+ofdefining ultraintelligent machines (orevenapproximations tothem) happens to fallin the
+class of, say, NEXPTIME-complete problems, and if there are no heuristic shortcuts, then
+even exponential progress in technology won t help the speed of light puts a strict upper
+bound on how much computing can bedone; problems beyond that limitwill not besolved.
+Westilldon tknowwherethoseupperbounds are.
+Vinge is concerned about the coming singularity, but some computer scientists and
+futurists relish it. Hans Moravec (2000) encourages ustogiveeveryadvantage toour mind
+children, the robots we create, which may surpass us in intelligence. Th

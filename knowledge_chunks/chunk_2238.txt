@@ -1,0 +1,27 @@
+heuseofmean-fieldmeth-
+ods. Jaakkola and Jordan (1996) extended the methodology to obtain both lower and upper
+bounds. Since these early papers, variational methods have been applied to many specific
+families ofmodels. Theremarkable paper by Wainwright and Jordan (2008) provides auni-
+fyingtheoretical analysis oftheliterature onvariational methods.
+A second important family of approximation algorithms is based on Pearl s polytree
+message-passing algorithm (1982a). This algorithm can be applied to general networks, as
+suggested by Pearl(1988). Theresults mightbeincorrect, orthealgorithm might failto ter-
+minate, but in many cases, the values obtained are close to the true values. Little attention
+BELIEF was paid to this so-called belief propagation (or BP)approach until Mc Eliece et al. (1998)
+PROPAGATION
+observed that message passing in a multiply connected Bayesian network was exactly the
+computation performed by the turbo decoding algorithm (Berrou et al., 1993), which pro-
+TURBODECODING
+videdamajorbreakthrough inthedesignofefficienterror-correcting codes. Theimplication
+isthat BPisbothfastandaccurateontheverylargeandveryhighlyconnectednetworksused
+fordecoding andmighttherefore beusefulmoregenerally. Murphyetal.(1999)presented a
+promising empirical study of BP s performance, and Weiss and Freeman (2001) established
+strongconvergence resultsfor BPonlinear Gaussiannetworks. Weiss(2000b)showshowan
+approximationcalledloopybeliefpropagationworks,andwhentheapproximationiscorrect.
+Yedidia et al. (2005) made further connections between loopy propagation and ideas from
+statistical physics.
+Theconnection betweenprobability andfirst-order languages wasfirststudied by Car-
+nap(1950). Gaifman(1964)and Scottand Krauss(1966)definedalanguageinwhichproba-
+bilities could beassociated withfirst-ordersentences and forwhichmodelswereprobability
+measures on possible worlds. Within AI, this idea was developed for propositional logic
+by Nilsson (1986) and for first-order logic by Halpern

@@ -1,0 +1,46 @@
+ing point at a time, taking a step after each one using Equation (18.5).
+Stochastic gradient descent can be used in an online setting, where new data are coming in
+one at a time, or offline, where we cycle through the same data as many times as is neces-
+sary,takingastepafterconsideringeachsingleexample. Itisoftenfasterthanbatchgradient
+descent. Withafixedlearning rate , however, itdoes not guarantee convergence; itcan os-
+cillatearoundtheminimumwithoutsettlingdown. Insomecases,asweseelater,aschedule
+ofdecreasing learning rates(asinsimulatedannealing) doesguarantee convergence.
+18.6.2 Multivariatelinearregression
+MULTIVARIATE Wecaneasilyextendtomultivariatelinearregression problems, inwhicheachexamplex
+LINEARREGRESSION j
+isann-elementvector.5 Ourhypothesis spaceisthesetoffunctions oftheform
+(cid:12)
+h (x ) w w x w x w w x .
+sw j 0 1 j,1 n j,n 0 i j,i
+i
+5 Thereadermaywishtoconsult Appendix Aforabriefsummaryoflinearalgebra.
+Section18.6. Regressionand Classification with Linear Models 721
+Thew term,theintercept,standsoutasdifferentfromtheothers. Wecanfixthatbyinventing
+0
+a dummy input attribute, x , which is defined as always equal to 1. Then h is simply the
+j,0
+dot product of the weights and the input vector (or equivalently, the matrix product of the
+transpose oftheweightsandtheinputvector):
+(cid:12)
+h (x ) w x w (cid:12) x w x .
+sw j j j i j,i
+i Thebestvectorofweights, w ,minimizessquared-error lossovertheexamples:
+(cid:12)
+w argmin L (y ,w x ).
+2 j j
+w
+j
+Multivariatelinearregressionisactuallynotmuchmorecomplicatedthantheunivariatecase
+wejust covered. Gradient descent willreach the(unique) minimum oftheloss function; the
+updateequation foreachweightw is
+(cid:12) i
+w w x (y h (x )). (18.6)
+i i j,i j w j
+j
+It is also possible to solve analytically for the w that minimizes loss. Let y be the vector of
+outputs for the training examples, and X be the data matrix, i.e., the matrix of inputs with
+DATAMATRIX
+onen-dimensional exampleperrow. Thenthesolution
+w (X
+(cid:12)
+X) 1

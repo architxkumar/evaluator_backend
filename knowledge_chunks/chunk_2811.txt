@@ -1,0 +1,33 @@
+xels. The Gaussian filter does just that.
+GAUSSIANFILTER
+(Usersof Photoshoprecognize thisasthe Gaussianbluroperation.) Recallthatthe Gaussian
+function withstandard deviation andmean0is
+N (x) 1 e x2 2 2 inonedimension, or 2 N (x,y) 1 e (x2 y2) 2 2 intwodimensions. 2 2
+The application of the Gaussian filter replaces the intensity I(x ,y ) with the sum, over all
+0 0
+(x,y) pixels, of I(x,y)N (d), where d is the distance from (x ,y ) to (x,y). This kind of 0 0
+weighted sum isso common that there is aspecial name and notation forit. Wesay that the
+function histheconvolution oftwofunctions f andg (denoted f g)ifwehave
+CONVOLUTION
+(cid:12) h(x) (f g)(x) f(u)g(x u) inonedimension, or
+u (cid:12) (cid:12) h(x,y) (f g)(x,y) f(u,v)g(x u,y v) intwo.
+u v Sothesmoothingfunctionisachievedbyconvolving theimagewiththe Gaussian,I N . A of1pixelisenoughtosmoothoverasmallamountofnoise,whereas2pixelswillsmootha
+largeramount,butatthelossofsomedetail. Becausethe Gaussian s influencefadesquickly
+atadistance, wecanreplace the inthesumswith 3 .
+Wecanoptimizethecomputation bycombiningsmoothingandedgefindingintoasin-
+gleoperation. Itisatheoremthatforanyfunctions f andg,thederivativeoftheconvolution,
+(f g) (cid:2) , is equal to the convolution with the derivative, f (g (cid:2) ). So rather than smoothing
+theimage and then differentiating, wecan just convolve the imagewith thederivative ofthe
+(cid:2)
+smoothing function, N . We then mark as edges those peaks in the response that are above somethreshold.
+Thereisanatural generalization ofthisalgorithm fromone-dimensional crosssections
+togeneraltwo-dimensional images. Intwodimensionsedgesmaybeatanyangle . Consid-
+eringtheimagebrightness asascalarfunction ofthevariables x,y,itsgradient isavector
+(cid:31)
+(cid:13) (cid:14) I
+I I x x . I I
+y y
+Edgescorrespond tolocationsinimageswherethebrightnessundergoes asharpchange, and
+so the magnitude of the gradient, I , should be large at an edge point. Of independent
+interestisthedirectionofthegradient
+(cid:13) (

@@ -1,0 +1,25 @@
+or-
+raine Prior,Greg Provan,William Rapaport,Deepak Ravichandran, Ioannis Refanidis,Philip
+Resnik, Francesca Rossi, Sam Roweis, Richard Russell, Jonathan Schaeffer, Richard Scherl,
+Hinrich Schuetze, Lars Schuster, Bart Selman, Soheil Shams, Stuart Shapiro, Jude Shav-
+lik, Yoram Singer, Satinder Singh, Daniel Sleator, David Smith, Bryan So, Robert Sproull,
+Lynn Stein, Larry Stephens, Andreas Stolcke, Paul Stradling, Devika Subramanian, Marek
+Suchenek, Rich Sutton, Jonathan Tash, Austin Tate, Bas Terwijn, Olivier Teytaud, Michael
+Thielscher, William Thompson, Sebastian Thrun, Eric Tiedemann, Mark Torrance, Randall
+Upham,Paul Utgoff,Petervan Beek,Hal Varian,Paulina Varshavskaya, Sunil Vemuri,Vandi
+Verma,Ubbo Visser,Jim Waldo,Toby Walsh,Bonnie Webber,Dan Weld,Michael Wellman,
+Kamin Whitehouse, Michael Dean White, Brian Williams, David Wolfe, Jason Wolfe, Bill
+Woods,Alden Wright,Jay Yagnik,Mark Yasuda,Richard Yen,Eliezer Yudkowsky,Weixiong
+Zhang,Ming Zhao,Shlomo Zilberstein, andouresteemedcolleague Anonymous Reviewer.
+About the Authors
+Stuart Russell was born in 1962 in Portsmouth, England. He received his B.A. with first-
+classhonours inphysics from Oxford University in1982, and his Ph.D.incomputerscience
+from Stanfordin1986. Hethenjoinedthefacultyofthe Universityof Californiaat Berkeley,
+where he is a professor of computer science, director of the Center for Intelligent Systems,
+and holder of the Smith Zadeh Chair in Engineering. In 1990, he received the Presidential
+Young Investigator Awardofthe National Science Foundation, andin1995hewascowinner
+of the Computers and Thought Award. He was a 1996 Miller Professor of the University of
+California and was appointed to a Chancellor s Professorship in 2000. In 1998, he gave the
+Forsythe Memorial Lectures at Stanford University. He is a Fellow and former Executive
+Council member of the American Association for Artificial Intelligence. He has published
+over 100 papers on a wide range of topics in artificial intelligence. His 

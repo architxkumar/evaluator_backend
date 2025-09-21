@@ -1,0 +1,25 @@
+ed on unique names and domain closure drew on the representational capa-
+bilities of logic programming (Poole, 1993; Sato and Kameya, 1997; Kersting et al., 2000)
+and semantic networks (Koller and Pfeffer, 1998; Pfeffer, 2000). Pfeffer (2007) went on to
+develop IBAL,whichrepresents first-order probability models asprobabilistic programs ina
+programming language extended with a randomization primitive. Another important thread
+was the combination of relational and first-order notations with (undirected) Markov net-
+works (Taskar et al., 2002; Domingos and Richardson, 2004), where the emphasis has been
+lessonknowledgerepresentation andmoreonlearning fromlargedatasets.
+Initially,inferenceinthesemodelswasperformedbygeneratinganequivalent Bayesian
+network. Pfeffer et al. (1999) introduced a variable elimination algorithm that cached each
+computed factor for reuse by later computations involving the same relations but different
+objects, thereby realizing some of the computational gains of lifting. The first truly lifted
+inference algorithm wasalifted form of variable elimination described by Poole (2003) and
+subsequently improved by de Salvo Braz et al. (2007). Further advances, including cases
+wherecertainaggregateprobabilitiescanbecomputedinclosedform,aredescribedby Milch
+etal.(2008)and Kisynskiand Poole(2009). Pasulaand Russell(2001)studiedtheapplication
+of MCMC to avoid building the complete equivalent Bayes net in cases of relational and
+identity uncertainty. Getoor and Taskar (2007) collect many important papers on first-order
+probability modelsandtheiruseinmachinelearning.
+Probabilistic reasoning about identity uncertainty has two distinct origins. In statis-
+tics, theproblem of record linkagearises whendata records donotcontain standard unique
+RECORDLINKAGE
+identifiers for example, various citations of this book might name its first author Stuart
+Russell or S. J. Russell oreven Stewart Russle, and other authors may use the some of
+the same names. Literally hundred

@@ -1,0 +1,28 @@
+opreferred outcomes. When Mc Donald s offersahamburger
+foradollar,theyareassertingthattheywouldpreferthedollarandhopingthatcustomerswill
+prefer the hamburger. The mathematical treatment of preferred outcomes or utility was
+UTILITY
+firstformalized by Le on Walras(pronounced Valrasse ) (1834-1910) andwasimproved by
+Frank Ramsey(1931) and laterby John von Neumann and Oskar Morgenstern in theirbook
+The Theoryof Gamesand Economic Behavior(1944).
+Decisiontheory,whichcombinesprobability theorywithutilitytheory,providesafor-
+DECISIONTHEORY
+malandcompleteframeworkfordecisions(economicorotherwise)madeunderuncertainty that is, in cases where probabilistic descriptions appropriately capture the decision maker s
+environment. This issuitable for large economies whereeach agent need pay no attention
+to the actions of other agents as individuals. For small economies, the situation is much
+more like a game: the actions of one player can significantly affect the utility of another
+(either positively or negatively). Von Neumann and Morgenstern s development of game
+theory (see also Luceand Raiffa, 1957) included the surprising result that, forsomegames,
+GAMETHEORY
+10 Chapter 1. Introduction
+arational agent should adoptpolicies thatare(orleast appeartobe)randomized. Unlikede-
+cisiontheory, gametheorydoesnotofferanunambiguous prescription forselecting actions.
+For the most part, economists did not address the third question listed above, namely,
+how tomake rational decisions whenpayoffs from actions are not immediate but instead re-
+sultfromseveralactionstakeninsequence. Thistopicwaspursuedinthefieldofoperations
+OPERATIONS research, which emerged in World War II from efforts in Britain to optimize radar installa-
+RESEARCH
+tions, and later found civilian applications in complex management decisions. The work of
+Richard Bellman (1957) formalized a class of sequential decision problems called Markov
+decisionprocesses, whichwestudyin Chapters17and21.
+Work in economics and operations researc

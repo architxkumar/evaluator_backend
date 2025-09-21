@@ -1,0 +1,28 @@
+ionsthathideinformation
+from the opponent or provide information to a partner because it assumes that they already
+knowtheinformation; anditwillneverbluffinpoker,4 because itassumestheopponent can
+BLUFF
+seeitscards. In Chapter17, weshowhowtoconstruct algorithms thatdoallthese things by
+virtueofsolving thetruepartiallyobservable decisionproblem.
+4 Bluffing bettingasifone shandisgood,evenwhenit snot isacorepartofpokerstrategy.
+Section5.7. State-of-the-Art Game Programs 185
+5.7 STATE-OF-THE-ART GAME PROGRAMS
+In 1965, the Russian mathematician Alexander Kronrod called chess the Drosophila of ar-
+tificial intelligence. John Mc Carthy disagrees: whereas geneticists use fruit flies to make
+discoveries that apply to biology more broadly, AI has used chess to do the equivalent of
+breeding very fast fruit flies. Perhaps a better analogy is that chess is to AI as Grand Prix
+motorracingistothecarindustry: state-of-the-art gameprogramsareblindingly fast,highly
+optimized machines that incorporate the latest engineering advances, but they aren t much
+use for doing the shopping or driving off-road. Nonetheless, racing and game-playing gen-
+erate excitement and a steady stream of innovations that have been adopted by the wider
+community. Inthissectionwelookatwhatittakestocomeoutontopinvariousgames.
+CHESS
+Chess: IBM s DEEP BLUE chess program, now retired, is well known for defeating world
+champion Garry Kasparov inawidely publicized exhibition match. Deep Blueranonapar-
+allel computer with 30 IBM RS 6000 processors doing alpha beta search. The unique part
+was a configuration of 480 custom VLSI chess processors that performed move generation
+andmoveorderingforthelastfewlevelsofthetree,andevaluatedtheleafnodes. Deep Blue
+searched up to 30 billion positions per move, reaching depth 14 routinely. The key to its
+success seemstohavebeen itsability togenerate singular extensions beyond thedepth limit
+forsufficiently interesting lines offorcing forced moves. Insomecases thesearch reached a
+d

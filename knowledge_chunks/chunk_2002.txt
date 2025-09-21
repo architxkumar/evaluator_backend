@@ -1,0 +1,28 @@
+nd-cannibals
+problem in Exercise 3.9.) Aggregation is essential for reducing complexity. Consider what
+happens when a proposed schedule has 10 concurrent Inspect actions but only 9 inspectors
+areavailable. Withinspectorsrepresentedasquantities, afailureisdetectedimmediatelyand
+thealgorithm backtracks totryanotherschedule. Withinspectors represented asindividuals,
+thealgorithm backtracks totryall 10!waysofassigning inspectors toactions.
+11.1.2 Solvingscheduling problems
+Webeginbyconsideringjustthetemporalschedulingproblem,ignoringresourceconstraints.
+Tominimizemakespan(planduration),wemustfindtheearlieststarttimesforalltheactions
+consistent withtheorderingconstraints suppliedwiththe problem. Itishelpfultoviewthese
+orderingconstraintsasadirectedgraphrelatingtheactions,asshownin Figure11.2. Wecan
+CRITICALPATH apply the critical path method (CPM) to this graph to determine the possible start and end
+METHOD
+times of each action. A path through a graph representing a partial-order plan is a linearly
+ordered sequence of actions beginning with Start and ending with Finish. (For example,
+therearetwopathsinthepartial-order planin Figure11.2.)
+The critical path is that path whose total duration is longest; the path is critical CRITICALPATH
+because itdetermines theduration oftheentireplan shortening otherpathsdoesn t shorten
+the plan as a whole, but delaying the start of any action on the critical path slows down the
+wholeplan. Actionsthatareoffthecriticalpathhaveawindowoftimeinwhichtheycanbe
+executed. Thewindowisspecifiedintermsofanearliestpossiblestarttime,ES,andalatest
+possible start time, LS. The quantity LS ES is known as the slack of an action. We can
+SLACK
+see in Figure 11.2 that the whole plan will take 85 minutes, that each action in the top job
+has15minutesofslack, andthateachactiononthecritical pathhasnoslack(bydefinition).
+Togetherthe ES and LS timesforalltheactions constitute aschedulefortheproblem.
+SCHEDULE
+Thefollowingformulasserveasadefinitionfor ES and LS andal

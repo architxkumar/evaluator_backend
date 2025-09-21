@@ -1,0 +1,30 @@
+SAL
+attimet 1issampledconditional onboththestateattimetandtheevidenceattimet 1.
+This allows the evidence to influence sample generation directly and was proved by Doucet
+(1997)and Liuand Chen(1998)toreducetheapproximationerror. Particlefilteringhasbeen
+appliedinmanyareas,includingtrackingcomplexmotionpatternsinvideo(Isardand Blake,
+1996), predicting the stock market (de Freitas et al., 2000), and diagnosing faults on plane-
+RAO-
+tary rovers (Verma et al., 2004). A variant called the Rao-Blackwellized particle filter or
+BLACKWELLIZED
+PARTICLEFILTER
+RBPF (Doucet et al., 2000; Murphy and Russell, 2001) applies particle filtering to a subset
+ofstate variables and, foreach particle, performs exact inference on the remaining variables
+conditionedonthevaluesequenceintheparticle. Insomecases RBP Fworkswellwiththou-
+sands of state variables. An application of RBPF to localization and mapping in robotics is
+describedin Chapter25. Thebookby Doucetetal.(2001)collectsmanyimportantpaperson
+SEQUENTIALMONTE sequential Monte Carlo(SMC)algorithms, ofwhichparticlefilteringisthemostimportant
+CARLO
+instance. Pierre Del Moral and colleagues have performed extensive theoretical analyses of
+SM Calgorithms(Del Moral,2004;Del Moraletal.,2006).
+MCMC methods (see Section 14.5.2) can be applied to the filtering problem; for ex-
+ample, Gibbssampling canbeapplied directly toanunrolled DBN.Toavoid theproblem of
+increasing update times as the unrolled network grows, the decayed MCMC filter (Marthi
+DECAYEDMCMC
+et al., 2002) prefers to sample more recent state variables, with a probability that decays as
+1 k2 for a variable k steps into the past. Decayed MCMC is a provably nondivergent filter.
+ASSUMED-DENSITY Nondivergence theorems can also be obtained for certain types of assumed-density filter.
+FILTER
+Anassumed-density filterassumesthattheposteriordistribution overstatesattimetbelongs
+toaparticular finitelyparameterized family;iftheprojection andupdatestepstakeitoutside
+this family, the distributio

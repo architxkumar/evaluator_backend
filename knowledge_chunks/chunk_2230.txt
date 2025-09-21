@@ -1,0 +1,27 @@
+ a fact that causes serious difficulties.
+Forexample, suppose that T(Tall(Nate)) 0.6and T(Heavy(Nate)) 0.4. Thenwehave
+T(Tall(Nate) Heavy(Nate)) 0.4, which seems reasonable, but we also get the result
+T(Tall(Nate) Tall(Nate)) 0.4, which does not. Clearly, the problem arises from the
+inabilityofatruth-functionalapproachtotakeintoaccountthecorrelationsoranticorrelations
+amongthecomponent propositions.
+Fuzzycontrolisamethodologyforconstructingcontrolsystemsinwhichthemapping
+FUZZYCONTROL
+between real-valued input and output parameters is represented by fuzzy rules. Fuzzy con-
+trolhasbeenverysuccessful incommercial products suchas automatic transmissions, video
+Section14.8. Summary 551
+cameras, and electric shavers. Critics (see, e.g., Elkan, 1993) argue that these applications
+are successful because they have small rule bases, no chaining of inferences, and tunable
+parameters that can be adjusted to improve the system s performance. Thefact that they are
+implemented with fuzzy operators might be incidental to their success; the key is simply to
+provideaconcise andintuitivewaytospecify asmoothlyinterpolated, real-valued function.
+Therehavebeenattemptstoprovideanexplanation offuzzylogicintermsofprobabil-
+itytheory. Oneideaistoviewassertionssuchas Nateis Tall asdiscreteobservations made
+concerningacontinuoushiddenvariable,Nate sactual Height. Theprobabilitymodelspeci-
+fies P(Observersays Nateistall Height),perhapsusingaprobitdistributionasdescribed
+on page 522. A posterior distribution over Nate s height can then be calculated in the usual
+way,forexample,ifthemodelispartofahybrid Bayesiannetwork. Suchanapproach isnot
+truth-functional, ofcourse. Forexample,theconditional distribution
+P(Observersays Nateistallandheavy Height,Weight)
+allows for interactions between height and weight in the causing of the observation. Thus,
+someone who iseight feet tall and weighs 190 pounds is very unlikely tobe called tall and
+heavy, eventhough eightfeet countsas tall and 190pounds counts as

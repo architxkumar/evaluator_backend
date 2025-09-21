@@ -1,0 +1,32 @@
+imates by more than c, A using h returns a
+solution whosecostexceedsthatoftheoptimalsolution bynomorethan c.
+3.29 Prove that if a heuristic is consistent, it must be admissible. Construct an admissible
+heuristic thatisnotconsistent.
+3.30 The traveling salesperson problem (TSP)can be solved with the minimum-spanning-
+tree (MST)heuristic, which estimates the cost of completing atour, given that a partial tour
+has already been constructed. The MS Tcost ofaset ofcities isthe smallest sum of thelink
+costsofanytreethatconnects allthecities.
+a. Showhowthisheuristic canbederivedfromarelaxedversionofthe TSP.
+b. Showthatthe MS Theuristicdominates straight-line distance.
+c. Write a problem generator for instances of the TSP where cities are represented by
+randompointsintheunitsquare. d. Findanefficientalgorithmintheliteratureforconstructing the MST,anduseitwith A
+graphsearchtosolveinstances ofthe TSP.
+3.31 Onpage 105,wedefinedtherelaxation ofthe8-puzzle inwhich atilecanmovefrom
+square A to square B if B is blank. The exact solution of this problem defines Gaschnig s
+heuristic (Gaschnig, 1979). Explain why Gaschnig s heuristic is at least as accurate as h
+1
+(misplaced tiles), and show cases where it is moreaccurate than both h and h (Manhattan
+1 2
+distance). Explainhowtocalculate Gaschnig s heuristicefficiently.
+3.32 We gave two simple heuristics for the 8-puzzle: Manhattan distance and misplaced
+tiles. Several heuristics in the literature purport to improve on this see, for example, Nils-
+son (1971), Mostow and Prieditis (1989), and Hansson et al. (1992). Test these claims by
+implementingtheheuristicsandcomparingtheperformance oftheresultingalgorithms.
+4
+BEYOND CLASSICAL
+SEARCH
+In which we relax the simplifying assumptions of the previous chapter, thereby
+gettingclosertotherealworld.
+Chapter 3 addressed a single category of problems: observable, deterministic, known envi-
+ronmentswherethesolutionisasequenceofactions. Inthischapter,welookatwhathappens
+whentheseassumptionsarerel

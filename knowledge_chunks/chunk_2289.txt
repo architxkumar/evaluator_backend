@@ -1,0 +1,27 @@
+.9. In
+general,eachsliceofa DB Ncanhaveanynumberofstatevariables X andevidencevariables
+t
+E . For simplicity, we assume that the variables and their links are exactly replicated from
+t
+slice toslice andthat the DB Nrepresents afirst-order Markov process, sothat eachvariable
+canhaveparentsonlyinitsownsliceortheimmediately preceding slice.
+It should be clear that every hidden Markov model can be represented as a DBN with
+a single state variable and a single evidence variable. It is also the case that every discrete-
+variable DB Ncanberepresented asan HMM;asexplained in Section15.3,wecancombine
+all the state variables in the DBN into a single state variable whose values are all possible
+tuples of values of the individual state variables. Now, if every HMM is a DBN and every
+DBN can be translated into an HMM, what s the difference? The difference is that, by de-
+Section15.5. Dynamic Bayesian Networks 591
+composingthestateofacomplexsystemintoitsconstituentvariables,thecantakeadvantage
+of sparseness in the temporal probability model. Suppose, for example, that a DBN has 20
+Boolean state variables, each of which has three parents in the preceding slice. Then the
+DB Ntransitionmodelhas20 23 160probabilities, whereasthecorresponding HM Mhas
+220 states and therefore 240, orroughly a trillion, probabilities in the transition matrix. This
+is bad for at least three reasons: first, the HMM itself requires much more space; second,
+thehugetransition matrixmakes HM Minference muchmoreexpensive;andthird,theprob-
+lem of learning such a huge number of parameters makes the pure HMM model unsuitable
+forlarge problems. Therelationship between DB Nsand HM Msis roughly analogous to the
+relationship betweenordinary Bayesiannetworksandfulltabulated jointdistributions.
+We have already explained that every Kalman filter model can be represented in a
+DBN with continuous variables and linear Gaussian conditional distributions (Figure 15.9).
+Itshouldbeclearfromthediscussion attheendofthepreceding 

@@ -1,0 +1,30 @@
+ght be able to learn that violent maneuvers do not
+contribute to its own utility. In a sense, the performance standard distinguishes part of the
+incomingperceptasareward(orpenalty)thatprovidesdirectfeedbackonthequalityofthe
+agent s behavior. Hard-wired performance standards such aspainandhungerinanimals can
+beunderstood inthisway. Thisissueisdiscussed furtherin Chapter21.
+Insummary, agents haveavarietyofcomponents, andthose components canberepre-
+sented in many ways within the agent program, so there appears to be great variety among
+Section2.4. The Structureof Agents 57
+learning methods. Thereis, however, asingle unifying theme. Learning inintelligent agents
+canbesummarized asaprocess ofmodification ofeachcomponent oftheagenttobring the
+components into closer agreement withthe available feedback information, thereby improv-
+ingtheoverallperformance oftheagent.
+2.4.7 Howthe components ofagentprograms work
+Wehavedescribedagentprograms(inveryhigh-levelterms) asconsistingofvariouscompo-
+nents,whosefunctionitistoanswerquestionssuchas: Whatistheworldlikenow? What
+action should I do now? What do my actions do? The next question for a student of AI
+is, How on earth do these components work? It takes about a thousand pages to begin to
+answerthat question properly, but here wewantto draw thereader s attention to somebasic
+distinctions among thevarious waysthatthecomponents can represent theenvironment that
+theagentinhabits.
+Roughly speaking, we can place the representations along an axis of increasing com-
+plexity and expressive power atomic, factored, and structured. To illustrate these ideas,
+it helps to consider a particular agent component, such as the one that deals with What my
+actions do. This component describes the changes that might occur in the environment as
+the result of taking an action, and Figure 2.16 provides schematic depictions of how those
+transitions mightberepresented.
+B C
+B C
+(a) Atomic (b) Factored (b) Structured
+Figure2.16 Threewaystorepresentstatesa

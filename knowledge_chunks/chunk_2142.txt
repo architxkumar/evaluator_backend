@@ -1,0 +1,25 @@
+ately 0.1. In this view, the assertion the
+probability ofacavityis0.1 meansthat0.1isthefraction thatwouldbeobserved
+in the limit of infinitely many samples. From any finite sample, we can estimate
+thetruefractionandalsocalculate howaccurate ourestimateislikelytobe.
+The objectivist view is that probabilities are real aspects of the universe propensities of objects to behave in certain ways rather than being just descrip-
+tionsofanobserver s degreeofbelief. Forexample,thefactthatafaircoincomes
+up heads with probability 0.5 is a propensity of the coin itself. In this view, fre-
+quentist measurements areattempts toobserve these propensities. Mostphysicists
+agreethatquantum phenomena areobjectively probabilistic, butuncertainty atthe
+macroscopic scale e.g., in coin tossing usually arises from ignorance of initial
+conditions anddoesnotseemconsistent withthepropensity view.
+The subjectivist view describes probabilities as a way of characterizing an
+agent s beliefs, rather than as having any external physical significance. The sub-
+jective Bayesianviewallowsanyself-consistent ascriptionofpriorprobabilitiesto
+propositions, buttheninsistsonproper Bayesianupdating asevidence arrives.
+In the end, even a strict frequentist position involves subjective analysis be-
+causeofthereferenceclassproblem: intryingtodeterminetheoutcomeprobabil-
+ityofaparticular experiment, thefrequentist hastoplaceitinareference classof similar experiments with known outcome frequencies. I. J. Good (1983, p. 27)
+wrote, every event in life is unique, and every real-life probability that we esti-
+mate in practice is that of an event that has never occurred before. For example,
+given a particular patient, a frequentist who wants to estimate the probability of a
+cavitywillconsiderareferenceclassofotherpatientswho aresimilarinimportant
+ways age, symptoms, diet and seewhatproportion ofthem hadacavity. Ifthe
+dentistconsiderseverythingthatisknownaboutthepatient weight tothenearest
+gram,haircolor,mother smaidennam

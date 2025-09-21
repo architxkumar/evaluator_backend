@@ -1,0 +1,31 @@
+nction(Exercise18.22)withfarfewerparameters.
+Section18.8. Nonparametric Models 737
+of hidden layers and their sizes. The usual approach is to try several and keep the best. The
+cross-validation techniques of Chapter 18 are needed if we are to avoid peeking at the test
+set. Thatis,wechoosethenetworkarchitecture thatgivesthehighestprediction accuracyon
+thevalidation sets.
+If we want to consider networks that are not fully connected, then we need to find
+someeffectivesearchmethodthroughtheverylargespaceofpossibleconnectiontopologies.
+OPTIMALBRAIN The optimal brain damage algorithm begins with a fully connected network and removes
+DAMAGE
+connections from it. After the network is trained for the first time, an information-theoretic
+approach identifies an optimal selection of connections that can be dropped. The network
+is then retrained, and if its performance has not decreased then the process is repeated. In
+additiontoremovingconnections, itisalsopossible toremoveunitsthatarenotcontributing
+muchtotheresult.
+Severalalgorithmshavebeenproposedforgrowingalargernetworkfromasmallerone.
+One, the tiling algorithm, resembles decision-list learning. The idea is to start with a single
+TILING
+unit that does its best to produce the correct output on as many of the training examples as
+possible. Subsequentunitsareaddedtotakecareoftheexamplesthatthefirstunitgotwrong.
+Thealgorithm addsonlyasmanyunitsasareneededtocoveralltheexamples.
+18.8 NONPARAMETRIC MODELS
+Linearregression and neural networks use thetraining data toestimate afixedset ofparam-
+eters w. Thatdefinesourhypothesis h (x),andatthatpointwecanthrowawaythetraining
+w
+data, because they are all summarized by w. A learning model that summarizes data with a
+set of parameters of fixed size (independent of the number of training examples) is called a
+parametricmodel.
+PARAMETRICMODEL
+No matter how much data you throw at a parametric model, it won t change its mind
+abouthowmanyparametersitneeds. Whendatasetsaresmall,itmakessensetohav

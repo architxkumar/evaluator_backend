@@ -1,0 +1,55 @@
+enatomicsentencesp andtheoneimplication. The
+i
+conclusion istheresultofapplying thesubstitution totheconsequent q. Forourexample:
+(cid:2)
+p is King(John) p is King(x)
+1 1
+(cid:2)
+p is Greedy(y) p is Greedy(x)
+2 2 is x John,y John q is Evil(x)
+SUBST( ,q)is Evil(John).
+Itiseasytoshowthat Generalized Modus Ponensisasoundinferencerule. First,weobserve
+that, for any sentence p (whose variables are assumed to be universally quantified) and for
+anysubstitution ,
+p SUBST( ,p)
+holds by Universal Instantiation. It holds in particular for a that satisfies the conditions of
+(cid:2) (cid:2)
+the Generalized Modus Ponensrule. Thus,from p ,...,p wecaninfer
+1 n
+SUBST( ,p
+1
+(cid:2) ) ... SUBST( ,p
+n
+(cid:2) )
+andfromtheimplication p ... p q wecaninfer
+1 n
+SUBST( ,p
+1
+) ... SUBST( ,p
+n
+) SUBST( ,q).
+(cid:2)
+Now, in Generalized Modus Ponens is defined so that SUBST( ,p
+i
+) SUBST( ,p
+i
+), for
+all i; therefore the first of these two sentences matches the premise of the second exactly.
+Hence, SUBST( ,q)followsby Modus Ponens.
+Generalized Modus Ponens is a lifted version of Modus Ponens it raises Modus Po-
+LIFTING
+nens from ground (variable-free) propositional logic to first-order logic. We will see in the
+rest of this chapter that we can develop lifted versions of the forward chaining, backward
+chaining, and resolution algorithms introduced in Chapter 7. The key advantage of lifted
+inference rules over propositionalization is that they make only those substitutions that are
+required toallowparticularinferences toproceed.
+9.2.2 Unification
+Lifted inference rules require finding substitutions that make different logical expressions
+look identical. This process is called unification and is a key component of all first-order
+UNIFICATION
+UNIFIER
+inference algorithms. The UNIFY algorithm takes two sentences and returns a unifier for
+themifoneexists:
+UNIFY(p,q) where SUBST( ,p) SUBST( ,q).
+Let us look at some examples of how UNIFY should behave. Suppose we have a query
+Ask Vars(Knows(John,x)): w

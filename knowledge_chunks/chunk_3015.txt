@@ -1,0 +1,23 @@
+ representation for-
+malisms.JAIR,11,199 240.
+Brickley,D.and Guha,R.V.(2004). RD Fvocab- Bryce, D., Kambhampati, S., and Smith, D. E.
+ularydescriptionlanguage1.0:RD Fschema.Tech. (2006). Planninggraphheuristicsforbeliefspace Campbell, M. S., Hoane, A. J., and Hsu, F.-H.
+rep.,W3C. search.JAIR,26,35 99. (2002).Deep Blue.AIJ,134(1 2),57 83.
+1068 Bibliography
+Canny, J.and Reif,J.(1987). Newlowerbound Charniak, E. (1996). Tree-bank grammars. In Church, A. (1936). A note on the Entschei-
+techniquesforrobotmotionplanningproblems. In AAAI-96,pp.1031 1036. dungsproblem.JSL,1,40 41and101 102.
+FOCS-87,pp.39 48.
+Charniak, E. (1997). Statistical parsing with a Church,A.(1956). Introductionto Mathematical
+Canny,J.(1986).Acomputationalapproachtoedge context-freegrammarandwordstatistics. In AAAI- Logic.Princeton University Press.
+detection.PAMI,8,679 698. 97,pp.598 603. Church,K.and Patil,R.(1982). Copingwithsyn-
+Canny,J.(1988). The Complexityof Robot Motion Charniak,E.and Goldman,R.(1992). ABayesian tacticambiguityorhowtoputtheblockintheboxon
+Planning.MIT Press. modelofplanrecognition.AIJ,64(1),53 79. thetable. Computational Linguistics,8(3 4),139 149.
+Capen, E., Clapp, R., and Campbell, W. (1971). Charniak,E.and Mc Dermott,D.(1985).Introduc-
+Competitive bidding in high-risk situations. J. tionto Artificial Intelligence.Addison-Wesley. Church,K.(2004). Speechandlanguageprocess-
+Petroleum Technology,23,641 653. Charniak, E., Riesbeck, C., Mc Dermott, D., and ing: Canweusethepasttopredictthefuture. In
+Proc.Conferenceon Text,Speech,and Dialogue.
+Caprara,A.,Fischetti,M.,and Toth,P.(1995). A Meehan,J.(1987). Artificial Intelligence Program-
+heuristicmethodforthesetcoveringproblem. Op- ming(2ndedition).Lawrence Erlbaum Associates. Church,K.and Gale,W.A.(1991). Acomparison
+erations Research,47,730 743. Charniak, E.(1991). Bayesiannetworkswithout oftheenhanced Good Turinganddeletedestima-
+tionmethodsforestimatingprobabilitiesof English
+Carbonell,J.G.(1983). Derivationalanalogyand tears.AI

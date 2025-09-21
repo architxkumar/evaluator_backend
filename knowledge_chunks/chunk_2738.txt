@@ -1,0 +1,29 @@
+s subfield of linguistics is called stylometry; its
+STYLOMETRY
+successesincludetheidentificationoftheauthorofthedisputed Federalist Papers(Mosteller
+and Wallace, 1964) and some disputed works of Shakespeare (Hope, 1994). Khmelev and
+Tweedie(2001) producegoodresultswithasimpleletterbigrammodel.
+22.4 Thisexerciseconcernstheclassificationofspamemail. Createacorpusofspamemail
+andoneofnon-spammail. Examineeachcorpusanddecidewhatfeaturesappeartobeuseful
+for classification: unigram words? bigrams? message length, sender, time of arrival? Then
+trainaclassificationalgorithm(decisiontree,naive Bayes,SVM,logisticregression, orsome
+otheralgorithmofyourchoosing)onatrainingsetandreportitsaccuracyonatestset.
+22.5 Create a test set of ten queries, and pose them to three major Web search engines.
+Evaluate each one for precision at 1, 3, and 10 documents. Can you explain the differences
+betweenengines?
+22.6 Trytoascertain whichofthesearchenginesfromthepreviousexerciseareusingcase
+folding, stemming,synonyms, andspelling correction.
+22.7 Write aregular expression orashort program to extract company names. Testit on a
+corpusofbusiness newsarticles. Reportyourrecallandprecision.
+22.8 Consider the problem of trying to evaluate the quality of an IR system that returns a
+ranked list of answers (like most Web search engines). The appropriate measure of quality
+depends on the presumed model of what the searcher is trying to achieve, and whatstrategy
+sheemploys. Foreachofthefollowingmodels,propose acorresponding numericmeasure.
+a. Thesearcherwilllookatthefirsttwentyanswersreturned, withtheobjectiveofgetting
+asmuchrelevantinformation aspossible.
+b. Thesearcherneedsonlyonerelevantdocument,andwillgodownthelistuntilshefinds
+thefirstone.
+c. Thesearcherhasafairlynarrowqueryandisabletoexamine alltheanswersretrieved.
+She wants to be sure that she has seen everything in the document collection that is
+Exercises 887
+relevant to her query. (E.g., a lawyer wants to be sure that she has found all relevant

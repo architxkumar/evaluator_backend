@@ -1,0 +1,31 @@
+obust matching procedures for the correspondence problem, accompa-
+niedbynumericallystablealgorithmsforsolvingforrelativeorientations andscenedepth,is
+oneofthesuccessstoriesofcomputervision. Resultsfromonesuchapproachdueto Tomasi
+and Kanade(1992)areshownin Figures24.18and24.19.
+24.4.4 Texture
+Earlierwesaw how texture wasused forsegmenting objects. Itcan also beused toestimate
+distances. In Figure 24.20weseethatahomogeneous texture inthescene results invarying
+textureelements, ortexels, intheimage. Allthepaving tilesin(a)areidentical inthescene.
+TEXEL
+Theyappeardifferent intheimagefortworeasons:
+952 Chapter 24. Perception
+(a) (b)
+Figure24.19 (a)Three-dimensionalreconstructionofthelocationsoftheimagefeatures
+in Figure24.18,shownfromabove.(b)Therealhouse,takenfromthesameposition.
+1. Differencesinthedistancesofthetexelsfromthecamera. Distantobjectsappearsmaller
+byascaling factorof1 Z.
+2. Differences in the foreshortening of the texels. If all the texels are in the ground plane
+then distance ones are viewed at an angle that is farther off the perpendicular, and so
+are more foreshortened. The magnitude of the foreshortening effect is proportional to
+cos , where is the slant, the angle between the Z-axis and n, the surface normal to
+thetexel.
+Researchers have developed various algorithms that try to exploit the variation in the
+appearance of the projected texels as a basis for determining surface normals. However, the
+accuracy and applicability of these algorithms is not anywhere as general as those based on
+usingmultipleviews.
+24.4.5 Shading
+Shading variation inthe intensity oflight received from different portions ofasurface ina
+scene is determined by the geometry of the scene and by the reflectance properties of the
+surfaces. In computer graphics, the objective is to compute the image brightness I(x,y),
+given the scene geometry and reflectance properties of the objects in the scene. Computer
+visionaimstoinverttheprocess that is,torecoverthegeometryandreflectance propert

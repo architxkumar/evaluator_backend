@@ -1,0 +1,34 @@
+umethateachdatapointgeneratesits
+ownlittledensityfunction, usinga Gaussiankernel. Theestimateddensityataquerypointx
+isthentheaverage densityasgivenbyeachkernelfunction:
+(cid:12)N
+1
+P(x) K(x,x ).
+j
+N
+j 1
+Wewillassumespherical Gaussianswithstandard deviation w alongeachaxis:
+K(x,x j ) 1 e D( 2 x w ,x 2 j)2 ,
+(w2 2 )d
+where d is the number of dimensions in x and D is the Euclidean distance function. We
+still have the problem of choosing a suitable value for kernel width w; Figure 20.9 shows
+valuesthataretoosmall,justright, andtoolarge. Agoodvalueofwcanbechosenbyusing
+cross-validation.
+20.3 LEARNING WITH HIDDEN VARIABLES: THE EM ALGORITHM
+The preceding section dealt with the fully observable case. Many real-world problems have
+hiddenvariables (sometimes called latent variables), which are not observable in the data
+LATENTVARIABLE
+that are available for learning. For example, medical records often include the observed
+symptoms, the physician s diagnosis, the treatment applied, and perhaps the outcome of the
+treatment, but they seldom contain a direct observation of the disease itself! (Note that the
+diagnosisisnotthedisease;itisacausalconsequenceoftheobservedsymptoms,whicharein
+turncausedbythedisease.) Onemightask, Ifthediseaseisnotobserved,whynotconstruct
+a model without it? The answer appears in Figure 20.10, which shows a small, fictitious
+diagnostic modelforheartdisease. Therearethreeobservablepredisposing factorsandthree
+observable symptoms (which are too depressing to name). Assume that each variable has
+three possible values (e.g., none, moderate, and severe). Removing the hidden variable
+from the network in (a) yields the network in (b); the total number of parameters increases
+from 78 to 708. Thus, latent variables can dramatically reduce the number of parameters
+required tospecify a Bayesiannetwork. This,inturn,candramatically reduce theamountof
+dataneededtolearntheparameters.
+Hidden variables are important, but they do complicate the learning problem. In Fig-

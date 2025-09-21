@@ -1,0 +1,26 @@
+servations
+of the body and the objects nearby to the goals and intentions of the moving people. One
+source ofdifficulty isthat welack asimple vocabulary ofhuman behavior. Behavior isalot
+962 Chapter 24. Perception
+like color, in that people tend to think they know a lot of behavior names but can t produce
+longlistsofsuchwordsondemand. Thereisquitealotofevidencethatbehaviorscombine you can, for example, drink a milkshake while visiting an ATM but we don t yet know
+what the pieces are, how the composition works, or how many composites there might be.
+Asecond source ofdifficulty isthatwedon t know whatfeatures expose whatishappening.
+Forexample,knowingsomeoneisclosetoan AT Mmaybeenoughtotellthatthey revisiting
+the ATM.Athirddifficultyisthattheusualreasoningabouttherelationshipbetweentraining
+and test data is untrustworthy. For example, we cannot argue that a pedestrian detector is
+safesimply because itperforms wellonalarge dataset, because thatdatasetmaywellomit
+important, butrare,phenomena (forexample, people mounting bicycles). Wewouldn t want
+ourautomateddrivertorunoverapedestrian whohappened to dosomething unusual.
+24.6.1 Wordsandpictures
+Many Web sites offer collections of images for viewing. How can we find the images we
+want? Let ssuppose theuserenters atextquery, suchas bicycle race. Someoftheimages
+willhavekeywordsorcaptionsattached, orwillcomefrom Webpagesthatcontain textnear
+the image. Forthese, image retrieval can be like text retrieval: ignore the images and match
+theimage stextagainstthequery(see Section22.3onpage867).
+However, keywords are usually incomplete. Forexample, a picture of a cat playing in
+thestreetmightbetaggedwithwordslike cat and street, butitiseasytoforgettomention
+the garbagecan orthe fishbones. Thusaninterestingtaskistoannotateanimage(which
+mayalready haveafewkeywords)withadditional appropriate keywords.
+In the most straightforward version of this task, we have a set of correctly tagged ex-
+ample images, and we wish to tag some test imag

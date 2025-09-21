@@ -1,0 +1,35 @@
+thenpops
+offanarbitraryarc (X ,X )fromthequeueandmakes X arc-consistent withrespectto X .
+i j i j
+If this leaves D unchanged, the algorithm just moves on to the next arc. But if this revises
+i
+D (makes the domain smaller), then we add to the queue all arcs (X ,X ) where X is a
+i k i k
+neighborof X . Weneedtodothatbecausethechangein D mightenablefurtherreductions
+i i
+in the domains of D , even if we have previously considered X . If D is revised down to
+k k i
+nothing, thenweknowthewhole CS Phasnoconsistentsolution, and AC-3canimmediately
+return failure. Otherwise, we keep checking, trying to remove values from the domains of
+variables until no more arcs are in the queue. At that point, we are left with a CSP that is
+equivalent to the original CSP they both have the same solutions but the arc-consistent
+CS Pwillinmostcasesbefastertosearchbecauseitsvariables havesmallerdomains.
+The complexity of AC-3 can be analyzed as follows. Assume a CSP with n variables,
+eachwithdomainsizeatmostd,andwithcbinaryconstraints (arcs). Eacharc (X ,X )can
+k i
+be inserted in the queue only d times because X has at most d values to delete. Checking
+i
+210 Chapter 6. Constraint Satisfaction Problems
+consistency ofanarccanbedonein O(d2)time,soweget O(cd3)totalworst-casetime.1
+It is possible to extend the notion of arc consistency to handle n-ary rather than just
+binary constraints; this is called generalized arc consistency or sometimes hyperarc consis-
+GENERALIZEDARC tency, depending onthe author. A variable X is generalized arc consistent with respect to
+CONSISTENT i
+ann-aryconstraint ifforeveryvalue v inthedomainof X thereexistsatupleofvaluesthat
+i
+isamemberoftheconstraint, hasallitsvalues takenfromthedomains ofthecorresponding
+variables, and has its X component equal to v. For example, if all variables have the do-
+i
+main 0,1,2,3 , then to make the variable X consistent with the constraint X Y Z,
+wewould have to eliminate 2 and 3from the domain of X because the constraint cannot be
+satisfi

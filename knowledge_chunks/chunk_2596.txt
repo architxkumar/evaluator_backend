@@ -1,0 +1,29 @@
+t(x,y).
+Nowwehavearesolutionproofthatthehypothesis,descriptions,andbackgroundknowledge
+entailtheclassification Grandparent(George,Anne).
+Clearly, inverse resolution involves a search. Each inverse resolution step is nonde-
+terministic, because for any C, there can be many or even an infinite number of clauses
+C and C that resolve to C. For example, instead of choosing Parent(Elizabeth,y) 1 2
+Grandparent(George,y) for C in the last step of Figure 19.13, the inverse resolution step
+1
+mighthavechosenanyofthefollowingsentences: Parent(Elizabeth,Anne) Grandparent(George,Anne). Parent(z,Anne) Grandparent(George,Anne). Parent(z,y) Grandparent(George,y).
+.
+.
+.
+(See Exercises 19.4 and 19.5.) Furthermore, the clauses that participate in each step can be
+chosenfromthe Background knowledge,fromtheexample Descriptions,fromthenegated
+Section19.5. Inductive Logic Programming 795
+Classifications,orfromhypothesizedclausesthathavealreadybeengeneratedintheinverse
+resolution tree. Thelarge number ofpossibilities means alarge branching factor (and there-
+foreaninefficientsearch)withoutadditionalcontrols. Anumberofapproaches totamingthe
+searchhavebeentriedinimplemented IL Psystems:
+1. Redundant choices can be eliminated for example, by generating only the most spe-
+cifichypothesespossibleandbyrequiringthatallthehypothesizedclausesbeconsistent
+witheachother, andwiththeobservations. Thislastcriterionwouldruleouttheclause Parent(z,y) Grandparent(George,y),listedbefore.
+2. The proof strategy can be restricted. For example, we saw in Chapter 9 that linear
+resolutionisacomplete,restrictedstrategy. Linearresolutionproducesprooftreesthat
+have a linear branching structure the whole tree follows one line, with only single
+clausesbranching offthatline(asin Figure19.13).
+3. Therepresentationlanguagecanberestricted,forexamplebyeliminatingfunctionsym-
+bols or by allowing only Horn clauses. For instance, PROGOL operates with Horn
+INVERSE clausesusinginverseentailment. Theideaistochangetheentailmentcons

@@ -1,0 +1,33 @@
+formation overany period of time. Onmobile robots,
+shaftdecoders thatreportwheelrevolutions canbeusedfor odometry themeasurementof
+ODOMETRY
+distance traveled. Unfortunately, wheels tend to drift and slip, so odometry is accurate only
+over short distances. External forces, such as the current for AU Vs and the wind for UA Vs,
+increase positional uncertainty. Inertial sensors, such as gyroscopes, rely on the resistance
+INERTIALSENSOR
+ofmasstothechangeofvelocity. Theycanhelpreduceuncertainty.
+Otherimportant aspects of robot state are measured by force sensors and torque sen-
+FORCESENSOR
+sors. Theseareindispensablewhenrobotshandlefragileobjectsorobjectswhoseexactshape
+TORQUESENSOR
+and location is unknown. Imagine aone-ton robotic manipulator screwing in alight bulb. It
+would be all too easy to apply too much force and break the bulb. Force sensors allow the
+robottosensehowharditisgripping thebulb, andtorquesensors allowittosensehowhard
+it is turning. Good sensors can measure forces in all three translational and three rotational
+directions. Theydothisatafrequency ofseveralhundred timesasecond, sothatarobotcan
+quicklydetectunexpected forcesandcorrect itsactionsbeforeitbreaksalightbulb.
+25.2.2 Effectors
+Effectors are the means by which robots move and change the shape of their bodies. To
+understand thedesign ofeffectors, itwillhelptotalkaboutmotionandshapeintheabstract,
+DEGREEOF using the concept of a degree of freedom (DOF)We count one degree of freedom for each
+FREEDOM
+independentdirectioninwhicharobot,oroneofitseffectors,canmove. Forexample,arigid
+mobile robot such as an AUV has six degrees of freedom, three for its (x,y,z) location in
+space and three for its angular orientation, known as yaw, roll, and pitch. These six degrees
+definethekinematicstate2 orposeoftherobot. Thedynamicstateofarobotincludesthese
+KINEMATICSTATE
+sixplusanadditionalsixdimensionsfortherateofchangeofeachkinematicdimension,that
+POSE
+is,theirvelocities.
+DYNAMICSTATE
+Fornonrigidbodies,thereareadditi

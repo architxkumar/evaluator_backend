@@ -1,0 +1,27 @@
+les and Charles is the father of
+William andrulessuchas One sgrandmotheristhemotherofone sparent. Clearly,theobjectsinourdomainarepeople. Wehavetwounarypredicates, Male and
+Female. Kinship relations parenthood, brotherhood, marriage, andsoon arerepresented
+by binary predicates: Parent, Sibling, Brother, Sister, Child, Daughter, Son, Spouse,
+Wife, Husband, Grandparent, Grandchild, Cousin, Aunt, and Uncle. We use functions
+for Mother and Father, because every person has exactly one of each of these (at least
+according tonature sdesign).
+302 Chapter 8. First-Order Logic
+We can go through each function and predicate, writing down what we know in terms
+oftheothersymbols. Forexample, one smotherisone sfemaleparent: m,c Mother(c) m Female(m) Parent(m,c).
+One shusband isone smalespouse: w,h Husband(h,w) Male(h) Spouse(h,w).
+Maleandfemalearedisjoint categories: x Male(x) Female(x).
+Parentandchildareinverserelations: p,c Parent(p,c) Child(c,p).
+Agrandparent isaparentofone sparent: g,c Grandparent(g,c) p Parent(g,p) Parent(p,c).
+Asibling isanotherchildofone sparents: x,y Sibling(x,y) x (cid:7) y p Parent(p,x) Parent(p,y).
+Wecouldgoonforseveralmorepageslikethis,and Exercise8.14asksyoutodojustthat.
+Eachofthesesentencescanbeviewedasanaxiomofthekinshipdomain,asexplained
+in Section 7.1. Axioms are commonly associated with purely mathematical domains we
+willseesomeaxiomsfornumbersshortly buttheyareneeded inalldomains. Theyprovide
+the basic factual information from which useful conclusions can be derived. Our kinship
+axioms are also definitions; they have theform x,y P(x,y) .... Theaxioms define
+DEFINITION
+the Mother functionandthe Husband,Male,Parent,Grandparent,and Sibling predicates
+intermsofotherpredicates. Ourdefinitions bottom out at abasicsetofpredicates (Child,
+Spouse, and Female) in terms of which the others are ultimately defined. This is a natural
+way in which to build up the representation of a domain, and it is analogous to the way in
+whichsoftwarepackages arebuiltupbysu

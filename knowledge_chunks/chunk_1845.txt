@@ -1,0 +1,32 @@
+n
+that is the value of the function F applied to d ,...,d . Forexample, suppose the Left Leg
+1 n
+functionsymbolreferstothefunctionshownin Equation(8.2)and John refersto King John,
+then Left Leg(John) refers to King John s left leg. In this way, the interpretation fixes the
+referentofeveryterm.
+8.2.4 Atomicsentences
+Now that we have both terms for referring to objects and predicate symbols for referring to
+relations, we can put them together to make atomic sentences that state facts. An atomic
+5 -expressions provide a useful notation in which new function symbols are constructed on the fly. For
+example, thefunctionthatsquaresitsargumentcanbewrittenas( x x x)andcanbeappliedtoarguments
+justlikeanyotherfunctionsymbol. A -expressioncanalsobedefinedandusedasapredicatesymbol. (See
+Chapter22.)Thelambdaoperatorin Lispplaysexactlythesamerole.Noticethattheuseof inthiswaydoes
+notincreasetheformalexpressivepoweroffirst-orderlogic,becauseanysentencethatincludesa -expression
+canberewrittenby pluggingin itsargumentstoyieldanequivalentsentence.
+Section8.2. Syntaxand Semanticsof First-Order Logic 295
+sentence (or atom for short) is formed from a predicate symbol optionally followed by a
+ATOMICSENTENCE
+parenthesized listofterms,suchas
+ATOM
+Brother(Richard,John).
+This states, under the intended interpretation given earlier, that Richard the Lionheart is the
+brotherof King John.6 Atomicsentences canhavecomplextermsasarguments. Thus,
+Married(Father(Richard),Mother(John))
+states that Richard the Lionheart s father is married to King John s mother (again, under a
+suitable interpretation).
+Anatomic sentence is true in agiven model if the relation referred to by the predicate
+symbolholdsamongtheobjectsreferredtobythearguments.
+8.2.5 Complex sentences
+We can use logical connectives to construct more complex sentences, with the same syntax
+andsemanticsasinpropositional calculus. Herearefoursentences thataretrueinthemodel
+of Figure8.2underourintendedinterpretation: Brother(Left Leg(Richard),Joh

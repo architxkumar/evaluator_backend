@@ -1,0 +1,21 @@
+n about,
+say, each individual coin and bill in the world. Actions can generate and consume
+resources, anditisusually cheapandeffective tocheck partialplans forsatisfaction of
+resourceconstraints beforeattemptingfurtherrefinements. Timeisoneofthemostimportant resources. Itcanbehandled byspecialized schedul-
+ingalgorithms, orscheduling canbeintegrated withplanning.
+Bibliographical and Historical Notes 431 Hierarchical task network (HTN) planning allows the agent to take advice from the
+domain designer inthe form of high-level actions (HL As)that can beimplemented in
+variouswaysbylower-levelactionsequences. Theeffectsof HL Ascanbedefinedwith
+angelic semantics, allowing provably correct high-level plans to be derived without
+consideration of lower-level implementations. HTN methods can create the very large
+plansrequired bymanyreal-worldapplications. Standard planning algorithms assume complete and correct information and determin-
+istic,fullyobservable environments. Manydomainsviolatethisassumption. Contingent plans allow the agent to sense the world during execution to decide what
+branchoftheplantofollow. Insomecases,sensorlessorconformantplanningcanbe
+used to construct a plan that works without the need for perception. Both conformant
+andcontingentplanscanbeconstructedbysearchinthespaceofbeliefstates. Efficient
+representation orcomputation ofbeliefstatesisakeyproblem. An online planning agent uses execution monitoring and splices in repairs as needed
+to recover from unexpected situations, which can be due to nondeterministic actions,
+exogenous events,orincorrect modelsoftheenvironment. Multiagentplanning isnecessary whenthere areotheragents intheenvironment with
+whichtocooperate orcompete. Jointplanscanbeconstructed, butmustbeaugmented
+withsomeformofcoordinationiftwoagentsaretoagreeonwhichjointplantoexecute. This chapter extends classic planning to cover nondeterministic environments (where
+outcomes of actions are uncertain), but it is not the last word on planning. 

@@ -1,0 +1,24 @@
+ainty
+results established in a famous correspondence between Blaise Pascal and Pierre de Fermat
+in1654. Aswithprobabilityitself,theresultswereinitiallymotivatedbygamblingproblems
+(see Exercise 13.9). The first published textbook on probability was De Ratiociniis in Ludo
+Aleae (Huygens, 1657). The laziness and ignorance view of uncertainty was described
+by John Arbuthnot in the preface of his translation of Huygens (Arbuthnot, 1692): It is
+impossiblefora Die,withsuchdetermin dforceanddirection,nottofallonsuchdetermin d
+side, only I don t know the force and direction which makes it fall on such determin d side,
+andtherefore Icallit Chance,whichisnothing butthewantofart... Laplace(1816) gaveanexceptionally accurate andmodernoverview ofprobability; he
+was the first to use the example take two urns, A and B,the first containing fourwhite and
+twoblackballs,... The Rev.Thomas Bayes(1702 1761) introduced theruleforreasoning
+about conditional probabilities that was named after him (Bayes, 1763). Bayes only con-
+sidered the case of uniform priors; it was Laplace who independently developed the general
+case. Kolmogorov (1950, firstpublished in Germanin1933) presented probability theory in
+a rigorously axiomatic framework for the first time. Re nyi (1970) later gave an axiomatic
+presentation thattookconditional probability, ratherthanabsolute probability, asprimitive.
+Pascalusedprobabilityinwaysthatrequiredboththeobjectiveinterpretation,asaprop-
+erty ofthe world based onsymmetry orrelative frequency, and the subjective interpretation,
+basedondegreeofbelief theformerinhisanalysesofprobabilitiesingamesofchance,the
+latter in the famous Pascal s wager argument about the possible existence of God. How-
+ever, Pascal did not clearly realize the distinction between these two interpretations. The
+distinction wasfirstdrawnclearlyby James Bernoulli(1654 1705).
+Leibnizintroduced the classical notion ofprobability asaproportion ofenumerated,
+equally probable cases,whichwasalsousedby Bernoul

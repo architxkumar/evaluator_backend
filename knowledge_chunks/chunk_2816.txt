@@ -1,0 +1,29 @@
+r,andtexture. Martin,Fowlkes,and Malik(2004)usedfeaturesbased
+on differences in histograms of brightness, color, and texture values measured in these two
+halfdisks, andthen trained aclassifier. Forthistheyused a datasetofnatural images where
+humanshadmarkedthe groundtruth boundaries, andthegoaloftheclassifierwastomark
+exactlythoseboundaries markedbyhumansandnoothers.
+Boundariesdetectedbythistechniqueturnouttobesignificantlybetterthanthosefound
+usingthesimpleedge-detectiontechniquedescribedpreviously. Butstilltherearetwolimita-
+tions. (1)Theboundarypixelsformedbythresholding P (x,y, )arenotguaranteed toform
+b
+closed curves, sothisapproach doesn t deliverregions, and (2)thedecision making exploits
+onlylocalcontextanddoesnotuseglobalconsistency constraints.
+942 Chapter 24. Perception
+(a) (b) (c) (d)
+Figure24.11 (a)Originalimage. (b)Boundarycontours,wherethehigher the Pb value,
+the darker the contour. (c) Segmentation into regions, correspondingto a fine partition of
+theimage. Regionsarerenderedintheirmeancolors. (d)Segmentationintoregions,corre-
+spondingtoa coarserpartitionoftheimage,resultinginfewerregions. (Courtesyof Pablo
+Arbelaez,Michael Maire,Charles Fowlkes,and Jitendra Malik)
+Thealternativeapproachisbasedontryingto cluster the pixelsintoregionsbasedon
+their brightness, color, and texture. Shi and Malik (2000) set this up as a graph partitioning
+problem. The nodes of the graph correspond to pixels, and edges to connections between
+pixels. Theweight W ontheedgeconnectingapairofpixelsiandjisbasedonhowsimilar
+ij
+thetwopixelsareinbrightness, color, texture, etc. Partitionsthatminimizeanormalized cut
+criterion are then found. Roughly speaking, the criterion for partitioning the graph is to
+minimize the sum of weights of connections across the groups of pixels and maximize the
+sumofweightsofconnections withinthegroups.
+Segmentation based purely on low-level, local attributes such as brightness and color
+cannot be expected to deliver the final correct boundaries of all

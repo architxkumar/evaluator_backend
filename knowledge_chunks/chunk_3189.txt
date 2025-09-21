@@ -1,0 +1,35 @@
+,enjoy,1021
+spectrophotometry,935 statespace,67,108 Striebel,C.T.,604,1086
+specularities,933 metalevel,102 string(inlogic),471
+specularreflection,933 statevariable STRIPS,367,393,394,397,432,434,
+speechact,904 missing,423 799
+speechrecognition,25,912,912 919, staticenvironment,44 Stroham,T.,884,1069
+922 stationarity(forpreferences),649 Strohm,G.,432,1072
+sphexwasp,39,425 stationarityassumption,708 strong AI,1020,1026 1033,1040
+SPI(Symbolic Probabilistic Inference), stationarydistribution,537,573 strongdomination,668
+553 stationaryprocess,568,568 570,603 structuredrepresentation,58,64
+Spiegelhalter,D.J.,553 555,639,763, statisticalmechanics,761 Stuckey,P.J.,228,359,1077,1081
+826,1069,1073,1080,1082, Stefik,M.,473,557,1089 STUDENT,19
+1089 Stein,J.,553,1083 stuff,445
+Spielberg,S.,1040,1089 Stein,L.A.,1051,1089 stupidpettricks,39
+SPIKE,432 Stein,P.,192,1078 Stutz,J.,826,1068
+SPIN,356 Steiner,W.,1012,1067 stylometry,886
+spinglass,761 stemming,870 Su,Y.,111,1071
+Spirtes,P.,826,1089 Stensrud,B.,358,1090 subcategory,440
+splitpoint,707 stepcost,68 subgoalindependence,378
+Sproull,R.F.,639,1072 Stephenson,T.,604,1089 subjectivecase,899
+Sputnik,21 stepsize,132 subjectivism,491
+squareroots,47 stereopsis,binocular,948 submodularity,644
+SRI,19,314,393,638 stereovision,974 subproblem,106
+Srinivasan,A.,797,800,1084,1089 Stergiou,K.,228,1089 Subrahmanian,V.S.,192,1084
+Srinivasan,M.V.,1045,1072 Stern,H.S.,827,1073 Subramanian,D.,278,472,799,1050,
+Srivas,M.,356,1089 Sternberg,M.J.E.,797,1089,1090 1068,1087,1089,1090
+Srivastava,B.,432,1077 Stickel,M.E.,277,359,884,921,1075, substance,445
+SSD(sumofsquareddifferences),940 1076,1089,1093 spatial,447
+SSS algorithm,191 stiffneck,496 temporal,447
+Staab,S.,469,1089 Stiller,L.,176,1089 substitutability(oflotteries),612
+stability stimulus,13 substitution,301,323
+ofacontroller,998 Stob,M.,759,1084 subsumption
+staticvs.dynamic,977 stochasticbeamsearch,126 indescriptionlogic,456
+strict,998 stochasticdominance,622,636 inresolution,356
+stack,80 stoch

@@ -1,0 +1,23 @@
+ orequal to C ,acondition thatistrueifallstepcostsexceedsomefinite(cid:2)andifbisfinite. Notice that A expands no nodes with f(n) C for example, Timisoara is not
+expanded in Figure 3.24 even though it is a child of the root. Wesay that the subtree below
+98 Chapter 3. Solving Problemsby Searching
+Timisoaraispruned;becauseh isadmissible,thealgorithmcansafelyignorethissubtree
+PRUNING SLD
+while still guaranteeing optimality. The concept of pruning eliminating possibilities from
+consideration withouthavingtoexaminethem isimportant formanyareasof AI.
+One final observation is that among optimal algorithms of this type algorithms that extend search paths from the root and use the same heuristic information A is optimally
+OPTIMALLY efficient for any given consistent heuristic. That is, no other optimal algorithm is guaran-
+EFFICIENT teedtoexpand fewernodes than A (except possibly through tie-breaking amongnodeswith f(n) C ). This is because any algorithm that does not expand all nodes with f(n) C
+runstheriskofmissingtheoptimalsolution. That A search iscomplete, optimal, andoptimally efficientamongallsuchalgorithms israthersatisfying. Unfortunately, itdoesnotmeanthat A istheanswertoalloursearching
+needs. The catch is that, for most problems, the number of states within the goal contour
+search space is still exponential in the length of the solution. The details of the analysis are
+beyondthescopeofthisbook,butthebasicresultsareasfollows. Forproblemswithconstant
+stepcosts, thegrowthinruntimeasafunction oftheoptimal solution depthdisanalyzed in
+terms of the the absolute error or the relative error of the heuristic. The absolute error is
+ABSOLUTEERROR
+defined as h h, where h is the actual cost of getting from the root to the goal, and
+RELATIVEERROR
+therelativeerrorisdefinedas (cid:2) (h h) h .
+The complexity results depend very strongly on the assumptions made about the state
+space. The simplest model studied is a state space that has a single goal and is essentially a
+tree with 

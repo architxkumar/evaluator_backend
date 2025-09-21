@@ -1,0 +1,37 @@
+e domain of protein folding. Each
+example structure is coded into a logical expression of about 100 conjuncts such as
+Total Length(D2mhr,118) Number Helices(D2mhr,6) ....Fromthesedescriptionsand
+from classifications such as Fold(FOUR-HELICAL-UP-AND-DOWN-BUNDLE,D2mhr),
+the IL Psystem PROGOL(Muggleton,1995)learnedthefollowingrule:
+Fold(FOUR-HELICAL-UP-AND-DOWN-BUNDLE,p) Helix(p,h
+1
+) Length(h
+1
+,HIGH) Position(p,h
+1
+,n) (1 n 3) Adjacent(p,h ,h ) Helix(p,h ).
+1 2 2
+Thiskindofrulecouldnotbelearned,orevenrepresented,byanattribute-basedmechanism
+suchaswesaw inpreviouschapters. Therulecanbetranslatedinto Englishas Proteinp
+hasfoldclass Four-helicalup-and-down-bundle ifitcontainsalonghelixh atasecondary
+1
+structurepositionbetween1and3andh isnexttoasecondhelix. 1
+790 Chapter 19. Knowledgein Learning
+for Hypothesis isthefollowing:
+Grandparent(x,y) z Mother(x,z) Mother(z,y) z Mother(x,z) Father(z,y) z Father(x,z) Mother(z,y) z Father(x,z) Father(z,y) .
+Noticethatanattribute-based learningalgorithm,suchas DECISION-TREE-LEARNING,will
+getnowhere insolving thisproblem. Inordertoexpress Grandparent asanattribute (i.e., a
+unarypredicate), wewouldneedtomake pairsofpeopleintoobjects:
+Grandparent((cid:16)Mum,Charles(cid:17))...
+Thenwegetstuckintryingtorepresenttheexampledescriptions. Theonlypossibleattributes
+arehorriblethingssuchas
+First Element Is Mother Of Elizabeth((cid:16)Mum,Charles(cid:17)).
+The definition of Grandparent in terms of these attributes simply becomes a large disjunc-
+tionofspecificcasesthatdoesnotgeneralizetonewexamplesatall. Attribute-basedlearning
+algorithmsareincapable oflearningrelational predicates. Thus,oneoftheprincipal advan-
+tages of ILP algorithms is their applicability to a much wider range of problems, including
+relational problems.
+Thereader will certainly have noticed that a little bit ofbackground knowledge would
+help in the representation of the Grandparent definition. For example, if Background in-
+cludedthesentence
+Parent(x,y) Mother(x,y) Father(x

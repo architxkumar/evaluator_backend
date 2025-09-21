@@ -1,0 +1,51 @@
+i,G.,761,1068 Mansour,Y.,686,764,855,856,1078, massnoun,445
+Lull,R.,5 1090 massspectrometer,22
+Luong,Q.-T.,968,1072 mantisshrimp,935 Mataric,M.J.,1013,1081
+Lusk,E.,360,1092 Manzini,G.,111,1081 Mateescu,R.,230,1070
+Lygeros,J.,60,1068 map,65 Mateis,C.,472,1071
+Lyman,P.,759,1081 MAP(maximumaposteriori),804 materialism,6
+Lynch,K.,1013,1014,1068 MAPGEN,28 materialvalue,172
+LZW,867 Marais,H.,884,1088 Mates,B.,276,1081
+Marbach,P.,855,1081 mathematicalinductionschema,352
+M March,J.G.,637,1075 mathematics,7 9,18,30
+Marcinkiewicz,M.A.,895,921,1081 Matheson,J.E.,626,638,1076,1082
+MA search,101,101 102,112 Marcot,B.,553,1086 matrix,1056
+MACHACK-6,192 Marcus,G.,638,1081 Matsubara,H.,191,195,1072,1078
+Machina,M.,638,1081 Marcus,M.P.,895,921,1081 Maturana,H.R.,963,1080
+machineevolution,21 margin,745 Matuszek,C.,469,1081
+machinelearning,2,4 marginalization,492 Mauchly,J.,14
+machinereading,881 Markov Mausam.,432,1069
+machinetranslation,32,907 912,919
+assumption MAVEN,195
+statistical,909 912
+sensor,568 MAX-VALUE,166,170
+Machover,M.,314,1065
+process maximin,670
+Mac Kay,D.J.C.,555,761,763,1081,
+first-order,568 maximinequilibrium,672
+1082
+Markov,A.A.,603,883,1081 maximum
+Mac Kenzie,D.,360,1081
+Markovassumption,568,603 global,121
+Mackworth,A.K.,2,59,209,210,228,
+Markovblanket,517,560 local,122
+230,1072,1081,1085
+Markovchain,537,568,861 maximumaposteriori,804,825
+macrop(macrooperator),432,799
+Markovchain Monte Carlo(MCMC), maximumexpectedutility,483,611
+madalines,761
+535,535 538,552,554,596 maximumlikelihood,805,806 810,
+Madigan,C.F.,277,1083
+decayed,605 825
+magicsets,336,358
+Markovdecisionprocess(MDP),10, maximummarginseparator,744,745
+Mahalanobisdistance,739
+647,684,686,830 maxnorm,654
+Mahanti,A.,112,1081
+Mahaviracarya,503
+factored,686 MAXPLAN,387
+Maheswaran,R.,230,1085
+partiallyobservable(POMDP),658, Maxwell,J.,546,920,1081
+Maier,D.,229,358,1065 658 666,686 Mayer,A.,112,119,1075
+Mailath,G.,688,1081 Markovgames,857 Mayne,D.Q.,605,1075
+Majercik,S.M.,433,1081 Markovnetwork,553 Mazumder,P.

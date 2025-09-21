@@ -1,0 +1,30 @@
+quired for the wumpus
+world. Writedownaxiomsforallremainingfluentsymbols.
+7.27 Modify the HYBRID-WUMPUS-AGENT to use the 1-CNF logical state estimation
+method described on page 271. We noted on that page that such an agent will not be able
+toacquire, maintain, andusemorecomplexbeliefs suchasthedisjunction P P . Sug-
+3,1 2,2
+gest a method for overcoming this problem by defining additional proposition symbols, and
+tryitoutinthewumpusworld. Doesitimprovetheperformance oftheagent?
+8
+FIRST-ORDER LOGIC
+Inwhichwenoticethattheworldisblessedwithmanyobjects,someofwhichare
+relatedtootherobjects, andinwhichweendeavor toreasonaboutthem.
+In Chapter7,weshowedhowaknowledge-based agentcouldrepresenttheworldinwhichit
+operates and deduce what actions totake. Weused propositional logic as ourrepresentation
+language because it sufficed to illustrate the basic concepts of logic and knowledge-based
+agents. Unfortunately, propositional logic is too puny a language to represent knowledge
+of complex environments in a concise way. In this chapter, we examine first-order logic,1
+FIRST-ORDERLOGIC
+which is sufficiently expressive to represent a good deal of our commonsense knowledge.
+It also either subsumes or forms the foundation of many other representation languages and
+hasbeenstudied intensively formanydecades. Webeginin Section8.1withadiscussion of
+representationlanguagesingeneral;Section8.2coversthesyntaxandsemanticsoffirst-order
+logic;Sections8.3and8.4illustrate theuseoffirst-order logicforsimplerepresentations.
+8.1 REPRESENTATION REVISITED
+In this section, we discuss the nature of representation languages. Ourdiscussion motivates
+thedevelopmentoffirst-orderlogic,amuchmoreexpressive languagethanthepropositional
+logicintroduced in Chapter7. Welookatpropositional logicandatotherkindsoflanguages
+to understand what works and what fails. Our discussion will be cursory, compressing cen-
+turiesofthought, trial,anderrorintoafewparagraphs.
+Programming languages (such as C or Java or Lisp) are by f

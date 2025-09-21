@@ -1,0 +1,36 @@
+ns.
+Fromthedefinition
+ofthealgorithm, wehave
+N (X,e)
+P (X e) N (X,e) PS .
+PS
+N (e)
+PS
+From Equation(14.6),thisbecomes
+P(X,e)
+P (X e) P(X e).
+P(e)
+Thatis,rejection samplingproduces aconsistent estimate ofthetrueprobability.
+Continuing withourexamplefrom Figure14.12(a), letusassumethat wewishtoesti-
+mate P(Rain Sprinkler true), using 100 samples. Ofthe 100 that we generate, suppose
+that 73 have Sprinkler false and are rejected, while 27 have Sprinkler true; of the 27,
+8have Rain true and19have Rain false. Hence,
+P(Rain Sprinkler true) NORMALIZE((cid:16)8,19(cid:17)) (cid:16)0.296,0.704(cid:17).
+The true answer is (cid:16)0.3,0.7(cid:17). As more samples are collected, the estimate will converge to
+the true answer. The standard deviation of the error in each probability will be proportional to1 n,wherenisthenumberofsamplesusedintheestimate.
+The biggest problem with rejection sampling is that it rejects so many samples! The
+fraction ofsamples consistent withtheevidence edrops exponentially asthe numberofevi-
+dencevariablesgrows,sotheprocedure issimplyunusable forcomplexproblems.
+Noticethatrejectionsamplingisverysimilartotheestimationofconditionalprobabili-
+tiesdirectlyfromtherealworld. Forexample,toestimate P(Rain Red Sky At Night true),
+one can simply count how often it rains after a red sky is observed the previous evening ignoring those evenings when the sky is not red. (Here, the world itself plays the role of
+the sample-generation algorithm.) Obviously, this could take a long time if the sky is very
+seldomred,andthatistheweaknessofrejection sampling.
+Likelihoodweighting
+LIKELIHOOD Likelihoodweightingavoidstheinefficiencyofrejectionsamplingbygeneratingonlyevents
+WEIGHTING
+that are consistent with the evidence e. It is a particular instance of the general statistical
+IMPORTANCE techniqueofimportancesampling,tailoredforinferencein Bayesiannetworks. Webeginby
+SAMPLING
+Section14.5. Approximate Inferencein Bayesian Networks 533
+function REJECTION-SAMPLING(X,e,bn,N)return

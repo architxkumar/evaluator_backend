@@ -1,0 +1,20 @@
+her,D.and Ullman,S.(1990).Recogniz-
+Hope,J.(1994). The Authorshipof Shakespeare s cationsof Decision Analysis,pp.721 762.Strategic ingsolidobjectsbyalignmentwithanimage.IJCV,
+Plays.Cambridge University Press. Decisions Group. 5(2),195 212.
+Hopfield,J.J.(1982).Neuronswithgradedresponse Howe,D.(1987). Thecomputationalbehaviourof Huygens,C.(1657).Deratiociniisinludoaleae.In
+havecollectivecomputationalpropertieslikethose girard sparadox.In LICS-87,pp.205 214. van Schooten,F.(Ed.),Exercitionum Mathematico-
+oftwo-stateneurons.PNAS,79,2554 2558. Hsu,F.-H.(2004). Behind Deep Blue:Buildingthe rum.Elsevirii,Amsterdam. Translatedinto English
+Horn,A.(1951). Onsentenceswhicharetrueof Computerthat Defeatedthe World Chess Champion. by John Arbuthnot(1692).
+directunionsofalgebras.JSL,16,14 21. Princeton University Press. Huyn,N.,Dechter,R.,and Pearl,J.(1980). Proba-
+Horn, B.K. P. (1970). Shape from shading: A Hsu,F.-H.,Anantharaman,T.S.,Campbell,M.S., bilisticanalysisofthecomplexityof A .AIJ,15(3),
+methodforobtainingtheshapeofasmoothopaque and Nowatzyk,A.(1990).Agrandmasterchessma- 241 254.
+objectfromoneview. Technicalreport232,MIT chine.Scientific American,263(4),44 50. Hwa,R.(1998). Anempiricalevaluationofproba-
+Artificial Intelligence Laboratory. Hu,J.and Wellman,M.P.(1998). Multiagentre- bilisticlexicalizedtreeinsertiongrammars.In ACL-
+Horn,B.K.P.(1986).Robot Vision.MIT Press. inforcementlearning:Theoreticalframeworkandan 98,pp.557 563.
+algorithm.In ICML-98,pp.242 250. Hwang,C.H.and Schubert,L.K.(1993).EL:Afor-
+Horn,B.K.P.and Brooks,M.J.(1989).Shapefrom Hu,J.and Wellman,M.P.(2003). Nashq-learning mal, yetnatural, comprehensiveknowledgerepre-
+Shading.MIT Press. forgeneral-sumstochasticgames. JMLR,4,1039 sentation.In AAAI-93,pp.676 682.
+Horn,K.V.(2003). Constructingalogicofplausi- 1069. Ingerman,P.Z.(1967). Panini Backusformsug-
+bleinference:Aguidetocox stheorem. IJAR,34, Huang, T., Koller, D., Malik, J., Ogasawara, G., gested.CACM,10(3),137.
+3 24.
+Rao,B.,Russell,S.J.,and Weber,J

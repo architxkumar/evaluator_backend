@@ -1,0 +1,53 @@
+some different models. In (a), wehave perhaps the simplest
+method of all, known informally as connect-the-dots, and superciliously as piecewise-
+linear nonparametric regression. This model creates a function h(x) that, when given a
+query x , solves the ordinary linear regression problem with just two points: the training
+q
+examples immediately to the left and right of x . When noise is low, this trivial method is
+q
+actuallynottoobad,whichiswhyitisastandardfeatureofchartingsoftwareinspreadsheets.
+742 Chapter 18. Learningfrom Examples
+8 8
+7 7
+6 6
+5 5
+4 4
+3 3
+2 2
+1 1
+0 0
+0 2 4 6 8 10 12 14 0 2 4 6 8 10 12 14
+(a) (b)
+8 8
+7 7
+6 6
+5 5
+4 4
+3 3
+2 2
+1 1
+0 0
+0 2 4 6 8 10 12 14 0 2 4 6 8 10 12 14
+(c) (d)
+Figure18.28 Nonparametricregressionmodels:(a)connectthedots,(b)3-nearestneigh-
+borsaverage,(c)3-nearest-neighborslinearregression, (d)locallyweightedregressionwith
+aquadratickernelofwidthk 10.
+Butwhenthedataarenoisy, theresulting functionisspiky, anddoesnotgeneralize well.
+NEAREST- k-nearest-neighbors regression (Figure 18.28(b)) improves on connect-the-dots. In-
+NEIGHBORS
+REGRESSION
+stead of using just the two examples to the left and right of a query point x , we use the
+q
+k nearest neighbors (here 3). A larger value of k tends to smooth out the magnitude of
+thespikes, although theresulting function hasdiscontinuities. In(b), wehave thek-nearest-
+(cid:2)
+neighborsaverage: h(x)isthemeanvalueofthekpoints, y k. Noticethatattheoutlying
+j
+points,nearx 0andx 14,theestimatesarepoorbecausealltheevidencecomesfromone
+side(theinterior),andignoresthetrend. In(c),wehavek-nearest-neighbor linearregression,
+whichfindsthebestlinethroughthekexamples. Thisdoesabetterjobofcapturingtrendsat
+theoutliers, butisstilldiscontinuous. Inboth(b)and(c),we releftwiththequestionofhow
+tochoose agoodvaluefork. Theanswer,asusual, iscross-validation.
+LOCALLYWEIGHTED Locallyweightedregression(Figure18.28(d))givesustheadvantagesofnearestneigh-
+REGRESSION
+bors,withoutthediscontinuities. Toavoiddiscontinuities in

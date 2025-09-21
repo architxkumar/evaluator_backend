@@ -1,0 +1,64 @@
+unction is spherical, which makes it rotationally
+2 2
+invariant: Imagine a set of points in a plane, measured by their x and y coordinates. Now
+imagine rotating the axes by 45o. You d get a different set of (x (cid:2) ,y (cid:2) ) values representing
+the same points. If you apply L regularization before and after rotating, you get exactly
+2
+(cid:2) (cid:2)
+the same point as the answer (although the point would be described with the new (x,y )
+coordinates). Thatisappropriate whenthechoiceofaxesreallyisarbitrary when itdoesn t
+matterwhetheryourtwodimensions aredistancesnorthandeast;ordistancesnorth-east and
+Section18.6. Regressionand Classification with Linear Models 723
+south-east. With L regularizationyou dgetadifferentanswer,becausethe L functionisnot
+1 1
+rotationally invariant. That is appropriate when the axes are not interchangeable; it doesn t
+makesensetorotate numberofbathrooms 45o towards lotsize. 18.6.3 Linearclassifiers witha hardthreshold
+Linear functions can be used to do classification as well as regression. For example, Fig-
+ure18.15(a)showsdatapointsoftwoclasses: earthquakes(whichareofinteresttoseismolo-
+gists)andunderground explosions (whichareofinterestto armscontrolexperts). Eachpoint
+is defined by two input values, x and x , that refer to body and surface wave magnitudes
+1 2
+computed from the seismic signal. Given these training data, the task of classification is to
+learn ahypothesis hthat willtake new (x ,x )points andreturn either 0forearthquakes or
+1 2
+1forexplosions.
+7.5
+7
+6.5
+6
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+4.5 5 5.5 6 6.5 7
+x
+2
+7.5
+7
+6.5
+6
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+4.5 5 5.5 6 6.5 7
+x
+1
+x
+2
+x
+1
+(a) (b)
+Figure18.15 (a)Plotoftwoseismicdataparameters,bodywavemagnitudex andsur-
+1
+face wave magnitudex , forearthquakes(white circles) andnuclearexplosions(blackcir-
+2
+cles)occurringbetween1982and1990in Asiaandthe Middle East(Kebeasyetal.,1998).
+Alsoshownisadecisionboundarybetweentheclasses. (b)Thesamedomainwithmoredata
+points.Theearthquakesandexplosionsarenolon

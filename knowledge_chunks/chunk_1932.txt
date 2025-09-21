@@ -1,0 +1,26 @@
+the axioms describe the interactions between signals and cir-
+cuit elements. (See Section 8.4.2 on page 309 for an example.) Logical reasoners designed
+specially for verification have been able to verify entire CP Us, including their timing prop-
+erties (Srivas and Bickford, 1990). The AURA theorem prover has been applied to design
+circuitsthataremorecompactthananyprevious design(Wojciechowski and Wojcik,1983).
+In the case of software, reasoning about programs is quite similar to reasoning about
+actions, as in Chapter 7: axioms describe the preconditions and effects of each statement.
+The formal synthesis of algorithms was one of the first uses of theorem provers, as outlined
+by Cordell Green (1969a), who built on earlier ideas by Herbert Simon (1963). The idea
+is to constructively prove a theorem to the effect that there exists a program p satisfying a
+DEDUCTIVE certain specification. Although fully automated deductivesynthesis, asitiscalled, has not
+SYNTHESIS
+yet become feasible forgeneral-purpose programming, hand-guided deductive synthesis has
+beensuccessfulindesigningseveralnovelandsophisticatedalgorithms. Synthesisofspecial-
+purpose programs,suchasscientificcomputing code,isalso anactiveareaofresearch.
+Similartechniquesarenowbeingappliedtosoftwareverificationbysystemssuchasthe
+SPIN model checker (Holzmann, 1997). Forexample, the Remote Agent spacecraft control
+program was verified before and after flight (Havelund et al., 2000). The RSA public key
+encryptionalgorithmandthe Boyer Moorestring-matching algorithmhavebeenverifiedthis
+way(Boyerand Moore,1984).
+Section9.6. Summary 357
+9.6 SUMMARY
+Wehave presented ananalysis oflogical inference infirst-orderlogic and anumberofalgo-
+rithmsfordoingit. A first approach uses inference rules (universal instantiation and existential instan-
+tiation) to propositionalize the inference problem. Typically, this approach is slow,
+unlessthedomainissmall. Theuseofunificationtoidentify appropriate substitutions forvariables elimina

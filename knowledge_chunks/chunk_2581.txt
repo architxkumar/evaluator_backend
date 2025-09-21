@@ -1,0 +1,25 @@
+soperational ifitis easy tosolve. Forexample,
+OPERATIONALITY
+the subgoal Primitive(z) is easy to solve, requiring at most two steps, whereas the subgoal
+Simplify(y z,w) could lead to an arbitrary amount of inference, depending on the values
+of y and z. If a test for operationality is carried out at each step in the construction of the
+generalizedproof,thenwecanprunetherestofabranchassoonasanoperationalsubgoalis
+found, keepingjusttheoperational subgoalasaconjunct ofthenewrule.
+Unfortunately, there is usually a tradeoff between operationality and generality. More
+specific subgoals are generally easier to solve but cover fewer cases. Also, operationality
+is a matter of degree: one or two steps is definitely operational, but what about 10 or 100?
+784 Chapter 19. Knowledgein Learning
+Finally, the cost of solving a given subgoal depends on what other rules are available in the
+knowledge base. It can go up or down as more rules are added. Thus, EBL systems really
+face a very complex optimization problem in trying to maximize the efficiency of a given
+initialknowledge base. Itissometimespossible toderiveamathematicalmodeloftheeffect
+on overall efficiency of adding a given rule and to use this model to select the best rule to
+add. The analysis can become very complicated, however, especially when recursive rules
+are involved. One promising approach is to address the problem of efficiency empirically,
+simplybyaddingseveralrulesandseeingwhichonesareusefulandactuallyspeedthingsup.
+Empirical analysis of efficiency is actually at the heart of EBL. What we have been
+calling loosely the efficiency of agiven knowledge base isactually the average-case com-
+plexity on a distribution of problems. By generalizing from past example problems, EBL
+makes the knowledge base more efficient for the kind of problems that it is reasonable to
+expect. This works as long as the distribution of past examples is roughly the same as for
+future examples the same assumption used for PAC-learning in Sect

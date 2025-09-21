@@ -1,0 +1,30 @@
+
+lives. One common currency used in medical and safety analysis is the micromort, a
+MICROMORT
+one in a million chance of death. If you ask people how much they would pay to avoid a
+risk for example, to avoid playing Russian roulette with a million-barreled revolver they
+will respond with very large numbers, perhaps tens of thousands of dollars, but their actual
+behaviorreflectsamuchlowermonetaryvalueforamicromort. Forexample,drivinginacar
+for230 miles incurs arisk of one micromort; overthe life of yourcar say, 92,000 miles that s 400 micromorts. People appear to be willing to pay about 10,000 (at 2009 prices)
+more for a safer car that halves the risk of death, or about 50 per micromort. A number
+of studies have confirmed a figure in this range across many individuals and risk types. Of
+course, this argument holds only forsmallrisks. Mostpeople won t agree tokillthemselves
+for 50million.
+Another measure is the QALY,or quality-adjusted life year. Patients with a disability
+QALY
+are willing to accept a shorter life expectancy to be restored to full health. For example,
+kidneypatientsonaverageareindifferentbetweenlivingtwoyearsonadialysismachineand
+oneyearatfullhealth.
+16.3.2 The utilityofmoney
+Utility theory has its roots in economics, and economics provides one obvious candidate
+for a utility measure: money (or more specifically, an agent s total net assets). The almost
+universal exchangeability of money for all kinds of goods and services suggests that money
+playsasignificantroleinhumanutilityfunctions.
+Itwillusuallybethecasethatanagentprefersmoremoneytoless,allotherthingsbeing
+MONOTONIC equal. We say that the agent exhibits a monotonic preference for more money. This does
+PREFERENCE
+notmeanthatmoneybehaves asautility function, because itsaysnothing aboutpreferences
+betweenlotteriesinvolving money.
+Supposeyouhavetriumphedovertheothercompetitorsinatelevisiongameshow. The
+host now offers you achoice: either you can take the 1,000,000 prize oryou can gamble it
+on the fl

@@ -1,0 +1,27 @@
+these tasks,
+robots have become more cost-effective than human workers. Outdoors, many of the heavy
+machines that we use to harvest, mine, or excavate earth have been turned into robots. For
+Section25.8. Application Domains 1007
+(a) (b)
+Figure25.28 (a)Roboticcar BOSS,whichwonthe DARPA Urban Challenge. Courtesy
+of Carnegie Mellon University.(b)Surgicalrobotsintheoperatingroom.Imagecourtesyof
+da Vinci Surgical Systems.
+example,aprojectat Carnegie Mellon Universityhasdemonstratedthatrobotscanstrippaint
+offlargeshipsabout50timesfasterthanpeoplecan,andwithamuchreducedenvironmental
+impact. Prototypes ofautonomous miningrobotshavebeenfoundtobefasterandmorepre-
+cisethanpeopleintransportingoreinundergroundmines. Robotshavebeenusedtogenerate
+high-precision maps of abandoned mines and sewer systems. While many of these systems
+are still in their prototype stages, it is only a matter of time until robots will take overmuch
+ofthesemimechanical workthatispresently performedbypeople.
+Transportation. Robotictransportationhasmanyfacets: fromautonomoushelicopters
+thatdeliverpayloads tohard-to-reach locations, toautomatic wheelchairs thattransport peo-
+plewhoareunabletocontrolwheelchairsbythemselves,toautonomousstraddlecarriersthat
+outperform skilledhumandriverswhentransporting containers fromshipstotrucksonload-
+ingdocks. Aprimeexampleofindoortransportation robots, orgofers, isthe Helpmaterobot
+shown in Figure 25.27(a). This robot has been deployed in dozens of hospitals to transport
+food and other items. In factory settings, autonomous vehicles are now routinely deployed
+to transport goods in warehouses and between production lines. The Kiva system, shown in
+Figure25.27(b),helpsworkersatfulfillmentcenterspackagegoodsintoshippingcontainers.
+Manyoftheserobotsrequireenvironmentalmodificationsfortheiroperation. Themost
+common modifications are localization aids such as inductive loops in the floor, active bea-
+cons, or barcode tags. An open challenge in robotics is the design of robots 

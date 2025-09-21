@@ -1,0 +1,19 @@
+ionasabduction.AIJ,63(1 2), behavior-basedsystems.Autonomous Robots,9,83 Huang,X.D.,Acero,A.,and Hon,H.(2001).Spo-
+69 142. 93. ken Language Processing. Hoffmann,J.(2001).FF:Thefast-forwardplanning Horvitz,E.J.(1987).Problem-solvingdesign:Rea- Hubel,D.H.(1988).Eye,Brain,and Vision.W.H.
+system.AI Mag,22(3),57 62. soningaboutcomputationalvalue,trade-offs,andre- Freeman.
+H ma o n ff t m p a la n n n n , in J g .a v n ia d h B e r u a r f i m st a ic n, fo R rw .I a . rd (2 s 0 e 0 a 6 r ) c . h: C A on n f e o w r- s r o um ur , c p es p . . I 2 n 6 P 4 ro 3 c . .Second Annual NASA Research Fo- H Th u e d C dl a e m st b o r n id , ge R G . r D a . mm an a d ro P f u t l h l e um E , ng G lis . h K L . an ( g 2 u 0 a 0 g 2 e ) . .
+approach.AIJ,170(6 7),507 541. Horvitz,E.J.(1989). Rationalmetareasoningand Cambridge University Press.
+compilationforoptimizingdecisionsunderbounded Huffman,D.A.(1971).Impossibleobjectsasnon-
+Hoffmann,J.and Brafman,R.I.(2005).Contingent resources. In Proc.Computational Intelligence89. sense sentences. In Meltzer, B. and Michie, D.
+planningviaheuristicforwardsearchwithimplicit Associationfor Computing Machinery. (Eds.),Machine Intelligence6,pp.295 324.Edin-
+beliefstates.In ICAPS-05.
+Horvitz,E.J.and Barry,M.(1995). Displayofin- burgh University Press.
+Hoffmann,J.(2005).Where ignoringdeletelists formationfortime-criticaldecisionmaking.In UAI- Hughes,B.D.(1995). Random Walksand Random
+works: Localsearchtopologyinplanningbench- 95,pp.296 305. Environments,Vol.1:Random Walks. Oxford Uni-
+marks.JAIR,24,685 758.
+Horvitz, E.J., Breese,J.S., Heckerman, D., and versity Press.
+Hoffmann,J.and Nebel,B.(2001). The FFplan- Hovel,D.(1998). The Lumiereproject: Bayesian Hughes,G.E.and Cresswell,M.J.(1996). ANew
+ningsystem:Fastplangenerationthroughheuristic usermodelingforinferringthegoalsandneedsof Introductionto Modal Logic.Routledge.
+search.JAIR,14,253 302. softwareusers.In UAI-98,pp.256 265.
+Huhns,M.N.and Singh,M.P.(Eds.).(1998).Read-
+Hoffmann, J., Sabharwal

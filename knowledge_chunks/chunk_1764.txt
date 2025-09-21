@@ -1,0 +1,31 @@
+ places and
+reliesonthelackofapercepttomakeonecrucialstep.
+240 Chapter 7. Logical Agents
+Theagenthasnowprovedtoitselfthatthereisneitherapitnorawumpusin 2,2 ,soit
+is OKtomovethere. Wedonotshowtheagent sstateofknowledgeat 2,2 ;wejustassume
+that the agent turns and moves to 2,3 , giving us Figure 7.4(b). In 2,3 , the agent detects a
+glitter, soitshouldgrabthegoldandthenreturnhome.
+Note that in each case for which the agent draws a conclusion from the available in-
+formation, that conclusion is guaranteed tobecorrect iftheavailable information iscorrect.
+This is a fundamental property of logical reasoning. In the rest of this chapter, we describe
+howtobuildlogicalagentsthatcanrepresentinformationanddrawconclusionssuchasthose
+described inthepreceding paragraphs.
+7.3 LOGIC
+This section summarizes the fundamental concepts of logical representation and reasoning.
+These beautiful ideas are independent of any of logic s particular forms. We therefore post-
+pone the technical details of those forms until the next section, using instead the familiar
+exampleofordinary arithmetic.
+In Section 7.1, we said that knowledge bases consist of sentences. These sentences
+areexpressed according tothe syntax oftherepresentation language, whichspecifies allthe
+SYNTAX
+sentences that are well formed. The notion of syntax is clear enough in ordinary arithmetic: x y 4 isawell-formed sentence, whereas x4y isnot.
+Alogicmustalsodefinethesemanticsormeaningofsentences. Thesemanticsdefines
+SEMANTICS
+the truth of each sentence with respect to each possible world. Forexample, the semantics
+TRUTH
+for arithmetic specifies that the sentence x y 4 is true in a world where x is 2 and y
+POSSIBLEWORLD
+is 2, but false in a world where x is 1 and y is1. In standard logics, every sentence must be
+eithertrueorfalseineachpossible world there isno inbetween. 1
+When we need to be precise, we use the term model in place of possible world. MODEL
+Whereaspossibleworldsmightbethoughtofas(potentially)realenvironmentsthatth

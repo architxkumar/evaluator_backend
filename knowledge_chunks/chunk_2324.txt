@@ -1,0 +1,38 @@
+cutive lotteries can be compressed into a single equivalent lottery, as shown
+in Figure16.1(b).3 p,A; 1 p, q,B; 1 q,C p,A; (1 p)q,B; (1 p)(1 q),C .
+These constraints are known as the axioms of utility theory. Each axiom can be motivated
+by showing that an agent that violates it will exhibit patently irrational behavior in some
+situations. Forexample, we can motivate transitivity by making an agent with nontransitive
+preferences give us all its money. Suppose that the agent has the nontransitive preferences
+A B C A, where A, B, and C are goods that can be freely exchanged. If the agent
+currently has A, then we could offer to trade C for A plus one cent. The agent prefers C,
+andsowould bewilling tomakethistrade. Wecould then offer totrade B for C,extracting
+another cent, and finally trade A for B. This brings us back where we started from, except
+that theagent hasgiven usthree cents (Figure16.1(a)). Wecankeep going around thecycle
+untiltheagenthasnomoneyatall. Clearly, theagenthasactedirrationally inthiscase.
+16.2.2 Preferences leadto utility
+Noticethattheaxiomsofutilitytheoryarereallyaxiomsaboutpreferences theysaynothing
+about a utility function. But in fact from the axioms of utility we can derive the following
+consequences (fortheproof, seevon Neumannand Morgenstern, 1944): Existenceof Utility Function: Ifanagent spreferencesobeytheaxiomsofutility,then
+there exists a function U such that U(A) U(B) if and only if A is preferred to B,
+and U(A) U(B)ifandonlyiftheagentisindifferent between Aand B.
+U(A) U(B) A B
+U(A) U(B) A B Expected Utility of a Lottery: Theutility of a lottery is the sum of the probability of
+eachoutcometimestheutilityofthatoutcome.
+(cid:12)
+U( p ,S ;...;p ,S ) p U(S ).
+1 1 n n i i
+i
+3 Wecan account forthe enjoyment of gambling by encoding gambling events intothestatedescription; for
+example, Have 10andgambled couldbepreferredto Have 10anddidn tgamble. 614 Chapter 16. Making Simple Decisions
+A
+p
+A B
+q
+1 1 (1 p)
+(1 q)
+C
+is equivalent to
+A
+B C p
+(1 p)q

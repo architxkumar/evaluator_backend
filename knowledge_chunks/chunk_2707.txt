@@ -1,0 +1,29 @@
+equery,
+RELEVANT
+fortheparticularinformation needexpressedinthequery.
+4. A presentation of the result set. This can be as simple as a ranked list of document
+PRESENTATION
+titles or as complex as a rotating color map of the result set projected onto a three-
+dimensional space,rendered asatwo-dimensional display.
+BOOLEANKEYWORD The earliest IR systems worked on a Boolean keyword model. Each word in the document
+MODEL
+collection istreated as a Boolean feature that is true ofadocument ifthe word occurs in the
+document and false if it does not. So the feature retrieval is true for the current chapter
+but false for Chapter 15. The query language is the language of Boolean expressions over
+2 Wedenote asearch query as query . Squarebrackets areused ratherthan quotation markssothat wecan
+distinguishthequery twowords from twowords .
+868 Chapter 22. Natural Language Processing
+features. A document is relevant only if the expression evaluates to true. For example, the
+query information AN Dretrieval istrueforthecurrentchapterandfalsefor Chapter15.
+This model has the advantage of being simple to explain and implement. However,
+it has some disadvantages. First, the degree of relevance of a document is a single bit, so
+there is no guidance as to how to order the relevant documents for presentation. Second,
+Boolean expressions are unfamiliar to users who are not programmers or logicians. Users
+find it unintuitive that when they want to know about farming in the states of Kansas and
+Nebraska they need to issue the query farming (Kansas OR Nebraska) . Third, it can be
+hard to formulate anappropriate query, even foraskilled user. Suppose wetry information
+AND retrieval AND models AND optimization and get an empty result set. We could try information ORretrieval ORmodels ORoptimization , butifthat returns too manyresults,
+itisdifficulttoknowwhattotrynext.
+22.3.1 IR scoring functions
+Most IRsystemshaveabandonedthe Booleanmodelandusemodelsbasedonthestatisticsof
+BM25SCORING wordcounts. We

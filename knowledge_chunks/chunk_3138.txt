@@ -1,0 +1,32 @@
+Churchland,P.M.,1042,1068 cognitivearchitecture,336
+920,921,1068 Churchland,P.S.,1030,1042,1068 cognitivemodeling,3
+chartparser,893,919 Ciancarini,P.,60,192,1066,1068 cognitivepsychology,13
+Chase,A.,28,1064 CIGOL,800 cognitivescience,3
+chatbot,1021 Cimatti,A.,396,433,1066,1068 Cohen,B.,277,1088
+Chater,N.,638,1068,1084 circuitverification,312 Cohen,C.,1013,1069
+Chatfield,C.,604,1068 circumscription,459,468,471 Cohen,P.R.,25,30,434,1069
+Chatila,R.,1012,1083 prioritized,459 Cohen,W.W.,800,1069
+Chauvin,Y.,604,1065 cityblockdistance,103 Cohn,A.G.,473,1069
+checkers,18,61,186,193,850 Claessen,K.,360,1090 coinflip,548,549,641
+checkmate clairvoyance,184 COLBERT,1013
+accidental,182 Clamp,S.E.,505,1070 Collin,Z.,230,1069
+guaranteed,181 Clapp,R.,637,1068 Collins,A.M.,799,1068
+probabilistic,181 Clark,A.,1025,1041,1068 Collins,F.S.,27,1069
+Cheeseman,P.,9,26,229,277,557, Clark,K.L.,472,1068 Collins,M.,760,920,921,1069,1079,
+826,1012,1068,1089 Clark,P.,800,1068 1093
+Chekaluk,R.,1012,1070 Clark,S.,920,1012,1068,1071 collusion,680
+chemistry,22 Clarkcompletion,472 Colmerauer,A.,314,358,359,919,
+Chen,R.,605,1080 Clarke,A.C.,552,1034,1068 1069
+Chen,S.F.,883,1068 Clarke,E.,395,1068 Colombano,S.P.,155,1080
+Chen,X.,395,1091 Clarke,M.R.B.,195,1068 color,935
+Cheng,J.,554,826,1068 CLASSIC,457,458 colorconstancy,935
+Cheng,J.-F.,555,1082 classification(indescriptionlogic),456 combinatorialexplosion,22
+Chervonenkis,A.Y.,759,1091 classification(inlearning),696 commitment
+chess,172 173,185 186 classprobability,764 epistemological,289,290,313,482
+automaton,190 clause,253 ontological,289,313,482,547
+history,192 Clearwater,S.H.,688,1068 commonsense,546
+prediction,21 CLINT,800 commonvalue,679
+Chess,D.M.,60,1078 Clocksin,W.F.,359,1068 communication,286,429,888
+CHESS4.5,110 closed-worldassumption,299,344,417, commutativity(insearchproblems),214 2pruning,706 468,541 Compagna,L.,279,1064
+Chickering,D.M.,191,826,1075,1079 closedclass,890 competitiveratio,148
+Chien,S.,431,1073 closedlist,seeexploredset comp

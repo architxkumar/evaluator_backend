@@ -1,0 +1,24 @@
+with just the
+three red green blue (or R G B) color elements. It makes our computer vision algorithms
+easier, too. Each surface can be modeled with three different albedos for R G B. Similarly,
+each light source can be modeled with three R G B intensities. We then apply Lambert s
+cosine law to each to get three R G B pixel values. This model predicts, correctly, that the
+same surface will produce different colored image patches under different-colored lights. In
+fact,humanobserversarequitegoodatignoringtheeffects ofdifferentcoloredlightsandare
+abletoestimatethecolorofthesurfaceunderwhitelight,aneffectknownascolorconstancy.
+COLORCONSTANCY
+Quiteaccurate colorconstancy algorithms arenowavailable; simpleversions showupinthe auto white balance function of your camera. Note that if we wanted to build a camera for
+mantis shrimp, we would need 12 different pixel colors, corresponding to the 12 types of
+colorreceptorsofthecrustacean.
+24.2 EARLY IMAGE-PROCESSING OPERATIONS
+Wehave seen how light reflects off objects in the scene to form an image consisting of, say,
+fivemillion 3-byte pixels. With all sensors there will be noise in the image, and in any case
+thereisalotofdatatodealwith. Sohowdowegetstartedonanalyzing thisdata?
+Inthis section wewillstudy threeuseful image-processing operations: edge detection,
+texture analysis, and computation of optical flow. These are called early or low-level operations because they are the first in a pipeline of operations. Early vision operations are
+characterized by their local nature (they can be carried out in one part of the image without
+regard for anything more than a few pixels away) and by their lack of knowledge: we can
+perform these operations without consideration of the objects that might be present in the
+scene. This makes the low-level operations good candidates for implementation in parallel
+hardware either in a graphics processor unit (GPU) or an eye. We will then look at one
+mid-leveloperation: segmenting theimageintoregion

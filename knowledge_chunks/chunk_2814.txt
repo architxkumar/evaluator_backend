@@ -1,0 +1,34 @@
+a) (b)
+Figure24.9 Twoimagesofthesametextureofcrumpledricepaper,withdifferentillumi-
+nationlevels. Thegradientvectorfield(ateveryeighthpixel)isplottedontopofeachone.
+Noticethat, asthe lightgetsdarker,allthegradientvectorsgetshorter. Thevectorsdonot
+rotate,sothegradientorientationsdonotchange.
+video of a race car would be measured in pixels per second, not miles per hour. Theoptical
+flow encodes useful information about scene structure. For example, in a video of scenery
+taken from a moving train, distant objects have slower apparent motion than close objects;
+thus, the rate of apparent motion can tell us something about distance. Optical flow also
+enablesustorecognizeactions. In Figure24.10(a)and(b),weshowtwoframesfromavideo
+of a tennis player. In (c) we display the optical flow vectors computed from these images,
+showingthattheracketandfrontlegaremovingfastest.
+The optical flow vector field can be represented at any point (x,y) by its components
+v (x,y)inthexdirectionandv (x,y)intheydirection. Tomeasureopticalflowweneedto
+x y
+findcorresponding pointsbetween onetimeframeandthenext. Asimple-minded technique
+is based on the fact that image patches around corresponding points have similar intensity
+patterns. Consider a block of pixels centered at pixel p, (x ,y ), at time t . This block
+0 0 0
+of pixels is to be compared with pixel blocks centered at various candidate pixels at (x 0
+D ,y D ) at time t D . One possible measure of similarity is the sum of squared
+x 0 y 0 t
+SUMOFSQUARED differences(SSD):
+DIFFERENCES (cid:12)
+SSD(D ,D ) (I(x,y,t) I(x D ,y D ,t D ))2 .
+x y x y t
+(x,y)
+Here, (x,y) ranges over pixels in the block centered at (x ,y ). We find the (D ,D ) that
+0 0 x y
+minimizes the SSD.The optical flow at (x ,y ) is then (v ,v ) (D D ,D D ). Note
+0 0 x y x t y t
+thatforthistowork,thereneedstobesometextureorvariationinthescene. Ifoneislooking
+at a uniform white wall, then the SSD is going to be nearly the same for the different can-
+Section24.2. Early Image-Proces

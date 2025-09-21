@@ -1,0 +1,24 @@
+ofmotions: Rollingforwardaspecifieddistance. Rotatinginplacethrough aspecifiedangle.
+The state of such a robot can be characterized in terms of three parameters (cid:16)x,y, , the x-
+coordinate and y-coordinate of the robot (more precisely, of its center of rotation) and the
+robot sorientationexpressedastheanglefromthepositivexdirection. Theaction Roll(D) has the effect of changing state (cid:16)x,y, to (cid:16)x Dcos( ),y Dsin( ), (cid:17), and the action
+Rotate( )hastheeffectofchanging state(cid:16)x,y, (cid:17)to(cid:16)x,y, (cid:17).
+a. Supposethattherobotisinitiallyat(cid:16)0,0,0(cid:17)andthenexecutestheactions Rotate(60 ), Roll(1),Rotate(25 ),Roll(2). Whatisthefinalstateoftherobot?
+1018 Chapter 25. Robotics
+robot
+sensor
+range
+goal
+Figure25.33 Simplifiedrobotinamaze. See Exercise25.9.
+b. Now suppose that the robot has imperfect control of its own rotation, and that, if it
+attemptstorotateby ,itmayactuallyrotatebyanyanglebetween 10 and 10 .
+In that case, if the robot attempts to carry out the sequence of actions in (A), there is
+a range of possible ending states. What are the minimal and maximal values of the
+x-coordinate, they-coordinate andtheorientation inthefinalstate?
+c. Let us modify the model in (B) to a probabilistic model in which, when the robot
+attempts to rotate by , its actual angle of rotation follows a Gaussian distribution with mean and standard deviation 10 . Suppose that the robot executes the actions Rotate(90 ), Roll(1). Giveasimpleargument that (a)theexpected value oftheloca- tionattheendisnotequaltotheresultofrotatingexactly 90 andthenrollingforward
+1 unit, and (b) that the distribution of locations at the end does not follow a Gaussian.
+(Donotattempttocalculate thetruemeanorthetruedistribution.)
+Thepoint of this exercise is that rotational uncertainty quickly gives rise to alot of
+positional uncertainty and that dealing with rotational uncertainty is painful, whether
+uncertainty istreated in terms of hard intervals orprobabilistically, d

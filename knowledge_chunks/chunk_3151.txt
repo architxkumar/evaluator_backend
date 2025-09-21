@@ -1,0 +1,32 @@
+59,1074
+Gaussianfilter,938 Gibson,J.J.,967,968,1073 Gomard,C.K.,799,1077
+Gaussianprocess,827 Gil,Y.,439,1068 Gomes,C.,154,229,277,1074
+Gawande,A.,1036,1073 Gilks,W.R.,554,555,826,1073 Gonthier,G.,227,1074
+Gawron,J.M.,922,1078 Gilmore,P.C.,358,1073 Good,I.J.,491,552,1037,1042,1074
+Gay,D.E.,275,1080 Ginsberg,M.L.,187,195,229,231, Good Turingsmoothing,883
+Gearhart,C.,686,1074 359,363,557,1069,1073,1089 goodandevil,637
+Gee,A.H.,605,1070 Gionis,A.,760,1073 Gooday,J.M.,473,1069
+Geffner,H.,156,394,395,431,433, Gittins,J.C.,841,855,1074 Goodman,D.,29,1074
+1066,1075,1084 Gittinsindex,841,855 Goodman,J.,29,883,1068,1074
+Geiger,D.,553,826,1073,1075 Giunchiglia,E.,433,1072 Goodman,N.,470,798,1074,1080
+Geisel,T.,864,1073 Givan,R.,857,1090 Goodnow,J.J.,798,1067
+Gelatt,C.D.,155,229,1078 Glanc,A.,1011,1074 goodold-fashioned AI(GOFAI),1024,
+Gelb,A.,604,1073 Glass,J.,604,1080 1041
+Gelder,A.V.,360,1090 GLAUBER,800 Google,870,883,889,922
+Gelernter,H.,18,359,1073 Glavieux,A.,555,1065 Google Translate,907
+Gelfond,M.,359,472,1073 GLIE,840 Gopnik,A.,314,1074
+Gelly,S.,194,1073,1091 globalconstraint,206,211 Gordon,D.M.,429,1074
+Gelman,A.,827,1073 Global Positioning System(GPS),974 Gordon,G.,605,686,1013,1085,1087,
+Geman,D.,554,967,1073 Glover,F.,154,1074 1091
+Geman,S.,554,967,1073 Glymour,C.,314,826,1074,1089 Gordon,M.J.,314,1074
+generality,783 Go(game),186,194 Gordon,N.,187,195,605,1071,1074
+generalization,770,772 goal,52,64,65,108,369 Gorry,G.A.,505,1074
+generalizationhierarchy,776 basedagent,52 53,59,60 Gottlob,G.,230,1074
+generalizationloss,711 formulationof,65 Gotts,N.,473,1069
+generalizedarcconsistent,210 goal-basedagent,52 53,59 GP-CSP,390
+generalizedcylinder,967 goal-directedreasoning,259 GPS(General Problem Solver),3,7,18,
+generalontology,453 inferential,301 393
+General Problem Solver,3,7,18,393 serializable,392 GPS(Global Positioning System),974
+generation(ofstates),75 goalclauses,256 gracefuldegradation,666
+generativecapacity,889 goalmonitoring,423 gradient,131
+generator,337 goalp

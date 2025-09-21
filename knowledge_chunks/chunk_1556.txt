@@ -1,0 +1,51 @@
+teration,thecutoffvalueisthesmall- est f-cost of any node that exceeded the cutoff on the previous iteration. IDA is practical
+for many problems with unit step costs and avoids the substantial overhead associated with
+keepingasortedqueueofnodes. Unfortunately,itsuffersfromthesamedifficultieswithreal-
+valued costs as does the iterative version of uniform-cost search described in Exercise 3.17. Thissectionbrieflyexaminestwoothermemory-boundedalgorithms,called RBF Sand MA.
+RECURSIVE Recursive best-first search (RBFS) is a simple recursive algorithm that attempts to
+BEST-FIRSTSEARCH
+mimictheoperation ofstandard best-first search, but using only linearspace. Thealgorithm
+is shown in Figure 3.26. Its structure is similar to that of a recursive depth-first search, but
+ratherthan continuing indefinitely downthecurrent path, ituses thef limit variable tokeep
+track of the f-value of the best alternative path available from any ancestor of the current
+node. If the current node exceeds this limit, the recursion unwinds back to the alternative
+path. As the recursion unwinds, RBFS replaces the f-value of each node along the path
+withabacked-upvalue thebestf-valueofitschildren. Inthisway,RBF Sremembersthe
+BACKED-UPVALUE
+f-value of the best leaf in the forgotten subtree and can therefore decide whether it s worth
+100 Chapter 3. Solving Problemsby Searching
+(a) After expanding Arad, Sibiu, and Rimnicu Vilcea Arad 366
+447
+Sibiu Timisoara Zerind
+393
+447 449
+415
+Arad Fagaras Oradea Rimnicu Vilcea
+413
+646 415 671
+Craiova Pitesti Sibiu
+526 417 553
+(b) After unwinding back to Sibiu and expanding Fagaras Arad
+366
+447
+Sibiu Timisoara Zerind
+393 447 449
+417
+Arad Fagaras Oradea Rimnicu Vilcea
+646 415 671 413 417
+Sibiu Bucharest
+591 450
+(c) After switching back to Rimnicu Vilcea and expanding Pitesti Arad
+366
+447
+Sibiu Timisoara Zerind
+393 447 449
+447
+Arad Fagaras Oradea Rimnicu Vilcea
+646 415 450 671 417
+447
+Craiova Pitesti Sibiu
+526 417 553
+Bucharest Craiova Rimnicu Vilcea
+418 615 607
+Figure

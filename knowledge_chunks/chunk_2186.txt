@@ -1,0 +1,62 @@
+
+0 2
+C
+4
+ost
+6
+c
+810 0 2
+H
+4
+a
+6
+rvesth
+0 2
+C
+4
+ost
+6
+c
+810 0 2
+H
+4
+a
+6
+rvesth
+0 2
+C
+4
+ost
+6
+c
+810 0 2
+H
+4
+a
+6
+rvesth
+(a) (b) (c)
+Figure 14.6 The graphs in (a) and (b) show the probability distribution over Cost as a
+function of Harvest size, with Subsidy true and false, respectively. Graph (c) shows the
+distribution P(Cost Harvest),obtainedbysummingoverthetwosubsidycases.
+and (b) show these tworelationships. Notice that in each case the slope is negative, because
+cost decreases as supply increases. (Of course, the assumption of linearity implies that the
+costbecomesnegativeatsomepoint;thelinearmodelisreasonableonlyiftheharvestsizeis
+limitedtoanarrowrange.) Figure14.6(c)showsthedistribution P(c h),averagingoverthe
+twopossible valuesof Subsidy andassumingthateachhaspriorprobability 0.5. Thisshows
+thatevenwithverysimplemodels,quiteinteresting distributions canberepresented.
+The linear Gaussian conditional distribution has some special properties. A network
+containing only continuous variables with linear Gaussian distributions has a joint distribu-
+tionthatisamultivariate Gaussiandistribution(see Appendix A)overallthevariables(Exer-
+cise14.9). Furthermore,theposteriordistribution given anyevidencealsohasthisproperty.3
+When discrete variables are added as parents (not as children) of continuous variables, the
+CONDITIONAL network defines a conditional Gaussian, or CG, distribution: given any assignment to the
+GAUSSIAN
+discretevariables, thedistribution overthecontinuous variables isamultivariate Gaussian.
+Now we turn to the distributions for discrete variables with continuous parents. Con-
+sider, for example, the Buys node in Figure 14.5. It seems reasonable to assume that the
+customer will buy if the cost is low and will not buy if it is high and that the probability of
+buyingvariessmoothlyinsomeintermediateregion. Inotherwords,theconditionaldistribu-
+tionislikea soft threshold function. Onewaytomakesoftthresholds istousetheintegral
+ofthestandard normaldistribution:
+(c

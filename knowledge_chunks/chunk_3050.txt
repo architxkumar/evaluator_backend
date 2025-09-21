@@ -1,0 +1,25 @@
+ s E . u . te a d nd Pr M oc c e C s l s e i l n l g an , d c , ha J p . . L 7 . , ( p E p d . s. 2 ), 82 P a 3 r 1 a 7 l- .
+planning.In AAAI-07,pp.1007 1012. Heckerman, D. (1991). Probabilistic Similarity Hirsh,H.(1987).Explanation-basedgeneralization
+Haslum,P.and Geffner,H.(2001). Heuristicplan-
+Networks.MIT Press. inalogicprogrammingenvironment.In IJCAI-87.
+ningwithtimeandresources. In Proc.IJCAI-01 Heckerman,D.(1998). Atutorialonlearningwith Hobbs,J.R.(1990).Literatureand Cognition.CSLI
+Workshopon Planningwith Resources. Bayesiannetworks.In Jordan,M.I.(Ed.),Learning Press.
+ingraphicalmodels.Kluwer. Hobbs, J. R., Appelt, D., Bear, J., Israel, D.,
+Haslum,P.(2006).Improvingheuristicsthroughre-
+Kameyama, M., Stickel, M. E., and Tyson, M.
+laxedsearch Ananalysisof TP4and HSP ainthe Heckerman,D.,Geiger,D.,and Chickering,D.M.
+(1997).FASTUS:Acascadedfinite-statetransducer
+2004planningcompetition.JAIR,25,233 267. (1994). Learning Bayesiannetworks: Thecombi-
+for extracting information from natural-language
+nationofknowledgeandstatisticaldata. Technical
+Haslum,P.,Bonet,B.,and Geffner,H.(2005).New text. In Roche,E.and Schabes,Y.(Eds.),Finite-
+report MSR-TR-94-09,Microsoft Research.
+admissibleheuristicsfordomain-independentplan- State Devicesfor Natural Language Processing,pp.
+ning.In AAAI-05. Heidegger,M.(1927).Beingand Time.SCM Press. 383 406.MIT Press.
+1076 Bibliography
+Hobbs,J.R.and Moore,R.C.(Eds.).(1985). For- Horowitz,E.and Sahni,S.(1978).Fundamentalsof Huang,T.and Russell,S.J.(1998). Objectiden-
+mal Theoriesofthe Commonsense World.Ablex. Computer Algorithms.Computer Science Press. tification: ABayesiananalysiswithapplicationto
+trafficsurveillance.AIJ,103,1 17.
+Hobbs,J.R.,Stickel,M.E.,Appelt,D.,and Martin, Horswill, I. (2000). Functional programming of
+P.(1993).Interpretationasabduction.AIJ,63(1 2), behavior-basedsystems.Autonomous Robots,9,83 Huang,X.D.,Acero,A.,and Hon,H.(2001).Spo-
+69 142. 93. ken Language Processing. Hoffmann,J.(2001).FF:Thefast-forwardplanning Hor

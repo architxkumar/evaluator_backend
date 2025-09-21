@@ -1,0 +1,30 @@
+ays that the
+state variables contain all the information needed tocharacterize the probability distribution
+forthenext time slice. Sometimes the assumption is exactly true forexample, ifaparticle
+is executing a random walk along the x-axis, changing its position by 1 at each time step,
+then using the x-coordinate as the state gives a first-order Markov process. Sometimes the
+assumptionisonlyapproximate, asinthecaseofpredicting rainonlyonthebasisofwhether
+itrainedthepreviousday. Therearetwowaystoimprovetheaccuracyoftheapproximation:
+1. Increasing the order of the Markov process model. For example, we could make a
+second-ordermodelbyadding Rain t 2 asaparentof Rain t ,whichmightgiveslightly
+more accurate predictions. For example, in Palo Alto, California, it very rarely rains
+morethantwodaysinarow.
+2. Increasing the set of state variables. For example, we could add Season to allow
+t
+570 Chapter 15. Probabilistic Reasoning over Time
+us to incorporate historical records of rainy seasons, or we could add Temperature ,
+t
+Humidity and Pressure (perhapsatarangeoflocations)toallowustouseaphysical
+t t
+modelofrainyconditions.
+Exercise 15.1 asks you to show that the first solution increasing the order can always be
+reformulated as an increase in the set of state variables, keeping the order fixed. Notice that
+adding state variables might improve the system s predictive power but also increases the
+prediction requirements: we now have to predict the new variables as well. Thus, we are
+lookingfora self-sufficient setofvariables,whichreallymeansthatwehavetounderstand
+the physics of the process being modeled. The requirement for accurate modeling of the
+process isobviously lessened ifwecan add newsensors (e.g., measurements oftemperature
+andpressure) thatprovideinformation directly aboutthenewstatevariables.
+Consider,forexample,theproblemoftrackingarobotwanderingrandomlyonthe X Y
+plane. Onemightpropose thattheposition andvelocityarea sufficientsetofstatevariables:
+onecansimplyuse N

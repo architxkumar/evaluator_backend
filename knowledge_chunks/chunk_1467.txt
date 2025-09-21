@@ -1,0 +1,26 @@
+hering isprovidedbythe exploration thatmustbeundertaken by
+EXPLORATION
+avacuum-cleaning agentinaninitially unknownenvironment.
+Ourdefinition requires arational agentnotonlytogatherinformation butalsotolearn
+LEARNING
+as much as possible from what it perceives. The agent s initial configuration could reflect
+some prior knowledge of the environment, but as the agent gains experience this may be
+modified and augmented. There are extreme cases in which the environment is completely
+known a priori. In such cases, the agent need not perceive orlearn; it simply acts correctly.
+Ofcourse,suchagentsarefragile. Considerthelowlydungbeetle. Afterdiggingitsnestand
+layingitseggs,itfetchesaballofdungfromanearbyheaptoplugtheentrance. Iftheballof
+dung isremoved from itsgrasp en route, the beetle continues its task and pantomimes plug-
+ging the nest withthe nonexistent dung ball, never noticing that it is missing. Evolution has
+builtanassumption intothebeetle sbehavior, andwhenitisviolated, unsuccessful behavior
+results. Slightly more intelligent is the sphex wasp. The female sphex will dig a burrow, go
+out and sting a caterpillar and drag it to the burrow, enter the burrow again to check all is
+well,dragthecaterpillarinside,andlayitseggs. Thecaterpillarservesasafoodsourcewhen
+the eggs hatch. So far so good, but if an entomologist moves the caterpillar a few inches
+away while the sphex isdoing the check, it willrevert to the drag step ofits plan and will
+continuetheplanwithoutmodification,evenafterdozensofcaterpillar-movinginterventions.
+Thesphexisunabletolearnthatitsinnateplanisfailing, andthuswillnotchange it.
+To the extent that an agent relies on the prior knowledge of its designer rather than
+AUTONOMY on its own percepts, we say that the agent lacks autonomy. A rational agent should be
+autonomous it should learn what it can to compensate forpartial or incorrect prior knowl-
+edge. Forexample,avacuum-cleaningagentthatlearnstoforeseewhereandwhenadditional
+dirt will appear will do bett

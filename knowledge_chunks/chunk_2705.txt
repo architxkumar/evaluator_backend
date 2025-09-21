@@ -1,0 +1,27 @@
+mand
+FEATURESELECTION
+ham. Forexample,thebigram ofthe isfrequentin English, andmaybeequallyfrequentin
+spam and ham, sothere isno sense incounting it. Often the top hundred orsofeatures do a
+goodjobofdiscriminating betweenclasses.
+Once we have chosen a set of features, we can apply any of the supervised learning
+techniques we have seen; popular ones for text categorization include k-nearest-neighbors,
+support vector machines, decision trees, naive Bayes, and logistic regression. All of these
+have been applied to spam detection, usually with accuracy in the 98 99 range. With a
+carefully designed featureset,accuracy canexceed99.9 .
+22.2.1 Classificationby data compression
+Another way to think about classification is as a problem in data compression. A lossless
+DATACOMPRESSION
+compressionalgorithmtakesasequenceofsymbols,detectsrepeatedpatternsinit,andwrites
+a description of the sequence that is more compact than the original. For example, the text 0.142857142857142857 mightbecompressedto 0. 142857 3. Compressionalgorithms
+workbybuilding dictionaries ofsubsequences ofthetext,andthenreferring toentries inthe
+dictionary. Theexampleherehadonlyonedictionary entry, 142857. In effect, compression algorithms are creating a language model. The LZ Walgorithm
+inparticulardirectlymodelsamaximum-entropyprobabilitydistribution. Todoclassification
+bycompression, wefirstlumptogetherallthespamtrainingmessagesandcompressthemas
+Section22.3. Information Retrieval 867
+aunit. Wedothesamefortheham. Thenwhengiven anewmessage toclassify, weappend
+ittothespammessagesandcompresstheresult. Wealsoappend ittothehamandcompress
+that. Whichever class compresses better adds the fewernumber of additional bytes forthe
+new message is the predicted class. The idea is that a spam message will tend to share
+dictionaryentrieswithotherspammessagesandthuswillcompressbetterwhenappendedto
+acollection thatalready containsthespamdictionary.
+Experimentswithcompression-based classificationonsomeofthestandardcorporafor

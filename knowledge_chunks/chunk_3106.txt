@@ -1,0 +1,15 @@
+IS-02-35,Univ.of Penn. AIJ,60(1),51 92.
+value invariants with local constraints for object
+recognition.In CVPR. Shachter,R.D.(1986). Evaluatinginfluencedia- Shoham, Y. (1994). Artificial Intelligence Tech-
+grams.Operations Research,34,871 882. niquesin Prolog.Morgan Kaufmann.
+Schmolze,J.G.and Lipkis,T.A.(1983). Classi-
+ficationinthe KL-ON Erepresentationsystem. In Shachter,R.D.(1998). Bayes-ball: Therational Shoham, Y.and Leyton-Brown, K.(2009). Mul-
+IJCAI-83,pp.330 332. pastime (for determining irrelevance andrequisite tiagent Systems:Algorithmic,Game-Theoretic,and
+information in belief networks and influence dia- Logical Foundations.Cambridge Univ.Press.
+Scho lkopf,B.and Smola,A.J.(2002). Learning
+with Kernels.MIT Press. grams).In UAI-98,pp.480 487. Shoham,Y.,Powers,R.,and Grenager,T.(2004).If
+S S c A h T o a n n in d g c , o T n . s ( t 1 ra 9 i 9 n 9 t ) s . a A tis p f r a o c b ti a o b n il p is r t o ic bl a e l m go s r . it I h n m FO fo C rk S - - S B be h . l a i A e c f . h n t ( e 1 e r t 9 w , 9 R o 0 r ) . k . D s. S ., I y n D m A b A A o m A li I c b - r 9 o p 0 s r , o io p b , p a . b B i 1 . l , 2 is a 6 t n i c d 13 i D n 1 f e . e l re F n a c v e er i o n , m t M io u u n l l ? t t i i - - a A I g n g e e n P n t t r l o L e c a e . r a n A r i n A n i g A ng I is . F t a h l e l a S n y s m w p e o r, si w u h m at o i n st A h r e ti q fi u c e ia s- l
+99,pp.410 414.
+S tiv ch e o ro p b p o e t r s s i , n M u . np J. re ( d 1 i 9 c 8 ta 7 b ). le U en n v iv ir e o rs n a m l e p n la ts n . s In fo I r J r C e A ac I - - S in h fl a u c e h n t c e e r, d R ia . g D ra . m an s d . K M en a le n y a , g C em .R en . t (1 S 9 c 8 i 9 en ). c G e, au 3 s 5 s ( i 5 a ) n , S C h o o n r s t u l l i t f a fe ti , o E ns . : H M . Y (1 C 9 I 7 N 6 . ). El C se o v m ie p r u N te o r- r B th a - s H e o d ll M an e d d . ical
+87,pp.1039 1046. 527 550. Sietsma,J.and Dow,R.J.F.(1988). Neuralnet
+S pl c a h n o s p a p s e c r a s c , h M es . .A 

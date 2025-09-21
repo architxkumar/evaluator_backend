@@ -1,0 +1,26 @@
+retations. Now we address the problem
+of completing the interpretation by adding context-dependent information about the current
+situation. The most obvious need for pragmatic information is in resolving the meaning of
+indexicals, which arephrases that referdirectly tothe current situation. Forexample, in the
+INDEXICAL
+sentence Iamin Bostontoday, both I and today areindexicals. Theword I wouldbe
+represented bythefluent Speaker,anditwouldbeuptothehearertoresolvethemeaningof
+the fluent that is not considered part of the grammar but rather an issue of pragmatics; of
+usingthecontextofthecurrentsituation tointerpret fluents.
+Another part of pragmatics is interpreting the speaker s intent. The speaker s action is
+considered a speech act, and it is up to the hearer to decipher what type of action it is a
+SPEECHACT
+question, a statement, a promise, a warning, a command, and so on. A command such as go to22 implicitly refers tothe hearer. Sofar, ourgrammarfor S covers only declarative
+sentences. We can easily extend it to cover commands. A command can be formed from
+a VP, where the subject is implicitly the hearer. We need to distinguish commands from
+statements, sowealtertherulesfor S toincludethetypeofspeechact:
+S(Statement(Speaker,pred(obj))) NP(obj)VP(pred)
+S(Command(Speaker,pred(Hearer))) VP(pred).
+LONG-DISTANCE Long-distance dependencies: Questions introduce anew grammatical complexity. In
+DEPENDENCIES Who did the agent tell you to give the gold to? the final word to should be parsed as PP to , where the denotes a gap or trace where an NP is missing; the missing NP
+TRACE
+is licensed by the first word of the sentence, who. A complex system of augmentations is
+used to make sure that the missing NPs match up with the licensing words in just the right
+way,andprohibitgapsinthewrongplaces. Forexample,youcan thaveagapinonebranch
+of an NP conjunction: What did he play NP Dungeons and ? is ungrammatical. But
+youcanhave thesamegapinboth branches ofa VP conjunction: Whatdidyou VP

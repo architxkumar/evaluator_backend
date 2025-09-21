@@ -1,0 +1,34 @@
+achpossible world there isno inbetween. 1
+When we need to be precise, we use the term model in place of possible world. MODEL
+Whereaspossibleworldsmightbethoughtofas(potentially)realenvironmentsthattheagent
+might or might not be in, models are mathematical abstractions, each of which simply fixes
+thetruthorfalsehoodofeveryrelevantsentence. Informally,wemaythinkofapossibleworld
+as,forexample,havingxmenandywomensittingatatableplayingbridge,andthesentence
+x y 4 is true when there are four people in total. Formally, the possible models are just
+allpossibleassignmentsofrealnumberstothevariables xandy. Eachsuchassignmentfixes
+thetruthofanysentence ofarithmetic whosevariables are xandy. Ifasentence istruein
+model m, we say that m satisfies or sometimes m is a model of . We use the notation
+SATISFACTION
+M( )tomeanthesetofallmodelsof .
+Nowthat wehave a notion of truth, we are ready to talk about logical reasoning. This
+involves the relation of logical entailment between sentences the idea that a sentence fol-
+ENTAILMENT
+lowslogically fromanothersentence. Inmathematicalnotation, wewrite 1 Fuzzylogic,discussedin Chapter14,allowsfordegreesoftruth.
+Section7.3. Logic 241
+2 2 PIT 2 2 PIT KB 1 1 Bree 2 ze P 3 IT 1 1 Bre 2 eze 3 KB 1 1 Bree 2 ze P 3 IT 1 1 Bree 2 ze 3 2
+1
+2 PIT 2 2 PIT 2 PIT 2 2 PIT
+1 1 Bree 2 ze 3 1 1 Bree 2 ze 3 1 1 Bree 2 ze P 3 IT 1 1 Bre 2 eze 3 1 1 Bree 2 ze 3 1 1 Bre 2 eze P 3 IT
+2 PIT 2 PIT PIT 2 PIT 2 PIT PIT
+1 Breeze PIT 2 PIT PIT 1 1 Bre 2 eze 3 1 Breeze PIT 2 PIT PIT 1 1 Bre 2 eze 3
+1 2 3 1 2 3
+1 Breeze PIT 1 Breeze PIT
+1 2 3 1 2 3
+(a) (b)
+Figure7.5 Possiblemodelsforthepresenceofpitsinsquares 1,2 , 2,2 ,and 3,1 . The
+KB correspondingto theobservationsofnothingin 1,1 anda breezein 2,1 isshownby
+the solid line. (a) Dotted line shows modelsof (no pit in 1,2 ). (b) Dotted line shows
+1
+modelsof (nopitin 2,2 ).
+2
+tomeanthatthesentence entailsthesentence . Theformaldefinitionofentailmentisthis: ifandonlyif,ineverymodelinwhich istrue, isalsotrue. Usingthenotatio

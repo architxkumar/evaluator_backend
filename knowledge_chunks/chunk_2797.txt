@@ -1,0 +1,31 @@
+mentioned inthetext?
+d. Whatkindofmistakewouldbeexpensive?
+e. Isitbettertodotoofewthingsortoomany? Why?
+23.15 Select five sentences and submit them to an online translation service. Translate
+themfrom Englishtoanotherlanguage andbackto English. Ratetheresulting sentences for
+grammaticality and preservation of meaning. Repeat the process; does the second round of
+Exercises 927
+iteration give worse results or the same results? Does the choice of intermediate language
+make a difference to the quality of the results? If you know a foreign language, look at the
+translation of one paragraph into that language. Count and describe the errors made, and
+conjecture whytheseerrorsweremade.
+23.16 The D values for the sentence in Figure 23.13 sum to 0. Will that be true of every
+i
+translation pair? Proveitorgiveacounterexample.
+23.17 (Adapted from Knight (1999).) Ourtranslation model assumes that, afterthe phrase
+translationmodelselectsphrasesandthedistortionmodelpermutesthem,thelanguagemodel
+can unscramble the permutation. This exercise investigates how sensible that assumption is.
+Trytounscramble theseproposed listsofphrases intothecorrectorder:
+a. have,programming, a,seen,never,I,language, better
+b. loves,john,mary
+c. is the, communication, exchange of, intentional, information brought, by, about, the
+production, perception of, and signs, from, drawn, a, of, system, signs, conventional,
+shared
+d. created,that,weholdthese, tobe,allmen,truths, are,equal,self-evident
+Which ones could you do? What type of knowledge did you draw upon? Train a bigram
+model from atraining corpus, and use it tofind thehighest-probability permutation of some
+sentences fromatestcorpus. Reportontheaccuracyofthismodel.
+23.18 Calculate the most probable path through the HMM in Figure 23.16 for the output
+sequence C ,C ,C ,C ,C ,C ,C . Alsogiveitsprobability.
+1 2 3 4 4 6 7
+23.19 We forgot to mention that the text in Exercise 23.1 is entitled Washing Clothes. Reread the text and answer the questions in Exerc

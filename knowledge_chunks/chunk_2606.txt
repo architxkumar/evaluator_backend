@@ -1,0 +1,29 @@
+model the process
+DISCOVERYSYSTEM
+of scientific discovery of new concepts, usually by a direct search in the space of concept
+definitions. Doug Lenat s Automated Mathematician, or AM (Davis and Lenat, 1982), used
+discovery heuristics expressed as expert system rules to guide its search for concepts and
+conjectures in elementary number theory. Unlike most systems designed for mathematical
+reasoning, AM lacked a concept of proof and could only make conjectures. It rediscovered
+Goldbach s conjecture and the Unique Prime Factorization theorem. AM sarchitecture was
+generalized inthe EURISK Osystem(Lenat,1983)byaddingamechanismcapable ofrewrit-
+ingthe system s owndiscovery heuristics. EURISKO wasapplied inanumberofareas other
+thanmathematicaldiscovery, althoughwithlesssuccessthan AM. Themethodology of AM
+and EURISK Ohasbeencontroversial (Ritchieand Hanna,1984;Lenatand Brown,1984).
+Anotherclassofdiscoverysystemsaimstooperate withreal scientificdatatofindnew
+laws. The systems DALTON, GLAUBER, and STAHL (Langley et al., 1987) are rule-based
+systems that look for quantitative relationships in experimental data from physical systems;
+in each case, the system has been able to recapitulate a well-known discovery from the his-
+tory of science. Discovery systems based on probabilistic techniques especially clustering
+algorithms thatdiscovernewcategories are discussed in Chapter20.
+Exercises 801
+EXERCISES
+19.1 Show, by translating into conjunctive normal form and applying resolution, that the
+conclusion drawnonpage784concerning Braziliansissound.
+19.2 For each of the following determinations, write down the logical representation and
+explainwhythedetermination istrue(ifitis):
+a. Designanddenomination determinethemassofacoin.
+b. Foragivenprogram, inputdetermines output.
+c. Climate,foodintake, exercise, andmetabolism determine weightgainandloss.
+d. Baldnessisdetermined bythebaldness (orlackthereof)of one smaternalgrandfather.
+19.3 Wouldaprobabilistic versionofdeterminations beuseful?

@@ -1,0 +1,29 @@
+us, special-purpose logics givecertain kinds ofobjects (andtheaxioms about them) first
+class status within the logic, rather than simply defining them within the knowledge base.
+HIGHER-ORDER Higher-order logic views the relations and functions referred to by first-order logic as ob-
+LOGIC
+jectsinthemselves. Thisallowsonetomakeassertionsaboutallrelations forexample,one
+couldwishtodefinewhatitmeansforarelationtobetransitive. Unlikemostspecial-purpose
+logics, higher-order logic is strictly more expressive than first-order logic, in the sense that
+somesentences ofhigher-order logiccannot beexpressed by anyfinitenumberoffirst-order
+logicsentences.
+EPISTEMOLOGICAL A logic can also be characterized by its epistemological commitments the possible
+COMMITMENT
+states of knowledge that it allows with respect to each fact. In both propositional and first-
+orderlogic, asentence represents afactand theagent eitherbelieves thesentence tobetrue,
+believes it to be false, or has no opinion. These logics therefore have three possible states
+ofknowledge regarding anysentence. Systemsusing probability theory,ontheotherhand,
+2 Incontrast,factsinfuzzylogichaveadegreeoftruthbetween0and1.Forexample,thesentence Viennais
+alargecity mightbetrueinourworldonlytodegree0.6infuzzylogic.
+290 Chapter 8. First-Order Logic
+can have any degree of belief, ranging from 0 (total disbelief) to 1 (total belief).3 For ex-
+ample, a probabilistic wumpus-world agent might believe that the wumpus is in 1,3 with
+probability 0.75. The ontological and epistemological commitments of five different logics
+aresummarizedin Figure8.1.
+Language Ontological Commitment Epistemological Commitment
+(Whatexistsintheworld) (Whatanagentbelievesaboutfacts)
+Propositionallogic facts true false unknown
+First-orderlogic facts,objects,relations true false unknown
+Temporallogic facts,objects,relations,times true false unknown
+Probabilitytheory facts degreeofbelief 0,1 Fuzzylogic factswithdegreeoftruth 0,1 knownintervalvalue
+Figure8.1 For

@@ -1,0 +1,26 @@
+1999film The Matrix.
+Section26.2. Strong AI:Can Machines Really Think? 1029
+Widecontent isentirelyappropriate ifone sgoalsaretoascribe mentalstatestoothers
+who share one s world, to predict their likely behavior and its effects, and so on. This is the
+settinginwhichourordinarylanguage aboutmentalcontent hasevolved. Ontheotherhand,
+if one is concerned with the question of whether AI systems are really thinking and really
+do have mental states, then narrow content is appropriate; it simply doesn t make sense to
+say that whether or not an AI system is really thinking depends on conditions outside that
+system. Narrow content is also relevant if we are thinking about designing AI systems or
+understandingtheiroperation,becauseitisthenarrowcontentofabrainstatethatdetermines
+whatwillbethe(narrow content ofthe)nextbrainstate. Thisleads naturally totheideathat
+what matters about a brain state what makes it have one kind of mental content and not
+another is itsfunctional rolewithinthementaloperation oftheentityinvolved.
+26.2.2 Functionalism andthe brainreplacement experiment
+The theory of functionalism says that a mental state is any intermediate causal condition
+FUNCTIONALISM
+between input and output. Under functionalist theory, any two systems with isomorphic
+causal processes would have the same mental states. Therefore, a computer program could
+have thesamemental states as aperson. Ofcourse, wehavenot yetsaid what isomorphic really means, but the assumption is that there is some level of abstraction below which the
+specificimplementation doesnotmatter.
+The claims of functionalism are illustrated most clearly by the brain replacement ex-
+periment. This thought experiment was introduced by the philosopher Clark Glymour and
+wastouchedonby John Searle(1980),butismostcommonlyassociatedwithroboticist Hans
+Moravec(1988). Itgoeslikethis: Supposeneurophysiology hasdevelopedtothepointwhere
+theinput outputbehaviorandconnectivityofalltheneuronsinthehumanbrainareperfectly
+understood. Su

@@ -1,0 +1,30 @@
+lt of taking an action, and Figure 2.16 provides schematic depictions of how those
+transitions mightberepresented.
+B C
+B C
+(a) Atomic (b) Factored (b) Structured
+Figure2.16 Threewaystorepresentstatesandthetransitionsbetweenthem. (a)Atomic
+representation:astate(suchas Bor C)isablackboxwithnointernalstructure;(b)Factored
+representation: a state consists of a vectorof attribute values; valuescan be Boolean, real-
+valued, or one of a fixed set of symbols. (c) Structured representation: a state includes
+objects,eachofwhichmayhaveattributesofitsownaswellasrelationshipstootherobjects.
+ATOMIC In an atomic representation each state of the world is indivisible it has no internal
+REPRESENTATION
+structure. Consider the problem of finding a driving route from one end of a country to the
+otherviasomesequenceofcities(weaddressthisproblemin Figure3.2onpage68). Forthe
+purposes ofsolving this problem, itmaysufficetoreduce the stateofworldtojustthename
+of the city we are in a single atom of knowledge; a black box whose only discernible
+property is that of being identical to or different from another black box. The algorithms
+58 Chapter 2. Intelligent Agents
+underlyingsearchandgame-playing(Chapters3 5),Hidden Markovmodels(Chapter15),
+and Markov decision processes (Chapter 17) all work with atomic representations or, at
+least,theytreatrepresentations asiftheywereatomic.
+Nowconsider a higher-fidelity description for the same problem, where weneed to be
+concerned with more than just atomic location in one city oranother; wemight need to pay
+attention tohowmuchgasisinthetank, ourcurrent GP Scoordinates, whetherornottheoil
+warning light isworking, howmuch spare change wehave fortoll crossings, whatstation is
+FACTORED on the radio, and so on. A factored representation splits up each state into a fixed set of
+REPRESENTATION
+variables or attributes, each of which can have a value. While two different atomic states
+VARIABLE
+have nothing in common they are just different black boxes two differen

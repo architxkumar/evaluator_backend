@@ -1,0 +1,54 @@
+Hirsh,H.,799,1075 1076,1082
+admissible,94,376
+Hitachi,408 Howe,A.,394,1073
+composite,106
+hitlist,869 Howe,D.,360,1076
+degree,216,228,261
+HITS,871,872 HSCP,433
+forplanning,376 379
+HMM,578,590,876,922 HSP,387,395
+function,92,102 107
+Ho,Y.-C.,22,761,1067 HSPR,395
+least-constraining-value,217
+Hoane,A.J.,192,1067 Hsu,F.-H.,192,1067,1076
+levelsum,382
+Hobbes,T.,5,6 Hsu,J.,28,1064
+Manhattan,103
+Hobbs,J.R.,473,884,921,1075,1076 HTML,463,875
+max-level,382
+Hodges,J.L.,760,1072 HTN,406,431
+min-conflicts,220
+Hoff,M.E.,20,833,854,1092 HT Nplanning,856
+minimum-remaining-values,216,
+Hoffmann,J.,378,379,395,433,1076, Hu,J.,687,857,1076
+228,333,405
+1078 Huang,K.-C.,228,1086
+minimumremainingvalues,216,228,
+Hogan,N.,1013,1076 Huang,T.,556,604,1076
+333,405
+HO Gfeature,947 Huang,X.D.,922,1076
+nullmove,185
+Hoiem,D.,955,968,1076 hub,872
+search,81,110
+holdoutcross-validation,708 Hubble Space Telescope,206,221,432
+set-level,382
+holisticcontext,1024 Hubel,D.H.,968,1076
+straight-line,92
+Holland,J.H.,155,1076,1082 Huber,M.,1013,1069
+heuristicpathalgorithm,118 Hollerbach,J.M.,1013,1072 Hubsand Authorities,872
+Heuristic Programming Project(HPP), holonomic,976 Huddleston,R.D.,920,1076
+23 Holte,R.,107,112,678,687,1066, Huet,G.,359,1066
+Hewitt,C.,358,1075 1072,1076,1092 Huffman,D.A.,20,1076
+hexapodrobot,1001 Holzmann,G.J.,356,1076 Huffman,S.,1013,1069
+hidden Markovmodel homeostatic,15 Hughes,B.D.,151,1076
+factorial,605 homophones,913 Hughes,G.E.,470,1076
+hidden Markovmodel(HMM),25,566, Homosapiens,1,860 HUGIN,553,604
+578,578 583,590,603,604, Hon,H.,922,1076 Huhns,M.N.,61,1076
+822 823 Honavar,V.,921,1084 human-level AI,27,1034
+hidden Markovmodel(HMM)(HMM), Hong,J.,799,1082 humanjudgment,546,557,619
+578,590,876,922 Hood,A.,10,1076 humanoidrobot,972
+hiddenunit,729 Hooker,J.,230,1076 humanperformance,1
+hiddenvariable,522,816 Hoos,H.,229,1076 humanpreference,649
+HIERARCHICAL-SEARCH,409 Hopcroft,J.,1012,1059,1064,1088 Hume,D.,6,1076
+hierarchicaldecomposition,406 Hope,J.,886,1076 Humphrys,M.,1021,1076
+hier

@@ -1,0 +1,37 @@
+DETERMINISM
+semantics for HLA descriptions. The basic concept required for understanding angelic se-
+ANGELICSEMANTICS
+mantics is the reachable set of an HLA: given a state s, the reachable set for an HLA h,
+REACHABLESET
+written as REACH(s,h), is the set of states reachable by any of the HLA simplementations.
+The key idea is that the agent can choose which element of the reachable set it ends up in
+whenitexecutes the HLA;thus, an HL Awithmultiple refinements ismore powerful than
+thesame HL Awithfewerrefinements. Wecanalsodefinethereachablesetofasequencesof
+HL As. Forexample,thereachable setofasequence h ,h istheunionofallthereachable
+1 2
+setsobtained byapplyingh ineachstateinthereachable setofh :
+2 (cid:15) 1
+(cid:2)
+REACH(s, h
+1
+,h
+2 ) REACH(s,h
+2
+).
+s(cid:3) REACH(s,h1)
+Given these definitions, a high-level plan a sequence of HL As achieves the goal if its
+reachable set intersects the set of goal states. (Compare this to the much stronger condition
+for demonic semantics, where every member of the reachable set has to be a goal state.)
+Conversely, if the reachable set doesn t intersect the goal, then the plan definitely doesn t
+work. Figure11.6illustrates theseideas.
+The notion of reachable sets yields a straightforward algorithm: search among high-
+level plans, looking for one whose reachable set intersects the goal; once that happens, the
+algorithm can commit to that abstract plan, knowing that it works, and focus on refining
+the plan further. We will come back to the algorithmic issues later; first, we consider the
+question ofhowtheeffects ofan HLA thereachable setforeachpossible initialstate are
+represented. As with the classical action schemas of Chapter 10, we represent the changes
+412 Chapter 11. Planningand Actinginthe Real World
+madetoeachfluent. Thinkofafluentasastatevariable. Aprimitiveactioncanaddordelete
+a variable or leave it unchanged. (With conditional effects (see Section 11.3.1) there is a
+fourthpossibility: flippingavariabletoitsopposite.)
+An HLA 

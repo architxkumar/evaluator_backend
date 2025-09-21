@@ -1,0 +1,36 @@
+is obtained by
+taking the logarithm of Equation (20.1). Choosing h to maximize P(d h )P(h ) is
+MAP i i
+equivalent tominimizing log P(d h ) log P(h ).
+2 i 2 i
+Using the connection between information encoding and probability that we introduced in
+Chapter18.3.4,weseethatthe log P(h )termequalsthenumberofbitsrequiredtospec-
+2 i
+ifythehypothesish . Furthermore, log P(d h )istheadditionalnumberofbitsrequired
+i 2 i
+to specify the data, given the hypothesis. (To see this, consider that no bits are required
+if the hypothesis predicts the data exactly as with h and the string of lime candies and
+5
+log 1 0.) Hence, MAP learning is choosing the hypothesis that provides maximum com-
+2
+pression ofthedata. Thesametaskisaddressed moredirectly bythe minimumdescription
+length,or MDL,learningmethod. Whereas MA Plearningexpressessimplicitybyassigning
+higherprobabilities tosimplerhypotheses, MD Lexpresses itdirectly bycounting thebitsin
+abinaryencoding ofthehypotheses anddata.
+A final simplification is provided by assuming a uniform prior over the space of hy-
+potheses. In that case, MAP learning reduces to choosing an h that maximizes P(d h ).
+i i
+MAXIMUM- Thisiscalledamaximum-likelihood(ML)hypothesis, h . Maximum-likelihood learning
+LIKELIHOOD ML
+is very common in statistics, a discipline in which many researchers distrust the subjective
+natureofhypothesis priors. Itisareasonable approach whenthereisnoreasontopreferone
+hypothesis overanother apriori for example, whenallhypotheses are equally complex. It
+provides a good approximation to Bayesian and MAP learning when the data set is large,
+because the data swamps the prior distribution over hypotheses, but it has problems (as we
+shallsee)withsmalldatasets.
+806 Chapter 20. Learning Probabilistic Models
+20.2 LEARNING WITH COMPLETE DATA
+Thegeneraltaskoflearningaprobability model,givendata thatareassumedtobegenerated
+from that model, is called density estimation. (The term applied originally to probability
+DENSITYESTIMATION
+densityfunctio

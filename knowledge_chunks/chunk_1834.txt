@@ -1,0 +1,22 @@
+e,canyourememberwhichofthefollowingtwophrasesformedtheopening
+of Section8.1? Inthissection, wediscussthenatureofrepresentation languages ... Thissectioncoversthetopicofknowledge representation languages ... Wanner (1974) did a similar experiment and found that subjects made the right choice at
+chance level about 50 of the time but remembered the content of what they read with
+betterthan90 accuracy. Thissuggests thatpeople process thewordstoform somekindof
+nonverbal representation.
+More interesting is the case in which a concept is completely absent in a language.
+Speakers of the Australian aboriginal language Guugu Yimithirr have no words for relative
+directions, such as front, back, right, or left. Instead they use absolute directions, saying,
+for example, the equivalent of I have a pain in my north arm. This difference in language
+makes a difference in behavior: Guugu Yimithirr speakers are better at navigating in open
+terrain, while Englishspeakers arebetteratplacingtheforktotherightoftheplate.
+Language also seems to influence thought through seemingly arbitrary grammatical
+features such as the gender of nouns. For example, bridge is masculine in Spanish and
+feminine in German. Boroditsky (2003) asked subjects to choose English adjectives to de-
+scribe a photograph of a particular bridge. Spanish speakers chose big, dangerous, strong,
+andtowering,whereas Germanspeakerschosebeautiful,elegant,fragile,andslender. Words
+can serve as anchor points that affect how weperceive the world. Loftus and Palmer(1974)
+showed experimental subjects a movie of an auto accident. Subjects who were asked How
+fast were the cars going when they contacted each other? reported an average of 32 mph,
+whilesubjects whowereaskedthequestion withtheword smashed insteadof contacted reported 41mphforthesamecarsinthesamemovie.
+288 Chapter 8. First-Order Logic
+Inafirst-orderlogicreasoningsystemthatuses CNF,wecanseethatthelinguisticform (A B) and A B are the same because we can look inside the syst

@@ -1,0 +1,29 @@
+chisespecially wellsuited for Bayesian
+GIBBSSAMPLING
+networks. (Otherforms,someofthemsignificantlymorepowerful,arediscussedinthenotes
+attheendofthechapter.) Wewillfirstdescribewhatthealgorithmdoes,thenwewillexplain
+whyitworks.
+Gibbssamplingin Bayesian networks
+The Gibbs sampling algorithm for Bayesian networks starts with an arbitrary state (with the
+evidence variables fixed at their observed values) and generates a next state by randomly
+sampling a value for one of the nonevidence variables X . The sampling for X is done
+i i
+conditioned onthecurrent valuesofthevariables inthe Markovblanketof X . (Recallfrom
+i
+page517thatthe Markovblanketofavariableconsistsofitsparents,children,andchildren s
+parents.) The algorithm therefore wanders randomly around the state space the space of
+possible complete assignments flipping one variable at a time, but keeping the evidence
+variables fixed.
+Consider the query P(Rain Sprinkler true,Wet Grass true) applied to the net-
+work in Figure 14.12(a). Theevidence variables Sprinkler and Wet Grass are fixedtotheir
+observed valuesand thenonevidence variables Cloudy and Rain areinitialized randomly let us say to true and false respectively. Thus, the initial state is true,true,false,true .
+Nowthenonevidence variables aresampledrepeatedly inanarbitrary order. Forexample:
+1. Cloudy is sampled, given the current values of its Markov blanket variables: in this
+case, we sample from P(Cloudy Sprinkler true,Rain false). (Shortly, we will
+show how to calculate this distribution.) Suppose the result is Cloudy false. Then
+thenewcurrentstateis false,true,false,true .
+2. Rain issampled, giventhecurrent valuesofits Markovblanket variables: inthiscase,
+wesamplefrom P(Rain Cloudy false,Sprinkler true,Wet Grass true). Sup-
+posethisyields Rain true. Thenewcurrentstateis false,true,true,true .
+Eachstatevisitedduringthisprocessisasamplethatcontributestotheestimateforthequery
+variable Rain. Iftheprocess visits20stateswhere Rain istrueand60states where Rain is

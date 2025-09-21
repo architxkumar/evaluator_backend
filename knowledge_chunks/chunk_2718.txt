@@ -1,0 +1,25 @@
+bute we would like to extract. The template is
+TEMPLATE
+REGULAR definedbyafinitestateautomaton,thesimplestexampleofwhichistheregularexpression,
+EXPRESSION
+or regex. Regular expressions are used in Unix commands such as grep, in programming
+languages such as Perl, and in word processors such as Microsoft Word. The details vary
+slightly from one tool to another and so are best learned from the appropriate manual, but
+hereweshowhowtobuilduparegularexpression templatefor pricesindollars: 0-9 matchesanydigitfrom0to9 0-9 matchesoneormoredigits . 0-9 0-9 matchesaperiodfollowedbytwodigits
+( . 0-9 0-9 )? matchesaperiodfollowedbytwodigits,ornothing 0-9 ( . 0-9 0-9 )? matches 249.99or 1.23or 1000000 or...
+Templatesareoftendefinedwiththreeparts: aprefixregex,atargetregex,andapostfixregex.
+Forprices,thetargetregexisasabove,theprefixwouldlook forstringssuchas price: and
+the postfix could be empty. The idea is that some clues about an attribute come from the
+attribute valueitselfandsomecomefromthesurrounding text.
+If a regular expression for an attribute matches the text exactly once, then we can pull
+outtheportion ofthetextthatisthevalueoftheattribute. Ifthereisnomatch,allwecando
+isgiveadefaultvalueorleavetheattributemissing;butifthereareseveralmatches,weneed
+aprocesstochooseamongthem. Onestrategyistohaveseveraltemplatesforeachattribute,
+ordered by priority. So, for example, the top-priority template for price might look for the
+prefix ourprice: ;ifthatisnotfound,welookfortheprefix price: andifthatisnotfound,
+the empty prefix. Another strategy is to take all the matches and find some way to choose
+among them. Forexample, we could take the lowest price that is within 50 of the highest
+price. Thatwillselect 78.00asthetargetfromthetext Listprice 99.00, specialsaleprice 78.00,shipping 3.00. RELATIONAL Onestepupfromattribute-based extractionsystemsare relationalextractionsystems,
+EXTRACTION
+which deal with multiple objects and the relations among them. Thus, when these systems
+seethet

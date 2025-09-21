@@ -1,0 +1,27 @@
+ . . . . . 401
+11.2 Hierarchical Planning . . . . . . . . . . . . . . . . . . . . . . . . . . . . 406
+11.3 Planningand Actingin Nondeterministic Domains . . . . . . . . . . . . . 415
+11.4 Multiagent Planning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425
+11.5 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 430
+12 Knowledge Representation 437
+12.1 Ontological Engineering . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+12.2 Categoriesand Objects . . . . . . . . . . . . . . . . . . . . . . . . . . . 440
+12.3 Events . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 446
+12.4 Mental Eventsand Mental Objects . . . . . . . . . . . . . . . . . . . . . 450
+12.5 Reasoning Systemsfor Categories . . . . . . . . . . . . . . . . . . . . . 453
+12.6 Reasoningwith Default Information . . . . . . . . . . . . . . . . . . . . 458
+12.7 The Internet Shopping World . . . . . . . . . . . . . . . . . . . . . . . . 462
+12.8 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 467
+IV Uncertain knowledge and reasoning
+13 Quantifying Uncertainty 480
+13.1 Actingunder Uncertainty . . . . . . . . . . . . . . . . . . . . . . . . . . 480
+13.2 Basic Probability Notation . . . . . . . . . . . . . . . . . . . . . . . . . . 483
+13.3 Inference Using Full Joint Distributions . . . . . . . . . . . . . . . . . . . 490
+13.4 Independence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 494
+13.5 Bayes Ruleand Its Use . . . . . . . . . . . . . . . . . . . . . . . . . . . 495
+13.6 The Wumpus World Revisited . . . . . . . . . . . . . . . . . . . . . . . . 499
+13.7 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 503
+14 Probabilistic Reasoning 510
+14.1 Representing Knowledgeinan Uncertain Domain . . . . . . . . . . . . . 510
+14.2 The Semanticsof Bayesian Networks . . . . . . . . . . . . . . . . . . . . 513
+14.3 Efficient Representation of Conditional Distributions . . . . . . . . . . . 

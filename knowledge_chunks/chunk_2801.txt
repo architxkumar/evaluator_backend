@@ -1,0 +1,31 @@
+(Figure 24.1). Models
+oftheseeffectsareessential forbothrecognition andreconstruction.
+24.1.1 Imageswithoutlenses: The pinholecamera
+Image sensors gather light scattered from objects in a scene and create a two-dimensional
+SCENE
+image. In the eye, the image is formed on the retina, which consists of two types of cells:
+IMAGE
+about 100 million rods, which are sensitive to light at a wide range of wavelengths, and 5
+930 Chapter 24. Perception
+Figure24.1 Imagingdistortsgeometry. Parallel lines appearto meet in the distance, as
+intheimageoftherailwaytracksontheleft. Inthecenter,a smallhandblocksoutmostof
+a largemoon. Onthe rightisa foreshorteningeffect: thehandistilted awayfromthe eye,
+makingitappearshorterthaninthecenterfigure.
+million cones. Cones, which are essential for color vision, are of three main types, each of
+which is sensitive to a different set of wavelengths. In cameras, the image is formed on an
+image plane, which can be a piece of film coated with silver halides or a rectangular grid
+of a few million photosensitive pixels, each a complementary metal-oxide semiconductor
+PIXEL
+(CMOS) or charge-coupled device (CCD). Each photon arriving at the sensor produces an
+effect, whose strength depends on the wavelength of the photon. The output of the sensor
+is the sum of all effects due to photons observed in some time window, meaning that image
+sensorsreportaweightedaverageoftheintensity oflightarrivingatthesensor.
+To see a focused image, we must ensure that all the photons from approximately the
+samespotinthescenearriveatapproximatelythesamepointintheimageplane. Thesimplest
+way to form a focused image is to view stationary objects with a pinhole camera, which
+PINHOLECAMERA
+consists ofapinhole opening, O,atthefrontofabox, and animageplane atthebackofthe
+box (Figure 24.2). Photons from the scene must pass through the pinhole, so if it is small
+enough then nearby photons in the scene will be nearby in the image plane, and the image
+willbeinfocus.
+Thegeometryofscenea

@@ -1,0 +1,31 @@
+probability of error drops off in the appropriate
+way, so that the probability of a large error is very small. We use the term Gaussian error
+GAUSSIANERROR modeltocoverboththecontinuous anddiscrete versions.
+MODEL
+Anyone with hands-on experience of robotics, computerized process control, or other
+formsofautomaticsensingwillreadilytestifytothefactthatsmallamountsofmeasurement
+noise are often the least of one s problems. Real sensors fail. When a sensor fails, it does
+not necessarily send a signal saying, Oh, by the way, the data I m about to send you is a
+load of nonsense. Instead, it simply sends the nonsense. The simplest kind of failure is
+calledatransientfailure,wherethesensoroccasionallydecidestosendsomenonsense. For
+TRANSIENTFAILURE
+example, thebattery levelsensormighthaveahabitofsending azerowhensomeonebumps
+therobot,evenifthebatteryisfullycharged.
+Let sseewhathappenswhenatransientfailureoccurswitha Gaussianerrormodelthat
+doesn taccommodatesuchfailures. Suppose,forexample,thattherobotissittingquietlyand
+observes20consecutivebatteryreadingsof5. Thenthebatterymeterhasatemporaryseizure
+5 Strictlyspeaking,a Gaussiandistributionisproblematicbecauseitassignsnonzeroprobabilitytolargenega-
+tivechargelevels.Thebetadistributionissometimesabetterchoiceforavariablewhoserangeisrestricted.
+Section15.5. Dynamic Bayesian Networks 593
+andthenextreadingis BMeter 0. Whatwillthesimple Gaussianerrormodelleadusto
+21
+believe about Battery ? According to Bayes rule, the answer depends on both the sensor
+21
+model P(BMeter 0 Battery ) and the prediction P(Battery BMeter ). If the
+21 21 21 1:20
+probabilityofalargesensorerrorissignificantlylesslikelythantheprobabilityofatransition
+to Battery 0,evenifthelatterisveryunlikely, thentheposteriordistribution willassign
+21
+a high probability to the battery s being empty. A second reading of 0 at t 22 will make
+thisconclusion almostcertain. Ifthetransientfailurethendisappears andthereadingreturns
+to 5 from t 23 onwards, the estimate for the batt

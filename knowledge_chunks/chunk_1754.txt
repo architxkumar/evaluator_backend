@@ -1,0 +1,36 @@
+atsareeateninahousenexttothehousewherethehorseiskept.
+Coffeeisdrunkinthegreenhouse.
+Milkisdrunkinthemiddlehouse.
+Discussdifferent representations ofthisproblem asa CSP. Whywouldonepreferonerepre-
+sentation overanother?
+6.8 Consider the graph with 8 nodes A , A , A , A , H, T, F , F . A is connected to
+1 2 3 4 1 2 i
+A for all i, each A is connected to H, H is connected to T, and T is connected to each
+i 1 i
+F . Find a 3-coloring of this graph by hand using the following strategy: backtracking with
+i
+conflict-directed backjumping, the variable order A , H, A , F , A , F , A , T, and the
+1 4 1 2 2 3
+valueorder R,G,B.
+6.9 Explainwhyitisagoodheuristictochoosethevariablethatismostconstrainedbutthe
+valuethatisleastconstraining ina CS Psearch.
+6.10 Generate random instances of map-coloring problems as follows: scatter n points on
+theunit square; select apoint X atrandom, connect X byastraight linetothenearest point
+Y such that X is not already connected to Y and the line crosses no other line; repeat the
+previous step until no more connections are possible. The points represent regions on the
+map and the lines connect neighbors. Now try to find k-colorings of each map, for both
+k 3andk 4,usingmin-conflicts, backtracking, backtracking withforwardchecking, and
+backtracking with MAC.Constructatableofaverageruntimesforeachalgorithmforvalues
+ofnuptothelargestyoucanmanage. Commentonyourresults.
+6.11 Use the AC-3 algorithm to show that arc consistency can detect the inconsistency of
+thepartialassignment WA green,V red fortheproblem shownin Figure6.1.
+6.12 Whatistheworst-casecomplexity ofrunning AC-3onatree-structured CSP?
+6.13 AC-3 puts back on the queue every arc (X ,X ) whenever any value is deleted from
+k i
+thedomainof X ,evenifeachvalueof X isconsistentwithseveralremainingvaluesof X .
+i k i
+Supposethat,foreveryarc(X ,X ),wekeeptrackofthenumberofremainingvaluesof X
+k i i
+that are consistent with each value of X . Explain how to update these numbers efficiently
+k
+andhenceshowtha

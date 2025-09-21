@@ -1,0 +1,26 @@
+deal of work has gone into finding efficient algo-
+rithmsforkeepingtrackofcomplexenvironments(Hamscheretal.,1992;Simon,2006). The
+Remote Agentprogram(describedonpage28)thatcontrolled the Deep Space Onespacecraft
+isaparticularly impressiveexample(Muscettola etal.,1998;Jonssonetal.,2000).
+Goal-basedagentsarepresupposedineverythingfrom Aristotle sviewofpracticalrea-
+soning to Mc Carthy s early papers on logical AI. Shakey the Robot (Fikes and Nilsson,
+1971; Nilsson, 1984) was the first robotic embodiment of a logical, goal-based agent. A
+full logical analysis of goal-based agents appeared in Genesereth and Nilsson (1987), and a
+goal-basedprogrammingmethodologycalledagent-orientedprogrammingwasdevelopedby
+Shoham (1993). The agent-based approach is now extremely popular in software engineer-
+ing (Ciancarini and Wooldridge, 2001). It has also infiltrated the area of operating systems,
+AUTONOMIC whereautonomiccomputingreferstocomputersystemsandnetworksthatmonitorandcon-
+COMPUTING
+trolthemselves withaperceive act loopandmachinelearning methods(Kephartand Chess,
+2003). Noting that a collection of agent programs designed to work well together in a true
+multiagentenvironmentnecessarilyexhibitsmodularity theprogramssharenointernalstate
+and communicate with each other only through the environment it is common within the
+MULTIAGENT field of multiagent systems to design the agent program of asingle agent as a collection of
+SYSTEMS
+autonomous sub-agents. In some cases, one can even prove that the resulting system gives
+thesameoptimalsolutions asamonolithicdesign.
+Thegoal-based viewofagentsalsodominatesthecognitivepsychology traditioninthe
+area of problem solving, beginning with the enormously influential Human Problem Solv-
+ing(Newelland Simon,1972)andrunningthroughallof Newell slaterwork(Newell,1990).
+Goals, furtheranalyzed as desires (general) and intentions (currently pursued), arecentral to
+the theory of agents developed by Bratman (1987). This theory has been influential both 

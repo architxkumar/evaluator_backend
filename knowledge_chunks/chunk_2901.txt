@@ -1,0 +1,26 @@
+traceofafinitestatemachineisconditioned on
+the outcome of such a test. Arcs can be tagged with messages that will be generated when
+traversingthem,andthataresenttotherobot smotorsorto otherfinitestatemachines. Addi-
+tionally, finitestatemachines possess internal timers(clocks) thatcontrol thetimeittakesto
+AUGMENTEDFINITE traverse anarc. Theresulting machinesarerefereed toas augmentedfinitestatemachines,
+STATEMACHINE
+or AFS Ms,wheretheaugmentation referstotheuseofclocks.
+An example of a simple AFSM is the four-state machine shown in Figure 25.24(b),
+which generates cyclic leg motion for a hexapod walker. This AFSM implements a cyclic
+controller, whose execution mostly does not rely on environmental feedback. The forward
+swing phase, however, does rely on sensor feedback. If the leg is stuck, meaning that it has
+failed to execute the forward swing, the robot retracts the leg, lifts it up a little higher, and
+attempts to execute the forward swing once again. Thus, the controller is able to react to
+contingencies arisingfromtheinterplay oftherobotanditsenvironment.
+The subsumption architecture offers additional primitives for synchronizing AFS Ms,
+and for combining output values of multiple, possibly conflicting AFS Ms. In this way, it
+enablestheprogrammertocomposeincreasinglycomplexcontrollersinabottom-upfashion.
+1004 Chapter 25. Robotics
+In our example, wemight begin with AFS Msforindividual legs, followed by an AFS Mfor
+coordinating multiple legs. On top of this, wemight implement higher-level behaviors such
+ascollision avoidance, whichmightinvolvebacking upandturning.
+The idea of composing robot controllers from AFS Ms is quite intriguing. Imagine
+how difficult it would be to generate the same behavior with any of the configuration-space
+path-planning algorithms described in the previous section. First, we would need an accu-
+rate model of the terrain. The configuration space of a robot with six legs, each of which
+is driven by two independent motors, totals eightee

@@ -1,0 +1,39 @@
+l. A robust solution is one that works no matter what actual values occur,
+providedtheyarewithintheassumedinterval. Anextremeformofrobustmethodisthecon-
+formant planningapproach given in Chapter11 it produces plans that work with nostate
+information atall.
+FINE-MOTION Here, we look at a robust method that is used for fine-motion planning (or FMP) in
+PLANNING
+robotic assembly tasks. Fine-motion planning involves moving a robot arm in very close
+proximity to a static environment object. The main difficulty with fine-motion planning is
+Section25.5. Planning Uncertain Movements 995
+initial Cv
+configuration
+motion v
+envelope
+Figure25.19 Atwo-dimensionalenvironment,velocityuncertaintycone,andenvelopeof
+possiblerobotmotions. Theintendedvelocityis v, butwithuncertaintytheactualvelocity
+couldbeanywherein Cv,resultinginafinalconfigurationsomewhereinthemotionenvelope,
+whichmeanswewouldn tknowifwehittheholeornot.
+initial
+Cv
+configuration
+v
+motion
+envelope
+Figure25.20 Thefirstmotioncommandandtheresultingenvelopeofpossiblerobotmo-
+tions. No matter what the error, we know the final configuration will be to the left of the
+hole.
+thattherequiredmotionsandtherelevantfeaturesoftheenvironmentareverysmall. Atsuch
+smallscales,therobotisunabletomeasureorcontrolitspositionaccuratelyandmayalsobe
+uncertain of the shape of the environment itself; we will assume that these uncertainties are
+all bounded. The solutions to FMP problems will typically be conditional plans or policies
+thatmakeuseofsensorfeedbackduringexecutionandareguaranteedtoworkinallsituations
+consistent withtheassumeduncertainty bounds.
+A fine-motion plan consists of a series of guarded motions. Each guarded motion
+GUARDEDMOTION
+consistsof(1)amotioncommandand(2)aterminationcondition,whichisapredicateonthe
+robot s sensor values, and returns true to indicate the end of the guarded move. The motion
+commands are typically compliant motions that allow the effector to slide if the motion
+COMPLIANTMOTION
+commandwouldcausecollisionwith

@@ -1,0 +1,25 @@
+ott,D.(1987). Acritiqueofpurereason. Michie, D., Spiegelhalter, D. J., and Taylor, C. AIJ,18(2),203 226.
+Computational Intelligence,3(3),151 237. (Eds.).(1994). Machine Learning,Neuraland Sta-
+tistical Classification.Ellis Horwood. Mitchell,T.M.(1990).Becomingincreasinglyreac-
+Mc Dermott,D.(1996). Aheuristicestimatorfor tive(mobilerobots). In AAAI-90,Vol.2,pp.1051 means-endsanalysisinplanning. In ICAPS-96,pp. Milch, B., Marthi, B., Sontag, D., Russell, S.J., 1058.
+142 149. Ong,D.,and Kolobov,A.(2005). BLOG:Proba-
+bilisticmodelswithunknownobjects.In IJCAI-05. Mitchell, T. M. (1997). Machine Learning.
+Mc Dermott, D. and Doyle, J. (1980). Non- Mc Graw-Hill.
+monotoniclogic:i.AIJ,13(1 2),41 72. Milch,B.,Zettlemoyer,L.S.,Kersting,K.,Haimes,
+Mitchell, T.M.,Keller,R.,and Kedar-Cabelli,S.
+M.,and Kaelbling,L.P.(2008).Liftedprobabilistic
+Mc Dermott,J.(1982).R1:Arule-basedconfigurer (1986). Explanation-basedgeneralization:Aunify-
+inferencewithcountingformulas. In AAAI-08,pp.
+ofcomputersystems.AIJ,19(1),39 88. ingview.Machine Learning,1,47 80.
+1062 1068.
+Mc Eliece,R.J.,Mac Kay,D.J.C.,and Cheng,J.- Mitchell, T. M., Utgoff, P. E., and Banerji, R.
+F.(1998). Turbodecodingasaninstanceof Pearl s
+Milgrom,P.(1997).Puttingauctiontheorytowork:
+(1983).Learningbyexperimentation:Acquiringand beliefpropagation algorithm.IEEE Journalon Se- The simultaneous ascending auction. Tech. rep. refiningproblem-solvingheuristics. In Michalski,
+Technical Report98-0002,Stanford University De-
+lected Areasin Communications,16(2),140 152. R.S.,Carbonell,J.G.,and Mitchell,T.M.(Eds.),
+partmentof Economics. Machine Learning: An Artificial Intelligence Ap-
+Mc Gregor,J.J.(1979). Relationalconsistencyal- Mill,J.S.(1843). ASystemof Logic,Ratiocinative proach,pp.163 190.Morgan Kaufmann.
+gorithmsandtheirapplicationinfindingsubgraph
+and graph isomorphisms. Information Sciences, and Inductive:Beinga Connected Viewofthe Prin- Mitchell,T.M.(2005). Readingtheweb:Abreak-
+19(3),229 250. ciplesof Evidence,and Methodsof Scie

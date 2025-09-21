@@ -1,0 +1,30 @@
+eresultsareverycomforting, anditiseasytoseethattheycanbeextended toany
+Bayesiannetworkwhoseconditionalprobabilitiesarerepresentedastables. Themostimpor-
+tant point is that, with complete data, the maximum-likelihood parameter learning problem
+fora Bayesiannetworkdecomposesintoseparatelearningproblems,oneforeachparameter.
+(See Exercise20.6forthenontabulatedcase,whereeachparameteraffectsseveralconditional
+probabilities.) Thesecond point isthat theparametervalues foravariable, given itsparents,
+are just the observed frequencies of the variable values for each setting of the parent values.
+Asbefore,wemustbecarefultoavoidzeroeswhenthedataset issmall.
+20.2.2 Naive Bayes models
+Probably the most common Bayesian network model used in machine learning is the naive
+Bayesmodelfirstintroduced onpage499. Inthis model, the class variable C (which isto
+bepredicted) istherootandthe attribute variables X aretheleaves. Themodelis naive i
+because it assumes that the attributes are conditionally independent of each other, given the
+class. (The model in Figure 20.2(b) is a naive Bayes model with class Flavor and just one
+attribute, Wrapper.) Assuming Booleanvariables, theparameters are P(C true), P(X true C true), P(X true C false).
+i1 i i2 i
+The maximum-likelihood parameter values are found in exactly the same way as for Fig-
+ure20.2(b). Oncethemodelhasbeentrainedinthisway,itcanbeusedtoclassifynewexam-
+plesforwhichtheclassvariable C isunobserved. Withobservedattributevalues x ,...,x ,
+1 n
+theprobability ofeachclassisgivenby
+(cid:25)
+P(C x ,...,x ) P(C) P(x C).
+1 n i
+i
+A deterministic prediction can be obtained by choosing the most likely class. Figure 20.3
+shows the learning curve for this method when it is applied to the restaurant problem from
+Chapter 18. The method learns fairly well but not as well as decision-tree learning; this is
+presumably because the true hypothesis which is a decision tree is not representable ex-
+actly using anaive Bayesmodel. Naive Bayeslearning turnsout to

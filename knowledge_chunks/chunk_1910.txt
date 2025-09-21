@@ -1,0 +1,24 @@
+ewvariable,distinctfromallothervariablesusedsofar.
+Theprocedure CALL(continuation)continuesexecutionwiththespecifiedcontinuation.
+program,ontheotherhand,isaninferenceprocedureforaspecificsetofclauses,soitknows
+whatclauses matchthegoal. Prologbasically generates aminiature theorem proverforeach
+differentpredicate, therebyeliminatingmuchoftheoverheadofinterpretation. Itisalsopos-
+sible to open-code the unification routine for each different call, thereby avoiding explicit
+OPEN-CODE
+analysis oftermstructure. (Fordetailsofopen-coded unification, see Warren etal.(1977).)
+The instruction sets of today s computers give a poor match with Prolog s semantics,
+somost Prologcompilerscompileintoanintermediatelanguageratherthandirectlyintoma-
+chine language. The most popular intermediate language is the Warren Abstract Machine,
+or WAM,named after David H.D.Warren, oneoftheimplementers ofthefirst Prologcom-
+piler. The WAM is an abstract instruction set that is suitable for Prolog and can be either
+interpretedortranslatedintomachinelanguage. Othercompilerstranslate Prologintoahigh-
+levellanguagesuchas Lispor Candthenusethatlanguage scompilertotranslatetomachine
+language. Forexample,thedefinitionofthe Appendpredicatecanbecompiledintothecode
+shownin Figure9.8. Severalpointsareworthmentioning: Rather than having to search the knowledge base for Appendclauses, the clauses be-
+comeaprocedure andtheinferences arecarriedoutsimplyby callingtheprocedure. Asdescribedearlier,thecurrentvariablebindingsarekeptonatrail. Thefirststepofthe
+proceduresavesthecurrentstateofthetrail,sothatitcan berestoredby RESET-TRAIL
+ifthefirstclausefails. Thiswillundoanybindingsgeneratedbythefirstcallto UNIFY. Thetrickiestpartistheuseofcontinuationstoimplementchoicepoints. Youcanthink
+CONTINUATION
+of a continuation as packaging up a procedure and a list of arguments that together
+define what should be done next whenever the current goal succeeds. It would not
+do just to return from a procedure like APPEND when the 

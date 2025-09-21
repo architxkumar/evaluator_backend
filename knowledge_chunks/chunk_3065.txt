@@ -1,0 +1,19 @@
+C.,and Gupta, Laborie,P.(2003). Algorithmsforpropagatingre-
+Korb,K.B.and Nicholson,A.(2003). Bayesian A.(2008).Robustsubmodularobservationselection. sourceconstraints in AIplanning andscheduling.
+Artificial Intelligence.Chapmanand Hall. JMLR,9,2761 2801. AIJ,143(2),151 188.
+Korb,K.B.,Nicholson,A.,and Jitnah,N.(1999). Kripke,S.A.(1963).Semanticalconsiderationson Ladkin,P.(1986a). Primitivesandunitsfortime
+Bayesianpoker.In UAI-99. modallogic.Acta Philosophica Fennica,16,83 94. specification.In AAAI-86,Vol.1,pp.354 359.
+Korf,R.E.(1985a).Depth-firstiterative-deepening: Krogh,A.,Brown,M.,Mian,I.S.,Sjolander,K., Ladkin,P.(1986b). Timerepresentation: ataxon-
+anoptimaladmissibletreesearch. AIJ,27(1),97 and Haussler,D.(1994). Hidden Markovmodels omyofintervalrelations. In AAAI-86,Vol.1,pp.
+109. incomputationalbiology: Applicationstoprotein 360 366.
+Korf,R.E.(1985b).Iterative-deepening A :Anop- modeling.J.Molecular Biology,235,1501 1531. Lafferty,J.,Mc Callum,A.,and Pereira,F.(2001).
+timaladmissibletreesearch.In IJCAI-85,pp.1034 Ku bler,S.,Mc Donald,R.,and Nivre,J.(2009).De- Conditionalrandomfields:Probabilisticmodelsfor
+1036. pendency Parsing.Morgan Claypool. segmentingandlabelingsequencedata.In ICML-01.
+Korf,R.E.(1987). Planningassearch:Aquantita- Kuhn,H.W.(1953).Extensivegamesandtheprob- Lafferty,J.and Zhai,C.(2001). Probabilisticrele-
+tiveapproach.AIJ,33(1),65 88. lemofinformation. In Kuhn, H.W.and Tucker, vancemodelsbasedondocumentandquerygenera-
+Korf,R.E.(1990).Real-timeheuristicsearch.AIJ, A.W.(Eds.),Contributionstothe Theoryof Games tion.In Proc.Workshopon Language Modelingand
+42(3),189 212. II.Princeton University Press. Information Retrieval.
+Korf,R.E.(1993). Linear-spacebest-firstsearch. Kuhn, H.W.(1955). The Hungarianmethodfor Lagoudakis, M. G. and Parr, R. (2003). Least-
+AIJ,62(1),41 78. theassignmentproblem. Naval Research Logistics squarespolicyiteration.JMLR,4,1107 1149.
+Quarterly,2,83 97.
+Korf, R. E. (1995). Space-efficient search algo- Laird,J.,Newell,A.,and

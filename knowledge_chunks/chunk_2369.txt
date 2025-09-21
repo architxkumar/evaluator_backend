@@ -1,0 +1,34 @@
+in.
+16.8 Ticketstoalotterycost 1. Therearetwopossibleprizes: a 10payoffwithprobabil-
+ity 1 50, and a 1,000,000 payoff withprobability 1 2,000,000. Whatis theexpected mone-
+taryvalueofalotteryticket? When(ifever)isitrationaltobuyaticket? Beprecise showan
+equation involving utilities. Youmayassumecurrent wealthof k andthat U(S ) 0. You
+k
+may also assume that U(S ) 10 U(S ), but you may not make any assumptions
+k 10 k 1
+about U(S ). Sociological studies show that people with lower income buy a dis-
+k 1,000,000
+proportionate numberoflotterytickets. Doyouthinkthisisbecause theyareworsedecision
+makersorbecausetheyhaveadifferentutilityfunction? Considerthevalueofcontemplating
+the possibility of winning the lottery versus the value of contemplating becoming an action
+herowhilewatchinganadventuremovie.
+16.9 Assessyourownutilityfordifferentincrementalamountsofmoneybyrunningaseries
+ofpreferencetestsbetweensomedefiniteamount M andalottery p,M ;(1 p),0 . Choose
+1 2
+differentvaluesof M and M ,andvarypuntilyouareindifferent betweenthetwochoices.
+1 2
+Plottheresulting utilityfunction.
+16.10 How much is a micromort worth to you? Devise a protocol to determine this. Ask
+questions basedbothonpayingtoavoidriskandbeingpaidtoacceptrisk.
+16.11 Let continuous variables X ,...,X be independently distributed according to the
+1 k
+sameprobabilitydensityfunctionf(x). Provethatthedensityfunctionformax X ,...,X 1 k
+isgivenbykf(x)(F(x))k 1,where F
+isthecumulativedistribution forf.
+16.12 Economists often make use of an exponential utility function for money: U(x) ex R,where Risapositiveconstant representing anindividual s risktolerance. Risktoler-
+ancereflectshowlikelyanindividualistoacceptalotterywithaparticularexpectedmonetary
+value (EMV) versus some certain payoff. As R (which is measured in the same units as x)
+becomeslarger, theindividual becomeslessrisk-averse.
+Exercises 643
+a. Assume Mary has an exponential utility function with R 500. Mary is given the
+choice between receiving 500 with certa

@@ -1,0 +1,27 @@
+LD-like
+problemswithoutaccesstothehigh-speedfloating-pointarithmeticusedin BUILD sphysical
+modeling. Hayes (1985a) uses histories four-dimensional slices of space-time similarto
+Davidson s events to construct a fairly complex naive physics of liquids. Hayes was the
+firsttoprovethatabathwiththepluginwilleventuallyoverflowifthetapkeepsrunningand
+that a person who falls into a lake will get wet all over. Davis (2008) gives an update to the
+ontology ofliquids thatdescribes thepouringofliquidsintocontainers.
+De Kleer and Brown (1985), Ken Forbus (1985), and Benjamin Kuipers (1985) inde-
+pendently and almost simultaneously developed systems that can reason about a physical
+system based on qualitative abstractions of the underlying equations. Qualitative physics
+soon developed to the point where it became possible to analyze an impressive variety of
+complex physical systems (Yip, 1991). Qualitative techniques have been used to construct
+noveldesignsforclocks,windshieldwipers,andsix-leggedwalkers(Subramanianand Wang,
+1994). Thecollection Readings in Qualitative Reasoning about Physical Systems (Weldand
+Exercises 473
+de Kleer, 1990) an encyclopedia article by Kuipers (2001), and ahandbook article by Davis
+(2007)introduce tothefield.
+Spatialreasoning: Thereasoning necessary tonavigate inthe wumpusworld and shopping
+SPATIALREASONING
+world is trivial in comparison to the rich spatial structure of the real world. The earliest
+seriousattempttocapturecommonsensereasoningaboutspaceappearsintheworkof Ernest
+Davis(1986,1990). Theregionconnection calculus of Cohnetal.(1997)supportsaformof
+qualitative spatial reasoning and has led to new kinds of geographical information systems;
+seealso (Davis, 2006). Aswithqualitative physics, anagent cangoalong way, sotospeak,
+without resorting to a full metric representation. When such a representation is necessary,
+techniques developedinrobotics(Chapter25)canbeused.
+PSYCHOLOGICAL Psychological reasoning: Psychological reasoning involves the develo

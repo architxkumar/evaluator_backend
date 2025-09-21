@@ -1,0 +1,28 @@
+S) u(cid:12) and a worst possible
+NORMALIZED catastrophe at U(S) u . Normalizedutilitiesuseascalewithu 0andu(cid:12) 1.
+UTILITIES
+Given a utility scale between u(cid:12) and u , we can assess the utility of any particular
+STANDARDLOTTERY
+prize S byaskingtheagenttochoosebetween S andastandardlottery p,u(cid:12); (1 p),u .
+Theprobability pisadjusteduntiltheagentisindifferentbetween S andthestandardlottery.
+Assumingnormalizedutilities,theutilityof S isgivenbyp. Oncethisisdoneforeachprize,
+theutilitiesforalllotteriesinvolving thoseprizesaredetermined.
+In medical, transportation, and environmental decision problems, among others, peo-
+ple slivesareatstake. Insuchcases,u isthevalueassignedtoimmediatedeath(orperhaps
+many deaths). Although nobody feels comfortable withputting avalue on human life, itisa
+fact that tradeoffs are made all the time. Aircraft are given a complete overhaul at intervals
+determined by trips and miles flown, rather than after every trip. Cars are manufactured in
+a way that trades off costs against accident survival rates. Paradoxically, a refusal to put a
+monetary value on life means that life is often undervalued. Ross Shachter relates an ex-
+perience with a government agency that commissioned a study on removing asbestos from
+schools. Thedecisionanalystsperformingthestudyassumedaparticulardollarvalueforthe
+life of a school-age child, and argued that the rational choice under that assumption was to
+remove the asbestos. The agency, morally outraged at the idea of setting the value of a life,
+rejectedthereportoutofhand. Itthendecidedagainstasbestosremoval implicitlyasserting
+alowervalueforthelifeofachildthanthatassigned bytheanalysts.
+616 Chapter 16. Making Simple Decisions
+Some attempts have been made to find out the value that people place on their own
+lives. One common currency used in medical and safety analysis is the micromort, a
+MICROMORT
+one in a million chance of death. If you ask people how much they would pay to avoid a
+risk for example, t

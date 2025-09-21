@@ -1,0 +1,38 @@
+sa linear Gaussian model,just asin a regular Kalmanfilter. Thetran-
+sitionmodelforthediscretestate,P(St 1 St),canbethoughtofasamatrix,asinahidden
+Markovmodel.
+probability 1ifitencounters awall). Implementthisasan HM Manddofilteringtotrackthe
+robot. Howaccurately canwetracktherobot spath?
+15.10 Often,wewishtomonitoracontinuous-state systemwhosebehaviorswitchesunpre-
+dictablyamongasetofkdistinct modes. Forexample,anaircrafttryingtoevadea missile
+canexecute aseries ofdistinct maneuvers that the missilemayattempt totrack. ABayesian
+networkrepresentation ofsucha switching Kalmanfiltermodelisshownin Figure15.21.
+a. Suppose that the discrete state S has k possible values and that the prior continuous
+t
+state estimate P(X ) is a multivariate Gaussian distribution. Show that the prediction
+0
+P(X )is a mixture of Gaussians that is, a weighted sum of Gaussians such that the
+1
+weightssumto1.
+b. Show that if the current continuous state estimate P(X e ) is a mixture of m Gaus-
+t 1:t
+sians, theninthegeneral casetheupdated stateestimate P(X e )willbeamix-
+t 1 1:t 1
+tureofkm Gaussians.
+c. Whataspectofthetemporalprocess dotheweightsinthe Gaussianmixturerepresent?
+Theresultsin(a)and(b)showthattherepresentationoftheposteriorgrowswithoutlimiteven
+forswitching Kalmanfilters,whichareamongthesimplesthybriddynamicmodels.
+15.11 Completethemissingstepinthederivationof Equation(15.19)onpage586,thefirst
+updatestepfortheone-dimensional Kalmanfilter.
+15.12 Letusexaminethebehaviorofthevariance updatein Equation(15.20)(page587).
+a. Plotthevalueof 2 asafunction oft,givenvariousvaluesfor 2 and 2.
+t x z
+b. Showthat the update has afixedpoint 2 such that 2 2 as t , and calculate
+t
+thevalueof 2.
+c. Giveaqualitative explanation forwhathappens as 2 0andas 2 0.
+x z
+Exercises 609
+15.13 A professor wants to know if students are getting enough sleep. Each day, the pro-
+fessor observes whether the students sleep in class, and whether they have red eyes. The
+professorhasthefollowingdomaintheory: Thepriorprobab

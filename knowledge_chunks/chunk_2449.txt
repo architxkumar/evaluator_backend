@@ -1,0 +1,27 @@
+oplearegoodatrecognizingthe
+faces of family members, but even the best programmers are unable to program a computer
+to accomplish that task, except by using learning algorithms. This chapter first gives an
+overview of the various forms of learning, then describes one popular approach, decision-
+tree learning, in Section 18.3, followed byatheoretical analysis oflearning in Sections 18.4
+and 18.5. We look at various learning systems used in practice: linear models, nonlinear
+models(inparticular, neuralnetworks),nonparametricmodels,andsupportvectormachines.
+Finallyweshowhowensembles ofmodelscanoutperform asinglemodel.
+18.1 FORMS OF LEARNING
+Anycomponent ofanagent canbeimprovedbylearning from data. Theimprovements, and
+thetechniques usedtomakethem,dependonfourmajorfactors: Whichcomponentistobeimproved.
+693
+694 Chapter 18. Learningfrom Examples Whatpriorknowledgetheagentalreadyhas. Whatrepresentation isusedforthedataandthecomponent. Whatfeedback isavailabletolearnfrom.
+Componentstobelearned
+Chapter2described severalagentdesigns. Thecomponents oftheseagentsinclude:
+1. Adirectmappingfromconditions onthecurrentstatetoactions.
+2. Ameanstoinferrelevantproperties oftheworldfromthepercept sequence.
+3. Information about the way the world evolves and about the results of possible actions
+theagentcantake.
+4. Utilityinformation indicating thedesirability ofworldstates.
+5. Action-value information indicating thedesirability ofactions.
+6. Goalsthatdescribe classesofstateswhoseachievement maximizestheagent s utility.
+Eachofthesecomponentscanbelearned. Consider,forexample,anagenttrainingtobecome
+a taxi driver. Every time the instructor shouts Brake! the agent might learn a condition action rule for when to brake (component 1); the agent also learns every time the instructor
+does not shout. By seeing many camera images that it is told contain buses, it can learn
+to recognize them (2). By trying actions and observing the results for example, braking
+hard on a wet road it can learn the ef

@@ -1,0 +1,23 @@
+an be represented compactly by canonical families of
+552 Chapter 14. Probabilistic Reasoning
+distributions. Hybrid Bayesian networks,whichincludebothdiscreteandcontinuous
+variables, useavarietyofcanonical distributions. Inference in Bayesian networks means computing the probability distribution of a set
+of query variables, given a set of evidence variables. Exact inference algorithms, such
+asvariable elimination, evaluate sumsofproducts ofconditional probabilities as effi-
+cientlyaspossible. In polytrees (singly connected networks), exact inference takes time linear in the size
+ofthenetwork. Inthegeneralcase,theproblem isintractable. Stochasticapproximation techniques suchaslikelihoodweightingand Markovchain
+Monte Carlocan give reasonable estimates ofthe true posterior probabilities in anet-
+workandcancopewithmuchlargernetworksthancanexactalgorithms. Probabilitytheorycanbecombinedwithrepresentational ideasfromfirst-orderlogicto
+produce very powerful systems forreasoning under uncertainty. Relational probabil-
+ity models (RP Ms) include representational restrictions that guarantee a well-defined
+probabilitydistributionthatcanbeexpressedasanequivalent Bayesiannetwork. Open-
+universeprobabilitymodelshandleexistenceandidentityuncertainty,definingprob-
+abiltydistributions overtheinfinitespaceoffirst-orderpossible worlds. Variousalternative systemsforreasoning underuncertainty havebeensuggested. Gen-
+erallyspeaking, truth-functionalsystemsarenotwellsuitedforsuchreasoning.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+The use of networks to represent probabilistic information began early in the 20th century,
+with the work of Sewall Wright on the probabilistic analysis of genetic inheritance and an-
+imal growth factors (Wright, 1921, 1934). I. J. Good (1961), in collaboration with Alan
+Turing, developed probabilistic representations and Bayesian inference methods that could
+be regarded as a forerunner of modern Bayesian networks although the paper is not often
+citedinthiscontext.10 

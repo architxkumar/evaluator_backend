@@ -1,0 +1,32 @@
+en considered an intractable problem in the
+tracking community. The algorithm itself was published by Kuhn (1955), based on transla-
+tions ofpapers published in1931 bytwo Hungarian mathematicians, De nes Ko nig and Jeno Egerva ry. Thebasic theorem hadbeen derived previously, however, inanunpublished Latin
+manuscript bythefamous Prussianmathematician Carl Gustav Jacobi(1804 1851).
+EXERCISES
+15.1 Show that any second-order Markov process can be rewritten as a first-order Markov
+process with an augmented set of state variables. Can this always be done parsimoniously,
+i.e.,withoutincreasingthenumberofparametersneededtospecifythetransitionmodel?
+15.2 In this exercise, we examine what happens to the probabilities in the umbrella world
+inthelimitoflongtimesequences.
+a. Suppose we observe an unending sequence of days on which the umbrella appears.
+Showthat,asthedaysgoby,theprobability ofrainonthecurrentdayincreases mono-
+tonicallytowardafixedpoint. Calculatethisfixedpoint.
+b. Now consider forecasting further and further into the future, given just the first two
+umbrella observations. First, compute the probability P(r u ,u ) for k 1...20
+2 k 1 2
+andplottheresults. Youshouldseethattheprobabilityconvergestowardsafixedpoint.
+Provethattheexactvalueofthisfixedpointis0.5.
+15.3 This exercise develops a space-efficient variant of the forward backward algorithm
+described in Figure 15.4 (page 576). We wish to compute P(X e ) for k 1,...,t. This
+k 1:t
+willbedonewithadivide-and-conquer approach.
+a. Suppose,forsimplicity, thattisodd,andletthehalfwaypointbeh (t 1) 2. Show
+that P(X e )canbecomputedfork 1,...,hgivenjusttheinitialforwardmessage
+k 1:t
+f ,thebackward messageb ,andtheevidence e .
+1:0 h 1:t 1:h
+b. Showasimilarresultforthesecondhalfofthesequence.
+Exercises 607
+c. Given the results of (a) and (b), a recursive divide-and-conquer algorithm can be con-
+structed by first running forward along the sequence and then backward from the end,
+storing just the required messages at the middl

@@ -1,0 +1,47 @@
+union of those actions effects satisfies the goal. This is an instance
+SET-COVER of the set-cover problem. There is one minor irritation: the set-cover problem is NP-hard.
+PROBLEM
+Fortunately a simple greedy algorithm is guaranteed to return a set covering whose size is
+within a factor of logn of the true minimum covering, where n is the number of literals in
+thegoal. Unfortunately, thegreedyalgorithm losestheguarantee ofadmissibility.
+Itisalsopossibletoignoreonlyselectedpreconditionsofactions. Considerthesliding-
+block puzzle (8-puzzle or 15-puzzle) from Section 3.2. We could encode this as a planning
+Section10.2. Algorithmsfor Planningas State-Space Search 377
+problem involving tileswithasingleschema Slide:
+Action(Slide(t,s ,s ),
+1 2
+PRECOND:On(t,s
+1
+) Tile(t) Blank(s
+2
+) Adjacent(s
+1
+,s
+2
+)
+EFFECT:On(t,s
+2
+) Blank(s
+1
+) On(t,s
+1
+) Blank(s
+2
+))
+As we saw in Section 3.6, if we remove the preconditions Blank(s ) Adjacent(s ,s )
+2 1 2
+then any tile can move in one action to any space and we get the number-of-misplaced-tiles
+heuristic. Ifweremove Blank(s )thenwegetthe Manhattan-distance heuristic. Itiseasyto
+2
+see how these heuristics could be derived automatically from the action schema description.
+Theeaseofmanipulatingtheschemasisthegreatadvantageofthefactoredrepresentation of
+planning problems, ascomparedwiththeatomicrepresentation ofsearchproblems.
+IGNOREDELETE Another possibility is the ignore delete lists heuristic. Assume for a moment that all
+LISTS
+goalsandpreconditions contain onlypositiveliterals3 Wewanttocreatearelaxedversionof
+theoriginalproblemthatwillbeeasiertosolve,andwherethelengthofthesolutionwillserve
+asagoodheuristic. Wecandothatbyremovingthedeletelistsfromallactions(i.e.,removing
+allnegativeliteralsfromeffects). Thatmakesitpossibletomakemonotonicprogresstowards
+thegoal noactionwilleverundoprogressmadebyanotheraction. Itturnsoutitisstill NP-
+hardtofindtheoptimalsolution tothisrelaxed problem, but anapproximate solution canbe
+found in polynomial tim

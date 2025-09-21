@@ -1,0 +1,34 @@
+ip-
+tionsandgoalliterals.
+The aim of inductive learning in general is to find a hypothesis that classifies the ex-
+amples well and generalizes well to new examples. Herewe are concerned withhypotheses
+expressed inlogic;eachhypothesis h willhavetheform
+j x Goal(x) C (x),
+j
+where C (x) is a candidate definition some expression involving the attribute predicates.
+j
+Forexample,adecisiontreecanbeinterpretedasalogicalexpressionofthisform. Thus,the
+tree in Figure 18.6 (page 702) expresses the following logical definition (which we will call
+h forfuturereference):
+r r Will Wait(r) Patrons(r,Some) Patrons(r,Full) Hungry(r) Type(r,French) Patrons(r,Full) Hungry(r) Type(r,Thai) (19.1) Fri Sat(r) Patrons(r,Full) Hungry(r) Type(r,Burger).
+Eachhypothesis predicts thatacertain setofexamples namely, thosethat satisfy itscandi-
+date definition will be examples of the goal predicate. This set is called the extension of
+EXTENSION
+the predicate. Two hypotheses with different extensions are therefore logically inconsistent
+with each other, because they disagree on their predictions for at least one example. If they
+havethesameextension, theyarelogically equivalent.
+Thehypothesisspace Histhesetofallhypotheses h ,...,h thatthelearningalgo-
+1 n
+rithmisdesigned toentertain. Forexample, the DECISION-TREE-LEARNING algorithm can
+entertain anydecision treehypothesis defined intermsoftheattributes provided; itshypoth-
+esis space therefore consists of all these decision trees. Presumably, the learning algorithm
+believesthatoneofthehypotheses iscorrect;thatis,itbelievesthesentence
+h h h ... h . (19.2)
+1 2 3 n
+As the examples arrive, hypotheses that are not consistent with the examples can be ruled
+out. Letusexaminethisnotion ofconsistency morecarefully. Obviously, ifhypothesis h is
+j
+consistentwiththeentiretrainingset,ithastobeconsistentwitheachexampleinthetraining
+set. What would it mean for it to be inconsistent with an example? There are two possible
+waysthatthiscanhappen:
+770 Chapter 19. Knowl

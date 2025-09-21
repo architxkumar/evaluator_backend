@@ -1,0 +1,38 @@
+ P(X x ... X x ). We use the notation
+1 1 n n
+P(x ,...,x )asanabbreviation forthis. Thevalueofthisentryisgivenbytheformula
+1 n
+(cid:25)n
+P(x ,...,x ) (x parents(X )), (14.1)
+1 n i i
+i 1
+where parents(X ) denotes the values of Parents(X ) that appear in x ,...,x . Thus,
+i i 1 n
+each entry in the joint distribution is represented by the product of the appropriate elements
+oftheconditional probability tables(CP Ts)inthe Bayesiannetwork.
+From this definition, it is easy to prove that the parameters (X Parents(X )) are
+i i
+exactly the conditional probabilities P(X Parents(X )) implied by the joint distribution
+i i
+(see Exercise14.2). Hence,wecanrewrite Equation(14.1)as
+(cid:25)n
+P(x ,...,x ) P(x parents(X )). (14.2)
+1 n i i
+i 1
+Inotherwords, thetables wehavebeen calling conditional probability tables really arecon-
+ditional probability tablesaccording tothesemanticsdefinedin Equation(14.1).
+Toillustratethis,wecancalculatetheprobabilitythatthealarmhassounded,butneither
+aburglary noranearthquake hasoccurred, andboth Johnand Marycall. Wemultiplyentries
+514 Chapter 14. Probabilistic Reasoning
+fromthejointdistribution (usingsingle-letter namesfor thevariables):
+P(j,m,a, b, e) P(j a)P(m a)P(a b e)P( b)P( e) 0.90 0.70 0.001 0.999 0.998 0.000628 .
+Section 13.3 explained that the full joint distribution can be used to answer any query about
+thedomain. Ifa Bayesiannetworkisarepresentation ofthejointdistribution, thenittoocan
+beusedtoansweranyquery, bysummingalltherelevantjoint entries. Section14.4explains
+howtodothis,butalsodescribes methodsthataremuchmoreefficient.
+Amethodforconstructing Bayesiannetworks
+Equation (14.2) defines what a given Bayesian network means. The next step is to explain
+how to construct a Bayesian network in such a way that the resulting joint distribution is a
+goodrepresentationofagivendomain. Wewillnowshowthat Equation(14.2)impliescertain
+conditional independence relationships that can be used to guide the knowledge engineer in
+constructing thetopologyofth

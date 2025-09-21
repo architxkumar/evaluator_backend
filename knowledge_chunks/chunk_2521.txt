@@ -1,0 +1,36 @@
+ pay enough attention to the outlier at x 6; a narrower kernel width would be
+moreresponsivetoindividual points.
+Doing locally weighted regression with kernels is now straightforward. For a given
+querypointx wesolvethefollowingweightedregression problem usinggradientdescent:
+q (cid:12)
+w argmin K(Distance(x ,x ))(y w x )2 ,
+q j j j
+w
+j
+where Distance is any of the distance metrics discussed for nearest neighbors. Then the
+answerish(x ) w x
+.
+q q
+Notethatweneedtosolveanewregressionproblemforeveryquerypoint that swhat
+it means to be local. (In ordinary linear regression, we solved the regression problem once,
+globally, and then used thesameh forany query point.) Mitigating against thisextra work
+w
+744 Chapter 18. Learningfrom Examples
+is the fact that each regression problem will be easier to solve, because it involves only the
+examples withnonzero weight the examples whosekernels overlap thequery point. When
+kernelwidthsaresmall,thismaybejustafewpoints.
+Mostnonparametricmodelshavetheadvantagethatitiseasytodoleave-one-outcross-
+validation without having to recompute everything. With a k-nearest-neighbors model, for
+instance, whengivenatestexample(x,y)weretrievetheknearestneighborsonce,compute
+the per-example loss L(y,h(x)) from them, and record that as the leave-one-out result for
+everyexamplethatisnotoneoftheneighbors. Thenweretrievethek 1nearestneighbors
+and record distinct results for leaving out each of the k neighbors. With N examples the
+wholeprocessis O(k),not O(k N).
+18.9 SUPPORT VECTOR MACHINES
+SUPPORTVECTOR Thesupportvectormachineor SV Mframeworkiscurrently themostpopularapproach for
+MACHINE off-the-shelf supervised learning: ifyoudon thaveanyspecialized priorknowledge about
+a domain, then the SVM is an excellent method to try first. There are three properties that
+make SV Msattractive:
+1. SV Msconstructamaximummarginseparator adecisionboundarywiththelargest
+possibledistance toexamplepoints. Thishelpsthemgeneralize well.
+2. SV Ms create a linear separating h

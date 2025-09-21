@@ -1,0 +1,27 @@
+ne with logic and com-
+putation. The first nontrivial algorithm is thought to be Euclid s algorithm for computing
+ALGORITHM
+greatest common divisors. Theword algorithm (and the idea of studying them) comes from
+al-Khowarazmi, a Persian mathematician of the 9th century, whose writings also introduced
+Arabic numerals and algebra to Europe. Boole and others discussed algorithms for logical
+deduction, and, bythelate 19thcentury, efforts wereunder waytoformalize general mathe-
+matical reasoning as logical deduction. In 1930, Kurt Go del (1906 1978) showed that there
+exists aneffective procedure toprove anytrue statement in the first-order logic of Fregeand
+Russell, but that first-order logic could not capture the principle of mathematical induction
+needed to characterize the natural numbers. In 1931, Go del showed that limits on deduc-
+INCOMPLETENESS tion do exist. His incompleteness theorem showed that in any formal theory as strong as
+THEOREM
+Peano arithmetic (the elementary theory of natural numbers), there are true statements that
+areundecidable inthesensethattheyhavenoproofwithinthetheory.
+This fundamental result can also be interpreted as showing that some functions on the
+integers cannot be represented by an algorithm that is, they cannot be computed. This
+motivated Alan Turing (1912 1954) to try to characterize exactly which functions are com-
+putable capable of being computed. This notion is actually slightly problematic because
+COMPUTABLE
+thenotionofacomputation oreffectiveprocedure reallycannotbegivenaformaldefinition.
+However, the Church Turing thesis, which states that the Turing machine (Turing, 1936) is
+capableofcomputinganycomputablefunction,isgenerallyacceptedasprovidingasufficient
+definition. Turing also showed that there were some functions that no Turing machine can
+compute. For example, no machine can tell in general whether a given program will return
+anansweronagiveninputorrunforever.
+Althoughdecidabilityandcomputabilityareimportanttoanunderstandin

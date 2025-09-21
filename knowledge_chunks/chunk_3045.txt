@@ -1,0 +1,22 @@
+G.(2008). Formalproof Thefour-color swerer. In Proc.Western Joint Computer Confer-
+theorem.Noticesofthe AMS,55(11),1382 1393. ence,pp.219 224. Halpern,J.Y.and Weissman,V.(2008).Usingfirst-
+orderlogictoreasonaboutpolicies. ACM Transac-
+Good,I.J.(1961). Acausalcalculus. British Jour- Green,C.(1969a).Applicationoftheoremproving tionson Informationand System Security,11(4).
+nalofthe Philosophyof Science,11,305 318. toproblemsolving.In IJCAI-69,pp.219 239.
+Hamming,R.W.(1991).The Artof Probabilityfor
+Good,I.J.(1965).Speculationsconcerningthefirst Green, C. (1969b). Theorem-proving by resolu- Scientistsand Engineers.Addison-Wesley.
+ultraintelligentmachine. In Alt,F.L.and Rubinoff, tionasabasisforquestion-answeringsystems. In
+M.(Eds.),Advancesin Computers,Vol.6,pp.31 Meltzer,B.,Michie,D.,and Swann,M.(Eds.),Ma- Hammond,K.(1989).Case-Based Planning:View-
+88.Academic Press. chine Intelligence4,pp.183 205.Edinburgh Uni- ing Planningasa Memory Task.Academic Press.
+Good,I.J.(1983). Good Thinking: The Founda- versity Press. Hamscher,W.,Console,L.,and Kleer,J.D.(1992).
+tionsof Probabilityand Its Applications.University Green, C. and Raphael, B. (1968). The use of Readingsin Model-based Diagnosis.Morgan Kauf-
+of Minnesota Press. theorem-proving techniquesin question-answering mann.
+Goodman,D.and Keene,R.(1997). Manversus systems.In Proc.23rd ACM National Conference. Han,X.and Boyden,E.(2007). Multiple-colorop-
+Machine:Kasparovversus Deep Blue. H3Publica- Greenblatt, R. D., Eastlake, D. E., and Crocker, ticalactivation,silencing,anddesynchronizationof
+tions. S.D.(1967).The Greenblattchessprogram.In Proc. neural activity, with single-spike temporal resolu-
+Fall Joint Computer Conference,pp.801 810. tion.PLo SOne,e299.
+Goodman,J.(2001). Abitofprogressinlanguage
+modeling. Tech.rep.MSR-TR-2001-72,Microsoft Greiner,R.(1989). Towardsaformalanalysisof Hand,D.,Mannila,H.,and Smyth,P.(2001).Prin-
+Research. EBL.In ICML-89,pp.450 453. ciplesof Data Mining.MIT Press.
+Bibliography 1075
+Handschin,

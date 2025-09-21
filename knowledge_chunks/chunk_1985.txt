@@ -1,0 +1,26 @@
+hercommitmentthatplacesitbeforeorafter otheractions. Iftherewerea
+variableintheactionschemathatcouldbeleftunbound, wewoulddoso.
+In the 1980s and 90s, partial-order planning was seen as the best way to handle plan-
+ning problems with independent subproblems after all, it was the only approach that ex-
+plicitlyrepresentsindependent branchesofaplan. Ontheotherhand,ithasthedisadvantage
+of not having an explicit representation of states in the state-transition model. That makes
+somecomputationscumbersome. By2000,forward-search plannershaddevelopedexcellent
+heuristics thatallowedthemtoefficientlydiscovertheindependent subproblems thatpartial-
+order planning was designed for. As a result, partial-order planners are not competitive on
+fullyautomated classical planning problems.
+However, partial-order planning remains an important part of the field. Forsome spe-
+cifictasks,suchasoperationsscheduling, partial-orderplanningwithdomainspecificheuris-
+tics is the technology of choice. Many of these systems use libraries of high-level plans, as
+describedin Section11.2. Partial-orderplanningisalsooftenusedindomainswhereitisim-
+portantforhumanstounderstand theplans. Operationalplansforspacecraftand Marsrovers
+aregeneratedbypartial-orderplannersandarethencheckedbyhumanoperatorsbeforebeing
+uploaded tothevehicles forexecution. Theplan refinement approach makesiteasierforthe
+humanstounderstandwhattheplanningalgorithmsaredoingandverifythattheyarecorrect.
+392 Chapter 10. Classical Planning
+10.5 ANALYSIS OF PLANNING APPROACHES
+Planning combines the two major areas of AI we have covered so far: search and logic. A
+planner can beseen either asaprogram that searches forasolution oras onethat (construc-
+tively) proves the existence ofa solution. Thecross-fertilization of ideas from the twoareas
+has led both to improvements in performance amounting to several orders of magnitude in
+the last decade and toan increased use of planners in industrial applications. Unfortunately,
+we do not yet have a

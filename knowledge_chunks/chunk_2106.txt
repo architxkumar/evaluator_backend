@@ -1,0 +1,25 @@
+ledge-based systems ) that could, if given the appropriate
+domain knowledge, matchorexceed theperformance ofhumanexperts onnarrowlydefined
+tasks. For example, the first expert system, DENDRAL (Feigenbaum et al., 1971; Lindsay
+etal.,1980),interpreted theoutputofamassspectrometer(atypeofinstrumentusedtoana-
+lyzethestructureoforganicchemicalcompounds)asaccuratelyasexpertchemists. Although
+the success of DENDRAL was instrumental in convincing the AI research community of the
+importance ofknowledge representation, therepresentational formalisms used in DENDRAL
+are highly specific to the domain of chemistry. Over time, researchers became interested in
+standardized knowledge representation formalisms and ontologies that could streamline the
+process of creating new expert systems. In so doing, they ventured into territory previously
+explored by philosophers of science and of language. The discipline imposed in AI by the
+needforone stheoriesto work hasledtomorerapidanddeeperprogressthanwasthecase
+Bibliographical and Historical Notes 469
+whenthese problems weretheexclusive domain ofphilosophy (although ithasattimesalso
+ledtotherepeated reinvention ofthewheel).
+Thecreationofcomprehensivetaxonomiesorclassificationsdatesbacktoancienttimes.
+Aristotle(384 322 B.C.) stronglyemphasizedclassificationandcategorization schemes. His
+Organon,acollection ofworksonlogicassembledbyhisstudentsafterhisdeath,included a
+treatisecalled Categoriesinwhichheattemptedtoconstructwhatwewouldnowcallanupper
+ontology. Healso introduced thenotions of genusand species forlower-level classification.
+Ourpresentsystemofbiologicalclassification,includingtheuseof binomialnomenclature (classification via genus and species in the technical sense), was invented by the Swedish
+biologist Carolus Linnaeus, or Carl von Linne (1707 1778). The problems associated with
+natural kinds and inexact category boundaries have been addressed by Wittgenstein (1953),
+Quine(1953), Lakoff(1987),and Schwartz(1977),amongothers.
+Intere

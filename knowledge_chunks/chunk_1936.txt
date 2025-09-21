@@ -1,0 +1,26 @@
+-directedness from backward chaining. Current work includes theidea
+ofintegrating multipledatabases intoaconsistent dataspace (Halevy,2007).
+Backward chaining for logical inference appeared first in Hewitt s PLANNER lan-
+guage (1969). Meanwhile, in1972, Alain Colmerauerhaddeveloped andimplemented Pro-
+log for the purpose of parsing natural language Prolog s clauses were intended initially
+as context-free grammar rules (Roussel, 1975; Colmerauer et al., 1973). Much of the the-
+oretical background for logic programming was developed by Robert Kowalski, working
+Bibliographical and Historical Notes 359
+with Colmerauer; see Kowalski (1988) and Colmerauer and Roussel (1993) for a historical
+overview. Efficient Prolog compilers are generally based on the Warren Abstract Machine
+(WAM) model of computation developed by David H. D. Warren (1983). Van Roy (1990)
+showedthat Prologprograms canbecompetitivewith Cprogramsintermsofspeed.
+Methodsforavoiding unnecessary loopinginrecursivelogicprogramsweredeveloped
+independently by Smith et al. (1986) and Tamaki and Sato (1986). The latter paper also
+included memoization for logic programs, a method developed extensively as tabled logic
+programmingby David S.Warren. Swiftand Warren(1994) showhowtoextend the WAM
+to handle tabling, enabling Datalog programs to execute an order of magnitude faster than
+forward-chaining deductivedatabase systems.
+Early work on constraint logic programming was done by Jaffar and Lassez (1987).
+Jaffaretal.(1992)developedthe CLP(R)systemforhandlingreal-valuedconstraints. There
+arenowcommercialproductsforsolvinglarge-scaleconfigurationandoptimizationproblems
+with constraint programming; one of the best known is ILOG (Junker, 2003). Answer set
+programming (Gelfond,2008)extends Prolog,allowingdisjunction andnegation.
+Texts on logic programming and Prolog, including Shoham (1994), Bratko (2001),
+Clocksin (2003), and Clocksin and Mellish (2003). Priorto 2000, the Journal of Logic Pro-
+gramming was the journal of 

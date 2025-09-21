@@ -1,0 +1,44 @@
+akerina
+talkannouncement, andonetrainedtorecognizedates. The - indicatesabackground state:
+Text: There will be a seminar by Dr. Andrew Mc Callum on Friday
+Speaker: - - - - PRE PRE TARGET TARGET TARGET POST -
+Date: - - - - - - - - - PRE TARGET
+HM Mshavetwobigadvantagesover FS Asforextraction. First,HM Msareprobabilistic,and
+thus tolerant to noise. In a regular expression, if a single expected character is missing, the
+regexfailstomatch;with HM Msthereisgracefuldegradationwithmissingcharacters words,
+andwegetaprobabilityindicatingthedegreeofmatch,notjusta Booleanmatch fail. Second,
+Section22.4. Information Extraction 877
+dr
+who : professor
+speaker with 0.99 robert
+speak 1.0 ; michael
+5409 about mr
+appointment how
+will
+0.99
+(
+0.76 received
+has
+w 0.56 is
+cavalier
+stevens
+seminar that christel
+reminder 1.0 by l
+theater speakers 0.24
+artist additionally here
+0.44
+Prefix Target Postfix
+Figure 22.2 Hidden Markov model for the speaker of a talk announcement. The two
+square states are the target (note the second target state has a self-loop, so the target can
+match a string of any length), the fourcircles to the left are the prefix, and the one on the
+rightisthepostfix. Foreachstate,onlyafewofthehigh-probabilitywordsareshown.From
+Freitagand Mc Callum(2000).
+HM Mscan be trained from data; they don t require laborious engineering of templates, and
+thustheycanmoreeasilybekeptuptodateastextchangesovertime.
+Notethatwehaveassumed acertain levelofstructure inour HM Mtemplates: theyall
+consist of one or more target states, and any prefix states must precede the targets, postfix
+states most follow the targets, and other states must be background. This structure makes
+it easier to learn HM Ms from examples. With a partially specified structure, the forward backward algorithm can be used to learn both the transition probabilities P(X t X t 1 ) be-
+tween states and the observation model, P(E X ), which says how likely each word is in
+t t
+each state. For example, the word Friday would hav

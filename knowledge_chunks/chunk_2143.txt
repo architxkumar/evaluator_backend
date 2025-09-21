@@ -1,0 +1,32 @@
+ aresimilarinimportant
+ways age, symptoms, diet and seewhatproportion ofthem hadacavity. Ifthe
+dentistconsiderseverythingthatisknownaboutthepatient weight tothenearest
+gram,haircolor,mother smaidenname thenthereferenceclassbecomesempty.
+Thishasbeenavexingproblem inthephilosophy ofscience.
+The principle of indifference attributed to Laplace (1816) states that propo-
+sitions that are syntactically symmetric with respect to the evidence should be
+accorded equal probability. Various refinements have been proposed, culminating
+in the attempt by Carnap and others to develop a rigorous inductive logic, capa-
+bleofcomputingthecorrectprobabilityforanyproposition fromanycollectionof
+observations. Currently, itisbelieved thatno unique inductive logic exists; rather,
+any such logic rests on a subjective prior probability distribution whose effect is
+diminished asmoreobservations arecollected.
+492 Chapter 13. Quantifying Uncertainty
+toothache toothache
+catch catch catch catch
+cavity 0.108 0.012 0.072 0.008 cavity 0.016 0.064 0.144 0.576
+Figure13.3 Afulljointdistributionforthe Toothache,Cavity,Catch world.
+Webeginwithasimpleexample: adomainconsistingofjustthethree Booleanvariables
+Toothache,Cavity,and Catch (thedentist snastysteelprobecatchesinmytooth). Thefull
+jointdistribution isa2 2 2tableasshownin Figure13.3.
+Noticethattheprobabilities inthejointdistributionsumto1,asrequiredbytheaxioms
+ofprobability. Noticealsothat Equation(13.2)givesusadirectwaytocalculatetheprobabil-
+ityofanyproposition, simpleorcomplex: simplyidentifythosepossibleworldsinwhichthe
+proposition istrue and add uptheir probabilities. Forexample, there are six possible worlds
+inwhichcavity toothache holds:
+P(cavity toothache) 0.108 0.012 0.072 0.008 0.016 0.064 0.28.
+One particularly common task is to extract the distribution over some subset of variables or
+a single variable. Forexample, adding the entries in the first row gives the unconditional or
+MARGINAL marginalprobability4 ofcavity:
+PROBABILITY
+P(cavity) 

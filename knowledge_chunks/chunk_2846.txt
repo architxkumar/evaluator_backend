@@ -1,0 +1,29 @@
+m,twirlingthem,andsoon andfornavigatingwhileavoiding
+obstacles. The ability to use vision for these purposes is present in the most primitive of
+animal visual systems. In many cases, the visual system is minimal, in the sense that it
+extracts from the available light field just the information the animal needs to inform its
+behavior. Quite probably, modern vision systems evolved from early, primitive organisms
+that used a photosensitive spot at one end to orient themselves toward (or away from) the
+light. We saw in Section 24.4 that flies use a very simple optical flow detection system to
+land on walls. A classic study, What the Frog s Eye Tells the Frog s Brain (Lettvin et al.,
+1959),observesofafrogthat, Hewillstarvetodeathsurroundedbyfoodifitisnotmoving.
+Hischoiceoffoodisdetermined onlybysizeandmovement. Let us consider a vision system for an automated vehicle driving on a freeway. The
+tasksfacedbythedriverincludethefollowing:
+964 Chapter 24. Perception
+a b c
+(a) (b) (c)
+Figure24.26 Thestateoftheartinmultiple-viewreconstructionisnowhighlyadvanced.
+This figureoutlines a system builtby Michael Goesele and colleaguesfrom the University
+of Washington, TU Darmstadt, and Microsoft Research. Froma collectionof picturesof a
+monumenttakenbyalargecommunityofusersandpostedonthe Internet(a),theirsystem
+candeterminetheviewingdirectionsforthosepictures,shownbythesmallblackpyramids
+in(b)andacomprehensive3Dreconstructionshownin(c).
+1. Lateral control ensure that the vehicle remains securely within its lane or changes
+lanessmoothlywhenrequired.
+2. Longitudinal control ensure thatthereisasafedistancetothevehicleinfront.
+3. Obstacleavoidance monitorvehiclesinneighboringlanesandbepreparedforevasive
+maneuversifoneofthemdecidestochangelanes.
+The problem for the driver is to generate appropriate steering, acceleration, and braking ac-
+tionstobestaccomplish thesetasks.
+Forlateralcontrol,oneneedstomaintainarepresentation ofthepositionandorientation
+ofthecarrelativetothelane. Wecanuseedge-

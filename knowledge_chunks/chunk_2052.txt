@@ -1,0 +1,25 @@
+te representation simple by defining derived literals that
+coverconditional effects. Bryceand Kambhampati(2007)discusshowaplanning graphcan
+begeneralized togenerategoodheuristics forconformant andcontingent planning.
+There has been some confusion in the literature between the terms conditional and contingent planning. Following Majercik and Littman (2003), we use conditional to
+mean a plan (or action) that has different effects depending on the actual state of the world,
+and contingent to mean a plan in which the agent can choose different actions depending
+on the results of sensing. The problem of contingent planning received more attention after
+thepublication of Drew Mc Dermott s(1978a)influential article, Planningand Acting.
+The contingent-planning approach described in the chapter is based on Hoffmann and
+Brafman (2005), and was influenced by the efficient search algorithms for cyclic AND OR
+graphs developed by Jimenez and Torras (2000) and Hansen and Zilberstein (2001). Bertoli
+et al. (2001b) describe MBP (Model-Based Planner), which uses binary decision diagrams
+todoconformant andcontingent planning.
+Inretrospect, itisnow possible to see how the majorclassical planning algorithms led
+toextendedversionsforuncertaindomains. Fast-forwardheuristicsearchthroughstatespace
+led to forward search in belief space (Bonet and Geffner, 2000; Hoffmann and Brafman,
+2005); SATPLAN ledtostochastic SATPLAN (Majercikand Littman,2003)andtoplanning
+withquantified Boolean logic (Rintanen, 2007); partial order planning led to UWL (Etzioni
+et al., 1992) and CNLP (Peot and Smith, 1992); GRAPHPLAN led to Sensory Graphplan or
+SGP (Weldetal.,1998).
+434 Chapter 11. Planningand Actinginthe Real World
+The first online planner with execution monitoring was PLANEX (Fikes et al., 1972),
+which worked with the STRIPS planner to control the robot Shakey. The NASL planner
+(Mc Dermott, 1978a) treated a planning problem simply as a specification for carrying out a
+complex action, so that execution 

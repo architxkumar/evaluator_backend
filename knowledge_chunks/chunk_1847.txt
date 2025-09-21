@@ -1,0 +1,32 @@
+nded interpretation specifiesadomainelementtowhich xrefers.
+Thissoundscomplicated,butitisreallyjustacarefulwayofstatingtheintuitivemean-
+ing of universal quantification. Consider the model shown in Figure 8.2 and the intended
+interpretation thatgoeswithit. Wecanextendtheinterpretation infiveways:
+x Richardthe Lionheart,
+x King John,
+x Richard sleftleg,
+x John sleftleg,
+x thecrown.
+Theuniversallyquantifiedsentence x King(x) Person(x)istrueintheoriginalmodel
+if the sentence King(x) Person(x) is true under each of the five extended interpreta-
+tions. Thatis,theuniversally quantifiedsentence isequivalent toasserting thefollowingfive
+sentences:
+Richardthe Lionheartisaking Richardthe Lionheartisaperson.
+King Johnisaking King Johnisaperson.
+Richard sleftlegisaking Richard sleftlegisaperson.
+John sleftlegisaking John sleftlegisaperson.
+Thecrownisaking thecrownisaperson.
+Let us look carefully at this set of assertions. Since, in our model, King John is the only
+king, the second sentence asserts that he is a person, as we would hope. But what about
+the other four sentences, which appear to make claims about legs and crowns? Is that part
+of the meaning of All kings are persons ? In fact, the other four assertions are true in the
+model, but make no claim whatsoever about the personhood qualifications of legs, crowns,
+orindeed Richard. Thisisbecause noneofthese objects isaking. Lookingatthetruthtable
+for (Figure 7.8 on page 246), we see that the implication is true whenever its premise is
+false regardless ofthetruthoftheconclusion. Thus,byasserting theuniversally quantified
+sentence, which is equivalent to asserting a whole list of individual implications, we end
+up asserting the conclusion of the rule just for those objects for whom the premise is true
+and saying nothing at all about those individuals for whom the premise is false. Thus, the
+truth-table definition of turns out to be perfect for writing general rules with universal
+quantifiers.
+Acommonmistake,madefrequently even

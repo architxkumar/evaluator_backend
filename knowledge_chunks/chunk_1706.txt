@@ -1,0 +1,34 @@
+tionordersismostlikelytoyieldpruning opportunities?
+(i) Lowestprobability first
+(ii) Highestprobability first
+(iii) Doesn tmakeanydifference
+5.21 Whichofthefollowingaretrueandwhicharefalse? Givebriefexplanations.
+a. Inafully observable, turn-taking, zero-sum gamebetween twoperfectly rational play-
+ers, itdoesnot helpthe firstplayer toknowwhatstrategy the second playerisusing thatis,whatmovethesecondplayerwillmake,giventhefirstplayer smove.
+b. In a partially observable, turn-taking, zero-sum game between two perfectly rational
+players, it does not help the first player to know what move the second player will
+make,giventhefirstplayer s move.
+c. Aperfectly rationalbackgammonagentneverloses.
+5.22 Considercarefullytheinterplayofchanceeventsandpartialinformationineachofthe
+gamesin Exercise5.4.
+a. Forwhichisthestandardexpectiminimaxmodelappropriate? Implementthealgorithm
+and run it in your game-playing agent, with appropriate modifications to the game-
+playingenvironment.
+b. Forwhichwouldtheschemedescribed in Exercise5.19beappropriate?
+c. Discusshowyoumightdealwiththefactthatinsomeofthegames,theplayers donot
+havethesameknowledgeofthecurrentstate.
+6
+CONSTRAINT
+SATISFACTION PROBLEMS
+Inwhichweseehowtreatingstatesasmorethanjustlittleblackboxesleadstothe
+inventionofarangeofpowerfulnewsearchmethodsandadeeperunderstanding
+ofproblem structureandcomplexity.
+Chapters 3 and 4 explored the idea that problems can be solved by searching in a space of
+states. Thesestatescanbeevaluated bydomain-specific heuristics andtestedtoseewhether
+they are goal states. From the point of view of the search algorithm, however, each state is
+atomic,orindivisible a blackboxwithnointernalstructure.
+This chapter describes away to solve a wide variety of problems more efficiently. We
+use a factored representation for each state: a set of variables, each of which has a value.
+A problem is solved when each variable has a value that satisfies all the constraints on the
+CONSTRAINT
+variable. Aproblem described 

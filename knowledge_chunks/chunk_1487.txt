@@ -1,0 +1,36 @@
+oninthesamewayasthereflexagent.
+is responsible forcreating the new internal state description. Thedetails of how models and
+states are represented vary widely depending on the type of environment and the particular
+technology used in the agent design. Detailed examples of models and updating algorithms
+appearin Chapters4,12,11,15,17,and25.
+Regardless of the kind of representation used, it is seldom possible for the agent to
+determine the current state of a partially observable environment exactly. Instead, the box
+labeled what the world is like now (Figure 2.11) represents the agent s best guess (or
+sometimes best guesses). Forexample, an automated taxi may not beable tosee around the
+large truck that has stopped in front of it and can only guess about what may be causing the
+hold-up. Thus,uncertainty aboutthecurrent statemaybeunavoidable, buttheagentstillhas
+tomakeadecision.
+A perhaps less obvious point about the internal state maintained by a model-based
+agent is that it does not have to describe what the world is like now in a literal sense. For
+52 Chapter 2. Intelligent Agents
+Agent
+Environment
+Sensors
+State
+What the world
+How the world evolves is like now
+What it will be like
+What my actions do if I do action A
+What action I
+Goals should do now
+Actuators
+Figure2.13 Amodel-based,goal-basedagent.Itkeepstrackoftheworldstateaswellas
+asetofgoalsitistryingtoachieve,andchoosesanactionthatwill(eventually)leadtothe
+achievementofitsgoals.
+example, the taxi may be driving back home, and it may have a rule telling it to fill up with
+gas on the way home unless it has at least half a tank. Although driving back home may
+seem toan aspect of theworld state, the fact ofthe taxi s destination isactually an aspect of
+the agent s internal state. Ifyou findthis puzzling, consider that the taxi could be in exactly
+thesameplaceatthesametime,butintending toreachadifferent destination.
+2.4.4 Goal-basedagents
+Knowingsomethingaboutthecurrentstateoftheenvironmentisnotalwaysenoughtodecide

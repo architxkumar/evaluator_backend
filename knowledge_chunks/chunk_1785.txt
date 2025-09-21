@@ -1,0 +1,38 @@
+essuchas P and P.
+Wecanapplytheresolutionproceduretoaverysimpleinferenceinthewumpusworld.
+Whentheagentisin 1,1 ,thereisnobreeze, sotherecanbenopitsinneighboring squares.
+Therelevantknowledgebaseis
+KB R R (B (P P )) B
+2 4 1,1 1,2 2,1 1,1
+and we wish to prove which is, say, P . When we convert (KB ) into CNF, we
+1,2
+obtain the clauses shown at the top of Figure 7.13. The second row of the figure shows
+clauses obtained by resolving pairs in the firstrow. Then, when P isresolved with P ,
+1,2 1,2
+we obtain the empty clause, shown as a small square. Inspection of Figure 7.13 reveals that
+manyresolutionstepsarepointless. Forexample,theclause B B P isequivalent
+1,1 1,1 1,2
+to True P which is equivalent to True. Deducing that True is true is not very helpful.
+1,2
+Therefore, anyclauseinwhichtwocomplementary literalsappearcanbediscarded.
+Section7.5. Propositional Theorem Proving 255
+function PL-RESOLUTION(KB, )returnstrue orfalse
+inputs:KB,theknowledgebase,asentenceinpropositionallogic ,thequery,asentenceinpropositionallogic
+clauses thesetofclausesinthe CN Frepresentationof KB new loopdo
+foreachpairofclauses Ci,Cj inclauses do
+resolvents PL-RESOLVE(Ci,Cj)
+ifresolvents containstheemptyclausethenreturntrue
+new new resolvents
+ifnew clauses thenreturnfalse
+clauses clauses new
+Figure 7.12 A simple resolution algorithm for propositional logic. The function
+PL-RESOLV Ereturnsthesetofallpossibleclausesobtainedbyresolvingitstwoinputs. P B B P P P B B P
+2,1 1,1 1,1 1,2 2,1 1,2 1,1 1,1 1,2 B P B P P P B P B P P P P P
+1,1 1,2 1,1 1,2 2,1 2,1 1,1 2,1 1,1 1,2 2,1 1,2 2,1 1,2
+Figure7.13 Partialapplicationof PL-RESOLUTIO Ntoasimpleinferenceinthewumpus
+world. P 1,2 isshowntofollowfromthefirstfourclausesinthetoprow.
+Completenessofresolution
+Toconclude ourdiscussion of resolution, wenow show why PL-RESOLUTION iscomplete.
+RESOLUTION Todothis,weintroducetheresolutionclosure RC(S)ofasetofclauses S,whichistheset
+CLOSURE
+of all clauses derivable by repeated application of the resolution rule to claus

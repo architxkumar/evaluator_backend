@@ -1,0 +1,29 @@
+d down to depth 2 (i.e., one X
+andone Oontheboard),takingsymmetryintoaccount.
+c. Markonyourtreetheevaluations ofallthepositions atdepth2.
+d. Usingtheminimaxalgorithm,markonyourtreethebacked-up valuesforthepositions
+atdepths1and0,andusethosevaluestochoosethebeststartingmove.
+e. Circle the nodes at depth 2 that would not be evaluated if alpha beta pruning were
+applied, assumingthenodesaregenerated intheoptimalorderforalpha beta pruning.
+5.10 Considerthefamilyofgeneralized tic-tac-toe games,definedasfollows. Eachpartic-
+ular game is specified by a set S of squares and a collection W of winning positions. Each
+winningpositionisasubsetof S. Forexample,instandardtic-tac-toe, S isasetof9squares
+and W isacollectionof8subsetsof W: thethreerows,thethreecolumns,andthetwodiag-
+onals. Inotherrespects, thegameisidentical tostandard tic-tac-toe. Startingfromanempty
+board, players alternate placing their marks on an empty square. A player who marks every
+square in a winning position wins the game. It is a tie if all squares are marked and neither
+playerhaswon.
+a. Let N S , the number of squares. Give an upper bound on the number of nodes in
+thecompletegametreeforgeneralized tic-tac-toe asafunction of N.
+b. Givealowerboundonthesizeofthegametreefortheworstcase,where W .
+c. Proposeaplausibleevaluationfunctionthatcanbeusedforanyinstanceofgeneralized
+tic-tac-toe. Thefunction maydependon S and W.
+d. Assume that it is possible to generate a new board and check whether it is a winning
+position in 100N machine instructions and assume a 2 gigahertz processor. Ignore
+memory limitations. Using your estimate in (a), roughly how large agame tree can be
+completelysolvedbyalpha beta inasecondof CP Utime? aminute? anhour?
+5.11 Developageneralgame-playing program,capableofplaying avarietyofgames.
+a. Implement move generators and evaluation functions forone ormore of the following
+games: Kalah,Othello, checkers, andchess.
+b. Constructageneralalpha beta game-playing agent.
+c. Compare theeffect ofincre

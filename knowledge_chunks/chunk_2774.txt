@@ -1,0 +1,28 @@
+nslation f
+anddistortion d. Buttofindthebestf anddwecan t justenumerate sentences; withmaybe
+100 French phrases for each English phrase in the corpus, there are 1005 different 5-phrase
+translations, and5!reorderings foreachofthose. Wewillhavetosearchforagoodsolution.
+A local beam search (see page 125) with a heuristic that estimates probability has proven
+effectiveatfindinganearly-most-probable translation.
+Allthat remains is to learn the phrasal and distortion probabilities. Wesketch the pro-
+cedure;seethenotesattheendofthechapterfordetails.
+1. Findparalleltexts: First,gatheraparallelbilingual corpus. Forexample,a Hansard9
+HANSARD
+is a record of parliamentary debate. Canada, Hong Kong, and other countries pro-
+duce bilingual Hansards, the European Union publishes its official documents in 11
+languages, and the United Nations publishes multilingual documents. Bilingual text is
+also available online; some Web sites publish parallel content with parallel UR Ls, for
+9 Namedafter William Hansard,whofirstpublishedthe Britishparliamentarydebatesin1811.
+912 Chapter 23. Natural Languagefor Communication
+example, en forthe Englishpageand fr forthecorresponding Frenchpage. The
+leadingstatistical translation systemstrainonhundreds ofmillionsofwordsofparallel
+textandbillions ofwordsofmonolingual text.
+2. Segmentintosentences: Theunitoftranslation isasentence,sowewillhavetobreak
+the corpus into sentences. Periods are strong indicators of the end of a sentence, but
+consider Dr. J. R. Smith of Rodeo Dr. paid 29.99 on 9.9.09. ; only the final period
+ends a sentence. One way to decide if a period ends a sentence is to train a model
+that takes as features the surrounding words and their parts of speech. This approach
+achievesabout98 accuracy.
+3. Alignsentences: Foreachsentence inthe Englishversion,determine whatsentence(s)
+it corresponds to in the French version. Usually, the next sentence of English corre-
+sponds tothe nextsentence of French ina1:1 match, but sometimes there isvaria

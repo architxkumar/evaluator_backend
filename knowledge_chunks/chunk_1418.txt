@@ -1,0 +1,24 @@
+xtremely large problem instance! Work in AI has helped explain why some instances of
+NP-completeproblems arehard,yetothersareeasy(Cheesemanetal.,1991).
+Besideslogicandcomputation, thethirdgreatcontribution ofmathematics to AIisthe
+theory of probability. The Italian Gerolamo Cardano (1501 1576) first framed the idea of
+PROBABILITY
+probability, describing it in terms of the possible outcomes of gambling events. In 1654,
+Blaise Pascal (1623 1662), in a letter to Pierre Fermat (1601 1665), showed how to pre-
+dict the future of an unfinished gambling game and assign average payoffs to the gamblers.
+Probabilityquicklybecameaninvaluable partofallthequantitative sciences, helpingtodeal
+withuncertain measurements and incomplete theories. James Bernoulli (1654 1705), Pierre
+Laplace (1749 1827), and others advanced the theory and introduced new statistical meth-
+ods. Thomas Bayes (1702 1761), who appears on the front cover of this book, proposed
+a rule for updating probabilities in the light of new evidence. Bayes rule underlies most
+modernapproaches touncertain reasoning in AIsystems.
+1.2.3 Economics Howshouldwemakedecisions soastomaximizepayoff? Howshouldwedothiswhenothersmaynotgoalong? Howshouldwedothiswhenthepayoffmaybefarinthefuture?
+The science of economics got its start in 1776, when Scottish philosopher Adam Smith
+(1723 1790) published An Inquiry into the Nature and Causes of the Wealth of Nations.
+Whiletheancient Greeksandothershadmadecontributions toeconomicthought,Smithwas
+the first to treat it as a science, using the idea that economies can be thought of as consist-
+ing of individual agents maximizing their own economic well-being. Most people think of
+economics as being about money, but economists will say that they are really studying how
+people makechoices thatleadtopreferred outcomes. When Mc Donald s offersahamburger
+foradollar,theyareassertingthattheywouldpreferthedollarandhopingthatcustomerswill
+prefer the hamburger. The mathematical treatment of preferred o

@@ -1,0 +1,36 @@
+edynamicstateofarobotincludesthese
+KINEMATICSTATE
+sixplusanadditionalsixdimensionsfortherateofchangeofeachkinematicdimension,that
+POSE
+is,theirvelocities.
+DYNAMICSTATE
+Fornonrigidbodies,thereareadditional degreesoffreedomwithintherobotitself. For
+example, the elbow of a human arm possesses two degree of freedom. It can flex the upper
+arm towards oraway, and can rotate right orleft. Thewrist has three degrees offreedom. It
+can move up and down, side to side, and can also rotate. Robot joints also have one, two,
+or three degrees of freedom each. Six degrees of freedom are required to place an object,
+such as a hand, at a particular point in a particular orientation. The arm in Figure 25.4(a)
+2 Kinematic isfromthe Greekwordformotion,asis cinema. 976 Chapter 25. Robotics
+has exactly six degrees of freedom, created by five revolute joints that generate rotational
+REVOLUTEJOINT
+motionandoneprismaticjointthatgeneratesslidingmotion. Youcanverifythatthehuman
+PRISMATICJOINT
+armasawholehasmorethansixdegreesoffreedom byasimpleexperiment: putyourhand
+onthetableandnoticethatyoustillhavethefreedom torotateyourelbowwithoutchanging
+theconfigurationofyourhand. Manipulators thathaveextra degreesoffreedomareeasierto
+control than robots with only the minimum number of DO Fs. Many industrial manipulators
+therefore haveseven DO Fs,notsix.
+P
+R R
+R R R
+(x, y)
+(a) (b)
+Figure25.4 (a)The Stanford Manipulator,anearlyrobotarmwithfiverevolutejoints(R)
+andoneprismaticjoint(P),foratotalofsix degreesoffreedom. (b)Motionofa nonholo-
+nomicfour-wheeledvehiclewithfront-wheelsteering.
+Formobilerobots,the DO Fsarenotnecessarilythesameasthenumberofactuatedele-
+ments. Consider,forexample,youraveragecar: itcanmoveforwardorbackward,anditcan
+turn, giving it two DO Fs. In contrast, a car s kinematic configuration is three-dimensional:
+onanopenflatsurface, onecaneasily maneuveracartoany (x,y)point, inanyorientation.
+(See Figure 25.4(b).) Thus, the carhasthree effective degrees of freedom but twocontrol-
+EFFECTIV

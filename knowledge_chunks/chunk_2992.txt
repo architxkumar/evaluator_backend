@@ -1,0 +1,32 @@
+e those by Knuth (1973)
+and Aho, Hopcroft, and Ullman (1974); more recent contributions are by Tarjan (1983) and
+Cormen, Leiserson, and Rivest (1990). These books place an emphasis on designing and
+analyzing algorithms to solve tractable problems. For the theory of NP-completeness and
+other forms of intractability, see Garey and Johnson (1979) or Papadimitriou (1994). Good
+textsonprobability include Chung(1979), Ross(1988), and Bertsekasand Tsitsiklis (2008).
+B
+NOTES ON LANGUAGES
+AND ALGORITHMS
+B.1 DEFINING LANGUAGES WITH BACKUS NAUR FORM (BNF)
+In this book, we define several languages, including the languages of propositional logic
+(page 243), first-order logic (page 293), and a subset of English (page 899). A formal lan-
+guageisdefinedasasetofstringswhereeachstringisasequenceofsymbols. Thelanguages
+weare interested inconsist of aninfinite set of strings, soweneed a concise way tocharac-
+terizetheset. Wedothatwithagrammar. Theparticulartypeofgrammarweuseiscalleda
+CONTEXT-FREE context-freegrammar,becauseeachexpressionhasthesameforminanycontext. Wewrite
+GRAMMAR
+BACKUS NAUR ourgrammarsinaformalism called Backus Naurform(BNF).Therearefourcomponents
+FORM(BNF)
+toa BN Fgrammar: Asetofterminalsymbols. Thesearethesymbolsorwordsthatmakeupthestringsof
+TERMINALSYMBOL
+thelanguage. Theycouldbeletters(A,B,C,...)orwords(a,aardvark,abacus,...),
+orwhateversymbolsareappropriate forthedomain.
+NONTERMINAL A set of nonterminal symbols that categorize subphrases of the language. Forexam-
+SYMBOL
+ple, the nonterminal symbol Noun Phrase in English denotes an infinite set of strings
+including you and thebigslobberydog. A start symbol, which is the nonterminal symbol that denotes the complete set of
+STARTSYMBOL
+strings of the language. In English, this is Sentence; forarithmetic, it might be Expr,
+andforprogramming languages itis Program. A set of rewrite rules, of the form LHS RHS, where LHS is a nonterminal
+symboland RHS isasequence ofzero ormoresymbols. These canbeeitherterminal
+ornontermi

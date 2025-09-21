@@ -1,0 +1,22 @@
+ess. tialreasoninginlarge Bayesiannetworks.JAIR,13,
+155 188. Clarke,A.C.(1968b).Theworldof2001.Vogue.
+Castro,R.,Coates,M.,Liang,G.,Nowak,R.,and
+Yu,B.(2004). Networktomography:Recentdevel- Cheng,J.,Greiner,R.,Kelly,J.,Bell,D.A.,and Clarke,E.and Grumberg,O.(1987). Researchon
+opments.Statistical Science,19(3),499 517. Liu,W.(2002). Learning Bayesiannetworksfrom automaticverificationoffinite-stateconcurrentsys-
+data: Aninformation-theorybasedapproach. AIJ, tems. Annual Reviewof Computer Science,2,269 Cesa-Bianchi,N.and Lugosi,G.(2006).Prediction, 137,43 90. 290.
+learning,and Games.Cambridge University Press.
+Chklovski, T.and Gil, Y.(2005). Improvingthe Clarke,M.R.B.(Ed.).(1977). Advancesin Com-
+Cesta,A.,Cortellessa,G.,Denis,M.,Donati,A., designofintelligentacquisitioninterfacesforcol- puter Chess1.Edinburgh University Press.
+Fratini,S.,Oddi,A.,Policella,N.,Rabenau,E.,and lectingworldknowledgefromwebcontributors. In Clearwater,S.H.(Ed.).(1996).Market-Based Con-
+Schulster,J.(2007). MEXAR2:AIsolvesmission Proc.Third International Conferenceon Knowledge trol.World Scientific.
+plannerproblems. IEEE Intelligent Systems,22(4), Capture(K-CAP).
+12 19. Clocksin,W.F.and Mellish,C.S.(2003).Program-
+Chomsky,N.(1956).Threemodelsforthedescrip- mingin Prolog(5thedition).Springer-Verlag.
+Chakrabarti, P. P., Ghose, S., Acharya, A., and tionoflanguage. IRE Transactionson Information
+de Sarkar,S.C.(1989).Heuristicsearchinrestricted Theory,2(3),113 124. Clocksin, W.F.(2003). Clauseand Effect: Pro-
+memory.AIJ,41(2),197 222. log Programming for the Working Programmer.
+Chomsky,N.(1957).Syntactic Structures.Mouton. Springer.
+Chandra,A.K.and Harel,D.(1980). Computable
+queriesforrelationaldatabases. J.Computerand Choset,H.(1996). Sensor Based Motion Planning: Coarfa,C.,Demopoulos,D.,Aguirre,A.,Subrama-
+System Sciences,21(2),156 178. The Hierarchical Generalized Voronoi Graph.Ph.D. nian,D.,and Yardi,M.(2003).Random3-SAT:The
+thesis,California Instituteof Technology. plotthickens.Constraints,8(3),24

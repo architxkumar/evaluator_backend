@@ -1,0 +1,28 @@
+ratingthrough theprocess.
+5. Encode a description of the specific problem instance. If the ontology is well thought
+out, this step will be easy. It will involve writing simple atomic sentences about in-
+stances of concepts that are already part of the ontology. Fora logical agent, problem
+instancesaresuppliedbythesensors,whereasa disembodied knowledgebaseissup-
+plied with additional sentences in the same way that traditional programs are supplied
+withinputdata.
+6. Pose queries to the inference procedure and get answers. This is where the reward is:
+wecanlettheinference procedure operate ontheaxiomsandproblem-specific factsto
+derive the facts we are interested in knowing. Thus, we avoid the need for writing an
+application-specific solution algorithm.
+7. Debug the knowledge base. Alas, the answers to queries will seldom be correct on
+the first try. More precisely, the answers will be correct for the knowledge base as
+written, assuming that the inference procedure is sound, but they will not be the ones
+thattheuserisexpecting. Forexample,ifanaxiomismissing,somequerieswillnotbe
+answerable from the knowledge base. A considerable debugging process could ensue.
+Missingaxiomsoraxiomsthataretooweakcanbeeasily identifiedbynoticing places
+where the chain of reasoning stops unexpectedly. For example, if the knowledge base
+includesadiagnostic rule(see Exercise8.13)forfindingthewumpus, s Smelly(s) Adjacent(Home(Wumpus),s),
+instead of the biconditional, then the agent will never be able to prove the absence of
+wumpuses. Incorrect axioms can be identified because they are false statements about
+theworld. Forexample,thesentence x Num Of Legs(x,4) Mammal(x)
+is false for reptiles, amphibians, and, more importantly, tables. The falsehood of this
+sentencecanbedeterminedindependentlyoftherestoftheknowledgebase. Incontrast,
+Section8.4. Knowledge Engineering in First-Order Logic 309
+atypicalerrorinaprogramlookslikethis:
+offset position 1.
+Itisimpossibletotellwhetherthisstatementiscorrectwi

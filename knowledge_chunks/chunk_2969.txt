@@ -1,0 +1,39 @@
+vior should satisfy, and the
+nature of the environment. A variety of different agent designs are possible, ranging from
+reflex agents to fully deliberative, knowledge-based, decision-theoretic agents. Moreover,
+thecomponentsofthesedesignscanhaveanumberofdifferentinstantiations for example,
+logicalorprobabilisticreasoning,andatomic,factored, orstructuredrepresentationsofstates.
+Theintervening chapterspresented theprinciples bywhich thesecomponents operate.
+Forall the agent designs and components, there has been tremendous progress both in
+our scientific understanding and in our technological capabilities. In this chapter, we stand
+back from the details and ask, Will all this progress lead to a general-purpose intelligent
+agent that can perform well in a wide variety of environments? Section 27.1 looks at the
+components ofanintelligent agent toassess what s knownandwhat smissing. Section 27.2
+doesthesamefortheoverallagentarchitecture. Section27.3askswhetherdesigningrational
+agents is the right goal in the first place. (The answer is, Not really, but it s OK for now. )
+Finally,Section27.4examinestheconsequences ofsuccessinourendeavors.
+27.1 AGENT COMPONENTS
+Chapter 2 presented several agent designs and their components. To focus our discussion
+here, wewilllook attheutility-based agent, whichweshow againin Figure 27.1. Whenen-
+dowedwithalearningcomponent(Figure2.15),thisisthemostgeneralofouragentdesigns.
+Let sseewherethestateoftheartstandsforeachofthecomponents.
+Interaction with the environment through sensors and actuators: For much of the
+history of AI, this has been a glaring weak point. With a few honorable exceptions, AI sys-
+temswerebuiltinsuchawaythathumanshadtosupplytheinputsandinterpret theoutputs,
+1044
+Section27.1. Agent Components 1045
+Agent
+Environment
+Sensors
+State
+What the world
+How the world evolves is like now
+What it will be like
+What my actions do if I do action A
+How happy I will be
+Utility
+in such a state
+What action I
+should do now
+Actuators
+Figure2

@@ -1,0 +1,29 @@
+redictability of these
+other agents can introduce contingencies into the agent s problem-solving process, as dis-
+cussedin Chapter4. Inthischapterwecovercompetitiveenvironments,inwhichtheagents goalsareinconflict,givingrisetoadversarial search problems often knownasgames.
+GAME
+Mathematicalgametheory,abranchofeconomics,viewsanymultiagentenvironment
+as a game, provided that the impact of each agent on the others is significant, regardless
+of whether the agents are cooperative or competitive.1 In AI, the most common games are
+ofaratherspecialized kind whatgametheorists calldeterministic, turn-taking, two-player,
+zero-sum games of perfect information (such as chess). In our terminology, this means
+ZERO-SUMGAMES
+PERFECT deterministic,fullyobservableenvironmentsinwhichtwoagentsactalternatelyandinwhich
+INFORMATION
+the utility values at the end of the game are always equal and opposite. Forexample, if one
+playerwinsagameofchess, theotherplayernecessarily loses. Itisthisopposition between
+theagents utilityfunctions thatmakesthesituation adversarial.
+Games have engaged the intellectual faculties of humans sometimes to an alarming
+degree for as long as civilization has existed. For AI researchers, the abstract nature of
+games makes them an appealing subject for study. The state of a game is easy to represent,
+andagentsareusuallyrestrictedtoasmallnumberofactionswhoseoutcomesaredefinedby
+precise rules. Physicalgames,such ascroquet andicehockey, havemuchmorecomplicated
+descriptions, a much larger range of possible actions, and rather imprecise rules defining
+the legality of actions. With the exception of robot soccer, these physical games have not
+attracted muchinterest inthe AIcommunity.
+1 Environmentswithverymanyagentsareoftenviewedaseconomiesratherthangames.
+161
+162 Chapter 5. Adversarial Search
+Games, unlike most of the toy problems studied in Chapter 3, are interesting because
+they are too hard to solve. For example, chess has an average branching factor of about 35,
+and gam

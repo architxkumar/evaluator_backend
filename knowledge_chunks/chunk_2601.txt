@@ -1,0 +1,20 @@
+ating otherwise consistent hypotheses andby
+798 Chapter 19. Knowledgein Learning fillingin theexplanationofexamples,therebyallowingforshorterhypotheses. These
+contributions oftenresultinfasterlearningfromfewerexamples. Understanding the different logical roles played by prior knowledge, as expressed by
+entailmentconstraints, helpstodefineavarietyoflearningtechniques. Explanation-basedlearning(EBL)extractsgeneralrulesfromsingleexamplesby ex-
+plainingtheexamplesandgeneralizingtheexplanation. Itprovides adeductivemethod
+forturning first-principles knowledgeintouseful, efficient,special-purpose expertise. Relevance-based learning(RBL)uses priorknowledge in the form of determinations
+to identify the relevant attributes, thereby generating a reduced hypothesis space and
+speedinguplearning. RB Lalsoallowsdeductivegeneralizationsfromsingleexamples. Knowledge-based inductive learning (KBIL)finds inductive hypotheses that explain
+setsofobservations withthehelpofbackground knowledge. Inductive logic programming (ILP) techniques perform KBIL on knowledge that is
+expressed in first-order logic. ILP methods can learn relational knowledge that is not
+expressible inattribute-based systems. IL Pcanbedone withatop-down approach ofrefining averygeneral rule orthrough a
+bottom-upapproach ofinverting thedeductive process. IL Pmethodsnaturallygeneratenewpredicates withwhichconcisenewtheoriescanbe
+expressedandshowpromiseasgeneral-purpose scientifictheoryformationsystems.
+BIBLIOGRAPHICAL AND HISTORICAL NOTES
+Althoughtheuseofpriorknowledgeinlearningwouldseemtobeanaturaltopicforphiloso-
+phersofscience,littleformalworkwasdoneuntilquiterecently. Fact,Fiction,and Forecast,
+by the philosopher Nelson Goodman (1954), refuted the earlier supposition that induction
+was simply a matter of seeing enough examples of some universally quantified proposition
+andthenadoptingitasahypothesis. Consider, forexample, thehypothesis Allemeraldsare
+grue, where grue means green if observed before time t, but blue i

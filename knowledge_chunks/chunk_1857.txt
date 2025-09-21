@@ -1,0 +1,26 @@
+ofproperties thateveryperson
+hasandproperties thatmakesomething aperson: x Person(x) ... x ... Person(x).
+Axioms can also be just plain facts, such as Male(Jim) and Spouse(Jim,Laura).
+Such facts form the descriptions of specific problem instances, enabling specific questions
+to be answered. The answers to these questions will then be theorems that follow from
+the axioms. Often, one finds that the expected answers are not forthcoming for example,
+from Spouse(Jim,Laura)oneexpects(underthelawsofmanycountries)tobeabletoinfer Spouse(George,Laura);butthisdoesnotfollowfromtheaxiomsgivenearlier evenafter
+weadd Jim (cid:7) George assuggested in Section8.2.8. Thisisasignthatanaxiomismissing.
+Exercise8.8asksthereadertosupplyit.
+8.3.3 Numbers, sets,and lists
+Numbers are perhaps the most vivid example of how a large theory can be built up from
+a tiny kernel of axioms. We describe here the theory of natural numbers or non-negative
+NATURALNUMBERS
+integers. We need a predicate Nat Num that will be true of natural numbers; we need one
+constant symbol, 0; and we need one function symbol, S (successor). The Peano axioms
+PEANOAXIOMS
+definenaturalnumbersandaddition.9 Naturalnumbersaredefinedrecursively:
+Nat Num(0). n Nat Num(n) Nat Num(S(n)).
+That is, 0 is a natural number, and for every object n, if n is a natural number, then S(n) is
+a natural number. So the natural numbers are 0, S(0), S(S(0)), and so on. (After reading
+Section 8.2.8, you will notice that these axioms allow for other natural numbers besides the
+usualones;see Exercise8.12.) Wealsoneedaxiomstoconstrain thesuccessorfunction: n 0 (cid:7) S(n). m,n m (cid:7) n S(m)(cid:7) S(n).
+Nowwecandefineadditionintermsofthesuccessorfunction: m Nat Num(m) (0,m) m. m,n Nat Num(m) Nat Num(n) (S(m),n) S( (m,n)).
+The first of these axioms says that adding 0 to any natural number m gives m itself. Notice
+theuseofthebinaryfunctionsymbol intheterm (m,0);inordinary mathematics, the
+termwouldbewritten m 0usinginfixnotation. (Thenotationwehaveu

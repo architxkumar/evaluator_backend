@@ -1,0 +1,33 @@
+ n
+p p k k n n k k .
+k k
+p n p n
+Aconvenient measureofthetotaldeviation isgivenby
+(cid:12)d (p p )2 (n n )2
+k k k k .
+p n k k
+k 1
+Under the null hypothesis, the value of is distributed according to the 2 (chi-squared)
+distribution with v 1 degrees of freedom. We can use a 2 table or a standard statistical
+library routine to see if a particular value confirms or rejects the null hypothesis. For
+example, consider the restaurant type attribute, with four values and thus three degrees of
+freedom. Avalueof 7.82ormorewouldrejectthenullhypothesisatthe5 level(anda
+valueof 11.35ormorewouldrejectatthe1 level). Exercise18.8asksyoutoextendthe
+DECISION-TREE-LEARNING algorithm toimplement this form of pruning, which is known 2 as 2 pruning.
+PRUNING
+Withpruning,noiseintheexamplescanbetolerated. Errorsintheexample slabel(e.g.,
+anexample(x,Yes)thatshouldbe(x,No))givealinearincreaseinpredictionerror,whereas
+errorsinthedescriptions ofexamples(e.g., Price whenitwasactually Price )have
+an asymptotic effect that gets worse as the tree shrinks down to smaller sets. Pruned trees
+perform significantly better than unpruned trees when the data contain a large amount of
+noise. Also,theprunedtreesareoftenmuchsmallerandhenceeasiertounderstand.
+Onefinalwarning: Youmightthink that 2 pruning andinformation gainlooksimilar,
+so why not combine them using an approach called early stopping have the decision tree
+EARLYSTOPPING
+algorithm stopgenerating nodeswhenthereisnogoodattribute tospliton,ratherthangoing
+to all the trouble of generating nodes and then pruning them away. The problem with early
+stopping is that it stops us from recognizing situations where there is no one good attribute,
+buttherearecombinations ofattributes thatareinformative. Forexample,considerthe XOR
+function of twobinary attributes. If there are roughly equal numberof examples forallfour
+combinations of input values, then neither attribute willbeinformative, yet thecorrect thing
+todo istosplit onone ofthe attributes (it doesn t ma

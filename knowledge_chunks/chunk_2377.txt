@@ -1,0 +1,32 @@
+nt
+heads directly away from the 1 state so that it cannot fall in by accident, even though this
+means banging its head against the wall quite a few times. Finally, if R(s) 0, then life is
+positively enjoyable and the agent avoids both exits. As long as the actions in (4,1), (3,2),
+1 Somedefinitionsof MD Psallowtherewardtodependontheactionandoutcometoo,sotherewardfunction
+is R(s,a,s(cid:3)). This simplifies the description of some environments but does not change the problem in any
+fundamentalway,asshownin Exercise17.4.
+648 Chapter 17. Making Complex Decisions 1 1 1 1
+3 1
+R(s) 1.6284 0.4278 R(s) 0.0850
+2 1 1 1
+1 1 1
+1 2 3 4 0.0221 R(s) 0 R(s) 0
+(a) (b)
+Figure17.2 (a)Anoptimalpolicyforthestochasticenvironmentwith R(s) 0.04in
+thenonterminalstates. (b)Optimalpoliciesforfourdifferentrangesof R(s).
+and(3,3)areasshown,everypolicyisoptimal,andtheagent obtainsinfinitetotalrewardbe-
+causeitneverentersaterminalstate. Surprisingly, itturnsoutthattherearesixotheroptimal
+policies forvariousrangesof R(s);Exercise17.5asksyoutofindthem.
+The careful balancing of risk and reward is a characteristic of MD Ps that does not
+arise in deterministic search problems; moreover, it is a characteristic of many real-world
+decision problems. For this reason, MD Ps have been studied in several fields, including
+AI, operations research, economics, and control theory. Dozens of algorithms have been
+proposed for calculating optimal policies. In sections 17.2 and 17.3 we describe two of the
+most important algorithm families. First, however, we must complete our investigation of
+utilities andpoliciesforsequential decision problems.
+17.1.1 Utilitiesovertime
+Inthe MD Pexamplein Figure17.1,theperformance oftheagentwasmeasuredbyasumof
+rewards for the states visited. This choice of performance measure is not arbitrary, but it is
+not the only possibility for the utility function on environment histories, which we write as
+U ( s ,s ,...,s ). Ouranalysisdrawsonmultiattributeutilitytheory(Section16.4)and
+h 0 1 

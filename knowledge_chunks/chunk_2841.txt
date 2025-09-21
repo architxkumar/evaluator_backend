@@ -1,0 +1,26 @@
+otionblur. Figurefrom Ramananetal.(2007)(cid:2)c IEEE.
+There are several ways to infer a good appearance model. We regard the video as a
+large stack of pictures of the person we wish to track. We can exploit this stack by looking
+for appearance models that explain many of the pictures. This would work by detecting
+bodysegmentsineachframe,usingthefactthatsegmentshaveroughly paralleledges. Such
+detectors are not particularly reliable, but the segments we want to find are special. They
+will appear at least once in most of the frames of video; such segments can be found by
+clustering the detector responses. It is best to start with the torso, because it is big and
+because torso detectors tend to be reliable. Once we have a torso appearance model, upper
+leg segments should appear near the torso, and so on. This reasoning yields an appearance
+model, but it can be unreliable if people appear against a near-fixed background where the
+segment detector generates lots of false positives. An alternative is to estimate appearance
+formanyoftheframesofvideobyrepeatedlyreestimatingconfigurationandappearance; we
+then see if one appearance model explains manyframes. Another alternative, which isquite
+Section24.6. Using Vision 961
+Figure 24.25 Some complex human actions produce consistent patterns of appearance
+andmotion.Forexample,drinkinginvolvesmovementsofthehandinfrontoftheface. The
+firstthreeimagesarecorrectdetectionsofdrinking;thefourthisafalse-positive(thecookis
+lookingintothecoffeepot,butnotdrinkingfromit). Figurefrom Laptevand Perez(2007)
+(cid:2)c IEEE.
+reliableinpractice,istoapplyadetectorforafixedbodyconfigurationtoalloftheframes. A
+goodchoiceofconfiguration isonethatiseasytodetectreliably, andwherethereisastrong
+chance theperson willappearinthat configuration even inashort sequence (lateral walking
+isagoodchoice). Wetunethedetector tohavealowfalsepositive rate,soweknowwhenit
+responds that we have found a real person; and because wehave localized their torso, arms,
+legs,and

@@ -1,0 +1,34 @@
+andledbytheportof Honolulu in1991.
+e. Annualsalaryindollarsofthegovernorof California in1993.
+f. Populationof San Diegoin1990.
+g. Yearinwhich Roger Williamsfounded Providence, Rhode Island.
+h. Heightof Mt.Kilimanjaroinfeet.
+i. Lengthofthe Brooklyn Bridgeinfeet.
+j. Numberofdeathsduetoautomobile accidents inthe United Statesin1992.
+Exercises 641
+16.2 Chris considers four used cars before buying the one withmaximum expected utility.
+Pat considers ten cars and does the same. All other things being equal, which one is more
+likelytohavethebettercar? Whichismorelikelytobedisappointedwiththeircar squality?
+Byhowmuch(intermsofstandard deviations ofexpectedquality)?
+16.3 In 1713, Nicolas Bernoulli stated a puzzle, now called the St. Petersburg paradox,
+which works as follows. You have the opportunity to play a game in which a fair coin is
+tossed repeatedly until it comesup heads. Ifthefirstheads appears on thenthtoss, you win
+2n dollars.
+a. Showthattheexpectedmonetary valueofthisgameisinfinite.
+b. Howmuchwouldyou,personally, paytoplaythegame?
+c. Nicolas scousin Daniel Bernoulliresolvedtheapparentparadoxin1738bysuggesting
+thattheutilityofmoneyismeasuredonalogarithmicscale(i.e.,U(S ) alog n b,
+n 2
+where S isthestateofhaving n). Whatistheexpectedutilityofthegameunderthis
+n
+assumption?
+d. Whatisthemaximumamountthatitwouldberationaltopaytoplaythegame,assum-
+ingthatone sinitialwealthis k?
+16.4 Write a computer program to automate the process in Exercise 16.9. Try your pro-
+gram out on several people of different net worth and political outlook. Comment on the
+consistency ofyourresults, bothforanindividual andacrossindividuals.
+16.5 The Surprise Candy Company makes candy in two flavors: 70 are strawberry fla-
+vor and 30 are anchovy flavor. Each new piece of candy starts out with a round shape;
+as it moves along the production line, a machine randomly selects a certain percentage to
+be trimmed into a square; then, each piece is wrapped in a wrapper whose color is chosen
+randomly to b

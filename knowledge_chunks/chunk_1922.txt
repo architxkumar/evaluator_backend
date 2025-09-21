@@ -1,0 +1,30 @@
+nlysucceedafterthevariableshave
+beenstandardizedapart.
+350 Chapter 9. Inference in First-Order Logic
+Theproofanswersthequestion Did Curiosity killthecat? butoftenwewanttoposemore
+general questions, such as Who killed the cat? Resolution can do this, but it takes a little
+more work to obtain the answer. The goal is w Kills(w,Tuna), which, when negated,
+becomes Kills(w,Tuna)in CNF.Repeatingtheproofin Figure9.12withthenewnegated
+goal, we obtain a similar proof tree, but with the substitution w Curiosity in one of the
+steps. So, in this case, finding out who killed the cat is just a matter of keeping track of the
+bindings forthequeryvariables intheproof.
+NONCONSTRUCTIVE Unfortunately, resolution can produce nonconstructive proofs for existential goals.
+PROOF
+Forexample, Kills(w,Tuna)resolves with Kills(Jack,Tuna) Kills(Curiosity,Tuna)
+to give Kills(Jack,Tuna), which resolves again with Kills(w,Tuna) to yield the empty
+clause. Notice that w has two different bindings in this proof; resolution is telling us that,
+yes, someone killed Tuna either Jack or Curiosity. This is no great surprise! One so-
+lution is to restrict the allowed resolution steps so that the query variables can be bound
+only once in a given proof; then we need to be able to backtrack over the possible bind-
+ings. Another solution is to add a special answer literal to the negated goal, which be-
+ANSWERLITERAL
+comes Kills(w,Tuna) Answer(w). Now, the resolution process generates an answer
+whenever a clause is generated containing just a single answer literal. Forthe proof in Fig-
+ure 9.12, this is Answer(Curiosity). The nonconstructive proof would generate the clause
+Answer(Curiosity) Answer(Jack),whichdoesnotconstitute ananswer.
+9.5.4 Completeness ofresolution
+Thissection givesacompleteness proof ofresolution. Itcanbesafely skipped bythosewho
+arewillingtotakeitonfaith.
+REFUTATION Weshowthatresolution isrefutation-complete, whichmeansthatifasetofsentences
+COMPLETENESS
+is unsatisfiable, then resolution will 

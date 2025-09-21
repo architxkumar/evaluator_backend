@@ -1,0 +1,27 @@
+seems that getting stuck in
+localmaximaisasevereproblem. Alternativessuchassimulatedannealing cangetcloserto
+the global maximum, at a cost of even more computation. Lari and Young (1990) conclude
+thatinside outside is computationally intractable forrealisticproblems. However,progress canbemadeifwearewillingtostepoutsidetheboundsoflearning
+solelyfromunparsedtext. Oneapproachistolearnfrom prototypes: toseedtheprocesswith
+adozenortworules,similartotherulesin E . Fromthere,morecomplexrulescanbelearned
+1
+moreeasily,andtheresultinggrammarparses Englishwithanoverallrecallandprecisionfor
+sentences of about 80 (Haghighi and Klein, 2006). Another approach is to use treebanks,
+butinadditiontolearning PCF Grulesdirectlyfromthebracketings,alsolearningdistinctions
+thatarenotinthetreebank. Forexample,notthatthetreein Figure23.6makesthedistinction
+between NP and NP SBJ. The latter is used for the pronoun she, the former for the
+pronoun her. We will explore this issue in Section 23.6; for now let us just say that there
+aremanywaysinwhich itwouldbe useful to splitacategory like NP grammarinduction
+systems that use treebanks but automatically split categories do better than those that stick
+with the original category set (Petrov and Klein, 2007c). The error rates for automatically
+learnedgrammarsarestillabout50 higherthanforhand-constructed grammar,butthegap
+isdecreasing.
+23.2.2 Comparing context-free and Markov models
+Theproblemwith PCF Gsisthattheyarecontext-free. Thatmeansthatthedifferencebetween
+P( eat abanana ) and P( eat abandanna ) depends only on P(Noun banana ) versus
+P(Noun bandanna ) and not on the relation between eat and the respective objects.
+AMarkov modelofordertwoormore, givenasufficiently large corpus, willknow that eat
+Section23.3. Augmented Grammarsand Semantic Interpretation 897
+a banana is more probable. We can combine a PCFG and Markov model to get the best of
+both. The simplest approach is to estimate the probability of a sentence with the geometric
+meanofthepr

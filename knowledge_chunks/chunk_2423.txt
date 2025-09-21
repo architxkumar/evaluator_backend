@@ -1,0 +1,24 @@
+rearetwolimitationsofgametheory. First,itdoesnotdealwellwithcontinuous
+states and actions (although there have been some extensions to the continuous case; for
+COURNOT example,thetheoryof Cournotcompetitionusesgametheorytosolveproblemswheretwo
+COMPETITION
+companies choose prices for their products from a continuous space). Second, game theory
+assumes the gameis known. Partsof the gamemay be specified asunobservable tosome of
+theplayers, butitmustbeknown whatparts areunobservable. Incases inwhichtheplayers
+learn the unknown structure of the game over time, the model begins to break down. Let s
+examineeachsourceofuncertainty, andwhethereachcanberepresented ingametheory.
+Actions: There is no easy way to represent a game where the players have to discover
+what actions are available. Consider the game between computer virus writers and security
+experts. Partoftheproblem isanticipating whatactionthe viruswriterswilltrynext.
+Strategies: Game theory is very good at representing the idea that the other players strategies are initially unknown as long as we assume all agents are rational. The theory
+itself does not say whatto do when the other players are less than fully rational. The notion
+BAYES NASH ofa Bayes Nashequilibriumpartiallyaddressesthispoint: itisanequilibrium withrespect
+EQUILIBRIUM
+toaplayer s priorprobability distribution overtheother players strategies in otherwords,
+itexpresses aplayer s beliefsabouttheotherplayers likelystrategies.
+Chance: Ifagamedependsontherollofadie,itiseasyenoughtomodelachancenode
+withuniform distribution overtheoutcomes. Butwhatifitis possible that thedie isunfair?
+Wecanrepresent thatwithanotherchance node, higherupinthetree,withtwobranches for die is fair and die is unfair, such that the corresponding nodes in each branch are in the
+sameinformation set(thatis,theplayersdon tknowifthedieisfairornot). Andwhatifwe
+suspect the other opponent does know? Thenweadd another chance node, with one branch
+representing thecasewheretheopponent doe

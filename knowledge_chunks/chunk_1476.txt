@@ -1,0 +1,28 @@
+inuous distinction applies tothestateofthe
+DISCRETE
+environment, to the way time is handled, and to the percepts and actions of the agent. For
+CONTINUOUS
+example, the chess environment has a finite number of distinct states (excluding the clock).
+Chess also has a discrete set of percepts and actions. Taxi driving is a continuous-state and
+continuous-time problem: the speed and location ofthe taxi and ofthe other vehicles sweep
+through arangeofcontinuous values anddososmoothlyovertime. Taxi-driving actions are
+also continuous (steering angles, etc.). Input from digital cameras is discrete, strictly speak-
+ing,butistypically treatedasrepresenting continuously varyingintensities andlocations.
+Knownvs. unknown: Strictly speaking, this distinction refers not to the environment
+KNOWN
+itself but to the agent s (or designer s) state of knowledge about the laws of physics of
+UNKNOWN
+the environment. In a known environment, the outcomes (or outcome probabilities if the
+environmentisstochastic)forallactionsaregiven. Obviously,iftheenvironmentisunknown,
+the agent will have to learn how it works in order to make good decisions. Note that the
+distinction between known and unknown environments is not the same as the one between
+fully and partially observable environments. It is quite possible for a known environment
+to be partially observable for example, in solitaire card games, I know the rules but am
+still unable to see the cards that have not yet been turned over. Conversely, an unknown
+environment can be fully observable in a new video game, the screen may show the entire
+gamestatebut Istilldon tknowwhatthebuttonsdountil Itrythem.
+As one might expect, the hardest case is partially observable, multiagent, stochastic,
+sequential,dynamic,continuous,andunknown. Taxidrivingishardinallthesesenses,except
+thatforthemostpartthedriver senvironmentisknown. Drivingarentedcarinanewcountry
+withunfamiliargeography andtrafficlawsisalotmoreexciting.
+Figure 2.6 lists the properties of a number

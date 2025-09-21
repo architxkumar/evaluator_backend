@@ -1,0 +1,22 @@
+nicchemistry. In Meltzer, B., Michie, D., and
+tomany: Planningforlooselycoupledmulti-agent Turing Test.Springer. Swann,M.(Eds.),Machine Intelligence4,pp.209 systems.In ICAPS-08,pp.28 35. 254.Edinburgh University Press.
+Broadbent,D.E.(1958). Perceptionand Commu-
+Brafman,R.I.and Tennenholtz,M.(2000).Anear nication.Pergamon. Buehler,M.,Iagnemma,K.,and Singh,S.(Eds.).
+optimalpolynomialtimealgorithmforlearningin (2006). The2005DARPA Grand Challenge: The
+certainclassesofstochasticgames.AIJ,121,31 47. Brooks,R.A.(1986).Arobustlayeredcontrolsys- Great Robot Race.Springer-Verlag.
+temforamobilerobot. IEEE Journalof Robotics
+Braitenberg,V.(1984). Vehicles: Experimentsin and Automation,2,14 23. Bunt,H.C.(1985). Theformalrepresentationof
+Synthetic Psychology.MIT Press. (quasi-)continuousconcepts. In Hobbs,J.R.and
+Brooks, R. A. (1989). Engineering approach to Moore,R.C.(Eds.),Formal Theoriesofthe Com-
+Bransford,J.and Johnson,M.(1973). Considera- buildingcomplete,intelligentbeings. Proc.SPIE monsense World,chap.2,pp.37 70.Ablex.
+tionofsomeproblemsincomprehension.In Chase, the International Societyfor Optical Engineering,
+W. G.(Ed.), Visual Information Processing.Aca- 1002,618 625. Burgard,W.,Cremers,A.B.,Fox,D.,Ha hnel,D.,
+demic Press. Lakemeyer,G.,Schulz,D.,Steiner,W.,and Thrun,
+Brooks,R.A.(1991).Intelligencewithoutrepresen- S.(1999). Experienceswithaninteractivemuseum
+Brants,T.,Popat,A.C.,Xu,P.,Och,F.J.,and Dean, tation.AIJ,47(1 3),139 159. tour-guiderobot.AIJ,114(1 2),3 55.
+J.(2007). Largelanguagemodelsinmachinetrans-
+lation. In EMNLP-Co NLL-2007: Proc.2007Joint Brooks,R.A.and Lozano-Perez,T.(1985). Asub- Buro,M.(1995). Prob Cut: Aneffectiveselective
+Conferenceon Empirical Methodsin Natural Lan- divisionalgorithminconfigurationspaceforfind- extensionofthealpha-betaalgorithm. J.Interna-
+guage Processingand Computational Natural Lan- pathwithrotation. IEEE Transactionson Systems, tional Computer Chess Association,18(2),71 76.
+Manand Cybernetics,15(2),224 233.
+guage Learning,pp.85

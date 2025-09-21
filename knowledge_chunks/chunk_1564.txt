@@ -1,0 +1,32 @@
+ns 105
+werechangedsothatatilecouldmoveanywhereinsteadofjusttotheadjacentemptysquare,
+thenh wouldgivetheexactnumberofstepsintheshortestsolution. Similarly,ifatilecould
+1
+moveonesquareinanydirection,evenontoanoccupiedsquare,thenh wouldgivetheexact
+2
+number of steps in the shortest solution. A problem with fewerrestrictions on the actions is
+called a relaxed problem. The state-space graph of the relaxed problem is a supergraph of
+RELAXEDPROBLEM
+theoriginalstatespacebecause theremovalofrestrictions createsaddededgesinthegraph.
+Because the relaxed problem adds edges to the state space, anyoptimal solution in the
+original problem is, by definition, also a solution in the relaxed problem; but the relaxed
+problem may have better solutions if the added edges provide short cuts. Hence, the cost of
+anoptimal solution toarelaxedproblem isanadmissible heuristic fortheoriginal problem.
+Furthermore, because the derived heuristic is an exact cost for the relaxed problem, it must
+obeythetriangleinequality andistherefore consistent(seepage95).
+Ifaproblem definition iswritten down inaformal language, itis possible to construct
+relaxedproblemsautomatically.11 Forexample,ifthe8-puzzle actionsaredescribed as
+Atilecanmovefromsquare Atosquare Bif
+Aishorizontally orvertically adjacent to B and Bisblank,
+wecangeneratethreerelaxedproblemsbyremovingoneorbothoftheconditions:
+(a)Atilecanmovefromsquare Atosquare Bif Aisadjacentto B.
+(b)Atilecanmovefromsquare Atosquare Bif Bisblank.
+(c)Atilecanmovefromsquare Atosquare B.
+From (a), we can derive h (Manhattan distance). The reasoning is that h would be the
+2 2
+properscoreifwemovedeachtileinturntoitsdestination. Theheuristic derivedfrom(b)is
+discussed in Exercise3.31. From(c),wecanderive h (misplaced tiles)because itwouldbe
+1
+theproperscore iftilescouldmovetotheirintended destination inonestep. Noticethatitis
+crucialthattherelaxedproblemsgeneratedbythistechniquecanbesolvedessentiallywithout
+search,becausetherelaxedrulesallowtheproblemtobedecomposedin

@@ -1,0 +1,27 @@
+, GPS wasprobably thefirstpro-
+gramtoembodythe thinkinghumanly approach. Thesuccess of GPS andsubsequentpro-
+gramsasmodelsofcognitionled Newelland Simon(1976)toformulatethefamousphysical
+PHYSICALSYMBOL symbolsystemhypothesis,whichstatesthat aphysicalsymbolsystemhasthenecessaryand
+SYSTEM
+sufficient means forgeneral intelligent action. What they meant is that any system (human
+or machine) exhibiting intelligence must operate by manipulating data structures composed
+ofsymbols. Wewillseelaterthatthishypothesis hasbeenchallenged frommanydirections.
+At IBM, Nathaniel Rochester and his colleagues produced some of the first AI pro-
+grams. Herbert Gelernter (1959) constructed the Geometry Theorem Prover, which was
+able to prove theorems that many students of mathematics would find quite tricky. Starting
+in 1952, Arthur Samuel wrote a series of programs for checkers (draughts) that eventually
+learned toplay atastrong amateurlevel. Along theway, he disproved theidea that comput-
+Section1.3. The Historyof Artificial Intelligence 19
+erscandoonlywhattheyaretoldto: hisprogram quickly learned toplayabettergamethan
+itscreator. Theprogram wasdemonstrated ontelevision in February 1956, creating astrong
+impression. Like Turing, Samuel had trouble finding computer time. Working at night, he
+used machines that were still on the testing floor at IBM s manufacturing plant. Chapter 5
+coversgameplaying, and Chapter21explainsthelearning techniques usedby Samuel.
+John Mc Carthy movedfrom Dartmouth to MI Tand there madethree crucial contribu-
+tionsinonehistoricyear: 1958. In MITAI Lab Memo No.1,Mc Carthydefinedthehigh-level
+language Lisp,whichwastobecomethedominant AIprogramminglanguageforthenext30
+LISP
+years. With Lisp,Mc Carthyhadthetoolheneeded, butaccess toscarceandexpensivecom-
+putingresourceswasalsoaseriousproblem. Inresponse, he andothersat MI Tinventedtime
+sharing. Also in 1958, Mc Carthy published a paper entitled Programs with Common Sense,
+in which he described the Advice Taker, ahyp

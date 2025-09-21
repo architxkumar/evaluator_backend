@@ -1,0 +1,29 @@
+)chips. HYDR Areaches200millionevaluationspersecond,about
+the same as Deep Blue, but HYDRA reaches 18 plies deep rather than just 14 because of
+aggressive useofthenullmoveheuristic andforwardpruning.
+186 Chapter 5. Adversarial Search
+RYBKA, winnerof the 2008 and 2009 World Computer Chess Championships, iscon-
+sidered the strongest current computer player. It uses an off-the-shelf 8-core 3.2 GHz Intel
+Xeon processor, but little is known about the design of the program. RYBKA s main ad-
+vantage appears to be its evaluation function, which has been tuned by its main developer,
+International Master Vasik Rajlich,andatleastthreeothergrandmasters.
+The most recent matches suggest that the top computer chess programs have pulled
+aheadofallhumancontenders. (Seethehistorical notesfordetails.)
+CHECKERS
+Checkers: Jonathan Schaeffer and colleagues developed CHINOOK, which runs on regular
+PCsand uses alpha beta search. Chinook defeated the long-running human champion in an
+abbreviatedmatchin1990,andsince2007CHINOO Khasbeenabletoplayperfectlybyusing
+alpha beta searchcombined withadatabase of39trillionendgamepositions.
+Othello, also called Reversi, is probably more popular as a computer game than as a board
+OTHELLO
+game. It has a smaller search space than chess, usually 5 to 15 legal moves, but evaluation
+expertisehadtobedevelopedfromscratch. In1997,the LOGISTELLO program(Buro,2002)
+defeatedthehumanworldchampion,Takeshi Murakami,bysixgamestonone. Itisgenerally
+acknowledged thathumansarenomatchforcomputers at Othello.
+Backgammon: Section5.5explainedwhytheinclusionofuncertaintyfromdicerollsmakes
+BACKGAMMON
+deep search an expensive luxury. Most work on backgammon has gone into improving the
+evaluation function. Gerry Tesauro (1992) combined reinforcement learning with neural
+networks to develop a remarkably accurate evaluator that is used with a search to depth 2
+or 3. After playing more than a million training games against itself, Tesauro s program,
+TD-GAMMON,iscompetitivewithtophum

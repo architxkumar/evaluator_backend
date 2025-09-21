@@ -1,0 +1,26 @@
+ngs to the conclusion that the entity owning those neurons has any particular
+subjective experience. This explanatory gap has led some philosophers to conclude that
+EXPLANATORYGAP
+humansaresimplyincapable offorming aproperunderstanding oftheirownconsciousness.
+Others, notably Daniel Dennett (1991), avoid the gap by denying the existence of qualia,
+attributing themtoaphilosophical confusion.
+Turinghimselfconcedesthatthequestionofconsciousness isadifficultone,butdenies
+that it has much relevance to the practice of AI: I do not wish to give the impression that I
+think there is no mystery about consciousness ... But I do not think these mysteries neces-
+sarily need to be solved before we can answer the question with which we are concerned in
+thispaper. Weagreewith Turing weareinterested increating programs thatbehave intel-
+ligently. Theadditional project ofmaking themconscious isnotonethatweareequipped to
+takeon,noronewhosesuccesswewouldbeabletodetermine.
+1034 Chapter 26. Philosophical Foundations
+26.3 THE ETHICS AND RISKS OF DEVELOPING ARTIFICIAL INTELLIGENCE
+So far, we have concentrated on whether we can develop AI, but we must also consider
+whetherweshould. Iftheeffectsof AItechnologyaremorelikelytobenegativethanpositive,
+then it would be the moral responsibility of workers in the field to redirect their research.
+Many new technologies have had unintended negative side effects: nuclear fission brought
+Chernobyl and the threat of global destruction; the internal combustion engine brought air
+pollution, global warming, and the paving-over of paradise. In a sense, automobiles are
+robotsthathaveconquered theworldbymakingthemselves indispensable.
+All scientists and engineers face ethical considerations of how they should act on the
+job, what projects should or should not be done, and how they should be handled. See the
+handbook on the Ethics of Computing (Berleur and Brunnstein, 2001). AI, however, seems
+toposesomefreshproblemsbeyondthatof,say,building bridgesthatdon tfa

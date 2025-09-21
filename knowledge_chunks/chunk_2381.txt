@@ -1,0 +1,33 @@
+ces can be compared in terms of the average reward obtained pertime
+AVERAGEREWARD
+step. Suppose that square (1,1) in the 4 3 world has a reward of 0.1 while the other
+nonterminal states have a reward of 0.01. Then a policy that does its best to stay in
+(1,1)willhavehigheraverage rewardthanonethatstayselsewhere. Average rewardis
+a useful criterion for some problems, but the analysis of average-reward algorithms is
+beyondthescopeofthisbook.
+Insum,discounted rewardspresent thefewestdifficulties inevaluating statesequences.
+17.1.2 Optimalpoliciesand theutilities ofstates
+Having decided that the utility of a given state sequence is the sum of discounted rewards
+obtained during the sequence, we can compare policies by comparing the expected utilities
+obtained when executing them. We assume the agent is in some initial state s and define S
+t
+(a random variable) to be the state the agent reaches at time t when executing a particular
+policy . (Obviously, S s,thestatetheagent isinnow.) Theprobability distribution over
+0
+statesequences S ,S ,...,isdeterminedbytheinitialstates,thepolicy ,andthetransition
+1 2
+modelfortheenvironment.
+Theexpectedutilityobtained byexecuting startinginsisgivenby
+" (cid:12) U (s) E t R(S ) , (17.2)
+t
+t 0
+where the expectation is with respect tothe probability distribution overstate sequences de-
+terminedbysand . Now,outofallthepoliciestheagentcouldchoosetoexecutestartingin s,one(ormore)willhavehigherexpectedutilitiesthanalltheothers. We lluse todenote
+s
+oneofthesepolicies: argmax U (s). (17.3)
+s Section17.1. Sequential Decision Problems 651 Remember that is a policy, so it recommends an action for every state; its connection
+s
+with s in particular is that it s an optimal policy when s is the starting state. A remarkable
+consequence of using discounted utilities with infinite horizons is that the optimal policy is
+independent of the starting state. (Of course, the action sequence won t be independent;
+remember that a policy is a function specifying an

@@ -1,0 +1,26 @@
+pectsof Inductive Logic.North-Holland. 379 423,623 656.
+Savage,L.J.(1954). The Foundationsof Statistics. Searle,J.R.(1980). Minds,brains,andprograms. Shannon,C.E.(1950). Programmingacomputer
+Wiley. BBS,3,417 457. forplayingchess. Philosophical Magazine,41(4),
+256 275.
+Sayre,K.(1993). Threemoreflawsinthecompu- Searle, J.R.(1984). Minds, Brainsand Science.
+tationalmodel.Paperpresentedatthe APA(Central Harvard University Press. Shaparau,D.,Pistore,M.,and Traverso,P.(2008).
+Division)Annual Conference,Chicago,Illinois. Fusingproceduralanddeclarativeplanninggoalsfor
+Searle,J.R.(1990).Isthebrain smindacomputer
+nondeterministicdomains.In AAAI-08.
+Schaeffer,J.(2008). One Jump Ahead: Computer program?Scientific American,262,26 31.
+Perfectionat Checkers.Springer-Verlag. Shapiro,E.(1981).Analgorithmthatinferstheories
+Searle,J.R.(1992). The Rediscoveryofthe Mind. fromfacts.In IJCAI-81,p.1064.
+Schaeffer,J.,Burch,N.,Bjornsson,Y.,Kishimoto, MIT Press.
+A.,Mu ller, M.,Lake, R.,Lu, P.,and Sutphen, S. Shapiro,S.C.(Ed.).(1992).Encyclopediaof Artifi-
+(2007). Checkersissolved. Science,317,1518 Sebastiani, F.(2002). Machinelearninginauto- cial Intelligence(secondedition).Wiley.
+1522. matedtextcategorization.ACM Computing Surveys,
+34(1),1 47. Shapley,S.(1953). Stochasticgames. In PNAS,
+Schank,R.C.and Abelson,R.P.(1977). Scripts, Vol.39,pp.1095 1100.
+Plans,Goals, and Understanding. Lawrence Erl- Segaran, T.(2007). Programming Collective In-
+baum Associates. telligence: Building Smart Web 2.0 Applications. Shatkay,H.and Kaelbling,L.P.(1997). Learning
+O Reilly. topologicalmapswithweaklocalodometricinfor-
+Schank,R.C.and Riesbeck,C.(1981).Inside Com- mation.In IJCAI-97.
+puter Understanding: Five Programs Plus Minia- Selman,B.,Kautz,H.,and Cohen,B.(1996). Lo-
+tures.Lawrence Erlbaum Associates. calsearchstrategiesforsatisfiabilitytesting. In DI- Shelley,M.(1818). Frankenstein: Or,the Modern
+MACS Series in Discrete Mathematics and Theo- Prometheus.Pickeringand Chatto.
+S b ch o c i o h n s a e t p i

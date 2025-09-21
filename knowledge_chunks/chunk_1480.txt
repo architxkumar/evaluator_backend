@@ -1,0 +1,28 @@
+we design in this book all have the same skeleton: they take the
+current percept as input from the sensors and return an action to the actuators.4 Notice the
+differencebetweentheagentprogram,whichtakesthecurrentperceptasinput,andtheagent
+function, which takes the entire percept history. The agent program takes just the current
+perceptasinputbecausenothingmoreisavailablefromtheenvironment;iftheagent sactions
+needtodependontheentireperceptsequence, theagentwillhavetorememberthepercepts.
+We describe the agent programs in the simple pseudocode language that is defined in
+Appendix B. (The online code repository contains implementations in real programming
+languages.) Forexample, Figure 2.7shows arathertrivial agent program thatkeeps track of
+the percept sequence and then uses it to index into a table of actions to decide what to do.
+The table an example of which is given for the vacuum world in Figure 2.3 represents
+explicitly the agent function that the agent program embodies. To build a rational agent in
+4 Thereareotherchoices fortheagent program skeleton; forexample, wecouldhavetheagent programsbe
+coroutinesthatrunasynchronouslywiththeenvironment. Eachsuchcoroutinehasaninputandoutputportand
+consistsofaloopthatreadstheinputportforperceptsandwritesactionstotheoutputport.
+Section2.4. The Structureof Agents 47
+function TABLE-DRIVEN-AGENT(percept)returnsanaction
+persistent: percepts,asequence,initiallyempty
+table,atableofactions,indexedbyperceptsequences,initiallyfullyspecified
+appendpercept totheendofpercepts
+action LOOKUP(percepts,table)
+returnaction
+Figure 2.7 The TABLE-DRIVEN-AGENT program is invoked for each new percept and
+returnsanactioneachtime. Itretainsthecompleteperceptsequenceinmemory.
+thisway,weasdesignersmustconstructatablethatcontainstheappropriateactionforevery
+possible perceptsequence.
+It is instructive to consider why the table-driven approach to agent construction is
+doomed to failure. Let P be the set of possible percepts and let T be the lifet(cid:2)im

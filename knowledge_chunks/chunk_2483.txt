@@ -1,0 +1,30 @@
+Wenow
+examineonesuchrestricted language inmoredetail.
+18.5.1 PA Clearning example: Learning decisionlists
+We now show how to apply PAC learning to a new hypothesis space: decision lists. A
+DECISIONLISTS
+decision list consists of a series of tests, each of which is a conjunction of literals. If a
+test succeeds when applied to an example description, the decision list specifies the value
+to be returned. If the test fails, processing continues with the next test in the list. Decision
+lists resemble decision trees, but their overall structure is simpler: they branch only in one
+716 Chapter 18. Learningfrom Examples
+No No
+Patrons(x, Some) Patrons(x, Full) Fri Sat(x) No
+Yes Yes
+Yes Yes
+Figure18.10 Adecisionlistfortherestaurantproblem.
+direction. In contrast, the individual tests are more complex. Figure 18.10 shows a decision
+listthatrepresents thefollowinghypothesis:
+Will Wait (Patrons Some) (Patrons Full Fri Sat).
+If we allow tests of arbitrary size, then decision lists can represent any Boolean function
+(Exercise 18.14). On the other hand, if we restrict the size of each test to at most k literals,
+then itis possible forthe learning algorithm to generalize successfully from asmall number
+k-DL ofexamples. Wecallthislanguagek-DL. Theexamplein Figure18.10isin2-DL.Itiseasyto
+k-DT show(Exercise18.14)thatk-DLincludesasasubsetthelanguagek-DT,thesetofalldecision
+trees ofdepth at most k. Itis important to remember that the particular language referred to
+by k-DL depends on the attributes used to describe the examples. We will use the notation
+k-DL(n)todenoteak-DLlanguage usingn Booleanattributes.
+The first task is to show that k-DL is learnable that is, that any function in k-DL can
+be approximated accurately after training on a reasonable number of examples. To do this,
+we need to calculate the number of hypotheses in the language. Let the language of tests conjunctions ofatmostk literals using nattributes be Conj(n,k). Because adecision list
+isconstructed oftests,andbecauseea

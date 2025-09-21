@@ -1,0 +1,38 @@
+ilteringandsmoothing. Theeasiestwaytothinkabouttheproblemistovieweachsequence
+as a path through a graph whose nodes are the possible states at each time step. Such a
+graph is shown for the umbrella world in Figure 15.5(a). Now consider the task of finding
+the most likely path through this graph, where the likelihood of any path is the product of
+the transition probabilities along the path and the probabilities of the given observations at
+each state. Let s focus in particular on paths that reach the state Rain true. Because of
+5
+the Markovproperty,itfollowsthatthemostlikelypathtothestate Rain true consistsof
+5
+themostlikelypathtosomestateattime4followedbyatransition to Rain true;andthe
+5
+stateattime4thatwillbecomepartofthepathto Rain true iswhichevermaximizesthe
+5
+likelihood of that path. In other words, there is a recursive relationship between most likely
+pathstoeachstatex andmostlikelypathstoeachstatex . Wecanwritethisrelationship
+t 1 t
+asanequation connecting theprobabilities ofthepaths:
+max P(x ,...,x ,X e )
+1 t t 1 1:t 1
+x1...xt (cid:13) (cid:14) P(e t 1 X t 1 )max P(X t 1 x t ) max P(x 1 ,...,x t 1 ,x t e 1:t ) . (15.11)
+xt x1...xt 1
+Equation(15.11)isidentical tothefilteringequation (15.5)exceptthat
+578 Chapter 15. Probabilistic Reasoning over Time
+1. Theforwardmessage f P(X e )isreplacedbythemessage
+1:t t 1:t
+m 1:t max P(x 1 ,...,x t 1 ,X t e 1:t ),
+x1...xt 1
+thatis,theprobabilities ofthemostlikelypathtoeachstatex ;and
+t
+2. the summation over x in Equation (15.5) is replaced by the maximization over x in
+t t
+Equation(15.11).
+Thus,thealgorithmforcomputingthemostlikelysequenceissimilartofiltering: itrunsfor-
+wardalongthesequence,computingthemmessageateachtimestep,using Equation(15.11).
+The progress of this computation is shown in Figure 15.5(b). At the end, it will have the
+probability forthemostlikelysequencereaching eachofthefinalstates. Onecanthuseasily
+select the most likely sequence overall (the states outlined in bold). In order to identify the
+actualseq

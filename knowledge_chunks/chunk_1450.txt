@@ -1,0 +1,29 @@
+ch closer contact
+with other fields, such as control theory and economics, that also deal with agents. Recent
+progressinthecontrolofroboticcarshasderivedfromamixtureofapproachesrangingfrom
+better sensors, control-theoretic integration of sensing, localization and mapping, as well as
+adegreeofhigh-level planning.
+Despite these successes, some influential founders of AI, including John Mc Carthy
+(2007), Marvin Minsky (2007), Nils Nilsson (1995, 2005) and Patrick Winston (Beal and
+Winston,2009),haveexpresseddiscontentwiththeprogressof AI.Theythinkthat AIshould
+put less emphasis on creating ever-improved versions of applications that are good at a spe-
+cific task, such as driving a car, playing chess, or recognizing speech. Instead, they believe
+AIshouldreturntoitsrootsofstrivingfor,in Simon swords, machinesthatthink,thatlearn
+andthatcreate. Theycalltheeffort human-level AIor HLAI;theirfirstsymposium wasin
+HUMAN-LEVELAI
+2004(Minskyetal.,2004). Theeffortwillrequireverylargeknowledgebases; Hendleretal.
+(1995)discusswheretheseknowledgebasesmightcomefrom.
+ARTIFICIALGENERAL A related idea is the subfield of Artificial General Intelligence or AGI (Goertzel and
+INTELLIGENCE
+Pennachin,2007),whichhelditsfirstconferenceandorganizedthe Journalof Artificial Gen-
+eral Intelligence in 2008. AGI looks for a universal algorithm for learning and acting in
+any environment, and has its roots in the work of Ray Solomonoff (1964), one of the atten-
+dees of the original 1956 Dartmouth conference. Guaranteeing that what we create is really
+Friendly AI isalso aconcern (Yudkowsky, 2008; Omohundro, 2008), one we will return to
+FRIENDLYAI
+in Chapter26.
+1.3.10 The availabilityofvery largedata sets (2001 present)
+Throughoutthe60-yearhistoryofcomputerscience,theemphasishasbeenonthealgorithm
+asthemainsubject ofstudy. Butsomerecentworkin AIsuggests thatformanyproblems,it
+makes more sense to worry about the data and be less picky about what algorithm to apply.
+This is true because of the increasing ava

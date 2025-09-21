@@ -1,0 +1,27 @@
+ofwhichworldstateswere
+possible, butcouldsaynothing aboutwhichstateswerelikelyorunlikely. Inthischapter, we
+useprobability theorytoquantify thedegreeofbeliefinelementsofthebeliefstate.
+As we show in Section 15.1, time itself is handled in the same way as in Chapter 7: a
+changingworldismodeledusingavariableforeachaspectoftheworldstateateachpointin
+time. The transition and sensor models maybe uncertain: the transition model describes the
+probability distribution of the variables at time t, given the state of the world at past times,
+while the sensor model describes the probability of each percept at time t, given the current
+state of the world. Section 15.2 defines the basic inference tasks and describes the gen-
+eral structure of inference algorithms for temporal models. Then we describe three specific
+kinds of models: hidden Markov models, Kalman filters, and dynamic Bayesian net-
+works (which include hidden Markov models and Kalman filters as special cases). Finally,
+Section15.6examinestheproblemsfacedwhenkeeping track ofmorethanonething.
+15.1 TIME AND UNCERTAINTY
+Wehavedevelopedourtechniques forprobabilistic reasoning inthecontextofstaticworlds,
+in which each random variable has a single fixed value. Forexample, when repairing a car,
+we assume that whatever is broken remains broken during the process of diagnosis; our job
+istoinferthestateofthecarfromobservedevidence, which alsoremainsfixed.
+566
+Section15.1. Timeand Uncertainty 567
+Nowconsideraslightly different problem: treating adiabetic patient. Asinthecaseof
+carrepair, wehave evidence such asrecent insulin doses, food intake, blood sugarmeasure-
+ments,andotherphysicalsigns. Thetaskistoassessthecurrentstateofthepatient,including
+the actual blood sugar level and insulin level. Given this information, we can make a deci-
+sion about the patient s food intake and insulin dose. Unlike the case of car repair, here the
+dynamic aspects of the problem are essential. Blood sugar levels and measurements thereof
+can change

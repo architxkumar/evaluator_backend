@@ -1,0 +1,36 @@
+,290 lottery,612,642
+linearfunction,717 syntax,290 standard,615
+linear Gaussian,520,553,584,809 fuzzy,240,289,547,550,557 love,1021
+linearization,981 higher-order,289 Love,N.,195,1080
+linearprogramming,133,153,155,206, inductive,491,505 Lovejoy,W.S.,686,1080
+673 interpretations,292 294 Lovelace,A.,14
+linearregression,718,810 modelpreference,459 Loveland,D.,260,276,359,1070,1080
+linearresolution,356,795 models,290 292 low-dimensionalembedding,985
+linearseparability,723 nonmonotonic,251,458,458 460, Lowe,D.,947,967,968,1081
+linearseparator,746 471 Lo wenheim,L.,314,1081
+linesearch,132 notation,4 Lowerre,B.T.,154,922,1081
+linguistics,15 16 propositional,235,243 247,274,286 Lowrance,J.D.,557,1087
+link,870 inference,247 263 Lowry,M.,356,360,1075,1081
+link(inaneuralnetwork),728 semantics,245 246 Loyd,S.,109,1081
+linkageconstraints,986 syntax,244 245 Lozano-Perez,T.,1012,1013,1067,
+Linnaeus,469 quantifier,295 298 1081,1092
+LINUS,796 resolution,252 256 LPG,387,395
+Lipkis,T.A.,471,1088 sampling,554 LRTA ,151,157,415
+liquidevent,447 temporal,289 LRTA -AGENT,152
+liquids,472 terms,294 LRTA -COST,152
+Lisp,19,294 variablein,340 LSH(locality-sensitivehash),740
+lists,305 logicalconnective,16,244,274,295 LT,17
+literal(sentence),244 logicalinference,242,322 365 Lu,F.,1012,1081
+literal,watched,277 logicalminimization,442 Lu,P.,194,760,1067,1088
+Littman,M.L.,155,231,433,686,687, logicalomniscience,453 Luby,M.,124,554,1069,1081
+857,1064,1068,1077,1080, logicalpiano,276 Lucas,J.R.,1023,1081
+1081 logicalpositivism,6 Lucas,P.,505,634,1081
+Index 1115
+Luce,D.R.,9,687,1081 Manning,C.,883 885,920,921,1078, Mason,M.,156,433,1013,1014,1071,
+Lucene,868 1081 1081
+Ludlow,P.,1042,1081 Mannion,M.,314,1081 Mason,R.A.,288,1082
+Luger,G.F.,31,1081 Manolios,P.,360,1077 mass(in Dempster Shafertheory),549
+Lugosi,G.,761,1068 Mansour,Y.,686,764,855,856,1078, massnoun,445
+Lull,R.,5 1090 massspectrometer,22
+Luong,Q.-T.,968,1072 mantisshrimp,935 Mataric,M.J.,1013,1081
+Lusk,E.,360,1092 Manzini,G.,111,1081 Mateesc

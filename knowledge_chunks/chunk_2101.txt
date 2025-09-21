@@ -1,0 +1,25 @@
+veryusefultoolformostbuyers.
+In addition to the product hierarchy itself, we also need to have a rich vocabulary of
+names for categories. Life would be much easier if there were a one-to-one correspon-
+dence between categories and the character strings that name them. We have already seen
+the problem of synonymy two names for the same category, such as laptop computers and laptops. Thereisalso theproblem of ambiguity one namefortwoormoredifferent
+categories. Forexample,ifweaddthesentence
+Name( CDs ,Certificates Of Deposit)
+totheknowledge basein Figure12.9(b), then CDs willnametwodifferent categories.
+Synonymy and ambiguity can cause a significant increase in the number of paths that
+the agent has to follow, and can sometimes make it difficult to determine whether a given
+pageisindeedrelevant. Amuchmoreseriousproblemistheverybroadrangeofdescriptions
+thatausercantypeandcategorynamesthatastorecanuse. Forexample, thelinkmightsay laptop whenthe knowledge basehas only laptops orthe usermight askfor acomputer
+466 Chapter 12. Knowledge Representation
+I can fit on the tray table of an economy-class airline seat. It is impossible to enumerate in
+advance all the ways a category can be named, so the agent will have to be able to do addi-
+tionalreasoninginsomecasestodetermineifthe Namerelationholds. Intheworstcase,this
+requiresfullnaturallanguageunderstanding, atopicthatwewilldeferto Chapter22. Inprac-
+tice,afewsimplerules suchasallowing laptop tomatchacategorynamed laptops go
+alongway. Exercise12.10asksyoutodevelopasetofsuchrules afterdoing someresearch
+intoonlinestores.
+Given the logical definitions from the preceding paragraphs and suitable knowledge
+bases of product categories and naming conventions, are we ready to apply an inference
+algorithm to obtain a set of relevant offers for our query? Not quite! The missing element
+is the Contents(url) function, which refers to the HTML page at a given URL. The agent
+doesn t havethepagecontents ofevery UR Linitsknowledge base;nordoe

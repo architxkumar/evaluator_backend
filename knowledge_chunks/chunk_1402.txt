@@ -1,0 +1,27 @@
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 865
+22.3 Information Retrieval . . . . . . . . . . . . . . . . . . . . . . . . . . . . 867
+22.4 Information Extraction . . . . . . . . . . . . . . . . . . . . . . . . . . . . 873
+22.5 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 882
+23 Natural Languagefor Communication 888
+23.1 Phrase Structure Grammars . . . . . . . . . . . . . . . . . . . . . . . . . 888
+23.2 Syntactic Analysis(Parsing) . . . . . . . . . . . . . . . . . . . . . . . . . 892
+23.3 Augmented Grammarsand Semantic Interpretation . . . . . . . . . . . . 897
+23.4 Machine Translation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 907
+23.5 Speech Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 912
+23.6 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 918
+24 Perception 928
+24.1 Image Formation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 929
+24.2 Early Image-Processing Operations . . . . . . . . . . . . . . . . . . . . . 935
+24.3 Object Recognition by Appearance . . . . . . . . . . . . . . . . . . . . . 942
+24.4 Reconstructing the3DWorld . . . . . . . . . . . . . . . . . . . . . . . . 947
+24.5 Object Recognition from Structural Information . . . . . . . . . . . . . . 957
+xviii Contents
+24.6 Using Vision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 961
+24.7 Summary,Bibliographical and Historical Notes,Exercises . . . . . . . . . 965
+25 Robotics 971
+25.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 971
+25.2 Robot Hardware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 973
+25.3 Robotic Perception . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 978
+25.4 Planningto Move . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 986
+25.5 Planning Uncertain Movements . . . . . . . . . . . . . . . . . . . . . . . 993
+25.6 Moving . . . . . . . . . . . . . . . . . . . . . . . . .

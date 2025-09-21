@@ -1,0 +1,29 @@
+NP-hard.
+Itmightseemratherdepressingthatforwardchaininghasan NP-hardmatchingproblem
+initsinnerloop. Therearethreewaystocheerourselvesup: We can remind ourselves that most rules in real-world knowledge bases are small and
+simple (like the rules in our crime example) rather than large and complex (like the
+CSP formulation in Figure 9.5). It is common in the database world to assume that
+both the sizes of rules and the arities of predicates are bounded by a constant and to
+worry only about data complexity that is, the complexity of inference as a function
+DATACOMPLEXITY
+of the number of ground facts in the knowledge base. It is easy to show that the data
+complexityofforwardchaining ispolynomial. We can consider subclasses of rules for which matching is efficient. Essentially every
+Datalog clause can be viewed as defining a CSP, so matching will be tractable just
+whenthecorresponding CS Pistractable. Chapter6describesseveraltractablefamilies
+of CS Ps. For example, if the constraint graph (the graph whose nodes are variables
+and whose links are constraints) forms a tree, then the CSP can be solved in linear
+time. Exactlythesameresultholdsforrulematching. Forinstance,ifweremove South
+Section9.3. Forward Chaining 335
+Australiafromthemapin Figure9.5,theresultingclauseis
+Diff(wa,nt) Diff(nt,q) Diff(q,nsw) Diff(nsw,v) Colorable()
+whichcorresponds tothe reduced CS Pshown in Figure 6.12 onpage 224. Algorithms
+forsolvingtree-structured CS Pscanbeapplieddirectlytotheproblemofrulematching. We can try to to eliminate redundant rule-matching attempts in the forward-chaining
+algorithm, asdescribed next.
+Incrementalforwardchaining
+Whenweshowedhow forward chaining worksonthecrimeexample, wecheated; inpartic-
+ular, we omitted some of the rule matching done by the algorithm shown in Figure 9.3. For
+example,ontheseconditeration, therule
+Missile(x) Weapon(x)
+matchesagainst Missile(M )(again), andofcourse theconclusion Weapon(M )isalready
+1 1
+known so nothing happens. Such redundant rule ma

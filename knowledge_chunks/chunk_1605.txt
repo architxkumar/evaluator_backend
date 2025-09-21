@@ -1,0 +1,34 @@
+son
+NEWTON RAPHSON
+method. Thisisageneral technique forfindingrootsoffunctions that is,solvingequations
+of the form g(x) 0. It works by computing a new estimate for the root x according to
+Newton sformula
+x x g(x) g (cid:2) (x).
+To find a maximum or minimum of f, we need to find x such that the gradient is zero (i.e., f(x) 0). Thus, g(x) in Newton s formula becomes f(x), and the update equation can
+bewritteninmatrix vector formas
+x x H 1(x) f(x),
+f
+where H (x) is the Hessian matrix of second derivatives, whose elements H are given
+HESSIAN f ij
+by 2f x x . For our airport example, we can see from Equation (4.2) that H (x) is
+i j f
+particularly simple: theoff-diagonal elements are zero and thediagonal elements forairport
+i are just twice the number of cities in C . A moment s calculation shows that one step of
+i
+the update moves airport i directly to the centroid of C , which is the minimum of the local
+i
+expression forf from Equation (4.1).7 Forhigh-dimensional problems, however, computing
+then2entriesofthe Hessianandinvertingitmaybeexpensive,somanyapproximateversions
+ofthe Newton Raphson methodhavebeendeveloped.
+Local search methods suffer from local maxima, ridges, and plateaux in continuous
+statespacesjustasmuchasindiscrete spaces. Randomrestartsandsimulatedannealing can
+be used and are often helpful. High-dimensional continuous spaces are, however, big places
+inwhichitiseasytogetlost.
+CONSTRAINED Afinaltopicwithwhichapassingacquaintance isusefulisconstrainedoptimization.
+OPTIMIZATION
+Anoptimizationproblemisconstrainedifsolutionsmustsatisfysomehardconstraintsonthe
+values of the variables. Forexample, in ourairport-siting problem, wemight constrain sites
+7 Ingeneral,the Newton Raphsonupdatecanbeseenasfittingaquadraticsurfacetof atxandthenmoving
+directlytotheminimumofthatsurface whichisalsotheminimumoff iff isquadratic.
+Section4.3. Searchingwith Nondeterministic Actions 133
+to be inside Romania and on dry land (rather than in the middle of lakes). The difficulty of

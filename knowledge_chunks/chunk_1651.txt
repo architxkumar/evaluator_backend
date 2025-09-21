@@ -1,0 +1,30 @@
+their utility values from the game s UTILITY function. The first MIN node, labeled
+B, has three successor states with values 3, 12, and 8, so its minimax value is 3. Similarly,
+the othertwo MIN nodes have minimaxvalue 2. Theroot node isa MAX node; its successor
+states have minimax values 3, 2, and2; soithas aminimax value of3. Wecanalso identify
+Section5.2. Optimal Decisions in Games 165
+MINIMAXDECISION
+theminimaxdecisionattheroot: actiona
+1
+istheoptimalchoicefor MA Xbecauseitleadsto
+thestatewiththehighest minimaxvalue.
+This definition of optimal play for MAX assumes that MIN also plays optimally it
+maximizestheworst-caseoutcomefor MAX. Whatif MI Ndoesnotplayoptimally? Thenitis
+easytoshow(Exercise5.7)that MA Xwilldoevenbetter. Otherstrategiesagainstsuboptimal
+opponents maydobetterthantheminimaxstrategy,butthese strategiesnecessarily doworse
+againstoptimalopponents.
+5.2.1 The minimaxalgorithm
+Theminimaxalgorithm(Figure5.3)computestheminimaxdecisionfromthecurrent state.
+MINIMAXALGORITHM
+Itusesasimplerecursivecomputationoftheminimaxvaluesofeachsuccessorstate,directly
+implementing thedefining equations. Therecursion proceeds allthewaydowntotheleaves
+of the tree, and then the minimax values are backed up through the tree as the recursion
+unwinds. For example, in Figure 5.2, the algorithm first recurses down to the three bottom-
+leftnodes andusesthe UTILITY function onthemtodiscoverthattheirvaluesare3,12,and
+8, respectively. Then it takes the minimum of these values, 3, and returns it as the backed-
+up value of node B. A similar process gives the backed-up values of 2 for C and 2 for D.
+Finally,wetakethemaximumof3,2,and2togetthebacked-upvalueof3fortherootnode.
+The minimax algorithm performs a complete depth-first exploration of the game tree.
+If the maximum depth of the tree is m and there are b legal moves at each point, then the
+timecomplexityoftheminimaxalgorithm is O(bm). Thespacecomplexityis O(bm)foran
+algorithm that generates allactions atonce, or O(m)foran algorith

@@ -1,0 +1,25 @@
+s scale; fur-
+thermore, work in hierarchical reinforcement learning has succeeded in combining some
+ofthese ideas withthe techniques fordecision making under uncertainty described in Chap-
+ter 17. As yet, algorithms for the partially observable case (POMD Ps) are using the same
+atomicstaterepresentation weusedforthesearchalgorithmsof Chapter3. Thereisclearlya
+greatdealofworktodohere,butthetechnical foundations arelargelyinplace. Section27.2
+discusses thequestion ofhowthesearchforeffectivelong-range plansmightbecontrolled.
+Utility asan expression ofpreferences: Inprinciple, basing rational decisions on the
+maximization of expected utility is completely general and avoids many of the problems of
+purely goal-based approaches, such as conflicting goals and uncertain attainment. As yet,
+however,therehasbeenverylittleworkonconstructing realistic utilityfunctions imagine,
+forexample,thecomplexwebofinteractingpreferencesthatmustbeunderstoodbyanagent
+operating asan officeassistant forahuman being. Ithasproven verydifficult todecompose
+preferences over complex states in the same way that Bayes nets decompose beliefs over
+complex states. One reason may be that preferences over states are really compiled from
+preferences overstate histories, which are described by reward functions (see Chapter 17).
+Eveniftherewardfunctionissimple,thecorrespondingutilityfunctionmaybeverycomplex.
+Thissuggests that wetake seriously the task ofknowledge engineering forreward functions
+asawayofconveying toouragentswhatitisthatwewantthemtodo.
+Learning: Chapters 18 to 21 described how learning in an agent can be formulated as
+inductive learning (supervised, unsupervised, or reinforcement-based) of the functions that
+constitute the various components of the agent. Very powerful logical and statistical tech-
+niques have been developed that can cope with quite large problems, reaching or exceeding
+human capabilities in many tasks as long as we are dealing with a predefined vocabulary
+of features and conc

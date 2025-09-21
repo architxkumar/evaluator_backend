@@ -1,0 +1,31 @@
+ returns true to indicate the end of the guarded move. The motion
+commands are typically compliant motions that allow the effector to slide if the motion
+COMPLIANTMOTION
+commandwouldcausecollisionwithanobstacle. Asanexample,Figure25.19showsatwo-
+dimensional configuration space with a narrow vertical hole. It could be the configuration
+space forinsertion ofarectangular pegintoaholeoracarkeyintotheignition. Themotion
+commandsareconstant velocities. Thetermination conditions arecontact withasurface. To
+modeluncertainty incontrol, weassumethatinsteadofmovinginthecommandeddirection,
+the robot s actual motion lies in the cone C about it. The figure shows what would happen
+v
+996 Chapter 25. Robotics
+Cv
+v
+motion
+envelope
+Figure25.21 Thesecondmotioncommandandtheenvelopeofpossiblemotions. Even
+witherror,wewilleventuallygetintothehole.
+if we commanded a velocity straight down from the initial configuration. Because of the
+uncertainty in velocity, the robot could move anywhere in the conical envelope, possibly
+going into the hole, but more likely landing to one side of it. Because the robot would not
+thenknowwhichsideoftheholeitwason,itwouldnotknowwhichwaytomove.
+A more sensible strategy is shown in Figures 25.20 and 25.21. In Figure 25.20, the
+robotdeliberatelymovestoonesideofthehole. Themotioncommandisshowninthefigure,
+and the termination test is contact with any surface. In Figure 25.21, a motion command is
+given that causes the robot to slide along the surface and into the hole. Because all possible
+velocities inthemotionenvelope aretotheright, therobot willslidetotherightwheneverit
+is in contact with a horizontal surface. It will slide down the right-hand vertical edge of the
+holewhenittouches it,becauseallpossiblevelocities aredownrelativetoaverticalsurface.
+It will keep moving until it reaches the bottom of the hole, because that is its termination
+condition. In spite of the control uncertainty, all possible trajectories of the robot terminate
+incontactwiththebottomofthe

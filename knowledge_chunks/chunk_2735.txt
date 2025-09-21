@@ -1,0 +1,26 @@
+choice of model has implications for training the
+parameters. Craswelletal.(2005)describethe BM25scoringfunctionand Svoreand Burges
+(2009)describehow BM25canbeimprovedwithamachinelearning approachthatincorpo-
+ratesclickdata examples ofpastsearchqueiesandtheresultsthatwereclickedon.
+Brin and Page (1998) describe the Page Rank algorithm and the implementation of a
+Websearchengine. Kleinberg (1999)describes the HIT Salgorithm. Silverstein etal.(1998)
+investigate a log of a billion Web searches. The journal Information Retrieval and the pro-
+ceedings oftheannual SIGI Rconference coverrecentdevelopments inthefield.
+Earlyinformation extraction programs include GUS (Bobrow etal.,1977) and FRUMP
+(De Jong, 1982). Recentinformation extraction hasbeenpushed forwardbytheannual Mes-
+sage Understand Conferences (MUC), sponsored by the U.S. government. The FASTUS
+finite-state system was done by Hobbs et al. (1997). It was based in part on the idea from
+Pereira and Wright (1991) of using FS As as approximations to phrase-structure grammars.
+Surveys of template-based systems are given by Roche and Schabes (1997), Appelt (1999),
+Exercises 885
+and Muslea (1999). Large databases of facts were extracted by Craven et al. (2000), Pasca
+etal.(2006),Mitchell(2007), and Durmeand Pasca(2008).
+Freitag and Mc Callum (2000) discuss HM Ms for Information Extraction. CR Fs were
+introduced by Lafferty et al. (2001); an example of their use for information extraction is
+describedin(Mc Callum,2003)andatutorialwithpractical guidanceisgivenby(Suttonand
+Mc Callum,2007). Sarawagi(2007)givesacomprehensive survey.
+Banko et al. (2002) present the ASKMSR question-answering system; a similar sys-
+tem is due to Kwok et al. (2001). Pasca and Harabagiu (2001) discuss a contest-winning
+question-answering system. Twoearly influential approaches toautomated knowledge engi-
+neeringwereby Riloff(1993),whoshowedthatanautomatically constructed dictionaryper-
+formedalmostaswellasacarefullyhandcrafteddomain-specificdicti

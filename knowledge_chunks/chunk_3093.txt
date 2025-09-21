@@ -1,0 +1,25 @@
+. pp.185 208.MIT Press.
+gines:Adistributedhierarchicalapproach.In AAAI- Pereira,F.and Warren,D.H.D.(1980). Definite Plotkin,G.(1971).Automatic Methodsof Inductive
+82,pp.133 136. clausegrammars forlanguageanalysis: Asurvey Inference.Ph.D.thesis,Edinburgh University.
+Pearl,J.(1982b). Thesolutionforthebranching oftheformalismandacomparisonwithaugmented Plotkin,G.(1972).Building-inequationaltheories.
+factorofthealpha betapruningalgorithmandits transitionnetworks.AIJ,13,231 278. In Meltzer,B.and Michie,D.(Eds.),Machine Intel-
+optimality.CACM,25(8),559 564. Pereira,F.and Wright,R.N.(1991).Finite-stateap- ligence7,pp.73 90.Edinburgh University Press.
+Pearl, J. (1984). Heuristics: Intelligent Search proximationofphrasestructuregrammars. In ACL- Pohl,I.(1971).Bi-directionalsearch.In Meltzer,B.
+Strategiesfor Computer Problem Solving.Addison- 91,pp.246 255. and Michie,D.(Eds.),Machine Intelligence6,pp.
+Wesley. Perlis,A.(1982). Epigramsinprogramming. SIG- 127 140.Edinburgh University Press.
+Pearl,J.(1986). Fusion,propagation,andstructur- PLAN Notices,17(9),7 13. Pohl,I.(1973).Theavoidanceof(relative)catastro-
+inginbeliefnetworks.AIJ,29,241 288. Perrin,B.E.,Ralaivola,L.,and Mazurie,A.(2003). phe,heuristiccompetence,genuinedynamicweight-
+Genenetworks inferenceusingdynamic Bayesian ingandcomputationalissuesinheuristicproblem
+Pearl,J.(1987).Evidentialreasoningusingstochas-
+networks.Bioinformatics,19,II138 II148. solving.In IJCAI-73,pp.20 23.
+ticsimulationofcausalmodels.AIJ,32,247 257.
+Peterson,C.and Anderson,J.R.(1987). Amean Pohl,I.(1977). Practicalandtheoreticalconsidera-
+Pearl,J.(1988). Probabilistic Reasoningin Intelli-
+fieldtheorylearningalgorithmforneuralnetworks. tionsinheuristicsearchalgorithms.In Elcock,E.W.
+gent Systems:Networksof Plausible Inference.Mor-
+Complex Systems,1(5),995 1019. and Michie,D.(Eds.),Machine Intelligence8,pp.
+gan Kaufmann.
+55 72.Ellis Horwood.
+Petrik,M.and Zilberstein,S.(2009). Bilinearpro-
+Pearl,J.(2000).Causality:Models,Reasoning,and
+grammingapproa

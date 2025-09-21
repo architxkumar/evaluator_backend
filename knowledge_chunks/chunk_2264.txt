@@ -1,0 +1,36 @@
+s:
+2 1:2 Onday0,wehavenoobservations, onlythesecurityguard spriorbeliefs;let sassume
+thatconsistsof P(R ) (cid:16)0.5,0.5(cid:17).
+0 Onday1,theumbrellaappears, so U true. Theprediction from t 0tot 1is
+(cid:12) 1
+P(R ) P(R r )P(r )
+1 1 0 0
+r0 (cid:16)0.7,0.3(cid:17) 0.5 (cid:16)0.3,0.7(cid:17) 0.5 (cid:16)0.5,0.5(cid:17).
+Thentheupdate stepsimply multiplies bytheprobability of theevidence fort 1and
+normalizes, asshownin Equation(15.4):
+P(R u ) P(u R )P(R ) (cid:16)0.9,0.2(cid:17)(cid:16)0.5,0.5(cid:17)
+1 1 1 1 1 (cid:16)0.45,0.1(cid:17) (cid:16)0.818,0.182(cid:17).
+Section15.2. Inference in Temporal Models 573 Onday2,theumbrellaappears, so U true. Theprediction from t 1tot 2is
+(cid:12) 2
+P(R u ) P(R r )P(r u )
+2 1 2 1 1 1
+r1 (cid:16)0.7,0.3(cid:17) 0.818 (cid:16)0.3,0.7(cid:17) 0.182 (cid:16)0.627,0.373(cid:17),
+andupdatingitwiththeevidencefort 2gives
+P(R u ,u ) P(u R )P(R u ) (cid:16)0.9,0.2(cid:17)(cid:16)0.627,0.373(cid:17)
+2 1 2 2 2 2 1 (cid:16)0.565,0.075(cid:17) (cid:16)0.883,0.117(cid:17).
+Intuitively, the probability of rain increases from day 1to day 2 because rain persists. Exer-
+cise15.2(a)asksyoutoinvestigate thistendencyfurther.
+The task of prediction can be seen simply as filtering without the addition of new
+evidence. In fact, the filtering process already incorporates a one-step prediction, and it is
+easy toderivethe following recursive computation forpredicting the stateatt k 1from
+aprediction fort k:
+(cid:12)
+P(X e ) P(X x )P(x e ). (15.6)
+t k 1 1:t t k 1 t k t k 1:t
+xt k
+Naturally, thiscomputation involves onlythetransition modelandnotthesensormodel.
+It is interesting to consider what happens as we try to predict further and further into
+the future. As Exercise 15.2(b) shows, the predicted distribution for rain converges to a
+fixed point (cid:16)0.5,0.5(cid:17), after which it remains constant for all time. This is the stationary
+distribution ofthe Markov process defined by thetransition model. (Seealso page 537.) A
+great deal is known about the pr

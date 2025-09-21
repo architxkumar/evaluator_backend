@@ -1,0 +1,44 @@
+
+time scale for a moment. The function Duration gives the difference between the end time
+andthestarttime.
+Interval(i) Duration(i) (Time(End(i)) Time(Begin(i))).
+Time(Begin(AD1900)) Seconds(0).
+Time(Begin(AD2001)) Seconds(3187324800).
+Time(End(AD2001)) Seconds(3218860800).
+Duration(AD2001) Seconds(31536000).
+To make these numbers easier to read, we also introduce a function Date, which takes six
+arguments (hours, minutes,seconds, day,month,andyear)andreturnsatimepoint:
+Time(Begin(AD2001)) Date(0,0,0,1,Jan,2001)
+Date(0,20,21,24,1,1995) Seconds(3000000000).
+Twointervals Meet if the end timeof the firstequals the start timeof the second. Thecom-
+pletesetofintervalrelations,asproposedby Allen(1983),isshowngraphicallyin Figure12.2
+andlogically below:
+Meet(i,j) End(i) Begin(j)
+Before(i,j) End(i) Begin(j)
+After(j,i) Before(i,j)
+During(i,j) Begin(j) Begin(i) End(i) End(j)
+Overlap(i,j) Begin(i) Begin(j) End(i) End(j)
+Begins(i,j) Begin(i) Begin(j)
+Finishes(i,j) End(i) End(j)
+Equals(i,j) Begin(i) Begin(j) End(i) End(j)
+These all have their intuitive meaning, with the exception of Overlap: we tend to think of
+overlap as symmetric (if i overlaps j then j overlaps i), but in this definition, Overlap(i,j)
+onlyholdsifibeginsbeforej. Tosaythatthereignof Elizabeth IIimmediatelyfollowedthat
+of George VI,andthereignof Elvisoverlapped withthe1950s, wecanwritethefollowing:
+Meets(Reign Of(George VI),Reign Of(Elizabeth II)).
+Overlap(Fifties,Reign Of(Elvis)).
+Begin(Fifties) Begin(AD1950).
+End(Fifties) End(AD1959).
+Section12.3. Events 449
+Figure12.2 Predicatesontimeintervals.
+1801
+1797 time
+1789
+W a sh in g to n
+A d a m s Je ffe rso n
+Figure12.3 Aschematicviewoftheobject President(USA)forthefirst15yearsofits
+existence.
+12.3.3 Fluents and objects
+Physical objects can be viewed as generalized events, in the sense that a physical object is
+a chunk of space time. For example, USA can be thought of as an event that began in,
+say, 1776 as a union of 13 states and is still in progress today as a un

@@ -1,0 +1,34 @@
+1067 Burkhard,H.-D.,1014,1091 1068
+Bresina,J.,28,1064 Burns,C.,553,1083 Carnegie Mellon University,17,18
+Bresnan,J.,920,1067 Buro,M.,175,186,1067 Carpenter,M.,432,1070
+Brewka,G.,472,1067 Burstein,J.,1022,1067 Carreras,X.,920,1079
+Brey,R.,637,1086 Burton,R.,638,1067 Carroll,S.,155,1068
+Brickley,D.,469,1067 Buss,D.M.,638,1067 Carson,D.,359,1092
+bridge(cardgame),32,186,195 Butler,S.,1042,1067 cart poleproblem,851
+Bridge Baron,189 Bylander,T.,393,395,1067 Casati,R.,470,1068
+Bridle,J.S.,761,1067 Byrd,R.H.,760,1067 cascadedfinite-statetransducers,875
+Briggs,R.,468,1067 case-basedreasoning,799
+brightness,932 C caseagreement,900
+Brill,E.,28,756,759,872,885,1065 casefolding,870
+Brin,D.,881,885,1036,1067 c(stepcost),68 casestatement(inconditionplans),136
+Brin,S.,870,880,884,1067 Cabeza,R.,11,1067 Cash,S.S.,288,1087
+Bringsjord,S.,30,1067 Cabral,J.,469,1081 Cassandra,A.R.,686,1068,1077
+Brioschi,F.,553,1066 caching,269 Cassandras,C.G.,60,1068
+Britain,22,24 Cafarella,M.J.,885,1065,1067,1072 Casteran,P.,359,1066
+Broadbent,D.E.,13,1067 Cajal,S.,10 Castro,R.,553,1068
+Broadhead,M.,885,1065 cake,eatingandhaving,380 categorization,865
+Broca,P.,10 calculus,131 category,440,440 445,453
+Brock,B.,360,1076 calculusofvariations,155 causalnetwork,see Bayesiannetwork
+Brokowski,M.,156,1092 Calvanese,D.,471,1064,1067 causalprobability,496
+Brooks,M.J.,968,1076 Cambefort,Y.,61,1075 causalrule,317,517
+Brooks,R.A.,60,275,278,434,1003, Cambridge,13 causation,246,498
+1012,1013,1041,1067,1085 camera caveman,778
+Brouwer,P.S.,854,1065 digital,930,943 Cazenave,T.,194,1066
+Brown,C.,230,1067 forrobots,973 CCD(charge-coupleddevice),930,969
+Brown,J.S.,472,800,1070,1080 pinhole,930 celldecomposition,986,989
+Brown,K.C.,637,1067 stereo,949,974 exact,990
+Brown,M.,604,1079 timeofflight,974 celllayout,74
+Brown,P.F.,922,1067 video,929,963 center(inmechanismdesign),679
+Brownston,L.,358,1067 Cameron-Jones,R.M.,793,1086 centrallimittheorem,1058
+Bruce,V.,968,1067 Campbell,M.S.,192,1067,1076 cerebralcortex,11
+Brunellesch

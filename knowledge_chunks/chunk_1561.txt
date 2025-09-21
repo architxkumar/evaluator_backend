@@ -1,0 +1,29 @@
+instanceisabout22steps.
+The branching factor is about 3. (When the empty tile is in the middle, four moves are
+possible; when it is in a corner, two; and when it is along an edge, three.) This means
+that an exhaustive tree search to depth 22 would look at about 322 3.1 1010 states.
+A graph search would cut this down by a factor of about 170,000 because only 9! 2 181,440 distinct states are reachable. (See Exercise 3.4.) This is a manageable number, but
+Section3.6. Heuristic Functions 103
+7 2 4 1 2
+5 6 3 4 5
+8 3 1 6 7 8
+Start State Goal State
+Figure3.28 Atypicalinstanceofthe8-puzzle.Thesolutionis26stepslong.
+the corresponding numberforthe 15-puzzle isroughly 1013,so thenext orderof business is to find a good heuristic function. If we want to find the shortest solutions by using A, we
+needaheuristic function thatneveroverestimates thenumberofstepstothegoal. Thereisa
+longhistory ofsuchheuristics forthe15-puzzle; herearetwocommonlyusedcandidates: h the number of misplaced tiles. For Figure 3.28, all of the eight tiles are out of
+1
+position, so the start state would have h 8. h is an admissible heuristic because it
+1 1
+isclearthatanytilethatisoutofplacemustbemovedatleastonce. h the sum of the distances of the tiles from their goal positions. Because tiles
+2
+cannot move along diagonals, the distance we will count is the sum of the horizontal
+andverticaldistances. Thisissometimescalledthecityblockdistanceor Manhattan
+MANHATTAN distance. h is also admissible because all any move can do is move one tile one step
+DISTANCE 2
+closertothegoal. Tiles1to8inthestartstategivea Manhattandistance of
+h 3 1 2 2 2 3 3 2 18.
+2
+Asexpected, neitheroftheseoverestimates thetruesolution cost,whichis26.
+3.6.1 The effect ofheuristic accuracy onperformance EFFECTIVE Onewaytocharacterize thequalityofaheuristicisthe effective branchingfactorb . Ifthe
+BRANCHINGFACTOR totalnumberofnodesgeneratedby A foraparticularproblemis N andthesolutiondepthis d, then b is the branching factor that a uniform tree 

@@ -1,0 +1,41 @@
+twork (also known asaninfluencediagram)
+that extends Bayesian networks by incorporating actions and utilities. The remainder of the
+chapterdiscusses issuesthatariseinapplications ofdecisiontheorytoexpertsystems.
+16.1 COMBINING BELIEFS AND DESIRES UNDER UNCERTAINTY
+Decision theory, initssimplest form, deals withchoosing among actions based on thedesir-
+abilityoftheirimmediateoutcomes; thatis,theenvironment isassumedtobeepisodic inthe
+sense defined on page 43. (Thisassumption isrelaxed in Chapter 17.) In Chapter3weused
+the notation RESULT(s
+0
+,a) for the state that is the deterministic outcome of taking action a
+in state s . In this chapter wedeal withnondeterministic partially observable environments.
+0
+Sincetheagentmaynotknowthecurrentstate,weomititanddefine RESULT(a)asarandom
+(cid:2)
+variable whose values arethepossible outcome states. Theprobability of outcome s, given
+evidence observations e,iswritten
+P(RESULT(a) s
+(cid:2) a,e),
+610
+Section16.2. The Basisof Utility Theory 611
+wheretheaontheright-handsideoftheconditioning barstandsforthe eventthatactionais
+executed.1
+Theagent spreferencesarecapturedbyautilityfunction,U(s),whichassignsasingle
+UTILITYFUNCTION
+numbertoexpressthedesirability ofastate. The expected utilityofanactiongiventheevi-
+EXPECTEDUTILITY
+dence,EU(a e),isjusttheaverageutilityvalueoftheoutcomes,weightedbytheprobability
+thattheoutcomeoccurs:
+(cid:12)
+EU(a e) P(RESULT(a) s (cid:2) a,e)U(s (cid:2) ). (16.1)
+s(cid:3)
+MAXIMUMEXPECTED Theprinciple ofmaximumexpectedutility(MEU)saysthatarational agentshouldchoose
+UTILITY
+theactionthatmaximizestheagent s expectedutility:
+action argmax EU(a e)
+a
+Inasense,the ME Uprinciplecouldbeseenasdefiningallof AI.Allanintelligent agenthas
+to do is calculate the various quantities, maximize utility over its actions, and away it goes.
+Butthisdoesnotmeanthatthe AIproblemissolvedbythedefinition!
+The MEU principle formalizes the general notion that the agent should do the right
+thing, but goes only a small distance toward a f

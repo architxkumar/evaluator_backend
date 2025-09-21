@@ -1,0 +1,29 @@
+imate of the
+worldstatethattheninformstheexecution oftheoverallplan;inthiscase, themultiplebod-
+ies act as a single body. When communication constraints make this impossible, we have
+5 Futilerepetitionofaplanrepairisexactlythebehaviorexhibitedbythesphexwasp(page39).
+426 Chapter 11. Planningand Actinginthe Real World
+DECENTRALIZED whatissometimescalledadecentralizedplanningproblem;thisisperhapsamisnomer,be-
+PLANNING
+causetheplanningphaseiscentralizedbuttheexecutionphaseisatleastpartiallydecoupled.
+Inthiscase,thesubplanconstructed foreachbodymayneedtoincludeexplicitcommunica-
+tiveactions withotherbodies. Forexample, multiple reconnaissance robots covering awide
+areamayoftenbeoutofradiocontactwitheachotherandshouldsharetheirfindingsduring
+timeswhencommunication isfeasible.
+When a single entity is doing the planning, there is really only one goal, which all the
+bodiesnecessarilyshare. Whenthebodiesaredistinctagentsthatdotheirownplanning,they
+may still share identical goals; for example, two human tennis players who form a doubles
+team share the goal of winning the match. Even with shared goals, however, the multibody
+and multiagent cases are quite different. In a multibody robotic doubles team, a single plan
+dictates which body willgo where on the court and which body willhit the ball. Ina multi-
+agent doubles team,ontheotherhand, eachagent decides whattodo;without somemethod
+for coordination, both agents may decide to cover the same part of the court and each may
+COORDINATION
+leavetheballfortheothertohit.
+Theclearest caseofamultiagent problem, ofcourse, iswhen the agents havedifferent
+goals. In tennis, the goals of two opposing teams are in direct conflict, leading to the zero-
+sum situation of Chapter 5. Spectators could be viewed as agents if their support ordisdain
+is a significant factor and can be influenced by the players conduct; otherwise, they can be
+treated asanaspect ofnature just liketheweather that is assumedtobeindifferent tothe
+players intentions.6
+Final

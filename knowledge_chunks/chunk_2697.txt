@@ -1,0 +1,36 @@
+ withthechainruleandthenusingthe Markovassumption:
+(cid:25)N (cid:25)N
+P(c 1:N ) P(c i c 1:i 1 ) P(c i c i 2:i 1 ).
+i 1 i 1
+Foratrigramcharactermodelinalanguagewith100characters,P(C i C i 2:i 1 )hasamillion
+entries, andcanbeaccurately estimated bycounting charactersequences inabodyoftextof
+10 million characters or more. We call a body of text a corpus (plural corpora), from the
+CORPUS
+Latinwordforbody.
+862 Chapter 22. Natural Language Processing
+Whatcanwedowithn-gramcharactermodels? Onetaskforwhichtheyarewellsuited
+LANGUAGE islanguageidentification: givenatext,determinewhatnaturallanguageitiswrittenin. This
+IDENTIFICATION
+is arelatively easy task; evenwith short texts such as Hello, world or Wie geht es dir, it
+iseasy toidentify thefirstas English andthesecond as German. Computersystems identify
+languages with greater than 99 accuracy; occasionally, closely related languages, such as
+Swedishand Norwegian,areconfused.
+One approach to language identification is to first build a trigram character model of
+each candidate language, P(c i c i 2:i 1 ,(cid:3)), wherethe variable (cid:3)ranges overlanguages. For
+each (cid:3) the model is built by counting trigrams in acorpus of that language. (About 100,000
+characters of each language are needed.) That gives us a model of P(Text Language), but
+wewanttoselectthemostprobablelanguagegiventhetext,soweapply Bayes rulefollowed
+bythe Markovassumption togetthemostprobable language:
+(cid:3) argmax P((cid:3) c )
+1:N
+(cid:3) argmax P((cid:3))P(c (cid:3))
+1:N
+(cid:3)
+(cid:25)N argmax P((cid:3)) P(c i c i 2:i 1 ,(cid:3))
+(cid:3)
+i 1
+Thetrigram model canbe learned from acorpus, but whatabout thepriorprobability P((cid:3))?
+Wemayhave someestimate ofthese values; forexample, ifweareselecting arandom Web
+pageweknowthat Englishisthemostlikelylanguageandthattheprobabilityof Macedonian
+will be less than 1 . The exact number weselect forthese priors is not critical because the
+trigrammodelusuallyselectsonelanguagethatisseveralordersofmagnitudemo

@@ -1,0 +1,35 @@
+3.5.1 Applying Bayes rule: The simplecase
+On the surface, Bayes rule does not seem very useful. It allows us to compute the single
+term P(b a) in terms of three terms: P(a b), P(b), and P(a). That seems like two steps
+backwards, but Bayes rule is useful in practice because there are many cases where we do
+have good probability estimates for these three numbers and need to compute the fourth.
+Often, we perceive as evidence the effect of some unknown cause and we would like to
+determinethatcause. Inthatcase,Bayes rulebecomes
+P(effect cause)P(cause)
+P(cause effect) .
+P(effect)
+The conditional probability P(effect cause) quantifies the relationship in the causal direc-
+CAUSAL
+tion, whereas P(cause effect)describes the diagnostic direction. In atask such as medical
+DIAGNOSTIC
+diagnosis, weoften have conditional probabilities on causal relationships (that is, the doctor
+knows P(symptoms disease))andwanttoderiveadiagnosis, P(disease symptoms). For
+example, a doctor knows that the disease meningitis causes the patient to have a stiff neck,
+say, 70 of the time. The doctor also knows some unconditional facts: the prior probabil-
+ity that a patient has meningitis is 1 50,000, and the prior probability that any patient has a
+stiff neck is 1 . Letting s be the proposition that the patient has a stiff neck and m be the
+proposition thatthepatienthasmeningitis, wehave
+P(s m) 0.7
+P(m) 1 50000
+P(s) 0.01
+P(s m)P(m) 0.7 1 50000
+P(m s) 0.0014. (13.14)
+P(s) 0.01
+Thatis,weexpectlessthan1in700patientswithastiffnecktohavemeningitis. Noticethat
+even though a stiff neck is quite strongly indicated by meningitis (with probability 0.7), the
+probabilityofmeningitisinthepatientremainssmall. Thisisbecausethepriorprobabilityof
+stiffnecksismuchhigherthanthatofmeningitis.
+Section13.3illustratedaprocessbywhichonecanavoidassessingthepriorprobability
+of the evidence (here, P(s)) by instead computing a posterior probability for each value of
+Section13.5. Bayes Ruleand Its Use 497
+thequeryvariable(here, m

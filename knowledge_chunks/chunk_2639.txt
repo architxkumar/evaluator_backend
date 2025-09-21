@@ -1,0 +1,28 @@
+smeaning.
+Asinthecomplete-datacase,puremaximum-likelihoodstructurelearningwillresultin
+acompletely connected network (moreover, one withno hidden variables), so some form of
+complexity penaltyisrequired. Wecanalsoapply MCM Ctosamplemanypossible network
+structures, thereby approximating Bayesian learning. For example, wecanlearnmixtures of
+Gaussianswithanunknownnumberofcomponentsbysamplingoverthenumber;theapprox-
+imateposteriordistributionforthenumberof Gaussiansis givenbythesamplingfrequencies
+ofthe MCM Cprocess.
+For the complete-data case, the inner loop to learn the parameters is very fast just a
+matter of extracting conditional frequencies from the data set. When there are hidden vari-
+ables, the inner loop may involve many iterations of EM ora gradient-based algorithm, and
+eachiterationinvolvesthecalculationofposteriorsina Bayesnet,whichisitselfan NP-hard
+problem. To date, this approach has proved impractical for learning complex models. One
+possibleimprovementistheso-called structural EMalgorithm, whichoperatesinmuchthe
+STRUCTURALEM
+same way as ordinary (parametric) EM except that the algorithm can update the structure
+as well as the parameters. Just as ordinary EM uses the current parameters to compute the
+expected counts in the E-step and then applies those counts in the M-step to choose new
+parameters,structural EMusesthecurrentstructuretocomputeexpectedcountsandthenap-
+pliesthose counts inthe M-steptoevaluate thelikelihood forpotential newstructures. (This
+contrasts with the outer-loop inner-loop method, which computes new expected counts for
+each potential structure.) In this way, structural EM may make several structural alterations
+tothenetworkwithoutoncerecomputingtheexpectedcounts,andiscapableoflearningnon-
+trivial Bayes net structures. Nonetheless, much work remains to be done before we can say
+thatthestructure-learning problem issolved.
+Section20.4. Summary 825
+20.4 SUMMARY
+Statistical learning methods rangefromsimple calculation ofaverages tothecons

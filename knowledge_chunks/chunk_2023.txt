@@ -1,0 +1,28 @@
+ schema says that if an open can is in view, then the agent perceives the
+color of the paint in the can. Because there are no exogenous events in this world, the color
+of an object will remain the same, even if it is not being perceived, until the agent performs
+an action to change the object s color. Of course, the agent will need an action that causes
+objects(oneatatime)tocomeintoview:
+Action(Look At(x),
+PRECOND:In View(y) (x(cid:7) y)
+EFFECT:In View(x) In View(y))
+Fora fully observable environment, we would have a Percept axiom with no preconditions
+for each fluent. A sensorless agent, on the other hand, has no Percept axioms at all. Note
+that evenasensorless agent can solvethe painting problem. Onesolution istoopen anycan
+of paint and apply it to both chair and table, thus coercing them to be the same color (even
+thoughtheagentdoesn tknowwhatthecoloris).
+A contingent planning agent with sensors can generate a better plan. First, look at the
+table and chair to obtain their colors; if they are already the same then the plan is done. If
+not, look at the paint cans; if the paint in a can is the same color as one piece of furniture,
+thenapplythatpainttotheotherpiece. Otherwise,paintbothpieceswithanycolor.
+Finally,anonlineplanningagentmightgenerateacontingent planwithfewerbranches
+at first perhaps ignoring the possibility that no cans match any of the furniture and deal
+Section11.3. Planningand Actingin Nondeterministic Domains 417
+with problems when they arise by replanning. It could also deal with incorrectness of its
+action schemas. Whereas a contingent planner simply assumes that the effects of an action
+always succeed that painting the chair does the job a replanning agent would check the
+resultandmakeanadditional plantofixanyunexpectedfailure,suchasanunpaintedareaor
+theoriginalcolorshowingthrough.
+Intherealworld,agentsuseacombinationofapproaches. Carmanufacturerssellspare
+tires and air bags, which are physical embodiments of contingent plan branches designed
+to 

@@ -1,0 +1,28 @@
+
+and a sequence of HL As (each defined by preconditions and angelic specifications of opti-
+mistic and pessimistic reachable sets) and computes optimistic and pessimistic descriptions
+ofthereachable setofthesequence.
+11.6 In Figure 11.2 we showed how to describe actions in a scheduling problem by using
+separate fields for DURATION, USE, and CONSUME. Now suppose we wanted to combine
+scheduling withnondeterministic planning, whichrequires nondeterministic andconditional
+effects. Considereachofthethreefieldsandexplainifthey shouldremainseparate fields,or
+iftheyshouldbecomeeffectsoftheaction. Giveanexampleforeachofthethree.
+11.7 Someoftheoperationsinstandardprogramminglanguagescanbemodeledasactions
+that change the state of the world. For example, the assignment operation changes the con-
+tentsofamemorylocation, andtheprintoperation changes thestate oftheoutput stream. A
+program consisting oftheseoperations canalsobeconsidered asaplan, whosegoalisgiven
+436 Chapter 11. Planningand Actinginthe Real World
+bythespecification oftheprogram. Therefore, planning algorithms canbeusedtoconstruct
+programsthatachieveagivenspecification.
+a. Writeanactionschemafortheassignmentoperator(assigningthevalueofonevariable
+toanother). Rememberthattheoriginal valuewillbeoverwritten!
+b. Show how object creation can be used by a planner to produce a plan for exchanging
+thevaluesoftwovariablesbyusingatemporaryvariable.
+11.8 Suppose the Flip action always changes the truth value of variable L. Show how
+to define its effects by using an action schema with conditional effects. Show that, despite
+the use of conditional effects, a 1-CNF belief state representation remains in 1-CNF after a
+Flip.
+11.9 In the blocks world we were forced to introduce two action schemas, Move and
+Move To Table, in order to maintain the Clear predicate properly. Show how conditional
+effectscanbeusedtorepresent bothofthesecaseswithasingleaction.
+11.10 Conditionaleffectswereillustratedforthe Suck actioninthevacuumworld which

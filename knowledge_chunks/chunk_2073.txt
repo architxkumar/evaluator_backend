@@ -1,0 +1,35 @@
+ally, action connotesanagentwhile event connotesthepossibilityofagentlessactions.
+4 Someversionsofeventcalculusdonotdistinguisheventcategoriesfrominstancesofthecategories.
+Section12.3. Events 447
+notmadetrue(restored) byanotherevent. Formally,theaxiomsare:
+Happens(e,(t ,t )) Initiates(e,f,t ) Clipped(f,(t ,t)) t t 1 2 1 1 1
+T(f,t)
+Happens(e,(t ,t )) Terminates(e,f,t ) Restored(f,(t ,t)) t t 1 2 1 1 1 T(f,t)
+where Clipped and Restored aredefinedby
+Clipped(f,(t ,t )) 1 2 e,t,t Happens(e,(t,t )) t t t Terminates(e,f,t)
+3 3 1 2
+Restored(f,(t ,t )) 1 2 e,t,t Happens(e,(t,t )) t t t Initiates(e,f,t)
+3 3 1 2
+Itisconvenient toextend T toworkoverintervals aswellastimepoints; afluentholds over
+anintervalifitholdsoneverypointwithintheinterval:
+T(f,(t ,t )) t (t t t ) T(f,t) 1 2 1 2
+Fluents and actions are defined with domain-specific axioms that are similar to successor-
+state axioms. For example, we can say that the only way a wumpus-world agent gets an
+arrowisatthestart,andtheonlywaytouseupanarrowistoshootit:
+Initiates(e,Have Arrow(a),t) e Start
+Terminates(e,Have Arrow(a),t) e Shootings(a)
+By reifying events we make it possible to add any amount of arbitrary information about
+them. For example, we can say that Shankar s flight was bumpy with Bumpy(E ). In an
+1
+ontology whereevents are n-arypredicates, there would benowaytoadd extra information
+likethis;movingtoann 1-arypredicate isn tascalablesolution.
+Wecanextendeventcalculustomakeitpossibletorepresentsimultaneousevents(such
+astwopeoplebeingnecessarytorideaseesaw),exogenousevents(suchasthewindblowing
+and changing the location of an object), continuous events (such as the level of water in the
+bathtubcontinuously rising)andothercomplications.
+12.3.1 Processes
+Theeventswehaveseensofararewhatwecall discrete events theyhave adefinitestruc-
+DISCRETEEVENTS
+ture. Shankar striphasabeginning, middle,andend. Ifinterruptedhalfway,theeventwould
+besomethingdifferent itwouldnotbeatripfrom San Franciscoto Washington,butinstead
+a trip from

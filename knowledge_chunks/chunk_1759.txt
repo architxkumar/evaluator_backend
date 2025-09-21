@@ -1,0 +1,30 @@
+action
+Figure7.1 Agenericknowledge-basedagent.Givenapercept,theagentaddsthepercept
+toitsknowledgebase,askstheknowledgebaseforthebestaction,andtellstheknowledge
+basethatithasinfacttakenthataction.
+the knowledge level, where we need specify only what the agent knows and what its goals
+KNOWLEDGELEVEL
+are, in order to fix its behavior. For example, an automated taxi might have the goal of
+taking a passenger from San Francisco to Marin County and might know that the Golden
+Gate Bridge is the only link between the two locations. Then we can expect it to cross the
+Golden Gate Bridgebecauseitknowsthatthatwillachieveitsgoal. Noticethatthisanalysis
+IMPLEMENTATION isindependent ofhowthetaxiworksattheimplementationlevel. Itdoesn t matterwhether
+LEVEL
+itsgeographicalknowledgeisimplementedaslinkedlistsorpixelmaps,orwhetheritreasons
+by manipulating strings of symbols stored in registers or by propagating noisy signals in a
+networkofneurons.
+A knowledge-based agent can be built simply by TEL Ling it what it needs to know.
+Starting with an empty knowledge base, the agent designer can TELL sentences one by one
+until the agent knows how to operate in its environment. This is called the declarative ap-
+DECLARATIVE
+proach to system building. In contrast, the procedural approach encodes desired behaviors
+directly asprogram code. Inthe1970s and1980s, advocates ofthetwoapproaches engaged
+inheateddebates. Wenowunderstandthatasuccessfulagentoftencombinesbothdeclarative
+andprocedural elements initsdesign, andthatdeclarative knowledge canoften becompiled
+intomoreefficientprocedural code.
+We can also provide a knowledge-based agent with mechanisms that allow it to learn
+for itself. These mechanisms, which are discussed in Chapter 18, create general knowledge
+abouttheenvironment fromaseriesofpercepts. Alearning agentcanbefullyautonomous.
+7.2 THE WUMPUS WORLD
+Inthissection wedescribe anenvironment inwhichknowledge-based agents canshowtheir
+worth. Thewumpusworldisacaveconsistingofroomsconnectedbyp

@@ -1,0 +1,47 @@
+ weight-update rule is identical to Equation (18.8). We have
+multiple output units, so let Err be the kth component of the error vector y h . Wewill
+k w
+also find it convenient to define a modified error Err g (cid:2) (in ), so that the weight-
+k k k
+updaterulebecomes
+w w a . (18.11)
+j,k j,k j k
+Toupdate the connections between the input units and the hidden units, weneed to define a
+quantity analogous to the error term for output nodes. Here is where we do the error back-
+propagation. Theideaisthathiddennodej is responsible forsomefractionoftheerror k
+in each of the output nodes to which itconnects. Thus, the values are divided according
+k
+tothestrength oftheconnection betweenthehidden nodeand theoutput node andareprop-
+agated back to provide the values for the hidden layer. The propagation rule for the j
+valuesisthefollowing:
+(cid:12)
+(cid:2) g (in ) w . (18.12)
+j j j,k k
+k
+734 Chapter 18. Learningfrom Examples
+function BACK-PROP-LEARNING(examples,network)returnsaneuralnetwork
+inputs:examples,asetofexamples,eachwithinputvectorxandoutputvectory
+network,amultilayernetworkwith Llayers,weightswi,j,activationfunctiong
+localvariables: ,avectoroferrors,indexedbynetworknode
+repeat
+foreachweightwi,j innetwork do
+wi,j asmallrandomnumber
+foreachexample(x,y)inexamples do Propagatetheinputsforwardtocomputetheoutputs foreachnodeiintheinputlayerdo
+ai xi
+for(cid:3) 2to Ldo
+foreachno(cid:2)dejinlayer(cid:3)do
+inj i
+wi,j ai
+aj g(inj) Propagatedeltasbackwardfromoutputlayertoinputlayer foreachnodej intheoutputlayerdo j g(cid:5)(inj) (yj aj)
+for(cid:3) L 1to1do
+foreachnodeiinl(cid:2)ayer(cid:3)do i g(cid:5)(ini)
+j
+wi,j j Updateeveryweightinnetworkusingdeltas foreachweightwi,j innetwork do
+wi,j wi,j ai j untilsomestoppingcriterionissatisfied
+returnnetwork
+Figure18.24 Theback-propagationalgorithmforlearninginmultilayernetworks.
+Nowtheweight-updaterulefortheweightsbetweentheinputsandthehiddenlayerisessen-
+tiallyidenticaltotheupdaterulefortheoutput layer:
+w w a .
+i,j i,j i j
+Theback-propa

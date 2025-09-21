@@ -1,0 +1,30 @@
+ingaverage
+foreachstateinatable. Inthelimitofinfinitelymanytrials,thesampleaveragewillconverge
+tothetrueexpectation in Equation(21.1).
+It is clear that direct utility estimation is just an instance of supervised learning where
+each example has the state as input and the observed reward-to-go as output. This means
+that we have reduced reinforcement learning to a standard inductive learning problem, as
+discussed in Chapter18. Section 21.4discusses theuseofmorepowerful kinds ofrepresen-
+tations for the utility function. Learning techniques for those representations can be applied
+directlytotheobserveddata.
+Direct utility estimation succeeds in reducing the reinforcement learning problem to
+an inductive learning problem, about which much is known. Unfortunately, it misses a very
+important source of information, namely, the fact that the utilities of states are not indepen-
+dent! Theutility ofeachstateequals itsownrewardplus theexpected utility ofitssuccessor
+states. That is, the utility values obey the Bellman equations for a fixed policy (see also
+Equation(17.10)):
+(cid:12)
+U (s) R(s) P(s (cid:2) s, (s))U (s (cid:2) ). (21.2)
+s(cid:3)
+Byignoringtheconnections betweenstates,directutility estimation missesopportunities for
+learning. For example, the second of the three trials given earlier reaches the state (3,2),
+which has not previously been visited. The next transition reaches (3,3), which is known
+from the first trial to have a high utility. The Bellman equation suggests immediately that
+(3,2)isalsolikelytohaveahighutility, because itleadsto(3,3),butdirectutilityestimation
+learns nothing until the end of the trial. More broadly, we can view direct utility estimation
+as searching for U in a hypothesis space that is much larger than it needs to be, in that it
+includes many functions that violate the Bellman equations. For this reason, the algorithm
+oftenconverges veryslowly.
+834 Chapter 21. Reinforcement Learning
+function PASSIVE-ADP-AGENT(percept)returnsanaction
+input

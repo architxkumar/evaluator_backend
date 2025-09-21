@@ -1,0 +1,22 @@
+Friedman,N.(1998). The Bayesianstructural EM Gat,E.(1998). Three-layeredarchitectures.In Ko- nerbasedonplanninggraphswithactioncosts. In
+algorithm.In UAI-98. rtenkamp,D.,Bonasso,R.P.,and Murphy,R.(Eds.), ICAPS-02,pp.281 290.
+Friedman,N.and Goldszmidt,M.(1996).Learning AI-based Mobile Robots:Case Studiesof Successful Gerevini, A. and Serina, I. (2003). Planning as
+Bayesiannetworkswithlocalstructure. In UAI-96, Robot Systems,pp.195 210.MIT Press. propositional CSP:fromwalksattolocalsearchfor
+pp.252 262. actiongraphs.Constraints,8,389 413.
+Gauss, C. F. (1809). Theoria Motus Corporum
+Friedman, N. and Koller, D. (2003). Be- Coelestiumin Sectionibus Conicis Solem Ambien- Gershwin,G.(1937).Let scallthewholethingoff.
+ing Bayesian about Bayesian network structure: tium.Sumtibus F.Pertheset I.H.Besser,Hamburg. Song.
+A Bayesian approach to structure discovery in
+Bayesiannetworks.Machine Learning,50,95 125. Gauss, C. F. (1829). Beitra ge zur theorie der Getoor,L.and Taskar,B.(Eds.).(2007). Introduc-
+algebraischen gleichungen. Collected in Werke, tionto Statistical Relational Learning.MIT Press.
+Friedman, N., Murphy, K., and Russell, S. J. Vol.3,pages71 102.K.Gesellschaft Wissenschaft, Ghahramani,Z.and Jordan,M.I.(1997). Facto-
+(1998). Learningthestructureofdynamicproba- Go ttingen,Germany,1876. rialhidden Markovmodels. Machine Learning,29,
+bilisticnetworks.In UAI-98.
+Gawande,A.(2002). Complications:ASurgeon s 245 274.
+Friedman,N.(2004). Inferringcellularnetworks Notesonan Imperfect Science.Metropolitan Books. Ghahramani, Z. (1998). Learning dynamic
+using probabilistic graphical models. Science,
+303(5659),799 805. Geiger,D.,Verma,T.,and Pearl,J.(1990).Identify- bayesiannetworks. In Adaptive Processingof Se-
+ingindependencein Bayesiannetworks. Networks, quencesand Data Structures,pp.168 197.
+Fruhwirth,T.and Abdennadher,S.(2003). Essen- 20(5),507 534. Ghahramani,Z.(2005).Tutorialonnonparametric
+tialsofconstraintprogramming.Cambridge Univer-
+Bayesianmethods. Tutorialpresentationatt

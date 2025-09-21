@@ -1,0 +1,26 @@
+Anassumed-density filterassumesthattheposteriordistribution overstatesattimetbelongs
+toaparticular finitelyparameterized family;iftheprojection andupdatestepstakeitoutside
+this family, the distribution is projected back to give the best approximation within the fam-
+FACTORED ily. For DB Ns, the Boyen Koller algorithm (Boyen et al., 1999) and the factored frontier
+FRONTIER
+algorithm (Murphy and Weiss, 2001) assume that the posterior distribution can be approxi-
+mated well by a product of small factors. Variational techniques (see Chapter 14) have also
+been developed fortemporal models. Ghahramani and Jordan (1997) discuss anapproxima-
+tionalgorithm forthefactorial HMM,a DB Ninwhichtwoormoreindependently evolving
+FACTORIALHMM
+606 Chapter 15. Probabilistic Reasoning over Time
+Markovchainsarelinkedbyasharedobservationstream. Jordanetal.(1998)coveranumber
+ofotherapplications.
+Data association for multitarget tracking was first described in a probabilistic setting
+by Sittler (1964). The first practical algorithm for large-scale problems was the multiple
+hypothesistracker or MH Talgorithm(Reid,1979). Manyimportantpapersarecollectedby
+Bar-Shalom and Fortmann (1988) and Bar-Shalom (1992). The development of an MCMC
+algorithm fordata association isdue to Pasula etal. (1999), whoapplied ittotraffic surveil-
+lance problems. Ohetal. (2009) provide aformal analysis and extensive experimental com-
+parisons toother methods. Schulz et al. (2003) describe adata association method based on
+particle filtering. Ingemar Coxanalyzed thecomplexity ofdataassociation (Cox,1993; Cox
+and Hingorani,1994)andbroughtthetopictotheattentionofthevisioncommunity. Healso
+noted the applicability of the polynomial-time Hungarian algorithm to the problem of find-
+ing most-likely assignments, which had long been considered an intractable problem in the
+tracking community. The algorithm itself was published by Kuhn (1955), based on transla-
+tions ofpapers published in1931 bytwo Hungarian mathematicians, De 

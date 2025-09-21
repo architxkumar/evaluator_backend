@@ -1,0 +1,27 @@
+talics:
+AIisoneofthenewestfieldsofscienceandengineering.Workbeganinearnestjustafter
+the Second World War,andthenameitselfwasinventedin1956.Togetherwithmolecular
+biology,AIisfrequentlymentionedas field Iwouldmostliketobein byresearchers
+inotherdisciplines.
+The differences are all reasonable paraphrases, such as frequently mentioned for regularly
+cited. Theonly real erroristhe omission ofthe article the, denoted bythe symbol. Thisis
+typical accuracy: of the two sentences, one has an error that would not be made by a native
+speaker, yetthemeaningisclearlyconveyed.
+Historically, there have been three main applications of machine translation. Rough
+translation, as provided by free online services, gives the gist of a foreign sentence or
+document, but contains errors. Pre-edited translation is used by companies to publish their
+documentation and sales materials inmultiple languages. The original source text iswritten
+in a constrained language that is easier to translate automatically, and the results are usually
+edited by ahuman tocorrect anyerrors. Restricted-source translation worksfully automati-
+cally,butonlyonhighlystereotypical language, suchasaweatherreport.
+Translationisdifficultbecause,inthefullygeneralcase,itrequiresin-depthunderstand-
+ing of the text. This is true even for very simple texts even texts of one word. Consider
+theword Open onthedoorofastore.6 Itcommunicates theideathatthestoreisaccepting
+customers at the moment. Now consider the same word Open on a large banner outside a
+newlyconstructed store. Itmeansthat the store isnowindaily operation, but readers ofthis
+signwouldnotfeelmisledifthestoreclosed atnight withoutremoving thebanner. Thetwo
+signs use the identical word to convey different meanings. In German the sign on the door
+wouldbe Offen whilethebannerwouldread Neu Ero ffnet. 6 Thisexampleisdueto Martin Kay.
+908 Chapter 23. Natural Languagefor Communication
+The problem is that different languages categorize the world differently. Forexample,
+the 

@@ -1,0 +1,29 @@
+ definition of tomatoes, wehave aset offeatures that serves toidentify
+objects that are clearly typical tomatoes, but might not be able to decide forother
+objects. (Couldtherebeatomatothatisfuzzylikeapeach?)
+This poses a problem for a logical agent. The agent cannot be sure that an
+object it has perceived is a tomato, and even if it were sure, it could not be cer-
+tain which of the properties of typical tomatoes this one has. This problem is an
+inevitable consequence ofoperating inpartially observable environments.
+One useful approach is to separate what is true of all instances of a cate-
+gory from what is true only of typical instances. So in addition to the category
+Tomatoes,wewillalsohavethecategory Typical(Tomatoes). Here,the Typical
+functionmapsacategory tothesubclass thatcontainsonlytypicalinstances:
+Typical(c) c.
+Mostknowledge aboutnatural kindswillactuallybeabouttheirtypicalinstances:
+x Typical(Tomatoes) Red(x) Round(x).
+Thus, we can write down useful facts about categories without exact defini-
+tions. Thedifficulty ofproviding exact definitions formost natural categories was
+explainedindepthby Wittgenstein (1953). Heusedtheexampleofgamestoshow
+that members of a category shared family resemblances rather than necessary
+and sufficient characteristics: what strict definition encompasses chess, tag, soli-
+taire,anddodgeball?
+The utility of the notion of strict definition was also challenged by
+Quine (1953). He pointed out that even the definition of bachelor as an un-
+married adult male is suspect; one might, for example, question a statement such
+as the Pope is a bachelor. While not strictly false, this usage is certainly infe-
+licitous because it induces unintended inferences on the part of the listener. The
+tension could perhaps be resolved by distinguishing between logical definitions
+suitable for internal knowledge representation and the more nuanced criteria for
+felicitous linguistic usage. Thelattermaybeachieved by filtering theassertions
+derivedfromthe

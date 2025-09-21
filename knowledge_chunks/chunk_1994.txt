@@ -1,0 +1,47 @@
+onallaspects
+of planning. La Valle s text Planning Algorithms (2006) covers both classical and stochastic
+planning, withextensivecoverageofrobotmotionplanning.
+Planningresearchhasbeencentralto AIsinceitsinception, andpapersonplanningare
+a staple of mainstream AI journals and conferences. There are also specialized conferences
+suchasthe International Conferenceon AI Planning Systems,the International Workshopon
+Planningand Scheduling for Space,andthe European Conference on Planning.
+EXERCISES
+10.1 Describethedifferencesandsimilaritiesbetweenproblem solvingandplanning.
+10.2 Giventheactionschemasandinitialstatefrom Figure10.1,whatarealltheapplicable
+concrete instances of Fly(p,from,to)inthestatedescribed by
+At(P ,JFK) At(P ,SFO) Plane(P ) Plane(P )
+1 2 1 2 Airport(JFK) Airport(SFO)?
+10.3 The monkey-and-bananas problem is faced by a monkey in a laboratory with some
+bananashangingoutofreachfromtheceiling. Aboxisavailablethatwillenablethemonkey
+toreachthebananasifheclimbsonit. Initially,themonkeyisat A,thebananasat B,andthe
+box at C. The monkey and box have height Low, but if the monkey climbs onto the box he
+willhaveheight High,thesameasthebananas. Theactions available tothemonkeyinclude
+Go from one place to another, Push an object from one place to another, Climb Up onto or
+Climb Down fromanobject, and Grasp or Ungrasp anobject. Theresult ofa Grasp isthat
+themonkeyholdstheobjectifthemonkeyandobjectareinthesameplaceatthesameheight.
+a. Writedowntheinitialstatedescription.
+Exercises 397
+Switch 4
+Door 4
+Room 4
+Switch 3
+Door 3
+Room 3
+Shakey
+Corridor
+Switch 2
+Door 2
+Room 2
+Switch 1
+Box 3
+Box 2
+Door 1
+Room 1
+Box 4
+Box 1
+Figure10.14 Shakey sworld. Shakeycanmovebetweenlandmarkswithina room,can
+passthroughthedoorbetweenrooms,canclimbclimbableobjectsandpushpushableobjects,
+andcanfliplightswitches.
+b. Writethesixactionschemas.
+c. Suppose the monkey wants to fool the scientists, who are off to tea, by grabbing the
+bananas, but leaving the box inits original place. Writethis as agene

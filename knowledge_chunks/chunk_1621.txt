@@ -1,0 +1,32 @@
+ate, just as for sensorless problems. One can also derive incremental search
+algorithms, analogous to those described for sensorless problems, that provide substantial
+speedups overtheblack-box approach.
+4.4.4 Anagentforpartiallyobservable environments
+Thedesign ofaproblem-solving agent forpartially observable environments isquitesimilar
+to the simple problem-solving agent in Figure 3.1: the agent formulates a problem, calls a
+searchalgorithm (such as AND-OR-GRAPH-SEARCH)tosolveit,andexecutes thesolution.
+There are two main differences. First, the solution to a problem will be a conditional plan
+rather than a sequence; if the first step is an if then else expression, the agent will need to
+testtheconditionintheif-partandexecutethethen-partortheelse-partaccordingly. Second,
+the agent will need to maintain its belief state as it performs actions and receives percepts.
+This process resembles the prediction observation update process in Equation (4.5) but is
+actuallysimplerbecausetheperceptisgivenbytheenvironmentratherthancalculatedbythe
+Section4.4. Searchingwith Partial Observations 145
+Suck A,Clean Right 2 B,Dirty 1 5 5 6 2
+3 7 7 4 6
+8
+Figure4.17 Twoprediction updatecyclesofbelief-statemaintenanceinthekindergarten
+vacuumworldwithlocalsensing.
+agent. Givenaninitialbeliefstateb,anactiona,andapercept o,thenewbeliefstateis:
+(cid:2)
+b UPDATE(PREDICT(b,a),o). (4.6)
+Figure 4.17 shows the belief state being maintained in the kindergarten vacuum world with
+local sensing, wherein any square may become dirty at any time unless the agent is actively
+cleaning itatthatmoment.12
+In partially observable environments which include the vast majority of real-world
+environments maintaining one s belief state is a core function of any intelligent system.
+This function goes under various names, including monitoring, filtering and state estima-
+MONITORING
+tion. Equation (4.6) iscalled arecursive state estimator because it computes the new belief
+FILTERING
+statefromthepreviousoneratherthanby

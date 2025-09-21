@@ -1,0 +1,47 @@
+VP VP Adverb
+0.5 :Verb is
+0.5 :Verb shoots
+0.8 :Copula is
+0.2 :Copula seems
+0.5 :Adjective unwell
+0.5 :Adjective well
+0.5 :Adverb well
+0.5 :Adverb badly
+0.6 :Noun duck
+0.4 :Noun well
+a. Which of the following have a nonzero probability as a VP? (i) shoots the duck well
+wellwell (ii)seemsthewellwell (iii)shootstheunwellwellbadly
+b. Whatistheprobability ofgenerating iswellwell ?
+c. Whattypesofambiguity areexhibited bythephrasein(b)?
+d. Given any PCFG, is it possible to calculate the probability that the PCFG generates a
+stringofexactly10words?
+23.4 Outline the major differences between Java (or any other computer language with
+which you are familiar) and English, commenting on the understanding problem in each
+case. Think about such things as grammar, syntax, semantics, pragmatics, compositional-
+ity, context-dependence, lexical ambiguity, syntactic ambiguity, reference finding (including
+pronouns),backgroundknowledge,andwhatitmeansto understand inthefirstplace.
+23.5 Thisexerciseconcerns grammarsforverysimplelanguages.
+a. Writeacontext-free grammarforthelanguage anbn.
+b. Writeacontext-free grammarforthepalindrome language: thesetofallstrings whose
+secondhalfisthereverseofthefirsthalf.
+c. Write a context-sensitive grammar for the duplicate language: the set of all strings
+whosesecondhalfisthesameasthefirsthalf.
+23.6 Consider the sentence Someone walked slowly to the supermarket and a lexicon
+consisting ofthefollowingwords:
+Pronoun someone Verb walked
+Adv slowly Prep to
+Article the Noun supermarket
+Whichofthefollowingthreegrammars,combinedwiththelexicon,generates thegivensen-
+tence? Showthecorresponding parsetree(s).
+Exercises 925
+(A): (B): (C):
+S NP VP S NP VP S NP VP
+NP Pronoun NP Pronoun NP Pronoun
+NP Article Noun NP Noun NP Article NP
+VP VP PP NP Article NP VP Verb Adv
+VP VP Adv Adv VP Verb Vmod Adv Adv Adv
+VP Verb Vmod Adv Vmod Adv PP
+PP Prep NP Vmod Adv PP Prep NP
+NP Noun Adv PP NP Noun
+PP Prep NP
+For each of the preceding three grammars, write down three sentence

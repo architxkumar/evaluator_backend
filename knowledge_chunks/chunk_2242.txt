@@ -1,0 +1,26 @@
+tial vacuum to be filled by alternative methods. Certainty factors were
+invented foruseinthemedicalexpertsystem MYCIN (Shortliffe, 1976),whichwasintended
+both as an engineering solution and as a model of human judgment under uncertainty. The
+collection Rule-Based Expert Systems (Buchanan and Shortliffe, 1984) provides a complete
+overview of MYCIN and its descendants (see also Stefik, 1995). David Heckerman (1986)
+showed that a slightly modified version of certainty factor calculations gives correct proba-
+bilistic results in some cases, but results in serious overcounting of evidence in other cases.
+The PROSPECTOR expertsystem(Dudaetal.,1979)usedarule-basedapproachinwhichthe
+ruleswerejustifiedbya(seldom tenable)globalindependence assumption.
+Dempster Shafer theoryoriginates withapaperby Arthur Dempster(1968) proposing
+ageneralizationofprobabilitytointervalvaluesandacombinationruleforusingthem. Later
+workby Glenn Shafer(1976)ledtothe Dempster-Shafertheory sbeingviewedasacompet-
+ing approach to probability. Pearl (1988) and Ruspini et al. (1992) analyze the relationship
+betweenthe Dempster Shafer theoryandstandardprobability theory.
+Fuzzysetsweredevelopedby Lotfi Zadeh(1965)inresponsetotheperceiveddifficulty
+of providing exact inputs to intelligent systems. The text by Zimmermann (2001) provides
+a thorough introduction to fuzzy set theory; papers on fuzzy applications are collected in
+Zimmermann (1999). As we mentioned in the text, fuzzy logic has often been perceived
+incorrectlyasadirectcompetitortoprobabilitytheory,whereasinfactitaddressesadifferent
+setofissues. Possibilitytheory(Zadeh,1978)wasintroducedtohandleuncertaintyinfuzzy
+POSSIBILITYTHEORY
+systems and has much in common with probability. Dubois and Prade (1994) survey the
+connections betweenpossibility theoryandprobability theory.
+The resurgence of probability depended mainly on Pearl s development of Bayesian
+networksasamethodforrepresentingandusingconditional independence information. This
+resurgence did n

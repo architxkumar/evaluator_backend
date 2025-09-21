@@ -1,0 +1,27 @@
+th,M.,and Wahba,G.(1979). Gen- PODS-99,pp.21 32. Cambridge University Press.
+eralizedcross-validationasamethodforchoosinga Graham,S.L.,Harrison,M.A.,and Ruzzo,W.L. Haghighi, A. and Klein, D. (2006). Prototype-
+goodridgeparameter.Technometrics,21(2). (1980). Animprovedcontext-freerecognizer. ACM drivengrammarinduction.In COLING-06.
+Gomes,C.,Selman,B.,Crato,N.,and Kautz,H. Transactionson Programming Languagesand Sys-
+tems,2(3),415 462. Hald,A.(1990).AHistoryof Probabilityand Statis-
+(2000).Heavy-tailedphenomenainsatisfiabilityand
+ticsand Their Applicationsbefore1750.Wiley.
+constrainprocessing.JAR,24,67 100. Grama,A.and Kumar,V.(1995).Asurveyofparal-
+lelsearchalgorithmsfordiscreteoptimizationprob- Halevy,A.(2007). Dataspaces: Anewparadigm
+Gomes,C.,Kautz,H.,Sabharwal,A.,and Selman,
+lems.ORSA Journalof Computing,7(4),365 385. for data integration. In Brazilian Symposium on
+B.(2008). Satisfiabilitysolvers. Invan Harmelen,
+Databases.
+F.,Lifschitz,V.,and Porter,B.(Eds.),Handbookof Grassmann,H.(1861). Lehrbuchder Arithmetik.
+Knowledge Representation.Elsevier. Th.Chr.Fr.Enslin,Berlin. Halevy,A.,Norvig,P.,and Pereira,F.(2009). The
+unreasonableeffectivenessofdata.IEEE Intelligent
+Gomes,C.and Selman,B.(2001). Algorithmport- Grayson, C. J. (1960). Decisions under uncer-
+Systems,March April,8 12.
+folios.AIJ,126,43 62. tainty: Drillingdecisionsbyoilandgasoperators.
+Tech.rep.,Divisionof Research,Harvard Business Halpern,J.Y.(1990).Ananalysisoffirst-orderlog-
+Gomes, C., Selman, B., and Kautz, H. (1998). School. icsofprobability.AIJ,46(3),311 350.
+Boostingcombinatorialsearchthroughrandomiza-
+tion.In AAAI-98,pp.431 437. Green,B.,Wolf,A.,Chomsky,C.,and Laugherty, Halpern,J.Y.(1999). Technicaladdendum,Cox s
+K.(1961). BASEBALL:Anautomaticquestionan- theoremrevisited.JAIR,11,429 435.
+Gonthier,G.(2008). Formalproof Thefour-color swerer. In Proc.Western Joint Computer Confer-
+theorem.Noticesofthe AMS,55(11),1382 1393. ence,pp.219 224. Halpern,J.Y.and Weissman,V.(2008).Usingfirst-
+orderlogict

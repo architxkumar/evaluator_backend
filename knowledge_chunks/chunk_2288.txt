@@ -1,0 +1,30 @@
+ecenteredonthetrunk,asshownin Figure15.12(a).
+Areasonablemodelofthebird,ontheotherhand,wouldpredictevasiveactiontoonesideor
+the other, asshown in Figure 15.12(b). Sucha model is highly nonlinear, because the bird s
+decision variessharply depending onitsprecise locationrelativetothetrunk.
+To handle examples like these, we clearly need a more expressive language for repre-
+senting thebehaviorofthesystem being modeled. Withinthe control theorycommunity, for
+which problems such asevasive maneuvering by aircraft raise the same kinds of difficulties,
+SWITCHINGKALMAN the standard solution isthe switching Kalmanfilter. Inthis approach, multiple Kalman fil-
+FILTER
+590 Chapter 15. Probabilistic Reasoning over Time
+(a) (b)
+Figure15.12 Abirdflyingtowardatree(topviews). (a)AKalmanfilterwillpredictthe
+location of the bird using a single Gaussian centered on the obstacle. (b) A more realistic
+modelallowsforthebird sevasiveaction,predictingthatitwillflytoonesideortheother.
+tersruninparallel, eachusingadifferentmodelofthesystem forexample,oneforstraight
+flight, one forsharp left turns, and one for sharp right turns. A weighted sum of predictions
+is used, where the weight depends on how well each filter fits the current data. We will see
+in the next section that this is simply a special case of the general dynamic Bayesian net-
+work model, obtained by adding a discrete maneuver state variable to the network shown
+in Figure15.9. Switching Kalmanfiltersarediscussed furtherin Exercise15.10.
+15.5 DYNAMIC BAYESIAN NETWORKS
+DYNAMICBAYESIAN A dynamic Bayesian network, or DBN, is a Bayesian network that represents a temporal
+NETWORK
+probability model of the kind described in Section 15.1. We have already seen examples of
+DB Ns: theumbrellanetworkin Figure15.2andthe Kalmanfilternetworkin Figure15.9. In
+general,eachsliceofa DB Ncanhaveanynumberofstatevariables X andevidencevariables
+t
+E . For simplicity, we assume that the variables and their links are exactly replicated from
+t
+slice toslice a

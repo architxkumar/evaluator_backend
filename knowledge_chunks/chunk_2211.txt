@@ -1,0 +1,29 @@
+ logic. First-order logic commits to the existence of objects and
+relationsamongthemandcanexpressfactsaboutsomeoralloftheobjectsinadomain. This
+oftenresultsinrepresentations thatarevastlymoreconcise thantheequivalent propositional
+descriptions. Now, Bayesian networks are essentially propositional: the set of random vari-
+ables is fixed and finite, and each has a fixed domain of possible values. This fact limits the
+applicability of Bayesian networks. If wecan find a wayto combine probability theory with
+theexpressive poweroffirst-order representations, weexpecttobeabletoincreasedramati-
+callytherangeofproblemsthatcanbehandled.
+Forexample, suppose that an online book retailer would like to provide overall evalu-
+ations of products based on recommendations received from its customers. The evaluation
+will take the form of a posterior distribution over the quality of the book, given the avail-
+able evidence. Thesimplest solution tobase theevaluation ontheaverage recommendation,
+perhaps withavariance determinedbythenumberofrecommendations, butthisfailstotake
+intoaccountthefactthatsomecustomersarekinderthanothersandsomearelesshonestthan
+others. Kind customers tend to give high recommendations even to fairly mediocre books,
+while dishonest customers give very high or very low recommendations for reasons other
+thanquality forexample, theymightworkforapublisher.6
+For a single customer C , recommending a single book B , the Bayes net might look
+1 1
+like the one shown in Figure 14.17(a). (Just as in Section 9.1, expressions with parentheses
+suchas Honest(C )arejustfancysymbols inthiscase,fancynamesforrandomvariables.)
+1
+6 Agametheoristwouldadviseadishonestcustomertoavoiddetectionbyoccasionallyrecommendingagood
+bookfromacompetitor.See Chapter17.
+540 Chapter 14. Probabilistic Reasoning
+Withtwocustomers andtwobooks, the Bayesnetlooks like the onein Figure14.17(b). For
+larger numbers of books and customers, it becomes completely impractical to specify the
+networkbyhand.
+Fortunatel

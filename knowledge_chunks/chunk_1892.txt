@@ -1,0 +1,31 @@
+ications are attempted only
+with sentences that have some chance of unifying. For example, there is no point in trying
+tounify Knows(John,x)with Brother(Richard,John). Wecanavoidsuchunificationsby
+indexing the facts in the knowledge base. A simple scheme called predicate indexing puts
+INDEXING
+PREDICATE all the Knows facts in one bucket and all the Brother facts in another. The buckets can be
+INDEXING
+storedinahashtableforefficientaccess.
+Predicate indexing is useful when there are many predicate symbols but only a few
+clauses for each symbol. Sometimes, however, a predicate has many clauses. For example,
+suppose that the tax authorities want to keep track of who employs whom, using a predi-
+cate Employs(x,y). This would be a very large bucket with perhaps millions of employers
+Section9.2. Unificationand Lifting 329
+Employs(x,y) Employs(x,y)
+Employs(x,Richard) Employs(IBM,y) Employs(x,John) Employs(x,x) Employs(John,y)
+Employs(IBM,Richard) Employs(John,John)
+(a) (b)
+Figure9.2 (a)Thesubsumptionlatticewhoselowestnodeis Employs(IBM,Richard).
+(b)Thesubsumptionlatticeforthesentence Employs(John,John).
+and tens of millions of employees. Answering a query such as Employs(x,Richard) with
+predicate indexingwouldrequirescanning theentirebucket.
+Forthis particular query, it would help if facts were indexed both by predicate and by
+secondargument, perhaps usingacombined hashtablekey. Thenwecouldsimplyconstruct
+the key from the query and retrieve exactly those facts that unify with the query. For other
+queries, such as Employs(IBM,y), we would need to have indexed the facts by combining
+the predicate with the first argument. Therefore, facts can be stored under multiple index
+keys,rendering theminstantly accessible tovariousqueriesthattheymightunifywith.
+Givenasentence tobestored, itispossible toconstruct indices forallpossible queries
+thatunifywithit. Forthefact Employs(IBM,Richard),thequeriesare
+Employs(IBM,Richard) Does IB Memploy Richard?
+Employs(x,Richard) Whoemploys Richar

@@ -1,0 +1,28 @@
+ected forexpansion andthesolution isreturned.
+It is easy to see that uniform-cost search is optimal in general. First, we observe that
+whenever uniform-cost search selects a node n for expansion, the optimal path to that node
+has been found. (Were this not the case, there would have to be another frontier node
+n(cid:2)
+on
+the optimal path from the start node to n, by the graph separation property of Figure 3.9;
+(cid:2)
+by definition, n would have lower g-cost than n and would have been selected first.) Then,
+because step costs are nonnegative, paths never get shorter as nodes are added. These two
+facts together imply that uniform-cost search expands nodes in order of their optimal path
+cost. Hence,thefirstgoalnodeselectedforexpansion mustbetheoptimalsolution.
+Uniform-costsearchdoesnotcareaboutthe numberofstepsapathhas,butonlyabout
+theirtotalcost. Therefore,itwillgetstuckinaninfiniteloopifthereisapathwithaninfinite
+sequence ofzero-cost actions for example, asequence of No Op actions.6 Completeness is
+guaranteed providedthecostofeverystepexceedssomesmallpositiveconstant (cid:2).
+Uniform-costsearchisguidedbypathcostsratherthandepths,soitscomplexityisnot
+easily characterized in terms of band d. Instead, let C bethe cost ofthe optimal solution,7
+andassumethateveryactioncostsatleast(cid:2). Thenthealgorithm s worst-casetimeandspace
+complexity is O(b1 (cid:4)C (cid:2)(cid:5) ), which can be much greater than bd. This is because uniform-
+cost search can explore large trees of small steps before exploring paths involving large and
+perhaps useful steps. When all step costs are equal, b1 (cid:4)C (cid:2)(cid:5) is just bd 1. When all step
+costsarethesame,uniform-costsearchissimilartobreadth-firstsearch,exceptthatthelatter
+stops as soon as it generates a goal, whereas uniform-cost search examines all the nodes at
+the goal s depth to see if one has a lower cost; thus uniform-cost search does strictly more
+workbyexpanding nodesatdepthdunnecessarily.
+3.4.3 Depth-first search
+DEPTH

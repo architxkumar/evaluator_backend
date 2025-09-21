@@ -1,0 +1,34 @@
+ormulationof Learning 771 (a) (b) (c) (d) (e)
+Figure19.1 (a)Aconsistenthypothesis. (b)Afalsenegative. (c)Thehypothesisisgen-
+eralized.(d)Afalsepositive.(e)Thehypothesisisspecialized.
+function CURRENT-BEST-LEARNING(examples,h)returnsahypothesisorfail
+ifexamples isemptythen
+returnh
+e FIRST(examples)
+ife isconsistentwithh then
+return CURRENT-BEST-LEARNING(REST(examples),h)
+elseife isafalsepositiveforh then
+foreachh(cid:5) in specializationsofh consistentwithexamples seensofardo
+h(cid:5)(cid:5) CURRENT-BEST-LEARNING(REST(examples),h(cid:5))
+ifh(cid:5)(cid:5) (cid:7) fail thenreturnh(cid:5)(cid:5)
+elseife isafalsenegativeforh then
+foreachh(cid:5) ingeneralizationsofh consistentwithexamples seensofardo
+h(cid:5)(cid:5) CURRENT-BEST-LEARNING(REST(examples),h(cid:5))
+ifh(cid:5)(cid:5) (cid:7) fail thenreturnh(cid:5)(cid:5)
+returnfail
+Figure 19.2 The current-best-hypothesis learning algorithm. It searches for a consis-
+tent hypothesis that fits all the examples and backtracks when no consistent specializa-
+tion generalizationcan be found. To start the algorithm, any hypothesis can be passed in;
+itwillbespecializedorgneralizedasneeded.
+negative. Theextension ofthehypothesis mustbedecreased toexclude theexample. Thisis
+calledspecialization; in Figure19.1(e)weseeonepossible specialization ofthe hypothesis.
+SPECIALIZATION
+The moregeneral than and more specific than relations between hypotheses provide the
+logicalstructure onthehypothesis spacethatmakesefficientsearchpossible.
+Wecannowspecifythe CURRENT-BEST-LEARNING algorithm,shownin Figure19.2.
+Noticethateachtimeweconsidergeneralizingorspecializingthehypothesis,wemustcheck
+forconsistency withtheotherexamples, because anarbitrary increase decrease intheexten-
+sionmightinclude exclude previously seennegative positive examples.
+772 Chapter 19. Knowledgein Learning
+Wehave defined generalization and specialization as operations that change the exten-
+sion of a hypothesis. Now we need to determine exactly how they can be implemented a
